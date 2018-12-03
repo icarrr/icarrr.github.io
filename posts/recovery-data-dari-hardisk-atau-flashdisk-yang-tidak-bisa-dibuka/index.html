@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<meta name="author" content="Faizar Septiawan">
+<meta name="description" content="A. PendahuluanPada kesempatan kali ini, saya akan memberikan tahapan tentang bagaimana recovery&nbsp;data dari hardisk atau flashdisk yang tidak bisa dibuka menggunakan software di linux yaitu &#34;Testdisk&#34;
+B. PengertianRecovery data (pemulihan data)&nbsp;adalah proses menyelamatkan (mengambil) tidak dapat diakses, hilang, rusak, rusak atau diformat data dari&nbsp;penyimpanan sekunder&nbsp;,&nbsp;removable media&nbsp;atau&nbsp;file&nbsp;, ketika data yang tersimpan di dalamnya tidak dapat diakses secara normal.&nbsp;Data yang paling sering diselamatkan dari media penyimpanan seperti internal atau eksternal&nbsp;hard disk drive&nbsp;(HDD),&nbsp;solid-state drive&nbsp;(SSD),&nbsp;USB flash drive&nbsp;,&nbsp;tape magnetik&nbsp;,&nbsp;CD&nbsp;,&nbsp;DVD&nbsp;,&nbsp;RAID&nbsp;subsistem, dan lainnya&nbsp;perangkat elektronik.">
+
+<meta property="og:title" content="Recovery data dari hardisk atau flashdisk yang tidak bisa dibuka" />
+<meta property="og:description" content="A. PendahuluanPada kesempatan kali ini, saya akan memberikan tahapan tentang bagaimana recovery&nbsp;data dari hardisk atau flashdisk yang tidak bisa dibuka menggunakan software di linux yaitu &#34;Testdisk&#34;
+B. PengertianRecovery data (pemulihan data)&nbsp;adalah proses menyelamatkan (mengambil) tidak dapat diakses, hilang, rusak, rusak atau diformat data dari&nbsp;penyimpanan sekunder&nbsp;,&nbsp;removable media&nbsp;atau&nbsp;file&nbsp;, ketika data yang tersimpan di dalamnya tidak dapat diakses secara normal.&nbsp;Data yang paling sering diselamatkan dari media penyimpanan seperti internal atau eksternal&nbsp;hard disk drive&nbsp;(HDD),&nbsp;solid-state drive&nbsp;(SSD),&nbsp;USB flash drive&nbsp;,&nbsp;tape magnetik&nbsp;,&nbsp;CD&nbsp;,&nbsp;DVD&nbsp;,&nbsp;RAID&nbsp;subsistem, dan lainnya&nbsp;perangkat elektronik." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://icarrr.github.io/posts/recovery-data-dari-hardisk-atau-flashdisk-yang-tidak-bisa-dibuka/" /><meta property="article:published_time" content="2017-08-22T10:06:00&#43;00:00"/>
+<meta property="article:modified_time" content="2017-08-22T10:06:00&#43;00:00"/>
+
+
+<title>
+
+
+     Recovery data dari hardisk atau flashdisk yang tidak bisa dibuka 
+
+</title>
+<link rel="canonical" href="https://icarrr.github.io/posts/recovery-data-dari-hardisk-atau-flashdisk-yang-tidak-bisa-dibuka/">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:500">
+
+
+
+    
+    <link rel="stylesheet" href="https://icarrr.github.io/css/reset.css?t=2018-12-04%2003%3a11%3a17.919103285%20%2b0700%20WIB%20m%3d%2b0.305816994">
+    <link rel="stylesheet" href="https://icarrr.github.io/css/pygments.css?t=2018-12-04%2003%3a11%3a17.919103285%20%2b0700%20WIB%20m%3d%2b0.305816994">
+    <link rel="stylesheet" href="https://icarrr.github.io/css/main.css?t=2018-12-04%2003%3a11%3a17.919103285%20%2b0700%20WIB%20m%3d%2b0.305816994">
+    
+        <link rel="stylesheet" href="https://icarrr.github.io/css/override.css?t=2018-12-04%2003%3a11%3a17.919103285%20%2b0700%20WIB%20m%3d%2b0.305816994">
+    
+
+
+
+
+<link rel="shortcut icon"
+
+    href="https://icarrr.github.io/img/leaf.ico"
+
+>
+
+
+
+
+
+
+
+
+</head>
+
+
+<body lang="en">
+
+<section class="header">
+    <div class="container">
+        <div class="content">
+            
+                
+                
+                
+                
+                
+                    
+                
+                
+                <a href="https://icarrr.github.io/"><img class="avatar" src="https://icarrr.github.io/img/profil.png" srcset="https://icarrr.github.io/img/profil.png 1x"></a>
+            
+            <a href="https://icarrr.github.io/"><div class="name">Faizar Septiawan</div></a>
+            
+              <h3 class="self-intro">Paling bangga menjadi orang gila karena punya prinsip “Sekali Gila, Tetap Gila Yang Penting ber-Komitmen, Konsisten &amp; Kontinu.</h3>
+            
+            <nav>
+                <ul>
+                    
+                        <li class="nav-posts"><a href="https://icarrr.github.io/posts/"><span>Posts</span></a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<section class="icons">
+    <div class="container">
+        <div class="content">
+        
+            <a href="//github.com/icarrr" target="_blank" rel="noopener"><img class="icon" src="https://icarrr.github.io/img/github.svg" alt="github" /></a>
+        
+
+        
+
+        
+
+	
+
+        
+
+        
+
+        
+            <a href="//linkedin.com/in/faizar-septiawan-0a282b142" target="_blank" rel="noopener"><img class="icon" src="https://icarrr.github.io/img/linkedin.svg" alt="linkedin" /></a>
+        
+
+        
+
+        
+            <a href="//t.me/siBunglonGanteng" target="_blank" rel="noopener"><img class="icon" src="https://icarrr.github.io/img/telegram.svg" alt="telegram" /></a>
+        
+
+        
+            <a href="//instagram.com/sibunglon.ganteng" target="_blank" rel="noopener"><img class="icon" src="https://icarrr.github.io/img/instagram.svg" alt="instagram" /></a>
+        
+
+        
+
+        
+
+        
+            <a href="mailto:icar@sibunglonlab.com"><img class="icon" src="https://icarrr.github.io/img/email.svg" alt="email" /></a>
+        
+
+        
+
+        
+        </div>
+    </div>
+</section>
+
+<section class="main">
+    <div class="container">
+        <div class="content">
+            <div class="page-heading">
+
+    Recovery data dari hardisk atau flashdisk yang tidak bisa dibuka
+
+</div>
+
+            <div class="markdown">
+                <div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-6kKkhCtxqm4/W49FKjD2kCI/AAAAAAAAEDc/-QGCmdMUqEYcmn6spRmU71-fe4st9nGdwCLcBGAs/s1600/recovery%2Bdata.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,blc telkom klaten, kpli klaten, icar. sibunglonganteng" border="0" data-original-height="200" data-original-width="650" height="98" src="https://3.bp.blogspot.com/-6kKkhCtxqm4/W49FKjD2kCI/AAAAAAAAEDc/-QGCmdMUqEYcmn6spRmU71-fe4st9nGdwCLcBGAs/s320/recovery%2Bdata.png" title="" width="320" /></a></div><div style="text-align: justify;"><strong><br /></strong></div><div style="text-align: justify;"><strong><span style="font-size: large;">A. Pendahuluan</span></strong></div><div style="text-align: justify;">Pada kesempatan kali ini, saya akan memberikan tahapan tentang bagaimana recovery&nbsp;data dari hardisk atau flashdisk yang tidak bisa dibuka menggunakan software di linux yaitu "Testdisk"</div><br /><div style="text-align: justify;"><strong><span style="font-size: large;">B. Pengertian</span></strong></div><div style="text-align: justify;"><b><span class="goog-text-highlight">Recovery data (pemulihan data)</span></b><span class="goog-text-highlight">&nbsp;adalah proses menyelamatkan (mengambil) tidak dapat diakses, hilang, rusak, rusak atau diformat data dari&nbsp;</span><span class="goog-text-highlight">penyimpanan sekunder</span><span class="goog-text-highlight">&nbsp;,&nbsp;</span><span class="goog-text-highlight">removable media</span><span class="goog-text-highlight">&nbsp;atau&nbsp;</span><span class="goog-text-highlight">file</span><span class="goog-text-highlight">&nbsp;, ketika data yang tersimpan di dalamnya tidak dapat diakses secara normal.&nbsp;</span>Data yang paling sering diselamatkan dari media penyimpanan seperti internal atau eksternal&nbsp;hard disk drive&nbsp;(HDD),&nbsp;solid-state drive&nbsp;(SSD),&nbsp;USB flash drive&nbsp;,&nbsp;tape magnetik&nbsp;,&nbsp;CD&nbsp;,&nbsp;DVD&nbsp;,&nbsp;RAID&nbsp;subsistem, dan lainnya&nbsp;perangkat elektronik.&nbsp;Pemulihan mungkin diperlukan karena kerusakan fisik pada perangkat penyimpanan atau kerusakan logis untuk&nbsp;sistem file&nbsp;yang mencegah dari yang&nbsp;dipasang&nbsp;oleh host&nbsp;sistem operasi&nbsp;(OS).</div><br /><div style="text-align: justify;"><strong><span style="font-size: large;">C. Latar belakang</span></strong></div><div style="text-align: justify;">Beberapa hari yang lalu, saya mengalami permasalahan seperti ini dan mencoba bertanya ke orang-orang bagaimana mengatasi masalah itu dan sebagian orang langsung menyimpulkan kalau data itu tidak bisa diselamatkan dan solusinya langsung format saja tetapi saya beranggapan kalau linux pasti punya solusi terbaik untuk masalah itu.</div><br /><div style="text-align: justify;"><strong><span style="font-size: large;">D. Tujuan</span></strong></div><div style="text-align: justify;">Agar orang-orang tau dapat memulihkan datanya dari drive yang tidak bisa dibuka/terbaca</div><br /><div style="text-align: justify;"><strong><span style="font-size: large;">E. Alat dan bahan</span></strong></div><ol style="text-align: justify;"><li>Aplikasi testdisk</li><li>Pc/laptop</li><li>Drive yang akan direcovery datanya</li></ol><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><strong><span style="font-size: large;">F. Jangka waktu pelaksanaan</span></strong></div><div style="text-align: justify;">Waktu yang dibutuhkan tergantung banyaknya data yang akan direcovery.</div><br /><div style="text-align: justify;"><strong><span style="font-size: large;">G. Langkah kerja</span></strong></div><div style="text-align: justify;">1. Pastikan di laptop/pc telah terinstall ‘testdisk’, jika belum silahkan install di shell dengan perintah ‘sudo apt-get install testdisk’</div><br /><div style="text-align: justify;">2. Buka shell/terminal dan masuk sebagai root</div><br /><div style="text-align: justify;">3. Buka aplikasi testdisk</div><br /><div style="text-align: justify;">4. Jika muncul tampilan seperti berikut, pilih menu seperti pada gambar dibawah ini dengan menekan tombol enter</div><div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-hjdjWt1VvzM/W49F7o5uZAI/AAAAAAAAEDk/BXj1fvSLSm87W7xi3G7N0YgFDJg6DiPDQCLcBGAs/s1600/Screenshot_1.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,blc telkom klaten, kpli klaten, icar. sibunglonganteng" border="0" data-original-height="364" data-original-width="642" height="181" src="https://3.bp.blogspot.com/-hjdjWt1VvzM/W49F7o5uZAI/AAAAAAAAEDk/BXj1fvSLSm87W7xi3G7N0YgFDJg6DiPDQCLcBGAs/s320/Screenshot_1.png" title="" width="320" /></a></div><br /><div style="text-align: justify;">5. Pilih disk yang akan dibackup filenya</div><div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/-PJqygc6h32I/W49GB2a5DDI/AAAAAAAAEDo/4MkYUkzEcoA4ncegGw_1bHGnsUv27dqiwCLcBGAs/s1600/Screenshot_2.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,blc telkom klaten, kpli klaten, icar. sibunglonganteng" border="0" data-original-height="367" data-original-width="640" height="183" src="https://4.bp.blogspot.com/-PJqygc6h32I/W49GB2a5DDI/AAAAAAAAEDo/4MkYUkzEcoA4ncegGw_1bHGnsUv27dqiwCLcBGAs/s320/Screenshot_2.png" title="" width="320" /></a></div><br /><div style="text-align: justify;">6. Pilih type partisi dari disk yang dipilih</div><div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/-ZzfFf6bwJF8/W49GLOc_coI/AAAAAAAAEDs/WxjaNkUc344dTXMRviOL-Kmi9JiKhAYGACLcBGAs/s1600/Screenshot_3.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,blc telkom klaten, kpli klaten, icar. sibunglonganteng" border="0" data-original-height="364" data-original-width="642" height="181" src="https://4.bp.blogspot.com/-ZzfFf6bwJF8/W49GLOc_coI/AAAAAAAAEDs/WxjaNkUc344dTXMRviOL-Kmi9JiKhAYGACLcBGAs/s320/Screenshot_3.png" title="" width="320" /></a></div><br /><div style="text-align: justify;">7. Pilih menu analyse untuk menganalisis partisi-partisi yang ada pada disk yang dipilih sebelumnya</div><div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-F86gQqL53ko/W49GQaAlwvI/AAAAAAAAEDw/HXdJY60WnQIt3YM7Xg16Ysbh0QuLIrm_gCLcBGAs/s1600/Screenshot_4.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,blc telkom klaten, kpli klaten, icar. sibunglonganteng" border="0" data-original-height="364" data-original-width="640" height="182" src="https://2.bp.blogspot.com/-F86gQqL53ko/W49GQaAlwvI/AAAAAAAAEDw/HXdJY60WnQIt3YM7Xg16Ysbh0QuLIrm_gCLcBGAs/s320/Screenshot_4.png" title="" width="320" /></a></div><br /><div style="text-align: justify;">8. Setelah itu akan muncul partisi-partisi yang ada pada disk dan pilih quick search untuk pencarian cepat isi dari partisi yang akan dipilih</div><div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-U_7u5U23w_c/W49GWSCJPvI/AAAAAAAAED4/vKkpBeCZwBsNcKAd0XRJ7IUid6FwJFXxACLcBGAs/s1600/Screenshot_5.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,blc telkom klaten, kpli klaten, icar. sibunglonganteng" border="0" data-original-height="360" data-original-width="639" height="180" src="https://3.bp.blogspot.com/-U_7u5U23w_c/W49GWSCJPvI/AAAAAAAAED4/vKkpBeCZwBsNcKAd0XRJ7IUid6FwJFXxACLcBGAs/s320/Screenshot_5.png" title="" width="320" /></a></div><br /><div style="text-align: justify;">9. Arahkan ke partisi yang ingin dibackup filenya, kemudian tekan ‘<b>p</b>’</div><div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-METYggVOPY4/W49GedC4TMI/AAAAAAAAED8/ZgTjV51hUX4WRyL-XShGrA8ldpp8adhfgCLcBGAs/s1600/Screenshot_6.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,blc telkom klaten, kpli klaten, icar. sibunglonganteng" border="0" data-original-height="363" data-original-width="640" height="181" src="https://2.bp.blogspot.com/-METYggVOPY4/W49GedC4TMI/AAAAAAAAED8/ZgTjV51hUX4WRyL-XShGrA8ldpp8adhfgCLcBGAs/s320/Screenshot_6.png" title="" width="320" /></a></div><br /><div style="text-align: justify;">10. Akan muncul isi dari partisi yang telah dipilih, untuk memilih file yang akan dibackup tekan ‘<b>shift</b> + <b>:</b>’</div><div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/-XT9opKS-TKs/W49Gz8_t-mI/AAAAAAAAEEM/RVW0B9cl16MQe5YTtdENsuz_0DXawBPewCLcBGAs/s1600/Screenshot_7.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,blc telkom klaten, kpli klaten, icar. sibunglonganteng" border="0" data-original-height="363" data-original-width="640" height="181" src="https://4.bp.blogspot.com/-XT9opKS-TKs/W49Gz8_t-mI/AAAAAAAAEEM/RVW0B9cl16MQe5YTtdENsuz_0DXawBPewCLcBGAs/s320/Screenshot_7.png" title="" width="320" /></a></div><br /><div style="text-align: justify;">11. Setelah memilih filenya, tekan ‘<b>shift</b> + <b>c</b>’ untuk meng-copy file tersebut</div><div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-RBorqpgeIIs/W49HRA8TBMI/AAAAAAAAEEU/MG3jH-zNFWk9WhmZqsVcq6Z4syCJDtukACLcBGAs/s1600/Screenshot_8.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,blc telkom klaten, kpli klaten, icar. sibunglonganteng" border="0" data-original-height="364" data-original-width="641" height="181" src="https://3.bp.blogspot.com/-RBorqpgeIIs/W49HRA8TBMI/AAAAAAAAEEU/MG3jH-zNFWk9WhmZqsVcq6Z4syCJDtukACLcBGAs/s320/Screenshot_8.png" title="" width="320" /></a></div><br /><div style="text-align: justify;">12. Lalu pilih directory dimana anda akan menyimpan file tersebut</div><div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-bJ2Zuxx7CXA/W49Hlge7LhI/AAAAAAAAEEc/dazwgDOnjOwLM0UDzKGwUvwAikzSz8NHwCLcBGAs/s1600/Screenshot_9.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,blc telkom klaten, kpli klaten, icar. sibunglonganteng" border="0" data-original-height="361" data-original-width="642" height="179" src="https://3.bp.blogspot.com/-bJ2Zuxx7CXA/W49Hlge7LhI/AAAAAAAAEEc/dazwgDOnjOwLM0UDzKGwUvwAikzSz8NHwCLcBGAs/s320/Screenshot_9.png" title="" width="320" /></a></div><br /><div style="text-align: justify;">13. Tekan ‘<b>shift</b> + <b>c</b>’ untuk mem-paste file yang telah dipilih ke directory yang dipilih, lalu tunggu beberapa saat hingga proses selesai.</div><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-Da11W4Iyedg/W49Htq5q1TI/AAAAAAAAEEg/ODPCitTR2vQyEcYkQd7BGjGvhB-Ec8KmgCLcBGAs/s1600/Screenshot_10.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,blc telkom klaten, kpli klaten, icar. sibunglonganteng" border="0" data-original-height="360" data-original-width="642" height="179" src="https://1.bp.blogspot.com/-Da11W4Iyedg/W49Htq5q1TI/AAAAAAAAEEg/ODPCitTR2vQyEcYkQd7BGjGvhB-Ec8KmgCLcBGAs/s320/Screenshot_10.png" title="" width="320" /></a></div><br /><div style="text-align: justify;">14. Jika proses selesai akan muncul pesan seperti berikut.</div><div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-kO1zMCvOnNo/W49IB6a8jTI/AAAAAAAAEEs/4MFH_EJYpFw9vSQpJxJw7wvpR0rH0u2sgCLcBGAs/s1600/Screenshot_13.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,blc telkom klaten, kpli klaten, icar. sibunglonganteng" border="0" data-original-height="363" data-original-width="639" height="181" src="https://2.bp.blogspot.com/-kO1zMCvOnNo/W49IB6a8jTI/AAAAAAAAEEs/4MFH_EJYpFw9vSQpJxJw7wvpR0rH0u2sgCLcBGAs/s320/Screenshot_13.png" title="" width="320" /></a></div><br /><div style="text-align: justify;"><strong><span style="font-size: large;">H. Temuan masalah</span></strong></div><div style="text-align: justify;">Tidak ada permasalahan yang ditemukan pada saat melakukan praktek diatas</div><br /><div style="text-align: justify;"><b><span style="font-size: large;">I. Hasil yang didapatkan</span></b></div><div style="text-align: justify;">Dapat melakukan proses/langkah-langkahnya dengan benar</div><br /><div style="text-align: justify;"><strong><span style="font-size: large;">J. Kesimpulan&nbsp;</span></strong></div><div style="text-align: justify;">Dengan bantuan software ini, data dari drive yang tidak bisa terbuka atau tidak bisa dimount tetap dapat direcovery(dipulihkan) sehingga file-file penting yang ada di drive tersebut tidak hilang</div><br /><div style="text-align: justify;"><strong><span style="font-size: large;">K. Referensi</span></strong></div><div style="text-align: justify;"><a href="https://en.wikipedia.org/wiki/Data_recovery">Wikipedia</a></div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-110194945-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+  
+
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+
+
+
+
+
+</body>
+</html>
+

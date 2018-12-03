@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<meta name="author" content="Faizar Septiawan">
+<meta name="description" content="PENGERTIANPoint to Point adalah data link protokol yang umum digunakan dalam membangun hubungan langsung antara dua node jaringan. Hal ini dapat menyediakan koneksi otentikasi, transmisi enkripsi (menggunakan ECP, RFC 1968), dan kompresi.
+LATAR BELAKANGJauhnya tempat tidak memunginkan untuk penggunakan kabel untuk media transmisi data
+MAKSUD DAN TUJUANMempelajari UBNT
+Jangka Waktu PelaksanaanKurang lebih 3 jam
+ALAT DAN BAHAN
+~ Laptop~ Ubnt Powerbeam M2~ RB 941~ Alat untuk memnjat tower, Tali Wabbing, Harnesses, Tas untuk wadah kunci,~ Kabel LAN">
+
+<meta property="og:title" content="Pointing UBNT ke MikroTik" />
+<meta property="og:description" content="PENGERTIANPoint to Point adalah data link protokol yang umum digunakan dalam membangun hubungan langsung antara dua node jaringan. Hal ini dapat menyediakan koneksi otentikasi, transmisi enkripsi (menggunakan ECP, RFC 1968), dan kompresi.
+LATAR BELAKANGJauhnya tempat tidak memunginkan untuk penggunakan kabel untuk media transmisi data
+MAKSUD DAN TUJUANMempelajari UBNT
+Jangka Waktu PelaksanaanKurang lebih 3 jam
+ALAT DAN BAHAN
+~ Laptop~ Ubnt Powerbeam M2~ RB 941~ Alat untuk memnjat tower, Tali Wabbing, Harnesses, Tas untuk wadah kunci,~ Kabel LAN" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://icarrr.github.io/posts/pointing-ubnt-ke-mikrotik/" /><meta property="article:published_time" content="2017-09-19T02:56:00&#43;00:00"/>
+<meta property="article:modified_time" content="2017-09-19T02:56:00&#43;00:00"/>
+
+
+<title>
+
+
+     Pointing UBNT ke MikroTik 
+
+</title>
+<link rel="canonical" href="https://icarrr.github.io/posts/pointing-ubnt-ke-mikrotik/">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:500">
+
+
+
+    
+    <link rel="stylesheet" href="https://icarrr.github.io/css/reset.css?t=2018-12-04%2003%3a11%3a17.863676676%20%2b0700%20WIB%20m%3d%2b0.250390672">
+    <link rel="stylesheet" href="https://icarrr.github.io/css/pygments.css?t=2018-12-04%2003%3a11%3a17.863676676%20%2b0700%20WIB%20m%3d%2b0.250390672">
+    <link rel="stylesheet" href="https://icarrr.github.io/css/main.css?t=2018-12-04%2003%3a11%3a17.863676676%20%2b0700%20WIB%20m%3d%2b0.250390672">
+    
+        <link rel="stylesheet" href="https://icarrr.github.io/css/override.css?t=2018-12-04%2003%3a11%3a17.863676676%20%2b0700%20WIB%20m%3d%2b0.250390672">
+    
+
+
+
+
+<link rel="shortcut icon"
+
+    href="https://icarrr.github.io/img/leaf.ico"
+
+>
+
+
+
+
+
+
+
+
+</head>
+
+
+<body lang="en">
+
+<section class="header">
+    <div class="container">
+        <div class="content">
+            
+                
+                
+                
+                
+                
+                    
+                
+                
+                <a href="https://icarrr.github.io/"><img class="avatar" src="https://icarrr.github.io/img/profil.png" srcset="https://icarrr.github.io/img/profil.png 1x"></a>
+            
+            <a href="https://icarrr.github.io/"><div class="name">Faizar Septiawan</div></a>
+            
+              <h3 class="self-intro">Paling bangga menjadi orang gila karena punya prinsip “Sekali Gila, Tetap Gila Yang Penting ber-Komitmen, Konsisten &amp; Kontinu.</h3>
+            
+            <nav>
+                <ul>
+                    
+                        <li class="nav-posts"><a href="https://icarrr.github.io/posts/"><span>Posts</span></a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<section class="icons">
+    <div class="container">
+        <div class="content">
+        
+            <a href="//github.com/icarrr" target="_blank" rel="noopener"><img class="icon" src="https://icarrr.github.io/img/github.svg" alt="github" /></a>
+        
+
+        
+
+        
+
+	
+
+        
+
+        
+
+        
+            <a href="//linkedin.com/in/faizar-septiawan-0a282b142" target="_blank" rel="noopener"><img class="icon" src="https://icarrr.github.io/img/linkedin.svg" alt="linkedin" /></a>
+        
+
+        
+
+        
+            <a href="//t.me/siBunglonGanteng" target="_blank" rel="noopener"><img class="icon" src="https://icarrr.github.io/img/telegram.svg" alt="telegram" /></a>
+        
+
+        
+            <a href="//instagram.com/sibunglon.ganteng" target="_blank" rel="noopener"><img class="icon" src="https://icarrr.github.io/img/instagram.svg" alt="instagram" /></a>
+        
+
+        
+
+        
+
+        
+            <a href="mailto:icar@sibunglonlab.com"><img class="icon" src="https://icarrr.github.io/img/email.svg" alt="email" /></a>
+        
+
+        
+
+        
+        </div>
+    </div>
+</section>
+
+<section class="main">
+    <div class="container">
+        <div class="content">
+            <div class="page-heading">
+
+    Pointing UBNT ke MikroTik
+
+</div>
+
+            <div class="markdown">
+                <div style="text-align: justify;"><strong>PENGERTIAN</strong></div><div style="text-align: justify;">Point to Point adalah data link protokol yang umum digunakan dalam membangun hubungan langsung antara dua node jaringan. Hal ini dapat menyediakan koneksi otentikasi, transmisi enkripsi (menggunakan ECP, RFC 1968), dan kompresi.</div><br /><div style="text-align: justify;"><strong>LATAR BELAKANG</strong></div><div style="text-align: justify;">Jauhnya tempat tidak memunginkan untuk penggunakan kabel untuk media transmisi data</div><br /><div style="text-align: justify;"><strong>MAKSUD DAN TUJUAN</strong></div><div style="text-align: justify;">Mempelajari UBNT</div><br /><div style="text-align: justify;"><strong>Jangka Waktu Pelaksanaan</strong></div><span style="text-align: justify;">Kurang lebih 3 jam</span><br /><br /><div style="text-align: justify;"></div><span style="text-align: justify;"><b>ALAT DAN BAHAN</b></span><br /><div style="text-align: justify;">~ Laptop</div><div style="text-align: justify;">~ Ubnt Powerbeam M2</div><div style="text-align: justify;">~ RB 941</div><div style="text-align: justify;">~ Alat untuk memnjat tower, Tali Wabbing, Harnesses, Tas untuk wadah kunci,</div><div style="text-align: justify;">~ Kabel LAN</div><br /><div style="text-align: justify;"><b>TAHAPAN</b></div><span style="text-align: justify;">Seperti itu topologi dari Pointing ini,</span><br /><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-bdH26nLlaQw/W6fyxw7OmMI/AAAAAAAAEag/yEygZTKG7JMZzCCEzYEPb7JtwWI7PvD5wCLcBGAs/s1600/1.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="318" data-original-width="519" height="196" src="https://1.bp.blogspot.com/-bdH26nLlaQw/W6fyxw7OmMI/AAAAAAAAEag/yEygZTKG7JMZzCCEzYEPb7JtwWI7PvD5wCLcBGAs/s320/1.png" title="" width="320" /></a></div><br /><div style="text-align: justify;">pertama konfigurasi Mikrotik sebagai AP Bridge</div><div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-4-9gccAvZEw/W6fy4C7MjlI/AAAAAAAAEak/AvcPxblUBI4SVBAYqOVT0AhxjK7mgjR-ACLcBGAs/s1600/2.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="667" data-original-width="953" height="223" src="https://3.bp.blogspot.com/-4-9gccAvZEw/W6fy4C7MjlI/AAAAAAAAEak/AvcPxblUBI4SVBAYqOVT0AhxjK7mgjR-ACLcBGAs/s320/2.png" title="" width="320" /></a></div><br /><div style="text-align: justify;">disini saya menggunakan Routing Static jadi harus memasukkan DNS sendiri, dan dibawah adalah gambar konfigurasi Ubnt, Default untuk Ubnt adalah 192.168.1.20, satu subnetkan IP Laptop NOC agar bisa mengakses web Ubnt tersebut.</div><div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/-DV69aQCqTaw/W6fzH19XXmI/AAAAAAAAEas/d3_Fec8yecIDEtprklr2miWOOeq1w1MfQCLcBGAs/s1600/3.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="577" data-original-width="1154" height="160" src="https://4.bp.blogspot.com/-DV69aQCqTaw/W6fzH19XXmI/AAAAAAAAEas/d3_Fec8yecIDEtprklr2miWOOeq1w1MfQCLcBGAs/s320/3.png" title="" width="320" /></a></div><br /><div style="text-align: justify;">default user dan password adalah<br />ubnt<br />ubnt</div><div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-sfyarpuvAwQ/W6fzQx8hdNI/AAAAAAAAEa0/bJNBPSRr8jU7MNoBC44IHJQ1YkZGCqNDQCLcBGAs/s1600/4.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="768" data-original-width="1366" height="179" src="https://3.bp.blogspot.com/-sfyarpuvAwQ/W6fzQx8hdNI/AAAAAAAAEa0/bJNBPSRr8jU7MNoBC44IHJQ1YkZGCqNDQCLcBGAs/s320/4.png" title="" width="320" /></a></div><br /><div class="separator" style="text-align: justify;">setelah itu kita atur Sistemnya, disini saya hanya mengganti passwordnya saja</div><div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-YLpcVnGjvNY/W6fzZkgH4mI/AAAAAAAAEa8/cRvK-bkQ_qYSIYHK8aPLi5OE9VdAO9PggCLcBGAs/s1600/5.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="768" data-original-width="1366" height="179" src="https://3.bp.blogspot.com/-YLpcVnGjvNY/W6fzZkgH4mI/AAAAAAAAEa8/cRvK-bkQ_qYSIYHK8aPLi5OE9VdAO9PggCLcBGAs/s320/5.png" title="" width="320" /></a></div><br /><div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-IX0CNnVXnmY/W6fzZi0bpUI/AAAAAAAAEbA/5w91v5pbXaYw-tfhmCxJERrrO-N5jBpVACLcBGAs/s1600/6.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="768" data-original-width="1366" height="179" src="https://2.bp.blogspot.com/-IX0CNnVXnmY/W6fzZi0bpUI/AAAAAAAAEbA/5w91v5pbXaYw-tfhmCxJERrrO-N5jBpVACLcBGAs/s320/6.png" title="" width="320" /></a></div><br /><div class="separator" style="text-align: justify;">lalu kita masuk &nbsp;tab wireless dan kita scan, seperti gambar diatas. Setelah SSID AP ketemu langsung ita lock saja</div><div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-WBpSscNjx-o/W6fzlcnE5-I/AAAAAAAAEbI/FDw4N4dGXBYpTFlsBccxXOuNNziGC0C6wCLcBGAs/s1600/7.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="768" data-original-width="1366" height="179" src="https://2.bp.blogspot.com/-WBpSscNjx-o/W6fzlcnE5-I/AAAAAAAAEbI/FDw4N4dGXBYpTFlsBccxXOuNNziGC0C6wCLcBGAs/s320/7.png" title="" width="320" /></a></div><br /><div class="separator" style="text-align: justify;">setelah di lock kita samakan frequensi dengan frequensi mikrotik tenda, lalu kita masukkan wireless security bila menggunakan password.</div><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-OrI6rN5yhKQ/W6fzqfzYw3I/AAAAAAAAEbU/dc-r33Y_3QAuzXwpIPHWf9J-1dysStNcACLcBGAs/s1600/8.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="637" data-original-width="1311" height="155" src="https://1.bp.blogspot.com/-OrI6rN5yhKQ/W6fzqfzYw3I/AAAAAAAAEbU/dc-r33Y_3QAuzXwpIPHWf9J-1dysStNcACLcBGAs/s320/8.png" title="" width="320" /></a></div><br /><div class="separator" style="text-align: justify;">pada menu Network, kita konfigurasi IP agar satu subnet.</div><div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-pa3IViGs8dA/W6fzwBdLjXI/AAAAAAAAEbY/ZEhZmIKIFHQa-qkHLixPG3SURIZ7lORrgCLcBGAs/s1600/9.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="768" data-original-width="1366" height="179" src="https://2.bp.blogspot.com/-pa3IViGs8dA/W6fzwBdLjXI/AAAAAAAAEbY/ZEhZmIKIFHQa-qkHLixPG3SURIZ7lORrgCLcBGAs/s320/9.png" title="" width="320" /></a></div><br /><div style="text-align: justify;">nah sekarang pada menu Main kita bisa memantau seperti gambar diatas. disini kita akan melakukan Pointing dengan menyamakan TX/Rx rate &nbsp;dan sinyal strenght nah disini harus ekstra sabar baik si pemanjat tower dan yang memantau dibawah, agar mendapat hasil yang bagus pada sinyal yang terbaik adalah yang memiliki dBm sedikit.</div><br /><div style="text-align: justify;">sedangkan TX/Rx nya harus 1:1.</div><div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-k00lQI8wxic/W6fz5EJDbWI/AAAAAAAAEbg/-e_Dgt33JXMz6M9P4qERPV2Cps7YCPAbwCLcBGAs/s1600/10.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="299" data-original-width="222" src="https://2.bp.blogspot.com/-k00lQI8wxic/W6fz5EJDbWI/AAAAAAAAEbg/-e_Dgt33JXMz6M9P4qERPV2Cps7YCPAbwCLcBGAs/s1600/10.png" title="" /></a></div><br /><div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-O1afESLLrUI/W6fz5fquccI/AAAAAAAAEbk/0-PLDZK5YmwO37AT6vbSa63ayjW7_vzOgCLcBGAs/s1600/11.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="631" data-original-width="473" height="320" src="https://2.bp.blogspot.com/-O1afESLLrUI/W6fz5fquccI/AAAAAAAAEbk/0-PLDZK5YmwO37AT6vbSa63ayjW7_vzOgCLcBGAs/s320/11.png" title="" width="239" /></a></div><br /><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-73U8dK64YVw/W6fz5WJxupI/AAAAAAAAEbo/Lkgk7OySQQ0ZOqNHkwaoXd9OvCElcsgxQCLcBGAs/s1600/12.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="631" data-original-width="474" height="320" src="https://1.bp.blogspot.com/-73U8dK64YVw/W6fz5WJxupI/AAAAAAAAEbo/Lkgk7OySQQ0ZOqNHkwaoXd9OvCElcsgxQCLcBGAs/s320/12.png" title="" width="240" /></a></div><br /><div style="text-align: justify;"><strong>Kesimpulan</strong></div><span style="text-align: justify;">Untuk Pointing dengan Ubnt harus di tangani oleh ahlinya karena saat mencari TX/RX dan Sinyal sedikit susah karena berada di ketinggian tertentu.</span><br /><br /><div style="text-align: justify;"><b>Referensi</b></div><div style="text-align: justify;"><a href="https://id.wikipedia.org/wiki/Point-to-Point_Protocol">https://id.wikipedia.org/wiki/Point-to-Point_Protocol</a></div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-110194945-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+  
+
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+
+
+
+
+
+</body>
+</html>
+

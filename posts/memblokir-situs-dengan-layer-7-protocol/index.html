@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<meta name="author" content="Faizar Septiawan">
+<meta name="description" content="A. PendahuluanPada kesempatan ini saya akan memposting salah satu fitur yang ada di firewall yaitu layer 7 protocol.
+B. PengertianProtokol Layer7 adalah metode untuk mencari pola dalam ICMP / TCP / UDP stream, atau istilah lainnya regex pattern.&nbsp;Cara kerja L7 adalah mencocokan (mathcer) 10 paket koneksi pertama atau 2KB koneksi pertama dan mencari pola/pattern data yang sesuai dengan yang tersedia. Jika pola ini tidak ditemukan dalam data yang tersedia, matcher tidak memeriksa lebih lanjut.">
+
+<meta property="og:title" content="Memblokir situs dengan layer 7 protocol" />
+<meta property="og:description" content="A. PendahuluanPada kesempatan ini saya akan memposting salah satu fitur yang ada di firewall yaitu layer 7 protocol.
+B. PengertianProtokol Layer7 adalah metode untuk mencari pola dalam ICMP / TCP / UDP stream, atau istilah lainnya regex pattern.&nbsp;Cara kerja L7 adalah mencocokan (mathcer) 10 paket koneksi pertama atau 2KB koneksi pertama dan mencari pola/pattern data yang sesuai dengan yang tersedia. Jika pola ini tidak ditemukan dalam data yang tersedia, matcher tidak memeriksa lebih lanjut." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://icarrr.github.io/posts/memblokir-situs-dengan-layer-7-protocol/" /><meta property="article:published_time" content="2017-09-04T14:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2017-09-04T14:00:00&#43;00:00"/>
+
+
+<title>
+
+
+     Memblokir situs dengan layer 7 protocol 
+
+</title>
+<link rel="canonical" href="https://icarrr.github.io/posts/memblokir-situs-dengan-layer-7-protocol/">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:500">
+
+
+
+    
+    <link rel="stylesheet" href="https://icarrr.github.io/css/reset.css?t=2018-12-04%2003%3a11%3a17.909196742%20%2b0700%20WIB%20m%3d%2b0.295910518">
+    <link rel="stylesheet" href="https://icarrr.github.io/css/pygments.css?t=2018-12-04%2003%3a11%3a17.909196742%20%2b0700%20WIB%20m%3d%2b0.295910518">
+    <link rel="stylesheet" href="https://icarrr.github.io/css/main.css?t=2018-12-04%2003%3a11%3a17.909196742%20%2b0700%20WIB%20m%3d%2b0.295910518">
+    
+        <link rel="stylesheet" href="https://icarrr.github.io/css/override.css?t=2018-12-04%2003%3a11%3a17.909196742%20%2b0700%20WIB%20m%3d%2b0.295910518">
+    
+
+
+
+
+<link rel="shortcut icon"
+
+    href="https://icarrr.github.io/img/leaf.ico"
+
+>
+
+
+
+
+
+
+
+
+</head>
+
+
+<body lang="en">
+
+<section class="header">
+    <div class="container">
+        <div class="content">
+            
+                
+                
+                
+                
+                
+                    
+                
+                
+                <a href="https://icarrr.github.io/"><img class="avatar" src="https://icarrr.github.io/img/profil.png" srcset="https://icarrr.github.io/img/profil.png 1x"></a>
+            
+            <a href="https://icarrr.github.io/"><div class="name">Faizar Septiawan</div></a>
+            
+              <h3 class="self-intro">Paling bangga menjadi orang gila karena punya prinsip “Sekali Gila, Tetap Gila Yang Penting ber-Komitmen, Konsisten &amp; Kontinu.</h3>
+            
+            <nav>
+                <ul>
+                    
+                        <li class="nav-posts"><a href="https://icarrr.github.io/posts/"><span>Posts</span></a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<section class="icons">
+    <div class="container">
+        <div class="content">
+        
+            <a href="//github.com/icarrr" target="_blank" rel="noopener"><img class="icon" src="https://icarrr.github.io/img/github.svg" alt="github" /></a>
+        
+
+        
+
+        
+
+	
+
+        
+
+        
+
+        
+            <a href="//linkedin.com/in/faizar-septiawan-0a282b142" target="_blank" rel="noopener"><img class="icon" src="https://icarrr.github.io/img/linkedin.svg" alt="linkedin" /></a>
+        
+
+        
+
+        
+            <a href="//t.me/siBunglonGanteng" target="_blank" rel="noopener"><img class="icon" src="https://icarrr.github.io/img/telegram.svg" alt="telegram" /></a>
+        
+
+        
+            <a href="//instagram.com/sibunglon.ganteng" target="_blank" rel="noopener"><img class="icon" src="https://icarrr.github.io/img/instagram.svg" alt="instagram" /></a>
+        
+
+        
+
+        
+
+        
+            <a href="mailto:icar@sibunglonlab.com"><img class="icon" src="https://icarrr.github.io/img/email.svg" alt="email" /></a>
+        
+
+        
+
+        
+        </div>
+    </div>
+</section>
+
+<section class="main">
+    <div class="container">
+        <div class="content">
+            <div class="page-heading">
+
+    Memblokir situs dengan layer 7 protocol
+
+</div>
+
+            <div class="markdown">
+                <div style="text-align: justify;"><strong><span style="font-size: large;">A. Pendahuluan</span></strong></div><span style="text-align: justify;">Pada kesempatan ini saya akan memposting salah satu fitur yang ada di firewall yaitu layer 7 protocol.</span><br /><br /><div style="text-align: justify;"><strong><span style="font-size: large;">B. Pengertian</span></strong></div><span style="text-align: justify;">Protokol Layer7 adalah metode untuk mencari pola dalam ICMP / TCP / UDP stream, atau istilah lainnya regex pattern.&nbsp;</span><span style="text-align: justify;">Cara kerja L7 adalah mencocokan (mathcer) 10 paket koneksi pertama atau 2KB koneksi pertama dan mencari pola/pattern data yang sesuai dengan yang tersedia. Jika pola ini tidak ditemukan dalam data yang tersedia, matcher tidak memeriksa lebih lanjut. Dan akan dianggap unknown connections. Anda harus mempertimbangkan bahwa banyak koneksi secara signifikan akan meningkatkan penggunaan memori pada RB maupun PC Router anda. Untuk menghindari itu tambahkan regular firewall matchers (pattern) untuk mengurangi jumlah data yang dikirimkan ke layer-7 filter.&nbsp;</span><span style="text-align: justify;">Layer7 matcher harus melihat kedua arah lalu lintas (masuk dan keluar). Untuk memenuhi persyaratan ini rule l7&nbsp; harus diatur dalam chain Forward. Jika rule pada chain input/prerouting maka aturan yang sama harus diatur juga dalam chain output/postrouting , jika tidak maka data mungkin dianggap tidak lengkap sehingga pola/pattern dianggap tidak benar /cocok.</span><br /><br /><div style="text-align: justify;"><strong><span style="font-size: large;">C. Latar belakang</span></strong></div><span style="text-align: justify;">Ingin menambah pengetahuan</span><br /><br /><div style="text-align: justify;"><strong><span style="font-size: large;">D. Tujuan</span></strong></div><span style="text-align: justify;">Agar client tidak dapat membuka situs yang telah diblokir</span><br /><br /><div style="text-align: justify;"><strong><span style="font-size: large;">E. Hasil yang diharapkan</span></strong></div><span style="text-align: justify;">Dapat mengikuti tahapan dengan baik dan benar</span><br /><br /><div style="text-align: justify;"><strong><span style="font-size: large;">F. Alat dan bahan</span></strong></div><ol style="text-align: justify;"><li>Mikrotik</li><li>koneksi internet</li><li>laptop/pc</li></ol><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><strong><span style="font-size: large;">G. Jangka waktu pelaksanaan</span></strong></div><br /><div style="text-align: justify;">Waktu yang dibutuhkan sekitar 5-10 menit</div><br /><div style="text-align: justify;"><strong><span style="font-size: large;">H. Langkah kerja</span></strong></div><div style="text-align: justify;">1. Buka browser lalu buka situs yang akan di blokir, pastikan situs itu bisa terbuka</div><div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-iPNQbyJPKiA/W497r4GbecI/AAAAAAAAEI4/Gf-C5HpCy5Y4Tt-yUDjMCLINo618nv6OwCEwYBhgL/s1600/Screenshot_0.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="718" data-original-width="1365" height="168" src="https://2.bp.blogspot.com/-iPNQbyJPKiA/W497r4GbecI/AAAAAAAAEI4/Gf-C5HpCy5Y4Tt-yUDjMCLINo618nv6OwCEwYBhgL/s320/Screenshot_0.png" title="" width="320" /></a></div><br /><div style="text-align: justify;">2. Hubungkan mikroTik dengan perangkat &gt; buka winbox &gt; login untuk konfigurasi mikroTik</div><br /><div style="text-align: justify;">3. Buka IP &gt;Firewall &gt; layer 7 protocols &gt; add (+)</div><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-YanKvMEmnNA/W498mPfq6eI/AAAAAAAAEJA/bnK5ySFMPioKJp_tDm6G5V-u00KdhpeIwCLcBGAs/s1600/Screenshot_1.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="685" data-original-width="1252" height="175" src="https://1.bp.blogspot.com/-YanKvMEmnNA/W498mPfq6eI/AAAAAAAAEJA/bnK5ySFMPioKJp_tDm6G5V-u00KdhpeIwCLcBGAs/s320/Screenshot_1.png" title="" width="320" /></a></div><br /><div style="text-align: justify;">4. Berikan nama agar dapat mempermudah membedakan di tahap selanjutnya &gt; tambahkan script Regexp untuk situs yang akan diblokir. Misal memblokir situs “detik.com” &gt; apply &gt; ok</div><br /><div style="text-align: justify;">Script :</div><br /><div style="text-align: justify;">“^.*(detik.com)*$”</div><br /><div style="text-align: justify;">hints : text dalam kurung itu diganti sesuai situs yang akan di blokir</div><div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-mbPEov8hn8I/W498-1SPDYI/AAAAAAAAEJI/43QmYHFhqCkFRONjrPbyLuoeDbsPHrJ1ACLcBGAs/s1600/Screenshot_3.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="337" data-original-width="625" height="172" src="https://2.bp.blogspot.com/-mbPEov8hn8I/W498-1SPDYI/AAAAAAAAEJI/43QmYHFhqCkFRONjrPbyLuoeDbsPHrJ1ACLcBGAs/s320/Screenshot_3.png" title="" width="320" /></a></div><br /><div style="text-align: justify;">5. Lalu pindah ke tab filter rules</div><div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-RxZPVMIEju8/W49-LSEAa4I/AAAAAAAAEJk/ABR9SUOS9R49_lrUDJ7jrwO1Dn_aakt-QCLcBGAs/s1600/Screenshot_4.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="341" data-original-width="627" height="174" src="https://3.bp.blogspot.com/-RxZPVMIEju8/W49-LSEAa4I/AAAAAAAAEJk/ABR9SUOS9R49_lrUDJ7jrwO1Dn_aakt-QCLcBGAs/s320/Screenshot_4.png" title="" width="320" /></a></div><br /><div style="text-align: justify;">6. Klik add (+) dengan konfigurasi:</div><div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/-lHwLEprObVc/W49-Q7FutlI/AAAAAAAAEJo/P5qGUZFEC64dfYdoCbSc17q8JdFCr0JQACLcBGAs/s1600/Screenshot_5.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="339" data-original-width="625" height="173" src="https://4.bp.blogspot.com/-lHwLEprObVc/W49-Q7FutlI/AAAAAAAAEJo/P5qGUZFEC64dfYdoCbSc17q8JdFCr0JQACLcBGAs/s320/Screenshot_5.png" width="320" /></a></div><br /><div style="text-align: justify;">General &gt; chain = forward</div><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-Jys_a46WuDE/W49-WDoy7DI/AAAAAAAAEJs/a5RoJQq9uWgRsv1KRaMq6ILtf1vnfUkMwCLcBGAs/s1600/Screenshot_6.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="698" data-original-width="392" height="320" src="https://1.bp.blogspot.com/-Jys_a46WuDE/W49-WDoy7DI/AAAAAAAAEJs/a5RoJQq9uWgRsv1KRaMq6ILtf1vnfUkMwCLcBGAs/s320/Screenshot_6.png" title="" width="179" /></a></div><br /><div style="text-align: justify;">Advanced &gt; Layer7 protocols = detik (sesuai dengan nama yang telah diset pada konfigurasi layer7 protocols sebelumnya)</div><div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-ToTiGfaYGqk/W49-bHJAJNI/AAAAAAAAEJw/FKMY38vKl8UVBfXW39WqR51541DpttnRQCLcBGAs/s1600/Screenshot_7.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="697" data-original-width="393" height="320" src="https://3.bp.blogspot.com/-ToTiGfaYGqk/W49-bHJAJNI/AAAAAAAAEJw/FKMY38vKl8UVBfXW39WqR51541DpttnRQCLcBGAs/s320/Screenshot_7.png" title="" width="180" /></a></div><br /><div style="text-align: justify;">Action &gt; action = drop</div><div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-rL8UKo4R8Go/W49-g5hpo7I/AAAAAAAAEJ4/b50p9lce80AGSaVxixZZj_G4N9x4j3drQCLcBGAs/s1600/Screenshot_8.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="698" data-original-width="393" height="320" src="https://3.bp.blogspot.com/-rL8UKo4R8Go/W49-g5hpo7I/AAAAAAAAEJ4/b50p9lce80AGSaVxixZZj_G4N9x4j3drQCLcBGAs/s320/Screenshot_8.png" title="" width="180" /></a></div><br /><div style="text-align: justify;">klik apply &gt; ok</div><br /><div style="text-align: justify;">7. Kembali ke browser dan coba buka lagi situs yang sebelumnya ingin diblokir dan situs itupun sekarang tidak bisa dibuka lagi dan hanya meload/berputar terus.</div><div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-_Jl4sl_ov6s/W49-twcj7-I/AAAAAAAAEKA/CcchxYr2KI0DB-QlIdVAL9oQUITm5VmMQCLcBGAs/s1600/Screenshot_10.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="748" data-original-width="1365" height="175" src="https://2.bp.blogspot.com/-_Jl4sl_ov6s/W49-twcj7-I/AAAAAAAAEKA/CcchxYr2KI0DB-QlIdVAL9oQUITm5VmMQCLcBGAs/s320/Screenshot_10.png" title="" width="320" /></a></div><br /><div style="text-align: justify;"><strong><span style="font-size: large;">I. Hasil yang didapatkan</span></strong></div><span style="text-align: justify;">Dapat memblokir situs agar si client tidak dapat mengaksesnya</span><br /><br /><div style="text-align: justify;"><strong><span style="font-size: large;">J. Temuan masalah</span></strong></div><div style="text-align: justify;">Tidak ditemukan permasalah pada praktek ini</div><br /><div style="text-align: justify;"><strong><span style="font-size: large;">K. Kesimpulan</span></strong></div><div style="text-align: justify;">Dengan fitur ini, kita dapat memblokir situs yang paling banyak digunakan terutama untuk keperluan kantor sehingga para pegawai kemungkinan dapat fokus ke kerjaannya.</div><br /><div style="text-align: justify;"><strong><span style="font-size: large;">L. Referensi</span></strong></div><div style="text-align: justify;"><a href="https://mikrotikindo.blogspot.co.id/2013/12/cara-memblokir-website-facebook-layer7-mikrotik.html">MikroTik indo</a></div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-110194945-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+  
+
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+
+
+
+
+
+</body>
+</html>
+

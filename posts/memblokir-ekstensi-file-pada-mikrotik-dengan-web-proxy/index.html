@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<meta name="author" content="Faizar Septiawan">
+<meta name="description" content="A. PendahuluanPada kesempatan ini, yang saya posting tentang mirkotik eh mikrotik tepatnya memproxy ekstensi file tertentu agar tidak bisa diakses oleh client.
+
+B. PengertianSecara umum arti dari proxy adalah sebuah komputer server atau program komputer yang dapat bertindak sebagai komputer lainnya untuk melakukan request terhadap content dari Internet atau intranet. Dengan kata lain proxy merupakan sebuah media keamanan bagi akses jaringan internet kita.&nbsp;Terdapat beberapa macam tipe proxy, diantaranya SSL Proxy, Web Proxy, Intercepting Proxy, Reverse Proxy, dll.">
+
+<meta property="og:title" content="Memblokir ekstensi file pada mikroTik dengan web proxy" />
+<meta property="og:description" content="A. PendahuluanPada kesempatan ini, yang saya posting tentang mirkotik eh mikrotik tepatnya memproxy ekstensi file tertentu agar tidak bisa diakses oleh client.
+
+B. PengertianSecara umum arti dari proxy adalah sebuah komputer server atau program komputer yang dapat bertindak sebagai komputer lainnya untuk melakukan request terhadap content dari Internet atau intranet. Dengan kata lain proxy merupakan sebuah media keamanan bagi akses jaringan internet kita.&nbsp;Terdapat beberapa macam tipe proxy, diantaranya SSL Proxy, Web Proxy, Intercepting Proxy, Reverse Proxy, dll." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://icarrr.github.io/posts/memblokir-ekstensi-file-pada-mikrotik-dengan-web-proxy/" /><meta property="article:published_time" content="2017-09-05T13:02:00&#43;00:00"/>
+<meta property="article:modified_time" content="2017-09-05T13:02:00&#43;00:00"/>
+
+
+<title>
+
+
+     Memblokir ekstensi file pada mikroTik dengan web proxy 
+
+</title>
+<link rel="canonical" href="https://icarrr.github.io/posts/memblokir-ekstensi-file-pada-mikrotik-dengan-web-proxy/">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:500">
+
+
+
+    
+    <link rel="stylesheet" href="https://icarrr.github.io/css/reset.css?t=2018-12-04%2003%3a11%3a17.908578581%20%2b0700%20WIB%20m%3d%2b0.295292278">
+    <link rel="stylesheet" href="https://icarrr.github.io/css/pygments.css?t=2018-12-04%2003%3a11%3a17.908578581%20%2b0700%20WIB%20m%3d%2b0.295292278">
+    <link rel="stylesheet" href="https://icarrr.github.io/css/main.css?t=2018-12-04%2003%3a11%3a17.908578581%20%2b0700%20WIB%20m%3d%2b0.295292278">
+    
+        <link rel="stylesheet" href="https://icarrr.github.io/css/override.css?t=2018-12-04%2003%3a11%3a17.908578581%20%2b0700%20WIB%20m%3d%2b0.295292278">
+    
+
+
+
+
+<link rel="shortcut icon"
+
+    href="https://icarrr.github.io/img/leaf.ico"
+
+>
+
+
+
+
+
+
+
+
+</head>
+
+
+<body lang="en">
+
+<section class="header">
+    <div class="container">
+        <div class="content">
+            
+                
+                
+                
+                
+                
+                    
+                
+                
+                <a href="https://icarrr.github.io/"><img class="avatar" src="https://icarrr.github.io/img/profil.png" srcset="https://icarrr.github.io/img/profil.png 1x"></a>
+            
+            <a href="https://icarrr.github.io/"><div class="name">Faizar Septiawan</div></a>
+            
+              <h3 class="self-intro">Paling bangga menjadi orang gila karena punya prinsip “Sekali Gila, Tetap Gila Yang Penting ber-Komitmen, Konsisten &amp; Kontinu.</h3>
+            
+            <nav>
+                <ul>
+                    
+                        <li class="nav-posts"><a href="https://icarrr.github.io/posts/"><span>Posts</span></a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<section class="icons">
+    <div class="container">
+        <div class="content">
+        
+            <a href="//github.com/icarrr" target="_blank" rel="noopener"><img class="icon" src="https://icarrr.github.io/img/github.svg" alt="github" /></a>
+        
+
+        
+
+        
+
+	
+
+        
+
+        
+
+        
+            <a href="//linkedin.com/in/faizar-septiawan-0a282b142" target="_blank" rel="noopener"><img class="icon" src="https://icarrr.github.io/img/linkedin.svg" alt="linkedin" /></a>
+        
+
+        
+
+        
+            <a href="//t.me/siBunglonGanteng" target="_blank" rel="noopener"><img class="icon" src="https://icarrr.github.io/img/telegram.svg" alt="telegram" /></a>
+        
+
+        
+            <a href="//instagram.com/sibunglon.ganteng" target="_blank" rel="noopener"><img class="icon" src="https://icarrr.github.io/img/instagram.svg" alt="instagram" /></a>
+        
+
+        
+
+        
+
+        
+            <a href="mailto:icar@sibunglonlab.com"><img class="icon" src="https://icarrr.github.io/img/email.svg" alt="email" /></a>
+        
+
+        
+
+        
+        </div>
+    </div>
+</section>
+
+<section class="main">
+    <div class="container">
+        <div class="content">
+            <div class="page-heading">
+
+    Memblokir ekstensi file pada mikroTik dengan web proxy
+
+</div>
+
+            <div class="markdown">
+                <p><div style="text-align: justify;"><strong><span style="font-size: large;">A. Pendahuluan</span></strong></div><span style="text-align: justify;">Pada kesempatan ini, yang saya posting tentang mirkotik eh mikrotik tepatnya memproxy ekstensi file tertentu agar tidak bisa diakses oleh client.</span><br /><div style="text-align: justify;"><strong><br /></strong></div><div style="text-align: justify;"><strong><span style="font-size: large;">B. Pengertian</span></strong></div><span style="text-align: justify;">Secara umum arti dari proxy adalah sebuah komputer server atau program komputer yang dapat bertindak sebagai komputer lainnya untuk melakukan request terhadap content dari Internet atau intranet. Dengan kata lain proxy merupakan sebuah media keamanan bagi akses jaringan internet kita.&nbsp;Terdapat beberapa macam tipe proxy, diantaranya SSL Proxy, Web Proxy, Intercepting Proxy, Reverse Proxy, dll. Setiap tipe proxy memiliki fungsi masing-masing. Nah, kali ini kita akan membahas salah satu proxy yang merupakan fitur dari RouterOS MikroTik, yaitu&nbsp;</span><strong style="text-align: justify;">Web Proxy</strong><span style="text-align: justify;">. Selain bisa melakukan blocking berdasarkan nama domain/URL , web-proxy Mikrotik juga dapat melakukan pemblokiran berdasarkan extention file yang ada pada sebuah halaman web.</span><br /><div style="text-align: justify;"><strong><br /></strong></div><div style="text-align: justify;"><strong><span style="font-size: large;">C. Latar belakang</span></strong></div><span style="text-align: justify;">Ada beberapa jenis file yang tidak boleh dibuka oleh client pada situasi tertentu</span><br /><div style="text-align: justify;"><strong><br /></strong></div><div style="text-align: justify;"><strong><span style="font-size: large;">D. Tujuan</span></strong></div><span style="text-align: justify;">Dapat memaksimalkan situasi tertentu karena file yang&nbsp; sering dibuka telah diproxy</span><br /><div style="text-align: justify;"><strong><br /></strong></div><div style="text-align: justify;"><strong><span style="font-size: large;">E. Hasil yang diharapkan</span></strong></div><span style="text-align: justify;">Dapat memahami konsep dan dapat mempraktekkannya disituasi tertentu</span><br /><div style="text-align: justify;"><strong><br /></strong></div><div style="text-align: justify;"><strong><span style="font-size: large;">F. Alat dan bahan</span></strong></div><ol><li style="text-align: justify;">Mikrotik</li><li style="text-align: justify;">Akses internet</li><li style="text-align: justify;">Laptop/pc</li></ol><br /><strong><span style="font-size: large;">G. Jangka waktu pelaksanaan</span></strong><br />Waktu yang dibutuhkan 10-30 menit<br /><strong><br /></strong><strong><span style="font-size: large;">H. Langkah kerja</span></strong><br />1. Buka winbox dan login ke mikrotik untuk mengkonfigurasi mikrotik<br /><br />2. Aktifkan fitur web proxy mikrotik. Klik IP &gt; Web Proxy<br /><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-iHx3j-CcCH0/W4-ANFoS6II/AAAAAAAAEKQ/kgwgFz2SAjQZS9YfPko-cn71IvpveK81ACLcBGAs/s1600/Screenshot_1.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="527" data-original-width="948" height="177" src="https://1.bp.blogspot.com/-iHx3j-CcCH0/W4-ANFoS6II/AAAAAAAAEKQ/kgwgFz2SAjQZS9YfPko-cn71IvpveK81ACLcBGAs/s320/Screenshot_1.png" title="" width="320" /></a></div><br />3. Klik checkbox pada kolom yang diberi garis merah seperti gambar berikut, kemudian klik Access dan add (tanda + pada tab) untuk menambahkan list ekstensi yang akan diproxy<br /><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-25vjvkp_T7c/W4-ATEoLeAI/AAAAAAAAEKU/Wt27KA9VeT0BbkNd4GyexHhndg-SK1EAgCLcBGAs/s1600/Screenshot_2.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="567" data-original-width="793" height="228" src="https://1.bp.blogspot.com/-25vjvkp_T7c/W4-ATEoLeAI/AAAAAAAAEKU/Wt27KA9VeT0BbkNd4GyexHhndg-SK1EAgCLcBGAs/s320/Screenshot_2.png" title="" width="320" /></a></div><br />4. Pada proxy rule, konfigurasi seperti berikut<br /><ol><li>Path = isi ekstensi file diawali tanda (*)</li><li>Action = Deny</li></ol><div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/-mKCnmRm-aZA/W4-ApYCCmaI/AAAAAAAAEKo/JjxuilzMZtIN9EpAryJ0d5v5-tYLJIegwCLcBGAs/s1600/Screenshot_3.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="323" data-original-width="312" height="320" src="https://4.bp.blogspot.com/-mKCnmRm-aZA/W4-ApYCCmaI/AAAAAAAAEKo/JjxuilzMZtIN9EpAryJ0d5v5-tYLJIegwCLcBGAs/s320/Screenshot_3.png" title="" width="309" /></a></div><br />5. Kembali ke web proxy setting, pastikan di langkah 3 telah diikuti lalu klik Apply &amp; Ok<br /><div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-IprINloqLG0/W4-A3Pa5oDI/AAAAAAAAEKs/-2bLZbcLyFAsH3NBnUWDF8-KYJgttcVgACLcBGAs/s1600/Screenshot_4.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="559" data-original-width="422" height="320" src="https://2.bp.blogspot.com/-IprINloqLG0/W4-A3Pa5oDI/AAAAAAAAEKs/-2bLZbcLyFAsH3NBnUWDF8-KYJgttcVgACLcBGAs/s320/Screenshot_4.png" title="" width="241" /></a></div><br />6. Tambahkan firewall nat untuk web proxy. Klik IP &gt; Firewall &gt; NAT &gt; tambahkan (Tanda +)<br /><div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-2qKj54mUlEI/W4-A8t6lxnI/AAAAAAAAEK0/qlM7mdzhC1Y3liqcbl9mn2dnl3ce0aJhwCLcBGAs/s1600/Screenshot_5.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="529" data-original-width="940" height="180" src="https://3.bp.blogspot.com/-2qKj54mUlEI/W4-A8t6lxnI/AAAAAAAAEK0/qlM7mdzhC1Y3liqcbl9mn2dnl3ce0aJhwCLcBGAs/s320/Screenshot_5.png" width="320" /></a></div><br />7. Konfigurasi NAT Rule<br /><ol><li>General</li></ol><ul><li>Chain = dstnat</li><li>Protocol = 6(tcp)</li><li>Dst.Port = 80</li><li>In.Interface = Jalur koneksi ke client</li></ul><div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-qsnamlFVrko/W4-BFFs6VTI/AAAAAAAAEK4/FP7DhEzibSQ6gtNgCaPwGEvof3yL19imwCLcBGAs/s1600/Screenshot_6.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="587" data-original-width="376" height="320" src="https://3.bp.blogspot.com/-qsnamlFVrko/W4-BFFs6VTI/AAAAAAAAEK4/FP7DhEzibSQ6gtNgCaPwGEvof3yL19imwCLcBGAs/s320/Screenshot_6.png" title="" width="204" /></a></div><br /><ol start="2"><li>Action</li></ol><ul><li>Action = Redirect</li><li>To ports = 8080</li></ul><div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-R79ItvPd3Fg/W4-BM0QmFqI/AAAAAAAAELE/wC-q0PLoJhYtB8XsK5T15RpCvCE_i3RIQCLcBGAs/s1600/Screenshot_7.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="594" data-original-width="378" height="320" src="https://3.bp.blogspot.com/-R79ItvPd3Fg/W4-BM0QmFqI/AAAAAAAAELE/wC-q0PLoJhYtB8XsK5T15RpCvCE_i3RIQCLcBGAs/s320/Screenshot_7.png" title="" width="203" /></a></div><br />8. Pada client, buka web browser kemudian coba buka/download file yang berekstensi sesuai yang proxy, jika hasilnya seperti berikut maka proxy yang diset berhasil<br /><div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-LRCmZbr_kIo/W4-BbBOQ_zI/AAAAAAAAELM/5H7hR8Sve8Y5H-QQTHDx2JG_6B_GJcV9QCLcBGAs/s1600/Screenshot_8.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="665" data-original-width="1363" height="156" src="https://3.bp.blogspot.com/-LRCmZbr_kIo/W4-BbBOQ_zI/AAAAAAAAELM/5H7hR8Sve8Y5H-QQTHDx2JG_6B_GJcV9QCLcBGAs/s320/Screenshot_8.png" title="" width="320" /></a></div><br /><strong><span style="font-size: large;">I. Hasil yang didapatkan</span></strong><br />Dapat melakukan dan memahami konsepnya<br /><strong><br /></strong><strong><span style="font-size: large;">J. Temuan masalah</span></strong><br />Masalah yang dihadapi yaitu kesalahan penulisan ekstensi file itu karena kurangnya ketelitian<br /><strong><br /></strong><strong><span style="font-size: large;">K. Kesimpulan</span></strong><br />Perhatikan dan telitilah terhadap konfigurasi yang dibuat<br /><strong><br /></strong><strong><span style="font-size: large;">L. Referensi</span></strong><br /><a href="http://www.mikrotik.co.id/">Mikrotik Indonesia</a></p>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-110194945-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+  
+
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+
+
+
+
+
+</body>
+</html>
+

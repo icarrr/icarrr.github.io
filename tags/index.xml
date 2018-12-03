@@ -1,14 +1,132 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on siBunglon</title>
-    <link>icarrr.github.io/tags/</link>
-    <description>Recent content in Tags on siBunglon</description>
+    <title>Tags on siBunglonLab&#39;s</title>
+    <link>https://icarrr.github.io/tags/</link>
+    <description>Recent content in Tags on siBunglonLab&#39;s</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 01 Dec 2018 15:14:00 +0000</lastBuildDate>
     
-	<atom:link href="icarrr.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://icarrr.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ayo Belajar Linux</title>
+      <link>https://icarrr.github.io/tags/ayo-belajar-linux/</link>
+      <pubDate>Sat, 01 Dec 2018 15:14:00 +0000</pubDate>
+      
+      <guid>https://icarrr.github.io/tags/ayo-belajar-linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bestpath</title>
+      <link>https://icarrr.github.io/tags/bestpath/</link>
+      <pubDate>Sat, 07 Oct 2017 16:49:00 +0000</pubDate>
+      
+      <guid>https://icarrr.github.io/tags/bestpath/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blc Telkom Klaten</title>
+      <link>https://icarrr.github.io/tags/blc-telkom-klaten/</link>
+      <pubDate>Sat, 01 Dec 2018 15:14:00 +0000</pubDate>
+      
+      <guid>https://icarrr.github.io/tags/blc-telkom-klaten/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cisco</title>
+      <link>https://icarrr.github.io/tags/cisco/</link>
+      <pubDate>Sat, 07 Oct 2017 16:49:00 +0000</pubDate>
+      
+      <guid>https://icarrr.github.io/tags/cisco/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kegiatan</title>
+      <link>https://icarrr.github.io/tags/kegiatan/</link>
+      <pubDate>Tue, 17 Oct 2017 11:01:00 +0000</pubDate>
+      
+      <guid>https://icarrr.github.io/tags/kegiatan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kpli Klaten</title>
+      <link>https://icarrr.github.io/tags/kpli-klaten/</link>
+      <pubDate>Sat, 01 Dec 2018 15:14:00 +0000</pubDate>
+      
+      <guid>https://icarrr.github.io/tags/kpli-klaten/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lain Lain</title>
+      <link>https://icarrr.github.io/tags/lain-lain/</link>
+      <pubDate>Sat, 01 Dec 2018 15:14:00 +0000</pubDate>
+      
+      <guid>https://icarrr.github.io/tags/lain-lain/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://icarrr.github.io/tags/linux/</link>
+      <pubDate>Sat, 01 Dec 2018 15:14:00 +0000</pubDate>
+      
+      <guid>https://icarrr.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux Indonesia</title>
+      <link>https://icarrr.github.io/tags/linux-indonesia/</link>
+      <pubDate>Sat, 01 Dec 2018 15:14:00 +0000</pubDate>
+      
+      <guid>https://icarrr.github.io/tags/linux-indonesia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mikrotik</title>
+      <link>https://icarrr.github.io/tags/mikrotik/</link>
+      <pubDate>Wed, 11 Oct 2017 12:38:00 +0000</pubDate>
+      
+      <guid>https://icarrr.github.io/tags/mikrotik/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mikrotik Indonesia</title>
+      <link>https://icarrr.github.io/tags/mikrotik-indonesia/</link>
+      <pubDate>Wed, 11 Oct 2017 12:38:00 +0000</pubDate>
+      
+      <guid>https://icarrr.github.io/tags/mikrotik-indonesia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows</title>
+      <link>https://icarrr.github.io/tags/windows/</link>
+      <pubDate>Sun, 28 Oct 2018 21:20:00 +0000</pubDate>
+      
+      <guid>https://icarrr.github.io/tags/windows/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows Indonesia</title>
+      <link>https://icarrr.github.io/tags/windows-indonesia/</link>
+      <pubDate>Sun, 28 Oct 2018 21:20:00 +0000</pubDate>
+      
+      <guid>https://icarrr.github.io/tags/windows-indonesia/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

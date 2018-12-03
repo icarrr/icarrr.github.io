@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<meta name="author" content="Faizar Septiawan">
+<meta name="description" content="A.PENGERTIAN
+Routing Static adalah jenis routing yang dilakukan seorang admin dengan memasukan network network tertentu secara manual.
+Ciri ciri routing static adalah :Jalur pada suatu jaringan spesifik ditentukan oleh seorang AdministratorPengisian tabel routing / penambahan network baru diisi secara manualBiasanya digunakan untuk jaringan berskala kecilAda beberapa parameter yang ada pada routing static ini, yaituDestination, adalah ip network tujuan, untuk default routing biasanya memakai 0.0.0.0 untuk semua jaringanGateway, adalah datagram yang dapat dicapai pada satu jaringanPref.">
+
+<meta property="og:title" content="Konfigurasi static routing" />
+<meta property="og:description" content="A.PENGERTIAN
+Routing Static adalah jenis routing yang dilakukan seorang admin dengan memasukan network network tertentu secara manual.
+Ciri ciri routing static adalah :Jalur pada suatu jaringan spesifik ditentukan oleh seorang AdministratorPengisian tabel routing / penambahan network baru diisi secara manualBiasanya digunakan untuk jaringan berskala kecilAda beberapa parameter yang ada pada routing static ini, yaituDestination, adalah ip network tujuan, untuk default routing biasanya memakai 0.0.0.0 untuk semua jaringanGateway, adalah datagram yang dapat dicapai pada satu jaringanPref." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://icarrr.github.io/posts/konfigurasi-static-routing/" /><meta property="article:published_time" content="2017-10-03T05:04:00&#43;00:00"/>
+<meta property="article:modified_time" content="2017-10-03T05:04:00&#43;00:00"/>
+
+
+<title>
+
+
+     Konfigurasi static routing 
+
+</title>
+<link rel="canonical" href="https://icarrr.github.io/posts/konfigurasi-static-routing/">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:500">
+
+
+
+    
+    <link rel="stylesheet" href="https://icarrr.github.io/css/reset.css?t=2018-12-04%2003%3a11%3a17.822420497%20%2b0700%20WIB%20m%3d%2b0.209134532">
+    <link rel="stylesheet" href="https://icarrr.github.io/css/pygments.css?t=2018-12-04%2003%3a11%3a17.822420497%20%2b0700%20WIB%20m%3d%2b0.209134532">
+    <link rel="stylesheet" href="https://icarrr.github.io/css/main.css?t=2018-12-04%2003%3a11%3a17.822420497%20%2b0700%20WIB%20m%3d%2b0.209134532">
+    
+        <link rel="stylesheet" href="https://icarrr.github.io/css/override.css?t=2018-12-04%2003%3a11%3a17.822420497%20%2b0700%20WIB%20m%3d%2b0.209134532">
+    
+
+
+
+
+<link rel="shortcut icon"
+
+    href="https://icarrr.github.io/img/leaf.ico"
+
+>
+
+
+
+
+
+
+
+
+</head>
+
+
+<body lang="en">
+
+<section class="header">
+    <div class="container">
+        <div class="content">
+            
+                
+                
+                
+                
+                
+                    
+                
+                
+                <a href="https://icarrr.github.io/"><img class="avatar" src="https://icarrr.github.io/img/profil.png" srcset="https://icarrr.github.io/img/profil.png 1x"></a>
+            
+            <a href="https://icarrr.github.io/"><div class="name">Faizar Septiawan</div></a>
+            
+              <h3 class="self-intro">Paling bangga menjadi orang gila karena punya prinsip “Sekali Gila, Tetap Gila Yang Penting ber-Komitmen, Konsisten &amp; Kontinu.</h3>
+            
+            <nav>
+                <ul>
+                    
+                        <li class="nav-posts"><a href="https://icarrr.github.io/posts/"><span>Posts</span></a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<section class="icons">
+    <div class="container">
+        <div class="content">
+        
+            <a href="//github.com/icarrr" target="_blank" rel="noopener"><img class="icon" src="https://icarrr.github.io/img/github.svg" alt="github" /></a>
+        
+
+        
+
+        
+
+	
+
+        
+
+        
+
+        
+            <a href="//linkedin.com/in/faizar-septiawan-0a282b142" target="_blank" rel="noopener"><img class="icon" src="https://icarrr.github.io/img/linkedin.svg" alt="linkedin" /></a>
+        
+
+        
+
+        
+            <a href="//t.me/siBunglonGanteng" target="_blank" rel="noopener"><img class="icon" src="https://icarrr.github.io/img/telegram.svg" alt="telegram" /></a>
+        
+
+        
+            <a href="//instagram.com/sibunglon.ganteng" target="_blank" rel="noopener"><img class="icon" src="https://icarrr.github.io/img/instagram.svg" alt="instagram" /></a>
+        
+
+        
+
+        
+
+        
+            <a href="mailto:icar@sibunglonlab.com"><img class="icon" src="https://icarrr.github.io/img/email.svg" alt="email" /></a>
+        
+
+        
+
+        
+        </div>
+    </div>
+</section>
+
+<section class="main">
+    <div class="container">
+        <div class="content">
+            <div class="page-heading">
+
+    Konfigurasi static routing
+
+</div>
+
+            <div class="markdown">
+                <div style="text-align: justify;"><b>A.PENGERTIAN</b><br />Routing Static adalah jenis routing yang dilakukan seorang admin dengan memasukan network network tertentu secara manual.<br />Ciri ciri routing static adalah :</div><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-b80lUVaLuCc/W6gOhM_jOrI/AAAAAAAAEjc/yUJ-xfONgXYtfBZube6Os3vdViA-ryR4ACLcBGAs/s1600/1.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="276" data-original-width="320" src="https://1.bp.blogspot.com/-b80lUVaLuCc/W6gOhM_jOrI/AAAAAAAAEjc/yUJ-xfONgXYtfBZube6Os3vdViA-ryR4ACLcBGAs/s1600/1.png" title="" /></a></div><div style="text-align: justify;"><br /></div><ul style="text-align: justify;"><li>Jalur pada suatu jaringan spesifik ditentukan oleh seorang Administrator</li><li>Pengisian tabel routing / penambahan network baru diisi secara manual</li><li>Biasanya digunakan untuk jaringan berskala kecil</li></ul><div style="text-align: justify;">Ada beberapa parameter yang ada pada routing static ini, yaitu</div><ol style="text-align: justify;"><li>Destination, adalah ip network tujuan, untuk default routing biasanya memakai 0.0.0.0 untuk semua jaringan</li><li>Gateway, adalah datagram yang dapat dicapai pada satu jaringan</li><li>Pref. Source, adalah alamat tujuan paket dan meninggalkan router</li></ol><div style="text-align: justify;"><b>B. LATAR BELAKANG</b><br />Mengimplementasikan konsep routing mikrotik ke cisco<b>&nbsp;</b></div><br /><b>C.&nbsp;</b><b>MAKSUD DAN TUJUAN</b><br />Ingin mengimplementasikanya di dunia kerja<br /><br /><b>D. ALAT DAN BAHAN</b><br /><b>&nbsp;-&nbsp;</b>Packet tracer<br /><b>&nbsp;-&nbsp;</b>Laptop<br /><br /><b>E. TAHAPAN PEKERJAAN&nbsp;&nbsp;</b><br />Pada tutorial ini, saya sudah membuat topology seperti dibawah ini, tapi saya hanya akan memberi tutorial untuk konfigurasi routing static, jadi untuk ip gateway pada masing masing jaringan sudah saya atur sebelum nya .<br /><div class="separator" style="text-align: justify;"><br /></div><div style="text-align: justify;">Keterangan :<br />Router Kiri (172.16.10.1) = Router0<br />Router Kanan ( 192.168.10.1) = Router1</div><ol style="text-align: justify;"><li>Pertama tama kita masuk ke CLI pada Router0 terlebih dahulu.</li><li>Lalu masukan IP Address untuk port serial 0/1/0 yang mengarah ke Router1</li></ol><blockquote class="tr_bq"><div>Router &gt; enable</div><div>Router # configure terminal</div><div>Router(config) # interface serial 0/1/0</div><div>Router(config-if) # no shutdown</div><div>Router(config-if) # ip address 2.2.2.1 255.255.255.252</div><div>Router(config-if) # exit</div></blockquote><div style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. Lalu pada Router 1, masukan IP Address pada port serial 0/1/0 yang mengarah ke Router0</div><blockquote class="tr_bq"><div>Router &gt; enable</div><div>Router # configure terminal</div><div>Router(config) # interface serial 0/1/0</div><div>Router(config-if) # no shutdown</div><div>Router(config-if) # ip address 2.2.2.2 255.255.255.252</div><div>Router(config-if) # exit</div></blockquote><div style="text-align: justify;">Sampai ini, kita baru mengkonfigurasi IP Address pada masing masing router, belum tahap routing. Mari kita lanjutakan ke tahapan routing.</div><br />1. Pada Router0, Konfigurasikan seperti ini,<br /><blockquote class="tr_bq">Router(config) # ip route 192.168.10.0 255.255.255.0 2.2.2.2</blockquote><div style="text-align: justify;">Maksud dari commend diatas adalah, kita mencari ip "network" 192.168.10.0 dengan netmask 255.255.255.0 melalui pintu dengann ip 2.2.2.2. Jadi 192.168.10.0&nbsp; 255.255.255.0 itu adalah ip network tujuan yang akan kita hubungkan. Nah dengan 2.2.2.2 adalah ip milik Router1.&nbsp; Jadi, konsep nya adalah kita memasukan ip network yang akan kita tuju dengan netmask nya, lalu terakhir masukan ip router selanjutnya , tidak peduli ada berapa router yang dipasang, yang penting kita hanyalah memasukan ip router selanjutnya .</div><br />2. Pada Router1, Konfigurasikan seperti ini,<br /><blockquote class="tr_bq">Router(config) # ip route 172.16.10.0 255.255.255.0 2.2.2.1</blockquote><div style="text-align: justify;">Nah, perhatikan sekarang saya memasukan 172.16.10.0 pada awalnya, kenapa? Karena tujuan dari Router1 adalah untuk menghubungkan jaringan milikna dengan ip network tersebut. dan pada akhir itu 2.2.2.1 bukan 2.2.2.2, kenapa ? Karena ip 2.2.2.2 adalah ip milik dia sendiri, dan ip 2.2.2.1 adalah ip milik Router sebelahnya, yaitu ip si Router0.</div><br />Nah, hanya seperti itu untuk konfigurasi Routing Static, untuk hasilnya pada masing masing jaringan, bisa berhubungan dengan jaringan yang lain, lihat hasil ping dibawah ini,<br /><br />Ini adalah contoh network 192.168.10.0/24 ping ke 172.16.10.0/24<br /><br /><div style="text-align: justify;">&nbsp;Dan dibawah ini adalah contoh network 172.16.10.0/24 ping ke 192.168.10.0/24</div><div style="text-align: justify;"><br /></div><div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-mRMT8OBKBvc/W6gPNBahrlI/AAAAAAAAEjs/i-kaE2q4uJUVym9eRrHXrJnWl7xj1e68wCLcBGAs/s1600/3.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="288" data-original-width="320" src="https://3.bp.blogspot.com/-mRMT8OBKBvc/W6gPNBahrlI/AAAAAAAAEjs/i-kaE2q4uJUVym9eRrHXrJnWl7xj1e68wCLcBGAs/s1600/3.png" title="" /></a></div><br />Referensi<br />ccnav6.com<br /><div><br /></div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-110194945-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+  
+
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+
+
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<meta name="author" content="Faizar Septiawan">
+<meta name="description" content="A. PENGERTIAN
+Konfigurasi Telnet
+Telnet (Telecommunication network) adalah sebuah protokol jaringan yang digunakan pada Internet atau Local Area Network untuk menyediakan fasilitas komunikasi berbasis teks interaksi dua arah yang menggunakan koneksi virtual terminal.
+B. LATAR BELAKANG
+Meremote switch dan router di packet tracer
+C. MAKSUD DAN TUJUAN
+Ingin mengimplementasikanya di dunia kerja dan mengulangi Materi yang diberi tentang ssh dan telnet
+D. TAHAPAN PEKERJAAN
+Berikut Topology Telnet :
+1.Pertama, masukkan default gateway yang terdapat pada Router, Disini saya Memberikan IP Address pada interface fastEthernet 0/0 adalah 192.">
+
+<meta property="og:title" content="Konfigurasi telnet dan ssh di cisco" />
+<meta property="og:description" content="A. PENGERTIAN
+Konfigurasi Telnet
+Telnet (Telecommunication network) adalah sebuah protokol jaringan yang digunakan pada Internet atau Local Area Network untuk menyediakan fasilitas komunikasi berbasis teks interaksi dua arah yang menggunakan koneksi virtual terminal.
+B. LATAR BELAKANG
+Meremote switch dan router di packet tracer
+C. MAKSUD DAN TUJUAN
+Ingin mengimplementasikanya di dunia kerja dan mengulangi Materi yang diberi tentang ssh dan telnet
+D. TAHAPAN PEKERJAAN
+Berikut Topology Telnet :
+1.Pertama, masukkan default gateway yang terdapat pada Router, Disini saya Memberikan IP Address pada interface fastEthernet 0/0 adalah 192." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://icarrr.github.io/posts/konfigurasi-telnet-dan-ssh-di-cisco/" /><meta property="article:published_time" content="2017-10-04T05:19:00&#43;00:00"/>
+<meta property="article:modified_time" content="2017-10-04T05:19:00&#43;00:00"/>
+
+
+<title>
+
+
+     Konfigurasi telnet dan ssh di cisco 
+
+</title>
+<link rel="canonical" href="https://icarrr.github.io/posts/konfigurasi-telnet-dan-ssh-di-cisco/">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:500">
+
+
+
+    
+    <link rel="stylesheet" href="https://icarrr.github.io/css/reset.css?t=2018-12-04%2003%3a11%3a17.794320038%20%2b0700%20WIB%20m%3d%2b0.181033714">
+    <link rel="stylesheet" href="https://icarrr.github.io/css/pygments.css?t=2018-12-04%2003%3a11%3a17.794320038%20%2b0700%20WIB%20m%3d%2b0.181033714">
+    <link rel="stylesheet" href="https://icarrr.github.io/css/main.css?t=2018-12-04%2003%3a11%3a17.794320038%20%2b0700%20WIB%20m%3d%2b0.181033714">
+    
+        <link rel="stylesheet" href="https://icarrr.github.io/css/override.css?t=2018-12-04%2003%3a11%3a17.794320038%20%2b0700%20WIB%20m%3d%2b0.181033714">
+    
+
+
+
+
+<link rel="shortcut icon"
+
+    href="https://icarrr.github.io/img/leaf.ico"
+
+>
+
+
+
+
+
+
+
+
+</head>
+
+
+<body lang="en">
+
+<section class="header">
+    <div class="container">
+        <div class="content">
+            
+                
+                
+                
+                
+                
+                    
+                
+                
+                <a href="https://icarrr.github.io/"><img class="avatar" src="https://icarrr.github.io/img/profil.png" srcset="https://icarrr.github.io/img/profil.png 1x"></a>
+            
+            <a href="https://icarrr.github.io/"><div class="name">Faizar Septiawan</div></a>
+            
+              <h3 class="self-intro">Paling bangga menjadi orang gila karena punya prinsip “Sekali Gila, Tetap Gila Yang Penting ber-Komitmen, Konsisten &amp; Kontinu.</h3>
+            
+            <nav>
+                <ul>
+                    
+                        <li class="nav-posts"><a href="https://icarrr.github.io/posts/"><span>Posts</span></a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<section class="icons">
+    <div class="container">
+        <div class="content">
+        
+            <a href="//github.com/icarrr" target="_blank" rel="noopener"><img class="icon" src="https://icarrr.github.io/img/github.svg" alt="github" /></a>
+        
+
+        
+
+        
+
+	
+
+        
+
+        
+
+        
+            <a href="//linkedin.com/in/faizar-septiawan-0a282b142" target="_blank" rel="noopener"><img class="icon" src="https://icarrr.github.io/img/linkedin.svg" alt="linkedin" /></a>
+        
+
+        
+
+        
+            <a href="//t.me/siBunglonGanteng" target="_blank" rel="noopener"><img class="icon" src="https://icarrr.github.io/img/telegram.svg" alt="telegram" /></a>
+        
+
+        
+            <a href="//instagram.com/sibunglon.ganteng" target="_blank" rel="noopener"><img class="icon" src="https://icarrr.github.io/img/instagram.svg" alt="instagram" /></a>
+        
+
+        
+
+        
+
+        
+            <a href="mailto:icar@sibunglonlab.com"><img class="icon" src="https://icarrr.github.io/img/email.svg" alt="email" /></a>
+        
+
+        
+
+        
+        </div>
+    </div>
+</section>
+
+<section class="main">
+    <div class="container">
+        <div class="content">
+            <div class="page-heading">
+
+    Konfigurasi telnet dan ssh di cisco
+
+</div>
+
+            <div class="markdown">
+                <div style="text-align: justify;"><b>A. PENGERTIAN</b><br /><b>Konfigurasi Telnet</b><br />Telnet (Telecommunication network) adalah sebuah protokol jaringan yang digunakan pada Internet atau Local Area Network untuk menyediakan fasilitas komunikasi berbasis teks interaksi dua arah yang menggunakan koneksi virtual terminal.</div><br /><b>B. LATAR BELAKANG</b><br />Meremote switch dan router di packet tracer<br /><br /><b>C. MAKSUD DAN TUJUAN</b><br />Ingin mengimplementasikanya di dunia kerja dan mengulangi Materi yang diberi tentang ssh dan telnet<br /><br /><b>D. TAHAPAN PEKERJAAN</b><br />Berikut Topology Telnet :<br /><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-vZODNOGM91I/W6gU5Pnc_vI/AAAAAAAAEj4/m3Ka9Ns5RWoIWMGoXwEtf9Nn3XbUVBZGQCLcBGAs/s1600/1.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="300" data-original-width="229" src="https://1.bp.blogspot.com/-vZODNOGM91I/W6gU5Pnc_vI/AAAAAAAAEj4/m3Ka9Ns5RWoIWMGoXwEtf9Nn3XbUVBZGQCLcBGAs/s1600/1.png" title="" /></a></div><div class="separator" style="text-align: justify;"><br /></div><div style="text-align: justify;">1.Pertama, masukkan default gateway yang terdapat pada Router, Disini saya Memberikan IP Address pada interface fastEthernet 0/0 adalah 192.168.32.1. lalu saya memberikan contoh password priveleged level (#) :&nbsp; okta</div><blockquote>Perintahnya adalah :<i><br />Router&gt;enable<br />Router#configure terminal<br />Router(config)#enable secret 1234<br />Router(config)#interface fastEthernet 0/0<br />Router(config-if)#ip address 192.168.32.1 255.255.255.0<br />Router(config-if)#no shutdown<br />Router(config-if)#exit<br />Router(config)#line vty 0 4<br />Router(config-line)#login local<br />Router(config-line)#exit<br />Router(config)#username okta password 1234<br />Router(config)#service password-encryption<br />Router(config)#exit</i></blockquote><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-SKn4YpBQ42s/W6gVBelgSkI/AAAAAAAAEj8/OsF0W9rwv1Aw4EZz7vC0EQ9ARofqmvDmACLcBGAs/s1600/2.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="343" data-original-width="592" height="185" src="https://1.bp.blogspot.com/-SKn4YpBQ42s/W6gVBelgSkI/AAAAAAAAEj8/OsF0W9rwv1Aw4EZz7vC0EQ9ARofqmvDmACLcBGAs/s320/2.png" title="" width="320" /></a></div><br /><div style="text-align: justify;">2. Setelah Konfig Router Selesai, Selanjutnya kita Konfig Switch, sebagai contoh saya memberikan IP Address vlan1 yaitu : 192.168.32.2, karna 192.168.32.1 adalah gateway untuk router. Saya memberikan password pada switch privileged lever (#) : okta</div><blockquote><i>Switch&gt;enable<br />Switch#configure terminal<br />Switch(config)#vlan 1<br />Switch(config-vlan)#interface vlan 1<br />Switch(config-if)#ip address 192.168.32.2 255.255.255.0<br />Switch(config-if)#exit</i><i>Switch(config)#ip default-gateway 192.168.32.1&nbsp;</i><br /><i>Switch(config)#enable secret okta<br />Switch(config)#line vty 0 4<br />Switch(config-line)#login local<br />Switch(config-line)#exit<br />Switch(config)#username okta password 1234<br />Switch(config)#service password-encryption</i></blockquote><div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-UZdNPg_uMys/W6gVLpuyy0I/AAAAAAAAEkE/inic2lrfYQ0u1nJq2mAlWhSr_HlXYHl3QCLcBGAs/s1600/3.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="315" data-original-width="569" height="177" src="https://3.bp.blogspot.com/-UZdNPg_uMys/W6gVLpuyy0I/AAAAAAAAEkE/inic2lrfYQ0u1nJq2mAlWhSr_HlXYHl3QCLcBGAs/s320/3.png" title="" width="320" /></a></div><br /><div style="text-align: justify;">Setelah Melakukan Konfig pada Switch, sekarang kita pergi ke PC dan mengatur IP Address PC dengan IP Address “192.168.32.3”</div><div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/-1bD1OA60snw/W6gVQxpNl0I/AAAAAAAAEkI/e57R5G9R-OUV1TVzabyySwTkZFgVPUoQwCLcBGAs/s1600/4.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="426" data-original-width="583" height="233" src="https://4.bp.blogspot.com/-1bD1OA60snw/W6gVQxpNl0I/AAAAAAAAEkI/e57R5G9R-OUV1TVzabyySwTkZFgVPUoQwCLcBGAs/s320/4.png" title="" width="320" /></a></div><br /><div style="text-align: justify;">Setelah Selesai, Pergi ke Command Prompt &gt; telnet (Nomer Ip yang dituju) misal saya ingin Telnet ke Router, Berarti “telnet 192.168.32.1”</div><div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-lpDiF-NQhmg/W6gVWpbYQfI/AAAAAAAAEkQ/gpLvhC19Ltws6gfqqcTELYEwcdtBOLFYQCLcBGAs/s1600/5.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="464" data-original-width="599" height="247" src="https://3.bp.blogspot.com/-lpDiF-NQhmg/W6gVWpbYQfI/AAAAAAAAEkQ/gpLvhC19Ltws6gfqqcTELYEwcdtBOLFYQCLcBGAs/s320/5.png" title="" width="320" /></a></div><br />keterangan :<br />-&nbsp;&nbsp;&nbsp; line vty 0 4 : adalah cara untuk mengaktifkan telnet 4 koneksi<br />-&nbsp;&nbsp;&nbsp; service password-encription : untuk mengekripsi semua password<br /><br /><b>SSH</b><br /><div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-r2lMm5KDWV8/W6gVeAJ5jhI/AAAAAAAAEkY/TDth6RuhfrYI0eDN9KYFBL4JwEYmiouuACLcBGAs/s1600/6.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="279" data-original-width="487" height="183" src="https://2.bp.blogspot.com/-r2lMm5KDWV8/W6gVeAJ5jhI/AAAAAAAAEkY/TDth6RuhfrYI0eDN9KYFBL4JwEYmiouuACLcBGAs/s320/6.png" title="" width="320" /></a></div><br /><div style="text-align: justify;"><b>&nbsp;</b>&nbsp;Melanjutkan topologi sebelumnya, karena jalur telnet menggunakan clear text yang berarti jalur yang lewat masih bisa dilihat (tidak aman), maka untuk mengamankan jalur remot ini bisa menggunakan SSH (Secure Shell).</div><br />Yang diperhatikan untuk membuat SSH adalah :<br />1.&nbsp;&nbsp;&nbsp; Hostname tidak boleh default<br />2.&nbsp;&nbsp;&nbsp; Harus ada domain name<br />3.&nbsp;&nbsp;&nbsp; Authentication nya menggunakan username dan password<br />4.&nbsp;&nbsp;&nbsp; Deskripsikan dijalur telnet bahwa akan menggunakan SSH<br />5.&nbsp;&nbsp;&nbsp; Generate Crypto Key.<br /><br />Langsung saja kita konfig SSH pada CPT<br /><br />1.&nbsp;&nbsp;&nbsp; Config di Routernya: *Nama okta adalah contoh* kalian bisa menggunakan nama apapun terserah kalian.<br /><blockquote><i>Router(config)#hostname okta<br />okta(config)#ip domain-name okta.com<br />okta(config)#crypto key generate rsa</i><br />The name for the keys will be: okta.okta.com<br />Choose the size of the key modulus in the range of 360 to 2048 for your<br />General Purpose Keys. Choosing a key modulus greater than 512 may take<br />a few minutes.</blockquote><br />*Pada bagian perintah “crypto key generate rsa” akan ditanyakan berapa panjang bit yang ingin dimasukkan, pilihannya 512 dan maksimal 2048, itu menandakan panjang key datanya, semakin panjang key data akan semakin aman, tetapi semakin membebani perangkat, jika hanya unntuk belajar gunakan yang 512 saja.*<br /><blockquote>How many bits in the modulus [512]: 1024<br />% Generating 512 bit RSA keys, keys will be non-exportable...[OK]</blockquote><div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-A0ihFr4Czto/W6gVk5oLaSI/AAAAAAAAEkc/kbwQUuox7EwqkwJuuHB_Fk1kE6Vtfbm9QCLcBGAs/s1600/7.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="178" data-original-width="531" height="107" src="https://2.bp.blogspot.com/-A0ihFr4Czto/W6gVk5oLaSI/AAAAAAAAEkc/kbwQUuox7EwqkwJuuHB_Fk1kE6Vtfbm9QCLcBGAs/s320/7.png" title="" width="320" /></a></div><br /><div style="text-align: justify;">Berikut ini untuk menampilkan hasil encripsi key :<br /><i>okta(config)#do sh crypto key mypubkey rsa</i><br />^^Perintah diatas adalah script untuk menampilkan hasil encripsi key. Setelah memasukkan script itu akan tampil tampilan seperti dibawah ini :</div><blockquote>% Key pair was generated at: 1:51:58 UTC Mar 1 1993<br />Key name: okta.okta.com<br />Storage Device: not specified<br />Usage: General Purpose Key<br />Key is not exportable.<br />Key Data:<br />00002215 00004659 00002db4 00004762 00006688 00007238 00004ab3 000069ca<br />0000015c 000050d6 000001c9 00002afd 00006ca7 00005b84 0000704e 000056ff<br />00001831 0000077b 000028ea 00001ee9 00007579 000031ce 00003fb4 0484<br />% Key pair was generated at: 1:51:58 UTC Mar 1 1993<br />Key name: okta.okta.com.server<br />Temporary key<br />Usage: Encryption Key<br />Key is not exportable.</blockquote><div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-9_6C0-Ry8YQ/W6gVrkP0ktI/AAAAAAAAEkk/hOBqWKC1eMsBcRnpXmw2caCZRm39NL0uwCLcBGAs/s1600/8.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="314" data-original-width="582" height="172" src="https://3.bp.blogspot.com/-9_6C0-Ry8YQ/W6gVrkP0ktI/AAAAAAAAEkk/hOBqWKC1eMsBcRnpXmw2caCZRm39NL0uwCLcBGAs/s320/8.png" title="" width="320" /></a></div><br /><div class="separator" style="text-align: justify;">&nbsp;Sekarang kita kembali ke PC dan pergi ke “Command Prompt”</div><div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-PPyagNqT1MA/W6gVx5OMm8I/AAAAAAAAEks/jg1F3he7kSItQFbNZ_UzeNkRJvrChPrdwCLcBGAs/s1600/9.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="615" data-original-width="1125" height="174" src="https://3.bp.blogspot.com/-PPyagNqT1MA/W6gVx5OMm8I/AAAAAAAAEks/jg1F3he7kSItQFbNZ_UzeNkRJvrChPrdwCLcBGAs/s320/9.png" title="" width="320" /></a></div><br /><div class="separator" style="text-align: justify;">&nbsp;Setelah terbuka masukkan script&nbsp;<i>“ssh –l okta 192.168.32.1”</i></div><br /><div style="text-align: justify;">karna saya menggunakan username “okta” pada router maka seletah “–l” kalian masukkan username kalian yang kalian konfig di router. Password pun sama, masukkan password yang kalian setting di router.Setelah terbuka masukkan script&nbsp;<i>“ssh –l okta 192.168.32.1”</i><br />karna saya menggunakan username “okta” pada router maka seletah “–l” kalian masukkan username kalian yang kalian konfig di router. Password pun sama, masukkan password yang kalian setting di router.</div><div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-Y7UWzH6EPto/W6gV3VPfh8I/AAAAAAAAEk0/iztBr0bgxl8mbQKFNCqEoMJQKhpkKC6egCLcBGAs/s1600/10.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="235" data-original-width="600" height="125" src="https://2.bp.blogspot.com/-Y7UWzH6EPto/W6gV3VPfh8I/AAAAAAAAEk0/iztBr0bgxl8mbQKFNCqEoMJQKhpkKC6egCLcBGAs/s320/10.png" title="" width="320" /></a></div><br /><div class="separator" style="text-align: justify;"><b>E. REFERENSI</b></div><br /><div style="text-align: justify;">ccnav6.com</div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-110194945-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+  
+
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+
+
+
+
+
+</body>
+</html>
+

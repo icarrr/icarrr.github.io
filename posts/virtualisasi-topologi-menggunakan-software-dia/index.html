@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<meta name="author" content="Faizar Septiawan">
+<meta name="description" content="A. PENDAHULUANPada postingan kali ini saya akan membagi sedikit ilmu terkait dengan virtualisasi topologi jaringan menggunakan software dia.
+B. PENGERTIAN&nbsp;TOPOLOGI MENURUT&nbsp;WIKIPEDIATopologi Jaringan Sebuah LAN dapat diimplementasikan dengan berbagai macam topologi. Topologi yang di maksud di sini merupakan struktur jaringan&nbsp;fisik yang digunakan untuk mengimplementasikan LAN tersebut. Topologi dasar yang bisa digunakan dalam jaringan komputer adalah:
+Topologi&nbsp;Bus&nbsp;(Linear)Topologi&nbsp;Ring&nbsp;(Cincin)Topologi&nbsp;Star&nbsp;(Bintang)Topologi&nbsp;Tree&nbsp;(Pohon)Topologi&nbsp;Mesh&nbsp;(web)Topologi pengembangan dari ketiga di atas biasanya berupa topologi&nbsp;Tree&nbsp;(Pohon), yang merupakan pengembangan dari&nbsp;star&nbsp;dan&nbsp;Bus, topologi&nbsp;Mash&nbsp;atau&nbsp;Hybrid&nbsp;atau&nbsp;Multipoint&nbsp;atau Web yang merupakan pengembangan dari topologi&nbsp;Point to Point&nbsp;(bus), topologi Loop yang merupakan pengembangan dari topologi&nbsp;Ring&nbsp;Ketiganya memiliki kelebihan dan kekurangan masing-masing.">
+
+<meta property="og:title" content="Virtualisasi topologi menggunakan software DIA" />
+<meta property="og:description" content="A. PENDAHULUANPada postingan kali ini saya akan membagi sedikit ilmu terkait dengan virtualisasi topologi jaringan menggunakan software dia.
+B. PENGERTIAN&nbsp;TOPOLOGI MENURUT&nbsp;WIKIPEDIATopologi Jaringan Sebuah LAN dapat diimplementasikan dengan berbagai macam topologi. Topologi yang di maksud di sini merupakan struktur jaringan&nbsp;fisik yang digunakan untuk mengimplementasikan LAN tersebut. Topologi dasar yang bisa digunakan dalam jaringan komputer adalah:
+Topologi&nbsp;Bus&nbsp;(Linear)Topologi&nbsp;Ring&nbsp;(Cincin)Topologi&nbsp;Star&nbsp;(Bintang)Topologi&nbsp;Tree&nbsp;(Pohon)Topologi&nbsp;Mesh&nbsp;(web)Topologi pengembangan dari ketiga di atas biasanya berupa topologi&nbsp;Tree&nbsp;(Pohon), yang merupakan pengembangan dari&nbsp;star&nbsp;dan&nbsp;Bus, topologi&nbsp;Mash&nbsp;atau&nbsp;Hybrid&nbsp;atau&nbsp;Multipoint&nbsp;atau Web yang merupakan pengembangan dari topologi&nbsp;Point to Point&nbsp;(bus), topologi Loop yang merupakan pengembangan dari topologi&nbsp;Ring&nbsp;Ketiganya memiliki kelebihan dan kekurangan masing-masing." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://icarrr.github.io/posts/virtualisasi-topologi-menggunakan-software-dia/" /><meta property="article:published_time" content="2017-08-14T17:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2017-08-14T17:00:00&#43;00:00"/>
+
+
+<title>
+
+
+     Virtualisasi topologi menggunakan software DIA 
+
+</title>
+<link rel="canonical" href="https://icarrr.github.io/posts/virtualisasi-topologi-menggunakan-software-dia/">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:500">
+
+
+
+    
+    <link rel="stylesheet" href="https://icarrr.github.io/css/reset.css?t=2018-12-04%2003%3a11%3a17.924509067%20%2b0700%20WIB%20m%3d%2b0.311222773">
+    <link rel="stylesheet" href="https://icarrr.github.io/css/pygments.css?t=2018-12-04%2003%3a11%3a17.924509067%20%2b0700%20WIB%20m%3d%2b0.311222773">
+    <link rel="stylesheet" href="https://icarrr.github.io/css/main.css?t=2018-12-04%2003%3a11%3a17.924509067%20%2b0700%20WIB%20m%3d%2b0.311222773">
+    
+        <link rel="stylesheet" href="https://icarrr.github.io/css/override.css?t=2018-12-04%2003%3a11%3a17.924509067%20%2b0700%20WIB%20m%3d%2b0.311222773">
+    
+
+
+
+
+<link rel="shortcut icon"
+
+    href="https://icarrr.github.io/img/leaf.ico"
+
+>
+
+
+
+
+
+
+
+
+</head>
+
+
+<body lang="en">
+
+<section class="header">
+    <div class="container">
+        <div class="content">
+            
+                
+                
+                
+                
+                
+                    
+                
+                
+                <a href="https://icarrr.github.io/"><img class="avatar" src="https://icarrr.github.io/img/profil.png" srcset="https://icarrr.github.io/img/profil.png 1x"></a>
+            
+            <a href="https://icarrr.github.io/"><div class="name">Faizar Septiawan</div></a>
+            
+              <h3 class="self-intro">Paling bangga menjadi orang gila karena punya prinsip “Sekali Gila, Tetap Gila Yang Penting ber-Komitmen, Konsisten &amp; Kontinu.</h3>
+            
+            <nav>
+                <ul>
+                    
+                        <li class="nav-posts"><a href="https://icarrr.github.io/posts/"><span>Posts</span></a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<section class="icons">
+    <div class="container">
+        <div class="content">
+        
+            <a href="//github.com/icarrr" target="_blank" rel="noopener"><img class="icon" src="https://icarrr.github.io/img/github.svg" alt="github" /></a>
+        
+
+        
+
+        
+
+	
+
+        
+
+        
+
+        
+            <a href="//linkedin.com/in/faizar-septiawan-0a282b142" target="_blank" rel="noopener"><img class="icon" src="https://icarrr.github.io/img/linkedin.svg" alt="linkedin" /></a>
+        
+
+        
+
+        
+            <a href="//t.me/siBunglonGanteng" target="_blank" rel="noopener"><img class="icon" src="https://icarrr.github.io/img/telegram.svg" alt="telegram" /></a>
+        
+
+        
+            <a href="//instagram.com/sibunglon.ganteng" target="_blank" rel="noopener"><img class="icon" src="https://icarrr.github.io/img/instagram.svg" alt="instagram" /></a>
+        
+
+        
+
+        
+
+        
+            <a href="mailto:icar@sibunglonlab.com"><img class="icon" src="https://icarrr.github.io/img/email.svg" alt="email" /></a>
+        
+
+        
+
+        
+        </div>
+    </div>
+</section>
+
+<section class="main">
+    <div class="container">
+        <div class="content">
+            <div class="page-heading">
+
+    Virtualisasi topologi menggunakan software DIA
+
+</div>
+
+            <div class="markdown">
+                <p><div class="separator" style="text-align: justify;"><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Dia_0.97_-_Flowchart_example.png/300px-Dia_0.97_-_Flowchart_example.png"><img border="0" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Dia_0.97_-_Flowchart_example.png/300px-Dia_0.97_-_Flowchart_example.png" /></a></div><br /><div style="text-align: justify;"><b><span style="font-size: large;">A. PENDAHULUAN</span></b></div><div style="text-align: justify;">Pada postingan kali ini saya akan membagi sedikit ilmu terkait dengan virtualisasi topologi jaringan menggunakan software dia.</div><br /><div style="text-align: justify;"><b><span style="font-size: large;">B. PENGERTIAN&nbsp;</span></b></div><div style="text-align: justify;"><b>TOPOLOGI MENURUT&nbsp;<a href="https://id.wikipedia.org/wiki/Topologi_jaringan">WIKIPEDIA</a></b></div><span style="text-align: justify;">Topologi Jaringan Sebuah LAN dapat diimplementasikan dengan berbagai macam topologi. Topologi yang di maksud di sini merupakan struktur jaringan&nbsp;</span><span style="text-align: justify;">fisik yang digunakan untuk mengimplementasikan LAN tersebut. Topologi dasar yang bisa digunakan dalam jaringan komputer adalah:</span><br /><ul style="text-align: justify;"><li>Topologi&nbsp;<i>Bus</i>&nbsp;(Linear)</li><li>Topologi&nbsp;<i>Ring</i>&nbsp;(Cincin)</li><li>Topologi&nbsp;<i>Star</i>&nbsp;(Bintang)</li><li>Topologi&nbsp;<i>Tree</i>&nbsp;(Pohon)</li><li>Topologi&nbsp;<i>Mesh</i>&nbsp;(web)</li></ul><div style="text-align: justify;">Topologi pengembangan dari ketiga di atas biasanya berupa topologi&nbsp;<i>Tree</i>&nbsp;(Pohon), yang merupakan pengembangan dari&nbsp;<i>star</i>&nbsp;dan&nbsp;<i>Bus</i>, topologi&nbsp;<i>Mash</i>&nbsp;atau&nbsp;<i>Hybrid</i>&nbsp;atau&nbsp;<i>Multipoint</i>&nbsp;atau Web yang merupakan pengembangan dari topologi&nbsp;<i>Point to Point</i>&nbsp;(bus), topologi Loop yang merupakan pengembangan dari topologi&nbsp;<i>Ring</i>&nbsp;Ketiganya memiliki kelebihan dan kekurangan masing-masing. Salah satu dari ketiga topologi ini dapat dipilih untuk mengimplementasikan sebuah LAN. Tentunya topologi yang dipilih adalah yang paling sesuai dengan kebutuhan LAN yang sedang di rancang.</div><br /><div style="text-align: justify;"><b>PENGERTIAN DIA (SOFTWARE) MENURUT&nbsp;<a href="https://en.wikipedia.org/wiki/Dia_%28software%29">WIKIPEDIA</a></b></div><div style="text-align: justify;"><span class="notranslate"><b>Dia</b>&nbsp;adalah perangkat lunak diagram umum tujuan umum gratis dan terbuka , yang dikembangkan awalnya oleh Alexander Larsson.</span>&nbsp;<span class="notranslate">Dia menggunakan antarmuka dan dokumen tunggal terkontrol (SDI) yang mirip dengan GIMP dan Inscape .</span></div><br /><div style="text-align: justify;"><b><span style="font-size: large;">C. LATAR BELAKANG</span></b></div><span style="text-align: justify;">Sebelum kita melakukan pembangunan jaringan, maka pada dasarnya kita harus memiliki topologinya dulu.</span><br /><br /><div style="text-align: justify;"><b><span style="font-size: large;">D. ALAT DAN BAHAN</span></b></div><ul style="text-align: justify;"><li>laptop</li><li>software dia</li></ul><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><b><span style="font-size: large;">E. TUJUAN</span></b></div><ul style="text-align: justify;"><li>menambah ilmu</li><li>untuk mengetahui virtualisasi topologi</li></ul><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><b><span style="font-size: large;">F. JANGKA WAKTU PELAKSANA</span></b></div><span style="text-align: justify;">Jangka waktu pelaksanaan 10 menit</span><br /><br /><div style="text-align: justify;"><b><span style="font-size: large;">G. LANGKAH KERJA</span></b></div><div style="text-align: justify;">1. pertama siapkan laptop dan software dia (kalau tidak ada silahkan download)</div><div style="text-align: justify;">2. buka aplikasi dia, dengan cara pilih menu &gt; kemudian ketikkan pada kolom search &ldquo;dia&rdquo; untuk mempermudah pencarian</div><div style="text-align: justify;">3. nah ini adalah tampilan pertama software dia</div><div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-hmFW5Y-7Hgg/W4u2ex-0WmI/AAAAAAAAD-c/t-x81kG49_odXjyASX3B1HzxQV1s_remQCLcBGAs/s1600/dis2.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="768" data-original-width="1366" height="179" src="https://2.bp.blogspot.com/-hmFW5Y-7Hgg/W4u2ex-0WmI/AAAAAAAAD-c/t-x81kG49_odXjyASX3B1HzxQV1s_remQCLcBGAs/s320/dis2.png" title="" width="320" /></a></div><br /><div style="text-align: justify;">4. Vitur software dia,disini ada switch dll</div><div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/-n2NdVS26C64/W4u2pAo9AOI/AAAAAAAAD-g/TM7NltTLKbgRogQz5hZgB2XLYYc9suX-wCLcBGAs/s1600/dia3.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="204" data-original-width="198" src="https://4.bp.blogspot.com/-n2NdVS26C64/W4u2pAo9AOI/AAAAAAAAD-g/TM7NltTLKbgRogQz5hZgB2XLYYc9suX-wCLcBGAs/s1600/dia3.png" title="" /></a></div><br /><div style="text-align: justify;">5. Kemudian susun perangkat keras jaringan seperti server,router,switch,tower,dll</div><div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/-gu2flDcpq7E/W4u25GbLGNI/AAAAAAAAD-s/zMn1NiGjhmEYgfneRt2QqhKKhBuTf16jQCLcBGAs/s1600/dia4.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="768" data-original-width="1366" height="179" src="https://4.bp.blogspot.com/-gu2flDcpq7E/W4u25GbLGNI/AAAAAAAAD-s/zMn1NiGjhmEYgfneRt2QqhKKhBuTf16jQCLcBGAs/s320/dia4.png" title="" width="320" /></a></div><br /><div style="text-align: justify;">6. setelah melakukan,penempatan atau penyusunan perangkat keras kemudian kita akan menyambungkan kabelnya. lihat gambar di bawah</div><br /><div class="separator" style="text-align: justify;"><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFPjyYs3eGNEelkTqX14t4xVbB0A_60XNXATG1pq0XdseKxSQa"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFPjyYs3eGNEelkTqX14t4xVbB0A_60XNXATG1pq0XdseKxSQa" title="" /></a></div><br /><div style="text-align: justify;">7. nah sampai disini topologi kita telah selesai</div><br /><div style="text-align: justify;"><i>cat : kalau ip nya silahkan agan kasih sendiri yah biar lebih komplit dah :D</i></div><br /><div style="text-align: justify;"><b><span style="font-size: large;">H. TEMUAN MASALAH</span></b></div><span style="text-align: justify;">Disini saya menemukan masalah di saat melakukan pencariaan fitur dia, dan sebagai solusinya saya harus mencarinya satu persatu :D</span><br /><br /><div style="text-align: justify;"><b><span style="font-size: large;">I. HASIL YANG DI DAPATKAN</span></b></div><span style="text-align: justify;">Dapat melakukan virtualisasi melalui software dia</span><br /><br /><div style="text-align: justify;"><b><span style="font-size: large;">J. KESIMPULAN</span></b></div><span style="text-align: justify;">Jadi di saat melakukan pekerjaan sekiranya pertama yang dilakukan adalah membuat topologinya</span></p>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-110194945-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+  
+
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+
+
+
+
+
+</body>
+</html>
+

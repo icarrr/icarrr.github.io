@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<meta name="author" content="Faizar Septiawan">
+<meta name="description" content="A. PendahuluanPada kesempatan kali ini saya akan memposting bagaimana sih cara mengupgrade versi mikrotik.
+B. Latar belakangIngin mendapatkan fitur baru pada versi baru sistem mikrotik
+C. TujuanAgar pengunjung blog dapat mengetahui bagaimana cara mengupgrade versi mikrotik
+D. Hasil yang diharapkanDapat mengikuti tahapan kerjanya
+E. Alat dan bahanmikrotikakses internetkabel UTP
+F. Jangka waktu pelaksanaanWaktu yang dibutuhkan tergantung dari koneksi yang digunakan
+G. Langkah kerja1. Hubungkan mikrotik kemudian buka winbox untuk mengkonfigurasi mikrotik tersebut2.">
+
+<meta property="og:title" content="Mengupgrade version mikroTik routerboard" />
+<meta property="og:description" content="A. PendahuluanPada kesempatan kali ini saya akan memposting bagaimana sih cara mengupgrade versi mikrotik.
+B. Latar belakangIngin mendapatkan fitur baru pada versi baru sistem mikrotik
+C. TujuanAgar pengunjung blog dapat mengetahui bagaimana cara mengupgrade versi mikrotik
+D. Hasil yang diharapkanDapat mengikuti tahapan kerjanya
+E. Alat dan bahanmikrotikakses internetkabel UTP
+F. Jangka waktu pelaksanaanWaktu yang dibutuhkan tergantung dari koneksi yang digunakan
+G. Langkah kerja1. Hubungkan mikrotik kemudian buka winbox untuk mengkonfigurasi mikrotik tersebut2." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://icarrr.github.io/posts/mengupgrade-version-mikrotik-routerboard/" /><meta property="article:published_time" content="2017-09-11T11:20:00&#43;00:00"/>
+<meta property="article:modified_time" content="2017-09-11T11:20:00&#43;00:00"/>
+
+
+<title>
+
+
+     Mengupgrade version mikroTik routerboard 
+
+</title>
+<link rel="canonical" href="https://icarrr.github.io/posts/mengupgrade-version-mikrotik-routerboard/">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:500">
+
+
+
+    
+    <link rel="stylesheet" href="https://icarrr.github.io/css/reset.css?t=2018-12-04%2003%3a11%3a17.899482082%20%2b0700%20WIB%20m%3d%2b0.286195806">
+    <link rel="stylesheet" href="https://icarrr.github.io/css/pygments.css?t=2018-12-04%2003%3a11%3a17.899482082%20%2b0700%20WIB%20m%3d%2b0.286195806">
+    <link rel="stylesheet" href="https://icarrr.github.io/css/main.css?t=2018-12-04%2003%3a11%3a17.899482082%20%2b0700%20WIB%20m%3d%2b0.286195806">
+    
+        <link rel="stylesheet" href="https://icarrr.github.io/css/override.css?t=2018-12-04%2003%3a11%3a17.899482082%20%2b0700%20WIB%20m%3d%2b0.286195806">
+    
+
+
+
+
+<link rel="shortcut icon"
+
+    href="https://icarrr.github.io/img/leaf.ico"
+
+>
+
+
+
+
+
+
+
+
+</head>
+
+
+<body lang="en">
+
+<section class="header">
+    <div class="container">
+        <div class="content">
+            
+                
+                
+                
+                
+                
+                    
+                
+                
+                <a href="https://icarrr.github.io/"><img class="avatar" src="https://icarrr.github.io/img/profil.png" srcset="https://icarrr.github.io/img/profil.png 1x"></a>
+            
+            <a href="https://icarrr.github.io/"><div class="name">Faizar Septiawan</div></a>
+            
+              <h3 class="self-intro">Paling bangga menjadi orang gila karena punya prinsip “Sekali Gila, Tetap Gila Yang Penting ber-Komitmen, Konsisten &amp; Kontinu.</h3>
+            
+            <nav>
+                <ul>
+                    
+                        <li class="nav-posts"><a href="https://icarrr.github.io/posts/"><span>Posts</span></a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<section class="icons">
+    <div class="container">
+        <div class="content">
+        
+            <a href="//github.com/icarrr" target="_blank" rel="noopener"><img class="icon" src="https://icarrr.github.io/img/github.svg" alt="github" /></a>
+        
+
+        
+
+        
+
+	
+
+        
+
+        
+
+        
+            <a href="//linkedin.com/in/faizar-septiawan-0a282b142" target="_blank" rel="noopener"><img class="icon" src="https://icarrr.github.io/img/linkedin.svg" alt="linkedin" /></a>
+        
+
+        
+
+        
+            <a href="//t.me/siBunglonGanteng" target="_blank" rel="noopener"><img class="icon" src="https://icarrr.github.io/img/telegram.svg" alt="telegram" /></a>
+        
+
+        
+            <a href="//instagram.com/sibunglon.ganteng" target="_blank" rel="noopener"><img class="icon" src="https://icarrr.github.io/img/instagram.svg" alt="instagram" /></a>
+        
+
+        
+
+        
+
+        
+            <a href="mailto:icar@sibunglonlab.com"><img class="icon" src="https://icarrr.github.io/img/email.svg" alt="email" /></a>
+        
+
+        
+
+        
+        </div>
+    </div>
+</section>
+
+<section class="main">
+    <div class="container">
+        <div class="content">
+            <div class="page-heading">
+
+    Mengupgrade version mikroTik routerboard
+
+</div>
+
+            <div class="markdown">
+                <div style="text-align: justify;"><strong><span style="font-size: large;">A. Pendahuluan</span></strong></div><span style="text-align: justify;">Pada kesempatan kali ini saya akan memposting bagaimana sih cara mengupgrade versi mikrotik.</span><br /><br /><div style="text-align: justify;"><strong><span style="font-size: large;">B. Latar belakang</span></strong></div><span style="text-align: justify;">Ingin mendapatkan fitur baru pada versi baru sistem mikrotik</span><br /><br /><div style="text-align: justify;"><strong><span style="font-size: large;">C. Tujuan</span></strong></div><div style="text-align: justify;">Agar pengunjung blog dapat mengetahui bagaimana cara mengupgrade versi mikrotik</div><br /><div style="text-align: justify;"><strong><span style="font-size: large;">D. Hasil yang diharapkan</span></strong></div><div style="text-align: justify;">Dapat mengikuti tahapan kerjanya</div><br /><div style="text-align: justify;"><strong><span style="font-size: large;">E. Alat dan bahan</span></strong></div><ol style="text-align: justify;"><li>mikrotik</li><li>akses internet</li><li>kabel UTP</li></ol><br /><div style="text-align: justify;"><strong><span style="font-size: large;">F. Jangka waktu pelaksanaan</span></strong></div><div style="text-align: justify;">Waktu yang dibutuhkan tergantung dari koneksi yang digunakan</div><br /><div style="text-align: justify;"><strong><span style="font-size: large;">G. Langkah kerja</span></strong></div><div style="text-align: justify;">1. Hubungkan mikrotik kemudian buka winbox untuk mengkonfigurasi mikrotik tersebut</div><div style="text-align: justify;">2. Ketahui arsitektur dan versi mikrotik terlebih dahulu, cara klik System &gt; Resources</div><div style="text-align: justify;">3. Buka browser lalu buka situs resmi mikrotik atau ketik pada browser &gt; mikrotik.com</div><div style="text-align: justify;">4. Klik menu “software” kemudian cari jenis arsitektur mikrotik yang ingin diupgrade kemudian klik tombol ikon save di main package</div><div style="text-align: justify;">5. Pada mikrotik buka manu files, buka tempat anda menyimpan hasil download yang tadi kemudian drag n drop ke files mikrotik</div><div style="text-align: justify;">6. Reboot mikrotik. System &gt; reboot</div><div style="text-align: justify;">7. Tunggu hingga proses reboot selesai, dan pada neigbors winbox sudah keliatan kalau versi mikrotik sudah berbeda</div><div style="text-align: justify;">8. Login kemudian cek lagi di resources. System &gt; resources</div><br /><div style="text-align: justify;"><strong><span style="font-size: large;">H. Hasil yang didapatkan</span></strong></div><div style="text-align: justify;">Semua langkah-langkahnya diikuti dengan baik</div><br /><div style="text-align: justify;"><strong><span style="font-size: large;">I. Temuan masalah</span></strong></div><div style="text-align: justify;">Tidak ditemukan permasalahan</div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-110194945-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+  
+
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+
+
+
+
+
+</body>
+</html>
+

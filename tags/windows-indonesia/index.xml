@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows Indonesia on siBunglonLab&#39;s</title>
+    <link>https://icarrr.github.io/tags/windows-indonesia/</link>
+    <description>Recent content in Windows Indonesia on siBunglonLab&#39;s</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 28 Oct 2018 21:20:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://icarrr.github.io/tags/windows-indonesia/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Installasi Caddy Server di Sistem Operasi Windows</title>
+      <link>https://icarrr.github.io/posts/installasi-caddy-server-di-sistem-operasi-windows/</link>
+      <pubDate>Sun, 28 Oct 2018 21:20:00 +0000</pubDate>
+      
+      <guid>https://icarrr.github.io/posts/installasi-caddy-server-di-sistem-operasi-windows/</guid>
+      <description>Setelah berkenalan dengan si Caddy Server pada beberapa hari yang lalu, sekarang waktunya bermain dengan si Caddy Server.
+Apa Saja yang dibutuhkan? Pastikan anda telah memiliki file master Caddy Server, jika belum silahkan dari situs resminya.
+Menjalankan Caddy Server pada sistem operasi windows1. Buka file hasil download Caddy Server2. Copy semua isi dari file master tersebut3. Tentukan path Caddy, buat folder baru yang akan menampung semua file yang telah dicopy kemudian paste di folder tersebut4.</description>
+    </item>
+    
+    <item>
+      <title>Berkenalan dengan Caddy Server</title>
+      <link>https://icarrr.github.io/posts/berkenalan-dengan-caddy-server/</link>
+      <pubDate>Fri, 26 Oct 2018 11:52:00 +0000</pubDate>
+      
+      <guid>https://icarrr.github.io/posts/berkenalan-dengan-caddy-server/</guid>
+      <description>Caddy? Caddy itu apaan? Fungsinya apa aja?
+Caddy kadang-kadang diklarifikasi sebagai web server Caddy bersifat open source, server web HTTP / 2- enabled yang ditulis dalam Go . Ia menggunakan pustaka standar Go untuk fungsi HTTP-nya. Salah satu fitur paling terkenal Caddy adalah mengaktifkan HTTPS secara default.Caddy mendukung berbagai teknologi Web dan tersedia sebagai biner yang dikompilasi secara statis untuk sistem operasi Windows, Mac, Linux, Android, dan BSD pada arsitektur i386, amd64, dan ARM.</description>
+    </item>
+    
+  </channel>
+</rss>

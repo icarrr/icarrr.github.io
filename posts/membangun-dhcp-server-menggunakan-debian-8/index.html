@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<meta name="author" content="Faizar Septiawan">
+<meta name="description" content="DHCP server atau Dinamic Host Configuration Protocol adalah sebuah protocol yang memungkinkan sebuah komputer atau server memberikan IP Address secara dinamis atau otomatis untuk komputer lain, atau komputer klien.Ketika DHCP client pada pihak komputer klien diaktifkan, komputer klien tersebut akan melakukan request ke komputer server untuk mendapatkan IP Address dari DHCP Server. Kemudian DHCP server akan memberikan jawaban ke komputer klien dengan memberikan IP Address yang tersedia pada pool atau range IP Address di DHCP server.">
+
+<meta property="og:title" content="Membangun DHCP Server menggunakan Debian 8" />
+<meta property="og:description" content="DHCP server atau Dinamic Host Configuration Protocol adalah sebuah protocol yang memungkinkan sebuah komputer atau server memberikan IP Address secara dinamis atau otomatis untuk komputer lain, atau komputer klien.Ketika DHCP client pada pihak komputer klien diaktifkan, komputer klien tersebut akan melakukan request ke komputer server untuk mendapatkan IP Address dari DHCP Server. Kemudian DHCP server akan memberikan jawaban ke komputer klien dengan memberikan IP Address yang tersedia pada pool atau range IP Address di DHCP server." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://icarrr.github.io/posts/membangun-dhcp-server-menggunakan-debian-8/" /><meta property="article:published_time" content="2018-10-26T10:47:00&#43;00:00"/>
+<meta property="article:modified_time" content="2018-10-26T10:47:00&#43;00:00"/>
+
+
+<title>
+
+
+     Membangun DHCP Server menggunakan Debian 8 
+
+</title>
+<link rel="canonical" href="https://icarrr.github.io/posts/membangun-dhcp-server-menggunakan-debian-8/">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:500">
+
+
+
+    
+    <link rel="stylesheet" href="https://icarrr.github.io/css/reset.css?t=2018-12-04%2003%3a11%3a17.768913569%20%2b0700%20WIB%20m%3d%2b0.155627272">
+    <link rel="stylesheet" href="https://icarrr.github.io/css/pygments.css?t=2018-12-04%2003%3a11%3a17.768913569%20%2b0700%20WIB%20m%3d%2b0.155627272">
+    <link rel="stylesheet" href="https://icarrr.github.io/css/main.css?t=2018-12-04%2003%3a11%3a17.768913569%20%2b0700%20WIB%20m%3d%2b0.155627272">
+    
+        <link rel="stylesheet" href="https://icarrr.github.io/css/override.css?t=2018-12-04%2003%3a11%3a17.768913569%20%2b0700%20WIB%20m%3d%2b0.155627272">
+    
+
+
+
+
+<link rel="shortcut icon"
+
+    href="https://icarrr.github.io/img/leaf.ico"
+
+>
+
+
+
+
+
+
+
+
+</head>
+
+
+<body lang="en">
+
+<section class="header">
+    <div class="container">
+        <div class="content">
+            
+                
+                
+                
+                
+                
+                    
+                
+                
+                <a href="https://icarrr.github.io/"><img class="avatar" src="https://icarrr.github.io/img/profil.png" srcset="https://icarrr.github.io/img/profil.png 1x"></a>
+            
+            <a href="https://icarrr.github.io/"><div class="name">Faizar Septiawan</div></a>
+            
+              <h3 class="self-intro">Paling bangga menjadi orang gila karena punya prinsip “Sekali Gila, Tetap Gila Yang Penting ber-Komitmen, Konsisten &amp; Kontinu.</h3>
+            
+            <nav>
+                <ul>
+                    
+                        <li class="nav-posts"><a href="https://icarrr.github.io/posts/"><span>Posts</span></a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<section class="icons">
+    <div class="container">
+        <div class="content">
+        
+            <a href="//github.com/icarrr" target="_blank" rel="noopener"><img class="icon" src="https://icarrr.github.io/img/github.svg" alt="github" /></a>
+        
+
+        
+
+        
+
+	
+
+        
+
+        
+
+        
+            <a href="//linkedin.com/in/faizar-septiawan-0a282b142" target="_blank" rel="noopener"><img class="icon" src="https://icarrr.github.io/img/linkedin.svg" alt="linkedin" /></a>
+        
+
+        
+
+        
+            <a href="//t.me/siBunglonGanteng" target="_blank" rel="noopener"><img class="icon" src="https://icarrr.github.io/img/telegram.svg" alt="telegram" /></a>
+        
+
+        
+            <a href="//instagram.com/sibunglon.ganteng" target="_blank" rel="noopener"><img class="icon" src="https://icarrr.github.io/img/instagram.svg" alt="instagram" /></a>
+        
+
+        
+
+        
+
+        
+            <a href="mailto:icar@sibunglonlab.com"><img class="icon" src="https://icarrr.github.io/img/email.svg" alt="email" /></a>
+        
+
+        
+
+        
+        </div>
+    </div>
+</section>
+
+<section class="main">
+    <div class="container">
+        <div class="content">
+            <div class="page-heading">
+
+    Membangun DHCP Server menggunakan Debian 8
+
+</div>
+
+            <div class="markdown">
+                <div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-S5t_XoY18h8/W9KOJDjwv3I/AAAAAAAAFUI/YejjZmu6BmgEiH8DeQruQV9zASMIhEnEgCLcBGAs/s1600/Untitled-1.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="600" data-original-width="800" height="240" src="https://2.bp.blogspot.com/-S5t_XoY18h8/W9KOJDjwv3I/AAAAAAAAFUI/YejjZmu6BmgEiH8DeQruQV9zASMIhEnEgCLcBGAs/s320/Untitled-1.png" title="" width="320" /></a></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">DHCP server atau Dinamic Host Configuration Protocol adalah sebuah protocol yang memungkinkan sebuah komputer atau server memberikan IP Address secara dinamis atau otomatis untuk komputer lain, atau komputer klien.</div><div style="text-align: justify;">Ketika DHCP client pada pihak komputer klien diaktifkan, komputer klien tersebut akan melakukan request ke komputer server untuk mendapatkan IP Address dari DHCP Server. Kemudian DHCP server akan memberikan jawaban ke komputer klien dengan memberikan IP Address yang tersedia pada pool atau range IP Address di DHCP server.&nbsp;<span style="background-color: white; color: #222222; font-family: Lora, serif; font-size: 17px; text-align: left;">Sehingga dengan mekanisme ini, seorang administrator server tidak perlu lagi mengatur IP Address secara statis atau manual satu persatu pada setiap komputer klien agar dapat terhubung dengan komputer server atau dengan komputer lainnya. Bayangkan jika sebuah jaringan memiliki puluhan atau ratusan komputer, berapa banyak waktu yang dihemat dengan menggukan DHCP server.</span></div><div style="text-align: justify;"><span style="background-color: white; color: #222222; font-family: Lora, serif; font-size: 17px; text-align: left;"><br /></span></div><div style="text-align: justify;"><span style="background-color: white; color: #222222; font-family: Lora, serif; font-size: 17px; text-align: left;">Untuk pengkonfigurasiannya ikuti langkah berikut:</span></div><div style="text-align: justify;"><span style="background-color: white; color: #222222; font-family: Lora, serif; font-size: 17px; text-align: left;">1. Remote server anda dan masuk ke mode super user (root)</span></div><div style="text-align: justify;"><span style="background-color: white; color: #222222; font-family: Lora, serif; font-size: 17px; text-align: left;">2. Install paket dhcp-server</span></div><div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-5HrzwcvKpWY/W9KMpsp-xOI/AAAAAAAAFTU/djHVm54RiwUDXmrhJ2cFC8YLcb0QBHz1ACLcBGAs/s1600/Screenshot_1.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="196" data-original-width="550" height="114" src="https://2.bp.blogspot.com/-5HrzwcvKpWY/W9KMpsp-xOI/AAAAAAAAFTU/djHVm54RiwUDXmrhJ2cFC8YLcb0QBHz1ACLcBGAs/s320/Screenshot_1.png" title="" width="320" /></a></div><div style="text-align: justify;"><span style="background-color: white; color: #222222; font-family: Lora, serif; font-size: 17px; text-align: left;">3. Edit file konfigurasi dhcp&nbsp;</span></div><div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-EI80EzPafcI/W9KM8-LADkI/AAAAAAAAFTc/1eteE8sJddMhAfRfBKSVXdqxejnWQGq7wCLcBGAs/s1600/Screenshot_2.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="22" data-original-width="395" height="17" src="https://3.bp.blogspot.com/-EI80EzPafcI/W9KM8-LADkI/AAAAAAAAFTc/1eteE8sJddMhAfRfBKSVXdqxejnWQGq7wCLcBGAs/s320/Screenshot_2.png" title="" width="320" /></a></div><div style="text-align: justify;"><span style="background-color: white; color: #222222; font-family: Lora, serif; font-size: 17px; text-align: left;">4. Temukan script berikut kemudian hapus tanda (#) yang ada didepannya</span></div><div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-4qSo1_Qmxro/W9KNQkyDqAI/AAAAAAAAFTk/IkJS_YLYmvMgsEgqIrqp3fjNyCRTeGzuwCLcBGAs/s1600/Screenshot_3.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="383" data-original-width="1365" height="89" src="https://2.bp.blogspot.com/-4qSo1_Qmxro/W9KNQkyDqAI/AAAAAAAAFTk/IkJS_YLYmvMgsEgqIrqp3fjNyCRTeGzuwCLcBGAs/s320/Screenshot_3.png" title="" width="320" /></a></div><br /><div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/-QULuzubQQck/W9KNQuwFQqI/AAAAAAAAFTo/a3C9qROq8eIlFmnMLat9StzjaElnATZkwCLcBGAs/s1600/Screenshot_4.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="384" data-original-width="1365" height="90" src="https://4.bp.blogspot.com/-QULuzubQQck/W9KNQuwFQqI/AAAAAAAAFTo/a3C9qROq8eIlFmnMLat9StzjaElnATZkwCLcBGAs/s320/Screenshot_4.png" title="" width="320" /></a></div><div style="text-align: justify;"><span style="background-color: white; color: #222222; font-family: Lora, serif; font-size: 17px; text-align: left;">5. Tentukan interface yang akan di gunakan sebagai DHCP Server</span></div><div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/--PWjNSrnsSQ/W9KNgHZg1-I/AAAAAAAAFTs/Oya5mR_5nfwt19Q0wet85YE8vx31xLHXACLcBGAs/s1600/Screenshot_5.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="23" data-original-width="491" height="14" src="https://4.bp.blogspot.com/--PWjNSrnsSQ/W9KNgHZg1-I/AAAAAAAAFTs/Oya5mR_5nfwt19Q0wet85YE8vx31xLHXACLcBGAs/s320/Screenshot_5.png" title="" width="320" /></a></div><br /><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-GHT1EQ5_q70/W9KNgJlK5BI/AAAAAAAAFTw/Z21K3u2PXkQVS8Vys7Dnxrku0tD7KQFjACLcBGAs/s1600/Screenshot_6.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="380" data-original-width="1365" height="89" src="https://1.bp.blogspot.com/-GHT1EQ5_q70/W9KNgJlK5BI/AAAAAAAAFTw/Z21K3u2PXkQVS8Vys7Dnxrku0tD7KQFjACLcBGAs/s320/Screenshot_6.png" title="" width="320" /></a></div><div style="text-align: justify;"><span style="background-color: white; color: #222222; font-family: Lora, serif; font-size: 17px; text-align: left;">6. Restart service DHCP Server untuk mengaktifkan konfigurasi yang telah dilakukan</span></div><div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-CzUCbo5p36A/W9KOD7ae64I/AAAAAAAAFUE/yRaRrlBb6PcoTXy3KS6udSqhbDa-4oijgCLcBGAs/s1600/Screenshot_7.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="28" data-original-width="569" height="15" src="https://3.bp.blogspot.com/-CzUCbo5p36A/W9KOD7ae64I/AAAAAAAAFUE/yRaRrlBb6PcoTXy3KS6udSqhbDa-4oijgCLcBGAs/s320/Screenshot_7.png" title="" width="320" /></a></div><div style="text-align: justify;"><span style="background-color: white; color: #222222; font-family: Lora, serif; font-size: 17px; text-align: left;"><br /></span></div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-110194945-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+  
+
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+
+
+
+
+
+</body>
+</html>
+
