@@ -1,74 +1,68 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Kegiatan on siBunglonLab&#39;s</title>
-    <link>https://icarrr.github.io/tags/kegiatan/</link>
-    <description>Recent content in Kegiatan on siBunglonLab&#39;s</description>
+    <title>Kegiatan on The Official site of siBunglon</title>
+    <link>https://sibunglon.com/tags/kegiatan/</link>
+    <description>Recent content in Kegiatan on The Official site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
+    <language>en-us</language>
     <lastBuildDate>Tue, 17 Oct 2017 11:01:00 +0000</lastBuildDate>
     
-	<atom:link href="https://icarrr.github.io/tags/kegiatan/index.xml" rel="self" type="application/rss+xml" />
+      <atom:link href="https://sibunglon.com/tags/kegiatan/index.xml" rel="self" type="application/rss+xml" />
     
     
-    <item>
-      <title>Setting access point EnGenius EAP 300</title>
-      <link>https://icarrr.github.io/posts/setting-access-point-engenius-eap-300/</link>
-      <pubDate>Tue, 17 Oct 2017 11:01:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/setting-access-point-engenius-eap-300/</guid>
-      <description>A. PendahuluanPada kesempatan ini saya akan sedikit membagi ilmu terkait dengan how to configure access point EnGenius EAP 300. ok dari pada lama kita lanjut ke step selanjutnya.
+      <item>
+        <title>Setting access point EnGenius EAP 300</title>
+        <link>https://sibunglon.com/2017/10/17/setting-access-point-engenius-eap-300/</link>
+        <pubDate>Tue, 17 Oct 2017 11:01:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/17/setting-access-point-engenius-eap-300/</guid>
+        <description>A. PendahuluanPada kesempatan ini saya akan sedikit membagi ilmu terkait dengan how to configure access point EnGenius EAP 300. ok dari pada lama kita lanjut ke step selanjutnya.
 B. PengertianDi jaringan komputer , jalur akses nirkabel ( WAP ), atau lebih tepatnya hanya access point ( AP ), adalah perangkat keras jaringan yang memungkinkan perangkat WI - FI terhubung ke jaringan kabel.&amp;nbsp;AP biasanya&amp;nbsp;&amp;nbsp;terhubung ke router (melalui jaringan kabel) sebagai perangkat mandiri, namun juga dapat menjadi komponen integral dari router itu sendiri.</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Setting TP-LINK WA7210N</title>
-      <link>https://icarrr.github.io/posts/setting-tp-link-wa7210n/</link>
-      <pubDate>Fri, 13 Oct 2017 09:52:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/setting-tp-link-wa7210n/</guid>
-      <description>A.PendahuluanAssalamualaikum Wr.Wb
+      <item>
+        <title>Setting TP-LINK WA7210N</title>
+        <link>https://sibunglon.com/2017/10/13/setting-tp-link-wa7210n/</link>
+        <pubDate>Fri, 13 Oct 2017 09:52:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/13/setting-tp-link-wa7210n/</guid>
+        <description>A.PendahuluanAssalamualaikum Wr.Wb
 saya akan membuat tutorial yang berjudul cara setting tp link agar bisa share wifi nya . jika kalian ingin tau caranya saksikan tutorialini dengan baik jagan ada kelewatan.B. Pengertian&amp;nbsp;TP-LINK itu jenis nya berbagai macam tapi yang saya akan buat tutorial ini yaitu cara setting tplink. menurut saya TP-LINK adalah sebuah alat untuk memperkuat sinyal maupun membuat hospot dengan berskala besar.C. latar belakangDiagram contoh ini digunakan untuk menghubungkan Wireless Router TP-Link TD-W8951ND dengan koneksi internet ADSL dan wireless WIFI, signal WIFI dari Router Modem ADSL akan diambil TP-Link TL-WA7210N.</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Konfigurasi DHCP Server pada cisco</title>
-      <link>https://icarrr.github.io/posts/konfigurasi-dhcp-server-pada-cisco/</link>
-      <pubDate>Sat, 07 Oct 2017 16:49:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/konfigurasi-dhcp-server-pada-cisco/</guid>
-      <description>A.PENGERTIANDHCP (Dynamic Host Configuration Protocol) sebuah server yang memiliki layanan untuk memberikan IP otomatis pada host atau komputer (client) pada jaringan TCP atau IP yang memintanyaLATAR BELAKANGMemahami serta mempraktikan dhcp serverMAKSUD DAN TUJUAN
+      <item>
+        <title>Konfigurasi DHCP Server pada cisco</title>
+        <link>https://sibunglon.com/2017/10/07/konfigurasi-dhcp-server-pada-cisco/</link>
+        <pubDate>Sat, 07 Oct 2017 16:49:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/07/konfigurasi-dhcp-server-pada-cisco/</guid>
+        <description>A.PENGERTIANDHCP (Dynamic Host Configuration Protocol) sebuah server yang memiliki layanan untuk memberikan IP otomatis pada host atau komputer (client) pada jaringan TCP atau IP yang memintanyaLATAR BELAKANGMemahami serta mempraktikan dhcp serverMAKSUD DAN TUJUAN
 Memahami konfigurasi dhcp serverTAHAPAN PEKERJAAN&amp;nbsp;Berikut adalah langkah-langkah mengkonfigurasi DHCP Server pada router.Sebelumnya kita harus membuat simulasi jaringan seperti pada gambar berikut ini terlebih dahulu.
 Langkah awal untuk konfigurasi yaitu klik pada Router
 Kemudian masuk ke Privileged mode exec dengan menggunkan perintah “enable&amp;nbsp;“</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Konfigurasi VLAN pada switch</title>
-      <link>https://icarrr.github.io/posts/konfigurasi-vlan-pada-switch/</link>
-      <pubDate>Fri, 06 Oct 2017 06:16:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/konfigurasi-vlan-pada-switch/</guid>
-      <description>A. PENGERTIANVirtual LAN&amp;nbsp;atau disingkat&amp;nbsp;VLAN&amp;nbsp;merupakan sekelompok perangkat pada satu LAN atau lebih yang dikonfigurasikan (menggunakan perangkat lunak pengelolaan) sehingga dapat berkomunikasi seperti halnya bila perangkat tersebut terhubung ke jalur yang sama, padahal sebenarnya perangkat tersebut berada pada sejumlah segmen LAN yang berbeda. Vlan dibuat dengan menggunakan jaringan pihak ke tiga. VLAN merupakan sebuah bagian kecil jaringan IP yang terpisah secara logik. VLAN memungkinkan beberapa jaringan IP dan jaringan-jaringan kecil (subnet) berada dalam jaringan switched switched yang sama.</description>
-    </item>
+      <item>
+        <title>Konfigurasi VLAN pada switch</title>
+        <link>https://sibunglon.com/2017/10/06/konfigurasi-vlan-pada-switch/</link>
+        <pubDate>Fri, 06 Oct 2017 06:16:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/06/konfigurasi-vlan-pada-switch/</guid>
+        <description>A. PENGERTIANVirtual LAN&amp;nbsp;atau disingkat&amp;nbsp;VLAN&amp;nbsp;merupakan sekelompok perangkat pada satu LAN atau lebih yang dikonfigurasikan (menggunakan perangkat lunak pengelolaan) sehingga dapat berkomunikasi seperti halnya bila perangkat tersebut terhubung ke jalur yang sama, padahal sebenarnya perangkat tersebut berada pada sejumlah segmen LAN yang berbeda. Vlan dibuat dengan menggunakan jaringan pihak ke tiga. VLAN merupakan sebuah bagian kecil jaringan IP yang terpisah secara logik. VLAN memungkinkan beberapa jaringan IP dan jaringan-jaringan kecil (subnet) berada dalam jaringan switched switched yang sama.</description>
+      </item>
     
-    <item>
-      <title>Konfigurasi static NAT dan dynamic NAT cisco</title>
-      <link>https://icarrr.github.io/posts/konfigurasi-static-nat-dan-dynamic-nat-cisco/</link>
-      <pubDate>Thu, 05 Oct 2017 05:39:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/konfigurasi-static-nat-dan-dynamic-nat-cisco/</guid>
-      <description>A. Pengertian&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; NAT (Network Address Translation)&amp;nbsp;adalah sebuah proses pemetaan alamat IP dimana perangkat jaringan komputer akan memberikan alamat IP public ke perangkat jaringan local sehingga banyak IP private yang dapat mengakses IP public.
+      <item>
+        <title>Konfigurasi static NAT dan dynamic NAT cisco</title>
+        <link>https://sibunglon.com/2017/10/05/konfigurasi-static-nat-dan-dynamic-nat-cisco/</link>
+        <pubDate>Thu, 05 Oct 2017 05:39:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/05/konfigurasi-static-nat-dan-dynamic-nat-cisco/</guid>
+        <description>A. Pengertian&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; NAT (Network Address Translation)&amp;nbsp;adalah sebuah proses pemetaan alamat IP dimana perangkat jaringan komputer akan memberikan alamat IP public ke perangkat jaringan local sehingga banyak IP private yang dapat mengakses IP public.
 Dengan kata lain NAT akan mentranslasikan alamat IP sehingga IP address pada jaringan local dapat mengakses IP public pada jaringan WAN. NAT mentranslasikan alamat IP private untuk dapat mengakses alamat host di internet dengan menggunakan alamat IP public pada jaringan tersebut.</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Konfigurasi telnet dan ssh di cisco</title>
-      <link>https://icarrr.github.io/posts/konfigurasi-telnet-dan-ssh-di-cisco/</link>
-      <pubDate>Wed, 04 Oct 2017 05:19:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/konfigurasi-telnet-dan-ssh-di-cisco/</guid>
-      <description>A. PENGERTIAN
+      <item>
+        <title>Konfigurasi telnet dan ssh di cisco</title>
+        <link>https://sibunglon.com/2017/10/04/konfigurasi-telnet-dan-ssh-di-cisco/</link>
+        <pubDate>Wed, 04 Oct 2017 05:19:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/04/konfigurasi-telnet-dan-ssh-di-cisco/</guid>
+        <description>A. PENGERTIAN
 Konfigurasi Telnet
 Telnet (Telecommunication network) adalah sebuah protokol jaringan yang digunakan pada Internet atau Local Area Network untuk menyediakan fasilitas komunikasi berbasis teks interaksi dua arah yang menggunakan koneksi virtual terminal.
 B. LATAR BELAKANG
@@ -78,15 +72,14 @@ Ingin mengimplementasikanya di dunia kerja dan mengulangi Materi yang diberi ten
 D. TAHAPAN PEKERJAAN
 Berikut Topology Telnet :
 1.Pertama, masukkan default gateway yang terdapat pada Router, Disini saya Memberikan IP Address pada interface fastEthernet 0/0 adalah 192.</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Perintah - perintah dasar cisco</title>
-      <link>https://icarrr.github.io/posts/perintah-perintah-dasar-cisco/</link>
-      <pubDate>Tue, 03 Oct 2017 05:17:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/perintah-perintah-dasar-cisco/</guid>
-      <description>A. PENGERTIAN
+      <item>
+        <title>Perintah - perintah dasar cisco</title>
+        <link>https://sibunglon.com/2017/10/03/perintah-perintah-dasar-cisco/</link>
+        <pubDate>Tue, 03 Oct 2017 05:17:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/03/perintah-perintah-dasar-cisco/</guid>
+        <description>A. PENGERTIAN
 Konfigurasi yang akan dibahas dalam artikel ini adalah :
 Mode Router
 Memasuki mode konfigurasi global (Global Configuration Mode)
@@ -106,26 +99,24 @@ Konfigurasi router :
 -&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Menyimpan konfigurasi
 -&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Menghapus konfigurasi
 Perintah&amp;nbsp;show&amp;nbsp;untuk memperifikasi konfigurasi router</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Konfigurasi static routing</title>
-      <link>https://icarrr.github.io/posts/konfigurasi-static-routing/</link>
-      <pubDate>Tue, 03 Oct 2017 05:04:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/konfigurasi-static-routing/</guid>
-      <description>A.PENGERTIAN
+      <item>
+        <title>Konfigurasi static routing</title>
+        <link>https://sibunglon.com/2017/10/03/konfigurasi-static-routing/</link>
+        <pubDate>Tue, 03 Oct 2017 05:04:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/03/konfigurasi-static-routing/</guid>
+        <description>A.PENGERTIAN
 Routing Static adalah jenis routing yang dilakukan seorang admin dengan memasukan network network tertentu secara manual.
 Ciri ciri routing static adalah :Jalur pada suatu jaringan spesifik ditentukan oleh seorang AdministratorPengisian tabel routing / penambahan network baru diisi secara manualBiasanya digunakan untuk jaringan berskala kecilAda beberapa parameter yang ada pada routing static ini, yaituDestination, adalah ip network tujuan, untuk default routing biasanya memakai 0.0.0.0 untuk semua jaringanGateway, adalah datagram yang dapat dicapai pada satu jaringanPref.</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Training Cisco CCENT Part 6</title>
-      <link>https://icarrr.github.io/posts/training-cisco-ccent-part-6/</link>
-      <pubDate>Mon, 02 Oct 2017 04:57:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/training-cisco-ccent-part-6/</guid>
-      <description>1. Pendahuluan
+      <item>
+        <title>Training Cisco CCENT Part 6</title>
+        <link>https://sibunglon.com/2017/10/02/training-cisco-ccent-part-6/</link>
+        <pubDate>Mon, 02 Oct 2017 04:57:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/02/training-cisco-ccent-part-6/</guid>
+        <description>1. Pendahuluan
 A. Pengertian
 Cisco Adalah sebuah perusahaan yang memiliki 2 bidang usaha, yaitu:
 1. Pembuatan hardware dan software yang berhubungan dengan jaringan komputer
@@ -140,15 +131,14 @@ Untuk lebih memahami materi yang diberikan tadi
 - Internet
 3. Jangka Waktu Pelaksanaan
 Jam 08:00 s/d 22:00</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Training Cisco CCENT Part 5</title>
-      <link>https://icarrr.github.io/posts/training-cisco-ccent-part-5/</link>
-      <pubDate>Sat, 30 Sep 2017 04:52:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/training-cisco-ccent-part-5/</guid>
-      <description>1. Pendahuluan
+      <item>
+        <title>Training Cisco CCENT Part 5</title>
+        <link>https://sibunglon.com/2017/09/30/training-cisco-ccent-part-5/</link>
+        <pubDate>Sat, 30 Sep 2017 04:52:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/09/30/training-cisco-ccent-part-5/</guid>
+        <description>1. Pendahuluan
 A. Pengertian
 Cisco Adalah sebuah perusahaan yang memiliki 2 bidang usaha, yaitu:
 1. Pembuatan hardware dan software yang berhubungan dengan jaringan komputer
@@ -162,15 +152,14 @@ Untuk lebih memahami materi yang diberikan tadi
 - Internet
 3. Jangka Waktu Pelaksanaan
 Jam 08:00 s/d 22:00</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Training Cisco CCENT Part 4</title>
-      <link>https://icarrr.github.io/posts/training-cisco-ccent-part-4/</link>
-      <pubDate>Fri, 29 Sep 2017 04:50:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/training-cisco-ccent-part-4/</guid>
-      <description>1. Pendahuluan
+      <item>
+        <title>Training Cisco CCENT Part 4</title>
+        <link>https://sibunglon.com/2017/09/29/training-cisco-ccent-part-4/</link>
+        <pubDate>Fri, 29 Sep 2017 04:50:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/09/29/training-cisco-ccent-part-4/</guid>
+        <description>1. Pendahuluan
 A. Pengertian
 Cisco Adalah sebuah perusahaan yang memiliki 2 bidang usaha, yaitu:
 1. Pembuatan hardware dan software yang berhubungan dengan jaringan komputer
@@ -185,15 +174,14 @@ Untuk lebih memahami materi yang diberikan tadi
 - Internet
 3. Jangka Waktu Pelaksanaan
 Jam 08:00 s/d 22:00</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Training Cisco CCENT Part 3</title>
-      <link>https://icarrr.github.io/posts/training-cisco-ccent-part-3/</link>
-      <pubDate>Thu, 28 Sep 2017 04:20:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/training-cisco-ccent-part-3/</guid>
-      <description>1. Pendahuluan
+      <item>
+        <title>Training Cisco CCENT Part 3</title>
+        <link>https://sibunglon.com/2017/09/28/training-cisco-ccent-part-3/</link>
+        <pubDate>Thu, 28 Sep 2017 04:20:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/09/28/training-cisco-ccent-part-3/</guid>
+        <description>1. Pendahuluan
 A. Pengertian
 Cisco Adalah sebuah perusahaan yang memiliki 2 bidang usaha, yaitu:
 1. Pembuatan hardware dan software yang berhubungan dengan jaringan komputer
@@ -208,15 +196,14 @@ Untuk lebih memahami materi yang diberikan tadi
 - Internet
 3. Jangka Waktu Pelaksanaan
 Jam 08:00 s/d 22:00</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Training Cisco CCENT Part 2</title>
-      <link>https://icarrr.github.io/posts/training-cisco-ccent-part-2/</link>
-      <pubDate>Wed, 27 Sep 2017 04:13:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/training-cisco-ccent-part-2/</guid>
-      <description>1. Pendahuluan
+      <item>
+        <title>Training Cisco CCENT Part 2</title>
+        <link>https://sibunglon.com/2017/09/27/training-cisco-ccent-part-2/</link>
+        <pubDate>Wed, 27 Sep 2017 04:13:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/09/27/training-cisco-ccent-part-2/</guid>
+        <description>1. Pendahuluan
 A. Pengertian
 Cisco Adalah sebuah perusahaan yang memiliki 2 bidang usaha, yaitu:
 1. Pembuatan hardware dan software yang berhubungan dengan jaringan komputer
@@ -231,83 +218,77 @@ Untuk lebih memahami materi yang diberikan tadi
 - Internet
 3. Jangka Waktu Pelaksanaan
 Jam 08:00 s/d 22:00</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Kunjungan Industri dari SMK N 1 Bantul</title>
-      <link>https://icarrr.github.io/posts/kunjungan-industri-dari-smk-n-1-bantul/</link>
-      <pubDate>Tue, 26 Sep 2017 04:08:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/kunjungan-industri-dari-smk-n-1-bantul/</guid>
-      <description>PendahuluanHari ini sedikit berbeda karena ada kunjungan industri dari SMKN 1 Bantul,&amp;nbsp;mereka mendapat kesempatan yang luarbiasa, karena dipandu langsung oleh Mbah Suro tentang cara memanjat tower. Karena biasanya Mbah Suro tidak akan memberi materi tentang SOP dan K3LH memanjat tower.
+      <item>
+        <title>Kunjungan Industri dari SMK N 1 Bantul</title>
+        <link>https://sibunglon.com/2017/09/26/kunjungan-industri-dari-smk-n-1-bantul/</link>
+        <pubDate>Tue, 26 Sep 2017 04:08:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/09/26/kunjungan-industri-dari-smk-n-1-bantul/</guid>
+        <description>PendahuluanHari ini sedikit berbeda karena ada kunjungan industri dari SMKN 1 Bantul,&amp;nbsp;mereka mendapat kesempatan yang luarbiasa, karena dipandu langsung oleh Mbah Suro tentang cara memanjat tower. Karena biasanya Mbah Suro tidak akan memberi materi tentang SOP dan K3LH memanjat tower.
 
 
 
 
 Sebenearnya saya dan teman teman diberi kesempatan untuk memraktekan Pointing dan Wireles reapeater, tapi karena waktunya sudah sore jadi tidak sampai pada praktik itu dan hanya samapai memanjat tower.</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Training Cisco CCENT Part 1</title>
-      <link>https://icarrr.github.io/posts/training-cisco-ccent-part-1/</link>
-      <pubDate>Mon, 25 Sep 2017 03:51:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/training-cisco-ccent-part-1/</guid>
-      <description>1.Pendahuluan
+      <item>
+        <title>Training Cisco CCENT Part 1</title>
+        <link>https://sibunglon.com/2017/09/25/training-cisco-ccent-part-1/</link>
+        <pubDate>Mon, 25 Sep 2017 03:51:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/09/25/training-cisco-ccent-part-1/</guid>
+        <description>1.Pendahuluan
 A. Pengertian
 Cisco merupakan perusahaan global dalam bidang telekomunikasi yang bermarkas di San José, California, Amerika Serikat. Perusahaan ini didirikan pada tahun 1984. Perusahaan ini mempekerjakan 51.480 pekerja.Produk dari perusahaan ini dapat ditemukan dari ruang tamu sampai ke perusahaan yang bergerak untuk skala internasional.Visi dari Cisco System.Inc (Cisco) yaitu “mengubah bagaimana cara hidup,bekerja,bermain dan belajar”,dan bagian dari Slogan dari Cisco adalah “ Selamat datang kedalam dunia Jaringan “ (welcome to the human network).</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Latihan Pointing diatas 40 meter</title>
-      <link>https://icarrr.github.io/posts/latihan-pointing-diatas-40-meter/</link>
-      <pubDate>Sat, 23 Sep 2017 03:43:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/latihan-pointing-diatas-40-meter/</guid>
-      <description>A. PendahuluanPada kesempatan ini saya akan berbagi pengalaman tentang bagaimana melakukan pointing diatas tower kurang lebih 40 meter.
+      <item>
+        <title>Latihan Pointing diatas 40 meter</title>
+        <link>https://sibunglon.com/2017/09/23/latihan-pointing-diatas-40-meter/</link>
+        <pubDate>Sat, 23 Sep 2017 03:43:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/09/23/latihan-pointing-diatas-40-meter/</guid>
+        <description>A. PendahuluanPada kesempatan ini saya akan berbagi pengalaman tentang bagaimana melakukan pointing diatas tower kurang lebih 40 meter.
 B. PengertianPointing&amp;nbsp;adalah menentukan lokasi yang ideal antara perangkat Akses&amp;nbsp;PointUtama yang berfungsi sebagai Server ke Akses&amp;nbsp;Point&amp;nbsp;ke-2 yang berfungsi sebagai Client.
 C. Latar belakangPenasaran untuk melakukan pointing diatas ketinggian dan ingin melihat kota bersinar diatas ketinggian
 D. TujuanDapat mengasah keinginan untuk ketempat yang lebih tinggi lagi
 E. Hasil yang diharapkanDapat melakukan yang terbaik
 F. Alat dan bahanUBNTPeralatan memanjat towerAsumsi makanan/minumanPerangkat voiceG.</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Pointing UBNT ke MikroTik</title>
-      <link>https://icarrr.github.io/posts/pointing-ubnt-ke-mikrotik/</link>
-      <pubDate>Tue, 19 Sep 2017 02:56:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/pointing-ubnt-ke-mikrotik/</guid>
-      <description>PENGERTIANPoint to Point adalah data link protokol yang umum digunakan dalam membangun hubungan langsung antara dua node jaringan. Hal ini dapat menyediakan koneksi otentikasi, transmisi enkripsi (menggunakan ECP, RFC 1968), dan kompresi.
+      <item>
+        <title>Pointing UBNT ke MikroTik</title>
+        <link>https://sibunglon.com/2017/09/19/pointing-ubnt-ke-mikrotik/</link>
+        <pubDate>Tue, 19 Sep 2017 02:56:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/09/19/pointing-ubnt-ke-mikrotik/</guid>
+        <description>PENGERTIANPoint to Point adalah data link protokol yang umum digunakan dalam membangun hubungan langsung antara dua node jaringan. Hal ini dapat menyediakan koneksi otentikasi, transmisi enkripsi (menggunakan ECP, RFC 1968), dan kompresi.
 LATAR BELAKANGJauhnya tempat tidak memunginkan untuk penggunakan kabel untuk media transmisi data
 MAKSUD DAN TUJUANMempelajari UBNT
 Jangka Waktu PelaksanaanKurang lebih 3 jam
 ALAT DAN BAHAN
 ~ Laptop~ Ubnt Powerbeam M2~ RB 941~ Alat untuk memnjat tower, Tali Wabbing, Harnesses, Tas untuk wadah kunci,~ Kabel LAN</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Belajar dan latihan memanjat tower</title>
-      <link>https://icarrr.github.io/posts/belajar-dan-latihan-memanjat-tower/</link>
-      <pubDate>Mon, 18 Sep 2017 02:36:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/belajar-dan-latihan-memanjat-tower/</guid>
-      <description>PENDAHULUANYaakk, kaliini saya akan berbagi pengalaman saat pertama memanjat Tower Jaringan. Hal hal yang harus anda mengerti saat akan memanjat tower,
+      <item>
+        <title>Belajar dan latihan memanjat tower</title>
+        <link>https://sibunglon.com/2017/09/18/belajar-dan-latihan-memanjat-tower/</link>
+        <pubDate>Mon, 18 Sep 2017 02:36:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/09/18/belajar-dan-latihan-memanjat-tower/</guid>
+        <description>PENDAHULUANYaakk, kaliini saya akan berbagi pengalaman saat pertama memanjat Tower Jaringan. Hal hal yang harus anda mengerti saat akan memanjat tower,
 ~ Kondisi lingkungan yang mendukung
 ~ Alat yang benar benar sesuai SOP
 ~ Kondisi fisikanda
 Alat yang saya gunakan pertama kali adalah, Tali Webbing
 Nah tali webbing ini minimal harus memiliki panjang 3-4 meter, agar nyaman di kenakan.
 selain itu tali webbing ini memiliki umur, jadi haruslah diperhatikan bentuk fisik dari tali yang akan kita pakai untuk memanjat tower.</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Training entri data bersama Manis PT.Ebizu #day2</title>
-      <link>https://icarrr.github.io/posts/training-entri-data-bersama-manis-pt.ebizu-day2/</link>
-      <pubDate>Thu, 14 Sep 2017 02:01:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/training-entri-data-bersama-manis-pt.ebizu-day2/</guid>
-      <description>PENDAHULUANEbizu adalah sebuah perusahaan DATA yang mengumpulkan data untuk tujuan tertentu. Ebizu ini memiliki banyak produk dintaranya adalah Maniz, Maniz sendiri adalah aplikasi yang menawarkan keuntungan berupa Voucher belanja, makan dll.
+      <item>
+        <title>Training entri data bersama Manis PT.Ebizu #day2</title>
+        <link>https://sibunglon.com/2017/09/14/training-entri-data-bersama-manis-pt.ebizu-day2/</link>
+        <pubDate>Thu, 14 Sep 2017 02:01:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/09/14/training-entri-data-bersama-manis-pt.ebizu-day2/</guid>
+        <description>PENDAHULUANEbizu adalah sebuah perusahaan DATA yang mengumpulkan data untuk tujuan tertentu. Ebizu ini memiliki banyak produk dintaranya adalah Maniz, Maniz sendiri adalah aplikasi yang menawarkan keuntungan berupa Voucher belanja, makan dll.
 ALAT DAN BAHAN
 ~ Laptop
 ~ Proyektor LCD
@@ -315,15 +296,14 @@ ALAT DAN BAHAN
 JANGKA WAKTU TRAINING
 jam 10 pagi s/d 4 sore
 TAHAPAN DAN PEMBAHASAN TrainingDi hari kedua ini dari pihak trainer, akan mereview apa yang telah mereka sampaikan kemarin, contoh saat akan melakukan Validasi harus melihat 4 aspek penting.</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Training entri data bersama Manis PT.Ebizu #day1</title>
-      <link>https://icarrr.github.io/posts/training-entri-data-bersama-manis-pt.ebizu-day1/</link>
-      <pubDate>Wed, 13 Sep 2017 02:00:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/training-entri-data-bersama-manis-pt.ebizu-day1/</guid>
-      <description>PENDAHULUANEbizu adalah sebuah perusahaan DATA yang mengumpulkan data untuk tujuan tertentu. Ebizu ini memiliki banyak produk dintaranya adalah Maniz, Maniz sendiri adalah aplikasi yang menawarkan keuntungan berupa Voucher belanja, makan dll.
+      <item>
+        <title>Training entri data bersama Manis PT.Ebizu #day1</title>
+        <link>https://sibunglon.com/2017/09/13/training-entri-data-bersama-manis-pt.ebizu-day1/</link>
+        <pubDate>Wed, 13 Sep 2017 02:00:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/09/13/training-entri-data-bersama-manis-pt.ebizu-day1/</guid>
+        <description>PENDAHULUANEbizu adalah sebuah perusahaan DATA yang mengumpulkan data untuk tujuan tertentu. Ebizu ini memiliki banyak produk dintaranya adalah Maniz, Maniz sendiri adalah aplikasi yang menawarkan keuntungan berupa Voucher belanja, makan dll.
 ALAT DAN BAHAN
 ~ Laptop
 ~ Proyektor LCD
@@ -336,37 +316,34 @@ TAHAPAN DAN PEMBAHASAN Training
 
 
 training ini memberikan pengarahan tentang aplikasi manis dan fitur Snap &amp;amp; Earn, untuk teman teman BLC yang berminat menjadi Operator dari Manis harus mengikuti dengan baik training ini.</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Sharing bersama master virtualisasi Pak Nathan Gusti Ryan</title>
-      <link>https://icarrr.github.io/posts/sharing-bersama-master-virtualisasi-pak-nathan-gusti-ryan/</link>
-      <pubDate>Wed, 30 Aug 2017 13:07:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/sharing-bersama-master-virtualisasi-pak-nathan-gusti-ryan/</guid>
-      <description>Pada kesempatan ini saya akan berbagi tentang pengalaman sharing dengan MASTER VIRTUALISASI DARI INDONESIA.
+      <item>
+        <title>Sharing bersama master virtualisasi Pak Nathan Gusti Ryan</title>
+        <link>https://sibunglon.com/2017/08/30/sharing-bersama-master-virtualisasi-pak-nathan-gusti-ryan/</link>
+        <pubDate>Wed, 30 Aug 2017 13:07:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/30/sharing-bersama-master-virtualisasi-pak-nathan-gusti-ryan/</guid>
+        <description>Pada kesempatan ini saya akan berbagi tentang pengalaman sharing dengan MASTER VIRTUALISASI DARI INDONESIA.
 
 
 
 Banyak sekali pengalaman yang saya terima dari sharing Pak Herry, Pak Nathan Gusti Ryan, Mas Latif. Mulai dari Pak Herry yang menceritakan tentang apa itu database, dan jenis jenis perangkat database yang pernah ia kerjakan, berapa tahun ia mempelajari Virtualisasi dan lika liku perjalanannya. Kemudian dari Pak Nathan memberi bocoran bagaimana gambaran didalam Datacenter.</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Sharing bersama Mbah Suro Dhemit tentang pengenalan Fiber Optik (FO)</title>
-      <link>https://icarrr.github.io/posts/sharing-bersama-mbah-suro-dhemit-tentang-pengenalan-fiber-optik-fo/</link>
-      <pubDate>Sat, 26 Aug 2017 12:21:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/sharing-bersama-mbah-suro-dhemit-tentang-pengenalan-fiber-optik-fo/</guid>
-      <description>Assalamualaikum wr wb hari ini saya berdiskusi bersama Mbah Suro pembina BLC Telkom Klaten sekaligus juga pengurus yang ada di BLC. Sebelumnya kami membahas tentang Fiber Optic karena saat ini sudah mulai pengembangan dengan dunia Fiber contoh mudahnya saat ini, kita kenal dengan yang namanya Indihome. Ya itu termasuk tegnologi Fiber karena kelebihan yang mendukung dengan jaman maka sangat perlu kita sebagai seorang profesional dalam bidang IT kita jugak perlu paham walapun hanya sekedar konsep.</description>
-    </item>
+      <item>
+        <title>Sharing bersama Mbah Suro Dhemit tentang pengenalan Fiber Optik (FO)</title>
+        <link>https://sibunglon.com/2017/08/26/sharing-bersama-mbah-suro-dhemit-tentang-pengenalan-fiber-optik-fo/</link>
+        <pubDate>Sat, 26 Aug 2017 12:21:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/26/sharing-bersama-mbah-suro-dhemit-tentang-pengenalan-fiber-optik-fo/</guid>
+        <description>Assalamualaikum wr wb hari ini saya berdiskusi bersama Mbah Suro pembina BLC Telkom Klaten sekaligus juga pengurus yang ada di BLC. Sebelumnya kami membahas tentang Fiber Optic karena saat ini sudah mulai pengembangan dengan dunia Fiber contoh mudahnya saat ini, kita kenal dengan yang namanya Indihome. Ya itu termasuk tegnologi Fiber karena kelebihan yang mendukung dengan jaman maka sangat perlu kita sebagai seorang profesional dalam bidang IT kita jugak perlu paham walapun hanya sekedar konsep.</description>
+      </item>
     
-    <item>
-      <title>Bersih-bersih di gedung baru BLC Telkom Klaten</title>
-      <link>https://icarrr.github.io/posts/bersih-bersih-di-gedung-baru-blc-telkom-klaten/</link>
-      <pubDate>Thu, 24 Aug 2017 11:48:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/bersih-bersih-di-gedung-baru-blc-telkom-klaten/</guid>
-      <description>A. Pendahuluan
+      <item>
+        <title>Bersih-bersih di gedung baru BLC Telkom Klaten</title>
+        <link>https://sibunglon.com/2017/08/24/bersih-bersih-di-gedung-baru-blc-telkom-klaten/</link>
+        <pubDate>Thu, 24 Aug 2017 11:48:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/24/bersih-bersih-di-gedung-baru-blc-telkom-klaten/</guid>
+        <description>A. Pendahuluan
 Malam ini ada kegiatan bersih bersih di gedung baru BLC Telkom. Siswa Prakerin berpartisipasi membersihkan gedung baru.
 1. Pengertian
 Kebersihan adalah keadaan bebas dari kotoran, termasuk di antaranya, debu, sampah, dan bau.
@@ -374,110 +351,100 @@ Kebersihan adalah keadaan bebas dari kotoran, termasuk di antaranya, debu, sampa
 BLC Telkom pindah ke gedung yang baru, kita sebagai siswa BLC Telkom ikut berpartisipasi untuk membersihkan gedung baru agar dapat digunakan untuk melanjutkan aktivitas seperti biasanya.
 3. Maksud &amp;amp; Tujuan
 Agar gedung bisa di pakai maka harus dibersihkan</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Sharing bersama Mbah Suro Dhemit tentang 7 layer OSI</title>
-      <link>https://icarrr.github.io/posts/sharing-bersama-mbah-suro-dhemit-tentang-7-layer-osi/</link>
-      <pubDate>Thu, 17 Aug 2017 17:39:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/sharing-bersama-mbah-suro-dhemit-tentang-7-layer-osi/</guid>
-      <description>A. PengertianModel referensi jaringan terbuka OSI atau OSI Reference Model for open networking adalah sebuah model arsitektural jaringan yang dikembangkan oleh badan International Organization for Standardization (ISO) di Eropa pada tahun 1977. OSI sendiri merupakan singkatan dari Open System Interconnection. Model ini disebut juga dengan model &#34;Model tujuh lapis OSI&#34; (OSI seven layer model).&amp;nbsp;Sebelum munculnya model referensi OSI, sistem jaringan komputer sangat tergantung kepada pemasok (vendor). OSI berupaya membentuk standar umum jaringan komputer untuk menunjang interoperatibilitas antar pemasok yang berbeda.</description>
-    </item>
+      <item>
+        <title>Sharing bersama Mbah Suro Dhemit tentang 7 layer OSI</title>
+        <link>https://sibunglon.com/2017/08/17/sharing-bersama-mbah-suro-dhemit-tentang-7-layer-osi/</link>
+        <pubDate>Thu, 17 Aug 2017 17:39:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/17/sharing-bersama-mbah-suro-dhemit-tentang-7-layer-osi/</guid>
+        <description>A. PengertianModel referensi jaringan terbuka OSI atau OSI Reference Model for open networking adalah sebuah model arsitektural jaringan yang dikembangkan oleh badan International Organization for Standardization (ISO) di Eropa pada tahun 1977. OSI sendiri merupakan singkatan dari Open System Interconnection. Model ini disebut juga dengan model &#34;Model tujuh lapis OSI&#34; (OSI seven layer model).&amp;nbsp;Sebelum munculnya model referensi OSI, sistem jaringan komputer sangat tergantung kepada pemasok (vendor). OSI berupaya membentuk standar umum jaringan komputer untuk menunjang interoperatibilitas antar pemasok yang berbeda.</description>
+      </item>
     
-    <item>
-      <title>Konsep perencanaan membangun jaringan sekolah</title>
-      <link>https://icarrr.github.io/posts/konsep-perencanaan-membangun-jaringan-sekolah/</link>
-      <pubDate>Wed, 16 Aug 2017 17:25:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/konsep-perencanaan-membangun-jaringan-sekolah/</guid>
-      <description>A. PENDAHULUANPada kesempatan ini saya akan memberikan sedikit ilmu terkait dengan konsep perencanaan membangun jaringan sekolah. dalam melakukan sebuah pekerjaan kita mesti memikirkan konsep terlebih dahulu.
+      <item>
+        <title>Konsep perencanaan membangun jaringan sekolah</title>
+        <link>https://sibunglon.com/2017/08/16/konsep-perencanaan-membangun-jaringan-sekolah/</link>
+        <pubDate>Wed, 16 Aug 2017 17:25:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/16/konsep-perencanaan-membangun-jaringan-sekolah/</guid>
+        <description>A. PENDAHULUANPada kesempatan ini saya akan memberikan sedikit ilmu terkait dengan konsep perencanaan membangun jaringan sekolah. dalam melakukan sebuah pekerjaan kita mesti memikirkan konsep terlebih dahulu.
 B. PENGERTIANPerencanaan merupakan tahapan awal yang harus di lakukan sebelum melakuka sesuatu pekerjaan. perencanaan dikatakan matang/berhasil, apabila perencanaan tersebut 70% sudah pasti dan tidak sering mengalami perubahan
 C. LATAR BELAKANGDalam hal ini, saya bekerja tim utuk membangun jaringan di sekolah. saya berpern untuk mengatur jaringan.</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Sharing pengenalan CISCO bersama RIFQI FAJAR RUDIN – BEST PATH Network,Jakarta</title>
-      <link>https://icarrr.github.io/posts/sharing-pengenalan-cisco-bersama-rifqi-fajar-rudin-best-path-networkjakarta/</link>
-      <pubDate>Tue, 15 Aug 2017 17:17:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/sharing-pengenalan-cisco-bersama-rifqi-fajar-rudin-best-path-networkjakarta/</guid>
-      <description>A. PendahuluanPada postingan ini&amp;nbsp;saya akan bercerita mengenai pertemuan saya dengan orang-orang hebat.BestPath Network, Jakarta, datang ke BLC Telkom&amp;nbsp;yaitu Rifqi Fajar Rudin dan Bapak Danu Wiyoto. Mereka datang untuk berbagi pengalaman menarik dengan kami semua.
+      <item>
+        <title>Sharing pengenalan CISCO bersama RIFQI FAJAR RUDIN – BEST PATH Network,Jakarta</title>
+        <link>https://sibunglon.com/2017/08/15/sharing-pengenalan-cisco-bersama-rifqi-fajar-rudin-best-path-networkjakarta/</link>
+        <pubDate>Tue, 15 Aug 2017 17:17:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/15/sharing-pengenalan-cisco-bersama-rifqi-fajar-rudin-best-path-networkjakarta/</guid>
+        <description>A. PendahuluanPada postingan ini&amp;nbsp;saya akan bercerita mengenai pertemuan saya dengan orang-orang hebat.BestPath Network, Jakarta, datang ke BLC Telkom&amp;nbsp;yaitu Rifqi Fajar Rudin dan Bapak Danu Wiyoto. Mereka datang untuk berbagi pengalaman menarik dengan kami semua.
 1. Pengertian :BestPath Network adalah suatu lembaga training dan consulting jaringan, dimana ini adalah solusi untuk Anda belajar lebih mudah tentang dunia jaringan yang luas.
 2. Latar BelakangBestPath Network membuka peluang rekrutmen untuk bergabung bersama mereka.</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Sharing Bersama master SEO ADE ERMANSYAH di BLC Telkom Klaten</title>
-      <link>https://icarrr.github.io/posts/sharing-bersama-master-seo-ade-ermansyah-di-blc-telkom-klaten/</link>
-      <pubDate>Sun, 13 Aug 2017 16:59:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/sharing-bersama-master-seo-ade-ermansyah-di-blc-telkom-klaten/</guid>
-      <description>PENDAHULUANMinggu 13 agustus sekitar ba&#39;dah duhur saya berada di BLC Telkom Klaten, bersama teman sedang melakukan sahring kecil-kecilan dan tak sadar bang Ade Ermansyah bersama pak Cahyo sang master php berkunjung keBLC Telkom Klaten.PENGERTIAN SEO WIKIPEDIA
+      <item>
+        <title>Sharing Bersama master SEO ADE ERMANSYAH di BLC Telkom Klaten</title>
+        <link>https://sibunglon.com/2017/08/13/sharing-bersama-master-seo-ade-ermansyah-di-blc-telkom-klaten/</link>
+        <pubDate>Sun, 13 Aug 2017 16:59:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/13/sharing-bersama-master-seo-ade-ermansyah-di-blc-telkom-klaten/</guid>
+        <description>PENDAHULUANMinggu 13 agustus sekitar ba&#39;dah duhur saya berada di BLC Telkom Klaten, bersama teman sedang melakukan sahring kecil-kecilan dan tak sadar bang Ade Ermansyah bersama pak Cahyo sang master php berkunjung keBLC Telkom Klaten.PENGERTIAN SEO WIKIPEDIA
 SEO menurut wikipedia adalah Optimalisasi Mesin Pencari, proses mempengaruhi visibilitas situs web atau halaman web dalam hasil mesin pencari yang belum dibayar
 SEO Menurut Bloger
 Optimisasi Mesin Pencari atau Search Engine Optimization (SEO) adalah sebuah proses untuk mempengaruhi tingkat keterlihatan (visibilitas) sebuah situs web atau sebuah halaman web di hasil&amp;nbsp;pencarian alami (sering disebut juga dengan&amp;nbsp;pencarian tak-berbayar,&amp;nbsp;pencarian non-iklan, atau&amp;nbsp;pencarian organik) dari sebuah mesin pencari.</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Step by step melakukan perencanaan kerja</title>
-      <link>https://icarrr.github.io/posts/step-by-step-melakukan-perencanaan-kerja/</link>
-      <pubDate>Sat, 12 Aug 2017 16:21:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/step-by-step-melakukan-perencanaan-kerja/</guid>
-      <description>Apa yang Anda pikirkan ketika mendengar ketika mendengar kata Perencanaan kerja?Apakah Anda merasa malas? atau merasa membuang waktu? Ada orang yang merasa bahwa perencanaan itu penting tapi tidak mau membuatnya, ada juga yang memulai membuat perencanaan tapi tidak selesai atau merasa terbebanketika perencanaan telah disusun dengan baik ada yang tidak tercapai dan ada juga yang menganggap hal ini tidak perlu dilakukan karena menyukai spontanitas atau berpendapat bahwa perencanaan hanya menghabiskan waktu.</description>
-    </item>
+      <item>
+        <title>Step by step melakukan perencanaan kerja</title>
+        <link>https://sibunglon.com/2017/08/12/step-by-step-melakukan-perencanaan-kerja/</link>
+        <pubDate>Sat, 12 Aug 2017 16:21:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/12/step-by-step-melakukan-perencanaan-kerja/</guid>
+        <description>Apa yang Anda pikirkan ketika mendengar ketika mendengar kata Perencanaan kerja?Apakah Anda merasa malas? atau merasa membuang waktu? Ada orang yang merasa bahwa perencanaan itu penting tapi tidak mau membuatnya, ada juga yang memulai membuat perencanaan tapi tidak selesai atau merasa terbebanketika perencanaan telah disusun dengan baik ada yang tidak tercapai dan ada juga yang menganggap hal ini tidak perlu dilakukan karena menyukai spontanitas atau berpendapat bahwa perencanaan hanya menghabiskan waktu.</description>
+      </item>
     
-    <item>
-      <title>Sharing dengan Mbah Suro Dhemit (pengenalan sistem telekomunikasi)</title>
-      <link>https://icarrr.github.io/posts/sharing-dengan-mbah-suro-dhemit-pengenalan-sistem-telekomunikasi/</link>
-      <pubDate>Sat, 05 Aug 2017 17:01:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/sharing-dengan-mbah-suro-dhemit-pengenalan-sistem-telekomunikasi/</guid>
-      <description>A. PENDAHULUANAssalamu&amp;rsquo;alaikum wr.wbPada kesempatan ini saya akan berbagi,tentang Sistem TelekomunikasiB. PENGERTIANTelekomunikasi&amp;nbsp;adalah teknik pengiriman atau penyampaian&amp;nbsp;infomasi, dari suatu tempat ke tempat lain. Dalam kaitannya dengan &amp;lsquo;telekomunikasi&amp;rsquo; bentuk&amp;nbsp;komunikasi&amp;nbsp;jarak jauh dapat dibedakan atas tiga macam:Komunikasi Satu Arah (Simplex). Dalam komunikasi satu arah (Simplex) pengirim dan penerima informasi tidak dapat menjalin komunikasi yang berkesinambungan melalui media yang sama. Contoh&amp;nbsp;:Pager,&amp;nbsp;televisi, dan&amp;nbsp;radio.Komunikasi Dua Arah (Duplex). Dalam komunikasi dua arah (Duplex) pengirim dan penerima informasi dapat menjalin komunikasi yang berkesinambungan melalui media yang sama.</description>
-    </item>
+      <item>
+        <title>Sharing dengan Mbah Suro Dhemit (pengenalan sistem telekomunikasi)</title>
+        <link>https://sibunglon.com/2017/08/05/sharing-dengan-mbah-suro-dhemit-pengenalan-sistem-telekomunikasi/</link>
+        <pubDate>Sat, 05 Aug 2017 17:01:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/05/sharing-dengan-mbah-suro-dhemit-pengenalan-sistem-telekomunikasi/</guid>
+        <description>A. PENDAHULUANAssalamu&amp;rsquo;alaikum wr.wbPada kesempatan ini saya akan berbagi,tentang Sistem TelekomunikasiB. PENGERTIANTelekomunikasi&amp;nbsp;adalah teknik pengiriman atau penyampaian&amp;nbsp;infomasi, dari suatu tempat ke tempat lain. Dalam kaitannya dengan &amp;lsquo;telekomunikasi&amp;rsquo; bentuk&amp;nbsp;komunikasi&amp;nbsp;jarak jauh dapat dibedakan atas tiga macam:Komunikasi Satu Arah (Simplex). Dalam komunikasi satu arah (Simplex) pengirim dan penerima informasi tidak dapat menjalin komunikasi yang berkesinambungan melalui media yang sama. Contoh&amp;nbsp;:Pager,&amp;nbsp;televisi, dan&amp;nbsp;radio.Komunikasi Dua Arah (Duplex). Dalam komunikasi dua arah (Duplex) pengirim dan penerima informasi dapat menjalin komunikasi yang berkesinambungan melalui media yang sama.</description>
+      </item>
     
-    <item>
-      <title>Menyiapkan server</title>
-      <link>https://icarrr.github.io/posts/menyiapkan-server/</link>
-      <pubDate>Mon, 31 Jul 2017 15:39:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/menyiapkan-server/</guid>
-      <description>PendahuluanServer merupakan sebuah sistem komputer yang menyediakan jenis layanan tertentu dalam sebuah jaringan komputer. Peladen didukung dengan prosesor yang bersifat scalable dan RAM yang besar,dan juga dilengkapi dengan sistem operasi khusus, yang disebut sebagai sistem operasi jaringan. Peladen juga menjalankan perangkat lunak administratif yang mengontrol akses terhadap jaringan dan sumber daya yang terdapat di dalamnya contoh sepertihalnya berkas atau pencetak, dan memberikan akses kepada stasiun kerja anggota jaringan.
+      <item>
+        <title>Menyiapkan server</title>
+        <link>https://sibunglon.com/2017/07/31/menyiapkan-server/</link>
+        <pubDate>Mon, 31 Jul 2017 15:39:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/07/31/menyiapkan-server/</guid>
+        <description>PendahuluanServer merupakan sebuah sistem komputer yang menyediakan jenis layanan tertentu dalam sebuah jaringan komputer. Peladen didukung dengan prosesor yang bersifat scalable dan RAM yang besar,dan juga dilengkapi dengan sistem operasi khusus, yang disebut sebagai sistem operasi jaringan. Peladen juga menjalankan perangkat lunak administratif yang mengontrol akses terhadap jaringan dan sumber daya yang terdapat di dalamnya contoh sepertihalnya berkas atau pencetak, dan memberikan akses kepada stasiun kerja anggota jaringan.
 LATAR BELAKANGServer merupakan media yang memiliki peranan penting untukmenyediakan layanan akses internet bagi penggunanya.</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Mengkrimping kabel UTP dan susunan kabelnya</title>
-      <link>https://icarrr.github.io/posts/mengkrimping-kabel-utp-dan-susunan-kabelnya/</link>
-      <pubDate>Sat, 29 Jul 2017 15:28:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/mengkrimping-kabel-utp-dan-susunan-kabelnya/</guid>
-      <description>PendahuluanPada postingan ini saya mengimplementasikan atau membuat kabel UTP menjadi kabel straight dan cross (kabel LAN).&amp;nbsp;Kabel UTP adalah UTP singkatan dari “Unshielded Twisted Pair” yaitu jenis kabel ini terbuat dari bahan penghantar tembaga, mempunyai isolasi dari plastik &amp;amp; terbungkus oleh bahan isolasi yang dapat melindungi dari api dan juga kerusakan fisik, kabel UTP sendiri terdiri dari 4 pasang inti kabel yang saling berbelit dimana masing-masing pasang mempunyai kode warna berbeda.</description>
-    </item>
+      <item>
+        <title>Mengkrimping kabel UTP dan susunan kabelnya</title>
+        <link>https://sibunglon.com/2017/07/29/mengkrimping-kabel-utp-dan-susunan-kabelnya/</link>
+        <pubDate>Sat, 29 Jul 2017 15:28:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/07/29/mengkrimping-kabel-utp-dan-susunan-kabelnya/</guid>
+        <description>PendahuluanPada postingan ini saya mengimplementasikan atau membuat kabel UTP menjadi kabel straight dan cross (kabel LAN).&amp;nbsp;Kabel UTP adalah UTP singkatan dari “Unshielded Twisted Pair” yaitu jenis kabel ini terbuat dari bahan penghantar tembaga, mempunyai isolasi dari plastik &amp;amp; terbungkus oleh bahan isolasi yang dapat melindungi dari api dan juga kerusakan fisik, kabel UTP sendiri terdiri dari 4 pasang inti kabel yang saling berbelit dimana masing-masing pasang mempunyai kode warna berbeda.</description>
+      </item>
     
-    <item>
-      <title>Instalasi Linux Mint 18.1 Sarena</title>
-      <link>https://icarrr.github.io/posts/instalasi-linux-mint-18.1-sarena/</link>
-      <pubDate>Mon, 24 Jul 2017 13:52:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/instalasi-linux-mint-18.1-sarena/</guid>
-      <description>Alat dan bahan:1 set pc atau laptop
+      <item>
+        <title>Instalasi Linux Mint 18.1 Sarena</title>
+        <link>https://sibunglon.com/2017/07/24/instalasi-linux-mint-18.1-sarena/</link>
+        <pubDate>Mon, 24 Jul 2017 13:52:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/07/24/instalasi-linux-mint-18.1-sarena/</guid>
+        <description>Alat dan bahan:1 set pc atau laptop
 flashdisk booting linux mint 18.1 cinnamon 64-bitLangkah kerja:Siapkan sebuah pc atau laptop yang akan diinstallkan linux mint 18.1 cinnamon 64-bit, serta flashdisk yang berisi booting sistem operasi yang akan diinstal.
 Nyalakan pc atau laptop yang ingin di install, setalah itu masuk pada bios dan konfigurasi agar flashdisk booting yang telah ada dapat dipakai yaitu dengan cara masuk di menu “Boot” dan meletakkan jenis USB ke deretan atas.</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Sejarah singkat BLC Telkom Klaten serta perkenalan dan pertemuan pertama</title>
-      <link>https://icarrr.github.io/posts/sejarah-singkat-blc-telkom-klaten-serta-perkenalan-dan-pertemuan-pertama/</link>
-      <pubDate>Sat, 22 Jul 2017 13:43:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/sejarah-singkat-blc-telkom-klaten-serta-perkenalan-dan-pertemuan-pertama/</guid>
-      <description>Assalamualaikum Wr.Wb
+      <item>
+        <title>Sejarah singkat BLC Telkom Klaten serta perkenalan dan pertemuan pertama</title>
+        <link>https://sibunglon.com/2017/07/22/sejarah-singkat-blc-telkom-klaten-serta-perkenalan-dan-pertemuan-pertama/</link>
+        <pubDate>Sat, 22 Jul 2017 13:43:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/07/22/sejarah-singkat-blc-telkom-klaten-serta-perkenalan-dan-pertemuan-pertama/</guid>
+        <description>Assalamualaikum Wr.Wb
 &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Perkenalkan saya Faizar Septiawan atau bisa di panggil Icar berasal dari Bulukumba, Sulawesi Selatan dan sekolah di SMKN 1 Bulukumba. Dipostingan pertama ini saya akan tuliskan sejarah dan review sebuah tempat magang/prakerin yang saya tempati. Tempat tersebut bernama BLC Telkom Klaten, beralamat di&amp;nbsp;Jl.Srigading No.7 Tonggalan, Klaten Tengah
 Sejarah BLC Telkom Klaten
 &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;ldquo;Saya melihat Teknologi Informasi (TI) khususnya penggunaan dan pemanfaatan Internet di Indonesia seperti sebilah pisau yang sangat tajam dijual bebas dan dibeli oleh orang-orang tapi tidak ada keterangan penggunaannya, manfaat segi positif dan negatifnya.</description>
-    </item>
+      </item>
     
   </channel>
 </rss>

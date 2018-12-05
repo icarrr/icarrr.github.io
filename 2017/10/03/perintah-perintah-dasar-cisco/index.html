@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perintah - perintah dasar cisco - The Official site of siBunglon</title>
+  <meta name="author" content="Faizar Septiawan">
+  <meta name="description" content="A blog about everything.">
+
+  <meta name="generator" content="Hugo 0.51" />
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/css/external.min.css" media="screen">
+
+  
+  
+  <link rel="stylesheet" href="/assets/css/styles.css" media="screen">
+
+  <link href="//fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
+
+  
+  
+  <link rel="shortcut icon" href="/assets/img/logo.png">
+
+  
+  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official site of siBunglon" />
+  <link href="/posts/index.xml" rel="feed" type="application/rss+xml" title="The Official site of siBunglon" />
+
+  <meta property="og:title" content="Perintah - perintah dasar cisco" />
+<meta property="og:description" content="A. PENGERTIAN
+Konfigurasi yang akan dibahas dalam artikel ini adalah :
+Mode Router
+Memasuki mode konfigurasi global (Global Configuration Mode)
+Konfigurasi router :
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nama router
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password terenkripsi
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nama interfaces
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Perpindahan antar interfaces
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Konfigurasi interfaces Serial
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Konfigurasi interfaces Fast Ethernet
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Membuat banner pesan MOTD (Message of the Day)
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Membuat banner login
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Menempatkan local host domain ke IP address
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Perintah&nbsp;no ip domain-lookup
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Perintah&nbsp;exec-timeout
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Menyimpan konfigurasi
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Menghapus konfigurasi
+Perintah&nbsp;show&nbsp;untuk memperifikasi konfigurasi router" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sibunglon.com/2017/10/03/perintah-perintah-dasar-cisco/" /><meta property="article:published_time" content="2017-10-03T05:17:00&#43;00:00"/>
+<meta property="article:modified_time" content="2017-10-03T05:17:00&#43;00:00"/>
+
+  
+  
+<meta itemprop="name" content="Perintah - perintah dasar cisco">
+<meta itemprop="description" content="A. PENGERTIAN
+Konfigurasi yang akan dibahas dalam artikel ini adalah :
+Mode Router
+Memasuki mode konfigurasi global (Global Configuration Mode)
+Konfigurasi router :
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nama router
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password terenkripsi
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nama interfaces
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Perpindahan antar interfaces
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Konfigurasi interfaces Serial
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Konfigurasi interfaces Fast Ethernet
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Membuat banner pesan MOTD (Message of the Day)
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Membuat banner login
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Menempatkan local host domain ke IP address
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Perintah&nbsp;no ip domain-lookup
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Perintah&nbsp;exec-timeout
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Menyimpan konfigurasi
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Menghapus konfigurasi
+Perintah&nbsp;show&nbsp;untuk memperifikasi konfigurasi router">
+
+
+<meta itemprop="datePublished" content="2017-10-03T05:17:00&#43;00:00" />
+<meta itemprop="dateModified" content="2017-10-03T05:17:00&#43;00:00" />
+<meta itemprop="wordCount" content="744">
+
+
+
+<meta itemprop="keywords" content="BLC Telkom Klaten,BestPath,Kegiatan,KPLI Klaten,Ayo Belajar Linux,Cisco," />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Perintah - perintah dasar cisco"/>
+<meta name="twitter:description" content="A. PENGERTIAN
+Konfigurasi yang akan dibahas dalam artikel ini adalah :
+Mode Router
+Memasuki mode konfigurasi global (Global Configuration Mode)
+Konfigurasi router :
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nama router
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password terenkripsi
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nama interfaces
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Perpindahan antar interfaces
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Konfigurasi interfaces Serial
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Konfigurasi interfaces Fast Ethernet
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Membuat banner pesan MOTD (Message of the Day)
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Membuat banner login
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Menempatkan local host domain ke IP address
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Perintah&nbsp;no ip domain-lookup
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Perintah&nbsp;exec-timeout
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Menyimpan konfigurasi
+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Menghapus konfigurasi
+Perintah&nbsp;show&nbsp;untuk memperifikasi konfigurasi router"/>
+
+</head>
+
+  <body>
+    
+      <nav>
+  <a href="/" title="Homepage">
+    siBunglon
+  </a>
+</nav>
+
+    
+    <main class="container">
+      
+  <article>
+    <header>
+      <small>
+        <time datetime="2017-10-03 05:17">2017-10-03</time>
+        &bull;</small>
+      <h1>Perintah - perintah dasar cisco</h1>
+    </header>
+    <section><div style="text-align: justify;"><strong>A. PENGERTIAN</strong><br />Konfigurasi yang akan dibahas dalam artikel ini adalah :<br />Mode Router<br />Memasuki mode konfigurasi global (Global Configuration Mode)<br />Konfigurasi router :</div><br /><div style="text-align: justify;">-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nama router</div><br /><div style="text-align: justify;">-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password</div><br /><div style="text-align: justify;">-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password terenkripsi</div><br /><div style="text-align: justify;">-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nama interfaces</div><br /><div style="text-align: justify;">-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Perpindahan antar interfaces</div><br /><div style="text-align: justify;">-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Konfigurasi interfaces Serial</div><br /><div style="text-align: justify;">-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Konfigurasi interfaces Fast Ethernet</div><br /><div style="text-align: justify;">-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Membuat banner pesan MOTD (Message of the Day)</div><br /><div style="text-align: justify;">-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Membuat banner login</div><br /><div style="text-align: justify;">-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Menempatkan local host domain ke IP address</div><br /><div style="text-align: justify;">-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Perintah&nbsp;<strong>no ip domain-lookup</strong></div><br /><div style="text-align: justify;">-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Perintah&nbsp;<strong>exec-timeout</strong></div><br /><div style="text-align: justify;">-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Menyimpan konfigurasi</div><br /><div style="text-align: justify;">-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Menghapus konfigurasi<br />Perintah&nbsp;<strong>show&nbsp;</strong>untuk memperifikasi konfigurasi router<br />Menjalankan perintah EXEC di mode konfigurasi dengan perintah&nbsp;<strong>do</strong></div><br /><table><tbody><tr><td colspan="2" width="650"><strong>MODE ROUTER</strong></td></tr><tr><td width="291">Router&gt;</td><td width="359">Mode user</td></tr><tr><td width="291">Router#</td><td width="359">Mode&nbsp;<em>privileged</em>&nbsp;(dikenal juga sebagai&nbsp;<em>EXEC-level mode</em>)</td></tr><tr><td width="291">Router(config)#</td><td width="359">Mode global konfigurasi</td></tr><tr><td width="291">Router(config-if)#</td><td width="359">Mode interface</td></tr><tr><td width="291">Router(config-subif)#</td><td width="359">Mode subinterface</td></tr><tr><td width="291">Router(config-line)#</td><td width="359">Mode&nbsp;<em>line</em></td></tr><tr><td width="291">Router(config-router)#</td><td width="359">Mode konfigurasi router</td></tr><tr><td colspan="2" width="650">Catatan : masih ada mode yang lain selain mode diatas. Perintah pada tiap mode berbeda, misal jika kita mengetikan perintah&nbsp;<strong>show running-config&nbsp;</strong>di mode interface akan error.</td></tr><tr><td colspan="2" width="650"></td></tr><tr><td colspan="2" width="650"><strong>MEMASUKI MODE KONFIGURASI GLOBAL</strong></td></tr><tr><td width="291">Router&gt;</td><td width="359">Melihat konfigurasi dengan terbatas dan tidak bisa mengkonfigurasi apapun dalam mode ini</td></tr><tr><td width="291">Router&gt;<strong>enable</strong></td><td width="359">Perintah untuk masuk mode&nbsp;<em>privileged</em></td></tr><tr><td width="291">Router#</td><td width="359">Mode ini sudah bisa melihat seluruh konfigurasi router dan berpindah ke mode konfigurasi global</td></tr><tr><td width="291">Router#<strong>configure terminal</strong></td><td width="359">Perintah untuk masuk ke global konfigurasi</td></tr><tr><td width="291">Router(config)#</td><td width="359">Pada&nbsp;<em>prompt&nbsp;</em>ini kita sudah bisa memulai konfigurasi</td></tr><tr><td colspan="2" width="650"></td></tr><tr><td colspan="2" width="650"><strong>KONFIGURASI NAMA ROUTER</strong></td></tr><tr><td width="291">Router(config)#<strong>hostname Cisco</strong></td><td width="359">Mengganti nama router dengan&nbsp;<strong>cisco&nbsp;</strong>(penamaan router bebas)</td></tr><tr><td width="291">Cisco(config)#</td><td width="359"></td></tr><tr><td colspan="2" width="650"></td></tr><tr><td colspan="2" width="650"><strong>KONFIGURASI PASSWORD</strong></td></tr><tr><td width="291">Router(config)#<strong>enable password cisco</strong></td><td width="359">Setting&nbsp;<strong>enable&nbsp;</strong>password</td></tr><tr><td width="291">Router(config)#<strong>enable secret class</strong></td><td width="359">Setting&nbsp;<strong>enable secret&nbsp;</strong>password</td></tr><tr><td width="291">Router(config)#<strong>line console 0</strong></td><td width="359">Memasuki mode console&nbsp;<em>line</em></td></tr><tr><td width="291">Router(config-line)#<strong>password console</strong></td><td width="359">Setting mode&nbsp;<em>console line</em>&nbsp;password dengan&nbsp;<strong>console</strong></td></tr><tr><td width="291">Router(config-line)#<strong>login</strong></td><td width="359">Mengaktifkan pengecekan password saat login</td></tr><tr><td width="291">Router(config)#<strong>line vty 0 4</strong></td><td width="359">Memasuki mode&nbsp;<em>vty line&nbsp;</em>untuk 5&nbsp;<em>vty line</em></td></tr><tr><td width="291">Router(config-line)#<strong>password telnet</strong></td><td width="359">Seting vty password dengan&nbsp;<strong>telnet</strong></td></tr><tr><td width="291">Router(config-line)#<strong>login</strong></td><td width="359">Mengaktifkan pengecekan password saat login</td></tr><tr><td colspan="2" width="650">Catatan :&nbsp;<strong>enable secret&nbsp;</strong>password secara default terenkripsi, namun&nbsp;<strong>enable&nbsp;</strong>password tidak. Dalam praktiknya tidak direkomendasikan menggunakan&nbsp;<strong>enable&nbsp;</strong>password, selalu gunakan&nbsp;<strong>enable secret&nbsp;</strong>password untuk keamanan.</td></tr><tr><td width="291"></td><td width="359"></td></tr><tr><td colspan="2" width="650"><strong>ENKRIPSI PASSWORD</strong></td></tr><tr><td width="291">Router(config)#<strong>service password-encryption</strong></td><td width="359">Menerapkan enkripsi password (enkripsi lemah)</td></tr><tr><td width="291">Router(config)#<strong>enable password cisco</strong></td><td width="359">Mengubah&nbsp;<em>enable&nbsp;</em>password menjadi&nbsp;<strong>cisco</strong></td></tr><tr><td width="291">Router(config)#<strong>line console 0</strong></td><td width="359">Berpindah ke mode line console</td></tr><tr><td width="291">Router(config-line)#<strong>password cisco</strong></td><td width="359">Meneruskan setingan password seperti diatas</td></tr><tr><td width="291">Router(config-line)#<strong>exit</strong></td><td width="359">Kluar dari mode line console</td></tr><tr><td width="291">Router(config)#<strong>no service password-encryption</strong></td><td width="359">Mematikan enkripsi password</td></tr><tr><td colspan="2" width="650">Catatan : jika kita menghidupkan&nbsp;<strong>service password-encryption,&nbsp;</strong>menggunakannya, lalu mematikannya, maka password yang sudah terenkripsi sebelumnya akan tetap terenkripsi. Password yang diketikan selanjutnya tidak terenkripsi.</td></tr><tr><td width="291"></td><td width="359"></td></tr><tr><td colspan="2" width="650"><strong>KONFIGURASI INTERFACES</strong></td></tr><tr><td width="291">Router(config)#<strong>interface serial 0/0/0</strong></td><td width="359">Memasuki mode konfigurasi interface serial</td></tr><tr><td width="291">Router(config-if)#<strong>description Link ke ISP</strong></td><td width="359">Menambah deskripsi interface (optional)</td></tr><tr><td width="291">Router(config-if)#<strong>ip address 192.168.10.1 255.255.255.0</strong></td><td width="359">Konfigurasi IP address dan subnetmask pada interface</td></tr><tr><td width="291">Router(config-if)#<strong>clock rate 64000</strong></td><td width="359">Konfigurasi clock rate (berlaku untuk DCE interface)</td></tr><tr><td width="291">Router(config-if)#<strong>no shutdown</strong></td><td width="359">Menghidupkan interface secara administrative</td></tr><tr><td colspan="2" width="650">Catatan : perintah&nbsp;<strong>clock rate&nbsp;</strong>hanya digunakan untuk serial interface yang dicolokan kabel serial DCE saja. Clock rate harus selalu dikonfigurasi di salah satu serial antara kedua Router yang memakai kabel serial.</td></tr><tr><td width="291">Router(config)#<strong>interface fastehternet 0/0</strong></td><td width="359">Memasuki konfigurasi fastehternet interface</td></tr><tr><td width="291">Router(config-if)#<strong>description LAN LOKAL</strong></td><td width="359">Menentukan deskripsi interface dengan&nbsp;<strong>LAN LOKAL</strong></td></tr><tr><td width="291">Router(config-if)#<strong>ip address 192.168.1.10 255.255.255.0</strong></td><td width="359">Konfigurasi IP address dan subnetmask</td></tr><tr><td width="291">Router(config-if)#<strong>no shutdown</strong></td><td width="359">Menghidupkan interface secara administratif</td></tr><tr><td width="291">Router(config-if)#<strong>interface serial 0/0/0</strong></td><td width="359">Berpindah secara langsung ke interface ke serial</td></tr><tr><td width="291">Router(config-if)#<strong>exit</strong></td><td width="359">Keluar dari mode interface/kembali ke mode sebelumnya</td></tr><tr><td width="291"></td><td width="359"></td></tr><tr><td colspan="2" width="650"><strong>BANNER</strong></td></tr><tr><td width="291">Router(config)#<strong>banner motd&nbsp; #&nbsp;</strong><em>isi pesan&nbsp;</em><strong>#</strong></td><td width="359">Menambah pesan login (<em>message of the day)</em></td></tr><tr><td width="291">Router(config)#<strong>banner login #&nbsp;</strong><em>isi pesan&nbsp;</em><strong>#</strong></td><td width="359">Menambah banner ketika login</td></tr><tr><td width="291">Router(config)#<strong>no</strong>&nbsp;<strong>banner login</strong></td><td width="359">Perintah untuk membatalkan banner login</td></tr><tr><td width="291"></td><td width="359"></td></tr><tr><td colspan="2" width="650"><strong>MEMETAKAN LOCAL HOST KE IP ADDRESS</strong></td></tr><tr><td width="291">Router(config)#<strong>ip host sukabumi 192.168.2.5</strong></td><td width="359">Mendaftarkan ip 192.168.2.5 ke local host name&nbsp;<strong>sukabumi</strong></td></tr><tr><td width="291">Router#<strong>ping sukabumi</strong><br /><br /><strong>=</strong><br /><br />Router#<strong>ping 192.168.2.5</strong></td><td width="359">Kedua perintah tersebut dieksekusi ke objek yang sama : mengirim pesan echo (ping) ke alamat 192.168.2.5</td></tr><tr><td colspan="2" width="650">Catatan : secara default no port perintah&nbsp;<strong>ip host&nbsp;</strong>adalah 23 (telnet). Host name tersebut bisa dipakai untuk telnet.<br /><br />Router#<strong>sukabumi =&nbsp;</strong>Router#<strong>telnet sukabumi =&nbsp;</strong>Router#<strong>telnet 192.168.2.5</strong></td></tr><tr><td width="291">Router(config)#<strong>no ip domain-lookup</strong></td><td width="359">Mematikan fitur otomatis translasi perintah yang tidak diketahui ke domain atau local host name</td></tr><tr><td colspan="2" width="650">Catatan : semua perintah salah (tidak diketahui) yang diketikan, maka router akan menunggu selama beberapa menit untuk mentranslasikan / me-<em>resolve&nbsp;</em>perintah tersebut ke domain server 255.255.255.255? secara default router akan mencoba menerjemahkan setiap perintah salah yang kita ketikan ke DNS server pada alamat 255.255.255.255. Jika kita tidak akan menkonfigurasi server DNS, sebaiknya matikan saja fitur ini untuk menghemat waktu jika kita sering salah dalam mengetik perintah pada CLI.</td></tr><tr><td width="291"></td><td width="359"></td></tr><tr><td colspan="2" width="650"><strong>LOGIN TIME OUT</strong></td></tr><tr><td width="291">Router(config)#<strong>line console 0</strong></td><td width="359">Memasuki mode&nbsp;<em>console line</em></td></tr><tr><td width="291">Router(config-line)#<strong>exec-timeout 0 0</strong></td><td width="359">Menyeting batas waktu log off otomatis ke 0 0 (menit detik). Value ini dimaksudkan router tidak pernah log off</td></tr><tr><td width="291"></td><td width="359"></td></tr><tr><td colspan="2" width="650"><strong>MENYIMPAN DAN MENGHAPUS KONFIGURASI</strong></td></tr><tr><td width="291">Router#<strong>copy running-config startup-config</strong></td><td width="359">Menyimpan konfigurasi yang sedang berjalan di NVRAM</td></tr><tr><td width="291">Router#<strong>copy running-config tftp</strong></td><td width="359">Menyimpan konfigurasi yang sedang berjalan di TFTP server secara&nbsp;<em>remote</em>.</td></tr><tr><td width="291">Router#<strong>erase startup-config</strong></td><td width="359">Menghapus file konfigurasi dari VNRAM</td></tr><tr><td width="291"></td><td width="359"></td></tr><tr><td colspan="2" width="650"><strong>PERINTAH “SHOW”</strong></td></tr><tr><td width="291">Router#<strong>show ?</strong></td><td width="359">Melihat semua perintah yang tersedia</td></tr><tr><td width="291">Router#<strong>show interfaces</strong></td><td width="359">Melihat statistik semua interface</td></tr><tr><td width="291">Router#<strong>show interface serial 0/0/0</strong></td><td width="359">Melihat statistik sebuah interface</td></tr><tr><td width="291">Router#<strong>show ip interface brief</strong></td><td width="359">Melihat semua interface dengan informasi yang ringkas, termasuk status dan konfigurasi IP pada tiap interface</td></tr><tr><td width="291">Router#<strong>show controllers serial 0/0/0</strong></td><td width="359">Melihat statistik hardware sebuah interface. Informasi yang terlihat adalah clock rate dan kabel DCE atau DTE yang terhubung atau tidak ada kabel yang terhubung.</td></tr><tr><td width="291">Router#<strong>show host</strong></td><td width="359">Melihat local host cache</td></tr><tr><td width="291">Router#<strong>show users</strong></td><td width="359">Melihat user yang sedang koneksi</td></tr><tr><td width="291">Router#<strong>show history</strong></td><td width="359">Melihat history dari perintah yang sudah diketikan</td></tr><tr><td width="291">Router#<strong>show flash</strong></td><td width="359">Melihat info memory flash</td></tr><tr><td width="291">Router#<strong>show version</strong></td><td width="359">Melihat versi IOS</td></tr><tr><td width="291">Router#<strong>show arp</strong></td><td width="359">Melihat arp tabel</td></tr><tr><td width="291">Router#<strong>show protocols</strong></td><td width="359">Melihat status protocol layer 3 yang telah dikonfigurasi</td></tr><tr><td width="291">Router#<strong>show startup-config</strong></td><td width="359">Melihat konfigurasi yang tersimpan di NVRAM</td></tr><tr><td width="291">Router#<strong>show running-config</strong></td><td width="359">Melihat konfigurasi yang sedang berjalan di RAM</td></tr><tr><td width="291"></td><td width="359"></td></tr><tr><td colspan="2" width="650"><strong>Perintah EXEC pada mode konfigurasi global : perintah “DO”</strong></td></tr><tr><td width="291">Router(config)#<strong>do show running-config</strong></td><td width="359">Mengeksekusi perintah level privileged&nbsp;<strong>show running-config&nbsp;</strong>ketika sedang berada pada mode konfigurasi global</td></tr><tr><td width="291">Router(config)#</td><td width="359">Router akan tetap pada mode konfigurasi global setelah mengetikan perintah&nbsp;<strong>do</strong></td></tr><tr><td colspan="2" width="650">Catatan : perintah&nbsp;<strong>do&nbsp;</strong>sangat bermanfaat ketika kita ingin mengetikan perintah level EXEC ketika sedang berada pada mode konfigurasi global atau submode apapun.</td></tr></tbody></table><br /><div style="text-align: justify;"><br /><strong>B. LATAR BELAKANG</strong><br />Mengenal cisco dari dasar<strong>&nbsp;</strong><br /><br /><strong>C. MAKSUD DAN TUJUAN</strong><br />Memahami terlebih dahulu dasar dasar cisco<strong>&nbsp;</strong><br /><br /><strong>D. REFERENSI&nbsp;</strong><br />ccnav6.com</div>
+</section>
+    <footer>
+      <hr>
+      <div class="meta">
+        <p class="tags">
+          
+            
+              <a href="/tags/blc-telkom-klaten">
+                <span>#</span>BLC Telkom Klaten</a>
+            
+              <a href="/tags/bestpath">
+                <span>#</span>BestPath</a>
+            
+              <a href="/tags/kegiatan">
+                <span>#</span>Kegiatan</a>
+            
+              <a href="/tags/kpli-klaten">
+                <span>#</span>KPLI Klaten</a>
+            
+              <a href="/tags/ayo-belajar-linux">
+                <span>#</span>Ayo Belajar Linux</a>
+            
+              <a href="/tags/cisco">
+                <span>#</span>Cisco</a>
+            
+          
+        </p>
+      </div>
+      <hr>
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sibunglonlabs" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </footer>
+  </article>
+
+    </main>
+    
+      <footer>
+  <p>
+    &copy; 2018 Faizar Septiawan. <a href="http://creativecommons.org/licenses/by-sa/4.0/">Some Rights Reserved</a>.
+  </p>
+  <p>
+    Powered by <a href="https://gohugo.io" title="A Fast and Flexible Website Generator">Hugo</a> &amp; <a href="https://github.com/eshlox/simplicity" title="Hugo theme">Simplicity</a>.
+  </p>
+</footer>
+
+    
+    
+    
+    
+    
+    
+    
+    <script src="/assets/js/scripts.min.js"></script>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-110194945-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>

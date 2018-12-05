@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMPLEMENTASI MANUAL SUBNETING KELAS C - The Official site of siBunglon</title>
+  <meta name="author" content="Faizar Septiawan">
+  <meta name="description" content="A blog about everything.">
+
+  <meta name="generator" content="Hugo 0.51" />
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/css/external.min.css" media="screen">
+
+  
+  
+  <link rel="stylesheet" href="/assets/css/styles.css" media="screen">
+
+  <link href="//fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
+
+  
+  
+  <link rel="shortcut icon" href="/assets/img/logo.png">
+
+  
+  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official site of siBunglon" />
+  <link href="/posts/index.xml" rel="feed" type="application/rss+xml" title="The Official site of siBunglon" />
+
+  <meta property="og:title" content="IMPLEMENTASI MANUAL SUBNETING KELAS C" />
+<meta property="og:description" content="A.PendahuluanPada kesempatan kali ini saya akan berbagi tentang ip / subnetting gays. kenapa saya membahas ini karena kita sebagai nak jaringan mesti perlu paham begaimana cara subneting.
+1.PengertianSubnetting adalah upaya/proses untuk memecah sebuah network dengan jumlah host yang cukup banyak, menjadi beberapa network dengan jumlah host yang lebih sedikit. Gunanya Subnetting untuk menentukan batas network ID dalam suatu subnet, Memperbanyak jumlah network (LAN), Mengurangi jumlah host dalam satu network, untuk mengurangi tingkat kongesti (gangguan/ tabrakan) lalulintas data dalam suatu network." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sibunglon.com/2017/10/19/implementasi-manual-subneting-kelas-c/" /><meta property="article:published_time" content="2017-10-19T17:58:00&#43;00:00"/>
+<meta property="article:modified_time" content="2017-10-19T17:58:00&#43;00:00"/>
+
+  
+  
+<meta itemprop="name" content="IMPLEMENTASI MANUAL SUBNETING KELAS C">
+<meta itemprop="description" content="A.PendahuluanPada kesempatan kali ini saya akan berbagi tentang ip / subnetting gays. kenapa saya membahas ini karena kita sebagai nak jaringan mesti perlu paham begaimana cara subneting.
+1.PengertianSubnetting adalah upaya/proses untuk memecah sebuah network dengan jumlah host yang cukup banyak, menjadi beberapa network dengan jumlah host yang lebih sedikit. Gunanya Subnetting untuk menentukan batas network ID dalam suatu subnet, Memperbanyak jumlah network (LAN), Mengurangi jumlah host dalam satu network, untuk mengurangi tingkat kongesti (gangguan/ tabrakan) lalulintas data dalam suatu network.">
+
+
+<meta itemprop="datePublished" content="2017-10-19T17:58:00&#43;00:00" />
+<meta itemprop="dateModified" content="2017-10-19T17:58:00&#43;00:00" />
+<meta itemprop="wordCount" content="1322">
+
+
+
+<meta itemprop="keywords" content="BLC Telkom Klaten,Lain-lain,KPLI Klaten,Ayo Belajar Linux," />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="IMPLEMENTASI MANUAL SUBNETING KELAS C"/>
+<meta name="twitter:description" content="A.PendahuluanPada kesempatan kali ini saya akan berbagi tentang ip / subnetting gays. kenapa saya membahas ini karena kita sebagai nak jaringan mesti perlu paham begaimana cara subneting.
+1.PengertianSubnetting adalah upaya/proses untuk memecah sebuah network dengan jumlah host yang cukup banyak, menjadi beberapa network dengan jumlah host yang lebih sedikit. Gunanya Subnetting untuk menentukan batas network ID dalam suatu subnet, Memperbanyak jumlah network (LAN), Mengurangi jumlah host dalam satu network, untuk mengurangi tingkat kongesti (gangguan/ tabrakan) lalulintas data dalam suatu network."/>
+
+</head>
+
+  <body>
+    
+      <nav>
+  <a href="/" title="Homepage">
+    siBunglon
+  </a>
+</nav>
+
+    
+    <main class="container">
+      
+  <article>
+    <header>
+      <small>
+        <time datetime="2017-10-19 05:58">2017-10-19</time>
+        &bull;</small>
+      <h1>IMPLEMENTASI MANUAL SUBNETING KELAS C</h1>
+    </header>
+    <section><div style="text-align: justify;"><b>A.Pendahuluan</b>Pada kesempatan kali ini saya akan berbagi tentang ip / subnetting gays. kenapa saya membahas ini karena kita sebagai nak jaringan mesti perlu paham begaimana cara subneting.</div><br /><div style="text-align: justify;">1.Pengertian</div><span style="text-align: justify;">Subnetting adalah upaya/proses untuk memecah sebuah network dengan jumlah host yang cukup banyak, menjadi beberapa network dengan jumlah host yang lebih sedikit. Gunanya Subnetting untuk menentukan batas network ID dalam suatu subnet, Memperbanyak jumlah network (LAN), Mengurangi jumlah host dalam satu network, untuk mengurangi tingkat kongesti (gangguan/ tabrakan) lalulintas data dalam suatu network.</span><br /><br /><div style="text-align: justify;">2.Latar Belakang</div><span style="text-align: justify;">Subnetting merupakan bekal yang harus dimiliki dan dikuasai untuk masuk ke dunia IT</span><br /><br /><div style="text-align: justify;">3. Maksud dan Tujuan</div><ul style="text-align: justify;"><li>Mengajarkan&nbsp; subneting IP Address kepada pembaca</li><li>Menjelaskan cara menghitung Subnet dari kelas A,B dan C</li></ul><div style="text-align: justify;">4. Hasil yang Diharapkan</div><div style="text-align: justify;">Dapat menguasai ilmu subnetting dan mengajarkannya.</div><br /><div style="text-align: justify;"><b>B. Jangka waktu pelaksanaan</b></div><div style="text-align: justify;">Jam 08.00 sampai 16:00</div><br /><div style="text-align: justify;"><b>C. Proses dan Tahapan Pekerjaan</b></div><span style="text-align: justify;">Sebelum masuk peghitungan subnet kalian harus memahami tabel berikut agar mudah memahami.</span><br /><div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/-g_dDILNDjq4/W9GrkDdz7QI/AAAAAAAAFIw/tz2HG6T4gMkvcpwnk0gw46QeVcI7jCCcwCLcBGAs/s1600/tabel%2Bsub.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="484" data-original-width="474" height="320" src="https://4.bp.blogspot.com/-g_dDILNDjq4/W9GrkDdz7QI/AAAAAAAAFIw/tz2HG6T4gMkvcpwnk0gw46QeVcI7jCCcwCLcBGAs/s320/tabel%2Bsub.png" title="" width="313" /></a></div><br /><div style="text-align: justify;">Subnetting dilakukan pada saat konfigurasi interface. Penerapan subnet mask pada IP Address akan mendefinisikan 2 buah address baru, yakni&nbsp;<b>Network Address</b>&nbsp;dan&nbsp;<b>Broadcast Address</b>. Network address didefinisikan dengan menset seluruh bit host berharga 0, sedangkan broadcast address dengan menset bit host berharga 1. Seperti yang telah dijelasakan pada bagian sebelumnya, network address adalah alamat network yang berguna pada informasi routing. Suatu host yang tidak perlu mengetahui&nbsp; address seluruh host yang ada pada network yang lain. Informasi yang dibutuhkannya hanyalah address dari network yang akan dihubungi serta gateway untuk mencapai network tersebut.</div><br /><div style="text-align: justify;">Penulisan IP address umumnya adalah dengan 192.168.1.2. Namun adakalanya ditulis dengan 192.168.1.2/24, apa ini artinya? Artinya bahwa IP address 192.168.1.2 dengan subnet mask 255.255.255.0. Lho kok bisa seperti itu?&nbsp;&nbsp; Ya, /24 diambil dari penghitungan bahwa 24 bit subnet mask diselubung dengan binari 1. Atau dengan kata lain, subnet masknya adalah : 11111111.11111111.11111111.00000000&nbsp; (255.255.255.0). Konsep ini yang disebut dengan CIDR (Classless Inter-Domain Routing) yang diperkenalkan pertama kali tahun 1992 oleh IEFT. Pertanyaan berikutnya adalah Subnet Mask berapa saja yang bisa digunakan untuk melakukan subnetting? Ini terjawab dengan tabel di bawah:</div><br /><table cellpadding="2" cellspacing="0"><colgroup><col width="114"></col><col width="119"></col><col width="142"></col></colgroup><tbody><tr valign="top"><td width="114">KELAS A</td><td width="119">KELAS B</td><td width="142">KELAS C</td></tr><tr valign="top"><td width="114">255.0.0.0</td><td width="119">255.255.0.0/16</td><td width="142">255.255.255.0/24</td></tr><tr valign="top"><td width="114">255.128.0.0/9</td><td width="119">255.255.128.0/17</td><td width="142">255.255.255.128/25</td></tr><tr valign="top"><td width="114">255.192.0.0/10</td><td width="119">255.255.192.0/18</td><td width="142">255.255.255.192/26</td></tr><tr valign="top"><td width="114">255.224.0.0/11</td><td width="119">255.255.224.0/19</td><td width="142">255.255.255.224/27</td></tr><tr valign="top"><td width="114">255.240.0.0/12</td><td width="119">255.255.240.0/20</td><td width="142">255.255.255.240/28</td></tr><tr valign="top"><td height="20" width="114">255.248.0.0/13</td><td width="119">255.255.248.0/21</td><td width="142">255.255.255.248/29</td></tr><tr valign="top"><td height="11" width="114">255.252.0.0/14</td><td width="119">255.255.252.0/22</td><td width="142">255.255.255.252/30</td></tr><tr valign="top"><td height="10" width="114">255.254.0.0/15</td><td width="119">255.255.254.0/23</td><td width="142">255.255.255.254/31</td></tr></tbody></table><br /><div style="text-align: justify;">Nb : Subnetmask/CIDR</div><br /><div style="text-align: justify;">Sebuah network mask membantu kita untuk mengetahui yang mana bagian untuk network dan yang mana bagian untuk node. Class A, B, danC mempunyai default masks, yang sering disebut juga natural masks, yaitu:<br />–Class A: 255.0.0.0<br />–Class B: 255.255.0.0<br />–Class C: 255.255.255.0<br />Untuk melakukan subnet pada suatu network, tambahkan natural mask dengan beberapa bit yang diambil dari bagiannya host ID&nbsp; untuk membuat sebuah subnet workID. Misal suatu Class C network&nbsp; 204.17.5.0 yang mempunyai suatu natural mask 255.255.255.0, kita dapat membuat contoh subnet seperti berikut:<br />204.17.5.0 = 11001100.00010001.00000101.00000000<br />255.255.255.224 = 11111111.11111111.11111111.11100000<br />Dengan membuat mask menjadi 255.255.255.224, kita telah mengambil bagian dari host address (3 bit)<br />Dan dibuat untuk subnet. Dengan 3 bit ini , memungkinkan kita membuat 8 subnets. Dengan sisa 5&nbsp; host ID bits, masing-masing subnet dapat mempunyai sampai dengan 32 alamat host, hanya 30 yg dapat dipakai untuk node, karena 0 semua (0)&nbsp; dan1 semua (255) tidak bisadigunakan. 0 semua untuk alamat network, 1 semua untuk keperluan broadcast. Berikut adalah alaamt subnetwork-subnetwork yang dapat dipakai dengan mengambil 3 bit tadi:</div><ul style="text-align: justify;"><li><div>204.17.5.0 -255.255.255.224 host address range 1 to 30</div></li><li><div>204.17.5.32 -255.255.255.224 host address range 33 to 62</div></li><li><div>204.17.5.64 -255.255.255.224 host address range 65 to 94</div></li><li><div>204.17.5.96 -255.255.255.224 host address range 97 to 126</div></li><li><div>204.17.5.128 -255.255.255.224 host address range 129 to 158</div></li><li><div>204.17.5.160 -255.255.255.224 host address range 161 to 190</div></li><li><div>204.17.5.192 -255.255.255.224 host address range 193 to 222</div></li><li>&nbsp;204.17.5.224 -255.255.255.224 host address range 225 to 254</li></ul><div style="text-align: justify;">mask 255.255.255.224 dapat disebut juga sebagai /27 karena menggunakan 27 bits untuk mask.&nbsp; Dengan cara ini network dapat dituliskan dalam bentuk notasi prefix/length. contohnya,&nbsp; 204.17.5.32/27 sama dengan 204.17.5.32/255.255.255.224<br />Contoh Soal tentang Subnet :</div><ol style="text-align: justify;"><li>subnetmask apa yang sebaiknya digunakan dengan batasan jumlah host atau subnet yang ditentukan dalam soal. Untuk menjawab soal seperti ini kita gunakan rumus menghitung jumlah host per subnet, yaitu 2<sup>y</sup>&nbsp;– 2, dimana y adalah banyaknya binari 0 pada oktet terakhir subnetmask. Dan apabila yang ditentukan adalah jumlah subnet, kita menggunakan rumus 2<sup>x</sup>&nbsp;pada oktet terakhir subnetmask.</li><li>Seperti sudah saya sebutkan sebelumnya semua pertanyaan tentang subnetting akan berpusat di 4 hal, jumlah subnet, jumlah host per subnet, blok subnet, alamat host dan broadcast yang valid. Jadi kita selesaikan dengan urutan seperti itu:</li></ol><ul style="text-align: justify;"><li><div>Jumlah Subnet = 2<sup>x</sup>, dimana x adalah banyaknya binari 1 pada oktet terakhir subnet mask (2 oktet terakhir untuk kelas B, dan 3 oktet terakhir untuk kelas A). Jadi Jumlah Subnet adalah 2<sup>2</sup>&nbsp;= 4 subnet.</div></li><br /><li><div>Jumlah Host per Subnet = 2<sup>y</sup>&nbsp;– 2, dimana y adalah adalah kebalikan dari x yaitu banyaknya binari 0 pada oktet terakhir subnet. Jadi jumlah host per subnet adalah 2<sup>6</sup>&nbsp;– 2 = 62 host.</div></li><br /><li><div>Blok Subnet = 256 – 192 (192 adalah nilai oktet terakhir subnet mask) = 64. Subnet berikutnya adalah 64 + 64 = 128, dan 128+64=192. Jadi total subnetnya adalah 0, 64, 128, 192.</div></li><br /><li>Bagaimana dengan alamat host dan broadcast yang valid? Kita langsung buat tabelnya. Sebagai catatan, host pertama adalah 1 angka setelah subnet, dan broadcast adalah 1 angka sebelum subnet berikutnya.</li></ul><table cellpadding="2" cellspacing="0"><colgroup><col width="65"></col><col width="145"></col><col width="153"></col><col width="153"></col><col width="173"></col></colgroup><tbody><tr valign="top"><td width="65">Subnet</td><td width="145">192.168.1.0</td><td width="153">192.168.1.64</td><td width="153">192.168.1.128</td><td width="173">192.168.1.192</td></tr><tr valign="top"><td width="65"><b>Host Pertama</b></td><td width="145"><b>192.168.1.1</b></td><td width="153"><b>192.168.1.65</b></td><td width="153"><b>192.168.1.129</b></td><td width="173"><b>192.168.1.193</b></td></tr><tr valign="top"><td width="65"><b>Host Terakhir</b></td><td width="145"><b>192.168.1.62</b></td><td width="153"><b>192.168.1.126</b></td><td width="153"><b>192.168.1.190</b></td><td width="173"><b>192.168.1.254</b></td></tr><tr valign="top"><td width="65">Broadcast</td><td width="145">192.168.1.63</td><td width="153">192.168.1.127</td><td width="153">192.168.1.191</td><td width="173">192.168.1.255</td></tr></tbody></table><ol style="text-align: justify;"><br /><br /><li>kita coba satu soal untuk Kelas B dengan network address&nbsp; 172.16.0.0/18.</li></ol><div style="text-align: justify;">Analisa:<br />172.16.0.0 berarti kelas B, dengan Subnet Mask /18&nbsp; berarti :<br />11111111.11111111.11000000.00000000&nbsp; (255.255.192.0).<br />Penghitungan:</div><ul style="text-align: justify;"><li><div>Jumlah Subnet = 2<sup>x</sup>, dimana x adalah banyaknya&nbsp;&nbsp;&nbsp; binari 1 pada 2 oktet terakhir. Jadi Jumlah Subnet adalah 2<sup>2</sup>&nbsp;= 4&nbsp;&nbsp; subnet</div></li><li><div>Jumlah Host per Subnet = 2<sup>y</sup>&nbsp;– 2, dimana y adalah adalah kebalikan dari x yaitu banyaknya binari 0 pada 2 oktet terakhir. Jadi jumlah host per subnet adalah 2<sup>14</sup>&nbsp;– 2 = 16.382 host</div></li><li><div>Blok Subnet = 256 – 192 (192 adalah nilai oktet terakhir subnet mask) = 64. Subnet berikutnya adalah 64&nbsp;&nbsp;&nbsp; + 64 = 128, dan 128+64=192. Jadi total subnetnya adalah 0, 64, 128, 192.</div></li><li>Alamat host dan broadcast yang valid?</li></ul><br /><table cellpadding="2" cellspacing="0"><colgroup><col width="98"></col><col width="100"></col><col width="109"></col><col width="109"></col><col width="107"></col></colgroup><tbody><tr valign="top"><td width="98">Subnet</td><td width="100">172.16.0.0</td><td width="109">172.16.64.0</td><td width="109">172.16.128.0</td><td width="107">172.16.192.0</td></tr><tr valign="top"><td width="98"><b>Host Pertama</b></td><td width="100">172.16.0.1</td><td width="109">172.16.64.1</td><td width="109">172.16.128.1</td><td width="107">172.16.192.1</td></tr><tr valign="top"><td width="98"><b>Host Terakhir</b></td><td width="100">172.16.63.254</td><td width="109">172.16.127.254</td><td width="109">172.16.191.254</td><td width="107">172.16.255.254</td></tr><tr valign="top"><td width="98">Broadcast</td><td width="100">172.16.63.255</td><td width="109">172.16.127.255</td><td width="109">172.16.191.255</td><td width="107">172.16..255.255</td></tr></tbody></table><ol style="text-align: justify;"><li>Bagaimana dengan network&nbsp; address 172.16.0.0/25.</li></ol><span style="text-align: justify;">Analisa:</span><br /><div style="text-align: justify;">172.16.0.0 berarti kelas B, dengan Subnet Mask /25&nbsp; berarti :<br />11111111.11111111.11111111.10000000 (255.255.255.128).<br />Penghitungan:<br />– Jumlah Subnet = 2<sup>9</sup>&nbsp;= 512 subnet<br />– Jumlah Host per Subnet = 2<sup>7</sup>&nbsp;– 2 = 126 host<br />– Blok Subnet = 256 – 128 = 128.<br />– Alamat host dan broadcast yang valid?</div><br /><table cellpadding="2" cellspacing="0"><colgroup><col width="98"></col><col width="100"></col><col width="109"></col><col width="109"></col><col width="101"></col></colgroup><tbody><tr valign="top"><td width="98">Subnet</td><td width="100">172.16.0.0</td><td width="109">172.16.0.128</td><td width="109">172.16.1.0</td><td width="101">172.16.255.128</td></tr><tr valign="top"><td width="98"><b>Host Pertama</b></td><td width="100">172.16.0.1</td><td width="109">172.16.0.129</td><td width="109">172.16.1.1</td><td width="101">172.16.255.129</td></tr><tr valign="top"><td width="98"><b>Host Terakhir</b></td><td width="100">172.16.0.126</td><td width="109">172.16.0.254</td><td width="109">172.16.1.126</td><td width="101">172.16.255.254</td></tr><tr valign="top"><td width="98">Broadcast</td><td width="100">172.16.0.127</td><td width="109">172.16.0.255</td><td width="109">172.16.1.127</td><td width="101">172.16.255.255</td></tr></tbody></table><br /><ol style="text-align: justify;"><li>Kalau sudah mantab dan paham, kita lanjut ke Class A. Konsepnya semua sama&nbsp; saja. Perbedaannya adalah di OKTET mana kita mainkan blok subnet. Kalau Class C di oktet ke 4 (terakhir), kelas B di Oktet 3 dan 4 (2 oktet terakhir), kalau Class A di oktet 2, 3 dan 4 (3 oktet terakhir). Kemudian subnet mask yang bisa digunakan untuk subnetting class A adalah semua subnet mask dari CIDR /8 sampai /30.</li></ol><br /><div style="text-align: justify;">Kita coba latihan untuk network address 10.0.0.0/16.<br />Analisa:<br />10.0.0.0 berarti kelas A, dengan Subnet Mask /16&nbsp; berarti :<br />11111111.11111111.00000000.00000000 (255.255.0.0).<br />Penghitungan:</div><ul style="text-align: justify;"><li><div>Jumlah Subnet = 2<sup>8</sup>&nbsp;= 256 subnet</div></li><li><div>Jumlah Host per Subnet = 2<sup>16</sup>&nbsp;– 2 = 65.534 host</div></li><li><div>Blok Subnet = 256 – 255 = 1. Jadi subnet lengkapnya:&nbsp;&nbsp;&nbsp; 0,1,2,3,4, etc.</div></li><li>Alamat host dan broadcast yang valid?</li></ul><table cellpadding="2" cellspacing="0"><colgroup><col width="98"></col><col width="100"></col><col width="109"></col><col width="109"></col><col width="103"></col></colgroup><tbody><tr valign="top"><td width="98">Subnet</td><td width="100">10.0.0.0</td><td width="109">10.1.0.0</td><td width="109">10.254.0.0</td><td width="103">10.255.0.0</td></tr><tr valign="top"><td width="98"><b>Host Pertama</b></td><td width="100">10.0.0.1</td><td width="109">10.1.0.1</td><td width="109">10.254.0.1</td><td width="103">10.255.0.1</td></tr><tr valign="top"><td width="98"><b>Host Terakhir</b></td><td width="100">10.0.255.254</td><td width="109">10.1.255.254</td><td width="109">10.254.255.254</td><td width="103">10.255.255.254</td></tr><tr valign="top"><td width="98">Broadcast</td><td width="100">10.0.255.255</td><td width="109">10.1.255.255</td><td width="109">10.254.255.255</td><td width="103">10.255.255.255</td></tr></tbody></table><br /><div style="text-align: justify;">contoh untuk subneting manual kelas :<br />ip : 192.168.12.12/26<br />untuk melakukan subneting kali ini kita memerlukan langkah - langkah, yaitu:<br />a. menentukan netmask ip<br />b. menentukan network dan host ip<br />c. menentukan blok<br />d. menentukan ip network, ip awal, ip akhir, dan ip bc</div><br /><div style="text-align: justify;">pernyataan :<br />ip : 192.168.12.12/26<br />11111111.11111111.11111111.110000<br />hints : kenapa ada 26 angka 1. itu karena prefix pada ip ini sebanyak 26<br />netmask : 255.255.255.192<br />N -&gt; 1 = 2^2 = 4<br />H -&gt; 0 = 2^6 = 64 -2 = 62<br />hints : di kurag dua karena buat ip network dan ip BC<br />hints : disini Network (N) itu hitungan angka 1, dan Host (H) itu hitungan angka 0<br />Blok = 0 64<br />ip network&nbsp; = 192.168.12.0<br />ip awal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 192.168.12.1<br />ip akhir&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 192.168.12.62<br />ip BC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 192.168.12.63</div><br /><div style="text-align: justify;">hints : rumus mencari ip di atas adalah<br />ip network = angka pertama dalam blok<br />ip awal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = angka pertama alam blok di tambah (+) 1 satu<br />ip akhir&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = angka kedua dalam blok di kurang (-) 2 dua<br />ip BC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = angka kedua dalam blok di kuran (-) 1 satu</div><br /><div style="text-align: justify;"><b>D. Hasil yang Didapatkan</b></div><div style="text-align: justify;">Memahami subnetting IP Address</div><br /><div style="text-align: justify;"><b>E. Temuan masalah</b></div><div style="text-align: justify;">kesulitan memahami&nbsp; banyaknya host dalam setiap blok subnet kelas A dan B</div><br /><div style="text-align: justify;"><b>F. kesimpulan yang Didapatkan</b></div><span style="text-align: justify;">Subnetting merupakan metode pembagian Ip address agar tidak terjadi tabrakan pada lalu lintas jaringan.</span><br /><br /><div style="text-align: justify;"><b>G. Referensi</b><a href="http://www.techrepublic.com/blog/data-center/ip-subnetting-made-easy-125343/">http://www.techrepublic.com/blog/data-center/ip-subnetting-made-easy-125343/</a></div>
+</section>
+    <footer>
+      <hr>
+      <div class="meta">
+        <p class="tags">
+          
+            
+              <a href="/tags/blc-telkom-klaten">
+                <span>#</span>BLC Telkom Klaten</a>
+            
+              <a href="/tags/lain-lain">
+                <span>#</span>Lain-lain</a>
+            
+              <a href="/tags/kpli-klaten">
+                <span>#</span>KPLI Klaten</a>
+            
+              <a href="/tags/ayo-belajar-linux">
+                <span>#</span>Ayo Belajar Linux</a>
+            
+          
+        </p>
+      </div>
+      <hr>
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sibunglonlabs" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </footer>
+  </article>
+
+    </main>
+    
+      <footer>
+  <p>
+    &copy; 2018 Faizar Septiawan. <a href="http://creativecommons.org/licenses/by-sa/4.0/">Some Rights Reserved</a>.
+  </p>
+  <p>
+    Powered by <a href="https://gohugo.io" title="A Fast and Flexible Website Generator">Hugo</a> &amp; <a href="https://github.com/eshlox/simplicity" title="Hugo theme">Simplicity</a>.
+  </p>
+</footer>
+
+    
+    
+    
+    
+    
+    
+    
+    <script src="/assets/js/scripts.min.js"></script>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-110194945-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>

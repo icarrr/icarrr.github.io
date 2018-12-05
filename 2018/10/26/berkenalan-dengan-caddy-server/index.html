@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Berkenalan dengan Caddy Server - The Official site of siBunglon</title>
+  <meta name="author" content="Faizar Septiawan">
+  <meta name="description" content="A blog about everything.">
+
+  <meta name="generator" content="Hugo 0.51" />
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/css/external.min.css" media="screen">
+
+  
+  
+  <link rel="stylesheet" href="/assets/css/styles.css" media="screen">
+
+  <link href="//fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
+
+  
+  
+  <link rel="shortcut icon" href="/assets/img/logo.png">
+
+  
+  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official site of siBunglon" />
+  <link href="/posts/index.xml" rel="feed" type="application/rss+xml" title="The Official site of siBunglon" />
+
+  <meta property="og:title" content="Berkenalan dengan Caddy Server" />
+<meta property="og:description" content="Caddy? Caddy itu apaan? Fungsinya apa aja?
+Caddy kadang-kadang diklarifikasi sebagai web server Caddy bersifat open source, server web HTTP / 2- enabled yang ditulis dalam Go . Ia menggunakan pustaka standar Go untuk fungsi HTTP-nya. Salah satu fitur paling terkenal Caddy adalah mengaktifkan HTTPS secara default.Caddy mendukung berbagai teknologi Web dan tersedia sebagai biner yang dikompilasi secara statis untuk sistem operasi Windows, Mac, Linux, Android, dan BSD pada arsitektur i386, amd64, dan ARM." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sibunglon.com/2018/10/26/berkenalan-dengan-caddy-server/" /><meta property="article:published_time" content="2018-10-26T11:52:00&#43;00:00"/>
+<meta property="article:modified_time" content="2018-10-26T11:52:00&#43;00:00"/>
+
+  
+  
+<meta itemprop="name" content="Berkenalan dengan Caddy Server">
+<meta itemprop="description" content="Caddy? Caddy itu apaan? Fungsinya apa aja?
+Caddy kadang-kadang diklarifikasi sebagai web server Caddy bersifat open source, server web HTTP / 2- enabled yang ditulis dalam Go . Ia menggunakan pustaka standar Go untuk fungsi HTTP-nya. Salah satu fitur paling terkenal Caddy adalah mengaktifkan HTTPS secara default.Caddy mendukung berbagai teknologi Web dan tersedia sebagai biner yang dikompilasi secara statis untuk sistem operasi Windows, Mac, Linux, Android, dan BSD pada arsitektur i386, amd64, dan ARM.">
+
+
+<meta itemprop="datePublished" content="2018-10-26T11:52:00&#43;00:00" />
+<meta itemprop="dateModified" content="2018-10-26T11:52:00&#43;00:00" />
+<meta itemprop="wordCount" content="298">
+
+
+
+<meta itemprop="keywords" content="BLC Telkom Klaten,Linux,Windows,Linux Indonesia,KPLI Klaten,Ayo Belajar Linux,Windows Indonesia," />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Berkenalan dengan Caddy Server"/>
+<meta name="twitter:description" content="Caddy? Caddy itu apaan? Fungsinya apa aja?
+Caddy kadang-kadang diklarifikasi sebagai web server Caddy bersifat open source, server web HTTP / 2- enabled yang ditulis dalam Go . Ia menggunakan pustaka standar Go untuk fungsi HTTP-nya. Salah satu fitur paling terkenal Caddy adalah mengaktifkan HTTPS secara default.Caddy mendukung berbagai teknologi Web dan tersedia sebagai biner yang dikompilasi secara statis untuk sistem operasi Windows, Mac, Linux, Android, dan BSD pada arsitektur i386, amd64, dan ARM."/>
+
+</head>
+
+  <body>
+    
+      <nav>
+  <a href="/" title="Homepage">
+    siBunglon
+  </a>
+</nav>
+
+    
+    <main class="container">
+      
+  <article>
+    <header>
+      <small>
+        <time datetime="2018-10-26 11:52">2018-10-26</time>
+        &bull;</small>
+      <h1>Berkenalan dengan Caddy Server</h1>
+    </header>
+    <section><div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/-Sd0psByMSXg/W9KcSR9BhFI/AAAAAAAAFVI/z52Gl87Mp2kjdn6qADifShNNhPn9OF5LACLcBGAs/s1600/caddy.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="799" data-original-width="1600" height="159" src="https://4.bp.blogspot.com/-Sd0psByMSXg/W9KcSR9BhFI/AAAAAAAAFVI/z52Gl87Mp2kjdn6qADifShNNhPn9OF5LACLcBGAs/s320/caddy.png" title="" width="320" /></a></div><br /><i>Caddy? Caddy itu apaan? Fungsinya apa aja?</i><br /><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><b>Caddy</b> kadang-kadang diklarifikasi sebagai web server Caddy bersifat open source, server web HTTP / 2- enabled yang ditulis dalam Go . Ia menggunakan pustaka standar Go untuk fungsi HTTP-nya. Salah satu fitur paling terkenal Caddy adalah mengaktifkan HTTPS secara default.</div><div style="text-align: justify;">Caddy mendukung berbagai teknologi Web dan tersedia sebagai biner yang dikompilasi secara statis untuk sistem operasi Windows, Mac, Linux, Android, dan BSD pada arsitektur i386, amd64, dan ARM.</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">Saat ini Caddy digunakan pada web server beberapa startup besar. Loh kok bisa? Karena fitur, keamanan dan sizenya sangat menarik. Ukuran file Caddy cuman sekitar 6,4MB</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><b>HTTPS otomatis</b></div><div style="text-align: justify;">Caddy mengaktifkan HTTPS secara default untuk situs dengan nama domain yang memenuhi syarat (nama yang sertifikat TLS dapat dinegosiasikan melalui protokol ACME ), dan mengalihkan permintaan HTTP ke HTTPS. Ia memperoleh sertifikat yang diperlukan selama startup dan membuat mereka diperbarui selama masa hidup server. Let’s Encrypt adalah otoritas sertifikat default, tetapi pengguna dapat menyesuaikan ACME CA yang digunakan, yang sering diperlukan saat menguji konfigurasi. Pada Q1 2016, Caddy menyumbang sekitar 2% dari sertifikat yang dikeluarkan oleh Let’s Encrypt.</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><b>Kemampuan</b></div><div style="text-align: justify;">Berbagai teknologi situs web dapat dilayani oleh Caddy, yang juga dapat bertindak sebagai reverse proxy dan load balancer. Sebagian besar fitur Caddy diimplementasikan sebagai middleware dan diekspos melalui arahan di Caddyfile (file teks yang digunakan untuk mengkonfigurasi Caddy).</div><ul style="background-color: white; box-sizing: border-box; color: #343434; font-family: Lora, serif; margin-bottom: 35px; margin-top: 0px;"><li style="box-sizing: border-box;">HTTP/2</li><li style="box-sizing: border-box;">TLS 1.2</li><li style="box-sizing: border-box;">Multicore, ketika proses semakin berat, Caddy akan menggunakan CPU lebih</li><li style="box-sizing: border-box;">Websockets, Caddy dapat melakukan proses&nbsp;<em style="box-sizing: border-box;">pipe</em>&nbsp;terhadap&nbsp;<span style="box-sizing: border-box; font-weight: 700;">stdin</span>&nbsp;dan&nbsp;<span style="box-sizing: border-box; font-weight: 700;">stdout</span>&nbsp;dari berbagai program ke klien Websocket</li><li style="box-sizing: border-box;">FastCGI, melayani PHP dengan melakukan&nbsp;<em style="box-sizing: border-box;">proxying</em>&nbsp;terhadap&nbsp;<em style="box-sizing: border-box;">request</em>&nbsp;ke&nbsp;<em style="box-sizing: border-box;">server</em>FastCGI</li><li style="box-sizing: border-box;">URLs yang bersih, menjalankan&nbsp;<em style="box-sizing: border-box;">file</em>&nbsp;tanpa membutuhkan ekstensi di URL</li><li style="box-sizing: border-box;">Gzip, memampatkan&nbsp;<em style="box-sizing: border-box;">response</em>&nbsp;untuk menghemat&nbsp;<em style="box-sizing: border-box;">bandwidth</em></li><li style="box-sizing: border-box;"><em style="box-sizing: border-box;">Directory browsing</em>, menampilkan isi&nbsp;<em style="box-sizing: border-box;">folder</em>&nbsp;berdasarkan&nbsp;<em style="box-sizing: border-box;">template</em>&nbsp;Anda</li><li style="box-sizing: border-box;"><em style="box-sizing: border-box;">Virtual Hosts</em>, melayani&nbsp;<em style="box-sizing: border-box;">multiple sites</em>&nbsp;pada&nbsp;<em style="box-sizing: border-box;">address</em>&nbsp;yang sama hanya dengan sebuah&nbsp;<em style="box-sizing: border-box;">file</em>&nbsp;Caddy</li><li style="box-sizing: border-box;"><em style="box-sizing: border-box;">Markdown</em>, menjalankan dokumen Markdown kemudian menampilkannya langsung sebagai HTML</li><li style="box-sizing: border-box;"><em style="box-sizing: border-box;">Headers</em>, mengirim&nbsp;<em style="box-sizing: border-box;">respons header</em>&nbsp;khusus hanya dengan menambahkan sebuah baris di&nbsp;<em style="box-sizing: border-box;">file</em>&nbsp;Caddy</li><li style="box-sizing: border-box;"><em style="box-sizing: border-box;">IPv6</em>, Caddy berjalan dengan baik di lingkungan IPv6</li><li style="box-sizing: border-box;"><em style="box-sizing: border-box;">Logging</em>, Caddy akan mencatat setiap&nbsp;<em style="box-sizing: border-box;">log</em>&nbsp;melalui format&nbsp;<em style="box-sizing: border-box;">log</em>&nbsp;favorit Anda</li><li style="box-sizing: border-box;"><em style="box-sizing: border-box;">Reverse Proxy</em>, meneruskan&nbsp;<em style="box-sizing: border-box;">erquest</em>&nbsp;ke&nbsp;<em style="box-sizing: border-box;">endpoint</em>&nbsp;lain dengan&nbsp;<em style="box-sizing: border-box;">reverse proxy</em>dan&nbsp;<em style="box-sizing: border-box;">load balancing</em></li><li style="box-sizing: border-box;"><em style="box-sizing: border-box;">Rewrites &amp; Redirects</em>, melakukan&nbsp;<em style="box-sizing: border-box;">rewrite</em>&nbsp;terhadap&nbsp;<em style="box-sizing: border-box;">request</em>&nbsp;dari dalam atau melakukakn konfigurasi HTTP&nbsp;<em style="box-sizing: border-box;">redirect</em></li></ul><div></div>
+</section>
+    <footer>
+      <hr>
+      <div class="meta">
+        <p class="tags">
+          
+            
+              <a href="/tags/blc-telkom-klaten">
+                <span>#</span>BLC Telkom Klaten</a>
+            
+              <a href="/tags/linux">
+                <span>#</span>Linux</a>
+            
+              <a href="/tags/windows">
+                <span>#</span>Windows</a>
+            
+              <a href="/tags/linux-indonesia">
+                <span>#</span>Linux Indonesia</a>
+            
+              <a href="/tags/kpli-klaten">
+                <span>#</span>KPLI Klaten</a>
+            
+              <a href="/tags/ayo-belajar-linux">
+                <span>#</span>Ayo Belajar Linux</a>
+            
+              <a href="/tags/windows-indonesia">
+                <span>#</span>Windows Indonesia</a>
+            
+          
+        </p>
+      </div>
+      <hr>
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sibunglonlabs" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </footer>
+  </article>
+
+    </main>
+    
+      <footer>
+  <p>
+    &copy; 2018 Faizar Septiawan. <a href="http://creativecommons.org/licenses/by-sa/4.0/">Some Rights Reserved</a>.
+  </p>
+  <p>
+    Powered by <a href="https://gohugo.io" title="A Fast and Flexible Website Generator">Hugo</a> &amp; <a href="https://github.com/eshlox/simplicity" title="Hugo theme">Simplicity</a>.
+  </p>
+</footer>
+
+    
+    
+    
+    
+    
+    
+    
+    <script src="/assets/js/scripts.min.js"></script>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-110194945-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>

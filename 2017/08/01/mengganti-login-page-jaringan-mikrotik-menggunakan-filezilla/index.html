@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mengganti login page jaringan mikroTik menggunakan filezilla - The Official site of siBunglon</title>
+  <meta name="author" content="Faizar Septiawan">
+  <meta name="description" content="A blog about everything.">
+
+  <meta name="generator" content="Hugo 0.51" />
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/css/external.min.css" media="screen">
+
+  
+  
+  <link rel="stylesheet" href="/assets/css/styles.css" media="screen">
+
+  <link href="//fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
+
+  
+  
+  <link rel="shortcut icon" href="/assets/img/logo.png">
+
+  
+  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official site of siBunglon" />
+  <link href="/posts/index.xml" rel="feed" type="application/rss+xml" title="The Official site of siBunglon" />
+
+  <meta property="og:title" content="Mengganti login page jaringan mikroTik menggunakan filezilla" />
+<meta property="og:description" content="Pendahuluan
+Login page adalah salah satu fitur mikroTik yang berfungsi ketika hostpot yang di aktifkan di mikroTik tidak mempunyai autentikasi pada SSIDnya, dengan kata lain setelah berhasil terhubung ke hotspot tersebut si pengguna akan diminta masuk ke login page untuk dapat mengakses internet. Login page tersebut dapat diedit dengan berbagai cara, sesuai yang membuat anda nyaman :D
+Maksud dan TujuanTujuan dari postingan ini agar si pembaca dapat mempraktekkan dan mengetahui bagaimana mengganti login page hotspot mikroTik tanpa harus membuka winbox." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sibunglon.com/2017/08/01/mengganti-login-page-jaringan-mikrotik-menggunakan-filezilla/" /><meta property="article:published_time" content="2017-08-01T16:09:00&#43;00:00"/>
+<meta property="article:modified_time" content="2017-08-01T16:09:00&#43;00:00"/>
+
+  
+  
+<meta itemprop="name" content="Mengganti login page jaringan mikroTik menggunakan filezilla">
+<meta itemprop="description" content="Pendahuluan
+Login page adalah salah satu fitur mikroTik yang berfungsi ketika hostpot yang di aktifkan di mikroTik tidak mempunyai autentikasi pada SSIDnya, dengan kata lain setelah berhasil terhubung ke hotspot tersebut si pengguna akan diminta masuk ke login page untuk dapat mengakses internet. Login page tersebut dapat diedit dengan berbagai cara, sesuai yang membuat anda nyaman :D
+Maksud dan TujuanTujuan dari postingan ini agar si pembaca dapat mempraktekkan dan mengetahui bagaimana mengganti login page hotspot mikroTik tanpa harus membuka winbox.">
+
+
+<meta itemprop="datePublished" content="2017-08-01T16:09:00&#43;00:00" />
+<meta itemprop="dateModified" content="2017-08-01T16:09:00&#43;00:00" />
+<meta itemprop="wordCount" content="314">
+
+
+
+<meta itemprop="keywords" content="BLC Telkom Klaten,MikroTik,KPLI Klaten,MikroTik Indonesia,Ayo Belajar Linux," />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Mengganti login page jaringan mikroTik menggunakan filezilla"/>
+<meta name="twitter:description" content="Pendahuluan
+Login page adalah salah satu fitur mikroTik yang berfungsi ketika hostpot yang di aktifkan di mikroTik tidak mempunyai autentikasi pada SSIDnya, dengan kata lain setelah berhasil terhubung ke hotspot tersebut si pengguna akan diminta masuk ke login page untuk dapat mengakses internet. Login page tersebut dapat diedit dengan berbagai cara, sesuai yang membuat anda nyaman :D
+Maksud dan TujuanTujuan dari postingan ini agar si pembaca dapat mempraktekkan dan mengetahui bagaimana mengganti login page hotspot mikroTik tanpa harus membuka winbox."/>
+
+</head>
+
+  <body>
+    
+      <nav>
+  <a href="/" title="Homepage">
+    siBunglon
+  </a>
+</nav>
+
+    
+    <main class="container">
+      
+  <article>
+    <header>
+      <small>
+        <time datetime="2017-08-01 04:09">2017-08-01</time>
+        &bull;</small>
+      <h1>Mengganti login page jaringan mikroTik menggunakan filezilla</h1>
+    </header>
+    <section><p><b style="text-align: justify;"><span style="font-size: large;">Pendahuluan</span></b><br /><div style="text-align: justify;">Login page adalah salah satu fitur mikroTik yang berfungsi ketika hostpot yang di aktifkan di mikroTik tidak mempunyai autentikasi pada SSIDnya, dengan kata lain setelah berhasil terhubung ke hotspot tersebut si pengguna akan diminta masuk ke login page untuk dapat mengakses internet. Login page tersebut dapat diedit dengan berbagai cara, sesuai yang membuat anda nyaman :D</div><br /><div style="text-align: justify;"><span style="font-size: large;"><b>Maksud dan Tujuan</b></span></div><div style="text-align: justify;">Tujuan dari postingan ini agar si pembaca dapat mempraktekkan dan mengetahui bagaimana mengganti login page hotspot mikroTik tanpa harus membuka winbox.</div><br /><div style="text-align: justify;"><span style="font-size: large;"><b>Alat dan Bahan</b></span></div><div style="text-align: justify;">1. Pc/laptop</div><div style="text-align: justify;">2. MikroTik dan hotspotnya sedang aktif</div><div style="text-align: justify;">3. Aplikasi FileZilla</div><div style="text-align: justify;">4. File login page hotspot mikroTik</div><br /><div style="text-align: justify;"><span style="font-size: large;"><b>Langkah Kerja</b></span></div><div style="text-align: justify;">1. Siapkan semua alat dan bahan</div><div style="text-align: justify;">2. Buka aplikasi FileZilla dan konfigurasi agar dapat mengakses mikroTik, klik icon yang ditunjukkan di gambar. Berguna seperti halnya shortcut atau suatu saat nanti jika ingin mengubah login pagenya tanpa melakukan konfigurasi lagi.</div><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-YIfNSz36SkM/W4kNu6FujdI/AAAAAAAAD0s/UQSfZ9gw-6oISkdhnc_5vOQSFaVRPj1fACLcBGAs/s1600/Screenshot%2Bat%2B2017-07-31%2B22-40-32.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="747" data-original-width="683" height="320" src="https://1.bp.blogspot.com/-YIfNSz36SkM/W4kNu6FujdI/AAAAAAAAD0s/UQSfZ9gw-6oISkdhnc_5vOQSFaVRPj1fACLcBGAs/s320/Screenshot%2Bat%2B2017-07-31%2B22-40-32.png" title="" width="292" /></a></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">3. Jika jendela terbuka silahkan klik New site (ini berguna untuk membuat tombol shortcutnya) &gt; rename lalu ubah sesuai keinginan. Pindah ke tab General kemudian isi beberapa kolom yang dapat membatu untuk terhubung ke mikroTik.</div><blockquote class="tr_bq">Host : isi sesuai dns yang di set pada ip &gt; hotspot<br />Protocol : FTP - File Transfer Protocol<br />Logon Type : Normal<br />user : username yang biasa digunakan pada winbox<br />password : password yang biasa digunakan pada winbox, jika tidak ada biarkan saja kosong</blockquote><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-vUy9_XKIoPA/W4kOJFIZXZI/AAAAAAAAD00/FJFZo1vNKeErA9OxwfyGkYwEJJ_RZxM9wCLcBGAs/s1600/Screenshot%2Bat%2B2017-07-31%2B22-43-07.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="524" data-original-width="643" height="260" src="https://1.bp.blogspot.com/-vUy9_XKIoPA/W4kOJFIZXZI/AAAAAAAAD00/FJFZo1vNKeErA9OxwfyGkYwEJJ_RZxM9wCLcBGAs/s320/Screenshot%2Bat%2B2017-07-31%2B22-43-07.png" title="" width="320" /></a></div><br /><div style="text-align: justify;">4. Klik Ok</div><div style="text-align: justify;">5. Klik dropdown didekat icon yang diklik tadi, akan muncul nama site yang akan dikonfigurasi. Jika anda melihatnya silahkan klik saja dan tunggu beberapa saat hingga ia berhasil terhubung dengan mikroTik, jika ia berhasil terhubung maka akan tampil sebuah direktori penyimpanan mikroTik.</div><div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/-eygKUAb6IZQ/W4kOS2mE76I/AAAAAAAAD04/VrAUg8THb1EDCgKYCCBYg36orf-gaws_gCLcBGAs/s1600/Screenshot%2Bat%2B2017-07-31%2B22-43-55.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="747" data-original-width="683" height="320" src="https://4.bp.blogspot.com/-eygKUAb6IZQ/W4kOS2mE76I/AAAAAAAAD04/VrAUg8THb1EDCgKYCCBYg36orf-gaws_gCLcBGAs/s320/Screenshot%2Bat%2B2017-07-31%2B22-43-55.png" title="" width="292" /></a></div><div class="separator" style="clear: both; text-align: center;"><br /></div><div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/-JN42Zttxdes/W4kOf-jR8CI/AAAAAAAAD08/mibdvTUxHXwOOPWWJnrigq99IB_vhdQPwCLcBGAs/s1600/Screenshot%2Bat%2B2017-07-31%2B22-44-15.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="747" data-original-width="683" height="320" src="https://4.bp.blogspot.com/-JN42Zttxdes/W4kOf-jR8CI/AAAAAAAAD08/mibdvTUxHXwOOPWWJnrigq99IB_vhdQPwCLcBGAs/s320/Screenshot%2Bat%2B2017-07-31%2B22-44-15.png" title="" width="292" /></a></div><div class="separator" style="clear: both; text-align: center;"><br /></div><br /><div style="text-align: justify;">Klik 2 kali direktori tersebut hinggan anda melihat file html dan lain. hapus semua filenya kecuali disk dan direktori akarnya, setelah terhapus drag n drop file login page anda dan tunggu beberapa hingga proses upload success. Kemudian cek browser &gt; buka login pagenya dan jrengg jreng jrengg login page anda telah berubah</div><br /><div style="text-align: justify;">Sekian dari postingan ini,semoga bermanfaat.</div></p>
+</section>
+    <footer>
+      <hr>
+      <div class="meta">
+        <p class="tags">
+          
+            
+              <a href="/tags/blc-telkom-klaten">
+                <span>#</span>BLC Telkom Klaten</a>
+            
+              <a href="/tags/mikrotik">
+                <span>#</span>MikroTik</a>
+            
+              <a href="/tags/kpli-klaten">
+                <span>#</span>KPLI Klaten</a>
+            
+              <a href="/tags/mikrotik-indonesia">
+                <span>#</span>MikroTik Indonesia</a>
+            
+              <a href="/tags/ayo-belajar-linux">
+                <span>#</span>Ayo Belajar Linux</a>
+            
+          
+        </p>
+      </div>
+      <hr>
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sibunglonlabs" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </footer>
+  </article>
+
+    </main>
+    
+      <footer>
+  <p>
+    &copy; 2018 Faizar Septiawan. <a href="http://creativecommons.org/licenses/by-sa/4.0/">Some Rights Reserved</a>.
+  </p>
+  <p>
+    Powered by <a href="https://gohugo.io" title="A Fast and Flexible Website Generator">Hugo</a> &amp; <a href="https://github.com/eshlox/simplicity" title="Hugo theme">Simplicity</a>.
+  </p>
+</footer>
+
+    
+    
+    
+    
+    
+    
+    
+    <script src="/assets/js/scripts.min.js"></script>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-110194945-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>

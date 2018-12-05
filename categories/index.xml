@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on siBunglonLab&#39;s</title>
-    <link>https://icarrr.github.io/categories/</link>
-    <description>Recent content in Categories on siBunglonLab&#39;s</description>
+    <title>Categories on The Official site of siBunglon</title>
+    <link>https://sibunglon.com/categories/</link>
+    <description>Recent content in Categories on The Official site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
+    <language>en-us</language>
     
-	<atom:link href="https://icarrr.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+      <atom:link href="https://sibunglon.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

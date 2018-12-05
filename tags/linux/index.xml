@@ -1,78 +1,71 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Linux on siBunglonLab&#39;s</title>
-    <link>https://icarrr.github.io/tags/linux/</link>
-    <description>Recent content in Linux on siBunglonLab&#39;s</description>
+    <title>Linux on The Official site of siBunglon</title>
+    <link>https://sibunglon.com/tags/linux/</link>
+    <description>Recent content in Linux on The Official site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
+    <language>en-us</language>
     <lastBuildDate>Sat, 01 Dec 2018 15:14:00 +0000</lastBuildDate>
     
-	<atom:link href="https://icarrr.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+      <atom:link href="https://sibunglon.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
     
-    <item>
-      <title>Lindungi web server apache2 dengan ssl debian 8</title>
-      <link>https://icarrr.github.io/posts/lindungi-web-server-apache2-dengan-ssl-debian-8/</link>
-      <pubDate>Sat, 01 Dec 2018 15:14:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/lindungi-web-server-apache2-dengan-ssl-debian-8/</guid>
-      <description>Pengertian  HTTPS juga disebut HTTP melalui TLS, HTTP melalui SSL, dan HTTP Secure adalah protokol untuk komunikasi yang aman melalui jaringan komputer yang banyak digunakan di Internet. HTTPS terdiri dari komunikasi melalui Hypertext Transfer Protocol (HTTP) dalam koneksi yang terenkripsi dengan Transport Layer Security atau pendahulunya Secure Sockets Layer. Fungsi utama untuk HTTPS adalah autentikasi dari website yang dikunjungi dan perlindungan privasi dan integritas data yang dipertukarkan. SSL (Secure Sockets Layer) adalah teknologi keamanan standar untuk membangun link yang dienkripsi antara web server dan browser.</description>
-    </item>
+      <item>
+        <title>Lindungi web server apache2 dengan ssl debian 8</title>
+        <link>https://sibunglon.com/2018/12/01/lindungi-web-server-apache2-dengan-ssl-debian-8/</link>
+        <pubDate>Sat, 01 Dec 2018 15:14:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2018/12/01/lindungi-web-server-apache2-dengan-ssl-debian-8/</guid>
+        <description>Pengertian  HTTPS juga disebut HTTP melalui TLS, HTTP melalui SSL, dan HTTP Secure adalah protokol untuk komunikasi yang aman melalui jaringan komputer yang banyak digunakan di Internet. HTTPS terdiri dari komunikasi melalui Hypertext Transfer Protocol (HTTP) dalam koneksi yang terenkripsi dengan Transport Layer Security atau pendahulunya Secure Sockets Layer. Fungsi utama untuk HTTPS adalah autentikasi dari website yang dikunjungi dan perlindungan privasi dan integritas data yang dipertukarkan. SSL (Secure Sockets Layer) adalah teknologi keamanan standar untuk membangun link yang dienkripsi antara web server dan browser.</description>
+      </item>
     
-    <item>
-      <title>Gerakan Multi-Touch MacBook di Linux</title>
-      <link>https://icarrr.github.io/posts/gerakan-multi-touch-macbook-di-linux/</link>
-      <pubDate>Tue, 06 Nov 2018 15:14:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/gerakan-multi-touch-macbook-di-linux/</guid>
-      <description>Jika Anda pernah menggunakan MacBook, pasti tahu betapa menyenangkan dan bermanfaatnya gerakan trackpad untuk mengubah desktop, menampilkan semua jendela yang terbuka, dan pinch-to-zoom.&amp;nbsp;Di linux anda juga menggunakan fitur ini dengan bantuan aplikasi fusuma, berikut installasi dan konfigurasinya.1. Berikan izin untuk membaca perangkat touchpadsudo gpasswd -a $USER input2.&amp;nbsp;Install libinput-toolssudo apt-get install libinput-tools3. Install Fusumasudo gem install fusuma4. Instal xdotool (opsional)sudo apt-get install xdotool5. Sesuaikan gesture dengan membuat direktori fusuma dan buat file konfigurasinyamkdir -p ~/.</description>
-    </item>
+      <item>
+        <title>Gerakan Multi-Touch MacBook di Linux</title>
+        <link>https://sibunglon.com/2018/11/06/gerakan-multi-touch-macbook-di-linux/</link>
+        <pubDate>Tue, 06 Nov 2018 15:14:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2018/11/06/gerakan-multi-touch-macbook-di-linux/</guid>
+        <description>Jika Anda pernah menggunakan MacBook, pasti tahu betapa menyenangkan dan bermanfaatnya gerakan trackpad untuk mengubah desktop, menampilkan semua jendela yang terbuka, dan pinch-to-zoom.&amp;nbsp;Di linux anda juga menggunakan fitur ini dengan bantuan aplikasi fusuma, berikut installasi dan konfigurasinya.1. Berikan izin untuk membaca perangkat touchpadsudo gpasswd -a $USER input2.&amp;nbsp;Install libinput-toolssudo apt-get install libinput-tools3. Install Fusumasudo gem install fusuma4. Instal xdotool (opsional)sudo apt-get install xdotool5. Sesuaikan gesture dengan membuat direktori fusuma dan buat file konfigurasinyamkdir -p ~/.</description>
+      </item>
     
-    <item>
-      <title>Berkenalan dengan Caddy Server</title>
-      <link>https://icarrr.github.io/posts/berkenalan-dengan-caddy-server/</link>
-      <pubDate>Fri, 26 Oct 2018 11:52:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/berkenalan-dengan-caddy-server/</guid>
-      <description>Caddy? Caddy itu apaan? Fungsinya apa aja?
+      <item>
+        <title>Berkenalan dengan Caddy Server</title>
+        <link>https://sibunglon.com/2018/10/26/berkenalan-dengan-caddy-server/</link>
+        <pubDate>Fri, 26 Oct 2018 11:52:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2018/10/26/berkenalan-dengan-caddy-server/</guid>
+        <description>Caddy? Caddy itu apaan? Fungsinya apa aja?
 Caddy kadang-kadang diklarifikasi sebagai web server Caddy bersifat open source, server web HTTP / 2- enabled yang ditulis dalam Go . Ia menggunakan pustaka standar Go untuk fungsi HTTP-nya. Salah satu fitur paling terkenal Caddy adalah mengaktifkan HTTPS secara default.Caddy mendukung berbagai teknologi Web dan tersedia sebagai biner yang dikompilasi secara statis untuk sistem operasi Windows, Mac, Linux, Android, dan BSD pada arsitektur i386, amd64, dan ARM.</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Membangun DHCP Server menggunakan Debian 8</title>
-      <link>https://icarrr.github.io/posts/membangun-dhcp-server-menggunakan-debian-8/</link>
-      <pubDate>Fri, 26 Oct 2018 10:47:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/membangun-dhcp-server-menggunakan-debian-8/</guid>
-      <description>DHCP server atau Dinamic Host Configuration Protocol adalah sebuah protocol yang memungkinkan sebuah komputer atau server memberikan IP Address secara dinamis atau otomatis untuk komputer lain, atau komputer klien.Ketika DHCP client pada pihak komputer klien diaktifkan, komputer klien tersebut akan melakukan request ke komputer server untuk mendapatkan IP Address dari DHCP Server. Kemudian DHCP server akan memberikan jawaban ke komputer klien dengan memberikan IP Address yang tersedia pada pool atau range IP Address di DHCP server.</description>
-    </item>
+      <item>
+        <title>Membangun DHCP Server menggunakan Debian 8</title>
+        <link>https://sibunglon.com/2018/10/26/membangun-dhcp-server-menggunakan-debian-8/</link>
+        <pubDate>Fri, 26 Oct 2018 10:47:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2018/10/26/membangun-dhcp-server-menggunakan-debian-8/</guid>
+        <description>DHCP server atau Dinamic Host Configuration Protocol adalah sebuah protocol yang memungkinkan sebuah komputer atau server memberikan IP Address secara dinamis atau otomatis untuk komputer lain, atau komputer klien.Ketika DHCP client pada pihak komputer klien diaktifkan, komputer klien tersebut akan melakukan request ke komputer server untuk mendapatkan IP Address dari DHCP Server. Kemudian DHCP server akan memberikan jawaban ke komputer klien dengan memberikan IP Address yang tersedia pada pool atau range IP Address di DHCP server.</description>
+      </item>
     
-    <item>
-      <title>Membangun DNS Server Menggunakan Debian 8</title>
-      <link>https://icarrr.github.io/posts/membangun-dns-server-menggunakan-debian-8/</link>
-      <pubDate>Fri, 26 Oct 2018 10:06:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/membangun-dns-server-menggunakan-debian-8/</guid>
-      <description>Dalam dunia internet, komputer saling berkomunikasi dengan mengenali ip addressnya. Namun karena manusia jauh lebih sulit mengingat angka-angkanya maka solusinya menggunakan DNS Server.&amp;nbsp;DNS yaitu kepanjangan dari Domain Name System merupakan sebuah server yang berfungsi menangani translasi penamaan host-host kedalam IP Address, begitu juga sebaliknya dalam menangani translasi dari IP Address ke Hostname/Domain. Lebih mudahnya DNS dapat diartikan sebagai sebuah layanan yang digunakan untuk menterjemahkan hostname/domain ke IP Address atau sebaliknya.</description>
-    </item>
+      <item>
+        <title>Membangun DNS Server Menggunakan Debian 8</title>
+        <link>https://sibunglon.com/2018/10/26/membangun-dns-server-menggunakan-debian-8/</link>
+        <pubDate>Fri, 26 Oct 2018 10:06:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2018/10/26/membangun-dns-server-menggunakan-debian-8/</guid>
+        <description>Dalam dunia internet, komputer saling berkomunikasi dengan mengenali ip addressnya. Namun karena manusia jauh lebih sulit mengingat angka-angkanya maka solusinya menggunakan DNS Server.&amp;nbsp;DNS yaitu kepanjangan dari Domain Name System merupakan sebuah server yang berfungsi menangani translasi penamaan host-host kedalam IP Address, begitu juga sebaliknya dalam menangani translasi dari IP Address ke Hostname/Domain. Lebih mudahnya DNS dapat diartikan sebagai sebuah layanan yang digunakan untuk menterjemahkan hostname/domain ke IP Address atau sebaliknya.</description>
+      </item>
     
-    <item>
-      <title>Membuat repositori debian 8 dari iso DVD</title>
-      <link>https://icarrr.github.io/posts/membuat-repositori-debian-8-dari-iso-dvd/</link>
-      <pubDate>Tue, 24 Oct 2017 02:54:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/membuat-repositori-debian-8-dari-iso-dvd/</guid>
-      <description>A. PendahuluanPada kesempatan kali ini yang saya share yaitu bagaimana sih membuat sebuah repository debian untuk jaringan lokalB. PengertianRepositori perangkat lunak adalah lokasi penyimpanan dari paket perangkat lunak dapat diambildan diinstal pada komputer. Membuat repositori debian 8 dari dvd ini tergolong mudah dan praktis tetapi membutuhkan waktu atau tempo yang agak lama karena banyak data yang akan di salin dari iso ke hardisk walaupun offline atau tanpa menggunakan koneksi internet andaabar harus s untuk rsync dari iso atau dvd selain anda dapat menggunakan iso, anda juga dapat menggunakan DVD untuk membuat repo yaitu me-mount dvd anda terlebih dahulu.</description>
-    </item>
+      <item>
+        <title>Membuat repositori debian 8 dari iso DVD</title>
+        <link>https://sibunglon.com/2017/10/24/membuat-repositori-debian-8-dari-iso-dvd/</link>
+        <pubDate>Tue, 24 Oct 2017 02:54:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/24/membuat-repositori-debian-8-dari-iso-dvd/</guid>
+        <description>A. PendahuluanPada kesempatan kali ini yang saya share yaitu bagaimana sih membuat sebuah repository debian untuk jaringan lokalB. PengertianRepositori perangkat lunak adalah lokasi penyimpanan dari paket perangkat lunak dapat diambildan diinstal pada komputer. Membuat repositori debian 8 dari dvd ini tergolong mudah dan praktis tetapi membutuhkan waktu atau tempo yang agak lama karena banyak data yang akan di salin dari iso ke hardisk walaupun offline atau tanpa menggunakan koneksi internet andaabar harus s untuk rsync dari iso atau dvd selain anda dapat menggunakan iso, anda juga dapat menggunakan DVD untuk membuat repo yaitu me-mount dvd anda terlebih dahulu.</description>
+      </item>
     
-    <item>
-      <title>Membangun sistem informasi desa</title>
-      <link>https://icarrr.github.io/posts/membangun-sistem-informasi-desa/</link>
-      <pubDate>Mon, 23 Oct 2017 02:29:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/membangun-sistem-informasi-desa/</guid>
-      <description>A. Pendahuluan
+      <item>
+        <title>Membangun sistem informasi desa</title>
+        <link>https://sibunglon.com/2017/10/23/membangun-sistem-informasi-desa/</link>
+        <pubDate>Mon, 23 Oct 2017 02:29:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/23/membangun-sistem-informasi-desa/</guid>
+        <description>A. Pendahuluan
 Pada kesempatan ini saya akan mengimplementasikan membangun sebuah sistem informasi untuk desa
 B. PengertianOpenSID&amp;nbsp;(https://github.com/OpenSID/OpenSID) adalah Sistem Informasi Desa (SID) yang sengaja dibuat supaya terbuka dan dapat dikembangkan bersama-sama oleh komunitas peduli SID.
 SID adalah aplikasi komputer yang membantu desa, agar:
@@ -80,45 +73,41 @@ SID adalah aplikasi komputer yang membantu desa, agar:
 - Pemerintah desa lebih transparan dan akuntabel- Layanan publik lebih baik
 - Warga mendapat akses lebih baik pada informasi desa
 OpenSID turut membantu agar ke semua 74ribu+ desa di Indonesia menerapkan sistem informasi untuk memajukan desanya.</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Mempercantik tampilan terminal server</title>
-      <link>https://icarrr.github.io/posts/mempercantik-tampilan-terminal-server/</link>
-      <pubDate>Sat, 21 Oct 2017 02:27:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/mempercantik-tampilan-terminal-server/</guid>
-      <description>A. PendahuluanPada kesempatan ini saya ingin sharing tentang bagaimana mempercantik atau apalah agar tampilan shell linux tidak polos-polos begitu saja.
+      <item>
+        <title>Mempercantik tampilan terminal server</title>
+        <link>https://sibunglon.com/2017/10/21/mempercantik-tampilan-terminal-server/</link>
+        <pubDate>Sat, 21 Oct 2017 02:27:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/21/mempercantik-tampilan-terminal-server/</guid>
+        <description>A. PendahuluanPada kesempatan ini saya ingin sharing tentang bagaimana mempercantik atau apalah agar tampilan shell linux tidak polos-polos begitu saja.
 B. PengertianApa itu shell ? shell adalah program (penterjemah perintah) yang menjembatani user dengan sistem operasi dalam hal ini kernel (inti sistem operasi), umumnya shell menyediakan prompt sebagai user interface, tempat dimana user mengetikkan perintah-perintah yang diinginkan baik berupa perintah internal shell (internal command), ataupun perintah eksekusi suatu file progam (eksternal command), selain itu shell memungkinkan user menyusun sekumpulan perintah pada sebuah atau beberapa file untuk dieksekusi sebagai program.</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Perbandingan open source dan closed source</title>
-      <link>https://icarrr.github.io/posts/perbandingan-open-source-dan-closed-source/</link>
-      <pubDate>Fri, 20 Oct 2017 18:59:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/perbandingan-open-source-dan-closed-source/</guid>
-      <description>1. Pengertian
+      <item>
+        <title>Perbandingan open source dan closed source</title>
+        <link>https://sibunglon.com/2017/10/20/perbandingan-open-source-dan-closed-source/</link>
+        <pubDate>Fri, 20 Oct 2017 18:59:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/20/perbandingan-open-source-dan-closed-source/</guid>
+        <description>1. Pengertian
 Sumber terbuka&amp;nbsp;(bahasa Inggris:&amp;nbsp;open source) adalah sistem pengembangan yang tidak dikoordinasi oleh suatu individu / lembaga pusat, tetapi oleh para pelaku yang bekerja sama dengan memanfaatkan kode sumber&amp;nbsp;(source-code)&amp;nbsp;yang tersebar dan tersedia bebas (biasanya menggunakan fasilitas komunikasi internet). Pola pengembangan ini mengambil model ala&amp;nbsp;bazaar, sehingga pola Open Source ini memiliki ciri bagi komunitasnya yaitu adanya dorongan yang bersumber dari&amp;nbsp;budaya memberi, yang artinya ketika suatu komunitas menggunakan sebuah program Open Source dan telah menerima sebuah manfaat kemudian akan termotivasi untuk menimbulkan sebuah pertanyaan apa yang bisa pengguna berikan balik kepada orang banyak.</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Install nextcloud di debian server 8.6.0</title>
-      <link>https://icarrr.github.io/posts/install-nextcloud-di-debian-server-8.6.0/</link>
-      <pubDate>Fri, 20 Oct 2017 02:10:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/install-nextcloud-di-debian-server-8.6.0/</guid>
-      <description>A. PendahuluanPada kesempatan ini&amp;nbsp;saya akan sharing tentang bagaimana saya menyimpan file dengan melakukan instalasi nextcloud pada server debian 8.6.
+      <item>
+        <title>Install nextcloud di debian server 8.6.0</title>
+        <link>https://sibunglon.com/2017/10/20/install-nextcloud-di-debian-server-8.6.0/</link>
+        <pubDate>Fri, 20 Oct 2017 02:10:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/20/install-nextcloud-di-debian-server-8.6.0/</guid>
+        <description>A. PendahuluanPada kesempatan ini&amp;nbsp;saya akan sharing tentang bagaimana saya menyimpan file dengan melakukan instalasi nextcloud pada server debian 8.6.
 B. PengertianNextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan layanan file hosting. Ini secara fungsional mirip dengan Dropbox, meskipun Nextcloud bebas dan open-source, memungkinkan siapa saja untuk menginstal dan mengoperasikannya di server pribadi. Berbeda dengan layanan proprietary seperti Dropbox, arsitektur terbuka memungkinkan penambahan fungsionalitas tambahan ke server dalam bentuk aplikasi.</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Backup vm proxmox ke local harddisk</title>
-      <link>https://icarrr.github.io/posts/backup-vm-proxmox-ke-local-harddisk/</link>
-      <pubDate>Thu, 19 Oct 2017 18:47:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/backup-vm-proxmox-ke-local-harddisk/</guid>
-      <description>A. Pendahuluan
+      <item>
+        <title>Backup vm proxmox ke local harddisk</title>
+        <link>https://sibunglon.com/2017/10/19/backup-vm-proxmox-ke-local-harddisk/</link>
+        <pubDate>Thu, 19 Oct 2017 18:47:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/19/backup-vm-proxmox-ke-local-harddisk/</guid>
+        <description>A. Pendahuluan
 Pada kesempatan ini saya share bagaimana agar config di debian atau apapun yang ada diproxmox tidak hilang bila terjadi sesuatu
 B. Pengertian
 Bakcup data adalah salah satu langkah untuk menyimpan data agar saat data itu hilang kita masih memiliki data simpanannya agar tidak hilang.
@@ -126,25 +115,23 @@ C. Latar belakang
 Membuat secondary data agar saat data primer nya hilang kita masih punya data secondari nya.
 D. Tujuan
 Agar data yang saat penting itu tidak hilang karena ada kesalahan dan dapat menyerlamatkan pekerjaan kita.</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Implementasi pembelajaran online dengan moodle - installasi</title>
-      <link>https://icarrr.github.io/posts/implementasi-pembelajaran-online-dengan-moodle-installasi/</link>
-      <pubDate>Wed, 18 Oct 2017 17:13:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/implementasi-pembelajaran-online-dengan-moodle-installasi/</guid>
-      <description>A. PendahuluanPada kesempatan kali ini saya akan mengimplementasikan tentang apa yang sudah saya pelajari yaitu Moodle
+      <item>
+        <title>Implementasi pembelajaran online dengan moodle - installasi</title>
+        <link>https://sibunglon.com/2017/10/18/implementasi-pembelajaran-online-dengan-moodle-installasi/</link>
+        <pubDate>Wed, 18 Oct 2017 17:13:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/18/implementasi-pembelajaran-online-dengan-moodle-installasi/</guid>
+        <description>A. PendahuluanPada kesempatan kali ini saya akan mengimplementasikan tentang apa yang sudah saya pelajari yaitu Moodle
 B. PengertianMOODLE&amp;nbsp;(singkatan dari&amp;nbsp;Modular Object-Oriented Dynamic Learning Environment) adalah paket perangkat lunak yang diproduksi untuk kegiatan belajar berbasis internet dan situs web yang menggunakan prinsip&amp;nbsp;social constructionist pedagogy. MOODLE merupakan salah satu aplikasi dari konsep dan mekanisme belajar mengajar yang memanfaatkan teknologi informasi, yang dikenal dengan konsep pembelajaran elktronik atau e-learning. Moodle dapat digunakan secara bebas sebagai produk sumber terbuka (open source) di bawah lisensi GNU.</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Point to point dengan UBIQUITI (Station side)</title>
-      <link>https://icarrr.github.io/posts/point-to-point-dengan-ubiquiti-station-side/</link>
-      <pubDate>Wed, 18 Oct 2017 16:50:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/point-to-point-dengan-ubiquiti-station-side/</guid>
-      <description>A. Pengertian
+      <item>
+        <title>Point to point dengan UBIQUITI (Station side)</title>
+        <link>https://sibunglon.com/2017/10/18/point-to-point-dengan-ubiquiti-station-side/</link>
+        <pubDate>Wed, 18 Oct 2017 16:50:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/18/point-to-point-dengan-ubiquiti-station-side/</guid>
+        <description>A. Pengertian
 Ubiquiti Networks&amp;nbsp;adalah perusahaan teknologi Amerika yang dimulai pada tahun 2005. Berbasis di&amp;nbsp;San Jose, California&amp;nbsp;, Ubiquiti memproduksi&amp;nbsp;produk&amp;nbsp;komunikasi data nirkabel&amp;nbsp;untuk perusahaan dan&amp;nbsp;penyedia layanan&amp;nbsp;broadband nirkabel&amp;nbsp;dengan fokus utama pada pasar yang kurang terlayani dan yang&amp;nbsp;sedang berkembang.
 B. Latar Belakang
 Kebutuhan media tranmisi jarak jauh
@@ -153,34 +140,31 @@ Bisa Menerapkan wireless konsep dan bisa menangkap signal dari sisi AP
 D. Alat dan Bahan
 ~ Ubiquiti Power Beam M2 (Station side)
 ~ Ubiquiti NanoStation M2 (AP Side)</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Point To Point dengan Ubiquiti (AP SIDE)</title>
-      <link>https://icarrr.github.io/posts/point-to-point-dengan-ubiquiti-ap-side/</link>
-      <pubDate>Wed, 18 Oct 2017 11:29:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/point-to-point-dengan-ubiquiti-ap-side/</guid>
-      <description>Protokol Point-to-Point (PPP) adalah protokol data link (layer 2) yang digunakan untuk membangun hubungan langsung antara dua node. Ini menghubungkan dua router secara langsung tanpa host atau perangkat jaringan lainnya di antaranya, dan jaraknya biasanya cukup jauh, UBIQUITI merupakan sebuah perusahaan yang mengkhususkan produksinya pada produk – produk wireless. Perusahaan yang berbasis di San Jose, California, Amerika ini telah beroperasi sejak tahun 2005. Sejak saat ini, mereka terus melakukan inovasi pada produk – produknya sehingga bisa mendunia seperti saat ini.</description>
-    </item>
+      <item>
+        <title>Point To Point dengan Ubiquiti (AP SIDE)</title>
+        <link>https://sibunglon.com/2017/10/18/point-to-point-dengan-ubiquiti-ap-side/</link>
+        <pubDate>Wed, 18 Oct 2017 11:29:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/18/point-to-point-dengan-ubiquiti-ap-side/</guid>
+        <description>Protokol Point-to-Point (PPP) adalah protokol data link (layer 2) yang digunakan untuk membangun hubungan langsung antara dua node. Ini menghubungkan dua router secara langsung tanpa host atau perangkat jaringan lainnya di antaranya, dan jaraknya biasanya cukup jauh, UBIQUITI merupakan sebuah perusahaan yang mengkhususkan produksinya pada produk – produk wireless. Perusahaan yang berbasis di San Jose, California, Amerika ini telah beroperasi sejak tahun 2005. Sejak saat ini, mereka terus melakukan inovasi pada produk – produknya sehingga bisa mendunia seperti saat ini.</description>
+      </item>
     
-    <item>
-      <title>Install slims 8 akasia di debian server</title>
-      <link>https://icarrr.github.io/posts/install-slims-8-akasia-di-debian-server/</link>
-      <pubDate>Tue, 17 Oct 2017 15:17:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/install-slims-8-akasia-di-debian-server/</guid>
-      <description>A. PendahuluanPada kesempatan ini saya sharing tentang bagaimana langkah-langkah penginstallan slims untuk manajamen perpustakaan online.
+      <item>
+        <title>Install slims 8 akasia di debian server</title>
+        <link>https://sibunglon.com/2017/10/17/install-slims-8-akasia-di-debian-server/</link>
+        <pubDate>Tue, 17 Oct 2017 15:17:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/17/install-slims-8-akasia-di-debian-server/</guid>
+        <description>A. PendahuluanPada kesempatan ini saya sharing tentang bagaimana langkah-langkah penginstallan slims untuk manajamen perpustakaan online.
 B. PengertianSenayan, atau lengkapnya&amp;nbsp;Senayan Library Management System&amp;nbsp;(SLiMS), adalah perangkat lunak sistem manajemen perpustakaan (library management system) sumber terbuka yang dilisensikan di bawah GPL v3. Aplikasi Web yang dikembangkan oleh tim dari Pusat Informasi dan Humas Departemen Pendidikan Nasional Repubik Indonesia ini dibangun dengan menggunakan PHP, basis data MySQL, dan Pengontrol versi Git. Pada tahun 2009, Senayan memenangi INAICTA 2009 untuk kategori&amp;nbsp;open source.</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Install cms sekolah di server</title>
-      <link>https://icarrr.github.io/posts/install-cms-sekolah-di-server/</link>
-      <pubDate>Mon, 16 Oct 2017 11:16:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/install-cms-sekolah-di-server/</guid>
-      <description>A. Pendahuluan
+      <item>
+        <title>Install cms sekolah di server</title>
+        <link>https://sibunglon.com/2017/10/16/install-cms-sekolah-di-server/</link>
+        <pubDate>Mon, 16 Oct 2017 11:16:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/16/install-cms-sekolah-di-server/</guid>
+        <description>A. Pendahuluan
 Pada kesempatan kali ini saya akan mengimplementasikan membangun website sekolah di server dengan CMS.
 B. Pengertian
 CMS adalah suatu /sebuah aplikasi yang berfungsi merubah suatu menu atau memanipulasi data dari suatu situs atau website.
@@ -190,319 +174,290 @@ D. Tujuan
 Mempunyai maksud untuk memudahkan saya mendapatkan informasi sekolah di website tersebut.
 E. Hasil yang diharapkan
 Mempunyai harapan agar nanti kedepannya bisa membangun website ini di sekolah.</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Menginstall wordpress di localhost linux</title>
-      <link>https://icarrr.github.io/posts/menginstall-wordpress-di-localhost-linux/</link>
-      <pubDate>Mon, 16 Oct 2017 10:48:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/menginstall-wordpress-di-localhost-linux/</guid>
-      <description>A. Pendahuluan&amp;nbsp;Pada kesempatan kali ini, saya memposting tentang proses installasi wordpressB. PengertianWordPress adalah sebuah&amp;nbsp;aplikasi&amp;nbsp;sumber terbuka (open source) yang sangat populer digunakan sebagai mesin blog (blog engine). WordPress dibangun dengan&amp;nbsp;bahasa pemrograman&amp;nbsp;PHP&amp;nbsp;dan&amp;nbsp;basis data&amp;nbsp;(database)&amp;nbsp;MySQL. PHP dan MySQL, keduanya merupakan&amp;nbsp;perangkat lunak sumber terbuka(open source software). Selain sebagai&amp;nbsp;blog, WordPress juga mulai digunakan sebagai sebuah&amp;nbsp;CMS(Content Management System) karena kemampuannya untuk dimodifikasi dan disesuaikan dengan kebutuhan penggunanyaPiranti lunak inti WordPress dikembangkan oleh ratusan sukarelawan. Ketika Anda ingin dapatkan lebih banyak kegunaan daripadanya, ada ribuan&amp;nbsp;plugin&amp;nbsp;dan&amp;nbsp;tema&amp;nbsp;yang tersedia untuk mengubah situs Anda menjadi nyaris&amp;nbsp;apa saja yang Anda dambakan.</description>
-    </item>
+      <item>
+        <title>Menginstall wordpress di localhost linux</title>
+        <link>https://sibunglon.com/2017/10/16/menginstall-wordpress-di-localhost-linux/</link>
+        <pubDate>Mon, 16 Oct 2017 10:48:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/16/menginstall-wordpress-di-localhost-linux/</guid>
+        <description>A. Pendahuluan&amp;nbsp;Pada kesempatan kali ini, saya memposting tentang proses installasi wordpressB. PengertianWordPress adalah sebuah&amp;nbsp;aplikasi&amp;nbsp;sumber terbuka (open source) yang sangat populer digunakan sebagai mesin blog (blog engine). WordPress dibangun dengan&amp;nbsp;bahasa pemrograman&amp;nbsp;PHP&amp;nbsp;dan&amp;nbsp;basis data&amp;nbsp;(database)&amp;nbsp;MySQL. PHP dan MySQL, keduanya merupakan&amp;nbsp;perangkat lunak sumber terbuka(open source software). Selain sebagai&amp;nbsp;blog, WordPress juga mulai digunakan sebagai sebuah&amp;nbsp;CMS(Content Management System) karena kemampuannya untuk dimodifikasi dan disesuaikan dengan kebutuhan penggunanyaPiranti lunak inti WordPress dikembangkan oleh ratusan sukarelawan. Ketika Anda ingin dapatkan lebih banyak kegunaan daripadanya, ada ribuan&amp;nbsp;plugin&amp;nbsp;dan&amp;nbsp;tema&amp;nbsp;yang tersedia untuk mengubah situs Anda menjadi nyaris&amp;nbsp;apa saja yang Anda dambakan.</description>
+      </item>
     
-    <item>
-      <title>Implementasi autoindex di server debian 8.6</title>
-      <link>https://icarrr.github.io/posts/implementasi-autoindex-di-server-debian-8.6/</link>
-      <pubDate>Sat, 14 Oct 2017 10:36:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/implementasi-autoindex-di-server-debian-8.6/</guid>
-      <description>A. PendahuluanPada kesempatan ini saya akan mengimplementasikan autoindex di debian server 8-6
+      <item>
+        <title>Implementasi autoindex di server debian 8.6</title>
+        <link>https://sibunglon.com/2017/10/14/implementasi-autoindex-di-server-debian-8.6/</link>
+        <pubDate>Sat, 14 Oct 2017 10:36:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/14/implementasi-autoindex-di-server-debian-8.6/</guid>
+        <description>A. PendahuluanPada kesempatan ini saya akan mengimplementasikan autoindex di debian server 8-6
 B. PengertianAuto Index adalah&amp;nbsp;kemampuan untuk komputer&amp;nbsp;untuk memindai volume besar dokumen&amp;nbsp;terhadap dikendalikan&amp;nbsp;kosakata, taksonomi&amp;nbsp;, tesaurus&amp;nbsp;atau ontologi&amp;nbsp;dan menggunakan istilah-istilah dikendalikan untuk cepat&amp;nbsp;dan efektif Indeks deposit dokumen yang besar.&amp;nbsp;Karena jumlah dokumen secara eksponensial&amp;nbsp;meningkat dengan proliferasi dari Internet&amp;nbsp;, pengindeksan otomatis akan menjadi penting untuk mempertahankan kemampuan untuk menemukan informasi yang relevan di lautan ir-relevan informasi.
 C. Latar belakangLatar belakang dalam installasi ini adalah untuk memindai dokumen dengan volume yang besar dengan cepat, mudah dan lebih efektif.</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Atasi info php tidak tampil atau not working</title>
-      <link>https://icarrr.github.io/posts/atasi-info-php-tidak-tampil-atau-not-working/</link>
-      <pubDate>Sat, 14 Oct 2017 10:25:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/atasi-info-php-tidak-tampil-atau-not-working/</guid>
-      <description>A. Pendahuluan
+      <item>
+        <title>Atasi info php tidak tampil atau not working</title>
+        <link>https://sibunglon.com/2017/10/14/atasi-info-php-tidak-tampil-atau-not-working/</link>
+        <pubDate>Sat, 14 Oct 2017 10:25:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/14/atasi-info-php-tidak-tampil-atau-not-working/</guid>
+        <description>A. Pendahuluan
 Pada postingan kali ini, saya akan memberikan solusi yang biasa menjadi permasalahan saat menginstall LAMP Server di linux
 B. Pengertian
 PHP info&amp;nbsp;adalah istilah untuk menyebutkan sebuah halaman yang berisi informasi mengenai versi PHP yang digunakan oleh suatu server, biasanya pada halaman PHP Info akan di informasikan banyak hal selain versi nya itu sendiri. phpinfo() biasanya digunakan untuk memeriksa pengaturan konfigurasi dan variabel standar yang tersedia pada sistem tertentu.</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Hal hal yang harus dilakukan setelah install server - install aplikasi berbasis web</title>
-      <link>https://icarrr.github.io/posts/hal-hal-yang-harus-dilakukan-setelah-install-server-install-aplikasi-berbasis-web/</link>
-      <pubDate>Fri, 13 Oct 2017 10:22:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/hal-hal-yang-harus-dilakukan-setelah-install-server-install-aplikasi-berbasis-web/</guid>
-      <description>A. PendahuluanPada kesempatan ini, saya kembali memposting tentang dasar-dasar setelahi install server.
+      <item>
+        <title>Hal hal yang harus dilakukan setelah install server - install aplikasi berbasis web</title>
+        <link>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-install-aplikasi-berbasis-web/</link>
+        <pubDate>Fri, 13 Oct 2017 10:22:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-install-aplikasi-berbasis-web/</guid>
+        <description>A. PendahuluanPada kesempatan ini, saya kembali memposting tentang dasar-dasar setelahi install server.
 
 B. PengertianAplikasi Berbasis Web adalah sebuah aplikasi yang dapat diakses melalui internet atau intranet, dan pada sekarang ini ternyata lebih banyak dan lebih luas dalam pemakaiannya.
 C. Latar belakangSetelah kita menginstall debian di proxmox&amp;nbsp;&amp;nbsp;tentunya kita harus tau hal hal apa saja yang harus dilakukan setelahnya.
 
 D. TujuanAgar server dapat bekerja secara optimal saat melayani komputer client.</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Hal hal yang harus dilakukan setelah install server - installasi LAMP Server</title>
-      <link>https://icarrr.github.io/posts/hal-hal-yang-harus-dilakukan-setelah-install-server-installasi-lamp-server/</link>
-      <pubDate>Fri, 13 Oct 2017 10:09:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/hal-hal-yang-harus-dilakukan-setelah-install-server-installasi-lamp-server/</guid>
-      <description>A. Pendahuluan&amp;nbsp;Pada kesempatan ini saya memposting lagi dan masih mengenai server
+      <item>
+        <title>Hal hal yang harus dilakukan setelah install server - installasi LAMP Server</title>
+        <link>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-installasi-lamp-server/</link>
+        <pubDate>Fri, 13 Oct 2017 10:09:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-installasi-lamp-server/</guid>
+        <description>A. Pendahuluan&amp;nbsp;Pada kesempatan ini saya memposting lagi dan masih mengenai server
 
 B. PengertianLAMP&amp;nbsp;adalah istilah yang merupakan singkatan dari&amp;nbsp;Linux,&amp;nbsp;Apache,&amp;nbsp;MySQL&amp;nbsp;dan&amp;nbsp;Perl/&amp;nbsp;PHP/&amp;nbsp;Phyton. Merupakan sebuah paket&amp;nbsp;perangkat lunak bebas&amp;nbsp;yang digunakan untuk menjalankan sebuah aplikasi secara lengkap.
 Komponen-komponen dari LAMP&amp;nbsp;:Linux&amp;nbsp;–&amp;nbsp;sistem operasiApache HTTP Server&amp;nbsp;–&amp;nbsp;web serverMariaDB&amp;nbsp;atau&amp;nbsp;MySQL&amp;nbsp;– sistem basis dataPHP&amp;nbsp;atau&amp;nbsp;Perl&amp;nbsp;atau&amp;nbsp;Python&amp;nbsp;– bahasa pemrograman yang dipakaiC. Latar belakang&amp;nbsp;Agar bisa menampung portal ataupun aplikasi berbasis web yang lain
 
 D. TujuanAgar supaya saya mengetahui bagaimana cara installasi Lamp Server tersebut dan Lamp tersebut merupakan syarat utama untuk membuat web yang berbasis cms</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Hal-hal yang harus dilakukan setelah install server</title>
-      <link>https://icarrr.github.io/posts/hal-hal-yang-harus-dilakukan-setelah-install-server/</link>
-      <pubDate>Thu, 12 Oct 2017 09:31:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/hal-hal-yang-harus-dilakukan-setelah-install-server/</guid>
-      <description>A. Pendahuluan&amp;nbsp;Pada kesempatan kali ini yang saya bagikan yaitu tentang hal - hal yang perlu dilakukan setelah install server
+      <item>
+        <title>Hal-hal yang harus dilakukan setelah install server</title>
+        <link>https://sibunglon.com/2017/10/12/hal-hal-yang-harus-dilakukan-setelah-install-server/</link>
+        <pubDate>Thu, 12 Oct 2017 09:31:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/12/hal-hal-yang-harus-dilakukan-setelah-install-server/</guid>
+        <description>A. Pendahuluan&amp;nbsp;Pada kesempatan kali ini yang saya bagikan yaitu tentang hal - hal yang perlu dilakukan setelah install server
 B. PengertianDebian adalah sistem operasi komputer yang tersusun dari paket-paket perangkat lunak yang dirilis sebagai perangkat lunak bebas dan terbuka dengan lisensi mayoritas GNU General Public License dan lisensi perangkat lunak bebas lainnya. Debian GNU/UNIX memuat perkakas sistem operasi GNU dan kernel Linux merupakan distribusi Linux yang populer dan berpengaruh. Debian didistribusikan dengan akses ke repositori dengan ribuan paket perangkat lunak yang siap untuk instalasi dan digunakan.</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Installasi MATE desktop environment di ubuntu 17.04</title>
-      <link>https://icarrr.github.io/posts/installasi-mate-desktop-environment-di-ubuntu-17.04/</link>
-      <pubDate>Wed, 11 Oct 2017 12:31:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/installasi-mate-desktop-environment-di-ubuntu-17.04/</guid>
-      <description>A. PendahuluanSetelah kemarin menggunakan desktop gnome saya ingin pindah ke desktop MATE karena lebih ringan dan mudah digunakan, nah bagi kalian yang ingin menginstall MATE desktop kali ini saya bagikan tutorialnya...
+      <item>
+        <title>Installasi MATE desktop environment di ubuntu 17.04</title>
+        <link>https://sibunglon.com/2017/10/11/installasi-mate-desktop-environment-di-ubuntu-17.04/</link>
+        <pubDate>Wed, 11 Oct 2017 12:31:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/11/installasi-mate-desktop-environment-di-ubuntu-17.04/</guid>
+        <description>A. PendahuluanSetelah kemarin menggunakan desktop gnome saya ingin pindah ke desktop MATE karena lebih ringan dan mudah digunakan, nah bagi kalian yang ingin menginstall MATE desktop kali ini saya bagikan tutorialnya...
 B. pengertianMATE telah memiliki sejumlah aplikasi yang berasal dari Aplikasi Inti GNOME, dan pengembang telah menulis beberapa aplikasi lain dari nol.&amp;nbsp;Aplikasi bercabang memiliki nama baru, kebanyakan dari bahasa Spanyol
 MATE juga tersedia di repositori resmi beberapa distribusi Linux lainnya, termasuk Arch Linux, Parabola, LMDE, Debian, Ubuntu MATE, Ubuntu Mint, Kali Linux, Fedora, openSUSE, Gentoo, Mageia, ROSA, dan PCLinuxOS.</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Tips menemukan referensi website untuk belajar linux</title>
-      <link>https://icarrr.github.io/posts/tips-menemukan-referensi-website-untuk-belajar-linux/</link>
-      <pubDate>Tue, 10 Oct 2017 17:27:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/tips-menemukan-referensi-website-untuk-belajar-linux/</guid>
-      <description>A. Pendahuluan&amp;nbsp;
+      <item>
+        <title>Tips menemukan referensi website untuk belajar linux</title>
+        <link>https://sibunglon.com/2017/10/10/tips-menemukan-referensi-website-untuk-belajar-linux/</link>
+        <pubDate>Tue, 10 Oct 2017 17:27:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/10/tips-menemukan-referensi-website-untuk-belajar-linux/</guid>
+        <description>A. Pendahuluan&amp;nbsp;
 Halo teman2 blogger, pada kesempatan kali ini saya akan mmebagikan sebuah artikel sederhana namun bermanfaat bagi pembaca sekalian terutama bagi yang ingin belajar linux agar mahir menggunakannya. Monggo mari di simak artikel yang saya bagikan berikut ini.
 1. Pengertian&amp;nbsp;
 Web referensi adalah suatu website atau situs atau laman yang memuat pembahasan ataupun tutorial yang berisi materi yang dapat di jadikan patokan atau dasar untuk membuat suatu artikel ataupun tutorial.</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Install debian server di proxmox virtual environment</title>
-      <link>https://icarrr.github.io/posts/install-debian-server-di-proxmox-virtual-environment/</link>
-      <pubDate>Tue, 10 Oct 2017 12:19:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/install-debian-server-di-proxmox-virtual-environment/</guid>
-      <description>A. PendahuluanKali ini saya berbagi tentang bagaimana menginstall linux Debian 8.6 melalui pada proxmox. Proxmox digunakan sebagai virtualisasi.B. PengertianDebian adalah sistem operasi komputer yang tersusun dari paket-paket perangkat lunak yang dirilis sebagai perangkat lunak bebas dan terbuka dengan lisensi mayoritas GNU General Public License dan lisensi perangkat lunak bebas lainnya. Debian GNU/Linux memuat perkakas sistem operasi GNU dan kernel Linux merupakan distribusi Linux yang popmuler dan berpengaruh. Debian didistribusikan dengan akses ke repositori dengan ribuan paket perangkat lunak yang siap untuk instalasi dan digunakan.</description>
-    </item>
+      <item>
+        <title>Install debian server di proxmox virtual environment</title>
+        <link>https://sibunglon.com/2017/10/10/install-debian-server-di-proxmox-virtual-environment/</link>
+        <pubDate>Tue, 10 Oct 2017 12:19:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/10/install-debian-server-di-proxmox-virtual-environment/</guid>
+        <description>A. PendahuluanKali ini saya berbagi tentang bagaimana menginstall linux Debian 8.6 melalui pada proxmox. Proxmox digunakan sebagai virtualisasi.B. PengertianDebian adalah sistem operasi komputer yang tersusun dari paket-paket perangkat lunak yang dirilis sebagai perangkat lunak bebas dan terbuka dengan lisensi mayoritas GNU General Public License dan lisensi perangkat lunak bebas lainnya. Debian GNU/Linux memuat perkakas sistem operasi GNU dan kernel Linux merupakan distribusi Linux yang popmuler dan berpengaruh. Debian didistribusikan dengan akses ke repositori dengan ribuan paket perangkat lunak yang siap untuk instalasi dan digunakan.</description>
+      </item>
     
-    <item>
-      <title>Comparison of platform virtualization software</title>
-      <link>https://icarrr.github.io/posts/comparison-of-platform-virtualization-software/</link>
-      <pubDate>Mon, 09 Oct 2017 17:12:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/comparison-of-platform-virtualization-software/</guid>
-      <description>A. PENDAHULUANSeperti judulnya, yaitu adalah perbandingan dari beberapa vendor Virtualisasi Software.B. PENGERTIANadalah istilah umum yang mengacu kepada abstraksi dari sumber daya komputer. Definisi lainnya adalah &#34;sebuah teknik untuk menyembunyikan karakteristik fisik dari sumber daya komputer dari bagaimana cara sistem lain, aplikasi atau pengguna berinteraksi dengan sumber daya tersebut. Hal ini termasuk membuat sebuah sumber daya tunggal (seperti server, sebuah sistem operasi, sebuah aplikasi, atau peralatan penyimpanan terlihat berfungsi sebagai beberapa sumber daya logikal; atau dapat juga termasuk definisi untuk membuat beberapa sumber daya fisik (seperti beberapa peralatan penyimpanan atau server) terlihat sebagai satu sumber daya logikal.</description>
-    </item>
+      <item>
+        <title>Comparison of platform virtualization software</title>
+        <link>https://sibunglon.com/2017/10/09/comparison-of-platform-virtualization-software/</link>
+        <pubDate>Mon, 09 Oct 2017 17:12:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/09/comparison-of-platform-virtualization-software/</guid>
+        <description>A. PENDAHULUANSeperti judulnya, yaitu adalah perbandingan dari beberapa vendor Virtualisasi Software.B. PENGERTIANadalah istilah umum yang mengacu kepada abstraksi dari sumber daya komputer. Definisi lainnya adalah &#34;sebuah teknik untuk menyembunyikan karakteristik fisik dari sumber daya komputer dari bagaimana cara sistem lain, aplikasi atau pengguna berinteraksi dengan sumber daya tersebut. Hal ini termasuk membuat sebuah sumber daya tunggal (seperti server, sebuah sistem operasi, sebuah aplikasi, atau peralatan penyimpanan terlihat berfungsi sebagai beberapa sumber daya logikal; atau dapat juga termasuk definisi untuk membuat beberapa sumber daya fisik (seperti beberapa peralatan penyimpanan atau server) terlihat sebagai satu sumber daya logikal.</description>
+      </item>
     
-    <item>
-      <title>Atasi phpmyadmin error #1698 tidak bisa login root</title>
-      <link>https://icarrr.github.io/posts/atasi-phpmyadmin-error-1698-tidak-bisa-login-root/</link>
-      <pubDate>Wed, 20 Sep 2017 03:15:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/atasi-phpmyadmin-error-1698-tidak-bisa-login-root/</guid>
-      <description>A. PendahuluanPada kesempatan ini yang saya posting/share yaitu troubleshoot phpmyadmin dengan kode error&amp;nbsp;#1698 atau tidak bisa login sebagai root
+      <item>
+        <title>Atasi phpmyadmin error #1698 tidak bisa login root</title>
+        <link>https://sibunglon.com/2017/09/20/atasi-phpmyadmin-error-1698-tidak-bisa-login-root/</link>
+        <pubDate>Wed, 20 Sep 2017 03:15:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/09/20/atasi-phpmyadmin-error-1698-tidak-bisa-login-root/</guid>
+        <description>A. PendahuluanPada kesempatan ini yang saya posting/share yaitu troubleshoot phpmyadmin dengan kode error&amp;nbsp;#1698 atau tidak bisa login sebagai root
 B. PengertianPhpMyAdmin&amp;nbsp;adalah&amp;nbsp;perangkat lunak bebas&amp;nbsp;yang ditulis dalam&amp;nbsp;bahasa pemrograman&amp;nbsp;PHP&amp;nbsp;yang digunakan untuk menangani administrasi&amp;nbsp;MySQL&amp;nbsp;melalui&amp;nbsp;Jejaring Jagat Jembar&amp;nbsp;(World Wide Web). phpMyAdmin mendukung berbagai operasi MySQL, diantaranya (mengelola&amp;nbsp;basis data, tabel-tabel, bidang (fields), relasi (relations), indeks, pengguna (users), perizinan (permissions), dan lain-lain).
 C. Latar belakangIngin membagi pengetahuan tentang atasi permasalahan yang sama
 D. TujuanPembaca mudah mengatasai masalahnya seperti yang dimaksud</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Mengatasi kursor winbox mikrotik meloncat-loncat sewaktu mengetik</title>
-      <link>https://icarrr.github.io/posts/mengatasi-kursor-winbox-mikrotik-meloncat-loncat-sewaktu-mengetik/</link>
-      <pubDate>Thu, 07 Sep 2017 14:42:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/mengatasi-kursor-winbox-mikrotik-meloncat-loncat-sewaktu-mengetik/</guid>
-      <description>A. PendahuluanPernahkan anda mengalami ini? atau hanya pernah lihat begini?
+      <item>
+        <title>Mengatasi kursor winbox mikrotik meloncat-loncat sewaktu mengetik</title>
+        <link>https://sibunglon.com/2017/09/07/mengatasi-kursor-winbox-mikrotik-meloncat-loncat-sewaktu-mengetik/</link>
+        <pubDate>Thu, 07 Sep 2017 14:42:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/09/07/mengatasi-kursor-winbox-mikrotik-meloncat-loncat-sewaktu-mengetik/</guid>
+        <description>A. PendahuluanPernahkan anda mengalami ini? atau hanya pernah lihat begini?
 Pada postingan kali, saya akan sharing bagaimana&amp;nbsp;mengatasi kursor winbox mikrotik meloncat-loncat sewaktu mengetik.
 B. Pengertiankursor&amp;nbsp;adalah suatu petunjuk atau indikator posisi pada&amp;nbsp;monitor komputer&amp;nbsp;atau&amp;nbsp;peranti tampilan&amp;nbsp;lain yang akan merespons&amp;nbsp;masukan&amp;nbsp;dari suatu masukan teks atau&amp;nbsp;peranti penunjuk. Kursor secara umum dapat dibagi menjadi dua jenis: kursor teks dan kursor tetikus.&amp;nbsp;Kursor teks&amp;nbsp;adalah petunjuk pada&amp;nbsp;antarmuka baris perintah&amp;nbsp;(CLI) atau&amp;nbsp;editor teks&amp;nbsp;yang menunjukkan tempat teks akan diletakkan sewaktu dimasukkan (titik penyisipan) dan biasanya berupa garis bawah, segi empat, atau garis vertikal yang dapat berkedip atau stabil.</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Menginstall VMware Player di linux</title>
-      <link>https://icarrr.github.io/posts/menginstall-vmware-player-di-linux/</link>
-      <pubDate>Thu, 31 Aug 2017 13:27:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/menginstall-vmware-player-di-linux/</guid>
-      <description>A. PendahuluanPada kesempatan ini, saya memposting bagaimana sih menginstal VMware Player di linux.
+      <item>
+        <title>Menginstall VMware Player di linux</title>
+        <link>https://sibunglon.com/2017/08/31/menginstall-vmware-player-di-linux/</link>
+        <pubDate>Thu, 31 Aug 2017 13:27:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/31/menginstall-vmware-player-di-linux/</guid>
+        <description>A. PendahuluanPada kesempatan ini, saya memposting bagaimana sih menginstal VMware Player di linux.
 B. PengertianVMware Player&amp;nbsp;adalah sebuah produk&amp;nbsp;perangkat lunak virtualisasi&amp;nbsp;berlisensi bebas dari&amp;nbsp;VMware, sebuah divisi dari&amp;nbsp;EMC Corporation. Produk ini bisa menjalankan&amp;nbsp;mesin virtualpengguna yang dibuat dari produk VMware yang lain tetapi tidak dapat membuat sebuah&amp;nbsp;mesin virtual&amp;nbsp;yang baru.namun limitasi ini dicabut di versi 3.0.0. sehingga dapat membuat sendiri tanpa harus memakai&amp;nbsp;VMware Workstation. Perangkat berlisensi bebas dan situs web seperti&amp;nbsp;EasyVMX&amp;nbsp;juga hadir untuk membuat&amp;nbsp;mesin virtual, menghapus, memanipulasi dan mengkonversikan disk&amp;nbsp;VMware&amp;nbsp;dan&amp;nbsp;floppy, membuat perizinan pengguna, menjalankan dan merawat&amp;nbsp;mesin virtual.</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Pengenalan Desktop Environment (DE)</title>
-      <link>https://icarrr.github.io/posts/pengenalan-desktop-environment-de/</link>
-      <pubDate>Mon, 28 Aug 2017 12:53:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/pengenalan-desktop-environment-de/</guid>
-      <description>A. Pendahuluan
+      <item>
+        <title>Pengenalan Desktop Environment (DE)</title>
+        <link>https://sibunglon.com/2017/08/28/pengenalan-desktop-environment-de/</link>
+        <pubDate>Mon, 28 Aug 2017 12:53:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/28/pengenalan-desktop-environment-de/</guid>
+        <description>A. Pendahuluan
 Pada kesempatan ini&amp;nbsp; saya akan Share mengenai Desktop Environment. pasti di kalimat dari Deskktop Environment ini sudah asing bagi orang yang sering mendengarnya dan asing bagi orang yang tidak pernah mendengar bahkan tidak mengetahuinya.&amp;nbsp;
 1. Pengertianlingkungan desktop ( DE )&amp;nbsp;adalah implementasi metafora desktop yang dibuat dari kumpulan program yang berjalan di atas sistem operasi komputer, yang memiliki antarmuka pengguna grafis umum (GUI), terkadang digambarkan sebagai shell grafis . Lingkungan desktop terlihat kebanyakan di komputer pribadi sampai munculnya komputasi mobile.</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Mengatasi masalah apt-get update failed to fetch hash sum mismatch</title>
-      <link>https://icarrr.github.io/posts/mengatasi-masalah-apt-get-update-failed-to-fetch-hash-sum-mismatch/</link>
-      <pubDate>Wed, 23 Aug 2017 10:37:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/mengatasi-masalah-apt-get-update-failed-to-fetch-hash-sum-mismatch/</guid>
-      <description>A. PendahuluanPada kali ini, saya akan memposting tentang bagaimana mengatasi masalah yang biasa ditemukan saat melakukan update linux.
+      <item>
+        <title>Mengatasi masalah apt-get update failed to fetch hash sum mismatch</title>
+        <link>https://sibunglon.com/2017/08/23/mengatasi-masalah-apt-get-update-failed-to-fetch-hash-sum-mismatch/</link>
+        <pubDate>Wed, 23 Aug 2017 10:37:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/23/mengatasi-masalah-apt-get-update-failed-to-fetch-hash-sum-mismatch/</guid>
+        <description>A. PendahuluanPada kali ini, saya akan memposting tentang bagaimana mengatasi masalah yang biasa ditemukan saat melakukan update linux.
 B. PengertianShell&amp;nbsp;adalah program (penterjemah perintah)yang menjembatani user dengan sistem operasi dalam hal ini Kernel (inti dari sistem operasi), umumnya shell menyediakan prompt sebagai user interface, tempat dimana user dapat mengetikkan perintah-perintah yang diinginkan baik berupa perintah internal shell (internal command), ataupun perintah eksekusi file program (eksternal command), selain itu memungkinkan user menyusun sekumpulan perintah pada sebuah atau beberapa file untuk dieksekusi sebagai program.</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Recovery data dari hardisk atau flashdisk yang tidak bisa dibuka</title>
-      <link>https://icarrr.github.io/posts/recovery-data-dari-hardisk-atau-flashdisk-yang-tidak-bisa-dibuka/</link>
-      <pubDate>Tue, 22 Aug 2017 10:06:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/recovery-data-dari-hardisk-atau-flashdisk-yang-tidak-bisa-dibuka/</guid>
-      <description>A. PendahuluanPada kesempatan kali ini, saya akan memberikan tahapan tentang bagaimana recovery&amp;nbsp;data dari hardisk atau flashdisk yang tidak bisa dibuka menggunakan software di linux yaitu &#34;Testdisk&#34;
+      <item>
+        <title>Recovery data dari hardisk atau flashdisk yang tidak bisa dibuka</title>
+        <link>https://sibunglon.com/2017/08/22/recovery-data-dari-hardisk-atau-flashdisk-yang-tidak-bisa-dibuka/</link>
+        <pubDate>Tue, 22 Aug 2017 10:06:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/22/recovery-data-dari-hardisk-atau-flashdisk-yang-tidak-bisa-dibuka/</guid>
+        <description>A. PendahuluanPada kesempatan kali ini, saya akan memberikan tahapan tentang bagaimana recovery&amp;nbsp;data dari hardisk atau flashdisk yang tidak bisa dibuka menggunakan software di linux yaitu &#34;Testdisk&#34;
 B. PengertianRecovery data (pemulihan data)&amp;nbsp;adalah proses menyelamatkan (mengambil) tidak dapat diakses, hilang, rusak, rusak atau diformat data dari&amp;nbsp;penyimpanan sekunder&amp;nbsp;,&amp;nbsp;removable media&amp;nbsp;atau&amp;nbsp;file&amp;nbsp;, ketika data yang tersimpan di dalamnya tidak dapat diakses secara normal.&amp;nbsp;Data yang paling sering diselamatkan dari media penyimpanan seperti internal atau eksternal&amp;nbsp;hard disk drive&amp;nbsp;(HDD),&amp;nbsp;solid-state drive&amp;nbsp;(SSD),&amp;nbsp;USB flash drive&amp;nbsp;,&amp;nbsp;tape magnetik&amp;nbsp;,&amp;nbsp;CD&amp;nbsp;,&amp;nbsp;DVD&amp;nbsp;,&amp;nbsp;RAID&amp;nbsp;subsistem, dan lainnya&amp;nbsp;perangkat elektronik.</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Mengenal perintah-perintah dasar di linux</title>
-      <link>https://icarrr.github.io/posts/mengenal-perintah-perintah-dasar-di-linux/</link>
-      <pubDate>Mon, 21 Aug 2017 21:40:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/mengenal-perintah-perintah-dasar-di-linux/</guid>
-      <description>A. PendahuluanPada kesempatan kali ini, saya akan memposting beberapa perintah-perintah dasar dari sistem operasi linux. Untuk lebih jelasnya akan di jelaskan sebagai berikut.
+      <item>
+        <title>Mengenal perintah-perintah dasar di linux</title>
+        <link>https://sibunglon.com/2017/08/21/mengenal-perintah-perintah-dasar-di-linux/</link>
+        <pubDate>Mon, 21 Aug 2017 21:40:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/21/mengenal-perintah-perintah-dasar-di-linux/</guid>
+        <description>A. PendahuluanPada kesempatan kali ini, saya akan memposting beberapa perintah-perintah dasar dari sistem operasi linux. Untuk lebih jelasnya akan di jelaskan sebagai berikut.
 B. PengertianLinux identik dengan penggunaan console terminal yang mengharuskan kita menghafal perintah-perintah yang ada. Perintah-perintah tersebut bisa berupa singkatan atau nama asli sesuai fungsinya.
 C. Latar BelakangSemakin lama, semakin banyak para pengguna komputer yang menjadikan Linux sebagai Sistem Operasi utamanya.&amp;nbsp;Selain sifatnya yang open source, ternyata sistem operasi Linux ini juga lebih banyak menuntut kita untuk terus mempelajarinya.</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Setting PPTP VPN Client pada os Linux Mint</title>
-      <link>https://icarrr.github.io/posts/setting-pptp-vpn-client-pada-os-linux-mint/</link>
-      <pubDate>Fri, 18 Aug 2017 18:30:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/setting-pptp-vpn-client-pada-os-linux-mint/</guid>
-      <description>A. PENDAHULANBerikut ini saya sharing Cara Setting&amp;nbsp;PPTP VPN Client&amp;nbsp;pada&amp;nbsp;Linux Mint, sedangkan VPN Server yang digunakan pada artikel ini mengunakan&amp;nbsp;VPN Server&amp;nbsp;dari&amp;nbsp;Mikrotik.
+      <item>
+        <title>Setting PPTP VPN Client pada os Linux Mint</title>
+        <link>https://sibunglon.com/2017/08/18/setting-pptp-vpn-client-pada-os-linux-mint/</link>
+        <pubDate>Fri, 18 Aug 2017 18:30:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/18/setting-pptp-vpn-client-pada-os-linux-mint/</guid>
+        <description>A. PENDAHULANBerikut ini saya sharing Cara Setting&amp;nbsp;PPTP VPN Client&amp;nbsp;pada&amp;nbsp;Linux Mint, sedangkan VPN Server yang digunakan pada artikel ini mengunakan&amp;nbsp;VPN Server&amp;nbsp;dari&amp;nbsp;Mikrotik.
 B. PENGERTIANVPN adalah Virtual Private Network dimana VPN ini merupakan interkoneksi antar jaringan ( PC Client to LAN maupun LAN to LAN ) yang mana interkoneksi ini melalui jaringan Public ( Internet ) sehingga dengan VPN ini&amp;nbsp;terjadi koneksi terselubung alias lorong atau Tunneling Connection sehingga data yang di akses ( data yang di kirim dan di terima ) benar-benar aman.</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Sharing bersama Mbah Suro Dhemit tentang 7 layer OSI</title>
-      <link>https://icarrr.github.io/posts/sharing-bersama-mbah-suro-dhemit-tentang-7-layer-osi/</link>
-      <pubDate>Thu, 17 Aug 2017 17:39:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/sharing-bersama-mbah-suro-dhemit-tentang-7-layer-osi/</guid>
-      <description>A. PengertianModel referensi jaringan terbuka OSI atau OSI Reference Model for open networking adalah sebuah model arsitektural jaringan yang dikembangkan oleh badan International Organization for Standardization (ISO) di Eropa pada tahun 1977. OSI sendiri merupakan singkatan dari Open System Interconnection. Model ini disebut juga dengan model &#34;Model tujuh lapis OSI&#34; (OSI seven layer model).&amp;nbsp;Sebelum munculnya model referensi OSI, sistem jaringan komputer sangat tergantung kepada pemasok (vendor). OSI berupaya membentuk standar umum jaringan komputer untuk menunjang interoperatibilitas antar pemasok yang berbeda.</description>
-    </item>
+      <item>
+        <title>Sharing bersama Mbah Suro Dhemit tentang 7 layer OSI</title>
+        <link>https://sibunglon.com/2017/08/17/sharing-bersama-mbah-suro-dhemit-tentang-7-layer-osi/</link>
+        <pubDate>Thu, 17 Aug 2017 17:39:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/17/sharing-bersama-mbah-suro-dhemit-tentang-7-layer-osi/</guid>
+        <description>A. PengertianModel referensi jaringan terbuka OSI atau OSI Reference Model for open networking adalah sebuah model arsitektural jaringan yang dikembangkan oleh badan International Organization for Standardization (ISO) di Eropa pada tahun 1977. OSI sendiri merupakan singkatan dari Open System Interconnection. Model ini disebut juga dengan model &#34;Model tujuh lapis OSI&#34; (OSI seven layer model).&amp;nbsp;Sebelum munculnya model referensi OSI, sistem jaringan komputer sangat tergantung kepada pemasok (vendor). OSI berupaya membentuk standar umum jaringan komputer untuk menunjang interoperatibilitas antar pemasok yang berbeda.</description>
+      </item>
     
-    <item>
-      <title>Konsep perencanaan membangun jaringan sekolah</title>
-      <link>https://icarrr.github.io/posts/konsep-perencanaan-membangun-jaringan-sekolah/</link>
-      <pubDate>Wed, 16 Aug 2017 17:25:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/konsep-perencanaan-membangun-jaringan-sekolah/</guid>
-      <description>A. PENDAHULUANPada kesempatan ini saya akan memberikan sedikit ilmu terkait dengan konsep perencanaan membangun jaringan sekolah. dalam melakukan sebuah pekerjaan kita mesti memikirkan konsep terlebih dahulu.
+      <item>
+        <title>Konsep perencanaan membangun jaringan sekolah</title>
+        <link>https://sibunglon.com/2017/08/16/konsep-perencanaan-membangun-jaringan-sekolah/</link>
+        <pubDate>Wed, 16 Aug 2017 17:25:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/16/konsep-perencanaan-membangun-jaringan-sekolah/</guid>
+        <description>A. PENDAHULUANPada kesempatan ini saya akan memberikan sedikit ilmu terkait dengan konsep perencanaan membangun jaringan sekolah. dalam melakukan sebuah pekerjaan kita mesti memikirkan konsep terlebih dahulu.
 B. PENGERTIANPerencanaan merupakan tahapan awal yang harus di lakukan sebelum melakuka sesuatu pekerjaan. perencanaan dikatakan matang/berhasil, apabila perencanaan tersebut 70% sudah pasti dan tidak sering mengalami perubahan
 C. LATAR BELAKANGDalam hal ini, saya bekerja tim utuk membangun jaringan di sekolah. saya berpern untuk mengatur jaringan.</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Virtualisasi topologi menggunakan software DIA</title>
-      <link>https://icarrr.github.io/posts/virtualisasi-topologi-menggunakan-software-dia/</link>
-      <pubDate>Mon, 14 Aug 2017 17:00:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/virtualisasi-topologi-menggunakan-software-dia/</guid>
-      <description>A. PENDAHULUANPada postingan kali ini saya akan membagi sedikit ilmu terkait dengan virtualisasi topologi jaringan menggunakan software dia.
+      <item>
+        <title>Virtualisasi topologi menggunakan software DIA</title>
+        <link>https://sibunglon.com/2017/08/14/virtualisasi-topologi-menggunakan-software-dia/</link>
+        <pubDate>Mon, 14 Aug 2017 17:00:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/14/virtualisasi-topologi-menggunakan-software-dia/</guid>
+        <description>A. PENDAHULUANPada postingan kali ini saya akan membagi sedikit ilmu terkait dengan virtualisasi topologi jaringan menggunakan software dia.
 B. PENGERTIAN&amp;nbsp;TOPOLOGI MENURUT&amp;nbsp;WIKIPEDIATopologi Jaringan Sebuah LAN dapat diimplementasikan dengan berbagai macam topologi. Topologi yang di maksud di sini merupakan struktur jaringan&amp;nbsp;fisik yang digunakan untuk mengimplementasikan LAN tersebut. Topologi dasar yang bisa digunakan dalam jaringan komputer adalah:
 Topologi&amp;nbsp;Bus&amp;nbsp;(Linear)Topologi&amp;nbsp;Ring&amp;nbsp;(Cincin)Topologi&amp;nbsp;Star&amp;nbsp;(Bintang)Topologi&amp;nbsp;Tree&amp;nbsp;(Pohon)Topologi&amp;nbsp;Mesh&amp;nbsp;(web)Topologi pengembangan dari ketiga di atas biasanya berupa topologi&amp;nbsp;Tree&amp;nbsp;(Pohon), yang merupakan pengembangan dari&amp;nbsp;star&amp;nbsp;dan&amp;nbsp;Bus, topologi&amp;nbsp;Mash&amp;nbsp;atau&amp;nbsp;Hybrid&amp;nbsp;atau&amp;nbsp;Multipoint&amp;nbsp;atau Web yang merupakan pengembangan dari topologi&amp;nbsp;Point to Point&amp;nbsp;(bus), topologi Loop yang merupakan pengembangan dari topologi&amp;nbsp;Ring&amp;nbsp;Ketiganya memiliki kelebihan dan kekurangan masing-masing.</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Installasi moodle di localhost linux</title>
-      <link>https://icarrr.github.io/posts/installasi-moodle-di-localhost-linux/</link>
-      <pubDate>Fri, 11 Aug 2017 16:00:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/installasi-moodle-di-localhost-linux/</guid>
-      <description>A. Pendahuluan&amp;nbsp;Server dibuat dengan beragam maksud dan tujuannya, salah satunya adalah membangun sistem pembelajaran online. Pembelajaran online sangat baik diterapkan saat ini, karena pelajar masa kini lebih senang untuk online dari pada membaca buku. Hal ini bisa meningkatkan minat membaca pelajar tanah air.&amp;nbsp;Salah satu media yang dapat digunakan adalah dengan &amp;ldquo;Moodle&amp;rsquo;. Apa itu Moodle?&amp;nbsp;
+      <item>
+        <title>Installasi moodle di localhost linux</title>
+        <link>https://sibunglon.com/2017/08/11/installasi-moodle-di-localhost-linux/</link>
+        <pubDate>Fri, 11 Aug 2017 16:00:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/11/installasi-moodle-di-localhost-linux/</guid>
+        <description>A. Pendahuluan&amp;nbsp;Server dibuat dengan beragam maksud dan tujuannya, salah satunya adalah membangun sistem pembelajaran online. Pembelajaran online sangat baik diterapkan saat ini, karena pelajar masa kini lebih senang untuk online dari pada membaca buku. Hal ini bisa meningkatkan minat membaca pelajar tanah air.&amp;nbsp;Salah satu media yang dapat digunakan adalah dengan &amp;ldquo;Moodle&amp;rsquo;. Apa itu Moodle?&amp;nbsp;
 #Pengertian
 Moodle (Modular Object-Oriented Dynamic Learning Environment) adalah paket perangkat lunak yang diproduksi untuk kegiatan belajar berbasis internet dan situs web yang menggunakan prinsip social constructionist pedagogy.</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Memasukkan file website ke localhost</title>
-      <link>https://icarrr.github.io/posts/memasukkan-file-website-ke-localhost/</link>
-      <pubDate>Thu, 10 Aug 2017 15:40:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/memasukkan-file-website-ke-localhost/</guid>
-      <description>A. PendahuluanBerselancar di website dengan lancar tanpa butuh menunggu merupakan keinginan banyak orang, apalagi berselancar tanpa koneksi internet, wahhh nyaman banget. Kalian juga dapat merasakannya dengan menginstal LOCALHOST, tapi apa itu LOCALHOST?
+      <item>
+        <title>Memasukkan file website ke localhost</title>
+        <link>https://sibunglon.com/2017/08/10/memasukkan-file-website-ke-localhost/</link>
+        <pubDate>Thu, 10 Aug 2017 15:40:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/10/memasukkan-file-website-ke-localhost/</guid>
+        <description>A. PendahuluanBerselancar di website dengan lancar tanpa butuh menunggu merupakan keinginan banyak orang, apalagi berselancar tanpa koneksi internet, wahhh nyaman banget. Kalian juga dapat merasakannya dengan menginstal LOCALHOST, tapi apa itu LOCALHOST?
 #Pengertian
 Dalam jaringan komputer, localhost adalah nama host yang berarti komputer ini. Ini digunakan untuk mengakses layanan jaringan yang berjalan di host melalui antarmuka jaringan loopback-nya. Menggunakan antarmuka loopback bypasses perangkat keras antarmuka jaringan lokal.
 Mekanisme loopback lokal berguna untuk menguji perangkat lunak selama pengembangan, terlepas dari konfigurasi jaringan manapun.</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Bagaimana menginstall LAMP di localhost linux?</title>
-      <link>https://icarrr.github.io/posts/bagaimana-menginstall-lamp-di-localhost-linux/</link>
-      <pubDate>Wed, 09 Aug 2017 14:58:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/bagaimana-menginstall-lamp-di-localhost-linux/</guid>
-      <description>A. PendahuluanHello, pada kesempatan kali ini saya memposting bagaimana sih menginstal LAMP? Nah cara-caranya akan dijelaskan sebagai berikut.#Pengertian
+      <item>
+        <title>Bagaimana menginstall LAMP di localhost linux?</title>
+        <link>https://sibunglon.com/2017/08/09/bagaimana-menginstall-lamp-di-localhost-linux/</link>
+        <pubDate>Wed, 09 Aug 2017 14:58:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/09/bagaimana-menginstall-lamp-di-localhost-linux/</guid>
+        <description>A. PendahuluanHello, pada kesempatan kali ini saya memposting bagaimana sih menginstal LAMP? Nah cara-caranya akan dijelaskan sebagai berikut.#Pengertian
 LAMP adalah istilah yang merupakan singkatan dari&amp;nbsp;Linux,&amp;nbsp;Apache, MySQL dan&amp;nbsp;Perl/PHP/Phyton. Merupakan sebuah paket&amp;nbsp;perangkat lunak bebas&amp;nbsp;yang digunakan untuk menjalankan sebuah aplikasi secara lengkap.
 Komponen-komponen dari LAMP :Linux&amp;nbsp;–&amp;nbsp;sistem operasiApache HTTP Server&amp;nbsp;–&amp;nbsp;web serverMariaDB&amp;nbsp;atau&amp;nbsp;MySQL&amp;nbsp;– sistem basis dataPHP&amp;nbsp;atau&amp;nbsp;Perl&amp;nbsp;atau&amp;nbsp;Python&amp;nbsp;– bahasa pemrograman yang dipakai#Latar BelakangIngin menggunakan linux, apache, mariaDB/mysql, dan PHP dalam satu paket.
 #Maksud dan Tujuan
 Maksud dan tujuan dari postingan ini agar si pengunjung dapat mempelajari dan mengetahui bagaimana menginstall LAMP.</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Apa perbedaan linux dan windows?</title>
-      <link>https://icarrr.github.io/posts/apa-perbedaan-linux-dan-windows/</link>
-      <pubDate>Fri, 04 Aug 2017 17:00:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/apa-perbedaan-linux-dan-windows/</guid>
-      <description>Perbedaan linux dengan windowsSebelum memahami perbedaan, berikut ini persamaan Linux dan Windows:Linux dan Windows sama-sama nama untuk sistem operasi &amp;ldquo;komputer&amp;rdquo; dan sama-sama punya beberapa jenis atau pilihan, misal Linux Nusantara, BlankOn, Ubuntu, Mandriva, Fedora, openSUSE, Slackware, Debian, Gentoo, Redhat, Mint, dll. Sedangkan di Windows ada Windows 98, Me, XP, Vista, 7, Server 2008, Mobile, dll. &amp;ldquo;komputer&amp;rdquo; itu bisa berupa pc, notebook, smartphone, dll.Persamaan adanya pilihan/jenis di atas sebenarynya tidak persis sama, karena jenis Windows itu hanya tersedia buatan MS (Microsoft), sedangkan jenis Linux itu bisa buatan beberapa pihak yg berbeda.</description>
-    </item>
+      <item>
+        <title>Apa perbedaan linux dan windows?</title>
+        <link>https://sibunglon.com/2017/08/04/apa-perbedaan-linux-dan-windows/</link>
+        <pubDate>Fri, 04 Aug 2017 17:00:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/04/apa-perbedaan-linux-dan-windows/</guid>
+        <description>Perbedaan linux dengan windowsSebelum memahami perbedaan, berikut ini persamaan Linux dan Windows:Linux dan Windows sama-sama nama untuk sistem operasi &amp;ldquo;komputer&amp;rdquo; dan sama-sama punya beberapa jenis atau pilihan, misal Linux Nusantara, BlankOn, Ubuntu, Mandriva, Fedora, openSUSE, Slackware, Debian, Gentoo, Redhat, Mint, dll. Sedangkan di Windows ada Windows 98, Me, XP, Vista, 7, Server 2008, Mobile, dll. &amp;ldquo;komputer&amp;rdquo; itu bisa berupa pc, notebook, smartphone, dll.Persamaan adanya pilihan/jenis di atas sebenarynya tidak persis sama, karena jenis Windows itu hanya tersedia buatan MS (Microsoft), sedangkan jenis Linux itu bisa buatan beberapa pihak yg berbeda.</description>
+      </item>
     
-    <item>
-      <title>Apa itu linux dan bagaimana sejarah singkatnya?</title>
-      <link>https://icarrr.github.io/posts/apa-itu-linux-dan-bagaimana-sejarah-singkatnya/</link>
-      <pubDate>Thu, 03 Aug 2017 16:52:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/apa-itu-linux-dan-bagaimana-sejarah-singkatnya/</guid>
-      <description>Apa itu Linux?Linux (diucapkan ˈlɪnəks atau /ˈlɪnʊks/) adalah nama yang diberikan kepada sistem operasi komputer bertipe Unix. Linux merupakan salah satu contoh hasil pengembangan perangkat lunak bebas dan sumber terbuka utama. Seperti perangkat lunak bebas dan sumber terbuka lainnya pada umumnya, kode sumber Linux dapat dimodifikasi, digunakan dan didistribusikan kembali secara bebas oleh siapa saja.[2]Nama &#34;Linux&#34; berasal dari nama pembuatnya, yang diperkenalkan tahun 1991 oleh Linus Torvalds. Sistemnya, peralatan sistem dan pustakanya umumnya berasal dari sistem operasi GNU, yang diumumkan tahun 1983 oleh Richard Stallman.</description>
-    </item>
+      <item>
+        <title>Apa itu linux dan bagaimana sejarah singkatnya?</title>
+        <link>https://sibunglon.com/2017/08/03/apa-itu-linux-dan-bagaimana-sejarah-singkatnya/</link>
+        <pubDate>Thu, 03 Aug 2017 16:52:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/03/apa-itu-linux-dan-bagaimana-sejarah-singkatnya/</guid>
+        <description>Apa itu Linux?Linux (diucapkan ˈlɪnəks atau /ˈlɪnʊks/) adalah nama yang diberikan kepada sistem operasi komputer bertipe Unix. Linux merupakan salah satu contoh hasil pengembangan perangkat lunak bebas dan sumber terbuka utama. Seperti perangkat lunak bebas dan sumber terbuka lainnya pada umumnya, kode sumber Linux dapat dimodifikasi, digunakan dan didistribusikan kembali secara bebas oleh siapa saja.[2]Nama &#34;Linux&#34; berasal dari nama pembuatnya, yang diperkenalkan tahun 1991 oleh Linus Torvalds. Sistemnya, peralatan sistem dan pustakanya umumnya berasal dari sistem operasi GNU, yang diumumkan tahun 1983 oleh Richard Stallman.</description>
+      </item>
     
-    <item>
-      <title>Mengatasi grub linux yang error</title>
-      <link>https://icarrr.github.io/posts/mengatasi-grub-linux-yang-error/</link>
-      <pubDate>Wed, 02 Aug 2017 16:51:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/mengatasi-grub-linux-yang-error/</guid>
-      <description>PendahuluanGNU GRUB (singkat untuk GNU GRand Bersatu Bootloader) adalah boot loader paket dari proyek GNU . GRUB adalah implementasi referensi dari Free Software Foundation &#39;s Multiboot Keterangan , yang menyediakan pengguna pilihan untuk boot salah satu dari beberapa sistem operasi yang terpasang di komputer atau pilih tertentu kernel konfigurasi yang tersedia pada partisi sistem operasi tertentu.
+      <item>
+        <title>Mengatasi grub linux yang error</title>
+        <link>https://sibunglon.com/2017/08/02/mengatasi-grub-linux-yang-error/</link>
+        <pubDate>Wed, 02 Aug 2017 16:51:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/02/mengatasi-grub-linux-yang-error/</guid>
+        <description>PendahuluanGNU GRUB (singkat untuk GNU GRand Bersatu Bootloader) adalah boot loader paket dari proyek GNU . GRUB adalah implementasi referensi dari Free Software Foundation &#39;s Multiboot Keterangan , yang menyediakan pengguna pilihan untuk boot salah satu dari beberapa sistem operasi yang terpasang di komputer atau pilih tertentu kernel konfigurasi yang tersedia pada partisi sistem operasi tertentu.
 Maksud dan TujuanTujuan dari postingan ini yaitu agar pembaca yang memiliki masalah yang serupa, maka ia dapat mengatasinya sendiri tanpa membawa ke service center.</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Menginstall proxmox di server</title>
-      <link>https://icarrr.github.io/posts/menginstall-proxmox-di-server/</link>
-      <pubDate>Mon, 31 Jul 2017 16:07:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/menginstall-proxmox-di-server/</guid>
-      <description>PendahuluanProxmox VE (Virtual Environment) adalah sebuah distro Linux virtualisasi berbasis Debian ( 64 bit) yang mengusung OpenZV dan KVM, dengan KVM kita tidak hanya bisa menginstall linux saja akan tetapi Operating system windows pun bisa kita instal. Namun yang membuat istimewa dari proxmox adalah kemudahan dalam installasi dan administrasi berbasis Web.
+      <item>
+        <title>Menginstall proxmox di server</title>
+        <link>https://sibunglon.com/2017/07/31/menginstall-proxmox-di-server/</link>
+        <pubDate>Mon, 31 Jul 2017 16:07:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/07/31/menginstall-proxmox-di-server/</guid>
+        <description>PendahuluanProxmox VE (Virtual Environment) adalah sebuah distro Linux virtualisasi berbasis Debian ( 64 bit) yang mengusung OpenZV dan KVM, dengan KVM kita tidak hanya bisa menginstall linux saja akan tetapi Operating system windows pun bisa kita instal. Namun yang membuat istimewa dari proxmox adalah kemudahan dalam installasi dan administrasi berbasis Web.
 Latar BelakangBeberapa keuntungan menggunakan Proxmox sebagai berikut&amp;nbsp;Kinerja terbaik.Instalasi yang telah dioptimalkan, sehingga lebih cepat.Mudah dalam manajemen.Cocok untuk kelas Enterprise.Beberapa hal yang perlu diperhatikan :Proxmox tersedia hanya untuk hardware 64-bit.</description>
-    </item>
+      </item>
     
-    <item>
-      <title>Instalasi Linux Mint 18.1 Sarena</title>
-      <link>https://icarrr.github.io/posts/instalasi-linux-mint-18.1-sarena/</link>
-      <pubDate>Mon, 24 Jul 2017 13:52:00 +0000</pubDate>
-      
-      <guid>https://icarrr.github.io/posts/instalasi-linux-mint-18.1-sarena/</guid>
-      <description>Alat dan bahan:1 set pc atau laptop
+      <item>
+        <title>Instalasi Linux Mint 18.1 Sarena</title>
+        <link>https://sibunglon.com/2017/07/24/instalasi-linux-mint-18.1-sarena/</link>
+        <pubDate>Mon, 24 Jul 2017 13:52:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/07/24/instalasi-linux-mint-18.1-sarena/</guid>
+        <description>Alat dan bahan:1 set pc atau laptop
 flashdisk booting linux mint 18.1 cinnamon 64-bitLangkah kerja:Siapkan sebuah pc atau laptop yang akan diinstallkan linux mint 18.1 cinnamon 64-bit, serta flashdisk yang berisi booting sistem operasi yang akan diinstal.
 Nyalakan pc atau laptop yang ingin di install, setalah itu masuk pada bios dan konfigurasi agar flashdisk booting yang telah ada dapat dipakai yaitu dengan cara masuk di menu “Boot” dan meletakkan jenis USB ke deretan atas.</description>
-    </item>
+      </item>
     
   </channel>
 </rss>

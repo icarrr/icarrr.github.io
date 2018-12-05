@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bagaimana mengganti login page jaringan mikroTik? - The Official site of siBunglon</title>
+  <meta name="author" content="Faizar Septiawan">
+  <meta name="description" content="A blog about everything.">
+
+  <meta name="generator" content="Hugo 0.51" />
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/css/external.min.css" media="screen">
+
+  
+  
+  <link rel="stylesheet" href="/assets/css/styles.css" media="screen">
+
+  <link href="//fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
+
+  
+  
+  <link rel="shortcut icon" href="/assets/img/logo.png">
+
+  
+  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official site of siBunglon" />
+  <link href="/posts/index.xml" rel="feed" type="application/rss+xml" title="The Official site of siBunglon" />
+
+  <meta property="og:title" content="Bagaimana mengganti login page jaringan mikroTik?" />
+<meta property="og:description" content="PendahuluanMikroTik routerboard adalah salah satu router yang mempunyai login page(tampilan awal) untuk koneksi hotspot. Login page berfungsi jika hotspot tersebut tidak mempunyai autentikasi, lalu siapapun yang telah konek di hotspot tersebut dan ingin melakukan browsing maka secara otomatis dia akan teralihkan ke login page untuk keperluan identitas agar ia dapat melanjutkan browsingnya.
+Maksud dan TujuanDengan login page yang telah disiapkan dapat membatasi siapa saja dapat mendapat akses internet dari mikroTik meskipun sebelumnya ia sudah konek ke wifi tersebut." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sibunglon.com/2017/07/26/bagaimana-mengganti-login-page-jaringan-mikrotik/" /><meta property="article:published_time" content="2017-07-26T14:34:00&#43;00:00"/>
+<meta property="article:modified_time" content="2017-07-26T14:34:00&#43;00:00"/>
+
+  
+  
+<meta itemprop="name" content="Bagaimana mengganti login page jaringan mikroTik?">
+<meta itemprop="description" content="PendahuluanMikroTik routerboard adalah salah satu router yang mempunyai login page(tampilan awal) untuk koneksi hotspot. Login page berfungsi jika hotspot tersebut tidak mempunyai autentikasi, lalu siapapun yang telah konek di hotspot tersebut dan ingin melakukan browsing maka secara otomatis dia akan teralihkan ke login page untuk keperluan identitas agar ia dapat melanjutkan browsingnya.
+Maksud dan TujuanDengan login page yang telah disiapkan dapat membatasi siapa saja dapat mendapat akses internet dari mikroTik meskipun sebelumnya ia sudah konek ke wifi tersebut.">
+
+
+<meta itemprop="datePublished" content="2017-07-26T14:34:00&#43;00:00" />
+<meta itemprop="dateModified" content="2017-07-26T14:34:00&#43;00:00" />
+<meta itemprop="wordCount" content="381">
+
+
+
+<meta itemprop="keywords" content="BLC Telkom Klaten,MikroTik,KPLI Klaten,MikroTik Indonesia,Ayo Belajar Linux," />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Bagaimana mengganti login page jaringan mikroTik?"/>
+<meta name="twitter:description" content="PendahuluanMikroTik routerboard adalah salah satu router yang mempunyai login page(tampilan awal) untuk koneksi hotspot. Login page berfungsi jika hotspot tersebut tidak mempunyai autentikasi, lalu siapapun yang telah konek di hotspot tersebut dan ingin melakukan browsing maka secara otomatis dia akan teralihkan ke login page untuk keperluan identitas agar ia dapat melanjutkan browsingnya.
+Maksud dan TujuanDengan login page yang telah disiapkan dapat membatasi siapa saja dapat mendapat akses internet dari mikroTik meskipun sebelumnya ia sudah konek ke wifi tersebut."/>
+
+</head>
+
+  <body>
+    
+      <nav>
+  <a href="/" title="Homepage">
+    siBunglon
+  </a>
+</nav>
+
+    
+    <main class="container">
+      
+  <article>
+    <header>
+      <small>
+        <time datetime="2017-07-26 02:34">2017-07-26</time>
+        &bull;</small>
+      <h1>Bagaimana mengganti login page jaringan mikroTik?</h1>
+    </header>
+    <section><div style="text-align: justify;"><b><span style="font-size: large;">Pendahuluan</span></b></div><div style="text-align: justify;">MikroTik routerboard adalah salah satu router yang mempunyai login page(tampilan awal) untuk koneksi hotspot. Login page berfungsi jika hotspot tersebut tidak mempunyai autentikasi, lalu siapapun yang telah konek di hotspot tersebut dan ingin melakukan browsing maka secara otomatis dia akan teralihkan ke login page untuk keperluan identitas agar ia dapat melanjutkan browsingnya.</div><br /><div style="text-align: justify;"><span style="font-size: large;"><b>Maksud dan Tujuan</b></span></div><div style="text-align: justify;">Dengan login page yang telah disiapkan dapat membatasi siapa saja dapat mendapat akses internet dari mikroTik meskipun sebelumnya ia sudah konek ke wifi tersebut.</div><br /><div style="text-align: justify;"><span style="font-size: large;"><b>Alat dan Bahan</b></span></div><div style="text-align: justify;">1. File login page yang akan dideploy ke mikroTik</div><div style="text-align: justify;">2. Pc / laptop</div><div style="text-align: justify;">3. MikroTik yang telah dikonfigurasi</div><div style="text-align: justify;">4. Aplikasi winbox</div><div style="text-align: justify;">5. Aplikasi filezilla</div><br /><div style="text-align: justify;"><span style="font-size: large;"><b>Jangka Waktu Pelaksanaan</b></span></div><div style="text-align: justify;">Untuk waktu pengerjaannya cuman membutuhkan waktu yang singkat, yaitu kisaran 5-10 menit.</div><br /><div style="text-align: justify;"><span style="font-size: large;"><b>Langkah Kerja</b></span></div><div style="text-align: justify;">1. Silahkan persiapkan alat dan bahan yang diperlukan.</div><div style="text-align: justify;">2. Hubungkan pc/laptop ke mikroTik menggunkan hotspot yang telah dikonfigurasi di mikroTik, setelah terhubung silahkan buka laman login pagenya dan tampilan default login page mikrotik seperti ini :</div><div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-JP2WRwdbrUQ/W4jt7QcY4AI/AAAAAAAADsA/iZCVhA-nPAAt0UO5e5LtVGHgb74OxTogwCLcBGAs/s1600/Screenshot%2Bat%2B2017-07-29%2B09-18-40.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="747" data-original-width="683" height="320" src="https://3.bp.blogspot.com/-JP2WRwdbrUQ/W4jt7QcY4AI/AAAAAAAADsA/iZCVhA-nPAAt0UO5e5LtVGHgb74OxTogwCLcBGAs/s320/Screenshot%2Bat%2B2017-07-29%2B09-18-40.png" title="" width="292" /></a></div><br /><div class="separator" style="text-align: justify;"></div><br /><div style="text-align: justify;">3. Untuk mengubah tampilan loginnya, masukkan username dan passwordnya yang telah di set biar bisa buka konfigurasinya di mikroTik karena kita terhubung dengan mikroTiknya melalui koneksi wifi. Bila anda berhasil login, lanjut dengan membuka winbox lalu login untuk mendeploy filenya, caranya jika jendela konfigurasi ditampilkan klik Files</div><div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-eGTF8TuSu0k/W4juNVy_FtI/AAAAAAAADsI/mNwzvonE5E0-eFtZItSYhm__1Tcle7HAACLcBGAs/s1600/Screenshot%2Bat%2B2017-07-29%2B09-19-48.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="747" data-original-width="683" height="320" src="https://2.bp.blogspot.com/-eGTF8TuSu0k/W4juNVy_FtI/AAAAAAAADsI/mNwzvonE5E0-eFtZItSYhm__1Tcle7HAACLcBGAs/s320/Screenshot%2Bat%2B2017-07-29%2B09-19-48.png" title="" width="292" /></a></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">4. Select all(pilih semua) file login page yang telah ada, kecuali type 'disk' dan direktori akarnya.</div><div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-iR-29ebrels/W4juYFUx4sI/AAAAAAAADsM/lEh7ilMwyVISuXAQnnby4T7vMKNZ0ROUACLcBGAs/s1600/Screenshot%2Bat%2B2017-07-29%2B09-20-23.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="747" data-original-width="683" height="320" src="https://2.bp.blogspot.com/-iR-29ebrels/W4juYFUx4sI/AAAAAAAADsM/lEh7ilMwyVISuXAQnnby4T7vMKNZ0ROUACLcBGAs/s320/Screenshot%2Bat%2B2017-07-29%2B09-20-23.png" title="" width="292" /></a></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">5. Klik delete (icon tanda "-"), untuk menghapus file login page defaultnya.</div><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-Yy-dUV_KOng/W4juesdH0DI/AAAAAAAADsU/qVXAD7_Ma78S2j3bCGKZQ3k9FFrZ79ChwCLcBGAs/s1600/Screenshot%2Bat%2B2017-07-29%2B09-21-11.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="747" data-original-width="683" height="320" src="https://1.bp.blogspot.com/-Yy-dUV_KOng/W4juesdH0DI/AAAAAAAADsU/qVXAD7_Ma78S2j3bCGKZQ3k9FFrZ79ChwCLcBGAs/s320/Screenshot%2Bat%2B2017-07-29%2B09-21-11.png" title="" width="292" /></a></div><br /><div style="text-align: justify;">6. Kemudian cari file-file login page yang telah dipersiapkan lalu drag and drop ke files mikroTik yang bertype direktori dan tunggu beberapa saat hingga proses selesai.</div><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-N673MQVfUH8/W4jupiYcqhI/AAAAAAAADsc/LI0Ti8njbjQHWKSvjC7L7DIopU6VHhgGgCLcBGAs/s1600/Screenshot%2Bat%2B2017-07-29%2B09-28-03.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="768" data-original-width="1366" height="179" src="https://1.bp.blogspot.com/-N673MQVfUH8/W4jupiYcqhI/AAAAAAAADsc/LI0Ti8njbjQHWKSvjC7L7DIopU6VHhgGgCLcBGAs/s320/Screenshot%2Bat%2B2017-07-29%2B09-28-03.png" title="" width="320" /></a></div><br /><div style="text-align: justify;">7. Buka web browser, kemudian buka alamat login pagenya. Jika login page berubah, berarti anda berhasil melakukannya.</div><div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-quSqEgWBhe8/W4ju1oIwF9I/AAAAAAAADsk/4XAcuBqOzqYtye4MarVLkqaYqh2p1TlUQCLcBGAs/s1600/Screenshot%2Bat%2B2017-07-29%2B09-30-57.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="747" data-original-width="683" height="320" src="https://3.bp.blogspot.com/-quSqEgWBhe8/W4ju1oIwF9I/AAAAAAAADsk/4XAcuBqOzqYtye4MarVLkqaYqh2p1TlUQCLcBGAs/s320/Screenshot%2Bat%2B2017-07-29%2B09-30-57.png" title="" width="292" /></a></div><br /><div class="separator" style="text-align: justify;"><span style="font-size: x-large;"><b>Temuan Permasalahan</b></span></div><br /><div class="separator" style="text-align: justify;">Saat mendeploy file login pagenya sempat salah penempatan filenya, karena saat di drag and drop tidak di drag ke direktori yang ada, seperti ini:</div><br /><div class="separator" style="text-align: justify;">Dan saat ngecek di web browser terjadi kesalahan seperti ini, karena file html loginnya tidak ditemukan dalam disk, seperti ini:</div><div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-1dSYCfAYeR8/W4jvPRTCceI/AAAAAAAADss/qsil62ipSTMxhrp0_Y336kol-3ML5frtQCLcBGAs/s1600/Screenshot%2Bat%2B2017-07-29%2B09-34-37.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="747" data-original-width="683" height="320" src="https://3.bp.blogspot.com/-1dSYCfAYeR8/W4jvPRTCceI/AAAAAAAADss/qsil62ipSTMxhrp0_Y336kol-3ML5frtQCLcBGAs/s320/Screenshot%2Bat%2B2017-07-29%2B09-34-37.png" title="" width="292" /></a></div><div class="separator" style="text-align: justify;"></div><br /><div class="separator" style="text-align: justify;">Nah untuk mengatasi masalah seperti itu, penanganannya dapat melakukan dengan cara buka winbox &gt; Klik IP &gt; Hotapot &gt; Servers &gt; klik 2 kali hotspotnya pada menu</div><div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-wLo5t-7RG9c/W4jvfjsc5VI/AAAAAAAADs0/78xRc4fbJFMYSJ9tkQgLxafk-1wCh131QCLcBGAs/s1600/Screenshot%2Bat%2B2017-07-29%2B09-35-28.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="747" data-original-width="683" height="320" src="https://2.bp.blogspot.com/-wLo5t-7RG9c/W4jvfjsc5VI/AAAAAAAADs0/78xRc4fbJFMYSJ9tkQgLxafk-1wCh131QCLcBGAs/s320/Screenshot%2Bat%2B2017-07-29%2B09-35-28.png" title="" width="292" /></a></div><br /><div class="separator" style="text-align: justify;">Jika ditampilkan jendela seperti berikut, klik reset html untuk mengembalikan file login defaultnya. Lalu ubah tampilannya sesuai dengan petunjuk dari nomor 1 - 6.</div><br /><div class="separator" style="text-align: justify;">Untuk cara mendeploy login page melalui filezilla, akan di posting pada postingan&nbsp;<a href="https://sibunglonganteng.wordpress.com/2017/08/02/mengganti-login-page-jaringan-mikrotik-menggunakan-filezilla/">ini</a>.</div><br /><div class="separator" style="text-align: justify;">Sekian dari postingan ini, semoga bermanfaat.</div>
+</section>
+    <footer>
+      <hr>
+      <div class="meta">
+        <p class="tags">
+          
+            
+              <a href="/tags/blc-telkom-klaten">
+                <span>#</span>BLC Telkom Klaten</a>
+            
+              <a href="/tags/mikrotik">
+                <span>#</span>MikroTik</a>
+            
+              <a href="/tags/kpli-klaten">
+                <span>#</span>KPLI Klaten</a>
+            
+              <a href="/tags/mikrotik-indonesia">
+                <span>#</span>MikroTik Indonesia</a>
+            
+              <a href="/tags/ayo-belajar-linux">
+                <span>#</span>Ayo Belajar Linux</a>
+            
+          
+        </p>
+      </div>
+      <hr>
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sibunglonlabs" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </footer>
+  </article>
+
+    </main>
+    
+      <footer>
+  <p>
+    &copy; 2018 Faizar Septiawan. <a href="http://creativecommons.org/licenses/by-sa/4.0/">Some Rights Reserved</a>.
+  </p>
+  <p>
+    Powered by <a href="https://gohugo.io" title="A Fast and Flexible Website Generator">Hugo</a> &amp; <a href="https://github.com/eshlox/simplicity" title="Hugo theme">Simplicity</a>.
+  </p>
+</footer>
+
+    
+    
+    
+    
+    
+    
+    
+    <script src="/assets/js/scripts.min.js"></script>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-110194945-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>

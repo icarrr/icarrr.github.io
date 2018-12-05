@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menggunakan 1 akun mikroTik untuk banyak pengguna - The Official site of siBunglon</title>
+  <meta name="author" content="Faizar Septiawan">
+  <meta name="description" content="A blog about everything.">
+
+  <meta name="generator" content="Hugo 0.51" />
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/css/external.min.css" media="screen">
+
+  
+  
+  <link rel="stylesheet" href="/assets/css/styles.css" media="screen">
+
+  <link href="//fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
+
+  
+  
+  <link rel="shortcut icon" href="/assets/img/logo.png">
+
+  
+  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official site of siBunglon" />
+  <link href="/posts/index.xml" rel="feed" type="application/rss+xml" title="The Official site of siBunglon" />
+
+  <meta property="og:title" content="Menggunakan 1 akun mikroTik untuk banyak pengguna" />
+<meta property="og:description" content="PendahuluanPada postingan sebelumnya telah disebutkan bahwa mikroTik mempunyai banyak fitur, nah pada postingan ini akan di implementasikan bagaimana agar 1 akun dapat digunakan banyak pengguna. Lalu bagaimana mengaktifkan fitur ini?
+Maksud dan TujuanPenggunaan fitur ini dimaksudkan agar 1 profile user bisa digunakan secara bersama-sama oleh beberapa user sekaligus. Dengan demikian, setiap user yang ingin terhubung hanya perlu memiliki satu username dan password untuk dipakai bersama-sama.
+Alat dan Bahan1. MikroTik yang telah dikonfigurasi hotspot dan akses internetnya2." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sibunglon.com/2017/07/28/menggunakan-1-akun-mikrotik-untuk-banyak-pengguna/" /><meta property="article:published_time" content="2017-07-28T15:11:00&#43;00:00"/>
+<meta property="article:modified_time" content="2017-07-28T15:11:00&#43;00:00"/>
+
+  
+  
+<meta itemprop="name" content="Menggunakan 1 akun mikroTik untuk banyak pengguna">
+<meta itemprop="description" content="PendahuluanPada postingan sebelumnya telah disebutkan bahwa mikroTik mempunyai banyak fitur, nah pada postingan ini akan di implementasikan bagaimana agar 1 akun dapat digunakan banyak pengguna. Lalu bagaimana mengaktifkan fitur ini?
+Maksud dan TujuanPenggunaan fitur ini dimaksudkan agar 1 profile user bisa digunakan secara bersama-sama oleh beberapa user sekaligus. Dengan demikian, setiap user yang ingin terhubung hanya perlu memiliki satu username dan password untuk dipakai bersama-sama.
+Alat dan Bahan1. MikroTik yang telah dikonfigurasi hotspot dan akses internetnya2.">
+
+
+<meta itemprop="datePublished" content="2017-07-28T15:11:00&#43;00:00" />
+<meta itemprop="dateModified" content="2017-07-28T15:11:00&#43;00:00" />
+<meta itemprop="wordCount" content="253">
+
+
+
+<meta itemprop="keywords" content="BLC Telkom Klaten,MikroTik,KPLI Klaten,MikroTik Indonesia,Ayo Belajar Linux," />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Menggunakan 1 akun mikroTik untuk banyak pengguna"/>
+<meta name="twitter:description" content="PendahuluanPada postingan sebelumnya telah disebutkan bahwa mikroTik mempunyai banyak fitur, nah pada postingan ini akan di implementasikan bagaimana agar 1 akun dapat digunakan banyak pengguna. Lalu bagaimana mengaktifkan fitur ini?
+Maksud dan TujuanPenggunaan fitur ini dimaksudkan agar 1 profile user bisa digunakan secara bersama-sama oleh beberapa user sekaligus. Dengan demikian, setiap user yang ingin terhubung hanya perlu memiliki satu username dan password untuk dipakai bersama-sama.
+Alat dan Bahan1. MikroTik yang telah dikonfigurasi hotspot dan akses internetnya2."/>
+
+</head>
+
+  <body>
+    
+      <nav>
+  <a href="/" title="Homepage">
+    siBunglon
+  </a>
+</nav>
+
+    
+    <main class="container">
+      
+  <article>
+    <header>
+      <small>
+        <time datetime="2017-07-28 03:11">2017-07-28</time>
+        &bull;</small>
+      <h1>Menggunakan 1 akun mikroTik untuk banyak pengguna</h1>
+    </header>
+    <section><div style="text-align: justify;"><span style="font-size: large;"><b>Pendahuluan</b></span></div><div style="text-align: justify;">Pada postingan sebelumnya telah disebutkan bahwa mikroTik mempunyai banyak fitur, nah pada postingan ini akan di implementasikan bagaimana agar 1 akun dapat digunakan banyak pengguna. Lalu bagaimana mengaktifkan fitur ini?</div><br /><div style="text-align: justify;"><span style="font-size: large;"><b>Maksud dan Tujuan</b></span></div><div style="text-align: justify;">Penggunaan fitur ini dimaksudkan agar 1 profile user bisa digunakan secara bersama-sama oleh beberapa user sekaligus. Dengan demikian, setiap user yang ingin terhubung hanya perlu memiliki satu username dan password untuk dipakai bersama-sama.</div><br /><div style="text-align: justify;"><span style="font-size: large;"><b>Alat dan Bahan</b></span></div><div style="text-align: justify;">1. MikroTik yang telah dikonfigurasi hotspot dan akses internetnya</div><div style="text-align: justify;">2. Kabel LAN yang telah terhubung ke ISP (mempunyai akses internet)</div><br /><div style="text-align: justify;"><span style="font-size: large;"><b>Jangka Waktu Pengerjaan</b></span></div><div style="text-align: justify;">Jangka waktu pengerjaanya sangat singkat yaitu kisaran 5 - 10 menit.</div><br /><div style="text-align: justify;"><span style="font-size: large;"><b>Langkah Kerja</b></span></div><div style="text-align: justify;"><span style="font-family: &quot;roboto&quot; , sans-serif;">1. Hubungkan mikrotik dengan laptop menggunakan kabel LAN ataupun dengan koneksi WiFi yang telah di set di mikroTik. Setalah terhubung, lanjut membuka winbox serta masukkan data yang di minta untuk dapat mengkonfigurasi mikroTik.</span></div><br /><div style="text-align: justify;"><span style="font-family: &quot;roboto&quot; , sans-serif;">2. Klik IP &gt; Hotspot &gt; User profiles</span></div><div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/-T_hwtwdb-Ow/W4j5ypZVL9I/AAAAAAAADxk/EtlUZ97Xxeo-mBLx3GVc2mg85SfIV3lnQCEwYBhgL/s1600/Screenshot%2Bat%2B2017-07-28%2B23-26-24.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="747" data-original-width="683" height="320" src="https://4.bp.blogspot.com/-T_hwtwdb-Ow/W4j5ypZVL9I/AAAAAAAADxk/EtlUZ97Xxeo-mBLx3GVc2mg85SfIV3lnQCEwYBhgL/s320/Screenshot%2Bat%2B2017-07-28%2B23-26-24.png" title="" width="292" /></a></div><br /><div style="text-align: justify;"><span style="font-family: &quot;roboto&quot; , sans-serif;">3. Klik add (icon "&nbsp;+ ") untuk membuat profil baru, tampilannya akan seperti ini</span></div><div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/-u-fVXiUm2cQ/W4j6LJqNMQI/AAAAAAAADxw/kyeX_z6jt_4lZPcn71ZqyFWAgARCG4cjACLcBGAs/s1600/Screenshot%2Bat%2B2017-07-28%2B23-32-15.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="747" data-original-width="683" height="320" src="https://4.bp.blogspot.com/-u-fVXiUm2cQ/W4j6LJqNMQI/AAAAAAAADxw/kyeX_z6jt_4lZPcn71ZqyFWAgARCG4cjACLcBGAs/s320/Screenshot%2Bat%2B2017-07-28%2B23-32-15.png" title="" width="292" /></a></div><br /><div style="text-align: justify;"><span style="font-family: &quot;roboto&quot; , sans-serif;">4. Silahkan ubah name sesuai keinginan anda, ubah Address Poll menjadi hs-pool-6 dengan cara klik dropdown.</span></div><div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-c72DQTQJX5s/W4j6LDHBu3I/AAAAAAAADx0/msKH-4LgzWQU8yyjhibBgflQYTv-dpHhwCLcBGAs/s1600/Screenshot%2Bat%2B2017-07-28%2B23-33-24.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="747" data-original-width="683" height="320" src="https://2.bp.blogspot.com/-c72DQTQJX5s/W4j6LDHBu3I/AAAAAAAADx0/msKH-4LgzWQU8yyjhibBgflQYTv-dpHhwCLcBGAs/s320/Screenshot%2Bat%2B2017-07-28%2B23-33-24.png" title="" width="292" /></a></div><br /><div style="text-align: justify;"><span style="font-family: &quot;roboto&quot; , sans-serif;">5. Nah, agar akunnya dapat digunakan banyak orang silahkan ubah shared user sesuai jumlah yang diinginkan lalu klik Ok.</span></div><div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-sOCQDIVREWM/W4j6K-qxWPI/AAAAAAAADxs/GEXhhlTnL2U1B7jbQckRMt1wVp9LQxWsACLcBGAs/s1600/Screenshot%2Bat%2B2017-07-28%2B23-34-48-1.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="747" data-original-width="683" height="320" src="https://2.bp.blogspot.com/-sOCQDIVREWM/W4j6K-qxWPI/AAAAAAAADxs/GEXhhlTnL2U1B7jbQckRMt1wVp9LQxWsACLcBGAs/s320/Screenshot%2Bat%2B2017-07-28%2B23-34-48-1.png" title="" width="292" /></a></div><br /><div style="text-align: justify;"><span style="font-family: &quot;roboto&quot; , sans-serif;">6. Setalah profilenya berhasil dibuat, kembali ke tab Users &gt; klik 2 kali akun yang ingin digunakan secara ramai-ramai &gt; Ubah profilenya sesuai yang telah di set &gt; Ok</span></div><div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-M5dXCnM2a5Q/W4j6MjKF89I/AAAAAAAADx8/tnb72USUeeIQIbq_ODsbRq_ooPXAV0zlgCLcBGAs/s1600/Screenshot%2Bat%2B2017-07-29%2B13-27-54.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="747" data-original-width="683" height="320" src="https://3.bp.blogspot.com/-M5dXCnM2a5Q/W4j6MjKF89I/AAAAAAAADx8/tnb72USUeeIQIbq_ODsbRq_ooPXAV0zlgCLcBGAs/s320/Screenshot%2Bat%2B2017-07-29%2B13-27-54.png" title="" width="292" /></a></div><div style="text-align: justify;"><span style="font-family: &quot;roboto&quot; , sans-serif;"><br /></span><span style="font-family: &quot;roboto&quot; , sans-serif;">7. Silahkan coba gunakan akun yang telah di set di device berbeda, jika berhasil login itu menandakan bahwa konfigurasinyaa berhasil. Contohnya saya menggunakan user "icar" di device berbeda :</span></div><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-XWafNdPxl0I/W4j6L6VBRmI/AAAAAAAADx4/UD0N5euhqe0urFyuyZT2pPaA3_0ehD_LACLcBGAs/s1600/Screenshot%2Bat%2B2017-07-28%2B23-41-14.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="747" data-original-width="683" height="320" src="https://1.bp.blogspot.com/-XWafNdPxl0I/W4j6L6VBRmI/AAAAAAAADx4/UD0N5euhqe0urFyuyZT2pPaA3_0ehD_LACLcBGAs/s320/Screenshot%2Bat%2B2017-07-28%2B23-41-14.png" width="292" /></a></div><br /><div style="text-align: justify;"><span style="font-family: &quot;roboto&quot; , sans-serif;"><br /></span><span style="font-family: &quot;roboto&quot; , sans-serif;">Sekian dari postingan ini, semoga bermanfaat.</span></div>
+</section>
+    <footer>
+      <hr>
+      <div class="meta">
+        <p class="tags">
+          
+            
+              <a href="/tags/blc-telkom-klaten">
+                <span>#</span>BLC Telkom Klaten</a>
+            
+              <a href="/tags/mikrotik">
+                <span>#</span>MikroTik</a>
+            
+              <a href="/tags/kpli-klaten">
+                <span>#</span>KPLI Klaten</a>
+            
+              <a href="/tags/mikrotik-indonesia">
+                <span>#</span>MikroTik Indonesia</a>
+            
+              <a href="/tags/ayo-belajar-linux">
+                <span>#</span>Ayo Belajar Linux</a>
+            
+          
+        </p>
+      </div>
+      <hr>
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sibunglonlabs" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </footer>
+  </article>
+
+    </main>
+    
+      <footer>
+  <p>
+    &copy; 2018 Faizar Septiawan. <a href="http://creativecommons.org/licenses/by-sa/4.0/">Some Rights Reserved</a>.
+  </p>
+  <p>
+    Powered by <a href="https://gohugo.io" title="A Fast and Flexible Website Generator">Hugo</a> &amp; <a href="https://github.com/eshlox/simplicity" title="Hugo theme">Simplicity</a>.
+  </p>
+</footer>
+
+    
+    
+    
+    
+    
+    
+    
+    <script src="/assets/js/scripts.min.js"></script>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-110194945-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>

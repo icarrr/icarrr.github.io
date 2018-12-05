@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Konfigurasi VLAN pada switch - The Official site of siBunglon</title>
+  <meta name="author" content="Faizar Septiawan">
+  <meta name="description" content="A blog about everything.">
+
+  <meta name="generator" content="Hugo 0.51" />
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/css/external.min.css" media="screen">
+
+  
+  
+  <link rel="stylesheet" href="/assets/css/styles.css" media="screen">
+
+  <link href="//fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
+
+  
+  
+  <link rel="shortcut icon" href="/assets/img/logo.png">
+
+  
+  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official site of siBunglon" />
+  <link href="/posts/index.xml" rel="feed" type="application/rss+xml" title="The Official site of siBunglon" />
+
+  <meta property="og:title" content="Konfigurasi VLAN pada switch" />
+<meta property="og:description" content="A. PENGERTIANVirtual LAN&nbsp;atau disingkat&nbsp;VLAN&nbsp;merupakan sekelompok perangkat pada satu LAN atau lebih yang dikonfigurasikan (menggunakan perangkat lunak pengelolaan) sehingga dapat berkomunikasi seperti halnya bila perangkat tersebut terhubung ke jalur yang sama, padahal sebenarnya perangkat tersebut berada pada sejumlah segmen LAN yang berbeda. Vlan dibuat dengan menggunakan jaringan pihak ke tiga. VLAN merupakan sebuah bagian kecil jaringan IP yang terpisah secara logik. VLAN memungkinkan beberapa jaringan IP dan jaringan-jaringan kecil (subnet) berada dalam jaringan switched switched yang sama." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sibunglon.com/2017/10/06/konfigurasi-vlan-pada-switch/" /><meta property="article:published_time" content="2017-10-06T06:16:00&#43;00:00"/>
+<meta property="article:modified_time" content="2017-10-06T06:16:00&#43;00:00"/>
+
+  
+  
+<meta itemprop="name" content="Konfigurasi VLAN pada switch">
+<meta itemprop="description" content="A. PENGERTIANVirtual LAN&nbsp;atau disingkat&nbsp;VLAN&nbsp;merupakan sekelompok perangkat pada satu LAN atau lebih yang dikonfigurasikan (menggunakan perangkat lunak pengelolaan) sehingga dapat berkomunikasi seperti halnya bila perangkat tersebut terhubung ke jalur yang sama, padahal sebenarnya perangkat tersebut berada pada sejumlah segmen LAN yang berbeda. Vlan dibuat dengan menggunakan jaringan pihak ke tiga. VLAN merupakan sebuah bagian kecil jaringan IP yang terpisah secara logik. VLAN memungkinkan beberapa jaringan IP dan jaringan-jaringan kecil (subnet) berada dalam jaringan switched switched yang sama.">
+
+
+<meta itemprop="datePublished" content="2017-10-06T06:16:00&#43;00:00" />
+<meta itemprop="dateModified" content="2017-10-06T06:16:00&#43;00:00" />
+<meta itemprop="wordCount" content="330">
+
+
+
+<meta itemprop="keywords" content="BLC Telkom Klaten,BestPath,Kegiatan,KPLI Klaten,Ayo Belajar Linux,Cisco," />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Konfigurasi VLAN pada switch"/>
+<meta name="twitter:description" content="A. PENGERTIANVirtual LAN&nbsp;atau disingkat&nbsp;VLAN&nbsp;merupakan sekelompok perangkat pada satu LAN atau lebih yang dikonfigurasikan (menggunakan perangkat lunak pengelolaan) sehingga dapat berkomunikasi seperti halnya bila perangkat tersebut terhubung ke jalur yang sama, padahal sebenarnya perangkat tersebut berada pada sejumlah segmen LAN yang berbeda. Vlan dibuat dengan menggunakan jaringan pihak ke tiga. VLAN merupakan sebuah bagian kecil jaringan IP yang terpisah secara logik. VLAN memungkinkan beberapa jaringan IP dan jaringan-jaringan kecil (subnet) berada dalam jaringan switched switched yang sama."/>
+
+</head>
+
+  <body>
+    
+      <nav>
+  <a href="/" title="Homepage">
+    siBunglon
+  </a>
+</nav>
+
+    
+    <main class="container">
+      
+  <article>
+    <header>
+      <small>
+        <time datetime="2017-10-06 06:16">2017-10-06</time>
+        &bull;</small>
+      <h1>Konfigurasi VLAN pada switch</h1>
+    </header>
+    <section><div style="text-align: justify;"><strong>A. PENGERTIAN</strong></div><div style="text-align: justify;"><strong>Virtual LAN</strong>&nbsp;atau disingkat&nbsp;<strong>VLAN</strong>&nbsp;merupakan sekelompok perangkat pada satu LAN atau lebih yang dikonfigurasikan (menggunakan perangkat lunak pengelolaan) sehingga dapat berkomunikasi seperti halnya bila perangkat tersebut terhubung ke jalur yang sama, padahal sebenarnya perangkat tersebut berada pada sejumlah segmen LAN yang berbeda. Vlan dibuat dengan menggunakan jaringan pihak ke tiga. VLAN merupakan sebuah bagian kecil jaringan IP yang terpisah secara logik. VLAN memungkinkan beberapa jaringan IP dan jaringan-jaringan kecil (subnet) berada dalam jaringan switched switched yang sama. Agar computer bisa berkomunikasi pada VLAN yang sama, setiap computer harus memiliki sebuah alamat IP dan Subnet Mask yang sesuai dengan VLAN tersebut. Switch harus dikonfigurasi dengan VLAN dan setiap port dalam VLAN harus didaftarkan ke VLAN. Sebuah port switch yang telah dikonfigurasi dengan sebuah VLAN tunggal disebut sebagai access port.</div><br /><div style="text-align: justify;"><strong>B. LATAR BELAKANG</strong></div><div style="text-align: justify;">Konfigurasi vlan pada switch</div><br /><div style="text-align: justify;"><strong>C. MAKSUD DAN TUJUAN</strong></div><div style="text-align: justify;">Memberi vlan agar bisa meremote switch</div><br /><div style="text-align: justify;"><strong>D. TAHAPAN PEKERJAAN&nbsp;</strong></div><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-ZjAmv-XHcZs/W6gfk1mbxeI/AAAAAAAAEmQ/T5l2qrWC2SoDpD0oNuycQdlGd4LmIP1EgCLcBGAs/s1600/1.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="313" data-original-width="320" src="https://1.bp.blogspot.com/-ZjAmv-XHcZs/W6gfk1mbxeI/AAAAAAAAEmQ/T5l2qrWC2SoDpD0oNuycQdlGd4LmIP1EgCLcBGAs/s1600/1.png" title="" /></a></div><div style="text-align: justify;"><strong><br /></strong></div><ul style="text-align: justify;"><li>Masuk ke aplikasi Paket Tracer. Ikuti langkah-langkah berikut ini!</li><li>Konfigurasi IP Address</li></ul><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-Tnq97_xOK5g/W6gfrLbG7zI/AAAAAAAAEmU/Y1me_aiy9LUs-sNHNxmi14UuaQK_83efwCLcBGAs/s1600/2.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="90" data-original-width="320" src="https://1.bp.blogspot.com/-Tnq97_xOK5g/W6gfrLbG7zI/AAAAAAAAEmU/Y1me_aiy9LUs-sNHNxmi14UuaQK_83efwCLcBGAs/s1600/2.png" /></a></div><div style="text-align: justify;"><br /></div>Konfigurasi IP Address pada PC0 (klik PC0&gt;Desktop&gt;IP Configuration)<br /><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-Pza-_5D7v-o/W6gfuisHrfI/AAAAAAAAEmY/thrkzPOJOiAuL8ZsmukXVO-q4cx8ejDfgCLcBGAs/s1600/3.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="178" data-original-width="320" src="https://1.bp.blogspot.com/-Pza-_5D7v-o/W6gfuisHrfI/AAAAAAAAEmY/thrkzPOJOiAuL8ZsmukXVO-q4cx8ejDfgCLcBGAs/s1600/3.png" title="" /></a></div><br /><div style="text-align: justify;">Konfigurasi IP Address pada PC1 (klik PC1&gt;Desktop&gt;IP Configuration)</div><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-w7xxS56QXss/W6gf2EottDI/AAAAAAAAEmc/CWx6_thWhuYJSqhgNW37sdEMVJDZTJBBACLcBGAs/s1600/4.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="179" data-original-width="320" src="https://1.bp.blogspot.com/-w7xxS56QXss/W6gf2EottDI/AAAAAAAAEmc/CWx6_thWhuYJSqhgNW37sdEMVJDZTJBBACLcBGAs/s1600/4.png" title="" /></a></div><br /><div style="text-align: justify;">Konfigurasi IP Address pada PC2(klik PC2&gt;Desktop&gt;IP Configuration)</div><div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/-RPqSSOo4Ct8/W6ggIbbMwVI/AAAAAAAAEmw/3AcrzP-cCFYCkLWfIYMY-TUnuOZVlRjhACLcBGAs/s1600/5.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="179" data-original-width="320" src="https://4.bp.blogspot.com/-RPqSSOo4Ct8/W6ggIbbMwVI/AAAAAAAAEmw/3AcrzP-cCFYCkLWfIYMY-TUnuOZVlRjhACLcBGAs/s1600/5.png" title="" /></a></div><br /><div style="text-align: justify;">Konfigurasi IP Address pada PC3 (klik PC3&gt;Desktop&gt;IP Configuration)</div><div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/-VhVyTMvkvu0/W6gf7_NGn2I/AAAAAAAAEm0/Tngpl_M0U0UWG_D0QGt57M7-faFj9d93wCEwYBhgL/s1600/6.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="178" data-original-width="320" src="https://4.bp.blogspot.com/-VhVyTMvkvu0/W6gf7_NGn2I/AAAAAAAAEm0/Tngpl_M0U0UWG_D0QGt57M7-faFj9d93wCEwYBhgL/s1600/6.png" title="" /></a></div><br />Konfigurasi pada Switch. Klik switch, pilih tab CLI. Tuliskan perintah berikut:<br /><blockquote>Switch&gt;enable<br /><br />Switch#vlan database<br /><br />Switch(vlan)#vlan 10 name A<br /><br />Switch(vlan)#vlan 20 name B<br /><br />Switch(vlan)#exit<br /><br />Switch#configure terminal<br /><br />Switch(config)#interface fastethernet 0/2<br /><br />Switch(config-if)#switchport mode access<br /><br />Switch(config-if)#switchport access vlan 10<br /><br />Switch(config-if)#interface fastethernet 0/3<br /><br />Switch(config-if)#switchport mode access<br /><br />Switch(config-if)#switchport access vlan 10<br /><br />Switch(config-if)#interface fastethernet 0/4<br /><br />Switch(config-if)#switchport mode access<br /><br />Switch(config-if)#switchport access vlan 20<br /><br />Switch(config-if)#interface fastethernet 0/5<br /><br />Switch(config-if)#switchport mode access<br /><br />Switch(config-if)#switchport access vlan 20<br /><br />Switch(config-if)#end<br /><br />Switch#configure terminal<br /><br />Switch(config)#interface fastethernet 0/1<br /><br />Switch(config-if)#switchport mode trunk<br /><br />Switch(config-if)#end</blockquote><br /><div style="text-align: justify;">Konfigurasi pada Router. Klik router, pilih tab CLI. Tuliskan perintah berikut :</div><blockquote>Router&gt;enable<br /><br />Router#configure t<br /><br />Router(config)#interface fastethernet 0/0<br /><br />Router(config-if)#no shutdown<br /><br />Router(config-if)#interface fastethernet 0/0.1<br /><br />Router(config-subif)#encapsulation dot1Q 1<br /><br />Router(config-subif)#ip address 192.168.10.1 255.255.255.0<br /><br />Router(config-subif)#interface fastethernet 0/0.2<br /><br />Router(config-subif)#encapsulation dot1Q 10<br /><br />Router(config-subif)#ip address 192.168.1.1 255.255.255.0<br /><br />Router(config-subif)#interface fastethernet 0/0.3<br /><br />Router(config-subif)#encapsulation dot1Q 20<br /><br />Router(config-subif)#ip address 192.168.2.1 255.255.255.0<br /><br />Router(config-subif)#end</blockquote><br />Ping dari PC0 ke PC1 (sesama VLAN)<br /><div style="text-align: justify;"><br /></div><div class="separator" style="clear: both; text-align: center;"><strong><a href="https://3.bp.blogspot.com/-YUyyAVnIPiQ/W6ggZ5Hqa2I/AAAAAAAAEm8/_gIdD8XnVRIFe02afWU-W6XCfIBmwIRgwCLcBGAs/s1600/7.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="141" data-original-width="320" src="https://3.bp.blogspot.com/-YUyyAVnIPiQ/W6ggZ5Hqa2I/AAAAAAAAEm8/_gIdD8XnVRIFe02afWU-W6XCfIBmwIRgwCLcBGAs/s1600/7.png" title="" /></a></strong></div><br /><div style="text-align: justify;">Ping dari PC1 ke PC2 (berbeda VLAN)</div><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-uDJs7KoLWqQ/W6ggfeuIuvI/AAAAAAAAEnA/y7AMY32BBNM0sXJrjWHgdjTInzbr9nRnwCLcBGAs/s1600/8.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="159" data-original-width="320" src="https://1.bp.blogspot.com/-uDJs7KoLWqQ/W6ggfeuIuvI/AAAAAAAAEnA/y7AMY32BBNM0sXJrjWHgdjTInzbr9nRnwCLcBGAs/s1600/8.png" title="" /></a></div><br /><strong>E. REFERENSI</strong><br /><div style="text-align: justify;"><strong>&nbsp; &nbsp;</strong>&nbsp; http://ccnav6.com</div>
+</section>
+    <footer>
+      <hr>
+      <div class="meta">
+        <p class="tags">
+          
+            
+              <a href="/tags/blc-telkom-klaten">
+                <span>#</span>BLC Telkom Klaten</a>
+            
+              <a href="/tags/bestpath">
+                <span>#</span>BestPath</a>
+            
+              <a href="/tags/kegiatan">
+                <span>#</span>Kegiatan</a>
+            
+              <a href="/tags/kpli-klaten">
+                <span>#</span>KPLI Klaten</a>
+            
+              <a href="/tags/ayo-belajar-linux">
+                <span>#</span>Ayo Belajar Linux</a>
+            
+              <a href="/tags/cisco">
+                <span>#</span>Cisco</a>
+            
+          
+        </p>
+      </div>
+      <hr>
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sibunglonlabs" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </footer>
+  </article>
+
+    </main>
+    
+      <footer>
+  <p>
+    &copy; 2018 Faizar Septiawan. <a href="http://creativecommons.org/licenses/by-sa/4.0/">Some Rights Reserved</a>.
+  </p>
+  <p>
+    Powered by <a href="https://gohugo.io" title="A Fast and Flexible Website Generator">Hugo</a> &amp; <a href="https://github.com/eshlox/simplicity" title="Hugo theme">Simplicity</a>.
+  </p>
+</footer>
+
+    
+    
+    
+    
+    
+    
+    
+    <script src="/assets/js/scripts.min.js"></script>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-110194945-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>

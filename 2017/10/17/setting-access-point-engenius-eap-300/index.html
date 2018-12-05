@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Setting access point EnGenius EAP 300 - The Official site of siBunglon</title>
+  <meta name="author" content="Faizar Septiawan">
+  <meta name="description" content="A blog about everything.">
+
+  <meta name="generator" content="Hugo 0.51" />
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/css/external.min.css" media="screen">
+
+  
+  
+  <link rel="stylesheet" href="/assets/css/styles.css" media="screen">
+
+  <link href="//fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
+
+  
+  
+  <link rel="shortcut icon" href="/assets/img/logo.png">
+
+  
+  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official site of siBunglon" />
+  <link href="/posts/index.xml" rel="feed" type="application/rss+xml" title="The Official site of siBunglon" />
+
+  <meta property="og:title" content="Setting access point EnGenius EAP 300" />
+<meta property="og:description" content="A. PendahuluanPada kesempatan ini saya akan sedikit membagi ilmu terkait dengan how to configure access point EnGenius EAP 300. ok dari pada lama kita lanjut ke step selanjutnya.
+B. PengertianDi jaringan komputer , jalur akses nirkabel ( WAP ), atau lebih tepatnya hanya access point ( AP ), adalah perangkat keras jaringan yang memungkinkan perangkat WI - FI terhubung ke jaringan kabel.&nbsp;AP biasanya&nbsp;&nbsp;terhubung ke router (melalui jaringan kabel) sebagai perangkat mandiri, namun juga dapat menjadi komponen integral dari router itu sendiri." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sibunglon.com/2017/10/17/setting-access-point-engenius-eap-300/" /><meta property="article:published_time" content="2017-10-17T11:01:00&#43;00:00"/>
+<meta property="article:modified_time" content="2017-10-17T11:01:00&#43;00:00"/>
+
+  
+  
+<meta itemprop="name" content="Setting access point EnGenius EAP 300">
+<meta itemprop="description" content="A. PendahuluanPada kesempatan ini saya akan sedikit membagi ilmu terkait dengan how to configure access point EnGenius EAP 300. ok dari pada lama kita lanjut ke step selanjutnya.
+B. PengertianDi jaringan komputer , jalur akses nirkabel ( WAP ), atau lebih tepatnya hanya access point ( AP ), adalah perangkat keras jaringan yang memungkinkan perangkat WI - FI terhubung ke jaringan kabel.&nbsp;AP biasanya&nbsp;&nbsp;terhubung ke router (melalui jaringan kabel) sebagai perangkat mandiri, namun juga dapat menjadi komponen integral dari router itu sendiri.">
+
+
+<meta itemprop="datePublished" content="2017-10-17T11:01:00&#43;00:00" />
+<meta itemprop="dateModified" content="2017-10-17T11:01:00&#43;00:00" />
+<meta itemprop="wordCount" content="689">
+
+
+
+<meta itemprop="keywords" content="BLC Telkom Klaten,Kegiatan,Lain-lain,KPLI Klaten,Ayo Belajar Linux," />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Setting access point EnGenius EAP 300"/>
+<meta name="twitter:description" content="A. PendahuluanPada kesempatan ini saya akan sedikit membagi ilmu terkait dengan how to configure access point EnGenius EAP 300. ok dari pada lama kita lanjut ke step selanjutnya.
+B. PengertianDi jaringan komputer , jalur akses nirkabel ( WAP ), atau lebih tepatnya hanya access point ( AP ), adalah perangkat keras jaringan yang memungkinkan perangkat WI - FI terhubung ke jaringan kabel.&nbsp;AP biasanya&nbsp;&nbsp;terhubung ke router (melalui jaringan kabel) sebagai perangkat mandiri, namun juga dapat menjadi komponen integral dari router itu sendiri."/>
+
+</head>
+
+  <body>
+    
+      <nav>
+  <a href="/" title="Homepage">
+    siBunglon
+  </a>
+</nav>
+
+    
+    <main class="container">
+      
+  <article>
+    <header>
+      <small>
+        <time datetime="2017-10-17 11:01">2017-10-17</time>
+        &bull;</small>
+      <h1>Setting access point EnGenius EAP 300</h1>
+    </header>
+    <section><p><div style="text-align: justify;"><a href="https://telephonesonline.com.au/images/EnGenius-Logo-business.jpg"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" height="132" src="https://telephonesonline.com.au/images/EnGenius-Logo-business.jpg" title="" width="400" /></a></div><br /><div style="text-align: justify;"><strong>A. Pendahuluan</strong></div><div style="text-align: justify;">Pada kesempatan ini saya akan sedikit membagi ilmu terkait dengan how to configure access point EnGenius EAP 300. ok dari pada lama kita lanjut ke step selanjutnya.</div><br /><div style="text-align: justify;"><strong>B. Pengertian</strong></div><div style="text-align: justify;">Di jaringan komputer , jalur akses nirkabel ( WAP ), atau lebih tepatnya hanya access point ( AP ), adalah perangkat keras jaringan yang memungkinkan perangkat WI - FI terhubung ke jaringan kabel.&nbsp;AP biasanya&nbsp;&nbsp;terhubung ke router (melalui jaringan kabel) sebagai perangkat mandiri, namun juga dapat menjadi komponen integral dari router itu sendiri.&nbsp;AP dibedakan dari hotspot , yang merupakan lokasi fisik dimana akses Wi-Fi ke WLAN tersedia. Nah kalau EnGenius itu sendiri adalah sebuah perangkat yang berguna sebagai access point,WDS dan Repeater. perangkat EnGenius ini memiliki beberapa tipe/modal dan model saya pakai adalah EnGenius EAP 300 dimana EnGenius ini memiliki beberapa keunggulan, yakni: EAP300 beroperasi pada pita frekuensi 2,4 GHz untuk menyediakan konektivitas nirkabel.&nbsp;Ini sesuai dengan standar 802.11b / g / n dan MIMO memberikan throughput hingga 300 Mbps melalui nirkabel untuk keseluruhan kinerja dan konektivitas yang lebih baik.&nbsp;Desain plafon langit-langit yang tidak mengganggu.</div><ul style="text-align: justify;"><li>Jangkauan Jangka Panjang;&nbsp;Sampai 29 dBm Transmit Power</li><li>Kecepatan N300 Nirkabel</li><li>Penandaan SSID-to-VLAN</li><li>Beberapa Mode Operasi</li></ul><div style="text-align: justify;"><strong>C. Latar belakang</strong></div><div style="text-align: justify;">Sekarang pada dunia jaringan,semua nya pasti memerlukan access point yang bermaksud untuk memberikan atau membagi jaringan mereka</div><br /><div style="text-align: justify;"><strong>D. Tujuan</strong></div><ol><li style="text-align: justify;">Mengetahui cara setting access point EnGenius 300</li><li style="text-align: justify;">menambah ilmu</li></ol><div style="text-align: justify;"><strong>E. Alat dan bahan</strong></div><ul style="text-align: justify;"><li>laptop</li><li>kabel UTP</li><li>internet (kalau ada)</li><li>perangkat EnGenius</li></ul><div style="text-align: justify;"><strong>F. Jangka waktu pengerjaan</strong></div><div style="text-align: justify;">Jangka waktu pelaksanaan selama 10 menit</div><br /><div style="text-align: justify;"><strong>G. Langkah kerja</strong></div><div style="text-align: justify;">1. Setting Ip Address Komputer Anda Samakan Dengan Settingan Ip Address Access Point. Contoh Jika Ip Accesse Point 192.168.1.1 Maka Ip Addressnya Komputer Anda 192.168.1.2 .</div><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-vEvFNLeHR6Y/W9FP_crX_zI/AAAAAAAAFBI/O1c1EMXJ4FYSZ4pTUTetFrdPi2HfCZ-sACLcBGAs/s1600/Engenius.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="500" data-original-width="610" height="262" src="https://1.bp.blogspot.com/-vEvFNLeHR6Y/W9FP_crX_zI/AAAAAAAAFBI/O1c1EMXJ4FYSZ4pTUTetFrdPi2HfCZ-sACLcBGAs/s320/Engenius.png" title="" width="320" /></a></div><br />2. Setelah Setting Ip Address, Kamu Lakukan Adalah Buka Browser &nbsp;Lalu Klik Di Browser 192.168.1.1 Lalu Tekan Tombol Enter, Tampil Seperti Gambar Di Bawah Ini .<br /><div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/-YBncloFy4IQ/W9FQIUYX8zI/AAAAAAAAFBM/teX_IJuLLMYh4ozlb6S0uRTyS4KuD0F4QCLcBGAs/s1600/en1.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="741" data-original-width="1365" height="173" src="https://4.bp.blogspot.com/-YBncloFy4IQ/W9FQIUYX8zI/AAAAAAAAFBM/teX_IJuLLMYh4ozlb6S0uRTyS4KuD0F4QCLcBGAs/s320/en1.png" width="320" /></a></div><br />3. Lalu Login, Standar Login User : admin, Password : admin ,Tampil Seperti Gambar Di Bawah Ini Saat Setelah Login.<br /><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-71L6BmQiyhY/W9FQUluDM2I/AAAAAAAAFBU/Xsz1Uh5eYxwSeCpjozWjqZBBBFn3VlhRwCLcBGAs/s1600/en2.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="741" data-original-width="1365" height="173" src="https://1.bp.blogspot.com/-71L6BmQiyhY/W9FQUluDM2I/AAAAAAAAFBU/Xsz1Uh5eYxwSeCpjozWjqZBBBFn3VlhRwCLcBGAs/s320/en2.png" title="" width="320" /></a></div><br />4. Setelah Login &nbsp;Kamu Bisa Liat Di Bagian System Klik Operation Mode. Akan Tampil Seperti Gambar Di Bawah Ini.<br /><div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/--h6VHijIfVA/W9FQbKHzwmI/AAAAAAAAFBY/AY6tv7oxjQUnr8jjFrw5srIL2Uo8Sk9QwCLcBGAs/s1600/en3.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="470" data-original-width="1132" height="132" src="https://3.bp.blogspot.com/--h6VHijIfVA/W9FQbKHzwmI/AAAAAAAAFBY/AY6tv7oxjQUnr8jjFrw5srIL2Uo8Sk9QwCLcBGAs/s320/en3.png" title="" width="320" /></a></div><div style="text-align: justify;"><br /></div>5. Setelah Itu Kamu Arakan Ke Device Name, Lalu Kamu Ubah Device Namanya.<br /><div style="text-align: justify;"><br /></div><div style="text-align: justify;">6. Setelah Kamu Ubah Device Namenya Kamu Setting Country Region Sesuai Dengan Lokasi Kamu Berada.</div><br /><div style="text-align: justify;">7. Setelah Sudah Ubah Country Region, Kamu Pillih Operation Mode Sesuai Kebutuhan Yang Kamu Butuhkan. Misalkan Jika Kamu Ingin Menjadikan Switch Untuk Access Point, Maka Kamu Ceklis Access Point.</div><br /><div style="text-align: justify;">8. Pengertian Access Point :Sebuah Alat Yang Berfungsi Untuk Menyambungkan Alat-Alat Wireless Ke Sebuah Jaringan Berkabel (Wired Network) Menggunakan Wifi, Bluetooth Dan Sejenisnya. Pengertian WDS (Wireless Distribution System): Sebuah System Untuk Memperluas Jangkauan Jaringan Wireless Dengan Menggunakan Dua Atau Lebih Access&nbsp;Ponit.Lalu&nbsp;Pengertian Repeater : Alat Yang Berguna Untuk Menguatkan Signal.</div><br /><div style="text-align: justify;">9. Setelah Sudah Memilih Operation Mode Klik Save &amp; Apply</div><br /><div style="text-align: justify;">10. Setelah Save &amp; Apply, Kamu Kembali Liat Bagian Di Sytem Lalu Klik IP Setting. Akan Tampil Seperti Gambar Di Bawah Ini.</div><div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/-pepmHry6FSs/W9FQlNxLGPI/AAAAAAAAFBg/ibh2yhx5CTMro0AqssXEHdPdkzb3o6BSQCLcBGAs/s1600/en4.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="646" data-original-width="1137" height="181" src="https://4.bp.blogspot.com/-pepmHry6FSs/W9FQlNxLGPI/AAAAAAAAFBg/ibh2yhx5CTMro0AqssXEHdPdkzb3o6BSQCLcBGAs/s320/en4.png" width="320" /></a></div><br /><div style="text-align: justify;">11. Setelah Kamu Klik IP Setting, Kamu Setting Ip Address,Ip Subnet Mask,Default Gateway, Setting &nbsp;Jaringan &nbsp;Ip Address Private Yang Tersedia Di Tempat Kamu Berada.Contoh Seperti Gambar Di Atas. Setelah Itu Klik Accept.</div><div class="separator" style="clear: both; text-align: center;"><br /></div><div style="text-align: justify;">12. Setelah Setting IP Setting, Kamu Bisa Liat Bagian Wireless, Lalu Klik Wireless Network. Akan Tampil Seperti Gambar Di Bawah Ini.</div><div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-z0y9GES6yWI/W9FQpETZjOI/AAAAAAAAFBk/bvo6PH4JL1w_gDBjyxFpjCfwT6S2UwZ-wCLcBGAs/s1600/en5.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="637" data-original-width="1135" height="179" src="https://2.bp.blogspot.com/-z0y9GES6yWI/W9FQpETZjOI/AAAAAAAAFBk/bvo6PH4JL1w_gDBjyxFpjCfwT6S2UwZ-wCLcBGAs/s320/en5.png" width="320" /></a></div><br /><div style="text-align: justify;">13.&nbsp; pada chanel frekuenzy kalia hilangkan centang auto nya,yang bermaksud kita akan mengatur sendiri chanel nya dan setelah itu kalian scan</div><div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-6O93kTjeH9o/W9FQu5fjV3I/AAAAAAAAFBs/4GNaq3Idl7Mb7C04l-lHSnJ0imeX3Qo-gCEwYBhgL/s1600/en7.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="79" data-original-width="918" height="27" src="https://2.bp.blogspot.com/-6O93kTjeH9o/W9FQu5fjV3I/AAAAAAAAFBs/4GNaq3Idl7Mb7C04l-lHSnJ0imeX3Qo-gCEwYBhgL/s320/en7.png" width="320" /></a></div><br /><div style="text-align: justify;">14. Nah maka kalian akan di tujukan pada tampilan di bawah ini,disini kalian harus jelih melihat frekuazy yang ada agar frekuenzy yang kita pilih tidak tabrakan dengan frekuenzy yang ada atau yang telah di pakai orang<br />catatan : dikalau frekuenzy ada yang tabrakan ma jaringan nya bisa lemot atau tidak bisa sama sekali connect</div><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-hDSCtVdS6v8/W9FQ8SODCfI/AAAAAAAAFB0/Ky9xME4Pud8X39VqRfzt1eJxYDvAw6vUwCLcBGAs/s1600/en8.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="638" data-original-width="1136" height="179" src="https://1.bp.blogspot.com/-hDSCtVdS6v8/W9FQ8SODCfI/AAAAAAAAFB0/Ky9xME4Pud8X39VqRfzt1eJxYDvAw6vUwCLcBGAs/s320/en8.png" width="320" /></a></div><br /><div style="text-align: justify;">15. Setelah Kamu Sudah Selesai Setting Channel/Frequency, Kamu Setting SSID Lalu Klik Edit. Seperti Gambar Di Bawah Ini.</div><div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/--SiQaCWf_bg/W9FRZmI6l7I/AAAAAAAAFCA/fQ2KAEC1mQ0ibOy9Yg4iQT5nRDJpMz7QQCLcBGAs/s1600/en9.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="79" data-original-width="597" height="42" src="https://4.bp.blogspot.com/--SiQaCWf_bg/W9FRZmI6l7I/AAAAAAAAFCA/fQ2KAEC1mQ0ibOy9Yg4iQT5nRDJpMz7QQCLcBGAs/s320/en9.png" title="" width="320" /></a></div><br /><div style="text-align: justify;">16. Maka kalian akan di tujukan pada tampilan di bawah ini, nah pada tampilan ini kalian setting SSID dan Station Separation, pada Station Seperation pilih Disable &gt; save</div><div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-qpOnMHaaYCw/W9FRiDrk96I/AAAAAAAAFCE/40_Gml5ZygU-z2NU4SlW5M8FQearlmqewCLcBGAs/s1600/en10.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="369" data-original-width="728" height="162" src="https://2.bp.blogspot.com/-qpOnMHaaYCw/W9FRiDrk96I/AAAAAAAAFCE/40_Gml5ZygU-z2NU4SlW5M8FQearlmqewCLcBGAs/s320/en10.png" title="" width="320" /></a></div><br /><div style="text-align: justify;">17. Settingan EnGenius Telah selesai, maka selanjutnya mereboot access pointnya dengan cara pilih menu status,save/reload &gt; kemudain pilih save&amp;applay. dan tunggu sampai selesai</div><div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-zFrNqBhKlnI/W9FRoFWjhRI/AAAAAAAAFCI/NqwmiBL93v8rnrhRSRhk4smElcgRrK6owCLcBGAs/s1600/en11.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="744" data-original-width="1365" height="174" src="https://3.bp.blogspot.com/-zFrNqBhKlnI/W9FRoFWjhRI/AAAAAAAAFCI/NqwmiBL93v8rnrhRSRhk4smElcgRrK6owCLcBGAs/s320/en11.png" title="" width="320" /></a></div><div style="text-align: justify;"><br /><strong>H. Temuan masalah</strong></div><div style="text-align: justify;">Disini saya tidak mendapatkan permasalahan</div><br /><strong>I. Hasil yang didapatkan</strong><br /><div style="text-align: justify;">Mengetahui cara menyetting access point EnGenius</div><br /><strong>J. Kesimpulan</strong><br /><div style="text-align: justify;">Jadi kesimpulannya yaitu menyetting access point itu gampang asal kita tau konsepnya dan tau cara nya</div><br /><strong>K. Referensi</strong><br /><a href="https://en.wikipedia.org/wiki/Wireless_access_point">wikipedia</a></p>
+</section>
+    <footer>
+      <hr>
+      <div class="meta">
+        <p class="tags">
+          
+            
+              <a href="/tags/blc-telkom-klaten">
+                <span>#</span>BLC Telkom Klaten</a>
+            
+              <a href="/tags/kegiatan">
+                <span>#</span>Kegiatan</a>
+            
+              <a href="/tags/lain-lain">
+                <span>#</span>Lain-lain</a>
+            
+              <a href="/tags/kpli-klaten">
+                <span>#</span>KPLI Klaten</a>
+            
+              <a href="/tags/ayo-belajar-linux">
+                <span>#</span>Ayo Belajar Linux</a>
+            
+          
+        </p>
+      </div>
+      <hr>
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sibunglonlabs" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </footer>
+  </article>
+
+    </main>
+    
+      <footer>
+  <p>
+    &copy; 2018 Faizar Septiawan. <a href="http://creativecommons.org/licenses/by-sa/4.0/">Some Rights Reserved</a>.
+  </p>
+  <p>
+    Powered by <a href="https://gohugo.io" title="A Fast and Flexible Website Generator">Hugo</a> &amp; <a href="https://github.com/eshlox/simplicity" title="Hugo theme">Simplicity</a>.
+  </p>
+</footer>
+
+    
+    
+    
+    
+    
+    
+    
+    <script src="/assets/js/scripts.min.js"></script>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-110194945-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>
