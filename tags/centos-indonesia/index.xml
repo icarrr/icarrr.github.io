@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Centos Indonesia on The Official Site of siBunglon</title>
+    <link>https://sibunglon.com/tags/centos-indonesia/</link>
+    <description>Recent content in Centos Indonesia on The Official Site of siBunglon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 Dec 2018 13:40:57 +0700</lastBuildDate>
+    
+      <atom:link href="https://sibunglon.com/tags/centos-indonesia/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      <item>
+        <title>Nginx Tidak Bisa Diakses</title>
+        <link>https://sibunglon.com/2018/12/10/nginx-tidak-bisa-diakses/</link>
+        <pubDate>Mon, 10 Dec 2018 13:40:57 +0700</pubDate>
+        <guid>https://sibunglon.com/2018/12/10/nginx-tidak-bisa-diakses/</guid>
+        <description>Nginx di CentOS atau RHEL tidak bisa diakses? Service nginx aktif? Servernya aktif? Akses dari localhost bisa? Jika semua jawabannya YA, mungkin firewall di system anda sedang aktif namun trafik protokol HTTP dan HTTPS belum diizinkan oleh perangkat yang lain.
+Untuk mengizinkan trafik protokol HTTP, gunakan command
+firewall-cmd --permanent --zone=public --add-service=http  Sedangkan untuk mengizinkan trafik protokol HTTPS, gunakan command
+firewall-cmd --permanent --zone=public --add-service=https  Setelah diizinkan, firewall wajib direload agar update firewall dapat diterapkan</description>
+      </item>
+    
+      <item>
+        <title>Berkenalan Dengan Nginx di RHEL/CentOS</title>
+        <link>https://sibunglon.com/2018/12/10/berkenalan-dengan-nginx-di-rhel-centos/</link>
+        <pubDate>Mon, 10 Dec 2018 07:44:24 +0700</pubDate>
+        <guid>https://sibunglon.com/2018/12/10/berkenalan-dengan-nginx-di-rhel-centos/</guid>
+        <description>Nginx? Apa sih nginx itu? Fungsinya buat apa? Mungkin itu yang terlintas dipikirian beberapa orang jika berkenalan dengan hal baru. Maka dari itu pada kali ini yang akan dibahas pada Lab ini yaitu berkenalan dan bagaimana memasang nginx.
+Nginx, banyak orang membicarakannya meskipun salah dipelafalannya. Dulu saya juga salah melafakannya namun setelah diruqyah sama m1m1n atau yang dikenal dengan Andy Hidayat, sekarang gak salah pelafalan lagi :D . Nginx dibaca &amp;ldquo;engine X&amp;rdquo; bukan &amp;ldquo;nging X&amp;rdquo;.</description>
+      </item>
+    
+  </channel>
+</rss>

@@ -6,10 +6,21 @@
     <description>Recent content in Ayo Belajar Linux on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Dec 2018 07:44:24 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 10 Dec 2018 13:40:57 +0700</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/ayo-belajar-linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Nginx Tidak Bisa Diakses</title>
+        <link>https://sibunglon.com/2018/12/10/nginx-tidak-bisa-diakses/</link>
+        <pubDate>Mon, 10 Dec 2018 13:40:57 +0700</pubDate>
+        <guid>https://sibunglon.com/2018/12/10/nginx-tidak-bisa-diakses/</guid>
+        <description>Nginx di CentOS atau RHEL tidak bisa diakses? Service nginx aktif? Servernya aktif? Akses dari localhost bisa? Jika semua jawabannya YA, mungkin firewall di system anda sedang aktif namun trafik protokol HTTP dan HTTPS belum diizinkan oleh perangkat yang lain.
+Untuk mengizinkan trafik protokol HTTP, gunakan command
+firewall-cmd --permanent --zone=public --add-service=http  Sedangkan untuk mengizinkan trafik protokol HTTPS, gunakan command
+firewall-cmd --permanent --zone=public --add-service=https  Setelah diizinkan, firewall wajib direload agar update firewall dapat diterapkan</description>
+      </item>
     
       <item>
         <title>Berkenalan Dengan Nginx di RHEL/CentOS</title>
@@ -18,6 +29,19 @@
         <guid>https://sibunglon.com/2018/12/10/berkenalan-dengan-nginx-di-rhel-centos/</guid>
         <description>Nginx? Apa sih nginx itu? Fungsinya buat apa? Mungkin itu yang terlintas dipikirian beberapa orang jika berkenalan dengan hal baru. Maka dari itu pada kali ini yang akan dibahas pada Lab ini yaitu berkenalan dan bagaimana memasang nginx.
 Nginx, banyak orang membicarakannya meskipun salah dipelafalannya. Dulu saya juga salah melafakannya namun setelah diruqyah sama m1m1n atau yang dikenal dengan Andy Hidayat, sekarang gak salah pelafalan lagi :D . Nginx dibaca &amp;ldquo;engine X&amp;rdquo; bukan &amp;ldquo;nging X&amp;rdquo;.</description>
+      </item>
+    
+      <item>
+        <title>Share Pc/Laptop Lokal Ke Public</title>
+        <link>https://sibunglon.com/2018/12/07/share-pc-laptop-lokal-ke-public/</link>
+        <pubDate>Fri, 07 Dec 2018 07:44:24 +0700</pubDate>
+        <guid>https://sibunglon.com/2018/12/07/share-pc-laptop-lokal-ke-public/</guid>
+        <description>Ngrok Ngrok merupakan salah satu software yang dapat membuat sebuah tunnel atau terowongan yang aman melalui jalur internet agar dapat mengakses pc/laptop lokal tanpa harus memiliki ip publik sendiri.
+Jika masih ingin berkenalan lebih lanjut, bisa di stalking ke official sitenya :D https://ngrok.com
+Langkah - langkah menggunakan ngrok:
+1) Buka shell linux dan login sebagai super user, kemudian download ngrok menggunakan command
+wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
+2) Ekstrak file ngrok yang telah didownload dengan command</description>
       </item>
     
       <item>
@@ -34,6 +58,16 @@ Nginx, banyak orang membicarakannya meskipun salah dipelafalannya. Dulu saya jug
         <pubDate>Tue, 06 Nov 2018 15:14:00 +0000</pubDate>
         <guid>https://sibunglon.com/2018/11/06/gerakan-multi-touch-macbook-di-linux/</guid>
         <description>Jika Anda pernah menggunakan MacBook, pasti tahu betapa menyenangkan dan bermanfaatnya gerakan trackpad untuk mengubah desktop, menampilkan semua jendela yang terbuka, dan pinch-to-zoom.&amp;nbsp;Di linux anda juga menggunakan fitur ini dengan bantuan aplikasi fusuma, berikut installasi dan konfigurasinya.1. Berikan izin untuk membaca perangkat touchpadsudo gpasswd -a $USER input2.&amp;nbsp;Install libinput-toolssudo apt-get install libinput-tools3. Install Fusumasudo gem install fusuma4. Instal xdotool (opsional)sudo apt-get install xdotool5. Sesuaikan gesture dengan membuat direktori fusuma dan buat file konfigurasinyamkdir -p ~/.</description>
+      </item>
+    
+      <item>
+        <title>Installasi Caddy Server di Sistem Operasi Windows</title>
+        <link>https://sibunglon.com/2018/10/28/installasi-caddy-server-di-sistem-operasi-windows/</link>
+        <pubDate>Sun, 28 Oct 2018 21:20:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2018/10/28/installasi-caddy-server-di-sistem-operasi-windows/</guid>
+        <description>Setelah berkenalan dengan si Caddy Server pada beberapa hari yang lalu, sekarang waktunya bermain dengan si Caddy Server.
+Apa Saja yang dibutuhkan? Pastikan anda telah memiliki file master Caddy Server, jika belum silahkan dari situs resminya.
+Menjalankan Caddy Server pada sistem operasi windows1. Buka file hasil download Caddy Server2. Copy semua isi dari file master tersebut3. Tentukan path Caddy, buat folder baru yang akan menampung semua file yang telah dicopy kemudian paste di folder tersebut4.</description>
       </item>
     
       <item>
@@ -821,6 +855,18 @@ B. PengertianMikrotik&amp;nbsp;adalah&amp;nbsp;sebuah perusahaan yang bergerak d
         <description>A. PendahuluanPernahkan anda mengalami ini? atau hanya pernah lihat begini?
 Pada postingan kali, saya akan sharing bagaimana&amp;nbsp;mengatasi kursor winbox mikrotik meloncat-loncat sewaktu mengetik.
 B. Pengertiankursor&amp;nbsp;adalah suatu petunjuk atau indikator posisi pada&amp;nbsp;monitor komputer&amp;nbsp;atau&amp;nbsp;peranti tampilan&amp;nbsp;lain yang akan merespons&amp;nbsp;masukan&amp;nbsp;dari suatu masukan teks atau&amp;nbsp;peranti penunjuk. Kursor secara umum dapat dibagi menjadi dua jenis: kursor teks dan kursor tetikus.&amp;nbsp;Kursor teks&amp;nbsp;adalah petunjuk pada&amp;nbsp;antarmuka baris perintah&amp;nbsp;(CLI) atau&amp;nbsp;editor teks&amp;nbsp;yang menunjukkan tempat teks akan diletakkan sewaktu dimasukkan (titik penyisipan) dan biasanya berupa garis bawah, segi empat, atau garis vertikal yang dapat berkedip atau stabil.</description>
+      </item>
+    
+      <item>
+        <title>Memblokir 1 ip address client agar tidak dapat terkoneksi ke internet dengan simple logika mode</title>
+        <link>https://sibunglon.com/2017/09/06/memblokir-1-ip-address-client-agar-tidak-dapat-terkoneksi-ke-internet-dengan-simple-logika-mode/</link>
+        <pubDate>Wed, 06 Sep 2017 14:26:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/09/06/memblokir-1-ip-address-client-agar-tidak-dapat-terkoneksi-ke-internet-dengan-simple-logika-mode/</guid>
+        <description>A. PendahuluanPada praktek ini, saya akan memposting bagaimana memblokir ip address dari client agar tidak dapat terhubung ke internet tetapi masing menggunakan firewall simple logika
+B. PengertianFirewall simple logis/logika adalah konfigurasi firewall secara logis sehingga bisa lebih mudah dipahami karena lebih manusiawi
+C. Latar belakangIngin menambah ilmu kemudian untuk disharing
+D. TujuanAgar client tidak bisa terhubung ke internet apabila ia mendapatkan ip yang telah diblokir
+E. Hasil yang diharapkanDapat melakukan konfigurasi dengan cepat, baik, dan benar</description>
       </item>
     
       <item>

@@ -57,6 +57,19 @@ Dapat Mensinkronisasikan waktu pada mikrotik
       </item>
     
       <item>
+        <title>Pointing UBNT ke MikroTik</title>
+        <link>https://sibunglon.com/2017/09/19/pointing-ubnt-ke-mikrotik/</link>
+        <pubDate>Tue, 19 Sep 2017 02:56:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/09/19/pointing-ubnt-ke-mikrotik/</guid>
+        <description>PENGERTIANPoint to Point adalah data link protokol yang umum digunakan dalam membangun hubungan langsung antara dua node jaringan. Hal ini dapat menyediakan koneksi otentikasi, transmisi enkripsi (menggunakan ECP, RFC 1968), dan kompresi.
+LATAR BELAKANGJauhnya tempat tidak memunginkan untuk penggunakan kabel untuk media transmisi data
+MAKSUD DAN TUJUANMempelajari UBNT
+Jangka Waktu PelaksanaanKurang lebih 3 jam
+ALAT DAN BAHAN
+~ Laptop~ Ubnt Powerbeam M2~ RB 941~ Alat untuk memnjat tower, Tali Wabbing, Harnesses, Tas untuk wadah kunci,~ Kabel LAN</description>
+      </item>
+    
+      <item>
         <title>Proxy situs dengan fitur web proxy di mikrotik</title>
         <link>https://sibunglon.com/2017/09/19/proxy-situs-dengan-fitur-web-proxy-di-mikrotik/</link>
         <pubDate>Tue, 19 Sep 2017 02:51:00 +0000</pubDate>
@@ -308,18 +321,6 @@ Mikrotik adalah sebuah produk yang bisa difungsikan sebagai router, hotspot, dan
 
 Maksud dan Tujuan
 Tujuan pembatasannya itu tergantung dimana penempatan akses internet dari mikroTik itu sendiri.</description>
-      </item>
-    
-      <item>
-        <title>Apa itu mikroTik?</title>
-        <link>https://sibunglon.com/2017/07/25/apa-itu-mikrotik/</link>
-        <pubDate>Tue, 25 Jul 2017 09:30:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/07/25/apa-itu-mikrotik/</guid>
-        <description>A. Pengertian MikroTik
-MikroTik RouterOS™ adalah sistem operasi dan perangkat lunak yang dapat digunakan untuk menjadikan komputer manjadi router network yang handal, mencakup berbagai fitur yang dibuat untuk ip network dan jaringan wireless, cocok digunakan oleh ISP dan provider hotspot.
-
-B. Sejarah Mikrotik
-MikroTikls [dengan trade name MikroTik®] didirikan tahun 1995 bertujuan mengembangkan sistem ISP dengan wireless. MikroTikls saat ini telah mendukung sistem ISP dengan wireless untuk jalur data internet di banyak negara, antara lain Iraq, Kosovo, Sri Lanka, Ghana dan banyak negara lainnya.</description>
       </item>
     
   </channel>

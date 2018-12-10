@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cisco Indonesia on The Official Site of siBunglon</title>
+    <link>https://sibunglon.com/tags/cisco-indonesia/</link>
+    <description>Recent content in Cisco Indonesia on The Official Site of siBunglon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 07 Oct 2017 16:49:00 +0000</lastBuildDate>
+    
+      <atom:link href="https://sibunglon.com/tags/cisco-indonesia/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      <item>
+        <title>Konfigurasi DHCP Server pada cisco</title>
+        <link>https://sibunglon.com/2017/10/07/konfigurasi-dhcp-server-pada-cisco/</link>
+        <pubDate>Sat, 07 Oct 2017 16:49:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/07/konfigurasi-dhcp-server-pada-cisco/</guid>
+        <description>A.PENGERTIANDHCP (Dynamic Host Configuration Protocol) sebuah server yang memiliki layanan untuk memberikan IP otomatis pada host atau komputer (client) pada jaringan TCP atau IP yang memintanyaLATAR BELAKANGMemahami serta mempraktikan dhcp serverMAKSUD DAN TUJUAN
+Memahami konfigurasi dhcp serverTAHAPAN PEKERJAAN&amp;nbsp;Berikut adalah langkah-langkah mengkonfigurasi DHCP Server pada router.Sebelumnya kita harus membuat simulasi jaringan seperti pada gambar berikut ini terlebih dahulu.
+Langkah awal untuk konfigurasi yaitu klik pada Router
+Kemudian masuk ke Privileged mode exec dengan menggunkan perintah “enable&amp;nbsp;“</description>
+      </item>
+    
+      <item>
+        <title>Konfigurasi VLAN pada switch</title>
+        <link>https://sibunglon.com/2017/10/06/konfigurasi-vlan-pada-switch/</link>
+        <pubDate>Fri, 06 Oct 2017 06:16:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/06/konfigurasi-vlan-pada-switch/</guid>
+        <description>A. PENGERTIANVirtual LAN&amp;nbsp;atau disingkat&amp;nbsp;VLAN&amp;nbsp;merupakan sekelompok perangkat pada satu LAN atau lebih yang dikonfigurasikan (menggunakan perangkat lunak pengelolaan) sehingga dapat berkomunikasi seperti halnya bila perangkat tersebut terhubung ke jalur yang sama, padahal sebenarnya perangkat tersebut berada pada sejumlah segmen LAN yang berbeda. Vlan dibuat dengan menggunakan jaringan pihak ke tiga. VLAN merupakan sebuah bagian kecil jaringan IP yang terpisah secara logik. VLAN memungkinkan beberapa jaringan IP dan jaringan-jaringan kecil (subnet) berada dalam jaringan switched switched yang sama.</description>
+      </item>
+    
+      <item>
+        <title>Konfigurasi static NAT dan dynamic NAT cisco</title>
+        <link>https://sibunglon.com/2017/10/05/konfigurasi-static-nat-dan-dynamic-nat-cisco/</link>
+        <pubDate>Thu, 05 Oct 2017 05:39:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/05/konfigurasi-static-nat-dan-dynamic-nat-cisco/</guid>
+        <description>A. Pengertian&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; NAT (Network Address Translation)&amp;nbsp;adalah sebuah proses pemetaan alamat IP dimana perangkat jaringan komputer akan memberikan alamat IP public ke perangkat jaringan local sehingga banyak IP private yang dapat mengakses IP public.
+Dengan kata lain NAT akan mentranslasikan alamat IP sehingga IP address pada jaringan local dapat mengakses IP public pada jaringan WAN. NAT mentranslasikan alamat IP private untuk dapat mengakses alamat host di internet dengan menggunakan alamat IP public pada jaringan tersebut.</description>
+      </item>
+    
+      <item>
+        <title>Konfigurasi telnet dan ssh di cisco</title>
+        <link>https://sibunglon.com/2017/10/04/konfigurasi-telnet-dan-ssh-di-cisco/</link>
+        <pubDate>Wed, 04 Oct 2017 05:19:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/04/konfigurasi-telnet-dan-ssh-di-cisco/</guid>
+        <description>A. PENGERTIAN
+Konfigurasi Telnet
+Telnet (Telecommunication network) adalah sebuah protokol jaringan yang digunakan pada Internet atau Local Area Network untuk menyediakan fasilitas komunikasi berbasis teks interaksi dua arah yang menggunakan koneksi virtual terminal.
+B. LATAR BELAKANG
+Meremote switch dan router di packet tracer
+C. MAKSUD DAN TUJUAN
+Ingin mengimplementasikanya di dunia kerja dan mengulangi Materi yang diberi tentang ssh dan telnet
+D. TAHAPAN PEKERJAAN
+Berikut Topology Telnet :
+1.Pertama, masukkan default gateway yang terdapat pada Router, Disini saya Memberikan IP Address pada interface fastEthernet 0/0 adalah 192.</description>
+      </item>
+    
+      <item>
+        <title>Perintah - perintah dasar cisco</title>
+        <link>https://sibunglon.com/2017/10/03/perintah-perintah-dasar-cisco/</link>
+        <pubDate>Tue, 03 Oct 2017 05:17:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/03/perintah-perintah-dasar-cisco/</guid>
+        <description>A. PENGERTIAN
+Konfigurasi yang akan dibahas dalam artikel ini adalah :
+Mode Router
+Memasuki mode konfigurasi global (Global Configuration Mode)
+Konfigurasi router :
+-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Nama router
+-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Password
+-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Password terenkripsi
+-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Nama interfaces
+-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Perpindahan antar interfaces
+-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Konfigurasi interfaces Serial
+-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Konfigurasi interfaces Fast Ethernet
+-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Membuat banner pesan MOTD (Message of the Day)
+-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Membuat banner login
+-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Menempatkan local host domain ke IP address
+-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Perintah&amp;nbsp;no ip domain-lookup
+-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Perintah&amp;nbsp;exec-timeout
+-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Menyimpan konfigurasi
+-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Menghapus konfigurasi
+Perintah&amp;nbsp;show&amp;nbsp;untuk memperifikasi konfigurasi router</description>
+      </item>
+    
+      <item>
+        <title>Konfigurasi static routing</title>
+        <link>https://sibunglon.com/2017/10/03/konfigurasi-static-routing/</link>
+        <pubDate>Tue, 03 Oct 2017 05:04:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/03/konfigurasi-static-routing/</guid>
+        <description>A.PENGERTIAN
+Routing Static adalah jenis routing yang dilakukan seorang admin dengan memasukan network network tertentu secara manual.
+Ciri ciri routing static adalah :Jalur pada suatu jaringan spesifik ditentukan oleh seorang AdministratorPengisian tabel routing / penambahan network baru diisi secara manualBiasanya digunakan untuk jaringan berskala kecilAda beberapa parameter yang ada pada routing static ini, yaituDestination, adalah ip network tujuan, untuk default routing biasanya memakai 0.0.0.0 untuk semua jaringanGateway, adalah datagram yang dapat dicapai pada satu jaringanPref.</description>
+      </item>
+    
+      <item>
+        <title>Konsep perencanaan membangun jaringan sekolah</title>
+        <link>https://sibunglon.com/2017/08/16/konsep-perencanaan-membangun-jaringan-sekolah/</link>
+        <pubDate>Wed, 16 Aug 2017 17:25:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/16/konsep-perencanaan-membangun-jaringan-sekolah/</guid>
+        <description>A. PENDAHULUANPada kesempatan ini saya akan memberikan sedikit ilmu terkait dengan konsep perencanaan membangun jaringan sekolah. dalam melakukan sebuah pekerjaan kita mesti memikirkan konsep terlebih dahulu.
+B. PENGERTIANPerencanaan merupakan tahapan awal yang harus di lakukan sebelum melakuka sesuatu pekerjaan. perencanaan dikatakan matang/berhasil, apabila perencanaan tersebut 70% sudah pasti dan tidak sering mengalami perubahan
+C. LATAR BELAKANGDalam hal ini, saya bekerja tim utuk membangun jaringan di sekolah. saya berpern untuk mengatur jaringan.</description>
+      </item>
+    
+  </channel>
+</rss>

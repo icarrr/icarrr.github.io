@@ -30,5 +30,22 @@ Menjalankan Caddy Server pada sistem operasi windows1. Buka file hasil download 
 Caddy kadang-kadang diklarifikasi sebagai web server Caddy bersifat open source, server web HTTP / 2- enabled yang ditulis dalam Go . Ia menggunakan pustaka standar Go untuk fungsi HTTP-nya. Salah satu fitur paling terkenal Caddy adalah mengaktifkan HTTPS secara default.Caddy mendukung berbagai teknologi Web dan tersedia sebagai biner yang dikompilasi secara statis untuk sistem operasi Windows, Mac, Linux, Android, dan BSD pada arsitektur i386, amd64, dan ARM.</description>
       </item>
     
+      <item>
+        <title>Perbandingan open source dan closed source</title>
+        <link>https://sibunglon.com/2017/10/20/perbandingan-open-source-dan-closed-source/</link>
+        <pubDate>Fri, 20 Oct 2017 18:59:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/20/perbandingan-open-source-dan-closed-source/</guid>
+        <description>1. Pengertian
+Sumber terbuka&amp;nbsp;(bahasa Inggris:&amp;nbsp;open source) adalah sistem pengembangan yang tidak dikoordinasi oleh suatu individu / lembaga pusat, tetapi oleh para pelaku yang bekerja sama dengan memanfaatkan kode sumber&amp;nbsp;(source-code)&amp;nbsp;yang tersebar dan tersedia bebas (biasanya menggunakan fasilitas komunikasi internet). Pola pengembangan ini mengambil model ala&amp;nbsp;bazaar, sehingga pola Open Source ini memiliki ciri bagi komunitasnya yaitu adanya dorongan yang bersumber dari&amp;nbsp;budaya memberi, yang artinya ketika suatu komunitas menggunakan sebuah program Open Source dan telah menerima sebuah manfaat kemudian akan termotivasi untuk menimbulkan sebuah pertanyaan apa yang bisa pengguna berikan balik kepada orang banyak.</description>
+      </item>
+    
+      <item>
+        <title>Apa perbedaan linux dan windows?</title>
+        <link>https://sibunglon.com/2017/08/04/apa-perbedaan-linux-dan-windows/</link>
+        <pubDate>Fri, 04 Aug 2017 17:00:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/04/apa-perbedaan-linux-dan-windows/</guid>
+        <description>Perbedaan linux dengan windowsSebelum memahami perbedaan, berikut ini persamaan Linux dan Windows:Linux dan Windows sama-sama nama untuk sistem operasi &amp;ldquo;komputer&amp;rdquo; dan sama-sama punya beberapa jenis atau pilihan, misal Linux Nusantara, BlankOn, Ubuntu, Mandriva, Fedora, openSUSE, Slackware, Debian, Gentoo, Redhat, Mint, dll. Sedangkan di Windows ada Windows 98, Me, XP, Vista, 7, Server 2008, Mobile, dll. &amp;ldquo;komputer&amp;rdquo; itu bisa berupa pc, notebook, smartphone, dll.Persamaan adanya pilihan/jenis di atas sebenarynya tidak persis sama, karena jenis Windows itu hanya tersedia buatan MS (Microsoft), sedangkan jenis Linux itu bisa buatan beberapa pihak yg berbeda.</description>
+      </item>
+    
   </channel>
 </rss>

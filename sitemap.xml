@@ -3,6 +3,13 @@
   
     
       <url>
+        <loc>https://sibunglon.com/2018/12/10/nginx-tidak-bisa-diakses/</loc>
+        <lastmod>2018-12-10T13:40:57+07:00</lastmod>
+      </url>
+    
+  
+    
+      <url>
         <loc>https://sibunglon.com/2018/12/10/berkenalan-dengan-nginx-di-rhel-centos/</loc>
         <lastmod>2018-12-10T07:44:24+07:00</lastmod>
       </url>
@@ -10,8 +17,8 @@
   
     
       <url>
-        <loc>https://sibunglon.com/2018/12/07/share-pc_laptop-lokal-ke-public/</loc>
-        <lastmod>2018-12-07T15:22:51+00:00</lastmod>
+        <loc>https://sibunglon.com/2018/12/07/share-pc-laptop-lokal-ke-public/</loc>
+        <lastmod>2018-12-07T07:44:24+07:00</lastmod>
       </url>
     
   
@@ -816,7 +823,7 @@
     
       <url>
         <loc>https://sibunglon.com/tags/ayo-belajar-linux/</loc>
-        <lastmod>2018-12-10T07:44:24+07:00</lastmod>
+        <lastmod>2018-12-10T13:40:57+07:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -824,6 +831,14 @@
     
       <url>
         <loc>https://sibunglon.com/tags/bestpath/</loc>
+        <lastmod>2017-10-02T04:57:00+00:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/tags/bestpath-network/</loc>
         <lastmod>2017-10-07T16:49:00+00:00</lastmod>
         <priority>0</priority>
       </url>
@@ -846,6 +861,22 @@
   
     
       <url>
+        <loc>https://sibunglon.com/tags/centos/</loc>
+        <lastmod>2018-12-10T13:40:57+07:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/tags/centos-indonesia/</loc>
+        <lastmod>2018-12-10T13:40:57+07:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+    
+      <url>
         <loc>https://sibunglon.com/tags/cisco/</loc>
         <lastmod>2017-10-07T16:49:00+00:00</lastmod>
         <priority>0</priority>
@@ -854,16 +885,8 @@
   
     
       <url>
-        <loc>https://sibunglon.com/tags/freebsd/</loc>
-        <lastmod>2018-12-10T07:44:24+07:00</lastmod>
-        <priority>0</priority>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/freebsd-indonesia/</loc>
-        <lastmod>2018-12-10T07:44:24+07:00</lastmod>
+        <loc>https://sibunglon.com/tags/cisco-indonesia/</loc>
+        <lastmod>2017-10-07T16:49:00+00:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -887,7 +910,7 @@
     
       <url>
         <loc>https://sibunglon.com/tags/lain-lain/</loc>
-        <lastmod>2018-12-01T15:14:00+00:00</lastmod>
+        <lastmod>2018-12-07T07:44:24+07:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -895,7 +918,7 @@
     
       <url>
         <loc>https://sibunglon.com/tags/linux/</loc>
-        <lastmod>2018-12-10T07:44:24+07:00</lastmod>
+        <lastmod>2018-12-10T13:40:57+07:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -903,7 +926,7 @@
     
       <url>
         <loc>https://sibunglon.com/tags/linux-indonesia/</loc>
-        <lastmod>2018-12-10T07:44:24+07:00</lastmod>
+        <lastmod>2018-12-10T13:40:57+07:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -927,7 +950,23 @@
     
       <url>
         <loc>https://sibunglon.com/posts/</loc>
-        <lastmod>2018-12-10T07:44:24+07:00</lastmod>
+        <lastmod>2018-12-10T13:40:57+07:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/tags/red-hat/</loc>
+        <lastmod>2018-12-10T13:40:57+07:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/tags/red-hat-indonesia/</loc>
+        <lastmod>2018-12-10T13:40:57+07:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -935,7 +974,7 @@
     
       <url>
         <loc>https://sibunglon.com/tags/</loc>
-        <lastmod>2018-12-10T07:44:24+07:00</lastmod>
+        <lastmod>2018-12-10T13:40:57+07:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -943,7 +982,7 @@
     
       <url>
         <loc>https://sibunglon.com/</loc>
-        <lastmod>2018-12-10T07:44:24+07:00</lastmod>
+        <lastmod>2018-12-10T13:40:57+07:00</lastmod>
         <priority>0</priority>
       </url>
     
