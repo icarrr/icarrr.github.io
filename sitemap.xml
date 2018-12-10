@@ -3,7 +3,14 @@
   
     
       <url>
-        <loc>https://sibunglon.com/2018/12/07/share-pc-laptop-lokal-ke-public/</loc>
+        <loc>https://sibunglon.com/2018/12/10/berkenalan-dengan-nginx-di-rhel-centos/</loc>
+        <lastmod>2018-12-10T07:44:24+07:00</lastmod>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/2018/12/07/share-pc_laptop-lokal-ke-public/</loc>
         <lastmod>2018-12-07T15:22:51+00:00</lastmod>
       </url>
     
@@ -809,7 +816,7 @@
     
       <url>
         <loc>https://sibunglon.com/tags/ayo-belajar-linux/</loc>
-        <lastmod>2018-12-07T15:22:51+00:00</lastmod>
+        <lastmod>2018-12-01T15:14:00+00:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -825,7 +832,7 @@
     
       <url>
         <loc>https://sibunglon.com/tags/blc-telkom-klaten/</loc>
-        <lastmod>2018-12-07T15:22:51+00:00</lastmod>
+        <lastmod>2018-12-10T07:44:24+07:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -847,6 +854,22 @@
   
     
       <url>
+        <loc>https://sibunglon.com/tags/freebsd/</loc>
+        <lastmod>2018-12-10T07:44:24+07:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/tags/freebsd-indonesia/</loc>
+        <lastmod>2018-12-10T07:44:24+07:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+    
+      <url>
         <loc>https://sibunglon.com/tags/kegiatan/</loc>
         <lastmod>2017-10-17T11:01:00+00:00</lastmod>
         <priority>0</priority>
@@ -856,7 +879,7 @@
     
       <url>
         <loc>https://sibunglon.com/tags/kpli-klaten/</loc>
-        <lastmod>2018-12-07T15:22:51+00:00</lastmod>
+        <lastmod>2018-12-10T07:44:24+07:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -864,7 +887,7 @@
     
       <url>
         <loc>https://sibunglon.com/tags/lain-lain/</loc>
-        <lastmod>2018-12-07T15:22:51+00:00</lastmod>
+        <lastmod>2018-12-01T15:14:00+00:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -872,7 +895,7 @@
     
       <url>
         <loc>https://sibunglon.com/tags/linux/</loc>
-        <lastmod>2018-12-07T15:22:51+00:00</lastmod>
+        <lastmod>2018-12-10T07:44:24+07:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -880,7 +903,7 @@
     
       <url>
         <loc>https://sibunglon.com/tags/linux-indonesia/</loc>
-        <lastmod>2018-12-07T15:22:51+00:00</lastmod>
+        <lastmod>2018-12-10T07:44:24+07:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -904,7 +927,15 @@
     
       <url>
         <loc>https://sibunglon.com/posts/</loc>
-        <lastmod>2018-12-07T15:22:51+00:00</lastmod>
+        <lastmod>2018-12-10T07:44:24+07:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/tags/shell/</loc>
+        <lastmod>2018-12-10T07:44:24+07:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -912,7 +943,7 @@
     
       <url>
         <loc>https://sibunglon.com/tags/</loc>
-        <lastmod>2018-12-07T15:22:51+00:00</lastmod>
+        <lastmod>2018-12-01T15:14:00+00:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -920,7 +951,7 @@
     
       <url>
         <loc>https://sibunglon.com/</loc>
-        <lastmod>2018-12-07T15:22:51+00:00</lastmod>
+        <lastmod>2018-12-10T07:44:24+07:00</lastmod>
         <priority>0</priority>
       </url>
     

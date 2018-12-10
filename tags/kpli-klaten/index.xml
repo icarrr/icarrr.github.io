@@ -6,22 +6,18 @@
     <description>Recent content in Kpli Klaten on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Dec 2018 15:22:51 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 10 Dec 2018 07:44:24 +0700</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/kpli-klaten/index.xml" rel="self" type="application/rss+xml" />
     
     
       <item>
-        <title>Share Pc/Laptop Lokal Ke Public</title>
-        <link>https://sibunglon.com/2018/12/07/share-pc-laptop-lokal-ke-public/</link>
-        <pubDate>Fri, 07 Dec 2018 15:22:51 +0000</pubDate>
-        <guid>https://sibunglon.com/2018/12/07/share-pc-laptop-lokal-ke-public/</guid>
-        <description>Ngrok Ngrok merupakan salah satu software yang dapat membuat sebuah tunnel atau terowongan yang aman melalui jalur internet agar dapat mengakses pc/laptop lokal tanpa harus memiliki ip publik sendiri.
-Jika masih ingin berkenalan lebih lanjut, bisa di stalking ke official sitenya :D https://ngrok.com
-Langkah - langkah menggunakan ngrok:
-1) Buka shell linux dan login sebagai super user, kemudian download ngrok menggunakan command
-wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
-2) Ekstrak file ngrok yang telah didownload dengan command</description>
+        <title>Berkenalan Dengan Nginx di RHEL/CentOS</title>
+        <link>https://sibunglon.com/2018/12/10/berkenalan-dengan-nginx-di-rhel-centos/</link>
+        <pubDate>Mon, 10 Dec 2018 07:44:24 +0700</pubDate>
+        <guid>https://sibunglon.com/2018/12/10/berkenalan-dengan-nginx-di-rhel-centos/</guid>
+        <description>Nginx? Apa sih nginx itu? Fungsinya buat apa? Mungkin itu yang terlintas dipikirian beberapa orang jika berkenalan dengan hal baru. Maka dari itu pada kali ini yang akan dibahas pada **Lab **ini yaitu berkenalan dan bagaimana memasang nginx.
+Nginx, banyak orang membicarakannya meskipun salah dipelafalannya. Dulu saya juga salah melafakannya namun setelah diruqyah sama m1m1n atau yang dikenal dengan Andy Hidayat, sekarang gak salah pelafalan lagi :D . Nginx dibaca &amp;ldquo;engine X&amp;rdquo; bukan &amp;ldquo;nging X&amp;rdquo;.</description>
       </item>
     
       <item>
