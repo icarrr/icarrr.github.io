@@ -6,10 +6,29 @@
     <description>Recent content in Kpli Klaten on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 Dec 2018 15:14:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 10 Dec 2018 17:45:30 +0700</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/kpli-klaten/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Kustom Konfigurasi dan Ganti Direktori Nginx</title>
+        <link>https://sibunglon.com/2018/12/10/kustom-konfigurasi-dan-ganti-direktori-nginx/</link>
+        <pubDate>Mon, 10 Dec 2018 17:45:30 +0700</pubDate>
+        <guid>https://sibunglon.com/2018/12/10/kustom-konfigurasi-dan-ganti-direktori-nginx/</guid>
+        <description>Bermain Dengan Nginx Pada saat ini sudah menjadi hal biasa jika seseorang ingin memindahkan file konfigurasinya agar lebih mudah dimaintenance. Salah satunya yaitu memidahkan direktori root html nginx. Di nginx, untuk memindahkan direktori root html dan memidahkan konfigurasinya cukup dengan command-command berikut.
+Pada **Lab **ini saya asumsikan :
+ master konfigurasi berada di direktori /sibunglonlabs/config/nginx direktori root berada di /sibunglonlabs/web  1) Gunakan command berikut untuk memindahkan master konfig nginx ke direktori yang anda ingin, yang mudah diakses oleh anda namun susah ditemui oleh orang lain.</description>
+      </item>
+    
+      <item>
+        <title>Berkenalan Dengan Nginx di RHEL/CentOS</title>
+        <link>https://sibunglon.com/2018/12/10/berkenalan-dengan-nginx-di-rhel-centos/</link>
+        <pubDate>Mon, 10 Dec 2018 07:44:24 +0700</pubDate>
+        <guid>https://sibunglon.com/2018/12/10/berkenalan-dengan-nginx-di-rhel-centos/</guid>
+        <description>Nginx? Apa sih nginx itu? Fungsinya buat apa? Mungkin itu yang terlintas dipikirian beberapa orang jika berkenalan dengan hal baru. Maka dari itu pada kali ini yang akan dibahas pada Lab ini yaitu berkenalan dan bagaimana memasang nginx.
+Nginx, banyak orang membicarakannya meskipun salah dipelafalannya. Dulu saya juga salah melafakannya namun setelah diruqyah sama m1m1n atau yang dikenal dengan Andy Hidayat, sekarang gak salah pelafalan lagi :D . Nginx dibaca &amp;ldquo;engine X&amp;rdquo; bukan &amp;ldquo;nging X&amp;rdquo;.</description>
+      </item>
     
       <item>
         <title>Lindungi web server apache2 dengan ssl debian 8</title>
