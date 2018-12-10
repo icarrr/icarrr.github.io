@@ -6,10 +6,20 @@
     <description>Recent content in Centos on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Dec 2018 13:40:57 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 10 Dec 2018 17:45:30 +0700</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/centos/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Kustom Konfigurasi dan Ganti Direktori Nginx</title>
+        <link>https://sibunglon.com/2018/12/10/kustom-konfigurasi-dan-ganti-direktori-nginx/</link>
+        <pubDate>Mon, 10 Dec 2018 17:45:30 +0700</pubDate>
+        <guid>https://sibunglon.com/2018/12/10/kustom-konfigurasi-dan-ganti-direktori-nginx/</guid>
+        <description>Bermain Dengan Nginx Pada saat ini sudah menjadi hal biasa jika seseorang ingin memindahkan file konfigurasinya agar lebih mudah dimaintenance. Salah satunya yaitu memidahkan direktori root html nginx. Di nginx, untuk memindahkan direktori root html dan memidahkan konfigurasinya cukup dengan command-command berikut.
+Pada **Lab **ini saya asumsikan :
+ master konfigurasi berada di direktori /sibunglonlabs/config/nginx direktori root berada di /sibunglonlabs/web  1) Gunakan command berikut untuk memindahkan master konfig nginx ke direktori yang anda ingin, yang mudah diakses oleh anda namun susah ditemui oleh orang lain.</description>
+      </item>
     
       <item>
         <title>Nginx Tidak Bisa Diakses</title>
