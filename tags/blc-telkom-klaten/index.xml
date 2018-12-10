@@ -6,19 +6,10 @@
     <description>Recent content in Blc Telkom Klaten on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Dec 2018 07:44:24 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 01 Dec 2018 15:14:00 +0000</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/blc-telkom-klaten/index.xml" rel="self" type="application/rss+xml" />
     
-    
-      <item>
-        <title>Berkenalan Dengan Nginx di RHEL/CentOS</title>
-        <link>https://sibunglon.com/2018/12/10/berkenalan-dengan-nginx-di-rhel-centos/</link>
-        <pubDate>Mon, 10 Dec 2018 07:44:24 +0700</pubDate>
-        <guid>https://sibunglon.com/2018/12/10/berkenalan-dengan-nginx-di-rhel-centos/</guid>
-        <description>Nginx? Apa sih nginx itu? Fungsinya buat apa? Mungkin itu yang terlintas dipikirian beberapa orang jika berkenalan dengan hal baru. Maka dari itu pada kali ini yang akan dibahas pada **Lab **ini yaitu berkenalan dan bagaimana memasang nginx.
-Nginx, banyak orang membicarakannya meskipun salah dipelafalannya. Dulu saya juga salah melafakannya namun setelah diruqyah sama m1m1n atau yang dikenal dengan Andy Hidayat, sekarang gak salah pelafalan lagi :D . Nginx dibaca &amp;ldquo;engine X&amp;rdquo; bukan &amp;ldquo;nging X&amp;rdquo;.</description>
-      </item>
     
       <item>
         <title>Lindungi web server apache2 dengan ssl debian 8</title>
@@ -26,33 +17,6 @@ Nginx, banyak orang membicarakannya meskipun salah dipelafalannya. Dulu saya jug
         <pubDate>Sat, 01 Dec 2018 15:14:00 +0000</pubDate>
         <guid>https://sibunglon.com/2018/12/01/lindungi-web-server-apache2-dengan-ssl-debian-8/</guid>
         <description>Pengertian  HTTPS juga disebut HTTP melalui TLS, HTTP melalui SSL, dan HTTP Secure adalah protokol untuk komunikasi yang aman melalui jaringan komputer yang banyak digunakan di Internet. HTTPS terdiri dari komunikasi melalui Hypertext Transfer Protocol (HTTP) dalam koneksi yang terenkripsi dengan Transport Layer Security atau pendahulunya Secure Sockets Layer. Fungsi utama untuk HTTPS adalah autentikasi dari website yang dikunjungi dan perlindungan privasi dan integritas data yang dipertukarkan. SSL (Secure Sockets Layer) adalah teknologi keamanan standar untuk membangun link yang dienkripsi antara web server dan browser.</description>
-      </item>
-    
-      <item>
-        <title>Gerakan Multi-Touch MacBook di Linux</title>
-        <link>https://sibunglon.com/2018/11/06/gerakan-multi-touch-macbook-di-linux/</link>
-        <pubDate>Tue, 06 Nov 2018 15:14:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2018/11/06/gerakan-multi-touch-macbook-di-linux/</guid>
-        <description>Jika Anda pernah menggunakan MacBook, pasti tahu betapa menyenangkan dan bermanfaatnya gerakan trackpad untuk mengubah desktop, menampilkan semua jendela yang terbuka, dan pinch-to-zoom.&amp;nbsp;Di linux anda juga menggunakan fitur ini dengan bantuan aplikasi fusuma, berikut installasi dan konfigurasinya.1. Berikan izin untuk membaca perangkat touchpadsudo gpasswd -a $USER input2.&amp;nbsp;Install libinput-toolssudo apt-get install libinput-tools3. Install Fusumasudo gem install fusuma4. Instal xdotool (opsional)sudo apt-get install xdotool5. Sesuaikan gesture dengan membuat direktori fusuma dan buat file konfigurasinyamkdir -p ~/.</description>
-      </item>
-    
-      <item>
-        <title>Installasi Caddy Server di Sistem Operasi Windows</title>
-        <link>https://sibunglon.com/2018/10/28/installasi-caddy-server-di-sistem-operasi-windows/</link>
-        <pubDate>Sun, 28 Oct 2018 21:20:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2018/10/28/installasi-caddy-server-di-sistem-operasi-windows/</guid>
-        <description>Setelah berkenalan dengan si Caddy Server pada beberapa hari yang lalu, sekarang waktunya bermain dengan si Caddy Server.
-Apa Saja yang dibutuhkan? Pastikan anda telah memiliki file master Caddy Server, jika belum silahkan dari situs resminya.
-Menjalankan Caddy Server pada sistem operasi windows1. Buka file hasil download Caddy Server2. Copy semua isi dari file master tersebut3. Tentukan path Caddy, buat folder baru yang akan menampung semua file yang telah dicopy kemudian paste di folder tersebut4.</description>
-      </item>
-    
-      <item>
-        <title>Berkenalan dengan Caddy Server</title>
-        <link>https://sibunglon.com/2018/10/26/berkenalan-dengan-caddy-server/</link>
-        <pubDate>Fri, 26 Oct 2018 11:52:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2018/10/26/berkenalan-dengan-caddy-server/</guid>
-        <description>Caddy? Caddy itu apaan? Fungsinya apa aja?
-Caddy kadang-kadang diklarifikasi sebagai web server Caddy bersifat open source, server web HTTP / 2- enabled yang ditulis dalam Go . Ia menggunakan pustaka standar Go untuk fungsi HTTP-nya. Salah satu fitur paling terkenal Caddy adalah mengaktifkan HTTPS secara default.Caddy mendukung berbagai teknologi Web dan tersedia sebagai biner yang dikompilasi secara statis untuk sistem operasi Windows, Mac, Linux, Android, dan BSD pada arsitektur i386, amd64, dan ARM.</description>
       </item>
     
       <item>
