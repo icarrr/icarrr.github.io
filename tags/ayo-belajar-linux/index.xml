@@ -6,10 +6,19 @@
     <description>Recent content in Ayo Belajar Linux on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Dec 2018 23:47:30 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 11 Dec 2018 21:34:18 +0700</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/ayo-belajar-linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Pip Python2 Error</title>
+        <link>https://sibunglon.com/2018/12/11/pip-python2-error/</link>
+        <pubDate>Tue, 11 Dec 2018 21:34:18 +0700</pubDate>
+        <guid>https://sibunglon.com/2018/12/11/pip-python2-error/</guid>
+        <description> Pip di Python2 Error? Traceback (most recent call last): File &amp;quot;/usr/bin/pip&amp;quot;, line 9, in &amp;lt;module&amp;gt; from pip import main ImportError: cannot import name main  Gak usah panik, cukup jalankan command berikut tapi pastikan terlebih dahulu sekarang sudah jadi super user (root)
+python -m pip uninstall pip &amp;amp;&amp;amp; apt install python-pip --reinstall  </description>
+      </item>
     
       <item>
         <title>Python Tidak Memiliki Objek SSL_ST_INIT</title>
