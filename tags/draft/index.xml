@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Draft on The Official Site of siBunglon</title>
+    <link>https://sibunglon.com/tags/draft/</link>
+    <description>Recent content in Draft on The Official Site of siBunglon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 11 Dec 2018 21:34:18 +0700</lastBuildDate>
+    
+      <atom:link href="https://sibunglon.com/tags/draft/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      <item>
+        <title>Pip Python2 Error</title>
+        <link>https://sibunglon.com/2018/12/11/pip-python2-error/</link>
+        <pubDate>Tue, 11 Dec 2018 21:34:18 +0700</pubDate>
+        <guid>https://sibunglon.com/2018/12/11/pip-python2-error/</guid>
+        <description> Pip di Python2 Error? Traceback (most recent call last): File &amp;quot;/usr/bin/pip&amp;quot;, line 9, in &amp;lt;module&amp;gt; from pip import main ImportError: cannot import name main  Gak usah panik, cukup jalankan command berikut tapi pastikan terlebih dahulu sekarang sudah jadi super user (root)
+python -m pip uninstall pip &amp;amp;&amp;amp; apt install python-pip --reinstall  </description>
+      </item>
+    
+  </channel>
+</rss>

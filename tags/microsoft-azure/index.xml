@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Microsoft Azure on The Official Site of siBunglon</title>
+    <link>https://sibunglon.com/tags/microsoft-azure/</link>
+    <description>Recent content in Microsoft Azure on The Official Site of siBunglon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 12 Dec 2018 10:28:20 +0700</lastBuildDate>
+    
+      <atom:link href="https://sibunglon.com/tags/microsoft-azure/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      <item>
+        <title>Sertifikat Repository Red Hat Kadaluarsa Pada VM Microsoft Azure</title>
+        <link>https://sibunglon.com/2018/12/12/sertifikat-repository-red-hat-kadaluarsa-pada-vm-microsoft-azure/</link>
+        <pubDate>Wed, 12 Dec 2018 10:28:20 +0700</pubDate>
+        <guid>https://sibunglon.com/2018/12/12/sertifikat-repository-red-hat-kadaluarsa-pada-vm-microsoft-azure/</guid>
+        <description>Jika anda menggunakan VM Red Hat versi lama di Microsoft Azure, kadang anda mendapatkan masalah “SSL peer rejected your certificate as expired” jika ingin menginstall paket baru ataupun mengupate paket-paket. Itu terjadi karena sertifikat repositori sudah kadaluarsa, untuk memecahkan masalah tersebut cukup gunakan command
+yum update -y --disablerepo=* --enablerepo=rhui-microsoft-* rhui-azure-rhel7
+Setelah itu sekarang anda dapat menginstall atau update paket di Red Hat anda seperti yang biasa kamu lakukan.</description>
+      </item>
+    
+  </channel>
+</rss>

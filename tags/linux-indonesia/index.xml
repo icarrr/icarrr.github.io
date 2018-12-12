@@ -6,18 +6,19 @@
     <description>Recent content in Linux Indonesia on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Dec 2018 21:34:18 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 12 Dec 2018 10:28:20 +0700</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/linux-indonesia/index.xml" rel="self" type="application/rss+xml" />
     
     
       <item>
-        <title>Pip Python2 Error</title>
-        <link>https://sibunglon.com/2018/12/11/pip-python2-error/</link>
-        <pubDate>Tue, 11 Dec 2018 21:34:18 +0700</pubDate>
-        <guid>https://sibunglon.com/2018/12/11/pip-python2-error/</guid>
-        <description> Pip di Python2 Error? Traceback (most recent call last): File &amp;quot;/usr/bin/pip&amp;quot;, line 9, in &amp;lt;module&amp;gt; from pip import main ImportError: cannot import name main  Gak usah panik, cukup jalankan command berikut tapi pastikan terlebih dahulu sekarang sudah jadi super user (root)
-python -m pip uninstall pip &amp;amp;&amp;amp; apt install python-pip --reinstall  </description>
+        <title>Sertifikat Repository Red Hat Kadaluarsa Pada VM Microsoft Azure</title>
+        <link>https://sibunglon.com/2018/12/12/sertifikat-repository-red-hat-kadaluarsa-pada-vm-microsoft-azure/</link>
+        <pubDate>Wed, 12 Dec 2018 10:28:20 +0700</pubDate>
+        <guid>https://sibunglon.com/2018/12/12/sertifikat-repository-red-hat-kadaluarsa-pada-vm-microsoft-azure/</guid>
+        <description>Jika anda menggunakan VM Red Hat versi lama di Microsoft Azure, kadang anda mendapatkan masalah “SSL peer rejected your certificate as expired” jika ingin menginstall paket baru ataupun mengupate paket-paket. Itu terjadi karena sertifikat repositori sudah kadaluarsa, untuk memecahkan masalah tersebut cukup gunakan command
+yum update -y --disablerepo=* --enablerepo=rhui-microsoft-* rhui-azure-rhel7
+Setelah itu sekarang anda dapat menginstall atau update paket di Red Hat anda seperti yang biasa kamu lakukan.</description>
       </item>
     
       <item>
@@ -33,7 +34,7 @@ python -m pip uninstall pip &amp;amp;&amp;amp; apt install python-pip --reinstal
         <link>https://sibunglon.com/2018/12/10/peringatan-dependensi-cryptography/</link>
         <pubDate>Mon, 10 Dec 2018 23:41:25 +0700</pubDate>
         <guid>https://sibunglon.com/2018/12/10/peringatan-dependensi-cryptography/</guid>
-        <description>Requests Dependency Warning: Old version of cryptography Jika anda mendapatkan sebuah masalah jangan panik, apalagi ketemu error yang similiar dari judul tulsain itu berarti saat ini disistem anda menggunakan cryptography versi lama silahkan update dengan commad pip install --upgrade cryptography</description>
+        <description>Requests Dependency Warning: Old version of cryptography Jika anda mendapatkan sebuah masalah jangan panik, apalagi ketemu error yang similiar dari judul tulsain itu berarti saat ini disistem anda menggunakan cryptography versi lama silahkan update dengan command pip install --upgrade cryptography</description>
       </item>
     
       <item>
