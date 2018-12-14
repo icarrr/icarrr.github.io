@@ -61,7 +61,7 @@ Pada Lab ini saya asumsikan :
 
 <meta itemprop="datePublished" content="2018-12-10T17:45:30&#43;07:00" />
 <meta itemprop="dateModified" content="2018-12-10T17:45:30&#43;07:00" />
-<meta itemprop="wordCount" content="453">
+<meta itemprop="wordCount" content="472">
 
 
 
@@ -120,87 +120,87 @@ pid /run/nginx.pid;
 include /etc/nginx/modules-enabled/*.conf;
 
 events {
-	worker_connections 768;
-	# multi_accept on;
+    worker_connections 768;
+    # multi_accept on;
 }
 
 http {
 
-	##
-	# Basic Settings
-	##
+    ##
+    # Basic Settings
+    ##
 
-	sendfile on;
-	tcp_nopush on;
-	tcp_nodelay on;
-	keepalive_timeout 65;
-	types_hash_max_size 2048;
-	# server_tokens off;
+    sendfile on;
+    tcp_nopush on;
+    tcp_nodelay on;
+    keepalive_timeout 65;
+    types_hash_max_size 2048;
+    # server_tokens off;
 
-	# server_names_hash_bucket_size 64;
-	# server_name_in_redirect off;
+    # server_names_hash_bucket_size 64;
+    # server_name_in_redirect off;
 
-	include /etc/nginx/mime.types;
-	default_type application/octet-stream;
+    include /etc/nginx/mime.types;
+    default_type application/octet-stream;
 
-	##
-	# SSL Settings
-	##
+    ##
+    # SSL Settings
+    ##
 
-	ssl_protocols TLSv1 TLSv1.1 TLSv1.2; # Dropping SSLv3, ref: POODLE
-	ssl_prefer_server_ciphers on;
+    ssl_protocols TLSv1 TLSv1.1 TLSv1.2; # Dropping SSLv3, ref: POODLE
+    ssl_prefer_server_ciphers on;
 
-	##
-	# Logging Settings
-	##
+    ##
+    # Logging Settings
+    ##
 
-	#access_log /var/log/nginx/access.log;
-	#error_log /var/log/nginx/error.log;
+    #access_log /var/log/nginx/access.log;
+    #error_log /var/log/nginx/error.log;
 
-	##
-	# Gzip Settings
-	##
+    ##
+    # Gzip Settings
+    ##
 
-	gzip on;
+    gzip on;
 
-	# gzip_vary on;
-	# gzip_proxied any;
-	# gzip_comp_level 6;
-	# gzip_buffers 16 8k;
-	# gzip_http_version 1.1;
-	# gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript;
+    # gzip_vary on;
+    # gzip_proxied any;
+    # gzip_comp_level 6;
+    # gzip_buffers 16 8k;
+    # gzip_http_version 1.1;
+    # gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript;
 
-	##
-	# Virtual Host Configs
-	##
+    ##
+    # Virtual Host Configs
+    ##
 
-	include /etc/nginx/conf.d/*.conf;
+    include /etc/nginx/conf.d/*.conf;
 }
 
 
 #mail {
-#	# See sample authentication script at:
-#	# http://wiki.nginx.org/ImapAuthenticateWithApachePhpScript
+#    # See sample authentication script at:
+#    # http://wiki.nginx.org/ImapAuthenticateWithApachePhpScript
 #
-#	# auth_http localhost/auth.php;
-#	# pop3_capabilities &quot;TOP&quot; &quot;USER&quot;;
-#	# imap_capabilities &quot;IMAP4rev1&quot; &quot;UIDPLUS&quot;;
+#    # auth_http localhost/auth.php;
+#    # pop3_capabilities &quot;TOP&quot; &quot;USER&quot;;
+#    # imap_capabilities &quot;IMAP4rev1&quot; &quot;UIDPLUS&quot;;
 #
-#	server {
-#		listen     localhost:110;
-#		protocol   pop3;
-#		proxy      on;
-#	}
+#    server {
+#        listen     localhost:110;
+#        protocol   pop3;
+#        proxy      on;
+#    }
 #
-#	server {
-#		listen     localhost:143;
-#		protocol   imap;
-#		proxy      on;
-#	}
+#    server {
+#        listen     localhost:143;
+#        protocol   imap;
+#        proxy      on;
+#    }
 #}
 </code></pre>
 
-<p>2) Pindah ke direkori _/sibunglonlabs/config/nginx/ _dan edit file konfigurasi nginx yang</p>
+<p>2) Pindah ke direkori <em>/sibunglonlabs/config/nginx/</em> dan edit file konfigurasi nginx yang</p>
 
 <p><code>nano sibunglonlabs.conf</code></p>
 
@@ -216,14 +216,14 @@ http {
    error_log   /var/log/nginx/error.log  warn;
 
    location / {
-   	root   /deployments/batman/web/; #direktori rootnya
+       root   /sibunglonlabs/web; #direktori rootnya
         index  index.html index.htm;
-	add_header Cache-Control no-cache;
+    add_header Cache-Control no-cache;
    }
 
    error_page   500 502 503 504  /50x.html;
    location = /50x.html {
-   	root   /deployments/batman/web/;
+       root   /sibunglonlabs/web;
    }
 
 }
@@ -234,6 +234,8 @@ http {
 <p><code>ln -sf /sibunglonlabs/conf/nginx/sibunglonlabs.conf /etc/nginx/conf.d/</code></p>
 
 <p>5) Restart nginx, untuk menerapkan perubahan yang telah dilakukan.</p>
+
+<p>6) Sekarang subdomain anda aktif, untuk menghindari error akses pastikan direktori root subdomain sudah berisi file index.html atau sejenisnya.</p>
 
 <h4 id="tambahan">Tambahan</h4>
 
