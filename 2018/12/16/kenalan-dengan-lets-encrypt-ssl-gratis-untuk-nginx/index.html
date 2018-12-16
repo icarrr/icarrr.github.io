@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kenalan Dengan Let&#39;s Encrypt Ssl Gratis Untuk Nginx</title>
+  <meta name="author" content="Faizar Septiawan">
+  <meta name="author" content="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng">
+  <meta name="description" content="Read - Search - Ask | Sekali Gila Tetap Gila">
+  <meta name="description" content="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng">
+  <meta name="google-site-verification" content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM" />
+  
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110194945-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110194945-3');
+  </script>
+
+  <meta name="generator" content="Hugo 0.51" />
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/css/external.min.css" media="screen">
+
+  
+  
+  <link rel="stylesheet" href="/assets/css/styles.css" media="screen">
+
+  <link href="//fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
+
+  
+  
+  <link rel="shortcut icon" href="/assets/img/logo.png">
+
+  
+  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
+  <link href="/posts/index.xml" rel="feed" type="application/rss+xml" title="The Official Site of siBunglon" />
+
+  <meta property="og:title" content="Kenalan Dengan Let&#39;s Encrypt Ssl Gratis Untuk Nginx" />
+<meta property="og:description" content="Let&rsquo;s Encrypt? Apa sih let&rsquo;s encrypt itu?
+Let&rsquo;s encrypt adalah certificate Authority (CA) atau otoritas sertifikat yang menyediakan cara mudah untuk mendapatkan dan menginstall SSL pada web server, sehingga memungkinkan web server anda terenskripsi (HTTPS). Merupakan layanan yang disediakan oleh Internet Security Research Group (ISRG). ISRG memberikan dan mengaktifkan HTTPS secara gratis dengan alasan ingin menciptakan web yang lebih aman dan menjaga privasi. Sebenarnya untuk mendapatkan dan memasang SSL itu memiliki biaya sendiri namun jika untuk kebutuhan pengembangan, ngoprek / ngelab, let&rsquo;s encrypt ini menjadi solusi." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sibunglon.com/2018/12/16/kenalan-dengan-lets-encrypt-ssl-gratis-untuk-nginx/" /><meta property="article:published_time" content="2018-12-16T07:51:58&#43;07:00"/>
+<meta property="article:modified_time" content="2018-12-16T07:51:58&#43;07:00"/>
+
+  
+  
+<meta itemprop="name" content="Kenalan Dengan Let&#39;s Encrypt Ssl Gratis Untuk Nginx">
+<meta itemprop="description" content="Let&rsquo;s Encrypt? Apa sih let&rsquo;s encrypt itu?
+Let&rsquo;s encrypt adalah certificate Authority (CA) atau otoritas sertifikat yang menyediakan cara mudah untuk mendapatkan dan menginstall SSL pada web server, sehingga memungkinkan web server anda terenskripsi (HTTPS). Merupakan layanan yang disediakan oleh Internet Security Research Group (ISRG). ISRG memberikan dan mengaktifkan HTTPS secara gratis dengan alasan ingin menciptakan web yang lebih aman dan menjaga privasi. Sebenarnya untuk mendapatkan dan memasang SSL itu memiliki biaya sendiri namun jika untuk kebutuhan pengembangan, ngoprek / ngelab, let&rsquo;s encrypt ini menjadi solusi.">
+
+
+<meta itemprop="datePublished" content="2018-12-16T07:51:58&#43;07:00" />
+<meta itemprop="dateModified" content="2018-12-16T07:51:58&#43;07:00" />
+<meta itemprop="wordCount" content="667">
+
+
+
+<meta itemprop="keywords" content="Linux,Linux Indonesia,Ayo Belajar Linux," />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Kenalan Dengan Let&#39;s Encrypt Ssl Gratis Untuk Nginx"/>
+<meta name="twitter:description" content="Let&rsquo;s Encrypt? Apa sih let&rsquo;s encrypt itu?
+Let&rsquo;s encrypt adalah certificate Authority (CA) atau otoritas sertifikat yang menyediakan cara mudah untuk mendapatkan dan menginstall SSL pada web server, sehingga memungkinkan web server anda terenskripsi (HTTPS). Merupakan layanan yang disediakan oleh Internet Security Research Group (ISRG). ISRG memberikan dan mengaktifkan HTTPS secara gratis dengan alasan ingin menciptakan web yang lebih aman dan menjaga privasi. Sebenarnya untuk mendapatkan dan memasang SSL itu memiliki biaya sendiri namun jika untuk kebutuhan pengembangan, ngoprek / ngelab, let&rsquo;s encrypt ini menjadi solusi."/>
+
+</head>
+
+  <body>
+    
+      <nav>
+  <a href="/" title="">
+    siBunglon
+  </a>
+</nav>
+
+    
+    <main class="container">
+      
+  <article>
+    <header>
+      <small>
+        <time datetime="2018-12-16 07:51">2018-12-16</time>
+        &bull;</small>
+      <h1>Kenalan Dengan Let&#39;s Encrypt Ssl Gratis Untuk Nginx</h1>
+    </header>
+    <section>
+
+<h3 id="let-s-encrypt">Let&rsquo;s Encrypt?</h3>
+
+<p>Apa sih let&rsquo;s encrypt itu?</p>
+
+<p><strong>Let&rsquo;s encrypt</strong> adalah certificate Authority (CA) atau otoritas sertifikat yang menyediakan cara mudah untuk mendapatkan dan menginstall SSL pada web server, sehingga memungkinkan web server anda terenskripsi (HTTPS). Merupakan layanan yang disediakan oleh <strong>Internet Security Research Group</strong> (<strong>ISRG</strong>). <strong>ISRG</strong> memberikan dan mengaktifkan HTTPS secara gratis dengan alasan ingin menciptakan web yang lebih aman dan menjaga privasi. Sebenarnya untuk mendapatkan dan memasang SSL itu memiliki biaya sendiri namun jika untuk kebutuhan pengembangan, ngoprek / ngelab, <strong>let&rsquo;s encrypt</strong> ini menjadi solusi.</p>
+
+<blockquote>
+<p>Sebelum memulai pastikan domain telah terdaftar dan mengarah ke server yang dituju.</p>
+</blockquote>
+
+<h3 id="bermain-dengan-let-s-encrypt">Bermain Dengan Let&rsquo;s Encrypt</h3>
+
+<h5 id="untuk-pengguna-rhel-7-atau-centos-7">Untuk pengguna RHEL 7 atau CentOS 7</h5>
+
+<p>1) Untuk mendapatakan dan memasang SSL gratis dari let&rsquo;s encrypt dibutuhkan aplikasi <strong>certbot</strong> yang akan mengaktifkan HTTPS secara otomatis di web server. Untuk memasang certbot cukup gunakan command <code>sudo yum install certbot-nginx</code>.</p>
+
+<p>2) Pastikan domain anda yang terdaftar telah di tentukan pada konfigursi nginx, pada lab sebelumnya telah dilakukan kustom konfigurasi nah disitu ada <strong>server_name</strong>, pastikan <strong>server_name</strong> mengararah ke domain. Berikut konfugurasi yang dimaksud:</p>
+
+<pre><code>server {
+   server_name sibunglon.com;
+
+   access_log  /var/log/nginx/access.log;
+   error_log   /var/log/nginx/error.log  warn;
+
+   location / {
+       root   /sibunglonlabs/web;
+        index  index.html index.htm;
+    add_header Cache-Control no-cache;
+   }
+
+   error_page   500 502 503 504  /50x.html;
+   location = /50x.html {
+       root   /sibunglonlabs/web;
+   }
+
+}
+</code></pre>
+
+<p>3) Jika anda melakukan perubahan pada file konfigurasi nginx, diwajibkan reload nginx. Namu jika anda cuman mengecek dan semuanya baik-baik saja langkah ini bisa di lewati.</p>
+
+<p>4) Untuk mendapatkan dan memasang SSL, cukup gunakan command:</p>
+
+<p><code>sudo certbot --nginx -d sibunglon.com -d www.sibunglon.com</code></p>
+
+<p>Pada proses pemasangan SSL akan dimintai email aktif untuk keperluan konfirmasi saja, setelah itu anda akan diminta prosedur pengarahan.</p>
+
+<pre><code>Please choose whether or not to redirect HTTP traffic to HTTPS, removing HTTP access.
+-------------------------------------------------------------------------------
+1: No redirect - Make no further changes to the webserver configuration.
+2: Redirect - Make all requests redirect to secure HTTPS access. Choose this for
+new sites, or if you're confident your site works on HTTPS. You can undo this
+change by editing your web server's configuration.
+-------------------------------------------------------------------------------
+Select the appropriate number [1-2] then [enter] (press 'c' to cancel):
+</code></pre>
+
+<p>Jika memasukkan nomor 1, pengguna dibiarkan mengakses melalui protokol http dan https. Jika memasukkan nomor 2, pengguna akan diarahkan secara otomatis ke protokol https jika mengakses melalui protokol http.</p>
+
+<p>5) Sekarang SSL telah terpasang di web server anda.</p>
+
+<h5 id="untuk-pengguna-ubuntu-16-atau-ubuntu-18">Untuk pengguna Ubuntu 16 atau Ubuntu 18</h5>
+
+<p>1) Untuk mendapatakan dan memasang SSL gratis dari let&rsquo;s encrypt dibutuhkan aplikasi <strong>certbot</strong> yang akan mengaktifkan HTTPS secara otomatis di web server. Untuk memasang certbot, tambahkan repositorinya terlebih dahulu .</p>
+
+<pre><code>sudo add-apt-repository ppa:certbot/certbot
+sudo apt-get install python-certbot-nginx
+</code></pre>
+
+<p>2) Pastikan domain anda yang terdaftar telah di tentukan pada konfigursi nginx, pada lab sebelumnya telah dilakukan kustom konfigurasi nah disitu ada <strong>server_name</strong>, pastikan <strong>server_name</strong> mengararah ke domain. Berikut konfugurasi yang dimaksud:</p>
+
+<pre><code>server {
+   server_name sibunglon.com;
+
+   access_log  /var/log/nginx/access.log;
+   error_log   /var/log/nginx/error.log  warn;
+
+   location / {
+       root   /sibunglonlabs/web;
+        index  index.html index.htm;
+    add_header Cache-Control no-cache;
+   }
+
+   error_page   500 502 503 504  /50x.html;
+   location = /50x.html {
+       root   /sibunglonlabs/web;
+   }
+
+}
+</code></pre>
+
+<p>3) Jika anda melakukan perubahan pada file konfigurasi nginx, diwajibkan reload nginx. Namu jika anda cuman mengecek dan semuanya baik-baik saja langkah ini bisa di lewati.</p>
+
+<p>4) Untuk mendapatkan dan memasang SSL, cukup gunakan command:</p>
+
+<p><code>sudo certbot --nginx -d sibunglon.com -d www.sibunglon.com</code></p>
+
+<p>Pada proses pemasangan SSL akan dimintai email aktif untuk keperluan konfirmasi saja, setelah itu anda akan diminta prosedur pengarahan.</p>
+
+<pre><code>Please choose whether or not to redirect HTTP traffic to HTTPS, removing HTTP access.
+-------------------------------------------------------------------------------
+1: No redirect - Make no further changes to the webserver configuration.
+2: Redirect - Make all requests redirect to secure HTTPS access. Choose this for
+new sites, or if you're confident your site works on HTTPS. You can undo this
+change by editing your web server's configuration.
+-------------------------------------------------------------------------------
+Select the appropriate number [1-2] then [enter] (press 'c' to cancel):
+</code></pre>
+
+<p>Jika memasukkan nomor 1, pengguna dibiarkan mengakses melalui protokol http dan https. Jika memasukkan nomor 2, pengguna akan diarahkan secara otomatis ke protokol https jika mengakses melalui protokol http.</p>
+
+<p>5) Sekarang SSL telah terpasang di web server anda.</p>
+</section>
+    <footer>
+      <hr>
+      <div class="meta">
+        <p class="tags">
+          
+            
+              <a href="/tags/linux">
+                <span>#</span>Linux</a>
+            
+              <a href="/tags/linux-indonesia">
+                <span>#</span>Linux Indonesia</a>
+            
+              <a href="/tags/ayo-belajar-linux">
+                <span>#</span>Ayo Belajar Linux</a>
+            
+          
+        </p>
+      </div>
+      <hr>
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sibunglonlabs" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </footer>
+  </article>
+
+    </main>
+    
+      <footer>
+  <p>
+    &copy; 2018 Faizar Septiawan. <a href="http://creativecommons.org/licenses/by-sa/4.0/">Some Rights Reserved</a>.
+  </p>
+  <p>
+    Powered by <a href="https://gohugo.io" title="A Fast and Flexible Website Generator">Hugo</a> &amp; <a href="https://github.com/eshlox/simplicity" title="Hugo theme">Simplicity</a>.
+  </p>
+</footer>
+
+    
+    
+    
+    
+    
+    
+    
+    <script src="/assets/js/scripts.min.js"></script>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-110194945-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>

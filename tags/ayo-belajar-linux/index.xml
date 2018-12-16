@@ -6,10 +6,19 @@
     <description>Recent content in Ayo Belajar Linux on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 14 Dec 2018 11:03:50 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 16 Dec 2018 07:51:58 +0700</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/ayo-belajar-linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Kenalan Dengan Let&#39;s Encrypt Ssl Gratis Untuk Nginx</title>
+        <link>https://sibunglon.com/2018/12/16/kenalan-dengan-lets-encrypt-ssl-gratis-untuk-nginx/</link>
+        <pubDate>Sun, 16 Dec 2018 07:51:58 +0700</pubDate>
+        <guid>https://sibunglon.com/2018/12/16/kenalan-dengan-lets-encrypt-ssl-gratis-untuk-nginx/</guid>
+        <description>Let&amp;rsquo;s Encrypt? Apa sih let&amp;rsquo;s encrypt itu?
+Let&amp;rsquo;s encrypt adalah certificate Authority (CA) atau otoritas sertifikat yang menyediakan cara mudah untuk mendapatkan dan menginstall SSL pada web server, sehingga memungkinkan web server anda terenskripsi (HTTPS). Merupakan layanan yang disediakan oleh Internet Security Research Group (ISRG). ISRG memberikan dan mengaktifkan HTTPS secara gratis dengan alasan ingin menciptakan web yang lebih aman dan menjaga privasi. Sebenarnya untuk mendapatkan dan memasang SSL itu memiliki biaya sendiri namun jika untuk kebutuhan pengembangan, ngoprek / ngelab, let&amp;rsquo;s encrypt ini menjadi solusi.</description>
+      </item>
     
       <item>
         <title>Membuat Subdomain Dengan Nginx</title>
