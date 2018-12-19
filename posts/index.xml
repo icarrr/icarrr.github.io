@@ -6,10 +6,20 @@
     <description>Recent content in Posts on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 16 Dec 2018 07:51:58 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 18 Dec 2018 17:30:24 +0700</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Manajemen Linux Server Menggunakan Cockpit</title>
+        <link>https://sibunglon.com/2018/12/18/manajemen-linux-server-menggunakan-cockpit/</link>
+        <pubDate>Tue, 18 Dec 2018 17:30:24 +0700</pubDate>
+        <guid>https://sibunglon.com/2018/12/18/manajemen-linux-server-menggunakan-cockpit/</guid>
+        <description>Cockpit? Apa sih cockpit itu? Bukannya cockpit itu ruang khususnya pilot?
+Cockpit adalah sebuah aplikasi adminstrasi server berbasi web. Dengan cockpit, grafik penggunaan cpu, memory, network, hdd dapat dilihat langsung pada saat autentikasi user cockpit berhasil serta dapat mengontrol service yang dijalankan melalui SystemD.
+Cockpit berjalan di port 9090, tidak membutuhkan web server jadi jika anda belum menginstall web server apapun, itu tidak menjadi masalah, serta resource yang digunakan cockpit sangat sedikit karena service cockpit akan dijalankan secara otomatis jika anda mencoba mengaksesnya melalui web page dan setelah beberapa menit setelah anda logout secara otomatis service cockpit akan di matikan.</description>
+      </item>
     
       <item>
         <title>Kenalan Dengan Let&#39;s Encrypt SSL Gratis Untuk Nginx</title>
