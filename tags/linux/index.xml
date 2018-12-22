@@ -6,10 +6,20 @@
     <description>Recent content in Linux on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 18 Dec 2018 17:30:24 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 23 Dec 2018 00:14:35 +0700</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Menonaktifkan Plugin Terminal Dari Cockpit</title>
+        <link>https://sibunglon.com/2018/12/23/menonaktifkan-plugin-terminal-dari-cockpit/</link>
+        <pubDate>Sun, 23 Dec 2018 00:14:35 +0700</pubDate>
+        <guid>https://sibunglon.com/2018/12/23/menonaktifkan-plugin-terminal-dari-cockpit/</guid>
+        <description>Cockpit Apa sih cockpit itu?
+Pertanyaan sejenis itu sudah di tulis pada lab sebelumnya, karena di lab sebelumnya kita awali perkenalan dulu :D Kali aja jatuh cinta sama teman baru, kan gak enak kalau sebelumnya gak kenalan dulu :D
+Oh ya mungkin ada yang kepikiran tentang keamanan server jika memasang cockpit di server dan memberikan akses role user yang dapat mengontrol systemD, karena secara default cockpit mengaktifkan plugin terminal. Dengan adanya terminal/shell, user yang login ke cockpit dengan role super user atau sudo bisa saja melakukan diluar sepengetahuan anda.</description>
+      </item>
     
       <item>
         <title>Manajemen Linux Server Menggunakan Cockpit</title>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menonaktifkan Plugin Terminal Dari Cockpit</title>
+  <meta name="author" content="Faizar Septiawan">
+  <meta name="author" content="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng">
+  <meta name="description" content="Read - Search - Ask | Sekali Gila Tetap Gila">
+  <meta name="description" content="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng">
+  <meta name="google-site-verification" content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM" />
+  
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110194945-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110194945-3');
+  </script>
+
+  <meta name="generator" content="Hugo 0.51" />
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/css/external.min.css" media="screen">
+
+  
+  
+  <link rel="stylesheet" href="/assets/css/styles.css" media="screen">
+
+  <link href="//fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
+
+  
+  
+  <link rel="shortcut icon" href="/assets/img/logo.png">
+
+  
+  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
+  <link href="/posts/index.xml" rel="feed" type="application/rss+xml" title="The Official Site of siBunglon" />
+
+  <meta property="og:title" content="Menonaktifkan Plugin Terminal Dari Cockpit" />
+<meta property="og:description" content="Cockpit Apa sih cockpit itu?
+Pertanyaan sejenis itu sudah di tulis pada lab sebelumnya, karena di lab sebelumnya kita awali perkenalan dulu :D Kali aja jatuh cinta sama teman baru, kan gak enak kalau sebelumnya gak kenalan dulu :D
+Oh ya mungkin ada yang kepikiran tentang keamanan server jika memasang cockpit di server dan memberikan akses role user yang dapat mengontrol systemD, karena secara default cockpit mengaktifkan plugin terminal. Dengan adanya terminal/shell, user yang login ke cockpit dengan role super user atau sudo bisa saja melakukan diluar sepengetahuan anda." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sibunglon.com/2018/12/23/menonaktifkan-plugin-terminal-dari-cockpit/" /><meta property="article:published_time" content="2018-12-23T00:14:35&#43;07:00"/>
+<meta property="article:modified_time" content="2018-12-23T00:14:35&#43;07:00"/>
+
+  
+  
+<meta itemprop="name" content="Menonaktifkan Plugin Terminal Dari Cockpit">
+<meta itemprop="description" content="Cockpit Apa sih cockpit itu?
+Pertanyaan sejenis itu sudah di tulis pada lab sebelumnya, karena di lab sebelumnya kita awali perkenalan dulu :D Kali aja jatuh cinta sama teman baru, kan gak enak kalau sebelumnya gak kenalan dulu :D
+Oh ya mungkin ada yang kepikiran tentang keamanan server jika memasang cockpit di server dan memberikan akses role user yang dapat mengontrol systemD, karena secara default cockpit mengaktifkan plugin terminal. Dengan adanya terminal/shell, user yang login ke cockpit dengan role super user atau sudo bisa saja melakukan diluar sepengetahuan anda.">
+
+
+<meta itemprop="datePublished" content="2018-12-23T00:14:35&#43;07:00" />
+<meta itemprop="dateModified" content="2018-12-23T00:14:35&#43;07:00" />
+<meta itemprop="wordCount" content="160">
+
+
+
+<meta itemprop="keywords" content="Linux,Linux Indonesia,Ayo Belajar Linux," />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Menonaktifkan Plugin Terminal Dari Cockpit"/>
+<meta name="twitter:description" content="Cockpit Apa sih cockpit itu?
+Pertanyaan sejenis itu sudah di tulis pada lab sebelumnya, karena di lab sebelumnya kita awali perkenalan dulu :D Kali aja jatuh cinta sama teman baru, kan gak enak kalau sebelumnya gak kenalan dulu :D
+Oh ya mungkin ada yang kepikiran tentang keamanan server jika memasang cockpit di server dan memberikan akses role user yang dapat mengontrol systemD, karena secara default cockpit mengaktifkan plugin terminal. Dengan adanya terminal/shell, user yang login ke cockpit dengan role super user atau sudo bisa saja melakukan diluar sepengetahuan anda."/>
+
+</head>
+
+  <body>
+    
+      <nav>
+  <a href="/" title="">
+    siBunglon
+  </a>
+</nav>
+
+    
+    <main class="container">
+      
+  <article>
+    <header>
+      <small>
+        <time datetime="2018-12-23 12:14">2018-12-23</time>
+        &bull;</small>
+      <h1>Menonaktifkan Plugin Terminal Dari Cockpit</h1>
+    </header>
+    <section>
+
+<h3 id="cockpit">Cockpit</h3>
+
+<p>Apa sih cockpit itu?</p>
+
+<p>Pertanyaan sejenis itu sudah di tulis pada lab sebelumnya, karena di lab sebelumnya kita awali perkenalan dulu :D Kali aja jatuh cinta sama teman baru, kan gak enak kalau sebelumnya gak kenalan dulu :D</p>
+
+<p>Oh ya mungkin ada yang kepikiran tentang keamanan server jika memasang cockpit di server dan memberikan akses role user yang dapat mengontrol systemD, karena secara default cockpit mengaktifkan plugin terminal. Dengan adanya terminal/shell, user yang login ke cockpit dengan role super user atau sudo bisa saja melakukan diluar sepengetahuan anda. Nah untuk menghindari aktifitas yang tidak diinginkan, plugin terminal bisa dinonaktifkan. Untuk lebih lanjutnya, hayukk bermain dengan si cockpit lagi :v</p>
+
+<h3 id="bermain-dengan-cockpit">Bermain Dengan Cockpit</h3>
+
+<p>1) Untuk menonaktifkan plugin terminal, pastikan anda bisa mengakses server anda saat ini.</p>
+
+<p>2) Edit file manifest.json dengan command <code>nano /usr/share/cockpit/systemd/manifest.json</code>.</p>
+
+<p>3) hilangkan sintaks berikut:</p>
+
+<pre><code> &quot;tools&quot;: {
+	&quot;terminal&quot;: {
+            &quot;label&quot;: &quot;Terminal&quot;
+        }
+    }
+</code></pre>
+
+<p>4) Silahkan cek dashboard cockpit anda, harusnya terminal tidak ada lagi di dashboard cockpit.</p>
+</section>
+    <footer>
+      <hr>
+      <div class="meta">
+        <p class="tags">
+          
+            
+              <a href="/tags/linux">
+                <span>#</span>Linux</a>
+            
+              <a href="/tags/linux-indonesia">
+                <span>#</span>Linux Indonesia</a>
+            
+              <a href="/tags/ayo-belajar-linux">
+                <span>#</span>Ayo Belajar Linux</a>
+            
+          
+        </p>
+      </div>
+      <hr>
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sibunglonlabs" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </footer>
+  </article>
+
+    </main>
+    
+      <footer>
+  <p>
+    &copy; 2018 Faizar Septiawan. <a href="http://creativecommons.org/licenses/by-sa/4.0/">Some Rights Reserved</a>.
+  </p>
+  <p>
+    Powered by <a href="https://gohugo.io" title="A Fast and Flexible Website Generator">Hugo</a> &amp; <a href="https://github.com/eshlox/simplicity" title="Hugo theme">Simplicity</a>.
+  </p>
+</footer>
+
+    
+    
+    
+    
+    
+    
+    
+    <script src="/assets/js/scripts.min.js"></script>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-110194945-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>
