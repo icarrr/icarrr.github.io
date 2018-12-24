@@ -6,10 +6,19 @@
     <description>Recent content in Ayo Belajar Linux on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Dec 2018 01:31:24 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 25 Dec 2018 04:33:58 +0700</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/ayo-belajar-linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Akses Server Dengan Autentikasi Private Key Ssh</title>
+        <link>https://sibunglon.com/2018/12/25/akses-server-dengan-autentikasi-private-key-ssh/</link>
+        <pubDate>Tue, 25 Dec 2018 04:33:58 +0700</pubDate>
+        <guid>https://sibunglon.com/2018/12/25/akses-server-dengan-autentikasi-private-key-ssh/</guid>
+        <description>Akses Server Dengan Autentikasi Private Key Ssh Login Ke Server Dengan Private Key? Emang bisa? Ya itu bisa.
+Umumnya server diakses menggunakan ssh dengan autentikasi password plain text, jika cuman akses 1 server dengan autentikasi password plain text itu masih biasa namun jika mengontrol banyak server dan passwordnya berbeda-beda, apakah anda masih siap mengingatnya? Apakah anda yakin ingin mencatatnya? Jika anda mencatatnya anda bisa saja masih repot karena harus mendefinisikan satu per satu hostname server beserta passwordnya.</description>
+      </item>
     
       <item>
         <title>Hak Akses Root Dengan Sudo Tanpa Password</title>
