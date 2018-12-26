@@ -6,10 +6,19 @@
     <description>Recent content in Ayo Belajar Linux on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Dec 2018 04:33:58 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 27 Dec 2018 01:29:42 +0700</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/ayo-belajar-linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Menonaktifkan Autentikasi Password Pada Login SSH</title>
+        <link>https://sibunglon.com/2018/12/27/menonaktifkan-autentikasi-password-pada-login-ssh/</link>
+        <pubDate>Thu, 27 Dec 2018 01:29:42 +0700</pubDate>
+        <guid>https://sibunglon.com/2018/12/27/menonaktifkan-autentikasi-password-pada-login-ssh/</guid>
+        <description>Login SSH Tanpa Password Plain Text? Login ssh tanpa password plain text? emang bisa? terus loginnya pake apa? cuman modal username aja?
+Ya, kali ini labnya tentang gimana caranya agar nantinya kalian dapat login ke server masing-masing tapi gak pakai password plain text lagi. Ya itu bisa saja terjadi, setelah menonaktifkan autentikasi password nanti kita login ke server masing-masing menggunakan private keynya sesuai pada lab sebelumnya. Jika autentikasi password plain text pada login ssh di nonaktifkan, agar bisa login ke server yang dibutuhkan cuman private key, username, ip atau domain server yang dituju.</description>
+      </item>
     
       <item>
         <title>Akses Server Dengan Autentikasi Private Key SSH</title>
