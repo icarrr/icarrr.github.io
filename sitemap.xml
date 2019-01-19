@@ -3,6 +3,13 @@
   
     
       <url>
+        <loc>https://sibunglon.com/2019/01/16/berkenalan-dengan-ansible/</loc>
+        <lastmod>2019-01-16T02:23:28+07:00</lastmod>
+      </url>
+    
+  
+    
+      <url>
         <loc>https://sibunglon.com/2018/12/27/menonaktifkan-autentikasi-password-pada-login-ssh/</loc>
         <lastmod>2018-12-27T01:29:42+07:00</lastmod>
       </url>
@@ -38,7 +45,7 @@
   
     
       <url>
-        <loc>https://sibunglon.com/2018/12/16/kenalan-dengan-lets-encrypt-ssl-gratis-untuk-nginx/</loc>
+        <loc>https://sibunglon.com/2018/12/16/berkenalan-dengan-lets-encrypt-ssl-gratis-untuk-nginx/</loc>
         <lastmod>2018-12-16T07:51:58+07:00</lastmod>
       </url>
     
@@ -907,7 +914,7 @@
     
       <url>
         <loc>https://sibunglon.com/tags/ayo-belajar-linux/</loc>
-        <lastmod>2018-12-27T01:29:42+07:00</lastmod>
+        <lastmod>2019-01-16T02:23:28+07:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -946,7 +953,7 @@
     
       <url>
         <loc>https://sibunglon.com/tags/centos/</loc>
-        <lastmod>2018-12-10T17:45:30+07:00</lastmod>
+        <lastmod>2019-01-16T02:23:28+07:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -954,7 +961,7 @@
     
       <url>
         <loc>https://sibunglon.com/tags/centos-indonesia/</loc>
-        <lastmod>2018-12-10T17:45:30+07:00</lastmod>
+        <lastmod>2019-01-16T02:23:28+07:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -1010,7 +1017,7 @@
     
       <url>
         <loc>https://sibunglon.com/tags/linux/</loc>
-        <lastmod>2018-12-27T01:29:42+07:00</lastmod>
+        <lastmod>2019-01-16T02:23:28+07:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -1018,7 +1025,7 @@
     
       <url>
         <loc>https://sibunglon.com/tags/linux-indonesia/</loc>
-        <lastmod>2018-12-27T01:29:42+07:00</lastmod>
+        <lastmod>2019-01-16T02:23:28+07:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -1050,7 +1057,7 @@
     
       <url>
         <loc>https://sibunglon.com/posts/</loc>
-        <lastmod>2018-12-27T01:29:42+07:00</lastmod>
+        <lastmod>2019-01-16T02:23:28+07:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -1058,7 +1065,7 @@
     
       <url>
         <loc>https://sibunglon.com/tags/red-hat/</loc>
-        <lastmod>2018-12-12T10:28:20+07:00</lastmod>
+        <lastmod>2019-01-16T02:23:28+07:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -1066,7 +1073,7 @@
     
       <url>
         <loc>https://sibunglon.com/tags/red-hat-indonesia/</loc>
-        <lastmod>2018-12-12T10:28:20+07:00</lastmod>
+        <lastmod>2019-01-16T02:23:28+07:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -1074,7 +1081,7 @@
     
       <url>
         <loc>https://sibunglon.com/tags/</loc>
-        <lastmod>2018-12-27T01:29:42+07:00</lastmod>
+        <lastmod>2019-01-16T02:23:28+07:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -1082,7 +1089,7 @@
     
       <url>
         <loc>https://sibunglon.com/</loc>
-        <lastmod>2018-12-27T01:29:42+07:00</lastmod>
+        <lastmod>2019-01-16T02:23:28+07:00</lastmod>
         <priority>0</priority>
       </url>
     

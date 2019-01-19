@@ -6,10 +6,21 @@
     <description>Recent content in Linux Indonesia on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Dec 2018 01:29:42 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 16 Jan 2019 02:23:28 +0700</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/linux-indonesia/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Berkenalan Dengan Ansible</title>
+        <link>https://sibunglon.com/2019/01/16/berkenalan-dengan-ansible/</link>
+        <pubDate>Wed, 16 Jan 2019 02:23:28 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/01/16/berkenalan-dengan-ansible/</guid>
+        <description>Ansible? Apa itu ansible? Untuk apa dia datang?
+Daripada banyak nanya hayuuuk berkenalan aja dengan ansible.
+Ansible adalah tool automation yang dimiliki oleh perusahaan yang bergerak dibidang teknologi yaitu RedHat. Ansible adalah perangkat lunak open source yang mengotomatiskan pemasangan software, manajemen konfigurasi, dan beberapa tugas lainnya. Ansible terhubung dengan client remotenya menggunakan ssh.
+Apa Kelebihan Ansible? Karena beberapa hari belakangan ini saya sebagai siBunglon telah mencobanya, maka dari itu siBunglon paparkan kelebihan penggunaaan ansible versinya sendiri :v hihihi</description>
+      </item>
     
       <item>
         <title>Menonaktifkan Autentikasi Password Pada Login SSH</title>
@@ -63,10 +74,10 @@ Cockpit berjalan di port 9090, tidak membutuhkan web server jadi jika anda belum
       </item>
     
       <item>
-        <title>Kenalan Dengan Let&#39;s Encrypt SSL Gratis Untuk Nginx</title>
-        <link>https://sibunglon.com/2018/12/16/kenalan-dengan-lets-encrypt-ssl-gratis-untuk-nginx/</link>
+        <title>Berkenalan Dengan Let&#39;s Encrypt SSL Gratis Untuk Nginx</title>
+        <link>https://sibunglon.com/2018/12/16/berkenalan-dengan-lets-encrypt-ssl-gratis-untuk-nginx/</link>
         <pubDate>Sun, 16 Dec 2018 07:51:58 +0700</pubDate>
-        <guid>https://sibunglon.com/2018/12/16/kenalan-dengan-lets-encrypt-ssl-gratis-untuk-nginx/</guid>
+        <guid>https://sibunglon.com/2018/12/16/berkenalan-dengan-lets-encrypt-ssl-gratis-untuk-nginx/</guid>
         <description>Let&amp;rsquo;s Encrypt? Apa sih let&amp;rsquo;s encrypt itu?
 Let&amp;rsquo;s encrypt adalah certificate Authority (CA) atau otoritas sertifikat yang menyediakan cara mudah untuk mendapatkan dan menginstall SSL pada web server, sehingga memungkinkan web server anda terenskripsi (HTTPS). Merupakan layanan yang disediakan oleh Internet Security Research Group (ISRG). ISRG memberikan dan mengaktifkan HTTPS secara gratis dengan alasan ingin menciptakan web yang lebih aman dan menjaga privasi. Sebenarnya untuk mendapatkan dan memasang SSL itu memiliki biaya sendiri namun jika untuk kebutuhan pengembangan, ngoprek / ngelab, let&amp;rsquo;s encrypt ini menjadi solusi.</description>
       </item>
