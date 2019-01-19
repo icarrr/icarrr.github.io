@@ -6,16 +6,16 @@
     <description>Recent content in Red Hat Indonesia on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 16 Jan 2019 02:23:28 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 19 Jan 2019 11:53:28 +0700</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/red-hat-indonesia/index.xml" rel="self" type="application/rss+xml" />
     
     
       <item>
         <title>Berkenalan Dengan Ansible</title>
-        <link>https://sibunglon.com/2019/01/16/berkenalan-dengan-ansible/</link>
-        <pubDate>Wed, 16 Jan 2019 02:23:28 +0700</pubDate>
-        <guid>https://sibunglon.com/2019/01/16/berkenalan-dengan-ansible/</guid>
+        <link>https://sibunglon.com/2019/01/19/berkenalan-dengan-ansible/</link>
+        <pubDate>Sat, 19 Jan 2019 11:53:28 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/01/19/berkenalan-dengan-ansible/</guid>
         <description>Ansible? Apa itu ansible? Untuk apa dia datang?
 Daripada banyak nanya hayuuuk berkenalan aja dengan ansible.
 Ansible adalah tool automation yang dimiliki oleh perusahaan yang bergerak dibidang teknologi yaitu RedHat. Ansible adalah perangkat lunak open source yang mengotomatiskan pemasangan software, manajemen konfigurasi, dan beberapa tugas lainnya. Ansible terhubung dengan client remotenya menggunakan ssh.
