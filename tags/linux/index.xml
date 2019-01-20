@@ -6,10 +6,18 @@
     <description>Recent content in Linux on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 Jan 2019 11:53:28 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 19 Jan 2019 21:24:37 +0700</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Install Aplikasi Linux Secara Massal? Pake Ansible Aja</title>
+        <link>https://sibunglon.com/2019/01/19/install-aplikasi-linux-secara-massal-pake-ansible-aja/</link>
+        <pubDate>Sat, 19 Jan 2019 21:24:37 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/01/19/install-aplikasi-linux-secara-massal-pake-ansible-aja/</guid>
+        <description>Pada saat kita dihadapkan dengan pilihan harus melakukan installasi aplikasi secara berulang ataupun harus melakukan installasi aplikasi yang sama di beberapa server dan diwaktu itu juga kalian mau ngelakuin sesuatu, tentu hal tersebut bikin mumet atau apalah. Bayangkan jika sekarang kalian disuruh melakukan hal tersebut untuk 15 sampai 50 server, mabok dan bete auto mode ON hihihi :v Apalagi kalau sistem operasinya berbeda beda, mungkin baru dengar aja seketika mabok dan bete udah auto ganti ke mode ON.</description>
+      </item>
     
       <item>
         <title>Berkenalan Dengan Ansible</title>

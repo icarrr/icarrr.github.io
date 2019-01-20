@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Install Aplikasi Linux Secara Massal? Pake Ansible Aja</title>
+  <meta name="author" content="Faizar Septiawan">
+  <meta name="author" content="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng">
+  <meta name="description" content="Read - Search - Ask | Sekali Gila Tetap Gila">
+  <meta name="description" content="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng">
+  
+  <meta name="google-site-verification" content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM" />
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110194945-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110194945-3');
+  </script>
+  
+  <script type="text/javascript">var _Hasync= _Hasync|| [];
+  _Hasync.push(['Histats.start', '1,4194642,4,0,0,0,00010000']);
+  _Hasync.push(['Histats.fasi', '1']);
+  _Hasync.push(['Histats.track_hits', '']);
+  (function() {
+  var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+  hs.src = ('//s10.histats.com/js15_as.js');
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+  })();</script>
+  <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4194642&101" alt="" border="0"></a></noscript>
+  
+
+  <meta name="generator" content="Hugo 0.51" />
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/css/external.min.css" media="screen">
+
+  
+  
+  <link rel="stylesheet" href="/assets/css/styles.css" media="screen">
+
+  <link href="//fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
+
+  
+  
+  <link rel="shortcut icon" href="/assets/img/logo.png">
+
+  
+  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
+  <link href="/posts/index.xml" rel="feed" type="application/rss+xml" title="The Official Site of siBunglon" />
+
+  <meta property="og:title" content="Install Aplikasi Linux Secara Massal? Pake Ansible Aja" />
+<meta property="og:description" content="Pada saat kita dihadapkan dengan pilihan harus melakukan installasi aplikasi secara berulang ataupun harus melakukan installasi aplikasi yang sama di beberapa server dan diwaktu itu juga kalian mau ngelakuin sesuatu, tentu hal tersebut bikin mumet atau apalah. Bayangkan jika sekarang kalian disuruh melakukan hal tersebut untuk 15 sampai 50 server, mabok dan bete auto mode ON hihihi :v Apalagi kalau sistem operasinya berbeda beda, mungkin baru dengar aja seketika mabok dan bete udah auto ganti ke mode ON." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sibunglon.com/2019/01/19/install-aplikasi-linux-secara-massal-pake-ansible-aja/" /><meta property="article:published_time" content="2019-01-19T21:24:37&#43;07:00"/>
+<meta property="article:modified_time" content="2019-01-19T21:24:37&#43;07:00"/>
+
+  
+  
+<meta itemprop="name" content="Install Aplikasi Linux Secara Massal? Pake Ansible Aja">
+<meta itemprop="description" content="Pada saat kita dihadapkan dengan pilihan harus melakukan installasi aplikasi secara berulang ataupun harus melakukan installasi aplikasi yang sama di beberapa server dan diwaktu itu juga kalian mau ngelakuin sesuatu, tentu hal tersebut bikin mumet atau apalah. Bayangkan jika sekarang kalian disuruh melakukan hal tersebut untuk 15 sampai 50 server, mabok dan bete auto mode ON hihihi :v Apalagi kalau sistem operasinya berbeda beda, mungkin baru dengar aja seketika mabok dan bete udah auto ganti ke mode ON.">
+
+
+<meta itemprop="datePublished" content="2019-01-19T21:24:37&#43;07:00" />
+<meta itemprop="dateModified" content="2019-01-19T21:24:37&#43;07:00" />
+<meta itemprop="wordCount" content="421">
+
+
+
+<meta itemprop="keywords" content="Linux,Linux Indonesia,Ayo Belajar Linux," />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Install Aplikasi Linux Secara Massal? Pake Ansible Aja"/>
+<meta name="twitter:description" content="Pada saat kita dihadapkan dengan pilihan harus melakukan installasi aplikasi secara berulang ataupun harus melakukan installasi aplikasi yang sama di beberapa server dan diwaktu itu juga kalian mau ngelakuin sesuatu, tentu hal tersebut bikin mumet atau apalah. Bayangkan jika sekarang kalian disuruh melakukan hal tersebut untuk 15 sampai 50 server, mabok dan bete auto mode ON hihihi :v Apalagi kalau sistem operasinya berbeda beda, mungkin baru dengar aja seketika mabok dan bete udah auto ganti ke mode ON."/>
+
+</head>
+
+  <body>
+    
+      <nav>
+  <a href="/" title="">
+    siBunglon
+  </a>
+</nav>
+
+    
+    <main class="container">
+      
+  <article>
+    <header>
+      <small>
+        <time datetime="2019-01-19 09:24">2019-01-19</time>
+        &bull;</small>
+      <h1>Install Aplikasi Linux Secara Massal? Pake Ansible Aja</h1>
+    </header>
+    <section>
+
+<p>Pada saat kita dihadapkan dengan pilihan harus melakukan installasi aplikasi secara berulang ataupun harus melakukan installasi aplikasi yang sama di beberapa server dan diwaktu itu juga kalian mau ngelakuin sesuatu, tentu hal tersebut bikin mumet atau apalah. Bayangkan jika sekarang kalian disuruh melakukan hal tersebut untuk 15 sampai 50 server, mabok dan bete auto mode ON hihihi :v Apalagi kalau sistem operasinya berbeda beda, mungkin baru dengar aja seketika mabok dan bete udah auto ganti ke mode ON.</p>
+
+<p>Nah karena pada artikel sebelumnya siBunglon telah mengajak kalian berkenalan dengan <strong>ansible</strong>, sekarang kalian diajak untuk memecahkan masalah kalian yang sesuai dengan point utama artikel ini, install aplikasi secara bersamaan di beberapa server atau menginstall aplikasi yang sama dengan apa yang diinstall pada server sebelumnya.</p>
+
+<p>Sebelum mode mabok dan betenya auto ON karena banyak menghayal memikirikan beberapa server, mending sekarang langsung main lagi :D Sebelum bermain di lab kali ini, saya asumsikan kalian telah membaca dan melakukan hal yang sama sesuai sesi bermain di artikel sebelumnya.</p>
+
+<p>Pada lab ini saya asumsikan:</p>
+
+<ul>
+<li>IP server = <strong>192.168.0.8</strong></li>
+<li>Username server =  <strong>airgreen</strong></li>
+<li>Identitas remote = <strong>airgreen</strong></li>
+<li>File inventaris = <strong>hosts</strong></li>
+<li>File playbook = <strong>build.yml</strong></li>
+</ul>
+
+<h3 id="bermain-dengan-ansible">Bermain Dengan Ansible</h3>
+
+<p><em>Note: pastikan ansible telah terinstall yah!</em></p>
+
+<p>1) Pastikan local kalian saat ini bisa berkomunikasi atau local bisa remote server tanpa harus dimintai password karena ansible menggunakan SSH untuk terhubung ke server yang dituju.</p>
+
+<p>2) Pastikan local kalian saat ini bisa berkomunikasi dengan server melalui ansible, coba kalian ping servernya dengan ansible menggunakan command <code>ansible ipServerOrDNSServer -m ping</code></p>
+
+<p>Jika outputnya seperti berikut berarti local anda sudah bisa berkomunikasi dengan server melalui ansible</p>
+
+<pre><code>192.168.0.8 | SUCCESS =&gt; {
+    &quot;changed&quot;: false,
+    &quot;ping&quot;: &quot;pong&quot;
+}
+</code></pre>
+
+<p>3) Buat inventaris dengan nama file <em>hosts</em> yang berisikan informasi server yaitu ip dan identity server anda, isinya seperti berikut ini.</p>
+
+<pre><code>[airgreen]
+192.168.0.8 ansible_ssh_user=airgreen
+</code></pre>
+
+<p>4) Buat playbook ansible dengan nama file <em>build.yml</em> yang berisi perintah perintah yang akan diterapkan ke server, isinya seperti berikut ini.</p>
+
+<pre><code>---
+- hosts: [airgreen]
+  remote_user: airgreen
+  become: true
+  become_user: root
+  become_method: sudo
+  tasks:
+     - name: Set NTP to inactive
+       shell: timedatectl set-ntp 0
+     - name: Set timezone to Asia/Jakarta
+       shell: timedatectl set-timezone Asia/Jakarta
+     - name: Update Repository
+       apt:
+         update_cache: yes
+     - name: Install Packages
+       apt:
+         name: &quot;{{ item }}&quot;
+         state: present
+       with_items:
+         - nginx
+         - unzip
+</code></pre>
+
+<p>5) Sekarang waktunya menjalankan playbooknya agar perintah dalam playbook tersebut segera dieksekusi diserver, gunakan command <code>ansible-playbook -i hosts build.yml</code>, dan silahkan tunggu hingga prosesnya selesai :D Sembari nunggu, enaknya ngopi aja hihihi :D</p>
+
+<p>Oh yaa biar lebih enak lagi, saya berikan juga videonya sesuai command yang dipaparkan
+<script id="asciicast-hubecPj54E8bApI28yWyLEMWY" src="https://asciinema.org/a/hubecPj54E8bApI28yWyLEMWY.js" async></script></p>
+</section>
+    <footer>
+      <hr>
+      <div class="meta">
+        <p class="tags">
+          
+            
+              <a href="/tags/linux">
+                <span>#</span>Linux</a>
+            
+              <a href="/tags/linux-indonesia">
+                <span>#</span>Linux Indonesia</a>
+            
+              <a href="/tags/ayo-belajar-linux">
+                <span>#</span>Ayo Belajar Linux</a>
+            
+          
+        </p>
+      </div>
+      <hr>
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sibunglonlabs" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </footer>
+  </article>
+
+    </main>
+    
+      <footer>
+  <p>
+    &copy; 2019 Faizar Septiawan. <a href="http://creativecommons.org/licenses/by-sa/4.0/">Some Rights Reserved</a>.
+  </p>
+  <p>
+    Powered by <a href="https://gohugo.io" title="A Fast and Flexible Website Generator">Hugo</a> &amp; <a href="https://github.com/eshlox/simplicity" title="Hugo theme">Simplicity</a>.
+  </p>
+</footer>
+
+    
+    
+    
+    
+    
+    
+    
+    <script src="/assets/js/scripts.min.js"></script>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-110194945-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>
