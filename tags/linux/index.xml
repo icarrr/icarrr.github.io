@@ -6,10 +6,20 @@
     <description>Recent content in Linux on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 Jan 2019 21:24:37 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 20 Jan 2019 18:11:43 +0700</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Menggunakan Ansible Untuk Kirim Pemberitahuan</title>
+        <link>https://sibunglon.com/2019/01/20/menggunakan-ansible-untuk-kirim-pemberitahuan/</link>
+        <pubDate>Sun, 20 Jan 2019 18:11:43 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/01/20/menggunakan-ansible-untuk-kirim-pemberitahuan/</guid>
+        <description>Ansible Kirim Pemberitahuan? Emang bisa? Kirimnya pakai apa? Sepertinya menarik.
+Melalui postingan beberapa hari yang lalu kita telah berkenalan secara kilat dengan ansible, saya kira postingan sebelumnya sudah cukup membantu dan mengantar kita untuk kepo kepo i si Ansible tersebut. Sesuai apa yang ada di web resminya, disana kita bisa lihat bahwa si Ansible mempunyai banyak module yang bisa digunakan bahkan dikembangkan.
+Diantara banyak module yang disediakan berdasarkan apa yang saya ketahui setelah berkenalan dengan si Ansible, ada 2 module yang bisa digunakan untuk mengirim pemberitahuan yaitu module sendgrid dan telegram.</description>
+      </item>
     
       <item>
         <title>Install Aplikasi Linux Secara Massal? Pake Ansible Aja</title>
