@@ -6,10 +6,19 @@
     <description>Recent content in Mikrotik Indonesia on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Oct 2017 12:38:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 07 Feb 2019 20:35:49 +0700</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/mikrotik-indonesia/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Memisahkan Traffic Game Online Dan Browsing Dengan Mikrotik</title>
+        <link>https://sibunglon.com/2019/02/07/memisahkan-traffic-game-online-dan-browsing-dengan-mikrotik/</link>
+        <pubDate>Thu, 07 Feb 2019 20:35:49 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/02/07/memisahkan-traffic-game-online-dan-browsing-dengan-mikrotik/</guid>
+        <description>Memisahkan Traffic? Pernah gak sih kalian berpikir untuk memisahkan traffic suatu layanan dijaringan lokal atau mungkin diantara pembaca sudah ada yang telah berkenalan atau mendengarkan tentang pemisahan traffic? Contohnya untuk jaringan di Warung Kopi (Warkop), sekolah, kantor, taman, dll.
+Semakin hari kebutuhan akan manajemen jaringan semakin beragam. Hal ini tidak lepas dari semakin beragam pula layanan internet yang ada. Diasumsikan sebagai penyedia layanan akses internet, kalian pasti ingin memberikan layanan yang terbaik ke semua client.</description>
+      </item>
     
       <item>
         <title>Sharing bersama (materi bandwith management &amp; queue)</title>

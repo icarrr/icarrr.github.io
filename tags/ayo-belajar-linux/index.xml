@@ -6,10 +6,19 @@
     <description>Recent content in Ayo Belajar Linux on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Jan 2019 18:11:43 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 07 Feb 2019 20:35:49 +0700</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/ayo-belajar-linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Memisahkan Traffic Game Online Dan Browsing Dengan Mikrotik</title>
+        <link>https://sibunglon.com/2019/02/07/memisahkan-traffic-game-online-dan-browsing-dengan-mikrotik/</link>
+        <pubDate>Thu, 07 Feb 2019 20:35:49 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/02/07/memisahkan-traffic-game-online-dan-browsing-dengan-mikrotik/</guid>
+        <description>Memisahkan Traffic? Pernah gak sih kalian berpikir untuk memisahkan traffic suatu layanan dijaringan lokal atau mungkin diantara pembaca sudah ada yang telah berkenalan atau mendengarkan tentang pemisahan traffic? Contohnya untuk jaringan di Warung Kopi (Warkop), sekolah, kantor, taman, dll.
+Semakin hari kebutuhan akan manajemen jaringan semakin beragam. Hal ini tidak lepas dari semakin beragam pula layanan internet yang ada. Diasumsikan sebagai penyedia layanan akses internet, kalian pasti ingin memberikan layanan yang terbaik ke semua client.</description>
+      </item>
     
       <item>
         <title>Menggunakan Ansible Untuk Kirim Pemberitahuan</title>
@@ -159,18 +168,18 @@ firewall-cmd --permanent --zone=public --add-service=https  Setelah diizinkan, f
     
       <item>
         <title>Berkenalan Dengan Nginx di RHEL/CentOS</title>
-        <link>https://sibunglon.com/2018/12/10/berkenalan-dengan-nginx-di-rhel-centos/</link>
+        <link>https://sibunglon.com/2018/12/10/berkenalan-dengan-nginx-di-rhel/centos/</link>
         <pubDate>Mon, 10 Dec 2018 07:44:24 +0700</pubDate>
-        <guid>https://sibunglon.com/2018/12/10/berkenalan-dengan-nginx-di-rhel-centos/</guid>
+        <guid>https://sibunglon.com/2018/12/10/berkenalan-dengan-nginx-di-rhel/centos/</guid>
         <description>Nginx? Apa sih nginx itu? Fungsinya buat apa? Mungkin itu yang terlintas dipikirian beberapa orang jika berkenalan dengan hal baru. Maka dari itu pada kali ini yang akan dibahas pada Lab ini yaitu berkenalan dan bagaimana memasang nginx.
 Nginx, banyak orang membicarakannya meskipun salah dipelafalannya. Dulu saya juga salah melafakannya namun setelah diruqyah sama m1m1n atau yang dikenal dengan Andy Hidayat, sekarang gak salah pelafalan lagi :D . Nginx dibaca &amp;ldquo;engine X&amp;rdquo; bukan &amp;ldquo;nging X&amp;rdquo;.</description>
       </item>
     
       <item>
         <title>Share Pc/Laptop Lokal Ke Public</title>
-        <link>https://sibunglon.com/2018/12/07/share-pc-laptop-lokal-ke-public/</link>
+        <link>https://sibunglon.com/2018/12/07/share-pc/laptop-lokal-ke-public/</link>
         <pubDate>Fri, 07 Dec 2018 07:44:24 +0700</pubDate>
-        <guid>https://sibunglon.com/2018/12/07/share-pc-laptop-lokal-ke-public/</guid>
+        <guid>https://sibunglon.com/2018/12/07/share-pc/laptop-lokal-ke-public/</guid>
         <description>Ngrok Ngrok merupakan salah satu software yang dapat membuat sebuah tunnel atau terowongan yang aman melalui jalur internet agar dapat mengakses pc/laptop lokal tanpa harus memiliki ip publik sendiri.
 Jika masih ingin berkenalan lebih lanjut, bisa di stalking ke official sitenya :D https://ngrok.com
 Langkah - langkah menggunakan ngrok:
@@ -771,9 +780,9 @@ Dapat Mensinkronisasikan waktu pada mikrotik
     
       <item>
         <title>Atasi phpmyadmin error #1698 tidak bisa login root</title>
-        <link>https://sibunglon.com/2017/09/20/atasi-phpmyadmin-error-1698-tidak-bisa-login-root/</link>
+        <link>https://sibunglon.com/2017/09/20/atasi-phpmyadmin-error-#1698-tidak-bisa-login-root/</link>
         <pubDate>Wed, 20 Sep 2017 03:15:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/09/20/atasi-phpmyadmin-error-1698-tidak-bisa-login-root/</guid>
+        <guid>https://sibunglon.com/2017/09/20/atasi-phpmyadmin-error-#1698-tidak-bisa-login-root/</guid>
         <description>A. PendahuluanPada kesempatan ini yang saya posting/share yaitu troubleshoot phpmyadmin dengan kode error&amp;nbsp;#1698 atau tidak bisa login sebagai root
 B. PengertianPhpMyAdmin&amp;nbsp;adalah&amp;nbsp;perangkat lunak bebas&amp;nbsp;yang ditulis dalam&amp;nbsp;bahasa pemrograman&amp;nbsp;PHP&amp;nbsp;yang digunakan untuk menangani administrasi&amp;nbsp;MySQL&amp;nbsp;melalui&amp;nbsp;Jejaring Jagat Jembar&amp;nbsp;(World Wide Web). phpMyAdmin mendukung berbagai operasi MySQL, diantaranya (mengelola&amp;nbsp;basis data, tabel-tabel, bidang (fields), relasi (relations), indeks, pengguna (users), perizinan (permissions), dan lain-lain).
 C. Latar belakangIngin membagi pengetahuan tentang atasi permasalahan yang sama
@@ -867,9 +876,9 @@ B. PengertianRouting Information Protocol (RIP)&amp;nbsp;adalah sebuah protokol 
     
       <item>
         <title>Training entri data bersama Manis PT.Ebizu #day2</title>
-        <link>https://sibunglon.com/2017/09/14/training-entri-data-bersama-manis-pt.ebizu-day2/</link>
+        <link>https://sibunglon.com/2017/09/14/training-entri-data-bersama-manis-pt.ebizu-#day2/</link>
         <pubDate>Thu, 14 Sep 2017 02:01:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/09/14/training-entri-data-bersama-manis-pt.ebizu-day2/</guid>
+        <guid>https://sibunglon.com/2017/09/14/training-entri-data-bersama-manis-pt.ebizu-#day2/</guid>
         <description>PENDAHULUANEbizu adalah sebuah perusahaan DATA yang mengumpulkan data untuk tujuan tertentu. Ebizu ini memiliki banyak produk dintaranya adalah Maniz, Maniz sendiri adalah aplikasi yang menawarkan keuntungan berupa Voucher belanja, makan dll.
 ALAT DAN BAHAN
 ~ Laptop
@@ -882,9 +891,9 @@ TAHAPAN DAN PEMBAHASAN TrainingDi hari kedua ini dari pihak trainer, akan merevi
     
       <item>
         <title>Training entri data bersama Manis PT.Ebizu #day1</title>
-        <link>https://sibunglon.com/2017/09/13/training-entri-data-bersama-manis-pt.ebizu-day1/</link>
+        <link>https://sibunglon.com/2017/09/13/training-entri-data-bersama-manis-pt.ebizu-#day1/</link>
         <pubDate>Wed, 13 Sep 2017 02:00:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/09/13/training-entri-data-bersama-manis-pt.ebizu-day1/</guid>
+        <guid>https://sibunglon.com/2017/09/13/training-entri-data-bersama-manis-pt.ebizu-#day1/</guid>
         <description>PENDAHULUANEbizu adalah sebuah perusahaan DATA yang mengumpulkan data untuk tujuan tertentu. Ebizu ini memiliki banyak produk dintaranya adalah Maniz, Maniz sendiri adalah aplikasi yang menawarkan keuntungan berupa Voucher belanja, makan dll.
 ALAT DAN BAHAN
 ~ Laptop
