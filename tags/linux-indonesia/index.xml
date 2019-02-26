@@ -16,8 +16,8 @@
         <link>https://sibunglon.com/2019/02/16/error-generate-certificate-ssl-menggunakan-lets-encrypt/</link>
         <pubDate>Sat, 16 Feb 2019 17:19:08 +0700</pubDate>
         <guid>https://sibunglon.com/2019/02/16/error-generate-certificate-ssl-menggunakan-lets-encrypt/</guid>
-        <description>Beberapa bulan yang lalu I&amp;rsquo;m Batman masih bisa generate SSL menggunakan Let&amp;rsquo;s Encrypt namun hari ini I&amp;rsquo;m Batman menemukan error ketika akan generate SSL lagi dan I&amp;rsquo;m Batman mendapatkan error message seperti berikut:
-[root@tmli-dev valutac]# certbot --nginx -d repo.lab.sibunglon.com Traceback (most recent call last): File &amp;quot;/bin/certbot&amp;quot;, line 9, in &amp;lt;module&amp;gt; load_entry_point(&#39;certbot==0.29.1&#39;, &#39;console_scripts&#39;, &#39;certbot&#39;)() File &amp;quot;/usr/lib/python2.7/site-packages/pkg_resources/__init__.py&amp;quot;, line 487, in load_entry_point return get_distribution(dist).load_entry_point(group, name) File &amp;quot;/usr/lib/python2.7/site-packages/pkg_resources/__init__.py&amp;quot;, line 2728, in load_entry_point return ep.load() File &amp;quot;/usr/lib/python2.</description>
+        <description>Beberapa bulan yang lalu I&amp;rsquo;m siBunglon masih bisa generate SSL menggunakan Let&amp;rsquo;s Encrypt namun hari ini I&amp;rsquo;m siBunglon menemukan error ketika akan generate SSL lagi dan I&amp;rsquo;m siBunglon mendapatkan error message seperti berikut:
+[root@airgreen siBunglon]# certbot --nginx -d repo.lab.sibunglon.com Traceback (most recent call last): File &amp;quot;/bin/certbot&amp;quot;, line 9, in &amp;lt;module&amp;gt; load_entry_point(&#39;certbot==0.29.1&#39;, &#39;console_scripts&#39;, &#39;certbot&#39;)() File &amp;quot;/usr/lib/python2.7/site-packages/pkg_resources/__init__.py&amp;quot;, line 487, in load_entry_point return get_distribution(dist).load_entry_point(group, name) File &amp;quot;/usr/lib/python2.7/site-packages/pkg_resources/__init__.py&amp;quot;, line 2728, in load_entry_point return ep.load() File &amp;quot;/usr/lib/python2.</description>
       </item>
     
       <item>
