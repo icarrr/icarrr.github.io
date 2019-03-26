@@ -6,10 +6,19 @@
     <description>Recent content in Posts on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 03 Mar 2019 03:53:55 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 26 Mar 2019 14:26:11 +0700</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Diam Diam Port 443 Lagi Konflik</title>
+        <link>https://sibunglon.com/2019/03/26/diam-diam-port-443-lagi-konflik/</link>
+        <pubDate>Tue, 26 Mar 2019 14:26:11 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/03/26/diam-diam-port-443-lagi-konflik/</guid>
+        <description>Beberapa hari yang lalu lagi ada ide iseng nyobain main-main vm linux (virtual machine) menggunakan VMware Workstation Pro, niatnya mau online-nin semua vm yang telah dibuat tapi cuman punya 1 ip publik. Emang bisa? Terus gimana ngaksesnya/ngeremotenya? Bisa dong, waktu itu pake port forwarding untuk NAT di VMware Workstation Pro, karena maunya si vm tersebut dapat akses internet dan dapat diakses dari 1 ip public.
+Saya butuh web service yang dapat diakses melalui 1 publik yaitu 1 ip publik hostnya, okey saya pasang web service di salah satu vm.</description>
+      </item>
     
       <item>
         <title>Serunya Global Diversity CFP Day Jakarta 2019</title>
