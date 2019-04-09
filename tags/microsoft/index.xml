@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Microsoft on The Official Site of siBunglon</title>
+    <link>https://sibunglon.com/tags/microsoft/</link>
+    <description>Recent content in Microsoft on The Official Site of siBunglon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 09 Apr 2019 20:45:08 +0700</lastBuildDate>
+    
+      <atom:link href="https://sibunglon.com/tags/microsoft/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      <item>
+        <title>ValueError Saat Setup MSSQL Server Di Linux</title>
+        <link>https://sibunglon.com/2019/04/09/valueerror-saat-setup-mssql-server-di-linux/</link>
+        <pubDate>Tue, 09 Apr 2019 20:45:08 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/04/09/valueerror-saat-setup-mssql-server-di-linux/</guid>
+        <description>ValueError: unknown locale: UTF-8? Beberapa hari yang lalu saya sempat menulis step by step Microsoft SQL Server (MSSQL Server) di environment Linux, namun mungkin saja ada yang menemukan error salah satunya error dengan message ValueError: unknown locale: UTF-8, gak usah takut karena dari masalah itu ataupun lainnya kita dapat pelajaran baru😆
+Disuatu waktu saya install MSSQL Server Linux di environment berbeda dari sebelumnya, saya ikuti tuh step by step installasi MSSQL Server yang saya tulis sebelumnya, alhamdulillah dapat rejeki, dapat ValueError: unknown locale: UTF-8 pada saat setup MSSQL Server🤣 Dengan kemampuan sok tau saya😆 langsung disimpulkan maksud dari error message tersebut yaitu Lokal UTF-8 tidak di kenal.</description>
+      </item>
+    
+      <item>
+        <title>Mudahnya Memasang MSSQL Server di Linux</title>
+        <link>https://sibunglon.com/2019/04/05/mudahnya-memasang-mssql-server-di-linux/</link>
+        <pubDate>Fri, 05 Apr 2019 18:08:14 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/04/05/mudahnya-memasang-mssql-server-di-linux/</guid>
+        <description>Microsoft SQL Server di Linux? Diantara para pembaca mungkin ada yang kaget atau apa kalau produknya Microsoft bisa jalan di linux apalagi tanpa emulator ataupun tools lainnya. Yah itu bisa saja karena mungkin ada yang kemakan omongan bahwa produk Microsoft itu non open source. Dengan adanya MSSQL Server di linux jangan sampai ada terlalu kaget, positif thinking aja mungkin om Bill Gates udah mulai mengopen sourcekan produknya karena kasihan banyak yang berdosa karena menjadi pak tani gelapnya Microsoft😅</description>
+      </item>
+    
+  </channel>
+</rss>

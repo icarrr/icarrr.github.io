@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en-us" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ValueError Saat Setup MSSQL Server Di Linux</title>
+  <meta name="author" content="Faizar Septiawan">
+  <meta name="author" content="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng">
+  <meta name="description" content="Read - Search - Ask | Sekali Gila Tetap Gila">
+  <meta name="description" content="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng">
+  
+  <meta name="google-site-verification" content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM" />
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110194945-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110194945-3');
+  </script>
+  
+  <script type="text/javascript">var _Hasync= _Hasync|| [];
+  _Hasync.push(['Histats.start', '1,4194642,4,0,0,0,00010000']);
+  _Hasync.push(['Histats.fasi', '1']);
+  _Hasync.push(['Histats.track_hits', '']);
+  (function() {
+  var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+  hs.src = ('//s10.histats.com/js15_as.js');
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+  })();</script>
+  <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4194642&101" alt="" border="0"></a></noscript>
+  
+
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/css/external.min.css" media="screen">
+
+  
+  
+  <link rel="stylesheet" href="/assets/css/styles.css" media="screen">
+
+  <link href="//fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
+
+  
+  
+  <link rel="shortcut icon" href="/assets/img/logo.png">
+
+  
+  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
+  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
+
+  <meta property="og:title" content="ValueError Saat Setup MSSQL Server Di Linux" />
+<meta property="og:description" content="ValueError: unknown locale: UTF-8? Beberapa hari yang lalu saya sempat menulis step by step Microsoft SQL Server (MSSQL Server) di environment Linux, namun mungkin saja ada yang menemukan error salah satunya error dengan message ValueError: unknown locale: UTF-8, gak usah takut karena dari masalah itu ataupun lainnya kita dapat pelajaran baru😆
+Disuatu waktu saya install MSSQL Server Linux di environment berbeda dari sebelumnya, saya ikuti tuh step by step installasi MSSQL Server yang saya tulis sebelumnya, alhamdulillah dapat rejeki, dapat ValueError: unknown locale: UTF-8 pada saat setup MSSQL Server🤣 Dengan kemampuan sok tau saya😆 langsung disimpulkan maksud dari error message tersebut yaitu Lokal UTF-8 tidak di kenal." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sibunglon.com/2019/04/09/valueerror-saat-setup-mssql-server-di-linux/" />
+<meta property="article:published_time" content="2019-04-09T20:45:08&#43;07:00"/>
+<meta property="article:modified_time" content="2019-04-09T20:45:08&#43;07:00"/>
+
+  
+  
+<meta itemprop="name" content="ValueError Saat Setup MSSQL Server Di Linux">
+<meta itemprop="description" content="ValueError: unknown locale: UTF-8? Beberapa hari yang lalu saya sempat menulis step by step Microsoft SQL Server (MSSQL Server) di environment Linux, namun mungkin saja ada yang menemukan error salah satunya error dengan message ValueError: unknown locale: UTF-8, gak usah takut karena dari masalah itu ataupun lainnya kita dapat pelajaran baru😆
+Disuatu waktu saya install MSSQL Server Linux di environment berbeda dari sebelumnya, saya ikuti tuh step by step installasi MSSQL Server yang saya tulis sebelumnya, alhamdulillah dapat rejeki, dapat ValueError: unknown locale: UTF-8 pada saat setup MSSQL Server🤣 Dengan kemampuan sok tau saya😆 langsung disimpulkan maksud dari error message tersebut yaitu Lokal UTF-8 tidak di kenal.">
+
+
+<meta itemprop="datePublished" content="2019-04-09T20:45:08&#43;07:00" />
+<meta itemprop="dateModified" content="2019-04-09T20:45:08&#43;07:00" />
+<meta itemprop="wordCount" content="383">
+
+
+
+<meta itemprop="keywords" content="Microsoft,Linux,Linux Indonesia,Ayo Belajar Linux," />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="ValueError Saat Setup MSSQL Server Di Linux"/>
+<meta name="twitter:description" content="ValueError: unknown locale: UTF-8? Beberapa hari yang lalu saya sempat menulis step by step Microsoft SQL Server (MSSQL Server) di environment Linux, namun mungkin saja ada yang menemukan error salah satunya error dengan message ValueError: unknown locale: UTF-8, gak usah takut karena dari masalah itu ataupun lainnya kita dapat pelajaran baru😆
+Disuatu waktu saya install MSSQL Server Linux di environment berbeda dari sebelumnya, saya ikuti tuh step by step installasi MSSQL Server yang saya tulis sebelumnya, alhamdulillah dapat rejeki, dapat ValueError: unknown locale: UTF-8 pada saat setup MSSQL Server🤣 Dengan kemampuan sok tau saya😆 langsung disimpulkan maksud dari error message tersebut yaitu Lokal UTF-8 tidak di kenal."/>
+
+
+  
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-7058165780533171",
+    enable_page_level_ads: true
+  });
+</script>
+</head>
+
+  <body>
+    
+      <nav>
+  <a href="/" title="">
+    siBunglon
+  </a>
+</nav>
+
+    
+    <main class="container">
+      
+  <article>
+    <header>
+      <small>
+        <time datetime="2019-04-09 20:45:08&#43;0700">2019-04-09</time>
+        &bull;</small>
+      <h1>ValueError Saat Setup MSSQL Server Di Linux</h1>
+    </header>
+    <section>
+
+<h3 id="valueerror-unknown-locale-utf-8">ValueError: unknown locale: UTF-8?</h3>
+
+<p>Beberapa hari yang lalu saya sempat menulis step by step Microsoft SQL Server (MSSQL Server) di environment Linux, namun mungkin saja ada yang menemukan error salah satunya error dengan message <strong>ValueError: unknown locale: UTF-8</strong>, gak usah takut karena dari masalah itu ataupun lainnya kita dapat pelajaran baru😆</p>
+
+<p>Disuatu waktu saya install MSSQL Server Linux di environment berbeda dari sebelumnya, saya ikuti tuh step by step installasi MSSQL Server yang saya tulis sebelumnya, alhamdulillah dapat rejeki, dapat <strong>ValueError: unknown locale: UTF-8</strong> pada saat setup MSSQL Server🤣  Dengan kemampuan sok tau saya😆  langsung disimpulkan maksud dari error message tersebut yaitu Lokal UTF-8 tidak di kenal. Okey berarti tugas saya yaitu bagaimana agar si lokal UTF-8 itu dikenali, dengan kemampuan sok tau auto isi var lokal dengan UTF-8 menggunakan command <code>export LC_ALL=en_US.UTF-8</code> , setelah itu eksekusi kembali command untuk setup MSSQL Server dan <strong>ValueError: unknown locale: UTF-8</strong> telah hilang.</p>
+
+<p>Berikut ini full message <strong>ValueError: unknown locale: UTF-8</strong> yang saya dapatkan:</p>
+
+<pre><code>[sibunglon@RizkaWandevi ~]$ sudo /opt/mssql/bin/mssql-conf setup
+Error in localization. Using en_US.
+Choose an edition of SQL Server:
+  1) Evaluation (free, no production use rights, 180-day limit)
+  2) Developer (free, no production use rights)
+  3) Express (free)
+  4) Web (PAID)
+  5) Standard (PAID)
+  6) Enterprise (PAID)
+  7) Enterprise Core (PAID)
+  8) I bought a license through a retail sales channel and have a product key to enter.
+
+Details about editions can be found at
+https://go.microsoft.com/fwlink/?LinkId=852748
+
+Use of PAID editions of this software requires separate licensing through a
+Microsoft Volume Licensing program.
+By choosing a PAID edition, you are verifying that you have the appropriate
+number of licenses in place to install and run this software.
+
+Enter your edition(1-8): 3
+The license terms for this product can be found in
+/usr/share/doc/mssql-server or downloaded from:
+https://go.microsoft.com/fwlink/?LinkId=855862
+
+The privacy statement can be viewed at:
+https://go.microsoft.com/fwlink/?LinkId=853010
+
+Do you accept the license terms? [Yes/No]:yes
+
+Traceback (most recent call last):
+  File &quot;/opt/mssql/bin/../lib/mssql-conf/mssql-conf.py&quot;, line 279, in &lt;module&gt;
+    main()
+  File &quot;/opt/mssql/bin/../lib/mssql-conf/mssql-conf.py&quot;, line 275, in main
+    processCommands()
+  File &quot;/opt/mssql/bin/../lib/mssql-conf/mssql-conf.py&quot;, line 199, in processCommands
+    COMMAND_TABLE[args.which]()
+  File &quot;/opt/mssql/bin/../lib/mssql-conf/mssql-conf.py&quot;, line 54, in handleSetup
+    exit(mssqlconfhelper.setupSqlServer(eulaAccepted, noprompt=args.noprompt))
+  File &quot;/opt/mssql/lib/mssql-conf/mssqlconfhelper.py&quot;, line 817, in setupSqlServer
+    languageSelect(noprompt)
+  File &quot;/opt/mssql/lib/mssql-conf/mssqlconfhelper.py&quot;, line 160, in languageSelect
+    language = locale.getdefaultlocale()[0]
+  File &quot;/usr/lib64/python2.7/locale.py&quot;, line 511, in getdefaultlocale
+    return _parse_localename(localename)
+  File &quot;/usr/lib64/python2.7/locale.py&quot;, line 443, in _parse_localename
+    raise ValueError, 'unknown locale: %s' % localename
+ValueError: unknown locale: UTF-8
+
+</code></pre>
+</section>
+    <footer>
+      <hr>
+      <div class="meta">
+        <p class="tags">
+          
+            
+              <a href="/tags/microsoft">
+                <span>#</span>Microsoft</a>
+            
+              <a href="/tags/linux">
+                <span>#</span>Linux</a>
+            
+              <a href="/tags/linux-indonesia">
+                <span>#</span>Linux Indonesia</a>
+            
+              <a href="/tags/ayo-belajar-linux">
+                <span>#</span>Ayo Belajar Linux</a>
+            
+          
+        </p>
+      </div>
+      <hr>
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sibunglonlabs" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </footer>
+  </article>
+
+    </main>
+    
+      <footer>
+  <p>
+    &copy; 2019 Faizar Septiawan. <a href="http://creativecommons.org/licenses/by-sa/4.0/">Some Rights Reserved</a>.
+  </p>
+  <p>
+    Powered by <a href="https://gohugo.io" title="A Fast and Flexible Website Generator">Hugo</a> &amp; <a href="https://github.com/eshlox/simplicity" title="Hugo theme">Simplicity</a>.
+  </p>
+</footer>
+
+    
+    
+    
+    
+    
+    
+    
+    <script src="/assets/js/scripts.min.js"></script>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-110194945-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>
