@@ -16,7 +16,7 @@
         <link>https://sibunglon.com/2019/04/09/valueerror-saat-setup-mssql-server-di-linux/</link>
         <pubDate>Tue, 09 Apr 2019 20:45:08 +0700</pubDate>
         <guid>https://sibunglon.com/2019/04/09/valueerror-saat-setup-mssql-server-di-linux/</guid>
-        <description>ValueError: unknown locale: UTF-8? Beberapa hari yang lalu saya sempat menulis step by step Microsoft SQL Server (MSSQL Server) di environment Linux, namun mungkin saja ada yang menemukan error salah satunya error dengan message ValueError: unknown locale: UTF-8, gak usah takut karena dari masalah itu ataupun lainnya kita dapat pelajaran baru😆
+        <description>ValueError: unknown locale: UTF-8? Beberapa hari yang lalu saya sempat menulis step by step install Microsoft SQL Server (MSSQL Server) di environment Linux, namun mungkin saja ada yang menemukan error salah satunya error dengan message ValueError: unknown locale: UTF-8, gak usah takut karena dari masalah itu ataupun lainnya kita dapat pelajaran baru😆
 Disuatu waktu saya install MSSQL Server Linux di environment berbeda dari sebelumnya, saya ikuti tuh step by step installasi MSSQL Server yang saya tulis sebelumnya, alhamdulillah dapat rejeki, dapat ValueError: unknown locale: UTF-8 pada saat setup MSSQL Server🤣 Dengan kemampuan sok tau saya😆 langsung disimpulkan maksud dari error message tersebut yaitu Lokal UTF-8 tidak di kenal.</description>
       </item>
     
