@@ -6,10 +6,19 @@
     <description>Recent content in Ayo Belajar Linux on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 15 Apr 2019 05:09:24 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 06 May 2019 03:40:59 +0700</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/ayo-belajar-linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Install Bamboo Atlassian di Linux</title>
+        <link>https://sibunglon.com/2019/05/06/install-bamboo-atlassian-di-linux/</link>
+        <pubDate>Mon, 06 May 2019 03:40:59 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/05/06/install-bamboo-atlassian-di-linux/</guid>
+        <description>Bamboo Atlassian Bamboo adalah integrasi berkelanjutan (continuous integration (CI)) dan server penyebaran berkelanjutan (continuous deployment) yang dikembangkan oleh Atlassian. Bamboo dapat digunakan untuk mengotomatisasi manajemen rilis untuk aplikasi perangkat lunak, menciptakan jalur pengiriman kontinu.
+CI adalah metodologi pengembangan perangkat lunak di mana tes pembangunan, unit, dan tes integrasi dilakukan, atau dipicu, setiap kali kode dipublish ke repositori, untuk memastikan bahwa perubahan baru terintegrasi dengan baik ke dalam basis kode yang ada.</description>
+      </item>
     
       <item>
         <title>Fix the Cockpit Blank Page After Login over Nginx Reverse Proxy</title>
