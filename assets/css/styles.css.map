@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "styles.css",
-	"sourceRoot": "/Users/faizarseptiawan/GitHub/anonym/Official site",
+	"sourceRoot": "/Users/faizarseptiawan/GitHub/icarrr/Official site",
 	"sources": [
 		"themes/simplicity/assets/src/styles/styles.scss",
 		"themes/simplicity/assets/src/styles/_chroma_friendly.scss",

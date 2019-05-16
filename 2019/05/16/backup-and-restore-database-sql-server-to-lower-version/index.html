@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en-us" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Backup and Restore Database SQL Server to Lower Version</title>
+  <meta name="author" content="Faizar Septiawan">
+  <meta name="author" content="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng">
+  <meta name="description" content="Read - Search - Ask | Sekali Gila Tetap Gila">
+  <meta name="description" content="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng">
+  
+  <meta name="google-site-verification" content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM" />
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110194945-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110194945-3');
+  </script>
+  
+  <script type="text/javascript">var _Hasync= _Hasync|| [];
+  _Hasync.push(['Histats.start', '1,4194642,4,0,0,0,00010000']);
+  _Hasync.push(['Histats.fasi', '1']);
+  _Hasync.push(['Histats.track_hits', '']);
+  (function() {
+  var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+  hs.src = ('//s10.histats.com/js15_as.js');
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+  })();</script>
+  <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4194642&101" alt="" border="0"></a></noscript>
+  
+
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/css/external.min.css" media="screen">
+
+  
+  
+  <link rel="stylesheet" href="/assets/css/styles.css" media="screen">
+
+  <link href="//fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
+
+  
+  
+  <link rel="shortcut icon" href="/assets/img/logo.png">
+
+  
+  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
+  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
+
+  <meta property="og:title" content="Backup and Restore Database SQL Server to Lower Version" />
+<meta property="og:description" content="How to Restore Database SQL server to lower version?
+If you want to migrate a database from environment A with SQL Server version A to environment B with SQL Server version A, you can use the script or backup and restore function. But if you want to migrate the database from environment A with SQL Server version A to environment B with SQL Server version B, when running the backup function in environment A and you will get problems when running the restore function in environment B." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sibunglon.com/2019/05/16/backup-and-restore-database-sql-server-to-lower-version/" />
+<meta property="article:published_time" content="2019-05-16T14:26:00&#43;07:00"/>
+<meta property="article:modified_time" content="2019-05-16T14:26:00&#43;07:00"/>
+
+  
+  
+<meta itemprop="name" content="Backup and Restore Database SQL Server to Lower Version">
+<meta itemprop="description" content="How to Restore Database SQL server to lower version?
+If you want to migrate a database from environment A with SQL Server version A to environment B with SQL Server version A, you can use the script or backup and restore function. But if you want to migrate the database from environment A with SQL Server version A to environment B with SQL Server version B, when running the backup function in environment A and you will get problems when running the restore function in environment B.">
+
+
+<meta itemprop="datePublished" content="2019-05-16T14:26:00&#43;07:00" />
+<meta itemprop="dateModified" content="2019-05-16T14:26:00&#43;07:00" />
+<meta itemprop="wordCount" content="395">
+
+
+
+<meta itemprop="keywords" content="Windows,SQL Server,Database," />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Backup and Restore Database SQL Server to Lower Version"/>
+<meta name="twitter:description" content="How to Restore Database SQL server to lower version?
+If you want to migrate a database from environment A with SQL Server version A to environment B with SQL Server version A, you can use the script or backup and restore function. But if you want to migrate the database from environment A with SQL Server version A to environment B with SQL Server version B, when running the backup function in environment A and you will get problems when running the restore function in environment B."/>
+
+
+  
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-7058165780533171",
+    enable_page_level_ads: true
+  });
+</script>
+</head>
+
+  <body>
+    
+      <nav>
+  <a href="/" title="">
+    siBunglon
+  </a>
+</nav>
+
+    
+    <main class="container">
+      
+  <article>
+    <header>
+      <small>
+        <time datetime="2019-05-16 14:26:00&#43;0700">2019-05-16</time>
+        &bull;</small>
+      <h1>Backup and Restore Database SQL Server to Lower Version</h1>
+    </header>
+    <section><p>How to Restore Database SQL server to lower version?</p>
+
+<p>If you want to migrate a database from environment A with SQL Server version A to environment B with SQL Server version A, you can use the script or backup and restore function. But if you want to migrate the database from environment A with SQL Server version A to environment B with SQL Server version B, when running the backup function in environment A and you will get problems when running the restore function in environment B.</p>
+
+<p>Upgrade in one environment? I think it&rsquo;s not an efficient way. What do you do? Here is an alternative if you want to migrate a database with a different environment.</p>
+
+<p><strong>Environment A</strong></p>
+
+<ol>
+<li>Open SQL Server Management Studio.</li>
+<li>Right click on the database you are working with.</li>
+<li>Choose <code>Tasks</code> &gt; <code>Generate Scripts</code></li>
+<li>You will be presented with a wizard screen, on the introduction you can click <code>Next</code>.</li>
+<li>Choose whether to script the entire database and objects or to select them individually. I like to leave it as the first option, everything. Click <code>Next</code>.</li>
+<li>In the output type, choose <code>Save scripts to a specific location</code>.</li>
+<li>Save to file Click on <code>Advanced</code>:
+
+<ul>
+<li>find <code>Script for Server Version</code>, choose the version you want, mine is 2012.</li>
+<li>find <code>Types of data to script</code>, choose Schema and data.</li>
+<li>Leave the other settings as they were.</li>
+<li>Click on <code>OK</code>.</li>
+<li>Files to generate - <code>Single file</code>.</li>
+<li>File name - give the script a name with the extension <strong>.sql</strong>.</li>
+<li>Save as <code>Unicode text</code>.</li>
+</ul></li>
+<li>Click <code>Next</code>.</li>
+<li>Open out options using the plus sign, check the settings are all ok in the summary - you are mainly looking at the version and the types of data to script.</li>
+<li>Click <code>Next</code>.</li>
+<li>Wait for it to run, you should see green ticks all the way down if it was successful.</li>
+<li>Click on <code>Finish</code></li>
+<li>Then go to the location where you saved the script, and copy file to environment B.</li>
+</ol>
+
+<p><strong>Environment B</strong></p>
+
+<ol>
+<li>Open the script</li>
+<li>Make sure the path of the files for the .mdf and log.ldf files is correct.</li>
+<li>Run the script</li>
+<li>You may get some errors like this:
+<em>Cannot add the Principal &lsquo;CodeShare&rsquo; because it does not exist or you do not have permission</em>.
+Just ignore it, the message. This does not cause any problems.</li>
+</ol>
+
+<p>That&rsquo;s it!</p>
+
+<p>You&rsquo;re all done. You should be able to start using the database now.</p>
+</section>
+    <footer>
+      <hr>
+      <div class="meta">
+        <p class="tags">
+          
+            
+              <a href="/tags/windows">
+                <span>#</span>Windows</a>
+            
+              <a href="/tags/sql-server">
+                <span>#</span>SQL Server</a>
+            
+              <a href="/tags/database">
+                <span>#</span>Database</a>
+            
+          
+        </p>
+      </div>
+      <hr>
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sibunglonlabs" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </footer>
+  </article>
+
+    </main>
+    
+      <footer>
+  <p>
+    &copy; 2019 Faizar Septiawan. <a href="http://creativecommons.org/licenses/by-sa/4.0/">Some Rights Reserved</a>.
+  </p>
+  <p>
+    Powered by <a href="https://gohugo.io" title="A Fast and Flexible Website Generator">Hugo</a> &amp; <a href="https://github.com/eshlox/simplicity" title="Hugo theme">Simplicity</a>.
+  </p>
+</footer>
+
+    
+    
+    
+    
+    
+    
+    
+    <script src="/assets/js/scripts.min.js"></script>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-110194945-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>
