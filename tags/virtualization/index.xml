@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Virtualization on The Official Site of siBunglon</title>
+    <link>https://sibunglon.com/tags/virtualization/</link>
+    <description>Recent content in Virtualization on The Official Site of siBunglon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 26 Mar 2019 14:26:11 +0700</lastBuildDate>
+    
+      <atom:link href="https://sibunglon.com/tags/virtualization/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      <item>
+        <title>Diam Diam Port 443 Lagi Konflik</title>
+        <link>https://sibunglon.com/2019/03/26/diam-diam-port-443-lagi-konflik/</link>
+        <pubDate>Tue, 26 Mar 2019 14:26:11 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/03/26/diam-diam-port-443-lagi-konflik/</guid>
+        <description>Beberapa hari yang lalu lagi ada ide iseng nyobain main-main vm linux (virtual machine) menggunakan VMware Workstation Pro, niatnya mau online-nin semua vm yang telah dibuat tapi cuman punya 1 ip publik. Emang bisa? Terus gimana ngaksesnya/ngeremotenya? Bisa dong, waktu itu pake port forwarding untuk NAT di VMware Workstation Pro, karena maunya si vm tersebut dapat akses internet dan dapat diakses dari 1 ip public.
+Saya butuh web service yang dapat diakses melalui 1 publik yaitu 1 ip publik hostnya, okey saya pasang web service di salah satu vm.</description>
+      </item>
+    
+      <item>
+        <title>Comparison of Platform Virtualization Software</title>
+        <link>https://sibunglon.com/2017/10/09/comparison-of-platform-virtualization-software/</link>
+        <pubDate>Mon, 09 Oct 2017 17:12:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/09/comparison-of-platform-virtualization-software/</guid>
+        <description>A. PENDAHULUANSeperti judulnya, yaitu adalah perbandingan dari beberapa vendor Virtualisasi Software.B. PENGERTIANadalah istilah umum yang mengacu kepada abstraksi dari sumber daya komputer. Definisi lainnya adalah &#34;sebuah teknik untuk menyembunyikan karakteristik fisik dari sumber daya komputer dari bagaimana cara sistem lain, aplikasi atau pengguna berinteraksi dengan sumber daya tersebut. Hal ini termasuk membuat sebuah sumber daya tunggal (seperti server, sebuah sistem operasi, sebuah aplikasi, atau peralatan penyimpanan terlihat berfungsi sebagai beberapa sumber daya logikal; atau dapat juga termasuk definisi untuk membuat beberapa sumber daya fisik (seperti beberapa peralatan penyimpanan atau server) terlihat sebagai satu sumber daya logikal.</description>
+      </item>
+    
+      <item>
+        <title>Menginstall VMware Player di linux</title>
+        <link>https://sibunglon.com/2017/08/31/menginstall-vmware-player-di-linux/</link>
+        <pubDate>Thu, 31 Aug 2017 13:27:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/31/menginstall-vmware-player-di-linux/</guid>
+        <description>A. PendahuluanPada kesempatan ini, saya memposting bagaimana sih menginstal VMware Player di linux.
+B. PengertianVMware Player&amp;nbsp;adalah sebuah produk&amp;nbsp;perangkat lunak virtualisasi&amp;nbsp;berlisensi bebas dari&amp;nbsp;VMware, sebuah divisi dari&amp;nbsp;EMC Corporation. Produk ini bisa menjalankan&amp;nbsp;mesin virtualpengguna yang dibuat dari produk VMware yang lain tetapi tidak dapat membuat sebuah&amp;nbsp;mesin virtual&amp;nbsp;yang baru.namun limitasi ini dicabut di versi 3.0.0. sehingga dapat membuat sendiri tanpa harus memakai&amp;nbsp;VMware Workstation. Perangkat berlisensi bebas dan situs web seperti&amp;nbsp;EasyVMX&amp;nbsp;juga hadir untuk membuat&amp;nbsp;mesin virtual, menghapus, memanipulasi dan mengkonversikan disk&amp;nbsp;VMware&amp;nbsp;dan&amp;nbsp;floppy, membuat perizinan pengguna, menjalankan dan merawat&amp;nbsp;mesin virtual.</description>
+      </item>
+    
+  </channel>
+</rss>

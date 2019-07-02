@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Backup and Restore on The Official Site of siBunglon</title>
+    <link>https://sibunglon.com/tags/backup-and-restore/</link>
+    <description>Recent content in Backup and Restore on The Official Site of siBunglon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 16 May 2019 14:26:00 +0700</lastBuildDate>
+    
+      <atom:link href="https://sibunglon.com/tags/backup-and-restore/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      <item>
+        <title>Backup and Restore Database SQL Server to Lower Version</title>
+        <link>https://sibunglon.com/2019/05/16/backup-and-restore-database-sql-server-to-lower-version/</link>
+        <pubDate>Thu, 16 May 2019 14:26:00 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/05/16/backup-and-restore-database-sql-server-to-lower-version/</guid>
+        <description>How to Restore Database SQL server to lower version?
+If you want to migrate a database from environment A with SQL Server version A to environment B with SQL Server version A, you can use the script or backup and restore function. But if you want to migrate the database from environment A with SQL Server version A to environment B with SQL Server version B, when running the backup function in environment A and you will get problems when running the restore function in environment B.</description>
+      </item>
+    
+      <item>
+        <title>Backup VM Proxmox ke Local HardDisk</title>
+        <link>https://sibunglon.com/2017/10/19/backup-vm-proxmox-ke-local-harddisk/</link>
+        <pubDate>Thu, 19 Oct 2017 18:47:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/19/backup-vm-proxmox-ke-local-harddisk/</guid>
+        <description>A. Pendahuluan
+Pada kesempatan ini saya share bagaimana agar config di debian atau apapun yang ada diproxmox tidak hilang bila terjadi sesuatu
+B. Pengertian
+Bakcup data adalah salah satu langkah untuk menyimpan data agar saat data itu hilang kita masih memiliki data simpanannya agar tidak hilang.
+C. Latar belakang
+Membuat secondary data agar saat data primer nya hilang kita masih punya data secondari nya.
+D. Tujuan
+Agar data yang saat penting itu tidak hilang karena ada kesalahan dan dapat menyerlamatkan pekerjaan kita.</description>
+      </item>
+    
+      <item>
+        <title>Backup and Restore Mikrotik</title>
+        <link>https://sibunglon.com/2017/09/22/backup-and-restore-mikrotik/</link>
+        <pubDate>Fri, 22 Sep 2017 03:39:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/09/22/backup-and-restore-mikrotik/</guid>
+        <description>1. Pendahuluan
+A. Pengertian
+Di bidang teknologi informasi, backup, atau proses back up, mengacu pada penyalinan dan pengarsipan data sehingga bisa digunakan untuk mengembalikan dokumen asli setelah terjadi peristiwa kehilangan data. Bentuk kata kerja adalah untuk membuat cadangan dua kata, sedangkan kata benda adalah cadangan.
+Restore , mengacu pada proses pengembalian data menggunakan file backup.
+B. Latar Belakang
+Membackup data mikrotik agar saat perangkat rusak kita punya salinan konfigurasinya.
+C. Hasil Yang Diharapkan</description>
+      </item>
+    
+      <item>
+        <title>Recovery Data Dari Hardisk atau Flashdisk Yang Tidak Bisa Dibuka</title>
+        <link>https://sibunglon.com/2017/08/22/recovery-data-dari-hardisk-atau-flashdisk-yang-tidak-bisa-dibuka/</link>
+        <pubDate>Tue, 22 Aug 2017 10:06:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/22/recovery-data-dari-hardisk-atau-flashdisk-yang-tidak-bisa-dibuka/</guid>
+        <description>A. PendahuluanPada kesempatan kali ini, saya akan memberikan tahapan tentang bagaimana recovery&amp;nbsp;data dari hardisk atau flashdisk yang tidak bisa dibuka menggunakan software di linux yaitu &#34;Testdisk&#34;
+B. PengertianRecovery data (pemulihan data)&amp;nbsp;adalah proses menyelamatkan (mengambil) tidak dapat diakses, hilang, rusak, rusak atau diformat data dari&amp;nbsp;penyimpanan sekunder&amp;nbsp;,&amp;nbsp;removable media&amp;nbsp;atau&amp;nbsp;file&amp;nbsp;, ketika data yang tersimpan di dalamnya tidak dapat diakses secara normal.&amp;nbsp;Data yang paling sering diselamatkan dari media penyimpanan seperti internal atau eksternal&amp;nbsp;hard disk drive&amp;nbsp;(HDD),&amp;nbsp;solid-state drive&amp;nbsp;(SSD),&amp;nbsp;USB flash drive&amp;nbsp;,&amp;nbsp;tape magnetik&amp;nbsp;,&amp;nbsp;CD&amp;nbsp;,&amp;nbsp;DVD&amp;nbsp;,&amp;nbsp;RAID&amp;nbsp;subsistem, dan lainnya&amp;nbsp;perangkat elektronik.</description>
+      </item>
+    
+  </channel>
+</rss>

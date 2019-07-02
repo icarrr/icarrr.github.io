@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en-us" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Install CMS Sekolahku di Server</title>
+  <meta name="author" content="Faizar Septiawan">
+  <meta name="author" content="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng">
+  <meta name="description" content="Read - Search - Ask | Sekali Gila Tetap Gila">
+  <meta name="description" content="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng">
+  
+  <meta name="google-site-verification" content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM" />
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110194945-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110194945-3');
+  </script>
+  
+  <script type="text/javascript">var _Hasync= _Hasync|| [];
+  _Hasync.push(['Histats.start', '1,4194642,4,0,0,0,00010000']);
+  _Hasync.push(['Histats.fasi', '1']);
+  _Hasync.push(['Histats.track_hits', '']);
+  (function() {
+  var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+  hs.src = ('//s10.histats.com/js15_as.js');
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+  })();</script>
+  <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4194642&101" alt="" border="0"></a></noscript>
+  
+
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/css/external.min.css" media="screen">
+
+  
+  
+  <link rel="stylesheet" href="/assets/css/styles.css" media="screen">
+
+  <link href="//fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
+
+  
+  
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/src/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="/src/images/favicon.ico">
+
+  
+  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
+  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
+
+  <meta property="og:title" content="Install CMS Sekolahku di Server" />
+<meta property="og:description" content="A. Pendahuluan
+Pada kesempatan kali ini saya akan mengimplementasikan membangun website sekolah di server dengan CMS.
+B. Pengertian
+CMS adalah suatu /sebuah aplikasi yang berfungsi merubah suatu menu atau memanipulasi data dari suatu situs atau website.
+C. Latar belakang
+Mempelajari sistem informasi sekolah dengan CMS dan mengimplementasikannya.
+D. Tujuan
+Mempunyai maksud untuk memudahkan saya mendapatkan informasi sekolah di website tersebut.
+E. Hasil yang diharapkan
+Mempunyai harapan agar nanti kedepannya bisa membangun website ini di sekolah." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sibunglon.com/2017/10/16/install-cms-sekolahku-di-server/" />
+<meta property="article:published_time" content="2017-10-16T11:16:00&#43;00:00"/>
+<meta property="article:modified_time" content="2017-10-16T11:16:00&#43;00:00"/>
+
+  
+  
+<meta itemprop="name" content="Install CMS Sekolahku di Server">
+<meta itemprop="description" content="A. Pendahuluan
+Pada kesempatan kali ini saya akan mengimplementasikan membangun website sekolah di server dengan CMS.
+B. Pengertian
+CMS adalah suatu /sebuah aplikasi yang berfungsi merubah suatu menu atau memanipulasi data dari suatu situs atau website.
+C. Latar belakang
+Mempelajari sistem informasi sekolah dengan CMS dan mengimplementasikannya.
+D. Tujuan
+Mempunyai maksud untuk memudahkan saya mendapatkan informasi sekolah di website tersebut.
+E. Hasil yang diharapkan
+Mempunyai harapan agar nanti kedepannya bisa membangun website ini di sekolah.">
+
+
+<meta itemprop="datePublished" content="2017-10-16T11:16:00&#43;00:00" />
+<meta itemprop="dateModified" content="2017-10-16T11:16:00&#43;00:00" />
+<meta itemprop="wordCount" content="395">
+
+
+
+<meta itemprop="keywords" content="BLC Telkom Klaten,Ayo Belajar Linux,eLearning,Installasi,Ngoprek," />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Install CMS Sekolahku di Server"/>
+<meta name="twitter:description" content="A. Pendahuluan
+Pada kesempatan kali ini saya akan mengimplementasikan membangun website sekolah di server dengan CMS.
+B. Pengertian
+CMS adalah suatu /sebuah aplikasi yang berfungsi merubah suatu menu atau memanipulasi data dari suatu situs atau website.
+C. Latar belakang
+Mempelajari sistem informasi sekolah dengan CMS dan mengimplementasikannya.
+D. Tujuan
+Mempunyai maksud untuk memudahkan saya mendapatkan informasi sekolah di website tersebut.
+E. Hasil yang diharapkan
+Mempunyai harapan agar nanti kedepannya bisa membangun website ini di sekolah."/>
+
+
+  
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-7058165780533171",
+    enable_page_level_ads: true
+  });
+</script>
+</head>
+
+  <body>
+    
+      <nav>
+  <a href="/" title="">
+    siBunglon
+  </a>
+</nav>
+
+    
+    <main class="container">
+      
+  <article>
+    <header>
+      <small>
+        <time datetime="2017-10-16 11:16:00&#43;0000">2017-10-16</time>
+        &bull;</small>
+      <h1>Install CMS Sekolahku di Server</h1>
+    </header>
+    <section><p><strong>A. Pendahuluan</strong><br />Pada kesempatan kali ini saya akan mengimplementasikan membangun website sekolah di server dengan CMS.<br /><br /><strong>B. Pengertian</strong><br />CMS adalah suatu /sebuah aplikasi yang berfungsi merubah suatu menu atau memanipulasi data dari suatu situs atau website.<br /><br /><strong>C. Latar belakang</strong><br />Mempelajari sistem informasi sekolah dengan CMS dan mengimplementasikannya.<br /><br /><strong>D. Tujuan</strong><br />Mempunyai maksud untuk memudahkan saya mendapatkan informasi sekolah di website tersebut.<br /><br /><strong>E. Hasil yang diharapkan</strong><br />Mempunyai harapan agar nanti kedepannya bisa membangun website ini di sekolah.<br /><br /><strong>F. Alat dan bahan</strong><br /><ul><li>PC/Laptop</li><li>Koneksi Internet</li><li>File CMS Sekolah</li></ul><strong>G. Jangka waktu pelaksanaan</strong><br />Waktu yang dibutuhkan kisaran 30 menit - 1 jam<br /><br /><strong>H. Langkah kerja</strong><br />1. Copy file master cms-sekolahku ke directory server<br /><div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/-Z7oYUA39StU/W713QC0QvCI/AAAAAAAAE-Y/mM9SgJGCdvAfRZaWGJ0HcOlrrjfCJqROQCLcBGAs/s1600/Screenshot_1.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="90" data-original-width="1335" height="21" src="https://4.bp.blogspot.com/-Z7oYUA39StU/W713QC0QvCI/AAAAAAAAE-Y/mM9SgJGCdvAfRZaWGJ0HcOlrrjfCJqROQCLcBGAs/s320/Screenshot_1.png" width="320" /></a></div><br />2. Remote server anda, kemudian pindahkan file master cms ke direktory /var/www/html<br /><div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-zUoauFJZTWI/W715NjA5cXI/AAAAAAAAE-s/tjzw1WjP-3opRfhB4NasRT2R5Jd__OMlgCLcBGAs/s1600/Screenshot_2.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="344" data-original-width="1060" height="103" src="https://2.bp.blogspot.com/-zUoauFJZTWI/W715NjA5cXI/AAAAAAAAE-s/tjzw1WjP-3opRfhB4NasRT2R5Jd__OMlgCLcBGAs/s320/Screenshot_2.png" title="" width="320" /></a></div><br />3. Masuk ke direktory /var/www/html setelah itu unzip file cms yang telah dipindahkan tadi<br /><div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-UN3ysp6CMS0/W714uDcxe9I/AAAAAAAAE-k/kAVEQu3-kB8wLErcaFzP-uSa_86m8Pi5wCLcBGAs/s1600/Screenshot_3.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="45" data-original-width="513" height="28" src="https://3.bp.blogspot.com/-UN3ysp6CMS0/W714uDcxe9I/AAAAAAAAE-k/kAVEQu3-kB8wLErcaFzP-uSa_86m8Pi5wCLcBGAs/s320/Screenshot_3.png" title="" width="320" /></a></div><br />4. Karena folder hasil ekstraknya mempunyai nama yang panjang, maka ubah nama foldernya<br /><div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-6xuIgQdhrIY/W715uAh6aYI/AAAAAAAAE-4/zUtQk8M_3zUQ2fQDSOi7bY8VYFTKqauiwCLcBGAs/s1600/Screenshot_4.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="101" data-original-width="589" height="54" src="https://3.bp.blogspot.com/-6xuIgQdhrIY/W715uAh6aYI/AAAAAAAAE-4/zUtQk8M_3zUQ2fQDSOi7bY8VYFTKqauiwCLcBGAs/s320/Screenshot_4.png" title="" width="320" /></a></div><br />5. Berikan hak akses untuk folder tersebut<br /><div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-HGfS7mo8NHU/W7152WlRomI/AAAAAAAAE-8/uF9ENsFxCF43sYrYCYf1PYBBjZ7UgDNbwCLcBGAs/s1600/Screenshot_5.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="26" data-original-width="543" height="15" src="https://3.bp.blogspot.com/-HGfS7mo8NHU/W7152WlRomI/AAAAAAAAE-8/uF9ENsFxCF43sYrYCYf1PYBBjZ7UgDNbwCLcBGAs/s320/Screenshot_5.png" title="" width="320" /></a></div><br />6. Buat database di phpmyadmin<br /><div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-ct55iZvblMU/W716ER6TL0I/AAAAAAAAE_A/dwchSfkjcaYMCEKco0irOdtP0NFDWu5OACLcBGAs/s1600/Screenshot_6.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="582" data-original-width="1365" height="136" src="https://3.bp.blogspot.com/-ct55iZvblMU/W716ER6TL0I/AAAAAAAAE_A/dwchSfkjcaYMCEKco0irOdtP0NFDWu5OACLcBGAs/s320/Screenshot_6.png" title="" width="320" /></a></div><br /><span style="color: black;"><span style="font-family: &quot;liberation serif&quot; , serif;"><span style="font-size: medium;">7. Edit konfigurasi database.php dengan perintah &ldquo;nano application/config/database.php&rdquo;</span></span></span><br /><div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-CXnyUAUaxNg/W716bVmoR7I/AAAAAAAAE_M/JeB5eGzK1qE266_fE3qDBS_94G_ZqIOhwCLcBGAs/s1600/Screenshot_7.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="29" data-original-width="576" height="16" src="https://2.bp.blogspot.com/-CXnyUAUaxNg/W716bVmoR7I/AAAAAAAAE_M/JeB5eGzK1qE266_fE3qDBS_94G_ZqIOhwCLcBGAs/s320/Screenshot_7.png" title="" width="320" /></a></div><br /><span style="color: black;"><span style="font-family: &quot;liberation serif&quot; , serif;"><span style="font-size: medium;">8. Lalu konfigurasi seperti yang digaris merah</span></span></span><br /><div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/-7YhVQpKEsAE/W716oG_Mw-I/AAAAAAAAE_Q/s9Tx29LogtoTwcIK7iQebtGcehl9xQ1EQCLcBGAs/s1600/Screenshot_8.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="390" data-original-width="1365" height="91" src="https://4.bp.blogspot.com/-7YhVQpKEsAE/W716oG_Mw-I/AAAAAAAAE_Q/s9Tx29LogtoTwcIK7iQebtGcehl9xQ1EQCLcBGAs/s320/Screenshot_8.png" title="" width="320" /></a></div><br /><span style="color: black;"><span style="font-family: &quot;liberation serif&quot; , serif;"><span style="font-size: medium;">9. Input data dengan perintah seperti berikut</span></span></span><br /><div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-CWY_OeS5yNk/W716xDMgCPI/AAAAAAAAE_Y/Dplzlk1dF8wLKEo_42hB7J1xSE6deQKGQCLcBGAs/s1600/Screenshot_9.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="53" data-original-width="735" height="23" src="https://2.bp.blogspot.com/-CWY_OeS5yNk/W716xDMgCPI/AAAAAAAAE_Y/Dplzlk1dF8wLKEo_42hB7J1xSE6deQKGQCLcBGAs/s320/Screenshot_9.png" title="" width="320" /></a></div><br /><span style="color: black;"><span style="font-family: &quot;liberation serif&quot; , serif;"><span style="font-size: medium;">10. Buka web browser lalu ketikkan &ldquo;IPServerVM/sekolahku&rdquo; lalu isikan form yang ada tersebut sesuai dengan user, password dan database phpmyadmin. seperti pada database.php , kemudian klik selanjutnya.</span></span></span><br /><div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-j9qscp0xhUs/W717BM4aUGI/AAAAAAAAE_k/7-K3Lb1CneINrEQwWP_hylxGtSXKX-LJgCLcBGAs/s1600/Screenshot_10.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="643" data-original-width="1365" height="150" src="https://3.bp.blogspot.com/-j9qscp0xhUs/W717BM4aUGI/AAAAAAAAE_k/7-K3Lb1CneINrEQwWP_hylxGtSXKX-LJgCLcBGAs/s320/Screenshot_10.png" title="" width="320" /></a></div><br /><span style="color: black;"><span style="font-family: &quot;liberation serif&quot; , serif;"><span style="font-size: medium;">11. Isikan form yang ada pada tampilan di bawah ini sesuai dengan profil sekolah Anda.</span></span></span><br /><div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/-L251P899p4U/W717S3L9orI/AAAAAAAAE_s/kFkDGQzsk0AW3mXS1XAF0Le4VikQEQcXgCLcBGAs/s1600/Screenshot_12.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="646" data-original-width="1365" height="151" src="https://4.bp.blogspot.com/-L251P899p4U/W717S3L9orI/AAAAAAAAE_s/kFkDGQzsk0AW3mXS1XAF0Le4VikQEQcXgCLcBGAs/s320/Screenshot_12.png" title="" width="320" /></a></div><br /><span style="color: black;"><span style="font-family: &quot;liberation serif&quot; , serif;"><span style="font-size: medium;">12. Lalu buat sebuah akun untuk login ke CMS nantinya lalu klik Install.</span></span></span><br /><div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/-15SnFMcoR8I/W717eB5lBjI/AAAAAAAAE_w/qoBQxRujrQ4MxEmjV94Kr74BcjojjZxxwCLcBGAs/s1600/Screenshot_13.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="639" data-original-width="1365" height="149" src="https://4.bp.blogspot.com/-15SnFMcoR8I/W717eB5lBjI/AAAAAAAAE_w/qoBQxRujrQ4MxEmjV94Kr74BcjojjZxxwCLcBGAs/s320/Screenshot_13.png" title="" width="320" /></a></div><br /><span style="color: black;"><span style="font-family: &quot;liberation serif&quot; , serif;"><span style="font-size: medium;">13. Tunggu sampai proses installasi CMS selesai.</span></span></span><br /><div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-CVk7eIVSOR8/W717omTFs3I/AAAAAAAAE_4/iSjdGf0QL9YAtjm4S7Hyyc-cV8fAm3t-wCLcBGAs/s1600/Screenshot_14.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="421" data-original-width="1194" height="112" src="https://2.bp.blogspot.com/-CVk7eIVSOR8/W717omTFs3I/AAAAAAAAE_4/iSjdGf0QL9YAtjm4S7Hyyc-cV8fAm3t-wCLcBGAs/s320/Screenshot_14.png" title="" width="320" /></a></div><br /><span style="color: black;"><span style="font-family: &quot;liberation serif&quot; , serif;"><span style="font-size: medium;">14. Lalu di situ tertulis perintah untuk menghapus folder Install di Root direktori CMS. Kita hapus folder Install.</span></span></span><br /><div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-rfxg3saSwMY/W717wxPEXiI/AAAAAAAAFAA/2T8D1pPajJ4E-gtNHXaNS3T_a00Y2XIqwCLcBGAs/s1600/Screenshot_15.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="586" data-original-width="1365" height="137" src="https://3.bp.blogspot.com/-rfxg3saSwMY/W717wxPEXiI/AAAAAAAAFAA/2T8D1pPajJ4E-gtNHXaNS3T_a00Y2XIqwCLcBGAs/s320/Screenshot_15.png" title="" width="320" /></a></div><div class="separator" style="clear: both; text-align: center;"><br /></div><div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-4i44lK-JL3Y/W719ExgQIsI/AAAAAAAAFAw/WKhpLE5qZCErQ_QmUo8KszN70owqpVxKQCLcBGAs/s1600/Screenshot_17.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="43" data-original-width="453" height="30" src="https://3.bp.blogspot.com/-4i44lK-JL3Y/W719ExgQIsI/AAAAAAAAFAw/WKhpLE5qZCErQ_QmUo8KszN70owqpVxKQCLcBGAs/s320/Screenshot_17.png" title="" width="320" /></a></div><div class="separator" style="clear: both; text-align: center;"><br /></div><br /><span style="color: black;"><span style="font-family: &quot;liberation serif&quot; , serif;"><span style="font-size: medium;">15. Lalu buka lagi web browser ketikkan IPServerVM/sekolah, jika terbuka halaman seperti berikut ini berarti CMS sudah berhasil di install.</span></span></span><br /><div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-mXO3gGX4jPw/W717-y9yL1I/AAAAAAAAFAI/1E9On5OBgFooms6oR6XMhJAJHX71nB-ugCLcBGAs/s1600/Screenshot_18.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="724" data-original-width="1365" height="169" src="https://3.bp.blogspot.com/-mXO3gGX4jPw/W717-y9yL1I/AAAAAAAAFAI/1E9On5OBgFooms6oR6XMhJAJHX71nB-ugCLcBGAs/s320/Screenshot_18.png" title="" width="320" /></a></div><br /><span style="color: black;"><span style="font-family: &quot;liberation serif&quot; , serif;"><span style="font-size: medium;">16. Berikan hak untuk .htaccess agar dapat me-link ke alamat yang disediakan CMS, dengan perintah &ldquo;nano /etc/apache2/sites-available/000-default.conf&rdquo;</span></span></span><br /><div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-vgzHo-4ze24/W718LbzOPoI/AAAAAAAAFAQ/nVa-1itCuVQTl0dWle_K8ZUpCoz67T68wCLcBGAs/s1600/Screenshot_19.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="42" data-original-width="723" height="18" src="https://3.bp.blogspot.com/-vgzHo-4ze24/W718LbzOPoI/AAAAAAAAFAQ/nVa-1itCuVQTl0dWle_K8ZUpCoz67T68wCLcBGAs/s320/Screenshot_19.png" title="" width="320" /></a></div><br /><span style="color: black;"><span style="font-family: &quot;liberation serif&quot; , serif;"><span style="font-size: medium;">17. Lalu tambahkan script berikut ini tepat di bawah tulisan DocumentRoot /var/www/html.</span></span></span><br /><blockquote class="tr_bq"><span style="font-family: &quot;liberation serif&quot;, serif; font-size: medium;">&lt;Directory &ldquo;/var/www/html&rdquo;&gt;</span><span style="font-family: &quot;liberation serif&quot;, serif; font-size: medium;">AllowOverride All</span><span style="font-family: &quot;liberation serif&quot;, serif; font-size: medium;">&lt;/Directory&gt;</span></blockquote><div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-yUdIcC23Aco/W718YVfA4OI/AAAAAAAAFAY/nW_w9aBmgN0qdjimnsjKce3_fn9hs82pQCLcBGAs/s1600/Screenshot_20.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="396" data-original-width="1365" height="92" src="https://2.bp.blogspot.com/-yUdIcC23Aco/W718YVfA4OI/AAAAAAAAFAY/nW_w9aBmgN0qdjimnsjKce3_fn9hs82pQCLcBGAs/s320/Screenshot_20.png" title="" width="320" /></a></div><div><br /></div><span style="color: black;"><span style="font-family: &quot;liberation serif&quot; , serif;"><span style="font-size: medium;">18. Restart apache2 dengan mengetikkan perintah &ldquo;service apache2 restart&rdquo;</span></span></span><br /><div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/-2OoYm4f5iXI/W718f9gpjGI/AAAAAAAAFAc/uwMzWqVvwtI20MFYBZxzMS_C2bJK4VlQACLcBGAs/s1600/Screenshot_21.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="43" data-original-width="457" height="30" src="https://4.bp.blogspot.com/-2OoYm4f5iXI/W718f9gpjGI/AAAAAAAAFAc/uwMzWqVvwtI20MFYBZxzMS_C2bJK4VlQACLcBGAs/s320/Screenshot_21.png" title="" width="320" /></a></div><br /><span style="color: black;"><span style="font-family: &quot;liberation serif&quot; , serif;"><span style="font-size: medium;">19. Selanjutnya masuk kehalaman login sebagai administrator untuk mengedit website dengan masuk ke browser dan mengetikkan IPAddressVM/sekolah/login.</span></span></span><br /><div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-JNySsc-_OWA/W718pAyqYzI/AAAAAAAAFAk/i3ISkH5AsDMsqnBqeDPuWpECk-NnjGLMACLcBGAs/s1600/Screenshot_22.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="637" data-original-width="1365" height="149" src="https://2.bp.blogspot.com/-JNySsc-_OWA/W718pAyqYzI/AAAAAAAAFAk/i3ISkH5AsDMsqnBqeDPuWpECk-NnjGLMACLcBGAs/s320/Screenshot_22.png" title="" width="320" /></a></div><br /><span style="color: black;"><span style="font-family: &quot;liberation serif&quot; , serif;"><span style="font-size: medium;">20. Jika di alihkan ke tampilan berikut ini maka Anda sudah masuk sebagai Administrator, silahkan edit sesuai dengan keinginan Anda.</span></span></span><br /><div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-ZrI1SpF8xgk/W7181obB_6I/AAAAAAAAFAs/Zvsy4tBWmz4dtA-bFblV_hiYZzWMzYcxQCLcBGAs/s1600/Screenshot_23.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="722" data-original-width="1365" height="169" src="https://2.bp.blogspot.com/-ZrI1SpF8xgk/W7181obB_6I/AAAAAAAAFAs/Zvsy4tBWmz4dtA-bFblV_hiYZzWMzYcxQCLcBGAs/s320/Screenshot_23.png" title="" width="320" /></a></div><br /><strong>I. Hasil yang didapatkan</strong><br />Dapat membangun website sekolah dengan benar.<br /><br /><strong>J. Temuan masalah</strong><br />Belum ditemukan masalah<br /><br /><strong>K. Kesimpulan</strong><br />Dapat disimpulkan bahwa CMS ini mudah untuk penginstallasiannya akan tetapi tetap harus berhati-hati saat edit konfigurasi nya.<br /><br /><strong>L. Referensi</strong><br /><a href="http://sekolahku.web.id/">http://sekolahku.web.id/</a></p>
+</section>
+    <footer>
+      <hr>
+      <div class="meta">
+        <p class="tags">
+          
+            
+              <a href="/tags/blc-telkom-klaten">
+                <span>#</span>BLC Telkom Klaten</a>
+            
+              <a href="/tags/ayo-belajar-linux">
+                <span>#</span>Ayo Belajar Linux</a>
+            
+              <a href="/tags/elearning">
+                <span>#</span>eLearning</a>
+            
+              <a href="/tags/installasi">
+                <span>#</span>Installasi</a>
+            
+              <a href="/tags/ngoprek">
+                <span>#</span>Ngoprek</a>
+            
+          
+        </p>
+      </div>
+      <hr>
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sibunglonlabs" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </footer>
+  </article>
+
+    </main>
+    
+      <footer>
+  <p>
+    &copy; 2019 Faizar Septiawan. <a href="http://creativecommons.org/licenses/by-sa/4.0/">Some Rights Reserved</a>.
+  </p>
+  <p>
+    Powered by <a href="https://gohugo.io" title="A Fast and Flexible Website Generator">Hugo</a> &amp; <a href="https://github.com/eshlox/simplicity" title="Hugo theme">Simplicity</a>.
+  </p>
+</footer>
+
+    
+    
+    
+    
+    
+    
+    
+    <script src="/assets/js/scripts.min.js"></script>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-110194945-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>

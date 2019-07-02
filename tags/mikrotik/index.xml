@@ -30,23 +30,6 @@ Semakin hari kebutuhan akan manajemen jaringan semakin beragam. Hal ini tidak le
       </item>
     
       <item>
-        <title>Sharing bersama (materi bandwith management &amp; queue)</title>
-        <link>https://sibunglon.com/2017/10/11/sharing-bersama-materi-bandwith-management-queue/</link>
-        <pubDate>Wed, 11 Oct 2017 12:38:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/10/11/sharing-bersama-materi-bandwith-management-queue/</guid>
-        <description>A. PendahuluanSebesar besarnya bandwith kecepatan internet tidak akan bisa membuat kita para pengguna internet puas-puas kata tersebut yang sering saya dengarkan ketika saya prakerin, maksudnya adalah kita sebagai user dari internet tidak akan puas dengan bandwith yang lumayan besar karena sebesar apapun bandwith yang kita miliki, kita tidak akan bisa mengakses internet secepat yang ada dalam bayangan kita, kalian tau apa penyebabnya? jika belum mari kita bahas bersama
-B. Pengertian</description>
-      </item>
-    
-      <item>
-        <title>Install debian server di proxmox virtual environment</title>
-        <link>https://sibunglon.com/2017/10/10/install-debian-server-di-proxmox-virtual-environment/</link>
-        <pubDate>Tue, 10 Oct 2017 12:19:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/10/10/install-debian-server-di-proxmox-virtual-environment/</guid>
-        <description>A. PendahuluanKali ini saya berbagi tentang bagaimana menginstall linux Debian 8.6 melalui pada proxmox. Proxmox digunakan sebagai virtualisasi.B. PengertianDebian adalah sistem operasi komputer yang tersusun dari paket-paket perangkat lunak yang dirilis sebagai perangkat lunak bebas dan terbuka dengan lisensi mayoritas GNU General Public License dan lisensi perangkat lunak bebas lainnya. Debian GNU/Linux memuat perkakas sistem operasi GNU dan kernel Linux merupakan distribusi Linux yang popmuler dan berpengaruh. Debian didistribusikan dengan akses ke repositori dengan ribuan paket perangkat lunak yang siap untuk instalasi dan digunakan.</description>
-      </item>
-    
-      <item>
         <title>Backup and Restore Mikrotik</title>
         <link>https://sibunglon.com/2017/09/22/backup-and-restore-mikrotik/</link>
         <pubDate>Fri, 22 Sep 2017 03:39:00 +0000</pubDate>
@@ -88,7 +71,7 @@ ALAT DAN BAHAN
       </item>
     
       <item>
-        <title>Proxy situs dengan fitur web proxy di mikrotik</title>
+        <title>Proxy Situs Dengan Fitur Web Proxy di MikroTik</title>
         <link>https://sibunglon.com/2017/09/19/proxy-situs-dengan-fitur-web-proxy-di-mikrotik/</link>
         <pubDate>Tue, 19 Sep 2017 02:51:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/19/proxy-situs-dengan-fitur-web-proxy-di-mikrotik/</guid>
@@ -109,7 +92,7 @@ D. TujuanPembaca dapat mengetahu bagaimana membuat routing dynamic RIP</descript
       </item>
     
       <item>
-        <title>Routing static di mikrotik</title>
+        <title>Routing Static di MikroTik</title>
         <link>https://sibunglon.com/2017/09/16/routing-static-di-mikrotik/</link>
         <pubDate>Sat, 16 Sep 2017 02:15:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/16/routing-static-di-mikrotik/</guid>
@@ -119,7 +102,7 @@ C. Latar belakangIngin menambah pengetahuan</description>
       </item>
     
       <item>
-        <title>Routing dynamic RIP di mikrotik</title>
+        <title>Routing Dynamic RIP di MikroTik</title>
         <link>https://sibunglon.com/2017/09/15/routing-dynamic-rip-di-mikrotik/</link>
         <pubDate>Fri, 15 Sep 2017 02:05:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/15/routing-dynamic-rip-di-mikrotik/</guid>
@@ -128,7 +111,7 @@ B. PengertianRouting Information Protocol (RIP)&amp;nbsp;adalah sebuah protokol 
       </item>
     
       <item>
-        <title>Routing dynamic OSPF di mikrotik</title>
+        <title>Routing Dynamic OSPF di MikroTik</title>
         <link>https://sibunglon.com/2017/09/12/routing-dynamic-ospf-di-mikrotik/</link>
         <pubDate>Tue, 12 Sep 2017 12:36:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/12/routing-dynamic-ospf-di-mikrotik/</guid>
@@ -137,7 +120,7 @@ B. PengertianOpen Shortest Path First (OSPF)&amp;nbsp;adalah sebuah protokol rou
       </item>
     
       <item>
-        <title>Mengupgrade version mikroTik routerboard</title>
+        <title>Mengupgrade Version MikroTik Routerboard</title>
         <link>https://sibunglon.com/2017/09/11/mengupgrade-version-mikrotik-routerboard/</link>
         <pubDate>Mon, 11 Sep 2017 11:20:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/11/mengupgrade-version-mikrotik-routerboard/</guid>
@@ -151,7 +134,7 @@ G. Langkah kerja1. Hubungkan mikrotik kemudian buka winbox untuk mengkonfigurasi
       </item>
     
       <item>
-        <title>Memblokir situs yang mempunyai banyak ip dengan mikrotik</title>
+        <title>Memblokir Situs Yang Mempunyai Banyak IP Dengan MikroTik</title>
         <link>https://sibunglon.com/2017/09/09/memblokir-situs-yang-mempunyai-banyak-ip-dengan-mikrotik/</link>
         <pubDate>Sat, 09 Sep 2017 15:27:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/09/memblokir-situs-yang-mempunyai-banyak-ip-dengan-mikrotik/</guid>
@@ -165,7 +148,7 @@ D. TujuanDapat memblokir ip dengan cara cerdas</description>
       </item>
     
       <item>
-        <title>Membuat interface bridge dan menambahkan ethernet ke bridge</title>
+        <title>Membuat Interface Bridge dan Menambahkan Ethernet ke Bridge</title>
         <link>https://sibunglon.com/2017/09/09/membuat-interface-bridge-dan-menambahkan-ethernet-ke-bridge/</link>
         <pubDate>Sat, 09 Sep 2017 15:22:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/09/membuat-interface-bridge-dan-menambahkan-ethernet-ke-bridge/</guid>
@@ -174,7 +157,7 @@ B. PengertianJembatan jaringan (bahasa Inggris:&amp;nbsp;Network bridge) adalah 
       </item>
     
       <item>
-        <title>Konfigurasi dasar mikrotik dengan sumber internet dari ip static</title>
+        <title>Konfigurasi Dasar MikroTik Dengan Sumber Internet Dari IP Static</title>
         <link>https://sibunglon.com/2017/09/08/konfigurasi-dasar-mikrotik-dengan-sumber-internet-dari-ip-static/</link>
         <pubDate>Fri, 08 Sep 2017 14:58:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/08/konfigurasi-dasar-mikrotik-dengan-sumber-internet-dari-ip-static/</guid>
@@ -183,15 +166,7 @@ B. PengertianMikrotik&amp;nbsp;adalah&amp;nbsp;sebuah perusahaan yang bergerak d
       </item>
     
       <item>
-        <title>Wireless Concept</title>
-        <link>https://sibunglon.com/2017/09/07/wireless-concept/</link>
-        <pubDate>Thu, 07 Sep 2017 14:53:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/09/07/wireless-concept/</guid>
-        <description>A. Pendahuluanhay guys, kali&amp;nbsp; ini saya akan melakukan pemahaman tentang Wireless Concept&amp;nbsp;1. PengertianWireless Concept ini merupakan suatu ketentuan-ketentuan yang harus dipatuhi dalam pembangunan jaringan wifi atau jaringan komputer2. Latar belakangDalam pembanguan jaringan wifi terkadang banyak permasalahan yang timbul karena menyepelekan wireless concept ini.3. Maksud &amp;amp; TujuanMeminimalisir kesalahan karena hal yang sebenarnya sepele.&amp;nbsp;4. Hasil yang di harapkanDapat memahami dan dapat menerapkan wireless concept pada saat mengerjakan proyek.B. Jangka waktuJangka waktu yang saya butuhkan untuk memahaminya adalah 8 Jam.</description>
-      </item>
-    
-      <item>
-        <title>Mengatasi kursor winbox mikrotik meloncat-loncat sewaktu mengetik</title>
+        <title>Mengatasi Kursor Winbox MikroTik Meloncat-Loncat Sewaktu Mengetik</title>
         <link>https://sibunglon.com/2017/09/07/mengatasi-kursor-winbox-mikrotik-meloncat-loncat-sewaktu-mengetik/</link>
         <pubDate>Thu, 07 Sep 2017 14:42:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/07/mengatasi-kursor-winbox-mikrotik-meloncat-loncat-sewaktu-mengetik/</guid>
@@ -201,7 +176,7 @@ B. Pengertiankursor&amp;nbsp;adalah suatu petunjuk atau indikator posisi pada&am
       </item>
     
       <item>
-        <title>Memblokir 1 ip address client agar tidak dapat terkoneksi ke internet dengan simple logika mode</title>
+        <title>Memblokir 1 IP Address Client Agar Tidak Dapat Terkoneksi ke Internet Dengan Simple Logika Mode</title>
         <link>https://sibunglon.com/2017/09/06/memblokir-1-ip-address-client-agar-tidak-dapat-terkoneksi-ke-internet-dengan-simple-logika-mode/</link>
         <pubDate>Wed, 06 Sep 2017 14:26:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/06/memblokir-1-ip-address-client-agar-tidak-dapat-terkoneksi-ke-internet-dengan-simple-logika-mode/</guid>
@@ -213,7 +188,7 @@ E. Hasil yang diharapkanDapat melakukan konfigurasi dengan cepat, baik, dan bena
       </item>
     
       <item>
-        <title>Memblokir ekstensi file pada mikroTik dengan web proxy</title>
+        <title>Memblokir Ekstensi File Pada MikroTik Dengan Web Proxy</title>
         <link>https://sibunglon.com/2017/09/05/memblokir-ekstensi-file-pada-mikrotik-dengan-web-proxy/</link>
         <pubDate>Tue, 05 Sep 2017 13:02:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/05/memblokir-ekstensi-file-pada-mikrotik-dengan-web-proxy/</guid>
@@ -223,7 +198,7 @@ B. PengertianSecara umum arti dari proxy adalah sebuah komputer server atau prog
       </item>
     
       <item>
-        <title>Memblokir IP situs di firewall dengan simple logika mode</title>
+        <title>Memblokir IP Situs di Firewall Dengan Simple Logika Mode</title>
         <link>https://sibunglon.com/2017/09/05/memblokir-ip-situs-di-firewall-dengan-simple-logika-mode/</link>
         <pubDate>Tue, 05 Sep 2017 10:00:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/05/memblokir-ip-situs-di-firewall-dengan-simple-logika-mode/</guid>
@@ -236,7 +211,7 @@ F. Alat dan bahanMikrotikAkses internetLaptop/pcG. Jangka waktu pelaksanaanWaktu
       </item>
     
       <item>
-        <title>Memblokir situs dengan layer 7 protocol</title>
+        <title>Memblokir Situs Dengan Layer 7 Protocol</title>
         <link>https://sibunglon.com/2017/09/04/memblokir-situs-dengan-layer-7-protocol/</link>
         <pubDate>Mon, 04 Sep 2017 14:00:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/04/memblokir-situs-dengan-layer-7-protocol/</guid>
@@ -245,10 +220,20 @@ B. PengertianProtokol Layer7 adalah metode untuk mencari pola dalam ICMP / TCP /
       </item>
     
       <item>
-        <title>Poin to point dengan mikroTik</title>
-        <link>https://sibunglon.com/2017/08/19/poin-to-point-dengan-mikrotik/</link>
+        <title>Apa Itu Hotspot?</title>
+        <link>https://sibunglon.com/2017/08/29/apa-itu-hotspot/</link>
+        <pubDate>Tue, 29 Aug 2017 12:57:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/29/apa-itu-hotspot/</guid>
+        <description>A. Pengertian
+Area bersinyal (bahasa Inggris: Hotspot) merujuk pada tempat-tempat tertentu (biasanya tempat umum) yang memiliki layanan internet dengan menggunakan teknologi Wireless LAN, seperti pada perguruan tinggi, mal, plaza, perpustakaan, restoran ataupun bandar udara. Layanan internet seperti ini, ada yang berbayar dan yang tidak (gratis).
+Sejarah HotspotKonsep ini pertama kali dikemukakan pada tahun 1993 oleh Bret Stewart sewaktu konferensi Networld dan Interop, di San Fransisco. Dengan pemanfaatan teknologi ini, setiap orang dapat mengakses jaringan internet melalui komputer/laptop/HP/PDA yang mereka miliki di lokasi-lokasi area bersinyal ini tersedia, tentunya perangkat komputer/laptop/ponsel/PDA tersebut harus memiliki teknologi wi-fi.</description>
+      </item>
+    
+      <item>
+        <title>Point to Point Dengan MikroTik</title>
+        <link>https://sibunglon.com/2017/08/19/point-to-point-dengan-mikrotik/</link>
         <pubDate>Sat, 19 Aug 2017 21:37:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/08/19/poin-to-point-dengan-mikrotik/</guid>
+        <guid>https://sibunglon.com/2017/08/19/point-to-point-dengan-mikrotik/</guid>
         <description>A. PendahuluanPada postingan ini, akan di implentasikan bagaimana melakukan point to point (menembak wifi) menggunakan 2 buah mikroTik, dan step by stepnya akan di jelaskan sebagai berikut.
 B. PengertianWireless Point-to-Point (PTP) adalah koneksi komunikasi wireless antara dua titik, dimana satu client (station) terhubung dengan satu pemancar (AP) saja.
 C. Latar BelakangTidak ada koneksi internet dari kabel LAN jika melakukan praktek di tempat kost, karena mikroTik yang satunya ada di tempat praktek.</description>
@@ -266,25 +251,7 @@ VPN adalah Virtual Private Network dimana VPN ini merupakan interkoneksi antar j
       </item>
     
       <item>
-        <title>Sharing bersama Mbah Suro Dhemit tentang 7 layer OSI</title>
-        <link>https://sibunglon.com/2017/08/17/sharing-bersama-mbah-suro-dhemit-tentang-7-layer-osi/</link>
-        <pubDate>Thu, 17 Aug 2017 17:39:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/08/17/sharing-bersama-mbah-suro-dhemit-tentang-7-layer-osi/</guid>
-        <description>A. PengertianModel referensi jaringan terbuka OSI atau OSI Reference Model for open networking adalah sebuah model arsitektural jaringan yang dikembangkan oleh badan International Organization for Standardization (ISO) di Eropa pada tahun 1977. OSI sendiri merupakan singkatan dari Open System Interconnection. Model ini disebut juga dengan model &#34;Model tujuh lapis OSI&#34; (OSI seven layer model).&amp;nbsp;Sebelum munculnya model referensi OSI, sistem jaringan komputer sangat tergantung kepada pemasok (vendor). OSI berupaya membentuk standar umum jaringan komputer untuk menunjang interoperatibilitas antar pemasok yang berbeda.</description>
-      </item>
-    
-      <item>
-        <title>Konsep perencanaan membangun jaringan sekolah</title>
-        <link>https://sibunglon.com/2017/08/16/konsep-perencanaan-membangun-jaringan-sekolah/</link>
-        <pubDate>Wed, 16 Aug 2017 17:25:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/08/16/konsep-perencanaan-membangun-jaringan-sekolah/</guid>
-        <description>A. PENDAHULUANPada kesempatan ini saya akan memberikan sedikit ilmu terkait dengan konsep perencanaan membangun jaringan sekolah. dalam melakukan sebuah pekerjaan kita mesti memikirkan konsep terlebih dahulu.
-B. PENGERTIANPerencanaan merupakan tahapan awal yang harus di lakukan sebelum melakuka sesuatu pekerjaan. perencanaan dikatakan matang/berhasil, apabila perencanaan tersebut 70% sudah pasti dan tidak sering mengalami perubahan
-C. LATAR BELAKANGDalam hal ini, saya bekerja tim utuk membangun jaringan di sekolah. saya berpern untuk mengatur jaringan.</description>
-      </item>
-    
-      <item>
-        <title>Implementasi PPPoE client Mikrotik</title>
+        <title>Implementasi PPPoE Client Mikrotik</title>
         <link>https://sibunglon.com/2017/08/08/implementasi-pppoe-client-mikrotik/</link>
         <pubDate>Tue, 08 Aug 2017 14:36:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/08/implementasi-pppoe-client-mikrotik/</guid>
@@ -293,7 +260,7 @@ B. LATAR BELAKANGMikrotik adalah salah satu router yang mendukung konfigurasi pp
       </item>
     
       <item>
-        <title>Mengganti login page jaringan mikroTik menggunakan filezilla</title>
+        <title>Mengganti Login Page Jaringan MikroTik Menggunakan FileZilla</title>
         <link>https://sibunglon.com/2017/08/01/mengganti-login-page-jaringan-mikrotik-menggunakan-filezilla/</link>
         <pubDate>Tue, 01 Aug 2017 16:09:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/01/mengganti-login-page-jaringan-mikrotik-menggunakan-filezilla/</guid>
@@ -303,7 +270,7 @@ Maksud dan TujuanTujuan dari postingan ini agar si pembaca dapat mempraktekkan d
       </item>
     
       <item>
-        <title>Menggunakan 1 akun mikroTik untuk banyak pengguna</title>
+        <title>Menggunakan 1 Akun MikroTik Untuk Banyak Pengguna</title>
         <link>https://sibunglon.com/2017/07/28/menggunakan-1-akun-mikrotik-untuk-banyak-pengguna/</link>
         <pubDate>Fri, 28 Jul 2017 15:11:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/28/menggunakan-1-akun-mikrotik-untuk-banyak-pengguna/</guid>
@@ -313,7 +280,7 @@ Alat dan Bahan1. MikroTik yang telah dikonfigurasi hotspot dan akses internetnya
       </item>
     
       <item>
-        <title>Konfigurasi dasar mikroTik untuk sharing internet menggunakan hotspot</title>
+        <title>Konfigurasi Dasar MikroTik Untuk Sharing Internet Menggunakan Hotspot</title>
         <link>https://sibunglon.com/2017/07/27/konfigurasi-dasar-mikrotik-untuk-sharing-internet-menggunakan-hotspot/</link>
         <pubDate>Thu, 27 Jul 2017 14:37:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/27/konfigurasi-dasar-mikrotik-untuk-sharing-internet-menggunakan-hotspot/</guid>
@@ -321,7 +288,7 @@ Alat dan Bahan1. MikroTik yang telah dikonfigurasi hotspot dan akses internetnya
       </item>
     
       <item>
-        <title>Bagaimana mengganti login page jaringan mikroTik?</title>
+        <title>Bagaimana Mengganti Login Page Jaringan MikroTik?</title>
         <link>https://sibunglon.com/2017/07/26/bagaimana-mengganti-login-page-jaringan-mikrotik/</link>
         <pubDate>Wed, 26 Jul 2017 14:34:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/26/bagaimana-mengganti-login-page-jaringan-mikrotik/</guid>
@@ -330,7 +297,7 @@ Maksud dan TujuanDengan login page yang telah disiapkan dapat membatasi siapa sa
       </item>
     
       <item>
-        <title>Bagaimana melimit waktu internet pengguna menggunakan mikroTik</title>
+        <title>Bagaimana Melimit Waktu Internet Pengguna Menggunakan MikroTik</title>
         <link>https://sibunglon.com/2017/07/25/bagaimana-melimit-waktu-internet-pengguna-menggunakan-mikrotik/</link>
         <pubDate>Tue, 25 Jul 2017 14:12:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/25/bagaimana-melimit-waktu-internet-pengguna-menggunakan-mikrotik/</guid>
@@ -339,6 +306,18 @@ Mikrotik adalah sebuah produk yang bisa difungsikan sebagai router, hotspot, dan
 
 Maksud dan Tujuan
 Tujuan pembatasannya itu tergantung dimana penempatan akses internet dari mikroTik itu sendiri.</description>
+      </item>
+    
+      <item>
+        <title>Apa Itu MikroTik?</title>
+        <link>https://sibunglon.com/2017/07/25/apa-itu-mikrotik/</link>
+        <pubDate>Tue, 25 Jul 2017 09:30:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/07/25/apa-itu-mikrotik/</guid>
+        <description>A. Pengertian MikroTik
+MikroTik RouterOS™ adalah sistem operasi dan perangkat lunak yang dapat digunakan untuk menjadikan komputer manjadi router network yang handal, mencakup berbagai fitur yang dibuat untuk ip network dan jaringan wireless, cocok digunakan oleh ISP dan provider hotspot.
+
+B. Sejarah Mikrotik
+MikroTikls [dengan trade name MikroTik®] didirikan tahun 1995 bertujuan mengembangkan sistem ISP dengan wireless. MikroTikls saat ini telah mendukung sistem ISP dengan wireless untuk jalur data internet di banyak negara, antara lain Iraq, Kosovo, Sri Lanka, Ghana dan banyak negara lainnya.</description>
       </item>
     
   </channel>

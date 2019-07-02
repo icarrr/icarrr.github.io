@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on The Official Site of siBunglon</title>
+    <link>https://sibunglon.com/tags/python/</link>
+    <description>Recent content in Python on The Official Site of siBunglon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 26 Feb 2019 10:53:16 +0700</lastBuildDate>
+    
+      <atom:link href="https://sibunglon.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      <item>
+        <title>Install Package From PIP Ignore Trusted Host</title>
+        <link>https://sibunglon.com/2019/02/26/install-package-from-pip-ignore-trusted-host/</link>
+        <pubDate>Tue, 26 Feb 2019 10:53:16 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/02/26/install-package-from-pip-ignore-trusted-host/</guid>
+        <description>Connection is Power Yah connection is power dan jangan berpikir problems can occur due to connection ketika kalian menemukan masalah yang berkaitan dengan internet. Disuatu waktu I&amp;rsquo;m siBunglon menemukan masalah pada saat akan melakukan installasi package dari python-pip, paketnya tidak bisa diinstall tapi diwaktu itu I&amp;rsquo;m siBunglon menggunakan koneksi yang dikelola oleh orang lain dan mencoba browsing eh ternyata lancar jaya, mencoba menggunakan Wi-Fi dari device yang lain dan masalah tersebut tidak muncul.</description>
+      </item>
+    
+      <item>
+        <title>PIP Python2 Error</title>
+        <link>https://sibunglon.com/2018/12/11/pip-python2-error/</link>
+        <pubDate>Tue, 11 Dec 2018 21:34:18 +0700</pubDate>
+        <guid>https://sibunglon.com/2018/12/11/pip-python2-error/</guid>
+        <description> Pip di Python2 Error? Traceback (most recent call last): File &amp;quot;/usr/bin/pip&amp;quot;, line 9, in &amp;lt;module&amp;gt; from pip import main ImportError: cannot import name main  Gak usah panik, cukup jalankan command berikut tapi pastikan terlebih dahulu sekarang sudah jadi super user (root)
+python -m pip uninstall pip &amp;amp;&amp;amp; apt install python-pip --reinstall  </description>
+      </item>
+    
+      <item>
+        <title>Python Tidak Memiliki Objek SSL_ST_INIT</title>
+        <link>https://sibunglon.com/2018/12/10/python-tidak-memiliki-objek-ssl_st_init/</link>
+        <pubDate>Mon, 10 Dec 2018 23:47:30 +0700</pubDate>
+        <guid>https://sibunglon.com/2018/12/10/python-tidak-memiliki-objek-ssl_st_init/</guid>
+        <description>Jika akan menghubungkan perangkat anda dengan perangkat lain menggunakan ansible namun ketemu error ERROR! Unexpected Exception: &amp;lsquo;module&amp;rsquo; object has no attribute &amp;lsquo;SSL_ST_INIT&amp;rsquo;, sebenarnya itu hanya membutuhkan paket pyOpenSSL yang dapat diinstall dengan command pip install pyOpenSSL</description>
+      </item>
+    
+  </channel>
+</rss>

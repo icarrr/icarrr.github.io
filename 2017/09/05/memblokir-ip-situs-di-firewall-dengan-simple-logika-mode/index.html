@@ -3,7 +3,7 @@
   <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Memblokir IP situs di firewall dengan simple logika mode</title>
+  <title>Memblokir IP Situs di Firewall Dengan Simple Logika Mode</title>
   <meta name="author" content="Faizar Septiawan">
   <meta name="author" content="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng">
   <meta name="description" content="Read - Search - Ask | Sekali Gila Tetap Gila">
@@ -57,7 +57,7 @@
   <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
   <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
 
-  <meta property="og:title" content="Memblokir IP situs di firewall dengan simple logika mode" />
+  <meta property="og:title" content="Memblokir IP Situs di Firewall Dengan Simple Logika Mode" />
 <meta property="og:description" content="A. PendahuluanPada kesempatan kali ini saya akan memposting tentang firewall tetapi dengan metode simple logika
 B. PengertianFirewall simple logis/logika adalah konfigurasi firewall secara logis sehingga bisa lebih mudah dipahami karena lebih manusiawi
 C. Latar belakangIngin menambah ilmu kemudian untuk disharing
@@ -71,7 +71,7 @@ F. Alat dan bahanMikrotikAkses internetLaptop/pcG. Jangka waktu pelaksanaanWaktu
 
   
   
-<meta itemprop="name" content="Memblokir IP situs di firewall dengan simple logika mode">
+<meta itemprop="name" content="Memblokir IP Situs di Firewall Dengan Simple Logika Mode">
 <meta itemprop="description" content="A. PendahuluanPada kesempatan kali ini saya akan memposting tentang firewall tetapi dengan metode simple logika
 B. PengertianFirewall simple logis/logika adalah konfigurasi firewall secara logis sehingga bisa lebih mudah dipahami karena lebih manusiawi
 C. Latar belakangIngin menambah ilmu kemudian untuk disharing
@@ -86,10 +86,10 @@ F. Alat dan bahanMikrotikAkses internetLaptop/pcG. Jangka waktu pelaksanaanWaktu
 
 
 
-<meta itemprop="keywords" content="BLC Telkom Klaten,MikroTik,KPLI Klaten,MikroTik Indonesia,Ayo Belajar Linux," />
+<meta itemprop="keywords" content="BLC Telkom Klaten,MikroTik,Ngoprek," />
 
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Memblokir IP situs di firewall dengan simple logika mode"/>
+<meta name="twitter:title" content="Memblokir IP Situs di Firewall Dengan Simple Logika Mode"/>
 <meta name="twitter:description" content="A. PendahuluanPada kesempatan kali ini saya akan memposting tentang firewall tetapi dengan metode simple logika
 B. PengertianFirewall simple logis/logika adalah konfigurasi firewall secara logis sehingga bisa lebih mudah dipahami karena lebih manusiawi
 C. Latar belakangIngin menambah ilmu kemudian untuk disharing
@@ -124,7 +124,7 @@ F. Alat dan bahanMikrotikAkses internetLaptop/pcG. Jangka waktu pelaksanaanWaktu
       <small>
         <time datetime="2017-09-05 10:00:00&#43;0000">2017-09-05</time>
         &bull;</small>
-      <h1>Memblokir IP situs di firewall dengan simple logika mode</h1>
+      <h1>Memblokir IP Situs di Firewall Dengan Simple Logika Mode</h1>
     </header>
     <section><p><div style="text-align: justify;"><strong><span style="font-size: large;">A. Pendahuluan</span></strong></div><div style="text-align: justify;">Pada kesempatan kali ini saya akan memposting tentang firewall tetapi dengan metode simple logika</div><br /><div style="text-align: justify;"><strong><span style="font-size: large;">B. Pengertian</span></strong></div><div style="text-align: justify;">Firewall simple logis/logika adalah konfigurasi firewall secara logis sehingga bisa lebih mudah dipahami karena lebih manusiawi</div><br /><div style="text-align: justify;"><strong><span style="font-size: large;">C. Latar belakang</span></strong></div><span style="text-align: justify;">Ingin menambah ilmu kemudian untuk disharing</span><br /><br /><div style="text-align: justify;"><strong><span style="font-size: large;">D. Tujuan</span></strong></div><span style="text-align: justify;">Agar client tidak dapat membuka situs yang telah diblokir</span><br /><br /><div style="text-align: justify;"><strong><span style="font-size: large;">E. Hasil yang diharapkan</span></strong></div><span style="text-align: justify;">Dapat melakukan konfigurasi dengan cepat, baik, dan benar</span><br /><br /><div style="text-align: justify;"><strong><span style="font-size: large;">F. Alat dan bahan</span></strong></div><ol style="text-align: justify;"><li>Mikrotik</li><li>Akses internet</li><li>Laptop/pc</li></ol><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><strong><span style="font-size: large;">G. Jangka waktu pelaksanaan</span></strong></div><span style="text-align: justify;">Waktu yang dibutuhkan sekitar 5-15 menit</span><br /><br /><div style="text-align: justify;"><strong><span style="font-size: large;">H. Langkah kerja</span></strong></div><div style="text-align: justify;">1. Buka terminal di winbox mikroTik lalu ping situs yang akan diblokir ipnya, karena ip dari situs akan ditampilkan. Buka browser lalu buka situs menggunakan ip yang akan di blokir, pastikan situs itu bisa terbuka dan coba ping ip yang didapat pada shell/terminal. Misal pada praktek ini memblokir ip dari detik.com</div><div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-skDbA_2J1j0/W4-GdPYK8yI/AAAAAAAAEMg/IpYbC3IYaNI7ahlhUkDnmFT0BLhSgfPZwCLcBGAs/s1600/Screenshot_0.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="705" data-original-width="1288" height="175" src="https://2.bp.blogspot.com/-skDbA_2J1j0/W4-GdPYK8yI/AAAAAAAAEMg/IpYbC3IYaNI7ahlhUkDnmFT0BLhSgfPZwCLcBGAs/s320/Screenshot_0.png" title="" width="320" /></a></div><br /><div style="text-align: justify;">2. Hubungkan mikroTik dengan perangkat &gt; buka winbox &gt; login untuk konfigurasi mikroTik</div><br /><div style="text-align: justify;">3. Buka IP &gt; Firewall &gt; Filter rules &gt; add (+)</div><div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/-syAsS2RQq3w/W4-GjmL7uzI/AAAAAAAAEMk/vNg3oYVAKtwr4JMEC8O6b0MeoY4IL3abgCLcBGAs/s1600/Screenshot_1.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="684" data-original-width="1257" height="174" src="https://4.bp.blogspot.com/-syAsS2RQq3w/W4-GjmL7uzI/AAAAAAAAEMk/vNg3oYVAKtwr4JMEC8O6b0MeoY4IL3abgCLcBGAs/s320/Screenshot_1.png" title="" width="320" /></a></div><br /><div style="text-align: justify;">4. Lakukan konfigurasi jendela firewall rule:</div><br /><div style="text-align: justify;">tab general :</div><ul style="text-align: justify;"><li>chain = forward</li><li>Dst.address = ip situs yang akan diblokir, misal ip detik.com yaitu 103.49.221.211</li><li>Out.interfaces = sumber internet</li></ul><div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-rW70J-L7nl4/W4-GtUeVJtI/AAAAAAAAEMo/gwEPfbAvJ6coFecKo2O3g9s0H192OfcigCLcBGAs/s1600/Screenshot_2.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="698" data-original-width="379" height="320" src="https://3.bp.blogspot.com/-rW70J-L7nl4/W4-GtUeVJtI/AAAAAAAAEMo/gwEPfbAvJ6coFecKo2O3g9s0H192OfcigCLcBGAs/s320/Screenshot_2.png" title="" width="173" /></a></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">tab action :</div><ul style="text-align: justify;"><li>action = drop</li></ul><div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-T08l0v7SrbM/W4-G31i-vOI/AAAAAAAAEM0/se0nLNu5kpwfRpT8tOjdIYLNNaDN2n8-gCLcBGAs/s1600/Screenshot_3.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="697" data-original-width="380" height="320" src="https://2.bp.blogspot.com/-T08l0v7SrbM/W4-G31i-vOI/AAAAAAAAEM0/se0nLNu5kpwfRpT8tOjdIYLNNaDN2n8-gCLcBGAs/s320/Screenshot_3.png" title="" width="174" /></a></div><br /><div style="text-align: justify;">klik apply &gt; ok</div><br /><div style="text-align: justify;">5. Buka browser dan coba lagi buka situs atau buka terminal/shell dan coba ping ip yang diblokir maka shell tidak memberikan respon seperti pada saat ping sebelum diblokir.</div><div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-dM9kXItb6f4/W4-HAMjX5FI/AAAAAAAAEM8/f-QdnFqqWvsKnTDNiTIhkeJP3iAa72VawCLcBGAs/s1600/Screenshot_4.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="747" data-original-width="681" height="320" src="https://3.bp.blogspot.com/-dM9kXItb6f4/W4-HAMjX5FI/AAAAAAAAEM8/f-QdnFqqWvsKnTDNiTIhkeJP3iAa72VawCLcBGAs/s320/Screenshot_4.png" title="" width="291" /></a></div><br /><div style="text-align: justify;"><strong><span style="font-size: large;">I. Hasil yang didapatkan</span></strong></div><div style="text-align: justify;">Dapat melakukan konfigurasi dengan baik dan benar</div><br /><div style="text-align: justify;"><strong><span style="font-size: large;">J. Temuan masalah</span></strong></div><div style="text-align: justify;">Pada percobaan pertama, actionnya accept sehingga situs tetap dapat terbuka</div><br /><div style="text-align: justify;"><strong><span style="font-size: large;">K. Kesimpulan</span></strong></div><span style="text-align: justify;">Dengan fitur ini, kita dapat memblokir situs dari sisi ip tetapi jika ingin membuka situs dengan DNS web tetap tidak bisa terbuka meskipun tanpa menggunakan fitur layer 7 protocols</span></p>
 </section>
@@ -140,14 +140,8 @@ F. Alat dan bahanMikrotikAkses internetLaptop/pcG. Jangka waktu pelaksanaanWaktu
               <a href="/tags/mikrotik">
                 <span>#</span>MikroTik</a>
             
-              <a href="/tags/kpli-klaten">
-                <span>#</span>KPLI Klaten</a>
-            
-              <a href="/tags/mikrotik-indonesia">
-                <span>#</span>MikroTik Indonesia</a>
-            
-              <a href="/tags/ayo-belajar-linux">
-                <span>#</span>Ayo Belajar Linux</a>
+              <a href="/tags/ngoprek">
+                <span>#</span>Ngoprek</a>
             
           
         </p>

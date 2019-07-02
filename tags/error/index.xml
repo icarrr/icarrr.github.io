@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Error on The Official Site of siBunglon</title>
+    <link>https://sibunglon.com/tags/error/</link>
+    <description>Recent content in Error on The Official Site of siBunglon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Apr 2019 05:09:24 +0700</lastBuildDate>
+    
+      <atom:link href="https://sibunglon.com/tags/error/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      <item>
+        <title>Fix the Cockpit Blank Page After Login Over Nginx Reverse Proxy</title>
+        <link>https://sibunglon.com/2019/04/15/fix-the-cockpit-blank-page-after-login-over-nginx-reverse-proxy/</link>
+        <pubDate>Mon, 15 Apr 2019 05:09:24 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/04/15/fix-the-cockpit-blank-page-after-login-over-nginx-reverse-proxy/</guid>
+        <description>Cockpit nge-Blank Setelah Login Jika diakses melalui Reverse Proxy Nginx? Apakah anda mengalami hal tersebut? Jangan takut, karena saya juga mengalami hal tersebut 😆 Beberapa yang hari lalu, saya mengakses cockpit server lab saya yang melalui reverse proxy NGINX, awalnya normal aja pas ngakses sampai ke halaman login namun ketika mencoba login, si cockpit hanya stuck di blank page. Wahhhh alhamdulillah dapat masalah baru lagi :D padahal sebelumnya normal aja, gak ada stuck di blank page.</description>
+      </item>
+    
+      <item>
+        <title>ValueError Saat Setup MSSQL Server Di Linux</title>
+        <link>https://sibunglon.com/2019/04/09/valueerror-saat-setup-mssql-server-di-linux/</link>
+        <pubDate>Tue, 09 Apr 2019 20:45:08 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/04/09/valueerror-saat-setup-mssql-server-di-linux/</guid>
+        <description>ValueError: unknown locale: UTF-8? Beberapa hari yang lalu saya sempat menulis step by step install Microsoft SQL Server (MSSQL Server) di environment Linux, namun mungkin saja ada yang menemukan error salah satunya error dengan message ValueError: unknown locale: UTF-8, gak usah takut karena dari masalah itu ataupun lainnya kita dapat pelajaran baru😆
+Disuatu waktu saya install MSSQL Server Linux di environment berbeda dari sebelumnya, saya ikuti tuh step by step installasi MSSQL Server yang saya tulis sebelumnya, alhamdulillah dapat rejeki, dapat ValueError: unknown locale: UTF-8 pada saat setup MSSQL Server🤣 Dengan kemampuan sok tau saya😆 langsung disimpulkan maksud dari error message tersebut yaitu Lokal UTF-8 tidak di kenal.</description>
+      </item>
+    
+      <item>
+        <title>Error Generate Certificate SSL Menggunakan Let&#39;s Encrypt</title>
+        <link>https://sibunglon.com/2019/02/16/error-generate-certificate-ssl-menggunakan-lets-encrypt/</link>
+        <pubDate>Sat, 16 Feb 2019 17:19:08 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/02/16/error-generate-certificate-ssl-menggunakan-lets-encrypt/</guid>
+        <description>Beberapa bulan yang lalu I&amp;rsquo;m siBunglon masih bisa generate SSL menggunakan Let&amp;rsquo;s Encrypt namun hari ini I&amp;rsquo;m siBunglon menemukan error ketika akan generate SSL lagi dan I&amp;rsquo;m siBunglon mendapatkan error message seperti berikut:
+[root@airgreen siBunglon]# certbot --nginx -d repo.lab.sibunglon.com Traceback (most recent call last): File &amp;quot;/bin/certbot&amp;quot;, line 9, in &amp;lt;module&amp;gt; load_entry_point(&#39;certbot==0.29.1&#39;, &#39;console_scripts&#39;, &#39;certbot&#39;)() File &amp;quot;/usr/lib/python2.7/site-packages/pkg_resources/__init__.py&amp;quot;, line 487, in load_entry_point return get_distribution(dist).load_entry_point(group, name) File &amp;quot;/usr/lib/python2.7/site-packages/pkg_resources/__init__.py&amp;quot;, line 2728, in load_entry_point return ep.load() File &amp;quot;/usr/lib/python2.</description>
+      </item>
+    
+      <item>
+        <title>Sertifikat Repository Red Hat Kadaluarsa Pada VM Microsoft Azure</title>
+        <link>https://sibunglon.com/2018/12/12/sertifikat-repository-red-hat-kadaluarsa-pada-vm-microsoft-azure/</link>
+        <pubDate>Wed, 12 Dec 2018 10:28:20 +0700</pubDate>
+        <guid>https://sibunglon.com/2018/12/12/sertifikat-repository-red-hat-kadaluarsa-pada-vm-microsoft-azure/</guid>
+        <description>Jika anda menggunakan VM Red Hat versi lama di Microsoft Azure, kadang anda mendapatkan masalah “SSL peer rejected your certificate as expired” jika ingin menginstall paket baru ataupun mengupate paket-paket. Itu terjadi karena sertifikat repositori sudah kadaluarsa, untuk memecahkan masalah tersebut cukup gunakan command
+yum update -y --disablerepo=* --enablerepo=rhui-microsoft-* rhui-azure-rhel7
+Setelah itu sekarang anda dapat menginstall atau update paket di Red Hat anda seperti yang biasa kamu lakukan.</description>
+      </item>
+    
+      <item>
+        <title>PIP Python2 Error</title>
+        <link>https://sibunglon.com/2018/12/11/pip-python2-error/</link>
+        <pubDate>Tue, 11 Dec 2018 21:34:18 +0700</pubDate>
+        <guid>https://sibunglon.com/2018/12/11/pip-python2-error/</guid>
+        <description> Pip di Python2 Error? Traceback (most recent call last): File &amp;quot;/usr/bin/pip&amp;quot;, line 9, in &amp;lt;module&amp;gt; from pip import main ImportError: cannot import name main  Gak usah panik, cukup jalankan command berikut tapi pastikan terlebih dahulu sekarang sudah jadi super user (root)
+python -m pip uninstall pip &amp;amp;&amp;amp; apt install python-pip --reinstall  </description>
+      </item>
+    
+      <item>
+        <title>Python Tidak Memiliki Objek SSL_ST_INIT</title>
+        <link>https://sibunglon.com/2018/12/10/python-tidak-memiliki-objek-ssl_st_init/</link>
+        <pubDate>Mon, 10 Dec 2018 23:47:30 +0700</pubDate>
+        <guid>https://sibunglon.com/2018/12/10/python-tidak-memiliki-objek-ssl_st_init/</guid>
+        <description>Jika akan menghubungkan perangkat anda dengan perangkat lain menggunakan ansible namun ketemu error ERROR! Unexpected Exception: &amp;lsquo;module&amp;rsquo; object has no attribute &amp;lsquo;SSL_ST_INIT&amp;rsquo;, sebenarnya itu hanya membutuhkan paket pyOpenSSL yang dapat diinstall dengan command pip install pyOpenSSL</description>
+      </item>
+    
+      <item>
+        <title>Peringatan Dependensi Cryptography</title>
+        <link>https://sibunglon.com/2018/12/10/peringatan-dependensi-cryptography/</link>
+        <pubDate>Mon, 10 Dec 2018 23:41:25 +0700</pubDate>
+        <guid>https://sibunglon.com/2018/12/10/peringatan-dependensi-cryptography/</guid>
+        <description>Requests Dependency Warning: Old version of cryptography Jika anda mendapatkan sebuah masalah jangan panik, apalagi ketemu error yang similiar dari judul tulsain itu berarti saat ini disistem anda menggunakan cryptography versi lama silahkan update dengan command pip install --upgrade cryptography</description>
+      </item>
+    
+      <item>
+        <title>Nginx Tidak Bisa Diakses</title>
+        <link>https://sibunglon.com/2018/12/10/nginx-tidak-bisa-diakses/</link>
+        <pubDate>Mon, 10 Dec 2018 13:40:57 +0700</pubDate>
+        <guid>https://sibunglon.com/2018/12/10/nginx-tidak-bisa-diakses/</guid>
+        <description>Nginx di CentOS atau RHEL tidak bisa diakses? Service nginx aktif? Servernya aktif? Akses dari localhost bisa? Jika semua jawabannya YA, mungkin firewall di system anda sedang aktif namun trafik protokol HTTP dan HTTPS belum diizinkan oleh perangkat yang lain.
+Untuk mengizinkan trafik protokol HTTP, gunakan command
+firewall-cmd --permanent --zone=public --add-service=http  Sedangkan untuk mengizinkan trafik protokol HTTPS, gunakan command
+firewall-cmd --permanent --zone=public --add-service=https  Setelah diizinkan, firewall wajib direload agar update firewall dapat diterapkan</description>
+      </item>
+    
+      <item>
+        <title>Atasi Info PHP Tidak Tampil atau Not Working</title>
+        <link>https://sibunglon.com/2017/10/14/atasi-info-php-tidak-tampil-atau-not-working/</link>
+        <pubDate>Sat, 14 Oct 2017 10:25:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/14/atasi-info-php-tidak-tampil-atau-not-working/</guid>
+        <description>A. Pendahuluan
+Pada postingan kali ini, saya akan memberikan solusi yang biasa menjadi permasalahan saat menginstall LAMP Server di linux
+B. Pengertian
+PHP info&amp;nbsp;adalah istilah untuk menyebutkan sebuah halaman yang berisi informasi mengenai versi PHP yang digunakan oleh suatu server, biasanya pada halaman PHP Info akan di informasikan banyak hal selain versi nya itu sendiri. phpinfo() biasanya digunakan untuk memeriksa pengaturan konfigurasi dan variabel standar yang tersedia pada sistem tertentu.</description>
+      </item>
+    
+      <item>
+        <title>Atasi PhpMyAdmin Error #1698 Sehingga Tidak Bisa Login  Sebagai Root</title>
+        <link>https://sibunglon.com/2017/09/20/atasi-phpmyadmin-error-#1698-sehingga-tidak-bisa-login-sebagai-root/</link>
+        <pubDate>Wed, 20 Sep 2017 03:15:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/09/20/atasi-phpmyadmin-error-#1698-sehingga-tidak-bisa-login-sebagai-root/</guid>
+        <description>A. PendahuluanPada kesempatan ini yang saya posting/share yaitu troubleshoot phpmyadmin dengan kode error&amp;nbsp;#1698 atau tidak bisa login sebagai root
+B. PengertianPhpMyAdmin&amp;nbsp;adalah&amp;nbsp;perangkat lunak bebas&amp;nbsp;yang ditulis dalam&amp;nbsp;bahasa pemrograman&amp;nbsp;PHP&amp;nbsp;yang digunakan untuk menangani administrasi&amp;nbsp;MySQL&amp;nbsp;melalui&amp;nbsp;Jejaring Jagat Jembar&amp;nbsp;(World Wide Web). phpMyAdmin mendukung berbagai operasi MySQL, diantaranya (mengelola&amp;nbsp;basis data, tabel-tabel, bidang (fields), relasi (relations), indeks, pengguna (users), perizinan (permissions), dan lain-lain).
+C. Latar belakangIngin membagi pengetahuan tentang atasi permasalahan yang sama
+D. TujuanPembaca mudah mengatasai masalahnya seperti yang dimaksud</description>
+      </item>
+    
+      <item>
+        <title>Mengatasi Masalah &#39;apt-get update failed to fetch hash sum mismatch&#39;</title>
+        <link>https://sibunglon.com/2017/08/23/mengatasi-masalah-apt-get-update-failed-to-fetch-hash-sum-mismatch/</link>
+        <pubDate>Wed, 23 Aug 2017 10:37:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/23/mengatasi-masalah-apt-get-update-failed-to-fetch-hash-sum-mismatch/</guid>
+        <description>A. PendahuluanPada kali ini, saya akan memposting tentang bagaimana mengatasi masalah yang biasa ditemukan saat melakukan update linux.
+B. PengertianShell&amp;nbsp;adalah program (penterjemah perintah)yang menjembatani user dengan sistem operasi dalam hal ini Kernel (inti dari sistem operasi), umumnya shell menyediakan prompt sebagai user interface, tempat dimana user dapat mengetikkan perintah-perintah yang diinginkan baik berupa perintah internal shell (internal command), ataupun perintah eksekusi file program (eksternal command), selain itu memungkinkan user menyusun sekumpulan perintah pada sebuah atau beberapa file untuk dieksekusi sebagai program.</description>
+      </item>
+    
+      <item>
+        <title>Mengatasi GRUB Linux Yang Error</title>
+        <link>https://sibunglon.com/2017/08/02/mengatasi-grub-linux-yang-error/</link>
+        <pubDate>Wed, 02 Aug 2017 16:51:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/02/mengatasi-grub-linux-yang-error/</guid>
+        <description>PendahuluanGNU GRUB (singkat untuk GNU GRand Bersatu Bootloader) adalah boot loader paket dari proyek GNU . GRUB adalah implementasi referensi dari Free Software Foundation &#39;s Multiboot Keterangan , yang menyediakan pengguna pilihan untuk boot salah satu dari beberapa sistem operasi yang terpasang di komputer atau pilih tertentu kernel konfigurasi yang tersedia pada partisi sistem operasi tertentu.
+Maksud dan TujuanTujuan dari postingan ini yaitu agar pembaca yang memiliki masalah yang serupa, maka ia dapat mengatasinya sendiri tanpa membawa ke service center.</description>
+      </item>
+    
+  </channel>
+</rss>

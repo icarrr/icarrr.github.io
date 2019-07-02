@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Installasi on The Official Site of siBunglon</title>
+    <link>https://sibunglon.com/tags/installasi/</link>
+    <description>Recent content in Installasi on The Official Site of siBunglon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 06 May 2019 03:40:59 +0700</lastBuildDate>
+    
+      <atom:link href="https://sibunglon.com/tags/installasi/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      <item>
+        <title>Install Bamboo Atlassian di Linux</title>
+        <link>https://sibunglon.com/2019/05/06/install-bamboo-atlassian-di-linux/</link>
+        <pubDate>Mon, 06 May 2019 03:40:59 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/05/06/install-bamboo-atlassian-di-linux/</guid>
+        <description>Bamboo Atlassian Bamboo adalah integrasi berkelanjutan (continuous integration (CI)) dan server penyebaran berkelanjutan (continuous deployment) yang dikembangkan oleh Atlassian. Bamboo dapat digunakan untuk mengotomatisasi manajemen rilis untuk aplikasi perangkat lunak, menciptakan jalur pengiriman kontinu.
+CI adalah metodologi pengembangan perangkat lunak di mana tes pembangunan, unit, dan tes integrasi dilakukan, atau dipicu, setiap kali kode dipublish ke repositori, untuk memastikan bahwa perubahan baru terintegrasi dengan baik ke dalam basis kode yang ada.</description>
+      </item>
+    
+      <item>
+        <title>Mudahnya Memasang MSSQL Server di Linux</title>
+        <link>https://sibunglon.com/2019/04/05/mudahnya-memasang-mssql-server-di-linux/</link>
+        <pubDate>Fri, 05 Apr 2019 18:08:14 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/04/05/mudahnya-memasang-mssql-server-di-linux/</guid>
+        <description>Microsoft SQL Server di Linux? Diantara para pembaca mungkin ada yang kaget atau apa kalau produknya Microsoft bisa jalan di linux apalagi tanpa emulator ataupun tools lainnya. Yah itu bisa saja karena mungkin ada yang kemakan omongan bahwa produk Microsoft itu non open source. Dengan adanya MSSQL Server di linux jangan sampai ada terlalu kaget, positif thinking aja mungkin om Bill Gates udah mulai mengopen sourcekan produknya karena kasihan banyak yang berdosa karena menjadi pak tani gelapnya Microsoft😅</description>
+      </item>
+    
+      <item>
+        <title>Install Package From PIP Ignore Trusted Host</title>
+        <link>https://sibunglon.com/2019/02/26/install-package-from-pip-ignore-trusted-host/</link>
+        <pubDate>Tue, 26 Feb 2019 10:53:16 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/02/26/install-package-from-pip-ignore-trusted-host/</guid>
+        <description>Connection is Power Yah connection is power dan jangan berpikir problems can occur due to connection ketika kalian menemukan masalah yang berkaitan dengan internet. Disuatu waktu I&amp;rsquo;m siBunglon menemukan masalah pada saat akan melakukan installasi package dari python-pip, paketnya tidak bisa diinstall tapi diwaktu itu I&amp;rsquo;m siBunglon menggunakan koneksi yang dikelola oleh orang lain dan mencoba browsing eh ternyata lancar jaya, mencoba menggunakan Wi-Fi dari device yang lain dan masalah tersebut tidak muncul.</description>
+      </item>
+    
+      <item>
+        <title>Install Aplikasi Linux Secara Massal? Pake Ansible Aja</title>
+        <link>https://sibunglon.com/2019/01/19/install-aplikasi-linux-secara-massal-pake-ansible-aja/</link>
+        <pubDate>Sat, 19 Jan 2019 21:24:37 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/01/19/install-aplikasi-linux-secara-massal-pake-ansible-aja/</guid>
+        <description>Pada saat kita dihadapkan dengan pilihan harus melakukan installasi aplikasi secara berulang ataupun harus melakukan installasi aplikasi yang sama di beberapa server dan diwaktu itu juga kalian mau ngelakuin sesuatu, tentu hal tersebut bikin mumet atau apalah. Bayangkan jika sekarang kalian disuruh melakukan hal tersebut untuk 15 sampai 50 server, mabok dan bete auto mode ON hihihi :v Apalagi kalau sistem operasinya berbeda beda, mungkin baru dengar aja seketika mabok dan bete udah auto ganti ke mode ON.</description>
+      </item>
+    
+      <item>
+        <title>Berkenalan Dengan Ansible</title>
+        <link>https://sibunglon.com/2019/01/19/berkenalan-dengan-ansible/</link>
+        <pubDate>Sat, 19 Jan 2019 11:53:28 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/01/19/berkenalan-dengan-ansible/</guid>
+        <description>Ansible? Apa itu ansible? Untuk apa dia datang?
+Daripada banyak nanya hayuuuk berkenalan aja dengan ansible.
+Ansible adalah tool automation yang dimiliki oleh perusahaan yang bergerak dibidang teknologi yaitu RedHat. Ansible adalah perangkat lunak open source yang mengotomatiskan pemasangan software, manajemen konfigurasi, dan beberapa tugas lainnya. Ansible terhubung dengan client remotenya menggunakan ssh.
+Apa Kelebihan Ansible? Karena beberapa hari belakangan ini saya sebagai siBunglon telah mencobanya, maka dari itu siBunglon paparkan kelebihan penggunaaan ansible versinya sendiri :v hihihi</description>
+      </item>
+    
+      <item>
+        <title>Berkenalan Dengan Let&#39;s Encrypt SSL Gratis Untuk Nginx</title>
+        <link>https://sibunglon.com/2018/12/16/berkenalan-dengan-lets-encrypt-ssl-gratis-untuk-nginx/</link>
+        <pubDate>Sun, 16 Dec 2018 07:51:58 +0700</pubDate>
+        <guid>https://sibunglon.com/2018/12/16/berkenalan-dengan-lets-encrypt-ssl-gratis-untuk-nginx/</guid>
+        <description>Let&amp;rsquo;s Encrypt? Apa sih let&amp;rsquo;s encrypt itu?
+Let&amp;rsquo;s encrypt adalah certificate Authority (CA) atau otoritas sertifikat yang menyediakan cara mudah untuk mendapatkan dan menginstall SSL pada web server, sehingga memungkinkan web server anda terenskripsi (HTTPS). Merupakan layanan yang disediakan oleh Internet Security Research Group (ISRG). ISRG memberikan dan mengaktifkan HTTPS secara gratis dengan alasan ingin menciptakan web yang lebih aman dan menjaga privasi. Sebenarnya untuk mendapatkan dan memasang SSL itu memiliki biaya sendiri namun jika untuk kebutuhan pengembangan, ngoprek / ngelab, let&amp;rsquo;s encrypt ini menjadi solusi.</description>
+      </item>
+    
+      <item>
+        <title>Berkenalan Dengan Nginx di RHEL/CentOS</title>
+        <link>https://sibunglon.com/2018/12/10/berkenalan-dengan-nginx-di-rhel/centos/</link>
+        <pubDate>Mon, 10 Dec 2018 07:44:24 +0700</pubDate>
+        <guid>https://sibunglon.com/2018/12/10/berkenalan-dengan-nginx-di-rhel/centos/</guid>
+        <description>Nginx? Apa sih nginx itu? Fungsinya buat apa? Mungkin itu yang terlintas dipikirian beberapa orang jika berkenalan dengan hal baru. Maka dari itu pada kali ini yang akan dibahas pada Lab ini yaitu berkenalan dan bagaimana memasang nginx.
+Nginx, banyak orang membicarakannya meskipun salah dipelafalannya. Dulu saya juga salah melafakannya namun setelah diruqyah sama m1m1n atau yang dikenal dengan Andy Hidayat, sekarang gak salah pelafalan lagi :D . Nginx dibaca &amp;ldquo;engine X&amp;rdquo; bukan &amp;ldquo;nging X&amp;rdquo;.</description>
+      </item>
+    
+      <item>
+        <title>Installasi Caddy Server di Sistem Operasi Windows</title>
+        <link>https://sibunglon.com/2018/10/28/installasi-caddy-server-di-sistem-operasi-windows/</link>
+        <pubDate>Sun, 28 Oct 2018 21:20:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2018/10/28/installasi-caddy-server-di-sistem-operasi-windows/</guid>
+        <description>Setelah berkenalan dengan si Caddy Server pada beberapa hari yang lalu, sekarang waktunya bermain dengan si Caddy Server.
+Apa Saja yang dibutuhkan? Pastikan anda telah memiliki file master Caddy Server, jika belum silahkan dari situs resminya.
+Menjalankan Caddy Server pada sistem operasi windows1. Buka file hasil download Caddy Server2. Copy semua isi dari file master tersebut3. Tentukan path Caddy, buat folder baru yang akan menampung semua file yang telah dicopy kemudian paste di folder tersebut4.</description>
+      </item>
+    
+      <item>
+        <title>Install Nexcloud di Debian Server 8.6.0</title>
+        <link>https://sibunglon.com/2017/10/20/install-nexcloud-di-debian-server-8.6.0/</link>
+        <pubDate>Fri, 20 Oct 2017 02:10:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/20/install-nexcloud-di-debian-server-8.6.0/</guid>
+        <description>A. PendahuluanPada kesempatan ini&amp;nbsp;saya akan sharing tentang bagaimana saya menyimpan file dengan melakukan instalasi nextcloud pada server debian 8.6.
+B. PengertianNextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan layanan file hosting. Ini secara fungsional mirip dengan Dropbox, meskipun Nextcloud bebas dan open-source, memungkinkan siapa saja untuk menginstal dan mengoperasikannya di server pribadi. Berbeda dengan layanan proprietary seperti Dropbox, arsitektur terbuka memungkinkan penambahan fungsionalitas tambahan ke server dalam bentuk aplikasi.</description>
+      </item>
+    
+      <item>
+        <title>Implementasi Pembelajaran Online Dengan Moodle - Installasi</title>
+        <link>https://sibunglon.com/2017/10/18/implementasi-pembelajaran-online-dengan-moodle-installasi/</link>
+        <pubDate>Wed, 18 Oct 2017 17:13:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/18/implementasi-pembelajaran-online-dengan-moodle-installasi/</guid>
+        <description>A. PendahuluanPada kesempatan kali ini saya akan mengimplementasikan tentang apa yang sudah saya pelajari yaitu Moodle
+B. PengertianMOODLE&amp;nbsp;(singkatan dari&amp;nbsp;Modular Object-Oriented Dynamic Learning Environment) adalah paket perangkat lunak yang diproduksi untuk kegiatan belajar berbasis internet dan situs web yang menggunakan prinsip&amp;nbsp;social constructionist pedagogy. MOODLE merupakan salah satu aplikasi dari konsep dan mekanisme belajar mengajar yang memanfaatkan teknologi informasi, yang dikenal dengan konsep pembelajaran elktronik atau e-learning. Moodle dapat digunakan secara bebas sebagai produk sumber terbuka (open source) di bawah lisensi GNU.</description>
+      </item>
+    
+      <item>
+        <title>Install SLiMS 8 Akasia di Debian Server</title>
+        <link>https://sibunglon.com/2017/10/17/install-slims-8-akasia-di-debian-server/</link>
+        <pubDate>Tue, 17 Oct 2017 15:17:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/17/install-slims-8-akasia-di-debian-server/</guid>
+        <description>A. PendahuluanPada kesempatan ini saya sharing tentang bagaimana langkah-langkah penginstallan slims untuk manajamen perpustakaan online.
+B. PengertianSenayan, atau lengkapnya&amp;nbsp;Senayan Library Management System&amp;nbsp;(SLiMS), adalah perangkat lunak sistem manajemen perpustakaan (library management system) sumber terbuka yang dilisensikan di bawah GPL v3. Aplikasi Web yang dikembangkan oleh tim dari Pusat Informasi dan Humas Departemen Pendidikan Nasional Repubik Indonesia ini dibangun dengan menggunakan PHP, basis data MySQL, dan Pengontrol versi Git. Pada tahun 2009, Senayan memenangi INAICTA 2009 untuk kategori&amp;nbsp;open source.</description>
+      </item>
+    
+      <item>
+        <title>Install CMS Sekolahku di Server</title>
+        <link>https://sibunglon.com/2017/10/16/install-cms-sekolahku-di-server/</link>
+        <pubDate>Mon, 16 Oct 2017 11:16:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/16/install-cms-sekolahku-di-server/</guid>
+        <description>A. Pendahuluan
+Pada kesempatan kali ini saya akan mengimplementasikan membangun website sekolah di server dengan CMS.
+B. Pengertian
+CMS adalah suatu /sebuah aplikasi yang berfungsi merubah suatu menu atau memanipulasi data dari suatu situs atau website.
+C. Latar belakang
+Mempelajari sistem informasi sekolah dengan CMS dan mengimplementasikannya.
+D. Tujuan
+Mempunyai maksud untuk memudahkan saya mendapatkan informasi sekolah di website tersebut.
+E. Hasil yang diharapkan
+Mempunyai harapan agar nanti kedepannya bisa membangun website ini di sekolah.</description>
+      </item>
+    
+      <item>
+        <title>Menginstall Wordpress di Localhost Linux</title>
+        <link>https://sibunglon.com/2017/10/16/menginstall-wordpress-di-localhost-linux/</link>
+        <pubDate>Mon, 16 Oct 2017 10:48:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/16/menginstall-wordpress-di-localhost-linux/</guid>
+        <description>A. Pendahuluan&amp;nbsp;Pada kesempatan kali ini, saya memposting tentang proses installasi wordpressB. PengertianWordPress adalah sebuah&amp;nbsp;aplikasi&amp;nbsp;sumber terbuka (open source) yang sangat populer digunakan sebagai mesin blog (blog engine). WordPress dibangun dengan&amp;nbsp;bahasa pemrograman&amp;nbsp;PHP&amp;nbsp;dan&amp;nbsp;basis data&amp;nbsp;(database)&amp;nbsp;MySQL. PHP dan MySQL, keduanya merupakan&amp;nbsp;perangkat lunak sumber terbuka(open source software). Selain sebagai&amp;nbsp;blog, WordPress juga mulai digunakan sebagai sebuah&amp;nbsp;CMS(Content Management System) karena kemampuannya untuk dimodifikasi dan disesuaikan dengan kebutuhan penggunanyaPiranti lunak inti WordPress dikembangkan oleh ratusan sukarelawan. Ketika Anda ingin dapatkan lebih banyak kegunaan daripadanya, ada ribuan&amp;nbsp;plugin&amp;nbsp;dan&amp;nbsp;tema&amp;nbsp;yang tersedia untuk mengubah situs Anda menjadi nyaris&amp;nbsp;apa saja yang Anda dambakan.</description>
+      </item>
+    
+      <item>
+        <title>Implementasi Autoindex di Server Debian 8.6</title>
+        <link>https://sibunglon.com/2017/10/14/implementasi-autoindex-di-server-debian-8.6/</link>
+        <pubDate>Sat, 14 Oct 2017 10:36:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/14/implementasi-autoindex-di-server-debian-8.6/</guid>
+        <description>A. PendahuluanPada kesempatan ini saya akan mengimplementasikan autoindex di debian server 8-6
+B. PengertianAuto Index adalah&amp;nbsp;kemampuan untuk komputer&amp;nbsp;untuk memindai volume besar dokumen&amp;nbsp;terhadap dikendalikan&amp;nbsp;kosakata, taksonomi&amp;nbsp;, tesaurus&amp;nbsp;atau ontologi&amp;nbsp;dan menggunakan istilah-istilah dikendalikan untuk cepat&amp;nbsp;dan efektif Indeks deposit dokumen yang besar.&amp;nbsp;Karena jumlah dokumen secara eksponensial&amp;nbsp;meningkat dengan proliferasi dari Internet&amp;nbsp;, pengindeksan otomatis akan menjadi penting untuk mempertahankan kemampuan untuk menemukan informasi yang relevan di lautan ir-relevan informasi.
+C. Latar belakangLatar belakang dalam installasi ini adalah untuk memindai dokumen dengan volume yang besar dengan cepat, mudah dan lebih efektif.</description>
+      </item>
+    
+      <item>
+        <title>Hal-Hal Yang Harus Dilakukan Setelah Install Server - Install Aplikasi Berbasis Web</title>
+        <link>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-install-aplikasi-berbasis-web/</link>
+        <pubDate>Fri, 13 Oct 2017 10:22:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-install-aplikasi-berbasis-web/</guid>
+        <description>A. PendahuluanPada kesempatan ini, saya kembali memposting tentang dasar-dasar setelahi install server.
+
+B. PengertianAplikasi Berbasis Web adalah sebuah aplikasi yang dapat diakses melalui internet atau intranet, dan pada sekarang ini ternyata lebih banyak dan lebih luas dalam pemakaiannya.
+C. Latar belakangSetelah kita menginstall debian di proxmox&amp;nbsp;&amp;nbsp;tentunya kita harus tau hal hal apa saja yang harus dilakukan setelahnya.
+
+D. TujuanAgar server dapat bekerja secara optimal saat melayani komputer client.</description>
+      </item>
+    
+      <item>
+        <title>Hal-Hal Yang Harus Dilakukan Setelah Install Server - Installasi LAMP Server</title>
+        <link>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-installasi-lamp-server/</link>
+        <pubDate>Fri, 13 Oct 2017 10:09:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-installasi-lamp-server/</guid>
+        <description>A. Pendahuluan&amp;nbsp;Pada kesempatan ini saya memposting lagi dan masih mengenai server
+
+B. PengertianLAMP&amp;nbsp;adalah istilah yang merupakan singkatan dari&amp;nbsp;Linux,&amp;nbsp;Apache,&amp;nbsp;MySQL&amp;nbsp;dan&amp;nbsp;Perl/&amp;nbsp;PHP/&amp;nbsp;Phyton. Merupakan sebuah paket&amp;nbsp;perangkat lunak bebas&amp;nbsp;yang digunakan untuk menjalankan sebuah aplikasi secara lengkap.
+Komponen-komponen dari LAMP&amp;nbsp;:Linux&amp;nbsp;–&amp;nbsp;sistem operasiApache HTTP Server&amp;nbsp;–&amp;nbsp;web serverMariaDB&amp;nbsp;atau&amp;nbsp;MySQL&amp;nbsp;– sistem basis dataPHP&amp;nbsp;atau&amp;nbsp;Perl&amp;nbsp;atau&amp;nbsp;Python&amp;nbsp;– bahasa pemrograman yang dipakaiC. Latar belakang&amp;nbsp;Agar bisa menampung portal ataupun aplikasi berbasis web yang lain
+
+D. TujuanAgar supaya saya mengetahui bagaimana cara installasi Lamp Server tersebut dan Lamp tersebut merupakan syarat utama untuk membuat web yang berbasis cms</description>
+      </item>
+    
+      <item>
+        <title>Hal-Hal Yang Harus Dilakukan Setelah Install Server</title>
+        <link>https://sibunglon.com/2017/10/12/hal-hal-yang-harus-dilakukan-setelah-install-server/</link>
+        <pubDate>Thu, 12 Oct 2017 09:31:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/12/hal-hal-yang-harus-dilakukan-setelah-install-server/</guid>
+        <description>A. Pendahuluan&amp;nbsp;Pada kesempatan kali ini yang saya bagikan yaitu tentang hal - hal yang perlu dilakukan setelah install server
+B. PengertianDebian adalah sistem operasi komputer yang tersusun dari paket-paket perangkat lunak yang dirilis sebagai perangkat lunak bebas dan terbuka dengan lisensi mayoritas GNU General Public License dan lisensi perangkat lunak bebas lainnya. Debian GNU/UNIX memuat perkakas sistem operasi GNU dan kernel Linux merupakan distribusi Linux yang populer dan berpengaruh. Debian didistribusikan dengan akses ke repositori dengan ribuan paket perangkat lunak yang siap untuk instalasi dan digunakan.</description>
+      </item>
+    
+      <item>
+        <title>Installasi MATE Desktop Environment di Ubuntu 17.04</title>
+        <link>https://sibunglon.com/2017/10/11/installasi-mate-desktop-environment-di-ubuntu-17.04/</link>
+        <pubDate>Wed, 11 Oct 2017 12:31:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/11/installasi-mate-desktop-environment-di-ubuntu-17.04/</guid>
+        <description>A. PendahuluanSetelah kemarin menggunakan desktop gnome saya ingin pindah ke desktop MATE karena lebih ringan dan mudah digunakan, nah bagi kalian yang ingin menginstall MATE desktop kali ini saya bagikan tutorialnya...
+B. pengertianMATE telah memiliki sejumlah aplikasi yang berasal dari Aplikasi Inti GNOME, dan pengembang telah menulis beberapa aplikasi lain dari nol.&amp;nbsp;Aplikasi bercabang memiliki nama baru, kebanyakan dari bahasa Spanyol
+MATE juga tersedia di repositori resmi beberapa distribusi Linux lainnya, termasuk Arch Linux, Parabola, LMDE, Debian, Ubuntu MATE, Ubuntu Mint, Kali Linux, Fedora, openSUSE, Gentoo, Mageia, ROSA, dan PCLinuxOS.</description>
+      </item>
+    
+      <item>
+        <title>Install Debian Server di Proxmox Virtual Environment</title>
+        <link>https://sibunglon.com/2017/10/10/install-debian-server-di-proxmox-virtual-environment/</link>
+        <pubDate>Tue, 10 Oct 2017 12:19:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/10/install-debian-server-di-proxmox-virtual-environment/</guid>
+        <description>A. PendahuluanKali ini saya berbagi tentang bagaimana menginstall linux Debian 8.6 melalui pada proxmox. Proxmox digunakan sebagai virtualisasi.B. PengertianDebian adalah sistem operasi komputer yang tersusun dari paket-paket perangkat lunak yang dirilis sebagai perangkat lunak bebas dan terbuka dengan lisensi mayoritas GNU General Public License dan lisensi perangkat lunak bebas lainnya. Debian GNU/Linux memuat perkakas sistem operasi GNU dan kernel Linux merupakan distribusi Linux yang popmuler dan berpengaruh. Debian didistribusikan dengan akses ke repositori dengan ribuan paket perangkat lunak yang siap untuk instalasi dan digunakan.</description>
+      </item>
+    
+      <item>
+        <title>Menginstall VMware Player di linux</title>
+        <link>https://sibunglon.com/2017/08/31/menginstall-vmware-player-di-linux/</link>
+        <pubDate>Thu, 31 Aug 2017 13:27:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/31/menginstall-vmware-player-di-linux/</guid>
+        <description>A. PendahuluanPada kesempatan ini, saya memposting bagaimana sih menginstal VMware Player di linux.
+B. PengertianVMware Player&amp;nbsp;adalah sebuah produk&amp;nbsp;perangkat lunak virtualisasi&amp;nbsp;berlisensi bebas dari&amp;nbsp;VMware, sebuah divisi dari&amp;nbsp;EMC Corporation. Produk ini bisa menjalankan&amp;nbsp;mesin virtualpengguna yang dibuat dari produk VMware yang lain tetapi tidak dapat membuat sebuah&amp;nbsp;mesin virtual&amp;nbsp;yang baru.namun limitasi ini dicabut di versi 3.0.0. sehingga dapat membuat sendiri tanpa harus memakai&amp;nbsp;VMware Workstation. Perangkat berlisensi bebas dan situs web seperti&amp;nbsp;EasyVMX&amp;nbsp;juga hadir untuk membuat&amp;nbsp;mesin virtual, menghapus, memanipulasi dan mengkonversikan disk&amp;nbsp;VMware&amp;nbsp;dan&amp;nbsp;floppy, membuat perizinan pengguna, menjalankan dan merawat&amp;nbsp;mesin virtual.</description>
+      </item>
+    
+      <item>
+        <title>Installasi Moodle di Localhost Linux</title>
+        <link>https://sibunglon.com/2017/08/11/installasi-moodle-di-localhost-linux/</link>
+        <pubDate>Fri, 11 Aug 2017 16:00:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/11/installasi-moodle-di-localhost-linux/</guid>
+        <description>A. Pendahuluan&amp;nbsp;Server dibuat dengan beragam maksud dan tujuannya, salah satunya adalah membangun sistem pembelajaran online. Pembelajaran online sangat baik diterapkan saat ini, karena pelajar masa kini lebih senang untuk online dari pada membaca buku. Hal ini bisa meningkatkan minat membaca pelajar tanah air.&amp;nbsp;Salah satu media yang dapat digunakan adalah dengan &amp;ldquo;Moodle&amp;rsquo;. Apa itu Moodle?&amp;nbsp;
+#Pengertian
+Moodle (Modular Object-Oriented Dynamic Learning Environment) adalah paket perangkat lunak yang diproduksi untuk kegiatan belajar berbasis internet dan situs web yang menggunakan prinsip social constructionist pedagogy.</description>
+      </item>
+    
+      <item>
+        <title>Menginstall Proxmox di Server</title>
+        <link>https://sibunglon.com/2017/07/31/menginstall-proxmox-di-server/</link>
+        <pubDate>Mon, 31 Jul 2017 16:07:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/07/31/menginstall-proxmox-di-server/</guid>
+        <description>PendahuluanProxmox VE (Virtual Environment) adalah sebuah distro Linux virtualisasi berbasis Debian ( 64 bit) yang mengusung OpenZV dan KVM, dengan KVM kita tidak hanya bisa menginstall linux saja akan tetapi Operating system windows pun bisa kita instal. Namun yang membuat istimewa dari proxmox adalah kemudahan dalam installasi dan administrasi berbasis Web.
+Latar BelakangBeberapa keuntungan menggunakan Proxmox sebagai berikut&amp;nbsp;Kinerja terbaik.Instalasi yang telah dioptimalkan, sehingga lebih cepat.Mudah dalam manajemen.Cocok untuk kelas Enterprise.Beberapa hal yang perlu diperhatikan :Proxmox tersedia hanya untuk hardware 64-bit.</description>
+      </item>
+    
+      <item>
+        <title>Instalasi Linux Mint 18.1 Sarena</title>
+        <link>https://sibunglon.com/2017/07/24/instalasi-linux-mint-18.1-sarena/</link>
+        <pubDate>Mon, 24 Jul 2017 13:52:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/07/24/instalasi-linux-mint-18.1-sarena/</guid>
+        <description>Alat dan bahan:1 set pc atau laptop
+flashdisk booting linux mint 18.1 cinnamon 64-bitLangkah kerja:Siapkan sebuah pc atau laptop yang akan diinstallkan linux mint 18.1 cinnamon 64-bit, serta flashdisk yang berisi booting sistem operasi yang akan diinstal.
+Nyalakan pc atau laptop yang ingin di install, setalah itu masuk pada bios dan konfigurasi agar flashdisk booting yang telah ada dapat dipakai yaitu dengan cara masuk di menu “Boot” dan meletakkan jenis USB ke deretan atas.</description>
+      </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ssh on The Official Site of siBunglon</title>
+    <link>https://sibunglon.com/tags/ssh/</link>
+    <description>Recent content in Ssh on The Official Site of siBunglon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 27 Dec 2018 01:29:42 +0700</lastBuildDate>
+    
+      <atom:link href="https://sibunglon.com/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      <item>
+        <title>Menonaktifkan Autentikasi Password Pada Login SSH</title>
+        <link>https://sibunglon.com/2018/12/27/menonaktifkan-autentikasi-password-pada-login-ssh/</link>
+        <pubDate>Thu, 27 Dec 2018 01:29:42 +0700</pubDate>
+        <guid>https://sibunglon.com/2018/12/27/menonaktifkan-autentikasi-password-pada-login-ssh/</guid>
+        <description>Login SSH Tanpa Password Plain Text? Login ssh tanpa password plain text? emang bisa? terus loginnya pake apa? cuman modal username aja?
+Ya, kali ini labnya tentang gimana caranya agar nantinya kalian dapat login ke server masing-masing tapi gak pakai password plain text lagi. Ya itu bisa saja terjadi, setelah menonaktifkan autentikasi password nanti kita login ke server masing-masing menggunakan private keynya sesuai pada lab sebelumnya. Jika autentikasi password plain text pada login ssh di nonaktifkan, agar bisa login ke server yang dibutuhkan cuman private key, username, ip atau domain server yang dituju.</description>
+      </item>
+    
+      <item>
+        <title>Akses Server Dengan Autentikasi Private Key SSH</title>
+        <link>https://sibunglon.com/2018/12/25/akses-server-dengan-autentikasi-private-key-ssh/</link>
+        <pubDate>Tue, 25 Dec 2018 04:33:58 +0700</pubDate>
+        <guid>https://sibunglon.com/2018/12/25/akses-server-dengan-autentikasi-private-key-ssh/</guid>
+        <description>Akses Server Dengan Autentikasi Private Key Ssh Login Ke Server Dengan Private Key? Emang bisa? Ya itu bisa.
+Umumnya server diakses menggunakan ssh dengan autentikasi password plain text, jika cuman akses 1 server dengan autentikasi password plain text itu masih biasa namun jika mengontrol banyak server dan passwordnya berbeda-beda, apakah anda masih siap mengingatnya? Apakah anda yakin ingin mencatatnya? Jika anda mencatatnya anda bisa saja masih repot karena harus mendefinisikan satu per satu hostname server beserta passwordnya.</description>
+      </item>
+    
+      <item>
+        <title>Hak Akses Root Dengan Sudo Tanpa Password</title>
+        <link>https://sibunglon.com/2018/12/25/hak-akses-root-dengan-sudo-tanpa-password/</link>
+        <pubDate>Tue, 25 Dec 2018 01:31:24 +0700</pubDate>
+        <guid>https://sibunglon.com/2018/12/25/hak-akses-root-dengan-sudo-tanpa-password/</guid>
+        <description>Sudo Tanpa Password? Hmmm kelihatannya menarik.
+Ya emang menarik, agar user tidak perlu memasukkan password jika ingin mendapatkan hak akses root cukup tambahkan si user ke sudoers.
+Bermain dengan Sudoers 1) Edit file sudoers dengan command nano /etc/sudoers.
+2) Setelah berhasil mengakses file sudoers, sekarang tambahkan sintaks berikut:
+sibunglon ALL=(ALL) NOPASSWD:ALL   Note: Kata sibunglon diganti sesuai user yang akan diberikan izin menggunakan sudo tanpa password.
+ Sekarang user sibunglon (user sesuai yang anda daftarkan) dapat menggunakan command sudo tanpa password.</description>
+      </item>
+    
+  </channel>
+</rss>

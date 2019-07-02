@@ -6,18 +6,33 @@
     <description>Recent content in Draft on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Dec 2018 21:34:18 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 30 Jun 2019 23:32:49 +0700</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/draft/index.xml" rel="self" type="application/rss+xml" />
     
     
       <item>
-        <title>Pip Python2 Error</title>
-        <link>https://sibunglon.com/2018/12/11/pip-python2-error/</link>
-        <pubDate>Tue, 11 Dec 2018 21:34:18 +0700</pubDate>
-        <guid>https://sibunglon.com/2018/12/11/pip-python2-error/</guid>
-        <description> Pip di Python2 Error? Traceback (most recent call last): File &amp;quot;/usr/bin/pip&amp;quot;, line 9, in &amp;lt;module&amp;gt; from pip import main ImportError: cannot import name main  Gak usah panik, cukup jalankan command berikut tapi pastikan terlebih dahulu sekarang sudah jadi super user (root)
-python -m pip uninstall pip &amp;amp;&amp;amp; apt install python-pip --reinstall  </description>
+        <title>Edx Error Get Certificate Incommon</title>
+        <link>https://sibunglon.com/2019/06/30/edx-error-get-certificate-incommon/</link>
+        <pubDate>Sun, 30 Jun 2019 23:32:49 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/06/30/edx-error-get-certificate-incommon/</guid>
+        <description></description>
+      </item>
+    
+      <item>
+        <title>Install Open Edx Using Method Native Installation</title>
+        <link>https://sibunglon.com/2019/06/30/install-open-edx-using-method-native-installation/</link>
+        <pubDate>Sun, 30 Jun 2019 23:24:40 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/06/30/install-open-edx-using-method-native-installation/</guid>
+        <description></description>
+      </item>
+    
+      <item>
+        <title>Edx Error Create Service Worker Users</title>
+        <link>https://sibunglon.com/2019/06/26/edx-error-create-service-worker-users/</link>
+        <pubDate>Wed, 26 Jun 2019 12:01:19 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/06/26/edx-error-create-service-worker-users/</guid>
+        <description></description>
       </item>
     
   </channel>

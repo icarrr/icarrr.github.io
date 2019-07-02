@@ -12,7 +12,7 @@
     
     
       <item>
-        <title>Konfigurasi DHCP Server pada cisco</title>
+        <title>Konfigurasi DHCP Server Pada Cisco</title>
         <link>https://sibunglon.com/2017/10/07/konfigurasi-dhcp-server-pada-cisco/</link>
         <pubDate>Sat, 07 Oct 2017 16:49:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/07/konfigurasi-dhcp-server-pada-cisco/</guid>
@@ -23,7 +23,7 @@ Kemudian masuk ke Privileged mode exec dengan menggunkan perintah “enable&amp;
       </item>
     
       <item>
-        <title>Konfigurasi VLAN pada switch</title>
+        <title>Konfigurasi VLAN Pada Switch</title>
         <link>https://sibunglon.com/2017/10/06/konfigurasi-vlan-pada-switch/</link>
         <pubDate>Fri, 06 Oct 2017 06:16:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/06/konfigurasi-vlan-pada-switch/</guid>
@@ -31,7 +31,7 @@ Kemudian masuk ke Privileged mode exec dengan menggunkan perintah “enable&amp;
       </item>
     
       <item>
-        <title>Konfigurasi static NAT dan dynamic NAT cisco</title>
+        <title>Konfigurasi Static NAT dan Dynamic NAT Cisco</title>
         <link>https://sibunglon.com/2017/10/05/konfigurasi-static-nat-dan-dynamic-nat-cisco/</link>
         <pubDate>Thu, 05 Oct 2017 05:39:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/05/konfigurasi-static-nat-dan-dynamic-nat-cisco/</guid>
@@ -40,7 +40,7 @@ Dengan kata lain NAT akan mentranslasikan alamat IP sehingga IP address pada jar
       </item>
     
       <item>
-        <title>Konfigurasi telnet dan ssh di cisco</title>
+        <title>Konfigurasi Telnet dan SSH di Cisco</title>
         <link>https://sibunglon.com/2017/10/04/konfigurasi-telnet-dan-ssh-di-cisco/</link>
         <pubDate>Wed, 04 Oct 2017 05:19:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/04/konfigurasi-telnet-dan-ssh-di-cisco/</guid>
@@ -57,7 +57,7 @@ Berikut Topology Telnet :
       </item>
     
       <item>
-        <title>Perintah - perintah dasar cisco</title>
+        <title>Perintah-Perintah Dasar Cisco</title>
         <link>https://sibunglon.com/2017/10/03/perintah-perintah-dasar-cisco/</link>
         <pubDate>Tue, 03 Oct 2017 05:17:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/03/perintah-perintah-dasar-cisco/</guid>
@@ -84,7 +84,7 @@ Perintah&amp;nbsp;show&amp;nbsp;untuk memperifikasi konfigurasi router</descript
       </item>
     
       <item>
-        <title>Konfigurasi static routing</title>
+        <title>Konfigurasi Static Routing</title>
         <link>https://sibunglon.com/2017/10/03/konfigurasi-static-routing/</link>
         <pubDate>Tue, 03 Oct 2017 05:04:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/03/konfigurasi-static-routing/</guid>
@@ -213,25 +213,7 @@ Cisco merupakan perusahaan global dalam bidang telekomunikasi yang bermarkas di 
       </item>
     
       <item>
-        <title>Sharing bersama Mbah Suro Dhemit tentang 7 layer OSI</title>
-        <link>https://sibunglon.com/2017/08/17/sharing-bersama-mbah-suro-dhemit-tentang-7-layer-osi/</link>
-        <pubDate>Thu, 17 Aug 2017 17:39:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/08/17/sharing-bersama-mbah-suro-dhemit-tentang-7-layer-osi/</guid>
-        <description>A. PengertianModel referensi jaringan terbuka OSI atau OSI Reference Model for open networking adalah sebuah model arsitektural jaringan yang dikembangkan oleh badan International Organization for Standardization (ISO) di Eropa pada tahun 1977. OSI sendiri merupakan singkatan dari Open System Interconnection. Model ini disebut juga dengan model &#34;Model tujuh lapis OSI&#34; (OSI seven layer model).&amp;nbsp;Sebelum munculnya model referensi OSI, sistem jaringan komputer sangat tergantung kepada pemasok (vendor). OSI berupaya membentuk standar umum jaringan komputer untuk menunjang interoperatibilitas antar pemasok yang berbeda.</description>
-      </item>
-    
-      <item>
-        <title>Konsep perencanaan membangun jaringan sekolah</title>
-        <link>https://sibunglon.com/2017/08/16/konsep-perencanaan-membangun-jaringan-sekolah/</link>
-        <pubDate>Wed, 16 Aug 2017 17:25:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/08/16/konsep-perencanaan-membangun-jaringan-sekolah/</guid>
-        <description>A. PENDAHULUANPada kesempatan ini saya akan memberikan sedikit ilmu terkait dengan konsep perencanaan membangun jaringan sekolah. dalam melakukan sebuah pekerjaan kita mesti memikirkan konsep terlebih dahulu.
-B. PENGERTIANPerencanaan merupakan tahapan awal yang harus di lakukan sebelum melakuka sesuatu pekerjaan. perencanaan dikatakan matang/berhasil, apabila perencanaan tersebut 70% sudah pasti dan tidak sering mengalami perubahan
-C. LATAR BELAKANGDalam hal ini, saya bekerja tim utuk membangun jaringan di sekolah. saya berpern untuk mengatur jaringan.</description>
-      </item>
-    
-      <item>
-        <title>Sharing pengenalan CISCO bersama RIFQI FAJAR RUDIN – BEST PATH Network,Jakarta</title>
+        <title>Sharing Pengenalan Cisco bersama RIFQI FAJAR RUDIN – BEST PATH Network,Jakarta</title>
         <link>https://sibunglon.com/2017/08/15/sharing-pengenalan-cisco-bersama-rifqi-fajar-rudin-best-path-networkjakarta/</link>
         <pubDate>Tue, 15 Aug 2017 17:17:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/15/sharing-pengenalan-cisco-bersama-rifqi-fajar-rudin-best-path-networkjakarta/</guid>

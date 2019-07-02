@@ -6,16 +6,16 @@
     <description>Recent content in Tags on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 May 2019 15:59:55 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 03 Mar 2019 03:53:55 +0700</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
       <item>
-        <title>Andorid</title>
-        <link>https://sibunglon.com/tags/andorid/</link>
-        <pubDate>Sun, 19 May 2019 15:59:55 +0700</pubDate>
-        <guid>https://sibunglon.com/tags/andorid/</guid>
+        <title>Activities</title>
+        <link>https://sibunglon.com/tags/activities/</link>
+        <pubDate>Sun, 03 Mar 2019 03:53:55 +0700</pubDate>
+        <guid>https://sibunglon.com/tags/activities/</guid>
         <description></description>
       </item>
     
@@ -24,6 +24,22 @@
         <link>https://sibunglon.com/tags/android-developer/</link>
         <pubDate>Sun, 19 May 2019 15:59:55 +0700</pubDate>
         <guid>https://sibunglon.com/tags/android-developer/</guid>
+        <description></description>
+      </item>
+    
+      <item>
+        <title>Ansible</title>
+        <link>https://sibunglon.com/tags/ansible/</link>
+        <pubDate>Sun, 20 Jan 2019 18:11:43 +0700</pubDate>
+        <guid>https://sibunglon.com/tags/ansible/</guid>
+        <description></description>
+      </item>
+    
+      <item>
+        <title>Apache2</title>
+        <link>https://sibunglon.com/tags/apache2/</link>
+        <pubDate>Sat, 01 Dec 2018 15:14:00 +0000</pubDate>
+        <guid>https://sibunglon.com/tags/apache2/</guid>
         <description></description>
       </item>
     
@@ -44,10 +60,10 @@
       </item>
     
       <item>
-        <title>Bestpath</title>
-        <link>https://sibunglon.com/tags/bestpath/</link>
-        <pubDate>Mon, 02 Oct 2017 04:57:00 +0000</pubDate>
-        <guid>https://sibunglon.com/tags/bestpath/</guid>
+        <title>Backup and Restore</title>
+        <link>https://sibunglon.com/tags/backup-and-restore/</link>
+        <pubDate>Thu, 16 May 2019 14:26:00 +0700</pubDate>
+        <guid>https://sibunglon.com/tags/backup-and-restore/</guid>
         <description></description>
       </item>
     
@@ -62,32 +78,24 @@
       <item>
         <title>Blc Telkom Klaten</title>
         <link>https://sibunglon.com/tags/blc-telkom-klaten/</link>
-        <pubDate>Mon, 10 Dec 2018 07:44:24 +0700</pubDate>
+        <pubDate>Thu, 07 Feb 2019 20:35:49 +0700</pubDate>
         <guid>https://sibunglon.com/tags/blc-telkom-klaten/</guid>
         <description></description>
       </item>
     
       <item>
-        <title>Centos</title>
-        <link>https://sibunglon.com/tags/centos/</link>
-        <pubDate>Sat, 19 Jan 2019 11:53:28 +0700</pubDate>
-        <guid>https://sibunglon.com/tags/centos/</guid>
+        <title>Caddy Server</title>
+        <link>https://sibunglon.com/tags/caddy-server/</link>
+        <pubDate>Wed, 27 Feb 2019 01:15:00 +0700</pubDate>
+        <guid>https://sibunglon.com/tags/caddy-server/</guid>
         <description></description>
       </item>
     
       <item>
-        <title>Centos Indonesia</title>
-        <link>https://sibunglon.com/tags/centos-indonesia/</link>
-        <pubDate>Sat, 19 Jan 2019 11:53:28 +0700</pubDate>
-        <guid>https://sibunglon.com/tags/centos-indonesia/</guid>
-        <description></description>
-      </item>
-    
-      <item>
-        <title>Cfp</title>
-        <link>https://sibunglon.com/tags/cfp/</link>
-        <pubDate>Sun, 03 Mar 2019 03:53:55 +0700</pubDate>
-        <guid>https://sibunglon.com/tags/cfp/</guid>
+        <title>Case Study</title>
+        <link>https://sibunglon.com/tags/case-study/</link>
+        <pubDate>Sun, 19 May 2019 15:59:55 +0700</pubDate>
+        <guid>https://sibunglon.com/tags/case-study/</guid>
         <description></description>
       </item>
     
@@ -100,82 +108,98 @@
       </item>
     
       <item>
-        <title>Cisco Indonesia</title>
-        <link>https://sibunglon.com/tags/cisco-indonesia/</link>
-        <pubDate>Sat, 07 Oct 2017 16:49:00 +0000</pubDate>
-        <guid>https://sibunglon.com/tags/cisco-indonesia/</guid>
+        <title>Cloud Computing</title>
+        <link>https://sibunglon.com/tags/cloud-computing/</link>
+        <pubDate>Fri, 20 Oct 2017 02:10:00 +0000</pubDate>
+        <guid>https://sibunglon.com/tags/cloud-computing/</guid>
         <description></description>
       </item>
     
       <item>
-        <title>Database</title>
-        <link>https://sibunglon.com/tags/database/</link>
-        <pubDate>Thu, 16 May 2019 14:26:00 +0700</pubDate>
-        <guid>https://sibunglon.com/tags/database/</guid>
+        <title>Cockpit</title>
+        <link>https://sibunglon.com/tags/cockpit/</link>
+        <pubDate>Mon, 15 Apr 2019 05:09:24 +0700</pubDate>
+        <guid>https://sibunglon.com/tags/cockpit/</guid>
+        <description></description>
+      </item>
+    
+      <item>
+        <title>Custom Weapons</title>
+        <link>https://sibunglon.com/tags/custom-weapons/</link>
+        <pubDate>Fri, 07 Dec 2018 07:44:24 +0700</pubDate>
+        <guid>https://sibunglon.com/tags/custom-weapons/</guid>
         <description></description>
       </item>
     
       <item>
         <title>Draft</title>
         <link>https://sibunglon.com/tags/draft/</link>
-        <pubDate>Tue, 11 Dec 2018 21:34:18 +0700</pubDate>
+        <pubDate>Sun, 30 Jun 2019 23:32:49 +0700</pubDate>
         <guid>https://sibunglon.com/tags/draft/</guid>
         <description></description>
       </item>
     
       <item>
-        <title>Global Diversity Cfp</title>
-        <link>https://sibunglon.com/tags/global-diversity-cfp/</link>
-        <pubDate>Sun, 03 Mar 2019 03:53:55 +0700</pubDate>
-        <guid>https://sibunglon.com/tags/global-diversity-cfp/</guid>
+        <title>Elearning</title>
+        <link>https://sibunglon.com/tags/elearning/</link>
+        <pubDate>Wed, 18 Oct 2017 17:13:00 +0000</pubDate>
+        <guid>https://sibunglon.com/tags/elearning/</guid>
         <description></description>
       </item>
     
       <item>
-        <title>Kegiatan</title>
-        <link>https://sibunglon.com/tags/kegiatan/</link>
-        <pubDate>Sun, 03 Mar 2019 03:53:55 +0700</pubDate>
-        <guid>https://sibunglon.com/tags/kegiatan/</guid>
+        <title>Engenius</title>
+        <link>https://sibunglon.com/tags/engenius/</link>
+        <pubDate>Tue, 17 Oct 2017 11:01:00 +0000</pubDate>
+        <guid>https://sibunglon.com/tags/engenius/</guid>
         <description></description>
       </item>
     
       <item>
-        <title>Kpli Klaten</title>
-        <link>https://sibunglon.com/tags/kpli-klaten/</link>
-        <pubDate>Mon, 10 Dec 2018 07:44:24 +0700</pubDate>
-        <guid>https://sibunglon.com/tags/kpli-klaten/</guid>
+        <title>Error</title>
+        <link>https://sibunglon.com/tags/error/</link>
+        <pubDate>Mon, 15 Apr 2019 05:09:24 +0700</pubDate>
+        <guid>https://sibunglon.com/tags/error/</guid>
         <description></description>
       </item>
     
       <item>
-        <title>Lain Lain</title>
-        <link>https://sibunglon.com/tags/lain-lain/</link>
-        <pubDate>Sat, 04 May 2019 22:32:54 +0700</pubDate>
-        <guid>https://sibunglon.com/tags/lain-lain/</guid>
+        <title>Installasi</title>
+        <link>https://sibunglon.com/tags/installasi/</link>
+        <pubDate>Mon, 06 May 2019 03:40:59 +0700</pubDate>
+        <guid>https://sibunglon.com/tags/installasi/</guid>
         <description></description>
       </item>
     
       <item>
-        <title>Linux</title>
-        <link>https://sibunglon.com/tags/linux/</link>
-        <pubDate>Sun, 19 May 2019 15:59:55 +0700</pubDate>
-        <guid>https://sibunglon.com/tags/linux/</guid>
+        <title>Introducing</title>
+        <link>https://sibunglon.com/tags/introducing/</link>
+        <pubDate>Tue, 15 Aug 2017 17:17:00 +0000</pubDate>
+        <guid>https://sibunglon.com/tags/introducing/</guid>
         <description></description>
       </item>
     
       <item>
-        <title>Linux Indonesia</title>
-        <link>https://sibunglon.com/tags/linux-indonesia/</link>
-        <pubDate>Sun, 19 May 2019 15:59:55 +0700</pubDate>
-        <guid>https://sibunglon.com/tags/linux-indonesia/</guid>
+        <title>Introduction</title>
+        <link>https://sibunglon.com/tags/introduction/</link>
+        <pubDate>Sat, 19 Jan 2019 11:53:28 +0700</pubDate>
+        <guid>https://sibunglon.com/tags/introduction/</guid>
         <description></description>
       </item>
     
       <item>
-        <title>Microsoft</title>
-        <link>https://sibunglon.com/tags/microsoft/</link>
-        <pubDate>Tue, 09 Apr 2019 20:45:08 +0700</pubDate>
-        <guid>https://sibunglon.com/tags/microsoft/</guid>
+        <title>Lamp Server</title>
+        <link>https://sibunglon.com/tags/lamp-server/</link>
+        <pubDate>Sat, 14 Oct 2017 10:25:00 +0000</pubDate>
+        <guid>https://sibunglon.com/tags/lamp-server/</guid>
+        <description></description>
+      </item>
+    
+      <item>
+        <title>Lets Encrypt</title>
+        <link>https://sibunglon.com/tags/lets-encrypt/</link>
+        <pubDate>Sat, 16 Feb 2019 17:19:08 +0700</pubDate>
+        <guid>https://sibunglon.com/tags/lets-encrypt/</guid>
         <description></description>
       </item>
     
@@ -188,6 +212,14 @@
       </item>
     
       <item>
+        <title>Microsoft Sql Server</title>
+        <link>https://sibunglon.com/tags/microsoft-sql-server/</link>
+        <pubDate>Thu, 16 May 2019 14:26:00 +0700</pubDate>
+        <guid>https://sibunglon.com/tags/microsoft-sql-server/</guid>
+        <description></description>
+      </item>
+    
+      <item>
         <title>Mikrotik</title>
         <link>https://sibunglon.com/tags/mikrotik/</link>
         <pubDate>Sat, 09 Feb 2019 23:25:02 +0700</pubDate>
@@ -196,50 +228,90 @@
       </item>
     
       <item>
-        <title>Mikrotik Indonesia</title>
-        <link>https://sibunglon.com/tags/mikrotik-indonesia/</link>
-        <pubDate>Sat, 09 Feb 2019 23:25:02 +0700</pubDate>
-        <guid>https://sibunglon.com/tags/mikrotik-indonesia/</guid>
+        <title>Nginx</title>
+        <link>https://sibunglon.com/tags/nginx/</link>
+        <pubDate>Fri, 14 Dec 2018 11:03:50 +0700</pubDate>
+        <guid>https://sibunglon.com/tags/nginx/</guid>
         <description></description>
       </item>
     
       <item>
-        <title>Mozilla</title>
-        <link>https://sibunglon.com/tags/mozilla/</link>
-        <pubDate>Sun, 03 Mar 2019 03:53:55 +0700</pubDate>
-        <guid>https://sibunglon.com/tags/mozilla/</guid>
+        <title>Ngoprek</title>
+        <link>https://sibunglon.com/tags/ngoprek/</link>
+        <pubDate>Sun, 19 May 2019 15:59:55 +0700</pubDate>
+        <guid>https://sibunglon.com/tags/ngoprek/</guid>
         <description></description>
       </item>
     
       <item>
-        <title>Mozilla Community Space Jakarta</title>
-        <link>https://sibunglon.com/tags/mozilla-community-space-jakarta/</link>
-        <pubDate>Sun, 03 Mar 2019 03:53:55 +0700</pubDate>
-        <guid>https://sibunglon.com/tags/mozilla-community-space-jakarta/</guid>
+        <title>Opensid</title>
+        <link>https://sibunglon.com/tags/opensid/</link>
+        <pubDate>Mon, 23 Oct 2017 02:29:00 +0000</pubDate>
+        <guid>https://sibunglon.com/tags/opensid/</guid>
         <description></description>
       </item>
     
       <item>
-        <title>Red Hat</title>
-        <link>https://sibunglon.com/tags/red-hat/</link>
-        <pubDate>Sat, 19 Jan 2019 11:53:28 +0700</pubDate>
-        <guid>https://sibunglon.com/tags/red-hat/</guid>
+        <title>Others</title>
+        <link>https://sibunglon.com/tags/others/</link>
+        <pubDate>Sat, 04 May 2019 22:32:54 +0700</pubDate>
+        <guid>https://sibunglon.com/tags/others/</guid>
         <description></description>
       </item>
     
       <item>
-        <title>Red Hat Indonesia</title>
-        <link>https://sibunglon.com/tags/red-hat-indonesia/</link>
-        <pubDate>Sat, 19 Jan 2019 11:53:28 +0700</pubDate>
-        <guid>https://sibunglon.com/tags/red-hat-indonesia/</guid>
+        <title>Proxmox</title>
+        <link>https://sibunglon.com/tags/proxmox/</link>
+        <pubDate>Thu, 19 Oct 2017 18:47:00 +0000</pubDate>
+        <guid>https://sibunglon.com/tags/proxmox/</guid>
         <description></description>
       </item>
     
       <item>
-        <title>Sql Server</title>
-        <link>https://sibunglon.com/tags/sql-server/</link>
-        <pubDate>Thu, 16 May 2019 14:26:00 +0700</pubDate>
-        <guid>https://sibunglon.com/tags/sql-server/</guid>
+        <title>Python</title>
+        <link>https://sibunglon.com/tags/python/</link>
+        <pubDate>Tue, 26 Feb 2019 10:53:16 +0700</pubDate>
+        <guid>https://sibunglon.com/tags/python/</guid>
+        <description></description>
+      </item>
+    
+      <item>
+        <title>Ssh</title>
+        <link>https://sibunglon.com/tags/ssh/</link>
+        <pubDate>Thu, 27 Dec 2018 01:29:42 +0700</pubDate>
+        <guid>https://sibunglon.com/tags/ssh/</guid>
+        <description></description>
+      </item>
+    
+      <item>
+        <title>Subnetting</title>
+        <link>https://sibunglon.com/tags/subnetting/</link>
+        <pubDate>Thu, 19 Oct 2017 17:58:00 +0000</pubDate>
+        <guid>https://sibunglon.com/tags/subnetting/</guid>
+        <description></description>
+      </item>
+    
+      <item>
+        <title>Tp Link</title>
+        <link>https://sibunglon.com/tags/tp-link/</link>
+        <pubDate>Fri, 13 Oct 2017 09:52:00 +0000</pubDate>
+        <guid>https://sibunglon.com/tags/tp-link/</guid>
+        <description></description>
+      </item>
+    
+      <item>
+        <title>Ubiquiti</title>
+        <link>https://sibunglon.com/tags/ubiquiti/</link>
+        <pubDate>Wed, 18 Oct 2017 16:50:00 +0000</pubDate>
+        <guid>https://sibunglon.com/tags/ubiquiti/</guid>
+        <description></description>
+      </item>
+    
+      <item>
+        <title>Virtualization</title>
+        <link>https://sibunglon.com/tags/virtualization/</link>
+        <pubDate>Tue, 26 Mar 2019 14:26:11 +0700</pubDate>
+        <guid>https://sibunglon.com/tags/virtualization/</guid>
         <description></description>
       </item>
     
@@ -248,14 +320,6 @@
         <link>https://sibunglon.com/tags/windows/</link>
         <pubDate>Thu, 16 May 2019 14:26:00 +0700</pubDate>
         <guid>https://sibunglon.com/tags/windows/</guid>
-        <description></description>
-      </item>
-    
-      <item>
-        <title>Windows Indonesia</title>
-        <link>https://sibunglon.com/tags/windows-indonesia/</link>
-        <pubDate>Tue, 26 Mar 2019 14:26:11 +0700</pubDate>
-        <guid>https://sibunglon.com/tags/windows-indonesia/</guid>
         <description></description>
       </item>
     

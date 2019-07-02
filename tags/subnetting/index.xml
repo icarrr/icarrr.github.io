@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Subnetting on The Official Site of siBunglon</title>
+    <link>https://sibunglon.com/tags/subnetting/</link>
+    <description>Recent content in Subnetting on The Official Site of siBunglon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 19 Oct 2017 17:58:00 +0000</lastBuildDate>
+    
+      <atom:link href="https://sibunglon.com/tags/subnetting/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      <item>
+        <title>Implementasi Manual Subnetting Kelas C</title>
+        <link>https://sibunglon.com/2017/10/19/implementasi-manual-subnetting-kelas-c/</link>
+        <pubDate>Thu, 19 Oct 2017 17:58:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/19/implementasi-manual-subnetting-kelas-c/</guid>
+        <description>A.PendahuluanPada kesempatan kali ini saya akan berbagi tentang ip / subnetting gays. kenapa saya membahas ini karena kita sebagai nak jaringan mesti perlu paham begaimana cara subneting.
+1.PengertianSubnetting adalah upaya/proses untuk memecah sebuah network dengan jumlah host yang cukup banyak, menjadi beberapa network dengan jumlah host yang lebih sedikit. Gunanya Subnetting untuk menentukan batas network ID dalam suatu subnet, Memperbanyak jumlah network (LAN), Mengurangi jumlah host dalam satu network, untuk mengurangi tingkat kongesti (gangguan/ tabrakan) lalulintas data dalam suatu network.</description>
+      </item>
+    
+      <item>
+        <title>Mengkonfersi Bilangan Desimal atau Biner</title>
+        <link>https://sibunglon.com/2017/09/04/mengkonfersi-bilangan-desimal-atau-biner/</link>
+        <pubDate>Mon, 04 Sep 2017 13:39:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/09/04/mengkonfersi-bilangan-desimal-atau-biner/</guid>
+        <description>A. PENGERTIAN
+Konfersi adalah suatu perubahan dari satu bentuk (rupa,dan sebagainya) contoh dari angka desimal ke angka biner ataupun sebaliknya
+B. LATAR BELAKANG
+Agar bisa mengubah desimal ke biner
+
+C.TUJUAN
+Untuk menghitung atau mengetahui cara konfersi
+D. ALAT DAN BAHAN
+pensil/pulpenkertasalat hitung (calculator)
+E. DURASI PELAKSANAAN
+10 - 20 menit
+F. LANGKAH KERJA
+1. tentukan bilangan yang ingin di konfersi baik desimal maupun biner2. semisalnya kita akan mengkonfersi bilangan desimal ke biner</description>
+      </item>
+    
+      <item>
+        <title>Mengenal lebih dalam tentang subneting</title>
+        <link>https://sibunglon.com/2017/08/30/mengenal-lebih-dalam-tentang-subneting/</link>
+        <pubDate>Wed, 30 Aug 2017 10:00:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/30/mengenal-lebih-dalam-tentang-subneting/</guid>
+        <description>A. PendahuluanOke pada kesempatan lalu saya pernah memposting tentang subnetting namun pada kesempatan ini saya akan mempost untuk melengkapi post pada kesempatan lalu.
+B. PengertianSubnetting adalah&amp;nbsp;&amp;nbsp;Praktek membagi jaringan menjadi dua atau lebih jaringan disebut.&amp;nbsp;IP adalah sistem pengalamatan setiap host yang terhubung dengan jaringan.&amp;nbsp;
+C. Latar belakangSemakin banyaknya ip yang di gunakan untuk dapat terkoneksi ke internet dimana kita harus benar benar mengetahui bagaimana penempatan dan penggunaan ip address dan subnetting.</description>
+      </item>
+    
+  </channel>
+</rss>

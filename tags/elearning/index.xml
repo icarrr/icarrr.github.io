@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Elearning on The Official Site of siBunglon</title>
+    <link>https://sibunglon.com/tags/elearning/</link>
+    <description>Recent content in Elearning on The Official Site of siBunglon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 Oct 2017 17:13:00 +0000</lastBuildDate>
+    
+      <atom:link href="https://sibunglon.com/tags/elearning/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      <item>
+        <title>Implementasi Pembelajaran Online Dengan Moodle - Installasi</title>
+        <link>https://sibunglon.com/2017/10/18/implementasi-pembelajaran-online-dengan-moodle-installasi/</link>
+        <pubDate>Wed, 18 Oct 2017 17:13:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/18/implementasi-pembelajaran-online-dengan-moodle-installasi/</guid>
+        <description>A. PendahuluanPada kesempatan kali ini saya akan mengimplementasikan tentang apa yang sudah saya pelajari yaitu Moodle
+B. PengertianMOODLE&amp;nbsp;(singkatan dari&amp;nbsp;Modular Object-Oriented Dynamic Learning Environment) adalah paket perangkat lunak yang diproduksi untuk kegiatan belajar berbasis internet dan situs web yang menggunakan prinsip&amp;nbsp;social constructionist pedagogy. MOODLE merupakan salah satu aplikasi dari konsep dan mekanisme belajar mengajar yang memanfaatkan teknologi informasi, yang dikenal dengan konsep pembelajaran elktronik atau e-learning. Moodle dapat digunakan secara bebas sebagai produk sumber terbuka (open source) di bawah lisensi GNU.</description>
+      </item>
+    
+      <item>
+        <title>Install SLiMS 8 Akasia di Debian Server</title>
+        <link>https://sibunglon.com/2017/10/17/install-slims-8-akasia-di-debian-server/</link>
+        <pubDate>Tue, 17 Oct 2017 15:17:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/17/install-slims-8-akasia-di-debian-server/</guid>
+        <description>A. PendahuluanPada kesempatan ini saya sharing tentang bagaimana langkah-langkah penginstallan slims untuk manajamen perpustakaan online.
+B. PengertianSenayan, atau lengkapnya&amp;nbsp;Senayan Library Management System&amp;nbsp;(SLiMS), adalah perangkat lunak sistem manajemen perpustakaan (library management system) sumber terbuka yang dilisensikan di bawah GPL v3. Aplikasi Web yang dikembangkan oleh tim dari Pusat Informasi dan Humas Departemen Pendidikan Nasional Repubik Indonesia ini dibangun dengan menggunakan PHP, basis data MySQL, dan Pengontrol versi Git. Pada tahun 2009, Senayan memenangi INAICTA 2009 untuk kategori&amp;nbsp;open source.</description>
+      </item>
+    
+      <item>
+        <title>Install CMS Sekolahku di Server</title>
+        <link>https://sibunglon.com/2017/10/16/install-cms-sekolahku-di-server/</link>
+        <pubDate>Mon, 16 Oct 2017 11:16:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/16/install-cms-sekolahku-di-server/</guid>
+        <description>A. Pendahuluan
+Pada kesempatan kali ini saya akan mengimplementasikan membangun website sekolah di server dengan CMS.
+B. Pengertian
+CMS adalah suatu /sebuah aplikasi yang berfungsi merubah suatu menu atau memanipulasi data dari suatu situs atau website.
+C. Latar belakang
+Mempelajari sistem informasi sekolah dengan CMS dan mengimplementasikannya.
+D. Tujuan
+Mempunyai maksud untuk memudahkan saya mendapatkan informasi sekolah di website tersebut.
+E. Hasil yang diharapkan
+Mempunyai harapan agar nanti kedepannya bisa membangun website ini di sekolah.</description>
+      </item>
+    
+      <item>
+        <title>Installasi Moodle di Localhost Linux</title>
+        <link>https://sibunglon.com/2017/08/11/installasi-moodle-di-localhost-linux/</link>
+        <pubDate>Fri, 11 Aug 2017 16:00:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/11/installasi-moodle-di-localhost-linux/</guid>
+        <description>A. Pendahuluan&amp;nbsp;Server dibuat dengan beragam maksud dan tujuannya, salah satunya adalah membangun sistem pembelajaran online. Pembelajaran online sangat baik diterapkan saat ini, karena pelajar masa kini lebih senang untuk online dari pada membaca buku. Hal ini bisa meningkatkan minat membaca pelajar tanah air.&amp;nbsp;Salah satu media yang dapat digunakan adalah dengan &amp;ldquo;Moodle&amp;rsquo;. Apa itu Moodle?&amp;nbsp;
+#Pengertian
+Moodle (Modular Object-Oriented Dynamic Learning Environment) adalah paket perangkat lunak yang diproduksi untuk kegiatan belajar berbasis internet dan situs web yang menggunakan prinsip social constructionist pedagogy.</description>
+      </item>
+    
+  </channel>
+</rss>

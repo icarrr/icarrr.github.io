@@ -3,7 +3,7 @@
   <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Backup vm proxmox ke local harddisk</title>
+  <title>Backup VM Proxmox ke Local HardDisk</title>
   <meta name="author" content="Faizar Septiawan">
   <meta name="author" content="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng">
   <meta name="description" content="Read - Search - Ask | Sekali Gila Tetap Gila">
@@ -57,7 +57,7 @@
   <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
   <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
 
-  <meta property="og:title" content="Backup vm proxmox ke local harddisk" />
+  <meta property="og:title" content="Backup VM Proxmox ke Local HardDisk" />
 <meta property="og:description" content="A. Pendahuluan
 Pada kesempatan ini saya share bagaimana agar config di debian atau apapun yang ada diproxmox tidak hilang bila terjadi sesuatu
 B. Pengertian
@@ -73,7 +73,7 @@ Agar data yang saat penting itu tidak hilang karena ada kesalahan dan dapat meny
 
   
   
-<meta itemprop="name" content="Backup vm proxmox ke local harddisk">
+<meta itemprop="name" content="Backup VM Proxmox ke Local HardDisk">
 <meta itemprop="description" content="A. Pendahuluan
 Pada kesempatan ini saya share bagaimana agar config di debian atau apapun yang ada diproxmox tidak hilang bila terjadi sesuatu
 B. Pengertian
@@ -90,10 +90,10 @@ Agar data yang saat penting itu tidak hilang karena ada kesalahan dan dapat meny
 
 
 
-<meta itemprop="keywords" content="BLC Telkom Klaten,Linux,Linux Indonesia,KPLI Klaten,Ayo Belajar Linux," />
+<meta itemprop="keywords" content="BLC Telkom Klaten,Ayo Belajar Linux,Proxmox,Backup and Restore,Ngoprek," />
 
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Backup vm proxmox ke local harddisk"/>
+<meta name="twitter:title" content="Backup VM Proxmox ke Local HardDisk"/>
 <meta name="twitter:description" content="A. Pendahuluan
 Pada kesempatan ini saya share bagaimana agar config di debian atau apapun yang ada diproxmox tidak hilang bila terjadi sesuatu
 B. Pengertian
@@ -130,7 +130,7 @@ Agar data yang saat penting itu tidak hilang karena ada kesalahan dan dapat meny
       <small>
         <time datetime="2017-10-19 18:47:00&#43;0000">2017-10-19</time>
         &bull;</small>
-      <h1>Backup vm proxmox ke local harddisk</h1>
+      <h1>Backup VM Proxmox ke Local HardDisk</h1>
     </header>
     <section><p><strong>A. Pendahuluan</strong><br />Pada kesempatan ini saya share bagaimana agar config di debian atau apapun yang ada diproxmox tidak hilang bila terjadi sesuatu<br /><br /><strong>B. Pengertian</strong><br />Bakcup data adalah salah satu langkah untuk menyimpan data agar saat data itu hilang kita masih memiliki data simpanannya agar tidak hilang.<br /><br /><strong>C. Latar belakang</strong><br />Membuat secondary data agar saat data primer nya hilang kita masih punya data secondari nya.<br /><br /><strong>D. Tujuan</strong><br />Agar data yang saat penting itu tidak hilang karena ada kesalahan dan dapat menyerlamatkan pekerjaan kita.<br /><br /><strong>E. Hasil yang diharapkan</strong><br />Dapat mengikuti langkah kerja dengan baik<br /><br /><strong>F. Alat dan bahan</strong><br /><ol><li>Proxmox</li><li>ruang harddisk yang cukup</li><li>jaringan internet.</li></ol><strong>G. Jangka waktu pelaksanaan</strong><br />Sesuai dengan banyak nya data yang di backup<br /><br /><strong>H. Langkah kerja</strong><br />1. Buka proxmox melalui web browser<br /><div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-bjsHZRS2Ft8/W9Gt21GijfI/AAAAAAAAFI8/uUGLFr_961EArqhrF0eMbWuWp-r7NWfeQCLcBGAs/s1600/Screenshot_1.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="669" data-original-width="1365" height="156" src="https://3.bp.blogspot.com/-bjsHZRS2Ft8/W9Gt21GijfI/AAAAAAAAFI8/uUGLFr_961EArqhrF0eMbWuWp-r7NWfeQCLcBGAs/s320/Screenshot_1.png" title="" width="320" /></a></div><br />2. Tentukan dan klik vm yang akan di clone, lalu matikan vm tersebut<br /><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-uY3ekGtkVeA/W9Gt9EpqcsI/AAAAAAAAFJA/MDv-6dmoeeYhsaGm8kogJdRr5jF3vWclwCLcBGAs/s1600/Screenshot_2.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="645" data-original-width="1365" height="151" src="https://1.bp.blogspot.com/-uY3ekGtkVeA/W9Gt9EpqcsI/AAAAAAAAFJA/MDv-6dmoeeYhsaGm8kogJdRr5jF3vWclwCLcBGAs/s320/Screenshot_2.png" title="" width="320" /></a></div><br />3. Bila vm telah di matikan, maka icon play atau yang berwarna hijau akan hilang<br /><div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/-IZbtNUhViWo/W9GuCgRKBPI/AAAAAAAAFJE/uUg41yS7qXEY7wGuO2bpZkMfgNFkqr3AgCLcBGAs/s1600/Screenshot_6.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="580" data-original-width="1363" height="136" src="https://4.bp.blogspot.com/-IZbtNUhViWo/W9GuCgRKBPI/AAAAAAAAFJE/uUg41yS7qXEY7wGuO2bpZkMfgNFkqr3AgCLcBGAs/s320/Screenshot_6.png" title="" width="320" /></a></div><br />4. Untuk membackup vm, klik Backup &gt; backup now<br /><div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-y56pduYKN1w/W9GuHb7BWsI/AAAAAAAAFJI/FY9mFodXwNYBfuLwo5ubvoELxyNe0qw0ACLcBGAs/s1600/Screenshot_10.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="658" data-original-width="1365" height="154" src="https://2.bp.blogspot.com/-y56pduYKN1w/W9GuHb7BWsI/AAAAAAAAFJI/FY9mFodXwNYBfuLwo5ubvoELxyNe0qw0ACLcBGAs/s320/Screenshot_10.png" title="" width="320" /></a></div><br />5. Untuk output dari backupnya nanti, mode = stop, compression = GZIP(Good) &gt; klik Backup<br /><div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/-LE38KO5KNZI/W9GuMUuPMiI/AAAAAAAAFJM/1EwVnrhm5W0vZHWnl-bu-9R0KuhxKkbYACLcBGAs/s1600/Screenshot_11.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="659" data-original-width="1365" height="154" src="https://4.bp.blogspot.com/-LE38KO5KNZI/W9GuMUuPMiI/AAAAAAAAFJM/1EwVnrhm5W0vZHWnl-bu-9R0KuhxKkbYACLcBGAs/s320/Screenshot_11.png" title="" width="320" /></a></div><br />6. Tunggu hingga proses selesai atau muncul seperti berikut<br /><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-UL8cpKXiJAw/W9GuSGjAWXI/AAAAAAAAFJQ/oqtWy1lJJeEr_1fNUkaICGSIOc94rT7HACLcBGAs/s1600/Screenshot_13.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="661" data-original-width="1365" height="154" src="https://1.bp.blogspot.com/-UL8cpKXiJAw/W9GuSGjAWXI/AAAAAAAAFJQ/oqtWy1lJJeEr_1fNUkaICGSIOc94rT7HACLcBGAs/s320/Screenshot_13.png" title="" width="320" /></a></div><br />7. Hasil backup akan ditampilkan beserta namanya<br /><div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-Bp5b4iKuOZ0/W9GuXcJv9TI/AAAAAAAAFJY/ecwugOmkjQkQQsB62lkQxbAZbCpJb7a5wCLcBGAs/s1600/Screenshot_14.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="662" data-original-width="1365" height="155" src="https://2.bp.blogspot.com/-Bp5b4iKuOZ0/W9GuXcJv9TI/AAAAAAAAFJY/ecwugOmkjQkQQsB62lkQxbAZbCpJb7a5wCLcBGAs/s320/Screenshot_14.png" title="" width="320" /></a></div><br />8. Untuk mengambil hasil backupknya agar bisa di simpan di localdisk, buka shell kemudian ssh proxmox anda. masuk ke direktori “/var/lib/vz/dump/”, kemudian cek isinya apakah hasil backup ada disitu atau tidak.<br /><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-9El2sJFFSLY/W9GucFsTICI/AAAAAAAAFJg/JLqJACzkU4EBur897F6QNDROm6BoFlCOACLcBGAs/s1600/Screenshot_16.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="449" data-original-width="655" height="219" src="https://1.bp.blogspot.com/-9El2sJFFSLY/W9GucFsTICI/AAAAAAAAFJg/JLqJACzkU4EBur897F6QNDROm6BoFlCOACLcBGAs/s320/Screenshot_16.png" title="" width="320" /></a></div><br />9. Copy ke localdisk dimana anda mau menyimpannya<br /><div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-kOgxC8-V9Tw/W9GutIiAuWI/AAAAAAAAFJw/nHLTP8KYhOEYUOlN7TBUfP9uv5Ja4hIqgCLcBGAs/s1600/Screenshot_18.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="86" data-original-width="647" height="42" src="https://2.bp.blogspot.com/-kOgxC8-V9Tw/W9GutIiAuWI/AAAAAAAAFJw/nHLTP8KYhOEYUOlN7TBUfP9uv5Ja4hIqgCLcBGAs/s320/Screenshot_18.png" title="" width="320" /></a></div><br />10. Setelah selesai pastikan yang dicopy namanya sama dengan yang diproxmox<br /><div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-UaDAh4azkzQ/W9Gu2VbZDOI/AAAAAAAAFJ0/LUH1DOXUyZ4eRgCDStWCYhNqe63vLbpsACLcBGAs/s1600/Screenshot_20.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="579" data-original-width="1365" height="135" src="https://2.bp.blogspot.com/-UaDAh4azkzQ/W9Gu2VbZDOI/AAAAAAAAFJ0/LUH1DOXUyZ4eRgCDStWCYhNqe63vLbpsACLcBGAs/s320/Screenshot_20.png" title="" width="320" /></a></div><br /><strong>I. Hasil yang didapatkan</strong><br />Debian yang telah dibackup dapat disimpan ke penyimpanan eksternal dan masih bisa digunakan untuk lain waktu<br /><br /><strong>J. Temuan masalah</strong><br />Belum ditemukan permasalahan<br /><br /><strong>K. Kesimpulan</strong><br />Membackup data merupakan salah satu cara untuk menyelamatkan file kita jika seandainya terjadi keruskan di sever kita dan memungkin kan akan menghilangkan file kita.</p>
 </section>
@@ -143,17 +143,17 @@ Agar data yang saat penting itu tidak hilang karena ada kesalahan dan dapat meny
               <a href="/tags/blc-telkom-klaten">
                 <span>#</span>BLC Telkom Klaten</a>
             
-              <a href="/tags/linux">
-                <span>#</span>Linux</a>
-            
-              <a href="/tags/linux-indonesia">
-                <span>#</span>Linux Indonesia</a>
-            
-              <a href="/tags/kpli-klaten">
-                <span>#</span>KPLI Klaten</a>
-            
               <a href="/tags/ayo-belajar-linux">
                 <span>#</span>Ayo Belajar Linux</a>
+            
+              <a href="/tags/proxmox">
+                <span>#</span>Proxmox</a>
+            
+              <a href="/tags/backup-and-restore">
+                <span>#</span>Backup and Restore</a>
+            
+              <a href="/tags/ngoprek">
+                <span>#</span>Ngoprek</a>
             
           
         </p>
