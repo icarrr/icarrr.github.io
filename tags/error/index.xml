@@ -69,7 +69,7 @@ python -m pip uninstall pip &amp;amp;&amp;amp; apt install python-pip --reinstal
         <link>https://sibunglon.com/2018/12/10/peringatan-dependensi-cryptography/</link>
         <pubDate>Mon, 10 Dec 2018 23:41:25 +0700</pubDate>
         <guid>https://sibunglon.com/2018/12/10/peringatan-dependensi-cryptography/</guid>
-        <description>Requests Dependency Warning: Old version of cryptography Jika anda mendapatkan sebuah masalah jangan panik, apalagi ketemu error yang similiar dari judul tulsain itu berarti saat ini disistem anda menggunakan cryptography versi lama silahkan update dengan command pip install --upgrade cryptography</description>
+        <description>Requests Dependency Warning: Old version of cryptography Jika anda mendapatkan sebuah masalah jangan panik, apalagi ketemu error yang similiar dari judul tulisan itu berarti saat ini disistem anda menggunakan cryptography versi lama silahkan update dengan command pip install --upgrade cryptography</description>
       </item>
     
       <item>
