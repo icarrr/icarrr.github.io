@@ -6,10 +6,20 @@
     <description>Recent content in Ngoprek on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 May 2019 15:59:55 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 13 Jul 2019 21:47:47 +0700</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/ngoprek/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Install Open Edx Using Method Native Installation | Ubuntu 16.04</title>
+        <link>https://sibunglon.com/2019/07/13/install-open-edx-using-method-native-installation-ubuntu-16.04/</link>
+        <pubDate>Sat, 13 Jul 2019 21:47:47 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/07/13/install-open-edx-using-method-native-installation-ubuntu-16.04/</guid>
+        <description>About Open edX Open edX is the massively scalable learning software platform behind edX. edX is the online learning destination founded by Harvard and MIT in 2012.
+edX offers high-quality courses from the world’s best universities and institutions to learners everywhere. It is the only leading MOOC provider that is both nonprofit and open source. The edX mission is to:
+ Increase access to high-quality education for everyone, everywhere Enhance teaching and learning on campus and online Advance teaching and learning through research  Play with Open edX How to use Open edX in my own environment?</description>
+      </item>
     
       <item>
         <title>Failed to Install the Following Android SDK Packages as Some Licences Have Not Been Accepted</title>
