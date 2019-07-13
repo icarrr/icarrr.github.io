@@ -6,10 +6,19 @@
     <description>Recent content in Posts on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 13 Jul 2019 23:01:19 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jul 2019 00:25:00 +0700</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Open edX Error Get Certificate Authority</title>
+        <link>https://sibunglon.com/2019/07/14/open-edx-error-get-certificate-authority/</link>
+        <pubDate>Sun, 14 Jul 2019 00:25:00 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/07/14/open-edx-error-get-certificate-authority/</guid>
+        <description>Error Get Incommon Server CA (Certificate Authority) When Installing Open edX In the previous article or that is here, there was a quick acquaintance session with Open edX while playing with Open edX (Open edX installation). And there are also articles about errors during Open edX installation, can be seen in this article.
+Besides the errors in this article, this time I found a different error which was an error in getting an Authority Certificate.</description>
+      </item>
     
       <item>
         <title>Open edX Error Create Service Worker Users</title>
