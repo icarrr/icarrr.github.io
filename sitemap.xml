@@ -1,10 +1,73 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+    
+      <url>
+        <loc>https://sibunglon.com/tags/ayo-belajar-linux/</loc>
+        <lastmod>2019-07-15T03:09:25+07:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
   
     
       <url>
         <loc>https://sibunglon.com/2019/07/15/create-new-super-user-for-access-django-admin-interface-open-edx/</loc>
         <lastmod>2019-07-15T03:09:25+07:00</lastmod>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/tags/ngoprek/</loc>
+        <lastmod>2019-07-15T03:09:25+07:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/tags/open-edx/</loc>
+        <lastmod>2019-07-15T03:09:25+07:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/posts/</loc>
+        <lastmod>2019-07-15T03:09:25+07:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/tags/python/</loc>
+        <lastmod>2019-07-15T03:09:25+07:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/tags/</loc>
+        <lastmod>2019-07-15T03:09:25+07:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/</loc>
+        <lastmod>2019-07-15T03:09:25+07:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/tags/error/</loc>
+        <lastmod>2019-07-14T00:25:00+07:00</lastmod>
+        <priority>0</priority>
       </url>
     
   
@@ -31,6 +94,38 @@
   
     
       <url>
+        <loc>https://sibunglon.com/tags/installasi/</loc>
+        <lastmod>2019-07-13T21:47:47+07:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/tags/elearning/</loc>
+        <lastmod>2019-07-13T21:47:47+07:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/tags/android-developer/</loc>
+        <lastmod>2019-05-19T15:59:55+07:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/tags/case-study/</loc>
+        <lastmod>2019-05-19T15:59:55+07:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+    
+      <url>
         <loc>https://sibunglon.com/2019/05/19/failed-to-install-the-following-android-sdk-packages-as-some-licences-have-not-been-accepted/</loc>
         <lastmod>2019-05-19T15:59:55+07:00</lastmod>
       </url>
@@ -38,8 +133,40 @@
   
     
       <url>
+        <loc>https://sibunglon.com/tags/backup-and-restore/</loc>
+        <lastmod>2019-05-16T14:26:00+07:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+    
+      <url>
         <loc>https://sibunglon.com/2019/05/16/backup-and-restore-database-sql-server-to-lower-version/</loc>
         <lastmod>2019-05-16T14:26:00+07:00</lastmod>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/tags/microsoft-sql-server/</loc>
+        <lastmod>2019-05-16T14:26:00+07:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/tags/windows/</loc>
+        <lastmod>2019-05-16T14:26:00+07:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/tags/atlassian/</loc>
+        <lastmod>2019-05-06T03:40:59+07:00</lastmod>
+        <priority>0</priority>
       </url>
     
   
@@ -54,6 +181,22 @@
       <url>
         <loc>https://sibunglon.com/2019/05/04/analisis-swot/</loc>
         <lastmod>2019-05-04T22:32:54+07:00</lastmod>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/tags/others/</loc>
+        <lastmod>2019-05-04T22:32:54+07:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/tags/cockpit/</loc>
+        <lastmod>2019-04-15T05:09:24+07:00</lastmod>
+        <priority>0</priority>
       </url>
     
   
@@ -87,8 +230,32 @@
   
     
       <url>
+        <loc>https://sibunglon.com/tags/virtualization/</loc>
+        <lastmod>2019-03-26T14:26:11+07:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/tags/activities/</loc>
+        <lastmod>2019-03-03T03:53:55+07:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+    
+      <url>
         <loc>https://sibunglon.com/2019/03/03/serunya-global-diversity-cfp-day-jakarta-2019/</loc>
         <lastmod>2019-03-03T03:53:55+07:00</lastmod>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/tags/caddy-server/</loc>
+        <lastmod>2019-02-27T01:15:00+07:00</lastmod>
+        <priority>0</priority>
       </url>
     
   
@@ -115,6 +282,14 @@
   
     
       <url>
+        <loc>https://sibunglon.com/tags/lets-encrypt/</loc>
+        <lastmod>2019-02-16T17:19:08+07:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+    
+      <url>
         <loc>https://sibunglon.com/2019/02/09/membangun-hotspot-sistem-voucher/</loc>
         <lastmod>2019-02-09T23:25:02+07:00</lastmod>
       </url>
@@ -122,8 +297,32 @@
   
     
       <url>
+        <loc>https://sibunglon.com/tags/mikrotik/</loc>
+        <lastmod>2019-02-09T23:25:02+07:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/tags/blc-telkom-klaten/</loc>
+        <lastmod>2019-02-07T20:35:49+07:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+    
+      <url>
         <loc>https://sibunglon.com/2019/02/07/memisahkan-traffic-game-online-dan-browsing-dengan-mikrotik/</loc>
         <lastmod>2019-02-07T20:35:49+07:00</lastmod>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/tags/ansible/</loc>
+        <lastmod>2019-01-20T18:11:43+07:00</lastmod>
+        <priority>0</priority>
       </url>
     
   
@@ -150,8 +349,24 @@
   
     
       <url>
+        <loc>https://sibunglon.com/tags/introduction/</loc>
+        <lastmod>2019-01-19T11:53:28+07:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+    
+      <url>
         <loc>https://sibunglon.com/2018/12/27/menonaktifkan-autentikasi-password-pada-login-ssh/</loc>
         <lastmod>2018-12-27T01:29:42+07:00</lastmod>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/tags/ssh/</loc>
+        <lastmod>2018-12-27T01:29:42+07:00</lastmod>
+        <priority>0</priority>
       </url>
     
   
@@ -194,6 +409,22 @@
       <url>
         <loc>https://sibunglon.com/2018/12/14/membuat-subdomain-dengan-nginx/</loc>
         <lastmod>2018-12-14T11:03:50+07:00</lastmod>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/tags/nginx/</loc>
+        <lastmod>2018-12-14T11:03:50+07:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/tags/microsoft-azure/</loc>
+        <lastmod>2018-12-12T10:28:20+07:00</lastmod>
+        <priority>0</priority>
       </url>
     
   
@@ -248,8 +479,24 @@
   
     
       <url>
+        <loc>https://sibunglon.com/tags/custom-weapons/</loc>
+        <lastmod>2018-12-07T07:44:24+07:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+    
+      <url>
         <loc>https://sibunglon.com/2018/12/07/share-pc/laptop-lokal-ke-public/</loc>
         <lastmod>2018-12-07T07:44:24+07:00</lastmod>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/tags/apache2/</loc>
+        <lastmod>2018-12-01T15:14:00+00:00</lastmod>
+        <priority>0</priority>
       </url>
     
   
@@ -311,6 +558,14 @@
   
     
       <url>
+        <loc>https://sibunglon.com/tags/opensid/</loc>
+        <lastmod>2017-10-23T02:29:00+00:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+    
+      <url>
         <loc>https://sibunglon.com/2017/10/21/mempercantik-tampilan-terminal-server/</loc>
         <lastmod>2017-10-21T02:27:00+00:00</lastmod>
       </url>
@@ -320,6 +575,14 @@
       <url>
         <loc>https://sibunglon.com/2017/10/20/perbandingan-open-source-dan-closed-source/</loc>
         <lastmod>2017-10-20T18:59:00+00:00</lastmod>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/tags/cloud-computing/</loc>
+        <lastmod>2017-10-20T02:10:00+00:00</lastmod>
+        <priority>0</priority>
       </url>
     
   
@@ -339,8 +602,24 @@
   
     
       <url>
+        <loc>https://sibunglon.com/tags/proxmox/</loc>
+        <lastmod>2017-10-19T18:47:00+00:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+    
+      <url>
         <loc>https://sibunglon.com/2017/10/19/implementasi-manual-subnetting-kelas-c/</loc>
         <lastmod>2017-10-19T17:58:00+00:00</lastmod>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/tags/subnetting/</loc>
+        <lastmod>2017-10-19T17:58:00+00:00</lastmod>
+        <priority>0</priority>
       </url>
     
   
@@ -360,6 +639,14 @@
   
     
       <url>
+        <loc>https://sibunglon.com/tags/ubiquiti/</loc>
+        <lastmod>2017-10-18T16:50:00+00:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+    
+      <url>
         <loc>https://sibunglon.com/2017/10/18/point-to-point-dengan-ubiquiti-ap-side/</loc>
         <lastmod>2017-10-18T11:29:00+00:00</lastmod>
       </url>
@@ -369,6 +656,14 @@
       <url>
         <loc>https://sibunglon.com/2017/10/17/install-slims-8-akasia-di-debian-server/</loc>
         <lastmod>2017-10-17T15:17:00+00:00</lastmod>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/tags/engenius/</loc>
+        <lastmod>2017-10-17T11:01:00+00:00</lastmod>
+        <priority>0</priority>
       </url>
     
   
@@ -409,6 +704,14 @@
   
     
       <url>
+        <loc>https://sibunglon.com/tags/lamp-server/</loc>
+        <lastmod>2017-10-14T10:25:00+00:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+    
+      <url>
         <loc>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-install-aplikasi-berbasis-web/</loc>
         <lastmod>2017-10-13T10:22:00+00:00</lastmod>
       </url>
@@ -425,6 +728,14 @@
       <url>
         <loc>https://sibunglon.com/2017/10/13/setting-tp-link-wa7210n/</loc>
         <lastmod>2017-10-13T09:52:00+00:00</lastmod>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/tags/tp-link/</loc>
+        <lastmod>2017-10-13T09:52:00+00:00</lastmod>
+        <priority>0</priority>
       </url>
     
   
@@ -474,6 +785,22 @@
       <url>
         <loc>https://sibunglon.com/2017/10/09/comparison-of-platform-virtualization-software/</loc>
         <lastmod>2017-10-09T17:12:00+00:00</lastmod>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/tags/bestpath-network/</loc>
+        <lastmod>2017-10-07T16:49:00+00:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/tags/cisco/</loc>
+        <lastmod>2017-10-07T16:49:00+00:00</lastmod>
+        <priority>0</priority>
       </url>
     
   
@@ -885,6 +1212,14 @@
   
     
       <url>
+        <loc>https://sibunglon.com/tags/introducing/</loc>
+        <lastmod>2017-08-15T17:17:00+00:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+    
+      <url>
         <loc>https://sibunglon.com/2017/08/15/sharing-pengenalan-cisco-bersama-rifqi-fajar-rudin-best-path-networkjakarta/</loc>
         <lastmod>2017-08-15T17:17:00+00:00</lastmod>
       </url>
@@ -1053,343 +1388,7 @@
   
     
       <url>
-        <loc>https://sibunglon.com/tags/activities/</loc>
-        <lastmod>2019-03-03T03:53:55+07:00</lastmod>
-        <priority>0</priority>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/android-developer/</loc>
-        <lastmod>2019-05-19T15:59:55+07:00</lastmod>
-        <priority>0</priority>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/ansible/</loc>
-        <lastmod>2019-01-20T18:11:43+07:00</lastmod>
-        <priority>0</priority>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/apache2/</loc>
-        <lastmod>2018-12-01T15:14:00+00:00</lastmod>
-        <priority>0</priority>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/atlassian/</loc>
-        <lastmod>2019-05-06T03:40:59+07:00</lastmod>
-        <priority>0</priority>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/ayo-belajar-linux/</loc>
-        <lastmod>2019-07-15T03:09:25+07:00</lastmod>
-        <priority>0</priority>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/backup-and-restore/</loc>
-        <lastmod>2019-05-16T14:26:00+07:00</lastmod>
-        <priority>0</priority>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/bestpath-network/</loc>
-        <lastmod>2017-10-07T16:49:00+00:00</lastmod>
-        <priority>0</priority>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/blc-telkom-klaten/</loc>
-        <lastmod>2019-02-07T20:35:49+07:00</lastmod>
-        <priority>0</priority>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/caddy-server/</loc>
-        <lastmod>2019-02-27T01:15:00+07:00</lastmod>
-        <priority>0</priority>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/case-study/</loc>
-        <lastmod>2019-05-19T15:59:55+07:00</lastmod>
-        <priority>0</priority>
-      </url>
-    
-  
-    
-      <url>
         <loc>https://sibunglon.com/categories/</loc>
-        <priority>0</priority>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/cisco/</loc>
-        <lastmod>2017-10-07T16:49:00+00:00</lastmod>
-        <priority>0</priority>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/cloud-computing/</loc>
-        <lastmod>2017-10-20T02:10:00+00:00</lastmod>
-        <priority>0</priority>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/cockpit/</loc>
-        <lastmod>2019-04-15T05:09:24+07:00</lastmod>
-        <priority>0</priority>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/custom-weapons/</loc>
-        <lastmod>2018-12-07T07:44:24+07:00</lastmod>
-        <priority>0</priority>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/elearning/</loc>
-        <lastmod>2019-07-13T21:47:47+07:00</lastmod>
-        <priority>0</priority>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/engenius/</loc>
-        <lastmod>2017-10-17T11:01:00+00:00</lastmod>
-        <priority>0</priority>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/error/</loc>
-        <lastmod>2019-07-14T00:25:00+07:00</lastmod>
-        <priority>0</priority>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/installasi/</loc>
-        <lastmod>2019-07-13T21:47:47+07:00</lastmod>
-        <priority>0</priority>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/introducing/</loc>
-        <lastmod>2017-08-15T17:17:00+00:00</lastmod>
-        <priority>0</priority>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/introduction/</loc>
-        <lastmod>2019-01-19T11:53:28+07:00</lastmod>
-        <priority>0</priority>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/lamp-server/</loc>
-        <lastmod>2017-10-14T10:25:00+00:00</lastmod>
-        <priority>0</priority>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/lets-encrypt/</loc>
-        <lastmod>2019-02-16T17:19:08+07:00</lastmod>
-        <priority>0</priority>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/microsoft-azure/</loc>
-        <lastmod>2018-12-12T10:28:20+07:00</lastmod>
-        <priority>0</priority>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/microsoft-sql-server/</loc>
-        <lastmod>2019-05-16T14:26:00+07:00</lastmod>
-        <priority>0</priority>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/mikrotik/</loc>
-        <lastmod>2019-02-09T23:25:02+07:00</lastmod>
-        <priority>0</priority>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/nginx/</loc>
-        <lastmod>2018-12-14T11:03:50+07:00</lastmod>
-        <priority>0</priority>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/ngoprek/</loc>
-        <lastmod>2019-07-15T03:09:25+07:00</lastmod>
-        <priority>0</priority>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/open-edx/</loc>
-        <lastmod>2019-07-15T03:09:25+07:00</lastmod>
-        <priority>0</priority>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/opensid/</loc>
-        <lastmod>2017-10-23T02:29:00+00:00</lastmod>
-        <priority>0</priority>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/others/</loc>
-        <lastmod>2019-05-04T22:32:54+07:00</lastmod>
-        <priority>0</priority>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/posts/</loc>
-        <lastmod>2019-07-15T03:09:25+07:00</lastmod>
-        <priority>0</priority>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/proxmox/</loc>
-        <lastmod>2017-10-19T18:47:00+00:00</lastmod>
-        <priority>0</priority>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/python/</loc>
-        <lastmod>2019-07-15T03:09:25+07:00</lastmod>
-        <priority>0</priority>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/ssh/</loc>
-        <lastmod>2018-12-27T01:29:42+07:00</lastmod>
-        <priority>0</priority>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/subnetting/</loc>
-        <lastmod>2017-10-19T17:58:00+00:00</lastmod>
-        <priority>0</priority>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/</loc>
-        <lastmod>2019-03-03T03:53:55+07:00</lastmod>
-        <priority>0</priority>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/</loc>
-        <lastmod>2019-07-15T03:09:25+07:00</lastmod>
-        <priority>0</priority>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/tp-link/</loc>
-        <lastmod>2017-10-13T09:52:00+00:00</lastmod>
-        <priority>0</priority>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/ubiquiti/</loc>
-        <lastmod>2017-10-18T16:50:00+00:00</lastmod>
-        <priority>0</priority>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/virtualization/</loc>
-        <lastmod>2019-03-26T14:26:11+07:00</lastmod>
-        <priority>0</priority>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/windows/</loc>
-        <lastmod>2019-05-16T14:26:00+07:00</lastmod>
         <priority>0</priority>
       </url>
     
