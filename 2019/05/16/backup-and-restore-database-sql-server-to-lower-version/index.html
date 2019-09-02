@@ -151,7 +151,7 @@ If you want to migrate a database from environment A with SQL Server version A t
 
 <ol>
 <li>Open the script</li>
-<li>Verify that the MSSQL data file path (.mdf and log.ldf files) is correct. Example, if you back up a database from MSSQL 2014 and want to restore to MSSQL 2012, you need to update the path that it was originally from <code>C:\Program Files\Microsoft SQL Server\MSSQL14.SQLEXPRESS\MSSQL\DATA\qa_tmli_20190829_log.ldf</code> to <code>C:\Program Files\Microsoft SQL Server\MSSQL12.SQLEXPRESS\MSSQL\DATA\qa_tmli_20190829_log.ldf</code>. Do the same for the <em>*.mdf</em> file.</li>
+<li>Verify that the MSSQL data file path (.mdf and log.ldf files) is correct. Example, if you back up a database from MSSQL 2014 and want to restore to MSSQL 2012, you need to update the path that it was originally from <code>C:\Program Files\Microsoft SQL Server\MSSQL14.SQLEXPRESS\MSSQL\DATA\ganteng_log.ldf</code> to <code>C:\Program Files\Microsoft SQL Server\MSSQL12.SQLEXPRESS\MSSQL\DATA\ganteng_log.ldf</code>. Do the same for the <em>*.mdf</em> file.</li>
 <li>Run the script</li>
 <li>You may get some errors like this:
 <em>Cannot add the Principal &lsquo;CodeShare&rsquo; because it does not exist or you do not have permission</em>.
