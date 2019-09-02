@@ -73,7 +73,7 @@ If you want to migrate a database from environment A with SQL Server version A t
 
 <meta itemprop="datePublished" content="2019-05-16T14:26:00&#43;07:00" />
 <meta itemprop="dateModified" content="2019-05-16T14:26:00&#43;07:00" />
-<meta itemprop="wordCount" content="395">
+<meta itemprop="wordCount" content="429">
 
 
 
@@ -151,7 +151,7 @@ If you want to migrate a database from environment A with SQL Server version A t
 
 <ol>
 <li>Open the script</li>
-<li>Make sure the path of the files for the .mdf and log.ldf files is correct.</li>
+<li>Verify that the MSSQL data file path (.mdf and log.ldf files) is correct. For example, if you use the 2012 version of MSSQL, you need to simply update the path that was originally <code>C:\Program Files\Microsoft SQL Server\MSSQL14.SQLEXPRESS\MSSQL\DATA\qa_tmli_20190829_log.ldf</code> to <code>C:\Program Files\Microsoft SQL Server\MSSQL12.SQLEXPRESS\MSSQL\DATA\qa_tmli_20190829_log.ldf</code>. Do the same for the <em>*.mdf</em> file.</li>
 <li>Run the script</li>
 <li>You may get some errors like this:
 <em>Cannot add the Principal &lsquo;CodeShare&rsquo; because it does not exist or you do not have permission</em>.
