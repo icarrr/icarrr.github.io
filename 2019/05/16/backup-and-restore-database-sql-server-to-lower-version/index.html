@@ -73,7 +73,7 @@ If you want to migrate a database from environment A with SQL Server version A t
 
 <meta itemprop="datePublished" content="2019-05-16T14:26:00&#43;07:00" />
 <meta itemprop="dateModified" content="2019-05-16T14:26:00&#43;07:00" />
-<meta itemprop="wordCount" content="437">
+<meta itemprop="wordCount" content="507">
 
 
 
@@ -151,12 +151,14 @@ If you want to migrate a database from environment A with SQL Server version A t
 
 <ol>
 <li>Open the script</li>
-<li>Verify that the MSSQL data file path (.mdf and log.ldf files) is correct. Example, if you back up a database from MSSQL 2014 and want to restore to MSSQL 2012, you need to update the path that it was originally from <code>C:\Program Files\Microsoft SQL Server\MSSQL14.SQLEXPRESS\MSSQL\DATA\ganteng_log.ldf</code> to <code>C:\Program Files\Microsoft SQL Server\MSSQL12.SQLEXPRESS\MSSQL\DATA\ganteng_log.ldf</code>. Do the same for the <em>*.mdf</em> file.</li>
+<li>Verify that the MSSQL data file path (.mdf and log.ldf files) is correct. Example, if you back up a database from MSSQL 2014 and want to restore to MSSQL 2012, you need to update the path that it was originally from <code>C:\Program Files\Microsoft SQL Server\MSSQL14.SQLEXPRESS\MSSQL\DATA\ganteng_log.ldf</code> to <code>C:\Program Files\Microsoft SQL Server\MSSQL12.MSSQLSERVER\MSSQL\DATA\ganteng_log.ldf</code>. Do the same for the <em>*.mdf</em> file.</li>
 <li>Run the script</li>
 <li>You may get some errors like this:
 <em>Cannot add the Principal &lsquo;CodeShare&rsquo; because it does not exist or you do not have permission</em>.
 Just ignore it, the message. This does not cause any problems.</li>
 </ol>
+
+<p>Note: pay attention to the mssql instance name and please change it according to the instance name used. In this example, at MSSQL 2014 I used the SQLEXPRESS instance name and at MSSQL 2012 I used the MSSQLSERVER instance name. To find out the name of the instance, please open the <code>C:\Program Files\Microsoft SQL Server</code> directory and find the directory named <code>MSSQL&lt;version&gt;.xxx</code> which <em>xxx</em> is the name of the instance.</p>
 
 <p>That&rsquo;s it!</p>
 
