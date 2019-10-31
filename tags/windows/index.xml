@@ -5,10 +5,21 @@
     <description>Recent content in Windows on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 May 2019 14:26:00 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 31 Oct 2019 14:46:11 +0700</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/windows/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Restart Network Adapter Windows without Reboot</title>
+        <link>https://sibunglon.com/2019/10/31/restart-network-adapter-windows-without-reboot/</link>
+        <pubDate>Thu, 31 Oct 2019 14:46:11 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/10/31/restart-network-adapter-windows-without-reboot/</guid>
+        <description>Restarts a network adapter by disabling and then re-enabling the network adapter.
+ Open PowerShell on Windows, after that find the name of the interface to be restarted. Use the following command line:
+netsh interface show interface Restart network adapter using the following command line:
+Restart-NetAdapter -Name &amp;#34;Ethernet x&amp;#34;  </description>
+      </item>
     
       <item>
         <title>Backup and Restore Database SQL Server to Lower Version</title>

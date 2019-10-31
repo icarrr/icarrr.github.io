@@ -5,7 +5,7 @@
     <description>Recent content in Tags on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 15 Jul 2019 03:09:25 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 31 Oct 2019 14:46:11 +0700</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -13,16 +13,40 @@
       <item>
         <title>Ayo Belajar Linux</title>
         <link>https://sibunglon.com/tags/ayo-belajar-linux/</link>
-        <pubDate>Mon, 15 Jul 2019 03:09:25 +0700</pubDate>
+        <pubDate>Thu, 31 Oct 2019 14:46:11 +0700</pubDate>
         <guid>https://sibunglon.com/tags/ayo-belajar-linux/</guid>
+        <description></description>
+      </item>
+    
+      <item>
+        <title>Case Study</title>
+        <link>https://sibunglon.com/tags/case-study/</link>
+        <pubDate>Thu, 31 Oct 2019 14:46:11 +0700</pubDate>
+        <guid>https://sibunglon.com/tags/case-study/</guid>
         <description></description>
       </item>
     
       <item>
         <title>Ngoprek</title>
         <link>https://sibunglon.com/tags/ngoprek/</link>
-        <pubDate>Mon, 15 Jul 2019 03:09:25 +0700</pubDate>
+        <pubDate>Thu, 31 Oct 2019 14:46:11 +0700</pubDate>
         <guid>https://sibunglon.com/tags/ngoprek/</guid>
+        <description></description>
+      </item>
+    
+      <item>
+        <title>Virtualization</title>
+        <link>https://sibunglon.com/tags/virtualization/</link>
+        <pubDate>Thu, 31 Oct 2019 14:46:11 +0700</pubDate>
+        <guid>https://sibunglon.com/tags/virtualization/</guid>
+        <description></description>
+      </item>
+    
+      <item>
+        <title>Windows</title>
+        <link>https://sibunglon.com/tags/windows/</link>
+        <pubDate>Thu, 31 Oct 2019 14:46:11 +0700</pubDate>
+        <guid>https://sibunglon.com/tags/windows/</guid>
         <description></description>
       </item>
     
@@ -75,14 +99,6 @@
       </item>
     
       <item>
-        <title>Case Study</title>
-        <link>https://sibunglon.com/tags/case-study/</link>
-        <pubDate>Sun, 19 May 2019 15:59:55 +0700</pubDate>
-        <guid>https://sibunglon.com/tags/case-study/</guid>
-        <description></description>
-      </item>
-    
-      <item>
         <title>Backup and Restore</title>
         <link>https://sibunglon.com/tags/backup-and-restore/</link>
         <pubDate>Thu, 16 May 2019 14:26:00 +0700</pubDate>
@@ -95,14 +111,6 @@
         <link>https://sibunglon.com/tags/microsoft-sql-server/</link>
         <pubDate>Thu, 16 May 2019 14:26:00 +0700</pubDate>
         <guid>https://sibunglon.com/tags/microsoft-sql-server/</guid>
-        <description></description>
-      </item>
-    
-      <item>
-        <title>Windows</title>
-        <link>https://sibunglon.com/tags/windows/</link>
-        <pubDate>Thu, 16 May 2019 14:26:00 +0700</pubDate>
-        <guid>https://sibunglon.com/tags/windows/</guid>
         <description></description>
       </item>
     
@@ -127,14 +135,6 @@
         <link>https://sibunglon.com/tags/cockpit/</link>
         <pubDate>Mon, 15 Apr 2019 05:09:24 +0700</pubDate>
         <guid>https://sibunglon.com/tags/cockpit/</guid>
-        <description></description>
-      </item>
-    
-      <item>
-        <title>Virtualization</title>
-        <link>https://sibunglon.com/tags/virtualization/</link>
-        <pubDate>Tue, 26 Mar 2019 14:26:11 +0700</pubDate>
-        <guid>https://sibunglon.com/tags/virtualization/</guid>
         <description></description>
       </item>
     
