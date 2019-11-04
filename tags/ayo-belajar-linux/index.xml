@@ -5,21 +5,10 @@
     <description>Recent content in Ayo Belajar Linux on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 31 Oct 2019 14:46:11 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 15 Jul 2019 03:09:25 +0700</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/ayo-belajar-linux/index.xml" rel="self" type="application/rss+xml" />
     
-    
-      <item>
-        <title>Restart Network Adapter Windows without Reboot</title>
-        <link>https://sibunglon.com/2019/10/31/restart-network-adapter-windows-without-reboot/</link>
-        <pubDate>Thu, 31 Oct 2019 14:46:11 +0700</pubDate>
-        <guid>https://sibunglon.com/2019/10/31/restart-network-adapter-windows-without-reboot/</guid>
-        <description>Restarts a network adapter by disabling and then re-enabling the network adapter.
- Open PowerShell on Windows, after that find the name of the interface to be restarted. Use the following command line:
-netsh interface show interface Restart network adapter using the following command line:
-Restart-NetAdapter -Name &amp;#34;Ethernet x&amp;#34;  </description>
-      </item>
     
       <item>
         <title>Create New Super User for Access Django Admin Interface Open edX</title>
@@ -31,10 +20,10 @@ Solution sudo -u edxapp bash source /edx/app/edxapp/edxapp_env python /edx/app/e
       </item>
     
       <item>
-        <title>Open edX Error Get Certificate Authority</title>
-        <link>https://sibunglon.com/2019/07/14/open-edx-error-get-certificate-authority/</link>
+        <title>First Contribution to Open Source Project</title>
+        <link>https://sibunglon.com/2019/07/14/first-contribution-to-open-source-project/</link>
         <pubDate>Sun, 14 Jul 2019 00:25:00 +0700</pubDate>
-        <guid>https://sibunglon.com/2019/07/14/open-edx-error-get-certificate-authority/</guid>
+        <guid>https://sibunglon.com/2019/07/14/first-contribution-to-open-source-project/</guid>
         <description>Error Get Incommon Server CA (Certificate Authority) When Installing Open edX In the previous article or that is here, there was a quick acquaintance session with Open edX while playing with Open edX (Open edX installation). And there are also articles about errors during Open edX installation, can be seen in this article.
 Besides the errors in this article, this time I found a different error which was an error in getting an Authority Certificate.</description>
       </item>
@@ -98,15 +87,6 @@ Disuatu waktu saya install MSSQL Server Linux di environment berbeda dari sebelu
         <pubDate>Fri, 05 Apr 2019 18:08:14 +0700</pubDate>
         <guid>https://sibunglon.com/2019/04/05/mudahnya-memasang-mssql-server-di-linux/</guid>
         <description>Microsoft SQL Server di Linux? Diantara para pembaca mungkin ada yang kaget atau apa kalau produknya Microsoft bisa jalan di linux apalagi tanpa emulator ataupun tools lainnya. Yah itu bisa saja karena mungkin ada yang kemakan omongan bahwa produk Microsoft itu non open source. Dengan adanya MSSQL Server di linux jangan sampai ada terlalu kaget, positif thinking aja mungkin om Bill Gates udah mulai mengopen sourcekan produknya karena kasihan banyak yang berdosa karena menjadi pak tani gelapnya Microsoft😅</description>
-      </item>
-    
-      <item>
-        <title>Diam Diam Port 443 Lagi Konflik</title>
-        <link>https://sibunglon.com/2019/03/26/diam-diam-port-443-lagi-konflik/</link>
-        <pubDate>Tue, 26 Mar 2019 14:26:11 +0700</pubDate>
-        <guid>https://sibunglon.com/2019/03/26/diam-diam-port-443-lagi-konflik/</guid>
-        <description>Beberapa hari yang lalu lagi ada ide iseng nyobain main-main vm linux (virtual machine) menggunakan VMware Workstation Pro, niatnya mau online-nin semua vm yang telah dibuat tapi cuman punya 1 ip publik. Emang bisa? Terus gimana ngaksesnya/ngeremotenya? Bisa dong, waktu itu pake port forwarding untuk NAT di VMware Workstation Pro, karena maunya si vm tersebut dapat akses internet dan dapat diakses dari 1 ip public.
-Saya butuh web service yang dapat diakses melalui 1 publik yaitu 1 ip publik hostnya, okey saya pasang web service di salah satu vm.</description>
       </item>
     
       <item>
