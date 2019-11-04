@@ -2,16 +2,39 @@
   
     
       <url>
-        <loc>https://sibunglon.com/tags/case-study/</loc>
-        <lastmod>2019-10-31T14:46:11+07:00</lastmod>
+        <loc>https://sibunglon.com/tags/ayo-belajar-linux/</loc>
+        <lastmod>2019-11-04T13:39:16+07:00</lastmod>
         <priority>0</priority>
       </url>
     
   
     
       <url>
+        <loc>https://sibunglon.com/tags/error/</loc>
+        <lastmod>2019-11-04T13:39:16+07:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/2019/11/04/error-backup-database-postgresql-using-pg_dump/</loc>
+        <lastmod>2019-11-04T13:39:16+07:00</lastmod>
+      </url>
+    
+  
+    
+      <url>
         <loc>https://sibunglon.com/tags/ngoprek/</loc>
-        <lastmod>2019-10-31T14:46:11+07:00</lastmod>
+        <lastmod>2019-11-04T13:39:16+07:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/tags/postgresql/</loc>
+        <lastmod>2019-11-04T13:39:16+07:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -19,6 +42,30 @@
     
       <url>
         <loc>https://sibunglon.com/posts/</loc>
+        <lastmod>2019-11-04T13:39:16+07:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/tags/</loc>
+        <lastmod>2019-11-04T13:39:16+07:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/</loc>
+        <lastmod>2019-11-04T13:39:16+07:00</lastmod>
+        <priority>0</priority>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/tags/case-study/</loc>
         <lastmod>2019-10-31T14:46:11+07:00</lastmod>
         <priority>0</priority>
       </url>
@@ -28,22 +75,6 @@
       <url>
         <loc>https://sibunglon.com/2019/10/31/restart-network-adapter-windows-without-reboot/</loc>
         <lastmod>2019-10-31T14:46:11+07:00</lastmod>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/</loc>
-        <lastmod>2019-10-31T14:46:11+07:00</lastmod>
-        <priority>0</priority>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/</loc>
-        <lastmod>2019-10-31T14:46:11+07:00</lastmod>
-        <priority>0</priority>
       </url>
     
   
@@ -59,14 +90,6 @@
       <url>
         <loc>https://sibunglon.com/tags/windows/</loc>
         <lastmod>2019-10-31T14:46:11+07:00</lastmod>
-        <priority>0</priority>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/ayo-belajar-linux/</loc>
-        <lastmod>2019-07-15T03:09:25+07:00</lastmod>
         <priority>0</priority>
       </url>
     
@@ -90,14 +113,6 @@
       <url>
         <loc>https://sibunglon.com/tags/python/</loc>
         <lastmod>2019-07-15T03:09:25+07:00</lastmod>
-        <priority>0</priority>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/error/</loc>
-        <lastmod>2019-07-14T00:25:00+07:00</lastmod>
         <priority>0</priority>
       </url>
     
