@@ -5,10 +5,18 @@
     <description>Recent content in Tags on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Nov 2019 13:39:16 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 08 Nov 2019 14:24:33 +0700</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Others</title>
+        <link>https://sibunglon.com/tags/others/</link>
+        <pubDate>Fri, 08 Nov 2019 14:24:33 +0700</pubDate>
+        <guid>https://sibunglon.com/tags/others/</guid>
+        <description></description>
+      </item>
     
       <item>
         <title>Ayo Belajar Linux</title>
@@ -127,14 +135,6 @@
         <link>https://sibunglon.com/tags/atlassian/</link>
         <pubDate>Mon, 06 May 2019 03:40:59 +0700</pubDate>
         <guid>https://sibunglon.com/tags/atlassian/</guid>
-        <description></description>
-      </item>
-    
-      <item>
-        <title>Others</title>
-        <link>https://sibunglon.com/tags/others/</link>
-        <pubDate>Sat, 04 May 2019 22:32:54 +0700</pubDate>
-        <guid>https://sibunglon.com/tags/others/</guid>
         <description></description>
       </item>
     
