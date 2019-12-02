@@ -37,8 +37,8 @@ Pada Lab ini saya asumsikan :
         <guid>https://sibunglon.com/2018/12/10/nginx-tidak-bisa-diakses/</guid>
         <description>Nginx di CentOS atau RHEL tidak bisa diakses? Service nginx aktif? Servernya aktif? Akses dari localhost bisa? Jika semua jawabannya YA, mungkin firewall di system anda sedang aktif namun trafik protokol HTTP dan HTTPS belum diizinkan oleh perangkat yang lain.
 Untuk mengizinkan trafik protokol HTTP, gunakan command
-firewall-cmd --permanent --zone=public --add-service=http  Sedangkan untuk mengizinkan trafik protokol HTTPS, gunakan command
-firewall-cmd --permanent --zone=public --add-service=https  Setelah diizinkan, firewall wajib direload agar update firewall dapat diterapkan</description>
+firewall-cmd --permanent --zone=public --add-service=http Sedangkan untuk mengizinkan trafik protokol HTTPS, gunakan command
+firewall-cmd --permanent --zone=public --add-service=https Setelah diizinkan, firewall wajib direload agar update firewall dapat diterapkan</description>
       </item>
     
       <item>
@@ -47,7 +47,7 @@ firewall-cmd --permanent --zone=public --add-service=https  Setelah diizinkan, f
         <pubDate>Mon, 10 Dec 2018 07:44:24 +0700</pubDate>
         <guid>https://sibunglon.com/2018/12/10/berkenalan-dengan-nginx-di-rhel/centos/</guid>
         <description>Nginx? Apa sih nginx itu? Fungsinya buat apa? Mungkin itu yang terlintas dipikirian beberapa orang jika berkenalan dengan hal baru. Maka dari itu pada kali ini yang akan dibahas pada Lab ini yaitu berkenalan dan bagaimana memasang nginx.
-Nginx, banyak orang membicarakannya meskipun salah dipelafalannya. Dulu saya juga salah melafakannya namun setelah diruqyah sama m1m1n atau yang dikenal dengan Andy Hidayat, sekarang gak salah pelafalan lagi :D . Nginx dibaca &amp;ldquo;engine X&amp;rdquo; bukan &amp;ldquo;nging X&amp;rdquo;.</description>
+Nginx, banyak orang membicarakannya meskipun salah dipelafalannya. Dulu saya juga salah melafakannya namun setelah diruqyah sama m1m1n atau yang dikenal dengan Andy Hidayat, sekarang gak salah pelafalan lagi :D . Nginx dibaca &amp;ldquo;engine X&amp;rdquo; bukan &amp;ldquo;nging X&amp;quot;.</description>
       </item>
     
   </channel>

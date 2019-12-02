@@ -32,7 +32,7 @@
   <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4194642&101" alt="" border="0"></a></noscript>
   
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.60.0" />
 
   
   
@@ -69,8 +69,6 @@ Saya butuh web service yang dapat diakses melalui 1 publik yaitu 1 ip publik hos
   <meta itemprop="name" content="Diam Diam Port 443 Lagi Konflik">
 <meta itemprop="description" content="Beberapa hari yang lalu lagi ada ide iseng nyobain main-main vm linux (virtual machine) menggunakan VMware Workstation Pro, niatnya mau online-nin semua vm yang telah dibuat tapi cuman punya 1 ip publik. Emang bisa? Terus gimana ngaksesnya/ngeremotenya? Bisa dong, waktu itu pake port forwarding untuk NAT di VMware Workstation Pro, karena maunya si vm tersebut dapat akses internet dan dapat diakses dari 1 ip public.
 Saya butuh web service yang dapat diakses melalui 1 publik yaitu 1 ip publik hostnya, okey saya pasang web service di salah satu vm.">
-
-
 <meta itemprop="datePublished" content="2019-03-26T14:26:11&#43;07:00" />
 <meta itemprop="dateModified" content="2019-03-26T14:26:11&#43;07:00" />
 <meta itemprop="wordCount" content="390">
@@ -78,13 +76,15 @@ Saya butuh web service yang dapat diakses melalui 1 publik yaitu 1 ip publik hos
 
 
 <meta itemprop="keywords" content="Windows,Virtualization,Ngoprek,Case Study," />
-
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Diam Diam Port 443 Lagi Konflik"/>
 <meta name="twitter:description" content="Beberapa hari yang lalu lagi ada ide iseng nyobain main-main vm linux (virtual machine) menggunakan VMware Workstation Pro, niatnya mau online-nin semua vm yang telah dibuat tapi cuman punya 1 ip publik. Emang bisa? Terus gimana ngaksesnya/ngeremotenya? Bisa dong, waktu itu pake port forwarding untuk NAT di VMware Workstation Pro, karena maunya si vm tersebut dapat akses internet dan dapat diakses dari 1 ip public.
 Saya butuh web service yang dapat diakses melalui 1 publik yaitu 1 ip publik hostnya, okey saya pasang web service di salah satu vm."/>
 
   <script data-ad-client="ca-pub-8995917561399790" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+  
+  <script src="https://kit.fontawesome.com/749688b2db.js" crossorigin="anonymous"></script>
 </head>
 
   <body>
@@ -106,9 +106,7 @@ Saya butuh web service yang dapat diakses melalui 1 publik yaitu 1 ip publik hos
       <h1>Diam Diam Port 443 Lagi Konflik</h1>
     </header>
     <section><p>Beberapa hari yang lalu lagi ada ide iseng nyobain main-main vm linux (virtual machine) menggunakan VMware Workstation Pro, niatnya mau online-nin semua vm yang telah dibuat tapi cuman punya 1 ip publik. <strong>Emang bisa? Terus gimana ngaksesnya/ngeremotenya?</strong> Bisa dong, waktu itu pake port forwarding untuk NAT di VMware Workstation Pro, karena maunya si vm tersebut dapat akses internet dan dapat diakses dari 1 ip public.</p>
-
 <p>Saya butuh web service yang dapat diakses melalui 1 publik yaitu 1 ip publik hostnya, okey saya pasang web service di salah satu vm. Awalnya semua aman aman, saya forward port protokol http (80) untuk web service pada vm ke port standard protokol http (80) di host dan saya bisa mengakses web servernya melalui ip publik host, selanjutnya saya butuh aktifkan protokol https di web service, okey saya aktifkan protokol httpsnya dan forward port protokol https (443) untuk web service pada vm ke port standard https (443) di host, disitulah si port 443 main diem-dieman. Setelah forward port 443, akses ke web service melalui protokol https di tolak. Pertama, saya pikir karena permission direktorinya tapi eh melalui protokol http udah bisa kok, berarti bukan itu karena jika melalui protokol http udah bisa diakses. Kedua, saya mau iseng aktifkan port 443 di firewall vm, saya remote vmnya via SSH dan ternyata remote SSH ditolak juga. Hmmm, unik juga kasusnya, saya coba hapus port forwarding protokol https (443) dan remote vm via SSH seketika tidak ditolak lagi. Okey disaat itu seketika saya beranggapan kalau port 443 lagi bentrok atau konflik, saya cek port yang listen pada vm, tidak ada yang menggunakan port 443 selain web service yang telah ditentukan. Kemudian saya cek firewall di hostnya, tidak ada juga port 443 yang listen dan aktif. Jadi bingungkan bentroknya dimana?🤣  Soalnya di vm cuman 1 yang ketahuan yang menggunakan port 443 jadi harusnya gak ada bentrok atau konflik, jadi makin semangat sama kasus ini😂</p>
-
 <p>Setelah berjam jam browsing, di salah satu blog saya menemukan titik terang katanya si <strong>VMware Workstation Pro menggunakan port 443 untuk shared VM</strong>, setelah itu saya cek konfigurasi shared VM pada VMware dan ternyata benar pernyataan blog tersebut. Saya ganti port share VM tersebut, forward lagi port protokol https (443) dan akhirnnya kasus saya tentang https tersebut telah terpecahkan, web service sudah bisa diakses melalui protokol https dan remote vm via SSH tidak ditolak lagi.</p>
 </section>
     <footer>

@@ -32,7 +32,7 @@
   <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4194642&101" alt="" border="0"></a></noscript>
   
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.60.0" />
 
   
   
@@ -71,8 +71,6 @@ Pada Lab ini saya asumsikan :
 <meta itemprop="description" content="Bermain Dengan Nginx Pada saat ini sudah menjadi hal biasa jika seseorang ingin memindahkan file konfigurasinya agar lebih mudah dimaintenance. Salah satunya yaitu memidahkan direktori root html nginx. Di nginx, untuk memindahkan direktori root html dan memidahkan konfigurasinya cukup dengan command-command berikut.
 Pada Lab ini saya asumsikan :
  master konfigurasi berada di direktori /sibunglonlabs/config/nginx direktori root berada di /sibunglonlabs/web  1) Gunakan command berikut untuk memindahkan master konfig nginx ke direktori yang anda ingin, yang mudah diakses oleh anda namun susah ditemui oleh orang lain.">
-
-
 <meta itemprop="datePublished" content="2018-12-10T17:45:30&#43;07:00" />
 <meta itemprop="dateModified" content="2018-12-10T17:45:30&#43;07:00" />
 <meta itemprop="wordCount" content="472">
@@ -80,7 +78,6 @@ Pada Lab ini saya asumsikan :
 
 
 <meta itemprop="keywords" content="Ayo Belajar Linux,Nginx,Ngoprek," />
-
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Kustom Konfigurasi dan Ganti Direktori Nginx"/>
 <meta name="twitter:description" content="Bermain Dengan Nginx Pada saat ini sudah menjadi hal biasa jika seseorang ingin memindahkan file konfigurasinya agar lebih mudah dimaintenance. Salah satunya yaitu memidahkan direktori root html nginx. Di nginx, untuk memindahkan direktori root html dan memidahkan konfigurasinya cukup dengan command-command berikut.
@@ -88,6 +85,9 @@ Pada Lab ini saya asumsikan :
  master konfigurasi berada di direktori /sibunglonlabs/config/nginx direktori root berada di /sibunglonlabs/web  1) Gunakan command berikut untuk memindahkan master konfig nginx ke direktori yang anda ingin, yang mudah diakses oleh anda namun susah ditemui oleh orang lain."/>
 
   <script data-ad-client="ca-pub-8995917561399790" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+  
+  <script src="https://kit.fontawesome.com/749688b2db.js" crossorigin="anonymous"></script>
 </head>
 
   <body>
@@ -108,87 +108,79 @@ Pada Lab ini saya asumsikan :
         &bull;</small>
       <h1>Kustom Konfigurasi dan Ganti Direktori Nginx</h1>
     </header>
-    <section>
-
-<h3 id="bermain-dengan-nginx">Bermain Dengan Nginx</h3>
-
+    <section><h3 id="bermain-dengan-nginx">Bermain Dengan Nginx</h3>
 <p>Pada saat ini sudah menjadi hal biasa jika seseorang ingin memindahkan file konfigurasinya agar lebih mudah dimaintenance. Salah satunya yaitu memidahkan direktori root html nginx. Di nginx, untuk memindahkan direktori root html dan memidahkan konfigurasinya cukup dengan command-command berikut.</p>
-
 <p>Pada <strong>Lab</strong> ini saya asumsikan :</p>
-
 <ul>
 <li>master konfigurasi berada di direktori <em>/sibunglonlabs/config/nginx</em></li>
 <li>direktori root berada di <em>/sibunglonlabs/web</em></li>
 </ul>
-
 <p>1) Gunakan command berikut untuk memindahkan master konfig nginx ke direktori yang anda ingin, yang mudah diakses oleh anda namun susah ditemui oleh orang lain. Saat ini master konfigurasi berada di <em>/etc/nginx/conf.d/default.conf</em>. Namun pada Red Hat Enterprise Linux, master konfigurasi berada di <em>/etc/nginx/nginx.conf</em>.</p>
-
 <p><code>mv /etc/nginx/conf.d/default.conf /sibunglonlabs/config/nginx/sibunglonlabs.conf</code></p>
-
 <ul>
-<li><p>Khusus penggunan Red Hat, cukup edit file masternya dan berikan pagar disetiap item yang bisa diinputkan pada konfig yang baru dan tambahkan sintaks <em>include /etc/nginx/conf.d/*.conf</em> yang akan meload semua file .conf pada <em>/etc/nginx/conf.d</em>, berikut saya lampirkan contoh konfigurasi master di RHEL yang telah diedit.</p>
-
+<li>Khusus penggunan Red Hat, cukup edit file masternya dan berikan pagar disetiap item yang bisa diinputkan pada konfig yang baru dan tambahkan sintaks <em>include /etc/nginx/conf.d/*.conf</em> yang akan meload semua file .conf pada <em>/etc/nginx/conf.d</em>, berikut saya lampirkan contoh konfigurasi master di RHEL yang telah diedit.</li>
+</ul>
 <pre><code>user www-data;
 worker_processes auto;
 pid /run/nginx.pid;
 include /etc/nginx/modules-enabled/*.conf;
 
 events {
-worker_connections 768;
-# multi_accept on;
+    worker_connections 768;
+    # multi_accept on;
 }
 
 http {
 
-##
-# Basic Settings
-##
+    ##
+    # Basic Settings
+    ##
 
-sendfile on;
-tcp_nopush on;
-tcp_nodelay on;
-keepalive_timeout 65;
-types_hash_max_size 2048;
-# server_tokens off;
+    sendfile on;
+    tcp_nopush on;
+    tcp_nodelay on;
+    keepalive_timeout 65;
+    types_hash_max_size 2048;
+    # server_tokens off;
 
-# server_names_hash_bucket_size 64;
-# server_name_in_redirect off;
+    # server_names_hash_bucket_size 64;
+    # server_name_in_redirect off;
 
-include /etc/nginx/mime.types;
-default_type application/octet-stream;
+    include /etc/nginx/mime.types;
+    default_type application/octet-stream;
 
-##
-# SSL Settings
-##
+    ##
+    # SSL Settings
+    ##
 
-ssl_protocols TLSv1 TLSv1.1 TLSv1.2; # Dropping SSLv3, ref: POODLE
-ssl_prefer_server_ciphers on;
+    ssl_protocols TLSv1 TLSv1.1 TLSv1.2; # Dropping SSLv3, ref: POODLE
+    ssl_prefer_server_ciphers on;
 
-##
-# Logging Settings
-##
+    ##
+    # Logging Settings
+    ##
 
-#access_log /var/log/nginx/access.log;
-#error_log /var/log/nginx/error.log;
+    #access_log /var/log/nginx/access.log;
+    #error_log /var/log/nginx/error.log;
 
-##
-# Gzip Settings
-##
+    ##
+    # Gzip Settings
+    ##
 
-gzip on;
+    gzip on;
 
-# gzip_vary on;
-# gzip_proxied any;
-# gzip_comp_level 6;
-# gzip_buffers 16 8k;
-# gzip_http_version 1.1;
-# gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript;
+    # gzip_vary on;
+    # gzip_proxied any;
+    # gzip_comp_level 6;
+    # gzip_buffers 16 8k;
+    # gzip_http_version 1.1;
+    # gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript;
 
-##
-# Virtual Host Configs
-##
+    ##
+    # Virtual Host Configs
+    ##
 
-include /etc/nginx/conf.d/*.conf;
+    include /etc/nginx/conf.d/*.conf;
 }
 
 
@@ -212,17 +204,10 @@ include /etc/nginx/conf.d/*.conf;
 #        proxy      on;
 #    }
 #}
-</code></pre></li>
-</ul>
-
-<p>2) Pindah ke direkori <em>/sibunglonlabs/config/nginx/</em> dan edit file konfigurasi nginx yang</p>
-
+</code></pre><p>2) Pindah ke direkori <em>/sibunglonlabs/config/nginx/</em> dan edit file konfigurasi nginx yang</p>
 <p><code>nano sibunglonlabs.conf</code></p>
-
 <p>Untuk pengguna Red Hat Enterprise, karena sebelumnya tidak ada file yang dipindahkan maka kita cukup menambahkan sintaks yang sama yaitu <code>nano sibunglonlabs.conf</code></p>
-
 <p>3) Tambahkan sintaks berikut pada file <em>sibunglonlabs.conf</em>, script berikut juga termasuk memindahkan direktori root htmlnya</p>
-
 <pre><code>server {
    server_name localhost;
    listen 80;
@@ -242,18 +227,11 @@ include /etc/nginx/conf.d/*.conf;
    }
 
 }
-</code></pre>
-
-<p>4) Buat simbolik link file sibunglonlabs.conf ke direktori <em>/etc/nginx/conf.d/</em></p>
-
+</code></pre><p>4) Buat simbolik link file sibunglonlabs.conf ke direktori <em>/etc/nginx/conf.d/</em></p>
 <p><code>ln -sf /sibunglonlabs/conf/nginx/sibunglonlabs.conf /etc/nginx/conf.d/</code></p>
-
 <p>5) Restart nginx, untuk menerapkan perubahan yang telah dilakukan.</p>
-
 <p>6) Sekarang subdomain anda aktif, untuk menghindari error akses pastikan direktori root subdomain sudah berisi file index.html atau sejenisnya.</p>
-
 <h4 id="tambahan">Tambahan</h4>
-
 <p>Jika nginx tidak bisa diakses oleh client setelah melakukan ini cukup set status selinux menjadi permissive dengan menggunakan command <code>setenforce permissive</code>.</p>
 </section>
     <footer>

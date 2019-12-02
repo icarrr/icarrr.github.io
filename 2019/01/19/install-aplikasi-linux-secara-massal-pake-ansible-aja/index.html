@@ -32,7 +32,7 @@
   <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4194642&101" alt="" border="0"></a></noscript>
   
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.60.0" />
 
   
   
@@ -67,8 +67,6 @@
   
   <meta itemprop="name" content="Install Aplikasi Linux Secara Massal? Pake Ansible Aja">
 <meta itemprop="description" content="Pada saat kita dihadapkan dengan pilihan harus melakukan installasi aplikasi secara berulang ataupun harus melakukan installasi aplikasi yang sama di beberapa server dan diwaktu itu juga kalian mau ngelakuin sesuatu, tentu hal tersebut bikin mumet atau apalah. Bayangkan jika sekarang kalian disuruh melakukan hal tersebut untuk 15 sampai 50 server, mabok dan bete auto mode ON hihihi :v Apalagi kalau sistem operasinya berbeda beda, mungkin baru dengar aja seketika mabok dan bete udah auto ganti ke mode ON.">
-
-
 <meta itemprop="datePublished" content="2019-01-19T21:24:37&#43;07:00" />
 <meta itemprop="dateModified" content="2019-01-19T21:24:37&#43;07:00" />
 <meta itemprop="wordCount" content="421">
@@ -76,12 +74,14 @@
 
 
 <meta itemprop="keywords" content="Ayo Belajar Linux,Ansible,Installasi,Ngoprek," />
-
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Install Aplikasi Linux Secara Massal? Pake Ansible Aja"/>
 <meta name="twitter:description" content="Pada saat kita dihadapkan dengan pilihan harus melakukan installasi aplikasi secara berulang ataupun harus melakukan installasi aplikasi yang sama di beberapa server dan diwaktu itu juga kalian mau ngelakuin sesuatu, tentu hal tersebut bikin mumet atau apalah. Bayangkan jika sekarang kalian disuruh melakukan hal tersebut untuk 15 sampai 50 server, mabok dan bete auto mode ON hihihi :v Apalagi kalau sistem operasinya berbeda beda, mungkin baru dengar aja seketika mabok dan bete udah auto ganti ke mode ON."/>
 
   <script data-ad-client="ca-pub-8995917561399790" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+  
+  <script src="https://kit.fontawesome.com/749688b2db.js" crossorigin="anonymous"></script>
 </head>
 
   <body>
@@ -102,16 +102,10 @@
         &bull;</small>
       <h1>Install Aplikasi Linux Secara Massal? Pake Ansible Aja</h1>
     </header>
-    <section>
-
-<p>Pada saat kita dihadapkan dengan pilihan harus melakukan installasi aplikasi secara berulang ataupun harus melakukan installasi aplikasi yang sama di beberapa server dan diwaktu itu juga kalian mau ngelakuin sesuatu, tentu hal tersebut bikin mumet atau apalah. Bayangkan jika sekarang kalian disuruh melakukan hal tersebut untuk 15 sampai 50 server, mabok dan bete auto mode ON hihihi :v Apalagi kalau sistem operasinya berbeda beda, mungkin baru dengar aja seketika mabok dan bete udah auto ganti ke mode ON.</p>
-
+    <section><p>Pada saat kita dihadapkan dengan pilihan harus melakukan installasi aplikasi secara berulang ataupun harus melakukan installasi aplikasi yang sama di beberapa server dan diwaktu itu juga kalian mau ngelakuin sesuatu, tentu hal tersebut bikin mumet atau apalah. Bayangkan jika sekarang kalian disuruh melakukan hal tersebut untuk 15 sampai 50 server, mabok dan bete auto mode ON hihihi :v Apalagi kalau sistem operasinya berbeda beda, mungkin baru dengar aja seketika mabok dan bete udah auto ganti ke mode ON.</p>
 <p>Nah karena pada artikel sebelumnya siBunglon telah mengajak kalian berkenalan dengan <strong>ansible</strong>, sekarang kalian diajak untuk memecahkan masalah kalian yang sesuai dengan point utama artikel ini, install aplikasi secara bersamaan di beberapa server atau menginstall aplikasi yang sama dengan apa yang diinstall pada server sebelumnya.</p>
-
 <p>Sebelum mode mabok dan betenya auto ON karena banyak menghayal memikirikan beberapa server, mending sekarang langsung main lagi :D Sebelum bermain di lab kali ini, saya asumsikan kalian telah membaca dan melakukan hal yang sama sesuai sesi bermain di artikel sebelumnya.</p>
-
 <p>Pada lab ini saya asumsikan:</p>
-
 <ul>
 <li>IP server = <strong>192.168.0.8</strong></li>
 <li>Username server =  <strong>airgreen</strong></li>
@@ -119,31 +113,19 @@
 <li>File inventaris = <strong>hosts</strong></li>
 <li>File playbook = <strong>build.yml</strong></li>
 </ul>
-
 <h3 id="bermain-dengan-ansible">Bermain Dengan Ansible</h3>
-
 <p><em>Note: pastikan ansible telah terinstall yah!</em></p>
-
 <p>1) Pastikan local kalian saat ini bisa berkomunikasi atau local bisa remote server tanpa harus dimintai password karena ansible menggunakan SSH untuk terhubung ke server yang dituju.</p>
-
 <p>2) Pastikan local kalian saat ini bisa berkomunikasi dengan server melalui ansible, coba kalian ping servernya dengan ansible menggunakan command <code>ansible ipServerOrDNSServer -m ping</code></p>
-
 <p>Jika outputnya seperti berikut berarti local anda sudah bisa berkomunikasi dengan server melalui ansible</p>
-
 <pre><code>192.168.0.8 | SUCCESS =&gt; {
     &quot;changed&quot;: false,
     &quot;ping&quot;: &quot;pong&quot;
 }
-</code></pre>
-
-<p>3) Buat inventaris dengan nama file <em>hosts</em> yang berisikan informasi server yaitu ip dan identity server anda, isinya seperti berikut ini.</p>
-
+</code></pre><p>3) Buat inventaris dengan nama file <em>hosts</em> yang berisikan informasi server yaitu ip dan identity server anda, isinya seperti berikut ini.</p>
 <pre><code>[airgreen]
 192.168.0.8 ansible_ssh_user=airgreen
-</code></pre>
-
-<p>4) Buat playbook ansible dengan nama file <em>build.yml</em> yang berisi perintah perintah yang akan diterapkan ke server, isinya seperti berikut ini.</p>
-
+</code></pre><p>4) Buat playbook ansible dengan nama file <em>build.yml</em> yang berisi perintah perintah yang akan diterapkan ke server, isinya seperti berikut ini.</p>
 <pre><code>---
 - hosts: [airgreen]
   remote_user: airgreen
@@ -165,12 +147,9 @@
        with_items:
          - nginx
          - unzip
-</code></pre>
-
-<p>5) Sekarang waktunya menjalankan playbooknya agar perintah dalam playbook tersebut segera dieksekusi diserver, gunakan command <code>ansible-playbook -i hosts build.yml</code>, dan silahkan tunggu hingga prosesnya selesai :D Sembari nunggu, enaknya ngopi aja hihihi :D</p>
-
-<p>Oh yaa biar lebih enak lagi, saya berikan juga videonya sesuai command yang dipaparkan
-<script id="asciicast-hubecPj54E8bApI28yWyLEMWY" src="https://asciinema.org/a/hubecPj54E8bApI28yWyLEMWY.js" async></script></p>
+</code></pre><p>5) Sekarang waktunya menjalankan playbooknya agar perintah dalam playbook tersebut segera dieksekusi diserver, gunakan command <code>ansible-playbook -i hosts build.yml</code>, dan silahkan tunggu hingga prosesnya selesai :D Sembari nunggu, enaknya ngopi aja hihihi :D</p>
+<p>Oh yaa biar lebih enak lagi, saya berikan juga videonya sesuai command yang dipaparkan</p>
+<!-- raw HTML omitted -->
 </section>
     <footer>
       <hr>

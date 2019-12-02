@@ -15,7 +15,7 @@
         <link>https://sibunglon.com/2019/02/16/error-generate-certificate-ssl-menggunakan-lets-encrypt/</link>
         <pubDate>Sat, 16 Feb 2019 17:19:08 +0700</pubDate>
         <guid>https://sibunglon.com/2019/02/16/error-generate-certificate-ssl-menggunakan-lets-encrypt/</guid>
-        <description>Beberapa bulan yang lalu I&amp;rsquo;m siBunglon masih bisa generate SSL menggunakan Let&amp;rsquo;s Encrypt namun hari ini I&amp;rsquo;m siBunglon menemukan error ketika akan generate SSL lagi dan I&amp;rsquo;m siBunglon mendapatkan error message seperti berikut:
+        <description>Beberapa bulan yang lalu I&#39;m siBunglon masih bisa generate SSL menggunakan Let&#39;s Encrypt namun hari ini I&#39;m siBunglon menemukan error ketika akan generate SSL lagi dan I&#39;m siBunglon mendapatkan error message seperti berikut:
 [root@airgreen siBunglon]# certbot --nginx -d repo.lab.sibunglon.com Traceback (most recent call last): File &amp;quot;/bin/certbot&amp;quot;, line 9, in &amp;lt;module&amp;gt; load_entry_point(&#39;certbot==0.29.1&#39;, &#39;console_scripts&#39;, &#39;certbot&#39;)() File &amp;quot;/usr/lib/python2.7/site-packages/pkg_resources/__init__.py&amp;quot;, line 487, in load_entry_point return get_distribution(dist).load_entry_point(group, name) File &amp;quot;/usr/lib/python2.7/site-packages/pkg_resources/__init__.py&amp;quot;, line 2728, in load_entry_point return ep.load() File &amp;quot;/usr/lib/python2.</description>
       </item>
     
@@ -24,8 +24,8 @@
         <link>https://sibunglon.com/2018/12/16/berkenalan-dengan-lets-encrypt-ssl-gratis-untuk-nginx/</link>
         <pubDate>Sun, 16 Dec 2018 07:51:58 +0700</pubDate>
         <guid>https://sibunglon.com/2018/12/16/berkenalan-dengan-lets-encrypt-ssl-gratis-untuk-nginx/</guid>
-        <description>Let&amp;rsquo;s Encrypt? Apa sih let&amp;rsquo;s encrypt itu?
-Let&amp;rsquo;s encrypt adalah certificate Authority (CA) atau otoritas sertifikat yang menyediakan cara mudah untuk mendapatkan dan menginstall SSL pada web server, sehingga memungkinkan web server anda terenskripsi (HTTPS). Merupakan layanan yang disediakan oleh Internet Security Research Group (ISRG). ISRG memberikan dan mengaktifkan HTTPS secara gratis dengan alasan ingin menciptakan web yang lebih aman dan menjaga privasi. Sebenarnya untuk mendapatkan dan memasang SSL itu memiliki biaya sendiri namun jika untuk kebutuhan pengembangan, ngoprek / ngelab, let&amp;rsquo;s encrypt ini menjadi solusi.</description>
+        <description>Let&#39;s Encrypt? Apa sih let&#39;s encrypt itu?
+Let&#39;s encrypt adalah certificate Authority (CA) atau otoritas sertifikat yang menyediakan cara mudah untuk mendapatkan dan menginstall SSL pada web server, sehingga memungkinkan web server anda terenskripsi (HTTPS). Merupakan layanan yang disediakan oleh Internet Security Research Group (ISRG). ISRG memberikan dan mengaktifkan HTTPS secara gratis dengan alasan ingin menciptakan web yang lebih aman dan menjaga privasi. Sebenarnya untuk mendapatkan dan memasang SSL itu memiliki biaya sendiri namun jika untuk kebutuhan pengembangan, ngoprek / ngelab, let&#39;s encrypt ini menjadi solusi.</description>
       </item>
     
   </channel>

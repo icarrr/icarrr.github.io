@@ -32,7 +32,7 @@
   <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4194642&101" alt="" border="0"></a></noscript>
   
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.60.0" />
 
   
   
@@ -71,16 +71,13 @@ edX offers high-quality courses from the world’s best universities and institu
 <meta itemprop="description" content="About Open edX Open edX is the massively scalable learning software platform behind edX. edX is the online learning destination founded by Harvard and MIT in 2012.
 edX offers high-quality courses from the world’s best universities and institutions to learners everywhere. It is the only leading MOOC provider that is both nonprofit and open source. The edX mission is to:
  Increase access to high-quality education for everyone, everywhere Enhance teaching and learning on campus and online Advance teaching and learning through research  Play with Open edX How to use Open edX in my own environment?">
-
-
 <meta itemprop="datePublished" content="2019-07-13T21:47:47&#43;07:00" />
 <meta itemprop="dateModified" content="2019-07-13T21:47:47&#43;07:00" />
-<meta itemprop="wordCount" content="607">
+<meta itemprop="wordCount" content="592">
 
 
 
 <meta itemprop="keywords" content="Ayo Belajar Linux,Open edX,eLearning,Installasi,Ngoprek," />
-
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Install Open edX Using Method Native Installation | Ubuntu 16.04"/>
 <meta name="twitter:description" content="About Open edX Open edX is the massively scalable learning software platform behind edX. edX is the online learning destination founded by Harvard and MIT in 2012.
@@ -88,6 +85,9 @@ edX offers high-quality courses from the world’s best universities and institu
  Increase access to high-quality education for everyone, everywhere Enhance teaching and learning on campus and online Advance teaching and learning through research  Play with Open edX How to use Open edX in my own environment?"/>
 
   <script data-ad-client="ca-pub-8995917561399790" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+  
+  <script src="https://kit.fontawesome.com/749688b2db.js" crossorigin="anonymous"></script>
 </head>
 
   <body>
@@ -108,91 +108,100 @@ edX offers high-quality courses from the world’s best universities and institu
         &bull;</small>
       <h1>Install Open edX Using Method Native Installation | Ubuntu 16.04</h1>
     </header>
-    <section>
-
-<p><img src="/assets/img/Open-edX/open-edx-logo.png" alt="" /></p>
-
+    <section><p><img src="/assets/img/Open-edX/open-edx-logo.png" alt=""></p>
 <h3 id="about-open-edx">About Open edX</h3>
-
 <p><strong>Open edX</strong> is the massively scalable learning software platform behind edX. <strong>edX</strong> is the online learning destination founded by Harvard and MIT in 2012.</p>
-
 <p>edX offers high-quality courses from the world’s best universities and institutions to learners everywhere. It is the only leading MOOC provider that is both nonprofit and open source. The edX mission is to:</p>
-
 <ul>
 <li>Increase access to high-quality education for everyone, everywhere</li>
 <li>Enhance teaching and learning on campus and online</li>
 <li>Advance teaching and learning through research</li>
 </ul>
-
 <h3 id="play-with-open-edx">Play with Open edX</h3>
-
-<p><strong>How to use Open edX in my own environment?</strong> At this stage, we will play Open edX. <strong>Then why play instead of installing?</strong> The intention is to play here, you might find an error during the Open edX installation and that&rsquo;s where you play in the command line to solve the problem.</p>
-
+<p><strong>How to use Open edX in my own environment?</strong> At this stage, we will play Open edX. <strong>Then why play instead of installing?</strong> The intention is to play here, you might find an error during the Open edX installation and that's where you play in the command line to solve the problem.</p>
 <p>Before doing the installation process, you need to pay attention to the system requirements needed to run Open edX:</p>
-
 <ul>
 <li><strong>Ubuntu 16.04 amd64</strong></li>
 <li><strong>Minimum 8GB of memory</strong></li>
 <li><strong>At least one 2.00GHz CPU or EC2 compute unit</strong></li>
 <li><strong>Minimum 25GB of free disk, 50GB recommended for production servers</strong></li>
 </ul>
-
 <p><strong>Notes</strong>: <em>This is for the release of Ficus and newer.</em></p>
-
 <p>If these conditions have been met, now is the time for you to play:</p>
-
-<p>1) Run the Ubuntu server and log in using a user who has sudo (root) access.</p>
-
-<p>2) Add some variables to Ubuntu, including variables that contain the tag Open edX release to be installed. Tag Open edX release can be seen <a href="https://edx.readthedocs.io/projects/edx-developer-docs/en/latest/named_releases.html">here</a>.</p>
+<ol>
+<li>
+<p>Run the Ubuntu server and log in using a user who has sudo (root) access.</p>
+</li>
+<li>
+<p>Add some variables to Ubuntu, including variables that contain the tag Open edX release to be installed. Tag Open edX release can be seen <a href="https://edx.readthedocs.io/projects/edx-developer-docs/en/latest/named_releases.html">here</a>.</p>
+</li>
+</ol>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">echo</span> <span class="s2">&#34;export LC_ALL=&#39;en_US.UTF-8&#39;&#34;</span> &gt; ~/.bashrc
 <span class="nb">echo</span> <span class="s2">&#34;export LANG=&#39;en_US.UTF-8&#39;&#34;</span> &gt; ~/.bashrc
 <span class="nb">echo</span> <span class="s2">&#34;export LANGUAGE=&#39;en_US.UTF-8&#39;&#34;</span> &gt; ~/.bashrc
-<span class="nb">echo</span> <span class="s2">&#34;export OPENEDX_RELEASE=&#39;the-tag/you-want-to-install&#39;&#34;</span> &gt; ~/.bashrc</code></pre></div>
-<p>3) Reload bash.</p>
-
+<span class="nb">echo</span> <span class="s2">&#34;export OPENEDX_RELEASE=&#39;the-tag/you-want-to-install&#39;&#34;</span> &gt; ~/.bashrc
+</code></pre></div><ol start="3">
+<li>Reload bash.</li>
+</ol>
 <pre><code>source ~/.bashrc
-</code></pre>
-
-<p>4) Create a new file with the name <em>config.yml</em> in the desired directory and add the following script that contains LMS and open the edX Studio address. The following is an example file, please change according to the desired address:</p>
+</code></pre><ol start="4">
+<li>Create a new file with the name <em>config.yml</em> in the desired directory and add the following script that contains LMS and open the edX Studio address. The following is an example file, please change according to the desired address:</li>
+</ol>
 <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">EDXAPP_LMS_BASE<span class="p">:</span><span class="w"> </span><span class="s2">&#34;online.myeducation.org&#34;</span><span class="w">
-</span><span class="w"></span>EDXAPP_CMS_BASE<span class="p">:</span><span class="w"> </span><span class="s2">&#34;studio.online.myeducation.org&#34;</span></code></pre></div>
-<p><strong>Notes</strong>: <em>But if you want to use a domain, please pay attention to the use of domains for Open edX. Don&rsquo;t use &ldquo;edx&rdquo; or &ldquo;opensx&rdquo; in the domain to be used, here are some examples of unacceptable domain names:</em></p>
-
+</span><span class="w"></span>EDXAPP_CMS_BASE<span class="p">:</span><span class="w"> </span><span class="s2">&#34;studio.online.myeducation.org&#34;</span><span class="w">
+</span></code></pre></div><p><strong>Notes</strong>: <em>But if you want to use a domain, please pay attention to the use of domains for Open edX. Don't use &ldquo;edx&rdquo; or &ldquo;opensx&rdquo; in the domain to be used, here are some examples of unacceptable domain names:</em></p>
 <ul>
-<li>DON&rsquo;T: openedx.yourdomain.org</li>
-<li>DON&rsquo;T: edx.yourdomain.org</li>
-<li>DON&rsquo;T: openedxyourdomain.org</li>
-<li>DON&rsquo;T: yourdomain-edx.com</li>
+<li>DON'T: openedx.yourdomain.org</li>
+<li>DON'T: edx.yourdomain.org</li>
+<li>DON'T: openedxyourdomain.org</li>
+<li>DON'T: yourdomain-edx.com</li>
 </ul>
-
-<p>5) Update the Ubuntu package before installing Open edX.</p>
+<ol start="5">
+<li>Update the Ubuntu package before installing Open edX.</li>
+</ol>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo apt-get update -y
 sudo apt-get upgrade -y
-sudo reboot</code></pre></div>
-<p>6) After Ubuntu has restarted, please log in again using the user you used before. After logging in, please go to the config.yml file directory located.</p>
-
-<p>7) Download and execute Bootstrap the ansible installation.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wget https://raw.githubusercontent.com/edx/configuration/<span class="nv">$OPENEDX_RELEASE</span>/util/install/ansible-bootstrap.sh -O - <span class="p">|</span> sudo bash</code></pre></div>
-<p>8) Download and execute Randomize passwords.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wget https://raw.githubusercontent.com/edx/configuration/<span class="nv">$OPENEDX_RELEASE</span>/util/install/generate-passwords.sh -O - <span class="p">|</span> bash</code></pre></div>
-<p>9) Download and execute Open edX installation.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wget https://raw.githubusercontent.com/edx/configuration/<span class="nv">$OPENEDX_RELEASE</span>/util/install/native.sh -O - <span class="p">|</span> bash</code></pre></div>
-<p>10) Please wait until the Open edX installation process is successful. If you find an error, congratulations on playing with other avanger😉</p>
-
+sudo reboot
+</code></pre></div><ol start="6">
+<li>
+<p>After Ubuntu has restarted, please log in again using the user you used before. After logging in, please go to the config.yml file directory located.</p>
+</li>
+<li>
+<p>Download and execute Bootstrap the ansible installation.</p>
+</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wget https://raw.githubusercontent.com/edx/configuration/<span class="nv">$OPENEDX_RELEASE</span>/util/install/ansible-bootstrap.sh -O - <span class="p">|</span> sudo bash
+</code></pre></div><ol start="8">
+<li>Download and execute Randomize passwords.</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wget https://raw.githubusercontent.com/edx/configuration/<span class="nv">$OPENEDX_RELEASE</span>/util/install/generate-passwords.sh -O - <span class="p">|</span> bash
+</code></pre></div><ol start="9">
+<li>Download and execute Open edX installation.</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wget https://raw.githubusercontent.com/edx/configuration/<span class="nv">$OPENEDX_RELEASE</span>/util/install/native.sh -O - <span class="p">|</span> bash
+</code></pre></div><ol start="10">
+<li>Please wait until the Open edX installation process is successful. If you find an error, congratulations on playing with other avanger😉</li>
+</ol>
 <p>From steps number 7 to 9, chances are you have to wait a few minutes to proceed to the next step. To save time, you can run it using <strong>nohup</strong> with the following steps:</p>
-
-<p>1) Create a bash file, the name is what you want and then add the script following:</p>
+<ol>
+<li>Create a bash file, the name is what you want and then add the script following:</li>
+</ol>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wget https://raw.githubusercontent.com/edx/configuration/<span class="nv">$OPENEDX_RELEASE</span>/util/install/ansible-bootstrap.sh -O - <span class="p">|</span> sudo bash
 wget https://raw.githubusercontent.com/edx/configuration/<span class="nv">$OPENEDX_RELEASE</span>/util/install/generate-passwords.sh -O - <span class="p">|</span> bash
-wget https://raw.githubusercontent.com/edx/configuration/<span class="nv">$OPENEDX_RELEASE</span>/util/install/native.sh -O - <span class="p">|</span> bash</code></pre></div>
-<p>2) Change the permissions for the file that was just created to be executed.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">chmod +x fileName.sh</code></pre></div>
-<p>3) Run the Open edX installation using nohup. When using nohup, the output file (<em>nohup.out</em>) is automatically created in your directory using nohup.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">nohup ./fileName.sh <span class="p">&amp;</span></code></pre></div>
-<p>4) To see the development of the installation, it can be seen through the nohup.out file.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">tail -f nohup.out</code></pre></div>
-<h4 id="referensi">Referensi</h4>
-
+wget https://raw.githubusercontent.com/edx/configuration/<span class="nv">$OPENEDX_RELEASE</span>/util/install/native.sh -O - <span class="p">|</span> bash
+</code></pre></div><ol start="2">
+<li>Change the permissions for the file that was just created to be executed.</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">chmod +x fileName.sh
+</code></pre></div><ol start="3">
+<li>Run the Open edX installation using nohup. When using nohup, the output file (<em>nohup.out</em>) is automatically created in your directory using nohup.</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">nohup ./fileName.sh <span class="p">&amp;</span>
+</code></pre></div><ol start="4">
+<li>To see the development of the installation, it can be seen through the nohup.out file.</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">tail -f nohup.out
+</code></pre></div><h4 id="referensi">Referensi</h4>
 <ul>
 <li><a href="https://openedx.atlassian.net/wiki/spaces/OpenOPS/pages/146440579/Native+Open+edX+Ubuntu+16.04+64+bit+Installation">Confluence Open edX</a></li>
 <li><a href="https://open.edx.org/">Open edX</a></li>

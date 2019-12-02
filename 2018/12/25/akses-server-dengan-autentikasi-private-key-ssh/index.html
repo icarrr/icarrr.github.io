@@ -32,7 +32,7 @@
   <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4194642&101" alt="" border="0"></a></noscript>
   
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.60.0" />
 
   
   
@@ -69,8 +69,6 @@ Umumnya server diakses menggunakan ssh dengan autentikasi password plain text, j
   <meta itemprop="name" content="Akses Server Dengan Autentikasi Private Key SSH">
 <meta itemprop="description" content="Akses Server Dengan Autentikasi Private Key Ssh Login Ke Server Dengan Private Key? Emang bisa? Ya itu bisa.
 Umumnya server diakses menggunakan ssh dengan autentikasi password plain text, jika cuman akses 1 server dengan autentikasi password plain text itu masih biasa namun jika mengontrol banyak server dan passwordnya berbeda-beda, apakah anda masih siap mengingatnya? Apakah anda yakin ingin mencatatnya? Jika anda mencatatnya anda bisa saja masih repot karena harus mendefinisikan satu per satu hostname server beserta passwordnya.">
-
-
 <meta itemprop="datePublished" content="2018-12-25T04:33:58&#43;07:00" />
 <meta itemprop="dateModified" content="2018-12-25T04:33:58&#43;07:00" />
 <meta itemprop="wordCount" content="465">
@@ -78,13 +76,15 @@ Umumnya server diakses menggunakan ssh dengan autentikasi password plain text, j
 
 
 <meta itemprop="keywords" content="Ayo Belajar Linux,SSH,Ngoprek," />
-
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Akses Server Dengan Autentikasi Private Key SSH"/>
 <meta name="twitter:description" content="Akses Server Dengan Autentikasi Private Key Ssh Login Ke Server Dengan Private Key? Emang bisa? Ya itu bisa.
 Umumnya server diakses menggunakan ssh dengan autentikasi password plain text, jika cuman akses 1 server dengan autentikasi password plain text itu masih biasa namun jika mengontrol banyak server dan passwordnya berbeda-beda, apakah anda masih siap mengingatnya? Apakah anda yakin ingin mencatatnya? Jika anda mencatatnya anda bisa saja masih repot karena harus mendefinisikan satu per satu hostname server beserta passwordnya."/>
 
   <script data-ad-client="ca-pub-8995917561399790" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+  
+  <script src="https://kit.fontawesome.com/749688b2db.js" crossorigin="anonymous"></script>
 </head>
 
   <body>
@@ -105,37 +105,23 @@ Umumnya server diakses menggunakan ssh dengan autentikasi password plain text, j
         &bull;</small>
       <h1>Akses Server Dengan Autentikasi Private Key SSH</h1>
     </header>
-    <section>
-
-<h3 id="akses-server-dengan-autentikasi-private-key-ssh">Akses Server Dengan Autentikasi Private Key Ssh</h3>
-
+    <section><h3 id="akses-server-dengan-autentikasi-private-key-ssh">Akses Server Dengan Autentikasi Private Key Ssh</h3>
 <p>Login Ke Server Dengan Private Key?  Emang bisa? Ya itu bisa.</p>
-
 <p>Umumnya server diakses menggunakan ssh dengan autentikasi password plain text, jika cuman akses 1 server dengan autentikasi password plain text itu masih biasa namun jika mengontrol banyak server dan passwordnya berbeda-beda, apakah anda masih siap mengingatnya? Apakah anda yakin ingin mencatatnya? Jika anda mencatatnya anda bisa saja masih repot karena harus mendefinisikan satu per satu hostname server beserta passwordnya. Nah maka dari itu di <strong>Lab</strong> ini akan membahas gimana caranya akses server menggunakan private key ssh agar anda sebagai seorang administrator cuman memberikan private key serta ip address dan username untuk akses server dengan <strong>SSH</strong>.</p>
-
 <p>Pada <strong>lab</strong> ini saya asumsikan:</p>
-
 <ul>
 <li>Anda pengguna linux</li>
 <li><strong>sibunglon</strong> adalah user pc saya</li>
 <li><strong>192.168.0.36</strong> adalah ip server saya</li>
 <li><strong>batman</strong> adalah user server saya</li>
 </ul>
-
 <h3 id="bermain-dengan-ssh">Bermain dengan SSH</h3>
-
 <p>1) Silahkan generate 1 key ssh menggunakan command <code>ssh-keygen</code>.</p>
-
 <p>Proses generate akan berhenti dengan informasi terakhir seperti berikut:</p>
-
 <pre><code>Generating public/private rsa key pair.
 Enter file in which to save the key (/home/sibunglon/.ssh/id_rsa):
-</code></pre>
-
-<p>Prosesnya terhenti karena anda diminta untuk menentukan lokasi penyimpanan key-nya, secara default penyimpanan key berada di <em><strong>/home/sibunglon/.ssh/</strong></em>, jika anda ingin menggunakan lokasi penyimpanan defaultnya cukup tekan <strong>Enter</strong>. Selanjutnya anda akan diminta untuk memberikan password key tersebut, jika anda tidak ingin memberikan password ke key tersebut cukup <strong>Enter</strong> lagi.</p>
-
+</code></pre><p>Prosesnya terhenti karena anda diminta untuk menentukan lokasi penyimpanan key-nya, secara default penyimpanan key berada di <em><strong>/home/sibunglon/.ssh/</strong></em>, jika anda ingin menggunakan lokasi penyimpanan defaultnya cukup tekan <strong>Enter</strong>. Selanjutnya anda akan diminta untuk memberikan password key tersebut, jika anda tidak ingin memberikan password ke key tersebut cukup <strong>Enter</strong> lagi.</p>
 <p>2) Setelah proses generate selesai, sistem akan memberikan informasi letak keynya dengan informasi seperti berikut:</p>
-
 <pre><code>Generating public/private rsa key pair.
 Enter file in which to save the key (/home/sibunglon/.ssh/id_rsa):
 Created directory '/home/sibunglon/.ssh'.
@@ -157,18 +143,11 @@ The key's randomart image is:
 |    ..o.         |
 |     =o          |
 +----[SHA256]-----+
-</code></pre>
-
-<p>Hasil generate key ini menghasilkan 2 file pada direktori <em><strong>/home/sibunglon/.ssh/</strong></em> yaitu <em><strong>id_rsa</strong> = private key dan <strong>id_rsa.pub</strong> = public key</em>.</p>
-
+</code></pre><p>Hasil generate key ini menghasilkan 2 file pada direktori <em><strong>/home/sibunglon/.ssh/</strong></em> yaitu <em><strong>id_rsa</strong> = private key dan <strong>id_rsa.pub</strong> = public key</em>.</p>
 <p>3) copy file public key ke server anda dengan command <code>scp /home/sibunglon/.ssh/id_rsa.pub batman@192.168.0.36:/home/batman/.ssh/authorized_keys</code></p>
-
 <p>4) Ganti hak akses file private key anda dengan command <code>chmod 600 /home/sibunglon/.ssh/id_rsa</code>.</p>
-
 <p>5) Sekarang akses server dengan ssh tanpa menggunakan password sudah bisa, yakin deh :D cukup gunakan command <code>ssh -i /home/sibunglon/id_rsa batman@192.168.0.36</code></p>
-
 <p>Jika anda mempunyai banyak server dan hanya ingin menggunakan key yang telah digenerate pada lab ini, cukup copy kan lagi public key-nya ke server anda yang lainnya.</p>
-
 <blockquote>
 <p>Note:
 file id_rsa bisa dipindahkan di manapun, tapi commandnya juga berubah. Semisal anda memindahkannya ke <code>/home/</code> command sshnya yaitu <code>ssh -i /home/id_rsa batman@192.168.0.36</code>.
