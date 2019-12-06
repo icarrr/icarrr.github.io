@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us" itemscope itemtype="http://schema.org/WebPage">
   <head>
+  
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mengatasi GRUB Linux Yang Error</title>
@@ -9,7 +10,11 @@
   <meta name="description" content="Read - Search - Ask | Sekali Gila Tetap Gila">
   <meta name="description" content="Shell, Linux, Komunitas Pengguna Linux Indonesia , MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, KPLK Klaten, BLC Telkom Klaten, Icar, siBunglonGanteng, siBunglonLabs">
   
+  
+  
   <meta name="google-site-verification" content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM" />
+  
+  
   
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110194945-3"></script>
   <script>
@@ -19,6 +24,8 @@
 
     gtag('config', 'UA-110194945-3');
   </script>
+  
+
   
   <script type="text/javascript">var _Hasync= _Hasync|| [];
   _Hasync.push(['Histats.start', '1,4194642,4,0,0,0,00010000']);
@@ -40,18 +47,18 @@
   
   
   <link rel="stylesheet" href="/assets/css/external.min.css" media="screen">
-
   
   
   <link rel="stylesheet" href="/assets/css/styles.css" media="screen">
-
   <link href="//fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
+  
 
   
   
   
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/src/images/apple-touch-icon.png">
   <link rel="shortcut icon" href="/src/images/favicon.ico">
+  
 
   
   <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
@@ -84,10 +91,11 @@ Maksud dan TujuanTujuan dari postingan ini yaitu agar pembaca yang memiliki masa
 <meta name="twitter:description" content="PendahuluanGNU GRUB (singkat untuk GNU GRand Bersatu Bootloader) adalah boot loader paket dari proyek GNU . GRUB adalah implementasi referensi dari Free Software Foundation &#39;s Multiboot Keterangan , yang menyediakan pengguna pilihan untuk boot salah satu dari beberapa sistem operasi yang terpasang di komputer atau pilih tertentu kernel konfigurasi yang tersedia pada partisi sistem operasi tertentu.
 Maksud dan TujuanTujuan dari postingan ini yaitu agar pembaca yang memiliki masalah yang serupa, maka ia dapat mengatasinya sendiri tanpa membawa ke service center."/>
 
-  <script data-ad-client="ca-pub-8995917561399790" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  
 
   
   <script src="https://kit.fontawesome.com/749688b2db.js" crossorigin="anonymous"></script>
+  
 </head>
 
   <body>
@@ -104,8 +112,7 @@ Maksud dan TujuanTujuan dari postingan ini yaitu agar pembaca yang memiliki masa
   <article>
     <header>
       <small>
-        <time datetime="2017-08-02 16:51:00&#43;0000">2017-08-02</time>
-        &bull;</small>
+        <time datetime="2017-08-02 16:51:00&#43;0000">2017-08-02</time></small>
       <h1>Mengatasi GRUB Linux Yang Error</h1>
     </header>
     <section><div style="text-align: justify;"><span style="font-size: large;"><b>Pendahuluan</b></span></div><div style="text-align: justify;">GNU GRUB (singkat untuk GNU GRand Bersatu Bootloader) adalah boot loader paket dari proyek GNU . GRUB adalah implementasi referensi dari Free Software Foundation 's Multiboot Keterangan , yang menyediakan pengguna pilihan untuk boot salah satu dari beberapa sistem operasi yang terpasang di komputer atau pilih tertentu kernel konfigurasi yang tersedia pada partisi sistem operasi tertentu.</div><br /><div style="text-align: justify;"><span style="font-size: large;"><b>Maksud dan Tujuan</b></span></div><div style="text-align: justify;">Tujuan dari postingan ini yaitu agar pembaca yang memiliki masalah yang serupa, maka ia dapat mengatasinya sendiri tanpa membawa ke service center. Karena waktu saya mengalami ini, laptop saya direinstall sampai 3-4 kali tetapi masalahnya tetap sama, dengan maksud dari postingan ini untuk mempermudah pengunjung mengatasi masalah tersebut.</div><br /><div style="text-align: justify;"><span style="font-size: large;"><b>Alat dan Bahan</b></span></div><div style="text-align: justify;">1. PC yang mengalami GRUB error</div><br /><div style="text-align: justify;"><span style="font-size: large;"><b>Jangka Waktu Pengerjaan</b></span></div><div style="text-align: justify;">Jangka waktu yang digunakan kurang lebih 10 sampai 15 menit untuk mengembalikan GRUB.</div><br /><div style="text-align: justify;"><span style="font-size: large;"><b>Langkah Kerja</b></span></div><div style="text-align: justify;">1. Ketikkan "ls" perintah ini digunakan untuk melihat paritisi yang ada</div><blockquote class="tr_bq"><span style="color: #666666; font-family: &quot;verdana&quot; , &quot;geneva&quot; , sans-serif;">grub rescue&gt;</span><b>ls</b></blockquote><div style="text-align: justify;">2.&nbsp;Ketikkan perintah dibawah ini satu-persatu</div><blockquote class="tr_bq"><span style="color: #666666; font-family: &quot;verdana&quot; , &quot;geneva&quot; , sans-serif;">grub rescue&gt;</span><b>set prefix=<span style="color: red;">(hd0,msdos8)</span>/boot/grub</b><br /><br /><span style="color: #666666; font-family: &quot;verdana&quot; , &quot;geneva&quot; , sans-serif;">grub rescue&gt;</span><b>set root=<span style="color: red;">(hd0,msdos8)</span></b><br /><br /><span style="color: #666666; font-family: &quot;verdana&quot; , &quot;geneva&quot; , sans-serif;">grub rescue&gt;</span><b>insmod normal</b><br /><br /><span style="color: #666666; font-family: &quot;verdana&quot; , &quot;geneva&quot; , sans-serif;">grub rescue&gt;</span><b>norma</b><span style="color: #333333; font-family: &quot;verdana&quot; , &quot;geneva&quot; , sans-serif;">l</span></blockquote><div style="text-align: justify;">3.&nbsp;(hd0,msdos8) merupakan partisi linux dimana letak grub terinstall. Apabila setelah perintah insmod normal terjadi error. itu kemungkinan pada saat pemilihan partisi kurang temap. silahkan ganti (hd0,msdos8) dengan yang lain.Jika semuanya benar maka menu grub akan kembali muncul, dan silahkan booting ke linux anada, setelah masuk desktop selanjutnya kita perbaiki grub dengan perintah di bawah ini.</div><blockquote class="tr_bq"><b>update-grub</b><b>grub-install /dev/sda</b></blockquote><div style="text-align: justify;">4.&nbsp;Selanjutnya restart, dan grub akan kembali normal.</div><br /><div style="text-align: justify;"><b>#Referensi</b></div><div style="text-align: justify;">1.&nbsp;<a href="https://en.wikipedia.org/wiki/GNU_GRUB">Wikipedia</a></div><br /><div style="text-align: justify;">Sekian dari postingan ini, semoga bermanfaat.</div>

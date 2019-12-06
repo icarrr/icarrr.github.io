@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us" itemscope itemtype="http://schema.org/WebPage">
   <head>
+  
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Konfigurasi DHCP Server Pada Cisco</title>
@@ -9,7 +10,11 @@
   <meta name="description" content="Read - Search - Ask | Sekali Gila Tetap Gila">
   <meta name="description" content="Shell, Linux, Komunitas Pengguna Linux Indonesia , MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, KPLK Klaten, BLC Telkom Klaten, Icar, siBunglonGanteng, siBunglonLabs">
   
+  
+  
   <meta name="google-site-verification" content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM" />
+  
+  
   
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110194945-3"></script>
   <script>
@@ -19,6 +24,8 @@
 
     gtag('config', 'UA-110194945-3');
   </script>
+  
+
   
   <script type="text/javascript">var _Hasync= _Hasync|| [];
   _Hasync.push(['Histats.start', '1,4194642,4,0,0,0,00010000']);
@@ -40,18 +47,18 @@
   
   
   <link rel="stylesheet" href="/assets/css/external.min.css" media="screen">
-
   
   
   <link rel="stylesheet" href="/assets/css/styles.css" media="screen">
-
   <link href="//fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
+  
 
   
   
   
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/src/images/apple-touch-icon.png">
   <link rel="shortcut icon" href="/src/images/favicon.ico">
+  
 
   
   <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
@@ -90,10 +97,11 @@ Memahami konfigurasi dhcp serverTAHAPAN PEKERJAAN&nbsp;Berikut adalah langkah-la
 Langkah awal untuk konfigurasi yaitu klik pada Router
 Kemudian masuk ke Privileged mode exec dengan menggunkan perintah “enable&nbsp;“"/>
 
-  <script data-ad-client="ca-pub-8995917561399790" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  
 
   
   <script src="https://kit.fontawesome.com/749688b2db.js" crossorigin="anonymous"></script>
+  
 </head>
 
   <body>
@@ -110,8 +118,7 @@ Kemudian masuk ke Privileged mode exec dengan menggunkan perintah “enable&nbsp
   <article>
     <header>
       <small>
-        <time datetime="2017-10-07 16:49:00&#43;0000">2017-10-07</time>
-        &bull;</small>
+        <time datetime="2017-10-07 16:49:00&#43;0000">2017-10-07</time></small>
       <h1>Konfigurasi DHCP Server Pada Cisco</h1>
     </header>
     <section><div style="text-align: justify;"><strong>A.PENGERTIAN</strong></div><div style="text-align: justify;">DHCP (Dynamic Host Configuration Protocol) sebuah server yang memiliki layanan untuk memberikan IP otomatis pada host atau komputer (client) pada jaringan TCP atau IP yang memintanya</div><ol style="text-align: justify;"><li><strong>LATAR BELAKANG</strong>Memahami serta mempraktikan dhcp server</li><li><strong>MAKSUD DAN TUJUAN</strong><br />Memahami konfigurasi dhcp server</li><li><strong>TAHAPAN PEKERJAAN&nbsp;</strong></li></ol><div style="text-align: justify;">Berikut adalah langkah-langkah mengkonfigurasi DHCP Server pada router.</div><div style="text-align: justify;">Sebelumnya kita harus membuat simulasi jaringan seperti pada gambar berikut ini terlebih dahulu.</div><div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/-eokIb0OJCEQ/W7NDFzZdhkI/AAAAAAAAEqI/kB9bIWvRvQ4ZpFDodNwETeCzR86NPe4SACLcBGAs/s1600/dhcp1.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="323" data-original-width="400" height="258" src="https://4.bp.blogspot.com/-eokIb0OJCEQ/W7NDFzZdhkI/AAAAAAAAEqI/kB9bIWvRvQ4ZpFDodNwETeCzR86NPe4SACLcBGAs/s320/dhcp1.png" title="" width="320" /></a></div><br />Langkah awal untuk konfigurasi yaitu klik pada Router<br /><div style="text-align: justify;">Kemudian masuk ke Privileged mode exec dengan menggunkan perintah “<strong>enable&nbsp;</strong>“</div><br /><div style="text-align: justify;">Pastikan saat kita akan melakukan konfigurasi kita masuk ke Global Configuration dengan menggunakan perintah “&nbsp;<strong>config t&nbsp;</strong>“</div><br /><div style="text-align: justify;">Setting hostname, agar lebih mudah dalam pengkonfigurasian dhcp kita setting telrebih dahulu hostname pada router dengan perintah “&nbsp;<strong>hostname&nbsp;nama_&nbsp;</strong>“</div><br /><div style="text-align: justify;">Kita setting IP Addres&nbsp;&nbsp;router DHCP Server dengan menggunakan perintah “<strong>int gigabitEthernet 0/1&nbsp;</strong>“ pada saat mengkonfig ip ini kita masih berada di global configuration kemudian setelah itu masukkan perintah “&nbsp;<strong>no shutdown</strong>“ Enter kemudian masukkan IP Address atau gateway milik Router beserta Netmask nya “&nbsp;<strong>ip address 192.168.30.1 255.255.255.0&nbsp;</strong>“. Untuk lebih jelasnya bsa anda lihat langkah dibawah ini.</div><br /><br /><blockquote><br /><div style="text-align: justify;">Continue with configuration dialog? [yes/no]: no</div><br /><div style="text-align: justify;">Press RETURN to get started!</div><br /><div style="text-align: justify;">Router&gt;enable</div><br /><div style="text-align: justify;">Router#configure terminal</div><br /><div style="text-align: justify;">Router(config)#hostname DHCP-server</div><br /><div style="text-align: justify;">DHCP-server(config)#interface fastEthernet 0/0</div><br /><div style="text-align: justify;">DHCP-server(config-if)#ip address 192.168.30.1 255.255.255.0</div><br /><div style="text-align: justify;">DHCP-server(config-if)#no shutdown</div><br /><div style="text-align: justify;">%DHCP-6-ADDRESS_ASSIGN: Interface FastEthernet0/0 assigned DHCP address 192.168.10.13, mask 255.255.255.0, hostname RouterDHCP client</div><br /><div style="text-align: justify;">%DHCP-6-ADDRESS_ASSIGN: Interface FastEthernet0/0 assigned DHCP address 192.168.10.13, mask 255.255.255.0, hostname RouterDHCP client</div><br /><div style="text-align: justify;">DHCP-server(config-if)#exit</div><br /></blockquote><br /><div style="text-align: justify;">Kemudian beri nama pada ethernetnya dengan perintah “&nbsp;<strong>description to- nama&nbsp;</strong>“ misalnya&nbsp;<strong>description to-labjarkom</strong></div><br /><div style="text-align: justify;">Kemudian lihat prosess pada RAM dengan menggunakan perintah “&nbsp;<strong>show running-config&nbsp;</strong>“.</div><br /><div style="text-align: justify;">Untuk lebih jelasnya bisa dilihat pada gambar dibawah ini.</div><div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/-N0Iq4MyaGHU/W7NDYrGNCYI/AAAAAAAAEqQ/1cdHVhRyP54A5MXiY4jDpPm2VThQKKa_wCLcBGAs/s1600/dhcp2.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="352" data-original-width="400" height="281" src="https://4.bp.blogspot.com/-N0Iq4MyaGHU/W7NDYrGNCYI/AAAAAAAAEqQ/1cdHVhRyP54A5MXiY4jDpPm2VThQKKa_wCLcBGAs/s320/dhcp2.png" title="" width="320" /></a></div><br /><div style="text-align: justify;">Berikut adalah tampilan saat kita melihat proses pada Ram / show running-config,disini interfacesnya sudah memiliki IP dan nama yang sudah kita konfig tadi.</div><div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/-C5X2HYUSbpk/W7NDhi1kq0I/AAAAAAAAEqU/6MM6tJmrVSI8nRC3MvZPQsaqNrXhCL39QCLcBGAs/s1600/dhcp3.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="352" data-original-width="400" src="https://4.bp.blogspot.com/-C5X2HYUSbpk/W7NDhi1kq0I/AAAAAAAAEqU/6MM6tJmrVSI8nRC3MvZPQsaqNrXhCL39QCLcBGAs/s1600/dhcp3.png" /></a></div><br /><div style="text-align: justify;">Setelah itu kita setting DHCP Service dan&nbsp;Setting DHCP exclude addressesnya, saat akan melakukan setting pada DHCP service pastikan masuk ke dalam global configuration. Setelah sudah masuk ke global configuration&nbsp;&nbsp;disini kita kan memnentukan&nbsp;nama pool, gateway dan dns, masih di router DHCP server, di mode global configuration masukan perintah:</div><br /><br /><blockquote><br /><div style="text-align: justify;">DHCP-server(config)#ip dhcp excluded-address 192.168.30.1</div><br /><div style="text-align: justify;">DHCP-server(config)#ip dhcp pool dhcp-labjarkom</div><br /><div style="text-align: justify;">DHCP-server(dhcp-config)#default-router 192.168.30.1</div><br /><div style="text-align: justify;">DHCP-server(dhcp-config)#dns-server 192.168.100.254</div><br /><div style="text-align: justify;">DHCP-server(dhcp-config)#network 192.168.30.0 255.255.255.0</div><br /><div style="text-align: justify;">DHCP-server(dhcp-config)#end</div><br /></blockquote><br /><div style="text-align: justify;">Kemudian cek pada PC0 apakah sudah mendapatkan IP Address. Untuk melihat apakah PC0 sudah memiliki ip atau belum klik pada PC0 kemudian pilih Desktop pilih IP Configuration, pada ip configuration pilih DHCP dan tunggu, disini PC0 memiliki</div><br /><div style="text-align: justify;">IP Address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;192.168.30.2</div><br /><div style="text-align: justify;">Subnet Mask&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;255.255.255.0</div><br /><div style="text-align: justify;">Default Gateway&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;192.168.30.1</div><br /><div style="text-align: justify;">DNS Server&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;192.168.100.254</div><br /><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-AMDoLeSQtd0/W7NDxcPTMDI/AAAAAAAAEqg/xQ-oRjmJ8DAh6JwlZLqNJEjd3TQCVvDEQCLcBGAs/s1600/dhcp5.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="352" data-original-width="400" height="281" src="https://1.bp.blogspot.com/-AMDoLeSQtd0/W7NDxcPTMDI/AAAAAAAAEqg/xQ-oRjmJ8DAh6JwlZLqNJEjd3TQCVvDEQCLcBGAs/s320/dhcp5.png" title="" width="320" /></a></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">Kemudian ping ke IP gateway milik Router pada PC0, buka command promt pada PC0 kemudian ping ke 192.168.30.1</div><br /><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-yIEjkBLfxCI/W7ND4YTRa2I/AAAAAAAAEqk/DfqtXbctlCQH0C-vGKd6UISfV9BkbO3tgCLcBGAs/s1600/dhcp6.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng" border="0" data-original-height="352" data-original-width="400" height="281" src="https://1.bp.blogspot.com/-yIEjkBLfxCI/W7ND4YTRa2I/AAAAAAAAEqk/DfqtXbctlCQH0C-vGKd6UISfV9BkbO3tgCLcBGAs/s320/dhcp6.png" title="" width="320" /></a></div><div style="text-align: justify;"><br /></div><br /><strong>E. Referensi</strong><br /><div style="text-align: justify;"><strong>&nbsp; &nbsp;&nbsp;</strong>http://ccnav6.com</div>
