@@ -32,7 +32,7 @@
   <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4194642&101" alt="" border="0"></a></noscript>
   
 
-  <meta name="generator" content="Hugo 0.60.1" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   
@@ -71,6 +71,8 @@ Oh ya mungkin ada yang kepikiran tentang keamanan server jika memasang cockpit d
 <meta itemprop="description" content="Cockpit Apa sih cockpit itu?
 Pertanyaan sejenis itu sudah di tulis pada lab sebelumnya, karena di lab sebelumnya kita awali perkenalan dulu :D Kali aja jatuh cinta sama teman baru, kan gak enak kalau sebelumnya gak kenalan dulu :D
 Oh ya mungkin ada yang kepikiran tentang keamanan server jika memasang cockpit di server dan memberikan akses role user yang dapat mengontrol systemD, karena secara default cockpit mengaktifkan plugin terminal. Dengan adanya terminal/shell, user yang login ke cockpit dengan role super user atau sudo bisa saja melakukan diluar sepengetahuan anda.">
+
+
 <meta itemprop="datePublished" content="2018-12-23T00:14:35&#43;07:00" />
 <meta itemprop="dateModified" content="2018-12-23T00:14:35&#43;07:00" />
 <meta itemprop="wordCount" content="160">
@@ -78,6 +80,7 @@ Oh ya mungkin ada yang kepikiran tentang keamanan server jika memasang cockpit d
 
 
 <meta itemprop="keywords" content="Ayo Belajar Linux,Cockpit,Ngoprek," />
+
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Menonaktifkan Plugin Terminal Dari Cockpit"/>
 <meta name="twitter:description" content="Cockpit Apa sih cockpit itu?
@@ -108,20 +111,32 @@ Oh ya mungkin ada yang kepikiran tentang keamanan server jika memasang cockpit d
         &bull;</small>
       <h1>Menonaktifkan Plugin Terminal Dari Cockpit</h1>
     </header>
-    <section><h3 id="cockpit">Cockpit</h3>
+    <section>
+
+<h3 id="cockpit">Cockpit</h3>
+
 <p>Apa sih cockpit itu?</p>
+
 <p>Pertanyaan sejenis itu sudah di tulis pada lab sebelumnya, karena di lab sebelumnya kita awali perkenalan dulu :D Kali aja jatuh cinta sama teman baru, kan gak enak kalau sebelumnya gak kenalan dulu :D</p>
+
 <p>Oh ya mungkin ada yang kepikiran tentang keamanan server jika memasang cockpit di server dan memberikan akses role user yang dapat mengontrol systemD, karena secara default cockpit mengaktifkan plugin terminal. Dengan adanya terminal/shell, user yang login ke cockpit dengan role super user atau sudo bisa saja melakukan diluar sepengetahuan anda. Nah untuk menghindari aktifitas yang tidak diinginkan, plugin terminal bisa dinonaktifkan. Untuk lebih lanjutnya, hayukk bermain dengan si cockpit lagi :v</p>
+
 <h3 id="bermain-dengan-cockpit">Bermain Dengan Cockpit</h3>
+
 <p>1) Untuk menonaktifkan plugin terminal, pastikan anda bisa mengakses server anda saat ini.</p>
+
 <p>2) Edit file manifest.json dengan command <code>nano /usr/share/cockpit/systemd/manifest.json</code>.</p>
+
 <p>3) hilangkan sintaks berikut:</p>
+
 <pre><code> &quot;tools&quot;: {
 	&quot;terminal&quot;: {
             &quot;label&quot;: &quot;Terminal&quot;
         }
     }
-</code></pre><p>4) Silahkan cek dashboard cockpit anda, harusnya terminal tidak ada lagi di dashboard cockpit.</p>
+</code></pre>
+
+<p>4) Silahkan cek dashboard cockpit anda, harusnya terminal tidak ada lagi di dashboard cockpit.</p>
 </section>
     <footer>
       <hr>

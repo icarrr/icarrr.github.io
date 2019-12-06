@@ -32,7 +32,7 @@
   <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4194642&101" alt="" border="0"></a></noscript>
   
 
-  <meta name="generator" content="Hugo 0.60.1" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   
@@ -71,6 +71,8 @@ Cockpit berjalan di port 9090, tidak membutuhkan web server jadi jika anda belum
 <meta itemprop="description" content="Cockpit? Apa sih cockpit itu? Bukannya cockpit itu ruang khususnya pilot?
 Cockpit adalah sebuah aplikasi adminstrasi server berbasi web. Dengan cockpit, grafik penggunaan cpu, memory, network, hdd dapat dilihat langsung pada saat autentikasi user cockpit berhasil serta dapat mengontrol service yang dijalankan melalui SystemD.
 Cockpit berjalan di port 9090, tidak membutuhkan web server jadi jika anda belum menginstall web server apapun, itu tidak menjadi masalah, serta resource yang digunakan cockpit sangat sedikit karena service cockpit akan dijalankan secara otomatis jika anda mencoba mengaksesnya melalui web page dan setelah beberapa menit setelah anda logout secara otomatis service cockpit akan di matikan.">
+
+
 <meta itemprop="datePublished" content="2018-12-18T17:30:24&#43;07:00" />
 <meta itemprop="dateModified" content="2018-12-18T17:30:24&#43;07:00" />
 <meta itemprop="wordCount" content="198">
@@ -78,6 +80,7 @@ Cockpit berjalan di port 9090, tidak membutuhkan web server jadi jika anda belum
 
 
 <meta itemprop="keywords" content="Ayo Belajar Linux,Cockpit,Ngoprek," />
+
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Manajemen Linux Server Menggunakan Cockpit"/>
 <meta name="twitter:description" content="Cockpit? Apa sih cockpit itu? Bukannya cockpit itu ruang khususnya pilot?
@@ -108,22 +111,40 @@ Cockpit berjalan di port 9090, tidak membutuhkan web server jadi jika anda belum
         &bull;</small>
       <h1>Manajemen Linux Server Menggunakan Cockpit</h1>
     </header>
-    <section><h3 id="cockpit">Cockpit?</h3>
+    <section>
+
+<h3 id="cockpit">Cockpit?</h3>
+
 <p>Apa sih cockpit itu? Bukannya cockpit itu ruang khususnya pilot?</p>
+
 <p>Cockpit adalah sebuah aplikasi adminstrasi server berbasi web. Dengan cockpit, grafik penggunaan cpu, memory, network, hdd dapat dilihat langsung pada saat autentikasi user cockpit berhasil serta dapat mengontrol service yang dijalankan melalui SystemD.</p>
+
 <p>Cockpit berjalan di port 9090, tidak membutuhkan web server jadi jika anda belum menginstall web server apapun, itu tidak menjadi masalah, serta resource yang digunakan cockpit sangat sedikit karena service cockpit akan dijalankan secara otomatis jika anda mencoba mengaksesnya melalui web page dan setelah beberapa menit setelah anda logout secara otomatis service cockpit akan di matikan.</p>
+
 <h3 id="bermain-cockpit">Bermain Cockpit</h3>
-<h5 id="untuk-pengguna-rhelcentos-7">Untuk pengguna RHEL/CentOS 7</h5>
+
+<h5 id="untuk-pengguna-rhel-centos-7">Untuk pengguna RHEL/CentOS 7</h5>
+
 <p>1) Buka shell kemudian login sebagai superuser (root).</p>
+
 <p>2) Install cockpit dengan command <code>yum install cockpit</code>.</p>
+
 <p>3) Aktifkan socket cockpit dengan command <code>systemctl enable --now cockpit.socket</code>.</p>
+
 <p>4) Berikan akses dari firewall dengan command berikut:</p>
+
 <pre><code>root@sibunglonlabs# firewall-cmd --add-service=cockpit
 root@sibunglonlabs# firewall-cmd --add-service=cockpit --permanent
-</code></pre><p>5) Sekarang cockpit sudah bisa diakses melalui web page melalui url sibunglon.com:9090/ atau IP_server:9090/</p>
-<h5 id="untuk-pengguna-ubuntu-16--18">Untuk pengguna Ubuntu 16 &amp; 18</h5>
+</code></pre>
+
+<p>5) Sekarang cockpit sudah bisa diakses melalui web page melalui url sibunglon.com:9090/ atau IP_server:9090/</p>
+
+<h5 id="untuk-pengguna-ubuntu-16-18">Untuk pengguna Ubuntu 16 &amp; 18</h5>
+
 <p>1) Buka shell kemudian login sebagai superuser (root).</p>
+
 <p>2) Install cockpit dengan command <code>apt-get install cockpit</code>.</p>
+
 <p>3) Sekarang cockpit sudah bisa diakses melalui web page, contohnya melalui url <em>sibunglon.com:9090/</em> atau <em>IP_server:9090/</em></p>
 </section>
     <footer>

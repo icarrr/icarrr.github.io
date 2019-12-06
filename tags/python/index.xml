@@ -15,8 +15,8 @@
         <link>https://sibunglon.com/2019/07/15/create-new-super-user-for-access-django-admin-interface-open-edx/</link>
         <pubDate>Mon, 15 Jul 2019 03:09:25 +0700</pubDate>
         <guid>https://sibunglon.com/2019/07/15/create-new-super-user-for-access-django-admin-interface-open-edx/</guid>
-        <description>I need to use the Django admin interface, but I don&#39;t know what users can use to log in.
-Solution sudo -u edxapp bash source /edx/app/edxapp/edxapp_env python /edx/app/edxapp/edx-platform/manage.py --settings=aws createsuperuser </description>
+        <description> I need to use the Django admin interface, but I don&amp;rsquo;t know what users can use to log in.
+Solution sudo -u edxapp bash source /edx/app/edxapp/edxapp_env python /edx/app/edxapp/edx-platform/manage.py --settings=aws createsuperuser</description>
       </item>
     
       <item>
@@ -24,7 +24,7 @@ Solution sudo -u edxapp bash source /edx/app/edxapp/edxapp_env python /edx/app/e
         <link>https://sibunglon.com/2019/02/26/install-package-from-pip-ignore-trusted-host/</link>
         <pubDate>Tue, 26 Feb 2019 10:53:16 +0700</pubDate>
         <guid>https://sibunglon.com/2019/02/26/install-package-from-pip-ignore-trusted-host/</guid>
-        <description>Connection is Power Yah connection is power dan jangan berpikir problems can occur due to connection ketika kalian menemukan masalah yang berkaitan dengan internet. Disuatu waktu I&#39;m siBunglon menemukan masalah pada saat akan melakukan installasi package dari python-pip, paketnya tidak bisa diinstall tapi diwaktu itu I&#39;m siBunglon menggunakan koneksi yang dikelola oleh orang lain dan mencoba browsing eh ternyata lancar jaya, mencoba menggunakan Wi-Fi dari device yang lain dan masalah tersebut tidak muncul.</description>
+        <description>Connection is Power Yah connection is power dan jangan berpikir problems can occur due to connection ketika kalian menemukan masalah yang berkaitan dengan internet. Disuatu waktu I&amp;rsquo;m siBunglon menemukan masalah pada saat akan melakukan installasi package dari python-pip, paketnya tidak bisa diinstall tapi diwaktu itu I&amp;rsquo;m siBunglon menggunakan koneksi yang dikelola oleh orang lain dan mencoba browsing eh ternyata lancar jaya, mencoba menggunakan Wi-Fi dari device yang lain dan masalah tersebut tidak muncul.</description>
       </item>
     
       <item>
@@ -32,8 +32,8 @@ Solution sudo -u edxapp bash source /edx/app/edxapp/edxapp_env python /edx/app/e
         <link>https://sibunglon.com/2018/12/11/pip-python2-error/</link>
         <pubDate>Tue, 11 Dec 2018 21:34:18 +0700</pubDate>
         <guid>https://sibunglon.com/2018/12/11/pip-python2-error/</guid>
-        <description>Pip di Python2 Error? Traceback (most recent call last): File &amp;quot;/usr/bin/pip&amp;quot;, line 9, in &amp;lt;module&amp;gt; from pip import main ImportError: cannot import name main Gak usah panik, cukup jalankan command berikut tapi pastikan terlebih dahulu sekarang sudah jadi super user (root)
-python -m pip uninstall pip &amp;amp;&amp;amp; apt install python-pip --reinstall </description>
+        <description> Pip di Python2 Error? Traceback (most recent call last): File &amp;quot;/usr/bin/pip&amp;quot;, line 9, in &amp;lt;module&amp;gt; from pip import main ImportError: cannot import name main  Gak usah panik, cukup jalankan command berikut tapi pastikan terlebih dahulu sekarang sudah jadi super user (root)
+python -m pip uninstall pip &amp;amp;&amp;amp; apt install python-pip --reinstall  </description>
       </item>
     
       <item>

@@ -32,7 +32,7 @@
   <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4194642&101" alt="" border="0"></a></noscript>
   
 
-  <meta name="generator" content="Hugo 0.60.1" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   
@@ -62,7 +62,7 @@
 Ya emang menarik, agar user tidak perlu memasukkan password jika ingin mendapatkan hak akses root cukup tambahkan si user ke sudoers.
 Bermain dengan Sudoers 1) Edit file sudoers dengan command nano /etc/sudoers.
 2) Setelah berhasil mengakses file sudoers, sekarang tambahkan sintaks berikut:
-sibunglon ALL=(ALL) NOPASSWD:ALL  Note: Kata sibunglon diganti sesuai user yang akan diberikan izin menggunakan sudo tanpa password.
+sibunglon ALL=(ALL) NOPASSWD:ALL   Note: Kata sibunglon diganti sesuai user yang akan diberikan izin menggunakan sudo tanpa password.
  Sekarang user sibunglon (user sesuai yang anda daftarkan) dapat menggunakan command sudo tanpa password." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://sibunglon.com/2018/12/25/hak-akses-root-dengan-sudo-tanpa-password/" />
@@ -75,8 +75,10 @@ sibunglon ALL=(ALL) NOPASSWD:ALL  Note: Kata sibunglon diganti sesuai user yang 
 Ya emang menarik, agar user tidak perlu memasukkan password jika ingin mendapatkan hak akses root cukup tambahkan si user ke sudoers.
 Bermain dengan Sudoers 1) Edit file sudoers dengan command nano /etc/sudoers.
 2) Setelah berhasil mengakses file sudoers, sekarang tambahkan sintaks berikut:
-sibunglon ALL=(ALL) NOPASSWD:ALL  Note: Kata sibunglon diganti sesuai user yang akan diberikan izin menggunakan sudo tanpa password.
+sibunglon ALL=(ALL) NOPASSWD:ALL   Note: Kata sibunglon diganti sesuai user yang akan diberikan izin menggunakan sudo tanpa password.
  Sekarang user sibunglon (user sesuai yang anda daftarkan) dapat menggunakan command sudo tanpa password.">
+
+
 <meta itemprop="datePublished" content="2018-12-25T01:31:24&#43;07:00" />
 <meta itemprop="dateModified" content="2018-12-25T01:31:24&#43;07:00" />
 <meta itemprop="wordCount" content="79">
@@ -84,13 +86,14 @@ sibunglon ALL=(ALL) NOPASSWD:ALL  Note: Kata sibunglon diganti sesuai user yang 
 
 
 <meta itemprop="keywords" content="Ayo Belajar Linux,SSH,Ngoprek," />
+
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Hak Akses Root Dengan Sudo Tanpa Password"/>
 <meta name="twitter:description" content="Sudo Tanpa Password? Hmmm kelihatannya menarik.
 Ya emang menarik, agar user tidak perlu memasukkan password jika ingin mendapatkan hak akses root cukup tambahkan si user ke sudoers.
 Bermain dengan Sudoers 1) Edit file sudoers dengan command nano /etc/sudoers.
 2) Setelah berhasil mengakses file sudoers, sekarang tambahkan sintaks berikut:
-sibunglon ALL=(ALL) NOPASSWD:ALL  Note: Kata sibunglon diganti sesuai user yang akan diberikan izin menggunakan sudo tanpa password.
+sibunglon ALL=(ALL) NOPASSWD:ALL   Note: Kata sibunglon diganti sesuai user yang akan diberikan izin menggunakan sudo tanpa password.
  Sekarang user sibunglon (user sesuai yang anda daftarkan) dapat menggunakan command sudo tanpa password."/>
 
   <script data-ad-client="ca-pub-8995917561399790" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -117,17 +120,28 @@ sibunglon ALL=(ALL) NOPASSWD:ALL  Note: Kata sibunglon diganti sesuai user yang 
         &bull;</small>
       <h1>Hak Akses Root Dengan Sudo Tanpa Password</h1>
     </header>
-    <section><h3 id="sudo-tanpa-password">Sudo Tanpa Password?</h3>
+    <section>
+
+<h3 id="sudo-tanpa-password">Sudo Tanpa Password?</h3>
+
 <p>Hmmm kelihatannya menarik.</p>
+
 <p>Ya emang menarik, agar user tidak perlu memasukkan password jika ingin mendapatkan hak akses root cukup tambahkan si user ke <strong>sudoers</strong>.</p>
+
 <h3 id="bermain-dengan-sudoers">Bermain dengan Sudoers</h3>
+
 <p>1) Edit file sudoers dengan command <code>nano /etc/sudoers</code>.</p>
+
 <p>2) Setelah berhasil mengakses file <strong>sudoers</strong>, sekarang tambahkan sintaks berikut:</p>
+
 <pre><code>sibunglon ALL=(ALL) NOPASSWD:ALL
-</code></pre><blockquote>
+</code></pre>
+
+<blockquote>
 <p>Note:
 Kata <em><strong>sibunglon</strong></em> diganti sesuai user yang akan diberikan izin menggunakan <strong>sudo</strong> tanpa password.</p>
 </blockquote>
+
 <p>Sekarang user sibunglon (user sesuai yang anda daftarkan) dapat menggunakan command sudo tanpa password.</p>
 </section>
     <footer>

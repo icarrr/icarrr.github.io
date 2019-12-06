@@ -32,7 +32,7 @@
   <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4194642&101" alt="" border="0"></a></noscript>
   
 
-  <meta name="generator" content="Hugo 0.60.1" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   
@@ -69,6 +69,8 @@ Namun saat ini masih banyak bisnis hotspot tidak dimanajemen dengan baik. Kenapa
   <meta itemprop="name" content="Membangun Hotspot Sistem Voucher">
 <meta itemprop="description" content="Hotspot Sistem Voucher Layaknya wifi.id Pada era informatika sekarang ini, bisnis hotspot sangat menggiurkan karena penggunaan dan kebutuhan internet masyarakat Indonesia sangat meningkat. Internet seperti sudah menjadi kebutuhan primer bagi masyarakat perkotaan bahkan pedesaan. Oleh karena itu menurut saya, bisnis hotspot sangat menjanjikan untuk dijalankan di desa maupun di kota.
 Namun saat ini masih banyak bisnis hotspot tidak dimanajemen dengan baik. Kenapa saya bilang begitu? Masih ada pemilik bisnis hotspot memasang tarif koneksi per 1 device, namun autentikasi yang digunakan cuman menggunakan WPA2 Personal.">
+
+
 <meta itemprop="datePublished" content="2019-02-09T23:25:02&#43;07:00" />
 <meta itemprop="dateModified" content="2019-02-09T23:25:02&#43;07:00" />
 <meta itemprop="wordCount" content="607">
@@ -76,6 +78,7 @@ Namun saat ini masih banyak bisnis hotspot tidak dimanajemen dengan baik. Kenapa
 
 
 <meta itemprop="keywords" content="MikroTik,Ngoprek," />
+
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Membangun Hotspot Sistem Voucher"/>
 <meta name="twitter:description" content="Hotspot Sistem Voucher Layaknya wifi.id Pada era informatika sekarang ini, bisnis hotspot sangat menggiurkan karena penggunaan dan kebutuhan internet masyarakat Indonesia sangat meningkat. Internet seperti sudah menjadi kebutuhan primer bagi masyarakat perkotaan bahkan pedesaan. Oleh karena itu menurut saya, bisnis hotspot sangat menjanjikan untuk dijalankan di desa maupun di kota.
@@ -105,49 +108,81 @@ Namun saat ini masih banyak bisnis hotspot tidak dimanajemen dengan baik. Kenapa
         &bull;</small>
       <h1>Membangun Hotspot Sistem Voucher</h1>
     </header>
-    <section><h3 id="hotspot-sistem-voucher-layaknya-wifiid">Hotspot Sistem Voucher Layaknya wifi.id</h3>
+    <section>
+
+<h3 id="hotspot-sistem-voucher-layaknya-wifi-id">Hotspot Sistem Voucher Layaknya wifi.id</h3>
+
 <p>Pada era informatika sekarang ini, bisnis hotspot sangat menggiurkan karena penggunaan dan kebutuhan internet masyarakat Indonesia sangat meningkat. Internet seperti sudah menjadi kebutuhan primer bagi masyarakat perkotaan bahkan pedesaan. Oleh karena itu menurut saya, bisnis hotspot sangat menjanjikan untuk dijalankan di desa maupun di kota.</p>
+
 <p>Namun saat ini masih banyak bisnis hotspot tidak dimanajemen dengan baik. Kenapa saya bilang begitu? Masih ada pemilik bisnis hotspot memasang tarif koneksi per 1 device, namun autentikasi yang digunakan cuman menggunakan <strong>WPA2 Personal</strong>. Lah terus kenapa kalau cuman menggunakan WPA2 Personal? Tau sendirilah kreatifnya pengguna internet masyarakat Indonesia, bayarnya untuk 1 device namun yang menggunakan lebih dari 1 device😆</p>
+
 <p>Nah dengan hotspot sistem voucher, problem ini bisa diminamalisir, contoh penerapannya 1 voucher hanya bisa digunakan 1 device. Sebenarnya sudah banyak vendor yang menyediakan hotspot sistem voucher, salah satunya <strong>wifi.id</strong> milik <strong>Telkom</strong>. Alternatif untuk menerapkan hotspot sistem voucher yaitu menggunakan <strong>UserMan MikroTik</strong>.</p>
+
 <blockquote>
 <p>Hotspot sistem voucher ini tidak hanya untuk bisnis hotspot, hotspot sistem voucher ini bisa saja digunakan di kantor, sekolah, dan sebagainya.</p>
 </blockquote>
+
 <h4 id="userman-usermanager">UserMan (UserManager)</h4>
+
 <p>UserMan merupakan fitur <strong>AAA</strong> server yang dimiliki oleh MikroTik. Sesuai kepanjangan AAA (<strong>Authentication, Authorization and Accounting</strong>), userman memiliki database yang bisa digunakan untuk melakukan autetikasi user yang terhubung ke jaringan kalian, memberikan kebijakan terhadap user tersebut misal pembatasan kuota transfer. Untuk menggunakan fitur AAA server ini, protokol radius MikroTik harus diaktifkan.</p>
+
 <p><strong>Radius</strong> kependekan dari <strong>Remote Authentication Dial In User Service</strong>, merupakan protokol jaringan yang menjalankan service AAA.</p>
+
 <p>By default, userman belum terinstall di MikroTik, kalian bisa menginstallnya secara gratis dengan mendownload packagenya dihalaman resmisnya di <a href="https://mikrotik.com/download/archive">MikroTik</a>. Pilih versi yang sama dengan router kalian kemudian download <strong>all_package-tipe-versi.zip</strong>. Ekstrak file tersebut, didalamnya ada file <strong>userman-versi-tipe.npk</strong>. Upload file userman tersebut ke router MikroTik menggunakan ftp atau drag n drop dari PC ke jendela Files pada Winbox, jika proses upload berhasil silahkan reboot router MikroTik agar package userman diinstall di router MikroTik kalian.</p>
+
 <p>Pada lab ini saya asumsikan:</p>
+
 <ul>
 <li>Telah mengkonfigurasi hotspot di router MikroTik yang akan menggunakan userman</li>
 <li>Jam pada router MikroTik telah disesuai jam sekarang</li>
 </ul>
+
 <h3 id="bermain-dengan-mikrotik">Bermain Dengan MikroTik</h3>
+
 <p>Setelah menginstall userman ke router MikroTik, selanjutnya konfigurasi userman.Tapi disini diasumsikan bahwa kalian telah konfigurasi hotspot di router MikroTik kalian.</p>
-<p>1)  Masuk ke server profiles hotspot.<img src="/assets/img/userman/Screenshot_1.png" alt="">2) Aktifkan radius, dan jika anda menemukan kolom <strong>NAS Port type</strong> silahkan isi dengan <strong>Ethernet</strong>.</p>
-<p><img src="/assets/img/userman/Screenshot_2.png" alt=""></p>
-<p>3) Buat radius baru.<img src="/assets/img/userman/Screenshot_3.png" alt=""></p>
+
+<p>1)  Masuk ke server profiles hotspot.<img src="/assets/img/userman/Screenshot_1.png" alt="" />2) Aktifkan radius, dan jika anda menemukan kolom <strong>NAS Port type</strong> silahkan isi dengan <strong>Ethernet</strong>.</p>
+
+<p><img src="/assets/img/userman/Screenshot_2.png" alt="" /></p>
+
+<p>3) Buat radius baru.<img src="/assets/img/userman/Screenshot_3.png" alt="" /></p>
+
 <pre><code>Address = - 127.0.0.1 (jika hotspot server dan radius server dalam 1 router),
           - Ip_MikroTik-hotspot_server (jika hotspot server dan radius server berbeda router)
 Secret  = Password yang dibutuhkan userman untuk terhubung ke radius
-</code></pre><p>4) Izinkan userman terhubung ke radius jika autentikasinya benar, aktifkan incoming radius.</p>
-<p><img src="/assets/img/userman/Screenshot_4.png" alt=""></p>
-<p><img src="/assets/img/userman/Screenshot_5.png" alt=""></p>
-<p>5) Untuk mengakses userman, buka web browser dan kunjungi alamat <em>http://Ip_MikroTik/userman</em>, secara default userman menggunakan username = admin | password kosong.<img src="/assets/img/userman/Screenshot_6.png" alt="">6) Tambahkan identitas radius MiktoTik yang akan menggunakan userman.<img src="/assets/img/userman/Screenshot_7.png" alt=""></p>
+</code></pre>
+
+<p>4) Izinkan userman terhubung ke radius jika autentikasinya benar, aktifkan incoming radius.</p>
+
+<p><img src="/assets/img/userman/Screenshot_4.png" alt="" /></p>
+
+<p><img src="/assets/img/userman/Screenshot_5.png" alt="" /></p>
+
+<p>5) Untuk mengakses userman, buka web browser dan kunjungi alamat <em><a href="http://Ip_MikroTik/userman">http://Ip_MikroTik/userman</a></em>, secara default userman menggunakan username = admin | password kosong.<img src="/assets/img/userman/Screenshot_6.png" alt="" />6) Tambahkan identitas radius MiktoTik yang akan menggunakan userman.<img src="/assets/img/userman/Screenshot_7.png" alt="" /></p>
+
 <pre><code>Name          = Identitas MikroTik
 IP address    = - 127.0.0.1 (jika hotspot server dan radius server dalam 1 router),
                 - Ip_MikroTik-hotspot_server (jika hotspot server dan radius server berbeda router)
 Shared secret = sesuai dengan value secret pada saat membuat radius
 CoA port      = sesuai value port pada radius incoming
-</code></pre><p>7) Set password userman dan tambahkan informasi mata uang jika anda ingin mencatumkan price pada voucher.<img src="/assets/img/userman/Screenshot_8.png" alt="">8) Buat profile voucher dan limitasi yang akan diberikan ke user. Silahkan dicustom sesuai kebutuhan untuk limitasinya.<img src="/assets/img/userman/Screenshot_9.png" alt=""><img src="/assets/img/userman/Screenshot_10.png" alt="">9) Buat user baru untuk autentikasi yang terhubung ke jaringan kalian. Jika tombol add diklik, disana kalian diberi pilihan yang anda harus pilih:</p>
+</code></pre>
+
+<p>7) Set password userman dan tambahkan informasi mata uang jika anda ingin mencatumkan price pada voucher.<img src="/assets/img/userman/Screenshot_8.png" alt="" />8) Buat profile voucher dan limitasi yang akan diberikan ke user. Silahkan dicustom sesuai kebutuhan untuk limitasinya.<img src="/assets/img/userman/Screenshot_9.png" alt="" /><img src="/assets/img/userman/Screenshot_10.png" alt="" />9) Buat user baru untuk autentikasi yang terhubung ke jaringan kalian. Jika tombol add diklik, disana kalian diberi pilihan yang anda harus pilih:</p>
+
 <ul>
 <li>one = untuk menambah user 1 per 1</li>
 <li>batch = untuk menambah user lebih dari 1 dalam 1 waktu</li>
 </ul>
-<p>Di lab ini saya menggunakan, batch.<img src="/assets/img/userman/Screenshot_13.png" alt=""><img src="/assets/img/userman/Screenshot_14.png" alt=""></p>
-<p>10) Generate voucher<img src="/assets/img/userman/Screenshot_15.png" alt=""><img src="/assets/img/userman/Screenshot_16.png" alt=""> <img src="/assets/img/userman/Screenshot_17.png" alt=""></p>
-<p>Kemudian akan terbuka jendela yang baru dan menampilkan voucher yang berisi informasi user yang dapat di cetak yang kemudian bisa diberikan ke konsumen.<img src="/assets/img/userman/Screenshot_18.png" alt=""><strong>Test</strong></p>
-<p><img src="/assets/img/userman/Screenshot_19.png" alt=""></p>
-<p><img src="/assets/img/userman/Screenshot_20.png" alt=""></p>
+
+<p>Di lab ini saya menggunakan, batch.<img src="/assets/img/userman/Screenshot_13.png" alt="" /><img src="/assets/img/userman/Screenshot_14.png" alt="" /></p>
+
+<p>10) Generate voucher<img src="/assets/img/userman/Screenshot_15.png" alt="" /><img src="/assets/img/userman/Screenshot_16.png" alt="" /> <img src="/assets/img/userman/Screenshot_17.png" alt="" /></p>
+
+<p>Kemudian akan terbuka jendela yang baru dan menampilkan voucher yang berisi informasi user yang dapat di cetak yang kemudian bisa diberikan ke konsumen.<img src="/assets/img/userman/Screenshot_18.png" alt="" /><strong>Test</strong></p>
+
+<p><img src="/assets/img/userman/Screenshot_19.png" alt="" /></p>
+
+<p><img src="/assets/img/userman/Screenshot_20.png" alt="" /></p>
 </section>
     <footer>
       <hr>

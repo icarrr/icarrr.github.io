@@ -32,7 +32,7 @@
   <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4194642&101" alt="" border="0"></a></noscript>
   
 
-  <meta name="generator" content="Hugo 0.60.1" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   
@@ -69,6 +69,8 @@ Semakin hari kebutuhan akan manajemen jaringan semakin beragam. Hal ini tidak le
   <meta itemprop="name" content="Memisahkan Traffic Game Online Dan Browsing Dengan Mikrotik">
 <meta itemprop="description" content="Memisahkan Traffic? Pernah gak sih kalian berpikir untuk memisahkan traffic suatu layanan dijaringan lokal atau mungkin diantara pembaca sudah ada yang telah berkenalan atau mendengarkan tentang pemisahan traffic? Contohnya untuk jaringan di Warung Kopi (Warkop), sekolah, kantor, taman, dll.
 Semakin hari kebutuhan akan manajemen jaringan semakin beragam. Hal ini tidak lepas dari semakin beragam pula layanan internet yang ada. Diasumsikan sebagai penyedia layanan akses internet, kalian pasti ingin memberikan layanan yang terbaik ke semua client.">
+
+
 <meta itemprop="datePublished" content="2019-02-07T20:35:49&#43;07:00" />
 <meta itemprop="dateModified" content="2019-02-07T20:35:49&#43;07:00" />
 <meta itemprop="wordCount" content="794">
@@ -76,6 +78,7 @@ Semakin hari kebutuhan akan manajemen jaringan semakin beragam. Hal ini tidak le
 
 
 <meta itemprop="keywords" content="BLC Telkom Klaten,MikroTik,Ngoprek," />
+
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Memisahkan Traffic Game Online Dan Browsing Dengan Mikrotik"/>
 <meta name="twitter:description" content="Memisahkan Traffic? Pernah gak sih kalian berpikir untuk memisahkan traffic suatu layanan dijaringan lokal atau mungkin diantara pembaca sudah ada yang telah berkenalan atau mendengarkan tentang pemisahan traffic? Contohnya untuk jaringan di Warung Kopi (Warkop), sekolah, kantor, taman, dll.
@@ -105,110 +108,160 @@ Semakin hari kebutuhan akan manajemen jaringan semakin beragam. Hal ini tidak le
         &bull;</small>
       <h1>Memisahkan Traffic Game Online Dan Browsing Dengan Mikrotik</h1>
     </header>
-    <section><h3 id="memisahkan-traffic">Memisahkan Traffic?</h3>
+    <section>
+
+<h3 id="memisahkan-traffic">Memisahkan Traffic?</h3>
+
 <p>Pernah gak sih kalian berpikir untuk memisahkan traffic suatu layanan dijaringan lokal atau mungkin diantara pembaca sudah ada yang telah berkenalan atau mendengarkan tentang pemisahan traffic? Contohnya untuk jaringan di Warung Kopi (Warkop), sekolah, kantor, taman, dll.</p>
+
 <p>Semakin hari kebutuhan akan manajemen jaringan semakin beragam. Hal ini tidak lepas dari semakin beragam pula layanan internet yang ada. Diasumsikan sebagai penyedia layanan akses internet, kalian pasti ingin memberikan layanan yang terbaik ke semua client.</p>
+
 <p>Problem pada umumnya jika disuatu jaringan yang sama ada 2 atau lebih akses yang berbeda, kemungkinan besar ada client yang merasakan lambatnya koneksi yang digunakan. Contohnya ada yang mendownload dan ada yang bermain game online, yang bakalan kena dampak itu biasanya yang sedang bermain game online, si pemain game online kemungkinan besar seketika merasakan lambatnya jaringan karena diwaktu itu juga bandwith digunakan sebanyak-banyaknya oleh user yang sedang mendownload.</p>
+
 <p>Nah dengan memisahkan traffic, masalah tersebut dapat diminimalisir. Maka dari itu juga mengapa saya mau menulis artikel ini untuk dijadikan bahan lab.</p>
+
 <p>Oh iya sebelumnya saya ingin menceritakan kenapa saya bisa berkenalan dengan pemisahan traffic ini. 5 Bulan yang lalu saya sering mendengarkan keluhan pelanggan warkop yang biasa saya tempati nongkrong. Sebagai pelanggan juga, saya tidak mempermasalahkan koneksinya melainkan saya bosan mendengar keluhan pelanggan yang lain. Tepat di hari ke-6 saya mendengar keluhan tersebut, saya mencari bagaimana memanajemen jaringan yang baik, dan saya tertarik memanajemen jaringan menggunakan mikrotik yaitu trafficnya dipisahkan. Dan karena itu saya meminta si pemilik warkop agar membeli MikroTik yang akan digunakan untuk memisahkan traffic agar dapat minimalisir keluhan pelanggan. Eittss tapi bukan itu alasan utamanya saya menyuruh membeli product tersebut, alasan utamanya yaitu <strong>agar saya dapat mencobanya di waktu itu juga karena saya tidak memiliki alat tersebut untuk mencobanya sendiri</strong>. Nice kan :v hihihi</p>
+
 <p>Etss balik lagi ke topik utamanya tapi gak usah cerita lagi yah, next time kita cerita seperti itu lagi tapi beda ceritanya :v</p>
+
 <h3 id="bermain-dengan-mikrotik">Bermain Dengan MikroTik</h3>
+
 <h4 id="mangle">Mangle</h4>
+
 <p>Traffic browsing dan game online dapat dibedakan berdasarkan protocol dan port yang digunakan. Fitur yang dapat digunakan untuk kebutuhan tersebut adalah <strong>mangle</strong>, dimana mangle dapat digunakan untuk menandai (marking) paket data berdasarkan port, protocol, src dan dst address, serta parameter yang lain yang dibutuhkan.</p>
+
 <p><strong>Paket Game Online (Mobile Legends)</strong></p>
-<p>1) Ketahui protocol dan port yang akan ditandai, informasi tersebut dapat diketahui melalui fitur <strong>Torch</strong> di MikroTik ataupun mencari referensi lain dari internet. Buka jendela torch, sebagai catatan untuk menggunakan fitur torch ini saya sarankan hanya 1 device yang terhubung ke jaringan dan device tersebut yang akan digunakan untuk membuka aplikasi yang akan dimanajemen trafficnya, saran ini memudahkan untuk mencapture port yang akan dimanajemen. Setelah jendela Torch ditampilkan, silahkan capture port yang ada ditraffic sekarang. Untuk kasus ini saya menggunakan port yang bertebaran diinternet, karena waktu itu device yang saya gunakan digunakan untuk membuka beberapa aplikasi jadi susah mencapture portnya.<img src="/assets/img/mangle/Screenshot_1.png" alt=""><img src="/assets/img/mangle/Screenshot_2.png" alt=""></p>
-<p>2) Menandai port menggunakan fitur <strong>Mangle</strong>. Buka jendela mangle<img src="/assets/img/mangle/Screenshot_3.png" alt="">3) Buat rule baru di mangle dengan field berikut:</p>
+
+<p>1) Ketahui protocol dan port yang akan ditandai, informasi tersebut dapat diketahui melalui fitur <strong>Torch</strong> di MikroTik ataupun mencari referensi lain dari internet. Buka jendela torch, sebagai catatan untuk menggunakan fitur torch ini saya sarankan hanya 1 device yang terhubung ke jaringan dan device tersebut yang akan digunakan untuk membuka aplikasi yang akan dimanajemen trafficnya, saran ini memudahkan untuk mencapture port yang akan dimanajemen. Setelah jendela Torch ditampilkan, silahkan capture port yang ada ditraffic sekarang. Untuk kasus ini saya menggunakan port yang bertebaran diinternet, karena waktu itu device yang saya gunakan digunakan untuk membuka beberapa aplikasi jadi susah mencapture portnya.<img src="/assets/img/mangle/Screenshot_1.png" alt="" /><img src="/assets/img/mangle/Screenshot_2.png" alt="" /></p>
+
+<p>2) Menandai port menggunakan fitur <strong>Mangle</strong>. Buka jendela mangle<img src="/assets/img/mangle/Screenshot_3.png" alt="" />3) Buat rule baru di mangle dengan field berikut:</p>
+
 <ul>
 <li>General
+
 <ul>
 <li>chain = forward</li>
 <li>src.address = network yang menuju ke client/pelanggan</li>
 <li>protocol = 6 (tcp)</li>
 <li>dst.port = port game mobile legends yang saya dapatkan di internet</li>
-</ul>
-</li>
+</ul></li>
 <li>Action
+
 <ul>
 <li>action = mark connection</li>
 <li>new connection mark = identitas port setelah ditandai</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<p><img src="/assets/img/mangle/Screenshot_4.png" alt=""></p>
-<p><img src="/assets/img/mangle/Screenshot_5.png" alt=""></p>
+
+<p><img src="/assets/img/mangle/Screenshot_4.png" alt="" /></p>
+
+<p><img src="/assets/img/mangle/Screenshot_5.png" alt="" /></p>
+
 <p>4) Buat rule baru di mangle dengan field berikut:</p>
+
 <ul>
 <li>General
+
 <ul>
 <li>chain = forward</li>
 <li>connection mark = identitas port setelah ditandai</li>
-</ul>
-</li>
+</ul></li>
 <li>Action
+
 <ul>
 <li>action = mark packet</li>
 <li>new packet mark = nama paket</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<p><img src="/assets/img/mangle/Screenshot_6.png" alt=""></p>
-<p><img src="/assets/img/mangle/Screenshot_7.png" alt=""></p>
+
+<p><img src="/assets/img/mangle/Screenshot_6.png" alt="" /></p>
+
+<p><img src="/assets/img/mangle/Screenshot_7.png" alt="" /></p>
+
 <p><strong>Paket Browsing</strong></p>
+
 <p>1) Buat rule baru di mangle dengan field berikut:</p>
+
 <ul>
 <li>General
+
 <ul>
 <li>chain = forward</li>
 <li>src.address = network yang menuju ke client/pelanggan</li>
 <li>protocol = 6 (tcp)</li>
 <li>connection mark = no-mark</li>
-</ul>
-</li>
+</ul></li>
 <li>Action
+
 <ul>
 <li>action = mark connection</li>
 <li>new connection mark = identitas protocol setelah ditandai</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<p><img src="/assets/img/mangle/Screenshot_8.png" alt=""></p>
-<p><img src="/assets/img/mangle/Screenshot_9.png" alt=""></p>
+
+<p><img src="/assets/img/mangle/Screenshot_8.png" alt="" /></p>
+
+<p><img src="/assets/img/mangle/Screenshot_9.png" alt="" /></p>
+
 <p>2) Buat rule baru di mangle dengan field berikut:</p>
+
 <ul>
 <li>General
+
 <ul>
 <li>chain = forward</li>
 <li>connection mark = identitas protocol setelah ditandai</li>
-</ul>
-</li>
+</ul></li>
 <li>Action
+
 <ul>
 <li>action = mark packet</li>
 <li>new packet mark = nama paket</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<p><img src="/assets/img/mangle/Screenshot_10.png" alt=""></p>
-<p><img src="/assets/img/mangle/Screenshot_11.png" alt=""></p>
+
+<p><img src="/assets/img/mangle/Screenshot_10.png" alt="" /></p>
+
+<p><img src="/assets/img/mangle/Screenshot_11.png" alt="" /></p>
+
 <p>Setelah itu table mangle berisikan seperti berikut, dan pastikan port dan protocol tercapture dengan baik yang ditandai dengan data pada kolom Bytes sudah masuk.</p>
-<p><img src="/assets/img/mangle/Screenshot_11,1.png" alt=""></p>
+
+<p><img src="/assets/img/mangle/Screenshot_11,1.png" alt="" /></p>
+
 <p><strong>Manajemen Traffic Yang Tercapture</strong></p>
-<p>1) Buka jendela <strong>Queue Tree</strong>. Pada contoh ini menggunakan model HTB dengan bandwith minimal 512k dan maximal 3M.<img src="/assets/img/mangle/Screenshot_12.png" alt="">2) Definisikan max bandwith upload, parent adalah port sumber internet mikrotik.</p>
-<p><img src="/assets/img/mangle/Screenshot_13.png" alt=""></p>
+
+<p>1) Buka jendela <strong>Queue Tree</strong>. Pada contoh ini menggunakan model HTB dengan bandwith minimal 512k dan maximal 3M.<img src="/assets/img/mangle/Screenshot_12.png" alt="" />2) Definisikan max bandwith upload, parent adalah port sumber internet mikrotik.</p>
+
+<p><img src="/assets/img/mangle/Screenshot_13.png" alt="" /></p>
+
 <p>3) Definisikan bandwith upload untuk paket game online sesuai port yang telah ditandai sebelumnya.</p>
-<p><img src="/assets/img/mangle/Screenshot_14.png" alt=""></p>
+
+<p><img src="/assets/img/mangle/Screenshot_14.png" alt="" /></p>
+
 <p>4) Definisikan bandwith upload untuk paket browsing sesuai port yang telah ditandai sebelumnya.</p>
-<p><img src="/assets/img/mangle/Screenshot_15.png" alt=""></p>
+
+<p><img src="/assets/img/mangle/Screenshot_15.png" alt="" /></p>
+
 <p>5) Definisikan max bandwith download, parent adalah port yang menuju ke client.</p>
-<p><img src="/assets/img/mangle/Screenshot_16.png" alt=""></p>
+
+<p><img src="/assets/img/mangle/Screenshot_16.png" alt="" /></p>
+
 <p>6) Definisikan bandwith download untuk paket game online sesuai port yang telah ditandai sebelumnya.</p>
-<p><img src="/assets/img/mangle/Screenshot_17.png" alt=""></p>
+
+<p><img src="/assets/img/mangle/Screenshot_17.png" alt="" /></p>
+
 <p>7) Definisikan bandwith download untuk paket browsing sesuai port yang telah ditandai sebelumnya.</p>
-<p><img src="/assets/img/mangle/Screenshot_18.png" alt=""></p>
+
+<p><img src="/assets/img/mangle/Screenshot_18.png" alt="" /></p>
+
 <p><strong>Test</strong></p>
+
 <p>Dengan menggunakan model HTB, antara traffic browsing dengan game sudah memiliki batas masing-masing sehingga jika keduanya berjalan bersamaan tidak akan saling mengganggu. Pastikan port dan protocol tercapture dengan baik yang ditandai dengan data pada kolom Bytes sudah masuk ditabel Queue Tree.</p>
-<p><img src="/assets/img/mangle/Screenshot_18,1.png" alt=""></p>
+
+<p><img src="/assets/img/mangle/Screenshot_18,1.png" alt="" /></p>
+
 <h3 id="referensi">Referensi</h3>
+
 <ul>
 <li><a href="http://www.mikrotik.co.id">MikroTik Indonesia</a></li>
 </ul>

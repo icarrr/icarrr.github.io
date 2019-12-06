@@ -32,7 +32,7 @@
   <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4194642&101" alt="" border="0"></a></noscript>
   
 
-  <meta name="generator" content="Hugo 0.60.1" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   
@@ -69,6 +69,8 @@ If you want to migrate a database from environment A with SQL Server version A t
   <meta itemprop="name" content="Backup and Restore Database SQL Server to Lower Version">
 <meta itemprop="description" content="How to Restore Database SQL server to lower version?
 If you want to migrate a database from environment A with SQL Server version A to environment B with SQL Server version A, you can use the script or backup and restore function. But if you want to migrate the database from environment A with SQL Server version A to environment B with SQL Server version B, when running the backup function in environment A and you will get problems when running the restore function in environment B.">
+
+
 <meta itemprop="datePublished" content="2019-05-16T14:26:00&#43;07:00" />
 <meta itemprop="dateModified" content="2019-05-16T14:26:00&#43;07:00" />
 <meta itemprop="wordCount" content="507">
@@ -76,6 +78,7 @@ If you want to migrate a database from environment A with SQL Server version A t
 
 
 <meta itemprop="keywords" content="Windows,Microsoft SQL Server,Backup and Restore,Ngoprek," />
+
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Backup and Restore Database SQL Server to Lower Version"/>
 <meta name="twitter:description" content="How to Restore Database SQL server to lower version?
@@ -106,9 +109,13 @@ If you want to migrate a database from environment A with SQL Server version A t
       <h1>Backup and Restore Database SQL Server to Lower Version</h1>
     </header>
     <section><p>How to Restore Database SQL server to lower version?</p>
+
 <p>If you want to migrate a database from environment A with SQL Server version A to environment B with SQL Server version A, you can use the script or backup and restore function. But if you want to migrate the database from environment A with SQL Server version A to environment B with SQL Server version B, when running the backup function in environment A and you will get problems when running the restore function in environment B.</p>
-<p>Upgrade in one environment? I think it's not an efficient way. What do you do? Here is an alternative if you want to migrate a database with a different environment.</p>
+
+<p>Upgrade in one environment? I think it&rsquo;s not an efficient way. What do you do? Here is an alternative if you want to migrate a database with a different environment.</p>
+
 <p><strong>Environment A</strong></p>
+
 <ol>
 <li>Open SQL Server Management Studio.</li>
 <li>Right click on the database you are working with.</li>
@@ -116,8 +123,8 @@ If you want to migrate a database from environment A with SQL Server version A t
 <li>You will be presented with a wizard screen, on the introduction you can click <code>Next</code>.</li>
 <li>Choose whether to script the entire database and objects or to select them individually. I like to leave it as the first option, everything. Click <code>Next</code>.</li>
 <li>In the output type, choose <code>Save scripts to a specific location</code>.</li>
-<li>Save to file Click on <code>Advanced</code>:</li>
-</ol>
+<li>Save to file Click on <code>Advanced</code>:
+
 <ul>
 <li>find <code>Script for Server Version</code>, choose the version you want, mine is 2012.</li>
 <li>find <code>Types of data to script</code>, choose Schema and data.</li>
@@ -126,8 +133,7 @@ If you want to migrate a database from environment A with SQL Server version A t
 <li>Files to generate - <code>Single file</code>.</li>
 <li>File name - give the script a name with the extension <strong>.sql</strong>.</li>
 <li>Save as <code>Unicode text</code>.</li>
-</ul>
-<ol start="8">
+</ul></li>
 <li>Click <code>Next</code>.</li>
 <li>Open out options using the plus sign, check the settings are all ok in the summary - you are mainly looking at the version and the types of data to script.</li>
 <li>Click <code>Next</code>.</li>
@@ -135,8 +141,10 @@ If you want to migrate a database from environment A with SQL Server version A t
 <li>Click on <code>Finish</code></li>
 <li>Then go to the location where you saved the script, and copy file to environment B.</li>
 </ol>
+
 <p><strong>Environment B</strong></p>
-<ol start="14">
+
+<ol>
 <li>Open the script</li>
 <li>Verify that the MSSQL data file path (.mdf and log.ldf files) is correct. Example, if you back up a database from MSSQL 2014 and want to restore to MSSQL 2012, you need to update the path that it was originally from <code>C:\Program Files\Microsoft SQL Server\MSSQL14.SQLEXPRESS\MSSQL\DATA\ganteng_log.ldf</code> to <code>C:\Program Files\Microsoft SQL Server\MSSQL12.MSSQLSERVER\MSSQL\DATA\ganteng_log.ldf</code>. Do the same for the <em>*.mdf</em> file.</li>
 <li>Run the script</li>
@@ -144,9 +152,12 @@ If you want to migrate a database from environment A with SQL Server version A t
 <em>Cannot add the Principal &lsquo;CodeShare&rsquo; because it does not exist or you do not have permission</em>.
 Just ignore it, the message. This does not cause any problems.</li>
 </ol>
+
 <p>Note: pay attention to the mssql instance name and please change it according to the instance name used. In this example, at MSSQL 2014 I used the SQLEXPRESS instance name and at MSSQL 2012 I used the MSSQLSERVER instance name. To find out the name of the instance, please open the <code>C:\Program Files\Microsoft SQL Server</code> directory and find the directory named <code>MSSQL&lt;version&gt;.xxx</code> which <em>xxx</em> is the name of the instance.</p>
-<p>That's it!</p>
-<p>You're all done. You should be able to start using the database now.</p>
+
+<p>That&rsquo;s it!</p>
+
+<p>You&rsquo;re all done. You should be able to start using the database now.</p>
 </section>
     <footer>
       <hr>
