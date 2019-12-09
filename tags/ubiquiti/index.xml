@@ -15,15 +15,7 @@
         <link>https://sibunglon.com/2017/10/18/point-to-point-dengan-ubiquiti-station-side/</link>
         <pubDate>Wed, 18 Oct 2017 16:50:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/18/point-to-point-dengan-ubiquiti-station-side/</guid>
-        <description>A. Pengertian
-Ubiquiti Networks&amp;nbsp;adalah perusahaan teknologi Amerika yang dimulai pada tahun 2005. Berbasis di&amp;nbsp;San Jose, California&amp;nbsp;, Ubiquiti memproduksi&amp;nbsp;produk&amp;nbsp;komunikasi data nirkabel&amp;nbsp;untuk perusahaan dan&amp;nbsp;penyedia layanan&amp;nbsp;broadband nirkabel&amp;nbsp;dengan fokus utama pada pasar yang kurang terlayani dan yang&amp;nbsp;sedang berkembang.
-B. Latar Belakang
-Kebutuhan media tranmisi jarak jauh
-C. Maksud dan Tujuan
-Bisa Menerapkan wireless konsep dan bisa menangkap signal dari sisi AP
-D. Alat dan Bahan
-~ Ubiquiti Power Beam M2 (Station side)
-~ Ubiquiti NanoStation M2 (AP Side)</description>
+        <description>A. PengertianUbiquiti Networksadalah perusahaan teknologi Amerika yang dimulai pada tahun 2005. Berbasis di San Jose, California , Ubiquiti memproduksi produk komunikasi data nirkabel untuk perusahaan dan penyedia layanan broadband nirkabel dengan fokus utama pada pasar yang kurang terlayani dan yang sedang berkembang.B. Latar BelakangKebutuhan media tranmisi jarak jauhC. Maksud dan TujuanBisa Menerapkan wireless konsep dan bisa menangkap signal dari sisi APD. Alat dan Bahan~ Ubiquiti Power Beam M2 (Station side)~ Ubiquiti NanoStation M2 (AP Side)~ Laptop~ Kabel LANE.</description>
       </item>
     
       <item>
@@ -31,7 +23,7 @@ D. Alat dan Bahan
         <link>https://sibunglon.com/2017/10/18/point-to-point-dengan-ubiquiti-ap-side/</link>
         <pubDate>Wed, 18 Oct 2017 11:29:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/18/point-to-point-dengan-ubiquiti-ap-side/</guid>
-        <description>Protokol Point-to-Point (PPP) adalah protokol data link (layer 2) yang digunakan untuk membangun hubungan langsung antara dua node. Ini menghubungkan dua router secara langsung tanpa host atau perangkat jaringan lainnya di antaranya, dan jaraknya biasanya cukup jauh, UBIQUITI merupakan sebuah perusahaan yang mengkhususkan produksinya pada produk – produk wireless. Perusahaan yang berbasis di San Jose, California, Amerika ini telah beroperasi sejak tahun 2005. Sejak saat ini, mereka terus melakukan inovasi pada produk – produknya sehingga bisa mendunia seperti saat ini.</description>
+        <description></description>
       </item>
     
       <item>
@@ -39,12 +31,7 @@ D. Alat dan Bahan
         <link>https://sibunglon.com/2017/09/19/pointing-ubnt-ke-mikrotik/</link>
         <pubDate>Tue, 19 Sep 2017 02:56:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/19/pointing-ubnt-ke-mikrotik/</guid>
-        <description>PENGERTIANPoint to Point adalah data link protokol yang umum digunakan dalam membangun hubungan langsung antara dua node jaringan. Hal ini dapat menyediakan koneksi otentikasi, transmisi enkripsi (menggunakan ECP, RFC 1968), dan kompresi.
-LATAR BELAKANGJauhnya tempat tidak memunginkan untuk penggunakan kabel untuk media transmisi data
-MAKSUD DAN TUJUANMempelajari UBNT
-Jangka Waktu PelaksanaanKurang lebih 3 jam
-ALAT DAN BAHAN
-~ Laptop~ Ubnt Powerbeam M2~ RB 941~ Alat untuk memnjat tower, Tali Wabbing, Harnesses, Tas untuk wadah kunci,~ Kabel LAN</description>
+        <description></description>
       </item>
     
   </channel>

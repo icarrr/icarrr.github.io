@@ -39,7 +39,7 @@
   <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4194642&101" alt="" border="0"></a></noscript>
   
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.60.1" />
 
   
   
@@ -76,8 +76,6 @@ CI adalah metodologi pengembangan perangkat lunak di mana tes pembangunan, unit,
   <meta itemprop="name" content="Install Bamboo Atlassian di Linux">
 <meta itemprop="description" content="Bamboo Atlassian Bamboo adalah integrasi berkelanjutan (continuous integration (CI)) dan server penyebaran berkelanjutan (continuous deployment) yang dikembangkan oleh Atlassian. Bamboo dapat digunakan untuk mengotomatisasi manajemen rilis untuk aplikasi perangkat lunak, menciptakan jalur pengiriman kontinu.
 CI adalah metodologi pengembangan perangkat lunak di mana tes pembangunan, unit, dan tes integrasi dilakukan, atau dipicu, setiap kali kode dipublish ke repositori, untuk memastikan bahwa perubahan baru terintegrasi dengan baik ke dalam basis kode yang ada.">
-
-
 <meta itemprop="datePublished" content="2019-05-06T03:40:59&#43;07:00" />
 <meta itemprop="dateModified" content="2019-05-06T03:40:59&#43;07:00" />
 <meta itemprop="wordCount" content="526">
@@ -85,7 +83,6 @@ CI adalah metodologi pengembangan perangkat lunak di mana tes pembangunan, unit,
 
 
 <meta itemprop="keywords" content="Ayo Belajar Linux,Atlassian,Installasi,Ngoprek," />
-
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Install Bamboo Atlassian di Linux"/>
 <meta name="twitter:description" content="Bamboo Atlassian Bamboo adalah integrasi berkelanjutan (continuous integration (CI)) dan server penyebaran berkelanjutan (continuous deployment) yang dikembangkan oleh Atlassian. Bamboo dapat digunakan untuk mengotomatisasi manajemen rilis untuk aplikasi perangkat lunak, menciptakan jalur pengiriman kontinu.
@@ -115,117 +112,59 @@ CI adalah metodologi pengembangan perangkat lunak di mana tes pembangunan, unit,
         <time datetime="2019-05-06 03:40:59&#43;0700">2019-05-06</time></small>
       <h1>Install Bamboo Atlassian di Linux</h1>
     </header>
-    <section>
-
-<h3 id="bamboo-atlassian">Bamboo Atlassian</h3>
-
+    <section><h3 id="bamboo-atlassian">Bamboo Atlassian</h3>
 <p>Bamboo adalah integrasi berkelanjutan (continuous integration (CI)) dan server penyebaran berkelanjutan (continuous deployment) yang dikembangkan oleh Atlassian. Bamboo dapat digunakan untuk mengotomatisasi manajemen rilis untuk aplikasi perangkat lunak, menciptakan jalur pengiriman kontinu.</p>
-
 <p>CI adalah metodologi pengembangan perangkat lunak di mana tes pembangunan, unit, dan tes integrasi dilakukan, atau dipicu, setiap kali kode dipublish ke repositori, untuk memastikan bahwa perubahan baru terintegrasi dengan baik ke dalam basis kode yang ada.
-<img src="/assets/img/install-bamboo-on-linux/CI+overview.png" alt="" /></p>
-
+<img src="/assets/img/install-bamboo-on-linux/CI+overview.png" alt=""></p>
 <h4 id="alur-kerja">Alur Kerja</h4>
-
 <h4 id="bamboo-membagi-aplikasi-dalam-urutan-hierarki-yaitu">Bamboo membagi aplikasi dalam urutan hierarki, yaitu:</h4>
-
 <p><em>1) Project (Proyek)</em></p>
-
 <p>Suatu Proyek khusus untuk suatu aplikasi dan berisi banyak rencana di dalamnya. Ini memiliki tautan ke aplikasi lain juga.</p>
-
 <p><em>2) Plan (Rencana)</em></p>
-
 <p>Berisi konfigurasi keseluruhan untuk semua tugas yang dilakukan. Ini memiliki informasi:</p>
-
 <ul>
 <li>Repositori kode sumber</li>
 <li>Pemicu build diatur oleh pengembang</li>
 <li>Siapa yang dapat melihat / memodifikasi rencana</li>
 <li>Variabel rencana</li>
 </ul>
-
 <p><em>3) Stage (Tahap)</em></p>
-
 <p>Memiliki satu pekerjaan tetapi beberapa pekerjaan dapat dibuat di bawahnya dengan membagi daftar tugas menjadi pekerjaan yang berbeda. Semua tahapan dijalankan secara berurutan, dan ketika tahapan telah dijalankan maka hasil akhir/outputnya dapat di jadikan menjadi artifact (mulai dari Bamboo 5) yang dapat digunakan untuk proyek penyebaran (deployments project) ke environment lainnya.</p>
-
 <p><em>4) Task (Tugas)</em></p>
-
 <p>Ini adalah pekerjaan terkecil yang dilakukan agen. Karena semua tugas dalam pekerjaan dilakukan pada agen tunggal, mereka perlu diproses secara berurutan. Contoh tugas yaitu membangun kode, menggunakan aplikasi, dll.
-<img src="/assets/img/install-bamboo-on-linux/BambooDeploymentProjects.png" alt="" /></p>
-
+<img src="/assets/img/install-bamboo-on-linux/BambooDeploymentProjects.png" alt=""></p>
 <h4 id="kelebihan-dan-kekurangan">Kelebihan dan Kekurangan</h4>
-
-<h5 id="kelebihan">- Kelebihan</h5>
-
+<h5 id="-kelebihan">- Kelebihan</h5>
 <p>Beberapa keuntungan dari bamboo dibandingkan orang-orang sesamanya seperti Jenkins adalah bahwa ia memiliki alur kerja percabangan Git dan proyek-proyek penempatan yang terintegrasi. Ini juga memiliki integrasi built-in dengan perangkat lunak Atlassian lainnya seperti Jira , Confluence , Bitbucket , HipChat, dll, yang juga banyak digunakan.</p>
-
-<h5 id="kekurangan">- Kekurangan</h5>
-
+<h5 id="-kekurangan">- Kekurangan</h5>
 <p>Beberapa kelemahannya adalah tidak selalu gratis dan itu bukan perangkat lunak sumber terbuka.</p>
-
 <h4 id="bermain-dengan-bamboo-atlassian">Bermain dengan Bamboo Atlassian</h4>
-
 <p>Bamboo Atlassian dapat dipasang pada environment Linux dengan langkah-langkah berikut:</p>
-
 <p>1) Direkomendasikan untuk membuat user baru khusus dapat menjalankan bamboo atlassian.</p>
-
 <pre><code>sudo /usr/sbin/useradd --create-home --home-dir /usr/local/bamboo --shell /bin/bash bamboo
-</code></pre>
-
-<p>2) Login ke user yang baru saja dibuat.</p>
-
+</code></pre><p>2) Login ke user yang baru saja dibuat.</p>
 <pre><code>sudo -i -u bamboo
-</code></pre>
-
-<p>3) Download file installasi bamboo atlassian</p>
-
+</code></pre><p>3) Download file installasi bamboo atlassian</p>
 <pre><code>wget https://product-downloads.atlassian.com/software/bamboo/downloads/atlassian-bamboo-6.8.0.tar.gz
-</code></pre>
-
-<p>Atau dapat didownload langsung <a href="https://www.atlassian.com/software/bamboo/download">disini</a>, download file yang yang formatnya <em>tar.gz</em>.</p>
-
+</code></pre><p>Atau dapat didownload langsung <a href="https://www.atlassian.com/software/bamboo/download">disini</a>, download file yang yang formatnya <em>tar.gz</em>.</p>
 <p>4) Pastikan di enviroment kalian, telah terpasang Java Development Kit (JDK) kemudian atur variabel <em>JAVA_HOME</em>. Di lab ini saya menggunakan JDK 8, jika menggunakan JDK yang berbeda silahkan disesuaikan <em>JAVA_HOME.</em></p>
-
 <pre><code>export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk
-</code></pre>
-
-<p>5) Ekstrak file installasi bamboo atlassian yang telah di download.</p>
-
+</code></pre><p>5) Ekstrak file installasi bamboo atlassian yang telah di download.</p>
 <pre><code>tar -zxvf atlassian-bamboo-6.8.0.tar.gz
-</code></pre>
-
-<p>6) Ganti nama direktori karena nama direktorinya kepanjangan (ini bisa diskip).</p>
-
+</code></pre><p>6) Ganti nama direktori karena nama direktorinya kepanjangan (ini bisa diskip).</p>
 <pre><code>mv atlassian-bamboo-6.8.0 atlassian-bamboo
-</code></pre>
-
-<p>7) Set direktori home bamboo.</p>
-
+</code></pre><p>7) Set direktori home bamboo.</p>
 <pre><code>vi atlassian-bamboo/atlassian-bamboo/WEB-INF/classes/bamboo-init.properties
-</code></pre>
-
-<p>Kemudian tambahkan sintaks berikut:</p>
-
+</code></pre><p>Kemudian tambahkan sintaks berikut:</p>
 <pre><code>bamboo.home=/usr/local/bamboo/bamboo
-</code></pre>
-
-<p>8) Jalankan bamboo atlassian</p>
-
+</code></pre><p>8) Jalankan bamboo atlassian</p>
 <pre><code>atlassian-bamboo/bin/start-bamboo.sh
-</code></pre>
-
-<p>Untuk menghentikan bamboo atlassian dapat menggunakan command <code>atlassian-bamboo/bin/stop-bamboo.sh</code></p>
-
+</code></pre><p>Untuk menghentikan bamboo atlassian dapat menggunakan command <code>atlassian-bamboo/bin/stop-bamboo.sh</code></p>
 <p>Atau bamboo dapat dijalankan sebagai sebuah layanan (service) dengan tahapan:</p>
-
 <p>1) Login sebagai user yang dapat akses administrator</p>
-
 <p>2) Buat sebuah file service</p>
-
 <pre><code>sudo vi /etc/systemd/system/bamboo.service
-</code></pre>
-
-<p>Dan tambahkan script berikut kemudian simpan dan keluar dari teks editor.</p>
-
+</code></pre><p>Dan tambahkan script berikut kemudian simpan dan keluar dari teks editor.</p>
 <pre><code>[Unit]
 Description=Atlassian Bamboo
 After=syslog.target network.target
@@ -239,21 +178,12 @@ SuccessExitStatus=143
 
 [Install]
 WantedBy=multi-user.target
-</code></pre>
-
-<p>3) Reload systemd</p>
-
+</code></pre><p>3) Reload systemd</p>
 <pre><code>sudo systemctl daemon-reload
-</code></pre>
-
-<p>4) Kini bamboo dapat diaktifkan menggunakan systemd dengan command <code>sudo systemctl start bamboo</code> untuk menjalankan bamboo dan <code>sudo systemctl stop bamboo</code> untuk menghentikan bamboo.</p>
-
+</code></pre><p>4) Kini bamboo dapat diaktifkan menggunakan systemd dengan command <code>sudo systemctl start bamboo</code> untuk menjalankan bamboo dan <code>sudo systemctl stop bamboo</code> untuk menghentikan bamboo.</p>
 <p>Situs bamboo atlassian dapat diakses dari URL seperti ini: <a href="http://localhost:8085/">http://localhost:8085/</a></p>
-
 <h4 id="referensi">Referensi</h4>
-
 <p><a href="https://confluence.atlassian.com/bamboo/installing-bamboo-on-linux-289276792.html">Bamboo Documentation</a></p>
-
 <p><a href="https://en.wikipedia.org/wiki/Bamboo_%28software%29">Wikipedia</a></p>
 </section>
     <footer>

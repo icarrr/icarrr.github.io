@@ -33,13 +33,7 @@ Semakin hari kebutuhan akan manajemen jaringan semakin beragam. Hal ini tidak le
         <link>https://sibunglon.com/2017/09/22/backup-and-restore-mikrotik/</link>
         <pubDate>Fri, 22 Sep 2017 03:39:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/22/backup-and-restore-mikrotik/</guid>
-        <description>1. Pendahuluan
-A. Pengertian
-Di bidang teknologi informasi, backup, atau proses back up, mengacu pada penyalinan dan pengarsipan data sehingga bisa digunakan untuk mengembalikan dokumen asli setelah terjadi peristiwa kehilangan data. Bentuk kata kerja adalah untuk membuat cadangan dua kata, sedangkan kata benda adalah cadangan.
-Restore , mengacu pada proses pengembalian data menggunakan file backup.
-B. Latar Belakang
-Membackup data mikrotik agar saat perangkat rusak kita punya salinan konfigurasinya.
-C. Hasil Yang Diharapkan</description>
+        <description></description>
       </item>
     
       <item>
@@ -47,13 +41,7 @@ C. Hasil Yang Diharapkan</description>
         <link>https://sibunglon.com/2017/09/21/sntp-client-mikrotik/</link>
         <pubDate>Thu, 21 Sep 2017 03:30:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/21/sntp-client-mikrotik/</guid>
-        <description>1. Pendahuluan
-A. Pengertian
-Network Time Protocol (NTP) adalah protokol jaringan untuk sinkronisasi jam antara sistem komputer melalui jaringan data packet-switched, variable-latency. Beroperasi sejak sebelum 1985, NTP adalah salah satu protokol Internet tertua yang digunakan saat ini. NTP dirancang oleh David L. Mills dari University of Delaware.B. Latar Belakang Untuk Mensinkronisasikan waktu pada mikrotik
-B. Hasil Yang Diharapkan
-Dapat Mensinkronisasikan waktu pada mikrotik
-2. Alat dan Bahan
-- Router mikrotik</description>
+        <description></description>
       </item>
     
       <item>
@@ -61,12 +49,7 @@ Dapat Mensinkronisasikan waktu pada mikrotik
         <link>https://sibunglon.com/2017/09/19/pointing-ubnt-ke-mikrotik/</link>
         <pubDate>Tue, 19 Sep 2017 02:56:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/19/pointing-ubnt-ke-mikrotik/</guid>
-        <description>PENGERTIANPoint to Point adalah data link protokol yang umum digunakan dalam membangun hubungan langsung antara dua node jaringan. Hal ini dapat menyediakan koneksi otentikasi, transmisi enkripsi (menggunakan ECP, RFC 1968), dan kompresi.
-LATAR BELAKANGJauhnya tempat tidak memunginkan untuk penggunakan kabel untuk media transmisi data
-MAKSUD DAN TUJUANMempelajari UBNT
-Jangka Waktu PelaksanaanKurang lebih 3 jam
-ALAT DAN BAHAN
-~ Laptop~ Ubnt Powerbeam M2~ RB 941~ Alat untuk memnjat tower, Tali Wabbing, Harnesses, Tas untuk wadah kunci,~ Kabel LAN</description>
+        <description></description>
       </item>
     
       <item>
@@ -74,9 +57,7 @@ ALAT DAN BAHAN
         <link>https://sibunglon.com/2017/09/19/proxy-situs-dengan-fitur-web-proxy-di-mikrotik/</link>
         <pubDate>Tue, 19 Sep 2017 02:51:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/19/proxy-situs-dengan-fitur-web-proxy-di-mikrotik/</guid>
-        <description>A. PendahuluanPada kesempatan kali ini yang saya posting masih mengenai mikrotik yaitu bagaimana proxy situs dengan fitur yang ada pada mikrotik
-B. PengertianApa itu proxy ?Proxy merupakan perangkat yang bersifat &#34;middleman&#34;, yang bekerja diantara client &amp;amp; Server, bertugas menghadle transmisi request ataupun respon. Data yang melewati proxy, bisa diubah oleh proxy atau tidak diubah sama sekali, tergantung implementasi fitur dan kemampuan proxy.
-Manfaat Proxy&amp;nbsp;Security&amp;nbsp;: Proxy mampu melakukan pengecekan terhadap incoming response &amp;amp; outgoing request, sehingga memungkinkan untuk melakukan block paket yang tidak diharapkanCaching&amp;nbsp;: Menyimpan sementara data dari internet di storage, sehingga jika ada client lain yang hendak mengakses data yang sama, cukup mengambil data di cache.</description>
+        <description></description>
       </item>
     
       <item>
@@ -84,10 +65,7 @@ Manfaat Proxy&amp;nbsp;Security&amp;nbsp;: Proxy mampu melakukan pengecekan terh
         <link>https://sibunglon.com/2017/09/18/switch-chip-di-mikrotik/</link>
         <pubDate>Mon, 18 Sep 2017 02:24:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/18/switch-chip-di-mikrotik/</guid>
-        <description>A. PendahuluanPada kali ini, yang saya posting yaitu tentang memfungsikan mikrotik sebagai switch
-B. PengertianSwitch merupakan penghubung beberapa alat untuk membentuk suatu Local Area Network (LAN). Routerboard Mikrotik RB750 telah disediakan fungsi switch, yang mana jika sobat menginginkan men-share internet lebih dari satu komputer atau pada umumnya topologi yang digunakan kebanyak internet di share melalui media wifi dan lan menggunakan kabel.
-C. Latar belakangIngin menambah pengetahuan
-D. TujuanPembaca dapat mengetahu bagaimana membuat routing dynamic RIP</description>
+        <description></description>
       </item>
     
       <item>
@@ -95,9 +73,7 @@ D. TujuanPembaca dapat mengetahu bagaimana membuat routing dynamic RIP</descript
         <link>https://sibunglon.com/2017/09/16/routing-static-di-mikrotik/</link>
         <pubDate>Sat, 16 Sep 2017 02:15:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/16/routing-static-di-mikrotik/</guid>
-        <description>A. PendahuluanPada kesempatan kali ini, saya akan memposting tentang pengimplemtasian routing static di mikrotik
-B. PengertianRouting static adalah menambahkan jalur routing tertentu secara manual. Mikrotik secara default akan membuat jalur routing otomatis (dynamic route) ketika kita menambahkan ip address pada interface. Lalu kenapa kita memerlukan static routing? Karena untuk menghubungkan perangkat network yang memilik ip segment (subnet) yang berbeda memerlukan sebuah perangkat yang mampu melakukan proses static routing.
-C. Latar belakangIngin menambah pengetahuan</description>
+        <description></description>
       </item>
     
       <item>
@@ -105,8 +81,7 @@ C. Latar belakangIngin menambah pengetahuan</description>
         <link>https://sibunglon.com/2017/09/15/routing-dynamic-rip-di-mikrotik/</link>
         <pubDate>Fri, 15 Sep 2017 02:05:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/15/routing-dynamic-rip-di-mikrotik/</guid>
-        <description>A. PendahuluanPada kesempatan kali ini, saya akan memposting tentang pengimplemtasian routing dynamic RIP di mikrotik
-B. PengertianRouting Information Protocol (RIP)&amp;nbsp;adalah sebuah protokol routing dinamis yang digunakan dalam jaringan LAN (Local Area Network) dan WAN (Wide Area Network). Oleh karena itu protokol ini diklasifikasikan sebagai Interior Gateway Protocol (IGP). Protokol ini menggunakan algoritma Distance-Vector Routing. Pertama kali didefinisikan dalam RFC 1058 (1988). Protokol ini telah dikembangkan beberapa kali, sehingga terciptalah RIP Versi 2.</description>
+        <description></description>
       </item>
     
       <item>
@@ -114,8 +89,7 @@ B. PengertianRouting Information Protocol (RIP)&amp;nbsp;adalah sebuah protokol 
         <link>https://sibunglon.com/2017/09/12/routing-dynamic-ospf-di-mikrotik/</link>
         <pubDate>Tue, 12 Sep 2017 12:36:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/12/routing-dynamic-ospf-di-mikrotik/</guid>
-        <description>A. PendahuluanPada kesempatan kali ini, yang saya posting yaitu membuat routing dynamic OSPF di mikrotik
-B. PengertianOpen Shortest Path First (OSPF)&amp;nbsp;adalah sebuah protokol routing otomatis (Dynamic Routing) yang mampu menjaga, mengatur dan mendistribusikan informasi routing antar network mengikuti setiap perubahan jaringan secara dinamis. Pada OSPF dikenal sebuah istilah&amp;nbsp;Autonomus System&amp;nbsp;(AS) yaitu sebuah gabungan dari beberapa jaringan yang sifatnya routing dan memiliki kesamaan metode serta policy pengaturan network, yang semuanya dapat dikendalikan oleh network administrator.</description>
+        <description></description>
       </item>
     
       <item>
@@ -123,13 +97,7 @@ B. PengertianOpen Shortest Path First (OSPF)&amp;nbsp;adalah sebuah protokol rou
         <link>https://sibunglon.com/2017/09/11/mengupgrade-version-mikrotik-routerboard/</link>
         <pubDate>Mon, 11 Sep 2017 11:20:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/11/mengupgrade-version-mikrotik-routerboard/</guid>
-        <description>A. PendahuluanPada kesempatan kali ini saya akan memposting bagaimana sih cara mengupgrade versi mikrotik.
-B. Latar belakangIngin mendapatkan fitur baru pada versi baru sistem mikrotik
-C. TujuanAgar pengunjung blog dapat mengetahui bagaimana cara mengupgrade versi mikrotik
-D. Hasil yang diharapkanDapat mengikuti tahapan kerjanya
-E. Alat dan bahanmikrotikakses internetkabel UTP
-F. Jangka waktu pelaksanaanWaktu yang dibutuhkan tergantung dari koneksi yang digunakan
-G. Langkah kerja1. Hubungkan mikrotik kemudian buka winbox untuk mengkonfigurasi mikrotik tersebut2.</description>
+        <description></description>
       </item>
     
       <item>
@@ -137,13 +105,7 @@ G. Langkah kerja1. Hubungkan mikrotik kemudian buka winbox untuk mengkonfigurasi
         <link>https://sibunglon.com/2017/09/09/memblokir-situs-yang-mempunyai-banyak-ip-dengan-mikrotik/</link>
         <pubDate>Sat, 09 Sep 2017 15:27:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/09/memblokir-situs-yang-mempunyai-banyak-ip-dengan-mikrotik/</guid>
-        <description>A. PendahuluanPada kesempatan kali ini, saya ingin berbagi tentang memblokir situs yang mempunyai banyak ip dengan mikrotik.
-
-B. PengertianSitus web&amp;nbsp;(bahasa Inggris:&amp;nbsp;website) adalah suatu&amp;nbsp;halaman web&amp;nbsp;yang saling berhubungan yang umumnya berada pada&amp;nbsp;peladen&amp;nbsp;yang sama berisikan kumpulan informasi yang disediakan secara perorangan, kelompok, atau&amp;nbsp;organisasi.
-
-C. Latar belakangAda beberapa situs yang mempunyai banyak ip, sehingga bila ip yang satunya di block dia masih bisa diakses karena punya ip yang lain.
-
-D. TujuanDapat memblokir ip dengan cara cerdas</description>
+        <description></description>
       </item>
     
       <item>
@@ -151,8 +113,7 @@ D. TujuanDapat memblokir ip dengan cara cerdas</description>
         <link>https://sibunglon.com/2017/09/09/membuat-interface-bridge-dan-menambahkan-ethernet-ke-bridge/</link>
         <pubDate>Sat, 09 Sep 2017 15:22:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/09/membuat-interface-bridge-dan-menambahkan-ethernet-ke-bridge/</guid>
-        <description>A. PendahuluanPada kesempata kali ini saya akan memposting bagaimana membuat interface bridge kemudian menambahkan ethernet ke bridge
-B. PengertianJembatan jaringan (bahasa Inggris:&amp;nbsp;Network bridge) adalah sebuah komponen jaringan yang digunakan untuk memperluas jaringan atau membuat sebuah segmen jaringan. Jembatan jaringan beroperasi di dalam lapisan data-link pada model OSI. Jembatan juga dapat digunakan untuk menggabungkan dua buah media jaringan yang berbeda, seperti halnya antara media kabel Unshielded Twisted-Pair (UTP) dengan kabel serat optik atau dua buah arsitektur jaringan yang berbeda, seperti halnya antara Token Ring dan Ethernet.</description>
+        <description></description>
       </item>
     
       <item>
@@ -160,8 +121,7 @@ B. PengertianJembatan jaringan (bahasa Inggris:&amp;nbsp;Network bridge) adalah 
         <link>https://sibunglon.com/2017/09/08/konfigurasi-dasar-mikrotik-dengan-sumber-internet-dari-ip-static/</link>
         <pubDate>Fri, 08 Sep 2017 14:58:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/08/konfigurasi-dasar-mikrotik-dengan-sumber-internet-dari-ip-static/</guid>
-        <description>A. PendahuluanPada kali ini, saya akan memposting kembali konfigurasi dasar mikrotik tetapi dari ip static
-B. PengertianMikrotik&amp;nbsp;adalah&amp;nbsp;sebuah perusahaan yang bergerak di bidang produksi perangkat keras (hardware) dan perangkat lunak (Software) yang berhubungan dengan sistem jaringan komputer yang berkantor pusat di Latvia, bersebelahan dengan Rusia. Produk hardware unggulan Mikrotik berupa Router, Switch, Antena, dan perangkat pendukung lainnya. Sedangkan produk Software unggulan Mikrotik adalah MikroTik RouterOS.MikroTik routerboad&amp;nbsp;adalah&amp;nbsp;router embedded produk dari mikrotik. Routerboard seperti sebuah pc mini yang terintegrasi karena dalam satu board tertanam prosesor, ram, rom, dan memori flash.</description>
+        <description></description>
       </item>
     
       <item>
@@ -169,9 +129,7 @@ B. PengertianMikrotik&amp;nbsp;adalah&amp;nbsp;sebuah perusahaan yang bergerak d
         <link>https://sibunglon.com/2017/09/07/mengatasi-kursor-winbox-mikrotik-meloncat-loncat-sewaktu-mengetik/</link>
         <pubDate>Thu, 07 Sep 2017 14:42:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/07/mengatasi-kursor-winbox-mikrotik-meloncat-loncat-sewaktu-mengetik/</guid>
-        <description>A. PendahuluanPernahkan anda mengalami ini? atau hanya pernah lihat begini?
-Pada postingan kali, saya akan sharing bagaimana&amp;nbsp;mengatasi kursor winbox mikrotik meloncat-loncat sewaktu mengetik.
-B. Pengertiankursor&amp;nbsp;adalah suatu petunjuk atau indikator posisi pada&amp;nbsp;monitor komputer&amp;nbsp;atau&amp;nbsp;peranti tampilan&amp;nbsp;lain yang akan merespons&amp;nbsp;masukan&amp;nbsp;dari suatu masukan teks atau&amp;nbsp;peranti penunjuk. Kursor secara umum dapat dibagi menjadi dua jenis: kursor teks dan kursor tetikus.&amp;nbsp;Kursor teks&amp;nbsp;adalah petunjuk pada&amp;nbsp;antarmuka baris perintah&amp;nbsp;(CLI) atau&amp;nbsp;editor teks&amp;nbsp;yang menunjukkan tempat teks akan diletakkan sewaktu dimasukkan (titik penyisipan) dan biasanya berupa garis bawah, segi empat, atau garis vertikal yang dapat berkedip atau stabil.</description>
+        <description></description>
       </item>
     
       <item>
@@ -179,11 +137,7 @@ B. Pengertiankursor&amp;nbsp;adalah suatu petunjuk atau indikator posisi pada&am
         <link>https://sibunglon.com/2017/09/06/memblokir-1-ip-address-client-agar-tidak-dapat-terkoneksi-ke-internet-dengan-simple-logika-mode/</link>
         <pubDate>Wed, 06 Sep 2017 14:26:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/06/memblokir-1-ip-address-client-agar-tidak-dapat-terkoneksi-ke-internet-dengan-simple-logika-mode/</guid>
-        <description>A. PendahuluanPada praktek ini, saya akan memposting bagaimana memblokir ip address dari client agar tidak dapat terhubung ke internet tetapi masing menggunakan firewall simple logika
-B. PengertianFirewall simple logis/logika adalah konfigurasi firewall secara logis sehingga bisa lebih mudah dipahami karena lebih manusiawi
-C. Latar belakangIngin menambah ilmu kemudian untuk disharing
-D. TujuanAgar client tidak bisa terhubung ke internet apabila ia mendapatkan ip yang telah diblokir
-E. Hasil yang diharapkanDapat melakukan konfigurasi dengan cepat, baik, dan benar</description>
+        <description></description>
       </item>
     
       <item>
@@ -191,9 +145,7 @@ E. Hasil yang diharapkanDapat melakukan konfigurasi dengan cepat, baik, dan bena
         <link>https://sibunglon.com/2017/09/05/memblokir-ekstensi-file-pada-mikrotik-dengan-web-proxy/</link>
         <pubDate>Tue, 05 Sep 2017 13:02:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/05/memblokir-ekstensi-file-pada-mikrotik-dengan-web-proxy/</guid>
-        <description>A. PendahuluanPada kesempatan ini, yang saya posting tentang mirkotik eh mikrotik tepatnya memproxy ekstensi file tertentu agar tidak bisa diakses oleh client.
-
-B. PengertianSecara umum arti dari proxy adalah sebuah komputer server atau program komputer yang dapat bertindak sebagai komputer lainnya untuk melakukan request terhadap content dari Internet atau intranet. Dengan kata lain proxy merupakan sebuah media keamanan bagi akses jaringan internet kita.&amp;nbsp;Terdapat beberapa macam tipe proxy, diantaranya SSL Proxy, Web Proxy, Intercepting Proxy, Reverse Proxy, dll.</description>
+        <description></description>
       </item>
     
       <item>
@@ -201,12 +153,7 @@ B. PengertianSecara umum arti dari proxy adalah sebuah komputer server atau prog
         <link>https://sibunglon.com/2017/09/05/memblokir-ip-situs-di-firewall-dengan-simple-logika-mode/</link>
         <pubDate>Tue, 05 Sep 2017 10:00:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/05/memblokir-ip-situs-di-firewall-dengan-simple-logika-mode/</guid>
-        <description>A. PendahuluanPada kesempatan kali ini saya akan memposting tentang firewall tetapi dengan metode simple logika
-B. PengertianFirewall simple logis/logika adalah konfigurasi firewall secara logis sehingga bisa lebih mudah dipahami karena lebih manusiawi
-C. Latar belakangIngin menambah ilmu kemudian untuk disharing
-D. TujuanAgar client tidak dapat membuka situs yang telah diblokir
-E. Hasil yang diharapkanDapat melakukan konfigurasi dengan cepat, baik, dan benar
-F. Alat dan bahanMikrotikAkses internetLaptop/pcG. Jangka waktu pelaksanaanWaktu yang dibutuhkan sekitar 5-15 menit</description>
+        <description></description>
       </item>
     
       <item>
@@ -214,8 +161,7 @@ F. Alat dan bahanMikrotikAkses internetLaptop/pcG. Jangka waktu pelaksanaanWaktu
         <link>https://sibunglon.com/2017/09/04/memblokir-situs-dengan-layer-7-protocol/</link>
         <pubDate>Mon, 04 Sep 2017 14:00:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/04/memblokir-situs-dengan-layer-7-protocol/</guid>
-        <description>A. PendahuluanPada kesempatan ini saya akan memposting salah satu fitur yang ada di firewall yaitu layer 7 protocol.
-B. PengertianProtokol Layer7 adalah metode untuk mencari pola dalam ICMP / TCP / UDP stream, atau istilah lainnya regex pattern.&amp;nbsp;Cara kerja L7 adalah mencocokan (mathcer) 10 paket koneksi pertama atau 2KB koneksi pertama dan mencari pola/pattern data yang sesuai dengan yang tersedia. Jika pola ini tidak ditemukan dalam data yang tersedia, matcher tidak memeriksa lebih lanjut.</description>
+        <description></description>
       </item>
     
       <item>
@@ -223,9 +169,7 @@ B. PengertianProtokol Layer7 adalah metode untuk mencari pola dalam ICMP / TCP /
         <link>https://sibunglon.com/2017/08/29/apa-itu-hotspot/</link>
         <pubDate>Tue, 29 Aug 2017 12:57:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/29/apa-itu-hotspot/</guid>
-        <description>A. Pengertian
-Area bersinyal (bahasa Inggris: Hotspot) merujuk pada tempat-tempat tertentu (biasanya tempat umum) yang memiliki layanan internet dengan menggunakan teknologi Wireless LAN, seperti pada perguruan tinggi, mal, plaza, perpustakaan, restoran ataupun bandar udara. Layanan internet seperti ini, ada yang berbayar dan yang tidak (gratis).
-Sejarah HotspotKonsep ini pertama kali dikemukakan pada tahun 1993 oleh Bret Stewart sewaktu konferensi Networld dan Interop, di San Fransisco. Dengan pemanfaatan teknologi ini, setiap orang dapat mengakses jaringan internet melalui komputer/laptop/HP/PDA yang mereka miliki di lokasi-lokasi area bersinyal ini tersedia, tentunya perangkat komputer/laptop/ponsel/PDA tersebut harus memiliki teknologi wi-fi.</description>
+        <description></description>
       </item>
     
       <item>
@@ -233,9 +177,7 @@ Sejarah HotspotKonsep ini pertama kali dikemukakan pada tahun 1993 oleh Bret Ste
         <link>https://sibunglon.com/2017/08/19/point-to-point-dengan-mikrotik/</link>
         <pubDate>Sat, 19 Aug 2017 21:37:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/19/point-to-point-dengan-mikrotik/</guid>
-        <description>A. PendahuluanPada postingan ini, akan di implentasikan bagaimana melakukan point to point (menembak wifi) menggunakan 2 buah mikroTik, dan step by stepnya akan di jelaskan sebagai berikut.
-B. PengertianWireless Point-to-Point (PTP) adalah koneksi komunikasi wireless antara dua titik, dimana satu client (station) terhubung dengan satu pemancar (AP) saja.
-C. Latar BelakangTidak ada koneksi internet dari kabel LAN jika melakukan praktek di tempat kost, karena mikroTik yang satunya ada di tempat praktek.</description>
+        <description></description>
       </item>
     
       <item>
@@ -243,10 +185,7 @@ C. Latar BelakangTidak ada koneksi internet dari kabel LAN jika melakukan prakte
         <link>https://sibunglon.com/2017/08/18/membangun-vpn-server-di-mikrotik/</link>
         <pubDate>Fri, 18 Aug 2017 14:00:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/18/membangun-vpn-server-di-mikrotik/</guid>
-        <description>A. PENDAHULUAN
-Selamat pagi/siang/malam. pada kesempatan ini saya akan sedikit memberikan atau mengshare mengenai VPN
-B. PENGERTIAN
-VPN adalah Virtual Private Network dimana VPN ini merupakan interkoneksi antar jaringan ( PC Client to LAN maupun LAN to LAN ) yang mana interkoneksi ini melalui jaringan Public ( Internet ) sehingga dengan VPN ini terjadi koneksi terselubung alias lorong atau Tunneling Connection sehingga data yang di akses ( data yang di kirim dan di terima ) benar-benar aman.</description>
+        <description>A. PENDAHULUANSelamat pagi/siang/malam. pada kesempatan ini saya akan sedikit memberikan atau mengshare mengenai VPNB. PENGERTIANVPN adalah Virtual Private Network dimana VPN ini merupakan interkoneksi antar jaringan ( PC Client to LAN maupun LAN to LAN ) yang mana interkoneksi ini melalui jaringan Public ( Internet ) sehingga dengan VPN ini terjadi koneksi terselubung alias lorong atau Tunneling Connection sehingga data yang di akses ( data yang di kirim dan di terima ) benar-benar aman.</description>
       </item>
     
       <item>
@@ -254,8 +193,7 @@ VPN adalah Virtual Private Network dimana VPN ini merupakan interkoneksi antar j
         <link>https://sibunglon.com/2017/08/08/implementasi-pppoe-client-mikrotik/</link>
         <pubDate>Tue, 08 Aug 2017 14:36:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/08/implementasi-pppoe-client-mikrotik/</guid>
-        <description>A. PENGERTIANPPPOE merupakan singkatan dari point-to-point protocol over Ethernet yang merupakan protokol dalam jaringan untuk menghubungkan komunikasi antara dua buah titik jaringan atau dua buah port ethernet dengan model tunneling (terowongan) dan juga sebagai virtual dial-up dalam jaringan. mikrotik adalah salah satu router yang mendukung konfigurasi pppoe server dan client, untuk itulah akan di tuliskan pada artikel ini tentang bagaimana membuat pppoe server dengan mikrotik.
-B. LATAR BELAKANGMikrotik adalah salah satu router yang mendukung konfigurasi pppoe server dan client, untuk itulah akan dituliskan pada artikel ini tentang bagaimana membuat pppoe server dengan mikrotik.</description>
+        <description></description>
       </item>
     
       <item>
@@ -263,9 +201,7 @@ B. LATAR BELAKANGMikrotik adalah salah satu router yang mendukung konfigurasi pp
         <link>https://sibunglon.com/2017/08/01/mengganti-login-page-jaringan-mikrotik-menggunakan-filezilla/</link>
         <pubDate>Tue, 01 Aug 2017 16:09:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/01/mengganti-login-page-jaringan-mikrotik-menggunakan-filezilla/</guid>
-        <description>Pendahuluan
-Login page adalah salah satu fitur mikroTik yang berfungsi ketika hostpot yang di aktifkan di mikroTik tidak mempunyai autentikasi pada SSIDnya, dengan kata lain setelah berhasil terhubung ke hotspot tersebut si pengguna akan diminta masuk ke login page untuk dapat mengakses internet. Login page tersebut dapat diedit dengan berbagai cara, sesuai yang membuat anda nyaman :D
-Maksud dan TujuanTujuan dari postingan ini agar si pembaca dapat mempraktekkan dan mengetahui bagaimana mengganti login page hotspot mikroTik tanpa harus membuka winbox.</description>
+        <description>PendahuluanLogin page adalah salah satu fitur mikroTik yang berfungsi ketika hostpot yang di aktifkan di mikroTik tidak mempunyai autentikasi pada SSIDnya, dengan kata lain setelah berhasil terhubung ke hotspot tersebut si pengguna akan diminta masuk ke login page untuk dapat mengakses internet. Login page tersebut dapat diedit dengan berbagai cara, sesuai yang membuat anda nyaman :DMaksud dan TujuanTujuan dari postingan ini agar si pembaca dapat mempraktekkan dan mengetahui bagaimana mengganti login page hotspot mikroTik tanpa harus membuka winbox.</description>
       </item>
     
       <item>
@@ -273,9 +209,7 @@ Maksud dan TujuanTujuan dari postingan ini agar si pembaca dapat mempraktekkan d
         <link>https://sibunglon.com/2017/07/28/menggunakan-1-akun-mikrotik-untuk-banyak-pengguna/</link>
         <pubDate>Fri, 28 Jul 2017 15:11:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/28/menggunakan-1-akun-mikrotik-untuk-banyak-pengguna/</guid>
-        <description>PendahuluanPada postingan sebelumnya telah disebutkan bahwa mikroTik mempunyai banyak fitur, nah pada postingan ini akan di implementasikan bagaimana agar 1 akun dapat digunakan banyak pengguna. Lalu bagaimana mengaktifkan fitur ini?
-Maksud dan TujuanPenggunaan fitur ini dimaksudkan agar 1 profile user bisa digunakan secara bersama-sama oleh beberapa user sekaligus. Dengan demikian, setiap user yang ingin terhubung hanya perlu memiliki satu username dan password untuk dipakai bersama-sama.
-Alat dan Bahan1. MikroTik yang telah dikonfigurasi hotspot dan akses internetnya2.</description>
+        <description></description>
       </item>
     
       <item>
@@ -283,7 +217,7 @@ Alat dan Bahan1. MikroTik yang telah dikonfigurasi hotspot dan akses internetnya
         <link>https://sibunglon.com/2017/07/27/konfigurasi-dasar-mikrotik-untuk-sharing-internet-menggunakan-hotspot/</link>
         <pubDate>Thu, 27 Jul 2017 14:37:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/27/konfigurasi-dasar-mikrotik-untuk-sharing-internet-menggunakan-hotspot/</guid>
-        <description>Pendahuluan&amp;nbsp;Pada postingan ini, saya akan mengimplementasikan atau mengkonfigurasi routerboard mikroTik untuk tahap pemula (konfigurasi dasar mikroTik&amp;nbsp;routerboard).Mikrotik&amp;nbsp;adalah&amp;nbsp;sebuah perusahaan yang bergerak di bidang produksi perangkat keras (hardware) dan perangkat lunak (Software) yang berhubungan dengan sistem jaringan komputer yang berkantor pusat di Latvia, bersebelahan dengan Rusia. Produk hardware unggulan Mikrotik berupa Router, Switch, Antena, dan perangkat pendukung lainnya. Sedangkan produk Software unggulan Mikrotik adalah MikroTik RouterOS.MikroTik routerboad&amp;nbsp;adalah&amp;nbsp;router embedded produk dari mikrotik. Routerboard seperti sebuah pc mini yang terintegrasi karena dalam satu board tertanam prosesor, ram, rom, dan memori flash.</description>
+        <description></description>
       </item>
     
       <item>
@@ -291,8 +225,7 @@ Alat dan Bahan1. MikroTik yang telah dikonfigurasi hotspot dan akses internetnya
         <link>https://sibunglon.com/2017/07/26/bagaimana-mengganti-login-page-jaringan-mikrotik/</link>
         <pubDate>Wed, 26 Jul 2017 14:34:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/26/bagaimana-mengganti-login-page-jaringan-mikrotik/</guid>
-        <description>PendahuluanMikroTik routerboard adalah salah satu router yang mempunyai login page(tampilan awal) untuk koneksi hotspot. Login page berfungsi jika hotspot tersebut tidak mempunyai autentikasi, lalu siapapun yang telah konek di hotspot tersebut dan ingin melakukan browsing maka secara otomatis dia akan teralihkan ke login page untuk keperluan identitas agar ia dapat melanjutkan browsingnya.
-Maksud dan TujuanDengan login page yang telah disiapkan dapat membatasi siapa saja dapat mendapat akses internet dari mikroTik meskipun sebelumnya ia sudah konek ke wifi tersebut.</description>
+        <description></description>
       </item>
     
       <item>
@@ -300,11 +233,7 @@ Maksud dan TujuanDengan login page yang telah disiapkan dapat membatasi siapa sa
         <link>https://sibunglon.com/2017/07/25/bagaimana-melimit-waktu-internet-pengguna-menggunakan-mikrotik/</link>
         <pubDate>Tue, 25 Jul 2017 14:12:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/25/bagaimana-melimit-waktu-internet-pengguna-menggunakan-mikrotik/</guid>
-        <description>Pendahuluan
-Mikrotik adalah sebuah produk yang bisa difungsikan sebagai router, hotspot, dan yang lainnya. Untuk info lebih lengkap bisa baca&amp;nbsp;disini. MikroTik mempunyai banyak fitur, salah satunya yaitu dapat membatasi berapa lama si user dapat terkoneksi dengan internet dengan mikroTik yang kita punya, lalu bagaimana mengaktifkan fitur tersebut? Nah, pada postingan kali ini akan dijelaskan bagaimana mengaktifkan fitur tersebut.
-
-Maksud dan Tujuan
-Tujuan pembatasannya itu tergantung dimana penempatan akses internet dari mikroTik itu sendiri.</description>
+        <description>PendahuluanMikrotik adalah sebuah produk yang bisa difungsikan sebagai router, hotspot, dan yang lainnya. Untuk info lebih lengkap bisa baca disini. MikroTik mempunyai banyak fitur, salah satunya yaitu dapat membatasi berapa lama si user dapat terkoneksi dengan internet dengan mikroTik yang kita punya, lalu bagaimana mengaktifkan fitur tersebut? Nah, pada postingan kali ini akan dijelaskan bagaimana mengaktifkan fitur tersebut.Maksud dan TujuanTujuan pembatasannya itu tergantung dimana penempatan akses internet dari mikroTik itu sendiri.</description>
       </item>
     
       <item>
@@ -312,11 +241,7 @@ Tujuan pembatasannya itu tergantung dimana penempatan akses internet dari mikroT
         <link>https://sibunglon.com/2017/07/25/apa-itu-mikrotik/</link>
         <pubDate>Tue, 25 Jul 2017 09:30:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/25/apa-itu-mikrotik/</guid>
-        <description>A. Pengertian MikroTik
-MikroTik RouterOS™ adalah sistem operasi dan perangkat lunak yang dapat digunakan untuk menjadikan komputer manjadi router network yang handal, mencakup berbagai fitur yang dibuat untuk ip network dan jaringan wireless, cocok digunakan oleh ISP dan provider hotspot.
-
-B. Sejarah Mikrotik
-MikroTikls [dengan trade name MikroTik®] didirikan tahun 1995 bertujuan mengembangkan sistem ISP dengan wireless. MikroTikls saat ini telah mendukung sistem ISP dengan wireless untuk jalur data internet di banyak negara, antara lain Iraq, Kosovo, Sri Lanka, Ghana dan banyak negara lainnya.</description>
+        <description></description>
       </item>
     
   </channel>

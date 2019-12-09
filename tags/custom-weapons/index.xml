@@ -28,7 +28,7 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2018/11/06/gerakan-multi-touch-macbook-di-linux/</link>
         <pubDate>Tue, 06 Nov 2018 15:14:00 +0000</pubDate>
         <guid>https://sibunglon.com/2018/11/06/gerakan-multi-touch-macbook-di-linux/</guid>
-        <description>Jika Anda pernah menggunakan MacBook, pasti tahu betapa menyenangkan dan bermanfaatnya gerakan trackpad untuk mengubah desktop, menampilkan semua jendela yang terbuka, dan pinch-to-zoom.&amp;nbsp;Di linux anda juga menggunakan fitur ini dengan bantuan aplikasi fusuma, berikut installasi dan konfigurasinya.1. Berikan izin untuk membaca perangkat touchpadsudo gpasswd -a $USER input2.&amp;nbsp;Install libinput-toolssudo apt-get install libinput-tools3. Install Fusumasudo gem install fusuma4. Instal xdotool (opsional)sudo apt-get install xdotool5. Sesuaikan gesture dengan membuat direktori fusuma dan buat file konfigurasinyamkdir -p ~/.</description>
+        <description></description>
       </item>
     
       <item>
@@ -36,8 +36,7 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/10/21/mempercantik-tampilan-terminal-server/</link>
         <pubDate>Sat, 21 Oct 2017 02:27:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/21/mempercantik-tampilan-terminal-server/</guid>
-        <description>A. PendahuluanPada kesempatan ini saya ingin sharing tentang bagaimana mempercantik atau apalah agar tampilan shell linux tidak polos-polos begitu saja.
-B. PengertianApa itu shell ? shell adalah program (penterjemah perintah) yang menjembatani user dengan sistem operasi dalam hal ini kernel (inti sistem operasi), umumnya shell menyediakan prompt sebagai user interface, tempat dimana user mengetikkan perintah-perintah yang diinginkan baik berupa perintah internal shell (internal command), ataupun perintah eksekusi suatu file progam (eksternal command), selain itu shell memungkinkan user menyusun sekumpulan perintah pada sebuah atau beberapa file untuk dieksekusi sebagai program.</description>
+        <description></description>
       </item>
     
       <item>
@@ -45,9 +44,7 @@ B. PengertianApa itu shell ? shell adalah program (penterjemah perintah) yang me
         <link>https://sibunglon.com/2017/09/07/mengatasi-kursor-winbox-mikrotik-meloncat-loncat-sewaktu-mengetik/</link>
         <pubDate>Thu, 07 Sep 2017 14:42:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/07/mengatasi-kursor-winbox-mikrotik-meloncat-loncat-sewaktu-mengetik/</guid>
-        <description>A. PendahuluanPernahkan anda mengalami ini? atau hanya pernah lihat begini?
-Pada postingan kali, saya akan sharing bagaimana&amp;nbsp;mengatasi kursor winbox mikrotik meloncat-loncat sewaktu mengetik.
-B. Pengertiankursor&amp;nbsp;adalah suatu petunjuk atau indikator posisi pada&amp;nbsp;monitor komputer&amp;nbsp;atau&amp;nbsp;peranti tampilan&amp;nbsp;lain yang akan merespons&amp;nbsp;masukan&amp;nbsp;dari suatu masukan teks atau&amp;nbsp;peranti penunjuk. Kursor secara umum dapat dibagi menjadi dua jenis: kursor teks dan kursor tetikus.&amp;nbsp;Kursor teks&amp;nbsp;adalah petunjuk pada&amp;nbsp;antarmuka baris perintah&amp;nbsp;(CLI) atau&amp;nbsp;editor teks&amp;nbsp;yang menunjukkan tempat teks akan diletakkan sewaktu dimasukkan (titik penyisipan) dan biasanya berupa garis bawah, segi empat, atau garis vertikal yang dapat berkedip atau stabil.</description>
+        <description></description>
       </item>
     
   </channel>

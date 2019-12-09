@@ -39,7 +39,7 @@
   <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4194642&101" alt="" border="0"></a></noscript>
   
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.60.1" />
 
   
   
@@ -76,8 +76,6 @@ Besides the errors in this article, this time I found a different error which wa
   <meta itemprop="name" content="First Contribution to Open Source Project">
 <meta itemprop="description" content="Error Get Incommon Server CA (Certificate Authority) When Installing Open edX In the previous article or that is here, there was a quick acquaintance session with Open edX while playing with Open edX (Open edX installation). And there are also articles about errors during Open edX installation, can be seen in this article.
 Besides the errors in this article, this time I found a different error which was an error in getting an Authority Certificate.">
-
-
 <meta itemprop="datePublished" content="2019-07-14T00:25:00&#43;07:00" />
 <meta itemprop="dateModified" content="2019-07-14T00:25:00&#43;07:00" />
 <meta itemprop="wordCount" content="458">
@@ -85,7 +83,6 @@ Besides the errors in this article, this time I found a different error which wa
 
 
 <meta itemprop="keywords" content="Ayo Belajar Linux,Open edX,Error,Ngoprek," />
-
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="First Contribution to Open Source Project"/>
 <meta name="twitter:description" content="Error Get Incommon Server CA (Certificate Authority) When Installing Open edX In the previous article or that is here, there was a quick acquaintance session with Open edX while playing with Open edX (Open edX installation). And there are also articles about errors during Open edX installation, can be seen in this article.
@@ -115,26 +112,15 @@ Besides the errors in this article, this time I found a different error which wa
         <time datetime="2019-07-14 00:25:00&#43;0700">2019-07-14</time></small>
       <h1>First Contribution to Open Source Project</h1>
     </header>
-    <section>
-
-<h3 id="error-get-incommon-server-ca-certificate-authority-when-installing-open-edx">Error Get Incommon Server CA (Certificate Authority) When Installing Open edX</h3>
-
+    <section><h3 id="error-get-incommon-server-ca-certificate-authority-when-installing-open-edx">Error Get Incommon Server CA (Certificate Authority) When Installing Open edX</h3>
 <p>In the previous article or that is <a href="https://sibunglon.com/2019/07/13/install-open-edx-using-method-native-installation-ubuntu-16.04/">here</a>, there was a quick acquaintance session with Open edX while playing with Open edX (Open edX installation). And there are also articles about errors during Open edX installation, can be seen in this <a href="https://sibunglon.com/2019/07/13/open-edx-error-create-service-worker-users/">article</a>.</p>
-
 <p>Besides the errors in <a href="https://sibunglon.com/2019/07/13/open-edx-error-create-service-worker-users/">this article</a>, this time I found a different error which was an error in getting an Authority Certificate. In this error, fortunately I did not use much time to solve this problem.</p>
-
 <p>When I was looking for a solution to this problem, in the near future (July 2019) there was someone who managed to install Open edX but there were also those who failed to install Open edX. Hmmm, when I was confused, why is that? Okay, the investigation continues 😉 It turns out that the people who succeeded in installing Open edX are those who use the tag <code>open-release/ironwood.master</code>, and there too I just thought the Ansible took the Authority Certificate where? After that, I check where the Authority Certificate was taken, I visit the place and it turns out that the website has an error. Ok, from here, I make sure that that is the reason, followed by checking the Ansible script on the <code>open-release/hawthorn.master</code> branch in the GitHub repository and it turns out that someone changed the External script, the step to get the Authority Certificate removed so that the Open edX installation process was successful and smooth.</p>
-
 <p>Hmmm because I want Open edX to tag <code>open-release/hawthorn.master</code>, so I clone the repositories then delete the steps to get the Authority Certificate, and make a pull request to the repository <em>edx/configuration</em> 🤣</p>
-
 <p>Just waiting for a few hours, my pull request approved after that I immediately tried the Open edX installation tag <code>open-release/hawthorn.master</code>, and jrengg jrengg jrengg i succeeded installs Open edX tagged <code>open-release/hawthorn.master</code>  🥳🥳. And the next day people who experienced the same problem as I found, had also successfully installed Open edX  <code>open-release/hawthorn.master</code>.</p>
-
 <p>Oh yeah, the error I mean can be seen on the <a href="https://paste.ubuntu.com/p/Vt9f9xPq4D/">Pastebin Ubuntu</a> page.</p>
-
-<p>By the way, this was my first contribution to the Open Source project, and the pull request at that time was immediately approved. There should be documents that need to be signed and sent to the project&rsquo;s main team so that the pull request can be approved, but I don&rsquo;t know why my pull request was approved.</p>
-
+<p>By the way, this was my first contribution to the Open Source project, and the pull request at that time was immediately approved. There should be documents that need to be signed and sent to the project's main team so that the pull request can be approved, but I don't know why my pull request was approved.</p>
 <p>A few months later when I made another pull request, I was immediately asked to send the document that I meant earlier, and this was the first time I also sent a document to someone overseas.</p>
-
 <p>It feels good, there are small and easy things that I do but are beneficial for others.</p>
 </section>
     <footer>

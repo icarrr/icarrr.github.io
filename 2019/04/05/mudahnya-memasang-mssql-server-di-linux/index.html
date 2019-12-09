@@ -39,7 +39,7 @@
   <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4194642&101" alt="" border="0"></a></noscript>
   
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.60.1" />
 
   
   
@@ -74,8 +74,6 @@
   
   <meta itemprop="name" content="Mudahnya Memasang MSSQL Server di Linux">
 <meta itemprop="description" content="Microsoft SQL Server di Linux? Diantara para pembaca mungkin ada yang kaget atau apa kalau produknya Microsoft bisa jalan di linux apalagi tanpa emulator ataupun tools lainnya. Yah itu bisa saja karena mungkin ada yang kemakan omongan bahwa produk Microsoft itu non open source. Dengan adanya MSSQL Server di linux jangan sampai ada terlalu kaget, positif thinking aja mungkin om Bill Gates udah mulai mengopen sourcekan produknya karena kasihan banyak yang berdosa karena menjadi pak tani gelapnya Microsoft😅">
-
-
 <meta itemprop="datePublished" content="2019-04-05T18:08:14&#43;07:00" />
 <meta itemprop="dateModified" content="2019-04-05T18:08:14&#43;07:00" />
 <meta itemprop="wordCount" content="332">
@@ -83,7 +81,6 @@
 
 
 <meta itemprop="keywords" content="Ayo Belajar Linux,Microsoft SQL Server,Installasi,Ngoprek," />
-
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Mudahnya Memasang MSSQL Server di Linux"/>
 <meta name="twitter:description" content="Microsoft SQL Server di Linux? Diantara para pembaca mungkin ada yang kaget atau apa kalau produknya Microsoft bisa jalan di linux apalagi tanpa emulator ataupun tools lainnya. Yah itu bisa saja karena mungkin ada yang kemakan omongan bahwa produk Microsoft itu non open source. Dengan adanya MSSQL Server di linux jangan sampai ada terlalu kaget, positif thinking aja mungkin om Bill Gates udah mulai mengopen sourcekan produknya karena kasihan banyak yang berdosa karena menjadi pak tani gelapnya Microsoft😅"/>
@@ -112,22 +109,13 @@
         <time datetime="2019-04-05 18:08:14&#43;0700">2019-04-05</time></small>
       <h1>Mudahnya Memasang MSSQL Server di Linux</h1>
     </header>
-    <section>
-
-<h3 id="microsoft-sql-server-di-linux">Microsoft SQL Server di Linux?</h3>
-
+    <section><h3 id="microsoft-sql-server-di-linux">Microsoft SQL Server di Linux?</h3>
 <p>Diantara para pembaca mungkin ada yang kaget atau apa kalau produknya Microsoft bisa jalan di linux apalagi tanpa emulator ataupun tools lainnya. Yah itu bisa saja karena mungkin ada yang kemakan omongan bahwa produk Microsoft itu <strong>non open source</strong>. Dengan adanya MSSQL Server di linux jangan sampai ada terlalu kaget, positif thinking aja mungkin om <strong>Bill Gates</strong> udah mulai mengopen sourcekan produknya karena kasihan banyak yang berdosa karena menjadi <strong>pak tani</strong> gelapnya Microsoft😅</p>
-
 <p><strong>Microsoft SQL Server (MSSQL Server)</strong> adalah sebuah sistem manajemen basis data relasional produk Microsoft. Bahasa kueri utamanya adalah Transact-SQL yang merupakan implementasi dari SQL standar ANSI/ISO yang digunakan oleh Microsoft dan Sybase. Dimulai dengan SQL Server 2017, SQL Server mulai berjalan di Linux.</p>
-
 <h4 id="supported-platforms">Supported Platforms</h4>
-
 <p>SQL Server 2017 didukung pada Red Hat Enterprise Linux (RHEL), SUSE Linux Enterprise Server (SLES), dan Ubuntu. MSSQL Server ini juga didukung sebagai Docker image, yang dapat berjalan di Docker untuk Linux atau Docker untuk Windows / Mac.</p>
-
 <h4 id="system-requirements">System Requirements</h4>
-
 <p>Untuk menjalankan MSSQL Server di linux, ada persyaratan yang harus dipenuhi yaitu:</p>
-
 <table>
 <thead>
 <tr>
@@ -135,79 +123,52 @@
 <th align="left">2 GB</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td align="left"><strong>File System</strong></td>
 <td align="left"><strong>XFS</strong>or<strong>EXT4</strong>(other file systems, such as <strong>BTRFS</strong>, are unsupported)</td>
 </tr>
-
 <tr>
 <td align="left"><strong>Disk space</strong></td>
 <td align="left">6 GB</td>
 </tr>
-
 <tr>
 <td align="left"><strong>Processor speed</strong></td>
 <td align="left">2 GHz</td>
 </tr>
-
 <tr>
 <td align="left"><strong>Processor cores</strong></td>
 <td align="left">2 cores</td>
 </tr>
-
 <tr>
 <td align="left"><strong>Processor type</strong></td>
 <td align="left">x64-compatible only</td>
 </tr>
 </tbody>
 </table>
-
 <h3 id="bermain-dengan-mssql-server-di-linux">Bermain Dengan MSSQL Server di Linux</h3>
-
 <ul>
-<li>Installasi di CentOS dan saudara sepaket manajernya</li>
-</ul>
-
+<li>
+<p>Installasi di CentOS dan saudara sepaket manajernya</p>
 <p>1) Tambahkan repositori MSSQL Server ke sistem</p>
-
-<pre><code>  sudo curl -o /etc/yum.repos.d/mssql-server.repo https://packages.microsoft.com/config/rhel/7/mssql-server-2017.repo
-</code></pre>
-
-<p>2) Install MSSQL Server</p>
-
-<pre><code>  sudo yum install -y mssql-server
-</code></pre>
-
-<p>3) Setup MSSQL Server, Setup disini akan membuat password untuk akun SA karena secara default MSSQL Server menggunakan user SA</p>
-
-<pre><code>  sudo /opt/mssql/bin/mssql-conf setup
-</code></pre>
-
-<ul>
-<li>Installasi di Ubuntu dan saudara sepaket manajernya</li>
-</ul>
-
+<pre><code>sudo curl -o /etc/yum.repos.d/mssql-server.repo https://packages.microsoft.com/config/rhel/7/mssql-server-2017.repo
+</code></pre><p>2) Install MSSQL Server</p>
+<pre><code>sudo yum install -y mssql-server
+</code></pre><p>3) Setup MSSQL Server, Setup disini akan membuat password untuk akun SA karena secara default MSSQL Server menggunakan user SA</p>
+<pre><code>sudo /opt/mssql/bin/mssql-conf setup
+</code></pre></li>
+<li>
+<p>Installasi di Ubuntu dan saudara sepaket manajernya</p>
 <p>1) Tambahkan GPG key MSSQL Server ke sistem</p>
-
-<pre><code>  wget -qO- https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
-</code></pre>
-
-<p>2) Tambahkan repositori MSSQL Server ke sistem</p>
-
-<pre><code>  sudo add-apt-repository &quot;$(wget -qO- https://packages.microsoft.com/config/ubuntu/16.04/mssql-server-2017.list)&quot;
-</code></pre>
-
-<p>3) Install MSSQL Server</p>
-
-<pre><code>  sudo apt-get update &amp;&amp; sudo apt-get install -y mssql-server
-</code></pre>
-
-<p>4) Setup MSSQL Server, Setup disini akan membuat password untuk akun SA karena secara default MSSQL Server menggunakan user SA</p>
-
-<pre><code>  sudo /opt/mssql/bin/mssql-conf setup
-</code></pre>
+<pre><code>wget -qO- https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+</code></pre><p>2) Tambahkan repositori MSSQL Server ke sistem</p>
+<pre><code>sudo add-apt-repository &quot;$(wget -qO- https://packages.microsoft.com/config/ubuntu/16.04/mssql-server-2017.list)&quot;
+</code></pre><p>3) Install MSSQL Server</p>
+<pre><code>sudo apt-get update &amp;&amp; sudo apt-get install -y mssql-server
+</code></pre><p>4) Setup MSSQL Server, Setup disini akan membuat password untuk akun SA karena secara default MSSQL Server menggunakan user SA</p>
+<pre><code>sudo /opt/mssql/bin/mssql-conf setup
+</code></pre></li>
+</ul>
 </section>
     <footer>
       <hr>

@@ -16,9 +16,9 @@
         <pubDate>Thu, 31 Oct 2019 14:46:11 +0700</pubDate>
         <guid>https://sibunglon.com/2019/10/31/restart-network-adapter-windows-without-reboot/</guid>
         <description>Restarts a network adapter by disabling and then re-enabling the network adapter.
- Open PowerShell on Windows, after that find the name of the interface to be restarted. Use the following command line:
-netsh interface show interface Restart network adapter using the following command line:
-Restart-NetAdapter -Name &amp;#34;Ethernet x&amp;#34;  </description>
+  Open PowerShell on Windows, after that find the name of the interface to be restarted. Use the following command line:
+netsh interface show interface   Restart network adapter using the following command line:
+Restart-NetAdapter -Name &amp;#34;Ethernet x&amp;#34;   </description>
       </item>
     
       <item>
@@ -35,7 +35,7 @@ Saya butuh web service yang dapat diakses melalui 1 publik yaitu 1 ip publik hos
         <link>https://sibunglon.com/2017/10/09/comparison-of-platform-virtualization-software/</link>
         <pubDate>Mon, 09 Oct 2017 17:12:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/09/comparison-of-platform-virtualization-software/</guid>
-        <description>A. PENDAHULUANSeperti judulnya, yaitu adalah perbandingan dari beberapa vendor Virtualisasi Software.B. PENGERTIANadalah istilah umum yang mengacu kepada abstraksi dari sumber daya komputer. Definisi lainnya adalah &#34;sebuah teknik untuk menyembunyikan karakteristik fisik dari sumber daya komputer dari bagaimana cara sistem lain, aplikasi atau pengguna berinteraksi dengan sumber daya tersebut. Hal ini termasuk membuat sebuah sumber daya tunggal (seperti server, sebuah sistem operasi, sebuah aplikasi, atau peralatan penyimpanan terlihat berfungsi sebagai beberapa sumber daya logikal; atau dapat juga termasuk definisi untuk membuat beberapa sumber daya fisik (seperti beberapa peralatan penyimpanan atau server) terlihat sebagai satu sumber daya logikal.</description>
+        <description></description>
       </item>
     
       <item>
@@ -43,8 +43,7 @@ Saya butuh web service yang dapat diakses melalui 1 publik yaitu 1 ip publik hos
         <link>https://sibunglon.com/2017/08/31/menginstall-vmware-player-di-linux/</link>
         <pubDate>Thu, 31 Aug 2017 13:27:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/31/menginstall-vmware-player-di-linux/</guid>
-        <description>A. PendahuluanPada kesempatan ini, saya memposting bagaimana sih menginstal VMware Player di linux.
-B. PengertianVMware Player&amp;nbsp;adalah sebuah produk&amp;nbsp;perangkat lunak virtualisasi&amp;nbsp;berlisensi bebas dari&amp;nbsp;VMware, sebuah divisi dari&amp;nbsp;EMC Corporation. Produk ini bisa menjalankan&amp;nbsp;mesin virtualpengguna yang dibuat dari produk VMware yang lain tetapi tidak dapat membuat sebuah&amp;nbsp;mesin virtual&amp;nbsp;yang baru.namun limitasi ini dicabut di versi 3.0.0. sehingga dapat membuat sendiri tanpa harus memakai&amp;nbsp;VMware Workstation. Perangkat berlisensi bebas dan situs web seperti&amp;nbsp;EasyVMX&amp;nbsp;juga hadir untuk membuat&amp;nbsp;mesin virtual, menghapus, memanipulasi dan mengkonversikan disk&amp;nbsp;VMware&amp;nbsp;dan&amp;nbsp;floppy, membuat perizinan pengguna, menjalankan dan merawat&amp;nbsp;mesin virtual.</description>
+        <description></description>
       </item>
     
   </channel>
