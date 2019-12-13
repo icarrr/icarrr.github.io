@@ -5,22 +5,30 @@
     <description>Recent content in Posts on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Dec 2019 14:02:06 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 13 Dec 2019 14:31:55 +0700</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>How to Reset List of Trusted CA Certificates in RHEL 6 RHEL 7</title>
+        <link>https://sibunglon.com/2019/12/13/how-to-reset-list-of-trusted-ca-certificates-in-rhel-6-rhel-7/</link>
+        <pubDate>Fri, 13 Dec 2019 14:31:55 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/12/13/how-to-reset-list-of-trusted-ca-certificates-in-rhel-6-rhel-7/</guid>
+        <description>$ localTime=$(date &#39;+%Y%m%d_%H%M%S&#39; -d &amp;quot;$(curl -s --head http://google.com | grep ^Date: | sed &#39;s/Date: //g&#39;)&amp;quot;) $ mkdir -p $HOME/cert.bak $ rpm -Vv ca-certificates | awk &#39;$1!=&amp;quot;.........&amp;quot; &amp;amp;&amp;amp; $2!=&amp;quot;d&amp;quot; {system(&amp;quot;mv -v &amp;quot; $NF &amp;quot; $HOME/cert.bak&amp;quot;)}&#39; $ yum check-update ca-certificates; (($?==100)) &amp;amp;&amp;amp; yum update ca-certificates || yum reinstall -y ca-certificates $ find /etc/pki/ca-trust/source{,/anchors} -maxdepth 1 -not -type d -exec ls -1 {} + $ update-ca-trust extract $ mv $HOME/cert.bak $HOME/cert.bak-$localTime  </description>
+      </item>
     
       <item>
         <title>How to Ignore Invalid and Self Signed SSL Connection Errors With cURL and Wget</title>
         <link>https://sibunglon.com/2019/12/09/how-to-ignore-invalid-and-self-signed-ssl-connection-errors-with-curl-and-wget/</link>
         <pubDate>Mon, 09 Dec 2019 14:02:06 +0700</pubDate>
         <guid>https://sibunglon.com/2019/12/09/how-to-ignore-invalid-and-self-signed-ssl-connection-errors-with-curl-and-wget/</guid>
-        <description>If you use the curl or wget command and don&#39;t want SSL to be checked so that the process should occur, you can use options or add commands.
+        <description>If you use the curl or wget command and don&amp;rsquo;t want SSL to be checked so that the process should occur, you can use options or add commands.
 -) cURL
 $ curl -k url $ curl --insecure url $ curl --insecure -I url Example:
 $ curl -k https://sibunglon.com/image.png -) Wget
 $ wget --no-check-certificate url Example:
-$ wget --no-check-certificate https://sibunglon.com/image.png But if you don&#39;t want to use this additional option, just create a file whose contents can pass the SSL Certificate check.</description>
+$ wget --no-check-certificate https://sibunglon.com/image.png But if you don&amp;rsquo;t want to use this additional option, just create a file whose contents can pass the SSL Certificate check.</description>
       </item>
     
       <item>
@@ -39,7 +47,7 @@ $ tree Bash Bash ├── BackupRestore-dbOpenEdx │ ├── backup_mongo.s
         <link>https://sibunglon.com/2019/12/06/fixing-problems-on-installations-open-edx-ficus/</link>
         <pubDate>Fri, 06 Dec 2019 13:13:00 +0700</pubDate>
         <guid>https://sibunglon.com/2019/12/06/fixing-problems-on-installations-open-edx-ficus/</guid>
-        <description>What is the problem? Ficus is a name of Open edX release which was released on February 23, 2017. It&#39;s been quite a long time, and automatically uses old packages or packages that are still active at that time. Last September, my friends asked me to install Open edX Ficus, because it&#39;s an old version so I tried to install it in another VM, I made a VM on the Google Cloud Platform.</description>
+        <description>What is the problem? Ficus is a name of Open edX release which was released on February 23, 2017. It&amp;rsquo;s been quite a long time, and automatically uses old packages or packages that are still active at that time. Last September, my friends asked me to install Open edX Ficus, because it&amp;rsquo;s an old version so I tried to install it in another VM, I made a VM on the Google Cloud Platform.</description>
       </item>
     
       <item>
@@ -48,10 +56,8 @@ $ tree Bash Bash ├── BackupRestore-dbOpenEdx │ ├── backup_mongo.s
         <pubDate>Fri, 08 Nov 2019 14:24:33 +0700</pubDate>
         <guid>https://sibunglon.com/2019/11/08/istilah-istilah-yang-biasa-digunakan-orang-kantoran/</guid>
         <description>Sebagai salah satu orang yang biasa jalan-jalan ke kantor orang, disini saya ingin berbagi istilah-istilah yang biasa saya dengar atau saya temui di lingkungan pekerjaan mereka dan sudah saya tahu arti/maksudnya 😄
-Istilah-Istilah Umum:   PIC (Person In Charge)
- Istilah ini menunjukkan orang yang bertanggung jawab dalam menangani hal tertentu.
-   FYI (For Your Information)
- Isitilah ini biasanya digunakan dalam email untuk memberitahukan suatu informasi.</description>
+Istilah-Istilah Umum:  PIC (Person In Charge)   Istilah ini menunjukkan orang yang bertanggung jawab dalam menangani hal tertentu.
+  FYI (For Your Information)   Isitilah ini biasanya digunakan dalam email untuk memberitahukan suatu informasi.</description>
       </item>
     
       <item>
@@ -70,9 +76,9 @@ If before you did not do the postgres installation process, when backing up the 
         <pubDate>Thu, 31 Oct 2019 14:46:11 +0700</pubDate>
         <guid>https://sibunglon.com/2019/10/31/restart-network-adapter-windows-without-reboot/</guid>
         <description>Restarts a network adapter by disabling and then re-enabling the network adapter.
-  Open PowerShell on Windows, after that find the name of the interface to be restarted. Use the following command line:
-netsh interface show interface   Restart network adapter using the following command line:
-Restart-NetAdapter -Name &amp;#34;Ethernet x&amp;#34;   </description>
+ Open PowerShell on Windows, after that find the name of the interface to be restarted. Use the following command line:
+netsh interface show interface Restart network adapter using the following command line:
+Restart-NetAdapter -Name &amp;#34;Ethernet x&amp;#34;  </description>
       </item>
     
       <item>
@@ -80,8 +86,8 @@ Restart-NetAdapter -Name &amp;#34;Ethernet x&amp;#34;   </description>
         <link>https://sibunglon.com/2019/07/15/create-new-super-user-for-access-django-admin-interface-open-edx/</link>
         <pubDate>Mon, 15 Jul 2019 03:09:25 +0700</pubDate>
         <guid>https://sibunglon.com/2019/07/15/create-new-super-user-for-access-django-admin-interface-open-edx/</guid>
-        <description>I need to use the Django admin interface, but I don&#39;t know what users can use to log in.
-Solution sudo -u edxapp bash source /edx/app/edxapp/edxapp_env python /edx/app/edxapp/edx-platform/manage.py --settings=aws createsuperuser </description>
+        <description> I need to use the Django admin interface, but I don&amp;rsquo;t know what users can use to log in.
+Solution sudo -u edxapp bash source /edx/app/edxapp/edxapp_env python /edx/app/edxapp/edx-platform/manage.py --settings=aws createsuperuser</description>
       </item>
     
       <item>
@@ -195,9 +201,8 @@ Pada tahun 2019 akan ada banyak lokakarya yang diselenggarakan di seluruh dunia 
         <link>https://sibunglon.com/2019/02/27/feature-browse-caddy-server/</link>
         <pubDate>Wed, 27 Feb 2019 01:15:00 +0700</pubDate>
         <guid>https://sibunglon.com/2019/02/27/feature-browse-caddy-server/</guid>
-        <description>Caddy? Gak usah takut 😆 beberapa bulan yang lalu kan udah kenalan sama si Caddy dan ini postnya, tapi waktu itu kan cuman sekedar berkenalan. Nah dipostingan ini I&#39;m siBunglon akan memberikan step installasinya di linux beserta memamerkan fitur yang paling sering I&#39;m siBunglon pakai jika menggunakan si Caddy ini. To the point aja yah, kan kenalannya udah :D
-Bermain Dengan Caddy 1) Install caddy ke sistem dengan command
-curl https://getcaddy.</description>
+        <description>Caddy? Gak usah takut 😆 beberapa bulan yang lalu kan udah kenalan sama si Caddy dan ini postnya, tapi waktu itu kan cuman sekedar berkenalan. Nah dipostingan ini I&amp;rsquo;m siBunglon akan memberikan step installasinya di linux beserta memamerkan fitur yang paling sering I&amp;rsquo;m siBunglon pakai jika menggunakan si Caddy ini. To the point aja yah, kan kenalannya udah :D
+Bermain Dengan Caddy 1) Install caddy ke sistem dengan command</description>
       </item>
     
       <item>
@@ -205,7 +210,7 @@ curl https://getcaddy.</description>
         <link>https://sibunglon.com/2019/02/26/install-package-from-pip-ignore-trusted-host/</link>
         <pubDate>Tue, 26 Feb 2019 10:53:16 +0700</pubDate>
         <guid>https://sibunglon.com/2019/02/26/install-package-from-pip-ignore-trusted-host/</guid>
-        <description>Connection is Power Yah connection is power dan jangan berpikir problems can occur due to connection ketika kalian menemukan masalah yang berkaitan dengan internet. Disuatu waktu I&#39;m siBunglon menemukan masalah pada saat akan melakukan installasi package dari python-pip, paketnya tidak bisa diinstall tapi diwaktu itu I&#39;m siBunglon menggunakan koneksi yang dikelola oleh orang lain dan mencoba browsing eh ternyata lancar jaya, mencoba menggunakan Wi-Fi dari device yang lain dan masalah tersebut tidak muncul.</description>
+        <description>Connection is Power Yah connection is power dan jangan berpikir problems can occur due to connection ketika kalian menemukan masalah yang berkaitan dengan internet. Disuatu waktu I&amp;rsquo;m siBunglon menemukan masalah pada saat akan melakukan installasi package dari python-pip, paketnya tidak bisa diinstall tapi diwaktu itu I&amp;rsquo;m siBunglon menggunakan koneksi yang dikelola oleh orang lain dan mencoba browsing eh ternyata lancar jaya, mencoba menggunakan Wi-Fi dari device yang lain dan masalah tersebut tidak muncul.</description>
       </item>
     
       <item>
@@ -213,7 +218,7 @@ curl https://getcaddy.</description>
         <link>https://sibunglon.com/2019/02/16/error-generate-certificate-ssl-menggunakan-lets-encrypt/</link>
         <pubDate>Sat, 16 Feb 2019 17:19:08 +0700</pubDate>
         <guid>https://sibunglon.com/2019/02/16/error-generate-certificate-ssl-menggunakan-lets-encrypt/</guid>
-        <description>Beberapa bulan yang lalu I&#39;m siBunglon masih bisa generate SSL menggunakan Let&#39;s Encrypt namun hari ini I&#39;m siBunglon menemukan error ketika akan generate SSL lagi dan I&#39;m siBunglon mendapatkan error message seperti berikut:
+        <description>Beberapa bulan yang lalu I&amp;rsquo;m siBunglon masih bisa generate SSL menggunakan Let&amp;rsquo;s Encrypt namun hari ini I&amp;rsquo;m siBunglon menemukan error ketika akan generate SSL lagi dan I&amp;rsquo;m siBunglon mendapatkan error message seperti berikut:
 [root@airgreen siBunglon]# certbot --nginx -d repo.lab.sibunglon.com Traceback (most recent call last): File &amp;quot;/bin/certbot&amp;quot;, line 9, in &amp;lt;module&amp;gt; load_entry_point(&#39;certbot==0.29.1&#39;, &#39;console_scripts&#39;, &#39;certbot&#39;)() File &amp;quot;/usr/lib/python2.7/site-packages/pkg_resources/__init__.py&amp;quot;, line 487, in load_entry_point return get_distribution(dist).load_entry_point(group, name) File &amp;quot;/usr/lib/python2.7/site-packages/pkg_resources/__init__.py&amp;quot;, line 2728, in load_entry_point return ep.load() File &amp;quot;/usr/lib/python2.</description>
       </item>
     
@@ -291,7 +296,7 @@ Umumnya server diakses menggunakan ssh dengan autentikasi password plain text, j
 Ya emang menarik, agar user tidak perlu memasukkan password jika ingin mendapatkan hak akses root cukup tambahkan si user ke sudoers.
 Bermain dengan Sudoers 1) Edit file sudoers dengan command nano /etc/sudoers.
 2) Setelah berhasil mengakses file sudoers, sekarang tambahkan sintaks berikut:
-sibunglon ALL=(ALL) NOPASSWD:ALL  Note: Kata sibunglon diganti sesuai user yang akan diberikan izin menggunakan sudo tanpa password.
+sibunglon ALL=(ALL) NOPASSWD:ALL   Note: Kata sibunglon diganti sesuai user yang akan diberikan izin menggunakan sudo tanpa password.
  Sekarang user sibunglon (user sesuai yang anda daftarkan) dapat menggunakan command sudo tanpa password.</description>
       </item>
     
@@ -320,8 +325,8 @@ Cockpit berjalan di port 9090, tidak membutuhkan web server jadi jika anda belum
         <link>https://sibunglon.com/2018/12/16/berkenalan-dengan-lets-encrypt-ssl-gratis-untuk-nginx/</link>
         <pubDate>Sun, 16 Dec 2018 07:51:58 +0700</pubDate>
         <guid>https://sibunglon.com/2018/12/16/berkenalan-dengan-lets-encrypt-ssl-gratis-untuk-nginx/</guid>
-        <description>Let&#39;s Encrypt? Apa sih let&#39;s encrypt itu?
-Let&#39;s encrypt adalah certificate Authority (CA) atau otoritas sertifikat yang menyediakan cara mudah untuk mendapatkan dan menginstall SSL pada web server, sehingga memungkinkan web server anda terenskripsi (HTTPS). Merupakan layanan yang disediakan oleh Internet Security Research Group (ISRG). ISRG memberikan dan mengaktifkan HTTPS secara gratis dengan alasan ingin menciptakan web yang lebih aman dan menjaga privasi. Sebenarnya untuk mendapatkan dan memasang SSL itu memiliki biaya sendiri namun jika untuk kebutuhan pengembangan, ngoprek / ngelab, let&#39;s encrypt ini menjadi solusi.</description>
+        <description>Let&amp;rsquo;s Encrypt? Apa sih let&amp;rsquo;s encrypt itu?
+Let&amp;rsquo;s encrypt adalah certificate Authority (CA) atau otoritas sertifikat yang menyediakan cara mudah untuk mendapatkan dan menginstall SSL pada web server, sehingga memungkinkan web server anda terenskripsi (HTTPS). Merupakan layanan yang disediakan oleh Internet Security Research Group (ISRG). ISRG memberikan dan mengaktifkan HTTPS secara gratis dengan alasan ingin menciptakan web yang lebih aman dan menjaga privasi. Sebenarnya untuk mendapatkan dan memasang SSL itu memiliki biaya sendiri namun jika untuk kebutuhan pengembangan, ngoprek / ngelab, let&amp;rsquo;s encrypt ini menjadi solusi.</description>
       </item>
     
       <item>
@@ -349,8 +354,8 @@ Setelah itu sekarang anda dapat menginstall atau update paket di Red Hat anda se
         <link>https://sibunglon.com/2018/12/11/pip-python2-error/</link>
         <pubDate>Tue, 11 Dec 2018 21:34:18 +0700</pubDate>
         <guid>https://sibunglon.com/2018/12/11/pip-python2-error/</guid>
-        <description>Pip di Python2 Error? Traceback (most recent call last): File &amp;quot;/usr/bin/pip&amp;quot;, line 9, in &amp;lt;module&amp;gt; from pip import main ImportError: cannot import name main Gak usah panik, cukup jalankan command berikut tapi pastikan terlebih dahulu sekarang sudah jadi super user (root)
-python -m pip uninstall pip &amp;amp;&amp;amp; apt install python-pip --reinstall </description>
+        <description> Pip di Python2 Error? Traceback (most recent call last): File &amp;quot;/usr/bin/pip&amp;quot;, line 9, in &amp;lt;module&amp;gt; from pip import main ImportError: cannot import name main  Gak usah panik, cukup jalankan command berikut tapi pastikan terlebih dahulu sekarang sudah jadi super user (root)
+python -m pip uninstall pip &amp;amp;&amp;amp; apt install python-pip --reinstall  </description>
       </item>
     
       <item>
@@ -386,8 +391,8 @@ Pada Lab ini saya asumsikan :
         <guid>https://sibunglon.com/2018/12/10/nginx-tidak-bisa-diakses/</guid>
         <description>Nginx di CentOS atau RHEL tidak bisa diakses? Service nginx aktif? Servernya aktif? Akses dari localhost bisa? Jika semua jawabannya YA, mungkin firewall di system anda sedang aktif namun trafik protokol HTTP dan HTTPS belum diizinkan oleh perangkat yang lain.
 Untuk mengizinkan trafik protokol HTTP, gunakan command
-firewall-cmd --permanent --zone=public --add-service=http Sedangkan untuk mengizinkan trafik protokol HTTPS, gunakan command
-firewall-cmd --permanent --zone=public --add-service=https Setelah diizinkan, firewall wajib direload agar update firewall dapat diterapkan</description>
+firewall-cmd --permanent --zone=public --add-service=http  Sedangkan untuk mengizinkan trafik protokol HTTPS, gunakan command
+firewall-cmd --permanent --zone=public --add-service=https  Setelah diizinkan, firewall wajib direload agar update firewall dapat diterapkan</description>
       </item>
     
       <item>
@@ -396,7 +401,7 @@ firewall-cmd --permanent --zone=public --add-service=https Setelah diizinkan, fi
         <pubDate>Mon, 10 Dec 2018 07:44:24 +0700</pubDate>
         <guid>https://sibunglon.com/2018/12/10/berkenalan-dengan-nginx-di-rhel/centos/</guid>
         <description>Nginx? Apa sih nginx itu? Fungsinya buat apa? Mungkin itu yang terlintas dipikirian beberapa orang jika berkenalan dengan hal baru. Maka dari itu pada kali ini yang akan dibahas pada Lab ini yaitu berkenalan dan bagaimana memasang nginx.
-Nginx, banyak orang membicarakannya meskipun salah dipelafalannya. Dulu saya juga salah melafakannya namun setelah diruqyah sama m1m1n atau yang dikenal dengan Andy Hidayat, sekarang gak salah pelafalan lagi :D . Nginx dibaca &amp;ldquo;engine X&amp;rdquo; bukan &amp;ldquo;nging X&amp;quot;.</description>
+Nginx, banyak orang membicarakannya meskipun salah dipelafalannya. Dulu saya juga salah melafakannya namun setelah diruqyah sama m1m1n atau yang dikenal dengan Andy Hidayat, sekarang gak salah pelafalan lagi :D . Nginx dibaca &amp;ldquo;engine X&amp;rdquo; bukan &amp;ldquo;nging X&amp;rdquo;.</description>
       </item>
     
       <item>
@@ -433,7 +438,7 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2018/11/06/gerakan-multi-touch-macbook-di-linux/</link>
         <pubDate>Tue, 06 Nov 2018 15:14:00 +0000</pubDate>
         <guid>https://sibunglon.com/2018/11/06/gerakan-multi-touch-macbook-di-linux/</guid>
-        <description></description>
+        <description>Jika Anda pernah menggunakan MacBook, pasti tahu betapa menyenangkan dan bermanfaatnya gerakan trackpad untuk mengubah desktop, menampilkan semua jendela yang terbuka, dan pinch-to-zoom.&amp;nbsp;Di linux anda juga menggunakan fitur ini dengan bantuan aplikasi fusuma, berikut installasi dan konfigurasinya.1. Berikan izin untuk membaca perangkat touchpadsudo gpasswd -a $USER input2.&amp;nbsp;Install libinput-toolssudo apt-get install libinput-tools3. Install Fusumasudo gem install fusuma4. Instal xdotool (opsional)sudo apt-get install xdotool5. Sesuaikan gesture dengan membuat direktori fusuma dan buat file konfigurasinyamkdir -p ~/.</description>
       </item>
     
       <item>
@@ -441,7 +446,9 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2018/10/28/installasi-caddy-server-di-sistem-operasi-windows/</link>
         <pubDate>Sun, 28 Oct 2018 21:20:00 +0000</pubDate>
         <guid>https://sibunglon.com/2018/10/28/installasi-caddy-server-di-sistem-operasi-windows/</guid>
-        <description></description>
+        <description>Setelah berkenalan dengan si Caddy Server pada beberapa hari yang lalu, sekarang waktunya bermain dengan si Caddy Server.
+Apa Saja yang dibutuhkan? Pastikan anda telah memiliki file master Caddy Server, jika belum silahkan dari situs resminya.
+Menjalankan Caddy Server pada sistem operasi windows1. Buka file hasil download Caddy Server2. Copy semua isi dari file master tersebut3. Tentukan path Caddy, buat folder baru yang akan menampung semua file yang telah dicopy kemudian paste di folder tersebut4.</description>
       </item>
     
       <item>
@@ -449,7 +456,8 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2018/10/26/berkenalan-dengan-caddy-server/</link>
         <pubDate>Fri, 26 Oct 2018 11:52:00 +0000</pubDate>
         <guid>https://sibunglon.com/2018/10/26/berkenalan-dengan-caddy-server/</guid>
-        <description></description>
+        <description>Caddy? Caddy itu apaan? Fungsinya apa aja?
+Caddy kadang-kadang diklarifikasi sebagai web server Caddy bersifat open source, server web HTTP / 2- enabled yang ditulis dalam Go . Ia menggunakan pustaka standar Go untuk fungsi HTTP-nya. Salah satu fitur paling terkenal Caddy adalah mengaktifkan HTTPS secara default.Caddy mendukung berbagai teknologi Web dan tersedia sebagai biner yang dikompilasi secara statis untuk sistem operasi Windows, Mac, Linux, Android, dan BSD pada arsitektur i386, amd64, dan ARM.</description>
       </item>
     
       <item>
@@ -457,7 +465,7 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2018/10/26/membangun-dhcp-server-menggunakan-debian-8/</link>
         <pubDate>Fri, 26 Oct 2018 10:47:00 +0000</pubDate>
         <guid>https://sibunglon.com/2018/10/26/membangun-dhcp-server-menggunakan-debian-8/</guid>
-        <description></description>
+        <description>DHCP server atau Dinamic Host Configuration Protocol adalah sebuah protocol yang memungkinkan sebuah komputer atau server memberikan IP Address secara dinamis atau otomatis untuk komputer lain, atau komputer klien.Ketika DHCP client pada pihak komputer klien diaktifkan, komputer klien tersebut akan melakukan request ke komputer server untuk mendapatkan IP Address dari DHCP Server. Kemudian DHCP server akan memberikan jawaban ke komputer klien dengan memberikan IP Address yang tersedia pada pool atau range IP Address di DHCP server.</description>
       </item>
     
       <item>
@@ -465,7 +473,7 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2018/10/26/membangun-dns-server-menggunakan-debian-8/</link>
         <pubDate>Fri, 26 Oct 2018 10:06:00 +0000</pubDate>
         <guid>https://sibunglon.com/2018/10/26/membangun-dns-server-menggunakan-debian-8/</guid>
-        <description></description>
+        <description>Dalam dunia internet, komputer saling berkomunikasi dengan mengenali ip addressnya. Namun karena manusia jauh lebih sulit mengingat angka-angkanya maka solusinya menggunakan DNS Server.&amp;nbsp;DNS yaitu kepanjangan dari Domain Name System merupakan sebuah server yang berfungsi menangani translasi penamaan host-host kedalam IP Address, begitu juga sebaliknya dalam menangani translasi dari IP Address ke Hostname/Domain. Lebih mudahnya DNS dapat diartikan sebagai sebuah layanan yang digunakan untuk menterjemahkan hostname/domain ke IP Address atau sebaliknya.</description>
       </item>
     
       <item>
@@ -473,7 +481,7 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/10/24/membuat-repositori-debian-8-dari-iso-dvd/</link>
         <pubDate>Tue, 24 Oct 2017 02:54:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/24/membuat-repositori-debian-8-dari-iso-dvd/</guid>
-        <description></description>
+        <description>A. PendahuluanPada kesempatan kali ini yang saya share yaitu bagaimana sih membuat sebuah repository debian untuk jaringan lokalB. PengertianRepositori perangkat lunak adalah lokasi penyimpanan dari paket perangkat lunak dapat diambildan diinstal pada komputer. Membuat repositori debian 8 dari dvd ini tergolong mudah dan praktis tetapi membutuhkan waktu atau tempo yang agak lama karena banyak data yang akan di salin dari iso ke hardisk walaupun offline atau tanpa menggunakan koneksi internet andaabar harus s untuk rsync dari iso atau dvd selain anda dapat menggunakan iso, anda juga dapat menggunakan DVD untuk membuat repo yaitu me-mount dvd anda terlebih dahulu.</description>
       </item>
     
       <item>
@@ -481,7 +489,14 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/10/23/membangun-sistem-informasi-desa/</link>
         <pubDate>Mon, 23 Oct 2017 02:29:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/23/membangun-sistem-informasi-desa/</guid>
-        <description>A. PendahuluanPada kesempatan ini saya akan mengimplementasikan membangun sebuah sistem informasi untuk desaB. PengertianOpenSID(https://github.com/OpenSID/OpenSID) adalah Sistem Informasi Desa (SID) yang sengaja dibuat supaya terbuka dan dapat dikembangkan bersama-sama oleh komunitas peduli SID.SID adalah aplikasi komputer yang membantu desa, agar:- Kantor desa lebih efisien dan efektif- Pemerintah desa lebih transparan dan akuntabel- Layanan publik lebih baik- Warga mendapat akses lebih baik pada informasi desaOpenSID turut membantu agar ke semua 74ribu+ desa di Indonesia menerapkan sistem informasi untuk memajukan desanya.</description>
+        <description>A. Pendahuluan
+Pada kesempatan ini saya akan mengimplementasikan membangun sebuah sistem informasi untuk desa
+B. PengertianOpenSID&amp;nbsp;(https://github.com/OpenSID/OpenSID) adalah Sistem Informasi Desa (SID) yang sengaja dibuat supaya terbuka dan dapat dikembangkan bersama-sama oleh komunitas peduli SID.
+SID adalah aplikasi komputer yang membantu desa, agar:
+- Kantor desa lebih efisien dan efektif
+- Pemerintah desa lebih transparan dan akuntabel- Layanan publik lebih baik
+- Warga mendapat akses lebih baik pada informasi desa
+OpenSID turut membantu agar ke semua 74ribu+ desa di Indonesia menerapkan sistem informasi untuk memajukan desanya.</description>
       </item>
     
       <item>
@@ -489,7 +504,8 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/10/21/mempercantik-tampilan-terminal-server/</link>
         <pubDate>Sat, 21 Oct 2017 02:27:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/21/mempercantik-tampilan-terminal-server/</guid>
-        <description></description>
+        <description>A. PendahuluanPada kesempatan ini saya ingin sharing tentang bagaimana mempercantik atau apalah agar tampilan shell linux tidak polos-polos begitu saja.
+B. PengertianApa itu shell ? shell adalah program (penterjemah perintah) yang menjembatani user dengan sistem operasi dalam hal ini kernel (inti sistem operasi), umumnya shell menyediakan prompt sebagai user interface, tempat dimana user mengetikkan perintah-perintah yang diinginkan baik berupa perintah internal shell (internal command), ataupun perintah eksekusi suatu file progam (eksternal command), selain itu shell memungkinkan user menyusun sekumpulan perintah pada sebuah atau beberapa file untuk dieksekusi sebagai program.</description>
       </item>
     
       <item>
@@ -497,7 +513,8 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/10/20/perbandingan-open-source-dan-closed-source/</link>
         <pubDate>Fri, 20 Oct 2017 18:59:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/20/perbandingan-open-source-dan-closed-source/</guid>
-        <description></description>
+        <description>1. Pengertian
+Sumber terbuka&amp;nbsp;(bahasa Inggris:&amp;nbsp;open source) adalah sistem pengembangan yang tidak dikoordinasi oleh suatu individu / lembaga pusat, tetapi oleh para pelaku yang bekerja sama dengan memanfaatkan kode sumber&amp;nbsp;(source-code)&amp;nbsp;yang tersebar dan tersedia bebas (biasanya menggunakan fasilitas komunikasi internet). Pola pengembangan ini mengambil model ala&amp;nbsp;bazaar, sehingga pola Open Source ini memiliki ciri bagi komunitasnya yaitu adanya dorongan yang bersumber dari&amp;nbsp;budaya memberi, yang artinya ketika suatu komunitas menggunakan sebuah program Open Source dan telah menerima sebuah manfaat kemudian akan termotivasi untuk menimbulkan sebuah pertanyaan apa yang bisa pengguna berikan balik kepada orang banyak.</description>
       </item>
     
       <item>
@@ -505,7 +522,8 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/10/20/install-nexcloud-di-debian-server-8.6.0/</link>
         <pubDate>Fri, 20 Oct 2017 02:10:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/20/install-nexcloud-di-debian-server-8.6.0/</guid>
-        <description></description>
+        <description>A. PendahuluanPada kesempatan ini&amp;nbsp;saya akan sharing tentang bagaimana saya menyimpan file dengan melakukan instalasi nextcloud pada server debian 8.6.
+B. PengertianNextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan layanan file hosting. Ini secara fungsional mirip dengan Dropbox, meskipun Nextcloud bebas dan open-source, memungkinkan siapa saja untuk menginstal dan mengoperasikannya di server pribadi. Berbeda dengan layanan proprietary seperti Dropbox, arsitektur terbuka memungkinkan penambahan fungsionalitas tambahan ke server dalam bentuk aplikasi.</description>
       </item>
     
       <item>
@@ -513,7 +531,14 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/10/19/backup-vm-proxmox-ke-local-harddisk/</link>
         <pubDate>Thu, 19 Oct 2017 18:47:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/19/backup-vm-proxmox-ke-local-harddisk/</guid>
-        <description>A. PendahuluanPada kesempatan ini saya share bagaimana agar config di debian atau apapun yang ada diproxmox tidak hilang bila terjadi sesuatuB. PengertianBakcup data adalah salah satu langkah untuk menyimpan data agar saat data itu hilang kita masih memiliki data simpanannya agar tidak hilang.C. Latar belakangMembuat secondary data agar saat data primer nya hilang kita masih punya data secondari nya.D. TujuanAgar data yang saat penting itu tidak hilang karena ada kesalahan dan dapat menyerlamatkan pekerjaan kita.</description>
+        <description>A. Pendahuluan
+Pada kesempatan ini saya share bagaimana agar config di debian atau apapun yang ada diproxmox tidak hilang bila terjadi sesuatu
+B. Pengertian
+Bakcup data adalah salah satu langkah untuk menyimpan data agar saat data itu hilang kita masih memiliki data simpanannya agar tidak hilang.
+C. Latar belakang
+Membuat secondary data agar saat data primer nya hilang kita masih punya data secondari nya.
+D. Tujuan
+Agar data yang saat penting itu tidak hilang karena ada kesalahan dan dapat menyerlamatkan pekerjaan kita.</description>
       </item>
     
       <item>
@@ -521,7 +546,8 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/10/19/implementasi-manual-subnetting-kelas-c/</link>
         <pubDate>Thu, 19 Oct 2017 17:58:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/19/implementasi-manual-subnetting-kelas-c/</guid>
-        <description></description>
+        <description>A.PendahuluanPada kesempatan kali ini saya akan berbagi tentang ip / subnetting gays. kenapa saya membahas ini karena kita sebagai nak jaringan mesti perlu paham begaimana cara subneting.
+1.PengertianSubnetting adalah upaya/proses untuk memecah sebuah network dengan jumlah host yang cukup banyak, menjadi beberapa network dengan jumlah host yang lebih sedikit. Gunanya Subnetting untuk menentukan batas network ID dalam suatu subnet, Memperbanyak jumlah network (LAN), Mengurangi jumlah host dalam satu network, untuk mengurangi tingkat kongesti (gangguan/ tabrakan) lalulintas data dalam suatu network.</description>
       </item>
     
       <item>
@@ -529,7 +555,8 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/10/18/implementasi-pembelajaran-online-dengan-moodle-installasi/</link>
         <pubDate>Wed, 18 Oct 2017 17:13:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/18/implementasi-pembelajaran-online-dengan-moodle-installasi/</guid>
-        <description></description>
+        <description>A. PendahuluanPada kesempatan kali ini saya akan mengimplementasikan tentang apa yang sudah saya pelajari yaitu Moodle
+B. PengertianMOODLE&amp;nbsp;(singkatan dari&amp;nbsp;Modular Object-Oriented Dynamic Learning Environment) adalah paket perangkat lunak yang diproduksi untuk kegiatan belajar berbasis internet dan situs web yang menggunakan prinsip&amp;nbsp;social constructionist pedagogy. MOODLE merupakan salah satu aplikasi dari konsep dan mekanisme belajar mengajar yang memanfaatkan teknologi informasi, yang dikenal dengan konsep pembelajaran elktronik atau e-learning. Moodle dapat digunakan secara bebas sebagai produk sumber terbuka (open source) di bawah lisensi GNU.</description>
       </item>
     
       <item>
@@ -537,7 +564,15 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/10/18/point-to-point-dengan-ubiquiti-station-side/</link>
         <pubDate>Wed, 18 Oct 2017 16:50:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/18/point-to-point-dengan-ubiquiti-station-side/</guid>
-        <description>A. PengertianUbiquiti Networksadalah perusahaan teknologi Amerika yang dimulai pada tahun 2005. Berbasis di San Jose, California , Ubiquiti memproduksi produk komunikasi data nirkabel untuk perusahaan dan penyedia layanan broadband nirkabel dengan fokus utama pada pasar yang kurang terlayani dan yang sedang berkembang.B. Latar BelakangKebutuhan media tranmisi jarak jauhC. Maksud dan TujuanBisa Menerapkan wireless konsep dan bisa menangkap signal dari sisi APD. Alat dan Bahan~ Ubiquiti Power Beam M2 (Station side)~ Ubiquiti NanoStation M2 (AP Side)~ Laptop~ Kabel LANE.</description>
+        <description>A. Pengertian
+Ubiquiti Networks&amp;nbsp;adalah perusahaan teknologi Amerika yang dimulai pada tahun 2005. Berbasis di&amp;nbsp;San Jose, California&amp;nbsp;, Ubiquiti memproduksi&amp;nbsp;produk&amp;nbsp;komunikasi data nirkabel&amp;nbsp;untuk perusahaan dan&amp;nbsp;penyedia layanan&amp;nbsp;broadband nirkabel&amp;nbsp;dengan fokus utama pada pasar yang kurang terlayani dan yang&amp;nbsp;sedang berkembang.
+B. Latar Belakang
+Kebutuhan media tranmisi jarak jauh
+C. Maksud dan Tujuan
+Bisa Menerapkan wireless konsep dan bisa menangkap signal dari sisi AP
+D. Alat dan Bahan
+~ Ubiquiti Power Beam M2 (Station side)
+~ Ubiquiti NanoStation M2 (AP Side)</description>
       </item>
     
       <item>
@@ -545,7 +580,7 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/10/18/point-to-point-dengan-ubiquiti-ap-side/</link>
         <pubDate>Wed, 18 Oct 2017 11:29:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/18/point-to-point-dengan-ubiquiti-ap-side/</guid>
-        <description></description>
+        <description>Protokol Point-to-Point (PPP) adalah protokol data link (layer 2) yang digunakan untuk membangun hubungan langsung antara dua node. Ini menghubungkan dua router secara langsung tanpa host atau perangkat jaringan lainnya di antaranya, dan jaraknya biasanya cukup jauh, UBIQUITI merupakan sebuah perusahaan yang mengkhususkan produksinya pada produk – produk wireless. Perusahaan yang berbasis di San Jose, California, Amerika ini telah beroperasi sejak tahun 2005. Sejak saat ini, mereka terus melakukan inovasi pada produk – produknya sehingga bisa mendunia seperti saat ini.</description>
       </item>
     
       <item>
@@ -553,7 +588,8 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/10/17/install-slims-8-akasia-di-debian-server/</link>
         <pubDate>Tue, 17 Oct 2017 15:17:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/17/install-slims-8-akasia-di-debian-server/</guid>
-        <description></description>
+        <description>A. PendahuluanPada kesempatan ini saya sharing tentang bagaimana langkah-langkah penginstallan slims untuk manajamen perpustakaan online.
+B. PengertianSenayan, atau lengkapnya&amp;nbsp;Senayan Library Management System&amp;nbsp;(SLiMS), adalah perangkat lunak sistem manajemen perpustakaan (library management system) sumber terbuka yang dilisensikan di bawah GPL v3. Aplikasi Web yang dikembangkan oleh tim dari Pusat Informasi dan Humas Departemen Pendidikan Nasional Repubik Indonesia ini dibangun dengan menggunakan PHP, basis data MySQL, dan Pengontrol versi Git. Pada tahun 2009, Senayan memenangi INAICTA 2009 untuk kategori&amp;nbsp;open source.</description>
       </item>
     
       <item>
@@ -561,7 +597,8 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/10/17/setting-access-point-engenius-eap-300/</link>
         <pubDate>Tue, 17 Oct 2017 11:01:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/17/setting-access-point-engenius-eap-300/</guid>
-        <description></description>
+        <description>A. PendahuluanPada kesempatan ini saya akan sedikit membagi ilmu terkait dengan how to configure access point EnGenius EAP 300. ok dari pada lama kita lanjut ke step selanjutnya.
+B. PengertianDi jaringan komputer , jalur akses nirkabel ( WAP ), atau lebih tepatnya hanya access point ( AP ), adalah perangkat keras jaringan yang memungkinkan perangkat WI - FI terhubung ke jaringan kabel.&amp;nbsp;AP biasanya&amp;nbsp;&amp;nbsp;terhubung ke router (melalui jaringan kabel) sebagai perangkat mandiri, namun juga dapat menjadi komponen integral dari router itu sendiri.</description>
       </item>
     
       <item>
@@ -569,7 +606,16 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/10/16/install-cms-sekolahku-di-server/</link>
         <pubDate>Mon, 16 Oct 2017 11:16:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/16/install-cms-sekolahku-di-server/</guid>
-        <description>A. PendahuluanPada kesempatan kali ini saya akan mengimplementasikan membangun website sekolah di server dengan CMS.B. PengertianCMS adalah suatu /sebuah aplikasi yang berfungsi merubah suatu menu atau memanipulasi data dari suatu situs atau website.C. Latar belakangMempelajari sistem informasi sekolah dengan CMS dan mengimplementasikannya.D. TujuanMempunyai maksud untuk memudahkan saya mendapatkan informasi sekolah di website tersebut.E. Hasil yang diharapkanMempunyai harapan agar nanti kedepannya bisa membangun website ini di sekolah.F. Alat dan bahanPC/LaptopKoneksi InternetFile CMS SekolahG.</description>
+        <description>A. Pendahuluan
+Pada kesempatan kali ini saya akan mengimplementasikan membangun website sekolah di server dengan CMS.
+B. Pengertian
+CMS adalah suatu /sebuah aplikasi yang berfungsi merubah suatu menu atau memanipulasi data dari suatu situs atau website.
+C. Latar belakang
+Mempelajari sistem informasi sekolah dengan CMS dan mengimplementasikannya.
+D. Tujuan
+Mempunyai maksud untuk memudahkan saya mendapatkan informasi sekolah di website tersebut.
+E. Hasil yang diharapkan
+Mempunyai harapan agar nanti kedepannya bisa membangun website ini di sekolah.</description>
       </item>
     
       <item>
@@ -577,7 +623,7 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/10/16/menginstall-wordpress-di-localhost-linux/</link>
         <pubDate>Mon, 16 Oct 2017 10:48:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/16/menginstall-wordpress-di-localhost-linux/</guid>
-        <description></description>
+        <description>A. Pendahuluan&amp;nbsp;Pada kesempatan kali ini, saya memposting tentang proses installasi wordpressB. PengertianWordPress adalah sebuah&amp;nbsp;aplikasi&amp;nbsp;sumber terbuka (open source) yang sangat populer digunakan sebagai mesin blog (blog engine). WordPress dibangun dengan&amp;nbsp;bahasa pemrograman&amp;nbsp;PHP&amp;nbsp;dan&amp;nbsp;basis data&amp;nbsp;(database)&amp;nbsp;MySQL. PHP dan MySQL, keduanya merupakan&amp;nbsp;perangkat lunak sumber terbuka(open source software). Selain sebagai&amp;nbsp;blog, WordPress juga mulai digunakan sebagai sebuah&amp;nbsp;CMS(Content Management System) karena kemampuannya untuk dimodifikasi dan disesuaikan dengan kebutuhan penggunanyaPiranti lunak inti WordPress dikembangkan oleh ratusan sukarelawan. Ketika Anda ingin dapatkan lebih banyak kegunaan daripadanya, ada ribuan&amp;nbsp;plugin&amp;nbsp;dan&amp;nbsp;tema&amp;nbsp;yang tersedia untuk mengubah situs Anda menjadi nyaris&amp;nbsp;apa saja yang Anda dambakan.</description>
       </item>
     
       <item>
@@ -585,7 +631,9 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/10/14/implementasi-autoindex-di-server-debian-8.6/</link>
         <pubDate>Sat, 14 Oct 2017 10:36:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/14/implementasi-autoindex-di-server-debian-8.6/</guid>
-        <description></description>
+        <description>A. PendahuluanPada kesempatan ini saya akan mengimplementasikan autoindex di debian server 8-6
+B. PengertianAuto Index adalah&amp;nbsp;kemampuan untuk komputer&amp;nbsp;untuk memindai volume besar dokumen&amp;nbsp;terhadap dikendalikan&amp;nbsp;kosakata, taksonomi&amp;nbsp;, tesaurus&amp;nbsp;atau ontologi&amp;nbsp;dan menggunakan istilah-istilah dikendalikan untuk cepat&amp;nbsp;dan efektif Indeks deposit dokumen yang besar.&amp;nbsp;Karena jumlah dokumen secara eksponensial&amp;nbsp;meningkat dengan proliferasi dari Internet&amp;nbsp;, pengindeksan otomatis akan menjadi penting untuk mempertahankan kemampuan untuk menemukan informasi yang relevan di lautan ir-relevan informasi.
+C. Latar belakangLatar belakang dalam installasi ini adalah untuk memindai dokumen dengan volume yang besar dengan cepat, mudah dan lebih efektif.</description>
       </item>
     
       <item>
@@ -593,7 +641,10 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/10/14/atasi-info-php-tidak-tampil-atau-not-working/</link>
         <pubDate>Sat, 14 Oct 2017 10:25:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/14/atasi-info-php-tidak-tampil-atau-not-working/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pada postingan kali ini, saya akan memberikan solusi yang biasa menjadi permasalahan saat menginstall LAMP Server di linux
+B. Pengertian
+PHP info&amp;nbsp;adalah istilah untuk menyebutkan sebuah halaman yang berisi informasi mengenai versi PHP yang digunakan oleh suatu server, biasanya pada halaman PHP Info akan di informasikan banyak hal selain versi nya itu sendiri. phpinfo() biasanya digunakan untuk memeriksa pengaturan konfigurasi dan variabel standar yang tersedia pada sistem tertentu.</description>
       </item>
     
       <item>
@@ -601,7 +652,12 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-install-aplikasi-berbasis-web/</link>
         <pubDate>Fri, 13 Oct 2017 10:22:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-install-aplikasi-berbasis-web/</guid>
-        <description></description>
+        <description>A. PendahuluanPada kesempatan ini, saya kembali memposting tentang dasar-dasar setelahi install server.
+
+B. PengertianAplikasi Berbasis Web adalah sebuah aplikasi yang dapat diakses melalui internet atau intranet, dan pada sekarang ini ternyata lebih banyak dan lebih luas dalam pemakaiannya.
+C. Latar belakangSetelah kita menginstall debian di proxmox&amp;nbsp;&amp;nbsp;tentunya kita harus tau hal hal apa saja yang harus dilakukan setelahnya.
+
+D. TujuanAgar server dapat bekerja secara optimal saat melayani komputer client.</description>
       </item>
     
       <item>
@@ -609,7 +665,12 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-installasi-lamp-server/</link>
         <pubDate>Fri, 13 Oct 2017 10:09:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-installasi-lamp-server/</guid>
-        <description></description>
+        <description>A. Pendahuluan&amp;nbsp;Pada kesempatan ini saya memposting lagi dan masih mengenai server
+
+B. PengertianLAMP&amp;nbsp;adalah istilah yang merupakan singkatan dari&amp;nbsp;Linux,&amp;nbsp;Apache,&amp;nbsp;MySQL&amp;nbsp;dan&amp;nbsp;Perl/&amp;nbsp;PHP/&amp;nbsp;Phyton. Merupakan sebuah paket&amp;nbsp;perangkat lunak bebas&amp;nbsp;yang digunakan untuk menjalankan sebuah aplikasi secara lengkap.
+Komponen-komponen dari LAMP&amp;nbsp;:Linux&amp;nbsp;–&amp;nbsp;sistem operasiApache HTTP Server&amp;nbsp;–&amp;nbsp;web serverMariaDB&amp;nbsp;atau&amp;nbsp;MySQL&amp;nbsp;– sistem basis dataPHP&amp;nbsp;atau&amp;nbsp;Perl&amp;nbsp;atau&amp;nbsp;Python&amp;nbsp;– bahasa pemrograman yang dipakaiC. Latar belakang&amp;nbsp;Agar bisa menampung portal ataupun aplikasi berbasis web yang lain
+
+D. TujuanAgar supaya saya mengetahui bagaimana cara installasi Lamp Server tersebut dan Lamp tersebut merupakan syarat utama untuk membuat web yang berbasis cms</description>
       </item>
     
       <item>
@@ -617,7 +678,8 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/10/13/setting-tp-link-wa7210n/</link>
         <pubDate>Fri, 13 Oct 2017 09:52:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/13/setting-tp-link-wa7210n/</guid>
-        <description></description>
+        <description>A.PendahuluanAssalamualaikum Wr.Wb
+saya akan membuat tutorial yang berjudul cara setting tp link agar bisa share wifi nya . jika kalian ingin tau caranya saksikan tutorialini dengan baik jagan ada kelewatan.B. Pengertian&amp;nbsp;TP-LINK itu jenis nya berbagai macam tapi yang saya akan buat tutorial ini yaitu cara setting tplink. menurut saya TP-LINK adalah sebuah alat untuk memperkuat sinyal maupun membuat hospot dengan berskala besar.C. latar belakangDiagram contoh ini digunakan untuk menghubungkan Wireless Router TP-Link TD-W8951ND dengan koneksi internet ADSL dan wireless WIFI, signal WIFI dari Router Modem ADSL akan diambil TP-Link TL-WA7210N.</description>
       </item>
     
       <item>
@@ -625,7 +687,8 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/10/12/hal-hal-yang-harus-dilakukan-setelah-install-server/</link>
         <pubDate>Thu, 12 Oct 2017 09:31:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/12/hal-hal-yang-harus-dilakukan-setelah-install-server/</guid>
-        <description></description>
+        <description>A. Pendahuluan&amp;nbsp;Pada kesempatan kali ini yang saya bagikan yaitu tentang hal - hal yang perlu dilakukan setelah install server
+B. PengertianDebian adalah sistem operasi komputer yang tersusun dari paket-paket perangkat lunak yang dirilis sebagai perangkat lunak bebas dan terbuka dengan lisensi mayoritas GNU General Public License dan lisensi perangkat lunak bebas lainnya. Debian GNU/UNIX memuat perkakas sistem operasi GNU dan kernel Linux merupakan distribusi Linux yang populer dan berpengaruh. Debian didistribusikan dengan akses ke repositori dengan ribuan paket perangkat lunak yang siap untuk instalasi dan digunakan.</description>
       </item>
     
       <item>
@@ -633,7 +696,10 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/10/12/mengenal-vlan-virtual-lan/</link>
         <pubDate>Thu, 12 Oct 2017 09:08:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/12/mengenal-vlan-virtual-lan/</guid>
-        <description></description>
+        <description>A. Pendahuluan&amp;nbsp;
+Pada kesempatan kali ini ane akan share sedikit artikel tentang VLAN. Oke langsung saja silahkan disimak.
+1. Pengertian&amp;nbsp;
+Virtual LAN atau disingkat VLAN merupakan sekelompok perangkat pada satu LAN atau lebih yang dikonfigurasikan (menggunakan perangkat lunak pengelolaan) sehingga dapat berkomunikasi seperti halnya bila perangkat tersebut terhubung ke jalur yang sama, padahal sebenarnya perangkat tersebut berada pada sejumlah segmen LAN yang berbeda. Vlan dibuat dengan menggunakan jaringan pihak ke tiga.</description>
       </item>
     
       <item>
@@ -641,7 +707,8 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/10/11/sharing-bersama-materi-bandwith-management-queue/</link>
         <pubDate>Wed, 11 Oct 2017 12:38:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/11/sharing-bersama-materi-bandwith-management-queue/</guid>
-        <description></description>
+        <description>A. PendahuluanSebesar besarnya bandwith kecepatan internet tidak akan bisa membuat kita para pengguna internet puas-puas kata tersebut yang sering saya dengarkan ketika saya prakerin, maksudnya adalah kita sebagai user dari internet tidak akan puas dengan bandwith yang lumayan besar karena sebesar apapun bandwith yang kita miliki, kita tidak akan bisa mengakses internet secepat yang ada dalam bayangan kita, kalian tau apa penyebabnya? jika belum mari kita bahas bersama
+B. Pengertian</description>
       </item>
     
       <item>
@@ -649,7 +716,9 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/10/11/installasi-mate-desktop-environment-di-ubuntu-17.04/</link>
         <pubDate>Wed, 11 Oct 2017 12:31:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/11/installasi-mate-desktop-environment-di-ubuntu-17.04/</guid>
-        <description></description>
+        <description>A. PendahuluanSetelah kemarin menggunakan desktop gnome saya ingin pindah ke desktop MATE karena lebih ringan dan mudah digunakan, nah bagi kalian yang ingin menginstall MATE desktop kali ini saya bagikan tutorialnya...
+B. pengertianMATE telah memiliki sejumlah aplikasi yang berasal dari Aplikasi Inti GNOME, dan pengembang telah menulis beberapa aplikasi lain dari nol.&amp;nbsp;Aplikasi bercabang memiliki nama baru, kebanyakan dari bahasa Spanyol
+MATE juga tersedia di repositori resmi beberapa distribusi Linux lainnya, termasuk Arch Linux, Parabola, LMDE, Debian, Ubuntu MATE, Ubuntu Mint, Kali Linux, Fedora, openSUSE, Gentoo, Mageia, ROSA, dan PCLinuxOS.</description>
       </item>
     
       <item>
@@ -657,7 +726,10 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/10/10/tips-menemukan-referensi-website-untuk-belajar-linux/</link>
         <pubDate>Tue, 10 Oct 2017 17:27:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/10/tips-menemukan-referensi-website-untuk-belajar-linux/</guid>
-        <description></description>
+        <description>A. Pendahuluan&amp;nbsp;
+Halo teman2 blogger, pada kesempatan kali ini saya akan mmebagikan sebuah artikel sederhana namun bermanfaat bagi pembaca sekalian terutama bagi yang ingin belajar linux agar mahir menggunakannya. Monggo mari di simak artikel yang saya bagikan berikut ini.
+1. Pengertian&amp;nbsp;
+Web referensi adalah suatu website atau situs atau laman yang memuat pembahasan ataupun tutorial yang berisi materi yang dapat di jadikan patokan atau dasar untuk membuat suatu artikel ataupun tutorial.</description>
       </item>
     
       <item>
@@ -673,7 +745,7 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/10/09/comparison-of-platform-virtualization-software/</link>
         <pubDate>Mon, 09 Oct 2017 17:12:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/09/comparison-of-platform-virtualization-software/</guid>
-        <description></description>
+        <description>A. PENDAHULUANSeperti judulnya, yaitu adalah perbandingan dari beberapa vendor Virtualisasi Software.B. PENGERTIANadalah istilah umum yang mengacu kepada abstraksi dari sumber daya komputer. Definisi lainnya adalah &#34;sebuah teknik untuk menyembunyikan karakteristik fisik dari sumber daya komputer dari bagaimana cara sistem lain, aplikasi atau pengguna berinteraksi dengan sumber daya tersebut. Hal ini termasuk membuat sebuah sumber daya tunggal (seperti server, sebuah sistem operasi, sebuah aplikasi, atau peralatan penyimpanan terlihat berfungsi sebagai beberapa sumber daya logikal; atau dapat juga termasuk definisi untuk membuat beberapa sumber daya fisik (seperti beberapa peralatan penyimpanan atau server) terlihat sebagai satu sumber daya logikal.</description>
       </item>
     
       <item>
@@ -681,7 +753,10 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/10/07/konfigurasi-dhcp-server-pada-cisco/</link>
         <pubDate>Sat, 07 Oct 2017 16:49:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/07/konfigurasi-dhcp-server-pada-cisco/</guid>
-        <description></description>
+        <description>A.PENGERTIANDHCP (Dynamic Host Configuration Protocol) sebuah server yang memiliki layanan untuk memberikan IP otomatis pada host atau komputer (client) pada jaringan TCP atau IP yang memintanyaLATAR BELAKANGMemahami serta mempraktikan dhcp serverMAKSUD DAN TUJUAN
+Memahami konfigurasi dhcp serverTAHAPAN PEKERJAAN&amp;nbsp;Berikut adalah langkah-langkah mengkonfigurasi DHCP Server pada router.Sebelumnya kita harus membuat simulasi jaringan seperti pada gambar berikut ini terlebih dahulu.
+Langkah awal untuk konfigurasi yaitu klik pada Router
+Kemudian masuk ke Privileged mode exec dengan menggunkan perintah “enable&amp;nbsp;“</description>
       </item>
     
       <item>
@@ -689,7 +764,7 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/10/06/konfigurasi-vlan-pada-switch/</link>
         <pubDate>Fri, 06 Oct 2017 06:16:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/06/konfigurasi-vlan-pada-switch/</guid>
-        <description></description>
+        <description>A. PENGERTIANVirtual LAN&amp;nbsp;atau disingkat&amp;nbsp;VLAN&amp;nbsp;merupakan sekelompok perangkat pada satu LAN atau lebih yang dikonfigurasikan (menggunakan perangkat lunak pengelolaan) sehingga dapat berkomunikasi seperti halnya bila perangkat tersebut terhubung ke jalur yang sama, padahal sebenarnya perangkat tersebut berada pada sejumlah segmen LAN yang berbeda. Vlan dibuat dengan menggunakan jaringan pihak ke tiga. VLAN merupakan sebuah bagian kecil jaringan IP yang terpisah secara logik. VLAN memungkinkan beberapa jaringan IP dan jaringan-jaringan kecil (subnet) berada dalam jaringan switched switched yang sama.</description>
       </item>
     
       <item>
@@ -697,7 +772,8 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/10/05/konfigurasi-static-nat-dan-dynamic-nat-cisco/</link>
         <pubDate>Thu, 05 Oct 2017 05:39:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/05/konfigurasi-static-nat-dan-dynamic-nat-cisco/</guid>
-        <description></description>
+        <description>A. Pengertian&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; NAT (Network Address Translation)&amp;nbsp;adalah sebuah proses pemetaan alamat IP dimana perangkat jaringan komputer akan memberikan alamat IP public ke perangkat jaringan local sehingga banyak IP private yang dapat mengakses IP public.
+Dengan kata lain NAT akan mentranslasikan alamat IP sehingga IP address pada jaringan local dapat mengakses IP public pada jaringan WAN. NAT mentranslasikan alamat IP private untuk dapat mengakses alamat host di internet dengan menggunakan alamat IP public pada jaringan tersebut.</description>
       </item>
     
       <item>
@@ -705,7 +781,16 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/10/04/konfigurasi-telnet-dan-ssh-di-cisco/</link>
         <pubDate>Wed, 04 Oct 2017 05:19:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/04/konfigurasi-telnet-dan-ssh-di-cisco/</guid>
-        <description></description>
+        <description>A. PENGERTIAN
+Konfigurasi Telnet
+Telnet (Telecommunication network) adalah sebuah protokol jaringan yang digunakan pada Internet atau Local Area Network untuk menyediakan fasilitas komunikasi berbasis teks interaksi dua arah yang menggunakan koneksi virtual terminal.
+B. LATAR BELAKANG
+Meremote switch dan router di packet tracer
+C. MAKSUD DAN TUJUAN
+Ingin mengimplementasikanya di dunia kerja dan mengulangi Materi yang diberi tentang ssh dan telnet
+D. TAHAPAN PEKERJAAN
+Berikut Topology Telnet :
+1.Pertama, masukkan default gateway yang terdapat pada Router, Disini saya Memberikan IP Address pada interface fastEthernet 0/0 adalah 192.</description>
       </item>
     
       <item>
@@ -713,7 +798,26 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/10/03/perintah-perintah-dasar-cisco/</link>
         <pubDate>Tue, 03 Oct 2017 05:17:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/03/perintah-perintah-dasar-cisco/</guid>
-        <description></description>
+        <description>A. PENGERTIAN
+Konfigurasi yang akan dibahas dalam artikel ini adalah :
+Mode Router
+Memasuki mode konfigurasi global (Global Configuration Mode)
+Konfigurasi router :
+-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Nama router
+-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Password
+-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Password terenkripsi
+-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Nama interfaces
+-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Perpindahan antar interfaces
+-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Konfigurasi interfaces Serial
+-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Konfigurasi interfaces Fast Ethernet
+-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Membuat banner pesan MOTD (Message of the Day)
+-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Membuat banner login
+-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Menempatkan local host domain ke IP address
+-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Perintah&amp;nbsp;no ip domain-lookup
+-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Perintah&amp;nbsp;exec-timeout
+-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Menyimpan konfigurasi
+-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Menghapus konfigurasi
+Perintah&amp;nbsp;show&amp;nbsp;untuk memperifikasi konfigurasi router</description>
       </item>
     
       <item>
@@ -721,7 +825,9 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/10/03/konfigurasi-static-routing/</link>
         <pubDate>Tue, 03 Oct 2017 05:04:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/03/konfigurasi-static-routing/</guid>
-        <description></description>
+        <description>A.PENGERTIAN
+Routing Static adalah jenis routing yang dilakukan seorang admin dengan memasukan network network tertentu secara manual.
+Ciri ciri routing static adalah :Jalur pada suatu jaringan spesifik ditentukan oleh seorang AdministratorPengisian tabel routing / penambahan network baru diisi secara manualBiasanya digunakan untuk jaringan berskala kecilAda beberapa parameter yang ada pada routing static ini, yaituDestination, adalah ip network tujuan, untuk default routing biasanya memakai 0.0.0.0 untuk semua jaringanGateway, adalah datagram yang dapat dicapai pada satu jaringanPref.</description>
       </item>
     
       <item>
@@ -729,7 +835,21 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/10/02/training-cisco-ccent-part-6/</link>
         <pubDate>Mon, 02 Oct 2017 04:57:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/02/training-cisco-ccent-part-6/</guid>
-        <description></description>
+        <description>1. Pendahuluan
+A. Pengertian
+Cisco Adalah sebuah perusahaan yang memiliki 2 bidang usaha, yaitu:
+1. Pembuatan hardware dan software yang berhubungan dengan jaringan komputer
+2. Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA)
+B. Latar Belakang
+Mengulangi dan Meringkas Materi yang Diberikan Tadi
+C. Maksud dan Tujuan
+Untuk lebih memahami materi yang diberikan tadi
+2. Alat dan Bahan
+- Laptop
+- Proyektor
+- Internet
+3. Jangka Waktu Pelaksanaan
+Jam 08:00 s/d 22:00</description>
       </item>
     
       <item>
@@ -737,7 +857,20 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/09/30/training-cisco-ccent-part-5/</link>
         <pubDate>Sat, 30 Sep 2017 04:52:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/30/training-cisco-ccent-part-5/</guid>
-        <description></description>
+        <description>1. Pendahuluan
+A. Pengertian
+Cisco Adalah sebuah perusahaan yang memiliki 2 bidang usaha, yaitu:
+1. Pembuatan hardware dan software yang berhubungan dengan jaringan komputer
+2. Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA)B. Latar Belakang
+Mengulangi dan Meringkas Materi yang Diberikan Tadi
+C. Maksud dan Tujuan
+Untuk lebih memahami materi yang diberikan tadi
+2. Alat dan Bahan
+- Laptop
+- Proyektor
+- Internet
+3. Jangka Waktu Pelaksanaan
+Jam 08:00 s/d 22:00</description>
       </item>
     
       <item>
@@ -745,7 +878,21 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/09/29/training-cisco-ccent-part-4/</link>
         <pubDate>Fri, 29 Sep 2017 04:50:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/29/training-cisco-ccent-part-4/</guid>
-        <description></description>
+        <description>1. Pendahuluan
+A. Pengertian
+Cisco Adalah sebuah perusahaan yang memiliki 2 bidang usaha, yaitu:
+1. Pembuatan hardware dan software yang berhubungan dengan jaringan komputer
+2. Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA)
+B. Latar Belakang
+Mengulangi dan Meringkas Materi yang Diberikan Tadi
+C. Maksud dan Tujuan
+Untuk lebih memahami materi yang diberikan tadi
+2. Alat dan Bahan
+- Laptop
+- Proyektor
+- Internet
+3. Jangka Waktu Pelaksanaan
+Jam 08:00 s/d 22:00</description>
       </item>
     
       <item>
@@ -753,7 +900,21 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/09/28/training-cisco-ccent-part-3/</link>
         <pubDate>Thu, 28 Sep 2017 04:20:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/28/training-cisco-ccent-part-3/</guid>
-        <description></description>
+        <description>1. Pendahuluan
+A. Pengertian
+Cisco Adalah sebuah perusahaan yang memiliki 2 bidang usaha, yaitu:
+1. Pembuatan hardware dan software yang berhubungan dengan jaringan komputer
+2. Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA)
+B. Latar Belakang
+Mengulangi dan Meringkas Materi yang Diberikan Tadi
+C. Maksud dan Tujuan
+Untuk lebih memahami materi yang diberikan tadi
+2. Alat dan Bahan
+- Laptop
+- Proyektor
+- Internet
+3. Jangka Waktu Pelaksanaan
+Jam 08:00 s/d 22:00</description>
       </item>
     
       <item>
@@ -761,7 +922,21 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/09/27/training-cisco-ccent-part-2/</link>
         <pubDate>Wed, 27 Sep 2017 04:13:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/27/training-cisco-ccent-part-2/</guid>
-        <description></description>
+        <description>1. Pendahuluan
+A. Pengertian
+Cisco Adalah sebuah perusahaan yang memiliki 2 bidang usaha, yaitu:
+1. Pembuatan hardware dan software yang berhubungan dengan jaringan komputer
+2. Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA)
+B. Latar Belakang
+Mengulangi dan Meringkas Materi yang Diberikan Tadi
+C. Maksud dan Tujuan
+Untuk lebih memahami materi yang diberikan tadi
+2. Alat dan Bahan
+- Laptop
+- Proyektor
+- Internet
+3. Jangka Waktu Pelaksanaan
+Jam 08:00 s/d 22:00</description>
       </item>
     
       <item>
@@ -769,7 +944,12 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/09/26/kunjungan-industri-dari-smkn-1-bantul/</link>
         <pubDate>Tue, 26 Sep 2017 04:08:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/26/kunjungan-industri-dari-smkn-1-bantul/</guid>
-        <description></description>
+        <description>PendahuluanHari ini sedikit berbeda karena ada kunjungan industri dari SMKN 1 Bantul,&amp;nbsp;mereka mendapat kesempatan yang luarbiasa, karena dipandu langsung oleh Mbah Suro tentang cara memanjat tower. Karena biasanya Mbah Suro tidak akan memberi materi tentang SOP dan K3LH memanjat tower.
+
+
+
+
+Sebenearnya saya dan teman teman diberi kesempatan untuk memraktekan Pointing dan Wireles reapeater, tapi karena waktunya sudah sore jadi tidak sampai pada praktik itu dan hanya samapai memanjat tower.</description>
       </item>
     
       <item>
@@ -777,7 +957,9 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/09/25/training-cisco-ccent-part-1/</link>
         <pubDate>Mon, 25 Sep 2017 03:51:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/25/training-cisco-ccent-part-1/</guid>
-        <description></description>
+        <description>1.Pendahuluan
+A. Pengertian
+Cisco merupakan perusahaan global dalam bidang telekomunikasi yang bermarkas di San José, California, Amerika Serikat. Perusahaan ini didirikan pada tahun 1984. Perusahaan ini mempekerjakan 51.480 pekerja.Produk dari perusahaan ini dapat ditemukan dari ruang tamu sampai ke perusahaan yang bergerak untuk skala internasional.Visi dari Cisco System.Inc (Cisco) yaitu “mengubah bagaimana cara hidup,bekerja,bermain dan belajar”,dan bagian dari Slogan dari Cisco adalah “ Selamat datang kedalam dunia Jaringan “ (welcome to the human network).</description>
       </item>
     
       <item>
@@ -785,7 +967,11 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/09/24/sharing-bersama-mbah-suro-penjelasan-tentang-tower/</link>
         <pubDate>Sun, 24 Sep 2017 03:47:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/24/sharing-bersama-mbah-suro-penjelasan-tentang-tower/</guid>
-        <description></description>
+        <description>A.Pendahuluan&amp;nbsp;
+Di sini saya akan menjelaskan tentang tower
+1.Pengertian
+Tower Jaringan telekomunikasi adalah menara terbuat dari rangkaian besi atau pipa baik segi empat atau segitiga, atau hanya berupa pipa panjang (tongkat) yang bertujuan untuk menepatkan antena dan radio pemancar maupun sebagai penerima gelombang telekomunikasi dan informasi. Intinya berfungsi untuk menjembatani perangkat komunikasi pengguna dengan jaringan yang menuju jaringan lain.
+Fungsi dari tower telekomunikasi adalah untuk menepatkan antena pemancar sinyal ( jaringan akses) unutk memberikan layanan kepada pelanggan disekitar tower tersebut.</description>
       </item>
     
       <item>
@@ -793,7 +979,12 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/09/23/latihan-pointing-diatas-40-meter/</link>
         <pubDate>Sat, 23 Sep 2017 03:43:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/23/latihan-pointing-diatas-40-meter/</guid>
-        <description></description>
+        <description>A. PendahuluanPada kesempatan ini saya akan berbagi pengalaman tentang bagaimana melakukan pointing diatas tower kurang lebih 40 meter.
+B. PengertianPointing&amp;nbsp;adalah menentukan lokasi yang ideal antara perangkat Akses&amp;nbsp;PointUtama yang berfungsi sebagai Server ke Akses&amp;nbsp;Point&amp;nbsp;ke-2 yang berfungsi sebagai Client.
+C. Latar belakangPenasaran untuk melakukan pointing diatas ketinggian dan ingin melihat kota bersinar diatas ketinggian
+D. TujuanDapat mengasah keinginan untuk ketempat yang lebih tinggi lagi
+E. Hasil yang diharapkanDapat melakukan yang terbaik
+F. Alat dan bahanUBNTPeralatan memanjat towerAsumsi makanan/minumanPerangkat voiceG.</description>
       </item>
     
       <item>
@@ -801,7 +992,13 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/09/22/backup-and-restore-mikrotik/</link>
         <pubDate>Fri, 22 Sep 2017 03:39:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/22/backup-and-restore-mikrotik/</guid>
-        <description></description>
+        <description>1. Pendahuluan
+A. Pengertian
+Di bidang teknologi informasi, backup, atau proses back up, mengacu pada penyalinan dan pengarsipan data sehingga bisa digunakan untuk mengembalikan dokumen asli setelah terjadi peristiwa kehilangan data. Bentuk kata kerja adalah untuk membuat cadangan dua kata, sedangkan kata benda adalah cadangan.
+Restore , mengacu pada proses pengembalian data menggunakan file backup.
+B. Latar Belakang
+Membackup data mikrotik agar saat perangkat rusak kita punya salinan konfigurasinya.
+C. Hasil Yang Diharapkan</description>
       </item>
     
       <item>
@@ -809,7 +1006,13 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/09/21/sntp-client-mikrotik/</link>
         <pubDate>Thu, 21 Sep 2017 03:30:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/21/sntp-client-mikrotik/</guid>
-        <description></description>
+        <description>1. Pendahuluan
+A. Pengertian
+Network Time Protocol (NTP) adalah protokol jaringan untuk sinkronisasi jam antara sistem komputer melalui jaringan data packet-switched, variable-latency. Beroperasi sejak sebelum 1985, NTP adalah salah satu protokol Internet tertua yang digunakan saat ini. NTP dirancang oleh David L. Mills dari University of Delaware.B. Latar Belakang Untuk Mensinkronisasikan waktu pada mikrotik
+B. Hasil Yang Diharapkan
+Dapat Mensinkronisasikan waktu pada mikrotik
+2. Alat dan Bahan
+- Router mikrotik</description>
       </item>
     
       <item>
@@ -817,7 +1020,10 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/09/20/atasi-phpmyadmin-error-#1698-sehingga-tidak-bisa-login-sebagai-root/</link>
         <pubDate>Wed, 20 Sep 2017 03:15:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/20/atasi-phpmyadmin-error-#1698-sehingga-tidak-bisa-login-sebagai-root/</guid>
-        <description></description>
+        <description>A. PendahuluanPada kesempatan ini yang saya posting/share yaitu troubleshoot phpmyadmin dengan kode error&amp;nbsp;#1698 atau tidak bisa login sebagai root
+B. PengertianPhpMyAdmin&amp;nbsp;adalah&amp;nbsp;perangkat lunak bebas&amp;nbsp;yang ditulis dalam&amp;nbsp;bahasa pemrograman&amp;nbsp;PHP&amp;nbsp;yang digunakan untuk menangani administrasi&amp;nbsp;MySQL&amp;nbsp;melalui&amp;nbsp;Jejaring Jagat Jembar&amp;nbsp;(World Wide Web). phpMyAdmin mendukung berbagai operasi MySQL, diantaranya (mengelola&amp;nbsp;basis data, tabel-tabel, bidang (fields), relasi (relations), indeks, pengguna (users), perizinan (permissions), dan lain-lain).
+C. Latar belakangIngin membagi pengetahuan tentang atasi permasalahan yang sama
+D. TujuanPembaca mudah mengatasai masalahnya seperti yang dimaksud</description>
       </item>
     
       <item>
@@ -825,7 +1031,12 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/09/19/pointing-ubnt-ke-mikrotik/</link>
         <pubDate>Tue, 19 Sep 2017 02:56:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/19/pointing-ubnt-ke-mikrotik/</guid>
-        <description></description>
+        <description>PENGERTIANPoint to Point adalah data link protokol yang umum digunakan dalam membangun hubungan langsung antara dua node jaringan. Hal ini dapat menyediakan koneksi otentikasi, transmisi enkripsi (menggunakan ECP, RFC 1968), dan kompresi.
+LATAR BELAKANGJauhnya tempat tidak memunginkan untuk penggunakan kabel untuk media transmisi data
+MAKSUD DAN TUJUANMempelajari UBNT
+Jangka Waktu PelaksanaanKurang lebih 3 jam
+ALAT DAN BAHAN
+~ Laptop~ Ubnt Powerbeam M2~ RB 941~ Alat untuk memnjat tower, Tali Wabbing, Harnesses, Tas untuk wadah kunci,~ Kabel LAN</description>
       </item>
     
       <item>
@@ -833,7 +1044,9 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/09/19/proxy-situs-dengan-fitur-web-proxy-di-mikrotik/</link>
         <pubDate>Tue, 19 Sep 2017 02:51:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/19/proxy-situs-dengan-fitur-web-proxy-di-mikrotik/</guid>
-        <description></description>
+        <description>A. PendahuluanPada kesempatan kali ini yang saya posting masih mengenai mikrotik yaitu bagaimana proxy situs dengan fitur yang ada pada mikrotik
+B. PengertianApa itu proxy ?Proxy merupakan perangkat yang bersifat &#34;middleman&#34;, yang bekerja diantara client &amp;amp; Server, bertugas menghadle transmisi request ataupun respon. Data yang melewati proxy, bisa diubah oleh proxy atau tidak diubah sama sekali, tergantung implementasi fitur dan kemampuan proxy.
+Manfaat Proxy&amp;nbsp;Security&amp;nbsp;: Proxy mampu melakukan pengecekan terhadap incoming response &amp;amp; outgoing request, sehingga memungkinkan untuk melakukan block paket yang tidak diharapkanCaching&amp;nbsp;: Menyimpan sementara data dari internet di storage, sehingga jika ada client lain yang hendak mengakses data yang sama, cukup mengambil data di cache.</description>
       </item>
     
       <item>
@@ -841,7 +1054,13 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/09/18/belajar-dan-latihan-memanjat-tower/</link>
         <pubDate>Mon, 18 Sep 2017 02:36:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/18/belajar-dan-latihan-memanjat-tower/</guid>
-        <description></description>
+        <description>PENDAHULUANYaakk, kaliini saya akan berbagi pengalaman saat pertama memanjat Tower Jaringan. Hal hal yang harus anda mengerti saat akan memanjat tower,
+~ Kondisi lingkungan yang mendukung
+~ Alat yang benar benar sesuai SOP
+~ Kondisi fisikanda
+Alat yang saya gunakan pertama kali adalah, Tali Webbing
+Nah tali webbing ini minimal harus memiliki panjang 3-4 meter, agar nyaman di kenakan.
+selain itu tali webbing ini memiliki umur, jadi haruslah diperhatikan bentuk fisik dari tali yang akan kita pakai untuk memanjat tower.</description>
       </item>
     
       <item>
@@ -849,7 +1068,7 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/09/18/pengenalan-open-source/</link>
         <pubDate>Mon, 18 Sep 2017 02:35:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/18/pengenalan-open-source/</guid>
-        <description></description>
+        <description>A. PENDAHULUANMungkin kalian pernah mendengar kata open source. betulkan,, di benak kalian pasti mengatakan apa sih open source itu..?. nah disini kita kupas abis terkait dengan open sourceB. PENGERTIANOpen source Software (OSS) merupakan istilah yang di gunakan untuk software komputer yang membuka/membebaskan source codenya untuk dilihat oleh orang lain dan membiarkan orang lain mengetahui cara kerja software tersebut dan sekaligus memperbaiki kelemahan - kelemahan yang ada pada software tersebut. Tiap orang dapat melihat, mengubah atau memodifikasi kodenya, dan mendistribusikannya lagi.</description>
       </item>
     
       <item>
@@ -857,7 +1076,9 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/09/18/k3-kesehatan-keselamatan-dan-keamanan-kerja/</link>
         <pubDate>Mon, 18 Sep 2017 02:31:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/18/k3-kesehatan-keselamatan-dan-keamanan-kerja/</guid>
-        <description></description>
+        <description>PENDAHULUANPada kesempatan ini kita akan membahas sedikit mengenai K3 atau Kesehatan, Keselamatan, Keamanan Kerja. kenapa kita membahas hal ini, karna di dalam melakukan pekerjaan kita harus memahmi atau memakai yang namanya K3.
+PENGERTIANFilosofi (Mangkunegara)Suatu pemikiran dan upaya untuk menjamin keutuhan dan kesempurnaan jasmani maupun rohani tenaga kerja khususnya dan manusia pada umumnya serta hasil karya dan budaya untuk menuju masyarakat adil dan makmur.
+KeilmuanSemua ilmu dan penerapannya untuk mencegah terjadinya kecelakaan kerja, penyakit akibat kerja (PAK), kebakaran, peledakan dan pencemaran lingkungan.</description>
       </item>
     
       <item>
@@ -865,7 +1086,10 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/09/18/switch-chip-di-mikrotik/</link>
         <pubDate>Mon, 18 Sep 2017 02:24:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/18/switch-chip-di-mikrotik/</guid>
-        <description></description>
+        <description>A. PendahuluanPada kali ini, yang saya posting yaitu tentang memfungsikan mikrotik sebagai switch
+B. PengertianSwitch merupakan penghubung beberapa alat untuk membentuk suatu Local Area Network (LAN). Routerboard Mikrotik RB750 telah disediakan fungsi switch, yang mana jika sobat menginginkan men-share internet lebih dari satu komputer atau pada umumnya topologi yang digunakan kebanyak internet di share melalui media wifi dan lan menggunakan kabel.
+C. Latar belakangIngin menambah pengetahuan
+D. TujuanPembaca dapat mengetahu bagaimana membuat routing dynamic RIP</description>
       </item>
     
       <item>
@@ -873,7 +1097,9 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/09/16/routing-static-di-mikrotik/</link>
         <pubDate>Sat, 16 Sep 2017 02:15:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/16/routing-static-di-mikrotik/</guid>
-        <description></description>
+        <description>A. PendahuluanPada kesempatan kali ini, saya akan memposting tentang pengimplemtasian routing static di mikrotik
+B. PengertianRouting static adalah menambahkan jalur routing tertentu secara manual. Mikrotik secara default akan membuat jalur routing otomatis (dynamic route) ketika kita menambahkan ip address pada interface. Lalu kenapa kita memerlukan static routing? Karena untuk menghubungkan perangkat network yang memilik ip segment (subnet) yang berbeda memerlukan sebuah perangkat yang mampu melakukan proses static routing.
+C. Latar belakangIngin menambah pengetahuan</description>
       </item>
     
       <item>
@@ -881,7 +1107,8 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/09/15/routing-dynamic-rip-di-mikrotik/</link>
         <pubDate>Fri, 15 Sep 2017 02:05:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/15/routing-dynamic-rip-di-mikrotik/</guid>
-        <description></description>
+        <description>A. PendahuluanPada kesempatan kali ini, saya akan memposting tentang pengimplemtasian routing dynamic RIP di mikrotik
+B. PengertianRouting Information Protocol (RIP)&amp;nbsp;adalah sebuah protokol routing dinamis yang digunakan dalam jaringan LAN (Local Area Network) dan WAN (Wide Area Network). Oleh karena itu protokol ini diklasifikasikan sebagai Interior Gateway Protocol (IGP). Protokol ini menggunakan algoritma Distance-Vector Routing. Pertama kali didefinisikan dalam RFC 1058 (1988). Protokol ini telah dikembangkan beberapa kali, sehingga terciptalah RIP Versi 2.</description>
       </item>
     
       <item>
@@ -889,7 +1116,14 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/09/14/training-entri-data-bersama-manis-pt.ebizu-#day2/</link>
         <pubDate>Thu, 14 Sep 2017 02:01:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/14/training-entri-data-bersama-manis-pt.ebizu-#day2/</guid>
-        <description></description>
+        <description>PENDAHULUANEbizu adalah sebuah perusahaan DATA yang mengumpulkan data untuk tujuan tertentu. Ebizu ini memiliki banyak produk dintaranya adalah Maniz, Maniz sendiri adalah aplikasi yang menawarkan keuntungan berupa Voucher belanja, makan dll.
+ALAT DAN BAHAN
+~ Laptop
+~ Proyektor LCD
+~ Koneksi Internet
+JANGKA WAKTU TRAINING
+jam 10 pagi s/d 4 sore
+TAHAPAN DAN PEMBAHASAN TrainingDi hari kedua ini dari pihak trainer, akan mereview apa yang telah mereka sampaikan kemarin, contoh saat akan melakukan Validasi harus melihat 4 aspek penting.</description>
       </item>
     
       <item>
@@ -897,7 +1131,19 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/09/13/training-entri-data-bersama-manis-pt.ebizu-#day1/</link>
         <pubDate>Wed, 13 Sep 2017 02:00:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/13/training-entri-data-bersama-manis-pt.ebizu-#day1/</guid>
-        <description></description>
+        <description>PENDAHULUANEbizu adalah sebuah perusahaan DATA yang mengumpulkan data untuk tujuan tertentu. Ebizu ini memiliki banyak produk dintaranya adalah Maniz, Maniz sendiri adalah aplikasi yang menawarkan keuntungan berupa Voucher belanja, makan dll.
+ALAT DAN BAHAN
+~ Laptop
+~ Proyektor LCD
+~ Koneksi Internet
+JANGKA WAKTU TRAINING
+jam 9 pagi s/d 4 sore
+
+TAHAPAN DAN PEMBAHASAN Training
+
+
+
+training ini memberikan pengarahan tentang aplikasi manis dan fitur Snap &amp;amp; Earn, untuk teman teman BLC yang berminat menjadi Operator dari Manis harus mengikuti dengan baik training ini.</description>
       </item>
     
       <item>
@@ -905,7 +1151,8 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/09/13/sop-k3-dan-k3lh-di-industri/</link>
         <pubDate>Wed, 13 Sep 2017 01:45:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/13/sop-k3-dan-k3lh-di-industri/</guid>
-        <description></description>
+        <description>A. PENDAHULUANPada kali ini saya akan menceritakan sedikit tentang sop k3 pasti kalian penasaran tentang apa itu SOP K3 jika kalian ingin tau penjelasan nya maka simak lah bagian berikut ini,
+B. PENGERTIANStandart Operating Prosedure ( SOP ) adalah serangaian instruksi kerja tertulis yang dibukakan (terdokumentasi) mengenai proses penyelenggaraan administrasi perusahaan, bagaimana dan kapan harus dilakukan, dimana dan &amp;nbsp;oleh siapa dilakukan.K3LH adalah bidang yang terkait dengan kesehatan, keselamatan, dan kesejahteraan manusia yang bekerja di sebuah institusi maupun lokasi proyek.</description>
       </item>
     
       <item>
@@ -913,7 +1160,8 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/09/12/routing-dynamic-ospf-di-mikrotik/</link>
         <pubDate>Tue, 12 Sep 2017 12:36:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/12/routing-dynamic-ospf-di-mikrotik/</guid>
-        <description></description>
+        <description>A. PendahuluanPada kesempatan kali ini, yang saya posting yaitu membuat routing dynamic OSPF di mikrotik
+B. PengertianOpen Shortest Path First (OSPF)&amp;nbsp;adalah sebuah protokol routing otomatis (Dynamic Routing) yang mampu menjaga, mengatur dan mendistribusikan informasi routing antar network mengikuti setiap perubahan jaringan secara dinamis. Pada OSPF dikenal sebuah istilah&amp;nbsp;Autonomus System&amp;nbsp;(AS) yaitu sebuah gabungan dari beberapa jaringan yang sifatnya routing dan memiliki kesamaan metode serta policy pengaturan network, yang semuanya dapat dikendalikan oleh network administrator.</description>
       </item>
     
       <item>
@@ -921,7 +1169,9 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/09/12/pengenalan-sop-standar-operasional-prosedur/</link>
         <pubDate>Tue, 12 Sep 2017 01:27:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/12/pengenalan-sop-standar-operasional-prosedur/</guid>
-        <description></description>
+        <description>A. PendahuluanPada blog kali ini saya akan memperkenalkan tentang SOP. pasti kalian bertanya apa itu SOP selanjut nya akan di jelaskan di bawah ini.
+1. Pengertian
+SOP&amp;nbsp;Prosedur operasi standar istilah dalam bahasa Indonesia, atau dalam bahasa Inggris disebut SOP (Standart Oprational Procedur), digunakan dalam berbagai konteks yang berbeda, termasuk kesehatan, penerbangan, teknik, pendidikan, industri, dan militer. Dengan melakukan SOP perusahaan dapat memastikan suatu aktivitas bisnis bisa berjalan sesuai dengan standard yang diharapkan.</description>
       </item>
     
       <item>
@@ -929,7 +1179,13 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/09/11/mengupgrade-version-mikrotik-routerboard/</link>
         <pubDate>Mon, 11 Sep 2017 11:20:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/11/mengupgrade-version-mikrotik-routerboard/</guid>
-        <description></description>
+        <description>A. PendahuluanPada kesempatan kali ini saya akan memposting bagaimana sih cara mengupgrade versi mikrotik.
+B. Latar belakangIngin mendapatkan fitur baru pada versi baru sistem mikrotik
+C. TujuanAgar pengunjung blog dapat mengetahui bagaimana cara mengupgrade versi mikrotik
+D. Hasil yang diharapkanDapat mengikuti tahapan kerjanya
+E. Alat dan bahanmikrotikakses internetkabel UTP
+F. Jangka waktu pelaksanaanWaktu yang dibutuhkan tergantung dari koneksi yang digunakan
+G. Langkah kerja1. Hubungkan mikrotik kemudian buka winbox untuk mengkonfigurasi mikrotik tersebut2.</description>
       </item>
     
       <item>
@@ -937,7 +1193,13 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/09/09/memblokir-situs-yang-mempunyai-banyak-ip-dengan-mikrotik/</link>
         <pubDate>Sat, 09 Sep 2017 15:27:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/09/memblokir-situs-yang-mempunyai-banyak-ip-dengan-mikrotik/</guid>
-        <description></description>
+        <description>A. PendahuluanPada kesempatan kali ini, saya ingin berbagi tentang memblokir situs yang mempunyai banyak ip dengan mikrotik.
+
+B. PengertianSitus web&amp;nbsp;(bahasa Inggris:&amp;nbsp;website) adalah suatu&amp;nbsp;halaman web&amp;nbsp;yang saling berhubungan yang umumnya berada pada&amp;nbsp;peladen&amp;nbsp;yang sama berisikan kumpulan informasi yang disediakan secara perorangan, kelompok, atau&amp;nbsp;organisasi.
+
+C. Latar belakangAda beberapa situs yang mempunyai banyak ip, sehingga bila ip yang satunya di block dia masih bisa diakses karena punya ip yang lain.
+
+D. TujuanDapat memblokir ip dengan cara cerdas</description>
       </item>
     
       <item>
@@ -945,7 +1207,8 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/09/09/membuat-interface-bridge-dan-menambahkan-ethernet-ke-bridge/</link>
         <pubDate>Sat, 09 Sep 2017 15:22:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/09/membuat-interface-bridge-dan-menambahkan-ethernet-ke-bridge/</guid>
-        <description></description>
+        <description>A. PendahuluanPada kesempata kali ini saya akan memposting bagaimana membuat interface bridge kemudian menambahkan ethernet ke bridge
+B. PengertianJembatan jaringan (bahasa Inggris:&amp;nbsp;Network bridge) adalah sebuah komponen jaringan yang digunakan untuk memperluas jaringan atau membuat sebuah segmen jaringan. Jembatan jaringan beroperasi di dalam lapisan data-link pada model OSI. Jembatan juga dapat digunakan untuk menggabungkan dua buah media jaringan yang berbeda, seperti halnya antara media kabel Unshielded Twisted-Pair (UTP) dengan kabel serat optik atau dua buah arsitektur jaringan yang berbeda, seperti halnya antara Token Ring dan Ethernet.</description>
       </item>
     
       <item>
@@ -953,7 +1216,8 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/09/08/konfigurasi-dasar-mikrotik-dengan-sumber-internet-dari-ip-static/</link>
         <pubDate>Fri, 08 Sep 2017 14:58:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/08/konfigurasi-dasar-mikrotik-dengan-sumber-internet-dari-ip-static/</guid>
-        <description></description>
+        <description>A. PendahuluanPada kali ini, saya akan memposting kembali konfigurasi dasar mikrotik tetapi dari ip static
+B. PengertianMikrotik&amp;nbsp;adalah&amp;nbsp;sebuah perusahaan yang bergerak di bidang produksi perangkat keras (hardware) dan perangkat lunak (Software) yang berhubungan dengan sistem jaringan komputer yang berkantor pusat di Latvia, bersebelahan dengan Rusia. Produk hardware unggulan Mikrotik berupa Router, Switch, Antena, dan perangkat pendukung lainnya. Sedangkan produk Software unggulan Mikrotik adalah MikroTik RouterOS.MikroTik routerboad&amp;nbsp;adalah&amp;nbsp;router embedded produk dari mikrotik. Routerboard seperti sebuah pc mini yang terintegrasi karena dalam satu board tertanam prosesor, ram, rom, dan memori flash.</description>
       </item>
     
       <item>
@@ -961,7 +1225,7 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/09/07/wireless-concept/</link>
         <pubDate>Thu, 07 Sep 2017 14:53:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/07/wireless-concept/</guid>
-        <description></description>
+        <description>A. Pendahuluanhay guys, kali&amp;nbsp; ini saya akan melakukan pemahaman tentang Wireless Concept&amp;nbsp;1. PengertianWireless Concept ini merupakan suatu ketentuan-ketentuan yang harus dipatuhi dalam pembangunan jaringan wifi atau jaringan komputer2. Latar belakangDalam pembanguan jaringan wifi terkadang banyak permasalahan yang timbul karena menyepelekan wireless concept ini.3. Maksud &amp;amp; TujuanMeminimalisir kesalahan karena hal yang sebenarnya sepele.&amp;nbsp;4. Hasil yang di harapkanDapat memahami dan dapat menerapkan wireless concept pada saat mengerjakan proyek.B. Jangka waktuJangka waktu yang saya butuhkan untuk memahaminya adalah 8 Jam.</description>
       </item>
     
       <item>
@@ -969,7 +1233,9 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/09/07/mengatasi-kursor-winbox-mikrotik-meloncat-loncat-sewaktu-mengetik/</link>
         <pubDate>Thu, 07 Sep 2017 14:42:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/07/mengatasi-kursor-winbox-mikrotik-meloncat-loncat-sewaktu-mengetik/</guid>
-        <description></description>
+        <description>A. PendahuluanPernahkan anda mengalami ini? atau hanya pernah lihat begini?
+Pada postingan kali, saya akan sharing bagaimana&amp;nbsp;mengatasi kursor winbox mikrotik meloncat-loncat sewaktu mengetik.
+B. Pengertiankursor&amp;nbsp;adalah suatu petunjuk atau indikator posisi pada&amp;nbsp;monitor komputer&amp;nbsp;atau&amp;nbsp;peranti tampilan&amp;nbsp;lain yang akan merespons&amp;nbsp;masukan&amp;nbsp;dari suatu masukan teks atau&amp;nbsp;peranti penunjuk. Kursor secara umum dapat dibagi menjadi dua jenis: kursor teks dan kursor tetikus.&amp;nbsp;Kursor teks&amp;nbsp;adalah petunjuk pada&amp;nbsp;antarmuka baris perintah&amp;nbsp;(CLI) atau&amp;nbsp;editor teks&amp;nbsp;yang menunjukkan tempat teks akan diletakkan sewaktu dimasukkan (titik penyisipan) dan biasanya berupa garis bawah, segi empat, atau garis vertikal yang dapat berkedip atau stabil.</description>
       </item>
     
       <item>
@@ -977,7 +1243,11 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/09/06/memblokir-1-ip-address-client-agar-tidak-dapat-terkoneksi-ke-internet-dengan-simple-logika-mode/</link>
         <pubDate>Wed, 06 Sep 2017 14:26:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/06/memblokir-1-ip-address-client-agar-tidak-dapat-terkoneksi-ke-internet-dengan-simple-logika-mode/</guid>
-        <description></description>
+        <description>A. PendahuluanPada praktek ini, saya akan memposting bagaimana memblokir ip address dari client agar tidak dapat terhubung ke internet tetapi masing menggunakan firewall simple logika
+B. PengertianFirewall simple logis/logika adalah konfigurasi firewall secara logis sehingga bisa lebih mudah dipahami karena lebih manusiawi
+C. Latar belakangIngin menambah ilmu kemudian untuk disharing
+D. TujuanAgar client tidak bisa terhubung ke internet apabila ia mendapatkan ip yang telah diblokir
+E. Hasil yang diharapkanDapat melakukan konfigurasi dengan cepat, baik, dan benar</description>
       </item>
     
       <item>
@@ -985,7 +1255,9 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/09/05/memblokir-ekstensi-file-pada-mikrotik-dengan-web-proxy/</link>
         <pubDate>Tue, 05 Sep 2017 13:02:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/05/memblokir-ekstensi-file-pada-mikrotik-dengan-web-proxy/</guid>
-        <description></description>
+        <description>A. PendahuluanPada kesempatan ini, yang saya posting tentang mirkotik eh mikrotik tepatnya memproxy ekstensi file tertentu agar tidak bisa diakses oleh client.
+
+B. PengertianSecara umum arti dari proxy adalah sebuah komputer server atau program komputer yang dapat bertindak sebagai komputer lainnya untuk melakukan request terhadap content dari Internet atau intranet. Dengan kata lain proxy merupakan sebuah media keamanan bagi akses jaringan internet kita.&amp;nbsp;Terdapat beberapa macam tipe proxy, diantaranya SSL Proxy, Web Proxy, Intercepting Proxy, Reverse Proxy, dll.</description>
       </item>
     
       <item>
@@ -993,7 +1265,12 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/09/05/memblokir-ip-situs-di-firewall-dengan-simple-logika-mode/</link>
         <pubDate>Tue, 05 Sep 2017 10:00:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/05/memblokir-ip-situs-di-firewall-dengan-simple-logika-mode/</guid>
-        <description></description>
+        <description>A. PendahuluanPada kesempatan kali ini saya akan memposting tentang firewall tetapi dengan metode simple logika
+B. PengertianFirewall simple logis/logika adalah konfigurasi firewall secara logis sehingga bisa lebih mudah dipahami karena lebih manusiawi
+C. Latar belakangIngin menambah ilmu kemudian untuk disharing
+D. TujuanAgar client tidak dapat membuka situs yang telah diblokir
+E. Hasil yang diharapkanDapat melakukan konfigurasi dengan cepat, baik, dan benar
+F. Alat dan bahanMikrotikAkses internetLaptop/pcG. Jangka waktu pelaksanaanWaktu yang dibutuhkan sekitar 5-15 menit</description>
       </item>
     
       <item>
@@ -1001,7 +1278,8 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/09/04/memblokir-situs-dengan-layer-7-protocol/</link>
         <pubDate>Mon, 04 Sep 2017 14:00:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/04/memblokir-situs-dengan-layer-7-protocol/</guid>
-        <description></description>
+        <description>A. PendahuluanPada kesempatan ini saya akan memposting salah satu fitur yang ada di firewall yaitu layer 7 protocol.
+B. PengertianProtokol Layer7 adalah metode untuk mencari pola dalam ICMP / TCP / UDP stream, atau istilah lainnya regex pattern.&amp;nbsp;Cara kerja L7 adalah mencocokan (mathcer) 10 paket koneksi pertama atau 2KB koneksi pertama dan mencari pola/pattern data yang sesuai dengan yang tersedia. Jika pola ini tidak ditemukan dalam data yang tersedia, matcher tidak memeriksa lebih lanjut.</description>
       </item>
     
       <item>
@@ -1009,7 +1287,19 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/09/04/mengkonfersi-bilangan-desimal-atau-biner/</link>
         <pubDate>Mon, 04 Sep 2017 13:39:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/04/mengkonfersi-bilangan-desimal-atau-biner/</guid>
-        <description>A. PENGERTIANKonfersi adalah suatu perubahan dari satu bentuk (rupa,dan sebagainya) contoh dari angka desimal ke angka biner ataupun sebaliknyaB. LATAR BELAKANGAgar bisa mengubah desimal ke binerC.TUJUANUntuk menghitung atau mengetahui cara konfersiD. ALAT DAN BAHANpensil/pulpenkertasalat hitung (calculator)E. DURASI PELAKSANAAN10 - 20 menitF. LANGKAH KERJA1. tentukan bilangan yang ingin di konfersi baik desimal maupun biner2. semisalnya kita akan mengkonfersi bilangan desimal ke binercontoh bilangan = 110111113. selanjutnya susun angka 2 sebanyak 8 kali, kemudian pangkatkan dari angka 0 - 7 (cat.</description>
+        <description>A. PENGERTIAN
+Konfersi adalah suatu perubahan dari satu bentuk (rupa,dan sebagainya) contoh dari angka desimal ke angka biner ataupun sebaliknya
+B. LATAR BELAKANG
+Agar bisa mengubah desimal ke biner
+
+C.TUJUAN
+Untuk menghitung atau mengetahui cara konfersi
+D. ALAT DAN BAHAN
+pensil/pulpenkertasalat hitung (calculator)
+E. DURASI PELAKSANAAN
+10 - 20 menit
+F. LANGKAH KERJA
+1. tentukan bilangan yang ingin di konfersi baik desimal maupun biner2. semisalnya kita akan mengkonfersi bilangan desimal ke biner</description>
       </item>
     
       <item>
@@ -1017,7 +1307,8 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/08/31/menginstall-vmware-player-di-linux/</link>
         <pubDate>Thu, 31 Aug 2017 13:27:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/31/menginstall-vmware-player-di-linux/</guid>
-        <description></description>
+        <description>A. PendahuluanPada kesempatan ini, saya memposting bagaimana sih menginstal VMware Player di linux.
+B. PengertianVMware Player&amp;nbsp;adalah sebuah produk&amp;nbsp;perangkat lunak virtualisasi&amp;nbsp;berlisensi bebas dari&amp;nbsp;VMware, sebuah divisi dari&amp;nbsp;EMC Corporation. Produk ini bisa menjalankan&amp;nbsp;mesin virtualpengguna yang dibuat dari produk VMware yang lain tetapi tidak dapat membuat sebuah&amp;nbsp;mesin virtual&amp;nbsp;yang baru.namun limitasi ini dicabut di versi 3.0.0. sehingga dapat membuat sendiri tanpa harus memakai&amp;nbsp;VMware Workstation. Perangkat berlisensi bebas dan situs web seperti&amp;nbsp;EasyVMX&amp;nbsp;juga hadir untuk membuat&amp;nbsp;mesin virtual, menghapus, memanipulasi dan mengkonversikan disk&amp;nbsp;VMware&amp;nbsp;dan&amp;nbsp;floppy, membuat perizinan pengguna, menjalankan dan merawat&amp;nbsp;mesin virtual.</description>
       </item>
     
       <item>
@@ -1025,7 +1316,11 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/08/30/sharing-bersama-naster-virtualisasi-pak-nathan-gusti-ryan/</link>
         <pubDate>Wed, 30 Aug 2017 13:07:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/30/sharing-bersama-naster-virtualisasi-pak-nathan-gusti-ryan/</guid>
-        <description></description>
+        <description>Pada kesempatan ini saya akan berbagi tentang pengalaman sharing dengan MASTER VIRTUALISASI DARI INDONESIA.
+
+
+
+Banyak sekali pengalaman yang saya terima dari sharing Pak Herry, Pak Nathan Gusti Ryan, Mas Latif. Mulai dari Pak Herry yang menceritakan tentang apa itu database, dan jenis jenis perangkat database yang pernah ia kerjakan, berapa tahun ia mempelajari Virtualisasi dan lika liku perjalanannya. Kemudian dari Pak Nathan memberi bocoran bagaimana gambaran didalam Datacenter.</description>
       </item>
     
       <item>
@@ -1033,7 +1328,9 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/08/30/mengenal-lebih-dalam-tentang-subneting/</link>
         <pubDate>Wed, 30 Aug 2017 10:00:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/30/mengenal-lebih-dalam-tentang-subneting/</guid>
-        <description></description>
+        <description>A. PendahuluanOke pada kesempatan lalu saya pernah memposting tentang subnetting namun pada kesempatan ini saya akan mempost untuk melengkapi post pada kesempatan lalu.
+B. PengertianSubnetting adalah&amp;nbsp;&amp;nbsp;Praktek membagi jaringan menjadi dua atau lebih jaringan disebut.&amp;nbsp;IP adalah sistem pengalamatan setiap host yang terhubung dengan jaringan.&amp;nbsp;
+C. Latar belakangSemakin banyaknya ip yang di gunakan untuk dapat terkoneksi ke internet dimana kita harus benar benar mengetahui bagaimana penempatan dan penggunaan ip address dan subnetting.</description>
       </item>
     
       <item>
@@ -1041,7 +1338,9 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/08/29/apa-itu-hotspot/</link>
         <pubDate>Tue, 29 Aug 2017 12:57:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/29/apa-itu-hotspot/</guid>
-        <description></description>
+        <description>A. Pengertian
+Area bersinyal (bahasa Inggris: Hotspot) merujuk pada tempat-tempat tertentu (biasanya tempat umum) yang memiliki layanan internet dengan menggunakan teknologi Wireless LAN, seperti pada perguruan tinggi, mal, plaza, perpustakaan, restoran ataupun bandar udara. Layanan internet seperti ini, ada yang berbayar dan yang tidak (gratis).
+Sejarah HotspotKonsep ini pertama kali dikemukakan pada tahun 1993 oleh Bret Stewart sewaktu konferensi Networld dan Interop, di San Fransisco. Dengan pemanfaatan teknologi ini, setiap orang dapat mengakses jaringan internet melalui komputer/laptop/HP/PDA yang mereka miliki di lokasi-lokasi area bersinyal ini tersedia, tentunya perangkat komputer/laptop/ponsel/PDA tersebut harus memiliki teknologi wi-fi.</description>
       </item>
     
       <item>
@@ -1049,7 +1348,9 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/08/28/pengenalan-desktop-environment-de/</link>
         <pubDate>Mon, 28 Aug 2017 12:53:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/28/pengenalan-desktop-environment-de/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pada kesempatan ini&amp;nbsp; saya akan Share mengenai Desktop Environment. pasti di kalimat dari Deskktop Environment ini sudah asing bagi orang yang sering mendengarnya dan asing bagi orang yang tidak pernah mendengar bahkan tidak mengetahuinya.&amp;nbsp;
+1. Pengertianlingkungan desktop ( DE )&amp;nbsp;adalah implementasi metafora desktop yang dibuat dari kumpulan program yang berjalan di atas sistem operasi komputer, yang memiliki antarmuka pengguna grafis umum (GUI), terkadang digambarkan sebagai shell grafis . Lingkungan desktop terlihat kebanyakan di komputer pribadi sampai munculnya komputasi mobile.</description>
       </item>
     
       <item>
@@ -1057,7 +1358,15 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/08/28/packet-headertahapan-terjadinya-komunikasi/</link>
         <pubDate>Mon, 28 Aug 2017 12:46:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/28/packet-headertahapan-terjadinya-komunikasi/</guid>
-        <description></description>
+        <description>A. PENGERTIANPacket header adalah paket yang &amp;nbsp;kejadian saat seorang akan mengirim atau berkomunikasi lewat jaringan,
+B. LATAR BELAKANGPemahaman tentang tahapan dan proses dikirimnya dan &amp;nbsp;di terimanya data, yang dikirim lewat jaringan.
+C. MAKSUD DAN TUJUANPaham dan bisa mengidentifikasi kesalahan atau pengiriman paket data.
+D. WAKTU2 Jam
+E. ALAT DAN BAHAN
+~ Laptop
+~ LCD proyektor~ Koneksi internet
+F. PEMBAHASAN
+Syarat terjadinya komunikasi, ada yang akan dikirim atau ada datanya seperti gambar diatas, sudah jelas, dari data lanjut ke Options ( if any ) atau pilihan dari si pengirim akan kah paket data itu dikirim atau tidak, jika hal ini tidak jelas maka data tidak akan sampai ke tujuan.</description>
       </item>
     
       <item>
@@ -1065,7 +1374,7 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/08/26/sharing-bersama-mbah-suro-dhemit-pengenalan-fiber-optik-fo/</link>
         <pubDate>Sat, 26 Aug 2017 12:21:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/26/sharing-bersama-mbah-suro-dhemit-pengenalan-fiber-optik-fo/</guid>
-        <description></description>
+        <description>Assalamualaikum wr wb hari ini saya berdiskusi bersama Mbah Suro pembina BLC Telkom Klaten sekaligus juga pengurus yang ada di BLC. Sebelumnya kami membahas tentang Fiber Optic karena saat ini sudah mulai pengembangan dengan dunia Fiber contoh mudahnya saat ini, kita kenal dengan yang namanya Indihome. Ya itu termasuk tegnologi Fiber karena kelebihan yang mendukung dengan jaman maka sangat perlu kita sebagai seorang profesional dalam bidang IT kita jugak perlu paham walapun hanya sekedar konsep.</description>
       </item>
     
       <item>
@@ -1073,7 +1382,14 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/08/24/bersih-bersih-di-gedung-baru-blc-telkom-klaten/</link>
         <pubDate>Thu, 24 Aug 2017 11:48:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/24/bersih-bersih-di-gedung-baru-blc-telkom-klaten/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Malam ini ada kegiatan bersih bersih di gedung baru BLC Telkom. Siswa Prakerin berpartisipasi membersihkan gedung baru.
+1. Pengertian
+Kebersihan adalah keadaan bebas dari kotoran, termasuk di antaranya, debu, sampah, dan bau.
+2. Latar Belakang
+BLC Telkom pindah ke gedung yang baru, kita sebagai siswa BLC Telkom ikut berpartisipasi untuk membersihkan gedung baru agar dapat digunakan untuk melanjutkan aktivitas seperti biasanya.
+3. Maksud &amp;amp; Tujuan
+Agar gedung bisa di pakai maka harus dibersihkan</description>
       </item>
     
       <item>
@@ -1081,7 +1397,8 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/08/23/mengatasi-masalah-apt-get-update-failed-to-fetch-hash-sum-mismatch/</link>
         <pubDate>Wed, 23 Aug 2017 10:37:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/23/mengatasi-masalah-apt-get-update-failed-to-fetch-hash-sum-mismatch/</guid>
-        <description></description>
+        <description>A. PendahuluanPada kali ini, saya akan memposting tentang bagaimana mengatasi masalah yang biasa ditemukan saat melakukan update linux.
+B. PengertianShell&amp;nbsp;adalah program (penterjemah perintah)yang menjembatani user dengan sistem operasi dalam hal ini Kernel (inti dari sistem operasi), umumnya shell menyediakan prompt sebagai user interface, tempat dimana user dapat mengetikkan perintah-perintah yang diinginkan baik berupa perintah internal shell (internal command), ataupun perintah eksekusi file program (eksternal command), selain itu memungkinkan user menyusun sekumpulan perintah pada sebuah atau beberapa file untuk dieksekusi sebagai program.</description>
       </item>
     
       <item>
@@ -1089,7 +1406,8 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/08/22/recovery-data-dari-hardisk-atau-flashdisk-yang-tidak-bisa-dibuka/</link>
         <pubDate>Tue, 22 Aug 2017 10:06:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/22/recovery-data-dari-hardisk-atau-flashdisk-yang-tidak-bisa-dibuka/</guid>
-        <description></description>
+        <description>A. PendahuluanPada kesempatan kali ini, saya akan memberikan tahapan tentang bagaimana recovery&amp;nbsp;data dari hardisk atau flashdisk yang tidak bisa dibuka menggunakan software di linux yaitu &#34;Testdisk&#34;
+B. PengertianRecovery data (pemulihan data)&amp;nbsp;adalah proses menyelamatkan (mengambil) tidak dapat diakses, hilang, rusak, rusak atau diformat data dari&amp;nbsp;penyimpanan sekunder&amp;nbsp;,&amp;nbsp;removable media&amp;nbsp;atau&amp;nbsp;file&amp;nbsp;, ketika data yang tersimpan di dalamnya tidak dapat diakses secara normal.&amp;nbsp;Data yang paling sering diselamatkan dari media penyimpanan seperti internal atau eksternal&amp;nbsp;hard disk drive&amp;nbsp;(HDD),&amp;nbsp;solid-state drive&amp;nbsp;(SSD),&amp;nbsp;USB flash drive&amp;nbsp;,&amp;nbsp;tape magnetik&amp;nbsp;,&amp;nbsp;CD&amp;nbsp;,&amp;nbsp;DVD&amp;nbsp;,&amp;nbsp;RAID&amp;nbsp;subsistem, dan lainnya&amp;nbsp;perangkat elektronik.</description>
       </item>
     
       <item>
@@ -1097,7 +1415,9 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/08/21/mengenal-perintah-perintah-dasar-di-linux/</link>
         <pubDate>Mon, 21 Aug 2017 21:40:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/21/mengenal-perintah-perintah-dasar-di-linux/</guid>
-        <description></description>
+        <description>A. PendahuluanPada kesempatan kali ini, saya akan memposting beberapa perintah-perintah dasar dari sistem operasi linux. Untuk lebih jelasnya akan di jelaskan sebagai berikut.
+B. PengertianLinux identik dengan penggunaan console terminal yang mengharuskan kita menghafal perintah-perintah yang ada. Perintah-perintah tersebut bisa berupa singkatan atau nama asli sesuai fungsinya.
+C. Latar BelakangSemakin lama, semakin banyak para pengguna komputer yang menjadikan Linux sebagai Sistem Operasi utamanya.&amp;nbsp;Selain sifatnya yang open source, ternyata sistem operasi Linux ini juga lebih banyak menuntut kita untuk terus mempelajarinya.</description>
       </item>
     
       <item>
@@ -1105,7 +1425,9 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/08/19/point-to-point-dengan-mikrotik/</link>
         <pubDate>Sat, 19 Aug 2017 21:37:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/19/point-to-point-dengan-mikrotik/</guid>
-        <description></description>
+        <description>A. PendahuluanPada postingan ini, akan di implentasikan bagaimana melakukan point to point (menembak wifi) menggunakan 2 buah mikroTik, dan step by stepnya akan di jelaskan sebagai berikut.
+B. PengertianWireless Point-to-Point (PTP) adalah koneksi komunikasi wireless antara dua titik, dimana satu client (station) terhubung dengan satu pemancar (AP) saja.
+C. Latar BelakangTidak ada koneksi internet dari kabel LAN jika melakukan praktek di tempat kost, karena mikroTik yang satunya ada di tempat praktek.</description>
       </item>
     
       <item>
@@ -1113,7 +1435,8 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/08/18/setting-pptp-vpn-client-pada-os-linux-mint/</link>
         <pubDate>Fri, 18 Aug 2017 18:30:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/18/setting-pptp-vpn-client-pada-os-linux-mint/</guid>
-        <description></description>
+        <description>A. PENDAHULANBerikut ini saya sharing Cara Setting&amp;nbsp;PPTP VPN Client&amp;nbsp;pada&amp;nbsp;Linux Mint, sedangkan VPN Server yang digunakan pada artikel ini mengunakan&amp;nbsp;VPN Server&amp;nbsp;dari&amp;nbsp;Mikrotik.
+B. PENGERTIANVPN adalah Virtual Private Network dimana VPN ini merupakan interkoneksi antar jaringan ( PC Client to LAN maupun LAN to LAN ) yang mana interkoneksi ini melalui jaringan Public ( Internet ) sehingga dengan VPN ini&amp;nbsp;terjadi koneksi terselubung alias lorong atau Tunneling Connection sehingga data yang di akses ( data yang di kirim dan di terima ) benar-benar aman.</description>
       </item>
     
       <item>
@@ -1121,7 +1444,10 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/08/18/membangun-vpn-server-di-mikrotik/</link>
         <pubDate>Fri, 18 Aug 2017 14:00:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/18/membangun-vpn-server-di-mikrotik/</guid>
-        <description>A. PENDAHULUANSelamat pagi/siang/malam. pada kesempatan ini saya akan sedikit memberikan atau mengshare mengenai VPNB. PENGERTIANVPN adalah Virtual Private Network dimana VPN ini merupakan interkoneksi antar jaringan ( PC Client to LAN maupun LAN to LAN ) yang mana interkoneksi ini melalui jaringan Public ( Internet ) sehingga dengan VPN ini terjadi koneksi terselubung alias lorong atau Tunneling Connection sehingga data yang di akses ( data yang di kirim dan di terima ) benar-benar aman.</description>
+        <description>A. PENDAHULUAN
+Selamat pagi/siang/malam. pada kesempatan ini saya akan sedikit memberikan atau mengshare mengenai VPN
+B. PENGERTIAN
+VPN adalah Virtual Private Network dimana VPN ini merupakan interkoneksi antar jaringan ( PC Client to LAN maupun LAN to LAN ) yang mana interkoneksi ini melalui jaringan Public ( Internet ) sehingga dengan VPN ini terjadi koneksi terselubung alias lorong atau Tunneling Connection sehingga data yang di akses ( data yang di kirim dan di terima ) benar-benar aman.</description>
       </item>
     
       <item>
@@ -1129,7 +1455,7 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/08/17/sharing-bersama-mbah-suro-dhemit-7-layer-osi/</link>
         <pubDate>Thu, 17 Aug 2017 17:39:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/17/sharing-bersama-mbah-suro-dhemit-7-layer-osi/</guid>
-        <description></description>
+        <description>A. PengertianModel referensi jaringan terbuka OSI atau OSI Reference Model for open networking adalah sebuah model arsitektural jaringan yang dikembangkan oleh badan International Organization for Standardization (ISO) di Eropa pada tahun 1977. OSI sendiri merupakan singkatan dari Open System Interconnection. Model ini disebut juga dengan model &#34;Model tujuh lapis OSI&#34; (OSI seven layer model).&amp;nbsp;Sebelum munculnya model referensi OSI, sistem jaringan komputer sangat tergantung kepada pemasok (vendor). OSI berupaya membentuk standar umum jaringan komputer untuk menunjang interoperatibilitas antar pemasok yang berbeda.</description>
       </item>
     
       <item>
@@ -1137,7 +1463,9 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/08/16/konsep-perencanaan-membangun-jaringan-sekolah/</link>
         <pubDate>Wed, 16 Aug 2017 17:25:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/16/konsep-perencanaan-membangun-jaringan-sekolah/</guid>
-        <description></description>
+        <description>A. PENDAHULUANPada kesempatan ini saya akan memberikan sedikit ilmu terkait dengan konsep perencanaan membangun jaringan sekolah. dalam melakukan sebuah pekerjaan kita mesti memikirkan konsep terlebih dahulu.
+B. PENGERTIANPerencanaan merupakan tahapan awal yang harus di lakukan sebelum melakuka sesuatu pekerjaan. perencanaan dikatakan matang/berhasil, apabila perencanaan tersebut 70% sudah pasti dan tidak sering mengalami perubahan
+C. LATAR BELAKANGDalam hal ini, saya bekerja tim utuk membangun jaringan di sekolah. saya berpern untuk mengatur jaringan.</description>
       </item>
     
       <item>
@@ -1145,7 +1473,9 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/08/15/sharing-pengenalan-cisco-bersama-rifqi-fajar-rudin-best-path-networkjakarta/</link>
         <pubDate>Tue, 15 Aug 2017 17:17:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/15/sharing-pengenalan-cisco-bersama-rifqi-fajar-rudin-best-path-networkjakarta/</guid>
-        <description></description>
+        <description>A. PendahuluanPada postingan ini&amp;nbsp;saya akan bercerita mengenai pertemuan saya dengan orang-orang hebat.BestPath Network, Jakarta, datang ke BLC Telkom&amp;nbsp;yaitu Rifqi Fajar Rudin dan Bapak Danu Wiyoto. Mereka datang untuk berbagi pengalaman menarik dengan kami semua.
+1. Pengertian :BestPath Network adalah suatu lembaga training dan consulting jaringan, dimana ini adalah solusi untuk Anda belajar lebih mudah tentang dunia jaringan yang luas.
+2. Latar BelakangBestPath Network membuka peluang rekrutmen untuk bergabung bersama mereka.</description>
       </item>
     
       <item>
@@ -1153,7 +1483,9 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/08/14/virtualisasi-topologi-menggunakan-software-dia/</link>
         <pubDate>Mon, 14 Aug 2017 17:00:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/14/virtualisasi-topologi-menggunakan-software-dia/</guid>
-        <description></description>
+        <description>A. PENDAHULUANPada postingan kali ini saya akan membagi sedikit ilmu terkait dengan virtualisasi topologi jaringan menggunakan software dia.
+B. PENGERTIAN&amp;nbsp;TOPOLOGI MENURUT&amp;nbsp;WIKIPEDIATopologi Jaringan Sebuah LAN dapat diimplementasikan dengan berbagai macam topologi. Topologi yang di maksud di sini merupakan struktur jaringan&amp;nbsp;fisik yang digunakan untuk mengimplementasikan LAN tersebut. Topologi dasar yang bisa digunakan dalam jaringan komputer adalah:
+Topologi&amp;nbsp;Bus&amp;nbsp;(Linear)Topologi&amp;nbsp;Ring&amp;nbsp;(Cincin)Topologi&amp;nbsp;Star&amp;nbsp;(Bintang)Topologi&amp;nbsp;Tree&amp;nbsp;(Pohon)Topologi&amp;nbsp;Mesh&amp;nbsp;(web)Topologi pengembangan dari ketiga di atas biasanya berupa topologi&amp;nbsp;Tree&amp;nbsp;(Pohon), yang merupakan pengembangan dari&amp;nbsp;star&amp;nbsp;dan&amp;nbsp;Bus, topologi&amp;nbsp;Mash&amp;nbsp;atau&amp;nbsp;Hybrid&amp;nbsp;atau&amp;nbsp;Multipoint&amp;nbsp;atau Web yang merupakan pengembangan dari topologi&amp;nbsp;Point to Point&amp;nbsp;(bus), topologi Loop yang merupakan pengembangan dari topologi&amp;nbsp;Ring&amp;nbsp;Ketiganya memiliki kelebihan dan kekurangan masing-masing.</description>
       </item>
     
       <item>
@@ -1161,7 +1493,10 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/08/13/sharing-bersama-master-seo-ade-ermansyah-di-blc-telkom-klaten/</link>
         <pubDate>Sun, 13 Aug 2017 16:59:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/13/sharing-bersama-master-seo-ade-ermansyah-di-blc-telkom-klaten/</guid>
-        <description></description>
+        <description>PENDAHULUANMinggu 13 agustus sekitar ba&#39;dah duhur saya berada di BLC Telkom Klaten, bersama teman sedang melakukan sahring kecil-kecilan dan tak sadar bang Ade Ermansyah bersama pak Cahyo sang master php berkunjung keBLC Telkom Klaten.PENGERTIAN SEO WIKIPEDIA
+SEO menurut wikipedia adalah Optimalisasi Mesin Pencari, proses mempengaruhi visibilitas situs web atau halaman web dalam hasil mesin pencari yang belum dibayar
+SEO Menurut Bloger
+Optimisasi Mesin Pencari atau Search Engine Optimization (SEO) adalah sebuah proses untuk mempengaruhi tingkat keterlihatan (visibilitas) sebuah situs web atau sebuah halaman web di hasil&amp;nbsp;pencarian alami (sering disebut juga dengan&amp;nbsp;pencarian tak-berbayar,&amp;nbsp;pencarian non-iklan, atau&amp;nbsp;pencarian organik) dari sebuah mesin pencari.</description>
       </item>
     
       <item>
@@ -1169,7 +1504,7 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/08/12/step-by-step-melakukan-perencanaan-kerja/</link>
         <pubDate>Sat, 12 Aug 2017 16:21:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/12/step-by-step-melakukan-perencanaan-kerja/</guid>
-        <description></description>
+        <description>Apa yang Anda pikirkan ketika mendengar ketika mendengar kata Perencanaan kerja?Apakah Anda merasa malas? atau merasa membuang waktu? Ada orang yang merasa bahwa perencanaan itu penting tapi tidak mau membuatnya, ada juga yang memulai membuat perencanaan tapi tidak selesai atau merasa terbebanketika perencanaan telah disusun dengan baik ada yang tidak tercapai dan ada juga yang menganggap hal ini tidak perlu dilakukan karena menyukai spontanitas atau berpendapat bahwa perencanaan hanya menghabiskan waktu.</description>
       </item>
     
       <item>
@@ -1177,7 +1512,9 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/08/11/installasi-moodle-di-localhost-linux/</link>
         <pubDate>Fri, 11 Aug 2017 16:00:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/11/installasi-moodle-di-localhost-linux/</guid>
-        <description></description>
+        <description>A. Pendahuluan&amp;nbsp;Server dibuat dengan beragam maksud dan tujuannya, salah satunya adalah membangun sistem pembelajaran online. Pembelajaran online sangat baik diterapkan saat ini, karena pelajar masa kini lebih senang untuk online dari pada membaca buku. Hal ini bisa meningkatkan minat membaca pelajar tanah air.&amp;nbsp;Salah satu media yang dapat digunakan adalah dengan &amp;ldquo;Moodle&amp;rsquo;. Apa itu Moodle?&amp;nbsp;
+#Pengertian
+Moodle (Modular Object-Oriented Dynamic Learning Environment) adalah paket perangkat lunak yang diproduksi untuk kegiatan belajar berbasis internet dan situs web yang menggunakan prinsip social constructionist pedagogy.</description>
       </item>
     
       <item>
@@ -1185,7 +1522,10 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/08/10/memasukkan-file-website-ke-localhost/</link>
         <pubDate>Thu, 10 Aug 2017 15:40:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/10/memasukkan-file-website-ke-localhost/</guid>
-        <description></description>
+        <description>A. PendahuluanBerselancar di website dengan lancar tanpa butuh menunggu merupakan keinginan banyak orang, apalagi berselancar tanpa koneksi internet, wahhh nyaman banget. Kalian juga dapat merasakannya dengan menginstal LOCALHOST, tapi apa itu LOCALHOST?
+#Pengertian
+Dalam jaringan komputer, localhost adalah nama host yang berarti komputer ini. Ini digunakan untuk mengakses layanan jaringan yang berjalan di host melalui antarmuka jaringan loopback-nya. Menggunakan antarmuka loopback bypasses perangkat keras antarmuka jaringan lokal.
+Mekanisme loopback lokal berguna untuk menguji perangkat lunak selama pengembangan, terlepas dari konfigurasi jaringan manapun.</description>
       </item>
     
       <item>
@@ -1193,7 +1533,11 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/08/09/bagaimana-menginstall-lamp-di-localhost-linux/</link>
         <pubDate>Wed, 09 Aug 2017 14:58:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/09/bagaimana-menginstall-lamp-di-localhost-linux/</guid>
-        <description></description>
+        <description>A. PendahuluanHello, pada kesempatan kali ini saya memposting bagaimana sih menginstal LAMP? Nah cara-caranya akan dijelaskan sebagai berikut.#Pengertian
+LAMP adalah istilah yang merupakan singkatan dari&amp;nbsp;Linux,&amp;nbsp;Apache, MySQL dan&amp;nbsp;Perl/PHP/Phyton. Merupakan sebuah paket&amp;nbsp;perangkat lunak bebas&amp;nbsp;yang digunakan untuk menjalankan sebuah aplikasi secara lengkap.
+Komponen-komponen dari LAMP :Linux&amp;nbsp;–&amp;nbsp;sistem operasiApache HTTP Server&amp;nbsp;–&amp;nbsp;web serverMariaDB&amp;nbsp;atau&amp;nbsp;MySQL&amp;nbsp;– sistem basis dataPHP&amp;nbsp;atau&amp;nbsp;Perl&amp;nbsp;atau&amp;nbsp;Python&amp;nbsp;– bahasa pemrograman yang dipakai#Latar BelakangIngin menggunakan linux, apache, mariaDB/mysql, dan PHP dalam satu paket.
+#Maksud dan Tujuan
+Maksud dan tujuan dari postingan ini agar si pengunjung dapat mempelajari dan mengetahui bagaimana menginstall LAMP.</description>
       </item>
     
       <item>
@@ -1201,7 +1545,8 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/08/08/implementasi-pppoe-client-mikrotik/</link>
         <pubDate>Tue, 08 Aug 2017 14:36:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/08/implementasi-pppoe-client-mikrotik/</guid>
-        <description></description>
+        <description>A. PENGERTIANPPPOE merupakan singkatan dari point-to-point protocol over Ethernet yang merupakan protokol dalam jaringan untuk menghubungkan komunikasi antara dua buah titik jaringan atau dua buah port ethernet dengan model tunneling (terowongan) dan juga sebagai virtual dial-up dalam jaringan. mikrotik adalah salah satu router yang mendukung konfigurasi pppoe server dan client, untuk itulah akan di tuliskan pada artikel ini tentang bagaimana membuat pppoe server dengan mikrotik.
+B. LATAR BELAKANGMikrotik adalah salah satu router yang mendukung konfigurasi pppoe server dan client, untuk itulah akan dituliskan pada artikel ini tentang bagaimana membuat pppoe server dengan mikrotik.</description>
       </item>
     
       <item>
@@ -1209,7 +1554,7 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/08/07/osi-layer/</link>
         <pubDate>Mon, 07 Aug 2017 14:30:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/07/osi-layer/</guid>
-        <description></description>
+        <description>A. Pengertian OSI LayerOSI atau Model Open Systems Interconnection diciptakan oleh InternationalOrganization for Standardization (ISO) yang menyediakan kerangka logikaterstruktur bagaimana proses komunikasi data berinteraksi melalui jaringan.Standard ini dikembangkan untuk industri komputer agar komputer dapat berkomunikasi pada jaringan yang berbeda secara efisien.Model Layer OSI dibagi dalam dua group: “upper layer ” dan “lower layer ”. “Upper layer” fokus pada applikasi pengguna dan bagaimana file direpresentasikan di komputer. Untuk Network Engineer, bagian utama yang menjadi perhatiannya adalah pada “lower layer”.</description>
       </item>
     
       <item>
@@ -1217,7 +1562,7 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/08/05/sharing-dengan-mbah-suro-dhemit-pengenalan-sistem-telekomunikasi/</link>
         <pubDate>Sat, 05 Aug 2017 17:01:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/05/sharing-dengan-mbah-suro-dhemit-pengenalan-sistem-telekomunikasi/</guid>
-        <description>A. PENDAHULUANAssalamu&#39;alaikum wr.wbPada kesempatan ini saya akan berbagi,tentang Sistem TelekomunikasiB. PENGERTIANTelekomunikasiadalah teknik pengiriman atau penyampaian infomasi, dari suatu tempat ke tempat lain. Dalam kaitannya dengan &amp;lsquo;telekomunikasi&amp;rsquo; bentuk komunikasijarak jauh dapat dibedakan atas tiga macam:Komunikasi Satu Arah (Simplex). Dalam komunikasi satu arah (Simplex) pengirim dan penerima informasi tidak dapat menjalin komunikasi yang berkesinambungan melalui media yang sama. Contoh :Pager, televisi, dan radio.Komunikasi Dua Arah (Duplex). Dalam komunikasi dua arah (Duplex) pengirim dan penerima informasi dapat menjalin komunikasi yang berkesinambungan melalui media yang sama.</description>
+        <description>A. PENDAHULUANAssalamu&amp;rsquo;alaikum wr.wbPada kesempatan ini saya akan berbagi,tentang Sistem TelekomunikasiB. PENGERTIANTelekomunikasi&amp;nbsp;adalah teknik pengiriman atau penyampaian&amp;nbsp;infomasi, dari suatu tempat ke tempat lain. Dalam kaitannya dengan &amp;lsquo;telekomunikasi&amp;rsquo; bentuk&amp;nbsp;komunikasi&amp;nbsp;jarak jauh dapat dibedakan atas tiga macam:Komunikasi Satu Arah (Simplex). Dalam komunikasi satu arah (Simplex) pengirim dan penerima informasi tidak dapat menjalin komunikasi yang berkesinambungan melalui media yang sama. Contoh&amp;nbsp;:Pager,&amp;nbsp;televisi, dan&amp;nbsp;radio.Komunikasi Dua Arah (Duplex). Dalam komunikasi dua arah (Duplex) pengirim dan penerima informasi dapat menjalin komunikasi yang berkesinambungan melalui media yang sama.</description>
       </item>
     
       <item>
@@ -1225,7 +1570,7 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/08/04/apa-perbedaan-linux-dan-windows/</link>
         <pubDate>Fri, 04 Aug 2017 17:00:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/04/apa-perbedaan-linux-dan-windows/</guid>
-        <description></description>
+        <description>Perbedaan linux dengan windowsSebelum memahami perbedaan, berikut ini persamaan Linux dan Windows:Linux dan Windows sama-sama nama untuk sistem operasi &amp;ldquo;komputer&amp;rdquo; dan sama-sama punya beberapa jenis atau pilihan, misal Linux Nusantara, BlankOn, Ubuntu, Mandriva, Fedora, openSUSE, Slackware, Debian, Gentoo, Redhat, Mint, dll. Sedangkan di Windows ada Windows 98, Me, XP, Vista, 7, Server 2008, Mobile, dll. &amp;ldquo;komputer&amp;rdquo; itu bisa berupa pc, notebook, smartphone, dll.Persamaan adanya pilihan/jenis di atas sebenarynya tidak persis sama, karena jenis Windows itu hanya tersedia buatan MS (Microsoft), sedangkan jenis Linux itu bisa buatan beberapa pihak yg berbeda.</description>
       </item>
     
       <item>
@@ -1233,7 +1578,7 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/08/03/apa-itu-linux-dan-bagaimana-sejarah-singkatnya/</link>
         <pubDate>Thu, 03 Aug 2017 16:52:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/03/apa-itu-linux-dan-bagaimana-sejarah-singkatnya/</guid>
-        <description></description>
+        <description>Apa itu Linux?Linux (diucapkan ˈlɪnəks atau /ˈlɪnʊks/) adalah nama yang diberikan kepada sistem operasi komputer bertipe Unix. Linux merupakan salah satu contoh hasil pengembangan perangkat lunak bebas dan sumber terbuka utama. Seperti perangkat lunak bebas dan sumber terbuka lainnya pada umumnya, kode sumber Linux dapat dimodifikasi, digunakan dan didistribusikan kembali secara bebas oleh siapa saja.[2]Nama &#34;Linux&#34; berasal dari nama pembuatnya, yang diperkenalkan tahun 1991 oleh Linus Torvalds. Sistemnya, peralatan sistem dan pustakanya umumnya berasal dari sistem operasi GNU, yang diumumkan tahun 1983 oleh Richard Stallman.</description>
       </item>
     
       <item>
@@ -1241,7 +1586,8 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/08/02/mengatasi-grub-linux-yang-error/</link>
         <pubDate>Wed, 02 Aug 2017 16:51:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/02/mengatasi-grub-linux-yang-error/</guid>
-        <description></description>
+        <description>PendahuluanGNU GRUB (singkat untuk GNU GRand Bersatu Bootloader) adalah boot loader paket dari proyek GNU . GRUB adalah implementasi referensi dari Free Software Foundation &#39;s Multiboot Keterangan , yang menyediakan pengguna pilihan untuk boot salah satu dari beberapa sistem operasi yang terpasang di komputer atau pilih tertentu kernel konfigurasi yang tersedia pada partisi sistem operasi tertentu.
+Maksud dan TujuanTujuan dari postingan ini yaitu agar pembaca yang memiliki masalah yang serupa, maka ia dapat mengatasinya sendiri tanpa membawa ke service center.</description>
       </item>
     
       <item>
@@ -1249,7 +1595,9 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/08/01/mengganti-login-page-jaringan-mikrotik-menggunakan-filezilla/</link>
         <pubDate>Tue, 01 Aug 2017 16:09:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/01/mengganti-login-page-jaringan-mikrotik-menggunakan-filezilla/</guid>
-        <description>PendahuluanLogin page adalah salah satu fitur mikroTik yang berfungsi ketika hostpot yang di aktifkan di mikroTik tidak mempunyai autentikasi pada SSIDnya, dengan kata lain setelah berhasil terhubung ke hotspot tersebut si pengguna akan diminta masuk ke login page untuk dapat mengakses internet. Login page tersebut dapat diedit dengan berbagai cara, sesuai yang membuat anda nyaman :DMaksud dan TujuanTujuan dari postingan ini agar si pembaca dapat mempraktekkan dan mengetahui bagaimana mengganti login page hotspot mikroTik tanpa harus membuka winbox.</description>
+        <description>Pendahuluan
+Login page adalah salah satu fitur mikroTik yang berfungsi ketika hostpot yang di aktifkan di mikroTik tidak mempunyai autentikasi pada SSIDnya, dengan kata lain setelah berhasil terhubung ke hotspot tersebut si pengguna akan diminta masuk ke login page untuk dapat mengakses internet. Login page tersebut dapat diedit dengan berbagai cara, sesuai yang membuat anda nyaman :D
+Maksud dan TujuanTujuan dari postingan ini agar si pembaca dapat mempraktekkan dan mengetahui bagaimana mengganti login page hotspot mikroTik tanpa harus membuka winbox.</description>
       </item>
     
       <item>
@@ -1257,7 +1605,8 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/07/31/menginstall-proxmox-di-server/</link>
         <pubDate>Mon, 31 Jul 2017 16:07:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/31/menginstall-proxmox-di-server/</guid>
-        <description></description>
+        <description>PendahuluanProxmox VE (Virtual Environment) adalah sebuah distro Linux virtualisasi berbasis Debian ( 64 bit) yang mengusung OpenZV dan KVM, dengan KVM kita tidak hanya bisa menginstall linux saja akan tetapi Operating system windows pun bisa kita instal. Namun yang membuat istimewa dari proxmox adalah kemudahan dalam installasi dan administrasi berbasis Web.
+Latar BelakangBeberapa keuntungan menggunakan Proxmox sebagai berikut&amp;nbsp;Kinerja terbaik.Instalasi yang telah dioptimalkan, sehingga lebih cepat.Mudah dalam manajemen.Cocok untuk kelas Enterprise.Beberapa hal yang perlu diperhatikan :Proxmox tersedia hanya untuk hardware 64-bit.</description>
       </item>
     
       <item>
@@ -1265,7 +1614,8 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/07/31/menyiapkan-server/</link>
         <pubDate>Mon, 31 Jul 2017 15:39:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/31/menyiapkan-server/</guid>
-        <description></description>
+        <description>PendahuluanServer merupakan sebuah sistem komputer yang menyediakan jenis layanan tertentu dalam sebuah jaringan komputer. Peladen didukung dengan prosesor yang bersifat scalable dan RAM yang besar,dan juga dilengkapi dengan sistem operasi khusus, yang disebut sebagai sistem operasi jaringan. Peladen juga menjalankan perangkat lunak administratif yang mengontrol akses terhadap jaringan dan sumber daya yang terdapat di dalamnya contoh sepertihalnya berkas atau pencetak, dan memberikan akses kepada stasiun kerja anggota jaringan.
+LATAR BELAKANGServer merupakan media yang memiliki peranan penting untukmenyediakan layanan akses internet bagi penggunanya.</description>
       </item>
     
       <item>
@@ -1273,7 +1623,7 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/07/29/mengkrimping-kabel-utp-dan-susunan-kabelnya/</link>
         <pubDate>Sat, 29 Jul 2017 15:28:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/29/mengkrimping-kabel-utp-dan-susunan-kabelnya/</guid>
-        <description></description>
+        <description>PendahuluanPada postingan ini saya mengimplementasikan atau membuat kabel UTP menjadi kabel straight dan cross (kabel LAN).&amp;nbsp;Kabel UTP adalah UTP singkatan dari “Unshielded Twisted Pair” yaitu jenis kabel ini terbuat dari bahan penghantar tembaga, mempunyai isolasi dari plastik &amp;amp; terbungkus oleh bahan isolasi yang dapat melindungi dari api dan juga kerusakan fisik, kabel UTP sendiri terdiri dari 4 pasang inti kabel yang saling berbelit dimana masing-masing pasang mempunyai kode warna berbeda.</description>
       </item>
     
       <item>
@@ -1281,7 +1631,9 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/07/28/menggunakan-1-akun-mikrotik-untuk-banyak-pengguna/</link>
         <pubDate>Fri, 28 Jul 2017 15:11:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/28/menggunakan-1-akun-mikrotik-untuk-banyak-pengguna/</guid>
-        <description></description>
+        <description>PendahuluanPada postingan sebelumnya telah disebutkan bahwa mikroTik mempunyai banyak fitur, nah pada postingan ini akan di implementasikan bagaimana agar 1 akun dapat digunakan banyak pengguna. Lalu bagaimana mengaktifkan fitur ini?
+Maksud dan TujuanPenggunaan fitur ini dimaksudkan agar 1 profile user bisa digunakan secara bersama-sama oleh beberapa user sekaligus. Dengan demikian, setiap user yang ingin terhubung hanya perlu memiliki satu username dan password untuk dipakai bersama-sama.
+Alat dan Bahan1. MikroTik yang telah dikonfigurasi hotspot dan akses internetnya2.</description>
       </item>
     
       <item>
@@ -1289,7 +1641,7 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/07/27/konfigurasi-dasar-mikrotik-untuk-sharing-internet-menggunakan-hotspot/</link>
         <pubDate>Thu, 27 Jul 2017 14:37:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/27/konfigurasi-dasar-mikrotik-untuk-sharing-internet-menggunakan-hotspot/</guid>
-        <description></description>
+        <description>Pendahuluan&amp;nbsp;Pada postingan ini, saya akan mengimplementasikan atau mengkonfigurasi routerboard mikroTik untuk tahap pemula (konfigurasi dasar mikroTik&amp;nbsp;routerboard).Mikrotik&amp;nbsp;adalah&amp;nbsp;sebuah perusahaan yang bergerak di bidang produksi perangkat keras (hardware) dan perangkat lunak (Software) yang berhubungan dengan sistem jaringan komputer yang berkantor pusat di Latvia, bersebelahan dengan Rusia. Produk hardware unggulan Mikrotik berupa Router, Switch, Antena, dan perangkat pendukung lainnya. Sedangkan produk Software unggulan Mikrotik adalah MikroTik RouterOS.MikroTik routerboad&amp;nbsp;adalah&amp;nbsp;router embedded produk dari mikrotik. Routerboard seperti sebuah pc mini yang terintegrasi karena dalam satu board tertanam prosesor, ram, rom, dan memori flash.</description>
       </item>
     
       <item>
@@ -1297,7 +1649,8 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/07/26/bagaimana-mengganti-login-page-jaringan-mikrotik/</link>
         <pubDate>Wed, 26 Jul 2017 14:34:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/26/bagaimana-mengganti-login-page-jaringan-mikrotik/</guid>
-        <description></description>
+        <description>PendahuluanMikroTik routerboard adalah salah satu router yang mempunyai login page(tampilan awal) untuk koneksi hotspot. Login page berfungsi jika hotspot tersebut tidak mempunyai autentikasi, lalu siapapun yang telah konek di hotspot tersebut dan ingin melakukan browsing maka secara otomatis dia akan teralihkan ke login page untuk keperluan identitas agar ia dapat melanjutkan browsingnya.
+Maksud dan TujuanDengan login page yang telah disiapkan dapat membatasi siapa saja dapat mendapat akses internet dari mikroTik meskipun sebelumnya ia sudah konek ke wifi tersebut.</description>
       </item>
     
       <item>
@@ -1305,7 +1658,11 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/07/25/bagaimana-melimit-waktu-internet-pengguna-menggunakan-mikrotik/</link>
         <pubDate>Tue, 25 Jul 2017 14:12:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/25/bagaimana-melimit-waktu-internet-pengguna-menggunakan-mikrotik/</guid>
-        <description>PendahuluanMikrotik adalah sebuah produk yang bisa difungsikan sebagai router, hotspot, dan yang lainnya. Untuk info lebih lengkap bisa baca disini. MikroTik mempunyai banyak fitur, salah satunya yaitu dapat membatasi berapa lama si user dapat terkoneksi dengan internet dengan mikroTik yang kita punya, lalu bagaimana mengaktifkan fitur tersebut? Nah, pada postingan kali ini akan dijelaskan bagaimana mengaktifkan fitur tersebut.Maksud dan TujuanTujuan pembatasannya itu tergantung dimana penempatan akses internet dari mikroTik itu sendiri.</description>
+        <description>Pendahuluan
+Mikrotik adalah sebuah produk yang bisa difungsikan sebagai router, hotspot, dan yang lainnya. Untuk info lebih lengkap bisa baca&amp;nbsp;disini. MikroTik mempunyai banyak fitur, salah satunya yaitu dapat membatasi berapa lama si user dapat terkoneksi dengan internet dengan mikroTik yang kita punya, lalu bagaimana mengaktifkan fitur tersebut? Nah, pada postingan kali ini akan dijelaskan bagaimana mengaktifkan fitur tersebut.
+
+Maksud dan Tujuan
+Tujuan pembatasannya itu tergantung dimana penempatan akses internet dari mikroTik itu sendiri.</description>
       </item>
     
       <item>
@@ -1313,7 +1670,11 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/07/25/apa-itu-mikrotik/</link>
         <pubDate>Tue, 25 Jul 2017 09:30:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/25/apa-itu-mikrotik/</guid>
-        <description></description>
+        <description>A. Pengertian MikroTik
+MikroTik RouterOS™ adalah sistem operasi dan perangkat lunak yang dapat digunakan untuk menjadikan komputer manjadi router network yang handal, mencakup berbagai fitur yang dibuat untuk ip network dan jaringan wireless, cocok digunakan oleh ISP dan provider hotspot.
+
+B. Sejarah Mikrotik
+MikroTikls [dengan trade name MikroTik®] didirikan tahun 1995 bertujuan mengembangkan sistem ISP dengan wireless. MikroTikls saat ini telah mendukung sistem ISP dengan wireless untuk jalur data internet di banyak negara, antara lain Iraq, Kosovo, Sri Lanka, Ghana dan banyak negara lainnya.</description>
       </item>
     
       <item>
@@ -1321,7 +1682,9 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/07/24/instalasi-linux-mint-18.1-sarena/</link>
         <pubDate>Mon, 24 Jul 2017 13:52:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/24/instalasi-linux-mint-18.1-sarena/</guid>
-        <description></description>
+        <description>Alat dan bahan:1 set pc atau laptop
+flashdisk booting linux mint 18.1 cinnamon 64-bitLangkah kerja:Siapkan sebuah pc atau laptop yang akan diinstallkan linux mint 18.1 cinnamon 64-bit, serta flashdisk yang berisi booting sistem operasi yang akan diinstal.
+Nyalakan pc atau laptop yang ingin di install, setalah itu masuk pada bios dan konfigurasi agar flashdisk booting yang telah ada dapat dipakai yaitu dengan cara masuk di menu “Boot” dan meletakkan jenis USB ke deretan atas.</description>
       </item>
     
       <item>
@@ -1329,7 +1692,10 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2017/07/22/sejarah-singkat-blc-telkom-klaten-serta-perkenalan-dan-pertemuan-pertama/</link>
         <pubDate>Sat, 22 Jul 2017 13:43:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/22/sejarah-singkat-blc-telkom-klaten-serta-perkenalan-dan-pertemuan-pertama/</guid>
-        <description>Assalamualaikum Wr.WbPerkenalkan saya Faizar Septiawan atau bisa di panggil Icar berasal dari Bulukumba, Sulawesi Selatan dan sekolah di SMKN 1 Bulukumba. Dipostingan pertama ini saya akan tuliskan sejarah dan review sebuah tempat magang/prakerin yang saya tempati. Tempat tersebut bernama BLC Telkom Klaten, beralamat di Jl.Srigading No.7 Tonggalan, Klaten TengahSejarah BLC Telkom Klaten&amp;ldquo;Saya melihat Teknologi Informasi (TI) khususnya penggunaan dan pemanfaatan Internet di Indonesia seperti sebilah pisau yang sangat tajam dijual bebas dan dibeli oleh orang-orang tapi tidak ada keterangan penggunaannya, manfaat segi positif dan negatifnya.</description>
+        <description>Assalamualaikum Wr.Wb
+&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Perkenalkan saya Faizar Septiawan atau bisa di panggil Icar berasal dari Bulukumba, Sulawesi Selatan dan sekolah di SMKN 1 Bulukumba. Dipostingan pertama ini saya akan tuliskan sejarah dan review sebuah tempat magang/prakerin yang saya tempati. Tempat tersebut bernama BLC Telkom Klaten, beralamat di&amp;nbsp;Jl.Srigading No.7 Tonggalan, Klaten Tengah
+Sejarah BLC Telkom Klaten
+&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;ldquo;Saya melihat Teknologi Informasi (TI) khususnya penggunaan dan pemanfaatan Internet di Indonesia seperti sebilah pisau yang sangat tajam dijual bebas dan dibeli oleh orang-orang tapi tidak ada keterangan penggunaannya, manfaat segi positif dan negatifnya.</description>
       </item>
     
   </channel>

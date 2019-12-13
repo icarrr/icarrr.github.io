@@ -39,7 +39,7 @@
   <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4194642&101" alt="" border="0"></a></noscript>
   
 
-  <meta name="generator" content="Hugo 0.60.1" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   
@@ -67,8 +67,8 @@
   <meta property="og:title" content="Nginx Tidak Bisa Diakses" />
 <meta property="og:description" content="Nginx di CentOS atau RHEL tidak bisa diakses? Service nginx aktif? Servernya aktif? Akses dari localhost bisa? Jika semua jawabannya YA, mungkin firewall di system anda sedang aktif namun trafik protokol HTTP dan HTTPS belum diizinkan oleh perangkat yang lain.
 Untuk mengizinkan trafik protokol HTTP, gunakan command
-firewall-cmd --permanent --zone=public --add-service=http Sedangkan untuk mengizinkan trafik protokol HTTPS, gunakan command
-firewall-cmd --permanent --zone=public --add-service=https Setelah diizinkan, firewall wajib direload agar update firewall dapat diterapkan" />
+firewall-cmd --permanent --zone=public --add-service=http  Sedangkan untuk mengizinkan trafik protokol HTTPS, gunakan command
+firewall-cmd --permanent --zone=public --add-service=https  Setelah diizinkan, firewall wajib direload agar update firewall dapat diterapkan" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://sibunglon.com/2018/12/10/nginx-tidak-bisa-diakses/" />
 <meta property="article:published_time" content="2018-12-10T13:40:57+07:00" />
@@ -78,8 +78,10 @@ firewall-cmd --permanent --zone=public --add-service=https Setelah diizinkan, fi
   <meta itemprop="name" content="Nginx Tidak Bisa Diakses">
 <meta itemprop="description" content="Nginx di CentOS atau RHEL tidak bisa diakses? Service nginx aktif? Servernya aktif? Akses dari localhost bisa? Jika semua jawabannya YA, mungkin firewall di system anda sedang aktif namun trafik protokol HTTP dan HTTPS belum diizinkan oleh perangkat yang lain.
 Untuk mengizinkan trafik protokol HTTP, gunakan command
-firewall-cmd --permanent --zone=public --add-service=http Sedangkan untuk mengizinkan trafik protokol HTTPS, gunakan command
-firewall-cmd --permanent --zone=public --add-service=https Setelah diizinkan, firewall wajib direload agar update firewall dapat diterapkan">
+firewall-cmd --permanent --zone=public --add-service=http  Sedangkan untuk mengizinkan trafik protokol HTTPS, gunakan command
+firewall-cmd --permanent --zone=public --add-service=https  Setelah diizinkan, firewall wajib direload agar update firewall dapat diterapkan">
+
+
 <meta itemprop="datePublished" content="2018-12-10T13:40:57&#43;07:00" />
 <meta itemprop="dateModified" content="2018-12-10T13:40:57&#43;07:00" />
 <meta itemprop="wordCount" content="75">
@@ -87,12 +89,13 @@ firewall-cmd --permanent --zone=public --add-service=https Setelah diizinkan, fi
 
 
 <meta itemprop="keywords" content="Ayo Belajar Linux,Nginx,Error,Ngoprek," />
+
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Nginx Tidak Bisa Diakses"/>
 <meta name="twitter:description" content="Nginx di CentOS atau RHEL tidak bisa diakses? Service nginx aktif? Servernya aktif? Akses dari localhost bisa? Jika semua jawabannya YA, mungkin firewall di system anda sedang aktif namun trafik protokol HTTP dan HTTPS belum diizinkan oleh perangkat yang lain.
 Untuk mengizinkan trafik protokol HTTP, gunakan command
-firewall-cmd --permanent --zone=public --add-service=http Sedangkan untuk mengizinkan trafik protokol HTTPS, gunakan command
-firewall-cmd --permanent --zone=public --add-service=https Setelah diizinkan, firewall wajib direload agar update firewall dapat diterapkan"/>
+firewall-cmd --permanent --zone=public --add-service=http  Sedangkan untuk mengizinkan trafik protokol HTTPS, gunakan command
+firewall-cmd --permanent --zone=public --add-service=https  Setelah diizinkan, firewall wajib direload agar update firewall dapat diterapkan"/>
 
   
 
@@ -119,13 +122,22 @@ firewall-cmd --permanent --zone=public --add-service=https Setelah diizinkan, fi
       <h1>Nginx Tidak Bisa Diakses</h1>
     </header>
     <section><p>Nginx di CentOS atau RHEL tidak bisa diakses? Service nginx aktif? Servernya aktif? Akses dari localhost bisa? Jika semua jawabannya <strong>YA</strong>, mungkin firewall di system anda sedang aktif namun trafik protokol HTTP dan HTTPS belum diizinkan oleh perangkat yang lain.</p>
+
 <p>Untuk mengizinkan trafik protokol HTTP, gunakan command</p>
+
 <pre><code>firewall-cmd --permanent --zone=public --add-service=http
-</code></pre><p>Sedangkan untuk mengizinkan  trafik protokol HTTPS, gunakan command</p>
+</code></pre>
+
+<p>Sedangkan untuk mengizinkan  trafik protokol HTTPS, gunakan command</p>
+
 <pre><code>firewall-cmd --permanent --zone=public --add-service=https
-</code></pre><p>Setelah diizinkan, firewall wajib direload agar update firewall dapat diterapkan</p>
+</code></pre>
+
+<p>Setelah diizinkan, firewall wajib direload agar update firewall dapat diterapkan</p>
+
 <pre><code>firewall-cmd --reload
-</code></pre></section>
+</code></pre>
+</section>
     <footer>
       <hr>
       <div class="meta">

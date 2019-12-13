@@ -39,7 +39,7 @@
   <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4194642&101" alt="" border="0"></a></noscript>
   
 
-  <meta name="generator" content="Hugo 0.60.1" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   
@@ -78,6 +78,8 @@ Pada lab ini saya asumsikan:
 <meta itemprop="description" content="Subdomain? Subdomain adalah bagian dari nama domain induk yang memiliki ruangan sendiri (direktori), mengacu ke suatu alamat fisik. Contohnya subdomain blog.sibunglon.com acuannya yaitu sibunglon.com. Jika menggunakan nginx, untuk membuat subdomain sama seperti pada lab sebelumnya yang Bermain Dengan Nginx. Mudahkan kalau caranya cuman gitu? :D Tapi jika masih ada yang bingung, tenang labnya masih saya bagikan.
 Pada lab ini saya asumsikan:
  Domain induk = sibunglon.com Subdomain = blog.sibunglon.com master konfigurasi berada di direktori /sibunglonlabs/config/nginx File konfigurasi domain induk sibunglonlabs.">
+
+
 <meta itemprop="datePublished" content="2018-12-14T11:03:50&#43;07:00" />
 <meta itemprop="dateModified" content="2018-12-14T11:03:50&#43;07:00" />
 <meta itemprop="wordCount" content="270">
@@ -85,6 +87,7 @@ Pada lab ini saya asumsikan:
 
 
 <meta itemprop="keywords" content="Ayo Belajar Linux,Nginx,Ngoprek," />
+
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Membuat Subdomain Dengan Nginx"/>
 <meta name="twitter:description" content="Subdomain? Subdomain adalah bagian dari nama domain induk yang memiliki ruangan sendiri (direktori), mengacu ke suatu alamat fisik. Contohnya subdomain blog.sibunglon.com acuannya yaitu sibunglon.com. Jika menggunakan nginx, untuk membuat subdomain sama seperti pada lab sebelumnya yang Bermain Dengan Nginx. Mudahkan kalau caranya cuman gitu? :D Tapi jika masih ada yang bingung, tenang labnya masih saya bagikan.
@@ -115,9 +118,14 @@ Pada lab ini saya asumsikan:
         <time datetime="2018-12-14 11:03:50&#43;0700">2018-12-14</time></small>
       <h1>Membuat Subdomain Dengan Nginx</h1>
     </header>
-    <section><h3 id="subdomain"><strong>Subdomain?</strong></h3>
+    <section>
+
+<h3 id="subdomain"><strong>Subdomain?</strong></h3>
+
 <p>Subdomain adalah bagian dari <em>nama domain</em> induk yang memiliki ruangan sendiri (direktori), mengacu ke suatu alamat fisik. Contohnya subdomain <strong>blog.sibunglon.com</strong> acuannya yaitu <strong>sibunglon.com</strong>. Jika menggunakan nginx, untuk membuat subdomain sama seperti pada lab sebelumnya yang <a href="https://sibunglon.com/2018/12/10/kustom-konfigurasi-dan-ganti-direktori-nginx/">Bermain Dengan Nginx</a>. Mudahkan kalau caranya cuman gitu? :D Tapi jika masih ada yang bingung, tenang labnya masih saya bagikan.</p>
+
 <p>Pada lab ini saya asumsikan:</p>
+
 <ul>
 <li>Domain induk = <strong>sibunglon.com</strong></li>
 <li>Subdomain =  <strong>blog.sibunglon.com</strong></li>
@@ -126,8 +134,11 @@ Pada lab ini saya asumsikan:
 <li>Direktori root domain induk berada di <em>/sibunglonlabs/web</em></li>
 <li>Direktori root subdomain berada di <em>/sibunglonlabs/blog</em></li>
 </ul>
+
 <h3 id="bermain-subdomain-dengan-nginx">Bermain Subdomain Dengan Nginx</h3>
+
 <p>1) Pastikan pada konfigurasi domain induk tidak memuat listen 80, karena port tersebut akan dipake ramai-ramai oleh domain dan subdomain. Berikut konfigurasi domain di lab local saya:</p>
+
 <pre><code>server {
    server_name sibunglon.com;
 
@@ -146,10 +157,16 @@ Pada lab ini saya asumsikan:
    }
 
 }
-</code></pre><p>2) Untuk mempercepatnya atau memudahkan pembuatan subdomain, copy saja konfigurasi domain induk dengan command</p>
+</code></pre>
+
+<p>2) Untuk mempercepatnya atau memudahkan pembuatan subdomain, copy saja konfigurasi domain induk dengan command</p>
+
 <pre><code>$ cd /sibunglonlabs/config/
 $ cp sibunglonlabs.conf blog.conf
-</code></pre><p>3) Edit file konfigurasi subdomain dengan command <code>nano blog.conf</code> lalu ganti <strong>server_name</strong> dan <strong>direktori root</strong>nya.</p>
+</code></pre>
+
+<p>3) Edit file konfigurasi subdomain dengan command <code>nano blog.conf</code> lalu ganti <strong>server_name</strong> dan <strong>direktori root</strong>nya.</p>
+
 <pre><code>server {
    server_name blog.sibunglon.com;
 
@@ -168,9 +185,14 @@ $ cp sibunglonlabs.conf blog.conf
    }
 
 }
-</code></pre><p>4) Buat simbolik link file blog.conf ke direktori <em>/etc/nginx/conf.d/</em></p>
+</code></pre>
+
+<p>4) Buat simbolik link file blog.conf ke direktori <em>/etc/nginx/conf.d/</em></p>
+
 <p><code>ln -sf /sibunglonlabs/conf/nginx/blog.conf /etc/nginx/conf.d/</code></p>
+
 <p>5) Restart nginx, untuk menerapkan perubahan yang telah dilakukan.</p>
+
 <p>6) Sekarang subdomain anda aktif, untuk menghindari error akses pastikan direktori root subdomain sudah berisi file index.html atau sejenisnya.</p>
 </section>
     <footer>

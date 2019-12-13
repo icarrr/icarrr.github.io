@@ -39,7 +39,7 @@
   <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4194642&101" alt="" border="0"></a></noscript>
   
 
-  <meta name="generator" content="Hugo 0.60.1" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   
@@ -78,6 +78,8 @@ Diantara banyak module yang disediakan berdasarkan apa yang saya ketahui setelah
 <meta itemprop="description" content="Ansible Kirim Pemberitahuan? Emang bisa? Kirimnya pakai apa? Sepertinya menarik.
 Melalui postingan beberapa hari yang lalu kita telah berkenalan secara kilat dengan ansible, saya kira postingan sebelumnya sudah cukup membantu dan mengantar kita untuk kepo kepo i si Ansible tersebut. Sesuai apa yang ada di web resminya, disana kita bisa lihat bahwa si Ansible mempunyai banyak module yang bisa digunakan bahkan dikembangkan.
 Diantara banyak module yang disediakan berdasarkan apa yang saya ketahui setelah berkenalan dengan si Ansible, ada 2 module yang bisa digunakan untuk mengirim pemberitahuan yaitu module sendgrid dan telegram.">
+
+
 <meta itemprop="datePublished" content="2019-01-20T18:11:43&#43;07:00" />
 <meta itemprop="dateModified" content="2019-01-20T18:11:43&#43;07:00" />
 <meta itemprop="wordCount" content="602">
@@ -85,6 +87,7 @@ Diantara banyak module yang disediakan berdasarkan apa yang saya ketahui setelah
 
 
 <meta itemprop="keywords" content="Ayo Belajar Linux,Ansible,Ngoprek," />
+
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Menggunakan Ansible Untuk Kirim Pemberitahuan"/>
 <meta name="twitter:description" content="Ansible Kirim Pemberitahuan? Emang bisa? Kirimnya pakai apa? Sepertinya menarik.
@@ -115,24 +118,38 @@ Diantara banyak module yang disediakan berdasarkan apa yang saya ketahui setelah
         <time datetime="2019-01-20 18:11:43&#43;0700">2019-01-20</time></small>
       <h1>Menggunakan Ansible Untuk Kirim Pemberitahuan</h1>
     </header>
-    <section><p>Ansible Kirim Pemberitahuan? Emang bisa? Kirimnya pakai apa? Sepertinya menarik.</p>
+    <section>
+
+<p>Ansible Kirim Pemberitahuan? Emang bisa? Kirimnya pakai apa? Sepertinya menarik.</p>
+
 <p>Melalui postingan beberapa hari yang lalu kita telah berkenalan secara kilat dengan ansible, saya kira postingan sebelumnya sudah cukup membantu dan mengantar kita untuk kepo kepo i si Ansible tersebut. Sesuai apa yang ada di web resminya, disana kita bisa lihat bahwa si Ansible mempunyai banyak module yang bisa digunakan bahkan dikembangkan.</p>
+
 <p>Diantara banyak module yang disediakan berdasarkan apa yang saya ketahui setelah berkenalan dengan si Ansible, ada 2 module yang bisa digunakan untuk mengirim pemberitahuan yaitu module sendgrid dan telegram. <strong>Sendgrid</strong> adalah layanan yang menyediakan API untuk mengirim email yang biasa digunakan sebagai email marketing. Dengan sendgrid, kita bisa mengirim email menggunakan metode <strong>API</strong> atau <strong>SMTP</strong>, namun pada lab ini saya akan menggunakan metode <strong>API</strong> berdasarkan rekomendasi oleh sendgrid. Sedangkan <strong>Telegram</strong> adalah sebuah aplikasi pengirim pesan instan multiplatform berbasis cloud (awan) yang bersifat gratis.</p>
+
 <p>Dari pengenalan diatas, saya kira itu sudah cukup mengantar kita untuk bermain lagi dengan si Ansible.</p>
+
 <p>Pada lab ini saya asumsikan:</p>
+
 <ul>
 <li>File playbook sendgrid= <strong>sendgrid.yml</strong></li>
 <li>File playbook telegram= <strong>telegram.yml</strong></li>
 <li>Nama API Key = <strong>Lab siBunglon</strong></li>
 <li>Nama pengirim = <strong>siBunglon</strong></li>
-<li>Email tujuan = <a href="mailto:**lab@sibunglon.com">**lab@sibunglon.com</a>**</li>
+<li>Email tujuan = <strong>lab@sibunglon.com</strong></li>
 </ul>
+
 <h3 id="bermain-dengan-ansible">Bermain dengan Ansible</h3>
+
 <p><em>Note: Pastikan ansible telah terinstall yah! Sesi permainan kali ini saya bagi menjadi 2, sesi 1 menggunakan metode API Sendgrid dan sesi 2 menggunakan metode API Telegram.</em></p>
+
 <p><strong>Sesi 1: Menggunakan API Sendgrid</strong></p>
+
 <p>1) Silahkan mendaftar terlebih dahulu ke <a href="https://signup.sendgrid.com/">Sendgrid</a>. Ohiya disesi ini saya menggunakan paket Free Trial tapi gak usah takut, free trial disini tidak membatasi masa aktif akun melainkan membatasi pengiriman email jika masa percobaan telah habis.</p>
-<p>2) Setelah berhasil mendaftar silahkan masuk ke bagian <a href="https://app.sendgrid.com/guide/integrate">integrasi</a> dan pilih Web API karena kita akan mengirim email mengguanakan API.<img src="/assets/img/ansible-sendgrid/Screenshot_1.png" alt="">3) Berikutnya untuk memudahkan verifikasi API yang didapat, saya menggunakan cURL untuk Lab ini namun kalian dapat memilih selain cURL.<img src="/assets/img/ansible-sendgrid/Screenshot_2.png" alt="">4) Kemudian masukkan nama API Key-nya lali klik Create Key, setelah itu silahkan kalian ikuti instruksi verifikasi API Key-nya.<img src="/assets/img/ansible-sendgrid/Screenshot_3.png" alt="">Sampai tahap ini saya asumsikan kalian telah memverifikasi API Key-nya.<img src="/assets/img/ansible-sendgrid/Screenshot_4.png" alt="">5) Untuk menggunakan module sendgrid, pastikan paket sendgrid telah terinstall. Untuk menginstall-nya dapat menggunakan command <code>pip install sendgrid==2.2.1</code>.</p>
+
+<p>2) Setelah berhasil mendaftar silahkan masuk ke bagian <a href="https://app.sendgrid.com/guide/integrate">integrasi</a> dan pilih Web API karena kita akan mengirim email mengguanakan API.<img src="/assets/img/ansible-sendgrid/Screenshot_1.png" alt="" />3) Berikutnya untuk memudahkan verifikasi API yang didapat, saya menggunakan cURL untuk Lab ini namun kalian dapat memilih selain cURL.<img src="/assets/img/ansible-sendgrid/Screenshot_2.png" alt="" />4) Kemudian masukkan nama API Key-nya lali klik Create Key, setelah itu silahkan kalian ikuti instruksi verifikasi API Key-nya.<img src="/assets/img/ansible-sendgrid/Screenshot_3.png" alt="" />Sampai tahap ini saya asumsikan kalian telah memverifikasi API Key-nya.<img src="/assets/img/ansible-sendgrid/Screenshot_4.png" alt="" />5) Untuk menggunakan module sendgrid, pastikan paket sendgrid telah terinstall. Untuk menginstall-nya dapat menggunakan command <code>pip install sendgrid==2.2.1</code>.</p>
+
 <p>6) Selanjutnya buat playbook yang akan bertugas mengirim email. Buat file dengan ekstensi <strong>.yml</strong> dan berisikan seperti ini:</p>
+
 <pre><code>---
  - hosts: localhost
    tasks:
@@ -143,16 +160,28 @@ Diantara banyak module yang disediakan berdasarkan apa yang saya ketahui setelah
             - &quot;lab@sibunglon.com&quot;
           subject: &quot;Mail Sendgrid&quot;
           body: &quot;This email is sent using the sendgrid API key&quot;
-</code></pre><p>7) Setelah playbook dibuat, waktunya mengirim email dengan command <code>ansible-playbook sendgrid.yml</code>.</p>
-<p>8) Sampai tahap ini, email telah berhasil dikirim sesuai tujuannya.<img src="/assets/img/ansible-sendgrid/Screenshot_5.png" alt=""></p>
+</code></pre>
+
+<p>7) Setelah playbook dibuat, waktunya mengirim email dengan command <code>ansible-playbook sendgrid.yml</code>.</p>
+
+<p>8) Sampai tahap ini, email telah berhasil dikirim sesuai tujuannya.<img src="/assets/img/ansible-sendgrid/Screenshot_5.png" alt="" /></p>
+
 <p><strong>Sesi 2: Menggunakan API Telegram</strong></p>
+
 <p>1) Pastikan anda telah memiliki akun telegram.</p>
+
 <p>2) Buat bot terlebih dahulu untuk mendapatkan token API telegram yang akan digunakan untuk mengirim notifikasi di telegram. Buat melalui BotFather, usernamenya <strong>@BotFather</strong></p>
-<p><img src="/assets/img/ansible-telegram/telegram.png" alt=""></p>
+
+<p><img src="/assets/img/ansible-telegram/telegram.png" alt="" /></p>
+
 <p>Sampai tahap ini saya asumsikan anda telah membuat bot melalui BotFather dan telah memiliki token API telegram-nya.</p>
+
 <p>3) Setiap user telegram memiliki 1 chat id, dapatkan chat_id anda:</p>
-<p>Kirim 1 pesan melalui bot yang baru saja dibuat, isinya terserah. Dikasus ini saya kirim chat dengan konten &ldquo;<em>/start</em>&quot;. Kemudian kunjungi <a href="https://api.telegram.org/bot">https://api.telegram.org/bot</a>[tokenApiKey]/getUpdates setelah itu akan browser akan menampilkan data pengirim ke bot dan disitu terdapat chat_id kalian.</p>
-<p><em>Note: ganti [tokenApiKey] menjadi token yang didapat dari BotFather, contoh token yang saya dapat yaitu 642964376:AAGUAlTDqTei_bcvMue0g27hsRadYWadvok jadi urlnya seperti berikut</em>:<img src="/assets/img/ansible-telegram/token_result.png" alt="">4) Selanjutnya buat playbook yang akan bertugas mengirim notifikasi ke telegram kalian. Buat file dengan ekstensi <strong>.yml</strong> dan berisikan seperti ini:</p>
+
+<p>Kirim 1 pesan melalui bot yang baru saja dibuat, isinya terserah. Dikasus ini saya kirim chat dengan konten &ldquo;<em>/start</em>&rdquo;. Kemudian kunjungi <a href="https://api.telegram.org/bot[tokenApiKey]/getUpdates">https://api.telegram.org/bot[tokenApiKey]/getUpdates</a> setelah itu akan browser akan menampilkan data pengirim ke bot dan disitu terdapat chat_id kalian.</p>
+
+<p><em>Note: ganti [tokenApiKey] menjadi token yang didapat dari BotFather, contoh token yang saya dapat yaitu 642964376:AAGUAlTDqTei_bcvMue0g27hsRadYWadvok jadi urlnya seperti berikut</em>:<img src="/assets/img/ansible-telegram/token_result.png" alt="" />4) Selanjutnya buat playbook yang akan bertugas mengirim notifikasi ke telegram kalian. Buat file dengan ekstensi <strong>.yml</strong> dan berisikan seperti ini:</p>
+
 <pre><code>---
  - hosts: localhost
    tasks:
@@ -161,9 +190,13 @@ Diantara banyak module yang disediakan berdasarkan apa yang saya ketahui setelah
         token: '642964376:AAGUAlTDqTei_bcvMue0g27hsRadYWadvok'
         chat_id: 98527700
         msg: &quot;This notification is sent using the token API telegram&quot;
-</code></pre><p>5) Setelah playbook dibuat, waktunya mengirim email dengan command <code>ansible-playbook telegram.yml</code>.</p>
+</code></pre>
+
+<p>5) Setelah playbook dibuat, waktunya mengirim email dengan command <code>ansible-playbook telegram.yml</code>.</p>
+
 <p>6) Sampai tahap ini, notifikasi telah berhasil dikirim ke kalian melalui bot yang telah dibuat.</p>
-<p><img src="/assets/img/ansible-telegram/telegram_receive.png" alt=""></p>
+
+<p><img src="/assets/img/ansible-telegram/telegram_receive.png" alt="" /></p>
 </section>
     <footer>
       <hr>

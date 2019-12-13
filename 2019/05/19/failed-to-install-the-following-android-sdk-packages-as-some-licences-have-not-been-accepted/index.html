@@ -39,7 +39,7 @@
   <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4194642&101" alt="" border="0"></a></noscript>
   
 
-  <meta name="generator" content="Hugo 0.60.1" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   
@@ -74,6 +74,8 @@
   
   <meta itemprop="name" content="Failed to Install the Following Android SDK Packages as Some Licences Have Not Been Accepted">
 <meta itemprop="description" content="A few days ago, I had time to try to build an Android project but did not use the Android Studio application but instead used the command line. In order for the source code to be built using only the command line, we can use the included sdkmanager to download other SDK packages, this is a basic Android command line tool, if you want to download visit the Android Developer page then adjust with your environment.">
+
+
 <meta itemprop="datePublished" content="2019-05-19T15:59:55&#43;07:00" />
 <meta itemprop="dateModified" content="2019-05-19T15:59:55&#43;07:00" />
 <meta itemprop="wordCount" content="326">
@@ -81,6 +83,7 @@
 
 
 <meta itemprop="keywords" content="Ayo Belajar Linux,Android Developer,Ngoprek,Case Study," />
+
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Failed to Install the Following Android SDK Packages as Some Licences Have Not Been Accepted"/>
 <meta name="twitter:description" content="A few days ago, I had time to try to build an Android project but did not use the Android Studio application but instead used the command line. In order for the source code to be built using only the command line, we can use the included sdkmanager to download other SDK packages, this is a basic Android command line tool, if you want to download visit the Android Developer page then adjust with your environment."/>
@@ -110,12 +113,19 @@
       <h1>Failed to Install the Following Android SDK Packages as Some Licences Have Not Been Accepted</h1>
     </header>
     <section><p>A few days ago, I had time to try to build an Android project but did not use the Android Studio application but instead used the command line. In order for the source code to be built using only the command line, we can use the included sdkmanager to download other SDK packages, this is a basic Android command line tool, if you want to download visit the <a href="https://developer.android.com/studio">Android Developer</a> page then adjust with your environment. Besides that I also use Gradle Wrapper and follow the existing setup guidelines.</p>
+
 <p>After following a few steps in the build guide, it finally arrived at the step where the source code will soon be built into an Android APK. After a few minutes the development process began, the development process suddenly stopped and gave an error message <code>Failed to install the following Android package because some SDK licenses have not been received.</code> The first thing I say is &ldquo;Hai error&rdquo; 🤣</p>
+
 <p>To solve this problem I followed a number of references on the internet, I followed the guidelines to be able to accept the SDK license and here I found a new error message <code>Exception in thread &quot;playing&quot; java.lang.NoClassDefFoundError: javax/xml/bind/annotation/XML Schema</code>.</p>
+
 <p>Here I was confused, then I tried asking my friend. After asking this to my friend, my friend was also made confused. After several hours of searching for a solution to this problem but it has not been resolved as well, we matched the environment used and at the end of checking this problem can be solved. It turns out that the error that appears when receiving the SDK license is that the java version used is different.</p>
-<p>Now the Java version is equalized, trying to accept the SDK license and finally error <code>Exception in thread &quot;error playing&quot; java.lang.NoClassDefFoundError: javax/xml/bind/annotation/XmlSchema</code> doesn't appear. Then try again to run the stage of building Andorid APK and the APK was successfully built.</p>
+
+<p>Now the Java version is equalized, trying to accept the SDK license and finally error <code>Exception in thread &quot;error playing&quot; java.lang.NoClassDefFoundError: javax/xml/bind/annotation/XmlSchema</code> doesn&rsquo;t appear. Then try again to run the stage of building Andorid APK and the APK was successfully built.</p>
+
 <p>Thank you <a href="https://kucingselfie.com/">Alif Firdaus</a> for helping.</p>
+
 <p>References</p>
+
 <ul>
 <li><a href="https://stackoverflow.com/questions/38096225/automatically-accept-all-sdk-licences">Stack Overflow</a></li>
 </ul>
