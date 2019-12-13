@@ -65,7 +65,7 @@
   <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
 
   <meta property="og:title" content="How to Reset List of Trusted CA Certificates in RHEL 6 RHEL 7" />
-<meta property="og:description" content="$ localTime=$(date &#39;&#43;%Y%m%d_%H%M%S&#39; -d &quot;$(curl -s --head http://google.com | grep ^Date: | sed &#39;s/Date: //g&#39;)&quot;) $ mkdir -p $HOME/cert.bak $ rpm -Vv ca-certificates | awk &#39;$1!=&quot;.........&quot; &amp;&amp; $2!=&quot;d&quot; {system(&quot;mv -v &quot; $NF &quot; $HOME/cert.bak&quot;)}&#39; $ yum check-update ca-certificates; (($?==100)) &amp;&amp; yum update ca-certificates || yum reinstall -y ca-certificates $ find /etc/pki/ca-trust/source{,/anchors} -maxdepth 1 -not -type d -exec ls -1 {} &#43; $ update-ca-trust extract $ mv $HOME/cert.bak $HOME/cert.bak-$localTime  " />
+<meta property="og:description" content="#!/bin/bash # Get time localTime=$(date &#39;&#43;%Y%m%d_%H%M%S&#39; -d &#34;$(curl -s --head http://google.com | grep ^Date: | sed &#39;s/Date: //g&#39;)&#34;) # Create cert bak dir mkdir -p $HOME/cert.bak # Reset cert sudo rpm -Vv ca-certificates | awk &#39;$1!=&#34;.........&#34; &amp;&amp; $2!=&#34;d&#34; {system(&#34;mv -v &#34; $NF &#34; $HOME/cert.bak&#34;)}&#39; sudo yum check-update ca-certificates; (($?==100)) &amp;&amp; sudo yum update -y ca-certificates || sudo yum reinstall -y ca-certificates sudo find /etc/pki/ca-trust/source{,/anchors} -maxdepth 1 -not -type d -exec ls -1 {} &#43; sudo update-ca-trust extract # Update locate cert bak sudo mv $HOME/cert." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://sibunglon.com/2019/12/13/how-to-reset-list-of-trusted-ca-certificates-in-rhel-6-rhel-7/" />
 <meta property="article:published_time" content="2019-12-13T14:31:55+07:00" />
@@ -73,12 +73,12 @@
 
   
   <meta itemprop="name" content="How to Reset List of Trusted CA Certificates in RHEL 6 RHEL 7">
-<meta itemprop="description" content="$ localTime=$(date &#39;&#43;%Y%m%d_%H%M%S&#39; -d &quot;$(curl -s --head http://google.com | grep ^Date: | sed &#39;s/Date: //g&#39;)&quot;) $ mkdir -p $HOME/cert.bak $ rpm -Vv ca-certificates | awk &#39;$1!=&quot;.........&quot; &amp;&amp; $2!=&quot;d&quot; {system(&quot;mv -v &quot; $NF &quot; $HOME/cert.bak&quot;)}&#39; $ yum check-update ca-certificates; (($?==100)) &amp;&amp; yum update ca-certificates || yum reinstall -y ca-certificates $ find /etc/pki/ca-trust/source{,/anchors} -maxdepth 1 -not -type d -exec ls -1 {} &#43; $ update-ca-trust extract $ mv $HOME/cert.bak $HOME/cert.bak-$localTime  ">
+<meta itemprop="description" content="#!/bin/bash # Get time localTime=$(date &#39;&#43;%Y%m%d_%H%M%S&#39; -d &#34;$(curl -s --head http://google.com | grep ^Date: | sed &#39;s/Date: //g&#39;)&#34;) # Create cert bak dir mkdir -p $HOME/cert.bak # Reset cert sudo rpm -Vv ca-certificates | awk &#39;$1!=&#34;.........&#34; &amp;&amp; $2!=&#34;d&#34; {system(&#34;mv -v &#34; $NF &#34; $HOME/cert.bak&#34;)}&#39; sudo yum check-update ca-certificates; (($?==100)) &amp;&amp; sudo yum update -y ca-certificates || sudo yum reinstall -y ca-certificates sudo find /etc/pki/ca-trust/source{,/anchors} -maxdepth 1 -not -type d -exec ls -1 {} &#43; sudo update-ca-trust extract # Update locate cert bak sudo mv $HOME/cert.">
 
 
 <meta itemprop="datePublished" content="2019-12-13T14:31:55&#43;07:00" />
 <meta itemprop="dateModified" content="2019-12-13T14:31:55&#43;07:00" />
-<meta itemprop="wordCount" content="68">
+<meta itemprop="wordCount" content="86">
 
 
 
@@ -86,7 +86,7 @@
 
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="How to Reset List of Trusted CA Certificates in RHEL 6 RHEL 7"/>
-<meta name="twitter:description" content="$ localTime=$(date &#39;&#43;%Y%m%d_%H%M%S&#39; -d &quot;$(curl -s --head http://google.com | grep ^Date: | sed &#39;s/Date: //g&#39;)&quot;) $ mkdir -p $HOME/cert.bak $ rpm -Vv ca-certificates | awk &#39;$1!=&quot;.........&quot; &amp;&amp; $2!=&quot;d&quot; {system(&quot;mv -v &quot; $NF &quot; $HOME/cert.bak&quot;)}&#39; $ yum check-update ca-certificates; (($?==100)) &amp;&amp; yum update ca-certificates || yum reinstall -y ca-certificates $ find /etc/pki/ca-trust/source{,/anchors} -maxdepth 1 -not -type d -exec ls -1 {} &#43; $ update-ca-trust extract $ mv $HOME/cert.bak $HOME/cert.bak-$localTime  "/>
+<meta name="twitter:description" content="#!/bin/bash # Get time localTime=$(date &#39;&#43;%Y%m%d_%H%M%S&#39; -d &#34;$(curl -s --head http://google.com | grep ^Date: | sed &#39;s/Date: //g&#39;)&#34;) # Create cert bak dir mkdir -p $HOME/cert.bak # Reset cert sudo rpm -Vv ca-certificates | awk &#39;$1!=&#34;.........&#34; &amp;&amp; $2!=&#34;d&#34; {system(&#34;mv -v &#34; $NF &#34; $HOME/cert.bak&#34;)}&#39; sudo yum check-update ca-certificates; (($?==100)) &amp;&amp; sudo yum update -y ca-certificates || sudo yum reinstall -y ca-certificates sudo find /etc/pki/ca-trust/source{,/anchors} -maxdepth 1 -not -type d -exec ls -1 {} &#43; sudo update-ca-trust extract # Update locate cert bak sudo mv $HOME/cert."/>
 
   
 
@@ -112,15 +112,21 @@
         <time datetime="2019-12-13 14:31:55&#43;0700">2019-12-13</time></small>
       <h1>How to Reset List of Trusted CA Certificates in RHEL 6 RHEL 7</h1>
     </header>
-    <section><pre><code>$ localTime=$(date '+%Y%m%d_%H%M%S' -d &quot;$(curl -s --head http://google.com | grep ^Date: | sed 's/Date: //g')&quot;)
-$ mkdir -p $HOME/cert.bak
-$ rpm -Vv ca-certificates | awk '$1!=&quot;.........&quot; &amp;&amp; $2!=&quot;d&quot; {system(&quot;mv -v &quot; $NF &quot; $HOME/cert.bak&quot;)}'
-$ yum check-update ca-certificates; (($?==100)) &amp;&amp; yum update ca-certificates || yum reinstall -y ca-certificates
-$ find /etc/pki/ca-trust/source{,/anchors} -maxdepth 1 -not -type d -exec ls -1 {} +
-$ update-ca-trust extract
-$ mv $HOME/cert.bak $HOME/cert.bak-$localTime
-</code></pre>
-</section>
+    <section><div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/bash
+</span><span class="cp"></span><span class="c1"># Get time</span>
+<span class="nv">localTime</span><span class="o">=</span><span class="k">$(</span>date <span class="s1">&#39;+%Y%m%d_%H%M%S&#39;</span> -d <span class="s2">&#34;</span><span class="k">$(</span>curl -s --head http://google.com <span class="p">|</span> grep ^Date: <span class="p">|</span> sed <span class="s1">&#39;s/Date: //g&#39;</span><span class="k">)</span><span class="s2">&#34;</span><span class="k">)</span>
+
+<span class="c1"># Create cert bak dir</span>
+mkdir -p <span class="nv">$HOME</span>/cert.bak
+
+<span class="c1"># Reset cert</span>
+sudo rpm -Vv ca-certificates <span class="p">|</span> awk <span class="s1">&#39;$1!=&#34;.........&#34; &amp;&amp; $2!=&#34;d&#34; {system(&#34;mv -v &#34; $NF &#34; $HOME/cert.bak&#34;)}&#39;</span>
+sudo yum check-update ca-certificates<span class="p">;</span> <span class="o">((</span><span class="nv">$?</span><span class="o">==</span><span class="m">100</span><span class="o">))</span> <span class="o">&amp;&amp;</span> sudo yum update -y ca-certificates <span class="o">||</span> sudo yum reinstall -y ca-certificates
+sudo find /etc/pki/ca-trust/source<span class="o">{</span>,/anchors<span class="o">}</span> -maxdepth <span class="m">1</span> -not -type d -exec ls -1 <span class="o">{}</span> +
+sudo update-ca-trust extract
+
+<span class="c1"># Update locate cert bak</span>
+sudo mv <span class="nv">$HOME</span>/cert.bak <span class="nv">$HOME</span>/cert/cert.bak-<span class="nv">$localTime</span></code></pre></div></section>
     <footer>
       <hr>
       <div class="meta">
