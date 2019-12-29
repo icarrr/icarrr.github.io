@@ -5,17 +5,27 @@
     <description>Recent content in Posts on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 29 Dec 2019 14:07:36 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 29 Dec 2019 19:37:51 +0700</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
       <item>
-        <title>Add Trusted Site on MacOS</title>
+        <title>Automatic Remove .DS_Store on macOS</title>
+        <link>https://sibunglon.com/2019/12/29/automatic-remove-.ds_store-on-macos/</link>
+        <pubDate>Sun, 29 Dec 2019 19:37:51 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/12/29/automatic-remove-.ds_store-on-macos/</guid>
+        <description>In the Apple macOS operating system, .DS_Store is a file that stores custom attributes of its containing folder, such as the position of icons or the choice of a background image. The name is an abbreviation of Desktop Services Store.
+But some people want to delete this file, including me. To delete this file simply run the following command in the macOS terminal or shell.
+$ find ~ -name .DS_Store -delete This will find the .</description>
+      </item>
+    
+      <item>
+        <title>Add Trusted Site on macOS</title>
         <link>https://sibunglon.com/2019/12/29/add-trusted-site-on-macos/</link>
         <pubDate>Sun, 29 Dec 2019 14:07:36 +0700</pubDate>
         <guid>https://sibunglon.com/2019/12/29/add-trusted-site-on-macos/</guid>
-        <description>There is a site that we may already trust but because the SSL certificate has expired or is invalid, we are prevented from accessing the site. In Google Chrome the advanced button will appear and there will be another proceed to site button that can help to access the site, but the proced to site button will be removed from Google Chrome MacOS. Then how to access the site?
+        <description>There is a site that we may already trust but because the SSL certificate has expired or is invalid, we are prevented from accessing the site. In Google Chrome the advanced button will appear and there will be another proceed to site button that can help to access the site, but the proced to site button will be removed from Google Chrome macOS. Then how to access the site?
 1) Click Not Secure on the address bar&amp;gt; click Certificate &amp;gt; Then drag and drop the existing certificate into any directory.</description>
       </item>
     

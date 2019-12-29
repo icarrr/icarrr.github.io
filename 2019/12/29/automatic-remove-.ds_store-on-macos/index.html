@@ -4,7 +4,7 @@
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Add Trusted Site on macOS</title>
+  <title>Automatic Remove .DS_Store on macOS</title>
   <meta name="author" content="Faizar Septiawan">
   <meta name="author" content="Shell, Linux, Komunitas Pengguna Linux Indonesia , MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, KPLK Klaten, BLC Telkom Klaten, Icar, siBunglonGanteng, siBunglonLabs">
   <meta name="description" content="Read - Search - Ask | Sekali Gila Tetap Gila">
@@ -64,32 +64,35 @@
   <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
   <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
 
-  <meta property="og:title" content="Add Trusted Site on macOS" />
-<meta property="og:description" content="There is a site that we may already trust but because the SSL certificate has expired or is invalid, we are prevented from accessing the site. In Google Chrome the advanced button will appear and there will be another proceed to site button that can help to access the site, but the proced to site button will be removed from Google Chrome macOS. Then how to access the site?
-1) Click Not Secure on the address bar&gt; click Certificate &gt; Then drag and drop the existing certificate into any directory." />
+  <meta property="og:title" content="Automatic Remove .DS_Store on macOS" />
+<meta property="og:description" content="In the Apple macOS operating system, .DS_Store is a file that stores custom attributes of its containing folder, such as the position of icons or the choice of a background image. The name is an abbreviation of Desktop Services Store.
+But some people want to delete this file, including me. To delete this file simply run the following command in the macOS terminal or shell.
+$ find ~ -name .DS_Store -delete This will find the ." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://sibunglon.com/2019/12/29/add-trusted-site-on-macos/" />
-<meta property="article:published_time" content="2019-12-29T14:07:36+07:00" />
-<meta property="article:modified_time" content="2019-12-29T14:07:36+07:00" />
+<meta property="og:url" content="https://sibunglon.com/2019/12/29/automatic-remove-.ds_store-on-macos/" />
+<meta property="article:published_time" content="2019-12-29T19:37:51+07:00" />
+<meta property="article:modified_time" content="2019-12-29T19:37:51+07:00" />
 
   
-  <meta itemprop="name" content="Add Trusted Site on macOS">
-<meta itemprop="description" content="There is a site that we may already trust but because the SSL certificate has expired or is invalid, we are prevented from accessing the site. In Google Chrome the advanced button will appear and there will be another proceed to site button that can help to access the site, but the proced to site button will be removed from Google Chrome macOS. Then how to access the site?
-1) Click Not Secure on the address bar&gt; click Certificate &gt; Then drag and drop the existing certificate into any directory.">
+  <meta itemprop="name" content="Automatic Remove .DS_Store on macOS">
+<meta itemprop="description" content="In the Apple macOS operating system, .DS_Store is a file that stores custom attributes of its containing folder, such as the position of icons or the choice of a background image. The name is an abbreviation of Desktop Services Store.
+But some people want to delete this file, including me. To delete this file simply run the following command in the macOS terminal or shell.
+$ find ~ -name .DS_Store -delete This will find the .">
 
 
-<meta itemprop="datePublished" content="2019-12-29T14:07:36&#43;07:00" />
-<meta itemprop="dateModified" content="2019-12-29T14:07:36&#43;07:00" />
-<meta itemprop="wordCount" content="181">
+<meta itemprop="datePublished" content="2019-12-29T19:37:51&#43;07:00" />
+<meta itemprop="dateModified" content="2019-12-29T19:37:51&#43;07:00" />
+<meta itemprop="wordCount" content="197">
 
 
 
 <meta itemprop="keywords" content="Others," />
 
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Add Trusted Site on macOS"/>
-<meta name="twitter:description" content="There is a site that we may already trust but because the SSL certificate has expired or is invalid, we are prevented from accessing the site. In Google Chrome the advanced button will appear and there will be another proceed to site button that can help to access the site, but the proced to site button will be removed from Google Chrome macOS. Then how to access the site?
-1) Click Not Secure on the address bar&gt; click Certificate &gt; Then drag and drop the existing certificate into any directory."/>
+<meta name="twitter:title" content="Automatic Remove .DS_Store on macOS"/>
+<meta name="twitter:description" content="In the Apple macOS operating system, .DS_Store is a file that stores custom attributes of its containing folder, such as the position of icons or the choice of a background image. The name is an abbreviation of Desktop Services Store.
+But some people want to delete this file, including me. To delete this file simply run the following command in the macOS terminal or shell.
+$ find ~ -name .DS_Store -delete This will find the ."/>
 
   
 
@@ -112,30 +115,24 @@
   <article>
     <header>
       <small>
-        <time datetime="2019-12-29 14:07:36&#43;0700">2019-12-29</time></small>
-      <h1>Add Trusted Site on macOS</h1>
+        <time datetime="2019-12-29 19:37:51&#43;0700">2019-12-29</time></small>
+      <h1>Automatic Remove .DS_Store on macOS</h1>
     </header>
-    <section><p>There is a site that we may already trust but because the SSL certificate has expired or is invalid, we are prevented from accessing the site. In Google Chrome the <em>advanced</em> button will appear and there will be another <em>proceed to site</em> button that can help to access the site, but the proced to site button will be removed from Google Chrome macOS. Then how to access the site?</p>
+    <section><p>In the Apple macOS operating system, .DS_Store is a file that stores custom attributes of its containing folder, such as the position of icons or the choice of a background image. The name is an abbreviation of Desktop Services Store.</p>
 
-<p><img src="/assets/img/add-trusted-site-on-mac-os/Screenshot_1.png" alt="" /></p>
+<p>But some people want to delete this file, including me. To delete this file simply run the following command in the macOS terminal or shell.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ find ~ -name .DS_Store -delete</code></pre></div>
+<p>This will find the .DS_Store file in the home directory (~) and home subdirectory (~).</p>
 
-<p>1) Click <em>Not Secure</em> on the address bar&gt; click <em>Certificate</em> &gt; Then drag and drop the existing certificate into any directory.</p>
+<p>If you want to do it manually, you can run the command periodically. But if you want to delete .DS_Store automatically, then add the script to the crontab.</p>
 
-<p><img src="/assets/img/add-trusted-site-on-mac-os/Screenshot_2.png" alt="" /></p>
+<p>1) To edit a cron file, simply run the following in a macOS terminal or shell.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ crontab -e</code></pre></div>
+<p>2) Add the following script to crontab.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">* * * * * find ~ -name .DS_Store -delete &gt; /dev/null <span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span> <span class="o">||</span> true</code></pre></div>
+<p>The command will be executed every minute. * * * * * is the determination of the time for command execution.</p>
 
-<p>2) Open the certificate that has been saved, then double click the certificate so that it is added to Keychain Access on macOS.</p>
-
-<p>3) After the certificate has been successfully added to the Access keychain, open the certificate in Access Keychain and by default it will be responded to as follows.</p>
-
-<p><img src="/assets/img/add-trusted-site-on-mac-os/Screenshot_3.png" alt="" /></p>
-
-<p>4) Change the value <em>When using this certificate</em> from <em>Use System Defaults</em> to <em>Always Trust</em>.</p>
-
-<p><img src="/assets/img/add-trusted-site-on-mac-os/Screenshot_4.png" alt="" /></p>
-
-<p>5) Close pop up certificate then enter the macOS password to save changes.</p>
-
-<p>6) Access the site again, and the site should be accessible again.</p>
+<p>If you want to change the command execution time, crontab.guru can help you determine the command execution time as you wish.</p>
 </section>
     <footer>
       <hr>
