@@ -5,10 +5,19 @@
     <description>Recent content in Others on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Dec 2019 14:31:55 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 29 Dec 2019 14:07:36 +0700</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/others/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Add Trusted Site on MacOS</title>
+        <link>https://sibunglon.com/2019/12/29/add-trusted-site-on-macos/</link>
+        <pubDate>Sun, 29 Dec 2019 14:07:36 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/12/29/add-trusted-site-on-macos/</guid>
+        <description>There is a site that we may already trust but because the SSL certificate has expired or is invalid, we are prevented from accessing the site. In Google Chrome the advanced button will appear and there will be another proceed to site button that can help to access the site, but the proced to site button will be removed from Google Chrome MacOS. Then how to access the site?
+1) Click Not Secure on the address bar&amp;gt; click Certificate &amp;gt; Then drag and drop the existing certificate into any directory.</description>
+      </item>
     
       <item>
         <title>How to Reset List of Trusted CA Certificates in RHEL 6 RHEL 7</title>
