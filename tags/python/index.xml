@@ -5,10 +5,20 @@
     <description>Recent content in Python on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 15 Jul 2019 03:09:25 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 30 Dec 2019 21:45:42 +0700</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Disable SSL Certificate Verification on Script Python</title>
+        <link>https://sibunglon.com/2019/12/30/disable-ssl-certificate-verification-on-script-python/</link>
+        <pubDate>Mon, 30 Dec 2019 21:45:42 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/12/30/disable-ssl-certificate-verification-on-script-python/</guid>
+        <description>I failed to run a telegram bot in another environment, more or less the error as follows.
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host=&amp;#39;api.telegram.org&amp;#39;, port=443): Max retries exceeded with url (Caused by SSLError(SSLError(1, u&amp;#39;[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:618)&amp;#39;),)) But after adding the following script, my bot finally managed to run in that environment. Maybe someone has a case related to SSL certificate verification, hopefully the following script can help.
+#!/bin/python import ssl try: _create_unverified_https_context = ssl.</description>
+      </item>
     
       <item>
         <title>Create New Super User for Access Django Admin Interface Open edX</title>
