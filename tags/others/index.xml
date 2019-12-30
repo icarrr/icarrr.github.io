@@ -5,10 +5,21 @@
     <description>Recent content in Others on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 29 Dec 2019 19:37:51 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 29 Dec 2019 20:09:28 +0700</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/others/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Disable FortiClient Auto Start on macOS</title>
+        <link>https://sibunglon.com/2019/12/29/disable-forticlient-auto-start-on-macos/</link>
+        <pubDate>Sun, 29 Dec 2019 20:09:28 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/12/29/disable-forticlient-auto-start-on-macos/</guid>
+        <description>1) Open terminal or shell.
+2) Open the file /Library/LaunchAgents/com.fortinet.forticlient.fct_launcher.plist using your favorite text editor, here I use vim.
+$ sudo vi /Library/LaunchAgents/com.fortinet.forticlient.fct_launcher.plist 3) Default contents of the com.fortinet.forticlient.fct_launcher.plist file as follows.
+&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt; &amp;lt;!DOCTYPE plist PUBLIC &amp;#34;-//Apple//DTD PLIST 1.0//EN&amp;#34; &amp;#34;http://www.apple.com/DTDs/PropertyList-1.0.dtd&amp;#34;&amp;gt; &amp;lt;plist version=&amp;#34;1.0&amp;#34;&amp;gt; &amp;lt;dict&amp;gt; &amp;lt;key&amp;gt;Label&amp;lt;/key&amp;gt; &amp;lt;string&amp;gt;com.fortinet.fct_launcher&amp;lt;/string&amp;gt; &amp;lt;key&amp;gt;Program&amp;lt;/key&amp;gt; &amp;lt;string&amp;gt;/Library/Application Support/Fortinet/FortiClient/bin/FCTLauncher&amp;lt;/string&amp;gt; &amp;lt;key&amp;gt;RunAtLoad&amp;lt;/key&amp;gt; &amp;lt;true/&amp;gt; &amp;lt;/dict&amp;gt; &amp;lt;/plist&amp;gt; Change the word true to false, so that the contents of the com.fortinet.forticlient.fct_launcher.plist file as follows.</description>
+      </item>
     
       <item>
         <title>Automatic Remove .DS_Store on macOS</title>
