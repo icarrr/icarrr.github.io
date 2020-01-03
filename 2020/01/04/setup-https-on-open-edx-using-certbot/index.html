@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en-us" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Setup HTTPS on Open edX Using Certbot</title>
+  <meta name="author" content="Faizar Septiawan">
+  <meta name="author" content="Shell, Linux, Komunitas Pengguna Linux Indonesia , MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, KPLK Klaten, BLC Telkom Klaten, Icar, siBunglonGanteng, siBunglonLabs">
+  <meta name="description" content="Read - Search - Ask | Sekali Gila Tetap Gila">
+  <meta name="description" content="Shell, Linux, Komunitas Pengguna Linux Indonesia , MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, KPLK Klaten, BLC Telkom Klaten, Icar, siBunglonGanteng, siBunglonLabs">
+  
+  
+  
+  <meta name="google-site-verification" content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM" />
+  
+  
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110194945-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110194945-3');
+  </script>
+  
+
+  
+  <script type="text/javascript">var _Hasync= _Hasync|| [];
+  _Hasync.push(['Histats.start', '1,4194642,4,0,0,0,00010000']);
+  _Hasync.push(['Histats.fasi', '1']);
+  _Hasync.push(['Histats.track_hits', '']);
+  (function() {
+  var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+  hs.src = ('//s10.histats.com/js15_as.js');
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+  })();</script>
+  <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4194642&101" alt="" border="0"></a></noscript>
+  
+
+  <meta name="generator" content="Hugo 0.59.1" />
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/css/external.min.css" media="screen">
+  
+  
+  <link rel="stylesheet" href="/assets/css/styles.css" media="screen">
+  <link href="//fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
+  
+
+  
+  
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/src/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="/src/images/favicon.ico">
+  
+
+  
+  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
+  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
+
+  <meta property="og:title" content="Setup HTTPS on Open edX Using Certbot" />
+<meta property="og:description" content="By default Open edX does not provide an SSL configuration, but we can add it manually. As per the topic of this article, here I will enable HTTPS on Open edX using Certbot.
+Certbot is a new breakthrough from the Let&rsquo;s Encrypt Web Security Certificate Provider where Lets Encrypt provides SSL for free.
+ Note: In the following example, in Open edX I point Course Management System (CMS) using the domain studio." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sibunglon.com/2020/01/04/setup-https-on-open-edx-using-certbot/" />
+<meta property="article:published_time" content="2020-01-04T02:54:23+07:00" />
+<meta property="article:modified_time" content="2020-01-04T02:54:23+07:00" />
+
+  
+  <meta itemprop="name" content="Setup HTTPS on Open edX Using Certbot">
+<meta itemprop="description" content="By default Open edX does not provide an SSL configuration, but we can add it manually. As per the topic of this article, here I will enable HTTPS on Open edX using Certbot.
+Certbot is a new breakthrough from the Let&rsquo;s Encrypt Web Security Certificate Provider where Lets Encrypt provides SSL for free.
+ Note: In the following example, in Open edX I point Course Management System (CMS) using the domain studio.">
+
+
+<meta itemprop="datePublished" content="2020-01-04T02:54:23&#43;07:00" />
+<meta itemprop="dateModified" content="2020-01-04T02:54:23&#43;07:00" />
+<meta itemprop="wordCount" content="1076">
+
+
+
+<meta itemprop="keywords" content="Ayo Belajar Linux,Open edX,Let&#39;s Encrypt," />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Setup HTTPS on Open edX Using Certbot"/>
+<meta name="twitter:description" content="By default Open edX does not provide an SSL configuration, but we can add it manually. As per the topic of this article, here I will enable HTTPS on Open edX using Certbot.
+Certbot is a new breakthrough from the Let&rsquo;s Encrypt Web Security Certificate Provider where Lets Encrypt provides SSL for free.
+ Note: In the following example, in Open edX I point Course Management System (CMS) using the domain studio."/>
+
+  
+
+  
+  <script src="https://kit.fontawesome.com/749688b2db.js" crossorigin="anonymous"></script>
+  
+</head>
+
+  <body>
+    
+      <nav>
+  <a href="/" title="">
+    siBunglon
+  </a>
+</nav>
+
+    
+    <main class="container">
+      
+  <article>
+    <header>
+      <small>
+        <time datetime="2020-01-04 02:54:23&#43;0700">2020-01-04</time></small>
+      <h1>Setup HTTPS on Open edX Using Certbot</h1>
+    </header>
+    <section><p>By default Open edX does not provide an SSL configuration, but we can add it manually. As per the topic of this article, here I will enable HTTPS on Open edX using Certbot.</p>
+
+<p><em>Certbot</em> is a new breakthrough from the Let&rsquo;s Encrypt Web Security Certificate Provider where Lets Encrypt provides SSL for free.</p>
+
+<blockquote>
+<p>Note: In the following example, in Open edX I point <em>Course Management System (CMS)</em> using the domain <em>studio.elearning.sibunglon.com</em> while <em>Learning Management System (LMS)</em> using the domain <em>elearning.sibunglon.com</em>.</p>
+</blockquote>
+
+<p>Setup HTTPS Open edX:</p>
+
+<p>1) Log in to the Open edX server.</p>
+
+<p>2) Open the file <em>/etc/nginx/sites-enabled/lms</em> and find the following script snippet. Please use your favorite text editor.</p>
+<div class="highlight"><pre class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">...</span>
+  <span class="s">listen</span> <span class="mi">80</span> <span class="s">default_server</span><span class="p">;</span>
+<span class="k">...</span></code></pre></div>
+<p>Delete or comment on the LMS port configuration, then add the domain configuration.</p>
+<div class="highlight"><pre class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">...</span>
+  <span class="c1">#listen 80 default_server;
+</span><span class="c1"></span>  <span class="s">server_name</span> <span class="s">elearning.sibunglon.com</span><span class="p">;</span>
+<span class="k">...</span></code></pre></div>
+<p>2) Open the file <em>/etc/nginx/sites-enabled/cms</em> and find the following script snippet. Please use your favorite text editor.</p>
+<div class="highlight"><pre class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">...</span>
+  <span class="s">listen</span> <span class="mi">18010</span><span class="p">;</span>
+<span class="k">...</span></code></pre></div>
+<p>Delete or comment on the CMS port configuration, then add the domain configuration.</p>
+<div class="highlight"><pre class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">...</span>
+  <span class="c1">#listen 18010;
+</span><span class="c1"></span>  <span class="s">server_name</span> <span class="s">studio.elearning.sibunglon.com</span><span class="p">;</span>
+<span class="k">...</span></code></pre></div>
+<p>3) Install certbot</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo apt-get update
+$ sudo apt-get install software-properties-common
+$ sudo add-apt-repository ppa:certbot/certbot
+$ sudo apt-get update
+$ sudo apt-get install python-certbot-nginx </code></pre></div>
+<p>4) Generate a web security certificate (SSL) and enable HTTPS.</p>
+
+<p>-) If you want to use 1 domain 1 SSL, generate SSL 1 per 1 as well as follows.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo certbot --nginx -d elearning.sibunglon.com</code></pre></div>
+<p>Re-generate SSL for CMS.</p>
+
+<p>-) If you want to use 1 SSL for 2 domains (LMS and CMS), then the command is as follows:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo certbot --nginx -d elearning.sibunglon.com -d studio.elearning.sibunglon.com</code></pre></div>
+<p>If the Open EdX server does not currently use certbot, when running the SSL generate command:</p>
+
+<p>-) You will be asked to enter an email. The email is used to send notifications at a later time if SSL will expire.</p>
+
+<p>-) You are asked to read the Terms of Service and will be given 2 choices, which are <em>(A) gree</em> if you want to continue generating and <em>C</em> to cancel the SSL generate process.</p>
+
+<p>-) Do you want to receive e-mails from the certbot team about their work that encrypts the web, EFF news, campaigns, and ways to support digital freedom. If you want to receive the email, input <em>Y</em> but if you don&rsquo;t want to receive the email then input <em>N</em>.</p>
+
+<p>When the SSL generation process is complete, you are asked to choose whether to direct HTTP traffic to HTTPS, or you can still use HTTP. If you want to redirect HTTP traffic to HTTPS then input <em>2</em>, whereas if you do not want to redirect HTTP traffic to HTTPS then input <em>1</em>.</p>
+
+<p>More or less like the following output I mean from these points.</p>
+
+<pre><code>Saving debug log to /var/log/letsencrypt/letsencrypt.log
+Plugins selected: Authenticator nginx, Installer nginx
+Enter email address (used for urgent renewal and security notices) (Enter 'c' to
+cancel): ganteng@sibunglon.com
+Starting new HTTPS connection (1): acme-v02.api.letsencrypt.org
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Please read the Terms of Service at
+https://letsencrypt.org/documents/LE-SA-v1.2-November-15-2017.pdf. You must
+agree in order to register with the ACME server at
+https://acme-v02.api.letsencrypt.org/directory
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+(A)gree/(C)ancel: A
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Would you be willing to share your email address with the Electronic Frontier
+Foundation, a founding partner of the Let's Encrypt project and the non-profit
+organization that develops Certbot? We'd like to send you email about our work
+encrypting the web, EFF news, campaigns, and ways to support digital freedom.
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+(Y)es/(N)o: N
+
+Starting new HTTPS connection (1): supporters.eff.org
+
+Please choose whether or not to redirect HTTP traffic to HTTPS, removing HTTP access.
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+1: No redirect - Make no further changes to the webserver configuration.
+2: Redirect - Make all requests redirect to secure HTTPS access. Choose this for
+new sites, or if you're confident your site works on HTTPS. You can undo this
+change by editing your web server's configuration.
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Select the appropriate number [1-2] then [enter] (press 'c' to cancel): 2
+Redirecting all traffic on port 80 to ssl
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Congratulations! You have successfully enabled 
+
+You should test your configuration at:
+https://www.ssllabs.com/ssltest/analyze.html?d=elearning.sibunglon.com
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+IMPORTANT NOTES:
+ - Congratulations! Your certificate and chain have been saved at:
+   /etc/letsencrypt/live/elearning.sibunglon.com/fullchain.pem
+   Your key file has been saved at:
+   /etc/letsencrypt/live/elearning.sibunglon.com/privkey.pem
+   Your cert will expire on 2020-04-02. To obtain a new or tweaked
+   version of this certificate in the future, simply run certbot again
+   with the &quot;certonly&quot; option. To non-interactively renew *all* of
+   your certificates, run &quot;certbot renew&quot;
+ - If you like Certbot, please consider supporting our work by:
+
+   Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate
+   Donating to EFF:                    https://eff.org/donate-le
+</code></pre>
+
+<p>After this, HTTPS Open edX should be active, please try to access CMS and LMS using the domain.</p>
+</section>
+    <footer>
+      <hr>
+      <div class="meta">
+        <p class="tags">
+          
+            
+              <a href="/tags/ayo-belajar-linux">
+                <span>#</span>Ayo Belajar Linux</a>
+            
+              <a href="/tags/open-edx">
+                <span>#</span>Open edX</a>
+            
+              <a href="/tags/lets-encrypt">
+                <span>#</span>Let&#39;s Encrypt</a>
+            
+          
+        </p>
+      </div>
+      <hr>
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sibunglonlabs" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </footer>
+  </article>
+
+    </main>
+    
+      <footer>
+  <p>
+    &copy; 2020 Faizar Septiawan. <a href="http://creativecommons.org/licenses/by-sa/4.0/">Some Rights Reserved</a>.
+  </p>
+  <p>
+    Powered by <a href="https://gohugo.io" title="A Fast and Flexible Website Generator">Hugo</a> &amp; <a href="https://github.com/eshlox/simplicity" title="Hugo theme">Simplicity</a>.
+  </p>
+</footer>
+
+    
+    
+    
+    
+    
+    
+    
+    <script src="/assets/js/scripts.min.js"></script>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-110194945-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>

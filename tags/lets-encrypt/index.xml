@@ -5,10 +5,20 @@
     <description>Recent content in Let&#39;s Encrypt on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 16 Feb 2019 17:19:08 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 04 Jan 2020 02:54:23 +0700</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/lets-encrypt/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Setup HTTPS on Open edX Using Certbot</title>
+        <link>https://sibunglon.com/2020/01/04/setup-https-on-open-edx-using-certbot/</link>
+        <pubDate>Sat, 04 Jan 2020 02:54:23 +0700</pubDate>
+        <guid>https://sibunglon.com/2020/01/04/setup-https-on-open-edx-using-certbot/</guid>
+        <description>By default Open edX does not provide an SSL configuration, but we can add it manually. As per the topic of this article, here I will enable HTTPS on Open edX using Certbot.
+Certbot is a new breakthrough from the Let&amp;rsquo;s Encrypt Web Security Certificate Provider where Lets Encrypt provides SSL for free.
+ Note: In the following example, in Open edX I point Course Management System (CMS) using the domain studio.</description>
+      </item>
     
       <item>
         <title>Error Generate Certificate SSL Menggunakan Let&#39;s Encrypt</title>
