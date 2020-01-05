@@ -82,7 +82,7 @@ Certbot is a new breakthrough from the Let&rsquo;s Encrypt Web Security Certific
 
 <meta itemprop="datePublished" content="2020-01-04T02:54:23&#43;07:00" />
 <meta itemprop="dateModified" content="2020-01-04T02:54:23&#43;07:00" />
-<meta itemprop="wordCount" content="1076">
+<meta itemprop="wordCount" content="1122">
 
 
 
@@ -131,6 +131,10 @@ Certbot is a new breakthrough from the Let&rsquo;s Encrypt Web Security Certific
 <p>1) Log in to the Open edX server.</p>
 
 <p>2) Open the file <em>/etc/nginx/sites-enabled/lms</em> and find the following script snippet. Please use your favorite text editor.</p>
+
+<blockquote>
+<p>Note: Before updating the config, the initial configuration file should be backed up first. For backups, use the command <code>sudo cp /etc/nginx/sites-enabled/lms ~/</code>.</p>
+</blockquote>
 <div class="highlight"><pre class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">...</span>
   <span class="s">listen</span> <span class="mi">80</span> <span class="s">default_server</span><span class="p">;</span>
 <span class="k">...</span></code></pre></div>
@@ -140,6 +144,10 @@ Certbot is a new breakthrough from the Let&rsquo;s Encrypt Web Security Certific
 </span><span class="c1"></span>  <span class="s">server_name</span> <span class="s">elearning.sibunglon.com</span><span class="p">;</span>
 <span class="k">...</span></code></pre></div>
 <p>2) Open the file <em>/etc/nginx/sites-enabled/cms</em> and find the following script snippet. Please use your favorite text editor.</p>
+
+<blockquote>
+<p>Note: Before updating the config, the initial configuration file should be backed up first. For backups, use the command <code>sudo cp /etc/nginx/sites-enabled/cms ~/</code>.</p>
+</blockquote>
 <div class="highlight"><pre class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">...</span>
   <span class="s">listen</span> <span class="mi">18010</span><span class="p">;</span>
 <span class="k">...</span></code></pre></div>
