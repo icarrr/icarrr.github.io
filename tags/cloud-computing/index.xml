@@ -15,8 +15,10 @@
         <link>https://sibunglon.com/2017/10/20/install-nexcloud-di-debian-server-8.6.0/</link>
         <pubDate>Fri, 20 Oct 2017 02:10:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/20/install-nexcloud-di-debian-server-8.6.0/</guid>
-        <description>A. PendahuluanPada kesempatan ini&amp;nbsp;saya akan sharing tentang bagaimana saya menyimpan file dengan melakukan instalasi nextcloud pada server debian 8.6.
-B. PengertianNextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan layanan file hosting. Ini secara fungsional mirip dengan Dropbox, meskipun Nextcloud bebas dan open-source, memungkinkan siapa saja untuk menginstal dan mengoperasikannya di server pribadi. Berbeda dengan layanan proprietary seperti Dropbox, arsitektur terbuka memungkinkan penambahan fungsionalitas tambahan ke server dalam bentuk aplikasi.</description>
+        <description>A. Pendahuluan
+Pada kesempatan ini saya akan sharing tentang bagaimana saya menyimpan file dengan melakukan instalasi nextcloud pada server debian 8.6.
+B. Pengertian
+Nextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan layanan file hosting. Ini secara fungsional mirip dengan Dropbox, meskipun Nextcloud bebas dan open-source, memungkinkan siapa saja untuk menginstal dan mengoperasikannya di server pribadi. Berbeda dengan layanan proprietary seperti Dropbox, arsitektur terbuka memungkinkan penambahan fungsionalitas tambahan ke server dalam bentuk aplikasi.</description>
       </item>
     
   </channel>
