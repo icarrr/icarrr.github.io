@@ -5,10 +5,19 @@
     <description>Recent content in Nginx on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 14 Dec 2018 11:03:50 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jan 2020 11:34:28 +0700</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Nginx Redirect Domain</title>
+        <link>https://sibunglon.com/2020/01/14/nginx-redirect-domain/</link>
+        <pubDate>Tue, 14 Jan 2020 11:34:28 +0700</pubDate>
+        <guid>https://sibunglon.com/2020/01/14/nginx-redirect-domain/</guid>
+        <description>Directing visitors from one domain to another is very easy, just edit the nginx configuration file that has been created then add some configuration syntax or if you don&amp;rsquo;t want to edit an existing configuration file, you can also create 1 more configuration file.
+The following example, anyone who accesses the *.redirect.sibunglon.com domain will be directed to the sibunglon.com domain. ** = wilcard*, so anyone who accesses the domain x.redirect.sibunglon.com, xyz.</description>
+      </item>
     
       <item>
         <title>Membuat Subdomain Dengan Nginx</title>
