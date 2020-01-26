@@ -16,7 +16,7 @@
         <pubDate>Tue, 14 Jan 2020 11:34:28 +0700</pubDate>
         <guid>https://sibunglon.com/2020/01/14/nginx-redirect-domain/</guid>
         <description>Directing visitors from one domain to another is very easy, just edit the nginx configuration file that has been created then add some configuration syntax or if you don&amp;rsquo;t want to edit an existing configuration file, you can also create 1 more configuration file.
-The following example, anyone who accesses the *.redirect.sibunglon.com domain will be directed to the sibunglon.com domain. ** = wilcard*, so anyone who accesses the domain x.redirect.sibunglon.com, xyz.</description>
+The following example, anyone who accesses the *.redirect.sibunglon.com domain will be directed to the sibunglon.com domain. *= wilcard, so anyone who accesses the domain x.redirect.sibunglon.com, xyz.redirect.sibunglon.com, blog.</description>
       </item>
     
       <item>
