@@ -5,10 +5,19 @@
     <description>Recent content in macOS on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 29 Dec 2019 20:09:28 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 26 Jan 2020 22:38:33 +0700</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/macos/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Downgrade and Install Node Spesific Version on macOS</title>
+        <link>https://sibunglon.com/2020/01/26/downgrade-and-install-node-spesific-version-on-macos/</link>
+        <pubDate>Sun, 26 Jan 2020 22:38:33 +0700</pubDate>
+        <guid>https://sibunglon.com/2020/01/26/downgrade-and-install-node-spesific-version-on-macos/</guid>
+        <description>A few days ago, i want to build a frontend project that my friend has made, the project is built using vue, when installing dependencies or packages needed, the installation process stops because there are packages that cannot be installed. At that time, I used node version 13.
+Does the node version in the development environment need to be upgraded? I don&amp;rsquo;t think that&amp;rsquo;s the right solution because it might require so much effort.</description>
+      </item>
     
       <item>
         <title>Disable FortiClient Auto Start on macOS</title>
