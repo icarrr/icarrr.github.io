@@ -5,10 +5,19 @@
     <description>Recent content in Error on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Dec 2019 13:13:00 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 07 Feb 2020 23:55:13 +0700</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/error/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Error Install MySQL Server on Ubuntu 18</title>
+        <link>https://sibunglon.com/2020/02/07/error-install-mysql-server-on-ubuntu-18/</link>
+        <pubDate>Fri, 07 Feb 2020 23:55:13 +0700</pubDate>
+        <guid>https://sibunglon.com/2020/02/07/error-install-mysql-server-on-ubuntu-18/</guid>
+        <description>A few days ago mysql server was installed again, mysql was successfully installed and the service was successfully running but if you want to install another package, this problem must be solved by installing mysql server because mysql server installation is not 100% complete yet.
+Btw, fortunately the terminal history on the laptop has not been cleared so I can save the error message again on Ubuntu pastebin so that others can see the error clearly 😁.</description>
+      </item>
     
       <item>
         <title>Fixing Problems on Installations Open edX Ficus</title>
