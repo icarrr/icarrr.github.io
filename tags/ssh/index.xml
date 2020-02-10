@@ -37,7 +37,7 @@ Umumnya server diakses menggunakan ssh dengan autentikasi password plain text, j
 Ya emang menarik, agar user tidak perlu memasukkan password jika ingin mendapatkan hak akses root cukup tambahkan si user ke sudoers.
 Bermain dengan Sudoers 1) Edit file sudoers dengan command nano /etc/sudoers.
 2) Setelah berhasil mengakses file sudoers, sekarang tambahkan sintaks berikut:
-sibunglon ALL=(ALL) NOPASSWD:ALL   Note: Kata sibunglon diganti sesuai user yang akan diberikan izin menggunakan sudo tanpa password.
+sibunglon ALL=(ALL) NOPASSWD:ALL  Note: Kata sibunglon diganti sesuai user yang akan diberikan izin menggunakan sudo tanpa password.
  Sekarang user sibunglon (user sesuai yang anda daftarkan) dapat menggunakan command sudo tanpa password.</description>
       </item>
     

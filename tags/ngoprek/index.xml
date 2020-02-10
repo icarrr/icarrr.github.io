@@ -34,9 +34,9 @@ If before you did not do the postgres installation process, when backing up the 
         <pubDate>Thu, 31 Oct 2019 14:46:11 +0700</pubDate>
         <guid>https://sibunglon.com/2019/10/31/restart-network-adapter-windows-without-reboot/</guid>
         <description>Restarts a network adapter by disabling and then re-enabling the network adapter.
- Open PowerShell on Windows, after that find the name of the interface to be restarted. Use the following command line:
-netsh interface show interface Restart network adapter using the following command line:
-Restart-NetAdapter -Name &amp;#34;Ethernet x&amp;#34;  </description>
+  Open PowerShell on Windows, after that find the name of the interface to be restarted. Use the following command line:
+netsh interface show interface   Restart network adapter using the following command line:
+Restart-NetAdapter -Name &amp;#34;Ethernet x&amp;#34;   </description>
       </item>
     
       <item>
@@ -44,8 +44,8 @@ Restart-NetAdapter -Name &amp;#34;Ethernet x&amp;#34;  </description>
         <link>https://sibunglon.com/2019/07/15/create-new-super-user-for-access-django-admin-interface-open-edx/</link>
         <pubDate>Mon, 15 Jul 2019 03:09:25 +0700</pubDate>
         <guid>https://sibunglon.com/2019/07/15/create-new-super-user-for-access-django-admin-interface-open-edx/</guid>
-        <description> I need to use the Django admin interface, but I don&amp;rsquo;t know what users can use to log in.
-Solution sudo -u edxapp bash source /edx/app/edxapp/edxapp_env python /edx/app/edxapp/edx-platform/manage.py --settings=aws createsuperuser</description>
+        <description>I need to use the Django admin interface, but I don&amp;rsquo;t know what users can use to log in.
+Solution sudo -u edxapp bash source /edx/app/edxapp/edxapp_env python /edx/app/edxapp/edx-platform/manage.py --settings=aws createsuperuser </description>
       </item>
     
       <item>
@@ -142,7 +142,8 @@ Saya butuh web service yang dapat diakses melalui 1 publik yaitu 1 ip publik hos
         <pubDate>Wed, 27 Feb 2019 01:15:00 +0700</pubDate>
         <guid>https://sibunglon.com/2019/02/27/feature-browse-caddy-server/</guid>
         <description>Caddy? Gak usah takut 😆 beberapa bulan yang lalu kan udah kenalan sama si Caddy dan ini postnya, tapi waktu itu kan cuman sekedar berkenalan. Nah dipostingan ini I&amp;rsquo;m siBunglon akan memberikan step installasinya di linux beserta memamerkan fitur yang paling sering I&amp;rsquo;m siBunglon pakai jika menggunakan si Caddy ini. To the point aja yah, kan kenalannya udah :D
-Bermain Dengan Caddy 1) Install caddy ke sistem dengan command</description>
+Bermain Dengan Caddy 1) Install caddy ke sistem dengan command
+curl https://getcaddy.</description>
       </item>
     
       <item>
@@ -236,7 +237,7 @@ Umumnya server diakses menggunakan ssh dengan autentikasi password plain text, j
 Ya emang menarik, agar user tidak perlu memasukkan password jika ingin mendapatkan hak akses root cukup tambahkan si user ke sudoers.
 Bermain dengan Sudoers 1) Edit file sudoers dengan command nano /etc/sudoers.
 2) Setelah berhasil mengakses file sudoers, sekarang tambahkan sintaks berikut:
-sibunglon ALL=(ALL) NOPASSWD:ALL   Note: Kata sibunglon diganti sesuai user yang akan diberikan izin menggunakan sudo tanpa password.
+sibunglon ALL=(ALL) NOPASSWD:ALL  Note: Kata sibunglon diganti sesuai user yang akan diberikan izin menggunakan sudo tanpa password.
  Sekarang user sibunglon (user sesuai yang anda daftarkan) dapat menggunakan command sudo tanpa password.</description>
       </item>
     
@@ -294,8 +295,8 @@ Setelah itu sekarang anda dapat menginstall atau update paket di Red Hat anda se
         <link>https://sibunglon.com/2018/12/11/pip-python2-error/</link>
         <pubDate>Tue, 11 Dec 2018 21:34:18 +0700</pubDate>
         <guid>https://sibunglon.com/2018/12/11/pip-python2-error/</guid>
-        <description> Pip di Python2 Error? Traceback (most recent call last): File &amp;quot;/usr/bin/pip&amp;quot;, line 9, in &amp;lt;module&amp;gt; from pip import main ImportError: cannot import name main  Gak usah panik, cukup jalankan command berikut tapi pastikan terlebih dahulu sekarang sudah jadi super user (root)
-python -m pip uninstall pip &amp;amp;&amp;amp; apt install python-pip --reinstall  </description>
+        <description>Pip di Python2 Error? Traceback (most recent call last): File &amp;quot;/usr/bin/pip&amp;quot;, line 9, in &amp;lt;module&amp;gt; from pip import main ImportError: cannot import name main Gak usah panik, cukup jalankan command berikut tapi pastikan terlebih dahulu sekarang sudah jadi super user (root)
+python -m pip uninstall pip &amp;amp;&amp;amp; apt install python-pip --reinstall </description>
       </item>
     
       <item>
@@ -331,8 +332,8 @@ Pada Lab ini saya asumsikan :
         <guid>https://sibunglon.com/2018/12/10/nginx-tidak-bisa-diakses/</guid>
         <description>Nginx di CentOS atau RHEL tidak bisa diakses? Service nginx aktif? Servernya aktif? Akses dari localhost bisa? Jika semua jawabannya YA, mungkin firewall di system anda sedang aktif namun trafik protokol HTTP dan HTTPS belum diizinkan oleh perangkat yang lain.
 Untuk mengizinkan trafik protokol HTTP, gunakan command
-firewall-cmd --permanent --zone=public --add-service=http  Sedangkan untuk mengizinkan trafik protokol HTTPS, gunakan command
-firewall-cmd --permanent --zone=public --add-service=https  Setelah diizinkan, firewall wajib direload agar update firewall dapat diterapkan</description>
+firewall-cmd --permanent --zone=public --add-service=http Sedangkan untuk mengizinkan trafik protokol HTTPS, gunakan command
+firewall-cmd --permanent --zone=public --add-service=https Setelah diizinkan, firewall wajib direload agar update firewall dapat diterapkan</description>
       </item>
     
       <item>
@@ -341,7 +342,7 @@ firewall-cmd --permanent --zone=public --add-service=https  Setelah diizinkan, f
         <pubDate>Mon, 10 Dec 2018 07:44:24 +0700</pubDate>
         <guid>https://sibunglon.com/2018/12/10/berkenalan-dengan-nginx-di-rhel/centos/</guid>
         <description>Nginx? Apa sih nginx itu? Fungsinya buat apa? Mungkin itu yang terlintas dipikirian beberapa orang jika berkenalan dengan hal baru. Maka dari itu pada kali ini yang akan dibahas pada Lab ini yaitu berkenalan dan bagaimana memasang nginx.
-Nginx, banyak orang membicarakannya meskipun salah dipelafalannya. Dulu saya juga salah melafakannya namun setelah diruqyah sama m1m1n atau yang dikenal dengan Andy Hidayat, sekarang gak salah pelafalan lagi :D . Nginx dibaca &amp;ldquo;engine X&amp;rdquo; bukan &amp;ldquo;nging X&amp;rdquo;.</description>
+Nginx, banyak orang membicarakannya meskipun salah dipelafalannya. Dulu saya juga salah melafakannya namun setelah diruqyah sama m1m1n atau yang dikenal dengan Andy Hidayat, sekarang gak salah pelafalan lagi :D . Nginx dibaca &amp;ldquo;engine X&amp;rdquo; bukan &amp;ldquo;nging X&amp;quot;.</description>
       </item>
     
       <item>
@@ -370,7 +371,7 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2018/11/06/gerakan-multi-touch-macbook-di-linux/</link>
         <pubDate>Tue, 06 Nov 2018 15:14:00 +0000</pubDate>
         <guid>https://sibunglon.com/2018/11/06/gerakan-multi-touch-macbook-di-linux/</guid>
-        <description>Jika Anda pernah menggunakan MacBook, pasti tahu betapa menyenangkan dan bermanfaatnya gerakan trackpad untuk mengubah desktop, menampilkan semua jendela yang terbuka, dan pinch-to-zoom.&amp;nbsp;Di linux anda juga menggunakan fitur ini dengan bantuan aplikasi fusuma, berikut installasi dan konfigurasinya.1. Berikan izin untuk membaca perangkat touchpadsudo gpasswd -a $USER input2.&amp;nbsp;Install libinput-toolssudo apt-get install libinput-tools3. Install Fusumasudo gem install fusuma4. Instal xdotool (opsional)sudo apt-get install xdotool5. Sesuaikan gesture dengan membuat direktori fusuma dan buat file konfigurasinyamkdir -p ~/.</description>
+        <description></description>
       </item>
     
       <item>
@@ -378,9 +379,7 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2018/10/28/installasi-caddy-server-di-sistem-operasi-windows/</link>
         <pubDate>Sun, 28 Oct 2018 21:20:00 +0000</pubDate>
         <guid>https://sibunglon.com/2018/10/28/installasi-caddy-server-di-sistem-operasi-windows/</guid>
-        <description>Setelah berkenalan dengan si Caddy Server pada beberapa hari yang lalu, sekarang waktunya bermain dengan si Caddy Server.
-Apa Saja yang dibutuhkan? Pastikan anda telah memiliki file master Caddy Server, jika belum silahkan dari situs resminya.
-Menjalankan Caddy Server pada sistem operasi windows1. Buka file hasil download Caddy Server2. Copy semua isi dari file master tersebut3. Tentukan path Caddy, buat folder baru yang akan menampung semua file yang telah dicopy kemudian paste di folder tersebut4.</description>
+        <description></description>
       </item>
     
       <item>
@@ -388,8 +387,7 @@ Menjalankan Caddy Server pada sistem operasi windows1. Buka file hasil download 
         <link>https://sibunglon.com/2018/10/26/berkenalan-dengan-caddy-server/</link>
         <pubDate>Fri, 26 Oct 2018 11:52:00 +0000</pubDate>
         <guid>https://sibunglon.com/2018/10/26/berkenalan-dengan-caddy-server/</guid>
-        <description>Caddy? Caddy itu apaan? Fungsinya apa aja?
-Caddy kadang-kadang diklarifikasi sebagai web server Caddy bersifat open source, server web HTTP / 2- enabled yang ditulis dalam Go . Ia menggunakan pustaka standar Go untuk fungsi HTTP-nya. Salah satu fitur paling terkenal Caddy adalah mengaktifkan HTTPS secara default.Caddy mendukung berbagai teknologi Web dan tersedia sebagai biner yang dikompilasi secara statis untuk sistem operasi Windows, Mac, Linux, Android, dan BSD pada arsitektur i386, amd64, dan ARM.</description>
+        <description></description>
       </item>
     
       <item>
@@ -397,7 +395,7 @@ Caddy kadang-kadang diklarifikasi sebagai web server Caddy bersifat open source,
         <link>https://sibunglon.com/2018/10/26/membangun-dhcp-server-menggunakan-debian-8/</link>
         <pubDate>Fri, 26 Oct 2018 10:47:00 +0000</pubDate>
         <guid>https://sibunglon.com/2018/10/26/membangun-dhcp-server-menggunakan-debian-8/</guid>
-        <description>DHCP server atau Dinamic Host Configuration Protocol adalah sebuah protocol yang memungkinkan sebuah komputer atau server memberikan IP Address secara dinamis atau otomatis untuk komputer lain, atau komputer klien.Ketika DHCP client pada pihak komputer klien diaktifkan, komputer klien tersebut akan melakukan request ke komputer server untuk mendapatkan IP Address dari DHCP Server. Kemudian DHCP server akan memberikan jawaban ke komputer klien dengan memberikan IP Address yang tersedia pada pool atau range IP Address di DHCP server.</description>
+        <description></description>
       </item>
     
       <item>
@@ -405,7 +403,7 @@ Caddy kadang-kadang diklarifikasi sebagai web server Caddy bersifat open source,
         <link>https://sibunglon.com/2018/10/26/membangun-dns-server-menggunakan-debian-8/</link>
         <pubDate>Fri, 26 Oct 2018 10:06:00 +0000</pubDate>
         <guid>https://sibunglon.com/2018/10/26/membangun-dns-server-menggunakan-debian-8/</guid>
-        <description>Dalam dunia internet, komputer saling berkomunikasi dengan mengenali ip addressnya. Namun karena manusia jauh lebih sulit mengingat angka-angkanya maka solusinya menggunakan DNS Server.&amp;nbsp;DNS yaitu kepanjangan dari Domain Name System merupakan sebuah server yang berfungsi menangani translasi penamaan host-host kedalam IP Address, begitu juga sebaliknya dalam menangani translasi dari IP Address ke Hostname/Domain. Lebih mudahnya DNS dapat diartikan sebagai sebuah layanan yang digunakan untuk menterjemahkan hostname/domain ke IP Address atau sebaliknya.</description>
+        <description></description>
       </item>
     
       <item>
@@ -413,7 +411,7 @@ Caddy kadang-kadang diklarifikasi sebagai web server Caddy bersifat open source,
         <link>https://sibunglon.com/2017/10/24/membuat-repositori-debian-8-dari-iso-dvd/</link>
         <pubDate>Tue, 24 Oct 2017 02:54:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/24/membuat-repositori-debian-8-dari-iso-dvd/</guid>
-        <description>A. PendahuluanPada kesempatan kali ini yang saya share yaitu bagaimana sih membuat sebuah repository debian untuk jaringan lokalB. PengertianRepositori perangkat lunak adalah lokasi penyimpanan dari paket perangkat lunak dapat diambildan diinstal pada komputer. Membuat repositori debian 8 dari dvd ini tergolong mudah dan praktis tetapi membutuhkan waktu atau tempo yang agak lama karena banyak data yang akan di salin dari iso ke hardisk walaupun offline atau tanpa menggunakan koneksi internet andaabar harus s untuk rsync dari iso atau dvd selain anda dapat menggunakan iso, anda juga dapat menggunakan DVD untuk membuat repo yaitu me-mount dvd anda terlebih dahulu.</description>
+        <description></description>
       </item>
     
       <item>
@@ -421,14 +419,7 @@ Caddy kadang-kadang diklarifikasi sebagai web server Caddy bersifat open source,
         <link>https://sibunglon.com/2017/10/23/membangun-sistem-informasi-desa/</link>
         <pubDate>Mon, 23 Oct 2017 02:29:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/23/membangun-sistem-informasi-desa/</guid>
-        <description>A. Pendahuluan
-Pada kesempatan ini saya akan mengimplementasikan membangun sebuah sistem informasi untuk desa
-B. PengertianOpenSID&amp;nbsp;(https://github.com/OpenSID/OpenSID) adalah Sistem Informasi Desa (SID) yang sengaja dibuat supaya terbuka dan dapat dikembangkan bersama-sama oleh komunitas peduli SID.
-SID adalah aplikasi komputer yang membantu desa, agar:
-- Kantor desa lebih efisien dan efektif
-- Pemerintah desa lebih transparan dan akuntabel- Layanan publik lebih baik
-- Warga mendapat akses lebih baik pada informasi desa
-OpenSID turut membantu agar ke semua 74ribu+ desa di Indonesia menerapkan sistem informasi untuk memajukan desanya.</description>
+        <description>A. PendahuluanPada kesempatan ini saya akan mengimplementasikan membangun sebuah sistem informasi untuk desaB. PengertianOpenSID(https://github.com/OpenSID/OpenSID) adalah Sistem Informasi Desa (SID) yang sengaja dibuat supaya terbuka dan dapat dikembangkan bersama-sama oleh komunitas peduli SID.SID adalah aplikasi komputer yang membantu desa, agar:- Kantor desa lebih efisien dan efektif- Pemerintah desa lebih transparan dan akuntabel- Layanan publik lebih baik- Warga mendapat akses lebih baik pada informasi desaOpenSID turut membantu agar ke semua 74ribu+ desa di Indonesia menerapkan sistem informasi untuk memajukan desanya.</description>
       </item>
     
       <item>
@@ -436,8 +427,7 @@ OpenSID turut membantu agar ke semua 74ribu+ desa di Indonesia menerapkan sistem
         <link>https://sibunglon.com/2017/10/21/mempercantik-tampilan-terminal-server/</link>
         <pubDate>Sat, 21 Oct 2017 02:27:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/21/mempercantik-tampilan-terminal-server/</guid>
-        <description>A. PendahuluanPada kesempatan ini saya ingin sharing tentang bagaimana mempercantik atau apalah agar tampilan shell linux tidak polos-polos begitu saja.
-B. PengertianApa itu shell ? shell adalah program (penterjemah perintah) yang menjembatani user dengan sistem operasi dalam hal ini kernel (inti sistem operasi), umumnya shell menyediakan prompt sebagai user interface, tempat dimana user mengetikkan perintah-perintah yang diinginkan baik berupa perintah internal shell (internal command), ataupun perintah eksekusi suatu file progam (eksternal command), selain itu shell memungkinkan user menyusun sekumpulan perintah pada sebuah atau beberapa file untuk dieksekusi sebagai program.</description>
+        <description></description>
       </item>
     
       <item>
@@ -456,14 +446,7 @@ Nextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan lay
         <link>https://sibunglon.com/2017/10/19/backup-vm-proxmox-ke-local-harddisk/</link>
         <pubDate>Thu, 19 Oct 2017 18:47:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/19/backup-vm-proxmox-ke-local-harddisk/</guid>
-        <description>A. Pendahuluan
-Pada kesempatan ini saya share bagaimana agar config di debian atau apapun yang ada diproxmox tidak hilang bila terjadi sesuatu
-B. Pengertian
-Bakcup data adalah salah satu langkah untuk menyimpan data agar saat data itu hilang kita masih memiliki data simpanannya agar tidak hilang.
-C. Latar belakang
-Membuat secondary data agar saat data primer nya hilang kita masih punya data secondari nya.
-D. Tujuan
-Agar data yang saat penting itu tidak hilang karena ada kesalahan dan dapat menyerlamatkan pekerjaan kita.</description>
+        <description>A. PendahuluanPada kesempatan ini saya share bagaimana agar config di debian atau apapun yang ada diproxmox tidak hilang bila terjadi sesuatuB. PengertianBakcup data adalah salah satu langkah untuk menyimpan data agar saat data itu hilang kita masih memiliki data simpanannya agar tidak hilang.C. Latar belakangMembuat secondary data agar saat data primer nya hilang kita masih punya data secondari nya.D. TujuanAgar data yang saat penting itu tidak hilang karena ada kesalahan dan dapat menyerlamatkan pekerjaan kita.</description>
       </item>
     
       <item>
@@ -471,8 +454,7 @@ Agar data yang saat penting itu tidak hilang karena ada kesalahan dan dapat meny
         <link>https://sibunglon.com/2017/10/18/implementasi-pembelajaran-online-dengan-moodle-installasi/</link>
         <pubDate>Wed, 18 Oct 2017 17:13:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/18/implementasi-pembelajaran-online-dengan-moodle-installasi/</guid>
-        <description>A. PendahuluanPada kesempatan kali ini saya akan mengimplementasikan tentang apa yang sudah saya pelajari yaitu Moodle
-B. PengertianMOODLE&amp;nbsp;(singkatan dari&amp;nbsp;Modular Object-Oriented Dynamic Learning Environment) adalah paket perangkat lunak yang diproduksi untuk kegiatan belajar berbasis internet dan situs web yang menggunakan prinsip&amp;nbsp;social constructionist pedagogy. MOODLE merupakan salah satu aplikasi dari konsep dan mekanisme belajar mengajar yang memanfaatkan teknologi informasi, yang dikenal dengan konsep pembelajaran elktronik atau e-learning. Moodle dapat digunakan secara bebas sebagai produk sumber terbuka (open source) di bawah lisensi GNU.</description>
+        <description></description>
       </item>
     
       <item>
@@ -480,15 +462,7 @@ B. PengertianMOODLE&amp;nbsp;(singkatan dari&amp;nbsp;Modular Object-Oriented Dy
         <link>https://sibunglon.com/2017/10/18/point-to-point-dengan-ubiquiti-station-side/</link>
         <pubDate>Wed, 18 Oct 2017 16:50:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/18/point-to-point-dengan-ubiquiti-station-side/</guid>
-        <description>A. Pengertian
-Ubiquiti Networks&amp;nbsp;adalah perusahaan teknologi Amerika yang dimulai pada tahun 2005. Berbasis di&amp;nbsp;San Jose, California&amp;nbsp;, Ubiquiti memproduksi&amp;nbsp;produk&amp;nbsp;komunikasi data nirkabel&amp;nbsp;untuk perusahaan dan&amp;nbsp;penyedia layanan&amp;nbsp;broadband nirkabel&amp;nbsp;dengan fokus utama pada pasar yang kurang terlayani dan yang&amp;nbsp;sedang berkembang.
-B. Latar Belakang
-Kebutuhan media tranmisi jarak jauh
-C. Maksud dan Tujuan
-Bisa Menerapkan wireless konsep dan bisa menangkap signal dari sisi AP
-D. Alat dan Bahan
-~ Ubiquiti Power Beam M2 (Station side)
-~ Ubiquiti NanoStation M2 (AP Side)</description>
+        <description>A. PengertianUbiquiti Networksadalah perusahaan teknologi Amerika yang dimulai pada tahun 2005. Berbasis di San Jose, California , Ubiquiti memproduksi produk komunikasi data nirkabel untuk perusahaan dan penyedia layanan broadband nirkabel dengan fokus utama pada pasar yang kurang terlayani dan yang sedang berkembang.B. Latar BelakangKebutuhan media tranmisi jarak jauhC. Maksud dan TujuanBisa Menerapkan wireless konsep dan bisa menangkap signal dari sisi APD. Alat dan Bahan~ Ubiquiti Power Beam M2 (Station side)~ Ubiquiti NanoStation M2 (AP Side)~ Laptop~ Kabel LANE.</description>
       </item>
     
       <item>
@@ -496,7 +470,7 @@ D. Alat dan Bahan
         <link>https://sibunglon.com/2017/10/18/point-to-point-dengan-ubiquiti-ap-side/</link>
         <pubDate>Wed, 18 Oct 2017 11:29:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/18/point-to-point-dengan-ubiquiti-ap-side/</guid>
-        <description>Protokol Point-to-Point (PPP) adalah protokol data link (layer 2) yang digunakan untuk membangun hubungan langsung antara dua node. Ini menghubungkan dua router secara langsung tanpa host atau perangkat jaringan lainnya di antaranya, dan jaraknya biasanya cukup jauh, UBIQUITI merupakan sebuah perusahaan yang mengkhususkan produksinya pada produk – produk wireless. Perusahaan yang berbasis di San Jose, California, Amerika ini telah beroperasi sejak tahun 2005. Sejak saat ini, mereka terus melakukan inovasi pada produk – produknya sehingga bisa mendunia seperti saat ini.</description>
+        <description></description>
       </item>
     
       <item>
@@ -504,8 +478,7 @@ D. Alat dan Bahan
         <link>https://sibunglon.com/2017/10/17/install-slims-8-akasia-di-debian-server/</link>
         <pubDate>Tue, 17 Oct 2017 15:17:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/17/install-slims-8-akasia-di-debian-server/</guid>
-        <description>A. PendahuluanPada kesempatan ini saya sharing tentang bagaimana langkah-langkah penginstallan slims untuk manajamen perpustakaan online.
-B. PengertianSenayan, atau lengkapnya&amp;nbsp;Senayan Library Management System&amp;nbsp;(SLiMS), adalah perangkat lunak sistem manajemen perpustakaan (library management system) sumber terbuka yang dilisensikan di bawah GPL v3. Aplikasi Web yang dikembangkan oleh tim dari Pusat Informasi dan Humas Departemen Pendidikan Nasional Repubik Indonesia ini dibangun dengan menggunakan PHP, basis data MySQL, dan Pengontrol versi Git. Pada tahun 2009, Senayan memenangi INAICTA 2009 untuk kategori&amp;nbsp;open source.</description>
+        <description></description>
       </item>
     
       <item>
@@ -513,8 +486,7 @@ B. PengertianSenayan, atau lengkapnya&amp;nbsp;Senayan Library Management System
         <link>https://sibunglon.com/2017/10/17/setting-access-point-engenius-eap-300/</link>
         <pubDate>Tue, 17 Oct 2017 11:01:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/17/setting-access-point-engenius-eap-300/</guid>
-        <description>A. PendahuluanPada kesempatan ini saya akan sedikit membagi ilmu terkait dengan how to configure access point EnGenius EAP 300. ok dari pada lama kita lanjut ke step selanjutnya.
-B. PengertianDi jaringan komputer , jalur akses nirkabel ( WAP ), atau lebih tepatnya hanya access point ( AP ), adalah perangkat keras jaringan yang memungkinkan perangkat WI - FI terhubung ke jaringan kabel.&amp;nbsp;AP biasanya&amp;nbsp;&amp;nbsp;terhubung ke router (melalui jaringan kabel) sebagai perangkat mandiri, namun juga dapat menjadi komponen integral dari router itu sendiri.</description>
+        <description></description>
       </item>
     
       <item>
@@ -522,16 +494,7 @@ B. PengertianDi jaringan komputer , jalur akses nirkabel ( WAP ), atau lebih tep
         <link>https://sibunglon.com/2017/10/16/install-cms-sekolahku-di-server/</link>
         <pubDate>Mon, 16 Oct 2017 11:16:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/16/install-cms-sekolahku-di-server/</guid>
-        <description>A. Pendahuluan
-Pada kesempatan kali ini saya akan mengimplementasikan membangun website sekolah di server dengan CMS.
-B. Pengertian
-CMS adalah suatu /sebuah aplikasi yang berfungsi merubah suatu menu atau memanipulasi data dari suatu situs atau website.
-C. Latar belakang
-Mempelajari sistem informasi sekolah dengan CMS dan mengimplementasikannya.
-D. Tujuan
-Mempunyai maksud untuk memudahkan saya mendapatkan informasi sekolah di website tersebut.
-E. Hasil yang diharapkan
-Mempunyai harapan agar nanti kedepannya bisa membangun website ini di sekolah.</description>
+        <description>A. PendahuluanPada kesempatan kali ini saya akan mengimplementasikan membangun website sekolah di server dengan CMS.B. PengertianCMS adalah suatu /sebuah aplikasi yang berfungsi merubah suatu menu atau memanipulasi data dari suatu situs atau website.C. Latar belakangMempelajari sistem informasi sekolah dengan CMS dan mengimplementasikannya.D. TujuanMempunyai maksud untuk memudahkan saya mendapatkan informasi sekolah di website tersebut.E. Hasil yang diharapkanMempunyai harapan agar nanti kedepannya bisa membangun website ini di sekolah.F. Alat dan bahanPC/LaptopKoneksi InternetFile CMS SekolahG.</description>
       </item>
     
       <item>
@@ -539,7 +502,7 @@ Mempunyai harapan agar nanti kedepannya bisa membangun website ini di sekolah.</
         <link>https://sibunglon.com/2017/10/16/menginstall-wordpress-di-localhost-linux/</link>
         <pubDate>Mon, 16 Oct 2017 10:48:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/16/menginstall-wordpress-di-localhost-linux/</guid>
-        <description>A. Pendahuluan&amp;nbsp;Pada kesempatan kali ini, saya memposting tentang proses installasi wordpressB. PengertianWordPress adalah sebuah&amp;nbsp;aplikasi&amp;nbsp;sumber terbuka (open source) yang sangat populer digunakan sebagai mesin blog (blog engine). WordPress dibangun dengan&amp;nbsp;bahasa pemrograman&amp;nbsp;PHP&amp;nbsp;dan&amp;nbsp;basis data&amp;nbsp;(database)&amp;nbsp;MySQL. PHP dan MySQL, keduanya merupakan&amp;nbsp;perangkat lunak sumber terbuka(open source software). Selain sebagai&amp;nbsp;blog, WordPress juga mulai digunakan sebagai sebuah&amp;nbsp;CMS(Content Management System) karena kemampuannya untuk dimodifikasi dan disesuaikan dengan kebutuhan penggunanyaPiranti lunak inti WordPress dikembangkan oleh ratusan sukarelawan. Ketika Anda ingin dapatkan lebih banyak kegunaan daripadanya, ada ribuan&amp;nbsp;plugin&amp;nbsp;dan&amp;nbsp;tema&amp;nbsp;yang tersedia untuk mengubah situs Anda menjadi nyaris&amp;nbsp;apa saja yang Anda dambakan.</description>
+        <description></description>
       </item>
     
       <item>
@@ -547,9 +510,7 @@ Mempunyai harapan agar nanti kedepannya bisa membangun website ini di sekolah.</
         <link>https://sibunglon.com/2017/10/14/implementasi-autoindex-di-server-debian-8.6/</link>
         <pubDate>Sat, 14 Oct 2017 10:36:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/14/implementasi-autoindex-di-server-debian-8.6/</guid>
-        <description>A. PendahuluanPada kesempatan ini saya akan mengimplementasikan autoindex di debian server 8-6
-B. PengertianAuto Index adalah&amp;nbsp;kemampuan untuk komputer&amp;nbsp;untuk memindai volume besar dokumen&amp;nbsp;terhadap dikendalikan&amp;nbsp;kosakata, taksonomi&amp;nbsp;, tesaurus&amp;nbsp;atau ontologi&amp;nbsp;dan menggunakan istilah-istilah dikendalikan untuk cepat&amp;nbsp;dan efektif Indeks deposit dokumen yang besar.&amp;nbsp;Karena jumlah dokumen secara eksponensial&amp;nbsp;meningkat dengan proliferasi dari Internet&amp;nbsp;, pengindeksan otomatis akan menjadi penting untuk mempertahankan kemampuan untuk menemukan informasi yang relevan di lautan ir-relevan informasi.
-C. Latar belakangLatar belakang dalam installasi ini adalah untuk memindai dokumen dengan volume yang besar dengan cepat, mudah dan lebih efektif.</description>
+        <description></description>
       </item>
     
       <item>
@@ -557,10 +518,7 @@ C. Latar belakangLatar belakang dalam installasi ini adalah untuk memindai dokum
         <link>https://sibunglon.com/2017/10/14/atasi-info-php-tidak-tampil-atau-not-working/</link>
         <pubDate>Sat, 14 Oct 2017 10:25:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/14/atasi-info-php-tidak-tampil-atau-not-working/</guid>
-        <description>A. Pendahuluan
-Pada postingan kali ini, saya akan memberikan solusi yang biasa menjadi permasalahan saat menginstall LAMP Server di linux
-B. Pengertian
-PHP info&amp;nbsp;adalah istilah untuk menyebutkan sebuah halaman yang berisi informasi mengenai versi PHP yang digunakan oleh suatu server, biasanya pada halaman PHP Info akan di informasikan banyak hal selain versi nya itu sendiri. phpinfo() biasanya digunakan untuk memeriksa pengaturan konfigurasi dan variabel standar yang tersedia pada sistem tertentu.</description>
+        <description></description>
       </item>
     
       <item>
@@ -568,12 +526,7 @@ PHP info&amp;nbsp;adalah istilah untuk menyebutkan sebuah halaman yang berisi in
         <link>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-install-aplikasi-berbasis-web/</link>
         <pubDate>Fri, 13 Oct 2017 10:22:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-install-aplikasi-berbasis-web/</guid>
-        <description>A. PendahuluanPada kesempatan ini, saya kembali memposting tentang dasar-dasar setelahi install server.
-
-B. PengertianAplikasi Berbasis Web adalah sebuah aplikasi yang dapat diakses melalui internet atau intranet, dan pada sekarang ini ternyata lebih banyak dan lebih luas dalam pemakaiannya.
-C. Latar belakangSetelah kita menginstall debian di proxmox&amp;nbsp;&amp;nbsp;tentunya kita harus tau hal hal apa saja yang harus dilakukan setelahnya.
-
-D. TujuanAgar server dapat bekerja secara optimal saat melayani komputer client.</description>
+        <description></description>
       </item>
     
       <item>
@@ -581,12 +534,7 @@ D. TujuanAgar server dapat bekerja secara optimal saat melayani komputer client.
         <link>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-installasi-lamp-server/</link>
         <pubDate>Fri, 13 Oct 2017 10:09:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-installasi-lamp-server/</guid>
-        <description>A. Pendahuluan&amp;nbsp;Pada kesempatan ini saya memposting lagi dan masih mengenai server
-
-B. PengertianLAMP&amp;nbsp;adalah istilah yang merupakan singkatan dari&amp;nbsp;Linux,&amp;nbsp;Apache,&amp;nbsp;MySQL&amp;nbsp;dan&amp;nbsp;Perl/&amp;nbsp;PHP/&amp;nbsp;Phyton. Merupakan sebuah paket&amp;nbsp;perangkat lunak bebas&amp;nbsp;yang digunakan untuk menjalankan sebuah aplikasi secara lengkap.
-Komponen-komponen dari LAMP&amp;nbsp;:Linux&amp;nbsp;–&amp;nbsp;sistem operasiApache HTTP Server&amp;nbsp;–&amp;nbsp;web serverMariaDB&amp;nbsp;atau&amp;nbsp;MySQL&amp;nbsp;– sistem basis dataPHP&amp;nbsp;atau&amp;nbsp;Perl&amp;nbsp;atau&amp;nbsp;Python&amp;nbsp;– bahasa pemrograman yang dipakaiC. Latar belakang&amp;nbsp;Agar bisa menampung portal ataupun aplikasi berbasis web yang lain
-
-D. TujuanAgar supaya saya mengetahui bagaimana cara installasi Lamp Server tersebut dan Lamp tersebut merupakan syarat utama untuk membuat web yang berbasis cms</description>
+        <description></description>
       </item>
     
       <item>
@@ -594,8 +542,7 @@ D. TujuanAgar supaya saya mengetahui bagaimana cara installasi Lamp Server terse
         <link>https://sibunglon.com/2017/10/13/setting-tp-link-wa7210n/</link>
         <pubDate>Fri, 13 Oct 2017 09:52:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/13/setting-tp-link-wa7210n/</guid>
-        <description>A.PendahuluanAssalamualaikum Wr.Wb
-saya akan membuat tutorial yang berjudul cara setting tp link agar bisa share wifi nya . jika kalian ingin tau caranya saksikan tutorialini dengan baik jagan ada kelewatan.B. Pengertian&amp;nbsp;TP-LINK itu jenis nya berbagai macam tapi yang saya akan buat tutorial ini yaitu cara setting tplink. menurut saya TP-LINK adalah sebuah alat untuk memperkuat sinyal maupun membuat hospot dengan berskala besar.C. latar belakangDiagram contoh ini digunakan untuk menghubungkan Wireless Router TP-Link TD-W8951ND dengan koneksi internet ADSL dan wireless WIFI, signal WIFI dari Router Modem ADSL akan diambil TP-Link TL-WA7210N.</description>
+        <description></description>
       </item>
     
       <item>
@@ -603,8 +550,7 @@ saya akan membuat tutorial yang berjudul cara setting tp link agar bisa share wi
         <link>https://sibunglon.com/2017/10/12/hal-hal-yang-harus-dilakukan-setelah-install-server/</link>
         <pubDate>Thu, 12 Oct 2017 09:31:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/12/hal-hal-yang-harus-dilakukan-setelah-install-server/</guid>
-        <description>A. Pendahuluan&amp;nbsp;Pada kesempatan kali ini yang saya bagikan yaitu tentang hal - hal yang perlu dilakukan setelah install server
-B. PengertianDebian adalah sistem operasi komputer yang tersusun dari paket-paket perangkat lunak yang dirilis sebagai perangkat lunak bebas dan terbuka dengan lisensi mayoritas GNU General Public License dan lisensi perangkat lunak bebas lainnya. Debian GNU/UNIX memuat perkakas sistem operasi GNU dan kernel Linux merupakan distribusi Linux yang populer dan berpengaruh. Debian didistribusikan dengan akses ke repositori dengan ribuan paket perangkat lunak yang siap untuk instalasi dan digunakan.</description>
+        <description></description>
       </item>
     
       <item>
@@ -612,9 +558,7 @@ B. PengertianDebian adalah sistem operasi komputer yang tersusun dari paket-pake
         <link>https://sibunglon.com/2017/10/11/installasi-mate-desktop-environment-di-ubuntu-17.04/</link>
         <pubDate>Wed, 11 Oct 2017 12:31:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/11/installasi-mate-desktop-environment-di-ubuntu-17.04/</guid>
-        <description>A. PendahuluanSetelah kemarin menggunakan desktop gnome saya ingin pindah ke desktop MATE karena lebih ringan dan mudah digunakan, nah bagi kalian yang ingin menginstall MATE desktop kali ini saya bagikan tutorialnya...
-B. pengertianMATE telah memiliki sejumlah aplikasi yang berasal dari Aplikasi Inti GNOME, dan pengembang telah menulis beberapa aplikasi lain dari nol.&amp;nbsp;Aplikasi bercabang memiliki nama baru, kebanyakan dari bahasa Spanyol
-MATE juga tersedia di repositori resmi beberapa distribusi Linux lainnya, termasuk Arch Linux, Parabola, LMDE, Debian, Ubuntu MATE, Ubuntu Mint, Kali Linux, Fedora, openSUSE, Gentoo, Mageia, ROSA, dan PCLinuxOS.</description>
+        <description></description>
       </item>
     
       <item>
@@ -630,10 +574,7 @@ MATE juga tersedia di repositori resmi beberapa distribusi Linux lainnya, termas
         <link>https://sibunglon.com/2017/10/07/konfigurasi-dhcp-server-pada-cisco/</link>
         <pubDate>Sat, 07 Oct 2017 16:49:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/07/konfigurasi-dhcp-server-pada-cisco/</guid>
-        <description>A.PENGERTIANDHCP (Dynamic Host Configuration Protocol) sebuah server yang memiliki layanan untuk memberikan IP otomatis pada host atau komputer (client) pada jaringan TCP atau IP yang memintanyaLATAR BELAKANGMemahami serta mempraktikan dhcp serverMAKSUD DAN TUJUAN
-Memahami konfigurasi dhcp serverTAHAPAN PEKERJAAN&amp;nbsp;Berikut adalah langkah-langkah mengkonfigurasi DHCP Server pada router.Sebelumnya kita harus membuat simulasi jaringan seperti pada gambar berikut ini terlebih dahulu.
-Langkah awal untuk konfigurasi yaitu klik pada Router
-Kemudian masuk ke Privileged mode exec dengan menggunkan perintah “enable&amp;nbsp;“</description>
+        <description></description>
       </item>
     
       <item>
@@ -641,7 +582,7 @@ Kemudian masuk ke Privileged mode exec dengan menggunkan perintah “enable&amp;
         <link>https://sibunglon.com/2017/10/06/konfigurasi-vlan-pada-switch/</link>
         <pubDate>Fri, 06 Oct 2017 06:16:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/06/konfigurasi-vlan-pada-switch/</guid>
-        <description>A. PENGERTIANVirtual LAN&amp;nbsp;atau disingkat&amp;nbsp;VLAN&amp;nbsp;merupakan sekelompok perangkat pada satu LAN atau lebih yang dikonfigurasikan (menggunakan perangkat lunak pengelolaan) sehingga dapat berkomunikasi seperti halnya bila perangkat tersebut terhubung ke jalur yang sama, padahal sebenarnya perangkat tersebut berada pada sejumlah segmen LAN yang berbeda. Vlan dibuat dengan menggunakan jaringan pihak ke tiga. VLAN merupakan sebuah bagian kecil jaringan IP yang terpisah secara logik. VLAN memungkinkan beberapa jaringan IP dan jaringan-jaringan kecil (subnet) berada dalam jaringan switched switched yang sama.</description>
+        <description></description>
       </item>
     
       <item>
@@ -649,8 +590,7 @@ Kemudian masuk ke Privileged mode exec dengan menggunkan perintah “enable&amp;
         <link>https://sibunglon.com/2017/10/05/konfigurasi-static-nat-dan-dynamic-nat-cisco/</link>
         <pubDate>Thu, 05 Oct 2017 05:39:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/05/konfigurasi-static-nat-dan-dynamic-nat-cisco/</guid>
-        <description>A. Pengertian&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; NAT (Network Address Translation)&amp;nbsp;adalah sebuah proses pemetaan alamat IP dimana perangkat jaringan komputer akan memberikan alamat IP public ke perangkat jaringan local sehingga banyak IP private yang dapat mengakses IP public.
-Dengan kata lain NAT akan mentranslasikan alamat IP sehingga IP address pada jaringan local dapat mengakses IP public pada jaringan WAN. NAT mentranslasikan alamat IP private untuk dapat mengakses alamat host di internet dengan menggunakan alamat IP public pada jaringan tersebut.</description>
+        <description></description>
       </item>
     
       <item>
@@ -658,16 +598,7 @@ Dengan kata lain NAT akan mentranslasikan alamat IP sehingga IP address pada jar
         <link>https://sibunglon.com/2017/10/04/konfigurasi-telnet-dan-ssh-di-cisco/</link>
         <pubDate>Wed, 04 Oct 2017 05:19:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/04/konfigurasi-telnet-dan-ssh-di-cisco/</guid>
-        <description>A. PENGERTIAN
-Konfigurasi Telnet
-Telnet (Telecommunication network) adalah sebuah protokol jaringan yang digunakan pada Internet atau Local Area Network untuk menyediakan fasilitas komunikasi berbasis teks interaksi dua arah yang menggunakan koneksi virtual terminal.
-B. LATAR BELAKANG
-Meremote switch dan router di packet tracer
-C. MAKSUD DAN TUJUAN
-Ingin mengimplementasikanya di dunia kerja dan mengulangi Materi yang diberi tentang ssh dan telnet
-D. TAHAPAN PEKERJAAN
-Berikut Topology Telnet :
-1.Pertama, masukkan default gateway yang terdapat pada Router, Disini saya Memberikan IP Address pada interface fastEthernet 0/0 adalah 192.</description>
+        <description></description>
       </item>
     
       <item>
@@ -675,9 +606,7 @@ Berikut Topology Telnet :
         <link>https://sibunglon.com/2017/10/03/konfigurasi-static-routing/</link>
         <pubDate>Tue, 03 Oct 2017 05:04:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/03/konfigurasi-static-routing/</guid>
-        <description>A.PENGERTIAN
-Routing Static adalah jenis routing yang dilakukan seorang admin dengan memasukan network network tertentu secara manual.
-Ciri ciri routing static adalah :Jalur pada suatu jaringan spesifik ditentukan oleh seorang AdministratorPengisian tabel routing / penambahan network baru diisi secara manualBiasanya digunakan untuk jaringan berskala kecilAda beberapa parameter yang ada pada routing static ini, yaituDestination, adalah ip network tujuan, untuk default routing biasanya memakai 0.0.0.0 untuk semua jaringanGateway, adalah datagram yang dapat dicapai pada satu jaringanPref.</description>
+        <description></description>
       </item>
     
       <item>
@@ -685,13 +614,7 @@ Ciri ciri routing static adalah :Jalur pada suatu jaringan spesifik ditentukan o
         <link>https://sibunglon.com/2017/09/22/backup-and-restore-mikrotik/</link>
         <pubDate>Fri, 22 Sep 2017 03:39:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/22/backup-and-restore-mikrotik/</guid>
-        <description>1. Pendahuluan
-A. Pengertian
-Di bidang teknologi informasi, backup, atau proses back up, mengacu pada penyalinan dan pengarsipan data sehingga bisa digunakan untuk mengembalikan dokumen asli setelah terjadi peristiwa kehilangan data. Bentuk kata kerja adalah untuk membuat cadangan dua kata, sedangkan kata benda adalah cadangan.
-Restore , mengacu pada proses pengembalian data menggunakan file backup.
-B. Latar Belakang
-Membackup data mikrotik agar saat perangkat rusak kita punya salinan konfigurasinya.
-C. Hasil Yang Diharapkan</description>
+        <description></description>
       </item>
     
       <item>
@@ -699,13 +622,7 @@ C. Hasil Yang Diharapkan</description>
         <link>https://sibunglon.com/2017/09/21/sntp-client-mikrotik/</link>
         <pubDate>Thu, 21 Sep 2017 03:30:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/21/sntp-client-mikrotik/</guid>
-        <description>1. Pendahuluan
-A. Pengertian
-Network Time Protocol (NTP) adalah protokol jaringan untuk sinkronisasi jam antara sistem komputer melalui jaringan data packet-switched, variable-latency. Beroperasi sejak sebelum 1985, NTP adalah salah satu protokol Internet tertua yang digunakan saat ini. NTP dirancang oleh David L. Mills dari University of Delaware.B. Latar Belakang Untuk Mensinkronisasikan waktu pada mikrotik
-B. Hasil Yang Diharapkan
-Dapat Mensinkronisasikan waktu pada mikrotik
-2. Alat dan Bahan
-- Router mikrotik</description>
+        <description></description>
       </item>
     
       <item>
@@ -713,10 +630,7 @@ Dapat Mensinkronisasikan waktu pada mikrotik
         <link>https://sibunglon.com/2017/09/20/atasi-phpmyadmin-error-#1698-sehingga-tidak-bisa-login-sebagai-root/</link>
         <pubDate>Wed, 20 Sep 2017 03:15:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/20/atasi-phpmyadmin-error-#1698-sehingga-tidak-bisa-login-sebagai-root/</guid>
-        <description>A. PendahuluanPada kesempatan ini yang saya posting/share yaitu troubleshoot phpmyadmin dengan kode error&amp;nbsp;#1698 atau tidak bisa login sebagai root
-B. PengertianPhpMyAdmin&amp;nbsp;adalah&amp;nbsp;perangkat lunak bebas&amp;nbsp;yang ditulis dalam&amp;nbsp;bahasa pemrograman&amp;nbsp;PHP&amp;nbsp;yang digunakan untuk menangani administrasi&amp;nbsp;MySQL&amp;nbsp;melalui&amp;nbsp;Jejaring Jagat Jembar&amp;nbsp;(World Wide Web). phpMyAdmin mendukung berbagai operasi MySQL, diantaranya (mengelola&amp;nbsp;basis data, tabel-tabel, bidang (fields), relasi (relations), indeks, pengguna (users), perizinan (permissions), dan lain-lain).
-C. Latar belakangIngin membagi pengetahuan tentang atasi permasalahan yang sama
-D. TujuanPembaca mudah mengatasai masalahnya seperti yang dimaksud</description>
+        <description></description>
       </item>
     
       <item>
@@ -724,12 +638,7 @@ D. TujuanPembaca mudah mengatasai masalahnya seperti yang dimaksud</description>
         <link>https://sibunglon.com/2017/09/19/pointing-ubnt-ke-mikrotik/</link>
         <pubDate>Tue, 19 Sep 2017 02:56:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/19/pointing-ubnt-ke-mikrotik/</guid>
-        <description>PENGERTIANPoint to Point adalah data link protokol yang umum digunakan dalam membangun hubungan langsung antara dua node jaringan. Hal ini dapat menyediakan koneksi otentikasi, transmisi enkripsi (menggunakan ECP, RFC 1968), dan kompresi.
-LATAR BELAKANGJauhnya tempat tidak memunginkan untuk penggunakan kabel untuk media transmisi data
-MAKSUD DAN TUJUANMempelajari UBNT
-Jangka Waktu PelaksanaanKurang lebih 3 jam
-ALAT DAN BAHAN
-~ Laptop~ Ubnt Powerbeam M2~ RB 941~ Alat untuk memnjat tower, Tali Wabbing, Harnesses, Tas untuk wadah kunci,~ Kabel LAN</description>
+        <description></description>
       </item>
     
       <item>
@@ -737,9 +646,7 @@ ALAT DAN BAHAN
         <link>https://sibunglon.com/2017/09/19/proxy-situs-dengan-fitur-web-proxy-di-mikrotik/</link>
         <pubDate>Tue, 19 Sep 2017 02:51:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/19/proxy-situs-dengan-fitur-web-proxy-di-mikrotik/</guid>
-        <description>A. PendahuluanPada kesempatan kali ini yang saya posting masih mengenai mikrotik yaitu bagaimana proxy situs dengan fitur yang ada pada mikrotik
-B. PengertianApa itu proxy ?Proxy merupakan perangkat yang bersifat &#34;middleman&#34;, yang bekerja diantara client &amp;amp; Server, bertugas menghadle transmisi request ataupun respon. Data yang melewati proxy, bisa diubah oleh proxy atau tidak diubah sama sekali, tergantung implementasi fitur dan kemampuan proxy.
-Manfaat Proxy&amp;nbsp;Security&amp;nbsp;: Proxy mampu melakukan pengecekan terhadap incoming response &amp;amp; outgoing request, sehingga memungkinkan untuk melakukan block paket yang tidak diharapkanCaching&amp;nbsp;: Menyimpan sementara data dari internet di storage, sehingga jika ada client lain yang hendak mengakses data yang sama, cukup mengambil data di cache.</description>
+        <description></description>
       </item>
     
       <item>
@@ -747,10 +654,7 @@ Manfaat Proxy&amp;nbsp;Security&amp;nbsp;: Proxy mampu melakukan pengecekan terh
         <link>https://sibunglon.com/2017/09/18/switch-chip-di-mikrotik/</link>
         <pubDate>Mon, 18 Sep 2017 02:24:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/18/switch-chip-di-mikrotik/</guid>
-        <description>A. PendahuluanPada kali ini, yang saya posting yaitu tentang memfungsikan mikrotik sebagai switch
-B. PengertianSwitch merupakan penghubung beberapa alat untuk membentuk suatu Local Area Network (LAN). Routerboard Mikrotik RB750 telah disediakan fungsi switch, yang mana jika sobat menginginkan men-share internet lebih dari satu komputer atau pada umumnya topologi yang digunakan kebanyak internet di share melalui media wifi dan lan menggunakan kabel.
-C. Latar belakangIngin menambah pengetahuan
-D. TujuanPembaca dapat mengetahu bagaimana membuat routing dynamic RIP</description>
+        <description></description>
       </item>
     
       <item>
@@ -758,9 +662,7 @@ D. TujuanPembaca dapat mengetahu bagaimana membuat routing dynamic RIP</descript
         <link>https://sibunglon.com/2017/09/16/routing-static-di-mikrotik/</link>
         <pubDate>Sat, 16 Sep 2017 02:15:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/16/routing-static-di-mikrotik/</guid>
-        <description>A. PendahuluanPada kesempatan kali ini, saya akan memposting tentang pengimplemtasian routing static di mikrotik
-B. PengertianRouting static adalah menambahkan jalur routing tertentu secara manual. Mikrotik secara default akan membuat jalur routing otomatis (dynamic route) ketika kita menambahkan ip address pada interface. Lalu kenapa kita memerlukan static routing? Karena untuk menghubungkan perangkat network yang memilik ip segment (subnet) yang berbeda memerlukan sebuah perangkat yang mampu melakukan proses static routing.
-C. Latar belakangIngin menambah pengetahuan</description>
+        <description></description>
       </item>
     
       <item>
@@ -768,8 +670,7 @@ C. Latar belakangIngin menambah pengetahuan</description>
         <link>https://sibunglon.com/2017/09/15/routing-dynamic-rip-di-mikrotik/</link>
         <pubDate>Fri, 15 Sep 2017 02:05:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/15/routing-dynamic-rip-di-mikrotik/</guid>
-        <description>A. PendahuluanPada kesempatan kali ini, saya akan memposting tentang pengimplemtasian routing dynamic RIP di mikrotik
-B. PengertianRouting Information Protocol (RIP)&amp;nbsp;adalah sebuah protokol routing dinamis yang digunakan dalam jaringan LAN (Local Area Network) dan WAN (Wide Area Network). Oleh karena itu protokol ini diklasifikasikan sebagai Interior Gateway Protocol (IGP). Protokol ini menggunakan algoritma Distance-Vector Routing. Pertama kali didefinisikan dalam RFC 1058 (1988). Protokol ini telah dikembangkan beberapa kali, sehingga terciptalah RIP Versi 2.</description>
+        <description></description>
       </item>
     
       <item>
@@ -777,8 +678,7 @@ B. PengertianRouting Information Protocol (RIP)&amp;nbsp;adalah sebuah protokol 
         <link>https://sibunglon.com/2017/09/12/routing-dynamic-ospf-di-mikrotik/</link>
         <pubDate>Tue, 12 Sep 2017 12:36:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/12/routing-dynamic-ospf-di-mikrotik/</guid>
-        <description>A. PendahuluanPada kesempatan kali ini, yang saya posting yaitu membuat routing dynamic OSPF di mikrotik
-B. PengertianOpen Shortest Path First (OSPF)&amp;nbsp;adalah sebuah protokol routing otomatis (Dynamic Routing) yang mampu menjaga, mengatur dan mendistribusikan informasi routing antar network mengikuti setiap perubahan jaringan secara dinamis. Pada OSPF dikenal sebuah istilah&amp;nbsp;Autonomus System&amp;nbsp;(AS) yaitu sebuah gabungan dari beberapa jaringan yang sifatnya routing dan memiliki kesamaan metode serta policy pengaturan network, yang semuanya dapat dikendalikan oleh network administrator.</description>
+        <description></description>
       </item>
     
       <item>
@@ -786,13 +686,7 @@ B. PengertianOpen Shortest Path First (OSPF)&amp;nbsp;adalah sebuah protokol rou
         <link>https://sibunglon.com/2017/09/11/mengupgrade-version-mikrotik-routerboard/</link>
         <pubDate>Mon, 11 Sep 2017 11:20:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/11/mengupgrade-version-mikrotik-routerboard/</guid>
-        <description>A. PendahuluanPada kesempatan kali ini saya akan memposting bagaimana sih cara mengupgrade versi mikrotik.
-B. Latar belakangIngin mendapatkan fitur baru pada versi baru sistem mikrotik
-C. TujuanAgar pengunjung blog dapat mengetahui bagaimana cara mengupgrade versi mikrotik
-D. Hasil yang diharapkanDapat mengikuti tahapan kerjanya
-E. Alat dan bahanmikrotikakses internetkabel UTP
-F. Jangka waktu pelaksanaanWaktu yang dibutuhkan tergantung dari koneksi yang digunakan
-G. Langkah kerja1. Hubungkan mikrotik kemudian buka winbox untuk mengkonfigurasi mikrotik tersebut2.</description>
+        <description></description>
       </item>
     
       <item>
@@ -800,13 +694,7 @@ G. Langkah kerja1. Hubungkan mikrotik kemudian buka winbox untuk mengkonfigurasi
         <link>https://sibunglon.com/2017/09/09/memblokir-situs-yang-mempunyai-banyak-ip-dengan-mikrotik/</link>
         <pubDate>Sat, 09 Sep 2017 15:27:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/09/memblokir-situs-yang-mempunyai-banyak-ip-dengan-mikrotik/</guid>
-        <description>A. PendahuluanPada kesempatan kali ini, saya ingin berbagi tentang memblokir situs yang mempunyai banyak ip dengan mikrotik.
-
-B. PengertianSitus web&amp;nbsp;(bahasa Inggris:&amp;nbsp;website) adalah suatu&amp;nbsp;halaman web&amp;nbsp;yang saling berhubungan yang umumnya berada pada&amp;nbsp;peladen&amp;nbsp;yang sama berisikan kumpulan informasi yang disediakan secara perorangan, kelompok, atau&amp;nbsp;organisasi.
-
-C. Latar belakangAda beberapa situs yang mempunyai banyak ip, sehingga bila ip yang satunya di block dia masih bisa diakses karena punya ip yang lain.
-
-D. TujuanDapat memblokir ip dengan cara cerdas</description>
+        <description></description>
       </item>
     
       <item>
@@ -814,8 +702,7 @@ D. TujuanDapat memblokir ip dengan cara cerdas</description>
         <link>https://sibunglon.com/2017/09/09/membuat-interface-bridge-dan-menambahkan-ethernet-ke-bridge/</link>
         <pubDate>Sat, 09 Sep 2017 15:22:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/09/membuat-interface-bridge-dan-menambahkan-ethernet-ke-bridge/</guid>
-        <description>A. PendahuluanPada kesempata kali ini saya akan memposting bagaimana membuat interface bridge kemudian menambahkan ethernet ke bridge
-B. PengertianJembatan jaringan (bahasa Inggris:&amp;nbsp;Network bridge) adalah sebuah komponen jaringan yang digunakan untuk memperluas jaringan atau membuat sebuah segmen jaringan. Jembatan jaringan beroperasi di dalam lapisan data-link pada model OSI. Jembatan juga dapat digunakan untuk menggabungkan dua buah media jaringan yang berbeda, seperti halnya antara media kabel Unshielded Twisted-Pair (UTP) dengan kabel serat optik atau dua buah arsitektur jaringan yang berbeda, seperti halnya antara Token Ring dan Ethernet.</description>
+        <description></description>
       </item>
     
       <item>
@@ -823,8 +710,7 @@ B. PengertianJembatan jaringan (bahasa Inggris:&amp;nbsp;Network bridge) adalah 
         <link>https://sibunglon.com/2017/09/08/konfigurasi-dasar-mikrotik-dengan-sumber-internet-dari-ip-static/</link>
         <pubDate>Fri, 08 Sep 2017 14:58:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/08/konfigurasi-dasar-mikrotik-dengan-sumber-internet-dari-ip-static/</guid>
-        <description>A. PendahuluanPada kali ini, saya akan memposting kembali konfigurasi dasar mikrotik tetapi dari ip static
-B. PengertianMikrotik&amp;nbsp;adalah&amp;nbsp;sebuah perusahaan yang bergerak di bidang produksi perangkat keras (hardware) dan perangkat lunak (Software) yang berhubungan dengan sistem jaringan komputer yang berkantor pusat di Latvia, bersebelahan dengan Rusia. Produk hardware unggulan Mikrotik berupa Router, Switch, Antena, dan perangkat pendukung lainnya. Sedangkan produk Software unggulan Mikrotik adalah MikroTik RouterOS.MikroTik routerboad&amp;nbsp;adalah&amp;nbsp;router embedded produk dari mikrotik. Routerboard seperti sebuah pc mini yang terintegrasi karena dalam satu board tertanam prosesor, ram, rom, dan memori flash.</description>
+        <description></description>
       </item>
     
       <item>
@@ -832,9 +718,7 @@ B. PengertianMikrotik&amp;nbsp;adalah&amp;nbsp;sebuah perusahaan yang bergerak d
         <link>https://sibunglon.com/2017/09/07/mengatasi-kursor-winbox-mikrotik-meloncat-loncat-sewaktu-mengetik/</link>
         <pubDate>Thu, 07 Sep 2017 14:42:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/07/mengatasi-kursor-winbox-mikrotik-meloncat-loncat-sewaktu-mengetik/</guid>
-        <description>A. PendahuluanPernahkan anda mengalami ini? atau hanya pernah lihat begini?
-Pada postingan kali, saya akan sharing bagaimana&amp;nbsp;mengatasi kursor winbox mikrotik meloncat-loncat sewaktu mengetik.
-B. Pengertiankursor&amp;nbsp;adalah suatu petunjuk atau indikator posisi pada&amp;nbsp;monitor komputer&amp;nbsp;atau&amp;nbsp;peranti tampilan&amp;nbsp;lain yang akan merespons&amp;nbsp;masukan&amp;nbsp;dari suatu masukan teks atau&amp;nbsp;peranti penunjuk. Kursor secara umum dapat dibagi menjadi dua jenis: kursor teks dan kursor tetikus.&amp;nbsp;Kursor teks&amp;nbsp;adalah petunjuk pada&amp;nbsp;antarmuka baris perintah&amp;nbsp;(CLI) atau&amp;nbsp;editor teks&amp;nbsp;yang menunjukkan tempat teks akan diletakkan sewaktu dimasukkan (titik penyisipan) dan biasanya berupa garis bawah, segi empat, atau garis vertikal yang dapat berkedip atau stabil.</description>
+        <description></description>
       </item>
     
       <item>
@@ -842,11 +726,7 @@ B. Pengertiankursor&amp;nbsp;adalah suatu petunjuk atau indikator posisi pada&am
         <link>https://sibunglon.com/2017/09/06/memblokir-1-ip-address-client-agar-tidak-dapat-terkoneksi-ke-internet-dengan-simple-logika-mode/</link>
         <pubDate>Wed, 06 Sep 2017 14:26:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/06/memblokir-1-ip-address-client-agar-tidak-dapat-terkoneksi-ke-internet-dengan-simple-logika-mode/</guid>
-        <description>A. PendahuluanPada praktek ini, saya akan memposting bagaimana memblokir ip address dari client agar tidak dapat terhubung ke internet tetapi masing menggunakan firewall simple logika
-B. PengertianFirewall simple logis/logika adalah konfigurasi firewall secara logis sehingga bisa lebih mudah dipahami karena lebih manusiawi
-C. Latar belakangIngin menambah ilmu kemudian untuk disharing
-D. TujuanAgar client tidak bisa terhubung ke internet apabila ia mendapatkan ip yang telah diblokir
-E. Hasil yang diharapkanDapat melakukan konfigurasi dengan cepat, baik, dan benar</description>
+        <description></description>
       </item>
     
       <item>
@@ -854,9 +734,7 @@ E. Hasil yang diharapkanDapat melakukan konfigurasi dengan cepat, baik, dan bena
         <link>https://sibunglon.com/2017/09/05/memblokir-ekstensi-file-pada-mikrotik-dengan-web-proxy/</link>
         <pubDate>Tue, 05 Sep 2017 13:02:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/05/memblokir-ekstensi-file-pada-mikrotik-dengan-web-proxy/</guid>
-        <description>A. PendahuluanPada kesempatan ini, yang saya posting tentang mirkotik eh mikrotik tepatnya memproxy ekstensi file tertentu agar tidak bisa diakses oleh client.
-
-B. PengertianSecara umum arti dari proxy adalah sebuah komputer server atau program komputer yang dapat bertindak sebagai komputer lainnya untuk melakukan request terhadap content dari Internet atau intranet. Dengan kata lain proxy merupakan sebuah media keamanan bagi akses jaringan internet kita.&amp;nbsp;Terdapat beberapa macam tipe proxy, diantaranya SSL Proxy, Web Proxy, Intercepting Proxy, Reverse Proxy, dll.</description>
+        <description></description>
       </item>
     
       <item>
@@ -864,12 +742,7 @@ B. PengertianSecara umum arti dari proxy adalah sebuah komputer server atau prog
         <link>https://sibunglon.com/2017/09/05/memblokir-ip-situs-di-firewall-dengan-simple-logika-mode/</link>
         <pubDate>Tue, 05 Sep 2017 10:00:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/05/memblokir-ip-situs-di-firewall-dengan-simple-logika-mode/</guid>
-        <description>A. PendahuluanPada kesempatan kali ini saya akan memposting tentang firewall tetapi dengan metode simple logika
-B. PengertianFirewall simple logis/logika adalah konfigurasi firewall secara logis sehingga bisa lebih mudah dipahami karena lebih manusiawi
-C. Latar belakangIngin menambah ilmu kemudian untuk disharing
-D. TujuanAgar client tidak dapat membuka situs yang telah diblokir
-E. Hasil yang diharapkanDapat melakukan konfigurasi dengan cepat, baik, dan benar
-F. Alat dan bahanMikrotikAkses internetLaptop/pcG. Jangka waktu pelaksanaanWaktu yang dibutuhkan sekitar 5-15 menit</description>
+        <description></description>
       </item>
     
       <item>
@@ -877,8 +750,7 @@ F. Alat dan bahanMikrotikAkses internetLaptop/pcG. Jangka waktu pelaksanaanWaktu
         <link>https://sibunglon.com/2017/09/04/memblokir-situs-dengan-layer-7-protocol/</link>
         <pubDate>Mon, 04 Sep 2017 14:00:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/04/memblokir-situs-dengan-layer-7-protocol/</guid>
-        <description>A. PendahuluanPada kesempatan ini saya akan memposting salah satu fitur yang ada di firewall yaitu layer 7 protocol.
-B. PengertianProtokol Layer7 adalah metode untuk mencari pola dalam ICMP / TCP / UDP stream, atau istilah lainnya regex pattern.&amp;nbsp;Cara kerja L7 adalah mencocokan (mathcer) 10 paket koneksi pertama atau 2KB koneksi pertama dan mencari pola/pattern data yang sesuai dengan yang tersedia. Jika pola ini tidak ditemukan dalam data yang tersedia, matcher tidak memeriksa lebih lanjut.</description>
+        <description></description>
       </item>
     
       <item>
@@ -886,8 +758,7 @@ B. PengertianProtokol Layer7 adalah metode untuk mencari pola dalam ICMP / TCP /
         <link>https://sibunglon.com/2017/08/31/menginstall-vmware-player-di-linux/</link>
         <pubDate>Thu, 31 Aug 2017 13:27:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/31/menginstall-vmware-player-di-linux/</guid>
-        <description>A. PendahuluanPada kesempatan ini, saya memposting bagaimana sih menginstal VMware Player di linux.
-B. PengertianVMware Player&amp;nbsp;adalah sebuah produk&amp;nbsp;perangkat lunak virtualisasi&amp;nbsp;berlisensi bebas dari&amp;nbsp;VMware, sebuah divisi dari&amp;nbsp;EMC Corporation. Produk ini bisa menjalankan&amp;nbsp;mesin virtualpengguna yang dibuat dari produk VMware yang lain tetapi tidak dapat membuat sebuah&amp;nbsp;mesin virtual&amp;nbsp;yang baru.namun limitasi ini dicabut di versi 3.0.0. sehingga dapat membuat sendiri tanpa harus memakai&amp;nbsp;VMware Workstation. Perangkat berlisensi bebas dan situs web seperti&amp;nbsp;EasyVMX&amp;nbsp;juga hadir untuk membuat&amp;nbsp;mesin virtual, menghapus, memanipulasi dan mengkonversikan disk&amp;nbsp;VMware&amp;nbsp;dan&amp;nbsp;floppy, membuat perizinan pengguna, menjalankan dan merawat&amp;nbsp;mesin virtual.</description>
+        <description></description>
       </item>
     
       <item>
@@ -895,8 +766,7 @@ B. PengertianVMware Player&amp;nbsp;adalah sebuah produk&amp;nbsp;perangkat luna
         <link>https://sibunglon.com/2017/08/23/mengatasi-masalah-apt-get-update-failed-to-fetch-hash-sum-mismatch/</link>
         <pubDate>Wed, 23 Aug 2017 10:37:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/23/mengatasi-masalah-apt-get-update-failed-to-fetch-hash-sum-mismatch/</guid>
-        <description>A. PendahuluanPada kali ini, saya akan memposting tentang bagaimana mengatasi masalah yang biasa ditemukan saat melakukan update linux.
-B. PengertianShell&amp;nbsp;adalah program (penterjemah perintah)yang menjembatani user dengan sistem operasi dalam hal ini Kernel (inti dari sistem operasi), umumnya shell menyediakan prompt sebagai user interface, tempat dimana user dapat mengetikkan perintah-perintah yang diinginkan baik berupa perintah internal shell (internal command), ataupun perintah eksekusi file program (eksternal command), selain itu memungkinkan user menyusun sekumpulan perintah pada sebuah atau beberapa file untuk dieksekusi sebagai program.</description>
+        <description></description>
       </item>
     
       <item>
@@ -904,8 +774,7 @@ B. PengertianShell&amp;nbsp;adalah program (penterjemah perintah)yang menjembata
         <link>https://sibunglon.com/2017/08/22/recovery-data-dari-hardisk-atau-flashdisk-yang-tidak-bisa-dibuka/</link>
         <pubDate>Tue, 22 Aug 2017 10:06:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/22/recovery-data-dari-hardisk-atau-flashdisk-yang-tidak-bisa-dibuka/</guid>
-        <description>A. PendahuluanPada kesempatan kali ini, saya akan memberikan tahapan tentang bagaimana recovery&amp;nbsp;data dari hardisk atau flashdisk yang tidak bisa dibuka menggunakan software di linux yaitu &#34;Testdisk&#34;
-B. PengertianRecovery data (pemulihan data)&amp;nbsp;adalah proses menyelamatkan (mengambil) tidak dapat diakses, hilang, rusak, rusak atau diformat data dari&amp;nbsp;penyimpanan sekunder&amp;nbsp;,&amp;nbsp;removable media&amp;nbsp;atau&amp;nbsp;file&amp;nbsp;, ketika data yang tersimpan di dalamnya tidak dapat diakses secara normal.&amp;nbsp;Data yang paling sering diselamatkan dari media penyimpanan seperti internal atau eksternal&amp;nbsp;hard disk drive&amp;nbsp;(HDD),&amp;nbsp;solid-state drive&amp;nbsp;(SSD),&amp;nbsp;USB flash drive&amp;nbsp;,&amp;nbsp;tape magnetik&amp;nbsp;,&amp;nbsp;CD&amp;nbsp;,&amp;nbsp;DVD&amp;nbsp;,&amp;nbsp;RAID&amp;nbsp;subsistem, dan lainnya&amp;nbsp;perangkat elektronik.</description>
+        <description></description>
       </item>
     
       <item>
@@ -913,9 +782,7 @@ B. PengertianRecovery data (pemulihan data)&amp;nbsp;adalah proses menyelamatkan
         <link>https://sibunglon.com/2017/08/19/point-to-point-dengan-mikrotik/</link>
         <pubDate>Sat, 19 Aug 2017 21:37:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/19/point-to-point-dengan-mikrotik/</guid>
-        <description>A. PendahuluanPada postingan ini, akan di implentasikan bagaimana melakukan point to point (menembak wifi) menggunakan 2 buah mikroTik, dan step by stepnya akan di jelaskan sebagai berikut.
-B. PengertianWireless Point-to-Point (PTP) adalah koneksi komunikasi wireless antara dua titik, dimana satu client (station) terhubung dengan satu pemancar (AP) saja.
-C. Latar BelakangTidak ada koneksi internet dari kabel LAN jika melakukan praktek di tempat kost, karena mikroTik yang satunya ada di tempat praktek.</description>
+        <description></description>
       </item>
     
       <item>
@@ -923,8 +790,7 @@ C. Latar BelakangTidak ada koneksi internet dari kabel LAN jika melakukan prakte
         <link>https://sibunglon.com/2017/08/18/setting-pptp-vpn-client-pada-os-linux-mint/</link>
         <pubDate>Fri, 18 Aug 2017 18:30:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/18/setting-pptp-vpn-client-pada-os-linux-mint/</guid>
-        <description>A. PENDAHULANBerikut ini saya sharing Cara Setting&amp;nbsp;PPTP VPN Client&amp;nbsp;pada&amp;nbsp;Linux Mint, sedangkan VPN Server yang digunakan pada artikel ini mengunakan&amp;nbsp;VPN Server&amp;nbsp;dari&amp;nbsp;Mikrotik.
-B. PENGERTIANVPN adalah Virtual Private Network dimana VPN ini merupakan interkoneksi antar jaringan ( PC Client to LAN maupun LAN to LAN ) yang mana interkoneksi ini melalui jaringan Public ( Internet ) sehingga dengan VPN ini&amp;nbsp;terjadi koneksi terselubung alias lorong atau Tunneling Connection sehingga data yang di akses ( data yang di kirim dan di terima ) benar-benar aman.</description>
+        <description></description>
       </item>
     
       <item>
@@ -932,10 +798,7 @@ B. PENGERTIANVPN adalah Virtual Private Network dimana VPN ini merupakan interko
         <link>https://sibunglon.com/2017/08/18/membangun-vpn-server-di-mikrotik/</link>
         <pubDate>Fri, 18 Aug 2017 14:00:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/18/membangun-vpn-server-di-mikrotik/</guid>
-        <description>A. PENDAHULUAN
-Selamat pagi/siang/malam. pada kesempatan ini saya akan sedikit memberikan atau mengshare mengenai VPN
-B. PENGERTIAN
-VPN adalah Virtual Private Network dimana VPN ini merupakan interkoneksi antar jaringan ( PC Client to LAN maupun LAN to LAN ) yang mana interkoneksi ini melalui jaringan Public ( Internet ) sehingga dengan VPN ini terjadi koneksi terselubung alias lorong atau Tunneling Connection sehingga data yang di akses ( data yang di kirim dan di terima ) benar-benar aman.</description>
+        <description>A. PENDAHULUANSelamat pagi/siang/malam. pada kesempatan ini saya akan sedikit memberikan atau mengshare mengenai VPNB. PENGERTIANVPN adalah Virtual Private Network dimana VPN ini merupakan interkoneksi antar jaringan ( PC Client to LAN maupun LAN to LAN ) yang mana interkoneksi ini melalui jaringan Public ( Internet ) sehingga dengan VPN ini terjadi koneksi terselubung alias lorong atau Tunneling Connection sehingga data yang di akses ( data yang di kirim dan di terima ) benar-benar aman.</description>
       </item>
     
       <item>
@@ -943,9 +806,7 @@ VPN adalah Virtual Private Network dimana VPN ini merupakan interkoneksi antar j
         <link>https://sibunglon.com/2017/08/11/installasi-moodle-di-localhost-linux/</link>
         <pubDate>Fri, 11 Aug 2017 16:00:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/11/installasi-moodle-di-localhost-linux/</guid>
-        <description>A. Pendahuluan&amp;nbsp;Server dibuat dengan beragam maksud dan tujuannya, salah satunya adalah membangun sistem pembelajaran online. Pembelajaran online sangat baik diterapkan saat ini, karena pelajar masa kini lebih senang untuk online dari pada membaca buku. Hal ini bisa meningkatkan minat membaca pelajar tanah air.&amp;nbsp;Salah satu media yang dapat digunakan adalah dengan &amp;ldquo;Moodle&amp;rsquo;. Apa itu Moodle?&amp;nbsp;
-#Pengertian
-Moodle (Modular Object-Oriented Dynamic Learning Environment) adalah paket perangkat lunak yang diproduksi untuk kegiatan belajar berbasis internet dan situs web yang menggunakan prinsip social constructionist pedagogy.</description>
+        <description></description>
       </item>
     
       <item>
@@ -953,10 +814,7 @@ Moodle (Modular Object-Oriented Dynamic Learning Environment) adalah paket peran
         <link>https://sibunglon.com/2017/08/10/memasukkan-file-website-ke-localhost/</link>
         <pubDate>Thu, 10 Aug 2017 15:40:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/10/memasukkan-file-website-ke-localhost/</guid>
-        <description>A. PendahuluanBerselancar di website dengan lancar tanpa butuh menunggu merupakan keinginan banyak orang, apalagi berselancar tanpa koneksi internet, wahhh nyaman banget. Kalian juga dapat merasakannya dengan menginstal LOCALHOST, tapi apa itu LOCALHOST?
-#Pengertian
-Dalam jaringan komputer, localhost adalah nama host yang berarti komputer ini. Ini digunakan untuk mengakses layanan jaringan yang berjalan di host melalui antarmuka jaringan loopback-nya. Menggunakan antarmuka loopback bypasses perangkat keras antarmuka jaringan lokal.
-Mekanisme loopback lokal berguna untuk menguji perangkat lunak selama pengembangan, terlepas dari konfigurasi jaringan manapun.</description>
+        <description></description>
       </item>
     
       <item>
@@ -964,11 +822,7 @@ Mekanisme loopback lokal berguna untuk menguji perangkat lunak selama pengembang
         <link>https://sibunglon.com/2017/08/09/bagaimana-menginstall-lamp-di-localhost-linux/</link>
         <pubDate>Wed, 09 Aug 2017 14:58:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/09/bagaimana-menginstall-lamp-di-localhost-linux/</guid>
-        <description>A. PendahuluanHello, pada kesempatan kali ini saya memposting bagaimana sih menginstal LAMP? Nah cara-caranya akan dijelaskan sebagai berikut.#Pengertian
-LAMP adalah istilah yang merupakan singkatan dari&amp;nbsp;Linux,&amp;nbsp;Apache, MySQL dan&amp;nbsp;Perl/PHP/Phyton. Merupakan sebuah paket&amp;nbsp;perangkat lunak bebas&amp;nbsp;yang digunakan untuk menjalankan sebuah aplikasi secara lengkap.
-Komponen-komponen dari LAMP :Linux&amp;nbsp;–&amp;nbsp;sistem operasiApache HTTP Server&amp;nbsp;–&amp;nbsp;web serverMariaDB&amp;nbsp;atau&amp;nbsp;MySQL&amp;nbsp;– sistem basis dataPHP&amp;nbsp;atau&amp;nbsp;Perl&amp;nbsp;atau&amp;nbsp;Python&amp;nbsp;– bahasa pemrograman yang dipakai#Latar BelakangIngin menggunakan linux, apache, mariaDB/mysql, dan PHP dalam satu paket.
-#Maksud dan Tujuan
-Maksud dan tujuan dari postingan ini agar si pengunjung dapat mempelajari dan mengetahui bagaimana menginstall LAMP.</description>
+        <description></description>
       </item>
     
       <item>
@@ -976,8 +830,7 @@ Maksud dan tujuan dari postingan ini agar si pengunjung dapat mempelajari dan me
         <link>https://sibunglon.com/2017/08/08/implementasi-pppoe-client-mikrotik/</link>
         <pubDate>Tue, 08 Aug 2017 14:36:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/08/implementasi-pppoe-client-mikrotik/</guid>
-        <description>A. PENGERTIANPPPOE merupakan singkatan dari point-to-point protocol over Ethernet yang merupakan protokol dalam jaringan untuk menghubungkan komunikasi antara dua buah titik jaringan atau dua buah port ethernet dengan model tunneling (terowongan) dan juga sebagai virtual dial-up dalam jaringan. mikrotik adalah salah satu router yang mendukung konfigurasi pppoe server dan client, untuk itulah akan di tuliskan pada artikel ini tentang bagaimana membuat pppoe server dengan mikrotik.
-B. LATAR BELAKANGMikrotik adalah salah satu router yang mendukung konfigurasi pppoe server dan client, untuk itulah akan dituliskan pada artikel ini tentang bagaimana membuat pppoe server dengan mikrotik.</description>
+        <description></description>
       </item>
     
       <item>
@@ -985,8 +838,7 @@ B. LATAR BELAKANGMikrotik adalah salah satu router yang mendukung konfigurasi pp
         <link>https://sibunglon.com/2017/08/02/mengatasi-grub-linux-yang-error/</link>
         <pubDate>Wed, 02 Aug 2017 16:51:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/02/mengatasi-grub-linux-yang-error/</guid>
-        <description>PendahuluanGNU GRUB (singkat untuk GNU GRand Bersatu Bootloader) adalah boot loader paket dari proyek GNU . GRUB adalah implementasi referensi dari Free Software Foundation &#39;s Multiboot Keterangan , yang menyediakan pengguna pilihan untuk boot salah satu dari beberapa sistem operasi yang terpasang di komputer atau pilih tertentu kernel konfigurasi yang tersedia pada partisi sistem operasi tertentu.
-Maksud dan TujuanTujuan dari postingan ini yaitu agar pembaca yang memiliki masalah yang serupa, maka ia dapat mengatasinya sendiri tanpa membawa ke service center.</description>
+        <description></description>
       </item>
     
       <item>
@@ -994,9 +846,7 @@ Maksud dan TujuanTujuan dari postingan ini yaitu agar pembaca yang memiliki masa
         <link>https://sibunglon.com/2017/08/01/mengganti-login-page-jaringan-mikrotik-menggunakan-filezilla/</link>
         <pubDate>Tue, 01 Aug 2017 16:09:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/01/mengganti-login-page-jaringan-mikrotik-menggunakan-filezilla/</guid>
-        <description>Pendahuluan
-Login page adalah salah satu fitur mikroTik yang berfungsi ketika hostpot yang di aktifkan di mikroTik tidak mempunyai autentikasi pada SSIDnya, dengan kata lain setelah berhasil terhubung ke hotspot tersebut si pengguna akan diminta masuk ke login page untuk dapat mengakses internet. Login page tersebut dapat diedit dengan berbagai cara, sesuai yang membuat anda nyaman :D
-Maksud dan TujuanTujuan dari postingan ini agar si pembaca dapat mempraktekkan dan mengetahui bagaimana mengganti login page hotspot mikroTik tanpa harus membuka winbox.</description>
+        <description>PendahuluanLogin page adalah salah satu fitur mikroTik yang berfungsi ketika hostpot yang di aktifkan di mikroTik tidak mempunyai autentikasi pada SSIDnya, dengan kata lain setelah berhasil terhubung ke hotspot tersebut si pengguna akan diminta masuk ke login page untuk dapat mengakses internet. Login page tersebut dapat diedit dengan berbagai cara, sesuai yang membuat anda nyaman :DMaksud dan TujuanTujuan dari postingan ini agar si pembaca dapat mempraktekkan dan mengetahui bagaimana mengganti login page hotspot mikroTik tanpa harus membuka winbox.</description>
       </item>
     
       <item>
@@ -1004,8 +854,7 @@ Maksud dan TujuanTujuan dari postingan ini agar si pembaca dapat mempraktekkan d
         <link>https://sibunglon.com/2017/07/31/menginstall-proxmox-di-server/</link>
         <pubDate>Mon, 31 Jul 2017 16:07:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/31/menginstall-proxmox-di-server/</guid>
-        <description>PendahuluanProxmox VE (Virtual Environment) adalah sebuah distro Linux virtualisasi berbasis Debian ( 64 bit) yang mengusung OpenZV dan KVM, dengan KVM kita tidak hanya bisa menginstall linux saja akan tetapi Operating system windows pun bisa kita instal. Namun yang membuat istimewa dari proxmox adalah kemudahan dalam installasi dan administrasi berbasis Web.
-Latar BelakangBeberapa keuntungan menggunakan Proxmox sebagai berikut&amp;nbsp;Kinerja terbaik.Instalasi yang telah dioptimalkan, sehingga lebih cepat.Mudah dalam manajemen.Cocok untuk kelas Enterprise.Beberapa hal yang perlu diperhatikan :Proxmox tersedia hanya untuk hardware 64-bit.</description>
+        <description></description>
       </item>
     
       <item>
@@ -1013,9 +862,7 @@ Latar BelakangBeberapa keuntungan menggunakan Proxmox sebagai berikut&amp;nbsp;K
         <link>https://sibunglon.com/2017/07/28/menggunakan-1-akun-mikrotik-untuk-banyak-pengguna/</link>
         <pubDate>Fri, 28 Jul 2017 15:11:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/28/menggunakan-1-akun-mikrotik-untuk-banyak-pengguna/</guid>
-        <description>PendahuluanPada postingan sebelumnya telah disebutkan bahwa mikroTik mempunyai banyak fitur, nah pada postingan ini akan di implementasikan bagaimana agar 1 akun dapat digunakan banyak pengguna. Lalu bagaimana mengaktifkan fitur ini?
-Maksud dan TujuanPenggunaan fitur ini dimaksudkan agar 1 profile user bisa digunakan secara bersama-sama oleh beberapa user sekaligus. Dengan demikian, setiap user yang ingin terhubung hanya perlu memiliki satu username dan password untuk dipakai bersama-sama.
-Alat dan Bahan1. MikroTik yang telah dikonfigurasi hotspot dan akses internetnya2.</description>
+        <description></description>
       </item>
     
       <item>
@@ -1023,7 +870,7 @@ Alat dan Bahan1. MikroTik yang telah dikonfigurasi hotspot dan akses internetnya
         <link>https://sibunglon.com/2017/07/27/konfigurasi-dasar-mikrotik-untuk-sharing-internet-menggunakan-hotspot/</link>
         <pubDate>Thu, 27 Jul 2017 14:37:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/27/konfigurasi-dasar-mikrotik-untuk-sharing-internet-menggunakan-hotspot/</guid>
-        <description>Pendahuluan&amp;nbsp;Pada postingan ini, saya akan mengimplementasikan atau mengkonfigurasi routerboard mikroTik untuk tahap pemula (konfigurasi dasar mikroTik&amp;nbsp;routerboard).Mikrotik&amp;nbsp;adalah&amp;nbsp;sebuah perusahaan yang bergerak di bidang produksi perangkat keras (hardware) dan perangkat lunak (Software) yang berhubungan dengan sistem jaringan komputer yang berkantor pusat di Latvia, bersebelahan dengan Rusia. Produk hardware unggulan Mikrotik berupa Router, Switch, Antena, dan perangkat pendukung lainnya. Sedangkan produk Software unggulan Mikrotik adalah MikroTik RouterOS.MikroTik routerboad&amp;nbsp;adalah&amp;nbsp;router embedded produk dari mikrotik. Routerboard seperti sebuah pc mini yang terintegrasi karena dalam satu board tertanam prosesor, ram, rom, dan memori flash.</description>
+        <description></description>
       </item>
     
       <item>
@@ -1031,8 +878,7 @@ Alat dan Bahan1. MikroTik yang telah dikonfigurasi hotspot dan akses internetnya
         <link>https://sibunglon.com/2017/07/26/bagaimana-mengganti-login-page-jaringan-mikrotik/</link>
         <pubDate>Wed, 26 Jul 2017 14:34:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/26/bagaimana-mengganti-login-page-jaringan-mikrotik/</guid>
-        <description>PendahuluanMikroTik routerboard adalah salah satu router yang mempunyai login page(tampilan awal) untuk koneksi hotspot. Login page berfungsi jika hotspot tersebut tidak mempunyai autentikasi, lalu siapapun yang telah konek di hotspot tersebut dan ingin melakukan browsing maka secara otomatis dia akan teralihkan ke login page untuk keperluan identitas agar ia dapat melanjutkan browsingnya.
-Maksud dan TujuanDengan login page yang telah disiapkan dapat membatasi siapa saja dapat mendapat akses internet dari mikroTik meskipun sebelumnya ia sudah konek ke wifi tersebut.</description>
+        <description></description>
       </item>
     
       <item>
@@ -1040,11 +886,7 @@ Maksud dan TujuanDengan login page yang telah disiapkan dapat membatasi siapa sa
         <link>https://sibunglon.com/2017/07/25/bagaimana-melimit-waktu-internet-pengguna-menggunakan-mikrotik/</link>
         <pubDate>Tue, 25 Jul 2017 14:12:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/25/bagaimana-melimit-waktu-internet-pengguna-menggunakan-mikrotik/</guid>
-        <description>Pendahuluan
-Mikrotik adalah sebuah produk yang bisa difungsikan sebagai router, hotspot, dan yang lainnya. Untuk info lebih lengkap bisa baca&amp;nbsp;disini. MikroTik mempunyai banyak fitur, salah satunya yaitu dapat membatasi berapa lama si user dapat terkoneksi dengan internet dengan mikroTik yang kita punya, lalu bagaimana mengaktifkan fitur tersebut? Nah, pada postingan kali ini akan dijelaskan bagaimana mengaktifkan fitur tersebut.
-
-Maksud dan Tujuan
-Tujuan pembatasannya itu tergantung dimana penempatan akses internet dari mikroTik itu sendiri.</description>
+        <description>PendahuluanMikrotik adalah sebuah produk yang bisa difungsikan sebagai router, hotspot, dan yang lainnya. Untuk info lebih lengkap bisa baca disini. MikroTik mempunyai banyak fitur, salah satunya yaitu dapat membatasi berapa lama si user dapat terkoneksi dengan internet dengan mikroTik yang kita punya, lalu bagaimana mengaktifkan fitur tersebut? Nah, pada postingan kali ini akan dijelaskan bagaimana mengaktifkan fitur tersebut.Maksud dan TujuanTujuan pembatasannya itu tergantung dimana penempatan akses internet dari mikroTik itu sendiri.</description>
       </item>
     
       <item>
@@ -1052,9 +894,7 @@ Tujuan pembatasannya itu tergantung dimana penempatan akses internet dari mikroT
         <link>https://sibunglon.com/2017/07/24/instalasi-linux-mint-18.1-sarena/</link>
         <pubDate>Mon, 24 Jul 2017 13:52:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/24/instalasi-linux-mint-18.1-sarena/</guid>
-        <description>Alat dan bahan:1 set pc atau laptop
-flashdisk booting linux mint 18.1 cinnamon 64-bitLangkah kerja:Siapkan sebuah pc atau laptop yang akan diinstallkan linux mint 18.1 cinnamon 64-bit, serta flashdisk yang berisi booting sistem operasi yang akan diinstal.
-Nyalakan pc atau laptop yang ingin di install, setalah itu masuk pada bios dan konfigurasi agar flashdisk booting yang telah ada dapat dipakai yaitu dengan cara masuk di menu “Boot” dan meletakkan jenis USB ke deretan atas.</description>
+        <description></description>
       </item>
     
   </channel>

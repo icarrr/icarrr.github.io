@@ -39,7 +39,7 @@
   <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4194642&101" alt="" border="0"></a></noscript>
   
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.64.0" />
 
   
   
@@ -84,8 +84,6 @@ $ curl -k url $ curl --insecure url $ curl --insecure -I url Example:
 $ curl -k https://sibunglon.com/image.png -) Wget
 $ wget --no-check-certificate url Example:
 $ wget --no-check-certificate https://sibunglon.com/image.png But if you don&rsquo;t want to use this additional option, just create a file whose contents can pass the SSL Certificate check.">
-
-
 <meta itemprop="datePublished" content="2019-12-09T14:02:06&#43;07:00" />
 <meta itemprop="dateModified" content="2019-12-09T14:02:06&#43;07:00" />
 <meta itemprop="wordCount" content="107">
@@ -93,7 +91,6 @@ $ wget --no-check-certificate https://sibunglon.com/image.png But if you don&rsq
 
 
 <meta itemprop="keywords" content="Ayo Belajar Linux,Others," />
-
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="How to Ignore Invalid and Self Signed SSL Connection Errors With cURL and Wget"/>
 <meta name="twitter:description" content="If you use the curl or wget command and don&rsquo;t want SSL to be checked so that the process should occur, you can use options or add commands.
@@ -128,23 +125,22 @@ $ wget --no-check-certificate https://sibunglon.com/image.png But if you don&rsq
       <h1>How to Ignore Invalid and Self Signed SSL Connection Errors With cURL and Wget</h1>
     </header>
     <section><p>If you use the curl or wget command and don&rsquo;t want SSL to be checked so that the process should occur, you can use options or add commands.</p>
-
 <p>-) cURL</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ curl -k url
 $ curl --insecure url
-$ curl --insecure -I url</code></pre></div>
-<p>Example:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ curl -k https://sibunglon.com/image.png</code></pre></div>
-<p>-) Wget</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ wget --no-check-certificate url</code></pre></div>
-<p>Example:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ wget --no-check-certificate https://sibunglon.com/image.png</code></pre></div>
-<p>But if you don&rsquo;t want to use this additional option, just create a file whose contents can pass the SSL Certificate check. To create a file you can use the following command:</p>
-
+$ curl --insecure -I url
+</code></pre></div><p>Example:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ curl -k https://sibunglon.com/image.png
+</code></pre></div><p>-) Wget</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ wget --no-check-certificate url
+</code></pre></div><p>Example:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ wget --no-check-certificate https://sibunglon.com/image.png
+</code></pre></div><p>But if you don&rsquo;t want to use this additional option, just create a file whose contents can pass the SSL Certificate check. To create a file you can use the following command:</p>
 <p>-) cURL</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">echo</span> <span class="s2">&#34;insecure&#34;</span> &gt;&gt; <span class="nv">$HOME</span>/.curlrc</code></pre></div>
-<p>-) Wget</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">echo</span> <span class="s2">&#34;check_certificate = off&#34;</span> &gt;&gt; <span class="nv">$HOME</span>/.wgetrc</code></pre></div></section>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">echo</span> <span class="s2">&#34;insecure&#34;</span> &gt;&gt; <span class="nv">$HOME</span>/.curlrc
+</code></pre></div><p>-) Wget</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">echo</span> <span class="s2">&#34;check_certificate = off&#34;</span> &gt;&gt; <span class="nv">$HOME</span>/.wgetrc
+</code></pre></div></section>
     <footer>
       <hr>
       <div class="meta">

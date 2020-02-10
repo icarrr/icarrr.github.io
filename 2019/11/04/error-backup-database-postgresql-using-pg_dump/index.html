@@ -39,7 +39,7 @@
   <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4194642&101" alt="" border="0"></a></noscript>
   
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.64.0" />
 
   
   
@@ -78,16 +78,13 @@ If before you did not do the postgres installation process, when backing up the 
 <meta itemprop="description" content="Has anyone ever done a postgres database backup using the pg_dump command line and then found problems with messages more or less like the following?
 pg_dump: server version: 9.6.12; pg_dump version: 9.2.24 pg_dump: aborting because of server version mismatch At that time I used Postgres 9.6.
 If before you did not do the postgres installation process, when backing up the data and finding problems with the message more or less like what I show then do not be too quick to ambition to make postgres or other improvements because it requires a great effort especially if the problem is found in production server, DANGER 🤣 Simply find the pg_dump command line location according to the postgres version of the server being used.">
-
-
 <meta itemprop="datePublished" content="2019-11-04T13:39:16&#43;07:00" />
 <meta itemprop="dateModified" content="2019-11-04T13:39:16&#43;07:00" />
-<meta itemprop="wordCount" content="162">
+<meta itemprop="wordCount" content="163">
 
 
 
 <meta itemprop="keywords" content="Ayo Belajar Linux,PostgreSQL,Error,Ngoprek," />
-
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Error Backup Database PostgreSQL Using pg_dump"/>
 <meta name="twitter:description" content="Has anyone ever done a postgres database backup using the pg_dump command line and then found problems with messages more or less like the following?
@@ -119,13 +116,11 @@ If before you did not do the postgres installation process, when backing up the 
       <h1>Error Backup Database PostgreSQL Using pg_dump</h1>
     </header>
     <section><p>Has anyone ever done a postgres database backup using the <code>pg_dump</code> command line and then found problems with messages more or less like the following?</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">pg_dump: server version: <span class="m">9</span>.6.12<span class="p">;</span> pg_dump version: <span class="m">9</span>.2.24
-pg_dump: aborting because of server version mismatch</code></pre></div>
-<p>At that time I used Postgres 9.6.</p>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">pg_dump: server version: 9.6.12<span class="p">;</span> pg_dump version: 9.2.24
+pg_dump: aborting because of server version mismatch
+</code></pre></div><p>At that time I used Postgres 9.6.</p>
 <p>If before you did not do the postgres installation process, when backing up the data and finding problems with the message more or less like what I show then do not be too quick to ambition to make postgres or other improvements because it requires a great effort especially if the problem is found in production server, <strong>DANGER</strong> 🤣 Simply find the <code>pg_dump</code> command line location according to the postgres version of the server being used. Usually located here <code>/usr/pgsql-x.y/bin/pg_dump</code>, x.y is the version of the postgres server used.</p>
-
-<p>Example, because at that time I used postgres-9.6 and to continue the process of backing up the postgres database, I used the <code>pg_dump</code> command line located at<code>/usr/pgsql-9.6/bin/pg_dump</code>.</p>
+<p>Example, because at that time I used postgres-9.6 and to continue the process of backing up the postgres database, I used the <code>pg_dump</code> command line located at<code> /usr/pgsql-9.6/bin/pg_dump</code>.</p>
 </section>
     <footer>
       <hr>

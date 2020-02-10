@@ -39,7 +39,7 @@
   <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4194642&101" alt="" border="0"></a></noscript>
   
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.64.0" />
 
   
   
@@ -78,8 +78,6 @@ urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host=&#39;api.telegram.org
 <meta itemprop="description" content="I failed to run a telegram bot in another environment, more or less the error as follows.
 urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host=&#39;api.telegram.org&#39;, port=443): Max retries exceeded with url (Caused by SSLError(SSLError(1, u&#39;[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:618)&#39;),)) But after adding the following script, my bot finally managed to run in that environment. Maybe someone has a case related to SSL certificate verification, hopefully the following script can help.
 #!/bin/python import ssl try: _create_unverified_https_context = ssl.">
-
-
 <meta itemprop="datePublished" content="2019-12-30T21:45:42&#43;07:00" />
 <meta itemprop="dateModified" content="2019-12-30T21:45:42&#43;07:00" />
 <meta itemprop="wordCount" content="98">
@@ -87,7 +85,6 @@ urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host=&#39;api.telegram.org
 
 
 <meta itemprop="keywords" content="Python," />
-
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Disable SSL Certificate Verification on Script Python"/>
 <meta name="twitter:description" content="I failed to run a telegram bot in another environment, more or less the error as follows.
@@ -119,8 +116,8 @@ urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host=&#39;api.telegram.org
       <h1>Disable SSL Certificate Verification on Script Python</h1>
     </header>
     <section><p>I failed to run a telegram bot in another environment, more or less the error as follows.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">urllib3.exceptions.MaxRetryError: HTTPSConnectionPool<span class="o">(</span><span class="nv">host</span><span class="o">=</span><span class="s1">&#39;api.telegram.org&#39;</span>, <span class="nv">port</span><span class="o">=</span><span class="m">443</span><span class="o">)</span>: Max retries exceeded with url  <span class="o">(</span>Caused by SSLError<span class="o">(</span>SSLError<span class="o">(</span><span class="m">1</span>, u<span class="s1">&#39;[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:618)&#39;</span><span class="o">)</span>,<span class="o">))</span></code></pre></div>
-<p>But after adding the following script, my bot finally managed to run in that environment. Maybe someone has a case related to SSL certificate verification, hopefully the following script can help.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">urllib3.exceptions.MaxRetryError: HTTPSConnectionPool<span class="o">(</span><span class="nv">host</span><span class="o">=</span><span class="s1">&#39;api.telegram.org&#39;</span>, <span class="nv">port</span><span class="o">=</span>443<span class="o">)</span>: Max retries exceeded with url  <span class="o">(</span>Caused by SSLError<span class="o">(</span>SSLError<span class="o">(</span>1, u<span class="s1">&#39;[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:618)&#39;</span><span class="o">)</span>,<span class="o">)</span><span class="o">)</span>
+</code></pre></div><p>But after adding the following script, my bot finally managed to run in that environment. Maybe someone has a case related to SSL certificate verification, hopefully the following script can help.</p>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ch">#!/bin/python</span>
 <span class="kn">import</span> <span class="nn">ssl</span>
 
@@ -131,7 +128,8 @@ urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host=&#39;api.telegram.org
     <span class="k">pass</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="c1"># Handle target environment that doesn&#39;t support HTTPS verification</span>
-    <span class="n">ssl</span><span class="o">.</span><span class="n">_create_default_https_context</span> <span class="o">=</span> <span class="n">_create_unverified_https_context</span></code></pre></div></section>
+    <span class="n">ssl</span><span class="o">.</span><span class="n">_create_default_https_context</span> <span class="o">=</span> <span class="n">_create_unverified_https_context</span>
+</code></pre></div></section>
     <footer>
       <hr>
       <div class="meta">

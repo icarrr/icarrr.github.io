@@ -39,7 +39,7 @@
   <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4194642&101" alt="" border="0"></a></noscript>
   
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.64.0" />
 
   
   
@@ -80,8 +80,6 @@ $ tree Bash Bash ├── BackupRestore-dbOpenEdx │ ├── backup_mongo.s
 Comparison of ls and tree usage
 Tree:
 $ tree Bash Bash ├── BackupRestore-dbOpenEdx │ ├── backup_mongo.sh │ ├── backup_mysql.sh │ ├── restore_mongo.sh │ └── restore_mysql.sh ├── auto-update-dplk_env │ ├── main.sh │ └── playbook │ ├── backend.yml │ ├── config.yml │ └── frontend.yml ├── backup\ database\ postgres.">
-
-
 <meta itemprop="datePublished" content="2019-12-09T11:01:45&#43;07:00" />
 <meta itemprop="dateModified" content="2019-12-09T11:01:45&#43;07:00" />
 <meta itemprop="wordCount" content="308">
@@ -89,7 +87,6 @@ $ tree Bash Bash ├── BackupRestore-dbOpenEdx │ ├── backup_mongo.s
 
 
 <meta itemprop="keywords" content="Ayo Belajar Linux,Others," />
-
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Tree: ignore directories with patterns"/>
 <meta name="twitter:description" content="Tree is a linux command that provides a list of recursive directories or a tree can display all file and directory listings in a directory.
@@ -122,9 +119,7 @@ $ tree Bash Bash ├── BackupRestore-dbOpenEdx │ ├── backup_mongo.s
       <h1>Tree: ignore directories with patterns</h1>
     </header>
     <section><p><strong>Tree</strong> is a linux command that provides a list of recursive directories or a tree can display all file and directory listings in a directory.</p>
-
 <p>Comparison of <strong>ls</strong> and <strong>tree</strong> usage</p>
-
 <p><strong>Tree</strong>:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ tree Bash
 Bash
@@ -153,18 +148,17 @@ Bash
 └── uni.sh
 
 <span class="m">3</span> directories, <span class="m">20</span> files
-~/G/G/icarrr ❯❯❯</code></pre></div>
-<p><strong>ls</strong>:</p>
+~/G/G/icarrr ❯❯❯
+</code></pre></div><p><strong>ls</strong>:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ ls Bash
 BackupRestore-dbOpenEdx     backup database postgres.sh compress_backup.sh          get-date-backupdb-dplk.sh   get-log-tmp.sh              loop change time.sh         scp_Dilla.sh
-auto-update-dplk            backup_db.sh                espeak.sh                   get-log-core.sh             import.sh                   newProject.sh               uni.sh</code></pre></div>
-<p>To be able to use trees, trees must be installed in your environment:</p>
-
+auto-update-dplk            backup_db.sh                espeak.sh                   get-log-core.sh             import.sh                   newProject.sh               uni.sh
+</code></pre></div><p>To be able to use trees, trees must be installed in your environment:</p>
 <p>-) Ubuntu or family</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo apt install tree</code></pre></div>
-<p>-) CentOS or RHEL</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo yum install tree</code></pre></div>
-<p>-I option allows to exclude directories that match specific pattern e.g.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo apt install tree
+</code></pre></div><p>-) CentOS or RHEL</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo yum install tree
+</code></pre></div><p>-I option allows to exclude directories that match specific pattern e.g.</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ tree Bash -I playbook
 Bash
 ├── BackupRestore-dbOpenEdx
@@ -187,8 +181,8 @@ Bash
 ├── scp_Dilla.sh
 └── uni.sh
 
-<span class="m">2</span> directories, <span class="m">17</span> files</code></pre></div>
-<p>In order to exclude multiple directories at once, their names must be separated by | sign, i.e.</p>
+<span class="m">2</span> directories, <span class="m">17</span> files
+</code></pre></div><p>In order to exclude multiple directories at once, their names must be separated by | sign, i.e.</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ tree Bash -I <span class="s1">&#39;playbook|BackupRestore-dbOpenEdx&#39;</span>
 Bash
 ├── auto-update-dplk
@@ -206,13 +200,10 @@ Bash
 ├── scp_Dilla.sh
 └── uni.sh
 
-<span class="m">1</span> directory, <span class="m">13</span> files</code></pre></div>
-<p>This command will skip playbook.</p>
-
+<span class="m">1</span> directory, <span class="m">13</span> files
+</code></pre></div><p>This command will skip playbook.</p>
 <p>Thank you for reading and sorry if the language is chaotic because it is currently learning to speak English.</p>
-
 <p>Reference:</p>
-
 <ul>
 <li><a href="https://zaiste.net/">Zaiste</a></li>
 </ul>

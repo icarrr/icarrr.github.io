@@ -39,7 +39,7 @@
   <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4194642&101" alt="" border="0"></a></noscript>
   
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.64.0" />
 
   
   
@@ -74,8 +74,6 @@
   
   <meta itemprop="name" content="How to Reset List of Trusted CA Certificates in RHEL 6 RHEL 7">
 <meta itemprop="description" content="#!/bin/bash # Get time localTime=$(date &#39;&#43;%Y%m%d_%H%M%S&#39; -d &#34;$(curl -s --head http://google.com | grep ^Date: | sed &#39;s/Date: //g&#39;)&#34;) # Create cert bak dir mkdir -p $HOME/cert.bak # Reset cert sudo rpm -Vv ca-certificates | awk &#39;$1!=&#34;.........&#34; &amp;&amp; $2!=&#34;d&#34; {system(&#34;mv -v &#34; $NF &#34; $HOME/cert.bak&#34;)}&#39; sudo yum check-update ca-certificates; (($?==100)) &amp;&amp; sudo yum update -y ca-certificates || sudo yum reinstall -y ca-certificates sudo find /etc/pki/ca-trust/source{,/anchors} -maxdepth 1 -not -type d -exec ls -1 {} &#43; sudo update-ca-trust extract # Update locate cert bak sudo mv $HOME/cert.">
-
-
 <meta itemprop="datePublished" content="2019-12-13T14:31:55&#43;07:00" />
 <meta itemprop="dateModified" content="2019-12-13T14:31:55&#43;07:00" />
 <meta itemprop="wordCount" content="86">
@@ -83,7 +81,6 @@
 
 
 <meta itemprop="keywords" content="Ayo Belajar Linux,Others," />
-
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="How to Reset List of Trusted CA Certificates in RHEL 6 RHEL 7"/>
 <meta name="twitter:description" content="#!/bin/bash # Get time localTime=$(date &#39;&#43;%Y%m%d_%H%M%S&#39; -d &#34;$(curl -s --head http://google.com | grep ^Date: | sed &#39;s/Date: //g&#39;)&#34;) # Create cert bak dir mkdir -p $HOME/cert.bak # Reset cert sudo rpm -Vv ca-certificates | awk &#39;$1!=&#34;.........&#34; &amp;&amp; $2!=&#34;d&#34; {system(&#34;mv -v &#34; $NF &#34; $HOME/cert.bak&#34;)}&#39; sudo yum check-update ca-certificates; (($?==100)) &amp;&amp; sudo yum update -y ca-certificates || sudo yum reinstall -y ca-certificates sudo find /etc/pki/ca-trust/source{,/anchors} -maxdepth 1 -not -type d -exec ls -1 {} &#43; sudo update-ca-trust extract # Update locate cert bak sudo mv $HOME/cert."/>
@@ -121,12 +118,13 @@ mkdir -p <span class="nv">$HOME</span>/cert.bak
 
 <span class="c1"># Reset cert</span>
 sudo rpm -Vv ca-certificates <span class="p">|</span> awk <span class="s1">&#39;$1!=&#34;.........&#34; &amp;&amp; $2!=&#34;d&#34; {system(&#34;mv -v &#34; $NF &#34; $HOME/cert.bak&#34;)}&#39;</span>
-sudo yum check-update ca-certificates<span class="p">;</span> <span class="o">((</span><span class="nv">$?</span><span class="o">==</span><span class="m">100</span><span class="o">))</span> <span class="o">&amp;&amp;</span> sudo yum update -y ca-certificates <span class="o">||</span> sudo yum reinstall -y ca-certificates
-sudo find /etc/pki/ca-trust/source<span class="o">{</span>,/anchors<span class="o">}</span> -maxdepth <span class="m">1</span> -not -type d -exec ls -1 <span class="o">{}</span> +
+sudo yum check-update ca-certificates<span class="p">;</span> <span class="o">(</span><span class="o">(</span><span class="nv">$?</span><span class="o">=</span><span class="o">=</span>100<span class="o">)</span><span class="o">)</span> <span class="o">&amp;&amp;</span> sudo yum update -y ca-certificates <span class="o">||</span> sudo yum reinstall -y ca-certificates
+sudo find /etc/pki/ca-trust/source<span class="o">{</span>,/anchors<span class="o">}</span> -maxdepth <span class="m">1</span> -not -type d -exec ls -1 <span class="o">{</span><span class="o">}</span> +
 sudo update-ca-trust extract
 
 <span class="c1"># Update locate cert bak</span>
-sudo mv <span class="nv">$HOME</span>/cert.bak <span class="nv">$HOME</span>/cert/cert.bak-<span class="nv">$localTime</span></code></pre></div></section>
+sudo mv <span class="nv">$HOME</span>/cert.bak <span class="nv">$HOME</span>/cert/cert.bak-<span class="nv">$localTime</span>
+</code></pre></div></section>
     <footer>
       <hr>
       <div class="meta">

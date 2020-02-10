@@ -39,7 +39,7 @@
   <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4194642&101" alt="" border="0"></a></noscript>
   
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.64.0" />
 
   
   
@@ -76,16 +76,13 @@ Does the node version in the development environment need to be upgraded? I don&
   <meta itemprop="name" content="Downgrade and Install Node Spesific Version on macOS">
 <meta itemprop="description" content="A few days ago, i want to build a frontend project that my friend has made, the project is built using vue, when installing dependencies or packages needed, the installation process stops because there are packages that cannot be installed. At that time, I used node version 13.
 Does the node version in the development environment need to be upgraded? I don&rsquo;t think that&rsquo;s the right solution because it might require so much effort.">
-
-
 <meta itemprop="datePublished" content="2020-01-26T22:38:33&#43;07:00" />
 <meta itemprop="dateModified" content="2020-01-26T22:38:33&#43;07:00" />
-<meta itemprop="wordCount" content="192">
+<meta itemprop="wordCount" content="187">
 
 
 
 <meta itemprop="keywords" content="macOS," />
-
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Downgrade and Install Node Spesific Version on macOS"/>
 <meta name="twitter:description" content="A few days ago, i want to build a frontend project that my friend has made, the project is built using vue, when installing dependencies or packages needed, the installation process stops because there are packages that cannot be installed. At that time, I used node version 13.
@@ -116,24 +113,30 @@ Does the node version in the development environment need to be upgraded? I don&
       <h1>Downgrade and Install Node Spesific Version on macOS</h1>
     </header>
     <section><p>A few days ago, i want to build a frontend project that my friend has made, the project is built using <em>vue</em>, when installing dependencies or packages needed, the installation process stops because there are packages that cannot be installed. At that time, I used node version 13.</p>
-
 <p>Does the node version in the development environment need to be upgraded? I don&rsquo;t think that&rsquo;s the right solution because it might require so much effort.</p>
-
 <p>So what&rsquo;s the solution? Node version on my MacBook that needs to be downgraded.</p>
-
 <p>How do you downgrade a node version on macOS?</p>
-
-<p>1) Check available node version.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ brew search node</code></pre></div>
-<p>2) Unlink current node version.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ brew unlink node</code></pre></div>
-<p>3) Install node based on the version that will be used. At present, i want to use node version 10.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ brew install node@10</code></pre></div>
-<p>4) Link it to installed version.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ brew link --force --overwrite node@10</code></pre></div>
-<p>5) Verify node version, make sure node was downgraded successfully.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ node -v</code></pre></div>
-<blockquote>
+<ol>
+<li>Check available node version.</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ brew search node
+</code></pre></div><ol start="2">
+<li>Unlink current node version.</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ brew unlink node
+</code></pre></div><ol start="3">
+<li>Install node based on the version that will be used. At present, i want to use node version 10.</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ brew install node@10
+</code></pre></div><ol start="4">
+<li>Link it to installed version.</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ brew link --force --overwrite node@10
+</code></pre></div><ol start="5">
+<li>Verify node version, make sure node was downgraded successfully.</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ node -v
+</code></pre></div><blockquote>
 <p><strong>Note</strong>: After you downgrade the node version, you need to delete the node_modules directory in another project if you have several projects that use nodes on your device.</p>
 </blockquote>
 </section>

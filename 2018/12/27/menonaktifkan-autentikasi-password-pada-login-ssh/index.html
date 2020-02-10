@@ -39,7 +39,7 @@
   <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4194642&101" alt="" border="0"></a></noscript>
   
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.64.0" />
 
   
   
@@ -76,8 +76,6 @@ Ya, kali ini labnya tentang gimana caranya agar nantinya kalian dapat login ke s
   <meta itemprop="name" content="Menonaktifkan Autentikasi Password Pada Login SSH">
 <meta itemprop="description" content="Login SSH Tanpa Password Plain Text? Login ssh tanpa password plain text? emang bisa? terus loginnya pake apa? cuman modal username aja?
 Ya, kali ini labnya tentang gimana caranya agar nantinya kalian dapat login ke server masing-masing tapi gak pakai password plain text lagi. Ya itu bisa saja terjadi, setelah menonaktifkan autentikasi password nanti kita login ke server masing-masing menggunakan private keynya sesuai pada lab sebelumnya. Jika autentikasi password plain text pada login ssh di nonaktifkan, agar bisa login ke server yang dibutuhkan cuman private key, username, ip atau domain server yang dituju.">
-
-
 <meta itemprop="datePublished" content="2018-12-27T01:29:42&#43;07:00" />
 <meta itemprop="dateModified" content="2018-12-27T01:29:42&#43;07:00" />
 <meta itemprop="wordCount" content="279">
@@ -85,7 +83,6 @@ Ya, kali ini labnya tentang gimana caranya agar nantinya kalian dapat login ke s
 
 
 <meta itemprop="keywords" content="Ayo Belajar Linux,SSH,Ngoprek," />
-
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Menonaktifkan Autentikasi Password Pada Login SSH"/>
 <meta name="twitter:description" content="Login SSH Tanpa Password Plain Text? Login ssh tanpa password plain text? emang bisa? terus loginnya pake apa? cuman modal username aja?
@@ -115,18 +112,11 @@ Ya, kali ini labnya tentang gimana caranya agar nantinya kalian dapat login ke s
         <time datetime="2018-12-27 01:29:42&#43;0700">2018-12-27</time></small>
       <h1>Menonaktifkan Autentikasi Password Pada Login SSH</h1>
     </header>
-    <section>
-
-<h3 id="login-ssh-tanpa-password-plain-text">Login SSH Tanpa Password Plain Text?</h3>
-
+    <section><h3 id="login-ssh-tanpa-password-plain-text">Login SSH Tanpa Password Plain Text?</h3>
 <p>Login ssh tanpa password plain text? emang bisa? terus loginnya pake apa? cuman modal username aja?</p>
-
 <p>Ya, kali ini labnya tentang gimana caranya agar nantinya kalian dapat login ke server masing-masing tapi gak pakai password plain text lagi. Ya itu bisa saja terjadi, setelah menonaktifkan autentikasi password nanti kita login ke server masing-masing menggunakan private keynya sesuai pada lab sebelumnya. Jika autentikasi password plain text pada login ssh di nonaktifkan, agar bisa login ke server yang dibutuhkan cuman <strong>private key</strong>, <strong>username</strong>, <strong>ip</strong> atau <strong>domain server</strong> yang dituju.</p>
-
 <p>Wah kelihatannya seru tuh. Ohh jelas jadi sekarang waktunya bermain.</p>
-
 <p>Pada lab ini saya asumsikan:</p>
-
 <ul>
 <li><strong>batman</strong> adalah username server saya</li>
 <li><strong>sibunglon.com</strong> adalah domain server saya</li>
@@ -134,21 +124,13 @@ Ya, kali ini labnya tentang gimana caranya agar nantinya kalian dapat login ke s
 <li>Layanan <strong>SSH</strong> telah terinstall diserver anda</li>
 <li>Lab yang sebelumnya tepat sebelum lab ini telah dilakukan dan key SSH telah di generate</li>
 </ul>
-
 <h3 id="bermain-dengan-ssh">Bermain dengan SSH</h3>
-
 <p>1) Akses server seperti biasanya.</p>
-
 <p>2) Edit file konfigurasi ssh dengan command <code>sudo nano /etc/ssh/sshd_config</code>.</p>
-
 <p>3) Cari kata <strong>PasswordAuthentication</strong>, secara default valuenya <strong>Yes</strong>, silahkan ubah menjadi <strong>No.</strong></p>
-
 <p>4) Restart layanan ssh dengan command <code>/etc/init.d/sshd restart</code>.</p>
-
 <p>Sekarang dicoba remote server seperti pada biasanya atau dengan command <code>ssh batman@192.168.0.36</code>, dan bakalan muncul pesan <strong>Permission denied (publickey,gssapi-keyex,gssapi-with-mic).</strong> Nah agar dapat login ke server caranya sama seperti pada lab sebelumnya yaitu <code>ssh -i opreker batman@192.168.0.36</code>.</p>
-
 <h4 id="tambahan">Tambahan</h4>
-
 <p>Jika tetap mau remote server sama seperti biasanya namun tetap menggunakan private key, anda harus menambahkan terlebih dahulu private keynya ke sistem dengan command <code>ssh-add opreker</code>. Setelah itu anda cuman butuh command <code>ssh batman@192.168.0.36</code> untuk remote server, namun penambahan ini hanya bersifat sementara yah jadi setelah device di restart atau dimatikan private key terhapus lagi disistem.</p>
 </section>
     <footer>

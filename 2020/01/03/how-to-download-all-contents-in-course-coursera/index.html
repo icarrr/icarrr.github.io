@@ -39,7 +39,7 @@
   <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4194642&101" alt="" border="0"></a></noscript>
   
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.64.0" />
 
   
   
@@ -78,16 +78,13 @@ The course at Coursera is a monthly subscription, but Coursera also provides a f
 <meta itemprop="description" content="Coursera is an online learning platform founded by Stanford professors Andrew Ng and Daphne Koller that offers massive open online courses, specializations, and degrees.
 Coursera works with universities and other organizations to offer online courses, specialties, and degrees in various subjects, such as engineering, humanities, medicine, biology, social sciences, mathematics, business, computer science, digital marketing, data science, etc..
 The course at Coursera is a monthly subscription, but Coursera also provides a free trial for 7 days so it is possible to use this you only need a credit card or debit card.">
-
-
 <meta itemprop="datePublished" content="2020-01-03T18:33:11&#43;07:00" />
 <meta itemprop="dateModified" content="2020-01-03T18:33:11&#43;07:00" />
-<meta itemprop="wordCount" content="569">
+<meta itemprop="wordCount" content="564">
 
 
 
 <meta itemprop="keywords" content="Ayo Belajar Linux,eLearning," />
-
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="How to Download All Contents in Course Coursera"/>
 <meta name="twitter:description" content="Coursera is an online learning platform founded by Stanford professors Andrew Ng and Daphne Koller that offers massive open online courses, specializations, and degrees.
@@ -119,87 +116,71 @@ The course at Coursera is a monthly subscription, but Coursera also provides a f
       <h1>How to Download All Contents in Course Coursera</h1>
     </header>
     <section><p>Coursera is an online learning platform founded by Stanford professors Andrew Ng and Daphne Koller that offers massive open online courses, specializations, and degrees.</p>
-
 <p>Coursera works with universities and other organizations to offer online courses, specialties, and degrees in various subjects, such as engineering, humanities, medicine, biology, social sciences, mathematics, business, computer science, digital marketing, data science, etc..</p>
-
 <p>The course at Coursera is a monthly subscription, but Coursera also provides a free trial for 7 days so it is possible to use this you only need a credit card or debit card. Every 1 course completed, coursera gives an award in the form of e-certificate. If the subscription has been canceled or has terminated, the facilities in the course cannot be accessed. But material, videos and more on the course can be downloaded. When this article was made, from the coursera web, course materials must be downloaded one at a time. But it takes a lot of time.</p>
-
 <p>If you prefer to directly download all course material or specialization, we will prepare the weapons.</p>
-
 <p><strong>Requirements</strong></p>
-
 <p>-) Python 2.x.x</p>
-
 <p>-) Python 3.x.x (recommended)</p>
-
 <p><strong>Setup coursera-dl</strong></p>
-
-<p>1) So that packages that will be installed do not mix with packages that we use in other projects, it&rsquo;s better to use a virtual environment. Make sure your virtual environment and pip python has been installed. If it doesn&rsquo;t already exist, follow the steps below to install it.</p>
-
+<ol>
+<li>So that packages that will be installed do not mix with packages that we use in other projects, it&rsquo;s better to use a virtual environment. Make sure your virtual environment and pip python has been installed. If it doesn&rsquo;t already exist, follow the steps below to install it.</li>
+</ol>
 <p>-) If using python 2</p>
-
 <p>Install pip</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo apt install python-pip</code></pre></div>
-<p>Install virtual environment</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ pip install virtualenv</code></pre></div>
-<p>-) If using python 3</p>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo apt install python-pip
+</code></pre></div><p>Install virtual environment</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ pip install virtualenv
+</code></pre></div><p>-) If using python 3</p>
 <p>Install pip</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo apt install python3-pip</code></pre></div>
-<p>Install virtual environment</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ pip3 install virtualenv</code></pre></div>
-<p>2) Create virtual environment, in this example I will create a virtual environment with the name <em>env</em>, you can replace it.</p>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo apt install python3-pip
+</code></pre></div><p>Install virtual environment</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ pip3 install virtualenv
+</code></pre></div><ol start="2">
+<li>Create virtual environment, in this example I will create a virtual environment with the name <em>env</em>, you can replace it.</li>
+</ol>
 <p>-) If using python 2</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ virtualenv env</code></pre></div>
-<p>-) If using python 3</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ python3 -m venv env</code></pre></div>
-<p>3) Activate virtual environment</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">source</span> env/bin/activate</code></pre></div>
-<p>4) Install coursera-dl, coursera-dl is a simple, fast, and reliable Coursera crawling &amp; downloading tool.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ pip install coursera-dl</code></pre></div>
-<p>5) Now, you can use coursera-dl command.</p>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ virtualenv env
+</code></pre></div><p>-) If using python 3</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ python3 -m venv env
+</code></pre></div><ol start="3">
+<li>Activate virtual environment</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">source</span> env/bin/activate
+</code></pre></div><ol start="4">
+<li>Install coursera-dl, coursera-dl is a simple, fast, and reliable Coursera crawling &amp; downloading tool.</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ pip install coursera-dl
+</code></pre></div><ol start="5">
+<li>Now, you can use coursera-dl command.</li>
+</ol>
 <p>-) General</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ coursera-dl -u yourEmail -p yourPassword courseName</code></pre></div>
-<p>-) With CAUTH</p>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ coursera-dl -u yourEmail -p yourPassword courseName
+</code></pre></div><p>-) With CAUTH</p>
 <p>Find your coursera CAUTH:</p>
-
 <p>For example, in chrome</p>
-
 <p>-&gt; Open and login to <a href="https://www.coursera.org/">https://www.coursera.org/</a></p>
-
 <p>-&gt; Right-click on the touchpad or mouse until you find <em>inspect</em>.</p>
-
 <p>-&gt; Go to Applications &gt; Cookies (and click dropdown) &gt; click <a href="https://www.coursera.org/">https://www.coursera.org/</a> &gt; find and click CAUTH &gt; Copy value CAUTH</p>
-
-<p><img src="/assets/img/how-to-download-all-contents-in-course-coursera/screnshoot.png" alt="" /></p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ coursera-dl -ca <span class="s1">&#39;yourValueCAUTH&#39;</span> courseName</code></pre></div>
-<p>The course name can be found in the coursera url. For example, this is coursera url <a href="https://www.coursera.org/learn/gcp-fundamentals/home/welcome">https://www.coursera.org/learn/gcp-fundamentals/home/welcome</a> so the name of the course is <em>gcp-fundamentals</em>.</p>
-
+<p><img src="/assets/img/how-to-download-all-contents-in-course-coursera/screnshoot.png" alt=""></p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ coursera-dl -ca <span class="s1">&#39;yourValueCAUTH&#39;</span> courseName
+</code></pre></div><p>The course name can be found in the coursera url. For example, this is coursera url <a href="https://www.coursera.org/learn/gcp-fundamentals/home/welcome">https://www.coursera.org/learn/gcp-fundamentals/home/welcome</a> so the name of the course is <em>gcp-fundamentals</em>.</p>
 <p>Download results are saved in the directory when you run coursera-dl. For example when you are in the x directory, the downloads are saved in the x directory.</p>
-
 <p>If you need help with any options that can be used, use the command:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ coursera-dl -h</code></pre></div>
-<p><strong>Notes</strong></p>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ coursera-dl -h
+</code></pre></div><p><strong>Notes</strong></p>
 <p>I more often use the following options:</p>
-
 <p><em>&ndash;specialization</em></p>
-
 <p>To download all courses in specialization, example:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ coursera-dl -ca <span class="s1">&#39;yourValueCAUTH&#39;</span> --specialization specializationName</code></pre></div>
-<p>The specialization name can be found in the coursera url. For example, this is coursera url <a href="https://www.coursera.org/specializations/gcp-architecture">https://www.coursera.org/specializations/gcp-architecture</a> so the name of the specialization is <em>gcp-architecture</em>.</p>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ coursera-dl -ca <span class="s1">&#39;yourValueCAUTH&#39;</span> --specialization specializationName
+</code></pre></div><p>The specialization name can be found in the coursera url. For example, this is coursera url <a href="https://www.coursera.org/specializations/gcp-architecture">https://www.coursera.org/specializations/gcp-architecture</a> so the name of the specialization is <em>gcp-architecture</em>.</p>
 <p><em>&ndash;video-resolution</em></p>
-
 <p>To determine the video resolution that I want to download, example:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ coursera-dl -ca <span class="s1">&#39;yourValueCAUTH&#39;</span> --video-resolution 720p</code></pre></div>
-<p><em>&ndash;download-quizzes</em></p>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ coursera-dl -ca <span class="s1">&#39;yourValueCAUTH&#39;</span> --video-resolution 720p
+</code></pre></div><p><em>&ndash;download-quizzes</em></p>
 <p>By default if you run coursera-dl, the quiz isn&rsquo;t downloaded, so if you want to download the quiz, add this option. example:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ coursera-dl -ca <span class="s1">&#39;yourValueCAUTH&#39;</span> --download-quizzes</code></pre></div></section>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ coursera-dl -ca <span class="s1">&#39;yourValueCAUTH&#39;</span> --download-quizzes
+</code></pre></div></section>
     <footer>
       <hr>
       <div class="meta">

@@ -36,7 +36,7 @@ Let&amp;rsquo;s encrypt adalah certificate Authority (CA) atau otoritas sertifik
         <pubDate>Mon, 10 Dec 2018 07:44:24 +0700</pubDate>
         <guid>https://sibunglon.com/2018/12/10/berkenalan-dengan-nginx-di-rhel/centos/</guid>
         <description>Nginx? Apa sih nginx itu? Fungsinya buat apa? Mungkin itu yang terlintas dipikirian beberapa orang jika berkenalan dengan hal baru. Maka dari itu pada kali ini yang akan dibahas pada Lab ini yaitu berkenalan dan bagaimana memasang nginx.
-Nginx, banyak orang membicarakannya meskipun salah dipelafalannya. Dulu saya juga salah melafakannya namun setelah diruqyah sama m1m1n atau yang dikenal dengan Andy Hidayat, sekarang gak salah pelafalan lagi :D . Nginx dibaca &amp;ldquo;engine X&amp;rdquo; bukan &amp;ldquo;nging X&amp;rdquo;.</description>
+Nginx, banyak orang membicarakannya meskipun salah dipelafalannya. Dulu saya juga salah melafakannya namun setelah diruqyah sama m1m1n atau yang dikenal dengan Andy Hidayat, sekarang gak salah pelafalan lagi :D . Nginx dibaca &amp;ldquo;engine X&amp;rdquo; bukan &amp;ldquo;nging X&amp;quot;.</description>
       </item>
     
       <item>
@@ -44,8 +44,7 @@ Nginx, banyak orang membicarakannya meskipun salah dipelafalannya. Dulu saya jug
         <link>https://sibunglon.com/2018/10/26/berkenalan-dengan-caddy-server/</link>
         <pubDate>Fri, 26 Oct 2018 11:52:00 +0000</pubDate>
         <guid>https://sibunglon.com/2018/10/26/berkenalan-dengan-caddy-server/</guid>
-        <description>Caddy? Caddy itu apaan? Fungsinya apa aja?
-Caddy kadang-kadang diklarifikasi sebagai web server Caddy bersifat open source, server web HTTP / 2- enabled yang ditulis dalam Go . Ia menggunakan pustaka standar Go untuk fungsi HTTP-nya. Salah satu fitur paling terkenal Caddy adalah mengaktifkan HTTPS secara default.Caddy mendukung berbagai teknologi Web dan tersedia sebagai biner yang dikompilasi secara statis untuk sistem operasi Windows, Mac, Linux, Android, dan BSD pada arsitektur i386, amd64, dan ARM.</description>
+        <description></description>
       </item>
     
       <item>
@@ -53,8 +52,7 @@ Caddy kadang-kadang diklarifikasi sebagai web server Caddy bersifat open source,
         <link>https://sibunglon.com/2017/10/20/perbandingan-open-source-dan-closed-source/</link>
         <pubDate>Fri, 20 Oct 2017 18:59:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/20/perbandingan-open-source-dan-closed-source/</guid>
-        <description>1. Pengertian
-Sumber terbuka&amp;nbsp;(bahasa Inggris:&amp;nbsp;open source) adalah sistem pengembangan yang tidak dikoordinasi oleh suatu individu / lembaga pusat, tetapi oleh para pelaku yang bekerja sama dengan memanfaatkan kode sumber&amp;nbsp;(source-code)&amp;nbsp;yang tersebar dan tersedia bebas (biasanya menggunakan fasilitas komunikasi internet). Pola pengembangan ini mengambil model ala&amp;nbsp;bazaar, sehingga pola Open Source ini memiliki ciri bagi komunitasnya yaitu adanya dorongan yang bersumber dari&amp;nbsp;budaya memberi, yang artinya ketika suatu komunitas menggunakan sebuah program Open Source dan telah menerima sebuah manfaat kemudian akan termotivasi untuk menimbulkan sebuah pertanyaan apa yang bisa pengguna berikan balik kepada orang banyak.</description>
+        <description></description>
       </item>
     
       <item>
@@ -62,10 +60,7 @@ Sumber terbuka&amp;nbsp;(bahasa Inggris:&amp;nbsp;open source) adalah sistem pen
         <link>https://sibunglon.com/2017/10/12/mengenal-vlan-virtual-lan/</link>
         <pubDate>Thu, 12 Oct 2017 09:08:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/12/mengenal-vlan-virtual-lan/</guid>
-        <description>A. Pendahuluan&amp;nbsp;
-Pada kesempatan kali ini ane akan share sedikit artikel tentang VLAN. Oke langsung saja silahkan disimak.
-1. Pengertian&amp;nbsp;
-Virtual LAN atau disingkat VLAN merupakan sekelompok perangkat pada satu LAN atau lebih yang dikonfigurasikan (menggunakan perangkat lunak pengelolaan) sehingga dapat berkomunikasi seperti halnya bila perangkat tersebut terhubung ke jalur yang sama, padahal sebenarnya perangkat tersebut berada pada sejumlah segmen LAN yang berbeda. Vlan dibuat dengan menggunakan jaringan pihak ke tiga.</description>
+        <description></description>
       </item>
     
       <item>
@@ -73,26 +68,7 @@ Virtual LAN atau disingkat VLAN merupakan sekelompok perangkat pada satu LAN ata
         <link>https://sibunglon.com/2017/10/03/perintah-perintah-dasar-cisco/</link>
         <pubDate>Tue, 03 Oct 2017 05:17:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/03/perintah-perintah-dasar-cisco/</guid>
-        <description>A. PENGERTIAN
-Konfigurasi yang akan dibahas dalam artikel ini adalah :
-Mode Router
-Memasuki mode konfigurasi global (Global Configuration Mode)
-Konfigurasi router :
--&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Nama router
--&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Password
--&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Password terenkripsi
--&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Nama interfaces
--&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Perpindahan antar interfaces
--&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Konfigurasi interfaces Serial
--&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Konfigurasi interfaces Fast Ethernet
--&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Membuat banner pesan MOTD (Message of the Day)
--&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Membuat banner login
--&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Menempatkan local host domain ke IP address
--&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Perintah&amp;nbsp;no ip domain-lookup
--&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Perintah&amp;nbsp;exec-timeout
--&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Menyimpan konfigurasi
--&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Menghapus konfigurasi
-Perintah&amp;nbsp;show&amp;nbsp;untuk memperifikasi konfigurasi router</description>
+        <description></description>
       </item>
     
       <item>
@@ -100,7 +76,7 @@ Perintah&amp;nbsp;show&amp;nbsp;untuk memperifikasi konfigurasi router</descript
         <link>https://sibunglon.com/2017/09/18/pengenalan-open-source/</link>
         <pubDate>Mon, 18 Sep 2017 02:35:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/18/pengenalan-open-source/</guid>
-        <description>A. PENDAHULUANMungkin kalian pernah mendengar kata open source. betulkan,, di benak kalian pasti mengatakan apa sih open source itu..?. nah disini kita kupas abis terkait dengan open sourceB. PENGERTIANOpen source Software (OSS) merupakan istilah yang di gunakan untuk software komputer yang membuka/membebaskan source codenya untuk dilihat oleh orang lain dan membiarkan orang lain mengetahui cara kerja software tersebut dan sekaligus memperbaiki kelemahan - kelemahan yang ada pada software tersebut. Tiap orang dapat melihat, mengubah atau memodifikasi kodenya, dan mendistribusikannya lagi.</description>
+        <description></description>
       </item>
     
       <item>
@@ -108,9 +84,7 @@ Perintah&amp;nbsp;show&amp;nbsp;untuk memperifikasi konfigurasi router</descript
         <link>https://sibunglon.com/2017/09/12/pengenalan-sop-standar-operasional-prosedur/</link>
         <pubDate>Tue, 12 Sep 2017 01:27:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/12/pengenalan-sop-standar-operasional-prosedur/</guid>
-        <description>A. PendahuluanPada blog kali ini saya akan memperkenalkan tentang SOP. pasti kalian bertanya apa itu SOP selanjut nya akan di jelaskan di bawah ini.
-1. Pengertian
-SOP&amp;nbsp;Prosedur operasi standar istilah dalam bahasa Indonesia, atau dalam bahasa Inggris disebut SOP (Standart Oprational Procedur), digunakan dalam berbagai konteks yang berbeda, termasuk kesehatan, penerbangan, teknik, pendidikan, industri, dan militer. Dengan melakukan SOP perusahaan dapat memastikan suatu aktivitas bisnis bisa berjalan sesuai dengan standard yang diharapkan.</description>
+        <description></description>
       </item>
     
       <item>
@@ -118,9 +92,7 @@ SOP&amp;nbsp;Prosedur operasi standar istilah dalam bahasa Indonesia, atau dalam
         <link>https://sibunglon.com/2017/08/30/mengenal-lebih-dalam-tentang-subneting/</link>
         <pubDate>Wed, 30 Aug 2017 10:00:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/30/mengenal-lebih-dalam-tentang-subneting/</guid>
-        <description>A. PendahuluanOke pada kesempatan lalu saya pernah memposting tentang subnetting namun pada kesempatan ini saya akan mempost untuk melengkapi post pada kesempatan lalu.
-B. PengertianSubnetting adalah&amp;nbsp;&amp;nbsp;Praktek membagi jaringan menjadi dua atau lebih jaringan disebut.&amp;nbsp;IP adalah sistem pengalamatan setiap host yang terhubung dengan jaringan.&amp;nbsp;
-C. Latar belakangSemakin banyaknya ip yang di gunakan untuk dapat terkoneksi ke internet dimana kita harus benar benar mengetahui bagaimana penempatan dan penggunaan ip address dan subnetting.</description>
+        <description></description>
       </item>
     
       <item>
@@ -128,9 +100,7 @@ C. Latar belakangSemakin banyaknya ip yang di gunakan untuk dapat terkoneksi ke 
         <link>https://sibunglon.com/2017/08/29/apa-itu-hotspot/</link>
         <pubDate>Tue, 29 Aug 2017 12:57:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/29/apa-itu-hotspot/</guid>
-        <description>A. Pengertian
-Area bersinyal (bahasa Inggris: Hotspot) merujuk pada tempat-tempat tertentu (biasanya tempat umum) yang memiliki layanan internet dengan menggunakan teknologi Wireless LAN, seperti pada perguruan tinggi, mal, plaza, perpustakaan, restoran ataupun bandar udara. Layanan internet seperti ini, ada yang berbayar dan yang tidak (gratis).
-Sejarah HotspotKonsep ini pertama kali dikemukakan pada tahun 1993 oleh Bret Stewart sewaktu konferensi Networld dan Interop, di San Fransisco. Dengan pemanfaatan teknologi ini, setiap orang dapat mengakses jaringan internet melalui komputer/laptop/HP/PDA yang mereka miliki di lokasi-lokasi area bersinyal ini tersedia, tentunya perangkat komputer/laptop/ponsel/PDA tersebut harus memiliki teknologi wi-fi.</description>
+        <description></description>
       </item>
     
       <item>
@@ -138,9 +108,7 @@ Sejarah HotspotKonsep ini pertama kali dikemukakan pada tahun 1993 oleh Bret Ste
         <link>https://sibunglon.com/2017/08/28/pengenalan-desktop-environment-de/</link>
         <pubDate>Mon, 28 Aug 2017 12:53:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/28/pengenalan-desktop-environment-de/</guid>
-        <description>A. Pendahuluan
-Pada kesempatan ini&amp;nbsp; saya akan Share mengenai Desktop Environment. pasti di kalimat dari Deskktop Environment ini sudah asing bagi orang yang sering mendengarnya dan asing bagi orang yang tidak pernah mendengar bahkan tidak mengetahuinya.&amp;nbsp;
-1. Pengertianlingkungan desktop ( DE )&amp;nbsp;adalah implementasi metafora desktop yang dibuat dari kumpulan program yang berjalan di atas sistem operasi komputer, yang memiliki antarmuka pengguna grafis umum (GUI), terkadang digambarkan sebagai shell grafis . Lingkungan desktop terlihat kebanyakan di komputer pribadi sampai munculnya komputasi mobile.</description>
+        <description></description>
       </item>
     
       <item>
@@ -148,9 +116,7 @@ Pada kesempatan ini&amp;nbsp; saya akan Share mengenai Desktop Environment. past
         <link>https://sibunglon.com/2017/08/21/mengenal-perintah-perintah-dasar-di-linux/</link>
         <pubDate>Mon, 21 Aug 2017 21:40:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/21/mengenal-perintah-perintah-dasar-di-linux/</guid>
-        <description>A. PendahuluanPada kesempatan kali ini, saya akan memposting beberapa perintah-perintah dasar dari sistem operasi linux. Untuk lebih jelasnya akan di jelaskan sebagai berikut.
-B. PengertianLinux identik dengan penggunaan console terminal yang mengharuskan kita menghafal perintah-perintah yang ada. Perintah-perintah tersebut bisa berupa singkatan atau nama asli sesuai fungsinya.
-C. Latar BelakangSemakin lama, semakin banyak para pengguna komputer yang menjadikan Linux sebagai Sistem Operasi utamanya.&amp;nbsp;Selain sifatnya yang open source, ternyata sistem operasi Linux ini juga lebih banyak menuntut kita untuk terus mempelajarinya.</description>
+        <description></description>
       </item>
     
       <item>
@@ -158,7 +124,7 @@ C. Latar BelakangSemakin lama, semakin banyak para pengguna komputer yang menjad
         <link>https://sibunglon.com/2017/08/04/apa-perbedaan-linux-dan-windows/</link>
         <pubDate>Fri, 04 Aug 2017 17:00:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/04/apa-perbedaan-linux-dan-windows/</guid>
-        <description>Perbedaan linux dengan windowsSebelum memahami perbedaan, berikut ini persamaan Linux dan Windows:Linux dan Windows sama-sama nama untuk sistem operasi &amp;ldquo;komputer&amp;rdquo; dan sama-sama punya beberapa jenis atau pilihan, misal Linux Nusantara, BlankOn, Ubuntu, Mandriva, Fedora, openSUSE, Slackware, Debian, Gentoo, Redhat, Mint, dll. Sedangkan di Windows ada Windows 98, Me, XP, Vista, 7, Server 2008, Mobile, dll. &amp;ldquo;komputer&amp;rdquo; itu bisa berupa pc, notebook, smartphone, dll.Persamaan adanya pilihan/jenis di atas sebenarynya tidak persis sama, karena jenis Windows itu hanya tersedia buatan MS (Microsoft), sedangkan jenis Linux itu bisa buatan beberapa pihak yg berbeda.</description>
+        <description></description>
       </item>
     
       <item>
@@ -166,7 +132,7 @@ C. Latar BelakangSemakin lama, semakin banyak para pengguna komputer yang menjad
         <link>https://sibunglon.com/2017/08/03/apa-itu-linux-dan-bagaimana-sejarah-singkatnya/</link>
         <pubDate>Thu, 03 Aug 2017 16:52:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/03/apa-itu-linux-dan-bagaimana-sejarah-singkatnya/</guid>
-        <description>Apa itu Linux?Linux (diucapkan ˈlɪnəks atau /ˈlɪnʊks/) adalah nama yang diberikan kepada sistem operasi komputer bertipe Unix. Linux merupakan salah satu contoh hasil pengembangan perangkat lunak bebas dan sumber terbuka utama. Seperti perangkat lunak bebas dan sumber terbuka lainnya pada umumnya, kode sumber Linux dapat dimodifikasi, digunakan dan didistribusikan kembali secara bebas oleh siapa saja.[2]Nama &#34;Linux&#34; berasal dari nama pembuatnya, yang diperkenalkan tahun 1991 oleh Linus Torvalds. Sistemnya, peralatan sistem dan pustakanya umumnya berasal dari sistem operasi GNU, yang diumumkan tahun 1983 oleh Richard Stallman.</description>
+        <description></description>
       </item>
     
       <item>
@@ -174,11 +140,7 @@ C. Latar BelakangSemakin lama, semakin banyak para pengguna komputer yang menjad
         <link>https://sibunglon.com/2017/07/25/apa-itu-mikrotik/</link>
         <pubDate>Tue, 25 Jul 2017 09:30:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/25/apa-itu-mikrotik/</guid>
-        <description>A. Pengertian MikroTik
-MikroTik RouterOS™ adalah sistem operasi dan perangkat lunak yang dapat digunakan untuk menjadikan komputer manjadi router network yang handal, mencakup berbagai fitur yang dibuat untuk ip network dan jaringan wireless, cocok digunakan oleh ISP dan provider hotspot.
-
-B. Sejarah Mikrotik
-MikroTikls [dengan trade name MikroTik®] didirikan tahun 1995 bertujuan mengembangkan sistem ISP dengan wireless. MikroTikls saat ini telah mendukung sistem ISP dengan wireless untuk jalur data internet di banyak negara, antara lain Iraq, Kosovo, Sri Lanka, Ghana dan banyak negara lainnya.</description>
+        <description></description>
       </item>
     
       <item>
@@ -186,10 +148,7 @@ MikroTikls [dengan trade name MikroTik®] didirikan tahun 1995 bertujuan mengemb
         <link>https://sibunglon.com/2017/07/22/sejarah-singkat-blc-telkom-klaten-serta-perkenalan-dan-pertemuan-pertama/</link>
         <pubDate>Sat, 22 Jul 2017 13:43:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/22/sejarah-singkat-blc-telkom-klaten-serta-perkenalan-dan-pertemuan-pertama/</guid>
-        <description>Assalamualaikum Wr.Wb
-&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Perkenalkan saya Faizar Septiawan atau bisa di panggil Icar berasal dari Bulukumba, Sulawesi Selatan dan sekolah di SMKN 1 Bulukumba. Dipostingan pertama ini saya akan tuliskan sejarah dan review sebuah tempat magang/prakerin yang saya tempati. Tempat tersebut bernama BLC Telkom Klaten, beralamat di&amp;nbsp;Jl.Srigading No.7 Tonggalan, Klaten Tengah
-Sejarah BLC Telkom Klaten
-&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;ldquo;Saya melihat Teknologi Informasi (TI) khususnya penggunaan dan pemanfaatan Internet di Indonesia seperti sebilah pisau yang sangat tajam dijual bebas dan dibeli oleh orang-orang tapi tidak ada keterangan penggunaannya, manfaat segi positif dan negatifnya.</description>
+        <description>Assalamualaikum Wr.WbPerkenalkan saya Faizar Septiawan atau bisa di panggil Icar berasal dari Bulukumba, Sulawesi Selatan dan sekolah di SMKN 1 Bulukumba. Dipostingan pertama ini saya akan tuliskan sejarah dan review sebuah tempat magang/prakerin yang saya tempati. Tempat tersebut bernama BLC Telkom Klaten, beralamat di Jl.Srigading No.7 Tonggalan, Klaten TengahSejarah BLC Telkom Klaten&amp;ldquo;Saya melihat Teknologi Informasi (TI) khususnya penggunaan dan pemanfaatan Internet di Indonesia seperti sebilah pisau yang sangat tajam dijual bebas dan dibeli oleh orang-orang tapi tidak ada keterangan penggunaannya, manfaat segi positif dan negatifnya.</description>
       </item>
     
   </channel>

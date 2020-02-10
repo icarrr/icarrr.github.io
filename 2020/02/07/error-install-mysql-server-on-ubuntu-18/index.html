@@ -39,7 +39,7 @@
   <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4194642&101" alt="" border="0"></a></noscript>
   
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.64.0" />
 
   
   
@@ -76,8 +76,6 @@ Btw, fortunately the terminal history on the laptop has not been cleared so I ca
   <meta itemprop="name" content="Error Install MySQL Server on Ubuntu 18">
 <meta itemprop="description" content="A few days ago mysql server was installed again, mysql was successfully installed and the service was successfully running but if you want to install another package, this problem must be solved by installing mysql server because mysql server installation is not 100% complete yet.
 Btw, fortunately the terminal history on the laptop has not been cleared so I can save the error message again on Ubuntu pastebin so that others can see the error clearly 😁.">
-
-
 <meta itemprop="datePublished" content="2020-02-07T23:55:13&#43;07:00" />
 <meta itemprop="dateModified" content="2020-02-07T23:55:13&#43;07:00" />
 <meta itemprop="wordCount" content="162">
@@ -85,7 +83,6 @@ Btw, fortunately the terminal history on the laptop has not been cleared so I ca
 
 
 <meta itemprop="keywords" content="Ayo Belajar Linux,LAMP Server,Error," />
-
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Error Install MySQL Server on Ubuntu 18"/>
 <meta name="twitter:description" content="A few days ago mysql server was installed again, mysql was successfully installed and the service was successfully running but if you want to install another package, this problem must be solved by installing mysql server because mysql server installation is not 100% complete yet.
@@ -116,11 +113,8 @@ Btw, fortunately the terminal history on the laptop has not been cleared so I ca
       <h1>Error Install MySQL Server on Ubuntu 18</h1>
     </header>
     <section><p>A few days ago mysql server was installed again, mysql was successfully installed and the service was successfully running but if you want to install another package, this problem must be solved by installing mysql server because mysql server installation is not 100% complete yet.</p>
-
 <p>Btw, fortunately the terminal history on the laptop has not been cleared so I can save the error message again on Ubuntu pastebin so that others can see the error clearly 😁. Can be seen <a href="https://paste.ubuntu.com/p/tPgd79HK6g/">here</a>.</p>
-
 <p>Then how do I solve the problem?</p>
-
 <p>In order to solve the problem, make it a habit to read the error message😄 From the error message it is actually clear the cause is <code>AppArmor parser error</code> so the rest of the search for a solution so that it doesn&rsquo;t fail to parse again the AppArmor. In this case, I just deleted the AppArmor using the command <code>sudo apt purge apparmor</code> then run the install mysql-server, and 100% mysql server successfully installed.</p>
 </section>
     <footer>

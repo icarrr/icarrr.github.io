@@ -39,7 +39,7 @@
   <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4194642&101" alt="" border="0"></a></noscript>
   
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.64.0" />
 
   
   
@@ -78,16 +78,13 @@ $ find ~ -name .DS_Store -delete This will find the ." />
 <meta itemprop="description" content="In the Apple macOS operating system, .DS_Store is a file that stores custom attributes of its containing folder, such as the position of icons or the choice of a background image. The name is an abbreviation of Desktop Services Store.
 But some people want to delete this file, including me. To delete this file simply run the following command in the macOS terminal or shell.
 $ find ~ -name .DS_Store -delete This will find the .">
-
-
 <meta itemprop="datePublished" content="2019-12-29T19:37:51&#43;07:00" />
 <meta itemprop="dateModified" content="2019-12-29T19:37:51&#43;07:00" />
-<meta itemprop="wordCount" content="197">
+<meta itemprop="wordCount" content="195">
 
 
 
 <meta itemprop="keywords" content="Others,macOS," />
-
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Automatic Remove .DS_Store on macOS"/>
 <meta name="twitter:description" content="In the Apple macOS operating system, .DS_Store is a file that stores custom attributes of its containing folder, such as the position of icons or the choice of a background image. The name is an abbreviation of Desktop Services Store.
@@ -119,19 +116,19 @@ $ find ~ -name .DS_Store -delete This will find the ."/>
       <h1>Automatic Remove .DS_Store on macOS</h1>
     </header>
     <section><p>In the Apple macOS operating system, .DS_Store is a file that stores custom attributes of its containing folder, such as the position of icons or the choice of a background image. The name is an abbreviation of Desktop Services Store.</p>
-
 <p>But some people want to delete this file, including me. To delete this file simply run the following command in the macOS terminal or shell.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ find ~ -name .DS_Store -delete</code></pre></div>
-<p>This will find the .DS_Store file in the home directory (~) and home subdirectory (~).</p>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ find ~ -name .DS_Store -delete
+</code></pre></div><p>This will find the .DS_Store file in the home directory (~) and home subdirectory (~).</p>
 <p>If you want to do it manually, you can run the command periodically. But if you want to delete .DS_Store automatically, then add the script to the crontab.</p>
-
-<p>1) To edit a cron file, simply run the following in a macOS terminal or shell.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ crontab -e</code></pre></div>
-<p>2) Add the following script to crontab.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">* * * * * find ~ -name .DS_Store -delete &gt; /dev/null <span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span> <span class="o">||</span> true</code></pre></div>
-<p>The command will be executed every minute. * * * * * is the determination of the time for command execution.</p>
-
+<ol>
+<li>To edit a cron file, simply run the following in a macOS terminal or shell.</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ crontab -e
+</code></pre></div><ol start="2">
+<li>Add the following script to crontab.</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">* * * * * find ~ -name .DS_Store -delete &gt; /dev/null 2&gt;<span class="p">&amp;</span><span class="m">1</span> <span class="o">||</span> <span class="nb">true</span>
+</code></pre></div><p>The command will be executed every minute. * * * * * is the determination of the time for command execution.</p>
 <p>If you want to change the command execution time, <a href="https://crontab.guru/">crontab.guru</a> can help you determine the command execution time as you wish.</p>
 </section>
     <footer>

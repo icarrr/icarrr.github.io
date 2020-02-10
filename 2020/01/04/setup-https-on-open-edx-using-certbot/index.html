@@ -39,7 +39,7 @@
   <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4194642&101" alt="" border="0"></a></noscript>
   
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.64.0" />
 
   
   
@@ -78,16 +78,13 @@ Certbot is a new breakthrough from the Let&rsquo;s Encrypt Web Security Certific
 <meta itemprop="description" content="By default Open edX does not provide an SSL configuration, but we can add it manually. As per the topic of this article, here I will enable HTTPS on Open edX using Certbot.
 Certbot is a new breakthrough from the Let&rsquo;s Encrypt Web Security Certificate Provider where Lets Encrypt provides SSL for free.
  Note: In the following example, in Open edX I point Course Management System (CMS) using the domain studio.">
-
-
 <meta itemprop="datePublished" content="2020-01-04T02:54:23&#43;07:00" />
 <meta itemprop="dateModified" content="2020-01-04T02:54:23&#43;07:00" />
-<meta itemprop="wordCount" content="1122">
+<meta itemprop="wordCount" content="1117">
 
 
 
 <meta itemprop="keywords" content="Ayo Belajar Linux,Open edX,Let&#39;s Encrypt," />
-
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Setup HTTPS on Open edX Using Certbot"/>
 <meta name="twitter:description" content="By default Open edX does not provide an SSL configuration, but we can add it manually. As per the topic of this article, here I will enable HTTPS on Open edX using Certbot.
@@ -119,69 +116,66 @@ Certbot is a new breakthrough from the Let&rsquo;s Encrypt Web Security Certific
       <h1>Setup HTTPS on Open edX Using Certbot</h1>
     </header>
     <section><p>By default Open edX does not provide an SSL configuration, but we can add it manually. As per the topic of this article, here I will enable HTTPS on Open edX using Certbot.</p>
-
 <p><em>Certbot</em> is a new breakthrough from the Let&rsquo;s Encrypt Web Security Certificate Provider where Lets Encrypt provides SSL for free.</p>
-
 <blockquote>
 <p>Note: In the following example, in Open edX I point <em>Course Management System (CMS)</em> using the domain <em>studio.elearning.sibunglon.com</em> while <em>Learning Management System (LMS)</em> using the domain <em>elearning.sibunglon.com</em>.</p>
 </blockquote>
-
 <p>Setup HTTPS Open edX:</p>
-
-<p>1) Log in to the Open edX server.</p>
-
-<p>2) Open the file <em>/etc/nginx/sites-enabled/lms</em> and find the following script snippet. Please use your favorite text editor.</p>
-
+<ol>
+<li>
+<p>Log in to the Open edX server.</p>
+</li>
+<li>
+<p>Open the file <em>/etc/nginx/sites-enabled/lms</em> and find the following script snippet. Please use your favorite text editor.</p>
+</li>
+</ol>
 <blockquote>
 <p>Note: Before updating the config, the initial configuration file should be backed up first. For backups, use the command <code>sudo cp /etc/nginx/sites-enabled/lms ~/</code>.</p>
 </blockquote>
 <div class="highlight"><pre class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">...</span>
   <span class="s">listen</span> <span class="mi">80</span> <span class="s">default_server</span><span class="p">;</span>
-<span class="k">...</span></code></pre></div>
-<p>Delete or comment on the LMS port configuration, then add the domain configuration.</p>
+<span class="k">...</span>
+</code></pre></div><p>Delete or comment on the LMS port configuration, then add the domain configuration.</p>
 <div class="highlight"><pre class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">...</span>
   <span class="c1">#listen 80 default_server;
 </span><span class="c1"></span>  <span class="s">server_name</span> <span class="s">elearning.sibunglon.com</span><span class="p">;</span>
-<span class="k">...</span></code></pre></div>
-<p>2) Open the file <em>/etc/nginx/sites-enabled/cms</em> and find the following script snippet. Please use your favorite text editor.</p>
-
+<span class="k">...</span>
+</code></pre></div><ol start="2">
+<li>Open the file <em>/etc/nginx/sites-enabled/cms</em> and find the following script snippet. Please use your favorite text editor.</li>
+</ol>
 <blockquote>
 <p>Note: Before updating the config, the initial configuration file should be backed up first. For backups, use the command <code>sudo cp /etc/nginx/sites-enabled/cms ~/</code>.</p>
 </blockquote>
 <div class="highlight"><pre class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">...</span>
   <span class="s">listen</span> <span class="mi">18010</span><span class="p">;</span>
-<span class="k">...</span></code></pre></div>
-<p>Delete or comment on the CMS port configuration, then add the domain configuration.</p>
+<span class="k">...</span>
+</code></pre></div><p>Delete or comment on the CMS port configuration, then add the domain configuration.</p>
 <div class="highlight"><pre class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">...</span>
   <span class="c1">#listen 18010;
 </span><span class="c1"></span>  <span class="s">server_name</span> <span class="s">studio.elearning.sibunglon.com</span><span class="p">;</span>
-<span class="k">...</span></code></pre></div>
-<p>3) Install certbot</p>
+<span class="k">...</span>
+</code></pre></div><ol start="3">
+<li>Install certbot</li>
+</ol>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo apt-get update
 $ sudo apt-get install software-properties-common
 $ sudo add-apt-repository ppa:certbot/certbot
 $ sudo apt-get update
-$ sudo apt-get install python-certbot-nginx </code></pre></div>
-<p>4) Generate a web security certificate (SSL) and enable HTTPS.</p>
-
+$ sudo apt-get install python-certbot-nginx 
+</code></pre></div><ol start="4">
+<li>Generate a web security certificate (SSL) and enable HTTPS.</li>
+</ol>
 <p>-) If you want to use 1 domain 1 SSL, generate SSL 1 per 1 as well as follows.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo certbot --nginx -d elearning.sibunglon.com</code></pre></div>
-<p>Re-generate SSL for CMS.</p>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo certbot --nginx -d elearning.sibunglon.com
+</code></pre></div><p>Re-generate SSL for CMS.</p>
 <p>-) If you want to use 1 SSL for 2 domains (LMS and CMS), then the command is as follows:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo certbot --nginx -d elearning.sibunglon.com -d studio.elearning.sibunglon.com</code></pre></div>
-<p>If the Open EdX server does not currently use certbot, when running the SSL generate command:</p>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo certbot --nginx -d elearning.sibunglon.com -d studio.elearning.sibunglon.com
+</code></pre></div><p>If the Open EdX server does not currently use certbot, when running the SSL generate command:</p>
 <p>-) You will be asked to enter an email. The email is used to send notifications at a later time if SSL will expire.</p>
-
 <p>-) You are asked to read the Terms of Service and will be given 2 choices, which are <em>(A) gree</em> if you want to continue generating and <em>C</em> to cancel the SSL generate process.</p>
-
 <p>-) Do you want to receive e-mails from the certbot team about their work that encrypts the web, EFF news, campaigns, and ways to support digital freedom. If you want to receive the email, input <em>Y</em> but if you don&rsquo;t want to receive the email then input <em>N</em>.</p>
-
 <p>When the SSL generation process is complete, you are asked to choose whether to direct HTTP traffic to HTTPS, or you can still use HTTP. If you want to redirect HTTP traffic to HTTPS then input <em>2</em>, whereas if you do not want to redirect HTTP traffic to HTTPS then input <em>1</em>.</p>
-
 <p>More or less like the following output I mean from these points.</p>
-
 <pre><code>Saving debug log to /var/log/letsencrypt/letsencrypt.log
 Plugins selected: Authenticator nginx, Installer nginx
 Enter email address (used for urgent renewal and security notices) (Enter 'c' to
@@ -236,9 +230,7 @@ IMPORTANT NOTES:
 
    Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate
    Donating to EFF:                    https://eff.org/donate-le
-</code></pre>
-
-<p>After this, HTTPS Open edX should be active, please try to access CMS and LMS using the domain.</p>
+</code></pre><p>After this, HTTPS Open edX should be active, please try to access CMS and LMS using the domain.</p>
 </section>
     <footer>
       <hr>

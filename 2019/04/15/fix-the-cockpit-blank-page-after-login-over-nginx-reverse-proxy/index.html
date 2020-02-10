@@ -39,7 +39,7 @@
   <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4194642&101" alt="" border="0"></a></noscript>
   
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.64.0" />
 
   
   
@@ -74,8 +74,6 @@
   
   <meta itemprop="name" content="Fix the Cockpit Blank Page After Login Over Nginx Reverse Proxy">
 <meta itemprop="description" content="Cockpit nge-Blank Setelah Login Jika diakses melalui Reverse Proxy Nginx? Apakah anda mengalami hal tersebut? Jangan takut, karena saya juga mengalami hal tersebut 😆 Beberapa yang hari lalu, saya mengakses cockpit server lab saya yang melalui reverse proxy NGINX, awalnya normal aja pas ngakses sampai ke halaman login namun ketika mencoba login, si cockpit hanya stuck di blank page. Wahhhh alhamdulillah dapat masalah baru lagi :D padahal sebelumnya normal aja, gak ada stuck di blank page.">
-
-
 <meta itemprop="datePublished" content="2019-04-15T05:09:24&#43;07:00" />
 <meta itemprop="dateModified" content="2019-04-15T05:09:24&#43;07:00" />
 <meta itemprop="wordCount" content="279">
@@ -83,7 +81,6 @@
 
 
 <meta itemprop="keywords" content="Ayo Belajar Linux,Cockpit,Error,Ngoprek," />
-
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Fix the Cockpit Blank Page After Login Over Nginx Reverse Proxy"/>
 <meta name="twitter:description" content="Cockpit nge-Blank Setelah Login Jika diakses melalui Reverse Proxy Nginx? Apakah anda mengalami hal tersebut? Jangan takut, karena saya juga mengalami hal tersebut 😆 Beberapa yang hari lalu, saya mengakses cockpit server lab saya yang melalui reverse proxy NGINX, awalnya normal aja pas ngakses sampai ke halaman login namun ketika mencoba login, si cockpit hanya stuck di blank page. Wahhhh alhamdulillah dapat masalah baru lagi :D padahal sebelumnya normal aja, gak ada stuck di blank page."/>
@@ -112,20 +109,12 @@
         <time datetime="2019-04-15 05:09:24&#43;0700">2019-04-15</time></small>
       <h1>Fix the Cockpit Blank Page After Login Over Nginx Reverse Proxy</h1>
     </header>
-    <section>
-
-<h3 id="cockpit-nge-blank-setelah-login-jika-diakses-melalui-reverse-proxy-nginx">Cockpit nge-Blank Setelah Login Jika diakses melalui Reverse Proxy Nginx?</h3>
-
+    <section><h3 id="cockpit-nge-blank-setelah-login-jika-diakses-melalui-reverse-proxy-nginx">Cockpit nge-Blank Setelah Login Jika diakses melalui Reverse Proxy Nginx?</h3>
 <p>Apakah anda mengalami hal tersebut? Jangan takut, karena saya juga mengalami hal tersebut 😆  Beberapa yang hari lalu, saya mengakses cockpit server lab saya yang melalui reverse proxy NGINX, awalnya normal aja pas ngakses sampai ke halaman login namun ketika mencoba login, si cockpit hanya stuck di blank page. Wahhhh alhamdulillah dapat masalah baru lagi :D padahal sebelumnya normal aja, gak ada stuck di blank page. Selang beberapa menit setelah nyelam di website resmi cockpit, masalah tersebut terselesaikan dengan beberapa config tambahan berikut ini:</p>
-
 <p>1) Buat sebuah file konfigurasi cockpit di direktori cockpit menggunakan command <code>vi /etc/cockpit/cockpit.conf</code> kemudian tambahkan script berikut:</p>
-
 <pre><code>[WebService]
 AllowUnencrypted=true
-</code></pre>
-
-<p>2) Update konfigurasi reverse proxy seperti berikut:</p>
-
+</code></pre><p>2) Update konfigurasi reverse proxy seperti berikut:</p>
 <pre><code>map $http_upgrade $connection_upgrade {
 default upgrade;
 '' close;
@@ -158,19 +147,13 @@ server {
     }
 
 }
-</code></pre>
-
-<p>Catatan:</p>
-
+</code></pre><p>Catatan:</p>
 <ul>
 <li>Untuk <em><strong>cockpit.sibunglon.com</strong></em> silahkan diganti sesuai domain kalian.</li>
 <li>Untuk ip server <em><strong>10.10.1.1</strong></em> silahkan diganti sesuai ip server kalian, jika nginx dan cockpit berada pada 1 server silahkan ganti ip <em><strong>10.10.1.1</strong></em> ke <em><strong>localhost</strong></em>.</li>
 </ul>
-
 <p>3) Verifikasi konfigurasi nginx menggunakan command <code>sudo nginx -t</code>, pastikan tidak ada yang error.</p>
-
 <p>4) Jika tidak ditemukan error pada verifikasi konfigurasi, silahkan restart nginx kalian menggunakan command <code>sudo systemctl restart nginx</code>. Namun jika ada error, periksa kembali konfigurasi yang kalian masukkan.</p>
-
 <p>Sampai tahap ini, cockpit sudah tidak blank page lagi setelah melewati proses login.</p>
 </section>
     <footer>
