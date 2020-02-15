@@ -5,10 +5,22 @@
     <description>Recent content in Ayo Belajar Linux on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Feb 2020 23:55:13 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 15 Feb 2020 14:57:22 +0700</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/ayo-belajar-linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Restrict Server Access via SSH Client</title>
+        <link>https://sibunglon.com/2020/02/15/restrict-server-access-via-ssh-client/</link>
+        <pubDate>Sat, 15 Feb 2020 14:57:22 +0700</pubDate>
+        <guid>https://sibunglon.com/2020/02/15/restrict-server-access-via-ssh-client/</guid>
+        <description>This article is related to Server Got Hacked, Crontab Has Been Modified.
+Limit IP Address To limit ip address of incoming connections to server via ssh, it can be done by:
+  Edit file /etc/hosts.allow.
+  Then add the following script.
+  sshd : ip_attacker : deny Save and exit.  Limit Users or Groups To limit users or groups of incoming connections to server via ssh, it can be done by:</description>
+      </item>
     
       <item>
         <title>Error Install MySQL Server on Ubuntu 18</title>
