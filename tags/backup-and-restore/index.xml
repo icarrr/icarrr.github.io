@@ -24,7 +24,14 @@ If you want to migrate a database from environment A with SQL Server version A t
         <link>https://sibunglon.com/2017/10/19/backup-vm-proxmox-ke-local-harddisk/</link>
         <pubDate>Thu, 19 Oct 2017 18:47:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/19/backup-vm-proxmox-ke-local-harddisk/</guid>
-        <description>A. PendahuluanPada kesempatan ini saya share bagaimana agar config di debian atau apapun yang ada diproxmox tidak hilang bila terjadi sesuatuB. PengertianBakcup data adalah salah satu langkah untuk menyimpan data agar saat data itu hilang kita masih memiliki data simpanannya agar tidak hilang.C. Latar belakangMembuat secondary data agar saat data primer nya hilang kita masih punya data secondari nya.D. TujuanAgar data yang saat penting itu tidak hilang karena ada kesalahan dan dapat menyerlamatkan pekerjaan kita.</description>
+        <description>A. Pendahuluan
+Pada kesempatan ini saya share bagaimana agar config di debian atau apapun yang ada diproxmox tidak hilang bila terjadi sesuatu
+B. Pengertian
+Bakcup data adalah salah satu langkah untuk menyimpan data agar saat data itu hilang kita masih memiliki data simpanannya agar tidak hilang.
+C. Latar belakang
+Membuat secondary data agar saat data primer nya hilang kita masih punya data secondari nya.
+D. Tujuan
+Agar data yang saat penting itu tidak hilang karena ada kesalahan dan dapat menyerlamatkan pekerjaan kita.</description>
       </item>
     
       <item>
@@ -32,7 +39,13 @@ If you want to migrate a database from environment A with SQL Server version A t
         <link>https://sibunglon.com/2017/09/22/backup-and-restore-mikrotik/</link>
         <pubDate>Fri, 22 Sep 2017 03:39:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/22/backup-and-restore-mikrotik/</guid>
-        <description></description>
+        <description>1. Pendahuluan
+A. Pengertian
+Di bidang teknologi informasi, backup, atau proses back up, mengacu pada penyalinan dan pengarsipan data sehingga bisa digunakan untuk mengembalikan dokumen asli setelah terjadi peristiwa kehilangan data. Bentuk kata kerja adalah untuk membuat cadangan dua kata, sedangkan kata benda adalah cadangan.
+Restore , mengacu pada proses pengembalian data menggunakan file backup.
+B. Latar Belakang
+Membackup data mikrotik agar saat perangkat rusak kita punya salinan konfigurasinya.
+C. Hasil Yang Diharapkan</description>
       </item>
     
       <item>

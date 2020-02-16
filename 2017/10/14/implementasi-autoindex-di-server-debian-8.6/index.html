@@ -39,7 +39,7 @@
   <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4194642&101" alt="" border="0"></a></noscript>
   
 
-  <meta name="generator" content="Hugo 0.64.0" />
+  <meta name="generator" content="Hugo 0.64.1" />
 
   
   
@@ -65,7 +65,10 @@
   <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
 
   <meta property="og:title" content="Implementasi Autoindex di Server Debian 8.6" />
-<meta property="og:description" content="" />
+<meta property="og:description" content="A. Pendahuluan
+Pada kesempatan ini saya akan mengimplementasikan autoindex di debian server 8-6
+B. Pengertian
+Auto Index adalah kemampuan untuk komputer untuk memindai volume besar dokumen terhadap dikendalikan kosakata, taksonomi , tesaurus atau ontologi dan menggunakan istilah-istilah dikendalikan untuk cepat dan efektif Indeks deposit dokumen yang besar. Karena jumlah dokumen secara eksponensial meningkat dengan proliferasi dari Internet , pengindeksan otomatis akan menjadi penting untuk mempertahankan kemampuan untuk menemukan informasi yang relevan di lautan ir-relevan informasi." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://sibunglon.com/2017/10/14/implementasi-autoindex-di-server-debian-8.6/" />
 <meta property="article:published_time" content="2017-10-14T10:36:00+00:00" />
@@ -73,17 +76,23 @@
 
   
   <meta itemprop="name" content="Implementasi Autoindex di Server Debian 8.6">
-<meta itemprop="description" content="">
+<meta itemprop="description" content="A. Pendahuluan
+Pada kesempatan ini saya akan mengimplementasikan autoindex di debian server 8-6
+B. Pengertian
+Auto Index adalah kemampuan untuk komputer untuk memindai volume besar dokumen terhadap dikendalikan kosakata, taksonomi , tesaurus atau ontologi dan menggunakan istilah-istilah dikendalikan untuk cepat dan efektif Indeks deposit dokumen yang besar. Karena jumlah dokumen secara eksponensial meningkat dengan proliferasi dari Internet , pengindeksan otomatis akan menjadi penting untuk mempertahankan kemampuan untuk menemukan informasi yang relevan di lautan ir-relevan informasi.">
 <meta itemprop="datePublished" content="2017-10-14T10:36:00&#43;00:00" />
 <meta itemprop="dateModified" content="2017-10-14T10:36:00&#43;00:00" />
-<meta itemprop="wordCount" content="0">
+<meta itemprop="wordCount" content="273">
 
 
 
 <meta itemprop="keywords" content="BLC Telkom Klaten,Ayo Belajar Linux,Installasi,Ngoprek," />
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Implementasi Autoindex di Server Debian 8.6"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:description" content="A. Pendahuluan
+Pada kesempatan ini saya akan mengimplementasikan autoindex di debian server 8-6
+B. Pengertian
+Auto Index adalah kemampuan untuk komputer untuk memindai volume besar dokumen terhadap dikendalikan kosakata, taksonomi , tesaurus atau ontologi dan menggunakan istilah-istilah dikendalikan untuk cepat dan efektif Indeks deposit dokumen yang besar. Karena jumlah dokumen secara eksponensial meningkat dengan proliferasi dari Internet , pengindeksan otomatis akan menjadi penting untuk mempertahankan kemampuan untuk menemukan informasi yang relevan di lautan ir-relevan informasi."/>
 
   
 
@@ -109,7 +118,71 @@
         <time datetime="2017-10-14 10:36:00&#43;0000">2017-10-14</time></small>
       <h1>Implementasi Autoindex di Server Debian 8.6</h1>
     </header>
-    <section><!-- raw HTML omitted -->
+    <section><p><strong>A. Pendahuluan</strong></p>
+<p>Pada kesempatan ini saya akan mengimplementasikan autoindex di debian server 8-6</p>
+<p><strong>B. Pengertian</strong></p>
+<p>Auto Index adalah kemampuan untuk komputer untuk memindai volume besar dokumen terhadap <a href="https://translate.googleusercontent.com/translate_c?depth=1&amp;hl=id&amp;prev=search&amp;rurl=translate.google.co.id&amp;sl=en&amp;sp=nmt4&amp;u=https://en.wikipedia.org/wiki/Controlled_vocabulary&amp;usg=ALkJrhjoy9KRvkSXhn8fgq6529L13OYbkQ" title="kosa kata terkontrol">dikendalikan</a> kosakata, taksonomi , tesaurus atau ontologi dan menggunakan istilah-istilah dikendalikan untuk cepat dan efektif Indeks deposit dokumen yang besar. Karena jumlah dokumen secara eksponensial meningkat dengan proliferasi dari Internet , pengindeksan otomatis akan menjadi penting untuk mempertahankan kemampuan untuk menemukan informasi yang relevan di lautan ir-relevan informasi.</p>
+<p><strong>C. Latar belakang</strong></p>
+<p>Latar belakang dalam installasi ini adalah untuk memindai dokumen dengan volume yang besar dengan cepat, mudah dan lebih efektif.</p>
+<p><strong>D. Tujuan</strong></p>
+<p>Mempermudah kita dalam memindai dokumen dengan volume yang besar.</p>
+<p><strong>E. Hasil yang diharapkan</strong></p>
+<p>Dapat mengikuti langkah kerjanya dengan baik dan benar</p>
+<p><strong>F. Alat dan bahan</strong></p>
+<ol>
+<li>File autoindex</li>
+<li>Laptop/pc</li>
+</ol>
+<p><strong>G. Jangka waktu pelaksanaan</strong></p>
+<p>Waktu yang diperlukan dalam install auto index ini sekitar 5-10 menit.</p>
+<p><strong>H. Langkah kerja</strong></p>
+<ol>
+<li>Copy master file autoindex ke direktori server</li>
+</ol>
+<p><img src="https://1.bp.blogspot.com/-9JkD7idJ4B0/W71yHAoyZvI/AAAAAAAAE60/eaT3Z3fgoXUixhNVOhGKNcm8J8F5lP4JQCLcBGAs/s1600/Screenshot_6.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
+<ol start="2">
+<li>Kemudian cek file</li>
+</ol>
+<p><img src="https://1.bp.blogspot.com/-u9ZUfU3szqA/W71yPQlRhtI/AAAAAAAAE64/gi9AdugcifYVz_FsH8pEsg5FYJW0gf9OQCLcBGAs/s1600/Screenshot_8.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
+<ol start="3">
+<li>Pindahkan filenya ke direktori /var/www/html</li>
+</ol>
+<p><img src="https://3.bp.blogspot.com/-Qxb5D5mf-m4/W71yUF0P4AI/AAAAAAAAE68/i99yNiVUeMcmyhOP8nv2SM_qUE8dF5UlQCLcBGAs/s1600/Screenshot_9.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
+<ol start="4">
+<li>Masuk ke direktori tersebut, kemudian cek filenya</li>
+</ol>
+<p><img src="https://3.bp.blogspot.com/-GCnHsiKicwY/W71yY0fv9HI/AAAAAAAAE7E/NEhNN9DQcI0wBGs5G1jccX60tVS-PKbOwCLcBGAs/s1600/Screenshot_10.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
+<ol start="5">
+<li>Ekstrak dan hapus file zip autoindexnya agar tidak memenuhi drive</li>
+</ol>
+<p><img src="https://4.bp.blogspot.com/-6rPjoeIoKAY/W71yh5LH2RI/AAAAAAAAE7M/bOBRePcwgpACC6JV11D9K7n8D7tzrKzSwCLcBGAs/s1600/Screenshot_13.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
+<ol start="6">
+<li>Karena folder hasil ekstraknya memiliki nama yang agak panjang, maka ubah lah nama foldernya</li>
+</ol>
+<p><img src="https://2.bp.blogspot.com/-OyqbBOpFsfA/W71ypXtmAgI/AAAAAAAAE7c/HysPthUeArI80gfDDHfLAyMZntT1oWBugCLcBGAs/s1600/Screenshot_14.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
+<p><img src="https://2.bp.blogspot.com/-1au9ESIJhlA/W71ype0NlrI/AAAAAAAAE7Y/O5wh5GlecNIOVh4v6m2xhn4YVA1nrLFvgCLcBGAs/s1600/Screenshot_15.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
+<ol start="7">
+<li>Berikan hak akses sebagai root</li>
+</ol>
+<p><img src="https://4.bp.blogspot.com/-l0n6umn7sAI/W71y7tADGDI/AAAAAAAAE7w/j7q1vIOHHcYjLdVb76bW3BouyLvjY4FfACLcBGAs/s1600/Screenshot_18.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
+<ol start="8">
+<li>Bukabrowser, kemudian pada urlnya ketikkan ip_server/nama_folder</li>
+</ol>
+<p><img src="https://3.bp.blogspot.com/-kkvwVOMsvvU/W71y17_7UXI/AAAAAAAAE7k/FLnI-OgK-kMTo5aYwAJCVWfUrJOUvZzdQCLcBGAs/s1600/Screenshot_19.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
+<ol start="9">
+<li>Scroll ke halaman paling bawah kemudian klik “configure”</li>
+</ol>
+<p><img src="https://2.bp.blogspot.com/-MqBMPkoXhoI/W71zBBCaRGI/AAAAAAAAE74/ndtTbhW3V3IFS0ayepvMaeDc1jaFW-jxQCLcBGAs/s1600/Screenshot_20.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
+<ol start="10">
+<li>Klik continue, dan autoindex sudah selesai terinstall</li>
+</ol>
+<p><img src="https://2.bp.blogspot.com/-KywIX_8OV0w/W71zHsa31QI/AAAAAAAAE8A/KXV82nC7DFQtzvXLH9npFgbUKXBxZD1fgCLcBGAs/s1600/Screenshot_21.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
+<p><img src="https://2.bp.blogspot.com/-BC13bZVdanI/W71zH1en_aI/AAAAAAAAE8E/DK07p_Qul0kHi-6X6diMVKVRySzDT5BCgCLcBGAs/s1600/Screenshot_22.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
+<p><strong>I. Temuan masalah</strong></p>
+<p>Masalah yang saya temukan yaitu mengalami error saat ingin copy filenya ke server karena direktori tujuannya yaitu /var/www/html/ hanya bisa di edit oleh si super user sedangkan saya login remote sshnya menggunakan user biasa</p>
+<p><img src="https://2.bp.blogspot.com/-OAXJOdxb0T8/W71zQvnsMiI/AAAAAAAAE8M/Zdep5xkZxKgYAai2GLit8nMr3ZJ20K0EwCLcBGAs/s1600/Screenshot_7-error.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
+<p><strong>J. Kesimpulan</strong></p>
+<p>Dengan kita selesai menginstall ini ketika kita mau memindainya jaddi lebih cepat, akurat dan lebih menghemat waktu.</p>
 </section>
     <footer>
       <hr>

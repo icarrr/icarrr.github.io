@@ -44,7 +44,9 @@ Nginx, banyak orang membicarakannya meskipun salah dipelafalannya. Dulu saya jug
         <link>https://sibunglon.com/2018/10/26/berkenalan-dengan-caddy-server/</link>
         <pubDate>Fri, 26 Oct 2018 11:52:00 +0000</pubDate>
         <guid>https://sibunglon.com/2018/10/26/berkenalan-dengan-caddy-server/</guid>
-        <description></description>
+        <description>Caddy? Caddy itu apaan? Fungsinya apa aja?
+Caddy kadang-kadang diklarifikasi sebagai web server Caddy bersifat open source, server web HTTP / 2- enabled yang ditulis dalam Go . Ia menggunakan pustaka standar Go untuk fungsi HTTP-nya. Salah satu fitur paling terkenal Caddy adalah mengaktifkan HTTPS secara default.
+Caddy mendukung berbagai teknologi Web dan tersedia sebagai biner yang dikompilasi secara statis untuk sistem operasi Windows, Mac, Linux, Android, dan BSD pada arsitektur i386, amd64, dan ARM.</description>
       </item>
     
       <item>
@@ -100,7 +102,10 @@ Nginx, banyak orang membicarakannya meskipun salah dipelafalannya. Dulu saya jug
         <link>https://sibunglon.com/2017/08/29/apa-itu-hotspot/</link>
         <pubDate>Tue, 29 Aug 2017 12:57:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/29/apa-itu-hotspot/</guid>
-        <description></description>
+        <description>A. Pengertian
+Area bersinyal (bahasa Inggris: Hotspot) merujuk pada tempat-tempat tertentu (biasanya tempat umum) yang memiliki layanan internet dengan menggunakan teknologi Wireless LAN, seperti pada perguruan tinggi, mal, plaza, perpustakaan, restoran ataupun bandar udara. Layanan internet seperti ini, ada yang berbayar dan yang tidak (gratis).
+Sejarah Hotspot
+Konsep ini pertama kali dikemukakan pada tahun 1993 oleh Bret Stewart sewaktu konferensi Networld dan Interop, di San Fransisco. Dengan pemanfaatan teknologi ini, setiap orang dapat mengakses jaringan internet melalui komputer/laptop/HP/PDA yang mereka miliki di lokasi-lokasi area bersinyal ini tersedia, tentunya perangkat komputer/laptop/ponsel/PDA tersebut harus memiliki teknologi wi-fi.</description>
       </item>
     
       <item>
@@ -124,7 +129,10 @@ Nginx, banyak orang membicarakannya meskipun salah dipelafalannya. Dulu saya jug
         <link>https://sibunglon.com/2017/08/04/apa-perbedaan-linux-dan-windows/</link>
         <pubDate>Fri, 04 Aug 2017 17:00:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/04/apa-perbedaan-linux-dan-windows/</guid>
-        <description></description>
+        <description>Perbedaan linux dengan windows
+Sebelum memahami perbedaan, berikut ini persamaan Linux dan Windows:
+Linux dan Windows sama-sama nama untuk sistem operasi &amp;ldquo;komputer&amp;rdquo; dan sama-sama punya beberapa jenis atau pilihan, misal Linux Nusantara, BlankOn, Ubuntu, Mandriva, Fedora, openSUSE, Slackware, Debian, Gentoo, Redhat, Mint, dll. Sedangkan di Windows ada Windows 98, Me, XP, Vista, 7, Server 2008, Mobile, dll. &amp;ldquo;komputer&amp;rdquo; itu bisa berupa pc, notebook, smartphone, dll.
+Persamaan adanya pilihan/jenis di atas sebenarynya tidak persis sama, karena jenis Windows itu hanya tersedia buatan MS (Microsoft), sedangkan jenis Linux itu bisa buatan beberapa pihak yg berbeda.</description>
       </item>
     
       <item>
@@ -132,7 +140,9 @@ Nginx, banyak orang membicarakannya meskipun salah dipelafalannya. Dulu saya jug
         <link>https://sibunglon.com/2017/08/03/apa-itu-linux-dan-bagaimana-sejarah-singkatnya/</link>
         <pubDate>Thu, 03 Aug 2017 16:52:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/03/apa-itu-linux-dan-bagaimana-sejarah-singkatnya/</guid>
-        <description></description>
+        <description>Apa itu Linux?
+Linux (diucapkan ˈlɪnəks atau /ˈlɪnʊks/) adalah nama yang diberikan kepada sistem operasi komputer bertipe Unix. Linux merupakan salah satu contoh hasil pengembangan perangkat lunak bebas dan sumber terbuka utama. Seperti perangkat lunak bebas dan sumber terbuka lainnya pada umumnya, kode sumber Linux dapat dimodifikasi, digunakan dan didistribusikan kembali secara bebas oleh siapa saja.
+Nama &amp;ldquo;Linux&amp;rdquo; berasal dari nama pembuatnya, yang diperkenalkan tahun 1991 oleh Linus Torvalds. Sistemnya, peralatan sistem dan pustakanya umumnya berasal dari sistem operasi GNU, yang diumumkan tahun 1983 oleh Richard Stallman.</description>
       </item>
     
       <item>
@@ -140,7 +150,10 @@ Nginx, banyak orang membicarakannya meskipun salah dipelafalannya. Dulu saya jug
         <link>https://sibunglon.com/2017/07/25/apa-itu-mikrotik/</link>
         <pubDate>Tue, 25 Jul 2017 09:30:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/25/apa-itu-mikrotik/</guid>
-        <description></description>
+        <description>A. Pengertian MikroTik
+MikroTik RouterOS™ adalah sistem operasi dan perangkat lunak yang dapat digunakan untuk menjadikan komputer manjadi router network yang handal, mencakup berbagai fitur yang dibuat untuk ip network dan jaringan wireless, cocok digunakan oleh ISP dan provider hotspot.
+B. Sejarah Mikrotik
+MikroTikls [dengan trade name MikroTik®] didirikan tahun 1995 bertujuan mengembangkan sistem ISP dengan wireless. MikroTikls saat ini telah mendukung sistem ISP dengan wireless untuk jalur data internet di banyak negara, antara lain Iraq, Kosovo, Sri Lanka, Ghana dan banyak negara lainnya.</description>
       </item>
     
       <item>

@@ -561,7 +561,15 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2018/11/06/gerakan-multi-touch-macbook-di-linux/</link>
         <pubDate>Tue, 06 Nov 2018 15:14:00 +0000</pubDate>
         <guid>https://sibunglon.com/2018/11/06/gerakan-multi-touch-macbook-di-linux/</guid>
-        <description></description>
+        <description>Jika Anda pernah menggunakan MacBook, pasti tahu betapa menyenangkan dan bermanfaatnya gerakan trackpad untuk mengubah desktop, menampilkan semua jendela yang terbuka, dan pinch-to-zoom.
+Di linux anda juga menggunakan fitur ini dengan bantuan aplikasi fusuma, berikut installasi dan konfigurasinya.
+1. Berikan izin untuk membaca perangkat touchpad
+sudo gpasswd -a $USER input
+Install libinput-tools  sudo apt-get install libinput-tools
+3. Install Fusuma
+sudo gem install fusuma
+4. Instal xdotool (opsional)
+sudo apt-get install xdotool</description>
       </item>
     
       <item>
@@ -569,7 +577,10 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2018/10/28/installasi-caddy-server-di-sistem-operasi-windows/</link>
         <pubDate>Sun, 28 Oct 2018 21:20:00 +0000</pubDate>
         <guid>https://sibunglon.com/2018/10/28/installasi-caddy-server-di-sistem-operasi-windows/</guid>
-        <description></description>
+        <description>Setelah berkenalan dengan si Caddy Server pada beberapa hari yang lalu, sekarang waktunya bermain dengan si Caddy Server.
+Apa Saja yang dibutuhkan? Pastikan anda telah memiliki file master Caddy Server, jika belum silahkan dari situs resminya.
+Menjalankan Caddy Server pada sistem operasi windows
+ Buka file hasil download Caddy Server  Copy semua isi dari file master tersebut  Tentukan path Caddy, buat folder baru yang akan menampung semua file yang telah dicopy kemudian paste di folder tersebut  Untuk menjalankan Caddy Server pada sistem operasi windows cukup klik 2 kali pada file caddy.</description>
       </item>
     
       <item>
@@ -577,7 +588,9 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
         <link>https://sibunglon.com/2018/10/26/berkenalan-dengan-caddy-server/</link>
         <pubDate>Fri, 26 Oct 2018 11:52:00 +0000</pubDate>
         <guid>https://sibunglon.com/2018/10/26/berkenalan-dengan-caddy-server/</guid>
-        <description></description>
+        <description>Caddy? Caddy itu apaan? Fungsinya apa aja?
+Caddy kadang-kadang diklarifikasi sebagai web server Caddy bersifat open source, server web HTTP / 2- enabled yang ditulis dalam Go . Ia menggunakan pustaka standar Go untuk fungsi HTTP-nya. Salah satu fitur paling terkenal Caddy adalah mengaktifkan HTTPS secara default.
+Caddy mendukung berbagai teknologi Web dan tersedia sebagai biner yang dikompilasi secara statis untuk sistem operasi Windows, Mac, Linux, Android, dan BSD pada arsitektur i386, amd64, dan ARM.</description>
       </item>
     
       <item>
@@ -644,7 +657,14 @@ Nextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan lay
         <link>https://sibunglon.com/2017/10/19/backup-vm-proxmox-ke-local-harddisk/</link>
         <pubDate>Thu, 19 Oct 2017 18:47:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/19/backup-vm-proxmox-ke-local-harddisk/</guid>
-        <description>A. PendahuluanPada kesempatan ini saya share bagaimana agar config di debian atau apapun yang ada diproxmox tidak hilang bila terjadi sesuatuB. PengertianBakcup data adalah salah satu langkah untuk menyimpan data agar saat data itu hilang kita masih memiliki data simpanannya agar tidak hilang.C. Latar belakangMembuat secondary data agar saat data primer nya hilang kita masih punya data secondari nya.D. TujuanAgar data yang saat penting itu tidak hilang karena ada kesalahan dan dapat menyerlamatkan pekerjaan kita.</description>
+        <description>A. Pendahuluan
+Pada kesempatan ini saya share bagaimana agar config di debian atau apapun yang ada diproxmox tidak hilang bila terjadi sesuatu
+B. Pengertian
+Bakcup data adalah salah satu langkah untuk menyimpan data agar saat data itu hilang kita masih memiliki data simpanannya agar tidak hilang.
+C. Latar belakang
+Membuat secondary data agar saat data primer nya hilang kita masih punya data secondari nya.
+D. Tujuan
+Agar data yang saat penting itu tidak hilang karena ada kesalahan dan dapat menyerlamatkan pekerjaan kita.</description>
       </item>
     
       <item>
@@ -652,7 +672,9 @@ Nextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan lay
         <link>https://sibunglon.com/2017/10/19/implementasi-manual-subnetting-kelas-c/</link>
         <pubDate>Thu, 19 Oct 2017 17:58:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/19/implementasi-manual-subnetting-kelas-c/</guid>
-        <description></description>
+        <description>A.Pendahuluan
+Pada kesempatan kali ini saya akan berbagi tentang ip/subnetting gays. kenapa saya membahas ini karena kita sebagai nak jaringan mesti perlu paham begaimana cara subneting.
+ Pengertian  Subnetting adalah upaya/proses untuk memecah sebuah network dengan jumlah host yang cukup banyak, menjadi beberapa network dengan jumlah host yang lebih sedikit. Gunanya Subnetting untuk menentukan batas network ID dalam suatu subnet, Memperbanyak jumlah network (LAN), Mengurangi jumlah host dalam satu network, untuk mengurangi tingkat kongesti (gangguan/ tabrakan) lalulintas data dalam suatu network.</description>
       </item>
     
       <item>
@@ -660,7 +682,10 @@ Nextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan lay
         <link>https://sibunglon.com/2017/10/18/implementasi-pembelajaran-online-dengan-moodle-installasi/</link>
         <pubDate>Wed, 18 Oct 2017 17:13:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/18/implementasi-pembelajaran-online-dengan-moodle-installasi/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pada kesempatan kali ini saya akan mengimplementasikan tentang apa yang sudah saya pelajari yaitu Moodle
+B. Pengertian
+Moodle (singkatan dari Modular Object-Oriented Dynamic Learning Environment) adalah paket perangkat lunak yang diproduksi untuk kegiatan belajar berbasis internet dan situs web yang menggunakan prinsip social constructionist pedagogy. Moodle merupakan salah satu aplikasi dari konsep dan mekanisme belajar mengajar yang memanfaatkan teknologi informasi, yang dikenal dengan konsep pembelajaran elktronik atau e-learning. Moodle dapat digunakan secara bebas sebagai produk sumber terbuka (open source) di bawah lisensi GNU.</description>
       </item>
     
       <item>
@@ -684,7 +709,10 @@ Nextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan lay
         <link>https://sibunglon.com/2017/10/17/install-slims-8-akasia-di-debian-server/</link>
         <pubDate>Tue, 17 Oct 2017 15:17:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/17/install-slims-8-akasia-di-debian-server/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pada kesempatan ini saya sharing tentang bagaimana langkah-langkah penginstallan slims untuk manajamen perpustakaan online.
+B. Pengertian
+Senayan, atau lengkapnya Senayan Library Management System (SLiMS), adalah perangkat lunak sistem manajemen perpustakaan (library management system) sumber terbuka yang dilisensikan di bawah GPL v3. Aplikasi Web yang dikembangkan oleh tim dari Pusat Informasi dan Humas Departemen Pendidikan Nasional Repubik Indonesia ini dibangun dengan menggunakan PHP, basis data MySQL, dan Pengontrol versi Git.</description>
       </item>
     
       <item>
@@ -700,7 +728,16 @@ Nextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan lay
         <link>https://sibunglon.com/2017/10/16/install-cms-sekolahku-di-server/</link>
         <pubDate>Mon, 16 Oct 2017 11:16:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/16/install-cms-sekolahku-di-server/</guid>
-        <description>A. PendahuluanPada kesempatan kali ini saya akan mengimplementasikan membangun website sekolah di server dengan CMS.B. PengertianCMS adalah suatu /sebuah aplikasi yang berfungsi merubah suatu menu atau memanipulasi data dari suatu situs atau website.C. Latar belakangMempelajari sistem informasi sekolah dengan CMS dan mengimplementasikannya.D. TujuanMempunyai maksud untuk memudahkan saya mendapatkan informasi sekolah di website tersebut.E. Hasil yang diharapkanMempunyai harapan agar nanti kedepannya bisa membangun website ini di sekolah.F. Alat dan bahanPC/LaptopKoneksi InternetFile CMS SekolahG.</description>
+        <description>A. Pendahuluan
+Pada kesempatan kali ini saya akan mengimplementasikan membangun website sekolah di server dengan CMS.
+B. Pengertian
+CMS adalah suatu /sebuah aplikasi yang berfungsi merubah suatu menu atau memanipulasi data dari suatu situs atau website.
+C. Latar belakang
+Mempelajari sistem informasi sekolah dengan CMS dan mengimplementasikannya.
+D. Tujuan
+Mempunyai maksud untuk memudahkan saya mendapatkan informasi sekolah di website tersebut.
+E. Hasil yang diharapkan
+Mempunyai harapan agar nanti kedepannya bisa membangun website ini di sekolah.</description>
       </item>
     
       <item>
@@ -716,7 +753,10 @@ Nextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan lay
         <link>https://sibunglon.com/2017/10/14/implementasi-autoindex-di-server-debian-8.6/</link>
         <pubDate>Sat, 14 Oct 2017 10:36:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/14/implementasi-autoindex-di-server-debian-8.6/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pada kesempatan ini saya akan mengimplementasikan autoindex di debian server 8-6
+B. Pengertian
+Auto Index adalah kemampuan untuk komputer untuk memindai volume besar dokumen terhadap dikendalikan kosakata, taksonomi , tesaurus atau ontologi dan menggunakan istilah-istilah dikendalikan untuk cepat dan efektif Indeks deposit dokumen yang besar. Karena jumlah dokumen secara eksponensial meningkat dengan proliferasi dari Internet , pengindeksan otomatis akan menjadi penting untuk mempertahankan kemampuan untuk menemukan informasi yang relevan di lautan ir-relevan informasi.</description>
       </item>
     
       <item>
@@ -724,7 +764,10 @@ Nextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan lay
         <link>https://sibunglon.com/2017/10/14/atasi-info-php-tidak-tampil-atau-not-working/</link>
         <pubDate>Sat, 14 Oct 2017 10:25:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/14/atasi-info-php-tidak-tampil-atau-not-working/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pada postingan kali ini, saya akan memberikan solusi yang biasa menjadi permasalahan saat menginstall LAMP Server di linux
+B. Pengertian
+PHP info adalah istilah untuk menyebutkan sebuah halaman yang berisi informasi mengenai versi PHP yang digunakan oleh suatu server, biasanya pada halaman PHP Info akan di informasikan banyak hal selain versi nya itu sendiri. phpinfo() biasanya digunakan untuk memeriksa pengaturan konfigurasi dan variabel standar yang tersedia pada sistem tertentu.</description>
       </item>
     
       <item>
@@ -732,7 +775,14 @@ Nextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan lay
         <link>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-install-aplikasi-berbasis-web/</link>
         <pubDate>Fri, 13 Oct 2017 10:22:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-install-aplikasi-berbasis-web/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pada kesempatan ini, saya kembali memposting tentang dasar-dasar setelahi install server.
+B. Pengertian
+Aplikasi Berbasis Web adalah sebuah aplikasi yang dapat diakses melalui internet atau intranet, dan pada sekarang ini ternyata lebih banyak dan lebih luas dalam pemakaiannya.
+C. Latar belakang
+Setelah kita menginstall debian di proxmox tentunya kita harus tau hal hal apa saja yang harus dilakukan setelahnya.
+D. Tujuan
+Agar server dapat bekerja secara optimal saat melayani komputer client.</description>
       </item>
     
       <item>
@@ -740,7 +790,13 @@ Nextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan lay
         <link>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-installasi-lamp-server/</link>
         <pubDate>Fri, 13 Oct 2017 10:09:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-installasi-lamp-server/</guid>
-        <description></description>
+        <description>](https://3.bp.blogspot.com/-ywyKkRlhtrk/W71t-u86V-I/AAAAAAAAE5U/2yysEGlwYi0cpx63j04poUnAf2cZAvesQCLcBGAs/s1600/lamp_stack.jpg)
+A. Pendahuluan
+Pada kesempatan ini saya memposting lagi dan masih mengenai server
+B. Pengertian
+LAMP adalah istilah yang merupakan singkatan dariLinux,Apache,MySQL danPerl/PHP/Phyton. Merupakan sebuah paket perangkat lunak bebas yang digunakan untuk menjalankan sebuah aplikasi secara lengkap.
+Komponen-komponen dari LAMP :
+ Linux – sistem operasi Apache HTTP Server – web server MariaDB atau MySQL – sistem basis data PHP atau Perl atau Python – bahasa pemrograman yang dipakai  C.</description>
       </item>
     
       <item>
@@ -756,7 +812,10 @@ Nextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan lay
         <link>https://sibunglon.com/2017/10/12/hal-hal-yang-harus-dilakukan-setelah-install-server/</link>
         <pubDate>Thu, 12 Oct 2017 09:31:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/12/hal-hal-yang-harus-dilakukan-setelah-install-server/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pada kesempatan kali ini yang saya bagikan yaitu tentang hal - hal yang perlu dilakukan setelah install server.
+B. Pengertian
+Debian adalah sistem operasi komputer yang tersusun dari paket-paket perangkat lunak yang dirilis sebagai perangkat lunak bebas dan terbuka dengan lisensi mayoritas GNU General Public License dan lisensi perangkat lunak bebas lainnya. Debian GNU/UNIX memuat perkakas sistem operasi GNU dan kernel Linux merupakan distribusi Linux yang populer dan berpengaruh.</description>
       </item>
     
       <item>
@@ -780,7 +839,11 @@ Nextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan lay
         <link>https://sibunglon.com/2017/10/11/installasi-mate-desktop-environment-di-ubuntu-17.04/</link>
         <pubDate>Wed, 11 Oct 2017 12:31:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/11/installasi-mate-desktop-environment-di-ubuntu-17.04/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Setelah kemarin menggunakan desktop gnome saya ingin pindah ke desktop MATE karena lebih ringan dan mudah digunakan, nah bagi kalian yang ingin menginstall MATE desktop kali ini saya bagikan tutorialnya&amp;hellip;
+B. pengertian
+MATE telah memiliki sejumlah aplikasi yang berasal dari Aplikasi Inti GNOME, dan pengembang telah menulis beberapa aplikasi lain dari nol. Aplikasi bercabang memiliki nama baru, kebanyakan dari bahasa Spanyol.
+MATE juga tersedia di repositori resmi beberapa distribusi Linux lainnya, termasuk Arch Linux, Parabola, LMDE, Debian, Ubuntu MATE, Ubuntu Mint, Kali Linux, Fedora, openSUSE, Gentoo, Mageia, ROSA, dan PCLinuxOS.</description>
       </item>
     
       <item>
@@ -796,7 +859,10 @@ Nextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan lay
         <link>https://sibunglon.com/2017/10/10/install-debian-server-di-proxmox-virtual-environment/</link>
         <pubDate>Tue, 10 Oct 2017 12:19:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/10/install-debian-server-di-proxmox-virtual-environment/</guid>
-        <description>A. PendahuluanKali ini saya berbagi tentang bagaimana menginstall linux Debian 8.6 melalui pada proxmox. Proxmox digunakan sebagai virtualisasi.B. PengertianDebian adalah sistem operasi komputer yang tersusun dari paket-paket perangkat lunak yang dirilis sebagai perangkat lunak bebas dan terbuka dengan lisensi mayoritas GNU General Public License dan lisensi perangkat lunak bebas lainnya. Debian GNU/Linux memuat perkakas sistem operasi GNU dan kernel Linux merupakan distribusi Linux yang popmuler dan berpengaruh. Debian didistribusikan dengan akses ke repositori dengan ribuan paket perangkat lunak yang siap untuk instalasi dan digunakan.</description>
+        <description>A. Pendahuluan
+Kali ini saya berbagi tentang bagaimana menginstall linux Debian 8.6 melalui pada proxmox. Proxmox digunakan sebagai virtualisasi.
+B. Pengertian
+Debian adalah sistem operasi komputer yang tersusun dari paket-paket perangkat lunak yang dirilis sebagai perangkat lunak bebas dan terbuka dengan lisensi mayoritas GNU General Public License dan lisensi perangkat lunak bebas lainnya. Debian GNU/Linux memuat perkakas sistem operasi GNU dan kernel Linux merupakan distribusi Linux yang popmuler dan berpengaruh. Debian didistribusikan dengan akses ke repositori dengan ribuan paket perangkat lunak yang siap untuk instalasi dan digunakan.</description>
       </item>
     
       <item>
@@ -804,7 +870,10 @@ Nextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan lay
         <link>https://sibunglon.com/2017/10/09/comparison-of-platform-virtualization-software/</link>
         <pubDate>Mon, 09 Oct 2017 17:12:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/09/comparison-of-platform-virtualization-software/</guid>
-        <description></description>
+        <description>A. PENDAHULUAN
+Seperti judulnya, yaitu adalah perbandingan dari beberapa vendor Virtualisasi Software.
+B. PENGERTIAN
+adalah istilah umum yang mengacu kepada abstraksi dari sumber daya komputer. Definisi lainnya adalah &amp;ldquo;sebuah teknik untuk menyembunyikan karakteristik fisik dari sumber daya komputer dari bagaimana cara sistem lain, aplikasi atau pengguna berinteraksi dengan sumber daya tersebut. Hal ini termasuk membuat sebuah sumber daya tunggal (seperti server, sebuah sistem operasi, sebuah aplikasi, atau peralatan penyimpanan terlihat berfungsi sebagai beberapa sumber daya logikal; atau dapat juga termasuk definisi untuk membuat beberapa sumber daya fisik (seperti beberapa peralatan penyimpanan atau server) terlihat sebagai satu sumber daya logikal.</description>
       </item>
     
       <item>
@@ -812,7 +881,14 @@ Nextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan lay
         <link>https://sibunglon.com/2017/10/07/konfigurasi-dhcp-server-pada-cisco/</link>
         <pubDate>Sat, 07 Oct 2017 16:49:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/07/konfigurasi-dhcp-server-pada-cisco/</guid>
-        <description></description>
+        <description>A.PENGERTIAN
+DHCP (Dynamic Host Configuration Protocol) sebuah server yang memiliki layanan untuk memberikan IP otomatis pada host atau komputer (client) pada jaringan TCP atau IP yang memintanya
+  LATAR BELAKANGMemahami serta mempraktikan dhcp server
+  MAKSUD DAN TUJUAN
+Memahami konfigurasi dhcp server
+  TAHAPAN PEKERJAAN
+  Berikut adalah langkah-langkah mengkonfigurasi DHCP Server pada router.
+Sebelumnya kita harus membuat simulasi jaringan seperti pada gambar berikut ini terlebih dahulu.</description>
       </item>
     
       <item>
@@ -828,7 +904,9 @@ Nextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan lay
         <link>https://sibunglon.com/2017/10/05/konfigurasi-static-nat-dan-dynamic-nat-cisco/</link>
         <pubDate>Thu, 05 Oct 2017 05:39:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/05/konfigurasi-static-nat-dan-dynamic-nat-cisco/</guid>
-        <description></description>
+        <description>A. Pengertian
+NAT (Network Address Translation) adalah sebuah proses pemetaan alamat IP dimana perangkat jaringan komputer akan memberikan alamat IP public ke perangkat jaringan local sehingga banyak IP private yang dapat mengakses IP public.
+Dengan kata lain NAT akan mentranslasikan alamat IP sehingga IP address pada jaringan local dapat mengakses IP public pada jaringan WAN. NAT mentranslasikan alamat IP private untuk dapat mengakses alamat host di internet dengan menggunakan alamat IP public pada jaringan tersebut.</description>
       </item>
     
       <item>
@@ -932,7 +1010,13 @@ Nextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan lay
         <link>https://sibunglon.com/2017/09/22/backup-and-restore-mikrotik/</link>
         <pubDate>Fri, 22 Sep 2017 03:39:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/22/backup-and-restore-mikrotik/</guid>
-        <description></description>
+        <description>1. Pendahuluan
+A. Pengertian
+Di bidang teknologi informasi, backup, atau proses back up, mengacu pada penyalinan dan pengarsipan data sehingga bisa digunakan untuk mengembalikan dokumen asli setelah terjadi peristiwa kehilangan data. Bentuk kata kerja adalah untuk membuat cadangan dua kata, sedangkan kata benda adalah cadangan.
+Restore , mengacu pada proses pengembalian data menggunakan file backup.
+B. Latar Belakang
+Membackup data mikrotik agar saat perangkat rusak kita punya salinan konfigurasinya.
+C. Hasil Yang Diharapkan</description>
       </item>
     
       <item>
@@ -972,7 +1056,14 @@ Nextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan lay
         <link>https://sibunglon.com/2017/09/18/belajar-dan-latihan-memanjat-tower/</link>
         <pubDate>Mon, 18 Sep 2017 02:36:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/18/belajar-dan-latihan-memanjat-tower/</guid>
-        <description></description>
+        <description>PENDAHULUAN
+Yaakk, kali ini saya akan berbagi pengalaman saat pertama memanjat Tower Jaringan. Hal hal yang harus anda mengerti saat akan memanjat tower,
+~ Kondisi lingkungan yang mendukung
+~ Alat yang benar benar sesuai SOP
+~ Kondisi fisikanda
+Alat yang saya gunakan pertama kali adalah, Tali Webbing
+Nah tali webbing ini minimal harus memiliki panjang 3-4 meter, agar nyaman di kenakan.
+selain itu tali webbing ini memiliki umur, jadi haruslah diperhatikan bentuk fisik dari tali yang akan kita pakai untuk memanjat tower.</description>
       </item>
     
       <item>
@@ -988,7 +1079,13 @@ Nextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan lay
         <link>https://sibunglon.com/2017/09/18/k3-kesehatan-keselamatan-dan-keamanan-kerja/</link>
         <pubDate>Mon, 18 Sep 2017 02:31:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/18/k3-kesehatan-keselamatan-dan-keamanan-kerja/</guid>
-        <description></description>
+        <description>PENDAHULUAN
+Pada kesempatan ini kita akan membahas sedikit mengenai K3 atau Kesehatan, Keselamatan, Keamanan Kerja. kenapa kita membahas hal ini, karna di dalam melakukan pekerjaan kita harus memahmi atau memakai yang namanya K3.
+PENGERTIAN
+Filosofi (Mangkunegara)
+Suatu pemikiran dan upaya untuk menjamin keutuhan dan kesempurnaan jasmani maupun rohani tenaga kerja khususnya dan manusia pada umumnya serta hasil karya dan budaya untuk menuju masyarakat adil dan makmur.
+Keilmuan
+Semua ilmu dan penerapannya untuk mencegah terjadinya kecelakaan kerja, penyakit akibat kerja (PAK), kebakaran, peledakan dan pencemaran lingkungan.</description>
       </item>
     
       <item>
@@ -1084,7 +1181,11 @@ Nextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan lay
         <link>https://sibunglon.com/2017/09/08/konfigurasi-dasar-mikrotik-dengan-sumber-internet-dari-ip-static/</link>
         <pubDate>Fri, 08 Sep 2017 14:58:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/08/konfigurasi-dasar-mikrotik-dengan-sumber-internet-dari-ip-static/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pada kali ini, saya akan memposting kembali konfigurasi dasar mikrotik tetapi dari ip static
+B. Pengertian
+Mikrotik adalah sebuah perusahaan yang bergerak di bidang produksi perangkat keras (hardware) dan perangkat lunak (Software) yang berhubungan dengan sistem jaringan komputer yang berkantor pusat di Latvia, bersebelahan dengan Rusia. Produk hardware unggulan Mikrotik berupa Router, Switch, Antena, dan perangkat pendukung lainnya. Sedangkan produk Software unggulan Mikrotik adalah MikroTik RouterOS.
+MikroTik routerboad adalah router embedded produk dari mikrotik.</description>
       </item>
     
       <item>
@@ -1172,7 +1273,10 @@ Nextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan lay
         <link>https://sibunglon.com/2017/08/29/apa-itu-hotspot/</link>
         <pubDate>Tue, 29 Aug 2017 12:57:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/29/apa-itu-hotspot/</guid>
-        <description></description>
+        <description>A. Pengertian
+Area bersinyal (bahasa Inggris: Hotspot) merujuk pada tempat-tempat tertentu (biasanya tempat umum) yang memiliki layanan internet dengan menggunakan teknologi Wireless LAN, seperti pada perguruan tinggi, mal, plaza, perpustakaan, restoran ataupun bandar udara. Layanan internet seperti ini, ada yang berbayar dan yang tidak (gratis).
+Sejarah Hotspot
+Konsep ini pertama kali dikemukakan pada tahun 1993 oleh Bret Stewart sewaktu konferensi Networld dan Interop, di San Fransisco. Dengan pemanfaatan teknologi ini, setiap orang dapat mengakses jaringan internet melalui komputer/laptop/HP/PDA yang mereka miliki di lokasi-lokasi area bersinyal ini tersedia, tentunya perangkat komputer/laptop/ponsel/PDA tersebut harus memiliki teknologi wi-fi.</description>
       </item>
     
       <item>
@@ -1204,7 +1308,14 @@ Nextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan lay
         <link>https://sibunglon.com/2017/08/24/bersih-bersih-di-gedung-baru-blc-telkom-klaten/</link>
         <pubDate>Thu, 24 Aug 2017 11:48:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/24/bersih-bersih-di-gedung-baru-blc-telkom-klaten/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Malam ini ada kegiatan bersih bersih di gedung baru BLC Telkom. Siswa Prakerin berpartisipasi membersihkan gedung baru.
+1. Pengertian
+Kebersihan adalah keadaan bebas dari kotoran, termasuk di antaranya, debu, sampah, dan bau.
+2. Latar Belakang
+BLC Telkom pindah ke gedung yang baru, kita sebagai siswa BLC Telkom ikut berpartisipasi untuk membersihkan gedung baru agar dapat digunakan untuk melanjutkan aktivitas seperti biasanya.
+3. Maksud &amp;amp; Tujuan
+Agar gedung bisa di pakai maka harus dibersihkan</description>
       </item>
     
       <item>
@@ -1308,7 +1419,10 @@ Nextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan lay
         <link>https://sibunglon.com/2017/08/11/installasi-moodle-di-localhost-linux/</link>
         <pubDate>Fri, 11 Aug 2017 16:00:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/11/installasi-moodle-di-localhost-linux/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Server dibuat dengan beragam maksud dan tujuannya, salah satunya adalah membangun sistem pembelajaran online. Pembelajaran online sangat baik diterapkan saat ini, karena pelajar masa kini lebih senang untuk online dari pada membaca buku. Hal ini bisa meningkatkan minat membaca pelajar tanah air. Salah satu media yang dapat digunakan adalah dengan &amp;ldquo;Moodle&amp;rsquo;. Apa itu Moodle?
+#Pengertian
+Moodle (Modular Object-Oriented Dynamic Learning Environment) adalah paket perangkat lunak yang diproduksi untuk kegiatan belajar berbasis internet dan situs web yang menggunakan prinsip social constructionist pedagogy.</description>
       </item>
     
       <item>
@@ -1328,11 +1442,14 @@ Nextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan lay
       </item>
     
       <item>
-        <title>Implementasi PPPoE Client Mikrotik</title>
-        <link>https://sibunglon.com/2017/08/08/implementasi-pppoe-client-mikrotik/</link>
+        <title>Implementasi PPPoE Client MikroTikk</title>
+        <link>https://sibunglon.com/2017/08/08/implementasi-pppoe-client-mikrotikk/</link>
         <pubDate>Tue, 08 Aug 2017 14:36:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/08/08/implementasi-pppoe-client-mikrotik/</guid>
-        <description></description>
+        <guid>https://sibunglon.com/2017/08/08/implementasi-pppoe-client-mikrotikk/</guid>
+        <description>A. PENGERTIAN
+PPPOE merupakan singkatan dari point-to-point protocol over Ethernet yang merupakan protokol dalam jaringan untuk menghubungkan komunikasi antara dua buah titik jaringan atau dua buah port ethernet dengan model tunneling (terowongan) dan juga sebagai virtual dial-up dalam jaringan. MikroTikk adalah salah satu router yang mendukung konfigurasi pppoe server dan client, untuk itulah akan di tuliskan pada artikel ini tentang bagaimana membuat pppoe server dengan MikroTikk.
+B. LATAR BELAKANG
+MikroTikk adalah salah satu router yang mendukung konfigurasi pppoe server dan client, untuk itulah akan dituliskan pada artikel ini tentang bagaimana membuat pppoe server dengan MikroTikk.</description>
       </item>
     
       <item>
@@ -1356,7 +1473,10 @@ Nextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan lay
         <link>https://sibunglon.com/2017/08/04/apa-perbedaan-linux-dan-windows/</link>
         <pubDate>Fri, 04 Aug 2017 17:00:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/04/apa-perbedaan-linux-dan-windows/</guid>
-        <description></description>
+        <description>Perbedaan linux dengan windows
+Sebelum memahami perbedaan, berikut ini persamaan Linux dan Windows:
+Linux dan Windows sama-sama nama untuk sistem operasi &amp;ldquo;komputer&amp;rdquo; dan sama-sama punya beberapa jenis atau pilihan, misal Linux Nusantara, BlankOn, Ubuntu, Mandriva, Fedora, openSUSE, Slackware, Debian, Gentoo, Redhat, Mint, dll. Sedangkan di Windows ada Windows 98, Me, XP, Vista, 7, Server 2008, Mobile, dll. &amp;ldquo;komputer&amp;rdquo; itu bisa berupa pc, notebook, smartphone, dll.
+Persamaan adanya pilihan/jenis di atas sebenarynya tidak persis sama, karena jenis Windows itu hanya tersedia buatan MS (Microsoft), sedangkan jenis Linux itu bisa buatan beberapa pihak yg berbeda.</description>
       </item>
     
       <item>
@@ -1364,7 +1484,9 @@ Nextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan lay
         <link>https://sibunglon.com/2017/08/03/apa-itu-linux-dan-bagaimana-sejarah-singkatnya/</link>
         <pubDate>Thu, 03 Aug 2017 16:52:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/03/apa-itu-linux-dan-bagaimana-sejarah-singkatnya/</guid>
-        <description></description>
+        <description>Apa itu Linux?
+Linux (diucapkan ˈlɪnəks atau /ˈlɪnʊks/) adalah nama yang diberikan kepada sistem operasi komputer bertipe Unix. Linux merupakan salah satu contoh hasil pengembangan perangkat lunak bebas dan sumber terbuka utama. Seperti perangkat lunak bebas dan sumber terbuka lainnya pada umumnya, kode sumber Linux dapat dimodifikasi, digunakan dan didistribusikan kembali secara bebas oleh siapa saja.
+Nama &amp;ldquo;Linux&amp;rdquo; berasal dari nama pembuatnya, yang diperkenalkan tahun 1991 oleh Linus Torvalds. Sistemnya, peralatan sistem dan pustakanya umumnya berasal dari sistem operasi GNU, yang diumumkan tahun 1983 oleh Richard Stallman.</description>
       </item>
     
       <item>
@@ -1420,7 +1542,10 @@ Nextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan lay
         <link>https://sibunglon.com/2017/07/27/konfigurasi-dasar-mikrotik-untuk-sharing-internet-menggunakan-hotspot/</link>
         <pubDate>Thu, 27 Jul 2017 14:37:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/27/konfigurasi-dasar-mikrotik-untuk-sharing-internet-menggunakan-hotspot/</guid>
-        <description></description>
+        <description>Pendahuluan
+Pada postingan ini, saya akan mengimplementasikan atau mengkonfigurasi routerboard mikroTik untuk tahap pemula (konfigurasi dasar mikroTikrouterboard).
+Mikrotik adalah sebuah perusahaan yang bergerak di bidang produksi perangkat keras (hardware) dan perangkat lunak (Software) yang berhubungan dengan sistem jaringan komputer yang berkantor pusat di Latvia, bersebelahan dengan Rusia. Produk hardware unggulan Mikrotik berupa Router, Switch, Antena, dan perangkat pendukung lainnya. Sedangkan produk Software unggulan Mikrotik adalah MikroTik RouterOS.
+MikroTik routerboad adalah router embedded produk dari mikrotik.</description>
       </item>
     
       <item>
@@ -1428,7 +1553,10 @@ Nextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan lay
         <link>https://sibunglon.com/2017/07/26/bagaimana-mengganti-login-page-jaringan-mikrotik/</link>
         <pubDate>Wed, 26 Jul 2017 14:34:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/26/bagaimana-mengganti-login-page-jaringan-mikrotik/</guid>
-        <description></description>
+        <description>Pendahuluan
+MikroTik routerboard adalah salah satu router yang mempunyai login page(tampilan awal) untuk koneksi hotspot. Login page berfungsi jika hotspot tersebut tidak mempunyai autentikasi, lalu siapapun yang telah konek di hotspot tersebut dan ingin melakukan browsing maka secara otomatis dia akan teralihkan ke login page untuk keperluan identitas agar ia dapat melanjutkan browsingnya.
+Maksud dan Tujuan
+Dengan login page yang telah disiapkan dapat membatasi siapa saja dapat mendapat akses internet dari mikroTik meskipun sebelumnya ia sudah konek ke wifi tersebut.</description>
       </item>
     
       <item>
@@ -1436,7 +1564,10 @@ Nextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan lay
         <link>https://sibunglon.com/2017/07/25/bagaimana-melimit-waktu-internet-pengguna-menggunakan-mikrotik/</link>
         <pubDate>Tue, 25 Jul 2017 14:12:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/25/bagaimana-melimit-waktu-internet-pengguna-menggunakan-mikrotik/</guid>
-        <description>PendahuluanMikrotik adalah sebuah produk yang bisa difungsikan sebagai router, hotspot, dan yang lainnya. Untuk info lebih lengkap bisa baca disini. MikroTik mempunyai banyak fitur, salah satunya yaitu dapat membatasi berapa lama si user dapat terkoneksi dengan internet dengan mikroTik yang kita punya, lalu bagaimana mengaktifkan fitur tersebut? Nah, pada postingan kali ini akan dijelaskan bagaimana mengaktifkan fitur tersebut.Maksud dan TujuanTujuan pembatasannya itu tergantung dimana penempatan akses internet dari mikroTik itu sendiri.</description>
+        <description>Pendahuluan
+Mikrotik adalah sebuah produk yang bisa difungsikan sebagai router, hotspot, dan yang lainnya. Untuk info lebih lengkap bisa baca disini. MikroTik mempunyai banyak fitur, salah satunya yaitu dapat membatasi berapa lama si user dapat terkoneksi dengan internet dengan mikroTik yang kita punya, lalu bagaimana mengaktifkan fitur tersebut? Nah, pada postingan kali ini akan dijelaskan bagaimana mengaktifkan fitur tersebut.
+Maksud dan Tujuan
+Tujuan pembatasannya itu tergantung dimana penempatan akses internet dari mikroTik itu sendiri.</description>
       </item>
     
       <item>
@@ -1444,7 +1575,10 @@ Nextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan lay
         <link>https://sibunglon.com/2017/07/25/apa-itu-mikrotik/</link>
         <pubDate>Tue, 25 Jul 2017 09:30:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/25/apa-itu-mikrotik/</guid>
-        <description></description>
+        <description>A. Pengertian MikroTik
+MikroTik RouterOS™ adalah sistem operasi dan perangkat lunak yang dapat digunakan untuk menjadikan komputer manjadi router network yang handal, mencakup berbagai fitur yang dibuat untuk ip network dan jaringan wireless, cocok digunakan oleh ISP dan provider hotspot.
+B. Sejarah Mikrotik
+MikroTikls [dengan trade name MikroTik®] didirikan tahun 1995 bertujuan mengembangkan sistem ISP dengan wireless. MikroTikls saat ini telah mendukung sistem ISP dengan wireless untuk jalur data internet di banyak negara, antara lain Iraq, Kosovo, Sri Lanka, Ghana dan banyak negara lainnya.</description>
       </item>
     
       <item>

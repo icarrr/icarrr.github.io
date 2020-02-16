@@ -33,7 +33,13 @@ Semakin hari kebutuhan akan manajemen jaringan semakin beragam. Hal ini tidak le
         <link>https://sibunglon.com/2017/09/22/backup-and-restore-mikrotik/</link>
         <pubDate>Fri, 22 Sep 2017 03:39:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/22/backup-and-restore-mikrotik/</guid>
-        <description></description>
+        <description>1. Pendahuluan
+A. Pengertian
+Di bidang teknologi informasi, backup, atau proses back up, mengacu pada penyalinan dan pengarsipan data sehingga bisa digunakan untuk mengembalikan dokumen asli setelah terjadi peristiwa kehilangan data. Bentuk kata kerja adalah untuk membuat cadangan dua kata, sedangkan kata benda adalah cadangan.
+Restore , mengacu pada proses pengembalian data menggunakan file backup.
+B. Latar Belakang
+Membackup data mikrotik agar saat perangkat rusak kita punya salinan konfigurasinya.
+C. Hasil Yang Diharapkan</description>
       </item>
     
       <item>
@@ -121,7 +127,11 @@ Semakin hari kebutuhan akan manajemen jaringan semakin beragam. Hal ini tidak le
         <link>https://sibunglon.com/2017/09/08/konfigurasi-dasar-mikrotik-dengan-sumber-internet-dari-ip-static/</link>
         <pubDate>Fri, 08 Sep 2017 14:58:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/08/konfigurasi-dasar-mikrotik-dengan-sumber-internet-dari-ip-static/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pada kali ini, saya akan memposting kembali konfigurasi dasar mikrotik tetapi dari ip static
+B. Pengertian
+Mikrotik adalah sebuah perusahaan yang bergerak di bidang produksi perangkat keras (hardware) dan perangkat lunak (Software) yang berhubungan dengan sistem jaringan komputer yang berkantor pusat di Latvia, bersebelahan dengan Rusia. Produk hardware unggulan Mikrotik berupa Router, Switch, Antena, dan perangkat pendukung lainnya. Sedangkan produk Software unggulan Mikrotik adalah MikroTik RouterOS.
+MikroTik routerboad adalah router embedded produk dari mikrotik.</description>
       </item>
     
       <item>
@@ -169,7 +179,10 @@ Semakin hari kebutuhan akan manajemen jaringan semakin beragam. Hal ini tidak le
         <link>https://sibunglon.com/2017/08/29/apa-itu-hotspot/</link>
         <pubDate>Tue, 29 Aug 2017 12:57:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/29/apa-itu-hotspot/</guid>
-        <description></description>
+        <description>A. Pengertian
+Area bersinyal (bahasa Inggris: Hotspot) merujuk pada tempat-tempat tertentu (biasanya tempat umum) yang memiliki layanan internet dengan menggunakan teknologi Wireless LAN, seperti pada perguruan tinggi, mal, plaza, perpustakaan, restoran ataupun bandar udara. Layanan internet seperti ini, ada yang berbayar dan yang tidak (gratis).
+Sejarah Hotspot
+Konsep ini pertama kali dikemukakan pada tahun 1993 oleh Bret Stewart sewaktu konferensi Networld dan Interop, di San Fransisco. Dengan pemanfaatan teknologi ini, setiap orang dapat mengakses jaringan internet melalui komputer/laptop/HP/PDA yang mereka miliki di lokasi-lokasi area bersinyal ini tersedia, tentunya perangkat komputer/laptop/ponsel/PDA tersebut harus memiliki teknologi wi-fi.</description>
       </item>
     
       <item>
@@ -186,14 +199,6 @@ Semakin hari kebutuhan akan manajemen jaringan semakin beragam. Hal ini tidak le
         <pubDate>Fri, 18 Aug 2017 14:00:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/18/membangun-vpn-server-di-mikrotik/</guid>
         <description>A. PENDAHULUANSelamat pagi/siang/malam. pada kesempatan ini saya akan sedikit memberikan atau mengshare mengenai VPNB. PENGERTIANVPN adalah Virtual Private Network dimana VPN ini merupakan interkoneksi antar jaringan ( PC Client to LAN maupun LAN to LAN ) yang mana interkoneksi ini melalui jaringan Public ( Internet ) sehingga dengan VPN ini terjadi koneksi terselubung alias lorong atau Tunneling Connection sehingga data yang di akses ( data yang di kirim dan di terima ) benar-benar aman.</description>
-      </item>
-    
-      <item>
-        <title>Implementasi PPPoE Client Mikrotik</title>
-        <link>https://sibunglon.com/2017/08/08/implementasi-pppoe-client-mikrotik/</link>
-        <pubDate>Tue, 08 Aug 2017 14:36:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/08/08/implementasi-pppoe-client-mikrotik/</guid>
-        <description></description>
       </item>
     
       <item>
@@ -217,7 +222,10 @@ Semakin hari kebutuhan akan manajemen jaringan semakin beragam. Hal ini tidak le
         <link>https://sibunglon.com/2017/07/27/konfigurasi-dasar-mikrotik-untuk-sharing-internet-menggunakan-hotspot/</link>
         <pubDate>Thu, 27 Jul 2017 14:37:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/27/konfigurasi-dasar-mikrotik-untuk-sharing-internet-menggunakan-hotspot/</guid>
-        <description></description>
+        <description>Pendahuluan
+Pada postingan ini, saya akan mengimplementasikan atau mengkonfigurasi routerboard mikroTik untuk tahap pemula (konfigurasi dasar mikroTikrouterboard).
+Mikrotik adalah sebuah perusahaan yang bergerak di bidang produksi perangkat keras (hardware) dan perangkat lunak (Software) yang berhubungan dengan sistem jaringan komputer yang berkantor pusat di Latvia, bersebelahan dengan Rusia. Produk hardware unggulan Mikrotik berupa Router, Switch, Antena, dan perangkat pendukung lainnya. Sedangkan produk Software unggulan Mikrotik adalah MikroTik RouterOS.
+MikroTik routerboad adalah router embedded produk dari mikrotik.</description>
       </item>
     
       <item>
@@ -225,7 +233,10 @@ Semakin hari kebutuhan akan manajemen jaringan semakin beragam. Hal ini tidak le
         <link>https://sibunglon.com/2017/07/26/bagaimana-mengganti-login-page-jaringan-mikrotik/</link>
         <pubDate>Wed, 26 Jul 2017 14:34:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/26/bagaimana-mengganti-login-page-jaringan-mikrotik/</guid>
-        <description></description>
+        <description>Pendahuluan
+MikroTik routerboard adalah salah satu router yang mempunyai login page(tampilan awal) untuk koneksi hotspot. Login page berfungsi jika hotspot tersebut tidak mempunyai autentikasi, lalu siapapun yang telah konek di hotspot tersebut dan ingin melakukan browsing maka secara otomatis dia akan teralihkan ke login page untuk keperluan identitas agar ia dapat melanjutkan browsingnya.
+Maksud dan Tujuan
+Dengan login page yang telah disiapkan dapat membatasi siapa saja dapat mendapat akses internet dari mikroTik meskipun sebelumnya ia sudah konek ke wifi tersebut.</description>
       </item>
     
       <item>
@@ -233,7 +244,10 @@ Semakin hari kebutuhan akan manajemen jaringan semakin beragam. Hal ini tidak le
         <link>https://sibunglon.com/2017/07/25/bagaimana-melimit-waktu-internet-pengguna-menggunakan-mikrotik/</link>
         <pubDate>Tue, 25 Jul 2017 14:12:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/25/bagaimana-melimit-waktu-internet-pengguna-menggunakan-mikrotik/</guid>
-        <description>PendahuluanMikrotik adalah sebuah produk yang bisa difungsikan sebagai router, hotspot, dan yang lainnya. Untuk info lebih lengkap bisa baca disini. MikroTik mempunyai banyak fitur, salah satunya yaitu dapat membatasi berapa lama si user dapat terkoneksi dengan internet dengan mikroTik yang kita punya, lalu bagaimana mengaktifkan fitur tersebut? Nah, pada postingan kali ini akan dijelaskan bagaimana mengaktifkan fitur tersebut.Maksud dan TujuanTujuan pembatasannya itu tergantung dimana penempatan akses internet dari mikroTik itu sendiri.</description>
+        <description>Pendahuluan
+Mikrotik adalah sebuah produk yang bisa difungsikan sebagai router, hotspot, dan yang lainnya. Untuk info lebih lengkap bisa baca disini. MikroTik mempunyai banyak fitur, salah satunya yaitu dapat membatasi berapa lama si user dapat terkoneksi dengan internet dengan mikroTik yang kita punya, lalu bagaimana mengaktifkan fitur tersebut? Nah, pada postingan kali ini akan dijelaskan bagaimana mengaktifkan fitur tersebut.
+Maksud dan Tujuan
+Tujuan pembatasannya itu tergantung dimana penempatan akses internet dari mikroTik itu sendiri.</description>
       </item>
     
       <item>
@@ -241,7 +255,10 @@ Semakin hari kebutuhan akan manajemen jaringan semakin beragam. Hal ini tidak le
         <link>https://sibunglon.com/2017/07/25/apa-itu-mikrotik/</link>
         <pubDate>Tue, 25 Jul 2017 09:30:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/25/apa-itu-mikrotik/</guid>
-        <description></description>
+        <description>A. Pengertian MikroTik
+MikroTik RouterOS™ adalah sistem operasi dan perangkat lunak yang dapat digunakan untuk menjadikan komputer manjadi router network yang handal, mencakup berbagai fitur yang dibuat untuk ip network dan jaringan wireless, cocok digunakan oleh ISP dan provider hotspot.
+B. Sejarah Mikrotik
+MikroTikls [dengan trade name MikroTik®] didirikan tahun 1995 bertujuan mengembangkan sistem ISP dengan wireless. MikroTikls saat ini telah mendukung sistem ISP dengan wireless untuk jalur data internet di banyak negara, antara lain Iraq, Kosovo, Sri Lanka, Ghana dan banyak negara lainnya.</description>
       </item>
     
   </channel>

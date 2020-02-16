@@ -132,7 +132,10 @@ firewall-cmd --permanent --zone=public --add-service=https Setelah diizinkan, fi
         <link>https://sibunglon.com/2017/10/14/atasi-info-php-tidak-tampil-atau-not-working/</link>
         <pubDate>Sat, 14 Oct 2017 10:25:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/14/atasi-info-php-tidak-tampil-atau-not-working/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pada postingan kali ini, saya akan memberikan solusi yang biasa menjadi permasalahan saat menginstall LAMP Server di linux
+B. Pengertian
+PHP info adalah istilah untuk menyebutkan sebuah halaman yang berisi informasi mengenai versi PHP yang digunakan oleh suatu server, biasanya pada halaman PHP Info akan di informasikan banyak hal selain versi nya itu sendiri. phpinfo() biasanya digunakan untuk memeriksa pengaturan konfigurasi dan variabel standar yang tersedia pada sistem tertentu.</description>
       </item>
     
       <item>

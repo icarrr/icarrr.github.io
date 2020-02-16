@@ -44,7 +44,9 @@ Saya butuh web service yang dapat diakses melalui 1 publik yaitu 1 ip publik hos
         <link>https://sibunglon.com/2018/10/26/berkenalan-dengan-caddy-server/</link>
         <pubDate>Fri, 26 Oct 2018 11:52:00 +0000</pubDate>
         <guid>https://sibunglon.com/2018/10/26/berkenalan-dengan-caddy-server/</guid>
-        <description></description>
+        <description>Caddy? Caddy itu apaan? Fungsinya apa aja?
+Caddy kadang-kadang diklarifikasi sebagai web server Caddy bersifat open source, server web HTTP / 2- enabled yang ditulis dalam Go . Ia menggunakan pustaka standar Go untuk fungsi HTTP-nya. Salah satu fitur paling terkenal Caddy adalah mengaktifkan HTTPS secara default.
+Caddy mendukung berbagai teknologi Web dan tersedia sebagai biner yang dikompilasi secara statis untuk sistem operasi Windows, Mac, Linux, Android, dan BSD pada arsitektur i386, amd64, dan ARM.</description>
       </item>
     
       <item>
@@ -52,7 +54,10 @@ Saya butuh web service yang dapat diakses melalui 1 publik yaitu 1 ip publik hos
         <link>https://sibunglon.com/2017/08/04/apa-perbedaan-linux-dan-windows/</link>
         <pubDate>Fri, 04 Aug 2017 17:00:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/04/apa-perbedaan-linux-dan-windows/</guid>
-        <description></description>
+        <description>Perbedaan linux dengan windows
+Sebelum memahami perbedaan, berikut ini persamaan Linux dan Windows:
+Linux dan Windows sama-sama nama untuk sistem operasi &amp;ldquo;komputer&amp;rdquo; dan sama-sama punya beberapa jenis atau pilihan, misal Linux Nusantara, BlankOn, Ubuntu, Mandriva, Fedora, openSUSE, Slackware, Debian, Gentoo, Redhat, Mint, dll. Sedangkan di Windows ada Windows 98, Me, XP, Vista, 7, Server 2008, Mobile, dll. &amp;ldquo;komputer&amp;rdquo; itu bisa berupa pc, notebook, smartphone, dll.
+Persamaan adanya pilihan/jenis di atas sebenarynya tidak persis sama, karena jenis Windows itu hanya tersedia buatan MS (Microsoft), sedangkan jenis Linux itu bisa buatan beberapa pihak yg berbeda.</description>
       </item>
     
   </channel>

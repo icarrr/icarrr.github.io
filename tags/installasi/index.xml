@@ -87,7 +87,10 @@ Nginx, banyak orang membicarakannya meskipun salah dipelafalannya. Dulu saya jug
         <link>https://sibunglon.com/2018/10/28/installasi-caddy-server-di-sistem-operasi-windows/</link>
         <pubDate>Sun, 28 Oct 2018 21:20:00 +0000</pubDate>
         <guid>https://sibunglon.com/2018/10/28/installasi-caddy-server-di-sistem-operasi-windows/</guid>
-        <description></description>
+        <description>Setelah berkenalan dengan si Caddy Server pada beberapa hari yang lalu, sekarang waktunya bermain dengan si Caddy Server.
+Apa Saja yang dibutuhkan? Pastikan anda telah memiliki file master Caddy Server, jika belum silahkan dari situs resminya.
+Menjalankan Caddy Server pada sistem operasi windows
+ Buka file hasil download Caddy Server  Copy semua isi dari file master tersebut  Tentukan path Caddy, buat folder baru yang akan menampung semua file yang telah dicopy kemudian paste di folder tersebut  Untuk menjalankan Caddy Server pada sistem operasi windows cukup klik 2 kali pada file caddy.</description>
       </item>
     
       <item>
@@ -106,7 +109,10 @@ Nextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan lay
         <link>https://sibunglon.com/2017/10/18/implementasi-pembelajaran-online-dengan-moodle-installasi/</link>
         <pubDate>Wed, 18 Oct 2017 17:13:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/18/implementasi-pembelajaran-online-dengan-moodle-installasi/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pada kesempatan kali ini saya akan mengimplementasikan tentang apa yang sudah saya pelajari yaitu Moodle
+B. Pengertian
+Moodle (singkatan dari Modular Object-Oriented Dynamic Learning Environment) adalah paket perangkat lunak yang diproduksi untuk kegiatan belajar berbasis internet dan situs web yang menggunakan prinsip social constructionist pedagogy. Moodle merupakan salah satu aplikasi dari konsep dan mekanisme belajar mengajar yang memanfaatkan teknologi informasi, yang dikenal dengan konsep pembelajaran elktronik atau e-learning. Moodle dapat digunakan secara bebas sebagai produk sumber terbuka (open source) di bawah lisensi GNU.</description>
       </item>
     
       <item>
@@ -114,7 +120,10 @@ Nextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan lay
         <link>https://sibunglon.com/2017/10/17/install-slims-8-akasia-di-debian-server/</link>
         <pubDate>Tue, 17 Oct 2017 15:17:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/17/install-slims-8-akasia-di-debian-server/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pada kesempatan ini saya sharing tentang bagaimana langkah-langkah penginstallan slims untuk manajamen perpustakaan online.
+B. Pengertian
+Senayan, atau lengkapnya Senayan Library Management System (SLiMS), adalah perangkat lunak sistem manajemen perpustakaan (library management system) sumber terbuka yang dilisensikan di bawah GPL v3. Aplikasi Web yang dikembangkan oleh tim dari Pusat Informasi dan Humas Departemen Pendidikan Nasional Repubik Indonesia ini dibangun dengan menggunakan PHP, basis data MySQL, dan Pengontrol versi Git.</description>
       </item>
     
       <item>
@@ -122,7 +131,16 @@ Nextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan lay
         <link>https://sibunglon.com/2017/10/16/install-cms-sekolahku-di-server/</link>
         <pubDate>Mon, 16 Oct 2017 11:16:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/16/install-cms-sekolahku-di-server/</guid>
-        <description>A. PendahuluanPada kesempatan kali ini saya akan mengimplementasikan membangun website sekolah di server dengan CMS.B. PengertianCMS adalah suatu /sebuah aplikasi yang berfungsi merubah suatu menu atau memanipulasi data dari suatu situs atau website.C. Latar belakangMempelajari sistem informasi sekolah dengan CMS dan mengimplementasikannya.D. TujuanMempunyai maksud untuk memudahkan saya mendapatkan informasi sekolah di website tersebut.E. Hasil yang diharapkanMempunyai harapan agar nanti kedepannya bisa membangun website ini di sekolah.F. Alat dan bahanPC/LaptopKoneksi InternetFile CMS SekolahG.</description>
+        <description>A. Pendahuluan
+Pada kesempatan kali ini saya akan mengimplementasikan membangun website sekolah di server dengan CMS.
+B. Pengertian
+CMS adalah suatu /sebuah aplikasi yang berfungsi merubah suatu menu atau memanipulasi data dari suatu situs atau website.
+C. Latar belakang
+Mempelajari sistem informasi sekolah dengan CMS dan mengimplementasikannya.
+D. Tujuan
+Mempunyai maksud untuk memudahkan saya mendapatkan informasi sekolah di website tersebut.
+E. Hasil yang diharapkan
+Mempunyai harapan agar nanti kedepannya bisa membangun website ini di sekolah.</description>
       </item>
     
       <item>
@@ -138,7 +156,10 @@ Nextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan lay
         <link>https://sibunglon.com/2017/10/14/implementasi-autoindex-di-server-debian-8.6/</link>
         <pubDate>Sat, 14 Oct 2017 10:36:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/14/implementasi-autoindex-di-server-debian-8.6/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pada kesempatan ini saya akan mengimplementasikan autoindex di debian server 8-6
+B. Pengertian
+Auto Index adalah kemampuan untuk komputer untuk memindai volume besar dokumen terhadap dikendalikan kosakata, taksonomi , tesaurus atau ontologi dan menggunakan istilah-istilah dikendalikan untuk cepat dan efektif Indeks deposit dokumen yang besar. Karena jumlah dokumen secara eksponensial meningkat dengan proliferasi dari Internet , pengindeksan otomatis akan menjadi penting untuk mempertahankan kemampuan untuk menemukan informasi yang relevan di lautan ir-relevan informasi.</description>
       </item>
     
       <item>
@@ -146,7 +167,14 @@ Nextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan lay
         <link>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-install-aplikasi-berbasis-web/</link>
         <pubDate>Fri, 13 Oct 2017 10:22:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-install-aplikasi-berbasis-web/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pada kesempatan ini, saya kembali memposting tentang dasar-dasar setelahi install server.
+B. Pengertian
+Aplikasi Berbasis Web adalah sebuah aplikasi yang dapat diakses melalui internet atau intranet, dan pada sekarang ini ternyata lebih banyak dan lebih luas dalam pemakaiannya.
+C. Latar belakang
+Setelah kita menginstall debian di proxmox tentunya kita harus tau hal hal apa saja yang harus dilakukan setelahnya.
+D. Tujuan
+Agar server dapat bekerja secara optimal saat melayani komputer client.</description>
       </item>
     
       <item>
@@ -154,7 +182,13 @@ Nextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan lay
         <link>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-installasi-lamp-server/</link>
         <pubDate>Fri, 13 Oct 2017 10:09:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-installasi-lamp-server/</guid>
-        <description></description>
+        <description>](https://3.bp.blogspot.com/-ywyKkRlhtrk/W71t-u86V-I/AAAAAAAAE5U/2yysEGlwYi0cpx63j04poUnAf2cZAvesQCLcBGAs/s1600/lamp_stack.jpg)
+A. Pendahuluan
+Pada kesempatan ini saya memposting lagi dan masih mengenai server
+B. Pengertian
+LAMP adalah istilah yang merupakan singkatan dariLinux,Apache,MySQL danPerl/PHP/Phyton. Merupakan sebuah paket perangkat lunak bebas yang digunakan untuk menjalankan sebuah aplikasi secara lengkap.
+Komponen-komponen dari LAMP :
+ Linux – sistem operasi Apache HTTP Server – web server MariaDB atau MySQL – sistem basis data PHP atau Perl atau Python – bahasa pemrograman yang dipakai  C.</description>
       </item>
     
       <item>
@@ -162,7 +196,10 @@ Nextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan lay
         <link>https://sibunglon.com/2017/10/12/hal-hal-yang-harus-dilakukan-setelah-install-server/</link>
         <pubDate>Thu, 12 Oct 2017 09:31:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/12/hal-hal-yang-harus-dilakukan-setelah-install-server/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pada kesempatan kali ini yang saya bagikan yaitu tentang hal - hal yang perlu dilakukan setelah install server.
+B. Pengertian
+Debian adalah sistem operasi komputer yang tersusun dari paket-paket perangkat lunak yang dirilis sebagai perangkat lunak bebas dan terbuka dengan lisensi mayoritas GNU General Public License dan lisensi perangkat lunak bebas lainnya. Debian GNU/UNIX memuat perkakas sistem operasi GNU dan kernel Linux merupakan distribusi Linux yang populer dan berpengaruh.</description>
       </item>
     
       <item>
@@ -170,7 +207,11 @@ Nextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan lay
         <link>https://sibunglon.com/2017/10/11/installasi-mate-desktop-environment-di-ubuntu-17.04/</link>
         <pubDate>Wed, 11 Oct 2017 12:31:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/11/installasi-mate-desktop-environment-di-ubuntu-17.04/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Setelah kemarin menggunakan desktop gnome saya ingin pindah ke desktop MATE karena lebih ringan dan mudah digunakan, nah bagi kalian yang ingin menginstall MATE desktop kali ini saya bagikan tutorialnya&amp;hellip;
+B. pengertian
+MATE telah memiliki sejumlah aplikasi yang berasal dari Aplikasi Inti GNOME, dan pengembang telah menulis beberapa aplikasi lain dari nol. Aplikasi bercabang memiliki nama baru, kebanyakan dari bahasa Spanyol.
+MATE juga tersedia di repositori resmi beberapa distribusi Linux lainnya, termasuk Arch Linux, Parabola, LMDE, Debian, Ubuntu MATE, Ubuntu Mint, Kali Linux, Fedora, openSUSE, Gentoo, Mageia, ROSA, dan PCLinuxOS.</description>
       </item>
     
       <item>
@@ -178,7 +219,10 @@ Nextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan lay
         <link>https://sibunglon.com/2017/10/10/install-debian-server-di-proxmox-virtual-environment/</link>
         <pubDate>Tue, 10 Oct 2017 12:19:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/10/install-debian-server-di-proxmox-virtual-environment/</guid>
-        <description>A. PendahuluanKali ini saya berbagi tentang bagaimana menginstall linux Debian 8.6 melalui pada proxmox. Proxmox digunakan sebagai virtualisasi.B. PengertianDebian adalah sistem operasi komputer yang tersusun dari paket-paket perangkat lunak yang dirilis sebagai perangkat lunak bebas dan terbuka dengan lisensi mayoritas GNU General Public License dan lisensi perangkat lunak bebas lainnya. Debian GNU/Linux memuat perkakas sistem operasi GNU dan kernel Linux merupakan distribusi Linux yang popmuler dan berpengaruh. Debian didistribusikan dengan akses ke repositori dengan ribuan paket perangkat lunak yang siap untuk instalasi dan digunakan.</description>
+        <description>A. Pendahuluan
+Kali ini saya berbagi tentang bagaimana menginstall linux Debian 8.6 melalui pada proxmox. Proxmox digunakan sebagai virtualisasi.
+B. Pengertian
+Debian adalah sistem operasi komputer yang tersusun dari paket-paket perangkat lunak yang dirilis sebagai perangkat lunak bebas dan terbuka dengan lisensi mayoritas GNU General Public License dan lisensi perangkat lunak bebas lainnya. Debian GNU/Linux memuat perkakas sistem operasi GNU dan kernel Linux merupakan distribusi Linux yang popmuler dan berpengaruh. Debian didistribusikan dengan akses ke repositori dengan ribuan paket perangkat lunak yang siap untuk instalasi dan digunakan.</description>
       </item>
     
       <item>
@@ -194,7 +238,10 @@ Nextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan lay
         <link>https://sibunglon.com/2017/08/11/installasi-moodle-di-localhost-linux/</link>
         <pubDate>Fri, 11 Aug 2017 16:00:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/11/installasi-moodle-di-localhost-linux/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Server dibuat dengan beragam maksud dan tujuannya, salah satunya adalah membangun sistem pembelajaran online. Pembelajaran online sangat baik diterapkan saat ini, karena pelajar masa kini lebih senang untuk online dari pada membaca buku. Hal ini bisa meningkatkan minat membaca pelajar tanah air. Salah satu media yang dapat digunakan adalah dengan &amp;ldquo;Moodle&amp;rsquo;. Apa itu Moodle?
+#Pengertian
+Moodle (Modular Object-Oriented Dynamic Learning Environment) adalah paket perangkat lunak yang diproduksi untuk kegiatan belajar berbasis internet dan situs web yang menggunakan prinsip social constructionist pedagogy.</description>
       </item>
     
       <item>

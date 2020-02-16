@@ -1,0 +1,25 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MikroTikk on The Official Site of siBunglon</title>
+    <link>https://sibunglon.com/tags/mikrotikk/</link>
+    <description>Recent content in MikroTikk on The Official Site of siBunglon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 08 Aug 2017 14:36:00 +0000</lastBuildDate>
+    
+      <atom:link href="https://sibunglon.com/tags/mikrotikk/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      <item>
+        <title>Implementasi PPPoE Client MikroTikk</title>
+        <link>https://sibunglon.com/2017/08/08/implementasi-pppoe-client-mikrotikk/</link>
+        <pubDate>Tue, 08 Aug 2017 14:36:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/08/implementasi-pppoe-client-mikrotikk/</guid>
+        <description>A. PENGERTIAN
+PPPOE merupakan singkatan dari point-to-point protocol over Ethernet yang merupakan protokol dalam jaringan untuk menghubungkan komunikasi antara dua buah titik jaringan atau dua buah port ethernet dengan model tunneling (terowongan) dan juga sebagai virtual dial-up dalam jaringan. MikroTikk adalah salah satu router yang mendukung konfigurasi pppoe server dan client, untuk itulah akan di tuliskan pada artikel ini tentang bagaimana membuat pppoe server dengan MikroTikk.
+B. LATAR BELAKANG
+MikroTikk adalah salah satu router yang mendukung konfigurasi pppoe server dan client, untuk itulah akan dituliskan pada artikel ini tentang bagaimana membuat pppoe server dengan MikroTikk.</description>
+      </item>
+    
+  </channel>
+</rss>

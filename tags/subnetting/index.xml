@@ -15,7 +15,9 @@
         <link>https://sibunglon.com/2017/10/19/implementasi-manual-subnetting-kelas-c/</link>
         <pubDate>Thu, 19 Oct 2017 17:58:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/19/implementasi-manual-subnetting-kelas-c/</guid>
-        <description></description>
+        <description>A.Pendahuluan
+Pada kesempatan kali ini saya akan berbagi tentang ip/subnetting gays. kenapa saya membahas ini karena kita sebagai nak jaringan mesti perlu paham begaimana cara subneting.
+ Pengertian  Subnetting adalah upaya/proses untuk memecah sebuah network dengan jumlah host yang cukup banyak, menjadi beberapa network dengan jumlah host yang lebih sedikit. Gunanya Subnetting untuk menentukan batas network ID dalam suatu subnet, Memperbanyak jumlah network (LAN), Mengurangi jumlah host dalam satu network, untuk mengurangi tingkat kongesti (gangguan/ tabrakan) lalulintas data dalam suatu network.</description>
       </item>
     
       <item>

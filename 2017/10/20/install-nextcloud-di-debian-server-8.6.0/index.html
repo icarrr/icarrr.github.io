@@ -39,7 +39,7 @@
   <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4194642&101" alt="" border="0"></a></noscript>
   
 
-  <meta name="generator" content="Hugo 0.64.0" />
+  <meta name="generator" content="Hugo 0.64.1" />
 
   
   
@@ -82,7 +82,7 @@ B. Pengertian
 Nextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan layanan file hosting. Ini secara fungsional mirip dengan Dropbox, meskipun Nextcloud bebas dan open-source, memungkinkan siapa saja untuk menginstal dan mengoperasikannya di server pribadi. Berbeda dengan layanan proprietary seperti Dropbox, arsitektur terbuka memungkinkan penambahan fungsionalitas tambahan ke server dalam bentuk aplikasi.">
 <meta itemprop="datePublished" content="2017-10-20T02:10:00&#43;00:00" />
 <meta itemprop="dateModified" content="2017-10-20T02:10:00&#43;00:00" />
-<meta itemprop="wordCount" content="561">
+<meta itemprop="wordCount" content="562">
 
 
 
@@ -143,27 +143,27 @@ Nextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan lay
 <p><strong>H. Langkah kerja</strong></p>
 <ol>
 <li>
-<p>Copy file masternya dan masuk ke server via ssh dengan perintah <strong>“ssh namauser@ipserver”</strong></p>
+<p>Copy file masternya dan masuk ke server via ssh dengan perintah <code>ssh namauser@ipserver</code></p>
 </li>
 <li>
-<p>Masuk ke server via ssh dengan perintah <strong>“ssh namauser@ipserver”</strong> , cek file nextcloud yang sudah di download di server sebelumnya dengan perintah <strong>“ls”</strong>.</p>
+<p>Masuk ke server via ssh dengan perintah <code>ssh namauser@ipserver</code> , cek file nextcloud yang sudah di download di server sebelumnya dengan perintah <code>ls</code>.</p>
 </li>
 </ol>
-<p><a href="https://4.bp.blogspot.com/-pWhGkWXWQkw/W9IVpQzSlFI/AAAAAAAAFKU/nptjhZuBLjk0oN537nGY00l91wfBKfZZgCLcBGAs/s1600/Screenshot_2.png"><img src="https://4.bp.blogspot.com/-pWhGkWXWQkw/W9IVpQzSlFI/AAAAAAAAFKU/nptjhZuBLjk0oN537nGY00l91wfBKfZZgCLcBGAs/s320/Screenshot_2.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></a></p>
+<p><img src="https://4.bp.blogspot.com/-pWhGkWXWQkw/W9IVpQzSlFI/AAAAAAAAFKU/nptjhZuBLjk0oN537nGY00l91wfBKfZZgCLcBGAs/s1600/Screenshot_2.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
 <ol start="3">
-<li>Pindahkan file nextcloud ke direktori <em>/var/www</em> dengan mengetikkan perintah <strong>“cp nextcloud-12.0.0.zip /var/www”</strong>. Masuk ke direktori <em>/var/www</em> ketikkan perintah <strong>“cd /var/www”</strong> tekan Enter.</li>
+<li>Pindahkan file nextcloud ke direktori <em>/var/www</em> dengan mengetikkan perintah <code>cp nextcloud-12.0.0.zip /var/www</code>. Masuk ke direktori <em>/var/www</em> ketikkan perintah <code>cd /var/www</code> tekan Enter.</li>
 </ol>
-<p><a href="https://2.bp.blogspot.com/-22naQVuXEOc/W9IVwRqkw-I/AAAAAAAAFKc/FF-sk1b-tT4zKrBuo3opYEoNs1VrvzpUgCLcBGAs/s1600/Screenshot_3.png"><img src="https://2.bp.blogspot.com/-22naQVuXEOc/W9IVwRqkw-I/AAAAAAAAFKc/FF-sk1b-tT4zKrBuo3opYEoNs1VrvzpUgCLcBGAs/s320/Screenshot_3.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></a></p>
-<p><a href="https://4.bp.blogspot.com/-K_lkVOXTP4k/W9IVwUGw2iI/AAAAAAAAFKY/TAAuZMVMaK8IRcj-C9BrPkCre6q0FhQ7wCLcBGAs/s1600/Screenshot_4.png"><img src="https://4.bp.blogspot.com/-K_lkVOXTP4k/W9IVwUGw2iI/AAAAAAAAFKY/TAAuZMVMaK8IRcj-C9BrPkCre6q0FhQ7wCLcBGAs/s1600/Screenshot_4.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></a></p>
+<p><img src="https://2.bp.blogspot.com/-22naQVuXEOc/W9IVwRqkw-I/AAAAAAAAFKc/FF-sk1b-tT4zKrBuo3opYEoNs1VrvzpUgCLcBGAs/s1600/Screenshot_3.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
+<p><img src="https://4.bp.blogspot.com/-K_lkVOXTP4k/W9IVwUGw2iI/AAAAAAAAFKY/TAAuZMVMaK8IRcj-C9BrPkCre6q0FhQ7wCLcBGAs/s1600/Screenshot_4.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
 <ol start="4">
 <li>
-<p>Ekstrak file nextcloud dengan perintah <strong>“unzip nextcloud-12.0.0.zip”</strong></p>
+<p>Ekstrak file nextcloud dengan perintah <code>unzip nextcloud-12.0.0.zip</code></p>
 </li>
 <li>
-<p>Ketikkan perintah <strong>“nano /tmp/nextcloud.sh”</strong> untuk edit konfigurasi nextcloud nya.</p>
+<p>Ketikkan perintah <code>nano /tmp/nextcloud.sh</code> untuk edit konfigurasi nextcloud nya.</p>
 </li>
 </ol>
-<p><a href="https://2.bp.blogspot.com/-QGspcnc3MTE/W9IWOIMzkCI/AAAAAAAAFK4/CEGKRphghyA0tCADSx8E5EFB5n4emWnbACLcBGAs/s1600/Screenshot_8.png"><img src="https://2.bp.blogspot.com/-QGspcnc3MTE/W9IWOIMzkCI/AAAAAAAAFK4/CEGKRphghyA0tCADSx8E5EFB5n4emWnbACLcBGAs/s320/Screenshot_8.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></a></p>
+<p><img src="https://2.bp.blogspot.com/-QGspcnc3MTE/W9IWOIMzkCI/AAAAAAAAFK4/CEGKRphghyA0tCADSx8E5EFB5n4emWnbACLcBGAs/s1600/Screenshot_8.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
 <ol start="6">
 <li>Copy script di bawah ini lalu paste di bagian paling bawah dari konfigurasi <strong>nextcloud.sh</strong> nya.</li>
 </ol>
@@ -206,13 +206,11 @@ chmod +x <span class="si">${</span><span class="nv">ocpath</span><span class="si
   chown <span class="si">${</span><span class="nv">rootuser</span><span class="si">}</span>:<span class="si">${</span><span class="nv">htgroup</span><span class="si">}</span> <span class="si">${</span><span class="nv">ocpath</span><span class="si">}</span>/data/.htaccess
 <span class="k">fi</span>
 </code></pre></div><ol start="7">
-<li>Ketikkan perintah <strong>“bash /tmp/nextcloud.sh”</strong></li>
+<li>Ketikkan perintah <code>bash /tmp/nextcloud.sh</code></li>
 </ol>
-<p><a href="https://2.bp.blogspot.com/-_atrnbvD5Po/W9IWjVumQeI/AAAAAAAAFLE/jRBXH7GvtmgeViIM50I-rKptjOriUIfCgCLcBGAs/s1600/Screenshot_10.png"><img src="https://2.bp.blogspot.com/-_atrnbvD5Po/W9IWjVumQeI/AAAAAAAAFLE/jRBXH7GvtmgeViIM50I-rKptjOriUIfCgCLcBGAs/s320/Screenshot_10.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></a></p>
-<ol start="8">
-<li>Lalu buat sebuah file konfigurasi di direktori /etc/apache2/sites-available/ dengan mengetikkan perintah <strong>“nano /etc/apache2/sites-available/nextcloud.conf”</strong> tekan enter.</li>
-</ol>
-<p><a href="https://4.bp.blogspot.com/-acbJxqleJkw/W9IWnM0CjDI/AAAAAAAAFLI/al8X3ZwAAbI-6bYZHZ9ef5hRM644YOOOgCLcBGAs/s1600/Screenshot_11.png"><img src="https://4.bp.blogspot.com/-acbJxqleJkw/W9IWnM0CjDI/AAAAAAAAFLI/al8X3ZwAAbI-6bYZHZ9ef5hRM644YOOOgCLcBGAs/s320/Screenshot_11.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></a></p>
+<p><img src="https://2.bp.blogspot.com/-_atrnbvD5Po/W9IWjVumQeI/AAAAAAAAFLE/jRBXH7GvtmgeViIM50I-rKptjOriUIfCgCLcBGAs/s1600/Screenshot_10.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng">
+8) Lalu buat sebuah file konfigurasi di direktori /etc/apache2/sites-available/ dengan mengetikkan perintah <code>nano /etc/apache2/sites-available/nextcloud.conf</code> tekan enter.</p>
+<p><img src="https://4.bp.blogspot.com/-acbJxqleJkw/W9IWnM0CjDI/AAAAAAAAFLI/al8X3ZwAAbI-6bYZHZ9ef5hRM644YOOOgCLcBGAs/s1600/Screenshot_11.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
 <ol start="9">
 <li>Masukkan script di bawah ini. Lalu save.</li>
 </ol>
@@ -229,35 +227,33 @@ chmod +x <span class="si">${</span><span class="nv">ocpath</span><span class="si
     SetEnv HOME /var/www/nextcloud
     SetEnv HTTP_HOME /var/www/nextcloud
 &lt;/Directory&gt;
-</code></pre><p><a href="https://2.bp.blogspot.com/-UhUpPjZs_8M/W9IW3oie7UI/AAAAAAAAFLU/noy1jkXZCxozkDhbkBKeg35SPSpbVIQKgCLcBGAs/s1600/Screenshot_12.png"><img src="https://2.bp.blogspot.com/-UhUpPjZs_8M/W9IW3oie7UI/AAAAAAAAFLU/noy1jkXZCxozkDhbkBKeg35SPSpbVIQKgCLcBGAs/s320/Screenshot_12.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></a></p>
+</code></pre><p><img src="https://2.bp.blogspot.com/-UhUpPjZs_8M/W9IW3oie7UI/AAAAAAAAFLU/noy1jkXZCxozkDhbkBKeg35SPSpbVIQKgCLcBGAs/s1600/Screenshot_12.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
 <ol start="10">
-<li>Ketikkan perintah <strong>“a2ensite nextcloud”</strong> lalu akan muncul perintah untuk mereload service apache2 nya dengan mengetikkan perintah <strong>“service apache2 reload”</strong>.</li>
+<li>Ketikkan perintah <code>a2ensite nextcloud</code> lalu akan muncul perintah untuk mereload service apache2 nya dengan mengetikkan perintah <code>service apache2 reload</code>.</li>
 </ol>
-<p><a href="https://2.bp.blogspot.com/-c7_A7d12sb0/W9IW-7Le1qI/AAAAAAAAFLc/6lrF-tVY4b0oJ7oLPLCFi6G68K4i9b_DACLcBGAs/s1600/Screenshot_13.png"><img src="https://2.bp.blogspot.com/-c7_A7d12sb0/W9IW-7Le1qI/AAAAAAAAFLc/6lrF-tVY4b0oJ7oLPLCFi6G68K4i9b_DACLcBGAs/s320/Screenshot_13.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></a></p>
-<p><a href="https://3.bp.blogspot.com/-4BWZpwWWvqs/W9IW-lAhHzI/AAAAAAAAFLY/wm8XQahwsGkoNtZPxObOyf7EPX63oX-kQCLcBGAs/s1600/Screenshot_14.png"><img src="https://3.bp.blogspot.com/-4BWZpwWWvqs/W9IW-lAhHzI/AAAAAAAAFLY/wm8XQahwsGkoNtZPxObOyf7EPX63oX-kQCLcBGAs/s320/Screenshot_14.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></a></p>
+<p><img src="https://2.bp.blogspot.com/-c7_A7d12sb0/W9IW-7Le1qI/AAAAAAAAFLc/6lrF-tVY4b0oJ7oLPLCFi6G68K4i9b_DACLcBGAs/s1600/Screenshot_13.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
+<p><img src="https://3.bp.blogspot.com/-4BWZpwWWvqs/W9IW-lAhHzI/AAAAAAAAFLY/wm8XQahwsGkoNtZPxObOyf7EPX63oX-kQCLcBGAs/s1600/Screenshot_14.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
 <ol start="11">
-<li>Install modul <strong>a2enmod rewrite</strong> dengan perintah <strong>“a2enmod rewrite”</strong></li>
+<li>Install modul <strong>a2enmod rewrite</strong> dengan perintah <code>a2enmod rewrite</code></li>
 </ol>
-<p><a href="https://3.bp.blogspot.com/-WYpGWCOt42M/W9IXEcAAtQI/AAAAAAAAFLg/fkEgH1fW-S0NJCtogbk9iKjvj-QdGFh1ACLcBGAs/s1600/Screenshot_15.png"><img src="https://3.bp.blogspot.com/-WYpGWCOt42M/W9IXEcAAtQI/AAAAAAAAFLg/fkEgH1fW-S0NJCtogbk9iKjvj-QdGFh1ACLcBGAs/s1600/Screenshot_15.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></a></p>
+<p><img src="https://3.bp.blogspot.com/-WYpGWCOt42M/W9IXEcAAtQI/AAAAAAAAFLg/fkEgH1fW-S0NJCtogbk9iKjvj-QdGFh1ACLcBGAs/s1600/Screenshot_15.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
 <ol start="12">
 <li>Install beberapa modul php opsional agar nantinya nextcloud berjalan denga lancar, ketikkan perintah berikut :</li>
 </ol>
-<ul>
-<li><strong>apt-get update</strong></li>
-<li><strong>apt-get install php-bz2 php-curl php-gd php-imagick php-intl php-mbstring php-xml php-zip</strong></li>
-</ul>
-<ol start="13">
-<li>Reload systemctl, ketikkan perintah <strong>“systemctl reload apache2”</strong></li>
+<pre><code>apt-get update
+apt-get install php-bz2 php-curl php-gd php-imagick php-intl php-mbstring php-xml php-zip
+</code></pre><ol start="13">
+<li>Reload systemctl, ketikkan perintah <code>systemctl reload apache2</code></li>
 </ol>
-<p><a href="https://1.bp.blogspot.com/-yYuS2tG2_xE/W9IXMvvIjmI/AAAAAAAAFLo/Zmy4vffOjO4R_UCheIN5_3rEej8Lx6tmwCLcBGAs/s1600/Screenshot_18.png"><img src="https://1.bp.blogspot.com/-yYuS2tG2_xE/W9IXMvvIjmI/AAAAAAAAFLo/Zmy4vffOjO4R_UCheIN5_3rEej8Lx6tmwCLcBGAs/s320/Screenshot_18.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></a></p>
+<p><img src="https://1.bp.blogspot.com/-yYuS2tG2_xE/W9IXMvvIjmI/AAAAAAAAFLo/Zmy4vffOjO4R_UCheIN5_3rEej8Lx6tmwCLcBGAs/s1600/Screenshot_18.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
 <ol start="16">
 <li>Buat sebuah database dengan nama <strong>nextcloud</strong> di phpmyadmin.</li>
 </ol>
-<p><a href="https://3.bp.blogspot.com/-Q0JMf4A6tgU/W9IXS1GHuII/AAAAAAAAFLs/Q5xbYR-B1HwzucndmAZVhCBZMgEb5rxQACLcBGAs/s1600/Screenshot_19.png"><img src="https://3.bp.blogspot.com/-Q0JMf4A6tgU/W9IXS1GHuII/AAAAAAAAFLs/Q5xbYR-B1HwzucndmAZVhCBZMgEb5rxQACLcBGAs/s320/Screenshot_19.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></a></p>
+<p><img src="https://3.bp.blogspot.com/-Q0JMf4A6tgU/W9IXS1GHuII/AAAAAAAAFLs/Q5xbYR-B1HwzucndmAZVhCBZMgEb5rxQACLcBGAs/s1600/Screenshot_19.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
 <ol start="14">
 <li>Buka web browser lalu ketikkan <strong>ipservervm/nextcloud,</strong> buat sebuah akun untuk admin login.</li>
 </ol>
-<p><a href="https://4.bp.blogspot.com/-sZlAQbe6mws/W9IXXqTbFoI/AAAAAAAAFL0/Xlm_zMkX5VcUtchx6cFA24pUuQJHjWvSACLcBGAs/s1600/Screenshot_20.png"><img src="https://4.bp.blogspot.com/-sZlAQbe6mws/W9IXXqTbFoI/AAAAAAAAFL0/Xlm_zMkX5VcUtchx6cFA24pUuQJHjWvSACLcBGAs/s320/Screenshot_20.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></a></p>
+<p><img src="https://4.bp.blogspot.com/-sZlAQbe6mws/W9IXXqTbFoI/AAAAAAAAFL0/Xlm_zMkX5VcUtchx6cFA24pUuQJHjWvSACLcBGAs/s1600/Screenshot_20.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
 <ol start="15">
 <li>Lalu isikan form yang tersedia dengan format sebagai berikut</li>
 </ol>
@@ -267,13 +263,13 @@ chmod +x <span class="si">${</span><span class="nv">ocpath</span><span class="si
 <li>Database : Nama database n<strong>extcloud</strong> yang tadi di buat</li>
 <li>Bagian bawah biarkan tetap localhost.</li>
 </ul>
-<p><a href="https://3.bp.blogspot.com/-4GOeFOSyByU/W9IXiFw_jcI/AAAAAAAAFL8/0uxY1K27BPke7SMh9yom1gxuNz4J1LqmACLcBGAs/s1600/Screenshot_21.png"><img src="https://3.bp.blogspot.com/-4GOeFOSyByU/W9IXiFw_jcI/AAAAAAAAFL8/0uxY1K27BPke7SMh9yom1gxuNz4J1LqmACLcBGAs/s320/Screenshot_21.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></a></p>
+<p><img src="https://3.bp.blogspot.com/-4GOeFOSyByU/W9IXiFw_jcI/AAAAAAAAFL8/0uxY1K27BPke7SMh9yom1gxuNz4J1LqmACLcBGAs/s1600/Screenshot_21.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
 <p>Lalu klik <strong>Finish Setup</strong>.</p>
 <ol start="16">
 <li>Jika muncul tampilan seperti berikut ini maka Nextcloud sudah berhasil di Install.</li>
 </ol>
-<p><a href="https://1.bp.blogspot.com/-xzbOmxodhAU/W9IXozM9KGI/AAAAAAAAFMI/zDBNuD_vyAEsWoNIY2GYRMqMP5fZV8zIACLcBGAs/s1600/Screenshot_22.png"><img src="https://1.bp.blogspot.com/-xzbOmxodhAU/W9IXozM9KGI/AAAAAAAAFMI/zDBNuD_vyAEsWoNIY2GYRMqMP5fZV8zIACLcBGAs/s320/Screenshot_22.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></a></p>
-<p><a href="https://4.bp.blogspot.com/-L1-KxfLQviA/W9IXo7ARxUI/AAAAAAAAFME/OaMxxyFoDQwisnMKJQ--uZ5cIV1I4OVrwCLcBGAs/s1600/Screenshot_23.png"><img src="https://4.bp.blogspot.com/-L1-KxfLQviA/W9IXo7ARxUI/AAAAAAAAFME/OaMxxyFoDQwisnMKJQ--uZ5cIV1I4OVrwCLcBGAs/s320/Screenshot_23.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></a></p>
+<p><img src="https://1.bp.blogspot.com/-xzbOmxodhAU/W9IXozM9KGI/AAAAAAAAFMI/zDBNuD_vyAEsWoNIY2GYRMqMP5fZV8zIACLcBGAs/s1600/Screenshot_22.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
+<p><img src="https://4.bp.blogspot.com/-L1-KxfLQviA/W9IXo7ARxUI/AAAAAAAAFME/OaMxxyFoDQwisnMKJQ--uZ5cIV1I4OVrwCLcBGAs/s1600/Screenshot_23.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
 <p><strong>I. Hasil yang didapatkan</strong></p>
 <p>Berhasil menginstall NextCloud dengan lancar.</p>
 <p><strong>J. Temuan masalah</strong></p>
