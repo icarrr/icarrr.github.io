@@ -65,7 +65,12 @@
   <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
 
   <meta property="og:title" content="Point to Point Dengan MikroTik" />
-<meta property="og:description" content="" />
+<meta property="og:description" content="A. Pendahuluan
+Pada postingan ini, akan di implentasikan bagaimana melakukan point to point (menembak wifi) menggunakan 2 buah mikroTik, dan step by stepnya akan di jelaskan sebagai berikut.
+B. Pengertian
+Wireless Point-to-Point (PTP) adalah koneksi komunikasi wireless antara dua titik, dimana satu client (station) terhubung dengan satu pemancar (AP) saja.
+C. Latar Belakang
+Tidak ada koneksi internet dari kabel LAN jika melakukan praktek di tempat kost, karena mikroTik yang satunya ada di tempat praktek." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://sibunglon.com/2017/08/19/point-to-point-dengan-mikrotik/" />
 <meta property="article:published_time" content="2017-08-19T21:37:00+00:00" />
@@ -73,17 +78,27 @@
 
   
   <meta itemprop="name" content="Point to Point Dengan MikroTik">
-<meta itemprop="description" content="">
+<meta itemprop="description" content="A. Pendahuluan
+Pada postingan ini, akan di implentasikan bagaimana melakukan point to point (menembak wifi) menggunakan 2 buah mikroTik, dan step by stepnya akan di jelaskan sebagai berikut.
+B. Pengertian
+Wireless Point-to-Point (PTP) adalah koneksi komunikasi wireless antara dua titik, dimana satu client (station) terhubung dengan satu pemancar (AP) saja.
+C. Latar Belakang
+Tidak ada koneksi internet dari kabel LAN jika melakukan praktek di tempat kost, karena mikroTik yang satunya ada di tempat praktek.">
 <meta itemprop="datePublished" content="2017-08-19T21:37:00&#43;00:00" />
 <meta itemprop="dateModified" content="2017-08-19T21:37:00&#43;00:00" />
-<meta itemprop="wordCount" content="0">
+<meta itemprop="wordCount" content="485">
 
 
 
 <meta itemprop="keywords" content="BLC Telkom Klaten,MikroTik,Ngoprek," />
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Point to Point Dengan MikroTik"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:description" content="A. Pendahuluan
+Pada postingan ini, akan di implentasikan bagaimana melakukan point to point (menembak wifi) menggunakan 2 buah mikroTik, dan step by stepnya akan di jelaskan sebagai berikut.
+B. Pengertian
+Wireless Point-to-Point (PTP) adalah koneksi komunikasi wireless antara dua titik, dimana satu client (station) terhubung dengan satu pemancar (AP) saja.
+C. Latar Belakang
+Tidak ada koneksi internet dari kabel LAN jika melakukan praktek di tempat kost, karena mikroTik yang satunya ada di tempat praktek."/>
 
   
 
@@ -109,7 +124,104 @@
         <time datetime="2017-08-19 21:37:00&#43;0000">2017-08-19</time></small>
       <h1>Point to Point Dengan MikroTik</h1>
     </header>
-    <section><!-- raw HTML omitted -->
+    <section><p><img src="https://3.bp.blogspot.com/-_iXe0SHG9Xg/W4vwyB7hGxI/AAAAAAAAEBc/HfFmsJUCXagvigFgiCaFvgNwaEkU389XwCLcBGAs/s1600/Point_To_Point.png" alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
+<p><strong>A. Pendahuluan</strong></p>
+<p>Pada postingan ini, akan di implentasikan bagaimana melakukan point to point (menembak wifi) menggunakan 2 buah mikroTik, dan step by stepnya akan di jelaskan sebagai berikut.</p>
+<p><strong>B. Pengertian</strong></p>
+<p>Wireless Point-to-Point (PTP) adalah koneksi komunikasi wireless antara dua titik, dimana satu client (station) terhubung dengan satu pemancar (AP) saja.</p>
+<p><strong>C. Latar Belakang</strong></p>
+<p>Tidak ada koneksi internet dari kabel LAN jika melakukan praktek di tempat kost, karena mikroTik yang satunya ada di tempat praktek.</p>
+<p><strong>D. Tujuan</strong></p>
+<p>Untuk mengetahui dan memahami bagaimana melakukan point to point menggunakan mikrotik.</p>
+<p><strong>E. Alat dan Bahan</strong></p>
+<ol>
+<li>
+<p>2 Buah mikroTik</p>
+</li>
+<li>
+<p>2 kabel UTP</p>
+</li>
+<li>
+<p>Laptop/pc</p>
+</li>
+</ol>
+<p><strong>F. Jangka Waktu Pelaksanaan</strong></p>
+<p>Waktu yang dibutuhkan kisaran 15-20 menit</p>
+<p><strong>G. Langkah Kerja</strong></p>
+<blockquote>
+<blockquote>
+<p>Untuk praktek ini menggunakan 2 mikroTik, maka lakukan konfigurasi dasar terlebih dahulu caranya seperti pada postingan <a href="https://sibunglon.com/2017/07/27/konfigurasi-dasar-mikrotik-untuk-sharing-internet-menggunakan-hotspot/">ini</a>&laquo;</p>
+</blockquote>
+</blockquote>
+<ol>
+<li>
+<p>Hubungkan mikrotik yang ada ke laptop, buka aplikasi winbox lalu massukkan user dan password kemudian login</p>
+</li>
+<li>
+<p>Buka System &gt; Identity, berikan identitas untuk mikrotik yang akan digunakan untuk menembak/sumber internet untuk mikrotik yang satunya. Setelah namanya diset, klik ok</p>
+</li>
+</ol>
+<p><img src="https://2.bp.blogspot.com/-lwNULJBpfj0/W4vyd8hEQJI/AAAAAAAAEBo/IWYOzvWu_RkIFnD1V2YebDhphyXcbnuMgCLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-17%2B12-46-22.png" alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
+<ol start="3">
+<li>Berikan komentar untuk tiap interface yang akan digunakan, caranya klik comment (icon berwarna kuning) &gt; ok</li>
+</ol>
+<p><img src="https://3.bp.blogspot.com/-2BIhn0pToP4/W4vyjux3HvI/AAAAAAAAEBs/fB9rBDh4seooDnjsR1Pao9gYcG5DybUfgCLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-17%2B12-47-05.png" alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
+<ol start="4">
+<li>Aktifkan wlan mikrotik, caranya klik wlan &gt; klik icon centang (icon berwarna biru)</li>
+</ol>
+<p><img src="https://4.bp.blogspot.com/-DNpQ6zy2iL4/W4vzzpOx8tI/AAAAAAAAECE/t62sUyPjA88snkbFTaRievbvr4TQ7YNhQCLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-17%2B12-48-35.png" alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
+<ol start="5">
+<li>Klik 2 kali wlan, untuk konfigurasi. Jika jendela konfigurasi tampil, ubah mode wlannya caranya klik dropdown disampingnya dan pilih “station bridge”</li>
+</ol>
+<p><img src="https://2.bp.blogspot.com/-qc0B3mK4e_g/W4v0YwUusFI/AAAAAAAAECM/qW1TJ0NoY5kGrSbycy4h73lpZLwsj4USgCLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-17%2B12-50-06.png" alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
+<ol start="6">
+<li>Tembak wifi yang diinginkan caranya, klik scan</li>
+</ol>
+<p><img src="https://3.bp.blogspot.com/-n2-euGAd8Gg/W4v0iF1lYBI/AAAAAAAAECQ/RJoc5B1zTDE4c4zKHOPl6NTXRAyGTv81QCLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-17%2B12-52-02.png" alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
+<ol start="7">
+<li>
+<p>Pilih wifi yang akan digunakan &gt; klik connect &gt; apply &gt; ok</p>
+</li>
+<li>
+<p>Dapatkan ip dari wifi yang digunakan, caranya klik ip &gt; DHCP Client &gt; tambahkan (icon berwarna biru) &gt; ubah interfacenya menjadi “wlan1” &gt; apply &gt; ok</p>
+</li>
+</ol>
+<p><img src="https://4.bp.blogspot.com/-ECyIfhO2nsU/W4v0vTxv2iI/AAAAAAAAECc/qgvZCfK8pzkoVzU9j861gMKJfzUPAh5bQCLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-17%2B12-54-33.png" alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
+<p>sekarang mikrotiknya sudah dapat ip</p>
+<ol start="9">
+<li>Buka terminal winbox lalu coba ping sebuah situs untuk mengetes apakah mikrotiknya sudah dapat internet atau belum.</li>
+</ol>
+<p><img src="https://3.bp.blogspot.com/-rlYlIU1_o1o/W4v1N3hLuXI/AAAAAAAAECw/lJ8uON1URCkNSAi3rTPsI49WBrisW1X3wCLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-17%2B12-59-03.png" alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
+<ol start="10">
+<li>Atur ip address untuk menyalurkan internet dari mikrotik tersebut menggunakan kabel LAN, caranya klik ip &gt; address &gt; tambahkan (icon tanda tambah) &gt; masukkan ip &gt; pilih eth yang akan menyalurkan internet &gt;apply &gt; ok</li>
+</ol>
+<p><img src="https://3.bp.blogspot.com/-rAjqUV89uhk/W4v06ju9gBI/AAAAAAAAECk/aAbH-QCO6uUGcw_Wutzi8RTkGtUyMUy8gCLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-17%2B12-56-01.png" alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
+<ol start="11">
+<li>Berikan DHCP server ke eth yang telah diatur ip (eth yang akan menyalurkan internet) &gt; next … &gt; ok</li>
+</ol>
+<p><img src="https://4.bp.blogspot.com/-TJCRo0WJHsg/W4v1TJgv4wI/AAAAAAAAEC0/cwMFllf61_gMyzLWN6Zr8CdCjoz72OsPQCLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-17%2B12-56-49.png" alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
+<ol start="12">
+<li>Atur Firewall NAT agar client dapat terhubung ke internet, klik IP &gt; Firewall &gt; NAT &gt; tambahkan NAT (icon berwarna biru).</li>
+</ol>
+<p>Settingannya :</p>
+<blockquote>
+<ul>
+<li>Action &gt; masquerade</li>
+<li>chain &gt; srcnat</li>
+<li>Out.interface &gt; wlan1</li>
+</ul>
+</blockquote>
+<p><img src="https://2.bp.blogspot.com/-15DP2rR-Ed8/W4v1bhAbO_I/AAAAAAAAEC4/jHuQ0CJzkA0NTH8A4hbxnZZg_xBwAs9YwCLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-17%2B12-57-26.png" alt=""></p>
+<p><img src="https://3.bp.blogspot.com/-SDrgI0cMtzU/W4v1b7N-1HI/AAAAAAAAEC8/SKzOuYsdSCQ7NfM9mEToa23kc4QGrwlKACLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-17%2B12-57-58.png" alt=""></p>
+<ol start="13">
+<li>Sampai tahap ini mikrotik yang menembak sudah bisa mengakses internet baik menggunakan kabel LAN. Jika ingin di sambungkan ke mikrotik lain lagi untuk dishare sebagai hotspot, bisa melakukan konfigurasi dasar sesuai pada postingan <a href="https://sibunglon.com/2017/07/27/konfigurasi-dasar-mikrotik-untuk-sharing-internet-menggunakan-hotspot/">ini</a>.</li>
+</ol>
+<p><strong>H. Temuan Masalah</strong></p>
+<p>MikroTik yang berfungsi sebagai penembak tidak mendapatkan akses internet dari mikroTik yang ditembak karena pada mikroTik yang ditembak mempunyai login page hotspot untuk dapat terkoneksi di internet, untuk penyelesaian masalah ini mikroTik yang menembak tidak diberikan login page agar dapat terkoneksi atau dengan metode bypass.</p>
+<p><strong>I. Hasil Yang didapatkan</strong></p>
+<p>Mengetahui bagaimana dan memahami langkah-langkah point to point menggunakan mikrotik.</p>
+<p><strong>J. Kesimpulan</strong></p>
+<p>Dengan point to point ini, dapat dilakukan share internet menggunakan kabel LAN layaknya telah berlangganan ke ISP.</p>
 </section>
     <footer>
       <hr>

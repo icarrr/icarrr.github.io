@@ -65,7 +65,11 @@
   <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
 
   <meta property="og:title" content="Menginstall Proxmox di Server" />
-<meta property="og:description" content="" />
+<meta property="og:description" content="Pendahuluan
+Proxmox VE (Virtual Environment) adalah sebuah distro Linux virtualisasi berbasis Debian ( 64 bit) yang mengusung OpenZV dan KVM, dengan KVM kita tidak hanya bisa menginstall linux saja akan tetapi Operating system windows pun bisa kita instal. Namun yang membuat istimewa dari proxmox adalah kemudahan dalam installasi dan administrasi berbasis Web.
+Latar Belakang
+Beberapa keuntungan menggunakan Proxmox sebagai berikut
+ Kinerja terbaik. Instalasi yang telah dioptimalkan, sehingga lebih cepat. Mudah dalam manajemen." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://sibunglon.com/2017/07/31/menginstall-proxmox-di-server/" />
 <meta property="article:published_time" content="2017-07-31T16:07:00+00:00" />
@@ -73,17 +77,25 @@
 
   
   <meta itemprop="name" content="Menginstall Proxmox di Server">
-<meta itemprop="description" content="">
+<meta itemprop="description" content="Pendahuluan
+Proxmox VE (Virtual Environment) adalah sebuah distro Linux virtualisasi berbasis Debian ( 64 bit) yang mengusung OpenZV dan KVM, dengan KVM kita tidak hanya bisa menginstall linux saja akan tetapi Operating system windows pun bisa kita instal. Namun yang membuat istimewa dari proxmox adalah kemudahan dalam installasi dan administrasi berbasis Web.
+Latar Belakang
+Beberapa keuntungan menggunakan Proxmox sebagai berikut
+ Kinerja terbaik. Instalasi yang telah dioptimalkan, sehingga lebih cepat. Mudah dalam manajemen.">
 <meta itemprop="datePublished" content="2017-07-31T16:07:00&#43;00:00" />
 <meta itemprop="dateModified" content="2017-07-31T16:07:00&#43;00:00" />
-<meta itemprop="wordCount" content="0">
+<meta itemprop="wordCount" content="351">
 
 
 
 <meta itemprop="keywords" content="BLC Telkom Klaten,Ayo Belajar Linux,Proxmox,Installasi,Ngoprek," />
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Menginstall Proxmox di Server"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:description" content="Pendahuluan
+Proxmox VE (Virtual Environment) adalah sebuah distro Linux virtualisasi berbasis Debian ( 64 bit) yang mengusung OpenZV dan KVM, dengan KVM kita tidak hanya bisa menginstall linux saja akan tetapi Operating system windows pun bisa kita instal. Namun yang membuat istimewa dari proxmox adalah kemudahan dalam installasi dan administrasi berbasis Web.
+Latar Belakang
+Beberapa keuntungan menggunakan Proxmox sebagai berikut
+ Kinerja terbaik. Instalasi yang telah dioptimalkan, sehingga lebih cepat. Mudah dalam manajemen."/>
 
   
 
@@ -109,7 +121,97 @@
         <time datetime="2017-07-31 16:07:00&#43;0000">2017-07-31</time></small>
       <h1>Menginstall Proxmox di Server</h1>
     </header>
-    <section><!-- raw HTML omitted -->
+    <section><p><img src="https://2.bp.blogspot.com/-KOyLcEHAmtU/W4kB1KruECI/AAAAAAAADzM/pDWym8-0SrwHe_l3EluBDm_RZy-whW0SACLcBGAs/s1600/download.png" alt="shell,linux,linux indonesia,blc telkom klaten, kpli klaten, icar. sibunglonganteng"></p>
+<p><strong>Pendahuluan</strong></p>
+<p>Proxmox VE (Virtual Environment) adalah sebuah distro Linux virtualisasi berbasis Debian ( 64 bit) yang mengusung OpenZV dan KVM, dengan KVM kita tidak hanya bisa menginstall linux saja akan tetapi Operating system windows pun bisa kita instal. Namun yang membuat istimewa dari proxmox adalah kemudahan dalam installasi dan administrasi berbasis Web.</p>
+<p><strong>Latar Belakang</strong></p>
+<p>Beberapa keuntungan menggunakan Proxmox sebagai berikut</p>
+<ul>
+<li>Kinerja terbaik.</li>
+<li>Instalasi yang telah dioptimalkan, sehingga lebih cepat.</li>
+<li>Mudah dalam manajemen.</li>
+<li>Cocok untuk kelas Enterprise.</li>
+</ul>
+<p>Beberapa hal yang perlu diperhatikan :</p>
+<ul>
+<li>Proxmox tersedia hanya untuk hardware 64-bit.</li>
+<li>Pada Proses installasi proxmox akan menggunakan seluruh ruang storage yang ada, ini artinya Anda harus menyediakan 1 Server/Komputer dengan HDD khusus hanya untuk proxmox saja.</li>
+<li>Installer CD Proxmox hanya bisa diinstall di Single HDD, jadi bagi Anda yang menginginkan kemanan data dengan 2 HDD ( RAID1 ), Anda bisa memanfaatkan RAID Software, dengan mengkonfigurasinya setelah proses instalasi pada HDD pertama selesai.</li>
+</ul>
+<p>Proxmox juga dilengkapi dengan VNC Viewer sehingga jika Anda menginginkan virtualisai dengan lingkungan Desktop seperti windows juga Xwindow linux.</p>
+<p><strong>C. MAKSUD DAN TUJUAN</strong></p>
+<ul>
+<li>Menambah wawasan dan pengetahuan</li>
+<li>Dapat mengerti apa itu proxmox</li>
+<li>Dapat mengerti maksud dan tujuan</li>
+</ul>
+<p><strong>D. HASIL YANG DI HARAPKAN</strong></p>
+<ul>
+<li>Mampu menerapkannya dan mempraktekannya</li>
+<li>Mampu mengerti cara kerjanya</li>
+<li>Mampu mengembangkan dan tahu cara kerjanya</li>
+</ul>
+<p><strong>E. ALAT DAN BAHAN</strong></p>
+<ul>
+<li>laptop</li>
+<li>fd booting proxmox</li>
+<li>pc</li>
+</ul>
+<p><strong>F. JANGKA WAKTU PELAKSANAAN</strong></p>
+<p>10 - 20 menit</p>
+<p><strong>G. LANGKAH KERJA</strong></p>
+<ol>
+<li>
+<p>masuk pada menu bootable yang sudah di burn tadi</p>
+</li>
+<li>
+<p>kemudian pilih instal proxmox</p>
+</li>
+</ol>
+<p><img src="https://4.bp.blogspot.com/-5Lu72RE9xoM/W4kCXlsoiGI/AAAAAAAADzU/QC6idFC_C6QSxzz6Xvc147VFNJL4M8tuwCLcBGAs/s1600/20170731_143835.jpg" alt="shell,linux,linux indonesia,blc telkom klaten, kpli klaten, icar. sibunglonganteng"></p>
+<ol start="3">
+<li>klik I agree untuk menyetujui lisensi proxmox</li>
+</ol>
+<p><img src="https://3.bp.blogspot.com/-e5VI8AOkduE/W4kC35ZwW1I/AAAAAAAADzg/NIHvhSPQ0uIWUVUi42qSBwStMK5MQM-NgCLcBGAs/s1600/20170731_143934-1.jpg" alt="shell,linux,linux indonesia,blc telkom klaten, kpli klaten, icar. sibunglonganteng"></p>
+<ol start="4">
+<li>kemudian pilih target hardisk,jika sudah klik next</li>
+</ol>
+<p><img src="https://2.bp.blogspot.com/-thDXdLbRKJU/W4kDO4Im0CI/AAAAAAAADzo/_1k3598vi_gut2HdX1VpvbYy4-uMnJlQQCLcBGAs/s1600/20170731_143954-1.jpg" alt="shell,linux,linux indonesia,blc telkom klaten, kpli klaten, icar. sibunglonganteng"></p>
+<ol start="5">
+<li>Kemudian kita akan mensetting Negara, Zona waktu, dan keyboard layout seperti di bawah ini.</li>
+</ol>
+<p><img src="https://1.bp.blogspot.com/-8t4nkgn9_7A/W4kDjqkcG-I/AAAAAAAADzw/t4TdKigG1MAdyCged7Uo9cQeUDLeILHJQCLcBGAs/s1600/20170731_144029-1.jpg" alt="shell,linux,linux indonesia,blc telkom klaten, kpli klaten, icar. sibunglonganteng"></p>
+<ol start="6">
+<li>kemudian isikan Password dan juga Email.</li>
+</ol>
+<p><img src="https://3.bp.blogspot.com/-JVhcI4VZ2yI/W4kEC95uElI/AAAAAAAAD0A/qx4adU8wa_EWHmEfVrywjRoLl_DpSfmlACLcBGAs/s1600/20170731_144050-1.jpg" alt="shell,linux,linux indonesia,blc telkom klaten, kpli klaten, icar. sibunglonganteng"></p>
+<ol start="7">
+<li>Kemudian kita konfigurasikan Di network Konfiguration</li>
+</ol>
+<blockquote>
+<p>Hostname : proxmox.smkn1bulukumba.sch.id
+IP Address : 192.168.112.2 (IP yang nantinya kita remote melalui browser)
+Netmask : 255.255.255.248
+Gateway : 192.168.112.1 (IP Port Mikrotik yang terhubung ke PC Server)
+DNS Server : 192.168.112.1</p>
+</blockquote>
+<p><img src="https://4.bp.blogspot.com/-B95jBLtoTuQ/W4kEaLbEqxI/AAAAAAAAD0I/Yhx3pUAItzwgHnzDguXMr8BO9_AgUyKdQCLcBGAs/s1600/20170731_144559-1.jpg" alt="shell,linux,linux indonesia,blc telkom klaten, kpli klaten, icar. sibunglonganteng"></p>
+<ol start="8">
+<li>tunggu hingga installasi selesai</li>
+</ol>
+<p><img src="https://1.bp.blogspot.com/-fsa0mq-ATsE/W4kE3d88pqI/AAAAAAAAD0U/EemOx_sDFco1cK6ZDO7tpPjcbyyuAWG1ACLcBGAs/s1600/20170731_144616-1.jpg" alt="shell,linux,linux indonesia,blc telkom klaten, kpli klaten, icar. sibunglonganteng"></p>
+<ol start="9">
+<li>Kemudian jika sudah selesai tinggal kita reboot</li>
+</ol>
+<p><img src="https://1.bp.blogspot.com/-rh7zmf9S0qw/W4kE25w3bfI/AAAAAAAAD0Q/nSppXxe8BIMiLf4LO2JrOyDLrIz1j3tOgCLcBGAs/s1600/20170731_144834-1.jpg" alt="shell,linux,linux indonesia,blc telkom klaten, kpli klaten, icar. sibunglonganteng"></p>
+<p><strong>H. HASIL YANG DI HARAPKAN</strong></p>
+<p>Memahami cara menginstall proxmox di server</p>
+<p><strong>I. TEMUAN PERMASALAHAN</strong></p>
+<p>Disini saya tidak menemukan permasalahan</p>
+<p><strong>J. KESIMPULAN</strong></p>
+<p>Dengan menggunakan Proxmox bisa melakukan virtualisasi server.</p>
+<p><strong>Referensi</strong></p>
+<p><a href="http://dhanisuryapratama1.blogspot.co.id/">Blog</a></p>
 </section>
     <footer>
       <hr>

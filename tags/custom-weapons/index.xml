@@ -44,7 +44,10 @@ sudo apt-get install xdotool</description>
         <link>https://sibunglon.com/2017/10/21/mempercantik-tampilan-terminal-server/</link>
         <pubDate>Sat, 21 Oct 2017 02:27:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/21/mempercantik-tampilan-terminal-server/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pada kesempatan ini saya ingin sharing tentang bagaimana mempercantik atau apalah agar tampilan shell linux tidak polos-polos begitu saja.
+B. Pengertian
+Apa itu shell ? shell adalah program (penterjemah perintah) yang menjembatani user dengan sistem operasi dalam hal ini kernel (inti sistem operasi), umumnya shell menyediakan prompt sebagai user interface, tempat dimana user mengetikkan perintah-perintah yang diinginkan baik berupa perintah internal shell (internal command), ataupun perintah eksekusi suatu file progam (eksternal command), selain itu shell memungkinkan user menyusun sekumpulan perintah pada sebuah atau beberapa file untuk dieksekusi sebagai program.</description>
       </item>
     
       <item>
@@ -52,7 +55,11 @@ sudo apt-get install xdotool</description>
         <link>https://sibunglon.com/2017/09/07/mengatasi-kursor-winbox-mikrotik-meloncat-loncat-sewaktu-mengetik/</link>
         <pubDate>Thu, 07 Sep 2017 14:42:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/07/mengatasi-kursor-winbox-mikrotik-meloncat-loncat-sewaktu-mengetik/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pernahkan anda mengalami ini? atau hanya pernah lihat begini?
+Pada postingan kali, saya akan sharing bagaimana mengatasi kursor winbox mikrotik meloncat-loncat sewaktu mengetik.
+B. Pengertian
+kursor adalah suatu petunjuk atau indikator posisi pada monitor komputer atau peranti tampilan lain yang akan merespons masukan dari suatu masukan teks atau peranti penunjuk. Kursor secara umum dapat dibagi menjadi dua jenis: kursor teks dan kursor tetikus. Kursor teks adalah petunjuk pada antarmuka baris perintah (CLI) atau editor teks yang menunjukkan tempat teks akan diletakkan sewaktu dimasukkan (titik penyisipan) dan biasanya berupa garis bawah, segi empat, atau garis vertikal yang dapat berkedip atau stabil.</description>
       </item>
     
   </channel>

@@ -107,7 +107,10 @@ Banyak yang menggunakan analisis SWOT untuk menganalisa situasi, kondisi, dan fa
         <link>https://sibunglon.com/2017/10/12/mengenal-vlan-virtual-lan/</link>
         <pubDate>Thu, 12 Oct 2017 09:08:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/12/mengenal-vlan-virtual-lan/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pada kesempatan kali ini ane akan share sedikit artikel tentang VLAN. Oke langsung saja silahkan disimak.
+1) Pengertian
+Virtual LAN atau disingkat VLAN merupakan sekelompok perangkat pada satu LAN atau lebih yang dikonfigurasikan (menggunakan perangkat lunak pengelolaan) sehingga dapat berkomunikasi seperti halnya bila perangkat tersebut terhubung ke jalur yang sama, padahal sebenarnya perangkat tersebut berada pada sejumlah segmen LAN yang berbeda. Vlan dibuat dengan menggunakan jaringan pihak ke tiga.</description>
       </item>
     
       <item>
@@ -148,7 +151,11 @@ Semua ilmu dan penerapannya untuk mencegah terjadinya kecelakaan kerja, penyakit
         <link>https://sibunglon.com/2017/09/12/pengenalan-sop-standar-operasional-prosedur/</link>
         <pubDate>Tue, 12 Sep 2017 01:27:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/12/pengenalan-sop-standar-operasional-prosedur/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pada blog kali ini saya akan memperkenalkan tentang SOP. pasti kalian bertanya apa itu SOP selanjut nya akan di jelaskan di bawah ini.
+1) Pengertian
+SOP
+Prosedur operasi standar istilah dalam bahasa Indonesia, atau dalam bahasa Inggris disebut SOP (Standart Oprational Procedur), digunakan dalam berbagai konteks yang berbeda, termasuk kesehatan, penerbangan, teknik, pendidikan, industri, dan militer. Dengan melakukan SOP perusahaan dapat memastikan suatu aktivitas bisnis bisa berjalan sesuai dengan standard yang diharapkan.</description>
       </item>
     
       <item>
@@ -164,7 +171,20 @@ Semua ilmu dan penerapannya untuk mencegah terjadinya kecelakaan kerja, penyakit
         <link>https://sibunglon.com/2017/08/28/packet-headertahapan-terjadinya-komunikasi/</link>
         <pubDate>Mon, 28 Aug 2017 12:46:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/28/packet-headertahapan-terjadinya-komunikasi/</guid>
-        <description></description>
+        <description>A. PENGERTIAN
+Packet header adalah paket yang kejadian saat seorang akan mengirim atau berkomunikasi lewat jaringan,
+B. LATAR BELAKANG
+Pemahaman tentang tahapan dan proses dikirimnya dan di terimanya data, yang dikirim lewat jaringan.
+C. MAKSUD DAN TUJUAN
+Paham dan bisa mengidentifikasi kesalahan atau pengiriman paket data.
+D. WAKTU
+2 Jam
+E. ALAT DAN BAHAN
+~ Laptop
+~ LCD proyektor
+~ Koneksi internet
+F. PEMBAHASAN
+Syarat terjadinya komunikasi, ada yang akan dikirim atau ada datanya seperti gambar diatas, sudah jelas, dari data lanjut ke Options ( if any ) atau pilihan dari si pengirim akan kah paket data itu dikirim atau tidak, jika hal ini tidak jelas maka data tidak akan sampai ke tujuan.</description>
       </item>
     
       <item>
@@ -172,7 +192,12 @@ Semua ilmu dan penerapannya untuk mencegah terjadinya kecelakaan kerja, penyakit
         <link>https://sibunglon.com/2017/08/21/mengenal-perintah-perintah-dasar-di-linux/</link>
         <pubDate>Mon, 21 Aug 2017 21:40:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/21/mengenal-perintah-perintah-dasar-di-linux/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pada kesempatan kali ini, saya akan memposting beberapa perintah-perintah dasar dari sistem operasi linux. Untuk lebih jelasnya akan di jelaskan sebagai berikut.
+B. Pengertian
+Linux identik dengan penggunaan console terminal yang mengharuskan kita menghafal perintah-perintah yang ada. Perintah-perintah tersebut bisa berupa singkatan atau nama asli sesuai fungsinya.
+C. Latar Belakang
+Semakin lama, semakin banyak para pengguna komputer yang menjadikan Linux sebagai Sistem Operasi utamanya. Selain sifatnya yang open source, ternyata sistem operasi Linux ini juga lebih banyak menuntut kita untuk terus mempelajarinya.</description>
       </item>
     
       <item>
@@ -180,7 +205,12 @@ Semua ilmu dan penerapannya untuk mencegah terjadinya kecelakaan kerja, penyakit
         <link>https://sibunglon.com/2017/08/16/konsep-perencanaan-membangun-jaringan-sekolah/</link>
         <pubDate>Wed, 16 Aug 2017 17:25:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/16/konsep-perencanaan-membangun-jaringan-sekolah/</guid>
-        <description></description>
+        <description>A. PENDAHULUAN
+Pada kesempatan ini saya akan memberikan sedikit ilmu terkait dengan konsep perencanaan membangun jaringan sekolah. dalam melakukan sebuah pekerjaan kita mesti memikirkan konsep terlebih dahulu.
+B. PENGERTIAN
+Perencanaan merupakan tahapan awal yang harus di lakukan sebelum melakuka sesuatu pekerjaan. perencanaan dikatakan matang/berhasil, apabila perencanaan tersebut 70% sudah pasti dan tidak sering mengalami perubahan
+C. LATAR BELAKANG
+Dalam hal ini, saya bekerja tim utuk membangun jaringan di sekolah. saya berpern untuk mengatur jaringan.</description>
       </item>
     
       <item>
@@ -196,7 +226,9 @@ Semua ilmu dan penerapannya untuk mencegah terjadinya kecelakaan kerja, penyakit
         <link>https://sibunglon.com/2017/08/07/osi-layer/</link>
         <pubDate>Mon, 07 Aug 2017 14:30:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/07/osi-layer/</guid>
-        <description></description>
+        <description>A. Pengertian OSI Layer
+OSI atau Model Open Systems Interconnection diciptakan oleh InternationalOrganization for Standardization (ISO) yang menyediakan kerangka logikaterstruktur bagaimana proses komunikasi data berinteraksi melalui jaringan.Standard ini dikembangkan untuk industri komputer agar komputer dapat berkomunikasi pada jaringan yang berbeda secara efisien.
+Model Layer OSI dibagi dalam dua group: “upper layer ” dan “lower layer ”. “Upper layer” fokus pada applikasi pengguna dan bagaimana file direpresentasikan di komputer. Untuk Network Engineer, bagian utama yang menjadi perhatiannya adalah pada “lower layer”.</description>
       </item>
     
   </channel>

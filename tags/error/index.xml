@@ -151,7 +151,10 @@ PHP info adalah istilah untuk menyebutkan sebuah halaman yang berisi informasi m
         <link>https://sibunglon.com/2017/08/23/mengatasi-masalah-apt-get-update-failed-to-fetch-hash-sum-mismatch/</link>
         <pubDate>Wed, 23 Aug 2017 10:37:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/23/mengatasi-masalah-apt-get-update-failed-to-fetch-hash-sum-mismatch/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pada kali ini, saya akan memposting tentang bagaimana mengatasi masalah yang biasa ditemukan saat melakukan update linux.
+B. Pengertian
+Shell adalah program (penterjemah perintah)yang menjembatani user dengan sistem operasi dalam hal ini Kernel (inti dari sistem operasi), umumnya shell menyediakan prompt sebagai user interface, tempat dimana user dapat mengetikkan perintah-perintah yang diinginkan baik berupa perintah internal shell (internal command), ataupun perintah eksekusi file program (eksternal command), selain itu memungkinkan user menyusun sekumpulan perintah pada sebuah atau beberapa file untuk dieksekusi sebagai program.</description>
       </item>
     
       <item>
@@ -159,7 +162,10 @@ PHP info adalah istilah untuk menyebutkan sebuah halaman yang berisi informasi m
         <link>https://sibunglon.com/2017/08/02/mengatasi-grub-linux-yang-error/</link>
         <pubDate>Wed, 02 Aug 2017 16:51:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/02/mengatasi-grub-linux-yang-error/</guid>
-        <description></description>
+        <description>Pendahuluan
+GNU GRUB (singkat untuk GNU GRand Bersatu Bootloader) adalah boot loader paket dari proyek GNU . GRUB adalah implementasi referensi dari Free Software Foundation &amp;lsquo;s Multiboot Keterangan , yang menyediakan pengguna pilihan untuk boot salah satu dari beberapa sistem operasi yang terpasang di komputer atau pilih tertentu kernel konfigurasi yang tersedia pada partisi sistem operasi tertentu.
+Maksud dan Tujuan
+Tujuan dari postingan ini yaitu agar pembaca yang memiliki masalah yang serupa, maka ia dapat mengatasinya sendiri tanpa membawa ke service center.</description>
       </item>
     
   </channel>

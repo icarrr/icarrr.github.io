@@ -103,7 +103,17 @@ C. Hasil Yang Diharapkan</description>
         <link>https://sibunglon.com/2017/09/11/mengupgrade-version-mikrotik-routerboard/</link>
         <pubDate>Mon, 11 Sep 2017 11:20:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/11/mengupgrade-version-mikrotik-routerboard/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pada kesempatan kali ini saya akan memposting bagaimana sih cara mengupgrade versi mikrotik.
+B. Latar belakang
+Ingin mendapatkan fitur baru pada versi baru sistem mikrotik
+C. Tujuan
+Agar pengunjung blog dapat mengetahui bagaimana cara mengupgrade versi mikrotik
+D. Hasil yang diharapkan
+Dapat mengikuti tahapan kerjanya
+E. Alat dan bahan
+ mikrotik akses internet kabel UTP  F. Jangka waktu pelaksanaan
+Waktu yang dibutuhkan tergantung dari koneksi yang digunakan</description>
       </item>
     
       <item>
@@ -111,7 +121,12 @@ C. Hasil Yang Diharapkan</description>
         <link>https://sibunglon.com/2017/09/09/memblokir-situs-yang-mempunyai-banyak-ip-dengan-mikrotik/</link>
         <pubDate>Sat, 09 Sep 2017 15:27:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/09/memblokir-situs-yang-mempunyai-banyak-ip-dengan-mikrotik/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pada kesempatan kali ini, saya ingin berbagi tentang memblokir situs yang mempunyai banyak ip dengan mikrotik.
+B. Pengertian
+Situs web (bahasa Inggris: website) adalah suatu halaman web yang saling berhubungan yang umumnya berada pada peladen yang sama berisikan kumpulan informasi yang disediakan secara perorangan, kelompok, atau organisasi.
+C. Latar belakang
+Ada beberapa situs yang mempunyai banyak ip, sehingga bila ip yang satunya di block dia masih bisa diakses karena punya ip yang lain.</description>
       </item>
     
       <item>
@@ -119,7 +134,10 @@ C. Hasil Yang Diharapkan</description>
         <link>https://sibunglon.com/2017/09/09/membuat-interface-bridge-dan-menambahkan-ethernet-ke-bridge/</link>
         <pubDate>Sat, 09 Sep 2017 15:22:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/09/membuat-interface-bridge-dan-menambahkan-ethernet-ke-bridge/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pada kesempata kali ini saya akan memposting bagaimana membuat interface bridge kemudian menambahkan ethernet ke bridge
+B. Pengertian
+Jembatan jaringan (bahasa Inggris: Network bridge) adalah sebuah komponen jaringan yang digunakan untuk memperluas jaringan atau membuat sebuah segmen jaringan. Jembatan jaringan beroperasi di dalam lapisan data-link pada model OSI. Jembatan juga dapat digunakan untuk menggabungkan dua buah media jaringan yang berbeda, seperti halnya antara media kabel Unshielded Twisted-Pair (UTP) dengan kabel serat optik atau dua buah arsitektur jaringan yang berbeda, seperti halnya antara Token Ring dan Ethernet.</description>
       </item>
     
       <item>
@@ -139,7 +157,11 @@ MikroTik routerboad adalah router embedded produk dari mikrotik.</description>
         <link>https://sibunglon.com/2017/09/07/mengatasi-kursor-winbox-mikrotik-meloncat-loncat-sewaktu-mengetik/</link>
         <pubDate>Thu, 07 Sep 2017 14:42:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/07/mengatasi-kursor-winbox-mikrotik-meloncat-loncat-sewaktu-mengetik/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pernahkan anda mengalami ini? atau hanya pernah lihat begini?
+Pada postingan kali, saya akan sharing bagaimana mengatasi kursor winbox mikrotik meloncat-loncat sewaktu mengetik.
+B. Pengertian
+kursor adalah suatu petunjuk atau indikator posisi pada monitor komputer atau peranti tampilan lain yang akan merespons masukan dari suatu masukan teks atau peranti penunjuk. Kursor secara umum dapat dibagi menjadi dua jenis: kursor teks dan kursor tetikus. Kursor teks adalah petunjuk pada antarmuka baris perintah (CLI) atau editor teks yang menunjukkan tempat teks akan diletakkan sewaktu dimasukkan (titik penyisipan) dan biasanya berupa garis bawah, segi empat, atau garis vertikal yang dapat berkedip atau stabil.</description>
       </item>
     
       <item>
@@ -147,7 +169,15 @@ MikroTik routerboad adalah router embedded produk dari mikrotik.</description>
         <link>https://sibunglon.com/2017/09/06/memblokir-1-ip-address-client-agar-tidak-dapat-terkoneksi-ke-internet-dengan-simple-logika-mode/</link>
         <pubDate>Wed, 06 Sep 2017 14:26:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/06/memblokir-1-ip-address-client-agar-tidak-dapat-terkoneksi-ke-internet-dengan-simple-logika-mode/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pada praktek ini, saya akan memposting bagaimana memblokir ip address dari client agar tidak dapat terhubung ke internet tetapi masing menggunakan firewall simple logika
+B. Pengertian
+Firewall simple logis/logika adalah konfigurasi firewall secara logis sehingga bisa lebih mudah dipahami karena lebih manusiawi
+C. Latar belakang
+Ingin menambah ilmu kemudian untuk disharing
+D. Tujuan
+Agar client tidak bisa terhubung ke internet apabila ia mendapatkan ip yang telah diblokir
+E. Hasil yang diharapkan</description>
       </item>
     
       <item>
@@ -155,7 +185,10 @@ MikroTik routerboad adalah router embedded produk dari mikrotik.</description>
         <link>https://sibunglon.com/2017/09/05/memblokir-ekstensi-file-pada-mikrotik-dengan-web-proxy/</link>
         <pubDate>Tue, 05 Sep 2017 13:02:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/05/memblokir-ekstensi-file-pada-mikrotik-dengan-web-proxy/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pada kesempatan ini, yang saya posting tentang mirkotik eh mikrotik tepatnya memproxy ekstensi file tertentu agar tidak bisa diakses oleh client.
+B. Pengertian
+Secara umum arti dari proxy adalah sebuah komputer server atau program komputer yang dapat bertindak sebagai komputer lainnya untuk melakukan request terhadap content dari Internet atau intranet. Dengan kata lain proxy merupakan sebuah media keamanan bagi akses jaringan internet kita. Terdapat beberapa macam tipe proxy, diantaranya SSL Proxy, Web Proxy, Intercepting Proxy, Reverse Proxy, dll.</description>
       </item>
     
       <item>
@@ -163,7 +196,17 @@ MikroTik routerboad adalah router embedded produk dari mikrotik.</description>
         <link>https://sibunglon.com/2017/09/05/memblokir-ip-situs-di-firewall-dengan-simple-logika-mode/</link>
         <pubDate>Tue, 05 Sep 2017 10:00:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/05/memblokir-ip-situs-di-firewall-dengan-simple-logika-mode/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pada kesempatan kali ini saya akan memposting tentang firewall tetapi dengan metode simple logika
+B. Pengertian
+Firewall simple logis/logika adalah konfigurasi firewall secara logis sehingga bisa lebih mudah dipahami karena lebih manusiawi
+C. Latar belakang
+Ingin menambah ilmu kemudian untuk disharing
+D. Tujuan
+Agar client tidak dapat membuka situs yang telah diblokir
+E. Hasil yang diharapkan
+Dapat melakukan konfigurasi dengan cepat, baik, dan benar
+F. Alat dan bahan</description>
       </item>
     
       <item>
@@ -171,7 +214,10 @@ MikroTik routerboad adalah router embedded produk dari mikrotik.</description>
         <link>https://sibunglon.com/2017/09/04/memblokir-situs-dengan-layer-7-protocol/</link>
         <pubDate>Mon, 04 Sep 2017 14:00:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/04/memblokir-situs-dengan-layer-7-protocol/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pada kesempatan ini saya akan memposting salah satu fitur yang ada di firewall yaitu layer 7 protocol.
+B. Pengertian
+Protokol Layer7 adalah metode untuk mencari pola dalam ICMP / TCP / UDP stream, atau istilah lainnya regex pattern. Cara kerja L7 adalah mencocokan (mathcer) 10 paket koneksi pertama atau 2KB koneksi pertama dan mencari pola/pattern data yang sesuai dengan yang tersedia. Jika pola ini tidak ditemukan dalam data yang tersedia, matcher tidak memeriksa lebih lanjut.</description>
       </item>
     
       <item>
@@ -190,7 +236,12 @@ Konsep ini pertama kali dikemukakan pada tahun 1993 oleh Bret Stewart sewaktu ko
         <link>https://sibunglon.com/2017/08/19/point-to-point-dengan-mikrotik/</link>
         <pubDate>Sat, 19 Aug 2017 21:37:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/19/point-to-point-dengan-mikrotik/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pada postingan ini, akan di implentasikan bagaimana melakukan point to point (menembak wifi) menggunakan 2 buah mikroTik, dan step by stepnya akan di jelaskan sebagai berikut.
+B. Pengertian
+Wireless Point-to-Point (PTP) adalah koneksi komunikasi wireless antara dua titik, dimana satu client (station) terhubung dengan satu pemancar (AP) saja.
+C. Latar Belakang
+Tidak ada koneksi internet dari kabel LAN jika melakukan praktek di tempat kost, karena mikroTik yang satunya ada di tempat praktek.</description>
       </item>
     
       <item>
@@ -198,7 +249,10 @@ Konsep ini pertama kali dikemukakan pada tahun 1993 oleh Bret Stewart sewaktu ko
         <link>https://sibunglon.com/2017/08/18/membangun-vpn-server-di-mikrotik/</link>
         <pubDate>Fri, 18 Aug 2017 14:00:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/18/membangun-vpn-server-di-mikrotik/</guid>
-        <description>A. PENDAHULUANSelamat pagi/siang/malam. pada kesempatan ini saya akan sedikit memberikan atau mengshare mengenai VPNB. PENGERTIANVPN adalah Virtual Private Network dimana VPN ini merupakan interkoneksi antar jaringan ( PC Client to LAN maupun LAN to LAN ) yang mana interkoneksi ini melalui jaringan Public ( Internet ) sehingga dengan VPN ini terjadi koneksi terselubung alias lorong atau Tunneling Connection sehingga data yang di akses ( data yang di kirim dan di terima ) benar-benar aman.</description>
+        <description>A. PENDAHULUAN
+Selamat pagi/siang/malam. pada kesempatan ini saya akan sedikit memberikan atau mengshare mengenai VPN
+B. PENGERTIAN
+VPN adalah Virtual Private Network dimana VPN ini merupakan interkoneksi antar jaringan ( PC Client to LAN maupun LAN to LAN ) yang mana interkoneksi ini melalui jaringan Public ( Internet ) sehingga dengan VPN ini terjadi koneksi terselubung alias lorong atau Tunneling Connection sehingga data yang di akses ( data yang di kirim dan di terima ) benar-benar aman.</description>
       </item>
     
       <item>
@@ -206,7 +260,10 @@ Konsep ini pertama kali dikemukakan pada tahun 1993 oleh Bret Stewart sewaktu ko
         <link>https://sibunglon.com/2017/08/01/mengganti-login-page-jaringan-mikrotik-menggunakan-filezilla/</link>
         <pubDate>Tue, 01 Aug 2017 16:09:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/01/mengganti-login-page-jaringan-mikrotik-menggunakan-filezilla/</guid>
-        <description>PendahuluanLogin page adalah salah satu fitur mikroTik yang berfungsi ketika hostpot yang di aktifkan di mikroTik tidak mempunyai autentikasi pada SSIDnya, dengan kata lain setelah berhasil terhubung ke hotspot tersebut si pengguna akan diminta masuk ke login page untuk dapat mengakses internet. Login page tersebut dapat diedit dengan berbagai cara, sesuai yang membuat anda nyaman :DMaksud dan TujuanTujuan dari postingan ini agar si pembaca dapat mempraktekkan dan mengetahui bagaimana mengganti login page hotspot mikroTik tanpa harus membuka winbox.</description>
+        <description>Pendahuluan
+Login page adalah salah satu fitur mikroTik yang berfungsi ketika hostpot yang di aktifkan di mikroTik tidak mempunyai autentikasi pada SSIDnya, dengan kata lain setelah berhasil terhubung ke hotspot tersebut si pengguna akan diminta masuk ke login page untuk dapat mengakses internet. Login page tersebut dapat diedit dengan berbagai cara, sesuai yang membuat anda nyaman :D
+Maksud dan Tujuan
+Tujuan dari postingan ini agar si pembaca dapat mempraktekkan dan mengetahui bagaimana mengganti login page hotspot mikroTik tanpa harus membuka winbox.</description>
       </item>
     
       <item>
@@ -214,7 +271,11 @@ Konsep ini pertama kali dikemukakan pada tahun 1993 oleh Bret Stewart sewaktu ko
         <link>https://sibunglon.com/2017/07/28/menggunakan-1-akun-mikrotik-untuk-banyak-pengguna/</link>
         <pubDate>Fri, 28 Jul 2017 15:11:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/28/menggunakan-1-akun-mikrotik-untuk-banyak-pengguna/</guid>
-        <description></description>
+        <description>Pendahuluan
+Pada postingan sebelumnya telah disebutkan bahwa mikroTik mempunyai banyak fitur, nah pada postingan ini akan di implementasikan bagaimana agar 1 akun dapat digunakan banyak pengguna. Lalu bagaimana mengaktifkan fitur ini?
+Maksud dan Tujuan
+Penggunaan fitur ini dimaksudkan agar 1 profile user bisa digunakan secara bersama-sama oleh beberapa user sekaligus. Dengan demikian, setiap user yang ingin terhubung hanya perlu memiliki satu username dan password untuk dipakai bersama-sama.
+Alat dan Bahan</description>
       </item>
     
       <item>

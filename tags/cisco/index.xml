@@ -30,7 +30,8 @@ Sebelumnya kita harus membuat simulasi jaringan seperti pada gambar berikut ini 
         <link>https://sibunglon.com/2017/10/06/konfigurasi-vlan-pada-switch/</link>
         <pubDate>Fri, 06 Oct 2017 06:16:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/06/konfigurasi-vlan-pada-switch/</guid>
-        <description></description>
+        <description>A. PENGERTIAN
+Virtual LAN atau disingkat VLAN merupakan sekelompok perangkat pada satu LAN atau lebih yang dikonfigurasikan (menggunakan perangkat lunak pengelolaan) sehingga dapat berkomunikasi seperti halnya bila perangkat tersebut terhubung ke jalur yang sama, padahal sebenarnya perangkat tersebut berada pada sejumlah segmen LAN yang berbeda. Vlan dibuat dengan menggunakan jaringan pihak ke tiga. VLAN merupakan sebuah bagian kecil jaringan IP yang terpisah secara logik. VLAN memungkinkan beberapa jaringan IP dan jaringan-jaringan kecil (subnet) berada dalam jaringan switched switched yang sama.</description>
       </item>
     
       <item>
@@ -48,7 +49,16 @@ Dengan kata lain NAT akan mentranslasikan alamat IP sehingga IP address pada jar
         <link>https://sibunglon.com/2017/10/04/konfigurasi-telnet-dan-ssh-di-cisco/</link>
         <pubDate>Wed, 04 Oct 2017 05:19:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/04/konfigurasi-telnet-dan-ssh-di-cisco/</guid>
-        <description></description>
+        <description>A. PENGERTIAN
+Konfigurasi Telnet
+Telnet (Telecommunication network) adalah sebuah protokol jaringan yang digunakan pada Internet atau Local Area Network untuk menyediakan fasilitas komunikasi berbasis teks interaksi dua arah yang menggunakan koneksi virtual terminal.
+B. LATAR BELAKANG
+Meremote switch dan router di packet tracer
+C. MAKSUD DAN TUJUAN
+Ingin mengimplementasikanya di dunia kerja dan mengulangi Materi yang diberi tentang ssh dan telnet
+D. TAHAPAN PEKERJAAN
+TELNET Berikut Topology Telnet :
+ Pertama, masukkan default gateway yang terdapat pada Router, Disini saya Memberikan IP Address pada interface fastEthernet 0/0 adalah 192.</description>
       </item>
     
       <item>
@@ -56,7 +66,21 @@ Dengan kata lain NAT akan mentranslasikan alamat IP sehingga IP address pada jar
         <link>https://sibunglon.com/2017/10/03/perintah-perintah-dasar-cisco/</link>
         <pubDate>Tue, 03 Oct 2017 05:17:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/03/perintah-perintah-dasar-cisco/</guid>
-        <description></description>
+        <description>A. PENGERTIAN
+Konfigurasi yang akan dibahas dalam artikel ini adalah :
+Mode Router
+Memasuki mode konfigurasi global (Global Configuration Mode)
+Konfigurasi router :
+  Nama router
+  Password
+  Password terenkripsi
+  Nama interfaces
+  Perpindahan antar interfaces
+  Konfigurasi interfaces Serial
+  Konfigurasi interfaces Fast Ethernet
+  Membuat banner pesan MOTD (Message of the Day)
+  Membuat banner login
+  Menempatkan local host domain ke IP address</description>
       </item>
     
       <item>
@@ -64,7 +88,9 @@ Dengan kata lain NAT akan mentranslasikan alamat IP sehingga IP address pada jar
         <link>https://sibunglon.com/2017/10/03/konfigurasi-static-routing/</link>
         <pubDate>Tue, 03 Oct 2017 05:04:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/03/konfigurasi-static-routing/</guid>
-        <description></description>
+        <description>A.PENGERTIAN Routing Static adalah jenis routing yang dilakukan seorang admin dengan memasukan network network tertentu secara manual. Ciri ciri routing static adalah :
+ Jalur pada suatu jaringan spesifik ditentukan oleh seorang Administrator Pengisian tabel routing / penambahan network baru diisi secara manual Biasanya digunakan untuk jaringan berskala kecil  Ada beberapa parameter yang ada pada routing static ini, yaitu
+ Destination, adalah ip network tujuan, untuk default routing biasanya memakai 0.</description>
       </item>
     
       <item>

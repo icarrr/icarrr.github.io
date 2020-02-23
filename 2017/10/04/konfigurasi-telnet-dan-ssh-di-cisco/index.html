@@ -65,7 +65,16 @@
   <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
 
   <meta property="og:title" content="Konfigurasi Telnet dan SSH di Cisco" />
-<meta property="og:description" content="" />
+<meta property="og:description" content="A. PENGERTIAN
+Konfigurasi Telnet
+Telnet (Telecommunication network) adalah sebuah protokol jaringan yang digunakan pada Internet atau Local Area Network untuk menyediakan fasilitas komunikasi berbasis teks interaksi dua arah yang menggunakan koneksi virtual terminal.
+B. LATAR BELAKANG
+Meremote switch dan router di packet tracer
+C. MAKSUD DAN TUJUAN
+Ingin mengimplementasikanya di dunia kerja dan mengulangi Materi yang diberi tentang ssh dan telnet
+D. TAHAPAN PEKERJAAN
+TELNET Berikut Topology Telnet :
+ Pertama, masukkan default gateway yang terdapat pada Router, Disini saya Memberikan IP Address pada interface fastEthernet 0/0 adalah 192." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://sibunglon.com/2017/10/04/konfigurasi-telnet-dan-ssh-di-cisco/" />
 <meta property="article:published_time" content="2017-10-04T05:19:00+00:00" />
@@ -73,17 +82,35 @@
 
   
   <meta itemprop="name" content="Konfigurasi Telnet dan SSH di Cisco">
-<meta itemprop="description" content="">
+<meta itemprop="description" content="A. PENGERTIAN
+Konfigurasi Telnet
+Telnet (Telecommunication network) adalah sebuah protokol jaringan yang digunakan pada Internet atau Local Area Network untuk menyediakan fasilitas komunikasi berbasis teks interaksi dua arah yang menggunakan koneksi virtual terminal.
+B. LATAR BELAKANG
+Meremote switch dan router di packet tracer
+C. MAKSUD DAN TUJUAN
+Ingin mengimplementasikanya di dunia kerja dan mengulangi Materi yang diberi tentang ssh dan telnet
+D. TAHAPAN PEKERJAAN
+TELNET Berikut Topology Telnet :
+ Pertama, masukkan default gateway yang terdapat pada Router, Disini saya Memberikan IP Address pada interface fastEthernet 0/0 adalah 192.">
 <meta itemprop="datePublished" content="2017-10-04T05:19:00&#43;00:00" />
 <meta itemprop="dateModified" content="2017-10-04T05:19:00&#43;00:00" />
-<meta itemprop="wordCount" content="0">
+<meta itemprop="wordCount" content="700">
 
 
 
 <meta itemprop="keywords" content="BLC Telkom Klaten,Cisco,BestPath Network,Ngoprek," />
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Konfigurasi Telnet dan SSH di Cisco"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:description" content="A. PENGERTIAN
+Konfigurasi Telnet
+Telnet (Telecommunication network) adalah sebuah protokol jaringan yang digunakan pada Internet atau Local Area Network untuk menyediakan fasilitas komunikasi berbasis teks interaksi dua arah yang menggunakan koneksi virtual terminal.
+B. LATAR BELAKANG
+Meremote switch dan router di packet tracer
+C. MAKSUD DAN TUJUAN
+Ingin mengimplementasikanya di dunia kerja dan mengulangi Materi yang diberi tentang ssh dan telnet
+D. TAHAPAN PEKERJAAN
+TELNET Berikut Topology Telnet :
+ Pertama, masukkan default gateway yang terdapat pada Router, Disini saya Memberikan IP Address pada interface fastEthernet 0/0 adalah 192."/>
 
   
 
@@ -109,7 +136,111 @@
         <time datetime="2017-10-04 05:19:00&#43;0000">2017-10-04</time></small>
       <h1>Konfigurasi Telnet dan SSH di Cisco</h1>
     </header>
-    <section><!-- raw HTML omitted -->
+    <section><p><strong>A. PENGERTIAN</strong></p>
+<p><strong>Konfigurasi Telnet</strong></p>
+<p>Telnet (Telecommunication network) adalah sebuah protokol jaringan yang digunakan pada Internet atau Local Area Network untuk menyediakan fasilitas komunikasi berbasis teks interaksi dua arah yang menggunakan koneksi virtual terminal.</p>
+<p><strong>B. LATAR BELAKANG</strong></p>
+<p>Meremote switch dan router di packet tracer</p>
+<p><strong>C. MAKSUD DAN TUJUAN</strong></p>
+<p>Ingin mengimplementasikanya di dunia kerja dan mengulangi Materi yang diberi tentang ssh dan telnet</p>
+<p><strong>D. TAHAPAN PEKERJAAN</strong></p>
+<p><strong>TELNET</strong>
+Berikut Topology Telnet :</p>
+<p><img src="https://1.bp.blogspot.com/-vZODNOGM91I/W6gU5Pnc_vI/AAAAAAAAEj4/m3Ka9Ns5RWoIWMGoXwEtf9Nn3XbUVBZGQCLcBGAs/s1600/1.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
+<ol>
+<li>Pertama, masukkan default gateway yang terdapat pada Router, Disini saya Memberikan IP Address pada interface fastEthernet 0/0 adalah 192.168.32.1. lalu saya memberikan contoh password priveleged level (#) :  okta</li>
+</ol>
+<p>Perintahnya adalah :</p>
+<pre><code>&gt; Router&gt;enable  
+&gt; Router#configure terminal  
+&gt; Router(config)#enable secret 1234  
+&gt; Router(config)#interface fastEthernet 0/0  
+&gt; Router(config-if)#ip address 192.168.32.1 255.255.255.0  
+&gt; Router(config-if)#no shutdown  
+&gt; Router(config-if)#exit  
+&gt; Router(config)#line vty 0 4  
+&gt; Router(config-line)#login local  
+&gt; Router(config-line)#exit  
+&gt; Router(config)#username okta password 1234  
+&gt; Router(config)#service password-encryption  
+&gt; Router(config)#exit
+</code></pre><p><img src="https://1.bp.blogspot.com/-SKn4YpBQ42s/W6gVBelgSkI/AAAAAAAAEj8/OsF0W9rwv1Aw4EZz7vC0EQ9ARofqmvDmACLcBGAs/s1600/2.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
+<ol start="2">
+<li>Setelah Konfig Router Selesai, Selanjutnya kita Konfig Switch, sebagai contoh saya memberikan IP Address vlan1 yaitu : 192.168.32.2, karna 192.168.32.1 adalah gateway untuk router. Saya memberikan password pada switch privileged lever (#) : okta</li>
+</ol>
+<pre><code>&gt; Switch&gt;enable  
+&gt; Switch#configure terminal  
+&gt; Switch(config)#vlan 1  
+&gt; Switch(config-vlan)#interface vlan 1  
+&gt; Switch(config-if)#ip address 192.168.32.2 255.255.255.0  
+&gt; Switch(config-if)#exit
+&gt; Switch(config)#ip default-gateway 192.168.32.1
+&gt; Switch(config)#enable secret okta  
+&gt; Switch(config)#line vty 0 4  
+&gt; Switch(config-line)#login local  
+&gt; Switch(config-line)#exit  
+&gt; Switch(config)#username okta password 1234  
+&gt; Switch(config)#service password-encryption
+</code></pre><p><img src="https://3.bp.blogspot.com/-UZdNPg_uMys/W6gVLpuyy0I/AAAAAAAAEkE/inic2lrfYQ0u1nJq2mAlWhSr_HlXYHl3QCLcBGAs/s1600/3.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
+<p>Setelah Melakukan Konfig pada Switch, sekarang kita pergi ke PC dan mengatur IP Address PC dengan IP Address “192.168.32.3”</p>
+<p><img src="https://4.bp.blogspot.com/-1bD1OA60snw/W6gVQxpNl0I/AAAAAAAAEkI/e57R5G9R-OUV1TVzabyySwTkZFgVPUoQwCLcBGAs/s1600/4.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
+<p>Setelah Selesai, Pergi ke Command Prompt &gt; telnet (Nomer Ip yang dituju) misal saya ingin Telnet ke Router, Berarti “telnet 192.168.32.1”</p>
+<p><img src="https://3.bp.blogspot.com/-lpDiF-NQhmg/W6gVWpbYQfI/AAAAAAAAEkQ/gpLvhC19Ltws6gfqqcTELYEwcdtBOLFYQCLcBGAs/s1600/5.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
+<p>keterangan :</p>
+<ul>
+<li>line vty 0 4 : adalah cara untuk mengaktifkan telnet 4 koneksi</li>
+<li>service password-encription : untuk mengekripsi semua password</li>
+</ul>
+<p><strong>SSH</strong></p>
+<p><img src="https://2.bp.blogspot.com/-r2lMm5KDWV8/W6gVeAJ5jhI/AAAAAAAAEkY/TDth6RuhfrYI0eDN9KYFBL4JwEYmiouuACLcBGAs/s1600/6.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
+<p>Melanjutkan topologi sebelumnya, karena jalur telnet menggunakan clear text yang berarti jalur yang lewat masih bisa dilihat (tidak aman), maka untuk mengamankan jalur remot ini bisa menggunakan SSH (Secure Shell).</p>
+<p>Yang diperhatikan untuk membuat SSH adalah :<br>
+-) Hostname tidak boleh default</p>
+<p>-) Harus ada domain name</p>
+<p>-) Authentication nya menggunakan username dan password</p>
+<p>-) Deskripsikan dijalur telnet bahwa akan menggunakan SSH</p>
+<p>-) Generate Crypto Key.</p>
+<p>Langsung saja kita konfig SSH pada CPT</p>
+<ol start="3">
+<li>Config di Routernya: *Nama okta adalah contoh* kalian bisa menggunakan nama apapun terserah kalian.</li>
+</ol>
+<pre><code>&gt; Router(config)#hostname okta  
+&gt; okta(config)#ip domain-name okta.com  
+&gt; okta(config)#crypto key generate rsa
+&gt; The name for the keys will be: okta.okta.com  
+&gt; Choose the size of the key modulus in the range of 360 to 2048 for your  
+&gt; General Purpose Keys. Choosing a key modulus greater than 512 may take  
+&gt; a few minutes.
+</code></pre><p>Pada bagian perintah “crypto key generate rsa” akan ditanyakan berapa panjang bit yang ingin dimasukkan, pilihannya 512 dan maksimal 2048, itu menandakan panjang key datanya, semakin panjang key data akan semakin aman, tetapi semakin membebani perangkat, jika hanya unntuk belajar gunakan yang 512 saja.</p>
+<pre><code>&gt; How many bits in the modulus [512]: 1024  
+&gt; % Generating 512 bit RSA keys, keys will be non-exportable...[OK]
+</code></pre><p><img src="https://2.bp.blogspot.com/-A0ihFr4Czto/W6gVk5oLaSI/AAAAAAAAEkc/kbwQUuox7EwqkwJuuHB_Fk1kE6Vtfbm9QCLcBGAs/s1600/7.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
+<p>Berikut ini untuk menampilkan hasil encripsi key :</p>
+<pre><code>okta(config)#do sh crypto key mypubkey rsa
+</code></pre><p>Perintah diatas adalah script untuk menampilkan hasil encripsi key. Setelah memasukkan script itu akan tampil tampilan seperti dibawah ini :</p>
+<pre><code>&gt; % Key pair was generated at: 1:51:58 UTC Mar 1 1993  
+&gt; Key name: okta.okta.com  
+&gt; Storage Device: not specified  
+&gt; Usage: General Purpose Key  
+&gt; Key is not exportable.  
+&gt; Key Data:  
+&gt; 00002215 00004659 00002db4 00004762 00006688 00007238 00004ab3 000069ca  
+&gt; 0000015c 000050d6 000001c9 00002afd 00006ca7 00005b84 0000704e 000056ff  
+&gt; 00001831 0000077b 000028ea 00001ee9 00007579 000031ce 00003fb4 0484  
+&gt; % Key pair was generated at: 1:51:58 UTC Mar 1 1993  
+&gt; Key name: okta.okta.com.server  
+&gt; Temporary key  
+&gt; Usage: Encryption Key  
+&gt; Key is not exportable.
+</code></pre><p><img src="https://3.bp.blogspot.com/-9_6C0-Ry8YQ/W6gVrkP0ktI/AAAAAAAAEkk/hOBqWKC1eMsBcRnpXmw2caCZRm39NL0uwCLcBGAs/s1600/8.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
+<p>Sekarang kita kembali ke PC dan pergi ke “Command Prompt”</p>
+<p><img src="https://3.bp.blogspot.com/-PPyagNqT1MA/W6gVx5OMm8I/AAAAAAAAEks/jg1F3he7kSItQFbNZ_UzeNkRJvrChPrdwCLcBGAs/s1600/9.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
+<p>Setelah terbuka masukkan script <em>“ssh –l okta 192.168.32.1”</em></p>
+<p>karna saya menggunakan username “okta” pada router maka seletah “–l” kalian masukkan username kalian yang kalian konfig di router. Password pun sama, masukkan password yang kalian setting di router.Setelah terbuka masukkan script <em>“ssh –l okta 192.168.32.1”</em></p>
+<p>karna saya menggunakan username “okta” pada router maka seletah “–l” kalian masukkan username kalian yang kalian konfig di router. Password pun sama, masukkan password yang kalian setting di router.</p>
+<p><img src="https://2.bp.blogspot.com/-Y7UWzH6EPto/W6gV3VPfh8I/AAAAAAAAEk0/iztBr0bgxl8mbQKFNCqEoMJQKhpkKC6egCLcBGAs/s1600/10.png" alt="shell,linux,linux indonesia,mikrotik,mikrotik indonesia, freebsd,freebsd indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
+<p><strong>E. REFERENSI</strong></p>
+<p>ccnav6.com</p>
 </section>
     <footer>
       <hr>

@@ -41,7 +41,11 @@ Debian adalah sistem operasi komputer yang tersusun dari paket-paket perangkat l
         <link>https://sibunglon.com/2017/07/31/menginstall-proxmox-di-server/</link>
         <pubDate>Mon, 31 Jul 2017 16:07:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/31/menginstall-proxmox-di-server/</guid>
-        <description></description>
+        <description>Pendahuluan
+Proxmox VE (Virtual Environment) adalah sebuah distro Linux virtualisasi berbasis Debian ( 64 bit) yang mengusung OpenZV dan KVM, dengan KVM kita tidak hanya bisa menginstall linux saja akan tetapi Operating system windows pun bisa kita instal. Namun yang membuat istimewa dari proxmox adalah kemudahan dalam installasi dan administrasi berbasis Web.
+Latar Belakang
+Beberapa keuntungan menggunakan Proxmox sebagai berikut
+ Kinerja terbaik. Instalasi yang telah dioptimalkan, sehingga lebih cepat. Mudah dalam manajemen.</description>
       </item>
     
   </channel>

@@ -65,7 +65,10 @@
   <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
 
   <meta property="og:title" content="Mengganti Login Page Jaringan MikroTik Menggunakan FileZilla" />
-<meta property="og:description" content="PendahuluanLogin page adalah salah satu fitur mikroTik yang berfungsi ketika hostpot yang di aktifkan di mikroTik tidak mempunyai autentikasi pada SSIDnya, dengan kata lain setelah berhasil terhubung ke hotspot tersebut si pengguna akan diminta masuk ke login page untuk dapat mengakses internet. Login page tersebut dapat diedit dengan berbagai cara, sesuai yang membuat anda nyaman :DMaksud dan TujuanTujuan dari postingan ini agar si pembaca dapat mempraktekkan dan mengetahui bagaimana mengganti login page hotspot mikroTik tanpa harus membuka winbox." />
+<meta property="og:description" content="Pendahuluan
+Login page adalah salah satu fitur mikroTik yang berfungsi ketika hostpot yang di aktifkan di mikroTik tidak mempunyai autentikasi pada SSIDnya, dengan kata lain setelah berhasil terhubung ke hotspot tersebut si pengguna akan diminta masuk ke login page untuk dapat mengakses internet. Login page tersebut dapat diedit dengan berbagai cara, sesuai yang membuat anda nyaman :D
+Maksud dan Tujuan
+Tujuan dari postingan ini agar si pembaca dapat mempraktekkan dan mengetahui bagaimana mengganti login page hotspot mikroTik tanpa harus membuka winbox." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://sibunglon.com/2017/08/01/mengganti-login-page-jaringan-mikrotik-menggunakan-filezilla/" />
 <meta property="article:published_time" content="2017-08-01T16:09:00+00:00" />
@@ -73,17 +76,23 @@
 
   
   <meta itemprop="name" content="Mengganti Login Page Jaringan MikroTik Menggunakan FileZilla">
-<meta itemprop="description" content="PendahuluanLogin page adalah salah satu fitur mikroTik yang berfungsi ketika hostpot yang di aktifkan di mikroTik tidak mempunyai autentikasi pada SSIDnya, dengan kata lain setelah berhasil terhubung ke hotspot tersebut si pengguna akan diminta masuk ke login page untuk dapat mengakses internet. Login page tersebut dapat diedit dengan berbagai cara, sesuai yang membuat anda nyaman :DMaksud dan TujuanTujuan dari postingan ini agar si pembaca dapat mempraktekkan dan mengetahui bagaimana mengganti login page hotspot mikroTik tanpa harus membuka winbox.">
+<meta itemprop="description" content="Pendahuluan
+Login page adalah salah satu fitur mikroTik yang berfungsi ketika hostpot yang di aktifkan di mikroTik tidak mempunyai autentikasi pada SSIDnya, dengan kata lain setelah berhasil terhubung ke hotspot tersebut si pengguna akan diminta masuk ke login page untuk dapat mengakses internet. Login page tersebut dapat diedit dengan berbagai cara, sesuai yang membuat anda nyaman :D
+Maksud dan Tujuan
+Tujuan dari postingan ini agar si pembaca dapat mempraktekkan dan mengetahui bagaimana mengganti login page hotspot mikroTik tanpa harus membuka winbox.">
 <meta itemprop="datePublished" content="2017-08-01T16:09:00&#43;00:00" />
 <meta itemprop="dateModified" content="2017-08-01T16:09:00&#43;00:00" />
-<meta itemprop="wordCount" content="303">
+<meta itemprop="wordCount" content="315">
 
 
 
 <meta itemprop="keywords" content="BLC Telkom Klaten,Ayo Belajar Linux,MikroTik,Ngoprek," />
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Mengganti Login Page Jaringan MikroTik Menggunakan FileZilla"/>
-<meta name="twitter:description" content="PendahuluanLogin page adalah salah satu fitur mikroTik yang berfungsi ketika hostpot yang di aktifkan di mikroTik tidak mempunyai autentikasi pada SSIDnya, dengan kata lain setelah berhasil terhubung ke hotspot tersebut si pengguna akan diminta masuk ke login page untuk dapat mengakses internet. Login page tersebut dapat diedit dengan berbagai cara, sesuai yang membuat anda nyaman :DMaksud dan TujuanTujuan dari postingan ini agar si pembaca dapat mempraktekkan dan mengetahui bagaimana mengganti login page hotspot mikroTik tanpa harus membuka winbox."/>
+<meta name="twitter:description" content="Pendahuluan
+Login page adalah salah satu fitur mikroTik yang berfungsi ketika hostpot yang di aktifkan di mikroTik tidak mempunyai autentikasi pada SSIDnya, dengan kata lain setelah berhasil terhubung ke hotspot tersebut si pengguna akan diminta masuk ke login page untuk dapat mengakses internet. Login page tersebut dapat diedit dengan berbagai cara, sesuai yang membuat anda nyaman :D
+Maksud dan Tujuan
+Tujuan dari postingan ini agar si pembaca dapat mempraktekkan dan mengetahui bagaimana mengganti login page hotspot mikroTik tanpa harus membuka winbox."/>
 
   
 
@@ -109,7 +118,58 @@
         <time datetime="2017-08-01 16:09:00&#43;0000">2017-08-01</time></small>
       <h1>Mengganti Login Page Jaringan MikroTik Menggunakan FileZilla</h1>
     </header>
-    <section><p><!-- raw HTML omitted --><!-- raw HTML omitted -->Pendahuluan<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->Login page adalah salah satu fitur mikroTik yang berfungsi ketika hostpot yang di aktifkan di mikroTik tidak mempunyai autentikasi pada SSIDnya, dengan kata lain setelah berhasil terhubung ke hotspot tersebut si pengguna akan diminta masuk ke login page untuk dapat mengakses internet. Login page tersebut dapat diedit dengan berbagai cara, sesuai yang membuat anda nyaman :D<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->Maksud dan Tujuan<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->Tujuan dari postingan ini agar si pembaca dapat mempraktekkan dan mengetahui bagaimana mengganti login page hotspot mikroTik tanpa harus membuka winbox.<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->Alat dan Bahan<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->1. Pc/laptop<!-- raw HTML omitted --><!-- raw HTML omitted -->2. MikroTik dan hotspotnya sedang aktif<!-- raw HTML omitted --><!-- raw HTML omitted -->3. Aplikasi FileZilla<!-- raw HTML omitted --><!-- raw HTML omitted -->4. File login page hotspot mikroTik<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->Langkah Kerja<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->1. Siapkan semua alat dan bahan<!-- raw HTML omitted --><!-- raw HTML omitted -->2. Buka aplikasi FileZilla dan konfigurasi agar dapat mengakses mikroTik, klik icon yang ditunjukkan di gambar. Berguna seperti halnya shortcut atau suatu saat nanti jika ingin mengubah login pagenya tanpa melakukan konfigurasi lagi.<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->3. Jika jendela terbuka silahkan klik New site (ini berguna untuk membuat tombol shortcutnya) &gt; rename lalu ubah sesuai keinginan. Pindah ke tab General kemudian isi beberapa kolom yang dapat membatu untuk terhubung ke mikroTik.<!-- raw HTML omitted --><!-- raw HTML omitted -->Host : isi sesuai dns yang di set pada ip &gt; hotspot<!-- raw HTML omitted -->Protocol : FTP - File Transfer Protocol<!-- raw HTML omitted -->Logon Type : Normal<!-- raw HTML omitted -->user : username yang biasa digunakan pada winbox<!-- raw HTML omitted -->password : password yang biasa digunakan pada winbox, jika tidak ada biarkan saja kosong<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->4. Klik Ok<!-- raw HTML omitted --><!-- raw HTML omitted -->5. Klik dropdown didekat icon yang diklik tadi, akan muncul nama site yang akan dikonfigurasi. Jika anda melihatnya silahkan klik saja dan tunggu beberapa saat hingga ia berhasil terhubung dengan mikroTik, jika ia berhasil terhubung maka akan tampil sebuah direktori penyimpanan mikroTik.<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->Klik 2 kali direktori tersebut hinggan anda melihat file html dan lain. hapus semua filenya kecuali disk dan direktori akarnya, setelah terhapus drag n drop file login page anda dan tunggu beberapa hingga proses upload success. Kemudian cek browser &gt; buka login pagenya dan jrengg jreng jrengg login page anda telah berubah<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->Sekian dari postingan ini,semoga bermanfaat.<!-- raw HTML omitted --></p>
+    <section><p><strong>Pendahuluan</strong></p>
+<p>Login page adalah salah satu fitur mikroTik yang berfungsi ketika hostpot yang di aktifkan di mikroTik tidak mempunyai autentikasi pada SSIDnya, dengan kata lain setelah berhasil terhubung ke hotspot tersebut si pengguna akan diminta masuk ke login page untuk dapat mengakses internet. Login page tersebut dapat diedit dengan berbagai cara, sesuai yang membuat anda nyaman :D</p>
+<p><strong>Maksud dan Tujuan</strong></p>
+<p>Tujuan dari postingan ini agar si pembaca dapat mempraktekkan dan mengetahui bagaimana mengganti login page hotspot mikroTik tanpa harus membuka winbox.</p>
+<p><strong>Alat dan Bahan</strong></p>
+<ol>
+<li>
+<p>Pc/laptop</p>
+</li>
+<li>
+<p>MikroTik dan hotspotnya sedang aktif</p>
+</li>
+<li>
+<p>Aplikasi FileZilla</p>
+</li>
+<li>
+<p>File login page hotspot mikroTik</p>
+</li>
+</ol>
+<p><strong>Langkah Kerja</strong></p>
+<ol>
+<li>
+<p>Siapkan semua alat dan bahan</p>
+</li>
+<li>
+<p>Buka aplikasi FileZilla dan konfigurasi agar dapat mengakses mikroTik, klik icon yang ditunjukkan di gambar. Berguna seperti halnya shortcut atau suatu saat nanti jika ingin mengubah login pagenya tanpa melakukan konfigurasi lagi.</p>
+</li>
+</ol>
+<p><img src="https://1.bp.blogspot.com/-YIfNSz36SkM/W4kNu6FujdI/AAAAAAAAD0s/UQSfZ9gw-6oISkdhnc_5vOQSFaVRPj1fACLcBGAs/s1600/Screenshot%2Bat%2B2017-07-31%2B22-40-32.png" alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
+<ol start="3">
+<li>Jika jendela terbuka silahkan klik New site (ini berguna untuk membuat tombol shortcutnya) &gt; rename lalu ubah sesuai keinginan. Pindah ke tab General kemudian isi beberapa kolom yang dapat membatu untuk terhubung ke mikroTik.</li>
+</ol>
+<blockquote>
+<p>Host : isi sesuai dns yang di set pada ip &gt; hotspot</p>
+<p>Protocol : FTP - File Transfer Protocol</p>
+<p>Logon Type : Normal</p>
+<p>User : username yang biasa digunakan pada winbox</p>
+<p>Password : password yang biasa digunakan pada winbox, jika tidak ada biarkan saja kosong</p>
+</blockquote>
+<p><img src="https://1.bp.blogspot.com/-vUy9_XKIoPA/W4kOJFIZXZI/AAAAAAAAD00/FJFZo1vNKeErA9OxwfyGkYwEJJ_RZxM9wCLcBGAs/s1600/Screenshot%2Bat%2B2017-07-31%2B22-43-07.png" alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
+<ol start="4">
+<li>
+<p>Klik Ok</p>
+</li>
+<li>
+<p>Klik dropdown didekat icon yang diklik tadi, akan muncul nama site yang akan dikonfigurasi. Jika anda melihatnya silahkan klik saja dan tunggu beberapa saat hingga ia berhasil terhubung dengan mikroTik, jika ia berhasil terhubung maka akan tampil sebuah direktori penyimpanan mikroTik.</p>
+</li>
+</ol>
+<p><img src="https://4.bp.blogspot.com/-eygKUAb6IZQ/W4kOS2mE76I/AAAAAAAAD04/VrAUg8THb1EDCgKYCCBYg36orf-gaws_gCLcBGAs/s1600/Screenshot%2Bat%2B2017-07-31%2B22-43-55.png" alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
+<p><img src="https://4.bp.blogspot.com/-JN42Zttxdes/W4kOf-jR8CI/AAAAAAAAD08/mibdvTUxHXwOOPWWJnrigq99IB_vhdQPwCLcBGAs/s1600/Screenshot%2Bat%2B2017-07-31%2B22-44-15.png" alt="mikrotik,mikrotik indonesia,kpli klaten,BLC Telkom Klaten, icar, sibunglonganteng"></p>
+<p>Klik 2 kali direktori tersebut hinggan anda melihat file html dan lain. hapus semua filenya kecuali disk dan direktori akarnya, setelah terhapus drag n drop file login page anda dan tunggu beberapa hingga proses upload success. Kemudian cek browser &gt; buka login pagenya dan jrengg jreng jrengg login page anda telah berubah</p>
+<p>Sekian dari postingan ini,semoga bermanfaat.</p>
 </section>
     <footer>
       <hr>
