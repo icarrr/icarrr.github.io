@@ -267,7 +267,10 @@ Beberapa keuntungan menggunakan Proxmox sebagai berikut
         <link>https://sibunglon.com/2017/07/24/instalasi-linux-mint-18.1-sarena/</link>
         <pubDate>Mon, 24 Jul 2017 13:52:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/24/instalasi-linux-mint-18.1-sarena/</guid>
-        <description></description>
+        <description>Alat dan bahan:
+ 1 set pc atau laptop flashdisk booting linux mint 18.1 cinnamon 64-bit  Langkah kerja:
+  Siapkan sebuah pc atau laptop yang akan diinstallkan linux mint 18.1 cinnamon 64-bit, serta flashdisk yang berisi booting sistem operasi yang akan diinstal.
+  Nyalakan pc atau laptop yang ingin di install, setalah itu masuk pada bios dan konfigurasi agar flashdisk booting yang telah ada dapat dipakai yaitu dengan cara masuk di menu “Boot” dan meletakkan jenis USB ke deretan atas.</description>
       </item>
     
   </channel>

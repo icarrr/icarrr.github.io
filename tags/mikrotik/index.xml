@@ -47,7 +47,13 @@ C. Hasil Yang Diharapkan</description>
         <link>https://sibunglon.com/2017/09/21/sntp-client-mikrotik/</link>
         <pubDate>Thu, 21 Sep 2017 03:30:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/21/sntp-client-mikrotik/</guid>
-        <description></description>
+        <description>1. Pendahuluan
+A. Pengertian
+Network Time Protocol (NTP) adalah protokol jaringan untuk sinkronisasi jam antara sistem komputer melalui jaringan data packet-switched, variable-latency. Beroperasi sejak sebelum 1985, NTP adalah salah satu protokol Internet tertua yang digunakan saat ini. NTP dirancang oleh David L. Mills dari University of Delaware.B. Latar Belakang Untuk Mensinkronisasikan waktu pada mikrotik
+B. Hasil Yang Diharapkan
+Dapat Mensinkronisasikan waktu pada mikrotik
+2. Alat dan Bahan
+- Router mikrotik</description>
       </item>
     
       <item>
@@ -55,7 +61,18 @@ C. Hasil Yang Diharapkan</description>
         <link>https://sibunglon.com/2017/09/19/pointing-ubnt-ke-mikrotik/</link>
         <pubDate>Tue, 19 Sep 2017 02:56:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/19/pointing-ubnt-ke-mikrotik/</guid>
-        <description></description>
+        <description>PENGERTIAN
+Point to Point adalah data link protokol yang umum digunakan dalam membangun hubungan langsung antara dua node jaringan. Hal ini dapat menyediakan koneksi otentikasi, transmisi enkripsi (menggunakan ECP, RFC 1968), dan kompresi.
+LATAR BELAKANG
+Jauhnya tempat tidak memunginkan untuk penggunakan kabel untuk media transmisi data
+MAKSUD DAN TUJUAN
+Mempelajari UBNT
+Jangka Waktu Pelaksanaan
+Kurang lebih 3 jam
+ALAT DAN BAHAN
+~ Laptop
+~ Ubnt Powerbeam M2
+~ RB 941</description>
       </item>
     
       <item>
@@ -63,7 +80,13 @@ C. Hasil Yang Diharapkan</description>
         <link>https://sibunglon.com/2017/09/19/proxy-situs-dengan-fitur-web-proxy-di-mikrotik/</link>
         <pubDate>Tue, 19 Sep 2017 02:51:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/19/proxy-situs-dengan-fitur-web-proxy-di-mikrotik/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pada kesempatan kali ini yang saya posting masih mengenai mikrotik yaitu bagaimana proxy situs dengan fitur yang ada pada mikrotik
+B. Pengertian
+Apa itu proxy?
+Proxy merupakan perangkat yang bersifat &amp;ldquo;middleman&amp;rdquo;, yang bekerja diantara client &amp;amp; Server, bertugas menghadle transmisi request ataupun respon. Data yang melewati proxy, bisa diubah oleh proxy atau tidak diubah sama sekali, tergantung implementasi fitur dan kemampuan proxy.
+Manfaat Proxy
+  Security : Proxy mampu melakukan pengecekan terhadap incoming response &amp;amp; outgoing request, sehingga memungkinkan untuk melakukan block paket yang tidak diharapkan</description>
       </item>
     
       <item>
@@ -71,7 +94,13 @@ C. Hasil Yang Diharapkan</description>
         <link>https://sibunglon.com/2017/09/18/switch-chip-di-mikrotik/</link>
         <pubDate>Mon, 18 Sep 2017 02:24:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/18/switch-chip-di-mikrotik/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pada kali ini, yang saya posting yaitu tentang memfungsikan mikrotik sebagai switch
+B. Pengertian
+Switch merupakan penghubung beberapa alat untuk membentuk suatu Local Area Network (LAN). Routerboard Mikrotik RB750 telah disediakan fungsi switch, yang mana jika sobat menginginkan men-share internet lebih dari satu komputer atau pada umumnya topologi yang digunakan kebanyak internet di share melalui media wifi dan lan menggunakan kabel.
+C. Latar belakang
+Ingin menambah pengetahuan
+D. Tujuan</description>
       </item>
     
       <item>
@@ -79,7 +108,10 @@ C. Hasil Yang Diharapkan</description>
         <link>https://sibunglon.com/2017/09/16/routing-static-di-mikrotik/</link>
         <pubDate>Sat, 16 Sep 2017 02:15:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/16/routing-static-di-mikrotik/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pada kesempatan kali ini, saya akan memposting tentang pengimplemtasian routing static di mikrotik
+B. Pengertian
+Routing static adalah menambahkan jalur routing tertentu secara manual. Mikrotik secara default akan membuat jalur routing otomatis (dynamic route) ketika kita menambahkan ip address pada interface. Lalu kenapa kita memerlukan static routing? Karena untuk menghubungkan perangkat network yang memilik ip segment (subnet) yang berbeda memerlukan sebuah perangkat yang mampu melakukan proses static routing.</description>
       </item>
     
       <item>
@@ -87,7 +119,10 @@ C. Hasil Yang Diharapkan</description>
         <link>https://sibunglon.com/2017/09/15/routing-dynamic-rip-di-mikrotik/</link>
         <pubDate>Fri, 15 Sep 2017 02:05:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/15/routing-dynamic-rip-di-mikrotik/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pada kesempatan kali ini, saya akan memposting tentang pengimplemtasian routing dynamic RIP di mikrotik
+B. Pengertian
+Routing Information Protocol (RIP) adalah sebuah protokol routing dinamis yang digunakan dalam jaringan LAN (Local Area Network) dan WAN (Wide Area Network). Oleh karena itu protokol ini diklasifikasikan sebagai Interior Gateway Protocol (IGP). Protokol ini menggunakan algoritma Distance-Vector Routing. Pertama kali didefinisikan dalam RFC 1058 (1988). Protokol ini telah dikembangkan beberapa kali, sehingga terciptalah RIP Versi 2.</description>
       </item>
     
       <item>
@@ -95,7 +130,10 @@ C. Hasil Yang Diharapkan</description>
         <link>https://sibunglon.com/2017/09/12/routing-dynamic-ospf-di-mikrotik/</link>
         <pubDate>Tue, 12 Sep 2017 12:36:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/12/routing-dynamic-ospf-di-mikrotik/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pada kesempatan kali ini, yang saya posting yaitu membuat routing dynamic OSPF di mikrotik
+B. Pengertian
+Open Shortest Path First (OSPF) adalah sebuah protokol routing otomatis (Dynamic Routing) yang mampu menjaga, mengatur dan mendistribusikan informasi routing antar network mengikuti setiap perubahan jaringan secara dinamis. Pada OSPF dikenal sebuah istilah Autonomus System (AS) yaitu sebuah gabungan dari beberapa jaringan yang sifatnya routing dan memiliki kesamaan metode serta policy pengaturan network, yang semuanya dapat dikendalikan oleh network administrator.</description>
       </item>
     
       <item>

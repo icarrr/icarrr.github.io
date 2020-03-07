@@ -389,7 +389,7 @@ Nginx, banyak orang membicarakannya meskipun salah dipelafalannya. Dulu saya jug
 Jika masih ingin berkenalan lebih lanjut, bisa di stalking ke official sitenya :D https://ngrok.com
 Langkah - langkah menggunakan ngrok:
 1) Buka shell linux dan login sebagai super user, kemudian download ngrok menggunakan command
-wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
+wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
 2) Ekstrak file ngrok yang telah didownload dengan command</description>
       </item>
     
@@ -655,7 +655,10 @@ MATE juga tersedia di repositori resmi beberapa distribusi Linux lainnya, termas
         <link>https://sibunglon.com/2017/10/10/tips-menemukan-referensi-website-untuk-belajar-linux/</link>
         <pubDate>Tue, 10 Oct 2017 17:27:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/10/tips-menemukan-referensi-website-untuk-belajar-linux/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Halo teman2 blogger, pada kesempatan kali ini saya akan mmebagikan sebuah artikel sederhana namun bermanfaat bagi pembaca sekalian terutama bagi yang ingin belajar linux agar mahir menggunakannya. Monggo mari di simak artikel yang saya bagikan berikut ini.
+1. Pengertian
+Web referensi adalah suatu website atau situs atau laman yang memuat pembahasan ataupun tutorial yang berisi materi yang dapat di jadikan patokan atau dasar untuk membuat suatu artikel ataupun tutorial.</description>
       </item>
     
       <item>
@@ -685,7 +688,16 @@ adalah istilah umum yang mengacu kepada abstraksi dari sumber daya komputer. Def
         <link>https://sibunglon.com/2017/10/02/training-cisco-ccent-part-6/</link>
         <pubDate>Mon, 02 Oct 2017 04:57:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/02/training-cisco-ccent-part-6/</guid>
-        <description></description>
+        <description>1. Pendahuluan
+A. Pengertian
+Cisco Adalah sebuah perusahaan yang memiliki 2 bidang usaha, yaitu:
+ Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA)  B. Latar Belakang
+Mengulangi dan Meringkas Materi yang Diberikan Tadi
+C. Maksud dan Tujuan
+Untuk lebih memahami materi yang diberikan tadi
+2. Alat dan Bahan
+ Laptop Proyektor Internet  3. Jangka Waktu Pelaksanaan
+Jam 08:00 s/d 22:00</description>
       </item>
     
       <item>
@@ -693,7 +705,15 @@ adalah istilah umum yang mengacu kepada abstraksi dari sumber daya komputer. Def
         <link>https://sibunglon.com/2017/09/30/training-cisco-ccent-part-5/</link>
         <pubDate>Sat, 30 Sep 2017 04:52:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/30/training-cisco-ccent-part-5/</guid>
-        <description></description>
+        <description>1. Pendahuluan
+A. Pengertian
+Cisco Adalah sebuah perusahaan yang memiliki 2 bidang usaha, yaitu:
+ Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA)B. Latar Belakang
+Mengulangi dan Meringkas Materi yang Diberikan Tadi  C. Maksud dan Tujuan
+Untuk lebih memahami materi yang diberikan tadi
+2. Alat dan Bahan
+ Laptop Proyektor Internet  3. Jangka Waktu Pelaksanaan
+Jam 08:00 s/d 22:00</description>
       </item>
     
       <item>
@@ -701,7 +721,16 @@ adalah istilah umum yang mengacu kepada abstraksi dari sumber daya komputer. Def
         <link>https://sibunglon.com/2017/09/29/training-cisco-ccent-part-4/</link>
         <pubDate>Fri, 29 Sep 2017 04:50:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/29/training-cisco-ccent-part-4/</guid>
-        <description></description>
+        <description>1. Pendahuluan
+A. Pengertian
+Cisco Adalah sebuah perusahaan yang memiliki 2 bidang usaha, yaitu:
+ Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA)  B. Latar Belakang
+Mengulangi dan Meringkas Materi yang Diberikan Tadi
+C. Maksud dan Tujuan
+Untuk lebih memahami materi yang diberikan tadi
+2. Alat dan Bahan
+ Laptop Proyektor Internet  3. Jangka Waktu Pelaksanaan
+Jam 08:00 s/d 22:00</description>
       </item>
     
       <item>
@@ -709,7 +738,16 @@ adalah istilah umum yang mengacu kepada abstraksi dari sumber daya komputer. Def
         <link>https://sibunglon.com/2017/09/28/training-cisco-ccent-part-3/</link>
         <pubDate>Thu, 28 Sep 2017 04:20:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/28/training-cisco-ccent-part-3/</guid>
-        <description></description>
+        <description>1. Pendahuluan
+A. Pengertian
+Cisco Adalah sebuah perusahaan yang memiliki 2 bidang usaha, yaitu:
+ Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA)  B. Latar Belakang
+Mengulangi dan Meringkas Materi yang Diberikan Tadi
+C. Maksud dan Tujuan
+Untuk lebih memahami materi yang diberikan tadi
+2. Alat dan Bahan
+ Laptop Proyektor Internet  3. Jangka Waktu Pelaksanaan
+Jam 08:00 s/d 22:00</description>
       </item>
     
       <item>
@@ -717,7 +755,16 @@ adalah istilah umum yang mengacu kepada abstraksi dari sumber daya komputer. Def
         <link>https://sibunglon.com/2017/09/27/training-cisco-ccent-part-2/</link>
         <pubDate>Wed, 27 Sep 2017 04:13:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/27/training-cisco-ccent-part-2/</guid>
-        <description></description>
+        <description>1. Pendahuluan
+A. Pengertian
+Cisco Adalah sebuah perusahaan yang memiliki 2 bidang usaha, yaitu:
+ Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA)  B. Latar Belakang
+Mengulangi dan Meringkas Materi yang Diberikan Tadi
+C. Maksud dan Tujuan
+Untuk lebih memahami materi yang diberikan tadi
+2. Alat dan Bahan
+ Laptop Proyektor Internet  3. Jangka Waktu Pelaksanaan
+Jam 08:00 s/d 22:00</description>
       </item>
     
       <item>
@@ -725,7 +772,9 @@ adalah istilah umum yang mengacu kepada abstraksi dari sumber daya komputer. Def
         <link>https://sibunglon.com/2017/09/25/training-cisco-ccent-part-1/</link>
         <pubDate>Mon, 25 Sep 2017 03:51:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/25/training-cisco-ccent-part-1/</guid>
-        <description></description>
+        <description>1.Pendahuluan
+A. Pengertian
+Cisco merupakan perusahaan global dalam bidang telekomunikasi yang bermarkas di San José, California, Amerika Serikat. Perusahaan ini didirikan pada tahun 1984. Perusahaan ini mempekerjakan 51.480 pekerja.Produk dari perusahaan ini dapat ditemukan dari ruang tamu sampai ke perusahaan yang bergerak untuk skala internasional.Visi dari Cisco System.Inc (Cisco) yaitu “mengubah bagaimana cara hidup,bekerja,bermain dan belajar”,dan bagian dari Slogan dari Cisco adalah “ Selamat datang kedalam dunia Jaringan “ (welcome to the human network).</description>
       </item>
     
       <item>
@@ -733,7 +782,11 @@ adalah istilah umum yang mengacu kepada abstraksi dari sumber daya komputer. Def
         <link>https://sibunglon.com/2017/09/20/atasi-phpmyadmin-error-#1698-sehingga-tidak-bisa-login-sebagai-root/</link>
         <pubDate>Wed, 20 Sep 2017 03:15:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/20/atasi-phpmyadmin-error-#1698-sehingga-tidak-bisa-login-sebagai-root/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pada kesempatan ini yang saya posting/share yaitu troubleshoot phpmyadmin dengan kode error #1698 atau tidak bisa login sebagai root.
+B. Pengertian
+PhpMyAdmin adalah perangkat lunak bebas yang ditulis dalam bahasa pemrograman PHP yang digunakan untuk menangani administrasi MySQL melalui Jejaring Jagat Jembar (World Wide Web). phpMyAdmin mendukung berbagai operasi MySQL, diantaranya (mengelola basis data, tabel-tabel, bidang (fields), relasi (relations), indeks, pengguna (users), perizinan (permissions), dan lain-lain).
+C. Latar belakang</description>
       </item>
     
       <item>
@@ -775,7 +828,8 @@ VMware Player adalah sebuah produk perangkat lunak virtualisasi berlisensi bebas
         <link>https://sibunglon.com/2017/08/30/sharing-bersama-naster-virtualisasi-pak-nathan-gusti-ryan/</link>
         <pubDate>Wed, 30 Aug 2017 13:07:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/30/sharing-bersama-naster-virtualisasi-pak-nathan-gusti-ryan/</guid>
-        <description></description>
+        <description>Pada kesempatan ini saya akan berbagi tentang pengalaman sharing dengan MASTER VIRTUALISASI DARI INDONESIA.
+Banyak sekali pengalaman yang saya terima dari sharing Pak Herry, Pak Nathan Gusti Ryan, Mas Latif. Mulai dari Pak Herry yang menceritakan tentang apa itu database, dan jenis jenis perangkat database yang pernah ia kerjakan, berapa tahun ia mempelajari Virtualisasi dan lika liku perjalanannya. Kemudian dari Pak Nathan memberi bocoran bagaimana gambaran didalam Datacenter. dan Mas Latif menceritakan lika-liku perjalanan dari mulai dia di BLC sampai menjadi orang kepercayaan Pak Nathan.</description>
       </item>
     
       <item>
@@ -805,7 +859,10 @@ Shell adalah program (penterjemah perintah)yang menjembatani user dengan sistem 
         <link>https://sibunglon.com/2017/08/22/recovery-data-dari-hardisk-atau-flashdisk-yang-tidak-bisa-dibuka/</link>
         <pubDate>Tue, 22 Aug 2017 10:06:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/22/recovery-data-dari-hardisk-atau-flashdisk-yang-tidak-bisa-dibuka/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pada kesempatan kali ini, saya akan memberikan tahapan tentang bagaimana recovery data dari hardisk atau flashdisk yang tidak bisa dibuka menggunakan software di linux yaitu &amp;ldquo;Testdisk&amp;rdquo;
+B. Pengertian
+Recovery data (pemulihan data) adalah proses menyelamatkan (mengambil) tidak dapat diakses, hilang, rusak, rusak atau diformat data dari penyimpanan sekunder , removable media atau file , ketika data yang tersimpan di dalamnya tidak dapat diakses secara normal. Data yang paling sering diselamatkan dari media penyimpanan seperti internal atau eksternal hard disk drive (HDD), solid-state drive (SSD), USB flash drive , tape magnetik , CD , DVD , RAID subsistem, dan lainnya perangkat elektronik.</description>
       </item>
     
       <item>
@@ -826,7 +883,10 @@ Semakin lama, semakin banyak para pengguna komputer yang menjadikan Linux sebaga
         <link>https://sibunglon.com/2017/08/18/setting-pptp-vpn-client-pada-os-linux-mint/</link>
         <pubDate>Fri, 18 Aug 2017 18:30:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/18/setting-pptp-vpn-client-pada-os-linux-mint/</guid>
-        <description></description>
+        <description>A. PENDAHULAN
+Berikut ini saya sharing Cara Setting PPTP VPN Client pada Linux Mint, sedangkan VPN Server yang digunakan pada artikel ini mengunakan VPN Server dari Mikrotik.
+B. PENGERTIAN
+VPN adalah Virtual Private Network dimana VPN ini merupakan interkoneksi antar jaringan ( PC Client to LAN maupun LAN to LAN ) yang mana interkoneksi ini melalui jaringan Public ( Internet ) sehingga dengan VPN ini terjadi koneksi terselubung alias lorong atau Tunneling Connection sehingga data yang di akses ( data yang di kirim dan di terima ) benar-benar aman.</description>
       </item>
     
       <item>
@@ -834,7 +894,12 @@ Semakin lama, semakin banyak para pengguna komputer yang menjadikan Linux sebaga
         <link>https://sibunglon.com/2017/08/14/virtualisasi-topologi-menggunakan-software-dia/</link>
         <pubDate>Mon, 14 Aug 2017 17:00:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/14/virtualisasi-topologi-menggunakan-software-dia/</guid>
-        <description></description>
+        <description>A. PENDAHULUAN
+Pada postingan kali ini saya akan membagi sedikit ilmu terkait dengan virtualisasi topologi jaringan menggunakan software dia.
+B. PENGERTIAN
+TOPOLOGI MENURUT WIKIPEDIA
+Topologi Jaringan Sebuah LAN dapat diimplementasikan dengan berbagai macam topologi. Topologi yang di maksud di sini merupakan struktur jaringan fisik yang digunakan untuk mengimplementasikan LAN tersebut. Topologi dasar yang bisa digunakan dalam jaringan komputer adalah:
+ Topologi Bus (Linear) Topologi Ring (Cincin) Topologi Star (Bintang) Topologi Tree (Pohon) Topologi Mesh (web)  Topologi pengembangan dari ketiga di atas biasanya berupa topologi Tree (Pohon), yang merupakan pengembangan dari star dan Bus, topologi Mash atau Hybrid atau Multipoint atau Web yang merupakan pengembangan dari topologi Point to Point (bus), topologi Loop yang merupakan pengembangan dari topologi Ring Ketiganya memiliki kelebihan dan kekurangan masing-masing.</description>
       </item>
     
       <item>
@@ -865,7 +930,12 @@ Mekanisme loopback lokal berguna untuk menguji perangkat lunak selama pengembang
         <link>https://sibunglon.com/2017/08/09/bagaimana-menginstall-lamp-di-localhost-linux/</link>
         <pubDate>Wed, 09 Aug 2017 14:58:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/09/bagaimana-menginstall-lamp-di-localhost-linux/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Hello, pada kesempatan kali ini saya memposting bagaimana sih menginstal LAMP? Nah cara-caranya akan dijelaskan sebagai berikut.
+#Pengertian
+LAMP adalah istilah yang merupakan singkatan dari Linux, Apache, MySQL dan Perl/PHP/Phyton. Merupakan sebuah paket perangkat lunak bebas yang digunakan untuk menjalankan sebuah aplikasi secara lengkap.
+Komponen-komponen dari LAMP :
+ Linux – sistem operasi Apache HTTP Server – web server MariaDB atau MySQL – sistem basis data PHP atau Perl atau Python – bahasa pemrograman yang dipakai  #Latar Belakang</description>
       </item>
     
       <item>
@@ -938,7 +1008,10 @@ LATAR BELAKANG</description>
         <link>https://sibunglon.com/2017/07/24/instalasi-linux-mint-18.1-sarena/</link>
         <pubDate>Mon, 24 Jul 2017 13:52:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/24/instalasi-linux-mint-18.1-sarena/</guid>
-        <description></description>
+        <description>Alat dan bahan:
+ 1 set pc atau laptop flashdisk booting linux mint 18.1 cinnamon 64-bit  Langkah kerja:
+  Siapkan sebuah pc atau laptop yang akan diinstallkan linux mint 18.1 cinnamon 64-bit, serta flashdisk yang berisi booting sistem operasi yang akan diinstal.
+  Nyalakan pc atau laptop yang ingin di install, setalah itu masuk pada bios dan konfigurasi agar flashdisk booting yang telah ada dapat dipakai yaitu dengan cara masuk di menu “Boot” dan meletakkan jenis USB ke deretan atas.</description>
       </item>
     
       <item>
@@ -946,7 +1019,10 @@ LATAR BELAKANG</description>
         <link>https://sibunglon.com/2017/07/22/sejarah-singkat-blc-telkom-klaten-serta-perkenalan-dan-pertemuan-pertama/</link>
         <pubDate>Sat, 22 Jul 2017 13:43:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/22/sejarah-singkat-blc-telkom-klaten-serta-perkenalan-dan-pertemuan-pertama/</guid>
-        <description>Assalamualaikum Wr.WbPerkenalkan saya Faizar Septiawan atau bisa di panggil Icar berasal dari Bulukumba, Sulawesi Selatan dan sekolah di SMKN 1 Bulukumba. Dipostingan pertama ini saya akan tuliskan sejarah dan review sebuah tempat magang/prakerin yang saya tempati. Tempat tersebut bernama BLC Telkom Klaten, beralamat di Jl.Srigading No.7 Tonggalan, Klaten TengahSejarah BLC Telkom Klaten&amp;ldquo;Saya melihat Teknologi Informasi (TI) khususnya penggunaan dan pemanfaatan Internet di Indonesia seperti sebilah pisau yang sangat tajam dijual bebas dan dibeli oleh orang-orang tapi tidak ada keterangan penggunaannya, manfaat segi positif dan negatifnya.</description>
+        <description>Assalamualaikum Wr.Wb
+ Perkenalkan saya Faizar Septiawan atau bisa di panggil Icar berasal dari Bulukumba, Sulawesi Selatan dan sekolah di SMKN 1 Bulukumba. Dipostingan pertama ini saya akan tuliskan sejarah dan review sebuah tempat magang/prakerin yang saya tempati. Tempat tersebut bernama BLC Telkom Klaten, beralamat di Jl.Srigading No.7 Tonggalan, Klaten Tengah
+Sejarah BLC Telkom Klaten
+ &amp;ldquo;Saya melihat Teknologi Informasi (TI) khususnya penggunaan dan pemanfaatan Internet di Indonesia seperti sebilah pisau yang sangat tajam dijual bebas dan dibeli oleh orang-orang tapi tidak ada keterangan penggunaannya, manfaat segi positif dan negatifnya.</description>
       </item>
     
   </channel>

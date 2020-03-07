@@ -354,7 +354,7 @@ Nginx, banyak orang membicarakannya meskipun salah dipelafalannya. Dulu saya jug
 Jika masih ingin berkenalan lebih lanjut, bisa di stalking ke official sitenya :D https://ngrok.com
 Langkah - langkah menggunakan ngrok:
 1) Buka shell linux dan login sebagai super user, kemudian download ngrok menggunakan command
-wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zi
+wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
 2) Ekstrak file ngrok yang telah didownload dengan command</description>
       </item>
     
@@ -498,7 +498,13 @@ Moodle (singkatan dari Modular Object-Oriented Dynamic Learning Environment) a
         <link>https://sibunglon.com/2017/10/18/point-to-point-dengan-ubiquiti-station-side/</link>
         <pubDate>Wed, 18 Oct 2017 16:50:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/18/point-to-point-dengan-ubiquiti-station-side/</guid>
-        <description>A. PengertianUbiquiti Networksadalah perusahaan teknologi Amerika yang dimulai pada tahun 2005. Berbasis di San Jose, California , Ubiquiti memproduksi produk komunikasi data nirkabel untuk perusahaan dan penyedia layanan broadband nirkabel dengan fokus utama pada pasar yang kurang terlayani dan yang sedang berkembang.B. Latar BelakangKebutuhan media tranmisi jarak jauhC. Maksud dan TujuanBisa Menerapkan wireless konsep dan bisa menangkap signal dari sisi APD. Alat dan Bahan~ Ubiquiti Power Beam M2 (Station side)~ Ubiquiti NanoStation M2 (AP Side)~ Laptop~ Kabel LANE.</description>
+        <description>A. Pengertian
+Ubiquiti Networks adalah perusahaan teknologi Amerika yang dimulai pada tahun 2005. Berbasis di San Jose, California , Ubiquiti memproduksi produk komunikasi data nirkabel untuk perusahaan dan penyedia layanan broadband nirkabel dengan fokus utama pada pasar yang kurang terlayani dan yang sedang berkembang.
+B. Latar Belakang
+Kebutuhan media tranmisi jarak jauh
+C. Maksud dan Tujuan
+Bisa Menerapkan wireless konsep dan bisa menangkap signal dari sisi AP
+D. Alat dan Bahan</description>
       </item>
     
       <item>
@@ -525,7 +531,10 @@ Senayan, atau lengkapnya Senayan Library Management System (SLiMS), adalah peran
         <link>https://sibunglon.com/2017/10/17/setting-access-point-engenius-eap-300/</link>
         <pubDate>Tue, 17 Oct 2017 11:01:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/17/setting-access-point-engenius-eap-300/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pada kesempatan ini saya akan sedikit membagi ilmu terkait dengan how to configure access point EnGenius EAP 300. ok dari pada lama kita lanjut ke step selanjutnya.
+B. Pengertian
+Di jaringan komputer , jalur akses nirkabel ( WAP ), atau lebih tepatnya hanya access point ( AP ), adalah perangkat keras jaringan yang memungkinkan perangkat WI - FI terhubung ke jaringan kabel. AP biasanya terhubung ke router (melalui jaringan kabel) sebagai perangkat mandiri, namun juga dapat menjadi komponen integral dari router itu sendiri.</description>
       </item>
     
       <item>
@@ -612,7 +621,10 @@ Komponen-komponen dari LAMP :
         <link>https://sibunglon.com/2017/10/13/setting-tp-link-wa7210n/</link>
         <pubDate>Fri, 13 Oct 2017 09:52:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/13/setting-tp-link-wa7210n/</guid>
-        <description></description>
+        <description>A.Pendahuluan Assalamualaikum Wr.Wb
+saya akan membuat tutorial yang berjudul cara setting tp link agar bisa share wifi nya . jika kalian ingin tau caranya saksikan tutorialini dengan baik jagan ada kelewatan.
+B. Pengertian TP-LINK itu jenis nya berbagai macam tapi yang saya akan buat tutorial ini yaitu cara setting tplink. menurut saya TP-LINK adalah sebuah alat untuk memperkuat sinyal maupun membuat hospot dengan berskala besar.
+C. latar belakang Diagram contoh ini digunakan untuk menghubungkan Wireless Router TP-Link TD-W8951ND dengan koneksi internet ADSL dan wireless WIFI, signal WIFI dari Router Modem ADSL akan diambil TP-Link TL-WA7210N.</description>
       </item>
     
       <item>
@@ -729,7 +741,13 @@ C. Hasil Yang Diharapkan</description>
         <link>https://sibunglon.com/2017/09/21/sntp-client-mikrotik/</link>
         <pubDate>Thu, 21 Sep 2017 03:30:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/21/sntp-client-mikrotik/</guid>
-        <description></description>
+        <description>1. Pendahuluan
+A. Pengertian
+Network Time Protocol (NTP) adalah protokol jaringan untuk sinkronisasi jam antara sistem komputer melalui jaringan data packet-switched, variable-latency. Beroperasi sejak sebelum 1985, NTP adalah salah satu protokol Internet tertua yang digunakan saat ini. NTP dirancang oleh David L. Mills dari University of Delaware.B. Latar Belakang Untuk Mensinkronisasikan waktu pada mikrotik
+B. Hasil Yang Diharapkan
+Dapat Mensinkronisasikan waktu pada mikrotik
+2. Alat dan Bahan
+- Router mikrotik</description>
       </item>
     
       <item>
@@ -737,7 +755,11 @@ C. Hasil Yang Diharapkan</description>
         <link>https://sibunglon.com/2017/09/20/atasi-phpmyadmin-error-#1698-sehingga-tidak-bisa-login-sebagai-root/</link>
         <pubDate>Wed, 20 Sep 2017 03:15:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/20/atasi-phpmyadmin-error-#1698-sehingga-tidak-bisa-login-sebagai-root/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pada kesempatan ini yang saya posting/share yaitu troubleshoot phpmyadmin dengan kode error #1698 atau tidak bisa login sebagai root.
+B. Pengertian
+PhpMyAdmin adalah perangkat lunak bebas yang ditulis dalam bahasa pemrograman PHP yang digunakan untuk menangani administrasi MySQL melalui Jejaring Jagat Jembar (World Wide Web). phpMyAdmin mendukung berbagai operasi MySQL, diantaranya (mengelola basis data, tabel-tabel, bidang (fields), relasi (relations), indeks, pengguna (users), perizinan (permissions), dan lain-lain).
+C. Latar belakang</description>
       </item>
     
       <item>
@@ -745,7 +767,18 @@ C. Hasil Yang Diharapkan</description>
         <link>https://sibunglon.com/2017/09/19/pointing-ubnt-ke-mikrotik/</link>
         <pubDate>Tue, 19 Sep 2017 02:56:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/19/pointing-ubnt-ke-mikrotik/</guid>
-        <description></description>
+        <description>PENGERTIAN
+Point to Point adalah data link protokol yang umum digunakan dalam membangun hubungan langsung antara dua node jaringan. Hal ini dapat menyediakan koneksi otentikasi, transmisi enkripsi (menggunakan ECP, RFC 1968), dan kompresi.
+LATAR BELAKANG
+Jauhnya tempat tidak memunginkan untuk penggunakan kabel untuk media transmisi data
+MAKSUD DAN TUJUAN
+Mempelajari UBNT
+Jangka Waktu Pelaksanaan
+Kurang lebih 3 jam
+ALAT DAN BAHAN
+~ Laptop
+~ Ubnt Powerbeam M2
+~ RB 941</description>
       </item>
     
       <item>
@@ -753,7 +786,13 @@ C. Hasil Yang Diharapkan</description>
         <link>https://sibunglon.com/2017/09/19/proxy-situs-dengan-fitur-web-proxy-di-mikrotik/</link>
         <pubDate>Tue, 19 Sep 2017 02:51:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/19/proxy-situs-dengan-fitur-web-proxy-di-mikrotik/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pada kesempatan kali ini yang saya posting masih mengenai mikrotik yaitu bagaimana proxy situs dengan fitur yang ada pada mikrotik
+B. Pengertian
+Apa itu proxy?
+Proxy merupakan perangkat yang bersifat &amp;ldquo;middleman&amp;rdquo;, yang bekerja diantara client &amp;amp; Server, bertugas menghadle transmisi request ataupun respon. Data yang melewati proxy, bisa diubah oleh proxy atau tidak diubah sama sekali, tergantung implementasi fitur dan kemampuan proxy.
+Manfaat Proxy
+  Security : Proxy mampu melakukan pengecekan terhadap incoming response &amp;amp; outgoing request, sehingga memungkinkan untuk melakukan block paket yang tidak diharapkan</description>
       </item>
     
       <item>
@@ -761,7 +800,13 @@ C. Hasil Yang Diharapkan</description>
         <link>https://sibunglon.com/2017/09/18/switch-chip-di-mikrotik/</link>
         <pubDate>Mon, 18 Sep 2017 02:24:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/18/switch-chip-di-mikrotik/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pada kali ini, yang saya posting yaitu tentang memfungsikan mikrotik sebagai switch
+B. Pengertian
+Switch merupakan penghubung beberapa alat untuk membentuk suatu Local Area Network (LAN). Routerboard Mikrotik RB750 telah disediakan fungsi switch, yang mana jika sobat menginginkan men-share internet lebih dari satu komputer atau pada umumnya topologi yang digunakan kebanyak internet di share melalui media wifi dan lan menggunakan kabel.
+C. Latar belakang
+Ingin menambah pengetahuan
+D. Tujuan</description>
       </item>
     
       <item>
@@ -769,7 +814,10 @@ C. Hasil Yang Diharapkan</description>
         <link>https://sibunglon.com/2017/09/16/routing-static-di-mikrotik/</link>
         <pubDate>Sat, 16 Sep 2017 02:15:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/16/routing-static-di-mikrotik/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pada kesempatan kali ini, saya akan memposting tentang pengimplemtasian routing static di mikrotik
+B. Pengertian
+Routing static adalah menambahkan jalur routing tertentu secara manual. Mikrotik secara default akan membuat jalur routing otomatis (dynamic route) ketika kita menambahkan ip address pada interface. Lalu kenapa kita memerlukan static routing? Karena untuk menghubungkan perangkat network yang memilik ip segment (subnet) yang berbeda memerlukan sebuah perangkat yang mampu melakukan proses static routing.</description>
       </item>
     
       <item>
@@ -777,7 +825,10 @@ C. Hasil Yang Diharapkan</description>
         <link>https://sibunglon.com/2017/09/15/routing-dynamic-rip-di-mikrotik/</link>
         <pubDate>Fri, 15 Sep 2017 02:05:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/15/routing-dynamic-rip-di-mikrotik/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pada kesempatan kali ini, saya akan memposting tentang pengimplemtasian routing dynamic RIP di mikrotik
+B. Pengertian
+Routing Information Protocol (RIP) adalah sebuah protokol routing dinamis yang digunakan dalam jaringan LAN (Local Area Network) dan WAN (Wide Area Network). Oleh karena itu protokol ini diklasifikasikan sebagai Interior Gateway Protocol (IGP). Protokol ini menggunakan algoritma Distance-Vector Routing. Pertama kali didefinisikan dalam RFC 1058 (1988). Protokol ini telah dikembangkan beberapa kali, sehingga terciptalah RIP Versi 2.</description>
       </item>
     
       <item>
@@ -785,7 +836,10 @@ C. Hasil Yang Diharapkan</description>
         <link>https://sibunglon.com/2017/09/12/routing-dynamic-ospf-di-mikrotik/</link>
         <pubDate>Tue, 12 Sep 2017 12:36:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/12/routing-dynamic-ospf-di-mikrotik/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pada kesempatan kali ini, yang saya posting yaitu membuat routing dynamic OSPF di mikrotik
+B. Pengertian
+Open Shortest Path First (OSPF) adalah sebuah protokol routing otomatis (Dynamic Routing) yang mampu menjaga, mengatur dan mendistribusikan informasi routing antar network mengikuti setiap perubahan jaringan secara dinamis. Pada OSPF dikenal sebuah istilah Autonomus System (AS) yaitu sebuah gabungan dari beberapa jaringan yang sifatnya routing dan memiliki kesamaan metode serta policy pengaturan network, yang semuanya dapat dikendalikan oleh network administrator.</description>
       </item>
     
       <item>
@@ -937,7 +991,10 @@ Shell adalah program (penterjemah perintah)yang menjembatani user dengan sistem 
         <link>https://sibunglon.com/2017/08/22/recovery-data-dari-hardisk-atau-flashdisk-yang-tidak-bisa-dibuka/</link>
         <pubDate>Tue, 22 Aug 2017 10:06:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/22/recovery-data-dari-hardisk-atau-flashdisk-yang-tidak-bisa-dibuka/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pada kesempatan kali ini, saya akan memberikan tahapan tentang bagaimana recovery data dari hardisk atau flashdisk yang tidak bisa dibuka menggunakan software di linux yaitu &amp;ldquo;Testdisk&amp;rdquo;
+B. Pengertian
+Recovery data (pemulihan data) adalah proses menyelamatkan (mengambil) tidak dapat diakses, hilang, rusak, rusak atau diformat data dari penyimpanan sekunder , removable media atau file , ketika data yang tersimpan di dalamnya tidak dapat diakses secara normal. Data yang paling sering diselamatkan dari media penyimpanan seperti internal atau eksternal hard disk drive (HDD), solid-state drive (SSD), USB flash drive , tape magnetik , CD , DVD , RAID subsistem, dan lainnya perangkat elektronik.</description>
       </item>
     
       <item>
@@ -958,7 +1015,10 @@ Tidak ada koneksi internet dari kabel LAN jika melakukan praktek di tempat kost,
         <link>https://sibunglon.com/2017/08/18/setting-pptp-vpn-client-pada-os-linux-mint/</link>
         <pubDate>Fri, 18 Aug 2017 18:30:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/18/setting-pptp-vpn-client-pada-os-linux-mint/</guid>
-        <description></description>
+        <description>A. PENDAHULAN
+Berikut ini saya sharing Cara Setting PPTP VPN Client pada Linux Mint, sedangkan VPN Server yang digunakan pada artikel ini mengunakan VPN Server dari Mikrotik.
+B. PENGERTIAN
+VPN adalah Virtual Private Network dimana VPN ini merupakan interkoneksi antar jaringan ( PC Client to LAN maupun LAN to LAN ) yang mana interkoneksi ini melalui jaringan Public ( Internet ) sehingga dengan VPN ini terjadi koneksi terselubung alias lorong atau Tunneling Connection sehingga data yang di akses ( data yang di kirim dan di terima ) benar-benar aman.</description>
       </item>
     
       <item>
@@ -1000,7 +1060,12 @@ Mekanisme loopback lokal berguna untuk menguji perangkat lunak selama pengembang
         <link>https://sibunglon.com/2017/08/09/bagaimana-menginstall-lamp-di-localhost-linux/</link>
         <pubDate>Wed, 09 Aug 2017 14:58:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/09/bagaimana-menginstall-lamp-di-localhost-linux/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Hello, pada kesempatan kali ini saya memposting bagaimana sih menginstal LAMP? Nah cara-caranya akan dijelaskan sebagai berikut.
+#Pengertian
+LAMP adalah istilah yang merupakan singkatan dari Linux, Apache, MySQL dan Perl/PHP/Phyton. Merupakan sebuah paket perangkat lunak bebas yang digunakan untuk menjalankan sebuah aplikasi secara lengkap.
+Komponen-komponen dari LAMP :
+ Linux – sistem operasi Apache HTTP Server – web server MariaDB atau MySQL – sistem basis data PHP atau Perl atau Python – bahasa pemrograman yang dipakai  #Latar Belakang</description>
       </item>
     
       <item>
@@ -1098,7 +1163,10 @@ Tujuan pembatasannya itu tergantung dimana penempatan akses internet dari mikroT
         <link>https://sibunglon.com/2017/07/24/instalasi-linux-mint-18.1-sarena/</link>
         <pubDate>Mon, 24 Jul 2017 13:52:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/24/instalasi-linux-mint-18.1-sarena/</guid>
-        <description></description>
+        <description>Alat dan bahan:
+ 1 set pc atau laptop flashdisk booting linux mint 18.1 cinnamon 64-bit  Langkah kerja:
+  Siapkan sebuah pc atau laptop yang akan diinstallkan linux mint 18.1 cinnamon 64-bit, serta flashdisk yang berisi booting sistem operasi yang akan diinstal.
+  Nyalakan pc atau laptop yang ingin di install, setalah itu masuk pada bios dan konfigurasi agar flashdisk booting yang telah ada dapat dipakai yaitu dengan cara masuk di menu “Boot” dan meletakkan jenis USB ke deretan atas.</description>
       </item>
     
   </channel>

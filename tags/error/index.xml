@@ -143,7 +143,11 @@ PHP info adalah istilah untuk menyebutkan sebuah halaman yang berisi informasi m
         <link>https://sibunglon.com/2017/09/20/atasi-phpmyadmin-error-#1698-sehingga-tidak-bisa-login-sebagai-root/</link>
         <pubDate>Wed, 20 Sep 2017 03:15:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/20/atasi-phpmyadmin-error-#1698-sehingga-tidak-bisa-login-sebagai-root/</guid>
-        <description></description>
+        <description>A. Pendahuluan
+Pada kesempatan ini yang saya posting/share yaitu troubleshoot phpmyadmin dengan kode error #1698 atau tidak bisa login sebagai root.
+B. Pengertian
+PhpMyAdmin adalah perangkat lunak bebas yang ditulis dalam bahasa pemrograman PHP yang digunakan untuk menangani administrasi MySQL melalui Jejaring Jagat Jembar (World Wide Web). phpMyAdmin mendukung berbagai operasi MySQL, diantaranya (mengelola basis data, tabel-tabel, bidang (fields), relasi (relations), indeks, pengguna (users), perizinan (permissions), dan lain-lain).
+C. Latar belakang</description>
       </item>
     
       <item>

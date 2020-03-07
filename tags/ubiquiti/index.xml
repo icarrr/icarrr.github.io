@@ -15,7 +15,13 @@
         <link>https://sibunglon.com/2017/10/18/point-to-point-dengan-ubiquiti-station-side/</link>
         <pubDate>Wed, 18 Oct 2017 16:50:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/18/point-to-point-dengan-ubiquiti-station-side/</guid>
-        <description>A. PengertianUbiquiti Networksadalah perusahaan teknologi Amerika yang dimulai pada tahun 2005. Berbasis di San Jose, California , Ubiquiti memproduksi produk komunikasi data nirkabel untuk perusahaan dan penyedia layanan broadband nirkabel dengan fokus utama pada pasar yang kurang terlayani dan yang sedang berkembang.B. Latar BelakangKebutuhan media tranmisi jarak jauhC. Maksud dan TujuanBisa Menerapkan wireless konsep dan bisa menangkap signal dari sisi APD. Alat dan Bahan~ Ubiquiti Power Beam M2 (Station side)~ Ubiquiti NanoStation M2 (AP Side)~ Laptop~ Kabel LANE.</description>
+        <description>A. Pengertian
+Ubiquiti Networks adalah perusahaan teknologi Amerika yang dimulai pada tahun 2005. Berbasis di San Jose, California , Ubiquiti memproduksi produk komunikasi data nirkabel untuk perusahaan dan penyedia layanan broadband nirkabel dengan fokus utama pada pasar yang kurang terlayani dan yang sedang berkembang.
+B. Latar Belakang
+Kebutuhan media tranmisi jarak jauh
+C. Maksud dan Tujuan
+Bisa Menerapkan wireless konsep dan bisa menangkap signal dari sisi AP
+D. Alat dan Bahan</description>
       </item>
     
       <item>
@@ -31,7 +37,18 @@
         <link>https://sibunglon.com/2017/09/19/pointing-ubnt-ke-mikrotik/</link>
         <pubDate>Tue, 19 Sep 2017 02:56:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/19/pointing-ubnt-ke-mikrotik/</guid>
-        <description></description>
+        <description>PENGERTIAN
+Point to Point adalah data link protokol yang umum digunakan dalam membangun hubungan langsung antara dua node jaringan. Hal ini dapat menyediakan koneksi otentikasi, transmisi enkripsi (menggunakan ECP, RFC 1968), dan kompresi.
+LATAR BELAKANG
+Jauhnya tempat tidak memunginkan untuk penggunakan kabel untuk media transmisi data
+MAKSUD DAN TUJUAN
+Mempelajari UBNT
+Jangka Waktu Pelaksanaan
+Kurang lebih 3 jam
+ALAT DAN BAHAN
+~ Laptop
+~ Ubnt Powerbeam M2
+~ RB 941</description>
       </item>
     
   </channel>
