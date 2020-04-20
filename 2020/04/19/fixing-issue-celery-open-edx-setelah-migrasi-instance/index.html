@@ -78,7 +78,7 @@ $ sudo tail -f /edx/var/log/{lms,cms,nginx}/*log ==&gt; /edx/var/log/lms/edx.log
 $ sudo tail -f /edx/var/log/{lms,cms,nginx}/*log ==&gt; /edx/var/log/lms/edx.log &lt;== Apr 12 02:21:16 beep [service_variant=lms][celery.worker.consumer][env:sandbox] ERROR [beep 1400] [consumer.py:364] - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 104] Connection reset by peer.">
 <meta itemprop="datePublished" content="2020-04-19T22:38:14&#43;07:00" />
 <meta itemprop="dateModified" content="2020-04-19T22:38:14&#43;07:00" />
-<meta itemprop="wordCount" content="247">
+<meta itemprop="wordCount" content="252">
 
 
 
@@ -148,7 +148,12 @@ Trying again in 32.00 seconds...
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo rabbitmqctl set_permissions -p / userCeleryedX <span class="s2">&#34;.*&#34;</span> <span class="s2">&#34;.*&#34;</span> <span class="s2">&#34;.*&#34;</span>
 </code></pre></div><p>Restart instance</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo reboot
-</code></pre></div></section>
+</code></pre></div><h3 id="references">References</h3>
+<ul>
+<li><a href="https://oonlab.com/edx/code/2015/10/21/solve-celery-error-saat-migrasi-open-edx/">oonlab</a></li>
+<li><a href="https://blog.lawrencemcdaniel.com/open-edx-trouble-shooting-celery-rabbitmq/">Lawrence McDaniel Blog</a></li>
+</ul>
+</section>
     <footer>
       <hr>
       <div class="meta">
