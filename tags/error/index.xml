@@ -5,10 +5,21 @@
     <description>Recent content in Error on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Apr 2020 22:38:14 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 24 May 2020 21:21:22 +0700</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/error/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>SOLVE ZSH : function definition file not found</title>
+        <link>https://sibunglon.com/2020/05/24/solve-zsh-function-definition-file-not-found/</link>
+        <pubDate>Sun, 24 May 2020 21:21:22 +0700</pubDate>
+        <guid>https://sibunglon.com/2020/05/24/solve-zsh-function-definition-file-not-found/</guid>
+        <description>Some commands error when using autocomplete. Ex, error message when using the mv command:
+~ ❯❯❯ mv Down... (eval):1: _mv: function definition file not found How to solve?
+~ ❯❯❯ rm ~/.zcompdump ~ ❯❯❯ exec zsh -l This solutions worked for me.
+If you found error message, comment on this article or contact me 😄</description>
+      </item>
     
       <item>
         <title>Fixing Issue Celery Open edX Setelah Migrasi Instance</title>

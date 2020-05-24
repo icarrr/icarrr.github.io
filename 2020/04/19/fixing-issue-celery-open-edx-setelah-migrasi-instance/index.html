@@ -39,7 +39,7 @@
   <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4194642&101" alt="" border="0"></a></noscript>
   
 
-  <meta name="generator" content="Hugo 0.64.1" />
+  <meta name="generator" content="Hugo 0.71.0" />
 
   
   
@@ -114,8 +114,8 @@ $ sudo tail -f /edx/var/log/{lms,cms,nginx}/*log ==&gt; /edx/var/log/lms/edx.log
     </header>
     <section><p>Beberapa hari yang lalu saya memindahkan instance Open edX dan beberapa menit setelah server aktif, Open edX tidak bisa diakses. Cek servicenya, tetapi semua service dalam keadaan aktif namun ketika melihat lognya, ternyata ada error pada celery, kurang lebih errornya seperti berikut:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo tail -f /edx/var/log/<span class="o">{</span>lms,cms,nginx<span class="o">}</span>/*log
-<span class="o">=</span><span class="o">=</span>&gt; /edx/var/log/lms/edx.log &lt;<span class="o">=</span><span class="o">=</span>
-Apr <span class="m">12</span> 02:21:16 beep <span class="o">[</span><span class="nv">service_variant</span><span class="o">=</span>lms<span class="o">]</span><span class="o">[</span>celery.worker.consumer<span class="o">]</span><span class="o">[</span>env:sandbox<span class="o">]</span> ERROR <span class="o">[</span>beep  1400<span class="o">]</span> <span class="o">[</span>consumer.py:364<span class="o">]</span> - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: <span class="o">[</span>Errno 104<span class="o">]</span> Connection reset by peer.
+<span class="o">==</span>&gt; /edx/var/log/lms/edx.log &lt;<span class="o">==</span>
+Apr <span class="m">12</span> 02:21:16 beep <span class="o">[</span><span class="nv">service_variant</span><span class="o">=</span>lms<span class="o">][</span>celery.worker.consumer<span class="o">][</span>env:sandbox<span class="o">]</span> ERROR <span class="o">[</span>beep  1400<span class="o">]</span> <span class="o">[</span>consumer.py:364<span class="o">]</span> - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: <span class="o">[</span>Errno 104<span class="o">]</span> Connection reset by peer.
 Trying again in 32.00 seconds...
 </code></pre></div><p>Dari log diatas, terdapat error message <code>Connection reset by peer</code>, penyebab issue tersebut sebenarnya sudah jelas yaitu kesalahan autentikasi.</p>
 <p>Maka perlu dilakukan validasi, apakah user tersebut available atau tidak. Untuk melakukan validasi user, dapat menggunakan command:</p>
