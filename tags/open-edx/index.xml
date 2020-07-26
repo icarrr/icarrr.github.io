@@ -5,10 +5,64 @@
     <description>Recent content in Open edX on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Apr 2020 22:38:14 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 26 Jul 2020 21:05:49 +0800</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/open-edx/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Database returned an invalid value in QuerySet.datetimes()</title>
+        <link>https://sibunglon.com/2020/07/26/database-returned-an-invalid-value-in-queryset.datetimes/</link>
+        <pubDate>Sun, 26 Jul 2020 21:05:49 +0800</pubDate>
+        <guid>https://sibunglon.com/2020/07/26/database-returned-an-invalid-value-in-queryset.datetimes/</guid>
+        <description>After create new action on the Django admin pages, it redirects to my site with the message a server error. When check the file /edx/var/log/supervisor/lms-stderr.log i find this:
+Traceback (most recent call last): File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/exception.py&amp;quot;, line 41, in inner response = get_response(request) File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;quot;, line 249, in _legacy_get_response response = self._get_response(request) File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;quot;, line 217, in _get_response response = self.process_exception_by_middleware(e, request) File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;quot;, line 215, in _get_response response = response.render() File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.</description>
+      </item>
+    
+      <item>
+        <title>Google Sign in Error 403 on Open edX</title>
+        <link>https://sibunglon.com/2020/07/26/google-sign-in-error-403-on-open-edx/</link>
+        <pubDate>Sun, 26 Jul 2020 20:43:08 +0800</pubDate>
+        <guid>https://sibunglon.com/2020/07/26/google-sign-in-error-403-on-open-edx/</guid>
+        <description>When I have configuration OAuth2 Google on Open edX version ironwood.master, I click register, then the “Google” login button and I get to the Google Log In page. After a succesful login on Google site, it redirects to my site and I’m getting error. When check the file /edx/var/log/lms/edx.log i find this:
+Jul 24 01:03:09 bnpb [service_variant=lms][django.request][env:sandbox] ERROR [elearning 29535] [exception.py:135] - Internal Server Error: /auth/complete/google-oauth2/ Traceback (most recent call last): File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.</description>
+      </item>
+    
+      <item>
+        <title>Enable Third-Party Authentication (OAuth2) Open edX</title>
+        <link>https://sibunglon.com/2020/07/26/enable-third-party-authentication-oauth2-open-edx/</link>
+        <pubDate>Sun, 26 Jul 2020 17:39:23 +0800</pubDate>
+        <guid>https://sibunglon.com/2020/07/26/enable-third-party-authentication-oauth2-open-edx/</guid>
+        <description>Open edX Platform allows you to integrate third-party authentication with two kinds of authentication providers:
+ OAuth2 Identity Providers. SAML Identity Providers  This section describes how to integrate Open edX with two of the most popular OAuth2 providers: Google and Facebook.
+Integrate Open edX With Google Step 1: Register The Open EdX Site With Google -) Navigate to the Google Developers Console.
+-) Select an existing project or create a new one.</description>
+      </item>
+    
+      <item>
+        <title>Allow User to Access the Homepage After Login in Open edX</title>
+        <link>https://sibunglon.com/2020/07/26/allow-user-to-access-the-homepage-after-login-in-open-edx/</link>
+        <pubDate>Sun, 26 Jul 2020 17:29:16 +0800</pubDate>
+        <guid>https://sibunglon.com/2020/07/26/allow-user-to-access-the-homepage-after-login-in-open-edx/</guid>
+        <description>By default, after user login into LMS, user cannot see the homepage. They always redirected to their dashboard.
+What if i want to set user can see the homepage, even after they are logged in?
+This can be set in lms.env.json, by putting this config inside block ”FEATURES” :
+&amp;quot;ALWAYS_REDIRECT_HOMEPAGE_TO_DASHBOARD_FOR_AUTHENTICATED_USER&amp;quot;: false
+After that, restart your edxapp lms service to see the changes.
+Thats it. Now you can see the homepage after user logged in.</description>
+      </item>
+    
+      <item>
+        <title>SOLVE - SMTP Open edX Timeout</title>
+        <link>https://sibunglon.com/2020/07/26/solve-smtp-open-edx-timeout/</link>
+        <pubDate>Sun, 26 Jul 2020 17:21:39 +0800</pubDate>
+        <guid>https://sibunglon.com/2020/07/26/solve-smtp-open-edx-timeout/</guid>
+        <description>By default in Open edX, the system will send an email when a new user registers, using the forget password or other conditions.
+A few days ago my teams found an issue on the email sending service, but the issue was not because of the Open edX SMTP service but from the connection side of the Open edX server to the SMTP server.
+Then what&amp;rsquo;s the case?
+Case:
+-) When a user registers, the user should receive an email to activate the account, but in reality it is not.</description>
+      </item>
     
       <item>
         <title>Fixing Issue Celery Open edX Setelah Migrasi Instance</title>

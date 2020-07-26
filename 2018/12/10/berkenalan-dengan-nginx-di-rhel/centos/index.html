@@ -40,7 +40,7 @@
   <noscript><a href="/" target="_blank"><img  src="https://sstatic1.histats.com/0.gif?4194642&101" alt="" border="0"></a></noscript>
   
 
-  <meta name="generator" content="Hugo 0.71.1" />
+  <meta name="generator" content="Hugo 0.74.3" />
 
   
   
@@ -67,7 +67,7 @@
 
   <meta property="og:title" content="Berkenalan Dengan Nginx di RHEL/CentOS" />
 <meta property="og:description" content="Nginx? Apa sih nginx itu? Fungsinya buat apa? Mungkin itu yang terlintas dipikirian beberapa orang jika berkenalan dengan hal baru. Maka dari itu pada kali ini yang akan dibahas pada Lab ini yaitu berkenalan dan bagaimana memasang nginx.
-Nginx, banyak orang membicarakannya meskipun salah dipelafalannya. Dulu saya juga salah melafakannya namun setelah diruqyah sama m1m1n atau yang dikenal dengan Andy Hidayat, sekarang gak salah pelafalan lagi :D . Nginx dibaca &ldquo;engine X&rdquo; bukan &ldquo;nging X&quot;." />
+Nginx, banyak orang membicarakannya meskipun salah dipelafalannya. Dulu saya juga salah melafakannya namun setelah diruqyah sama m1m1n atau yang dikenal dengan Andy Hidayat, sekarang gak salah pelafalan lagi :D . Nginx dibaca &ldquo;engine X&rdquo; bukan &ldquo;nging X&rdquo;." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://sibunglon.com/2018/12/10/berkenalan-dengan-nginx-di-rhel/centos/" />
 <meta property="article:published_time" content="2018-12-10T07:44:24+07:00" />
@@ -76,18 +76,19 @@ Nginx, banyak orang membicarakannya meskipun salah dipelafalannya. Dulu saya jug
   
   <meta itemprop="name" content="Berkenalan Dengan Nginx di RHEL/CentOS">
 <meta itemprop="description" content="Nginx? Apa sih nginx itu? Fungsinya buat apa? Mungkin itu yang terlintas dipikirian beberapa orang jika berkenalan dengan hal baru. Maka dari itu pada kali ini yang akan dibahas pada Lab ini yaitu berkenalan dan bagaimana memasang nginx.
-Nginx, banyak orang membicarakannya meskipun salah dipelafalannya. Dulu saya juga salah melafakannya namun setelah diruqyah sama m1m1n atau yang dikenal dengan Andy Hidayat, sekarang gak salah pelafalan lagi :D . Nginx dibaca &ldquo;engine X&rdquo; bukan &ldquo;nging X&quot;.">
-<meta itemprop="datePublished" content="2018-12-10T07:44:24&#43;07:00" />
-<meta itemprop="dateModified" content="2018-12-10T07:44:24&#43;07:00" />
+Nginx, banyak orang membicarakannya meskipun salah dipelafalannya. Dulu saya juga salah melafakannya namun setelah diruqyah sama m1m1n atau yang dikenal dengan Andy Hidayat, sekarang gak salah pelafalan lagi :D . Nginx dibaca &ldquo;engine X&rdquo; bukan &ldquo;nging X&rdquo;.">
+<meta itemprop="datePublished" content="2018-12-10T07:44:24+07:00" />
+<meta itemprop="dateModified" content="2018-12-10T07:44:24+07:00" />
 <meta itemprop="wordCount" content="291">
 
 
 
 <meta itemprop="keywords" content="Ayo Belajar Linux,Nginx,Installasi,Ngoprek,Introduction," />
+
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Berkenalan Dengan Nginx di RHEL/CentOS"/>
 <meta name="twitter:description" content="Nginx? Apa sih nginx itu? Fungsinya buat apa? Mungkin itu yang terlintas dipikirian beberapa orang jika berkenalan dengan hal baru. Maka dari itu pada kali ini yang akan dibahas pada Lab ini yaitu berkenalan dan bagaimana memasang nginx.
-Nginx, banyak orang membicarakannya meskipun salah dipelafalannya. Dulu saya juga salah melafakannya namun setelah diruqyah sama m1m1n atau yang dikenal dengan Andy Hidayat, sekarang gak salah pelafalan lagi :D . Nginx dibaca &ldquo;engine X&rdquo; bukan &ldquo;nging X&quot;."/>
+Nginx, banyak orang membicarakannya meskipun salah dipelafalannya. Dulu saya juga salah melafakannya namun setelah diruqyah sama m1m1n atau yang dikenal dengan Andy Hidayat, sekarang gak salah pelafalan lagi :D . Nginx dibaca &ldquo;engine X&rdquo; bukan &ldquo;nging X&rdquo;."/>
 
   
 
@@ -115,7 +116,7 @@ Nginx, banyak orang membicarakannya meskipun salah dipelafalannya. Dulu saya jug
     </header>
     <section><h3 id="nginx">Nginx?</h3>
 <p><em>Apa sih nginx itu? Fungsinya buat apa?</em> Mungkin itu yang terlintas dipikirian beberapa orang jika berkenalan dengan hal baru. Maka dari itu pada kali ini yang akan dibahas pada <strong>Lab</strong> ini yaitu berkenalan dan bagaimana memasang nginx.</p>
-<p>Nginx, banyak orang membicarakannya meskipun salah dipelafalannya. Dulu saya juga salah melafakannya namun setelah diruqyah sama <strong>m1m1n</strong> atau yang dikenal dengan <strong>Andy Hidayat</strong>, sekarang gak salah pelafalan lagi :D . Nginx dibaca &ldquo;<strong>engine X</strong>&rdquo; bukan &ldquo;<strong>nging X</strong>&quot;. Nginx itu sebenarnya salah satu web server open source, layaknya apache. Salah satu alasan beberapa orang berpindah dari apache ke nginx yaitu kemudahan dalam penggunaannya. Easy of use, kemudahan dalam penggunaan. Bagi anda yang terbiasa mengkonfigurasi apache, konfigurasi nginx tidak terlalu beda jauh dengan konfigurasi apache. Namun konfigurasi nginx jauh lebih simpel ketimbang apache.</p>
+<p>Nginx, banyak orang membicarakannya meskipun salah dipelafalannya. Dulu saya juga salah melafakannya namun setelah diruqyah sama <strong>m1m1n</strong> atau yang dikenal dengan <strong>Andy Hidayat</strong>, sekarang gak salah pelafalan lagi :D . Nginx dibaca &ldquo;<strong>engine X</strong>&rdquo; bukan &ldquo;<strong>nging X</strong>&rdquo;. Nginx itu sebenarnya salah satu web server open source, layaknya apache. Salah satu alasan beberapa orang berpindah dari apache ke nginx yaitu kemudahan dalam penggunaannya. Easy of use, kemudahan dalam penggunaan. Bagi anda yang terbiasa mengkonfigurasi apache, konfigurasi nginx tidak terlalu beda jauh dengan konfigurasi apache. Namun konfigurasi nginx jauh lebih simpel ketimbang apache.</p>
 <p>Mungkin cuman itu perkenalan dengan nginx yang sempat saya berikan, untuk lebih lanjutnya mungkin bisa di stalking di web resminya <a href="https://www.nginx.com/">nginx</a>, sekarang saatnya anda memasang nginx dan mencobanya langsung. Dibawah ini sudah saya tuliskan bagaimana memasang nginx di CentOS 7 / Red Hat Enterprise Linux 7.</p>
 <p>1) Remote server anda dan login sebagai super user (root)</p>
 <p>2)  Tambahkan repositori nginx, untuk menambahkannya cukup meginstall epel (Extra Package for Enterprise Linux) dengan command</p>

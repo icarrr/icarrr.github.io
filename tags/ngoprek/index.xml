@@ -5,13 +5,25 @@
     <description>Recent content in Ngoprek on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 May 2020 21:21:22 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 26 Jul 2020 17:21:39 +0800</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/ngoprek/index.xml" rel="self" type="application/rss+xml" />
     
     
       <item>
-        <title>SOLVE ZSH : function definition file not found</title>
+        <title>SOLVE - SMTP Open edX Timeout</title>
+        <link>https://sibunglon.com/2020/07/26/solve-smtp-open-edx-timeout/</link>
+        <pubDate>Sun, 26 Jul 2020 17:21:39 +0800</pubDate>
+        <guid>https://sibunglon.com/2020/07/26/solve-smtp-open-edx-timeout/</guid>
+        <description>By default in Open edX, the system will send an email when a new user registers, using the forget password or other conditions.
+A few days ago my teams found an issue on the email sending service, but the issue was not because of the Open edX SMTP service but from the connection side of the Open edX server to the SMTP server.
+Then what&amp;rsquo;s the case?
+Case:
+-) When a user registers, the user should receive an email to activate the account, but in reality it is not.</description>
+      </item>
+    
+      <item>
+        <title>SOLVE - zsh function definition file not found</title>
         <link>https://sibunglon.com/2020/05/24/solve-zsh-function-definition-file-not-found/</link>
         <pubDate>Sun, 24 May 2020 21:21:22 +0700</pubDate>
         <guid>https://sibunglon.com/2020/05/24/solve-zsh-function-definition-file-not-found/</guid>
@@ -362,7 +374,7 @@ firewall-cmd --permanent --zone=public --add-service=https Setelah diizinkan, fi
         <pubDate>Mon, 10 Dec 2018 07:44:24 +0700</pubDate>
         <guid>https://sibunglon.com/2018/12/10/berkenalan-dengan-nginx-di-rhel/centos/</guid>
         <description>Nginx? Apa sih nginx itu? Fungsinya buat apa? Mungkin itu yang terlintas dipikirian beberapa orang jika berkenalan dengan hal baru. Maka dari itu pada kali ini yang akan dibahas pada Lab ini yaitu berkenalan dan bagaimana memasang nginx.
-Nginx, banyak orang membicarakannya meskipun salah dipelafalannya. Dulu saya juga salah melafakannya namun setelah diruqyah sama m1m1n atau yang dikenal dengan Andy Hidayat, sekarang gak salah pelafalan lagi :D . Nginx dibaca &amp;ldquo;engine X&amp;rdquo; bukan &amp;ldquo;nging X&amp;quot;.</description>
+Nginx, banyak orang membicarakannya meskipun salah dipelafalannya. Dulu saya juga salah melafakannya namun setelah diruqyah sama m1m1n atau yang dikenal dengan Andy Hidayat, sekarang gak salah pelafalan lagi :D . Nginx dibaca &amp;ldquo;engine X&amp;rdquo; bukan &amp;ldquo;nging X&amp;rdquo;.</description>
       </item>
     
       <item>
@@ -1105,7 +1117,7 @@ MikroTikk adalah salah satu router yang mendukung konfigurasi pppoe server dan c
         <pubDate>Wed, 02 Aug 2017 16:51:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/02/mengatasi-grub-linux-yang-error/</guid>
         <description>Pendahuluan
-GNU GRUB (singkat untuk GNU GRand Bersatu Bootloader) adalah boot loader paket dari proyek GNU . GRUB adalah implementasi referensi dari Free Software Foundation &amp;lsquo;s Multiboot Keterangan , yang menyediakan pengguna pilihan untuk boot salah satu dari beberapa sistem operasi yang terpasang di komputer atau pilih tertentu kernel konfigurasi yang tersedia pada partisi sistem operasi tertentu.
+GNU GRUB (singkat untuk GNU GRand Bersatu Bootloader) adalah boot loader paket dari proyek GNU . GRUB adalah implementasi referensi dari Free Software Foundation &amp;rsquo;s Multiboot Keterangan , yang menyediakan pengguna pilihan untuk boot salah satu dari beberapa sistem operasi yang terpasang di komputer atau pilih tertentu kernel konfigurasi yang tersedia pada partisi sistem operasi tertentu.
 Maksud dan Tujuan
 Tujuan dari postingan ini yaitu agar pembaca yang memiliki masalah yang serupa, maka ia dapat mengatasinya sendiri tanpa membawa ke service center.</description>
       </item>
