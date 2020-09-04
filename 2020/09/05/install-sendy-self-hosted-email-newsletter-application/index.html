@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en-us" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+  
+  <meta http-equiv="cache-control" content="public, max-age=31536000" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Install Sendy - Self Hosted Email Newsletter Application</title>
+  <meta name="author" content="Faizar Septiawan">
+  <meta name="author" content="Shell, Linux, Komunitas Pengguna Linux Indonesia , MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, KPLI Klaten, BLC Telkom Klaten, Icar, siBunglonGanteng, siBunglonLabs">
+  <meta name="description" content="Read - Search - Ask | Sekali Gila Tetap Gila">
+  <meta name="description" content="Shell, Linux, Komunitas Pengguna Linux Indonesia , MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, KPLI Klaten, BLC Telkom Klaten, Icar, siBunglonGanteng, siBunglonLabs">
+  
+  
+  
+  <meta name="google-site-verification" content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM" />
+  
+  
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110194945-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110194945-3');
+  </script>
+  
+
+  
+  <script type="text/javascript">var _Hasync= _Hasync|| [];
+  _Hasync.push(['Histats.start', '1,4194642,4,0,0,0,00010000']);
+  _Hasync.push(['Histats.fasi', '1']);
+  _Hasync.push(['Histats.track_hits', '']);
+  (function() {
+  var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+  hs.src = ('https://s10.histats.com/js15_as.js');
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+  })();</script>
+  <noscript><a href="/" target="_blank"><img  src="https://sstatic1.histats.com/0.gif?4194642&101" alt="" border="0"></a></noscript>
+  
+
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/css/external.min.css" media="screen">
+  
+  
+  <link rel="stylesheet" href="/assets/css/styles.css" media="screen">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400&display=swap" rel="stylesheet">
+  
+
+  
+  
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/src/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="/src/images/favicon.ico">
+  
+
+  
+  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
+  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
+
+  <meta property="og:title" content="Install Sendy - Self Hosted Email Newsletter Application" />
+<meta property="og:description" content="What is Sendy?
+Sendy is a self hosted email newsletter application that lets you send trackable emails via Amazon Simple Email Service (SES).
+To install sendy on Ubuntu, do the following steps:
+ Login to server, and install package.  $ add-apt-repository ppa:ondrej/php $ apt update $ apt install php unzip $ apt install php-fpm libapache2-mod-php php-mysql php-curl php-xml $ apt install mariadb-server mariadb-client Let’s run the security script to harden the SQL." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sibunglon.com/2020/09/05/install-sendy-self-hosted-email-newsletter-application/" />
+<meta property="article:published_time" content="2020-09-05T03:17:01+08:00" />
+<meta property="article:modified_time" content="2020-09-05T03:17:01+08:00" />
+
+  
+  <meta itemprop="name" content="Install Sendy - Self Hosted Email Newsletter Application">
+<meta itemprop="description" content="What is Sendy?
+Sendy is a self hosted email newsletter application that lets you send trackable emails via Amazon Simple Email Service (SES).
+To install sendy on Ubuntu, do the following steps:
+ Login to server, and install package.  $ add-apt-repository ppa:ondrej/php $ apt update $ apt install php unzip $ apt install php-fpm libapache2-mod-php php-mysql php-curl php-xml $ apt install mariadb-server mariadb-client Let’s run the security script to harden the SQL.">
+<meta itemprop="datePublished" content="2020-09-05T03:17:01+08:00" />
+<meta itemprop="dateModified" content="2020-09-05T03:17:01+08:00" />
+<meta itemprop="wordCount" content="876">
+
+
+
+<meta itemprop="keywords" content="Ayo Belajar Linux,Sendy,Email," />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Install Sendy - Self Hosted Email Newsletter Application"/>
+<meta name="twitter:description" content="What is Sendy?
+Sendy is a self hosted email newsletter application that lets you send trackable emails via Amazon Simple Email Service (SES).
+To install sendy on Ubuntu, do the following steps:
+ Login to server, and install package.  $ add-apt-repository ppa:ondrej/php $ apt update $ apt install php unzip $ apt install php-fpm libapache2-mod-php php-mysql php-curl php-xml $ apt install mariadb-server mariadb-client Let’s run the security script to harden the SQL."/>
+
+  
+
+  
+  <script src="https://kit.fontawesome.com/749688b2db.js" crossorigin="anonymous"></script>
+  
+</head>
+
+  <body>
+    
+      <nav>
+  <a href="/" title="">
+    siBunglon
+  </a>
+</nav>
+
+    
+    <main class="container">
+      
+  <article>
+    <header>
+      <small>
+        <time datetime="2020-09-05 03:17:01&#43;0800">2020-09-05</time></small>
+      <h1>Install Sendy - Self Hosted Email Newsletter Application</h1>
+    </header>
+    <section><p><strong>What is Sendy?</strong></p>
+<p>Sendy is a self hosted email newsletter application that lets you send trackable emails via <a href="http://aws.amazon.com/ses/">Amazon Simple Email Service (SES)</a>.</p>
+<p><img src="/assets/img/install-sendy/image1.jpg" alt="Sendy"></p>
+<p>To install sendy on Ubuntu, do the following steps:</p>
+<ol>
+<li>Login to server, and install package.</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ add-apt-repository ppa:ondrej/php
+$ apt update
+$ apt install php unzip
+$ apt install php-fpm libapache2-mod-php php-mysql php-curl php-xml
+$ apt install mariadb-server mariadb-client
+</code></pre></div><ol start="2">
+<li>Let’s run the security script to harden the SQL.</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ mysql_secure_installation
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ mysql_secure_installation
+
+NOTE: RUNNING ALL PARTS OF THIS SCRIPT IS RECOMMENDED FOR ALL MariaDB
+      SERVERS IN PRODUCTION USE!  PLEASE READ EACH STEP CAREFULLY!
+
+In order to log into MariaDB to secure it, we<span class="s1">&#39;ll need the current
+</span><span class="s1">password for the root user.  If you&#39;</span>ve just installed MariaDB, and
+you haven<span class="s1">&#39;t set the root password yet, the password will be blank,
+</span><span class="s1">so you should just press enter here.
+</span><span class="s1">
+</span><span class="s1">Enter current password for root (enter for none):
+</span><span class="s1">OK, successfully used password, moving on...
+</span><span class="s1">
+</span><span class="s1">Setting the root password ensures that nobody can log into the MariaDB
+</span><span class="s1">root user without the proper authorisation.
+</span><span class="s1">
+</span><span class="s1">Set root password? [Y/n] y
+</span><span class="s1">New password:
+</span><span class="s1">Re-enter new password:
+</span><span class="s1">Password updated successfully!
+</span><span class="s1">Reloading privilege tables..
+</span><span class="s1"> ... Success!
+</span><span class="s1">
+</span><span class="s1">
+</span><span class="s1">By default, a MariaDB installation has an anonymous user, allowing anyone
+</span><span class="s1">to log into MariaDB without having to have a user account created for
+</span><span class="s1">them.  This is intended only for testing, and to make the installation
+</span><span class="s1">go a bit smoother.  You should remove them before moving into a
+</span><span class="s1">production environment.
+</span><span class="s1">
+</span><span class="s1">Remove anonymous users? [Y/n] y
+</span><span class="s1"> ... Success!
+</span><span class="s1">
+</span><span class="s1">Normally, root should only be allowed to connect from &#39;</span>localhost<span class="s1">&#39;.  This
+</span><span class="s1">ensures that someone cannot guess at the root password from the network.
+</span><span class="s1">
+</span><span class="s1">Disallow root login remotely? [Y/n] y
+</span><span class="s1"> ... Success!
+</span><span class="s1">
+</span><span class="s1">By default, MariaDB comes with a database named &#39;</span>test<span class="s1">&#39; that anyone can
+</span><span class="s1">access.  This is also intended only for testing, and should be removed
+</span><span class="s1">before moving into a production environment.
+</span><span class="s1">
+</span><span class="s1">Remove test database and access to it? [Y/n] y
+</span><span class="s1"> - Dropping test database...
+</span><span class="s1"> ... Success!
+</span><span class="s1"> - Removing privileges on test database...
+</span><span class="s1"> ... Success!
+</span><span class="s1">
+</span><span class="s1">Reloading the privilege tables will ensure that all changes made so far
+</span><span class="s1">will take effect immediately.
+</span><span class="s1">
+</span><span class="s1">Reload privilege tables now? [Y/n] y
+</span><span class="s1"> ... Success!
+</span><span class="s1">
+</span><span class="s1">Cleaning up...
+</span><span class="s1">
+</span><span class="s1">All done!  If you&#39;</span>ve completed all of the above steps, your MariaDB
+installation should now be secure.
+
+Thanks <span class="k">for</span> using MariaDB!
+</code></pre></div><ol start="3">
+<li>Next, login to MySQL console as a administrator.</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ mysql -u root -p
+</code></pre></div><ol start="4">
+<li>Create a new database and user for sendy.</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-mysql" data-lang="mysql"><span class="o">&gt;&gt;&gt;</span> <span class="k">CREATE</span> <span class="k">DATABASE</span> <span class="n">sendy</span><span class="p">;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">GRANT</span> <span class="k">ALL</span> <span class="k">ON</span> <span class="n">sendy</span><span class="p">.</span><span class="o">*</span> <span class="k">TO</span> <span class="s1">&#39;sendy&#39;</span><span class="o">@</span><span class="s1">&#39;localhost&#39;</span> <span class="k">IDENTIFIED</span> <span class="k">BY</span> <span class="s1">&#39;mypassword&#39;</span><span class="p">;</span>
+</code></pre></div><ol start="5">
+<li>Reload grant privilege for re-read access table MySQL.</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-mysql" data-lang="mysql"><span class="o">&gt;&gt;&gt;</span> <span class="k">FLUSH</span> <span class="k">PRIVILEGES</span><span class="p">;</span>
+</code></pre></div><ol start="6">
+<li>
+<p>Download sendy master file to your server.</p>
+</li>
+<li>
+<p>Unzip sendy.</p>
+</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ unzip sendy.zip -d /var/www/
+</code></pre></div><p>It will extract the file and create a new folder &ldquo;sendy&rdquo; on /var/www/, then set file permissions of uploads folder</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">cd</span> /var/www/sendy <span class="o">&amp;&amp;</span> chmod <span class="m">777</span> uploads/ -R
+</code></pre></div><ol start="8">
+<li>Update file config.</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ vi /var/www/sendy/includes/config.php
+</code></pre></div><p>You need to update five parameters (APP_PATH, dbHost, dbUser, dbPass, dbName)</p>
+<ol start="9">
+<li>Create a new apache2 conf.</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ vi /etc/apache2/sites-available/sendy.conf
+</code></pre></div><p>and then enter the script:</p>
+<div class="highlight"><pre class="chroma"><code class="language-apache2.conf" data-lang="apache2.conf"><span class="nt">&lt;VirtualHost</span> <span class="s">*:80</span><span class="nt">&gt;</span>
+	<span class="nb">ServerName</span> sendy.sibunglon.com
+
+	<span class="nb">ServerAdmin</span> webmaster@sibunglon.com
+	<span class="nb">DocumentRoot</span> <span class="sx">/var/www/sendy</span>
+
+    	<span class="nt">&lt;Directory</span> <span class="s">/var/www/sendy</span><span class="nt">&gt;</span>
+        	<span class="nb">AllowOverride</span> <span class="k">All</span>
+    	<span class="nt">&lt;/Directory&gt;</span>
+
+	<span class="nb">ErrorLog</span> ${APACHE_LOG_DIR}/sendy-error.log
+	<span class="nb">CustomLog</span> ${APACHE_LOG_DIR}/sendy-access.log combined
+<span class="nt">&lt;/VirtualHost&gt;</span>
+</code></pre></div><ol start="9">
+<li>Activate the module rewrite, virtual host file, deactivate default virtual host and restart apache2.</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ a2enmod rewrite
+$ a2ensite sendy.conf
+$ a2dissite 000-default.conf
+$ systemctl restart apache2
+</code></pre></div><ol start="10">
+<li>If you’ve done everything as instructed, Sendy is now ready to be installed. You can run Sendy compatibility check script at following URL.</li>
+</ol>
+<pre><code class="language-url" data-lang="url">http://sendy.sibunglon.com/_compatibility.php?i=1
+</code></pre><ol start="11">
+<li>Let’s start the installation.</li>
+</ol>
+<pre><code class="language-url" data-lang="url">http://sendy.sibunglon.com/_install.php
+</code></pre><p>Enter all the information and click Install now.</p>
+<p><img src="/assets/img/install-sendy/image2.png" alt="Sendy"></p>
+<ol start="12">
+<li>Back to server consol and setup Sendy cron jobs.</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ crontab -e
+</code></pre></div><p>and then enter the script:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">*/5 * * * * php /var/www/sendy/scheduled.php &gt; /dev/null 2&gt;<span class="p">&amp;</span><span class="m">1</span>
+*/1 * * * *  php /var/www/sendy/autoresponders.php &gt; /dev/null 2&gt;<span class="p">&amp;</span><span class="m">1</span>
+*/5 * * * *  php /var/www/sendy/import-csv.php &gt; /dev/null 2&gt;<span class="p">&amp;</span><span class="m">1</span>
+*/15 * * * *  php /var/www/sendy/update-segments.php &gt; /dev/null 2&gt;<span class="p">&amp;</span><span class="m">1</span>
+</code></pre></div><ol start="13">
+<li>Sign up for Amazon Web Services (AWS) &amp; create IAM Credentials.</li>
+</ol>
+<p><a href="https://console.aws.amazon.com/console/home">Sign up for an Amazon Web Services (AWS) account</a> if you don&rsquo;t have one. Click the <strong>Create a new AWS account</strong> button while at the login page to sign up.</p>
+<p>Once signed up, you&rsquo;re ready to hook up Sendy with your AWS account. To do so, you&rsquo;d need to create a pair of &lsquo;IAM Credentials&rsquo; for your Sendy installation. Start by visiting your <a href="https://console.aws.amazon.com/iam/home?#users">Amazon IAM console</a>, then follow the instructions in the video below:</p>
+<div class="embed-container">
+  <iframe src="https://player.vimeo.com/video/301111416" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+</div>
+
+<p>Once you&rsquo;ve created your IAM credentials, copy and paste them into the installation page or your Sendy settings (under <strong>Amazon Web Services Credentials</strong>). Sendy will now have access to send your emails via Amazon SES as well as setup bounces and complaints handling with Amazon SNS.</p>
+<p>Finally, you&rsquo;ll need to request Amazon to <a href="http://aws.amazon.com/ses/extendedaccessrequest">increase your SES Sending Limits</a> to get your Amazon SES account out of &ldquo;sandbox mode&rdquo;. You&rsquo;ll then be able to send <strong>to</strong> and <strong>from</strong> any email address as well as raise your daily sending limits from 200 per day to any number you need.</p>
+<ol start="14">
+<li>Update Amazon Web Services Credentials on sendy settings.</li>
+</ol>
+<pre><code>http://sendy.sibunglon.com/settings#collapse0
+</code></pre><p>Enter AWS Access Key ID and AWS Secret Access Key, then click Save.</p>
+<p>Congratulations! You&rsquo;re all set up, start adding your first <strong>Brand</strong>.</p>
+<blockquote>
+<p>Please note that <code>http://sendy.sibunglon.com</code> in the above link is a dummy placeholder URL, you need to replace it with your Sendy installation URL.</p>
+</blockquote>
+<h3 id="references">References</h3>
+<ul>
+<li><a href="https://sendy.co/get-started">Sendy</a></li>
+<li><a href="https://vpsfix.com/">vpsfix</a></li>
+<li><a href="https://geekflare.com/">geeksflare</a></li>
+</ul>
+</section>
+    <footer>
+      <hr>
+      <div class="meta">
+        <p class="tags">
+          
+            
+              <a href="/tags/ayo-belajar-linux">
+                <span>#</span>Ayo Belajar Linux</a>
+            
+              <a href="/tags/sendy">
+                <span>#</span>Sendy</a>
+            
+              <a href="/tags/email">
+                <span>#</span>Email</a>
+            
+          
+        </p>
+      </div>
+      <hr>
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sibunglonlabs" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </footer>
+  </article>
+
+    </main>
+    
+      <footer>
+  <p>
+    &copy; 2020 Faizar Septiawan. <a href="http://creativecommons.org/licenses/by-sa/4.0/">Some Rights Reserved</a>.
+  </p>
+  <p>
+    Powered by <a href="https://gohugo.io" title="A Fast and Flexible Website Generator">Hugo</a> &amp; <a href="https://github.com/eshlox/simplicity" title="Hugo theme">Simplicity</a>.
+  </p>
+</footer>
+
+    
+    
+    
+    
+    
+    
+    
+    <script src="/assets/js/scripts.min.js"></script>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-110194945-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>

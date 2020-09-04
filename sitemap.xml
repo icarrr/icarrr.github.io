@@ -2,8 +2,120 @@
   
     
       <url>
+        <loc>https://sibunglon.com/tags/apache2/</loc>
+        <lastmod>2020-09-05T06:23:28+08:00</lastmod>
+      </url>
+    
+  
+    
+      <url>
         <loc>https://sibunglon.com/tags/ayo-belajar-linux/</loc>
-        <lastmod>2020-07-26T21:05:49+08:00</lastmod>
+        <lastmod>2020-09-05T06:23:28+08:00</lastmod>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/2020/09/05/configuring-auto-renewing-lets-encrypt-ssl-certs/</loc>
+        <lastmod>2020-09-05T06:23:28+08:00</lastmod>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/tags/lets-encrypt/</loc>
+        <lastmod>2020-09-05T06:23:28+08:00</lastmod>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/tags/nginx/</loc>
+        <lastmod>2020-09-05T06:23:28+08:00</lastmod>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/posts/</loc>
+        <lastmod>2020-09-05T06:23:28+08:00</lastmod>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/tags/</loc>
+        <lastmod>2020-09-05T06:23:28+08:00</lastmod>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/</loc>
+        <lastmod>2020-09-05T06:23:28+08:00</lastmod>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/2020/09/05/change-language-open-edx/</loc>
+        <lastmod>2020-09-05T05:52:45+08:00</lastmod>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/tags/open-edx/</loc>
+        <lastmod>2020-09-05T05:52:45+08:00</lastmod>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/2020/09/05/allowing-learners-to-claim-their-own-certificates-in-open-edx/</loc>
+        <lastmod>2020-09-05T05:41:16+08:00</lastmod>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/2020/09/05/enable-certificate-open-edx/</loc>
+        <lastmod>2020-09-05T05:08:41+08:00</lastmod>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/tags/email/</loc>
+        <lastmod>2020-09-05T03:17:01+08:00</lastmod>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/2020/09/05/install-sendy-self-hosted-email-newsletter-application/</loc>
+        <lastmod>2020-09-05T03:17:01+08:00</lastmod>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/tags/sendy/</loc>
+        <lastmod>2020-09-05T03:17:01+08:00</lastmod>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/2020/09/05/create-a-read-only-mysql-user/</loc>
+        <lastmod>2020-09-05T02:54:59+08:00</lastmod>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/tags/mysql/</loc>
+        <lastmod>2020-09-05T02:54:59+08:00</lastmod>
       </url>
     
   
@@ -17,34 +129,6 @@
     
       <url>
         <loc>https://sibunglon.com/tags/error/</loc>
-        <lastmod>2020-07-26T21:05:49+08:00</lastmod>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/open-edx/</loc>
-        <lastmod>2020-07-26T21:05:49+08:00</lastmod>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/posts/</loc>
-        <lastmod>2020-07-26T21:05:49+08:00</lastmod>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/</loc>
-        <lastmod>2020-07-26T21:05:49+08:00</lastmod>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/</loc>
         <lastmod>2020-07-26T21:05:49+08:00</lastmod>
       </url>
     
@@ -170,22 +254,8 @@
   
     
       <url>
-        <loc>https://sibunglon.com/tags/nginx/</loc>
-        <lastmod>2020-01-14T11:34:28+07:00</lastmod>
-      </url>
-    
-  
-    
-      <url>
         <loc>https://sibunglon.com/2020/01/14/nginx-redirect-domain/</loc>
         <lastmod>2020-01-14T11:34:28+07:00</lastmod>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/lets-encrypt/</loc>
-        <lastmod>2020-01-04T02:54:23+07:00</lastmod>
       </url>
     
   
@@ -669,13 +739,6 @@
       <url>
         <loc>https://sibunglon.com/2018/12/07/share-pc/laptop-lokal-ke-public/</loc>
         <lastmod>2018-12-07T07:44:24+07:00</lastmod>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/apache2/</loc>
-        <lastmod>2018-12-01T15:14:00+00:00</lastmod>
       </url>
     
   

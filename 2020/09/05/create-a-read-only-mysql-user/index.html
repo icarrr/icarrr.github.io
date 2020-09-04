@@ -5,7 +5,7 @@
   <meta http-equiv="cache-control" content="public, max-age=31536000" />
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Error Install MySQL Server on Ubuntu 18</title>
+  <title>Create a Read Only MySQL User</title>
   <meta name="author" content="Faizar Septiawan">
   <meta name="author" content="Shell, Linux, Komunitas Pengguna Linux Indonesia , MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, KPLI Klaten, BLC Telkom Klaten, Icar, siBunglonGanteng, siBunglonLabs">
   <meta name="description" content="Read - Search - Ask | Sekali Gila Tetap Gila">
@@ -65,30 +65,39 @@
   <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
   <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
 
-  <meta property="og:title" content="Error Install MySQL Server on Ubuntu 18" />
-<meta property="og:description" content="A few days ago mysql server was installed again, mysql was successfully installed and the service was successfully running but if you want to install another package, this problem must be solved by installing mysql server because mysql server installation is not 100% complete yet.
-Btw, fortunately the terminal history on the laptop has not been cleared so I can save the error message again on Ubuntu pastebin so that others can see the error clearly 😁." />
+  <meta property="og:title" content="Create a Read Only MySQL User" />
+<meta property="og:description" content="There are times when you need account read only access to a database.
+To create a read only database user MySQL, do the following steps:
+  Login as a MySQL administrator.
+  Create a new MySQL user account.
+  &gt;&gt;&gt; CREATE USER &#39;dapenda&#39;@&#39;%&#39; IDENTIFIED BY &#39;mypassword&#39;; Grant the SELECT only privilege to user.  &gt;&gt;&gt; GRANT SELECT ON site.* TO &#39;dapenda&#39;@&#39;%&#39;; Reload grant privilege for re-read access table MySQL." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://sibunglon.com/2020/02/07/error-install-mysql-server-on-ubuntu-18/" />
-<meta property="article:published_time" content="2020-02-07T23:55:13+07:00" />
-<meta property="article:modified_time" content="2020-02-07T23:55:13+07:00" />
+<meta property="og:url" content="https://sibunglon.com/2020/09/05/create-a-read-only-mysql-user/" />
+<meta property="article:published_time" content="2020-09-05T02:54:59+08:00" />
+<meta property="article:modified_time" content="2020-09-05T02:54:59+08:00" />
 
   
-  <meta itemprop="name" content="Error Install MySQL Server on Ubuntu 18">
-<meta itemprop="description" content="A few days ago mysql server was installed again, mysql was successfully installed and the service was successfully running but if you want to install another package, this problem must be solved by installing mysql server because mysql server installation is not 100% complete yet.
-Btw, fortunately the terminal history on the laptop has not been cleared so I can save the error message again on Ubuntu pastebin so that others can see the error clearly 😁.">
-<meta itemprop="datePublished" content="2020-02-07T23:55:13+07:00" />
-<meta itemprop="dateModified" content="2020-02-07T23:55:13+07:00" />
-<meta itemprop="wordCount" content="162">
+  <meta itemprop="name" content="Create a Read Only MySQL User">
+<meta itemprop="description" content="There are times when you need account read only access to a database.
+To create a read only database user MySQL, do the following steps:
+  Login as a MySQL administrator.
+  Create a new MySQL user account.
+  &gt;&gt;&gt; CREATE USER &#39;dapenda&#39;@&#39;%&#39; IDENTIFIED BY &#39;mypassword&#39;; Grant the SELECT only privilege to user.  &gt;&gt;&gt; GRANT SELECT ON site.* TO &#39;dapenda&#39;@&#39;%&#39;; Reload grant privilege for re-read access table MySQL.">
+<meta itemprop="datePublished" content="2020-09-05T02:54:59+08:00" />
+<meta itemprop="dateModified" content="2020-09-05T02:54:59+08:00" />
+<meta itemprop="wordCount" content="69">
 
 
 
-<meta itemprop="keywords" content="Ayo Belajar Linux,LAMP Server,MySQL,Error," />
+<meta itemprop="keywords" content="Ayo Belajar Linux,MySQL," />
 
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Error Install MySQL Server on Ubuntu 18"/>
-<meta name="twitter:description" content="A few days ago mysql server was installed again, mysql was successfully installed and the service was successfully running but if you want to install another package, this problem must be solved by installing mysql server because mysql server installation is not 100% complete yet.
-Btw, fortunately the terminal history on the laptop has not been cleared so I can save the error message again on Ubuntu pastebin so that others can see the error clearly 😁."/>
+<meta name="twitter:title" content="Create a Read Only MySQL User"/>
+<meta name="twitter:description" content="There are times when you need account read only access to a database.
+To create a read only database user MySQL, do the following steps:
+  Login as a MySQL administrator.
+  Create a new MySQL user account.
+  &gt;&gt;&gt; CREATE USER &#39;dapenda&#39;@&#39;%&#39; IDENTIFIED BY &#39;mypassword&#39;; Grant the SELECT only privilege to user.  &gt;&gt;&gt; GRANT SELECT ON site.* TO &#39;dapenda&#39;@&#39;%&#39;; Reload grant privilege for re-read access table MySQL."/>
 
   
 
@@ -111,13 +120,31 @@ Btw, fortunately the terminal history on the laptop has not been cleared so I ca
   <article>
     <header>
       <small>
-        <time datetime="2020-02-07 23:55:13&#43;0700">2020-02-07</time></small>
-      <h1>Error Install MySQL Server on Ubuntu 18</h1>
+        <time datetime="2020-09-05 02:54:59&#43;0800">2020-09-05</time></small>
+      <h1>Create a Read Only MySQL User</h1>
     </header>
-    <section><p>A few days ago mysql server was installed again, mysql was successfully installed and the service was successfully running but if you want to install another package, this problem must be solved by installing mysql server because mysql server installation is not 100% complete yet.</p>
-<p>Btw, fortunately the terminal history on the laptop has not been cleared so I can save the error message again on Ubuntu pastebin so that others can see the error clearly 😁. Can be seen <a href="https://paste.ubuntu.com/p/tPgd79HK6g/">here</a>.</p>
-<p>Then how do I solve the problem?</p>
-<p>In order to solve the problem, make it a habit to read the error message😄 From the error message it is actually clear the cause is <code>AppArmor parser error</code> so the rest of the search for a solution so that it doesn&rsquo;t fail to parse again the AppArmor. In this case, I just deleted the AppArmor using the command <code>sudo apt purge apparmor</code> then run the install mysql-server, and 100% mysql server successfully installed.</p>
+    <section><p>There are times when you need account read only access to a database.</p>
+<p>To create a read only database user MySQL, do the following steps:</p>
+<ol>
+<li>
+<p>Login as a MySQL administrator.</p>
+</li>
+<li>
+<p>Create a new MySQL user account.</p>
+</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-mysql" data-lang="mysql"><span class="o">&gt;&gt;&gt;</span> <span class="k">CREATE</span> <span class="k">USER</span> <span class="s1">&#39;dapenda&#39;</span><span class="o">@</span><span class="s1">&#39;%&#39;</span> <span class="k">IDENTIFIED</span> <span class="k">BY</span> <span class="s1">&#39;mypassword&#39;</span><span class="p">;</span>
+</code></pre></div><ol start="3">
+<li>Grant the SELECT only privilege to user.</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-mysql" data-lang="mysql"><span class="o">&gt;&gt;&gt;</span> <span class="k">GRANT</span> <span class="k">SELECT</span> <span class="k">ON</span> <span class="n">site</span><span class="p">.</span><span class="o">*</span> <span class="k">TO</span> <span class="s1">&#39;dapenda&#39;</span><span class="o">@</span><span class="s1">&#39;%&#39;</span><span class="p">;</span>
+</code></pre></div><ol start="4">
+<li>Reload grant privilege for re-read access table MySQL.</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-mysql" data-lang="mysql"><span class="o">&gt;&gt;&gt;</span> <span class="k">FLUSH</span> <span class="k">PRIVILEGES</span><span class="p">;</span>
+</code></pre></div><ol start="5">
+<li>Done.</li>
+</ol>
 </section>
     <footer>
       <hr>
@@ -128,14 +155,8 @@ Btw, fortunately the terminal history on the laptop has not been cleared so I ca
               <a href="/tags/ayo-belajar-linux">
                 <span>#</span>Ayo Belajar Linux</a>
             
-              <a href="/tags/lamp-server">
-                <span>#</span>LAMP Server</a>
-            
               <a href="/tags/mysql">
                 <span>#</span>MySQL</a>
-            
-              <a href="/tags/error">
-                <span>#</span>Error</a>
             
           
         </p>

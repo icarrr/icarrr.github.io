@@ -5,10 +5,46 @@
     <description>Recent content in Ayo Belajar Linux on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 Jul 2020 21:05:49 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 05 Sep 2020 06:23:28 +0800</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/ayo-belajar-linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Configuring Auto Renewing Let&#39;s Encrypt SSL Certs</title>
+        <link>https://sibunglon.com/2020/09/05/configuring-auto-renewing-lets-encrypt-ssl-certs/</link>
+        <pubDate>Sat, 05 Sep 2020 06:23:28 +0800</pubDate>
+        <guid>https://sibunglon.com/2020/09/05/configuring-auto-renewing-lets-encrypt-ssl-certs/</guid>
+        <description>Allow the certificate to auto renew, so that you as a server admin or not don&amp;rsquo;t have to log in to the server to renew all your certs.
+The renewal is run by cron. You can create it.
+The following steps:
+For nginx Create cron file.
+$ vi /etc/cron.d/certbot and then enter the script:
+SHELL=/bin/sh PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin 0 */12 * * * root test -x /usr/bin/certbot -a \! -d /run/systemd/system &amp;amp;&amp;amp; perl -e &amp;#39;sleep int(rand(43200))&amp;#39; &amp;amp;&amp;amp; certbot -q renew For apache2 Download certbot renew package file</description>
+      </item>
+    
+      <item>
+        <title>Install Sendy - Self Hosted Email Newsletter Application</title>
+        <link>https://sibunglon.com/2020/09/05/install-sendy-self-hosted-email-newsletter-application/</link>
+        <pubDate>Sat, 05 Sep 2020 03:17:01 +0800</pubDate>
+        <guid>https://sibunglon.com/2020/09/05/install-sendy-self-hosted-email-newsletter-application/</guid>
+        <description>What is Sendy?
+Sendy is a self hosted email newsletter application that lets you send trackable emails via Amazon Simple Email Service (SES).
+To install sendy on Ubuntu, do the following steps:
+ Login to server, and install package.  $ add-apt-repository ppa:ondrej/php $ apt update $ apt install php unzip $ apt install php-fpm libapache2-mod-php php-mysql php-curl php-xml $ apt install mariadb-server mariadb-client Let’s run the security script to harden the SQL.</description>
+      </item>
+    
+      <item>
+        <title>Create a Read Only MySQL User</title>
+        <link>https://sibunglon.com/2020/09/05/create-a-read-only-mysql-user/</link>
+        <pubDate>Sat, 05 Sep 2020 02:54:59 +0800</pubDate>
+        <guid>https://sibunglon.com/2020/09/05/create-a-read-only-mysql-user/</guid>
+        <description>There are times when you need account read only access to a database.
+To create a read only database user MySQL, do the following steps:
+  Login as a MySQL administrator.
+  Create a new MySQL user account.
+  &amp;gt;&amp;gt;&amp;gt; CREATE USER &amp;#39;dapenda&amp;#39;@&amp;#39;%&amp;#39; IDENTIFIED BY &amp;#39;mypassword&amp;#39;; Grant the SELECT only privilege to user.  &amp;gt;&amp;gt;&amp;gt; GRANT SELECT ON site.* TO &amp;#39;dapenda&amp;#39;@&amp;#39;%&amp;#39;; Reload grant privilege for re-read access table MySQL.</description>
+      </item>
     
       <item>
         <title>Database returned an invalid value in QuerySet.datetimes()</title>

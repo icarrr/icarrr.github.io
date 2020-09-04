@@ -5,10 +5,41 @@
     <description>Recent content in Open edX on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 Jul 2020 21:05:49 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 05 Sep 2020 05:52:45 +0800</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/open-edx/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Change Language Open edX</title>
+        <link>https://sibunglon.com/2020/09/05/change-language-open-edx/</link>
+        <pubDate>Sat, 05 Sep 2020 05:52:45 +0800</pubDate>
+        <guid>https://sibunglon.com/2020/09/05/change-language-open-edx/</guid>
+        <description>Open edX uses Transifex, an open source translation platform, to power the translation of edX software into different languages. All translations are hosted at Transifex.com, which provides a web application allowing translators to write, submit, and manage their translations.
+ Login to server and switch to edxapp environment for edX native installation.  $ sudo -H -u edxapp bash $ source /edx/app/edxapp/edxapp_env $ cd /edx/app/edxapp/edx-platform Install Python dependencies  $ pip install transifex-client or when using bitnami, use this</description>
+      </item>
+    
+      <item>
+        <title>Allowing Learners to Claim Their Own Certificates in Open edX</title>
+        <link>https://sibunglon.com/2020/09/05/allowing-learners-to-claim-their-own-certificates-in-open-edx/</link>
+        <pubDate>Sat, 05 Sep 2020 05:41:16 +0800</pubDate>
+        <guid>https://sibunglon.com/2020/09/05/allowing-learners-to-claim-their-own-certificates-in-open-edx/</guid>
+        <description>In most cases, you&amp;rsquo;ll want learners to be able to claim certificates for themselves on the progress page. For self-paced courses, this is already done! You&amp;rsquo;re good to go. For instructor-led courses, however, you&amp;rsquo;ll need to Enable Student-Generated Certificates.
+To allowing learners to claim their own certificates, do the following steps:
+  Login to LMS as admin or staff.
+  On the learning site dashboard page, open one of the existing courses.</description>
+      </item>
+    
+      <item>
+        <title>Enable Certificate Open edX</title>
+        <link>https://sibunglon.com/2020/09/05/enable-certificate-open-edx/</link>
+        <pubDate>Sat, 05 Sep 2020 05:08:41 +0800</pubDate>
+        <guid>https://sibunglon.com/2020/09/05/enable-certificate-open-edx/</guid>
+        <description>Organizations and course teams can choose to generate certificates for learners who pass a course. Learners can view, print, or share their certificates.
+To enable certificates, you modify the lms.env.json and cms.env.json files.
+ In the lms.env.json and cms.env.json files, set the value of CERTIFICATES_HTML_VIEW within the FEATURES object to true.  &amp;#34;FEATURES&amp;#34;: { ... &amp;#39;CERTIFICATES_HTML_VIEW&amp;#39;: true, ... } Save the lms.env.json and cms.env.json files.
+If it does not exist already, create the folder /tmp/certificates owned by the user and group www-data.</description>
+      </item>
     
       <item>
         <title>Database returned an invalid value in QuerySet.datetimes()</title>

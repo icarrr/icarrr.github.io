@@ -1,0 +1,25 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sendy on The Official Site of siBunglon</title>
+    <link>https://sibunglon.com/tags/sendy/</link>
+    <description>Recent content in Sendy on The Official Site of siBunglon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 05 Sep 2020 03:17:01 +0800</lastBuildDate>
+    
+      <atom:link href="https://sibunglon.com/tags/sendy/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      <item>
+        <title>Install Sendy - Self Hosted Email Newsletter Application</title>
+        <link>https://sibunglon.com/2020/09/05/install-sendy-self-hosted-email-newsletter-application/</link>
+        <pubDate>Sat, 05 Sep 2020 03:17:01 +0800</pubDate>
+        <guid>https://sibunglon.com/2020/09/05/install-sendy-self-hosted-email-newsletter-application/</guid>
+        <description>What is Sendy?
+Sendy is a self hosted email newsletter application that lets you send trackable emails via Amazon Simple Email Service (SES).
+To install sendy on Ubuntu, do the following steps:
+ Login to server, and install package.  $ add-apt-repository ppa:ondrej/php $ apt update $ apt install php unzip $ apt install php-fpm libapache2-mod-php php-mysql php-curl php-xml $ apt install mariadb-server mariadb-client Let’s run the security script to harden the SQL.</description>
+      </item>
+    
+  </channel>
+</rss>
