@@ -294,6 +294,17 @@ VPN adalah Virtual Private Network dimana VPN ini merupakan interkoneksi antar j
       </item>
     
       <item>
+        <title>Implementasi PPPoE Client MikroTikk</title>
+        <link>https://sibunglon.com/2017/08/08/implementasi-pppoe-client-mikrotikk/</link>
+        <pubDate>Tue, 08 Aug 2017 14:36:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/08/implementasi-pppoe-client-mikrotikk/</guid>
+        <description>A. PENGERTIAN
+PPPOE merupakan singkatan dari point-to-point protocol over Ethernet yang merupakan protokol dalam jaringan untuk menghubungkan komunikasi antara dua buah titik jaringan atau dua buah port ethernet dengan model tunneling (terowongan) dan juga sebagai virtual dial-up dalam jaringan. MikroTikk adalah salah satu router yang mendukung konfigurasi pppoe server dan client, untuk itulah akan di tuliskan pada artikel ini tentang bagaimana membuat pppoe server dengan MikroTikk.
+B. LATAR BELAKANG
+MikroTikk adalah salah satu router yang mendukung konfigurasi pppoe server dan client, untuk itulah akan dituliskan pada artikel ini tentang bagaimana membuat pppoe server dengan MikroTikk.</description>
+      </item>
+    
+      <item>
         <title>Mengganti Login Page Jaringan MikroTik Menggunakan FileZilla</title>
         <link>https://sibunglon.com/2017/08/01/mengganti-login-page-jaringan-mikrotik-menggunakan-filezilla/</link>
         <pubDate>Tue, 01 Aug 2017 16:09:00 +0000</pubDate>
