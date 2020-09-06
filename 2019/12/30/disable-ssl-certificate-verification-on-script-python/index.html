@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-us" itemscope itemtype="http://schema.org/WebPage">
   <head>
+  <title>Disable SSL Certificate Verification on Script Python</title>
   
   <meta http-equiv="cache-control" content="public, max-age=31536000" />
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Disable SSL Certificate Verification on Script Python</title>
   <meta name="author" content="Faizar Septiawan">
-  <meta name="author" content="Shell, Linux, Komunitas Pengguna Linux Indonesia , MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, KPLI Klaten, BLC Telkom Klaten, Icar, siBunglonGanteng, siBunglonLabs">
-  <meta name="description" content="Read - Search - Ask | Sekali Gila Tetap Gila">
-  <meta name="description" content="Shell, Linux, Komunitas Pengguna Linux Indonesia , MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, KPLI Klaten, BLC Telkom Klaten, Icar, siBunglonGanteng, siBunglonLabs">
+  <meta name="description" content="Read - Search - Ask | Personal Site | Catch your problem solution or read interesting stories on my blog!">
+  <meta name="keywords" content="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng">
   
   
   
@@ -56,8 +55,9 @@ urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host=&#39;api.telegram.org
 #!/bin/python import ssl try: _create_unverified_https_context = ssl." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://sibunglon.com/2019/12/30/disable-ssl-certificate-verification-on-script-python/" />
+<meta property="og:image" content="https://avatars0.githubusercontent.com/u/24905668"/>
 <meta property="article:published_time" content="2019-12-30T21:45:42+07:00" />
-<meta property="article:modified_time" content="2019-12-30T21:45:42+07:00" />
+<meta property="article:modified_time" content="2019-12-30T21:45:42+07:00" /><meta property="og:site_name" content="The Official Site of siBunglon" />
 
   
   <meta itemprop="name" content="Disable SSL Certificate Verification on Script Python">
@@ -67,12 +67,15 @@ urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host=&#39;api.telegram.org
 <meta itemprop="datePublished" content="2019-12-30T21:45:42+07:00" />
 <meta itemprop="dateModified" content="2019-12-30T21:45:42+07:00" />
 <meta itemprop="wordCount" content="98">
+<meta itemprop="image" content="https://avatars0.githubusercontent.com/u/24905668"/>
 
 
 
 <meta itemprop="keywords" content="Python," />
 
-  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://avatars0.githubusercontent.com/u/24905668"/>
+
 <meta name="twitter:title" content="Disable SSL Certificate Verification on Script Python"/>
 <meta name="twitter:description" content="I failed to run a telegram bot in another environment, more or less the error as follows.
 urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host=&#39;api.telegram.org&#39;, port=443): Max retries exceeded with url (Caused by SSLError(SSLError(1, u&#39;[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:618)&#39;),)) But after adding the following script, my bot finally managed to run in that environment. Maybe someone has a case related to SSL certificate verification, hopefully the following script can help.
