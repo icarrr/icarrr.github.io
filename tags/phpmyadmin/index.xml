@@ -1,0 +1,25 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>PHPMyAdmin on The Official Site of siBunglon</title><link>https://sibunglon.com/tags/phpmyadmin/</link><description>Recent content in PHPMyAdmin on The Official Site of siBunglon</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 13 Oct 2017 10:22:00 +0000</lastBuildDate><atom:link href="https://sibunglon.com/tags/phpmyadmin/index.xml" rel="self" type="application/rss+xml"/><item><title>Hal-Hal Yang Harus Dilakukan Setelah Install Server - Install Aplikasi Berbasis Web</title><link>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-install-aplikasi-berbasis-web/</link><pubDate>Fri, 13 Oct 2017 10:22:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-install-aplikasi-berbasis-web/</guid><description>A. Pendahuluan
+Pada kesempatan ini, saya kembali memposting tentang dasar-dasar setelahi install server.
+B. Pengertian
+Aplikasi Berbasis Web adalah sebuah aplikasi yang dapat diakses melalui internet atau intranet, dan pada sekarang ini ternyata lebih banyak dan lebih luas dalam pemakaiannya.
+C. Latar belakang
+Setelah kita menginstall debian di proxmox tentunya kita harus tau hal hal apa saja yang harus dilakukan setelahnya.
+D. Tujuan
+Agar server dapat bekerja secara optimal saat melayani komputer client.</description></item><item><title>Hal-Hal Yang Harus Dilakukan Setelah Install Server - Installasi LAMP Server</title><link>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-installasi-lamp-server/</link><pubDate>Fri, 13 Oct 2017 10:09:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-installasi-lamp-server/</guid><description>A. Pendahuluan
+Pada kesempatan ini saya memposting lagi dan masih mengenai server
+B. Pengertian
+LAMP adalah istilah yang merupakan singkatan dariLinux,Apache,MySQL danPerl/PHP/Phyton. Merupakan sebuah paket perangkat lunak bebas yang digunakan untuk menjalankan sebuah aplikasi secara lengkap.
+Komponen-komponen dari LAMP :
+Linux – sistem operasi Apache HTTP Server – web server MariaDB atau MySQL – sistem basis data PHP atau Perl atau Python – bahasa pemrograman yang dipakai C. Latar belakang</description></item><item><title>Hal-Hal Yang Harus Dilakukan Setelah Install Server</title><link>https://sibunglon.com/2017/10/12/hal-hal-yang-harus-dilakukan-setelah-install-server/</link><pubDate>Thu, 12 Oct 2017 09:31:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/12/hal-hal-yang-harus-dilakukan-setelah-install-server/</guid><description>A. Pendahuluan
+Pada kesempatan kali ini yang saya bagikan yaitu tentang hal - hal yang perlu dilakukan setelah install server.
+B. Pengertian
+Debian adalah sistem operasi komputer yang tersusun dari paket-paket perangkat lunak yang dirilis sebagai perangkat lunak bebas dan terbuka dengan lisensi mayoritas GNU General Public License dan lisensi perangkat lunak bebas lainnya. Debian GNU/UNIX memuat perkakas sistem operasi GNU dan kernel Linux merupakan distribusi Linux yang populer dan berpengaruh.</description></item><item><title>Atasi PhpMyAdmin Error #1698 Sehingga Tidak Bisa Login Sebagai Root</title><link>https://sibunglon.com/2017/09/20/atasi-phpmyadmin-error-#1698-sehingga-tidak-bisa-login-sebagai-root/</link><pubDate>Wed, 20 Sep 2017 03:15:00 +0000</pubDate><guid>https://sibunglon.com/2017/09/20/atasi-phpmyadmin-error-#1698-sehingga-tidak-bisa-login-sebagai-root/</guid><description>A. Pendahuluan
+Pada kesempatan ini yang saya posting/share yaitu troubleshoot phpmyadmin dengan kode error #1698 atau tidak bisa login sebagai root.
+B. Pengertian
+PhpMyAdmin adalah perangkat lunak bebas yang ditulis dalam bahasa pemrograman PHP yang digunakan untuk menangani administrasi MySQL melalui Jejaring Jagat Jembar (World Wide Web). phpMyAdmin mendukung berbagai operasi MySQL, diantaranya (mengelola basis data, tabel-tabel, bidang (fields), relasi (relations), indeks, pengguna (users), perizinan (permissions), dan lain-lain).
+C. Latar belakang</description></item><item><title>Bagaimana Menginstall LAMP di Localhost Linux?</title><link>https://sibunglon.com/2017/08/09/bagaimana-menginstall-lamp-di-localhost-linux/</link><pubDate>Wed, 09 Aug 2017 14:58:00 +0000</pubDate><guid>https://sibunglon.com/2017/08/09/bagaimana-menginstall-lamp-di-localhost-linux/</guid><description>A. Pendahuluan
+Hello, pada kesempatan kali ini saya memposting bagaimana sih menginstal LAMP? Nah cara-caranya akan dijelaskan sebagai berikut.
+#Pengertian
+LAMP adalah istilah yang merupakan singkatan dari Linux, Apache, MySQL dan Perl/PHP/Phyton. Merupakan sebuah paket perangkat lunak bebas yang digunakan untuk menjalankan sebuah aplikasi secara lengkap.
+Komponen-komponen dari LAMP :
+Linux – sistem operasi Apache HTTP Server – web server MariaDB atau MySQL – sistem basis data PHP atau Perl atau Python – bahasa pemrograman yang dipakai #Latar Belakang</description></item></channel></rss>

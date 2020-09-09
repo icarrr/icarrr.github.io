@@ -1,44 +1,31 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>MySQL on The Official Site of siBunglon</title>
-    <link>https://sibunglon.com/tags/mysql/</link>
-    <description>Recent content in MySQL on The Official Site of siBunglon</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 05 Sep 2020 02:54:59 +0800</lastBuildDate>
-    
-      <atom:link href="https://sibunglon.com/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      <item>
-        <title>Create a Read Only MySQL User</title>
-        <link>https://sibunglon.com/2020/09/05/create-a-read-only-mysql-user/</link>
-        <pubDate>Sat, 05 Sep 2020 02:54:59 +0800</pubDate>
-        <guid>https://sibunglon.com/2020/09/05/create-a-read-only-mysql-user/</guid>
-        <description>There are times when you need account read only access to a database.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>MySQL on The Official Site of siBunglon</title><link>https://sibunglon.com/tags/mysql/</link><description>Recent content in MySQL on The Official Site of siBunglon</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 05 Sep 2020 02:54:59 +0800</lastBuildDate><atom:link href="https://sibunglon.com/tags/mysql/index.xml" rel="self" type="application/rss+xml"/><item><title>Create a Read Only MySQL User</title><link>https://sibunglon.com/2020/09/05/create-a-read-only-mysql-user/</link><pubDate>Sat, 05 Sep 2020 02:54:59 +0800</pubDate><guid>https://sibunglon.com/2020/09/05/create-a-read-only-mysql-user/</guid><description>There are times when you need account read only access to a database.
 To create a read only database user MySQL, do the following steps:
-  Login as a MySQL administrator.
-  Create a new MySQL user account.
-  &amp;gt;&amp;gt;&amp;gt; CREATE USER &amp;#39;dapenda&amp;#39;@&amp;#39;%&amp;#39; IDENTIFIED BY &amp;#39;mypassword&amp;#39;; Grant the SELECT only privilege to user.  &amp;gt;&amp;gt;&amp;gt; GRANT SELECT ON site.* TO &amp;#39;dapenda&amp;#39;@&amp;#39;%&amp;#39;; Reload grant privilege for re-read access table MySQL.</description>
-      </item>
-    
-      <item>
-        <title>Database returned an invalid value in QuerySet.datetimes()</title>
-        <link>https://sibunglon.com/2020/07/26/database-returned-an-invalid-value-in-queryset.datetimes/</link>
-        <pubDate>Sun, 26 Jul 2020 21:05:49 +0800</pubDate>
-        <guid>https://sibunglon.com/2020/07/26/database-returned-an-invalid-value-in-queryset.datetimes/</guid>
-        <description>After create new action on the Django admin pages, it redirects to my site with the message a server error. When check the file /edx/var/log/supervisor/lms-stderr.log i find this:
-Traceback (most recent call last): File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/exception.py&amp;quot;, line 41, in inner response = get_response(request) File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;quot;, line 249, in _legacy_get_response response = self._get_response(request) File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;quot;, line 217, in _get_response response = self.process_exception_by_middleware(e, request) File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;quot;, line 215, in _get_response response = response.render() File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.</description>
-      </item>
-    
-      <item>
-        <title>Error Install MySQL Server on Ubuntu 18</title>
-        <link>https://sibunglon.com/2020/02/07/error-install-mysql-server-on-ubuntu-18/</link>
-        <pubDate>Fri, 07 Feb 2020 23:55:13 +0700</pubDate>
-        <guid>https://sibunglon.com/2020/02/07/error-install-mysql-server-on-ubuntu-18/</guid>
-        <description>A few days ago mysql server was installed again, mysql was successfully installed and the service was successfully running but if you want to install another package, this problem must be solved by installing mysql server because mysql server installation is not 100% complete yet.
-Btw, fortunately the terminal history on the laptop has not been cleared so I can save the error message again on Ubuntu pastebin so that others can see the error clearly 😁.</description>
-      </item>
-    
-  </channel>
-</rss>
+Login as a MySQL administrator.
+Create a new MySQL user account.
+&amp;gt;&amp;gt;&amp;gt; CREATE USER &amp;#39;dapenda&amp;#39;@&amp;#39;%&amp;#39; IDENTIFIED BY &amp;#39;mypassword&amp;#39;; Grant the SELECT only privilege to user. &amp;gt;&amp;gt;&amp;gt; GRANT SELECT ON site.* TO &amp;#39;dapenda&amp;#39;@&amp;#39;%&amp;#39;; Reload grant privilege for re-read access table MySQL.</description></item><item><title>Database returned an invalid value in QuerySet.datetimes()</title><link>https://sibunglon.com/2020/07/26/database-returned-an-invalid-value-in-queryset.datetimes/</link><pubDate>Sun, 26 Jul 2020 21:05:49 +0800</pubDate><guid>https://sibunglon.com/2020/07/26/database-returned-an-invalid-value-in-queryset.datetimes/</guid><description>After create new action on the Django admin pages, it redirects to my site with the message a server error. When check the file /edx/var/log/supervisor/lms-stderr.log i find this:
+Traceback (most recent call last): File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/exception.py&amp;quot;, line 41, in inner response = get_response(request) File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;quot;, line 249, in _legacy_get_response response = self._get_response(request) File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;quot;, line 217, in _get_response response = self.process_exception_by_middleware(e, request) File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;quot;, line 215, in _get_response response = response.render() File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.</description></item><item><title>Error Install MySQL Server on Ubuntu 18</title><link>https://sibunglon.com/2020/02/07/error-install-mysql-server-on-ubuntu-18/</link><pubDate>Fri, 07 Feb 2020 23:55:13 +0700</pubDate><guid>https://sibunglon.com/2020/02/07/error-install-mysql-server-on-ubuntu-18/</guid><description>A few days ago mysql server was installed again, mysql was successfully installed and the service was successfully running but if you want to install another package, this problem must be solved by installing mysql server because mysql server installation is not 100% complete yet.
+Btw, fortunately the terminal history on the laptop has not been cleared so I can save the error message again on Ubuntu pastebin so that others can see the error clearly 😁.</description></item><item><title>Hal-Hal Yang Harus Dilakukan Setelah Install Server - Install Aplikasi Berbasis Web</title><link>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-install-aplikasi-berbasis-web/</link><pubDate>Fri, 13 Oct 2017 10:22:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-install-aplikasi-berbasis-web/</guid><description>A. Pendahuluan
+Pada kesempatan ini, saya kembali memposting tentang dasar-dasar setelahi install server.
+B. Pengertian
+Aplikasi Berbasis Web adalah sebuah aplikasi yang dapat diakses melalui internet atau intranet, dan pada sekarang ini ternyata lebih banyak dan lebih luas dalam pemakaiannya.
+C. Latar belakang
+Setelah kita menginstall debian di proxmox tentunya kita harus tau hal hal apa saja yang harus dilakukan setelahnya.
+D. Tujuan
+Agar server dapat bekerja secara optimal saat melayani komputer client.</description></item><item><title>Hal-Hal Yang Harus Dilakukan Setelah Install Server - Installasi LAMP Server</title><link>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-installasi-lamp-server/</link><pubDate>Fri, 13 Oct 2017 10:09:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-installasi-lamp-server/</guid><description>A. Pendahuluan
+Pada kesempatan ini saya memposting lagi dan masih mengenai server
+B. Pengertian
+LAMP adalah istilah yang merupakan singkatan dariLinux,Apache,MySQL danPerl/PHP/Phyton. Merupakan sebuah paket perangkat lunak bebas yang digunakan untuk menjalankan sebuah aplikasi secara lengkap.
+Komponen-komponen dari LAMP :
+Linux – sistem operasi Apache HTTP Server – web server MariaDB atau MySQL – sistem basis data PHP atau Perl atau Python – bahasa pemrograman yang dipakai C. Latar belakang</description></item><item><title>Hal-Hal Yang Harus Dilakukan Setelah Install Server</title><link>https://sibunglon.com/2017/10/12/hal-hal-yang-harus-dilakukan-setelah-install-server/</link><pubDate>Thu, 12 Oct 2017 09:31:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/12/hal-hal-yang-harus-dilakukan-setelah-install-server/</guid><description>A. Pendahuluan
+Pada kesempatan kali ini yang saya bagikan yaitu tentang hal - hal yang perlu dilakukan setelah install server.
+B. Pengertian
+Debian adalah sistem operasi komputer yang tersusun dari paket-paket perangkat lunak yang dirilis sebagai perangkat lunak bebas dan terbuka dengan lisensi mayoritas GNU General Public License dan lisensi perangkat lunak bebas lainnya. Debian GNU/UNIX memuat perkakas sistem operasi GNU dan kernel Linux merupakan distribusi Linux yang populer dan berpengaruh.</description></item><item><title>Atasi PhpMyAdmin Error #1698 Sehingga Tidak Bisa Login Sebagai Root</title><link>https://sibunglon.com/2017/09/20/atasi-phpmyadmin-error-#1698-sehingga-tidak-bisa-login-sebagai-root/</link><pubDate>Wed, 20 Sep 2017 03:15:00 +0000</pubDate><guid>https://sibunglon.com/2017/09/20/atasi-phpmyadmin-error-#1698-sehingga-tidak-bisa-login-sebagai-root/</guid><description>A. Pendahuluan
+Pada kesempatan ini yang saya posting/share yaitu troubleshoot phpmyadmin dengan kode error #1698 atau tidak bisa login sebagai root.
+B. Pengertian
+PhpMyAdmin adalah perangkat lunak bebas yang ditulis dalam bahasa pemrograman PHP yang digunakan untuk menangani administrasi MySQL melalui Jejaring Jagat Jembar (World Wide Web). phpMyAdmin mendukung berbagai operasi MySQL, diantaranya (mengelola basis data, tabel-tabel, bidang (fields), relasi (relations), indeks, pengguna (users), perizinan (permissions), dan lain-lain).
+C. Latar belakang</description></item><item><title>Bagaimana Menginstall LAMP di Localhost Linux?</title><link>https://sibunglon.com/2017/08/09/bagaimana-menginstall-lamp-di-localhost-linux/</link><pubDate>Wed, 09 Aug 2017 14:58:00 +0000</pubDate><guid>https://sibunglon.com/2017/08/09/bagaimana-menginstall-lamp-di-localhost-linux/</guid><description>A. Pendahuluan
+Hello, pada kesempatan kali ini saya memposting bagaimana sih menginstal LAMP? Nah cara-caranya akan dijelaskan sebagai berikut.
+#Pengertian
+LAMP adalah istilah yang merupakan singkatan dari Linux, Apache, MySQL dan Perl/PHP/Phyton. Merupakan sebuah paket perangkat lunak bebas yang digunakan untuk menjalankan sebuah aplikasi secara lengkap.
+Komponen-komponen dari LAMP :
+Linux – sistem operasi Apache HTTP Server – web server MariaDB atau MySQL – sistem basis data PHP atau Perl atau Python – bahasa pemrograman yang dipakai #Latar Belakang</description></item></channel></rss>

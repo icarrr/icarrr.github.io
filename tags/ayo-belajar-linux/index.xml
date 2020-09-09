@@ -1,636 +1,131 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Ayo Belajar Linux on The Official Site of siBunglon</title>
-    <link>https://sibunglon.com/tags/ayo-belajar-linux/</link>
-    <description>Recent content in Ayo Belajar Linux on The Official Site of siBunglon</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 05 Sep 2020 06:23:28 +0800</lastBuildDate>
-    
-      <atom:link href="https://sibunglon.com/tags/ayo-belajar-linux/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      <item>
-        <title>Configuring Auto Renewing Let&#39;s Encrypt SSL</title>
-        <link>https://sibunglon.com/2020/09/05/configuring-auto-renewing-lets-encrypt-ssl/</link>
-        <pubDate>Sat, 05 Sep 2020 06:23:28 +0800</pubDate>
-        <guid>https://sibunglon.com/2020/09/05/configuring-auto-renewing-lets-encrypt-ssl/</guid>
-        <description>Allow the certificate to auto renew, so that you as a server admin or not don&amp;rsquo;t have to log in to the server to renew all your certs.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ayo Belajar Linux on The Official Site of siBunglon</title><link>https://sibunglon.com/tags/ayo-belajar-linux/</link><description>Recent content in Ayo Belajar Linux on The Official Site of siBunglon</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 05 Sep 2020 06:23:28 +0800</lastBuildDate><atom:link href="https://sibunglon.com/tags/ayo-belajar-linux/index.xml" rel="self" type="application/rss+xml"/><item><title>Configuring Auto Renewing Let's Encrypt SSL</title><link>https://sibunglon.com/2020/09/05/configuring-auto-renewing-lets-encrypt-ssl/</link><pubDate>Sat, 05 Sep 2020 06:23:28 +0800</pubDate><guid>https://sibunglon.com/2020/09/05/configuring-auto-renewing-lets-encrypt-ssl/</guid><description>Allow the certificate to auto renew, so that you as a server admin or not don&amp;rsquo;t have to log in to the server to renew all your certs.
 The renewal is run by cron. You can create it.
 The following steps:
 For nginx Create cron file.
 $ vi /etc/cron.d/certbot and then enter the script:
-SHELL=/bin/sh PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin 0 */12 * * * root test -x /usr/bin/certbot -a \! -d /run/systemd/system &amp;amp;&amp;amp; perl -e &amp;#39;sleep int(rand(43200))&amp;#39; &amp;amp;&amp;amp; certbot -q renew For apache2 Download certbot renew package file</description>
-      </item>
-    
-      <item>
-        <title>Install Sendy - Self Hosted Email Newsletter Application</title>
-        <link>https://sibunglon.com/2020/09/05/install-sendy-self-hosted-email-newsletter-application/</link>
-        <pubDate>Sat, 05 Sep 2020 03:17:01 +0800</pubDate>
-        <guid>https://sibunglon.com/2020/09/05/install-sendy-self-hosted-email-newsletter-application/</guid>
-        <description>What is Sendy?
+SHELL=/bin/sh PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin 0 */12 * * * root test -x /usr/bin/certbot -a \! -d /run/systemd/system &amp;amp;&amp;amp; perl -e &amp;#39;sleep int(rand(43200))&amp;#39; &amp;amp;&amp;amp; certbot -q renew For apache2 Download certbot renew package file</description></item><item><title>Install Sendy - Self Hosted Email Newsletter Application</title><link>https://sibunglon.com/2020/09/05/install-sendy-self-hosted-email-newsletter-application/</link><pubDate>Sat, 05 Sep 2020 03:17:01 +0800</pubDate><guid>https://sibunglon.com/2020/09/05/install-sendy-self-hosted-email-newsletter-application/</guid><description>What is Sendy?
 Sendy is a self hosted email newsletter application that lets you send trackable emails via Amazon Simple Email Service (SES).
 To install sendy on Ubuntu, do the following steps:
- Login to server, and install package.  $ add-apt-repository ppa:ondrej/php $ apt update $ apt install php unzip $ apt install php-fpm libapache2-mod-php php-mysql php-curl php-xml $ apt install mariadb-server mariadb-client Let’s run the security script to harden the SQL.</description>
-      </item>
-    
-      <item>
-        <title>Create a Read Only MySQL User</title>
-        <link>https://sibunglon.com/2020/09/05/create-a-read-only-mysql-user/</link>
-        <pubDate>Sat, 05 Sep 2020 02:54:59 +0800</pubDate>
-        <guid>https://sibunglon.com/2020/09/05/create-a-read-only-mysql-user/</guid>
-        <description>There are times when you need account read only access to a database.
+Login to server, and install package. $ add-apt-repository ppa:ondrej/php $ apt update $ apt install php unzip $ apt install php-fpm libapache2-mod-php php-mysql php-curl php-xml $ apt install mariadb-server mariadb-client Let’s run the security script to harden the SQL.</description></item><item><title>Create a Read Only MySQL User</title><link>https://sibunglon.com/2020/09/05/create-a-read-only-mysql-user/</link><pubDate>Sat, 05 Sep 2020 02:54:59 +0800</pubDate><guid>https://sibunglon.com/2020/09/05/create-a-read-only-mysql-user/</guid><description>There are times when you need account read only access to a database.
 To create a read only database user MySQL, do the following steps:
-  Login as a MySQL administrator.
-  Create a new MySQL user account.
-  &amp;gt;&amp;gt;&amp;gt; CREATE USER &amp;#39;dapenda&amp;#39;@&amp;#39;%&amp;#39; IDENTIFIED BY &amp;#39;mypassword&amp;#39;; Grant the SELECT only privilege to user.  &amp;gt;&amp;gt;&amp;gt; GRANT SELECT ON site.* TO &amp;#39;dapenda&amp;#39;@&amp;#39;%&amp;#39;; Reload grant privilege for re-read access table MySQL.</description>
-      </item>
-    
-      <item>
-        <title>Database returned an invalid value in QuerySet.datetimes()</title>
-        <link>https://sibunglon.com/2020/07/26/database-returned-an-invalid-value-in-queryset.datetimes/</link>
-        <pubDate>Sun, 26 Jul 2020 21:05:49 +0800</pubDate>
-        <guid>https://sibunglon.com/2020/07/26/database-returned-an-invalid-value-in-queryset.datetimes/</guid>
-        <description>After create new action on the Django admin pages, it redirects to my site with the message a server error. When check the file /edx/var/log/supervisor/lms-stderr.log i find this:
-Traceback (most recent call last): File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/exception.py&amp;quot;, line 41, in inner response = get_response(request) File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;quot;, line 249, in _legacy_get_response response = self._get_response(request) File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;quot;, line 217, in _get_response response = self.process_exception_by_middleware(e, request) File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;quot;, line 215, in _get_response response = response.render() File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.</description>
-      </item>
-    
-      <item>
-        <title>SOLVE - SMTP Open edX Timeout</title>
-        <link>https://sibunglon.com/2020/07/26/solve-smtp-open-edx-timeout/</link>
-        <pubDate>Sun, 26 Jul 2020 17:21:39 +0800</pubDate>
-        <guid>https://sibunglon.com/2020/07/26/solve-smtp-open-edx-timeout/</guid>
-        <description>By default in Open edX, the system will send an email when a new user registers, using the forget password or other conditions.
+Login as a MySQL administrator.
+Create a new MySQL user account.
+&amp;gt;&amp;gt;&amp;gt; CREATE USER &amp;#39;dapenda&amp;#39;@&amp;#39;%&amp;#39; IDENTIFIED BY &amp;#39;mypassword&amp;#39;; Grant the SELECT only privilege to user. &amp;gt;&amp;gt;&amp;gt; GRANT SELECT ON site.* TO &amp;#39;dapenda&amp;#39;@&amp;#39;%&amp;#39;; Reload grant privilege for re-read access table MySQL.</description></item><item><title>Database returned an invalid value in QuerySet.datetimes()</title><link>https://sibunglon.com/2020/07/26/database-returned-an-invalid-value-in-queryset.datetimes/</link><pubDate>Sun, 26 Jul 2020 21:05:49 +0800</pubDate><guid>https://sibunglon.com/2020/07/26/database-returned-an-invalid-value-in-queryset.datetimes/</guid><description>After create new action on the Django admin pages, it redirects to my site with the message a server error. When check the file /edx/var/log/supervisor/lms-stderr.log i find this:
+Traceback (most recent call last): File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/exception.py&amp;quot;, line 41, in inner response = get_response(request) File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;quot;, line 249, in _legacy_get_response response = self._get_response(request) File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;quot;, line 217, in _get_response response = self.process_exception_by_middleware(e, request) File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;quot;, line 215, in _get_response response = response.render() File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.</description></item><item><title>SOLVE - SMTP Open edX Timeout</title><link>https://sibunglon.com/2020/07/26/solve-smtp-open-edx-timeout/</link><pubDate>Sun, 26 Jul 2020 17:21:39 +0800</pubDate><guid>https://sibunglon.com/2020/07/26/solve-smtp-open-edx-timeout/</guid><description>By default in Open edX, the system will send an email when a new user registers, using the forget password or other conditions.
 A few days ago my teams found an issue on the email sending service, but the issue was not because of the Open edX SMTP service but from the connection side of the Open edX server to the SMTP server.
 Then what&amp;rsquo;s the case?
 Case:
--) When a user registers, the user should receive an email to activate the account, but in reality it is not.</description>
-      </item>
-    
-      <item>
-        <title>SOLVE - zsh function definition file not found</title>
-        <link>https://sibunglon.com/2020/05/24/solve-zsh-function-definition-file-not-found/</link>
-        <pubDate>Sun, 24 May 2020 21:21:22 +0700</pubDate>
-        <guid>https://sibunglon.com/2020/05/24/solve-zsh-function-definition-file-not-found/</guid>
-        <description>Some commands error when using autocomplete. Ex, error message when using the mv command:
+-) When a user registers, the user should receive an email to activate the account, but in reality it is not.</description></item><item><title>SOLVE - zsh function definition file not found</title><link>https://sibunglon.com/2020/05/24/solve-zsh-function-definition-file-not-found/</link><pubDate>Sun, 24 May 2020 21:21:22 +0700</pubDate><guid>https://sibunglon.com/2020/05/24/solve-zsh-function-definition-file-not-found/</guid><description>Some commands error when using autocomplete. Ex, error message when using the mv command:
 ~ ❯❯❯ mv Down... (eval):1: _mv: function definition file not found How to solve?
 ~ ❯❯❯ rm ~/.zcompdump ~ ❯❯❯ exec zsh -l This solutions worked for me.
-If you found error message, comment on this article or contact me 😄</description>
-      </item>
-    
-      <item>
-        <title>Fixing Issue Celery Open edX Setelah Migrasi Instance</title>
-        <link>https://sibunglon.com/2020/04/19/fixing-issue-celery-open-edx-setelah-migrasi-instance/</link>
-        <pubDate>Sun, 19 Apr 2020 22:38:14 +0700</pubDate>
-        <guid>https://sibunglon.com/2020/04/19/fixing-issue-celery-open-edx-setelah-migrasi-instance/</guid>
-        <description>Beberapa hari yang lalu saya memindahkan instance Open edX dan beberapa menit setelah server aktif, Open edX tidak bisa diakses. Cek servicenya, tetapi semua service dalam keadaan aktif namun ketika melihat lognya, ternyata ada error pada celery, kurang lebih errornya seperti berikut:
-$ sudo tail -f /edx/var/log/{lms,cms,nginx}/*log ==&amp;gt; /edx/var/log/lms/edx.log &amp;lt;== Apr 12 02:21:16 beep [service_variant=lms][celery.worker.consumer][env:sandbox] ERROR [beep 1400] [consumer.py:364] - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 104] Connection reset by peer.</description>
-      </item>
-    
-      <item>
-        <title>Restrict Server Access via SSH Client</title>
-        <link>https://sibunglon.com/2020/02/15/restrict-server-access-via-ssh-client/</link>
-        <pubDate>Sat, 15 Feb 2020 14:57:22 +0700</pubDate>
-        <guid>https://sibunglon.com/2020/02/15/restrict-server-access-via-ssh-client/</guid>
-        <description>This article is related to Server Got Hacked, Crontab Has Been Modified.
+If you found error message, comment on this article or contact me 😄</description></item><item><title>Fixing Issue Celery Open edX Setelah Migrasi Instance</title><link>https://sibunglon.com/2020/04/19/fixing-issue-celery-open-edx-setelah-migrasi-instance/</link><pubDate>Sun, 19 Apr 2020 22:38:14 +0700</pubDate><guid>https://sibunglon.com/2020/04/19/fixing-issue-celery-open-edx-setelah-migrasi-instance/</guid><description>Beberapa hari yang lalu saya memindahkan instance Open edX dan beberapa menit setelah server aktif, Open edX tidak bisa diakses. Cek servicenya, tetapi semua service dalam keadaan aktif namun ketika melihat lognya, ternyata ada error pada celery, kurang lebih errornya seperti berikut:
+$ sudo tail -f /edx/var/log/{lms,cms,nginx}/*log ==&amp;gt; /edx/var/log/lms/edx.log &amp;lt;== Apr 12 02:21:16 beep [service_variant=lms][celery.worker.consumer][env:sandbox] ERROR [beep 1400] [consumer.py:364] - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 104] Connection reset by peer.</description></item><item><title>Restrict Server Access via SSH Client</title><link>https://sibunglon.com/2020/02/15/restrict-server-access-via-ssh-client/</link><pubDate>Sat, 15 Feb 2020 14:57:22 +0700</pubDate><guid>https://sibunglon.com/2020/02/15/restrict-server-access-via-ssh-client/</guid><description>This article is related to Server Got Hacked, Crontab Has Been Modified.
 Limit IP Address To limit ip address of incoming connections to server via ssh, it can be done by:
-  Edit file /etc/hosts.allow.
-  Then add the following script.
-  sshd : ip_attacker : deny Save and exit.  Limit Users or Groups To limit users or groups of incoming connections to server via ssh, it can be done by:</description>
-      </item>
-    
-      <item>
-        <title>Error Install MySQL Server on Ubuntu 18</title>
-        <link>https://sibunglon.com/2020/02/07/error-install-mysql-server-on-ubuntu-18/</link>
-        <pubDate>Fri, 07 Feb 2020 23:55:13 +0700</pubDate>
-        <guid>https://sibunglon.com/2020/02/07/error-install-mysql-server-on-ubuntu-18/</guid>
-        <description>A few days ago mysql server was installed again, mysql was successfully installed and the service was successfully running but if you want to install another package, this problem must be solved by installing mysql server because mysql server installation is not 100% complete yet.
-Btw, fortunately the terminal history on the laptop has not been cleared so I can save the error message again on Ubuntu pastebin so that others can see the error clearly 😁.</description>
-      </item>
-    
-      <item>
-        <title>Nginx Redirect Domain</title>
-        <link>https://sibunglon.com/2020/01/14/nginx-redirect-domain/</link>
-        <pubDate>Tue, 14 Jan 2020 11:34:28 +0700</pubDate>
-        <guid>https://sibunglon.com/2020/01/14/nginx-redirect-domain/</guid>
-        <description>Directing visitors from one domain to another is very easy, just edit the nginx configuration file that has been created then add some configuration syntax or if you don&amp;rsquo;t want to edit an existing configuration file, you can also create 1 more configuration file.
-The following example, anyone who accesses the *.redirect.sibunglon.com domain will be directed to the sibunglon.com domain. *= wilcard, so anyone who accesses the domain x.redirect.sibunglon.com, xyz.redirect.sibunglon.com, blog.</description>
-      </item>
-    
-      <item>
-        <title>Setup HTTPS on Open edX Using Certbot</title>
-        <link>https://sibunglon.com/2020/01/04/setup-https-on-open-edx-using-certbot/</link>
-        <pubDate>Sat, 04 Jan 2020 02:54:23 +0700</pubDate>
-        <guid>https://sibunglon.com/2020/01/04/setup-https-on-open-edx-using-certbot/</guid>
-        <description>By default Open edX does not provide an SSL configuration, but we can add it manually. As per the topic of this article, here I will enable HTTPS on Open edX using Certbot.
+Edit file /etc/hosts.allow.
+Then add the following script.
+sshd : ip_attacker : deny Save and exit. Limit Users or Groups To limit users or groups of incoming connections to server via ssh, it can be done by:</description></item><item><title>Error Install MySQL Server on Ubuntu 18</title><link>https://sibunglon.com/2020/02/07/error-install-mysql-server-on-ubuntu-18/</link><pubDate>Fri, 07 Feb 2020 23:55:13 +0700</pubDate><guid>https://sibunglon.com/2020/02/07/error-install-mysql-server-on-ubuntu-18/</guid><description>A few days ago mysql server was installed again, mysql was successfully installed and the service was successfully running but if you want to install another package, this problem must be solved by installing mysql server because mysql server installation is not 100% complete yet.
+Btw, fortunately the terminal history on the laptop has not been cleared so I can save the error message again on Ubuntu pastebin so that others can see the error clearly 😁.</description></item><item><title>Nginx Redirect Domain</title><link>https://sibunglon.com/2020/01/14/nginx-redirect-domain/</link><pubDate>Tue, 14 Jan 2020 11:34:28 +0700</pubDate><guid>https://sibunglon.com/2020/01/14/nginx-redirect-domain/</guid><description>Directing visitors from one domain to another is very easy, just edit the nginx configuration file that has been created then add some configuration syntax or if you don&amp;rsquo;t want to edit an existing configuration file, you can also create 1 more configuration file.
+The following example, anyone who accesses the *.redirect.sibunglon.com domain will be directed to the sibunglon.com domain. *= wilcard, so anyone who accesses the domain x.redirect.sibunglon.com, xyz.redirect.sibunglon.com, blog.</description></item><item><title>Setup HTTPS on Open edX Using Certbot</title><link>https://sibunglon.com/2020/01/04/setup-https-on-open-edx-using-certbot/</link><pubDate>Sat, 04 Jan 2020 02:54:23 +0700</pubDate><guid>https://sibunglon.com/2020/01/04/setup-https-on-open-edx-using-certbot/</guid><description>By default Open edX does not provide an SSL configuration, but we can add it manually. As per the topic of this article, here I will enable HTTPS on Open edX using Certbot.
 Certbot is a new breakthrough from the Let&amp;rsquo;s Encrypt Web Security Certificate Provider where Lets Encrypt provides SSL for free.
- Note: In the following example, in Open edX I point Course Management System (CMS) using the domain studio.</description>
-      </item>
-    
-      <item>
-        <title>How to Download All Contents in Course Coursera</title>
-        <link>https://sibunglon.com/2020/01/03/how-to-download-all-contents-in-course-coursera/</link>
-        <pubDate>Fri, 03 Jan 2020 18:33:11 +0700</pubDate>
-        <guid>https://sibunglon.com/2020/01/03/how-to-download-all-contents-in-course-coursera/</guid>
-        <description>Coursera is an online learning platform founded by Stanford professors Andrew Ng and Daphne Koller that offers massive open online courses, specializations, and degrees.
+Note: In the following example, in Open edX I point Course Management System (CMS) using the domain studio.</description></item><item><title>How to Download All Contents in Course Coursera</title><link>https://sibunglon.com/2020/01/03/how-to-download-all-contents-in-course-coursera/</link><pubDate>Fri, 03 Jan 2020 18:33:11 +0700</pubDate><guid>https://sibunglon.com/2020/01/03/how-to-download-all-contents-in-course-coursera/</guid><description>Coursera is an online learning platform founded by Stanford professors Andrew Ng and Daphne Koller that offers massive open online courses, specializations, and degrees.
 Coursera works with universities and other organizations to offer online courses, specialties, and degrees in various subjects, such as engineering, humanities, medicine, biology, social sciences, mathematics, business, computer science, digital marketing, data science, etc..
-The course at Coursera is a monthly subscription, but Coursera also provides a free trial for 7 days so it is possible to use this you only need a credit card or debit card.</description>
-      </item>
-    
-      <item>
-        <title>How to Reset List of Trusted CA Certificates in RHEL 6 RHEL 7</title>
-        <link>https://sibunglon.com/2019/12/13/how-to-reset-list-of-trusted-ca-certificates-in-rhel-6-rhel-7/</link>
-        <pubDate>Fri, 13 Dec 2019 14:31:55 +0700</pubDate>
-        <guid>https://sibunglon.com/2019/12/13/how-to-reset-list-of-trusted-ca-certificates-in-rhel-6-rhel-7/</guid>
-        <description>#!/bin/bash # Get time localTime=$(date &amp;#39;+%Y%m%d_%H%M%S&amp;#39; -d &amp;#34;$(curl -s --head http://google.com | grep ^Date: | sed &amp;#39;s/Date: //g&amp;#39;)&amp;#34;) # Create cert bak dir mkdir -p $HOME/cert.bak # Reset cert sudo rpm -Vv ca-certificates | awk &amp;#39;$1!=&amp;#34;.........&amp;#34; &amp;amp;&amp;amp; $2!=&amp;#34;d&amp;#34; {system(&amp;#34;mv -v &amp;#34; $NF &amp;#34; $HOME/cert.bak&amp;#34;)}&amp;#39; sudo yum check-update ca-certificates; (($?==100)) &amp;amp;&amp;amp; sudo yum update -y ca-certificates || sudo yum reinstall -y ca-certificates sudo find /etc/pki/ca-trust/source{,/anchors} -maxdepth 1 -not -type d -exec ls -1 {} + sudo update-ca-trust extract # Update locate cert bak sudo mv $HOME/cert.</description>
-      </item>
-    
-      <item>
-        <title>How to Ignore Invalid and Self Signed SSL Connection Errors With cURL and Wget</title>
-        <link>https://sibunglon.com/2019/12/09/how-to-ignore-invalid-and-self-signed-ssl-connection-errors-with-curl-and-wget/</link>
-        <pubDate>Mon, 09 Dec 2019 14:02:06 +0700</pubDate>
-        <guid>https://sibunglon.com/2019/12/09/how-to-ignore-invalid-and-self-signed-ssl-connection-errors-with-curl-and-wget/</guid>
-        <description>If you use the curl or wget command and don&amp;rsquo;t want SSL to be checked so that the process should occur, you can use options or add commands.
+The course at Coursera is a monthly subscription, but Coursera also provides a free trial for 7 days so it is possible to use this you only need a credit card or debit card.</description></item><item><title>How to Reset List of Trusted CA Certificates in RHEL 6 RHEL 7</title><link>https://sibunglon.com/2019/12/13/how-to-reset-list-of-trusted-ca-certificates-in-rhel-6-rhel-7/</link><pubDate>Fri, 13 Dec 2019 14:31:55 +0700</pubDate><guid>https://sibunglon.com/2019/12/13/how-to-reset-list-of-trusted-ca-certificates-in-rhel-6-rhel-7/</guid><description>#!/bin/bash # Get time localTime=$(date &amp;#39;+%Y%m%d_%H%M%S&amp;#39; -d &amp;#34;$(curl -s --head http://google.com | grep ^Date: | sed &amp;#39;s/Date: //g&amp;#39;)&amp;#34;) # Create cert bak dir mkdir -p $HOME/cert.bak # Reset cert sudo rpm -Vv ca-certificates | awk &amp;#39;$1!=&amp;#34;.........&amp;#34; &amp;amp;&amp;amp; $2!=&amp;#34;d&amp;#34; {system(&amp;#34;mv -v &amp;#34; $NF &amp;#34; $HOME/cert.bak&amp;#34;)}&amp;#39; sudo yum check-update ca-certificates; (($?==100)) &amp;amp;&amp;amp; sudo yum update -y ca-certificates || sudo yum reinstall -y ca-certificates sudo find /etc/pki/ca-trust/source{,/anchors} -maxdepth 1 -not -type d -exec ls -1 {} + sudo update-ca-trust extract # Update locate cert bak sudo mv $HOME/cert.</description></item><item><title>How to Ignore Invalid and Self Signed SSL Connection Errors With cURL and Wget</title><link>https://sibunglon.com/2019/12/09/how-to-ignore-invalid-and-self-signed-ssl-connection-errors-with-curl-and-wget/</link><pubDate>Mon, 09 Dec 2019 14:02:06 +0700</pubDate><guid>https://sibunglon.com/2019/12/09/how-to-ignore-invalid-and-self-signed-ssl-connection-errors-with-curl-and-wget/</guid><description>If you use the curl or wget command and don&amp;rsquo;t want SSL to be checked so that the process should occur, you can use options or add commands.
 -) cURL
 $ curl -k url $ curl --insecure url $ curl --insecure -I url Example:
 $ curl -k https://sibunglon.com/image.png -) Wget
 $ wget --no-check-certificate url Example:
-$ wget --no-check-certificate https://sibunglon.com/image.png But if you don&amp;rsquo;t want to use this additional option, just create a file whose contents can pass the SSL Certificate check.</description>
-      </item>
-    
-      <item>
-        <title>Tree: ignore directories with patterns</title>
-        <link>https://sibunglon.com/2019/12/09/tree-ignore-directories-with-patterns/</link>
-        <pubDate>Mon, 09 Dec 2019 11:01:45 +0700</pubDate>
-        <guid>https://sibunglon.com/2019/12/09/tree-ignore-directories-with-patterns/</guid>
-        <description>Tree is a linux command that provides a list of recursive directories or a tree can display all file and directory listings in a directory.
+$ wget --no-check-certificate https://sibunglon.com/image.png But if you don&amp;rsquo;t want to use this additional option, just create a file whose contents can pass the SSL Certificate check.</description></item><item><title>Tree: ignore directories with patterns</title><link>https://sibunglon.com/2019/12/09/tree-ignore-directories-with-patterns/</link><pubDate>Mon, 09 Dec 2019 11:01:45 +0700</pubDate><guid>https://sibunglon.com/2019/12/09/tree-ignore-directories-with-patterns/</guid><description>Tree is a linux command that provides a list of recursive directories or a tree can display all file and directory listings in a directory.
 Comparison of ls and tree usage
 Tree:
-$ tree Bash Bash ├── BackupRestore-dbOpenEdx │ ├── backup_mongo.sh │ ├── backup_mysql.sh │ ├── restore_mongo.sh │ └── restore_mysql.sh ├── auto-update-dplk_env │ ├── main.sh │ └── playbook │ ├── backend.yml │ ├── config.yml │ └── frontend.yml ├── backup\ database\ postgres.</description>
-      </item>
-    
-      <item>
-        <title>Fixing Problems on Installations Open edX Ficus</title>
-        <link>https://sibunglon.com/2019/12/06/fixing-problems-on-installations-open-edx-ficus/</link>
-        <pubDate>Fri, 06 Dec 2019 13:13:00 +0700</pubDate>
-        <guid>https://sibunglon.com/2019/12/06/fixing-problems-on-installations-open-edx-ficus/</guid>
-        <description>What is the problem? Ficus is a name of Open edX release which was released on February 23, 2017. It&amp;rsquo;s been quite a long time, and automatically uses old packages or packages that are still active at that time. Last September, my friends asked me to install Open edX Ficus, because it&amp;rsquo;s an old version so I tried to install it in another VM, I made a VM on the Google Cloud Platform.</description>
-      </item>
-    
-      <item>
-        <title>Error Backup Database PostgreSQL Using pg_dump</title>
-        <link>https://sibunglon.com/2019/11/04/error-backup-database-postgresql-using-pg_dump/</link>
-        <pubDate>Mon, 04 Nov 2019 13:39:16 +0700</pubDate>
-        <guid>https://sibunglon.com/2019/11/04/error-backup-database-postgresql-using-pg_dump/</guid>
-        <description>Has anyone ever done a postgres database backup using the pg_dump command line and then found problems with messages more or less like the following?
+$ tree Bash Bash ├── BackupRestore-dbOpenEdx │ ├── backup_mongo.sh │ ├── backup_mysql.sh │ ├── restore_mongo.sh │ └── restore_mysql.sh ├── auto-update-dplk_env │ ├── main.sh │ └── playbook │ ├── backend.yml │ ├── config.yml │ └── frontend.yml ├── backup\ database\ postgres.</description></item><item><title>Fixing Problems on Installations Open edX Ficus</title><link>https://sibunglon.com/2019/12/06/fixing-problems-on-installations-open-edx-ficus/</link><pubDate>Fri, 06 Dec 2019 13:13:00 +0700</pubDate><guid>https://sibunglon.com/2019/12/06/fixing-problems-on-installations-open-edx-ficus/</guid><description>What is the problem? Ficus is a name of Open edX release which was released on February 23, 2017. It&amp;rsquo;s been quite a long time, and automatically uses old packages or packages that are still active at that time. Last September, my friends asked me to install Open edX Ficus, because it&amp;rsquo;s an old version so I tried to install it in another VM, I made a VM on the Google Cloud Platform.</description></item><item><title>Error Backup Database PostgreSQL Using pg_dump</title><link>https://sibunglon.com/2019/11/04/error-backup-database-postgresql-using-pg_dump/</link><pubDate>Mon, 04 Nov 2019 13:39:16 +0700</pubDate><guid>https://sibunglon.com/2019/11/04/error-backup-database-postgresql-using-pg_dump/</guid><description>Has anyone ever done a postgres database backup using the pg_dump command line and then found problems with messages more or less like the following?
 pg_dump: server version: 9.6.12; pg_dump version: 9.2.24 pg_dump: aborting because of server version mismatch At that time I used Postgres 9.6.
-If before you did not do the postgres installation process, when backing up the data and finding problems with the message more or less like what I show then do not be too quick to ambition to make postgres or other improvements because it requires a great effort especially if the problem is found in production server, DANGER 🤣 Simply find the pg_dump command line location according to the postgres version of the server being used.</description>
-      </item>
-    
-      <item>
-        <title>Create New Super User for Access Django Admin Interface Open edX</title>
-        <link>https://sibunglon.com/2019/07/15/create-new-super-user-for-access-django-admin-interface-open-edx/</link>
-        <pubDate>Mon, 15 Jul 2019 03:09:25 +0700</pubDate>
-        <guid>https://sibunglon.com/2019/07/15/create-new-super-user-for-access-django-admin-interface-open-edx/</guid>
-        <description>I need to use the Django admin interface, but I don&amp;rsquo;t know what users can use to log in.
-Solution sudo -u edxapp bash source /edx/app/edxapp/edxapp_env python /edx/app/edxapp/edx-platform/manage.py --settings=aws createsuperuser </description>
-      </item>
-    
-      <item>
-        <title>First Contribution to Open Source Project</title>
-        <link>https://sibunglon.com/2019/07/14/first-contribution-to-open-source-project/</link>
-        <pubDate>Sun, 14 Jul 2019 00:25:00 +0700</pubDate>
-        <guid>https://sibunglon.com/2019/07/14/first-contribution-to-open-source-project/</guid>
-        <description>Error Get Incommon Server CA (Certificate Authority) When Installing Open edX In the previous article or that is here, there was a quick acquaintance session with Open edX while playing with Open edX (Open edX installation). And there are also articles about errors during Open edX installation, can be seen in this article.
-Besides the errors in this article, this time I found a different error which was an error in getting an Authority Certificate.</description>
-      </item>
-    
-      <item>
-        <title>Open edX Error Create Service Worker Users</title>
-        <link>https://sibunglon.com/2019/07/13/open-edx-error-create-service-worker-users/</link>
-        <pubDate>Sat, 13 Jul 2019 23:01:19 +0700</pubDate>
-        <guid>https://sibunglon.com/2019/07/13/open-edx-error-create-service-worker-users/</guid>
-        <description>Error Create Service Worker Users When Installing Open edX In the previous article or that is here, there was a quick acquaintance session with Open edX while playing with Open edX (Open edX installation).
-I myself had an error when installing Open EdX, the error was the same as in the title of this article which failed to make service worker users. I was made confused by this error, even with this error I repeatedly did the Open edX installation process.</description>
-      </item>
-    
-      <item>
-        <title>Install Open edX Using Method Native Installation | Ubuntu 16.04</title>
-        <link>https://sibunglon.com/2019/07/13/install-open-edx-using-method-native-installation-ubuntu-16.04/</link>
-        <pubDate>Sat, 13 Jul 2019 21:47:47 +0700</pubDate>
-        <guid>https://sibunglon.com/2019/07/13/install-open-edx-using-method-native-installation-ubuntu-16.04/</guid>
-        <description>About Open edX Open edX is the massively scalable learning software platform behind edX. edX is the online learning destination founded by Harvard and MIT in 2012.
+If before you did not do the postgres installation process, when backing up the data and finding problems with the message more or less like what I show then do not be too quick to ambition to make postgres or other improvements because it requires a great effort especially if the problem is found in production server, DANGER 🤣 Simply find the pg_dump command line location according to the postgres version of the server being used.</description></item><item><title>Create New Super User for Access Django Admin Interface Open edX</title><link>https://sibunglon.com/2019/07/15/create-new-super-user-for-access-django-admin-interface-open-edx/</link><pubDate>Mon, 15 Jul 2019 03:09:25 +0700</pubDate><guid>https://sibunglon.com/2019/07/15/create-new-super-user-for-access-django-admin-interface-open-edx/</guid><description>I need to use the Django admin interface, but I don&amp;rsquo;t know what users can use to log in.
+Solution sudo -u edxapp bash source /edx/app/edxapp/edxapp_env python /edx/app/edxapp/edx-platform/manage.py --settings=aws createsuperuser</description></item><item><title>First Contribution to Open Source Project</title><link>https://sibunglon.com/2019/07/14/first-contribution-to-open-source-project/</link><pubDate>Sun, 14 Jul 2019 00:25:00 +0700</pubDate><guid>https://sibunglon.com/2019/07/14/first-contribution-to-open-source-project/</guid><description>Error Get Incommon Server CA (Certificate Authority) When Installing Open edX In the previous article or that is here, there was a quick acquaintance session with Open edX while playing with Open edX (Open edX installation). And there are also articles about errors during Open edX installation, can be seen in this article.
+Besides the errors in this article, this time I found a different error which was an error in getting an Authority Certificate.</description></item><item><title>Open edX Error Create Service Worker Users</title><link>https://sibunglon.com/2019/07/13/open-edx-error-create-service-worker-users/</link><pubDate>Sat, 13 Jul 2019 23:01:19 +0700</pubDate><guid>https://sibunglon.com/2019/07/13/open-edx-error-create-service-worker-users/</guid><description>Error Create Service Worker Users When Installing Open edX In the previous article or that is here, there was a quick acquaintance session with Open edX while playing with Open edX (Open edX installation).
+I myself had an error when installing Open EdX, the error was the same as in the title of this article which failed to make service worker users. I was made confused by this error, even with this error I repeatedly did the Open edX installation process.</description></item><item><title>Install Open edX Using Method Native Installation | Ubuntu 16.04</title><link>https://sibunglon.com/2019/07/13/install-open-edx-using-method-native-installation-ubuntu-16.04/</link><pubDate>Sat, 13 Jul 2019 21:47:47 +0700</pubDate><guid>https://sibunglon.com/2019/07/13/install-open-edx-using-method-native-installation-ubuntu-16.04/</guid><description>About Open edX Open edX is the massively scalable learning software platform behind edX. edX is the online learning destination founded by Harvard and MIT in 2012.
 edX offers high-quality courses from the world’s best universities and institutions to learners everywhere. It is the only leading MOOC provider that is both nonprofit and open source. The edX mission is to:
- Increase access to high-quality education for everyone, everywhere Enhance teaching and learning on campus and online Advance teaching and learning through research  Play with Open edX How to use Open edX in my own environment?</description>
-      </item>
-    
-      <item>
-        <title>Failed to Install the Following Android SDK Packages as Some Licences Have Not Been Accepted</title>
-        <link>https://sibunglon.com/2019/05/19/failed-to-install-the-following-android-sdk-packages-as-some-licences-have-not-been-accepted/</link>
-        <pubDate>Sun, 19 May 2019 15:59:55 +0700</pubDate>
-        <guid>https://sibunglon.com/2019/05/19/failed-to-install-the-following-android-sdk-packages-as-some-licences-have-not-been-accepted/</guid>
-        <description>A few days ago, I had time to try to build an Android project but did not use the Android Studio application but instead used the command line. In order for the source code to be built using only the command line, we can use the included sdkmanager to download other SDK packages, this is a basic Android command line tool, if you want to download visit the Android Developer page then adjust with your environment.</description>
-      </item>
-    
-      <item>
-        <title>Install Bamboo Atlassian di Linux</title>
-        <link>https://sibunglon.com/2019/05/06/install-bamboo-atlassian-di-linux/</link>
-        <pubDate>Mon, 06 May 2019 03:40:59 +0700</pubDate>
-        <guid>https://sibunglon.com/2019/05/06/install-bamboo-atlassian-di-linux/</guid>
-        <description>Bamboo Atlassian Bamboo adalah integrasi berkelanjutan (continuous integration (CI)) dan server penyebaran berkelanjutan (continuous deployment) yang dikembangkan oleh Atlassian. Bamboo dapat digunakan untuk mengotomatisasi manajemen rilis untuk aplikasi perangkat lunak, menciptakan jalur pengiriman kontinu.
-CI adalah metodologi pengembangan perangkat lunak di mana tes pembangunan, unit, dan tes integrasi dilakukan, atau dipicu, setiap kali kode dipublish ke repositori, untuk memastikan bahwa perubahan baru terintegrasi dengan baik ke dalam basis kode yang ada.</description>
-      </item>
-    
-      <item>
-        <title>Fix the Cockpit Blank Page After Login Over Nginx Reverse Proxy</title>
-        <link>https://sibunglon.com/2019/04/15/fix-the-cockpit-blank-page-after-login-over-nginx-reverse-proxy/</link>
-        <pubDate>Mon, 15 Apr 2019 05:09:24 +0700</pubDate>
-        <guid>https://sibunglon.com/2019/04/15/fix-the-cockpit-blank-page-after-login-over-nginx-reverse-proxy/</guid>
-        <description>Cockpit nge-Blank Setelah Login Jika diakses melalui Reverse Proxy Nginx? Apakah anda mengalami hal tersebut? Jangan takut, karena saya juga mengalami hal tersebut 😆 Beberapa yang hari lalu, saya mengakses cockpit server lab saya yang melalui reverse proxy NGINX, awalnya normal aja pas ngakses sampai ke halaman login namun ketika mencoba login, si cockpit hanya stuck di blank page. Wahhhh alhamdulillah dapat masalah baru lagi :D padahal sebelumnya normal aja, gak ada stuck di blank page.</description>
-      </item>
-    
-      <item>
-        <title>ValueError Saat Setup MSSQL Server Di Linux</title>
-        <link>https://sibunglon.com/2019/04/09/valueerror-saat-setup-mssql-server-di-linux/</link>
-        <pubDate>Tue, 09 Apr 2019 20:45:08 +0700</pubDate>
-        <guid>https://sibunglon.com/2019/04/09/valueerror-saat-setup-mssql-server-di-linux/</guid>
-        <description>ValueError: unknown locale: UTF-8? Beberapa hari yang lalu saya sempat menulis step by step install Microsoft SQL Server (MSSQL Server) di environment Linux, namun mungkin saja ada yang menemukan error salah satunya error dengan message ValueError: unknown locale: UTF-8, gak usah takut karena dari masalah itu ataupun lainnya kita dapat pelajaran baru😆
-Disuatu waktu saya install MSSQL Server Linux di environment berbeda dari sebelumnya, saya ikuti tuh step by step installasi MSSQL Server yang saya tulis sebelumnya, alhamdulillah dapat rejeki, dapat ValueError: unknown locale: UTF-8 pada saat setup MSSQL Server🤣 Dengan kemampuan sok tau saya😆 langsung disimpulkan maksud dari error message tersebut yaitu Lokal UTF-8 tidak di kenal.</description>
-      </item>
-    
-      <item>
-        <title>Mudahnya Memasang MSSQL Server di Linux</title>
-        <link>https://sibunglon.com/2019/04/05/mudahnya-memasang-mssql-server-di-linux/</link>
-        <pubDate>Fri, 05 Apr 2019 18:08:14 +0700</pubDate>
-        <guid>https://sibunglon.com/2019/04/05/mudahnya-memasang-mssql-server-di-linux/</guid>
-        <description>Microsoft SQL Server di Linux? Diantara para pembaca mungkin ada yang kaget atau apa kalau produknya Microsoft bisa jalan di linux apalagi tanpa emulator ataupun tools lainnya. Yah itu bisa saja karena mungkin ada yang kemakan omongan bahwa produk Microsoft itu non open source. Dengan adanya MSSQL Server di linux jangan sampai ada terlalu kaget, positif thinking aja mungkin om Bill Gates udah mulai mengopen sourcekan produknya karena kasihan banyak yang berdosa karena menjadi pak tani gelapnya Microsoft😅</description>
-      </item>
-    
-      <item>
-        <title>Feature Browse Caddy Server</title>
-        <link>https://sibunglon.com/2019/02/27/feature-browse-caddy-server/</link>
-        <pubDate>Wed, 27 Feb 2019 01:15:00 +0700</pubDate>
-        <guid>https://sibunglon.com/2019/02/27/feature-browse-caddy-server/</guid>
-        <description>Caddy? Gak usah takut 😆 beberapa bulan yang lalu kan udah kenalan sama si Caddy dan ini postnya, tapi waktu itu kan cuman sekedar berkenalan. Nah dipostingan ini I&amp;rsquo;m siBunglon akan memberikan step installasinya di linux beserta memamerkan fitur yang paling sering I&amp;rsquo;m siBunglon pakai jika menggunakan si Caddy ini. To the point aja yah, kan kenalannya udah :D
+Increase access to high-quality education for everyone, everywhere Enhance teaching and learning on campus and online Advance teaching and learning through research Play with Open edX How to use Open edX in my own environment?</description></item><item><title>Failed to Install the Following Android SDK Packages as Some Licences Have Not Been Accepted</title><link>https://sibunglon.com/2019/05/19/failed-to-install-the-following-android-sdk-packages-as-some-licences-have-not-been-accepted/</link><pubDate>Sun, 19 May 2019 15:59:55 +0700</pubDate><guid>https://sibunglon.com/2019/05/19/failed-to-install-the-following-android-sdk-packages-as-some-licences-have-not-been-accepted/</guid><description>A few days ago, I had time to try to build an Android project but did not use the Android Studio application but instead used the command line. In order for the source code to be built using only the command line, we can use the included sdkmanager to download other SDK packages, this is a basic Android command line tool, if you want to download visit the Android Developer page then adjust with your environment.</description></item><item><title>Install Bamboo Atlassian di Linux</title><link>https://sibunglon.com/2019/05/06/install-bamboo-atlassian-di-linux/</link><pubDate>Mon, 06 May 2019 03:40:59 +0700</pubDate><guid>https://sibunglon.com/2019/05/06/install-bamboo-atlassian-di-linux/</guid><description>Bamboo Atlassian Bamboo adalah integrasi berkelanjutan (continuous integration (CI)) dan server penyebaran berkelanjutan (continuous deployment) yang dikembangkan oleh Atlassian. Bamboo dapat digunakan untuk mengotomatisasi manajemen rilis untuk aplikasi perangkat lunak, menciptakan jalur pengiriman kontinu.
+CI adalah metodologi pengembangan perangkat lunak di mana tes pembangunan, unit, dan tes integrasi dilakukan, atau dipicu, setiap kali kode dipublish ke repositori, untuk memastikan bahwa perubahan baru terintegrasi dengan baik ke dalam basis kode yang ada.</description></item><item><title>Fix the Cockpit Blank Page After Login Over Nginx Reverse Proxy</title><link>https://sibunglon.com/2019/04/15/fix-the-cockpit-blank-page-after-login-over-nginx-reverse-proxy/</link><pubDate>Mon, 15 Apr 2019 05:09:24 +0700</pubDate><guid>https://sibunglon.com/2019/04/15/fix-the-cockpit-blank-page-after-login-over-nginx-reverse-proxy/</guid><description>Cockpit nge-Blank Setelah Login Jika diakses melalui Reverse Proxy Nginx? Apakah anda mengalami hal tersebut? Jangan takut, karena saya juga mengalami hal tersebut 😆 Beberapa yang hari lalu, saya mengakses cockpit server lab saya yang melalui reverse proxy NGINX, awalnya normal aja pas ngakses sampai ke halaman login namun ketika mencoba login, si cockpit hanya stuck di blank page. Wahhhh alhamdulillah dapat masalah baru lagi :D padahal sebelumnya normal aja, gak ada stuck di blank page.</description></item><item><title>ValueError Saat Setup MSSQL Server Di Linux</title><link>https://sibunglon.com/2019/04/09/valueerror-saat-setup-mssql-server-di-linux/</link><pubDate>Tue, 09 Apr 2019 20:45:08 +0700</pubDate><guid>https://sibunglon.com/2019/04/09/valueerror-saat-setup-mssql-server-di-linux/</guid><description>ValueError: unknown locale: UTF-8? Beberapa hari yang lalu saya sempat menulis step by step install Microsoft SQL Server (MSSQL Server) di environment Linux, namun mungkin saja ada yang menemukan error salah satunya error dengan message ValueError: unknown locale: UTF-8, gak usah takut karena dari masalah itu ataupun lainnya kita dapat pelajaran baru😆
+Disuatu waktu saya install MSSQL Server Linux di environment berbeda dari sebelumnya, saya ikuti tuh step by step installasi MSSQL Server yang saya tulis sebelumnya, alhamdulillah dapat rejeki, dapat ValueError: unknown locale: UTF-8 pada saat setup MSSQL Server🤣 Dengan kemampuan sok tau saya😆 langsung disimpulkan maksud dari error message tersebut yaitu Lokal UTF-8 tidak di kenal.</description></item><item><title>Mudahnya Memasang MSSQL Server di Linux</title><link>https://sibunglon.com/2019/04/05/mudahnya-memasang-mssql-server-di-linux/</link><pubDate>Fri, 05 Apr 2019 18:08:14 +0700</pubDate><guid>https://sibunglon.com/2019/04/05/mudahnya-memasang-mssql-server-di-linux/</guid><description>Microsoft SQL Server di Linux? Diantara para pembaca mungkin ada yang kaget atau apa kalau produknya Microsoft bisa jalan di linux apalagi tanpa emulator ataupun tools lainnya. Yah itu bisa saja karena mungkin ada yang kemakan omongan bahwa produk Microsoft itu non open source. Dengan adanya MSSQL Server di linux jangan sampai ada terlalu kaget, positif thinking aja mungkin om Bill Gates udah mulai mengopen sourcekan produknya karena kasihan banyak yang berdosa karena menjadi pak tani gelapnya Microsoft😅</description></item><item><title>Feature Browse Caddy Server</title><link>https://sibunglon.com/2019/02/27/feature-browse-caddy-server/</link><pubDate>Wed, 27 Feb 2019 01:15:00 +0700</pubDate><guid>https://sibunglon.com/2019/02/27/feature-browse-caddy-server/</guid><description>Caddy? Gak usah takut 😆 beberapa bulan yang lalu kan udah kenalan sama si Caddy dan ini postnya, tapi waktu itu kan cuman sekedar berkenalan. Nah dipostingan ini I&amp;rsquo;m siBunglon akan memberikan step installasinya di linux beserta memamerkan fitur yang paling sering I&amp;rsquo;m siBunglon pakai jika menggunakan si Caddy ini. To the point aja yah, kan kenalannya udah :D
 Bermain Dengan Caddy 1) Install caddy ke sistem dengan command
-curl https://getcaddy.</description>
-      </item>
-    
-      <item>
-        <title>Install Package From PIP Ignore Trusted Host</title>
-        <link>https://sibunglon.com/2019/02/26/install-package-from-pip-ignore-trusted-host/</link>
-        <pubDate>Tue, 26 Feb 2019 10:53:16 +0700</pubDate>
-        <guid>https://sibunglon.com/2019/02/26/install-package-from-pip-ignore-trusted-host/</guid>
-        <description>Connection is Power Yah connection is power dan jangan berpikir problems can occur due to connection ketika kalian menemukan masalah yang berkaitan dengan internet. Disuatu waktu I&amp;rsquo;m siBunglon menemukan masalah pada saat akan melakukan installasi package dari python-pip, paketnya tidak bisa diinstall tapi diwaktu itu I&amp;rsquo;m siBunglon menggunakan koneksi yang dikelola oleh orang lain dan mencoba browsing eh ternyata lancar jaya, mencoba menggunakan Wi-Fi dari device yang lain dan masalah tersebut tidak muncul.</description>
-      </item>
-    
-      <item>
-        <title>Error Generate Certificate SSL Menggunakan Let&#39;s Encrypt</title>
-        <link>https://sibunglon.com/2019/02/16/error-generate-certificate-ssl-menggunakan-lets-encrypt/</link>
-        <pubDate>Sat, 16 Feb 2019 17:19:08 +0700</pubDate>
-        <guid>https://sibunglon.com/2019/02/16/error-generate-certificate-ssl-menggunakan-lets-encrypt/</guid>
-        <description>Beberapa bulan yang lalu I&amp;rsquo;m siBunglon masih bisa generate SSL menggunakan Let&amp;rsquo;s Encrypt namun hari ini I&amp;rsquo;m siBunglon menemukan error ketika akan generate SSL lagi dan I&amp;rsquo;m siBunglon mendapatkan error message seperti berikut:
-[root@airgreen siBunglon]# certbot --nginx -d repo.lab.sibunglon.com Traceback (most recent call last): File &amp;quot;/bin/certbot&amp;quot;, line 9, in &amp;lt;module&amp;gt; load_entry_point(&#39;certbot==0.29.1&#39;, &#39;console_scripts&#39;, &#39;certbot&#39;)() File &amp;quot;/usr/lib/python2.7/site-packages/pkg_resources/__init__.py&amp;quot;, line 487, in load_entry_point return get_distribution(dist).load_entry_point(group, name) File &amp;quot;/usr/lib/python2.7/site-packages/pkg_resources/__init__.py&amp;quot;, line 2728, in load_entry_point return ep.load() File &amp;quot;/usr/lib/python2.</description>
-      </item>
-    
-      <item>
-        <title>Menggunakan Ansible Untuk Kirim Pemberitahuan</title>
-        <link>https://sibunglon.com/2019/01/20/menggunakan-ansible-untuk-kirim-pemberitahuan/</link>
-        <pubDate>Sun, 20 Jan 2019 18:11:43 +0700</pubDate>
-        <guid>https://sibunglon.com/2019/01/20/menggunakan-ansible-untuk-kirim-pemberitahuan/</guid>
-        <description>Ansible Kirim Pemberitahuan? Emang bisa? Kirimnya pakai apa? Sepertinya menarik.
+curl https://getcaddy.</description></item><item><title>Install Package From PIP Ignore Trusted Host</title><link>https://sibunglon.com/2019/02/26/install-package-from-pip-ignore-trusted-host/</link><pubDate>Tue, 26 Feb 2019 10:53:16 +0700</pubDate><guid>https://sibunglon.com/2019/02/26/install-package-from-pip-ignore-trusted-host/</guid><description>Connection is Power Yah connection is power dan jangan berpikir problems can occur due to connection ketika kalian menemukan masalah yang berkaitan dengan internet. Disuatu waktu I&amp;rsquo;m siBunglon menemukan masalah pada saat akan melakukan installasi package dari python-pip, paketnya tidak bisa diinstall tapi diwaktu itu I&amp;rsquo;m siBunglon menggunakan koneksi yang dikelola oleh orang lain dan mencoba browsing eh ternyata lancar jaya, mencoba menggunakan Wi-Fi dari device yang lain dan masalah tersebut tidak muncul.</description></item><item><title>Error Generate Certificate SSL Menggunakan Let's Encrypt</title><link>https://sibunglon.com/2019/02/16/error-generate-certificate-ssl-menggunakan-lets-encrypt/</link><pubDate>Sat, 16 Feb 2019 17:19:08 +0700</pubDate><guid>https://sibunglon.com/2019/02/16/error-generate-certificate-ssl-menggunakan-lets-encrypt/</guid><description>Beberapa bulan yang lalu I&amp;rsquo;m siBunglon masih bisa generate SSL menggunakan Let&amp;rsquo;s Encrypt namun hari ini I&amp;rsquo;m siBunglon menemukan error ketika akan generate SSL lagi dan I&amp;rsquo;m siBunglon mendapatkan error message seperti berikut:
+[root@airgreen siBunglon]# certbot --nginx -d repo.lab.sibunglon.com Traceback (most recent call last): File &amp;quot;/bin/certbot&amp;quot;, line 9, in &amp;lt;module&amp;gt; load_entry_point('certbot==0.29.1', 'console_scripts', 'certbot')() File &amp;quot;/usr/lib/python2.7/site-packages/pkg_resources/__init__.py&amp;quot;, line 487, in load_entry_point return get_distribution(dist).load_entry_point(group, name) File &amp;quot;/usr/lib/python2.7/site-packages/pkg_resources/__init__.py&amp;quot;, line 2728, in load_entry_point return ep.load() File &amp;quot;/usr/lib/python2.</description></item><item><title>Menggunakan Ansible Untuk Kirim Pemberitahuan</title><link>https://sibunglon.com/2019/01/20/menggunakan-ansible-untuk-kirim-pemberitahuan/</link><pubDate>Sun, 20 Jan 2019 18:11:43 +0700</pubDate><guid>https://sibunglon.com/2019/01/20/menggunakan-ansible-untuk-kirim-pemberitahuan/</guid><description>Ansible Kirim Pemberitahuan? Emang bisa? Kirimnya pakai apa? Sepertinya menarik.
 Melalui postingan beberapa hari yang lalu kita telah berkenalan secara kilat dengan ansible, saya kira postingan sebelumnya sudah cukup membantu dan mengantar kita untuk kepo kepo i si Ansible tersebut. Sesuai apa yang ada di web resminya, disana kita bisa lihat bahwa si Ansible mempunyai banyak module yang bisa digunakan bahkan dikembangkan.
-Diantara banyak module yang disediakan berdasarkan apa yang saya ketahui setelah berkenalan dengan si Ansible, ada 2 module yang bisa digunakan untuk mengirim pemberitahuan yaitu module sendgrid dan telegram.</description>
-      </item>
-    
-      <item>
-        <title>Install Aplikasi Linux Secara Massal? Pake Ansible Aja</title>
-        <link>https://sibunglon.com/2019/01/19/install-aplikasi-linux-secara-massal-pake-ansible-aja/</link>
-        <pubDate>Sat, 19 Jan 2019 21:24:37 +0700</pubDate>
-        <guid>https://sibunglon.com/2019/01/19/install-aplikasi-linux-secara-massal-pake-ansible-aja/</guid>
-        <description>Pada saat kita dihadapkan dengan pilihan harus melakukan installasi aplikasi secara berulang ataupun harus melakukan installasi aplikasi yang sama di beberapa server dan diwaktu itu juga kalian mau ngelakuin sesuatu, tentu hal tersebut bikin mumet atau apalah. Bayangkan jika sekarang kalian disuruh melakukan hal tersebut untuk 15 sampai 50 server, mabok dan bete auto mode ON hihihi :v Apalagi kalau sistem operasinya berbeda beda, mungkin baru dengar aja seketika mabok dan bete udah auto ganti ke mode ON.</description>
-      </item>
-    
-      <item>
-        <title>Berkenalan Dengan Ansible</title>
-        <link>https://sibunglon.com/2019/01/19/berkenalan-dengan-ansible/</link>
-        <pubDate>Sat, 19 Jan 2019 11:53:28 +0700</pubDate>
-        <guid>https://sibunglon.com/2019/01/19/berkenalan-dengan-ansible/</guid>
-        <description>Ansible? Apa itu ansible? Untuk apa dia datang?
+Diantara banyak module yang disediakan berdasarkan apa yang saya ketahui setelah berkenalan dengan si Ansible, ada 2 module yang bisa digunakan untuk mengirim pemberitahuan yaitu module sendgrid dan telegram.</description></item><item><title>Install Aplikasi Linux Secara Massal? Pake Ansible Aja</title><link>https://sibunglon.com/2019/01/19/install-aplikasi-linux-secara-massal-pake-ansible-aja/</link><pubDate>Sat, 19 Jan 2019 21:24:37 +0700</pubDate><guid>https://sibunglon.com/2019/01/19/install-aplikasi-linux-secara-massal-pake-ansible-aja/</guid><description>Pada saat kita dihadapkan dengan pilihan harus melakukan installasi aplikasi secara berulang ataupun harus melakukan installasi aplikasi yang sama di beberapa server dan diwaktu itu juga kalian mau ngelakuin sesuatu, tentu hal tersebut bikin mumet atau apalah. Bayangkan jika sekarang kalian disuruh melakukan hal tersebut untuk 15 sampai 50 server, mabok dan bete auto mode ON hihihi :v Apalagi kalau sistem operasinya berbeda beda, mungkin baru dengar aja seketika mabok dan bete udah auto ganti ke mode ON.</description></item><item><title>Berkenalan Dengan Ansible</title><link>https://sibunglon.com/2019/01/19/berkenalan-dengan-ansible/</link><pubDate>Sat, 19 Jan 2019 11:53:28 +0700</pubDate><guid>https://sibunglon.com/2019/01/19/berkenalan-dengan-ansible/</guid><description>Ansible? Apa itu ansible? Untuk apa dia datang?
 Daripada banyak nanya hayuuuk berkenalan aja dengan ansible.
 Ansible adalah tool automation yang dimiliki oleh perusahaan yang bergerak dibidang teknologi yaitu RedHat. Ansible adalah perangkat lunak open source yang mengotomatiskan pemasangan software, manajemen konfigurasi, dan beberapa tugas lainnya. Ansible terhubung dengan client remotenya menggunakan ssh.
-Apa Kelebihan Ansible? Karena beberapa hari belakangan ini saya sebagai siBunglon telah mencobanya, maka dari itu siBunglon paparkan kelebihan penggunaaan ansible versinya sendiri :v hihihi</description>
-      </item>
-    
-      <item>
-        <title>Menonaktifkan Autentikasi Password Pada Login SSH</title>
-        <link>https://sibunglon.com/2018/12/27/menonaktifkan-autentikasi-password-pada-login-ssh/</link>
-        <pubDate>Thu, 27 Dec 2018 01:29:42 +0700</pubDate>
-        <guid>https://sibunglon.com/2018/12/27/menonaktifkan-autentikasi-password-pada-login-ssh/</guid>
-        <description>Login SSH Tanpa Password Plain Text? Login ssh tanpa password plain text? emang bisa? terus loginnya pake apa? cuman modal username aja?
-Ya, kali ini labnya tentang gimana caranya agar nantinya kalian dapat login ke server masing-masing tapi gak pakai password plain text lagi. Ya itu bisa saja terjadi, setelah menonaktifkan autentikasi password nanti kita login ke server masing-masing menggunakan private keynya sesuai pada lab sebelumnya. Jika autentikasi password plain text pada login ssh di nonaktifkan, agar bisa login ke server yang dibutuhkan cuman private key, username, ip atau domain server yang dituju.</description>
-      </item>
-    
-      <item>
-        <title>Akses Server Dengan Autentikasi Private Key SSH</title>
-        <link>https://sibunglon.com/2018/12/25/akses-server-dengan-autentikasi-private-key-ssh/</link>
-        <pubDate>Tue, 25 Dec 2018 04:33:58 +0700</pubDate>
-        <guid>https://sibunglon.com/2018/12/25/akses-server-dengan-autentikasi-private-key-ssh/</guid>
-        <description>Akses Server Dengan Autentikasi Private Key Ssh Login Ke Server Dengan Private Key? Emang bisa? Ya itu bisa.
-Umumnya server diakses menggunakan ssh dengan autentikasi password plain text, jika cuman akses 1 server dengan autentikasi password plain text itu masih biasa namun jika mengontrol banyak server dan passwordnya berbeda-beda, apakah anda masih siap mengingatnya? Apakah anda yakin ingin mencatatnya? Jika anda mencatatnya anda bisa saja masih repot karena harus mendefinisikan satu per satu hostname server beserta passwordnya.</description>
-      </item>
-    
-      <item>
-        <title>Hak Akses Root Dengan Sudo Tanpa Password</title>
-        <link>https://sibunglon.com/2018/12/25/hak-akses-root-dengan-sudo-tanpa-password/</link>
-        <pubDate>Tue, 25 Dec 2018 01:31:24 +0700</pubDate>
-        <guid>https://sibunglon.com/2018/12/25/hak-akses-root-dengan-sudo-tanpa-password/</guid>
-        <description>Sudo Tanpa Password? Hmmm kelihatannya menarik.
+Apa Kelebihan Ansible? Karena beberapa hari belakangan ini saya sebagai siBunglon telah mencobanya, maka dari itu siBunglon paparkan kelebihan penggunaaan ansible versinya sendiri :v hihihi</description></item><item><title>Menonaktifkan Autentikasi Password Pada Login SSH</title><link>https://sibunglon.com/2018/12/27/menonaktifkan-autentikasi-password-pada-login-ssh/</link><pubDate>Thu, 27 Dec 2018 01:29:42 +0700</pubDate><guid>https://sibunglon.com/2018/12/27/menonaktifkan-autentikasi-password-pada-login-ssh/</guid><description>Login SSH Tanpa Password Plain Text? Login ssh tanpa password plain text? emang bisa? terus loginnya pake apa? cuman modal username aja?
+Ya, kali ini labnya tentang gimana caranya agar nantinya kalian dapat login ke server masing-masing tapi gak pakai password plain text lagi. Ya itu bisa saja terjadi, setelah menonaktifkan autentikasi password nanti kita login ke server masing-masing menggunakan private keynya sesuai pada lab sebelumnya. Jika autentikasi password plain text pada login ssh di nonaktifkan, agar bisa login ke server yang dibutuhkan cuman private key, username, ip atau domain server yang dituju.</description></item><item><title>Akses Server Dengan Autentikasi Private Key SSH</title><link>https://sibunglon.com/2018/12/25/akses-server-dengan-autentikasi-private-key-ssh/</link><pubDate>Tue, 25 Dec 2018 04:33:58 +0700</pubDate><guid>https://sibunglon.com/2018/12/25/akses-server-dengan-autentikasi-private-key-ssh/</guid><description>Akses Server Dengan Autentikasi Private Key Ssh Login Ke Server Dengan Private Key? Emang bisa? Ya itu bisa.
+Umumnya server diakses menggunakan ssh dengan autentikasi password plain text, jika cuman akses 1 server dengan autentikasi password plain text itu masih biasa namun jika mengontrol banyak server dan passwordnya berbeda-beda, apakah anda masih siap mengingatnya? Apakah anda yakin ingin mencatatnya? Jika anda mencatatnya anda bisa saja masih repot karena harus mendefinisikan satu per satu hostname server beserta passwordnya.</description></item><item><title>Hak Akses Root Dengan Sudo Tanpa Password</title><link>https://sibunglon.com/2018/12/25/hak-akses-root-dengan-sudo-tanpa-password/</link><pubDate>Tue, 25 Dec 2018 01:31:24 +0700</pubDate><guid>https://sibunglon.com/2018/12/25/hak-akses-root-dengan-sudo-tanpa-password/</guid><description>Sudo Tanpa Password? Hmmm kelihatannya menarik.
 Ya emang menarik, agar user tidak perlu memasukkan password jika ingin mendapatkan hak akses root cukup tambahkan si user ke sudoers.
 Bermain dengan Sudoers 1) Edit file sudoers dengan command nano /etc/sudoers.
 2) Setelah berhasil mengakses file sudoers, sekarang tambahkan sintaks berikut:
-sibunglon ALL=(ALL) NOPASSWD:ALL  Note: Kata sibunglon diganti sesuai user yang akan diberikan izin menggunakan sudo tanpa password.
- Sekarang user sibunglon (user sesuai yang anda daftarkan) dapat menggunakan command sudo tanpa password.</description>
-      </item>
-    
-      <item>
-        <title>Menonaktifkan Plugin Terminal Dari Cockpit</title>
-        <link>https://sibunglon.com/2018/12/23/menonaktifkan-plugin-terminal-dari-cockpit/</link>
-        <pubDate>Sun, 23 Dec 2018 00:14:35 +0700</pubDate>
-        <guid>https://sibunglon.com/2018/12/23/menonaktifkan-plugin-terminal-dari-cockpit/</guid>
-        <description>Cockpit Apa sih cockpit itu?
+sibunglon ALL=(ALL) NOPASSWD:ALL Note: Kata sibunglon diganti sesuai user yang akan diberikan izin menggunakan sudo tanpa password.
+Sekarang user sibunglon (user sesuai yang anda daftarkan) dapat menggunakan command sudo tanpa password.</description></item><item><title>Menonaktifkan Plugin Terminal Dari Cockpit</title><link>https://sibunglon.com/2018/12/23/menonaktifkan-plugin-terminal-dari-cockpit/</link><pubDate>Sun, 23 Dec 2018 00:14:35 +0700</pubDate><guid>https://sibunglon.com/2018/12/23/menonaktifkan-plugin-terminal-dari-cockpit/</guid><description>Cockpit Apa sih cockpit itu?
 Pertanyaan sejenis itu sudah di tulis pada lab sebelumnya, karena di lab sebelumnya kita awali perkenalan dulu :D Kali aja jatuh cinta sama teman baru, kan gak enak kalau sebelumnya gak kenalan dulu :D
-Oh ya mungkin ada yang kepikiran tentang keamanan server jika memasang cockpit di server dan memberikan akses role user yang dapat mengontrol systemD, karena secara default cockpit mengaktifkan plugin terminal. Dengan adanya terminal/shell, user yang login ke cockpit dengan role super user atau sudo bisa saja melakukan diluar sepengetahuan anda.</description>
-      </item>
-    
-      <item>
-        <title>Manajemen Linux Server Menggunakan Cockpit</title>
-        <link>https://sibunglon.com/2018/12/18/manajemen-linux-server-menggunakan-cockpit/</link>
-        <pubDate>Tue, 18 Dec 2018 17:30:24 +0700</pubDate>
-        <guid>https://sibunglon.com/2018/12/18/manajemen-linux-server-menggunakan-cockpit/</guid>
-        <description>Cockpit? Apa sih cockpit itu? Bukannya cockpit itu ruang khususnya pilot?
+Oh ya mungkin ada yang kepikiran tentang keamanan server jika memasang cockpit di server dan memberikan akses role user yang dapat mengontrol systemD, karena secara default cockpit mengaktifkan plugin terminal. Dengan adanya terminal/shell, user yang login ke cockpit dengan role super user atau sudo bisa saja melakukan diluar sepengetahuan anda.</description></item><item><title>Manajemen Linux Server Menggunakan Cockpit</title><link>https://sibunglon.com/2018/12/18/manajemen-linux-server-menggunakan-cockpit/</link><pubDate>Tue, 18 Dec 2018 17:30:24 +0700</pubDate><guid>https://sibunglon.com/2018/12/18/manajemen-linux-server-menggunakan-cockpit/</guid><description>Cockpit? Apa sih cockpit itu? Bukannya cockpit itu ruang khususnya pilot?
 Cockpit adalah sebuah aplikasi adminstrasi server berbasi web. Dengan cockpit, grafik penggunaan cpu, memory, network, hdd dapat dilihat langsung pada saat autentikasi user cockpit berhasil serta dapat mengontrol service yang dijalankan melalui SystemD.
-Cockpit berjalan di port 9090, tidak membutuhkan web server jadi jika anda belum menginstall web server apapun, itu tidak menjadi masalah, serta resource yang digunakan cockpit sangat sedikit karena service cockpit akan dijalankan secara otomatis jika anda mencoba mengaksesnya melalui web page dan setelah beberapa menit setelah anda logout secara otomatis service cockpit akan di matikan.</description>
-      </item>
-    
-      <item>
-        <title>Berkenalan Dengan Let&#39;s Encrypt SSL Gratis Untuk Nginx</title>
-        <link>https://sibunglon.com/2018/12/16/berkenalan-dengan-lets-encrypt-ssl-gratis-untuk-nginx/</link>
-        <pubDate>Sun, 16 Dec 2018 07:51:58 +0700</pubDate>
-        <guid>https://sibunglon.com/2018/12/16/berkenalan-dengan-lets-encrypt-ssl-gratis-untuk-nginx/</guid>
-        <description>Let&amp;rsquo;s Encrypt? Apa sih let&amp;rsquo;s encrypt itu?
-Let&amp;rsquo;s encrypt adalah certificate Authority (CA) atau otoritas sertifikat yang menyediakan cara mudah untuk mendapatkan dan menginstall SSL pada web server, sehingga memungkinkan web server anda terenskripsi (HTTPS). Merupakan layanan yang disediakan oleh Internet Security Research Group (ISRG). ISRG memberikan dan mengaktifkan HTTPS secara gratis dengan alasan ingin menciptakan web yang lebih aman dan menjaga privasi. Sebenarnya untuk mendapatkan dan memasang SSL itu memiliki biaya sendiri namun jika untuk kebutuhan pengembangan, ngoprek / ngelab, let&amp;rsquo;s encrypt ini menjadi solusi.</description>
-      </item>
-    
-      <item>
-        <title>Membuat Subdomain Dengan Nginx</title>
-        <link>https://sibunglon.com/2018/12/14/membuat-subdomain-dengan-nginx/</link>
-        <pubDate>Fri, 14 Dec 2018 11:03:50 +0700</pubDate>
-        <guid>https://sibunglon.com/2018/12/14/membuat-subdomain-dengan-nginx/</guid>
-        <description>Subdomain? Subdomain adalah bagian dari nama domain induk yang memiliki ruangan sendiri (direktori), mengacu ke suatu alamat fisik. Contohnya subdomain blog.sibunglon.com acuannya yaitu sibunglon.com. Jika menggunakan nginx, untuk membuat subdomain sama seperti pada lab sebelumnya yang Bermain Dengan Nginx. Mudahkan kalau caranya cuman gitu? :D Tapi jika masih ada yang bingung, tenang labnya masih saya bagikan.
+Cockpit berjalan di port 9090, tidak membutuhkan web server jadi jika anda belum menginstall web server apapun, itu tidak menjadi masalah, serta resource yang digunakan cockpit sangat sedikit karena service cockpit akan dijalankan secara otomatis jika anda mencoba mengaksesnya melalui web page dan setelah beberapa menit setelah anda logout secara otomatis service cockpit akan di matikan.</description></item><item><title>Berkenalan Dengan Let's Encrypt SSL Gratis Untuk Nginx</title><link>https://sibunglon.com/2018/12/16/berkenalan-dengan-lets-encrypt-ssl-gratis-untuk-nginx/</link><pubDate>Sun, 16 Dec 2018 07:51:58 +0700</pubDate><guid>https://sibunglon.com/2018/12/16/berkenalan-dengan-lets-encrypt-ssl-gratis-untuk-nginx/</guid><description>Let&amp;rsquo;s Encrypt? Apa sih let&amp;rsquo;s encrypt itu?
+Let&amp;rsquo;s encrypt adalah certificate Authority (CA) atau otoritas sertifikat yang menyediakan cara mudah untuk mendapatkan dan menginstall SSL pada web server, sehingga memungkinkan web server anda terenskripsi (HTTPS). Merupakan layanan yang disediakan oleh Internet Security Research Group (ISRG). ISRG memberikan dan mengaktifkan HTTPS secara gratis dengan alasan ingin menciptakan web yang lebih aman dan menjaga privasi. Sebenarnya untuk mendapatkan dan memasang SSL itu memiliki biaya sendiri namun jika untuk kebutuhan pengembangan, ngoprek / ngelab, let&amp;rsquo;s encrypt ini menjadi solusi.</description></item><item><title>Membuat Subdomain Dengan Nginx</title><link>https://sibunglon.com/2018/12/14/membuat-subdomain-dengan-nginx/</link><pubDate>Fri, 14 Dec 2018 11:03:50 +0700</pubDate><guid>https://sibunglon.com/2018/12/14/membuat-subdomain-dengan-nginx/</guid><description>Subdomain? Subdomain adalah bagian dari nama domain induk yang memiliki ruangan sendiri (direktori), mengacu ke suatu alamat fisik. Contohnya subdomain blog.sibunglon.com acuannya yaitu sibunglon.com. Jika menggunakan nginx, untuk membuat subdomain sama seperti pada lab sebelumnya yang Bermain Dengan Nginx. Mudahkan kalau caranya cuman gitu? :D Tapi jika masih ada yang bingung, tenang labnya masih saya bagikan.
 Pada lab ini saya asumsikan:
- Domain induk = sibunglon.com Subdomain = blog.sibunglon.com master konfigurasi berada di direktori /sibunglonlabs/config/nginx File konfigurasi domain induk sibunglonlabs.</description>
-      </item>
-    
-      <item>
-        <title>Sertifikat Repository Red Hat Kadaluarsa Pada VM Microsoft Azure</title>
-        <link>https://sibunglon.com/2018/12/12/sertifikat-repository-red-hat-kadaluarsa-pada-vm-microsoft-azure/</link>
-        <pubDate>Wed, 12 Dec 2018 10:28:20 +0700</pubDate>
-        <guid>https://sibunglon.com/2018/12/12/sertifikat-repository-red-hat-kadaluarsa-pada-vm-microsoft-azure/</guid>
-        <description>Jika anda menggunakan VM Red Hat versi lama di Microsoft Azure, kadang anda mendapatkan masalah “SSL peer rejected your certificate as expired” jika ingin menginstall paket baru ataupun mengupate paket-paket. Itu terjadi karena sertifikat repositori sudah kadaluarsa, untuk memecahkan masalah tersebut cukup gunakan command
+Domain induk = sibunglon.com Subdomain = blog.sibunglon.com master konfigurasi berada di direktori /sibunglonlabs/config/nginx File konfigurasi domain induk sibunglonlabs.</description></item><item><title>Sertifikat Repository Red Hat Kadaluarsa Pada VM Microsoft Azure</title><link>https://sibunglon.com/2018/12/12/sertifikat-repository-red-hat-kadaluarsa-pada-vm-microsoft-azure/</link><pubDate>Wed, 12 Dec 2018 10:28:20 +0700</pubDate><guid>https://sibunglon.com/2018/12/12/sertifikat-repository-red-hat-kadaluarsa-pada-vm-microsoft-azure/</guid><description>Jika anda menggunakan VM Red Hat versi lama di Microsoft Azure, kadang anda mendapatkan masalah “SSL peer rejected your certificate as expired” jika ingin menginstall paket baru ataupun mengupate paket-paket. Itu terjadi karena sertifikat repositori sudah kadaluarsa, untuk memecahkan masalah tersebut cukup gunakan command
 yum update -y --disablerepo=* --enablerepo=rhui-microsoft-* rhui-azure-rhel7
-Setelah itu sekarang anda dapat menginstall atau update paket di Red Hat anda seperti yang biasa kamu lakukan.</description>
-      </item>
-    
-      <item>
-        <title>PIP Python2 Error</title>
-        <link>https://sibunglon.com/2018/12/11/pip-python2-error/</link>
-        <pubDate>Tue, 11 Dec 2018 21:34:18 +0700</pubDate>
-        <guid>https://sibunglon.com/2018/12/11/pip-python2-error/</guid>
-        <description>Pip di Python2 Error? Traceback (most recent call last): File &amp;quot;/usr/bin/pip&amp;quot;, line 9, in &amp;lt;module&amp;gt; from pip import main ImportError: cannot import name main Gak usah panik, cukup jalankan command berikut tapi pastikan terlebih dahulu sekarang sudah jadi super user (root)
-python -m pip uninstall pip &amp;amp;&amp;amp; apt install python-pip --reinstall </description>
-      </item>
-    
-      <item>
-        <title>Python Tidak Memiliki Objek SSL_ST_INIT</title>
-        <link>https://sibunglon.com/2018/12/10/python-tidak-memiliki-objek-ssl_st_init/</link>
-        <pubDate>Mon, 10 Dec 2018 23:47:30 +0700</pubDate>
-        <guid>https://sibunglon.com/2018/12/10/python-tidak-memiliki-objek-ssl_st_init/</guid>
-        <description>Jika akan menghubungkan perangkat anda dengan perangkat lain menggunakan ansible namun ketemu error ERROR! Unexpected Exception: &amp;lsquo;module&amp;rsquo; object has no attribute &amp;lsquo;SSL_ST_INIT&amp;rsquo;, sebenarnya itu hanya membutuhkan paket pyOpenSSL yang dapat diinstall dengan command pip install pyOpenSSL</description>
-      </item>
-    
-      <item>
-        <title>Peringatan Dependensi Cryptography</title>
-        <link>https://sibunglon.com/2018/12/10/peringatan-dependensi-cryptography/</link>
-        <pubDate>Mon, 10 Dec 2018 23:41:25 +0700</pubDate>
-        <guid>https://sibunglon.com/2018/12/10/peringatan-dependensi-cryptography/</guid>
-        <description>Requests Dependency Warning: Old version of cryptography Jika anda mendapatkan sebuah masalah jangan panik, apalagi ketemu error yang similiar dari judul tulisan itu berarti saat ini disistem anda menggunakan cryptography versi lama silahkan update dengan command pip install --upgrade cryptography</description>
-      </item>
-    
-      <item>
-        <title>Kustom Konfigurasi dan Ganti Direktori Nginx</title>
-        <link>https://sibunglon.com/2018/12/10/kustom-konfigurasi-dan-ganti-direktori-nginx/</link>
-        <pubDate>Mon, 10 Dec 2018 17:45:30 +0700</pubDate>
-        <guid>https://sibunglon.com/2018/12/10/kustom-konfigurasi-dan-ganti-direktori-nginx/</guid>
-        <description>Bermain Dengan Nginx Pada saat ini sudah menjadi hal biasa jika seseorang ingin memindahkan file konfigurasinya agar lebih mudah dimaintenance. Salah satunya yaitu memidahkan direktori root html nginx. Di nginx, untuk memindahkan direktori root html dan memidahkan konfigurasinya cukup dengan command-command berikut.
+Setelah itu sekarang anda dapat menginstall atau update paket di Red Hat anda seperti yang biasa kamu lakukan.</description></item><item><title>PIP Python2 Error</title><link>https://sibunglon.com/2018/12/11/pip-python2-error/</link><pubDate>Tue, 11 Dec 2018 21:34:18 +0700</pubDate><guid>https://sibunglon.com/2018/12/11/pip-python2-error/</guid><description>Pip di Python2 Error? Traceback (most recent call last): File &amp;quot;/usr/bin/pip&amp;quot;, line 9, in &amp;lt;module&amp;gt; from pip import main ImportError: cannot import name main Gak usah panik, cukup jalankan command berikut tapi pastikan terlebih dahulu sekarang sudah jadi super user (root)
+python -m pip uninstall pip &amp;amp;&amp;amp; apt install python-pip --reinstall</description></item><item><title>Python Tidak Memiliki Objek SSL_ST_INIT</title><link>https://sibunglon.com/2018/12/10/python-tidak-memiliki-objek-ssl_st_init/</link><pubDate>Mon, 10 Dec 2018 23:47:30 +0700</pubDate><guid>https://sibunglon.com/2018/12/10/python-tidak-memiliki-objek-ssl_st_init/</guid><description>Jika akan menghubungkan perangkat anda dengan perangkat lain menggunakan ansible namun ketemu error ERROR! Unexpected Exception: &amp;lsquo;module&amp;rsquo; object has no attribute &amp;lsquo;SSL_ST_INIT&amp;rsquo;, sebenarnya itu hanya membutuhkan paket pyOpenSSL yang dapat diinstall dengan command pip install pyOpenSSL</description></item><item><title>Peringatan Dependensi Cryptography</title><link>https://sibunglon.com/2018/12/10/peringatan-dependensi-cryptography/</link><pubDate>Mon, 10 Dec 2018 23:41:25 +0700</pubDate><guid>https://sibunglon.com/2018/12/10/peringatan-dependensi-cryptography/</guid><description>Requests Dependency Warning: Old version of cryptography Jika anda mendapatkan sebuah masalah jangan panik, apalagi ketemu error yang similiar dari judul tulisan itu berarti saat ini disistem anda menggunakan cryptography versi lama silahkan update dengan command pip install --upgrade cryptography</description></item><item><title>Kustom Konfigurasi dan Ganti Direktori Nginx</title><link>https://sibunglon.com/2018/12/10/kustom-konfigurasi-dan-ganti-direktori-nginx/</link><pubDate>Mon, 10 Dec 2018 17:45:30 +0700</pubDate><guid>https://sibunglon.com/2018/12/10/kustom-konfigurasi-dan-ganti-direktori-nginx/</guid><description>Bermain Dengan Nginx Pada saat ini sudah menjadi hal biasa jika seseorang ingin memindahkan file konfigurasinya agar lebih mudah dimaintenance. Salah satunya yaitu memidahkan direktori root html nginx. Di nginx, untuk memindahkan direktori root html dan memidahkan konfigurasinya cukup dengan command-command berikut.
 Pada Lab ini saya asumsikan :
- master konfigurasi berada di direktori /sibunglonlabs/config/nginx direktori root berada di /sibunglonlabs/web  1) Gunakan command berikut untuk memindahkan master konfig nginx ke direktori yang anda ingin, yang mudah diakses oleh anda namun susah ditemui oleh orang lain.</description>
-      </item>
-    
-      <item>
-        <title>Nginx Tidak Bisa Diakses</title>
-        <link>https://sibunglon.com/2018/12/10/nginx-tidak-bisa-diakses/</link>
-        <pubDate>Mon, 10 Dec 2018 13:40:57 +0700</pubDate>
-        <guid>https://sibunglon.com/2018/12/10/nginx-tidak-bisa-diakses/</guid>
-        <description>Nginx di CentOS atau RHEL tidak bisa diakses? Service nginx aktif? Servernya aktif? Akses dari localhost bisa? Jika semua jawabannya YA, mungkin firewall di system anda sedang aktif namun trafik protokol HTTP dan HTTPS belum diizinkan oleh perangkat yang lain.
+master konfigurasi berada di direktori /sibunglonlabs/config/nginx direktori root berada di /sibunglonlabs/web 1) Gunakan command berikut untuk memindahkan master konfig nginx ke direktori yang anda ingin, yang mudah diakses oleh anda namun susah ditemui oleh orang lain.</description></item><item><title>Nginx Tidak Bisa Diakses</title><link>https://sibunglon.com/2018/12/10/nginx-tidak-bisa-diakses/</link><pubDate>Mon, 10 Dec 2018 13:40:57 +0700</pubDate><guid>https://sibunglon.com/2018/12/10/nginx-tidak-bisa-diakses/</guid><description>Nginx di CentOS atau RHEL tidak bisa diakses? Service nginx aktif? Servernya aktif? Akses dari localhost bisa? Jika semua jawabannya YA, mungkin firewall di system anda sedang aktif namun trafik protokol HTTP dan HTTPS belum diizinkan oleh perangkat yang lain.
 Untuk mengizinkan trafik protokol HTTP, gunakan command
 firewall-cmd --permanent --zone=public --add-service=http Sedangkan untuk mengizinkan trafik protokol HTTPS, gunakan command
-firewall-cmd --permanent --zone=public --add-service=https Setelah diizinkan, firewall wajib direload agar update firewall dapat diterapkan</description>
-      </item>
-    
-      <item>
-        <title>Berkenalan Dengan Nginx di RHEL/CentOS</title>
-        <link>https://sibunglon.com/2018/12/10/berkenalan-dengan-nginx-di-rhel/centos/</link>
-        <pubDate>Mon, 10 Dec 2018 07:44:24 +0700</pubDate>
-        <guid>https://sibunglon.com/2018/12/10/berkenalan-dengan-nginx-di-rhel/centos/</guid>
-        <description>Nginx? Apa sih nginx itu? Fungsinya buat apa? Mungkin itu yang terlintas dipikirian beberapa orang jika berkenalan dengan hal baru. Maka dari itu pada kali ini yang akan dibahas pada Lab ini yaitu berkenalan dan bagaimana memasang nginx.
-Nginx, banyak orang membicarakannya meskipun salah dipelafalannya. Dulu saya juga salah melafakannya namun setelah diruqyah sama m1m1n atau yang dikenal dengan Andy Hidayat, sekarang gak salah pelafalan lagi :D . Nginx dibaca &amp;ldquo;engine X&amp;rdquo; bukan &amp;ldquo;nging X&amp;rdquo;.</description>
-      </item>
-    
-      <item>
-        <title>Share Pc/Laptop Lokal Ke Public</title>
-        <link>https://sibunglon.com/2018/12/07/share-pc/laptop-lokal-ke-public/</link>
-        <pubDate>Fri, 07 Dec 2018 07:44:24 +0700</pubDate>
-        <guid>https://sibunglon.com/2018/12/07/share-pc/laptop-lokal-ke-public/</guid>
-        <description>Ngrok Ngrok merupakan salah satu software yang dapat membuat sebuah tunnel atau terowongan yang aman melalui jalur internet agar dapat mengakses pc/laptop lokal tanpa harus memiliki ip publik sendiri.
+firewall-cmd --permanent --zone=public --add-service=https Setelah diizinkan, firewall wajib direload agar update firewall dapat diterapkan</description></item><item><title>Berkenalan Dengan Nginx di RHEL/CentOS</title><link>https://sibunglon.com/2018/12/10/berkenalan-dengan-nginx-di-rhel/centos/</link><pubDate>Mon, 10 Dec 2018 07:44:24 +0700</pubDate><guid>https://sibunglon.com/2018/12/10/berkenalan-dengan-nginx-di-rhel/centos/</guid><description>Nginx? Apa sih nginx itu? Fungsinya buat apa? Mungkin itu yang terlintas dipikirian beberapa orang jika berkenalan dengan hal baru. Maka dari itu pada kali ini yang akan dibahas pada Lab ini yaitu berkenalan dan bagaimana memasang nginx.
+Nginx, banyak orang membicarakannya meskipun salah dipelafalannya. Dulu saya juga salah melafakannya namun setelah diruqyah sama m1m1n atau yang dikenal dengan Andy Hidayat, sekarang gak salah pelafalan lagi :D . Nginx dibaca &amp;ldquo;engine X&amp;rdquo; bukan &amp;ldquo;nging X&amp;rdquo;.</description></item><item><title>Share Pc/Laptop Lokal Ke Public</title><link>https://sibunglon.com/2018/12/07/share-pc/laptop-lokal-ke-public/</link><pubDate>Fri, 07 Dec 2018 07:44:24 +0700</pubDate><guid>https://sibunglon.com/2018/12/07/share-pc/laptop-lokal-ke-public/</guid><description>Ngrok Ngrok merupakan salah satu software yang dapat membuat sebuah tunnel atau terowongan yang aman melalui jalur internet agar dapat mengakses pc/laptop lokal tanpa harus memiliki ip publik sendiri.
 Jika masih ingin berkenalan lebih lanjut, bisa di stalking ke official sitenya :D https://ngrok.com
 Langkah - langkah menggunakan ngrok:
 1) Buka shell linux dan login sebagai super user, kemudian download ngrok menggunakan command
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
-2) Ekstrak file ngrok yang telah didownload dengan command</description>
-      </item>
-    
-      <item>
-        <title>Lindungi Web Server Apache2 Dengan SSL Debian 8</title>
-        <link>https://sibunglon.com/2018/12/01/lindungi-web-server-apache2-dengan-ssl-debian-8/</link>
-        <pubDate>Sat, 01 Dec 2018 15:14:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2018/12/01/lindungi-web-server-apache2-dengan-ssl-debian-8/</guid>
-        <description>Pengertian  HTTPS juga disebut HTTP melalui TLS, HTTP melalui SSL, dan HTTP Secure adalah protokol untuk komunikasi yang aman melalui jaringan komputer yang banyak digunakan di Internet. HTTPS terdiri dari komunikasi melalui Hypertext Transfer Protocol (HTTP) dalam koneksi yang terenkripsi dengan Transport Layer Security atau pendahulunya Secure Sockets Layer. Fungsi utama untuk HTTPS adalah autentikasi dari website yang dikunjungi dan perlindungan privasi dan integritas data yang dipertukarkan. SSL (Secure Sockets Layer) adalah teknologi keamanan standar untuk membangun link yang dienkripsi antara web server dan browser.</description>
-      </item>
-    
-      <item>
-        <title>Gerakan Multi-Touch MacBook di Linux</title>
-        <link>https://sibunglon.com/2018/11/06/gerakan-multi-touch-macbook-di-linux/</link>
-        <pubDate>Tue, 06 Nov 2018 15:14:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2018/11/06/gerakan-multi-touch-macbook-di-linux/</guid>
-        <description>Jika Anda pernah menggunakan MacBook, pasti tahu betapa menyenangkan dan bermanfaatnya gerakan trackpad untuk mengubah desktop, menampilkan semua jendela yang terbuka, dan pinch-to-zoom.
+2) Ekstrak file ngrok yang telah didownload dengan command</description></item><item><title>Lindungi Web Server Apache2 Dengan SSL Debian 8</title><link>https://sibunglon.com/2018/12/01/lindungi-web-server-apache2-dengan-ssl-debian-8/</link><pubDate>Sat, 01 Dec 2018 15:14:00 +0000</pubDate><guid>https://sibunglon.com/2018/12/01/lindungi-web-server-apache2-dengan-ssl-debian-8/</guid><description>Pengertian HTTPS juga disebut HTTP melalui TLS, HTTP melalui SSL, dan HTTP Secure adalah protokol untuk komunikasi yang aman melalui jaringan komputer yang banyak digunakan di Internet. HTTPS terdiri dari komunikasi melalui Hypertext Transfer Protocol (HTTP) dalam koneksi yang terenkripsi dengan Transport Layer Security atau pendahulunya Secure Sockets Layer. Fungsi utama untuk HTTPS adalah autentikasi dari website yang dikunjungi dan perlindungan privasi dan integritas data yang dipertukarkan. SSL (Secure Sockets Layer) adalah teknologi keamanan standar untuk membangun link yang dienkripsi antara web server dan browser.</description></item><item><title>Gerakan Multi-Touch MacBook di Linux</title><link>https://sibunglon.com/2018/11/06/gerakan-multi-touch-macbook-di-linux/</link><pubDate>Tue, 06 Nov 2018 15:14:00 +0000</pubDate><guid>https://sibunglon.com/2018/11/06/gerakan-multi-touch-macbook-di-linux/</guid><description>Jika Anda pernah menggunakan MacBook, pasti tahu betapa menyenangkan dan bermanfaatnya gerakan trackpad untuk mengubah desktop, menampilkan semua jendela yang terbuka, dan pinch-to-zoom.
 Di linux anda juga menggunakan fitur ini dengan bantuan aplikasi fusuma, berikut installasi dan konfigurasinya.
 1. Berikan izin untuk membaca perangkat touchpad
 sudo gpasswd -a $USER input
-Install libinput-tools  sudo apt-get install libinput-tools
+Install libinput-tools sudo apt-get install libinput-tools
 3. Install Fusuma
 sudo gem install fusuma
 4. Instal xdotool (opsional)
-sudo apt-get install xdotool</description>
-      </item>
-    
-      <item>
-        <title>Installasi Caddy Server di Sistem Operasi Windows</title>
-        <link>https://sibunglon.com/2018/10/28/installasi-caddy-server-di-sistem-operasi-windows/</link>
-        <pubDate>Sun, 28 Oct 2018 21:20:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2018/10/28/installasi-caddy-server-di-sistem-operasi-windows/</guid>
-        <description>Setelah berkenalan dengan si Caddy Server pada beberapa hari yang lalu, sekarang waktunya bermain dengan si Caddy Server.
+sudo apt-get install xdotool</description></item><item><title>Installasi Caddy Server di Sistem Operasi Windows</title><link>https://sibunglon.com/2018/10/28/installasi-caddy-server-di-sistem-operasi-windows/</link><pubDate>Sun, 28 Oct 2018 21:20:00 +0000</pubDate><guid>https://sibunglon.com/2018/10/28/installasi-caddy-server-di-sistem-operasi-windows/</guid><description>Setelah berkenalan dengan si Caddy Server pada beberapa hari yang lalu, sekarang waktunya bermain dengan si Caddy Server.
 Apa Saja yang dibutuhkan? Pastikan anda telah memiliki file master Caddy Server, jika belum silahkan dari situs resminya.
 Menjalankan Caddy Server pada sistem operasi windows
- Buka file hasil download Caddy Server  Copy semua isi dari file master tersebut  Tentukan path Caddy, buat folder baru yang akan menampung semua file yang telah dicopy kemudian paste di folder tersebut  Untuk menjalankan Caddy Server pada sistem operasi windows cukup klik 2 kali pada file caddy.</description>
-      </item>
-    
-      <item>
-        <title>Berkenalan Dengan Caddy Server</title>
-        <link>https://sibunglon.com/2018/10/26/berkenalan-dengan-caddy-server/</link>
-        <pubDate>Fri, 26 Oct 2018 11:52:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2018/10/26/berkenalan-dengan-caddy-server/</guid>
-        <description>Caddy? Caddy itu apaan? Fungsinya apa aja?
+Buka file hasil download Caddy Server Copy semua isi dari file master tersebut Tentukan path Caddy, buat folder baru yang akan menampung semua file yang telah dicopy kemudian paste di folder tersebut Untuk menjalankan Caddy Server pada sistem operasi windows cukup klik 2 kali pada file caddy.</description></item><item><title>Berkenalan Dengan Caddy Server</title><link>https://sibunglon.com/2018/10/26/berkenalan-dengan-caddy-server/</link><pubDate>Fri, 26 Oct 2018 11:52:00 +0000</pubDate><guid>https://sibunglon.com/2018/10/26/berkenalan-dengan-caddy-server/</guid><description>Caddy? Caddy itu apaan? Fungsinya apa aja?
 Caddy kadang-kadang diklarifikasi sebagai web server Caddy bersifat open source, server web HTTP / 2- enabled yang ditulis dalam Go . Ia menggunakan pustaka standar Go untuk fungsi HTTP-nya. Salah satu fitur paling terkenal Caddy adalah mengaktifkan HTTPS secara default.
-Caddy mendukung berbagai teknologi Web dan tersedia sebagai biner yang dikompilasi secara statis untuk sistem operasi Windows, Mac, Linux, Android, dan BSD pada arsitektur i386, amd64, dan ARM.</description>
-      </item>
-    
-      <item>
-        <title>Membangun DHCP Server Menggunakan Debian 8</title>
-        <link>https://sibunglon.com/2018/10/26/membangun-dhcp-server-menggunakan-debian-8/</link>
-        <pubDate>Fri, 26 Oct 2018 10:47:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2018/10/26/membangun-dhcp-server-menggunakan-debian-8/</guid>
-        <description>DHCP server atau Dinamic Host Configuration Protocol adalah sebuah protocol yang memungkinkan sebuah komputer atau server memberikan IP Address secara dinamis atau otomatis untuk komputer lain, atau komputer klien.
-Ketika DHCP client pada pihak komputer klien diaktifkan, komputer klien tersebut akan melakukan request ke komputer server untuk mendapatkan IP Address dari DHCP Server. Kemudian DHCP server akan memberikan jawaban ke komputer klien dengan memberikan IP Address yang tersedia pada pool atau range IP Address di DHCP server.</description>
-      </item>
-    
-      <item>
-        <title>Membangun DNS Server Menggunakan Debian 8</title>
-        <link>https://sibunglon.com/2018/10/26/membangun-dns-server-menggunakan-debian-8/</link>
-        <pubDate>Fri, 26 Oct 2018 10:06:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2018/10/26/membangun-dns-server-menggunakan-debian-8/</guid>
-        <description>Dalam dunia internet, komputer saling berkomunikasi dengan mengenali ip addressnya. Namun karena manusia jauh lebih sulit mengingat angka-angkanya maka solusinya menggunakan DNS Server.
-DNS yaitu kepanjangan dari Domain Name System merupakan sebuah server yang berfungsi menangani translasi penamaan host-host kedalam IP Address, begitu juga sebaliknya dalam menangani translasi dari IP Address ke Hostname/Domain. Lebih mudahnya DNS dapat diartikan sebagai sebuah layanan yang digunakan untuk menterjemahkan hostname/domain ke IP Address atau sebaliknya.</description>
-      </item>
-    
-      <item>
-        <title>Membuat Repositori Debian 8 Dari Iso DVD</title>
-        <link>https://sibunglon.com/2017/10/24/membuat-repositori-debian-8-dari-iso-dvd/</link>
-        <pubDate>Tue, 24 Oct 2017 02:54:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/10/24/membuat-repositori-debian-8-dari-iso-dvd/</guid>
-        <description>A. Pendahuluan
+Caddy mendukung berbagai teknologi Web dan tersedia sebagai biner yang dikompilasi secara statis untuk sistem operasi Windows, Mac, Linux, Android, dan BSD pada arsitektur i386, amd64, dan ARM.</description></item><item><title>Membangun DHCP Server Menggunakan Debian 8</title><link>https://sibunglon.com/2018/10/26/membangun-dhcp-server-menggunakan-debian-8/</link><pubDate>Fri, 26 Oct 2018 10:47:00 +0000</pubDate><guid>https://sibunglon.com/2018/10/26/membangun-dhcp-server-menggunakan-debian-8/</guid><description>DHCP server atau Dinamic Host Configuration Protocol adalah sebuah protocol yang memungkinkan sebuah komputer atau server memberikan IP Address secara dinamis atau otomatis untuk komputer lain, atau komputer klien.
+Ketika DHCP client pada pihak komputer klien diaktifkan, komputer klien tersebut akan melakukan request ke komputer server untuk mendapatkan IP Address dari DHCP Server. Kemudian DHCP server akan memberikan jawaban ke komputer klien dengan memberikan IP Address yang tersedia pada pool atau range IP Address di DHCP server.</description></item><item><title>Membangun DNS Server Menggunakan Debian 8</title><link>https://sibunglon.com/2018/10/26/membangun-dns-server-menggunakan-debian-8/</link><pubDate>Fri, 26 Oct 2018 10:06:00 +0000</pubDate><guid>https://sibunglon.com/2018/10/26/membangun-dns-server-menggunakan-debian-8/</guid><description>Dalam dunia internet, komputer saling berkomunikasi dengan mengenali ip addressnya. Namun karena manusia jauh lebih sulit mengingat angka-angkanya maka solusinya menggunakan DNS Server.
+DNS yaitu kepanjangan dari Domain Name System merupakan sebuah server yang berfungsi menangani translasi penamaan host-host kedalam IP Address, begitu juga sebaliknya dalam menangani translasi dari IP Address ke Hostname/Domain. Lebih mudahnya DNS dapat diartikan sebagai sebuah layanan yang digunakan untuk menterjemahkan hostname/domain ke IP Address atau sebaliknya.</description></item><item><title>Membuat Repositori Debian 8 Dari Iso DVD</title><link>https://sibunglon.com/2017/10/24/membuat-repositori-debian-8-dari-iso-dvd/</link><pubDate>Tue, 24 Oct 2017 02:54:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/24/membuat-repositori-debian-8-dari-iso-dvd/</guid><description>A. Pendahuluan
 Pada kesempatan kali ini yang saya share yaitu bagaimana sih membuat sebuah repository debian untuk jaringan lokal
 B. Pengertian
-Repositori perangkat lunak adalah lokasi penyimpanan dari paket perangkat lunak dapat diambildan diinstal pada komputer. Membuat repositori debian 8 dari dvd ini tergolong mudah dan praktis tetapi membutuhkan waktu atau tempo yang agak lama karena banyak data yang akan di salin dari iso ke hardisk walaupun offline atau tanpa menggunakan koneksi internet andaabar harus s untuk rsync dari iso atau dvd selain anda dapat menggunakan iso, anda juga dapat menggunakan DVD untuk membuat repo yaitu me-mount dvd anda terlebih dahulu.</description>
-      </item>
-    
-      <item>
-        <title>Membangun sistem informasi desa</title>
-        <link>https://sibunglon.com/2017/10/23/membangun-sistem-informasi-desa/</link>
-        <pubDate>Mon, 23 Oct 2017 02:29:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/10/23/membangun-sistem-informasi-desa/</guid>
-        <description>A. Pendahuluan
+Repositori perangkat lunak adalah lokasi penyimpanan dari paket perangkat lunak dapat diambildan diinstal pada komputer. Membuat repositori debian 8 dari dvd ini tergolong mudah dan praktis tetapi membutuhkan waktu atau tempo yang agak lama karena banyak data yang akan di salin dari iso ke hardisk walaupun offline atau tanpa menggunakan koneksi internet andaabar harus s untuk rsync dari iso atau dvd selain anda dapat menggunakan iso, anda juga dapat menggunakan DVD untuk membuat repo yaitu me-mount dvd anda terlebih dahulu.</description></item><item><title>Membangun sistem informasi desa</title><link>https://sibunglon.com/2017/10/23/membangun-sistem-informasi-desa/</link><pubDate>Mon, 23 Oct 2017 02:29:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/23/membangun-sistem-informasi-desa/</guid><description>A. Pendahuluan
 Pada kesempatan ini saya akan mengimplementasikan membangun sebuah sistem informasi untuk desa
 B. Pengertian
 (OpenSID) adalah Sistem Informasi Desa (SID) yang sengaja dibuat supaya terbuka dan dapat dikembangkan bersama-sama oleh komunitas peduli SID.
 SID adalah aplikasi komputer yang membantu desa, agar:
- Kantor desa lebih efisien dan efektif Pemerintah desa lebih transparan dan akuntabel Layanan publik lebih baik Warga mendapat akses lebih baik pada informasi desa  OpenSID turut membantu agar ke semua 74ribu+ desa di Indonesia menerapkan sistem informasi untuk memajukan desanya.</description>
-      </item>
-    
-      <item>
-        <title>Mempercantik Tampilan Terminal Server</title>
-        <link>https://sibunglon.com/2017/10/21/mempercantik-tampilan-terminal-server/</link>
-        <pubDate>Sat, 21 Oct 2017 02:27:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/10/21/mempercantik-tampilan-terminal-server/</guid>
-        <description>A. Pendahuluan
+Kantor desa lebih efisien dan efektif Pemerintah desa lebih transparan dan akuntabel Layanan publik lebih baik Warga mendapat akses lebih baik pada informasi desa OpenSID turut membantu agar ke semua 74ribu+ desa di Indonesia menerapkan sistem informasi untuk memajukan desanya.</description></item><item><title>Mempercantik Tampilan Terminal Server</title><link>https://sibunglon.com/2017/10/21/mempercantik-tampilan-terminal-server/</link><pubDate>Sat, 21 Oct 2017 02:27:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/21/mempercantik-tampilan-terminal-server/</guid><description>A. Pendahuluan
 Pada kesempatan ini saya ingin sharing tentang bagaimana mempercantik atau apalah agar tampilan shell linux tidak polos-polos begitu saja.
 B. Pengertian
-Apa itu shell ? shell adalah program (penterjemah perintah) yang menjembatani user dengan sistem operasi dalam hal ini kernel (inti sistem operasi), umumnya shell menyediakan prompt sebagai user interface, tempat dimana user mengetikkan perintah-perintah yang diinginkan baik berupa perintah internal shell (internal command), ataupun perintah eksekusi suatu file progam (eksternal command), selain itu shell memungkinkan user menyusun sekumpulan perintah pada sebuah atau beberapa file untuk dieksekusi sebagai program.</description>
-      </item>
-    
-      <item>
-        <title>Perbandingan Open Source dan Closed Source</title>
-        <link>https://sibunglon.com/2017/10/20/perbandingan-open-source-dan-closed-source/</link>
-        <pubDate>Fri, 20 Oct 2017 18:59:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/10/20/perbandingan-open-source-dan-closed-source/</guid>
-        <description>1) Pengertian
- Sumber terbuka (bahasa Inggris: open source) adalah sistem pengembangan yang tidak dikoordinasi oleh suatu individu / lembaga pusat, tetapi oleh para pelaku yang bekerja sama dengan memanfaatkan kode sumber (source-code) yang tersebar dan tersedia bebas (biasanya menggunakan fasilitas komunikasi internet). Pola pengembangan ini mengambil model ala bazaar, sehingga pola Open Source ini memiliki ciri bagi komunitasnya yaitu adanya dorongan yang bersumber dari budaya memberi, yang artinya ketika suatu komunitas menggunakan sebuah program Open Source dan telah menerima sebuah manfaat kemudian akan termotivasi untuk menimbulkan sebuah pertanyaan apa yang bisa pengguna berikan balik kepada orang banyak.</description>
-      </item>
-    
-      <item>
-        <title>Install Nextcloud di Debian Server 8.6.0</title>
-        <link>https://sibunglon.com/2017/10/20/install-nextcloud-di-debian-server-8.6.0/</link>
-        <pubDate>Fri, 20 Oct 2017 02:10:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/10/20/install-nextcloud-di-debian-server-8.6.0/</guid>
-        <description>A. Pendahuluan
+Apa itu shell ? shell adalah program (penterjemah perintah) yang menjembatani user dengan sistem operasi dalam hal ini kernel (inti sistem operasi), umumnya shell menyediakan prompt sebagai user interface, tempat dimana user mengetikkan perintah-perintah yang diinginkan baik berupa perintah internal shell (internal command), ataupun perintah eksekusi suatu file progam (eksternal command), selain itu shell memungkinkan user menyusun sekumpulan perintah pada sebuah atau beberapa file untuk dieksekusi sebagai program.</description></item><item><title>Perbandingan Open Source dan Closed Source</title><link>https://sibunglon.com/2017/10/20/perbandingan-open-source-dan-closed-source/</link><pubDate>Fri, 20 Oct 2017 18:59:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/20/perbandingan-open-source-dan-closed-source/</guid><description>1) Pengertian
+Sumber terbuka (bahasa Inggris: open source) adalah sistem pengembangan yang tidak dikoordinasi oleh suatu individu / lembaga pusat, tetapi oleh para pelaku yang bekerja sama dengan memanfaatkan kode sumber (source-code) yang tersebar dan tersedia bebas (biasanya menggunakan fasilitas komunikasi internet). Pola pengembangan ini mengambil model ala bazaar, sehingga pola Open Source ini memiliki ciri bagi komunitasnya yaitu adanya dorongan yang bersumber dari budaya memberi, yang artinya ketika suatu komunitas menggunakan sebuah program Open Source dan telah menerima sebuah manfaat kemudian akan termotivasi untuk menimbulkan sebuah pertanyaan apa yang bisa pengguna berikan balik kepada orang banyak.</description></item><item><title>Install Nextcloud di Debian Server 8.6.0</title><link>https://sibunglon.com/2017/10/20/install-nextcloud-di-debian-server-8.6.0/</link><pubDate>Fri, 20 Oct 2017 02:10:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/20/install-nextcloud-di-debian-server-8.6.0/</guid><description>A. Pendahuluan
 Pada kesempatan ini saya akan sharing tentang bagaimana saya menyimpan file dengan melakukan instalasi nextcloud pada server debian 8.6.
 B. Pengertian
-Nextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan layanan file hosting. Ini secara fungsional mirip dengan Dropbox, meskipun Nextcloud bebas dan open-source, memungkinkan siapa saja untuk menginstal dan mengoperasikannya di server pribadi. Berbeda dengan layanan proprietary seperti Dropbox, arsitektur terbuka memungkinkan penambahan fungsionalitas tambahan ke server dalam bentuk aplikasi.</description>
-      </item>
-    
-      <item>
-        <title>Backup VM Proxmox ke Local HardDisk</title>
-        <link>https://sibunglon.com/2017/10/19/backup-vm-proxmox-ke-local-harddisk/</link>
-        <pubDate>Thu, 19 Oct 2017 18:47:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/10/19/backup-vm-proxmox-ke-local-harddisk/</guid>
-        <description>A. Pendahuluan
+Nextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan layanan file hosting. Ini secara fungsional mirip dengan Dropbox, meskipun Nextcloud bebas dan open-source, memungkinkan siapa saja untuk menginstal dan mengoperasikannya di server pribadi. Berbeda dengan layanan proprietary seperti Dropbox, arsitektur terbuka memungkinkan penambahan fungsionalitas tambahan ke server dalam bentuk aplikasi.</description></item><item><title>Backup VM Proxmox ke Local HardDisk</title><link>https://sibunglon.com/2017/10/19/backup-vm-proxmox-ke-local-harddisk/</link><pubDate>Thu, 19 Oct 2017 18:47:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/19/backup-vm-proxmox-ke-local-harddisk/</guid><description>A. Pendahuluan
 Pada kesempatan ini saya share bagaimana agar config di debian atau apapun yang ada diproxmox tidak hilang bila terjadi sesuatu
 B. Pengertian
 Bakcup data adalah salah satu langkah untuk menyimpan data agar saat data itu hilang kita masih memiliki data simpanannya agar tidak hilang.
 C. Latar belakang
 Membuat secondary data agar saat data primer nya hilang kita masih punya data secondari nya.
 D. Tujuan
-Agar data yang saat penting itu tidak hilang karena ada kesalahan dan dapat menyerlamatkan pekerjaan kita.</description>
-      </item>
-    
-      <item>
-        <title>Implementasi Pembelajaran Online Dengan Moodle - Installasi</title>
-        <link>https://sibunglon.com/2017/10/18/implementasi-pembelajaran-online-dengan-moodle-installasi/</link>
-        <pubDate>Wed, 18 Oct 2017 17:13:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/10/18/implementasi-pembelajaran-online-dengan-moodle-installasi/</guid>
-        <description>A. Pendahuluan
+Agar data yang saat penting itu tidak hilang karena ada kesalahan dan dapat menyerlamatkan pekerjaan kita.</description></item><item><title>Implementasi Pembelajaran Online Dengan Moodle - Installasi</title><link>https://sibunglon.com/2017/10/18/implementasi-pembelajaran-online-dengan-moodle-installasi/</link><pubDate>Wed, 18 Oct 2017 17:13:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/18/implementasi-pembelajaran-online-dengan-moodle-installasi/</guid><description>A. Pendahuluan
 Pada kesempatan kali ini saya akan mengimplementasikan tentang apa yang sudah saya pelajari yaitu Moodle
 B. Pengertian
-Moodle (singkatan dari Modular Object-Oriented Dynamic Learning Environment) adalah paket perangkat lunak yang diproduksi untuk kegiatan belajar berbasis internet dan situs web yang menggunakan prinsip social constructionist pedagogy. Moodle merupakan salah satu aplikasi dari konsep dan mekanisme belajar mengajar yang memanfaatkan teknologi informasi, yang dikenal dengan konsep pembelajaran elktronik atau e-learning. Moodle dapat digunakan secara bebas sebagai produk sumber terbuka (open source) di bawah lisensi GNU.</description>
-      </item>
-    
-      <item>
-        <title>Install SLiMS 8 Akasia di Debian Server</title>
-        <link>https://sibunglon.com/2017/10/17/install-slims-8-akasia-di-debian-server/</link>
-        <pubDate>Tue, 17 Oct 2017 15:17:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/10/17/install-slims-8-akasia-di-debian-server/</guid>
-        <description>A. Pendahuluan
+Moodle (singkatan dari Modular Object-Oriented Dynamic Learning Environment) adalah paket perangkat lunak yang diproduksi untuk kegiatan belajar berbasis internet dan situs web yang menggunakan prinsip social constructionist pedagogy. Moodle merupakan salah satu aplikasi dari konsep dan mekanisme belajar mengajar yang memanfaatkan teknologi informasi, yang dikenal dengan konsep pembelajaran elktronik atau e-learning. Moodle dapat digunakan secara bebas sebagai produk sumber terbuka (open source) di bawah lisensi GNU.</description></item><item><title>Install SLiMS 8 Akasia di Debian Server</title><link>https://sibunglon.com/2017/10/17/install-slims-8-akasia-di-debian-server/</link><pubDate>Tue, 17 Oct 2017 15:17:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/17/install-slims-8-akasia-di-debian-server/</guid><description>A. Pendahuluan
 Pada kesempatan ini saya sharing tentang bagaimana langkah-langkah penginstallan slims untuk manajamen perpustakaan online.
 B. Pengertian
-Senayan, atau lengkapnya Senayan Library Management System (SLiMS), adalah perangkat lunak sistem manajemen perpustakaan (library management system) sumber terbuka yang dilisensikan di bawah GPL v3. Aplikasi Web yang dikembangkan oleh tim dari Pusat Informasi dan Humas Departemen Pendidikan Nasional Repubik Indonesia ini dibangun dengan menggunakan PHP, basis data MySQL, dan Pengontrol versi Git.</description>
-      </item>
-    
-      <item>
-        <title>Install CMS Sekolahku di Server</title>
-        <link>https://sibunglon.com/2017/10/16/install-cms-sekolahku-di-server/</link>
-        <pubDate>Mon, 16 Oct 2017 11:16:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/10/16/install-cms-sekolahku-di-server/</guid>
-        <description>A. Pendahuluan
+Senayan, atau lengkapnya Senayan Library Management System (SLiMS), adalah perangkat lunak sistem manajemen perpustakaan (library management system) sumber terbuka yang dilisensikan di bawah GPL v3. Aplikasi Web yang dikembangkan oleh tim dari Pusat Informasi dan Humas Departemen Pendidikan Nasional Repubik Indonesia ini dibangun dengan menggunakan PHP, basis data MySQL, dan Pengontrol versi Git.</description></item><item><title>Install CMS Sekolahku di Server</title><link>https://sibunglon.com/2017/10/16/install-cms-sekolahku-di-server/</link><pubDate>Mon, 16 Oct 2017 11:16:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/16/install-cms-sekolahku-di-server/</guid><description>A. Pendahuluan
 Pada kesempatan kali ini saya akan mengimplementasikan membangun website sekolah di server dengan CMS.
 B. Pengertian
 CMS adalah suatu /sebuah aplikasi yang berfungsi merubah suatu menu atau memanipulasi data dari suatu situs atau website.
@@ -639,468 +134,113 @@ Mempelajari sistem informasi sekolah dengan CMS dan mengimplementasikannya.
 D. Tujuan
 Mempunyai maksud untuk memudahkan saya mendapatkan informasi sekolah di website tersebut.
 E. Hasil yang diharapkan
-Mempunyai harapan agar nanti kedepannya bisa membangun website ini di sekolah.</description>
-      </item>
-    
-      <item>
-        <title>Menginstall Wordpress di Localhost Linux</title>
-        <link>https://sibunglon.com/2017/10/16/menginstall-wordpress-di-localhost-linux/</link>
-        <pubDate>Mon, 16 Oct 2017 10:48:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/10/16/menginstall-wordpress-di-localhost-linux/</guid>
-        <description>A. Pendahuluan
+Mempunyai harapan agar nanti kedepannya bisa membangun website ini di sekolah.</description></item><item><title>Menginstall Wordpress di Localhost Linux</title><link>https://sibunglon.com/2017/10/16/menginstall-wordpress-di-localhost-linux/</link><pubDate>Mon, 16 Oct 2017 10:48:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/16/menginstall-wordpress-di-localhost-linux/</guid><description>A. Pendahuluan
 Pada kesempatan kali ini, saya memposting tentang proses installasi wordpress
 B. Pengertian
-WordPress adalah sebuah aplikasi sumber terbuka (open source) yang sangat populer digunakan sebagai mesin blog (blog engine). WordPress dibangun dengan bahasa pemrograman PHP dan basis data (database) MySQL. PHP dan MySQL, keduanya merupakan perangkat lunak sumber terbuka(open source software). Selain sebagai blog, WordPress juga mulai digunakan sebagai sebuah CMS(Content Management System) karena kemampuannya untuk dimodifikasi dan disesuaikan dengan kebutuhan penggunanya</description>
-      </item>
-    
-      <item>
-        <title>Implementasi Autoindex di Server Debian 8.6</title>
-        <link>https://sibunglon.com/2017/10/14/implementasi-autoindex-di-server-debian-8.6/</link>
-        <pubDate>Sat, 14 Oct 2017 10:36:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/10/14/implementasi-autoindex-di-server-debian-8.6/</guid>
-        <description>A. Pendahuluan
+WordPress adalah sebuah aplikasi sumber terbuka (open source) yang sangat populer digunakan sebagai mesin blog (blog engine). WordPress dibangun dengan bahasa pemrograman PHP dan basis data (database) MySQL. PHP dan MySQL, keduanya merupakan perangkat lunak sumber terbuka(open source software). Selain sebagai blog, WordPress juga mulai digunakan sebagai sebuah CMS(Content Management System) karena kemampuannya untuk dimodifikasi dan disesuaikan dengan kebutuhan penggunanya</description></item><item><title>Implementasi Autoindex di Server Debian 8.6</title><link>https://sibunglon.com/2017/10/14/implementasi-autoindex-di-server-debian-8.6/</link><pubDate>Sat, 14 Oct 2017 10:36:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/14/implementasi-autoindex-di-server-debian-8.6/</guid><description>A. Pendahuluan
 Pada kesempatan ini saya akan mengimplementasikan autoindex di debian server 8-6
 B. Pengertian
-Auto Index adalah kemampuan untuk komputer untuk memindai volume besar dokumen terhadap dikendalikan kosakata, taksonomi , tesaurus atau ontologi dan menggunakan istilah-istilah dikendalikan untuk cepat dan efektif Indeks deposit dokumen yang besar. Karena jumlah dokumen secara eksponensial meningkat dengan proliferasi dari Internet , pengindeksan otomatis akan menjadi penting untuk mempertahankan kemampuan untuk menemukan informasi yang relevan di lautan ir-relevan informasi.</description>
-      </item>
-    
-      <item>
-        <title>Atasi Info PHP Tidak Tampil atau Not Working</title>
-        <link>https://sibunglon.com/2017/10/14/atasi-info-php-tidak-tampil-atau-not-working/</link>
-        <pubDate>Sat, 14 Oct 2017 10:25:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/10/14/atasi-info-php-tidak-tampil-atau-not-working/</guid>
-        <description>A. Pendahuluan
+Auto Index adalah kemampuan untuk komputer untuk memindai volume besar dokumen terhadap dikendalikan kosakata, taksonomi , tesaurus atau ontologi dan menggunakan istilah-istilah dikendalikan untuk cepat dan efektif Indeks deposit dokumen yang besar. Karena jumlah dokumen secara eksponensial meningkat dengan proliferasi dari Internet , pengindeksan otomatis akan menjadi penting untuk mempertahankan kemampuan untuk menemukan informasi yang relevan di lautan ir-relevan informasi.</description></item><item><title>Atasi Info PHP Tidak Tampil atau Not Working</title><link>https://sibunglon.com/2017/10/14/atasi-info-php-tidak-tampil-atau-not-working/</link><pubDate>Sat, 14 Oct 2017 10:25:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/14/atasi-info-php-tidak-tampil-atau-not-working/</guid><description>A. Pendahuluan
 Pada postingan kali ini, saya akan memberikan solusi yang biasa menjadi permasalahan saat menginstall LAMP Server di linux
 B. Pengertian
-PHP info adalah istilah untuk menyebutkan sebuah halaman yang berisi informasi mengenai versi PHP yang digunakan oleh suatu server, biasanya pada halaman PHP Info akan di informasikan banyak hal selain versi nya itu sendiri. phpinfo() biasanya digunakan untuk memeriksa pengaturan konfigurasi dan variabel standar yang tersedia pada sistem tertentu.</description>
-      </item>
-    
-      <item>
-        <title>Hal-Hal Yang Harus Dilakukan Setelah Install Server - Install Aplikasi Berbasis Web</title>
-        <link>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-install-aplikasi-berbasis-web/</link>
-        <pubDate>Fri, 13 Oct 2017 10:22:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-install-aplikasi-berbasis-web/</guid>
-        <description>A. Pendahuluan
+PHP info adalah istilah untuk menyebutkan sebuah halaman yang berisi informasi mengenai versi PHP yang digunakan oleh suatu server, biasanya pada halaman PHP Info akan di informasikan banyak hal selain versi nya itu sendiri. phpinfo() biasanya digunakan untuk memeriksa pengaturan konfigurasi dan variabel standar yang tersedia pada sistem tertentu.</description></item><item><title>Hal-Hal Yang Harus Dilakukan Setelah Install Server - Install Aplikasi Berbasis Web</title><link>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-install-aplikasi-berbasis-web/</link><pubDate>Fri, 13 Oct 2017 10:22:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-install-aplikasi-berbasis-web/</guid><description>A. Pendahuluan
 Pada kesempatan ini, saya kembali memposting tentang dasar-dasar setelahi install server.
 B. Pengertian
 Aplikasi Berbasis Web adalah sebuah aplikasi yang dapat diakses melalui internet atau intranet, dan pada sekarang ini ternyata lebih banyak dan lebih luas dalam pemakaiannya.
 C. Latar belakang
 Setelah kita menginstall debian di proxmox tentunya kita harus tau hal hal apa saja yang harus dilakukan setelahnya.
 D. Tujuan
-Agar server dapat bekerja secara optimal saat melayani komputer client.</description>
-      </item>
-    
-      <item>
-        <title>Hal-Hal Yang Harus Dilakukan Setelah Install Server - Installasi LAMP Server</title>
-        <link>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-installasi-lamp-server/</link>
-        <pubDate>Fri, 13 Oct 2017 10:09:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-installasi-lamp-server/</guid>
-        <description>](https://3.bp.blogspot.com/-ywyKkRlhtrk/W71t-u86V-I/AAAAAAAAE5U/2yysEGlwYi0cpx63j04poUnAf2cZAvesQCLcBGAs/s1600/lamp_stack.jpg)
-A. Pendahuluan
+Agar server dapat bekerja secara optimal saat melayani komputer client.</description></item><item><title>Hal-Hal Yang Harus Dilakukan Setelah Install Server - Installasi LAMP Server</title><link>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-installasi-lamp-server/</link><pubDate>Fri, 13 Oct 2017 10:09:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-installasi-lamp-server/</guid><description>A. Pendahuluan
 Pada kesempatan ini saya memposting lagi dan masih mengenai server
 B. Pengertian
 LAMP adalah istilah yang merupakan singkatan dariLinux,Apache,MySQL danPerl/PHP/Phyton. Merupakan sebuah paket perangkat lunak bebas yang digunakan untuk menjalankan sebuah aplikasi secara lengkap.
 Komponen-komponen dari LAMP :
- Linux – sistem operasi Apache HTTP Server – web server MariaDB atau MySQL – sistem basis data PHP atau Perl atau Python – bahasa pemrograman yang dipakai  C.</description>
-      </item>
-    
-      <item>
-        <title>Hal-Hal Yang Harus Dilakukan Setelah Install Server</title>
-        <link>https://sibunglon.com/2017/10/12/hal-hal-yang-harus-dilakukan-setelah-install-server/</link>
-        <pubDate>Thu, 12 Oct 2017 09:31:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/10/12/hal-hal-yang-harus-dilakukan-setelah-install-server/</guid>
-        <description>A. Pendahuluan
+Linux – sistem operasi Apache HTTP Server – web server MariaDB atau MySQL – sistem basis data PHP atau Perl atau Python – bahasa pemrograman yang dipakai C. Latar belakang</description></item><item><title>Hal-Hal Yang Harus Dilakukan Setelah Install Server</title><link>https://sibunglon.com/2017/10/12/hal-hal-yang-harus-dilakukan-setelah-install-server/</link><pubDate>Thu, 12 Oct 2017 09:31:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/12/hal-hal-yang-harus-dilakukan-setelah-install-server/</guid><description>A. Pendahuluan
 Pada kesempatan kali ini yang saya bagikan yaitu tentang hal - hal yang perlu dilakukan setelah install server.
 B. Pengertian
-Debian adalah sistem operasi komputer yang tersusun dari paket-paket perangkat lunak yang dirilis sebagai perangkat lunak bebas dan terbuka dengan lisensi mayoritas GNU General Public License dan lisensi perangkat lunak bebas lainnya. Debian GNU/UNIX memuat perkakas sistem operasi GNU dan kernel Linux merupakan distribusi Linux yang populer dan berpengaruh.</description>
-      </item>
-    
-      <item>
-        <title>Installasi MATE Desktop Environment di Ubuntu 17.04</title>
-        <link>https://sibunglon.com/2017/10/11/installasi-mate-desktop-environment-di-ubuntu-17.04/</link>
-        <pubDate>Wed, 11 Oct 2017 12:31:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/10/11/installasi-mate-desktop-environment-di-ubuntu-17.04/</guid>
-        <description>A. Pendahuluan
+Debian adalah sistem operasi komputer yang tersusun dari paket-paket perangkat lunak yang dirilis sebagai perangkat lunak bebas dan terbuka dengan lisensi mayoritas GNU General Public License dan lisensi perangkat lunak bebas lainnya. Debian GNU/UNIX memuat perkakas sistem operasi GNU dan kernel Linux merupakan distribusi Linux yang populer dan berpengaruh.</description></item><item><title>Installasi MATE Desktop Environment di Ubuntu 17.04</title><link>https://sibunglon.com/2017/10/11/installasi-mate-desktop-environment-di-ubuntu-17.04/</link><pubDate>Wed, 11 Oct 2017 12:31:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/11/installasi-mate-desktop-environment-di-ubuntu-17.04/</guid><description>A. Pendahuluan
 Setelah kemarin menggunakan desktop gnome saya ingin pindah ke desktop MATE karena lebih ringan dan mudah digunakan, nah bagi kalian yang ingin menginstall MATE desktop kali ini saya bagikan tutorialnya&amp;hellip;
 B. pengertian
 MATE telah memiliki sejumlah aplikasi yang berasal dari Aplikasi Inti GNOME, dan pengembang telah menulis beberapa aplikasi lain dari nol. Aplikasi bercabang memiliki nama baru, kebanyakan dari bahasa Spanyol.
-MATE juga tersedia di repositori resmi beberapa distribusi Linux lainnya, termasuk Arch Linux, Parabola, LMDE, Debian, Ubuntu MATE, Ubuntu Mint, Kali Linux, Fedora, openSUSE, Gentoo, Mageia, ROSA, dan PCLinuxOS.</description>
-      </item>
-    
-      <item>
-        <title>Tips Menemukan Referensi Website Untuk Belajar Linux</title>
-        <link>https://sibunglon.com/2017/10/10/tips-menemukan-referensi-website-untuk-belajar-linux/</link>
-        <pubDate>Tue, 10 Oct 2017 17:27:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/10/10/tips-menemukan-referensi-website-untuk-belajar-linux/</guid>
-        <description>A. Pendahuluan
+MATE juga tersedia di repositori resmi beberapa distribusi Linux lainnya, termasuk Arch Linux, Parabola, LMDE, Debian, Ubuntu MATE, Ubuntu Mint, Kali Linux, Fedora, openSUSE, Gentoo, Mageia, ROSA, dan PCLinuxOS.</description></item><item><title>Tips Menemukan Referensi Website Untuk Belajar Linux</title><link>https://sibunglon.com/2017/10/10/tips-menemukan-referensi-website-untuk-belajar-linux/</link><pubDate>Tue, 10 Oct 2017 17:27:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/10/tips-menemukan-referensi-website-untuk-belajar-linux/</guid><description>A. Pendahuluan
 Halo teman2 blogger, pada kesempatan kali ini saya akan mmebagikan sebuah artikel sederhana namun bermanfaat bagi pembaca sekalian terutama bagi yang ingin belajar linux agar mahir menggunakannya. Monggo mari di simak artikel yang saya bagikan berikut ini.
 1. Pengertian
-Web referensi adalah suatu website atau situs atau laman yang memuat pembahasan ataupun tutorial yang berisi materi yang dapat di jadikan patokan atau dasar untuk membuat suatu artikel ataupun tutorial.</description>
-      </item>
-    
-      <item>
-        <title>Install Debian Server di Proxmox Virtual Environment</title>
-        <link>https://sibunglon.com/2017/10/10/install-debian-server-di-proxmox-virtual-environment/</link>
-        <pubDate>Tue, 10 Oct 2017 12:19:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/10/10/install-debian-server-di-proxmox-virtual-environment/</guid>
-        <description>A. Pendahuluan
+Web referensi adalah suatu website atau situs atau laman yang memuat pembahasan ataupun tutorial yang berisi materi yang dapat di jadikan patokan atau dasar untuk membuat suatu artikel ataupun tutorial.</description></item><item><title>Install Debian Server di Proxmox Virtual Environment</title><link>https://sibunglon.com/2017/10/10/install-debian-server-di-proxmox-virtual-environment/</link><pubDate>Tue, 10 Oct 2017 12:19:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/10/install-debian-server-di-proxmox-virtual-environment/</guid><description>A. Pendahuluan
 Kali ini saya berbagi tentang bagaimana menginstall linux Debian 8.6 melalui pada proxmox. Proxmox digunakan sebagai virtualisasi.
 B. Pengertian
-Debian adalah sistem operasi komputer yang tersusun dari paket-paket perangkat lunak yang dirilis sebagai perangkat lunak bebas dan terbuka dengan lisensi mayoritas GNU General Public License dan lisensi perangkat lunak bebas lainnya. Debian GNU/Linux memuat perkakas sistem operasi GNU dan kernel Linux merupakan distribusi Linux yang popmuler dan berpengaruh. Debian didistribusikan dengan akses ke repositori dengan ribuan paket perangkat lunak yang siap untuk instalasi dan digunakan.</description>
-      </item>
-    
-      <item>
-        <title>Comparison of Platform Virtualization Software</title>
-        <link>https://sibunglon.com/2017/10/09/comparison-of-platform-virtualization-software/</link>
-        <pubDate>Mon, 09 Oct 2017 17:12:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/10/09/comparison-of-platform-virtualization-software/</guid>
-        <description>A. PENDAHULUAN
+Debian adalah sistem operasi komputer yang tersusun dari paket-paket perangkat lunak yang dirilis sebagai perangkat lunak bebas dan terbuka dengan lisensi mayoritas GNU General Public License dan lisensi perangkat lunak bebas lainnya. Debian GNU/Linux memuat perkakas sistem operasi GNU dan kernel Linux merupakan distribusi Linux yang popmuler dan berpengaruh. Debian didistribusikan dengan akses ke repositori dengan ribuan paket perangkat lunak yang siap untuk instalasi dan digunakan.</description></item><item><title>Comparison of Platform Virtualization Software</title><link>https://sibunglon.com/2017/10/09/comparison-of-platform-virtualization-software/</link><pubDate>Mon, 09 Oct 2017 17:12:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/09/comparison-of-platform-virtualization-software/</guid><description>A. PENDAHULUAN
 Seperti judulnya, yaitu adalah perbandingan dari beberapa vendor Virtualisasi Software.
 B. PENGERTIAN
-adalah istilah umum yang mengacu kepada abstraksi dari sumber daya komputer. Definisi lainnya adalah &amp;ldquo;sebuah teknik untuk menyembunyikan karakteristik fisik dari sumber daya komputer dari bagaimana cara sistem lain, aplikasi atau pengguna berinteraksi dengan sumber daya tersebut. Hal ini termasuk membuat sebuah sumber daya tunggal (seperti server, sebuah sistem operasi, sebuah aplikasi, atau peralatan penyimpanan terlihat berfungsi sebagai beberapa sumber daya logikal; atau dapat juga termasuk definisi untuk membuat beberapa sumber daya fisik (seperti beberapa peralatan penyimpanan atau server) terlihat sebagai satu sumber daya logikal.</description>
-      </item>
-    
-      <item>
-        <title>Training Cisco CCENT Part 6</title>
-        <link>https://sibunglon.com/2017/10/02/training-cisco-ccent-part-6/</link>
-        <pubDate>Mon, 02 Oct 2017 04:57:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/10/02/training-cisco-ccent-part-6/</guid>
-        <description>1. Pendahuluan
-A. Pengertian
-Cisco Adalah sebuah perusahaan yang memiliki 2 bidang usaha, yaitu:
- Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA)  B. Latar Belakang
-Mengulangi dan Meringkas Materi yang Diberikan Tadi
-C. Maksud dan Tujuan
-Untuk lebih memahami materi yang diberikan tadi
-2. Alat dan Bahan
- Laptop Proyektor Internet  3. Jangka Waktu Pelaksanaan
-Jam 08:00 s/d 22:00</description>
-      </item>
-    
-      <item>
-        <title>Training Cisco CCENT Part 5</title>
-        <link>https://sibunglon.com/2017/09/30/training-cisco-ccent-part-5/</link>
-        <pubDate>Sat, 30 Sep 2017 04:52:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/09/30/training-cisco-ccent-part-5/</guid>
-        <description>1. Pendahuluan
-A. Pengertian
-Cisco Adalah sebuah perusahaan yang memiliki 2 bidang usaha, yaitu:
- Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA)B. Latar Belakang
-Mengulangi dan Meringkas Materi yang Diberikan Tadi  C. Maksud dan Tujuan
-Untuk lebih memahami materi yang diberikan tadi
-2. Alat dan Bahan
- Laptop Proyektor Internet  3. Jangka Waktu Pelaksanaan
-Jam 08:00 s/d 22:00</description>
-      </item>
-    
-      <item>
-        <title>Training Cisco CCENT Part 4</title>
-        <link>https://sibunglon.com/2017/09/29/training-cisco-ccent-part-4/</link>
-        <pubDate>Fri, 29 Sep 2017 04:50:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/09/29/training-cisco-ccent-part-4/</guid>
-        <description>1. Pendahuluan
-A. Pengertian
-Cisco Adalah sebuah perusahaan yang memiliki 2 bidang usaha, yaitu:
- Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA)  B. Latar Belakang
-Mengulangi dan Meringkas Materi yang Diberikan Tadi
-C. Maksud dan Tujuan
-Untuk lebih memahami materi yang diberikan tadi
-2. Alat dan Bahan
- Laptop Proyektor Internet  3. Jangka Waktu Pelaksanaan
-Jam 08:00 s/d 22:00</description>
-      </item>
-    
-      <item>
-        <title>Training Cisco CCENT Part 3</title>
-        <link>https://sibunglon.com/2017/09/28/training-cisco-ccent-part-3/</link>
-        <pubDate>Thu, 28 Sep 2017 04:20:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/09/28/training-cisco-ccent-part-3/</guid>
-        <description>1. Pendahuluan
-A. Pengertian
-Cisco Adalah sebuah perusahaan yang memiliki 2 bidang usaha, yaitu:
- Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA)  B. Latar Belakang
-Mengulangi dan Meringkas Materi yang Diberikan Tadi
-C. Maksud dan Tujuan
-Untuk lebih memahami materi yang diberikan tadi
-2. Alat dan Bahan
- Laptop Proyektor Internet  3. Jangka Waktu Pelaksanaan
-Jam 08:00 s/d 22:00</description>
-      </item>
-    
-      <item>
-        <title>Training Cisco CCENT Part 2</title>
-        <link>https://sibunglon.com/2017/09/27/training-cisco-ccent-part-2/</link>
-        <pubDate>Wed, 27 Sep 2017 04:13:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/09/27/training-cisco-ccent-part-2/</guid>
-        <description>1. Pendahuluan
-A. Pengertian
-Cisco Adalah sebuah perusahaan yang memiliki 2 bidang usaha, yaitu:
- Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA)  B. Latar Belakang
-Mengulangi dan Meringkas Materi yang Diberikan Tadi
-C. Maksud dan Tujuan
-Untuk lebih memahami materi yang diberikan tadi
-2. Alat dan Bahan
- Laptop Proyektor Internet  3. Jangka Waktu Pelaksanaan
-Jam 08:00 s/d 22:00</description>
-      </item>
-    
-      <item>
-        <title>Training Cisco CCENT Part 1</title>
-        <link>https://sibunglon.com/2017/09/25/training-cisco-ccent-part-1/</link>
-        <pubDate>Mon, 25 Sep 2017 03:51:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/09/25/training-cisco-ccent-part-1/</guid>
-        <description>1.Pendahuluan
-A. Pengertian
-Cisco merupakan perusahaan global dalam bidang telekomunikasi yang bermarkas di San José, California, Amerika Serikat. Perusahaan ini didirikan pada tahun 1984. Perusahaan ini mempekerjakan 51.480 pekerja.Produk dari perusahaan ini dapat ditemukan dari ruang tamu sampai ke perusahaan yang bergerak untuk skala internasional.Visi dari Cisco System.Inc (Cisco) yaitu “mengubah bagaimana cara hidup,bekerja,bermain dan belajar”,dan bagian dari Slogan dari Cisco adalah “ Selamat datang kedalam dunia Jaringan “ (welcome to the human network).</description>
-      </item>
-    
-      <item>
-        <title>Atasi PhpMyAdmin Error #1698 Sehingga Tidak Bisa Login  Sebagai Root</title>
-        <link>https://sibunglon.com/2017/09/20/atasi-phpmyadmin-error-#1698-sehingga-tidak-bisa-login-sebagai-root/</link>
-        <pubDate>Wed, 20 Sep 2017 03:15:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/09/20/atasi-phpmyadmin-error-#1698-sehingga-tidak-bisa-login-sebagai-root/</guid>
-        <description>A. Pendahuluan
+adalah istilah umum yang mengacu kepada abstraksi dari sumber daya komputer. Definisi lainnya adalah &amp;ldquo;sebuah teknik untuk menyembunyikan karakteristik fisik dari sumber daya komputer dari bagaimana cara sistem lain, aplikasi atau pengguna berinteraksi dengan sumber daya tersebut. Hal ini termasuk membuat sebuah sumber daya tunggal (seperti server, sebuah sistem operasi, sebuah aplikasi, atau peralatan penyimpanan terlihat berfungsi sebagai beberapa sumber daya logikal; atau dapat juga termasuk definisi untuk membuat beberapa sumber daya fisik (seperti beberapa peralatan penyimpanan atau server) terlihat sebagai satu sumber daya logikal.</description></item><item><title>Atasi PhpMyAdmin Error #1698 Sehingga Tidak Bisa Login Sebagai Root</title><link>https://sibunglon.com/2017/09/20/atasi-phpmyadmin-error-#1698-sehingga-tidak-bisa-login-sebagai-root/</link><pubDate>Wed, 20 Sep 2017 03:15:00 +0000</pubDate><guid>https://sibunglon.com/2017/09/20/atasi-phpmyadmin-error-#1698-sehingga-tidak-bisa-login-sebagai-root/</guid><description>A. Pendahuluan
 Pada kesempatan ini yang saya posting/share yaitu troubleshoot phpmyadmin dengan kode error #1698 atau tidak bisa login sebagai root.
 B. Pengertian
 PhpMyAdmin adalah perangkat lunak bebas yang ditulis dalam bahasa pemrograman PHP yang digunakan untuk menangani administrasi MySQL melalui Jejaring Jagat Jembar (World Wide Web). phpMyAdmin mendukung berbagai operasi MySQL, diantaranya (mengelola basis data, tabel-tabel, bidang (fields), relasi (relations), indeks, pengguna (users), perizinan (permissions), dan lain-lain).
-C. Latar belakang</description>
-      </item>
-    
-      <item>
-        <title>Pengenalan Open Source</title>
-        <link>https://sibunglon.com/2017/09/18/pengenalan-open-source/</link>
-        <pubDate>Mon, 18 Sep 2017 02:35:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/09/18/pengenalan-open-source/</guid>
-        <description>A. PENDAHULUAN
+C. Latar belakang</description></item><item><title>Pengenalan Open Source</title><link>https://sibunglon.com/2017/09/18/pengenalan-open-source/</link><pubDate>Mon, 18 Sep 2017 02:35:00 +0000</pubDate><guid>https://sibunglon.com/2017/09/18/pengenalan-open-source/</guid><description>A. PENDAHULUAN
 Mungkin kalian pernah mendengar kata open source. betulkan,, di benak kalian pasti mengatakan apa sih open source itu..?. nah disini kita kupas abis terkait dengan open source
 B. PENGERTIAN
-Open source Software (OSS) merupakan istilah yang di gunakan untuk software komputer yang membuka/membebaskan source codenya untuk dilihat oleh orang lain dan membiarkan orang lain mengetahui cara kerja software tersebut dan sekaligus memperbaiki kelemahan - kelemahan yang ada pada software tersebut.</description>
-      </item>
-    
-      <item>
-        <title>Mengatasi Kursor Winbox MikroTik Meloncat-Loncat Sewaktu Mengetik</title>
-        <link>https://sibunglon.com/2017/09/07/mengatasi-kursor-winbox-mikrotik-meloncat-loncat-sewaktu-mengetik/</link>
-        <pubDate>Thu, 07 Sep 2017 14:42:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/09/07/mengatasi-kursor-winbox-mikrotik-meloncat-loncat-sewaktu-mengetik/</guid>
-        <description>A. Pendahuluan
+Open source Software (OSS) merupakan istilah yang di gunakan untuk software komputer yang membuka/membebaskan source codenya untuk dilihat oleh orang lain dan membiarkan orang lain mengetahui cara kerja software tersebut dan sekaligus memperbaiki kelemahan - kelemahan yang ada pada software tersebut.</description></item><item><title>Mengatasi Kursor Winbox MikroTik Meloncat-Loncat Sewaktu Mengetik</title><link>https://sibunglon.com/2017/09/07/mengatasi-kursor-winbox-mikrotik-meloncat-loncat-sewaktu-mengetik/</link><pubDate>Thu, 07 Sep 2017 14:42:00 +0000</pubDate><guid>https://sibunglon.com/2017/09/07/mengatasi-kursor-winbox-mikrotik-meloncat-loncat-sewaktu-mengetik/</guid><description>A. Pendahuluan
 Pernahkan anda mengalami ini? atau hanya pernah lihat begini?
 Pada postingan kali, saya akan sharing bagaimana mengatasi kursor winbox mikrotik meloncat-loncat sewaktu mengetik.
 B. Pengertian
-kursor adalah suatu petunjuk atau indikator posisi pada monitor komputer atau peranti tampilan lain yang akan merespons masukan dari suatu masukan teks atau peranti penunjuk. Kursor secara umum dapat dibagi menjadi dua jenis: kursor teks dan kursor tetikus. Kursor teks adalah petunjuk pada antarmuka baris perintah (CLI) atau editor teks yang menunjukkan tempat teks akan diletakkan sewaktu dimasukkan (titik penyisipan) dan biasanya berupa garis bawah, segi empat, atau garis vertikal yang dapat berkedip atau stabil.</description>
-      </item>
-    
-      <item>
-        <title>Menginstall VMware Player di linux</title>
-        <link>https://sibunglon.com/2017/08/31/menginstall-vmware-player-di-linux/</link>
-        <pubDate>Thu, 31 Aug 2017 13:27:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/08/31/menginstall-vmware-player-di-linux/</guid>
-        <description>A. Pendahuluan
+kursor adalah suatu petunjuk atau indikator posisi pada monitor komputer atau peranti tampilan lain yang akan merespons masukan dari suatu masukan teks atau peranti penunjuk. Kursor secara umum dapat dibagi menjadi dua jenis: kursor teks dan kursor tetikus. Kursor teks adalah petunjuk pada antarmuka baris perintah (CLI) atau editor teks yang menunjukkan tempat teks akan diletakkan sewaktu dimasukkan (titik penyisipan) dan biasanya berupa garis bawah, segi empat, atau garis vertikal yang dapat berkedip atau stabil.</description></item><item><title>Menginstall VMware Player di linux</title><link>https://sibunglon.com/2017/08/31/menginstall-vmware-player-di-linux/</link><pubDate>Thu, 31 Aug 2017 13:27:00 +0000</pubDate><guid>https://sibunglon.com/2017/08/31/menginstall-vmware-player-di-linux/</guid><description>A. Pendahuluan
 Pada kesempatan ini, saya memposting bagaimana sih menginstal VMware Player di linux.
 B. Pengertian
-VMware Player adalah sebuah produk perangkat lunak virtualisasi berlisensi bebas dari VMware, sebuah divisi dari EMC Corporation. Produk ini bisa menjalankan mesin virtualpengguna yang dibuat dari produk VMware yang lain tetapi tidak dapat membuat sebuah mesin virtual yang baru.namun limitasi ini dicabut di versi 3.0.0. sehingga dapat membuat sendiri tanpa harus memakai VMware Workstation. Perangkat berlisensi bebas dan situs web seperti EasyVMX juga hadir untuk membuat mesin virtual, menghapus, memanipulasi dan mengkonversikan disk VMware dan floppy, membuat perizinan pengguna, menjalankan dan merawat mesin virtual.</description>
-      </item>
-    
-      <item>
-        <title>Sharing Bersama Naster Virtualisasi Pak Nathan Gusti Ryan</title>
-        <link>https://sibunglon.com/2017/08/30/sharing-bersama-naster-virtualisasi-pak-nathan-gusti-ryan/</link>
-        <pubDate>Wed, 30 Aug 2017 13:07:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/08/30/sharing-bersama-naster-virtualisasi-pak-nathan-gusti-ryan/</guid>
-        <description>Pada kesempatan ini saya akan berbagi tentang pengalaman sharing dengan MASTER VIRTUALISASI DARI INDONESIA.
-Banyak sekali pengalaman yang saya terima dari sharing Pak Herry, Pak Nathan Gusti Ryan, Mas Latif. Mulai dari Pak Herry yang menceritakan tentang apa itu database, dan jenis jenis perangkat database yang pernah ia kerjakan, berapa tahun ia mempelajari Virtualisasi dan lika liku perjalanannya. Kemudian dari Pak Nathan memberi bocoran bagaimana gambaran didalam Datacenter. dan Mas Latif menceritakan lika-liku perjalanan dari mulai dia di BLC sampai menjadi orang kepercayaan Pak Nathan.</description>
-      </item>
-    
-      <item>
-        <title>Pengenalan Desktop Environment (DE)</title>
-        <link>https://sibunglon.com/2017/08/28/pengenalan-desktop-environment-de/</link>
-        <pubDate>Mon, 28 Aug 2017 12:53:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/08/28/pengenalan-desktop-environment-de/</guid>
-        <description>A. Pendahuluan
+VMware Player adalah sebuah produk perangkat lunak virtualisasi berlisensi bebas dari VMware, sebuah divisi dari EMC Corporation. Produk ini bisa menjalankan mesin virtualpengguna yang dibuat dari produk VMware yang lain tetapi tidak dapat membuat sebuah mesin virtual yang baru.namun limitasi ini dicabut di versi 3.0.0. sehingga dapat membuat sendiri tanpa harus memakai VMware Workstation. Perangkat berlisensi bebas dan situs web seperti EasyVMX juga hadir untuk membuat mesin virtual, menghapus, memanipulasi dan mengkonversikan disk VMware dan floppy, membuat perizinan pengguna, menjalankan dan merawat mesin virtual.</description></item><item><title>Sharing Bersama Naster Virtualisasi Pak Nathan Gusti Ryan</title><link>https://sibunglon.com/2017/08/30/sharing-bersama-naster-virtualisasi-pak-nathan-gusti-ryan/</link><pubDate>Wed, 30 Aug 2017 13:07:00 +0000</pubDate><guid>https://sibunglon.com/2017/08/30/sharing-bersama-naster-virtualisasi-pak-nathan-gusti-ryan/</guid><description>Pada kesempatan ini saya akan berbagi tentang pengalaman sharing dengan MASTER VIRTUALISASI DARI INDONESIA.
+Banyak sekali pengalaman yang saya terima dari sharing Pak Herry, Pak Nathan Gusti Ryan, Mas Latif. Mulai dari Pak Herry yang menceritakan tentang apa itu database, dan jenis jenis perangkat database yang pernah ia kerjakan, berapa tahun ia mempelajari Virtualisasi dan lika liku perjalanannya. Kemudian dari Pak Nathan memberi bocoran bagaimana gambaran didalam Datacenter. dan Mas Latif menceritakan lika-liku perjalanan dari mulai dia di BLC sampai menjadi orang kepercayaan Pak Nathan.</description></item><item><title>Pengenalan Desktop Environment (DE)</title><link>https://sibunglon.com/2017/08/28/pengenalan-desktop-environment-de/</link><pubDate>Mon, 28 Aug 2017 12:53:00 +0000</pubDate><guid>https://sibunglon.com/2017/08/28/pengenalan-desktop-environment-de/</guid><description>A. Pendahuluan
 Pada kesempatan ini saya akan Share mengenai Desktop Environment. pasti di kalimat dari Deskktop Environment ini sudah asing bagi orang yang sering mendengarnya dan asing bagi orang yang tidak pernah mendengar bahkan tidak mengetahuinya.
 1) Pengertian
-lingkungan desktop ( DE ) adalah implementasi metafora desktop yang dibuat dari kumpulan program yang berjalan di atas sistem operasi komputer, yang memiliki antarmuka pengguna grafis umum (GUI), terkadang digambarkan sebagai shell grafis .</description>
-      </item>
-    
-      <item>
-        <title>Mengatasi Masalah &#39;apt-get update failed to fetch hash sum mismatch&#39;</title>
-        <link>https://sibunglon.com/2017/08/23/mengatasi-masalah-apt-get-update-failed-to-fetch-hash-sum-mismatch/</link>
-        <pubDate>Wed, 23 Aug 2017 10:37:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/08/23/mengatasi-masalah-apt-get-update-failed-to-fetch-hash-sum-mismatch/</guid>
-        <description>A. Pendahuluan
+lingkungan desktop ( DE ) adalah implementasi metafora desktop yang dibuat dari kumpulan program yang berjalan di atas sistem operasi komputer, yang memiliki antarmuka pengguna grafis umum (GUI), terkadang digambarkan sebagai shell grafis .</description></item><item><title>Mengatasi Masalah 'apt-get update failed to fetch hash sum mismatch'</title><link>https://sibunglon.com/2017/08/23/mengatasi-masalah-apt-get-update-failed-to-fetch-hash-sum-mismatch/</link><pubDate>Wed, 23 Aug 2017 10:37:00 +0000</pubDate><guid>https://sibunglon.com/2017/08/23/mengatasi-masalah-apt-get-update-failed-to-fetch-hash-sum-mismatch/</guid><description>A. Pendahuluan
 Pada kali ini, saya akan memposting tentang bagaimana mengatasi masalah yang biasa ditemukan saat melakukan update linux.
 B. Pengertian
-Shell adalah program (penterjemah perintah)yang menjembatani user dengan sistem operasi dalam hal ini Kernel (inti dari sistem operasi), umumnya shell menyediakan prompt sebagai user interface, tempat dimana user dapat mengetikkan perintah-perintah yang diinginkan baik berupa perintah internal shell (internal command), ataupun perintah eksekusi file program (eksternal command), selain itu memungkinkan user menyusun sekumpulan perintah pada sebuah atau beberapa file untuk dieksekusi sebagai program.</description>
-      </item>
-    
-      <item>
-        <title>Recovery Data Dari Hardisk atau Flashdisk Yang Tidak Bisa Dibuka</title>
-        <link>https://sibunglon.com/2017/08/22/recovery-data-dari-hardisk-atau-flashdisk-yang-tidak-bisa-dibuka/</link>
-        <pubDate>Tue, 22 Aug 2017 10:06:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/08/22/recovery-data-dari-hardisk-atau-flashdisk-yang-tidak-bisa-dibuka/</guid>
-        <description>A. Pendahuluan
+Shell adalah program (penterjemah perintah)yang menjembatani user dengan sistem operasi dalam hal ini Kernel (inti dari sistem operasi), umumnya shell menyediakan prompt sebagai user interface, tempat dimana user dapat mengetikkan perintah-perintah yang diinginkan baik berupa perintah internal shell (internal command), ataupun perintah eksekusi file program (eksternal command), selain itu memungkinkan user menyusun sekumpulan perintah pada sebuah atau beberapa file untuk dieksekusi sebagai program.</description></item><item><title>Recovery Data Dari Hardisk atau Flashdisk Yang Tidak Bisa Dibuka</title><link>https://sibunglon.com/2017/08/22/recovery-data-dari-hardisk-atau-flashdisk-yang-tidak-bisa-dibuka/</link><pubDate>Tue, 22 Aug 2017 10:06:00 +0000</pubDate><guid>https://sibunglon.com/2017/08/22/recovery-data-dari-hardisk-atau-flashdisk-yang-tidak-bisa-dibuka/</guid><description>A. Pendahuluan
 Pada kesempatan kali ini, saya akan memberikan tahapan tentang bagaimana recovery data dari hardisk atau flashdisk yang tidak bisa dibuka menggunakan software di linux yaitu &amp;ldquo;Testdisk&amp;rdquo;
 B. Pengertian
-Recovery data (pemulihan data) adalah proses menyelamatkan (mengambil) tidak dapat diakses, hilang, rusak, rusak atau diformat data dari penyimpanan sekunder , removable media atau file , ketika data yang tersimpan di dalamnya tidak dapat diakses secara normal. Data yang paling sering diselamatkan dari media penyimpanan seperti internal atau eksternal hard disk drive (HDD), solid-state drive (SSD), USB flash drive , tape magnetik , CD , DVD , RAID subsistem, dan lainnya perangkat elektronik.</description>
-      </item>
-    
-      <item>
-        <title>Mengenal Perintah-Perintah Dasar di Linux</title>
-        <link>https://sibunglon.com/2017/08/21/mengenal-perintah-perintah-dasar-di-linux/</link>
-        <pubDate>Mon, 21 Aug 2017 21:40:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/08/21/mengenal-perintah-perintah-dasar-di-linux/</guid>
-        <description>A. Pendahuluan
+Recovery data (pemulihan data) adalah proses menyelamatkan (mengambil) tidak dapat diakses, hilang, rusak, rusak atau diformat data dari penyimpanan sekunder , removable media atau file , ketika data yang tersimpan di dalamnya tidak dapat diakses secara normal. Data yang paling sering diselamatkan dari media penyimpanan seperti internal atau eksternal hard disk drive (HDD), solid-state drive (SSD), USB flash drive , tape magnetik , CD , DVD , RAID subsistem, dan lainnya perangkat elektronik.</description></item><item><title>Mengenal Perintah-Perintah Dasar di Linux</title><link>https://sibunglon.com/2017/08/21/mengenal-perintah-perintah-dasar-di-linux/</link><pubDate>Mon, 21 Aug 2017 21:40:00 +0000</pubDate><guid>https://sibunglon.com/2017/08/21/mengenal-perintah-perintah-dasar-di-linux/</guid><description>A. Pendahuluan
 Pada kesempatan kali ini, saya akan memposting beberapa perintah-perintah dasar dari sistem operasi linux. Untuk lebih jelasnya akan di jelaskan sebagai berikut.
 B. Pengertian
 Linux identik dengan penggunaan console terminal yang mengharuskan kita menghafal perintah-perintah yang ada. Perintah-perintah tersebut bisa berupa singkatan atau nama asli sesuai fungsinya.
 C. Latar Belakang
-Semakin lama, semakin banyak para pengguna komputer yang menjadikan Linux sebagai Sistem Operasi utamanya. Selain sifatnya yang open source, ternyata sistem operasi Linux ini juga lebih banyak menuntut kita untuk terus mempelajarinya.</description>
-      </item>
-    
-      <item>
-        <title>Setting PPTP VPN Client Pada OS Linux Mint</title>
-        <link>https://sibunglon.com/2017/08/18/setting-pptp-vpn-client-pada-os-linux-mint/</link>
-        <pubDate>Fri, 18 Aug 2017 18:30:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/08/18/setting-pptp-vpn-client-pada-os-linux-mint/</guid>
-        <description>A. PENDAHULAN
+Semakin lama, semakin banyak para pengguna komputer yang menjadikan Linux sebagai Sistem Operasi utamanya. Selain sifatnya yang open source, ternyata sistem operasi Linux ini juga lebih banyak menuntut kita untuk terus mempelajarinya.</description></item><item><title>Setting PPTP VPN Client Pada OS Linux Mint</title><link>https://sibunglon.com/2017/08/18/setting-pptp-vpn-client-pada-os-linux-mint/</link><pubDate>Fri, 18 Aug 2017 18:30:00 +0000</pubDate><guid>https://sibunglon.com/2017/08/18/setting-pptp-vpn-client-pada-os-linux-mint/</guid><description>A. PENDAHULAN
 Berikut ini saya sharing Cara Setting PPTP VPN Client pada Linux Mint, sedangkan VPN Server yang digunakan pada artikel ini mengunakan VPN Server dari Mikrotik.
 B. PENGERTIAN
-VPN adalah Virtual Private Network dimana VPN ini merupakan interkoneksi antar jaringan ( PC Client to LAN maupun LAN to LAN ) yang mana interkoneksi ini melalui jaringan Public ( Internet ) sehingga dengan VPN ini terjadi koneksi terselubung alias lorong atau Tunneling Connection sehingga data yang di akses ( data yang di kirim dan di terima ) benar-benar aman.</description>
-      </item>
-    
-      <item>
-        <title>Virtualisasi Topologi Menggunakan Software DIA</title>
-        <link>https://sibunglon.com/2017/08/14/virtualisasi-topologi-menggunakan-software-dia/</link>
-        <pubDate>Mon, 14 Aug 2017 17:00:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/08/14/virtualisasi-topologi-menggunakan-software-dia/</guid>
-        <description>A. PENDAHULUAN
+VPN adalah Virtual Private Network dimana VPN ini merupakan interkoneksi antar jaringan ( PC Client to LAN maupun LAN to LAN ) yang mana interkoneksi ini melalui jaringan Public ( Internet ) sehingga dengan VPN ini terjadi koneksi terselubung alias lorong atau Tunneling Connection sehingga data yang di akses ( data yang di kirim dan di terima ) benar-benar aman.</description></item><item><title>Virtualisasi Topologi Menggunakan Software DIA</title><link>https://sibunglon.com/2017/08/14/virtualisasi-topologi-menggunakan-software-dia/</link><pubDate>Mon, 14 Aug 2017 17:00:00 +0000</pubDate><guid>https://sibunglon.com/2017/08/14/virtualisasi-topologi-menggunakan-software-dia/</guid><description>A. PENDAHULUAN
 Pada postingan kali ini saya akan membagi sedikit ilmu terkait dengan virtualisasi topologi jaringan menggunakan software dia.
 B. PENGERTIAN
 TOPOLOGI MENURUT WIKIPEDIA
 Topologi Jaringan Sebuah LAN dapat diimplementasikan dengan berbagai macam topologi. Topologi yang di maksud di sini merupakan struktur jaringan fisik yang digunakan untuk mengimplementasikan LAN tersebut. Topologi dasar yang bisa digunakan dalam jaringan komputer adalah:
- Topologi Bus (Linear) Topologi Ring (Cincin) Topologi Star (Bintang) Topologi Tree (Pohon) Topologi Mesh (web)  Topologi pengembangan dari ketiga di atas biasanya berupa topologi Tree (Pohon), yang merupakan pengembangan dari star dan Bus, topologi Mash atau Hybrid atau Multipoint atau Web yang merupakan pengembangan dari topologi Point to Point (bus), topologi Loop yang merupakan pengembangan dari topologi Ring Ketiganya memiliki kelebihan dan kekurangan masing-masing.</description>
-      </item>
-    
-      <item>
-        <title>Installasi Moodle di Localhost Linux</title>
-        <link>https://sibunglon.com/2017/08/11/installasi-moodle-di-localhost-linux/</link>
-        <pubDate>Fri, 11 Aug 2017 16:00:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/08/11/installasi-moodle-di-localhost-linux/</guid>
-        <description>A. Pendahuluan
+Topologi Bus (Linear) Topologi Ring (Cincin) Topologi Star (Bintang) Topologi Tree (Pohon) Topologi Mesh (web) Topologi pengembangan dari ketiga di atas biasanya berupa topologi Tree (Pohon), yang merupakan pengembangan dari star dan Bus, topologi Mash atau Hybrid atau Multipoint atau Web yang merupakan pengembangan dari topologi Point to Point (bus), topologi Loop yang merupakan pengembangan dari topologi Ring Ketiganya memiliki kelebihan dan kekurangan masing-masing.</description></item><item><title>Installasi Moodle di Localhost Linux</title><link>https://sibunglon.com/2017/08/11/installasi-moodle-di-localhost-linux/</link><pubDate>Fri, 11 Aug 2017 16:00:00 +0000</pubDate><guid>https://sibunglon.com/2017/08/11/installasi-moodle-di-localhost-linux/</guid><description>A. Pendahuluan
 Server dibuat dengan beragam maksud dan tujuannya, salah satunya adalah membangun sistem pembelajaran online. Pembelajaran online sangat baik diterapkan saat ini, karena pelajar masa kini lebih senang untuk online dari pada membaca buku. Hal ini bisa meningkatkan minat membaca pelajar tanah air. Salah satu media yang dapat digunakan adalah dengan &amp;ldquo;Moodle&amp;rsquo;. Apa itu Moodle?
 #Pengertian
-Moodle (Modular Object-Oriented Dynamic Learning Environment) adalah paket perangkat lunak yang diproduksi untuk kegiatan belajar berbasis internet dan situs web yang menggunakan prinsip social constructionist pedagogy.</description>
-      </item>
-    
-      <item>
-        <title>Memasukkan File Website ke Localhost</title>
-        <link>https://sibunglon.com/2017/08/10/memasukkan-file-website-ke-localhost/</link>
-        <pubDate>Thu, 10 Aug 2017 15:40:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/08/10/memasukkan-file-website-ke-localhost/</guid>
-        <description>A. Pendahuluan
+Moodle (Modular Object-Oriented Dynamic Learning Environment) adalah paket perangkat lunak yang diproduksi untuk kegiatan belajar berbasis internet dan situs web yang menggunakan prinsip social constructionist pedagogy.</description></item><item><title>Memasukkan File Website ke Localhost</title><link>https://sibunglon.com/2017/08/10/memasukkan-file-website-ke-localhost/</link><pubDate>Thu, 10 Aug 2017 15:40:00 +0000</pubDate><guid>https://sibunglon.com/2017/08/10/memasukkan-file-website-ke-localhost/</guid><description>A. Pendahuluan
 Berselancar di website dengan lancar tanpa butuh menunggu merupakan keinginan banyak orang, apalagi berselancar tanpa koneksi internet, wahhh nyaman banget. Kalian juga dapat merasakannya dengan menginstal LOCALHOST, tapi apa itu LOCALHOST?
 #Pengertian
 Dalam jaringan komputer, localhost adalah nama host yang berarti komputer ini. Ini digunakan untuk mengakses layanan jaringan yang berjalan di host melalui antarmuka jaringan loopback-nya. Menggunakan antarmuka loopback bypasses perangkat keras antarmuka jaringan lokal.
-Mekanisme loopback lokal berguna untuk menguji perangkat lunak selama pengembangan, terlepas dari konfigurasi jaringan manapun.</description>
-      </item>
-    
-      <item>
-        <title>Bagaimana Menginstall LAMP di Localhost Linux?</title>
-        <link>https://sibunglon.com/2017/08/09/bagaimana-menginstall-lamp-di-localhost-linux/</link>
-        <pubDate>Wed, 09 Aug 2017 14:58:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/08/09/bagaimana-menginstall-lamp-di-localhost-linux/</guid>
-        <description>A. Pendahuluan
+Mekanisme loopback lokal berguna untuk menguji perangkat lunak selama pengembangan, terlepas dari konfigurasi jaringan manapun.</description></item><item><title>Bagaimana Menginstall LAMP di Localhost Linux?</title><link>https://sibunglon.com/2017/08/09/bagaimana-menginstall-lamp-di-localhost-linux/</link><pubDate>Wed, 09 Aug 2017 14:58:00 +0000</pubDate><guid>https://sibunglon.com/2017/08/09/bagaimana-menginstall-lamp-di-localhost-linux/</guid><description>A. Pendahuluan
 Hello, pada kesempatan kali ini saya memposting bagaimana sih menginstal LAMP? Nah cara-caranya akan dijelaskan sebagai berikut.
 #Pengertian
 LAMP adalah istilah yang merupakan singkatan dari Linux, Apache, MySQL dan Perl/PHP/Phyton. Merupakan sebuah paket perangkat lunak bebas yang digunakan untuk menjalankan sebuah aplikasi secara lengkap.
 Komponen-komponen dari LAMP :
- Linux – sistem operasi Apache HTTP Server – web server MariaDB atau MySQL – sistem basis data PHP atau Perl atau Python – bahasa pemrograman yang dipakai  #Latar Belakang</description>
-      </item>
-    
-      <item>
-        <title>Apa Perbedaan Linux dan Windows?</title>
-        <link>https://sibunglon.com/2017/08/04/apa-perbedaan-linux-dan-windows/</link>
-        <pubDate>Fri, 04 Aug 2017 17:00:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/08/04/apa-perbedaan-linux-dan-windows/</guid>
-        <description>Perbedaan linux dengan windows
+Linux – sistem operasi Apache HTTP Server – web server MariaDB atau MySQL – sistem basis data PHP atau Perl atau Python – bahasa pemrograman yang dipakai #Latar Belakang</description></item><item><title>Apa Perbedaan Linux dan Windows?</title><link>https://sibunglon.com/2017/08/04/apa-perbedaan-linux-dan-windows/</link><pubDate>Fri, 04 Aug 2017 17:00:00 +0000</pubDate><guid>https://sibunglon.com/2017/08/04/apa-perbedaan-linux-dan-windows/</guid><description>Perbedaan linux dengan windows
 Sebelum memahami perbedaan, berikut ini persamaan Linux dan Windows:
 Linux dan Windows sama-sama nama untuk sistem operasi &amp;ldquo;komputer&amp;rdquo; dan sama-sama punya beberapa jenis atau pilihan, misal Linux Nusantara, BlankOn, Ubuntu, Mandriva, Fedora, openSUSE, Slackware, Debian, Gentoo, Redhat, Mint, dll. Sedangkan di Windows ada Windows 98, Me, XP, Vista, 7, Server 2008, Mobile, dll. &amp;ldquo;komputer&amp;rdquo; itu bisa berupa pc, notebook, smartphone, dll.
-Persamaan adanya pilihan/jenis di atas sebenarynya tidak persis sama, karena jenis Windows itu hanya tersedia buatan MS (Microsoft), sedangkan jenis Linux itu bisa buatan beberapa pihak yg berbeda.</description>
-      </item>
-    
-      <item>
-        <title>Apa Itu Linux dan Bagaimana Sejarah Singkatnya?</title>
-        <link>https://sibunglon.com/2017/08/03/apa-itu-linux-dan-bagaimana-sejarah-singkatnya/</link>
-        <pubDate>Thu, 03 Aug 2017 16:52:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/08/03/apa-itu-linux-dan-bagaimana-sejarah-singkatnya/</guid>
-        <description>Apa itu Linux?
+Persamaan adanya pilihan/jenis di atas sebenarynya tidak persis sama, karena jenis Windows itu hanya tersedia buatan MS (Microsoft), sedangkan jenis Linux itu bisa buatan beberapa pihak yg berbeda.</description></item><item><title>Apa Itu Linux dan Bagaimana Sejarah Singkatnya?</title><link>https://sibunglon.com/2017/08/03/apa-itu-linux-dan-bagaimana-sejarah-singkatnya/</link><pubDate>Thu, 03 Aug 2017 16:52:00 +0000</pubDate><guid>https://sibunglon.com/2017/08/03/apa-itu-linux-dan-bagaimana-sejarah-singkatnya/</guid><description>Apa itu Linux?
 Linux (diucapkan ˈlɪnəks atau /ˈlɪnʊks/) adalah nama yang diberikan kepada sistem operasi komputer bertipe Unix. Linux merupakan salah satu contoh hasil pengembangan perangkat lunak bebas dan sumber terbuka utama. Seperti perangkat lunak bebas dan sumber terbuka lainnya pada umumnya, kode sumber Linux dapat dimodifikasi, digunakan dan didistribusikan kembali secara bebas oleh siapa saja.
-Nama &amp;ldquo;Linux&amp;rdquo; berasal dari nama pembuatnya, yang diperkenalkan tahun 1991 oleh Linus Torvalds. Sistemnya, peralatan sistem dan pustakanya umumnya berasal dari sistem operasi GNU, yang diumumkan tahun 1983 oleh Richard Stallman.</description>
-      </item>
-    
-      <item>
-        <title>Mengatasi GRUB Linux Yang Error</title>
-        <link>https://sibunglon.com/2017/08/02/mengatasi-grub-linux-yang-error/</link>
-        <pubDate>Wed, 02 Aug 2017 16:51:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/08/02/mengatasi-grub-linux-yang-error/</guid>
-        <description>Pendahuluan
+Nama &amp;ldquo;Linux&amp;rdquo; berasal dari nama pembuatnya, yang diperkenalkan tahun 1991 oleh Linus Torvalds. Sistemnya, peralatan sistem dan pustakanya umumnya berasal dari sistem operasi GNU, yang diumumkan tahun 1983 oleh Richard Stallman.</description></item><item><title>Mengatasi GRUB Linux Yang Error</title><link>https://sibunglon.com/2017/08/02/mengatasi-grub-linux-yang-error/</link><pubDate>Wed, 02 Aug 2017 16:51:00 +0000</pubDate><guid>https://sibunglon.com/2017/08/02/mengatasi-grub-linux-yang-error/</guid><description>Pendahuluan
 GNU GRUB (singkat untuk GNU GRand Bersatu Bootloader) adalah boot loader paket dari proyek GNU . GRUB adalah implementasi referensi dari Free Software Foundation &amp;rsquo;s Multiboot Keterangan , yang menyediakan pengguna pilihan untuk boot salah satu dari beberapa sistem operasi yang terpasang di komputer atau pilih tertentu kernel konfigurasi yang tersedia pada partisi sistem operasi tertentu.
 Maksud dan Tujuan
-Tujuan dari postingan ini yaitu agar pembaca yang memiliki masalah yang serupa, maka ia dapat mengatasinya sendiri tanpa membawa ke service center.</description>
-      </item>
-    
-      <item>
-        <title>Mengganti Login Page Jaringan MikroTik Menggunakan FileZilla</title>
-        <link>https://sibunglon.com/2017/08/01/mengganti-login-page-jaringan-mikrotik-menggunakan-filezilla/</link>
-        <pubDate>Tue, 01 Aug 2017 16:09:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/08/01/mengganti-login-page-jaringan-mikrotik-menggunakan-filezilla/</guid>
-        <description>Pendahuluan
+Tujuan dari postingan ini yaitu agar pembaca yang memiliki masalah yang serupa, maka ia dapat mengatasinya sendiri tanpa membawa ke service center.</description></item><item><title>Mengganti Login Page Jaringan MikroTik Menggunakan FileZilla</title><link>https://sibunglon.com/2017/08/01/mengganti-login-page-jaringan-mikrotik-menggunakan-filezilla/</link><pubDate>Tue, 01 Aug 2017 16:09:00 +0000</pubDate><guid>https://sibunglon.com/2017/08/01/mengganti-login-page-jaringan-mikrotik-menggunakan-filezilla/</guid><description>Pendahuluan
 Login page adalah salah satu fitur mikroTik yang berfungsi ketika hostpot yang di aktifkan di mikroTik tidak mempunyai autentikasi pada SSIDnya, dengan kata lain setelah berhasil terhubung ke hotspot tersebut si pengguna akan diminta masuk ke login page untuk dapat mengakses internet. Login page tersebut dapat diedit dengan berbagai cara, sesuai yang membuat anda nyaman :D
 Maksud dan Tujuan
-Tujuan dari postingan ini agar si pembaca dapat mempraktekkan dan mengetahui bagaimana mengganti login page hotspot mikroTik tanpa harus membuka winbox.</description>
-      </item>
-    
-      <item>
-        <title>Menginstall Proxmox di Server</title>
-        <link>https://sibunglon.com/2017/07/31/menginstall-proxmox-di-server/</link>
-        <pubDate>Mon, 31 Jul 2017 16:07:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/07/31/menginstall-proxmox-di-server/</guid>
-        <description>Pendahuluan
+Tujuan dari postingan ini agar si pembaca dapat mempraktekkan dan mengetahui bagaimana mengganti login page hotspot mikroTik tanpa harus membuka winbox.</description></item><item><title>Menginstall Proxmox di Server</title><link>https://sibunglon.com/2017/07/31/menginstall-proxmox-di-server/</link><pubDate>Mon, 31 Jul 2017 16:07:00 +0000</pubDate><guid>https://sibunglon.com/2017/07/31/menginstall-proxmox-di-server/</guid><description>Pendahuluan
 Proxmox VE (Virtual Environment) adalah sebuah distro Linux virtualisasi berbasis Debian ( 64 bit) yang mengusung OpenZV dan KVM, dengan KVM kita tidak hanya bisa menginstall linux saja akan tetapi Operating system windows pun bisa kita instal. Namun yang membuat istimewa dari proxmox adalah kemudahan dalam installasi dan administrasi berbasis Web.
 Latar Belakang
 Beberapa keuntungan menggunakan Proxmox sebagai berikut
- Kinerja terbaik. Instalasi yang telah dioptimalkan, sehingga lebih cepat. Mudah dalam manajemen.</description>
-      </item>
-    
-      <item>
-        <title>Menyiapkan Server</title>
-        <link>https://sibunglon.com/2017/07/31/menyiapkan-server/</link>
-        <pubDate>Mon, 31 Jul 2017 15:39:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/07/31/menyiapkan-server/</guid>
-        <description>Pendahuluan
+Kinerja terbaik. Instalasi yang telah dioptimalkan, sehingga lebih cepat. Mudah dalam manajemen.</description></item><item><title>Menyiapkan Server</title><link>https://sibunglon.com/2017/07/31/menyiapkan-server/</link><pubDate>Mon, 31 Jul 2017 15:39:00 +0000</pubDate><guid>https://sibunglon.com/2017/07/31/menyiapkan-server/</guid><description>Pendahuluan
 Server merupakan sebuah sistem komputer yang menyediakan jenis layanan tertentu dalam sebuah jaringan komputer. Peladen didukung dengan prosesor yang bersifat scalable dan RAM yang besar,dan juga dilengkapi dengan sistem operasi khusus, yang disebut sebagai sistem operasi jaringan. Peladen juga menjalankan perangkat lunak administratif yang mengontrol akses terhadap jaringan dan sumber daya yang terdapat di dalamnya contoh sepertihalnya berkas atau pencetak, dan memberikan akses kepada stasiun kerja anggota jaringan.
-LATAR BELAKANG</description>
-      </item>
-    
-      <item>
-        <title>Instalasi Linux Mint 18.1 Sarena</title>
-        <link>https://sibunglon.com/2017/07/24/instalasi-linux-mint-18.1-sarena/</link>
-        <pubDate>Mon, 24 Jul 2017 13:52:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/07/24/instalasi-linux-mint-18.1-sarena/</guid>
-        <description>Alat dan bahan:
- 1 set pc atau laptop flashdisk booting linux mint 18.1 cinnamon 64-bit  Langkah kerja:
-  Siapkan sebuah pc atau laptop yang akan diinstallkan linux mint 18.1 cinnamon 64-bit, serta flashdisk yang berisi booting sistem operasi yang akan diinstal.
-  Nyalakan pc atau laptop yang ingin di install, setalah itu masuk pada bios dan konfigurasi agar flashdisk booting yang telah ada dapat dipakai yaitu dengan cara masuk di menu “Boot” dan meletakkan jenis USB ke deretan atas.</description>
-      </item>
-    
-      <item>
-        <title>Sejarah Singkat BLC Telkom Klaten Serta Perkenalan dan Pertemuan Pertama</title>
-        <link>https://sibunglon.com/2017/07/22/sejarah-singkat-blc-telkom-klaten-serta-perkenalan-dan-pertemuan-pertama/</link>
-        <pubDate>Sat, 22 Jul 2017 13:43:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/07/22/sejarah-singkat-blc-telkom-klaten-serta-perkenalan-dan-pertemuan-pertama/</guid>
-        <description>Assalamualaikum Wr.Wb
+LATAR BELAKANG</description></item><item><title>Instalasi Linux Mint 18.1 Sarena</title><link>https://sibunglon.com/2017/07/24/instalasi-linux-mint-18.1-sarena/</link><pubDate>Mon, 24 Jul 2017 13:52:00 +0000</pubDate><guid>https://sibunglon.com/2017/07/24/instalasi-linux-mint-18.1-sarena/</guid><description>Alat dan bahan:
+1 set pc atau laptop flashdisk booting linux mint 18.1 cinnamon 64-bit Langkah kerja:
+Siapkan sebuah pc atau laptop yang akan diinstallkan linux mint 18.1 cinnamon 64-bit, serta flashdisk yang berisi booting sistem operasi yang akan diinstal.
+Nyalakan pc atau laptop yang ingin di install, setalah itu masuk pada bios dan konfigurasi agar flashdisk booting yang telah ada dapat dipakai yaitu dengan cara masuk di menu “Boot” dan meletakkan jenis USB ke deretan atas.</description></item><item><title>Sejarah Singkat BLC Telkom Klaten Serta Perkenalan dan Pertemuan Pertama</title><link>https://sibunglon.com/2017/07/22/sejarah-singkat-blc-telkom-klaten-serta-perkenalan-dan-pertemuan-pertama/</link><pubDate>Sat, 22 Jul 2017 13:43:00 +0000</pubDate><guid>https://sibunglon.com/2017/07/22/sejarah-singkat-blc-telkom-klaten-serta-perkenalan-dan-pertemuan-pertama/</guid><description>Assalamualaikum Wr.Wb
  Perkenalkan saya Faizar Septiawan atau bisa di panggil Icar berasal dari Bulukumba, Sulawesi Selatan dan sekolah di SMKN 1 Bulukumba. Dipostingan pertama ini saya akan tuliskan sejarah dan review sebuah tempat magang/prakerin yang saya tempati. Tempat tersebut bernama BLC Telkom Klaten, beralamat di Jl.Srigading No.7 Tonggalan, Klaten Tengah
 Sejarah BLC Telkom Klaten
- &amp;ldquo;Saya melihat Teknologi Informasi (TI) khususnya penggunaan dan pemanfaatan Internet di Indonesia seperti sebilah pisau yang sangat tajam dijual bebas dan dibeli oleh orang-orang tapi tidak ada keterangan penggunaannya, manfaat segi positif dan negatifnya.</description>
-      </item>
-    
-  </channel>
-</rss>
+ &amp;ldquo;Saya melihat Teknologi Informasi (TI) khususnya penggunaan dan pemanfaatan Internet di Indonesia seperti sebilah pisau yang sangat tajam dijual bebas dan dibeli oleh orang-orang tapi tidak ada keterangan penggunaannya, manfaat segi positif dan negatifnya.</description></item></channel></rss>

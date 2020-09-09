@@ -1,172 +1,28 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Others on The Official Site of siBunglon</title>
-    <link>https://sibunglon.com/tags/others/</link>
-    <description>Recent content in Others on The Official Site of siBunglon</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 15 Feb 2020 13:29:12 +0700</lastBuildDate>
-    
-      <atom:link href="https://sibunglon.com/tags/others/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      <item>
-        <title>Server Got Hacked, Crontab Has Been Modified</title>
-        <link>https://sibunglon.com/2020/02/15/server-got-hacked-crontab-has-been-modified/</link>
-        <pubDate>Sat, 15 Feb 2020 13:29:12 +0700</pubDate>
-        <guid>https://sibunglon.com/2020/02/15/server-got-hacked-crontab-has-been-modified/</guid>
-        <description>A few days ago, one of the servers used by my worker&amp;rsquo;s developer friends often experienced a down (assumed to be server A). Initially I thought it was caused by the very few available server resources and increasing number of processes carried out by applications.
-When checking server resources, it turns out that CPU usage has reached 100%.
-What process continues to make CPU usage up to 100%? Whereas on other servers (assumed to be server B) with the same application process, CPU usage does not reach 100%.</description>
-      </item>
-    
-      <item>
-        <title>Disable FortiClient Auto Start on macOS</title>
-        <link>https://sibunglon.com/2019/12/29/disable-forticlient-auto-start-on-macos/</link>
-        <pubDate>Sun, 29 Dec 2019 20:09:28 +0700</pubDate>
-        <guid>https://sibunglon.com/2019/12/29/disable-forticlient-auto-start-on-macos/</guid>
-        <description>Open terminal or shell.
-  Open the file /Library/LaunchAgents/com.fortinet.forticlient.fct_launcher.plist using your favorite text editor, here I use vim.
-  $ sudo vi /Library/LaunchAgents/com.fortinet.forticlient.fct_launcher.plist Default contents of the com.fortinet.forticlient.fct_launcher.plist file as follows.  &amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt; &amp;lt;!DOCTYPE plist PUBLIC &amp;#34;-//Apple//DTD PLIST 1.0//EN&amp;#34; &amp;#34;http://www.apple.com/DTDs/PropertyList-1.0.dtd&amp;#34;&amp;gt; &amp;lt;plist version=&amp;#34;1.0&amp;#34;&amp;gt; &amp;lt;dict&amp;gt; &amp;lt;key&amp;gt;Label&amp;lt;/key&amp;gt; &amp;lt;string&amp;gt;com.fortinet.fct_launcher&amp;lt;/string&amp;gt; &amp;lt;key&amp;gt;Program&amp;lt;/key&amp;gt; &amp;lt;string&amp;gt;/Library/Application Support/Fortinet/FortiClient/bin/FCTLauncher&amp;lt;/string&amp;gt; &amp;lt;key&amp;gt;RunAtLoad&amp;lt;/key&amp;gt; &amp;lt;true/&amp;gt; &amp;lt;/dict&amp;gt; &amp;lt;/plist&amp;gt; Change the word true to false, so that the contents of the com.</description>
-      </item>
-    
-      <item>
-        <title>Automatic Remove .DS_Store on macOS</title>
-        <link>https://sibunglon.com/2019/12/29/automatic-remove-.ds_store-on-macos/</link>
-        <pubDate>Sun, 29 Dec 2019 19:37:51 +0700</pubDate>
-        <guid>https://sibunglon.com/2019/12/29/automatic-remove-.ds_store-on-macos/</guid>
-        <description>In the Apple macOS operating system, .DS_Store is a file that stores custom attributes of its containing folder, such as the position of icons or the choice of a background image. The name is an abbreviation of Desktop Services Store.
-But some people want to delete this file, including me. To delete this file simply run the following command in the macOS terminal or shell.
-$ find ~ -name .DS_Store -delete This will find the .</description>
-      </item>
-    
-      <item>
-        <title>Add Trusted Site on macOS</title>
-        <link>https://sibunglon.com/2019/12/29/add-trusted-site-on-macos/</link>
-        <pubDate>Sun, 29 Dec 2019 14:07:36 +0700</pubDate>
-        <guid>https://sibunglon.com/2019/12/29/add-trusted-site-on-macos/</guid>
-        <description>There is a site that we may already trust but because the SSL certificate has expired or is invalid, we are prevented from accessing the site. In Google Chrome the advanced button will appear and there will be another proceed to site button that can help to access the site, but the proced to site button will be removed from Google Chrome macOS. Then how to access the site?
- Click Not Secure on the address bar&amp;gt; click Certificate &amp;gt; Then drag and drop the existing certificate into any directory.</description>
-      </item>
-    
-      <item>
-        <title>How to Reset List of Trusted CA Certificates in RHEL 6 RHEL 7</title>
-        <link>https://sibunglon.com/2019/12/13/how-to-reset-list-of-trusted-ca-certificates-in-rhel-6-rhel-7/</link>
-        <pubDate>Fri, 13 Dec 2019 14:31:55 +0700</pubDate>
-        <guid>https://sibunglon.com/2019/12/13/how-to-reset-list-of-trusted-ca-certificates-in-rhel-6-rhel-7/</guid>
-        <description>#!/bin/bash # Get time localTime=$(date &amp;#39;+%Y%m%d_%H%M%S&amp;#39; -d &amp;#34;$(curl -s --head http://google.com | grep ^Date: | sed &amp;#39;s/Date: //g&amp;#39;)&amp;#34;) # Create cert bak dir mkdir -p $HOME/cert.bak # Reset cert sudo rpm -Vv ca-certificates | awk &amp;#39;$1!=&amp;#34;.........&amp;#34; &amp;amp;&amp;amp; $2!=&amp;#34;d&amp;#34; {system(&amp;#34;mv -v &amp;#34; $NF &amp;#34; $HOME/cert.bak&amp;#34;)}&amp;#39; sudo yum check-update ca-certificates; (($?==100)) &amp;amp;&amp;amp; sudo yum update -y ca-certificates || sudo yum reinstall -y ca-certificates sudo find /etc/pki/ca-trust/source{,/anchors} -maxdepth 1 -not -type d -exec ls -1 {} + sudo update-ca-trust extract # Update locate cert bak sudo mv $HOME/cert.</description>
-      </item>
-    
-      <item>
-        <title>How to Ignore Invalid and Self Signed SSL Connection Errors With cURL and Wget</title>
-        <link>https://sibunglon.com/2019/12/09/how-to-ignore-invalid-and-self-signed-ssl-connection-errors-with-curl-and-wget/</link>
-        <pubDate>Mon, 09 Dec 2019 14:02:06 +0700</pubDate>
-        <guid>https://sibunglon.com/2019/12/09/how-to-ignore-invalid-and-self-signed-ssl-connection-errors-with-curl-and-wget/</guid>
-        <description>If you use the curl or wget command and don&amp;rsquo;t want SSL to be checked so that the process should occur, you can use options or add commands.
--) cURL
-$ curl -k url $ curl --insecure url $ curl --insecure -I url Example:
-$ curl -k https://sibunglon.com/image.png -) Wget
-$ wget --no-check-certificate url Example:
-$ wget --no-check-certificate https://sibunglon.com/image.png But if you don&amp;rsquo;t want to use this additional option, just create a file whose contents can pass the SSL Certificate check.</description>
-      </item>
-    
-      <item>
-        <title>Tree: ignore directories with patterns</title>
-        <link>https://sibunglon.com/2019/12/09/tree-ignore-directories-with-patterns/</link>
-        <pubDate>Mon, 09 Dec 2019 11:01:45 +0700</pubDate>
-        <guid>https://sibunglon.com/2019/12/09/tree-ignore-directories-with-patterns/</guid>
-        <description>Tree is a linux command that provides a list of recursive directories or a tree can display all file and directory listings in a directory.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Others on The Official Site of siBunglon</title><link>https://sibunglon.com/tags/others/</link><description>Recent content in Others on The Official Site of siBunglon</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 09 Dec 2019 11:01:45 +0700</lastBuildDate><atom:link href="https://sibunglon.com/tags/others/index.xml" rel="self" type="application/rss+xml"/><item><title>Tree: ignore directories with patterns</title><link>https://sibunglon.com/2019/12/09/tree-ignore-directories-with-patterns/</link><pubDate>Mon, 09 Dec 2019 11:01:45 +0700</pubDate><guid>https://sibunglon.com/2019/12/09/tree-ignore-directories-with-patterns/</guid><description>Tree is a linux command that provides a list of recursive directories or a tree can display all file and directory listings in a directory.
 Comparison of ls and tree usage
 Tree:
-$ tree Bash Bash ├── BackupRestore-dbOpenEdx │ ├── backup_mongo.sh │ ├── backup_mysql.sh │ ├── restore_mongo.sh │ └── restore_mysql.sh ├── auto-update-dplk_env │ ├── main.sh │ └── playbook │ ├── backend.yml │ ├── config.yml │ └── frontend.yml ├── backup\ database\ postgres.</description>
-      </item>
-    
-      <item>
-        <title>Istilah Istilah Yang Biasa Digunakan Orang Kantoran</title>
-        <link>https://sibunglon.com/2019/11/08/istilah-istilah-yang-biasa-digunakan-orang-kantoran/</link>
-        <pubDate>Fri, 08 Nov 2019 14:24:33 +0700</pubDate>
-        <guid>https://sibunglon.com/2019/11/08/istilah-istilah-yang-biasa-digunakan-orang-kantoran/</guid>
-        <description>Sebagai salah satu orang yang biasa jalan-jalan ke kantor orang, disini saya ingin berbagi istilah-istilah yang biasa saya dengar atau saya temui di lingkungan pekerjaan mereka dan sudah saya tahu arti/maksudnya 😄
-Istilah-Istilah Umum:   PIC (Person In Charge)
- Istilah ini menunjukkan orang yang bertanggung jawab dalam menangani hal tertentu.
-   FYI (For Your Information)
- Isitilah ini biasanya digunakan dalam email untuk memberitahukan suatu informasi.</description>
-      </item>
-    
-      <item>
-        <title>Analisis SWOT</title>
-        <link>https://sibunglon.com/2019/05/04/analisis-swot/</link>
-        <pubDate>Sat, 04 May 2019 22:32:54 +0700</pubDate>
-        <guid>https://sibunglon.com/2019/05/04/analisis-swot/</guid>
-        <description>SWOT SWOT adalah metode perencanaan strategis yang digunakan untuk mengevaluasi kekuatan (strengths), kelemahan (weaknesses), peluang (opportunities), dan ancaman (threats) dalam suatu proyek atau suatu spekulasi bisnis.
-Banyak yang menggunakan analisis SWOT untuk menganalisa situasi, kondisi, dan faktor yang mempengaruhi pengembangan bisnis dalam suatu perusahaan. Analisa ini digunakan baik sebelum memulai membangun bisnis atau sudah membangun bisnis. Bahkan ada yang menyebut analisis SWOT merupakan analisa paling ajaib yang dapat memberikan proses penyelesaian permasalahan pada bisnis.</description>
-      </item>
-    
-      <item>
-        <title>Mengenal VLAN (Virtual LAN)</title>
-        <link>https://sibunglon.com/2017/10/12/mengenal-vlan-virtual-lan/</link>
-        <pubDate>Thu, 12 Oct 2017 09:08:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/10/12/mengenal-vlan-virtual-lan/</guid>
-        <description>A. Pendahuluan
+$ tree Bash Bash ├── BackupRestore-dbOpenEdx │ ├── backup_mongo.sh │ ├── backup_mysql.sh │ ├── restore_mongo.sh │ └── restore_mysql.sh ├── auto-update-dplk_env │ ├── main.sh │ └── playbook │ ├── backend.yml │ ├── config.yml │ └── frontend.yml ├── backup\ database\ postgres.</description></item><item><title>Istilah Istilah Yang Biasa Digunakan Orang Kantoran</title><link>https://sibunglon.com/2019/11/08/istilah-istilah-yang-biasa-digunakan-orang-kantoran/</link><pubDate>Fri, 08 Nov 2019 14:24:33 +0700</pubDate><guid>https://sibunglon.com/2019/11/08/istilah-istilah-yang-biasa-digunakan-orang-kantoran/</guid><description>Sebagai salah satu orang yang biasa jalan-jalan ke kantor orang, disini saya ingin berbagi istilah-istilah yang biasa saya dengar atau saya temui di lingkungan pekerjaan mereka dan sudah saya tahu arti/maksudnya 😄
+Istilah-Istilah Umum: PIC (Person In Charge)
+Istilah ini menunjukkan orang yang bertanggung jawab dalam menangani hal tertentu.
+FYI (For Your Information)
+Isitilah ini biasanya digunakan dalam email untuk memberitahukan suatu informasi.</description></item><item><title>Analisis SWOT</title><link>https://sibunglon.com/2019/05/04/analisis-swot/</link><pubDate>Sat, 04 May 2019 22:32:54 +0700</pubDate><guid>https://sibunglon.com/2019/05/04/analisis-swot/</guid><description>SWOT SWOT adalah metode perencanaan strategis yang digunakan untuk mengevaluasi kekuatan (strengths), kelemahan (weaknesses), peluang (opportunities), dan ancaman (threats) dalam suatu proyek atau suatu spekulasi bisnis.
+Banyak yang menggunakan analisis SWOT untuk menganalisa situasi, kondisi, dan faktor yang mempengaruhi pengembangan bisnis dalam suatu perusahaan. Analisa ini digunakan baik sebelum memulai membangun bisnis atau sudah membangun bisnis. Bahkan ada yang menyebut analisis SWOT merupakan analisa paling ajaib yang dapat memberikan proses penyelesaian permasalahan pada bisnis.</description></item><item><title>Mengenal VLAN (Virtual LAN)</title><link>https://sibunglon.com/2017/10/12/mengenal-vlan-virtual-lan/</link><pubDate>Thu, 12 Oct 2017 09:08:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/12/mengenal-vlan-virtual-lan/</guid><description>A. Pendahuluan
 Pada kesempatan kali ini ane akan share sedikit artikel tentang VLAN. Oke langsung saja silahkan disimak.
 1) Pengertian
-Virtual LAN atau disingkat VLAN merupakan sekelompok perangkat pada satu LAN atau lebih yang dikonfigurasikan (menggunakan perangkat lunak pengelolaan) sehingga dapat berkomunikasi seperti halnya bila perangkat tersebut terhubung ke jalur yang sama, padahal sebenarnya perangkat tersebut berada pada sejumlah segmen LAN yang berbeda. Vlan dibuat dengan menggunakan jaringan pihak ke tiga.</description>
-      </item>
-    
-      <item>
-        <title>Tips Menemukan Referensi Website Untuk Belajar Linux</title>
-        <link>https://sibunglon.com/2017/10/10/tips-menemukan-referensi-website-untuk-belajar-linux/</link>
-        <pubDate>Tue, 10 Oct 2017 17:27:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/10/10/tips-menemukan-referensi-website-untuk-belajar-linux/</guid>
-        <description>A. Pendahuluan
+Virtual LAN atau disingkat VLAN merupakan sekelompok perangkat pada satu LAN atau lebih yang dikonfigurasikan (menggunakan perangkat lunak pengelolaan) sehingga dapat berkomunikasi seperti halnya bila perangkat tersebut terhubung ke jalur yang sama, padahal sebenarnya perangkat tersebut berada pada sejumlah segmen LAN yang berbeda. Vlan dibuat dengan menggunakan jaringan pihak ke tiga.</description></item><item><title>Tips Menemukan Referensi Website Untuk Belajar Linux</title><link>https://sibunglon.com/2017/10/10/tips-menemukan-referensi-website-untuk-belajar-linux/</link><pubDate>Tue, 10 Oct 2017 17:27:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/10/tips-menemukan-referensi-website-untuk-belajar-linux/</guid><description>A. Pendahuluan
 Halo teman2 blogger, pada kesempatan kali ini saya akan mmebagikan sebuah artikel sederhana namun bermanfaat bagi pembaca sekalian terutama bagi yang ingin belajar linux agar mahir menggunakannya. Monggo mari di simak artikel yang saya bagikan berikut ini.
 1. Pengertian
-Web referensi adalah suatu website atau situs atau laman yang memuat pembahasan ataupun tutorial yang berisi materi yang dapat di jadikan patokan atau dasar untuk membuat suatu artikel ataupun tutorial.</description>
-      </item>
-    
-      <item>
-        <title>Comparison of Platform Virtualization Software</title>
-        <link>https://sibunglon.com/2017/10/09/comparison-of-platform-virtualization-software/</link>
-        <pubDate>Mon, 09 Oct 2017 17:12:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/10/09/comparison-of-platform-virtualization-software/</guid>
-        <description>A. PENDAHULUAN
-Seperti judulnya, yaitu adalah perbandingan dari beberapa vendor Virtualisasi Software.
-B. PENGERTIAN
-adalah istilah umum yang mengacu kepada abstraksi dari sumber daya komputer. Definisi lainnya adalah &amp;ldquo;sebuah teknik untuk menyembunyikan karakteristik fisik dari sumber daya komputer dari bagaimana cara sistem lain, aplikasi atau pengguna berinteraksi dengan sumber daya tersebut. Hal ini termasuk membuat sebuah sumber daya tunggal (seperti server, sebuah sistem operasi, sebuah aplikasi, atau peralatan penyimpanan terlihat berfungsi sebagai beberapa sumber daya logikal; atau dapat juga termasuk definisi untuk membuat beberapa sumber daya fisik (seperti beberapa peralatan penyimpanan atau server) terlihat sebagai satu sumber daya logikal.</description>
-      </item>
-    
-      <item>
-        <title>K3 (Kesehatan, Keselamatan, dan Keamanan kerja)</title>
-        <link>https://sibunglon.com/2017/09/18/k3-kesehatan-keselamatan-dan-keamanan-kerja/</link>
-        <pubDate>Mon, 18 Sep 2017 02:31:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/09/18/k3-kesehatan-keselamatan-dan-keamanan-kerja/</guid>
-        <description>PENDAHULUAN
+Web referensi adalah suatu website atau situs atau laman yang memuat pembahasan ataupun tutorial yang berisi materi yang dapat di jadikan patokan atau dasar untuk membuat suatu artikel ataupun tutorial.</description></item><item><title>K3 (Kesehatan, Keselamatan, dan Keamanan kerja)</title><link>https://sibunglon.com/2017/09/18/k3-kesehatan-keselamatan-dan-keamanan-kerja/</link><pubDate>Mon, 18 Sep 2017 02:31:00 +0000</pubDate><guid>https://sibunglon.com/2017/09/18/k3-kesehatan-keselamatan-dan-keamanan-kerja/</guid><description>PENDAHULUAN
 Pada kesempatan ini kita akan membahas sedikit mengenai K3 atau Kesehatan, Keselamatan, Keamanan Kerja. kenapa kita membahas hal ini, karna di dalam melakukan pekerjaan kita harus memahmi atau memakai yang namanya K3.
 PENGERTIAN
 Filosofi (Mangkunegara)
 Suatu pemikiran dan upaya untuk menjamin keutuhan dan kesempurnaan jasmani maupun rohani tenaga kerja khususnya dan manusia pada umumnya serta hasil karya dan budaya untuk menuju masyarakat adil dan makmur.
 Keilmuan
-Semua ilmu dan penerapannya untuk mencegah terjadinya kecelakaan kerja, penyakit akibat kerja (PAK), kebakaran, peledakan dan pencemaran lingkungan.</description>
-      </item>
-    
-      <item>
-        <title>Pengenalan SOP (Standar Operasional Prosedur)</title>
-        <link>https://sibunglon.com/2017/09/12/pengenalan-sop-standar-operasional-prosedur/</link>
-        <pubDate>Tue, 12 Sep 2017 01:27:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/09/12/pengenalan-sop-standar-operasional-prosedur/</guid>
-        <description>A. Pendahuluan
+Semua ilmu dan penerapannya untuk mencegah terjadinya kecelakaan kerja, penyakit akibat kerja (PAK), kebakaran, peledakan dan pencemaran lingkungan.</description></item><item><title>Pengenalan SOP (Standar Operasional Prosedur)</title><link>https://sibunglon.com/2017/09/12/pengenalan-sop-standar-operasional-prosedur/</link><pubDate>Tue, 12 Sep 2017 01:27:00 +0000</pubDate><guid>https://sibunglon.com/2017/09/12/pengenalan-sop-standar-operasional-prosedur/</guid><description>A. Pendahuluan
 Pada blog kali ini saya akan memperkenalkan tentang SOP. pasti kalian bertanya apa itu SOP selanjut nya akan di jelaskan di bawah ini.
 1) Pengertian
 SOP
-Prosedur operasi standar istilah dalam bahasa Indonesia, atau dalam bahasa Inggris disebut SOP (Standart Oprational Procedur), digunakan dalam berbagai konteks yang berbeda, termasuk kesehatan, penerbangan, teknik, pendidikan, industri, dan militer. Dengan melakukan SOP perusahaan dapat memastikan suatu aktivitas bisnis bisa berjalan sesuai dengan standard yang diharapkan.</description>
-      </item>
-    
-      <item>
-        <title>Wireless Concept</title>
-        <link>https://sibunglon.com/2017/09/07/wireless-concept/</link>
-        <pubDate>Thu, 07 Sep 2017 14:53:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/09/07/wireless-concept/</guid>
-        <description>A. Pendahuluan
+Prosedur operasi standar istilah dalam bahasa Indonesia, atau dalam bahasa Inggris disebut SOP (Standart Oprational Procedur), digunakan dalam berbagai konteks yang berbeda, termasuk kesehatan, penerbangan, teknik, pendidikan, industri, dan militer. Dengan melakukan SOP perusahaan dapat memastikan suatu aktivitas bisnis bisa berjalan sesuai dengan standard yang diharapkan.</description></item><item><title>Wireless Concept</title><link>https://sibunglon.com/2017/09/07/wireless-concept/</link><pubDate>Thu, 07 Sep 2017 14:53:00 +0000</pubDate><guid>https://sibunglon.com/2017/09/07/wireless-concept/</guid><description>A. Pendahuluan
 hay guys, kali ini saya akan melakukan pemahaman tentang Wireless Concept
 1. Pengertian
 Wireless Concept ini merupakan suatu ketentuan-ketentuan yang harus dipatuhi dalam pembangunan jaringan wifi atau jaringan komputer
@@ -175,15 +31,7 @@ Dalam pembanguan jaringan wifi terkadang banyak permasalahan yang timbul karena 
 3. Maksud &amp;amp; Tujuan
 Meminimalisir kesalahan karena hal yang sebenarnya sepele.
 4. Hasil yang di harapkan
-Dapat memahami dan dapat menerapkan wireless concept pada saat mengerjakan proyek.</description>
-      </item>
-    
-      <item>
-        <title>Packet Header(Tahapan Terjadinya Komunikasi)</title>
-        <link>https://sibunglon.com/2017/08/28/packet-headertahapan-terjadinya-komunikasi/</link>
-        <pubDate>Mon, 28 Aug 2017 12:46:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/08/28/packet-headertahapan-terjadinya-komunikasi/</guid>
-        <description>A. PENGERTIAN
+Dapat memahami dan dapat menerapkan wireless concept pada saat mengerjakan proyek.</description></item><item><title>Packet Header(Tahapan Terjadinya Komunikasi)</title><link>https://sibunglon.com/2017/08/28/packet-headertahapan-terjadinya-komunikasi/</link><pubDate>Mon, 28 Aug 2017 12:46:00 +0000</pubDate><guid>https://sibunglon.com/2017/08/28/packet-headertahapan-terjadinya-komunikasi/</guid><description>A. PENGERTIAN
 Packet header adalah paket yang kejadian saat seorang akan mengirim atau berkomunikasi lewat jaringan,
 B. LATAR BELAKANG
 Pemahaman tentang tahapan dan proses dikirimnya dan di terimanya data, yang dikirim lewat jaringan.
@@ -196,54 +44,13 @@ E. ALAT DAN BAHAN
 ~ LCD proyektor
 ~ Koneksi internet
 F. PEMBAHASAN
-Syarat terjadinya komunikasi, ada yang akan dikirim atau ada datanya seperti gambar diatas, sudah jelas, dari data lanjut ke Options ( if any ) atau pilihan dari si pengirim akan kah paket data itu dikirim atau tidak, jika hal ini tidak jelas maka data tidak akan sampai ke tujuan.</description>
-      </item>
-    
-      <item>
-        <title>Mengenal Perintah-Perintah Dasar di Linux</title>
-        <link>https://sibunglon.com/2017/08/21/mengenal-perintah-perintah-dasar-di-linux/</link>
-        <pubDate>Mon, 21 Aug 2017 21:40:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/08/21/mengenal-perintah-perintah-dasar-di-linux/</guid>
-        <description>A. Pendahuluan
+Syarat terjadinya komunikasi, ada yang akan dikirim atau ada datanya seperti gambar diatas, sudah jelas, dari data lanjut ke Options ( if any ) atau pilihan dari si pengirim akan kah paket data itu dikirim atau tidak, jika hal ini tidak jelas maka data tidak akan sampai ke tujuan.</description></item><item><title>Mengenal Perintah-Perintah Dasar di Linux</title><link>https://sibunglon.com/2017/08/21/mengenal-perintah-perintah-dasar-di-linux/</link><pubDate>Mon, 21 Aug 2017 21:40:00 +0000</pubDate><guid>https://sibunglon.com/2017/08/21/mengenal-perintah-perintah-dasar-di-linux/</guid><description>A. Pendahuluan
 Pada kesempatan kali ini, saya akan memposting beberapa perintah-perintah dasar dari sistem operasi linux. Untuk lebih jelasnya akan di jelaskan sebagai berikut.
 B. Pengertian
 Linux identik dengan penggunaan console terminal yang mengharuskan kita menghafal perintah-perintah yang ada. Perintah-perintah tersebut bisa berupa singkatan atau nama asli sesuai fungsinya.
 C. Latar Belakang
-Semakin lama, semakin banyak para pengguna komputer yang menjadikan Linux sebagai Sistem Operasi utamanya. Selain sifatnya yang open source, ternyata sistem operasi Linux ini juga lebih banyak menuntut kita untuk terus mempelajarinya.</description>
-      </item>
-    
-      <item>
-        <title>Konsep Perencanaan Membangun Jaringan Sekolah</title>
-        <link>https://sibunglon.com/2017/08/16/konsep-perencanaan-membangun-jaringan-sekolah/</link>
-        <pubDate>Wed, 16 Aug 2017 17:25:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/08/16/konsep-perencanaan-membangun-jaringan-sekolah/</guid>
-        <description>A. PENDAHULUAN
-Pada kesempatan ini saya akan memberikan sedikit ilmu terkait dengan konsep perencanaan membangun jaringan sekolah. dalam melakukan sebuah pekerjaan kita mesti memikirkan konsep terlebih dahulu.
-B. PENGERTIAN
-Perencanaan merupakan tahapan awal yang harus di lakukan sebelum melakuka sesuatu pekerjaan. perencanaan dikatakan matang/berhasil, apabila perencanaan tersebut 70% sudah pasti dan tidak sering mengalami perubahan
-C. LATAR BELAKANG
-Dalam hal ini, saya bekerja tim utuk membangun jaringan di sekolah. saya berpern untuk mengatur jaringan.</description>
-      </item>
-    
-      <item>
-        <title>Step by Step Melakukan Perencanaan Kerja</title>
-        <link>https://sibunglon.com/2017/08/12/step-by-step-melakukan-perencanaan-kerja/</link>
-        <pubDate>Sat, 12 Aug 2017 16:21:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/08/12/step-by-step-melakukan-perencanaan-kerja/</guid>
-        <description>Apa yang Anda pikirkan ketika mendengar ketika mendengar kata Perencanaan kerja?
+Semakin lama, semakin banyak para pengguna komputer yang menjadikan Linux sebagai Sistem Operasi utamanya. Selain sifatnya yang open source, ternyata sistem operasi Linux ini juga lebih banyak menuntut kita untuk terus mempelajarinya.</description></item><item><title>Step by Step Melakukan Perencanaan Kerja</title><link>https://sibunglon.com/2017/08/12/step-by-step-melakukan-perencanaan-kerja/</link><pubDate>Sat, 12 Aug 2017 16:21:00 +0000</pubDate><guid>https://sibunglon.com/2017/08/12/step-by-step-melakukan-perencanaan-kerja/</guid><description>Apa yang Anda pikirkan ketika mendengar ketika mendengar kata Perencanaan kerja?
 Apakah Anda merasa malas? atau merasa membuang waktu? Ada orang yang merasa bahwa perencanaan itu penting tapi tidak mau membuatnya, ada juga yang memulai membuat perencanaan tapi tidak selesai atau merasa terbeban
-ketika perencanaan telah disusun dengan baik ada yang tidak tercapai dan ada juga yang menganggap hal ini tidak perlu dilakukan karena menyukai spontanitas atau berpendapat bahwa perencanaan hanya menghabiskan waktu.</description>
-      </item>
-    
-      <item>
-        <title>OSI Layer</title>
-        <link>https://sibunglon.com/2017/08/07/osi-layer/</link>
-        <pubDate>Mon, 07 Aug 2017 14:30:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/08/07/osi-layer/</guid>
-        <description>A. Pengertian OSI Layer
+ketika perencanaan telah disusun dengan baik ada yang tidak tercapai dan ada juga yang menganggap hal ini tidak perlu dilakukan karena menyukai spontanitas atau berpendapat bahwa perencanaan hanya menghabiskan waktu.</description></item><item><title>OSI Layer</title><link>https://sibunglon.com/2017/08/07/osi-layer/</link><pubDate>Mon, 07 Aug 2017 14:30:00 +0000</pubDate><guid>https://sibunglon.com/2017/08/07/osi-layer/</guid><description>A. Pengertian OSI Layer
 OSI atau Model Open Systems Interconnection diciptakan oleh InternationalOrganization for Standardization (ISO) yang menyediakan kerangka logikaterstruktur bagaimana proses komunikasi data berinteraksi melalui jaringan.Standard ini dikembangkan untuk industri komputer agar komputer dapat berkomunikasi pada jaringan yang berbeda secara efisien.
-Model Layer OSI dibagi dalam dua group: “upper layer ” dan “lower layer ”. “Upper layer” fokus pada applikasi pengguna dan bagaimana file direpresentasikan di komputer. Untuk Network Engineer, bagian utama yang menjadi perhatiannya adalah pada “lower layer”.</description>
-      </item>
-    
-  </channel>
-</rss>
+Model Layer OSI dibagi dalam dua group: “upper layer ” dan “lower layer ”. “Upper layer” fokus pada applikasi pengguna dan bagaimana file direpresentasikan di komputer. Untuk Network Engineer, bagian utama yang menjadi perhatiannya adalah pada “lower layer”.</description></item></channel></rss>

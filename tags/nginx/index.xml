@@ -1,76 +1,15 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Nginx on The Official Site of siBunglon</title>
-    <link>https://sibunglon.com/tags/nginx/</link>
-    <description>Recent content in Nginx on The Official Site of siBunglon</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 05 Sep 2020 06:23:28 +0800</lastBuildDate>
-    
-      <atom:link href="https://sibunglon.com/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      <item>
-        <title>Configuring Auto Renewing Let&#39;s Encrypt SSL</title>
-        <link>https://sibunglon.com/2020/09/05/configuring-auto-renewing-lets-encrypt-ssl/</link>
-        <pubDate>Sat, 05 Sep 2020 06:23:28 +0800</pubDate>
-        <guid>https://sibunglon.com/2020/09/05/configuring-auto-renewing-lets-encrypt-ssl/</guid>
-        <description>Allow the certificate to auto renew, so that you as a server admin or not don&amp;rsquo;t have to log in to the server to renew all your certs.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Nginx on The Official Site of siBunglon</title><link>https://sibunglon.com/tags/nginx/</link><description>Recent content in Nginx on The Official Site of siBunglon</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 05 Sep 2020 06:23:28 +0800</lastBuildDate><atom:link href="https://sibunglon.com/tags/nginx/index.xml" rel="self" type="application/rss+xml"/><item><title>Configuring Auto Renewing Let's Encrypt SSL</title><link>https://sibunglon.com/2020/09/05/configuring-auto-renewing-lets-encrypt-ssl/</link><pubDate>Sat, 05 Sep 2020 06:23:28 +0800</pubDate><guid>https://sibunglon.com/2020/09/05/configuring-auto-renewing-lets-encrypt-ssl/</guid><description>Allow the certificate to auto renew, so that you as a server admin or not don&amp;rsquo;t have to log in to the server to renew all your certs.
 The renewal is run by cron. You can create it.
 The following steps:
 For nginx Create cron file.
 $ vi /etc/cron.d/certbot and then enter the script:
-SHELL=/bin/sh PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin 0 */12 * * * root test -x /usr/bin/certbot -a \! -d /run/systemd/system &amp;amp;&amp;amp; perl -e &amp;#39;sleep int(rand(43200))&amp;#39; &amp;amp;&amp;amp; certbot -q renew For apache2 Download certbot renew package file</description>
-      </item>
-    
-      <item>
-        <title>Nginx Redirect Domain</title>
-        <link>https://sibunglon.com/2020/01/14/nginx-redirect-domain/</link>
-        <pubDate>Tue, 14 Jan 2020 11:34:28 +0700</pubDate>
-        <guid>https://sibunglon.com/2020/01/14/nginx-redirect-domain/</guid>
-        <description>Directing visitors from one domain to another is very easy, just edit the nginx configuration file that has been created then add some configuration syntax or if you don&amp;rsquo;t want to edit an existing configuration file, you can also create 1 more configuration file.
-The following example, anyone who accesses the *.redirect.sibunglon.com domain will be directed to the sibunglon.com domain. *= wilcard, so anyone who accesses the domain x.redirect.sibunglon.com, xyz.redirect.sibunglon.com, blog.</description>
-      </item>
-    
-      <item>
-        <title>Membuat Subdomain Dengan Nginx</title>
-        <link>https://sibunglon.com/2018/12/14/membuat-subdomain-dengan-nginx/</link>
-        <pubDate>Fri, 14 Dec 2018 11:03:50 +0700</pubDate>
-        <guid>https://sibunglon.com/2018/12/14/membuat-subdomain-dengan-nginx/</guid>
-        <description>Subdomain? Subdomain adalah bagian dari nama domain induk yang memiliki ruangan sendiri (direktori), mengacu ke suatu alamat fisik. Contohnya subdomain blog.sibunglon.com acuannya yaitu sibunglon.com. Jika menggunakan nginx, untuk membuat subdomain sama seperti pada lab sebelumnya yang Bermain Dengan Nginx. Mudahkan kalau caranya cuman gitu? :D Tapi jika masih ada yang bingung, tenang labnya masih saya bagikan.
+SHELL=/bin/sh PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin 0 */12 * * * root test -x /usr/bin/certbot -a \! -d /run/systemd/system &amp;amp;&amp;amp; perl -e &amp;#39;sleep int(rand(43200))&amp;#39; &amp;amp;&amp;amp; certbot -q renew For apache2 Download certbot renew package file</description></item><item><title>Nginx Redirect Domain</title><link>https://sibunglon.com/2020/01/14/nginx-redirect-domain/</link><pubDate>Tue, 14 Jan 2020 11:34:28 +0700</pubDate><guid>https://sibunglon.com/2020/01/14/nginx-redirect-domain/</guid><description>Directing visitors from one domain to another is very easy, just edit the nginx configuration file that has been created then add some configuration syntax or if you don&amp;rsquo;t want to edit an existing configuration file, you can also create 1 more configuration file.
+The following example, anyone who accesses the *.redirect.sibunglon.com domain will be directed to the sibunglon.com domain. *= wilcard, so anyone who accesses the domain x.redirect.sibunglon.com, xyz.redirect.sibunglon.com, blog.</description></item><item><title>Membuat Subdomain Dengan Nginx</title><link>https://sibunglon.com/2018/12/14/membuat-subdomain-dengan-nginx/</link><pubDate>Fri, 14 Dec 2018 11:03:50 +0700</pubDate><guid>https://sibunglon.com/2018/12/14/membuat-subdomain-dengan-nginx/</guid><description>Subdomain? Subdomain adalah bagian dari nama domain induk yang memiliki ruangan sendiri (direktori), mengacu ke suatu alamat fisik. Contohnya subdomain blog.sibunglon.com acuannya yaitu sibunglon.com. Jika menggunakan nginx, untuk membuat subdomain sama seperti pada lab sebelumnya yang Bermain Dengan Nginx. Mudahkan kalau caranya cuman gitu? :D Tapi jika masih ada yang bingung, tenang labnya masih saya bagikan.
 Pada lab ini saya asumsikan:
- Domain induk = sibunglon.com Subdomain = blog.sibunglon.com master konfigurasi berada di direktori /sibunglonlabs/config/nginx File konfigurasi domain induk sibunglonlabs.</description>
-      </item>
-    
-      <item>
-        <title>Kustom Konfigurasi dan Ganti Direktori Nginx</title>
-        <link>https://sibunglon.com/2018/12/10/kustom-konfigurasi-dan-ganti-direktori-nginx/</link>
-        <pubDate>Mon, 10 Dec 2018 17:45:30 +0700</pubDate>
-        <guid>https://sibunglon.com/2018/12/10/kustom-konfigurasi-dan-ganti-direktori-nginx/</guid>
-        <description>Bermain Dengan Nginx Pada saat ini sudah menjadi hal biasa jika seseorang ingin memindahkan file konfigurasinya agar lebih mudah dimaintenance. Salah satunya yaitu memidahkan direktori root html nginx. Di nginx, untuk memindahkan direktori root html dan memidahkan konfigurasinya cukup dengan command-command berikut.
+Domain induk = sibunglon.com Subdomain = blog.sibunglon.com master konfigurasi berada di direktori /sibunglonlabs/config/nginx File konfigurasi domain induk sibunglonlabs.</description></item><item><title>Kustom Konfigurasi dan Ganti Direktori Nginx</title><link>https://sibunglon.com/2018/12/10/kustom-konfigurasi-dan-ganti-direktori-nginx/</link><pubDate>Mon, 10 Dec 2018 17:45:30 +0700</pubDate><guid>https://sibunglon.com/2018/12/10/kustom-konfigurasi-dan-ganti-direktori-nginx/</guid><description>Bermain Dengan Nginx Pada saat ini sudah menjadi hal biasa jika seseorang ingin memindahkan file konfigurasinya agar lebih mudah dimaintenance. Salah satunya yaitu memidahkan direktori root html nginx. Di nginx, untuk memindahkan direktori root html dan memidahkan konfigurasinya cukup dengan command-command berikut.
 Pada Lab ini saya asumsikan :
- master konfigurasi berada di direktori /sibunglonlabs/config/nginx direktori root berada di /sibunglonlabs/web  1) Gunakan command berikut untuk memindahkan master konfig nginx ke direktori yang anda ingin, yang mudah diakses oleh anda namun susah ditemui oleh orang lain.</description>
-      </item>
-    
-      <item>
-        <title>Nginx Tidak Bisa Diakses</title>
-        <link>https://sibunglon.com/2018/12/10/nginx-tidak-bisa-diakses/</link>
-        <pubDate>Mon, 10 Dec 2018 13:40:57 +0700</pubDate>
-        <guid>https://sibunglon.com/2018/12/10/nginx-tidak-bisa-diakses/</guid>
-        <description>Nginx di CentOS atau RHEL tidak bisa diakses? Service nginx aktif? Servernya aktif? Akses dari localhost bisa? Jika semua jawabannya YA, mungkin firewall di system anda sedang aktif namun trafik protokol HTTP dan HTTPS belum diizinkan oleh perangkat yang lain.
+master konfigurasi berada di direktori /sibunglonlabs/config/nginx direktori root berada di /sibunglonlabs/web 1) Gunakan command berikut untuk memindahkan master konfig nginx ke direktori yang anda ingin, yang mudah diakses oleh anda namun susah ditemui oleh orang lain.</description></item><item><title>Nginx Tidak Bisa Diakses</title><link>https://sibunglon.com/2018/12/10/nginx-tidak-bisa-diakses/</link><pubDate>Mon, 10 Dec 2018 13:40:57 +0700</pubDate><guid>https://sibunglon.com/2018/12/10/nginx-tidak-bisa-diakses/</guid><description>Nginx di CentOS atau RHEL tidak bisa diakses? Service nginx aktif? Servernya aktif? Akses dari localhost bisa? Jika semua jawabannya YA, mungkin firewall di system anda sedang aktif namun trafik protokol HTTP dan HTTPS belum diizinkan oleh perangkat yang lain.
 Untuk mengizinkan trafik protokol HTTP, gunakan command
 firewall-cmd --permanent --zone=public --add-service=http Sedangkan untuk mengizinkan trafik protokol HTTPS, gunakan command
-firewall-cmd --permanent --zone=public --add-service=https Setelah diizinkan, firewall wajib direload agar update firewall dapat diterapkan</description>
-      </item>
-    
-      <item>
-        <title>Berkenalan Dengan Nginx di RHEL/CentOS</title>
-        <link>https://sibunglon.com/2018/12/10/berkenalan-dengan-nginx-di-rhel/centos/</link>
-        <pubDate>Mon, 10 Dec 2018 07:44:24 +0700</pubDate>
-        <guid>https://sibunglon.com/2018/12/10/berkenalan-dengan-nginx-di-rhel/centos/</guid>
-        <description>Nginx? Apa sih nginx itu? Fungsinya buat apa? Mungkin itu yang terlintas dipikirian beberapa orang jika berkenalan dengan hal baru. Maka dari itu pada kali ini yang akan dibahas pada Lab ini yaitu berkenalan dan bagaimana memasang nginx.
-Nginx, banyak orang membicarakannya meskipun salah dipelafalannya. Dulu saya juga salah melafakannya namun setelah diruqyah sama m1m1n atau yang dikenal dengan Andy Hidayat, sekarang gak salah pelafalan lagi :D . Nginx dibaca &amp;ldquo;engine X&amp;rdquo; bukan &amp;ldquo;nging X&amp;rdquo;.</description>
-      </item>
-    
-  </channel>
-</rss>
+firewall-cmd --permanent --zone=public --add-service=https Setelah diizinkan, firewall wajib direload agar update firewall dapat diterapkan</description></item><item><title>Berkenalan Dengan Nginx di RHEL/CentOS</title><link>https://sibunglon.com/2018/12/10/berkenalan-dengan-nginx-di-rhel/centos/</link><pubDate>Mon, 10 Dec 2018 07:44:24 +0700</pubDate><guid>https://sibunglon.com/2018/12/10/berkenalan-dengan-nginx-di-rhel/centos/</guid><description>Nginx? Apa sih nginx itu? Fungsinya buat apa? Mungkin itu yang terlintas dipikirian beberapa orang jika berkenalan dengan hal baru. Maka dari itu pada kali ini yang akan dibahas pada Lab ini yaitu berkenalan dan bagaimana memasang nginx.
+Nginx, banyak orang membicarakannya meskipun salah dipelafalannya. Dulu saya juga salah melafakannya namun setelah diruqyah sama m1m1n atau yang dikenal dengan Andy Hidayat, sekarang gak salah pelafalan lagi :D . Nginx dibaca &amp;ldquo;engine X&amp;rdquo; bukan &amp;ldquo;nging X&amp;rdquo;.</description></item></channel></rss>

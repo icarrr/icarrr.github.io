@@ -1,55 +1,14 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Cisco on The Official Site of siBunglon</title>
-    <link>https://sibunglon.com/tags/cisco/</link>
-    <description>Recent content in Cisco on The Official Site of siBunglon</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 07 Oct 2017 16:49:00 +0000</lastBuildDate>
-    
-      <atom:link href="https://sibunglon.com/tags/cisco/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      <item>
-        <title>Konfigurasi DHCP Server Pada Cisco</title>
-        <link>https://sibunglon.com/2017/10/07/konfigurasi-dhcp-server-pada-cisco/</link>
-        <pubDate>Sat, 07 Oct 2017 16:49:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/10/07/konfigurasi-dhcp-server-pada-cisco/</guid>
-        <description>A.PENGERTIAN
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cisco on The Official Site of siBunglon</title><link>https://sibunglon.com/tags/cisco/</link><description>Recent content in Cisco on The Official Site of siBunglon</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 07 Oct 2017 16:49:00 +0000</lastBuildDate><atom:link href="https://sibunglon.com/tags/cisco/index.xml" rel="self" type="application/rss+xml"/><item><title>Konfigurasi DHCP Server Pada Cisco</title><link>https://sibunglon.com/2017/10/07/konfigurasi-dhcp-server-pada-cisco/</link><pubDate>Sat, 07 Oct 2017 16:49:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/07/konfigurasi-dhcp-server-pada-cisco/</guid><description>A.PENGERTIAN
 DHCP (Dynamic Host Configuration Protocol) sebuah server yang memiliki layanan untuk memberikan IP otomatis pada host atau komputer (client) pada jaringan TCP atau IP yang memintanya
-  LATAR BELAKANGMemahami serta mempraktikan dhcp server
-  MAKSUD DAN TUJUAN
+LATAR BELAKANGMemahami serta mempraktikan dhcp server
+MAKSUD DAN TUJUAN
 Memahami konfigurasi dhcp server
-  TAHAPAN PEKERJAAN
-  Berikut adalah langkah-langkah mengkonfigurasi DHCP Server pada router.
-Sebelumnya kita harus membuat simulasi jaringan seperti pada gambar berikut ini terlebih dahulu.</description>
-      </item>
-    
-      <item>
-        <title>Konfigurasi VLAN Pada Switch</title>
-        <link>https://sibunglon.com/2017/10/06/konfigurasi-vlan-pada-switch/</link>
-        <pubDate>Fri, 06 Oct 2017 06:16:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/10/06/konfigurasi-vlan-pada-switch/</guid>
-        <description>A. PENGERTIAN
-Virtual LAN atau disingkat VLAN merupakan sekelompok perangkat pada satu LAN atau lebih yang dikonfigurasikan (menggunakan perangkat lunak pengelolaan) sehingga dapat berkomunikasi seperti halnya bila perangkat tersebut terhubung ke jalur yang sama, padahal sebenarnya perangkat tersebut berada pada sejumlah segmen LAN yang berbeda. Vlan dibuat dengan menggunakan jaringan pihak ke tiga. VLAN merupakan sebuah bagian kecil jaringan IP yang terpisah secara logik. VLAN memungkinkan beberapa jaringan IP dan jaringan-jaringan kecil (subnet) berada dalam jaringan switched switched yang sama.</description>
-      </item>
-    
-      <item>
-        <title>Konfigurasi Static NAT dan Dynamic NAT Cisco</title>
-        <link>https://sibunglon.com/2017/10/05/konfigurasi-static-nat-dan-dynamic-nat-cisco/</link>
-        <pubDate>Thu, 05 Oct 2017 05:39:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/10/05/konfigurasi-static-nat-dan-dynamic-nat-cisco/</guid>
-        <description>A. Pengertian
+TAHAPAN PEKERJAAN
+Berikut adalah langkah-langkah mengkonfigurasi DHCP Server pada router.
+Sebelumnya kita harus membuat simulasi jaringan seperti pada gambar berikut ini terlebih dahulu.</description></item><item><title>Konfigurasi VLAN Pada Switch</title><link>https://sibunglon.com/2017/10/06/konfigurasi-vlan-pada-switch/</link><pubDate>Fri, 06 Oct 2017 06:16:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/06/konfigurasi-vlan-pada-switch/</guid><description>A. PENGERTIAN
+Virtual LAN atau disingkat VLAN merupakan sekelompok perangkat pada satu LAN atau lebih yang dikonfigurasikan (menggunakan perangkat lunak pengelolaan) sehingga dapat berkomunikasi seperti halnya bila perangkat tersebut terhubung ke jalur yang sama, padahal sebenarnya perangkat tersebut berada pada sejumlah segmen LAN yang berbeda. Vlan dibuat dengan menggunakan jaringan pihak ke tiga. VLAN merupakan sebuah bagian kecil jaringan IP yang terpisah secara logik. VLAN memungkinkan beberapa jaringan IP dan jaringan-jaringan kecil (subnet) berada dalam jaringan switched switched yang sama.</description></item><item><title>Konfigurasi Static NAT dan Dynamic NAT Cisco</title><link>https://sibunglon.com/2017/10/05/konfigurasi-static-nat-dan-dynamic-nat-cisco/</link><pubDate>Thu, 05 Oct 2017 05:39:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/05/konfigurasi-static-nat-dan-dynamic-nat-cisco/</guid><description>A. Pengertian
 NAT (Network Address Translation) adalah sebuah proses pemetaan alamat IP dimana perangkat jaringan komputer akan memberikan alamat IP public ke perangkat jaringan local sehingga banyak IP private yang dapat mengakses IP public.
-Dengan kata lain NAT akan mentranslasikan alamat IP sehingga IP address pada jaringan local dapat mengakses IP public pada jaringan WAN. NAT mentranslasikan alamat IP private untuk dapat mengakses alamat host di internet dengan menggunakan alamat IP public pada jaringan tersebut.</description>
-      </item>
-    
-      <item>
-        <title>Konfigurasi Telnet dan SSH di Cisco</title>
-        <link>https://sibunglon.com/2017/10/04/konfigurasi-telnet-dan-ssh-di-cisco/</link>
-        <pubDate>Wed, 04 Oct 2017 05:19:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/10/04/konfigurasi-telnet-dan-ssh-di-cisco/</guid>
-        <description>A. PENGERTIAN
+Dengan kata lain NAT akan mentranslasikan alamat IP sehingga IP address pada jaringan local dapat mengakses IP public pada jaringan WAN. NAT mentranslasikan alamat IP private untuk dapat mengakses alamat host di internet dengan menggunakan alamat IP public pada jaringan tersebut.</description></item><item><title>Konfigurasi Telnet dan SSH di Cisco</title><link>https://sibunglon.com/2017/10/04/konfigurasi-telnet-dan-ssh-di-cisco/</link><pubDate>Wed, 04 Oct 2017 05:19:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/04/konfigurasi-telnet-dan-ssh-di-cisco/</guid><description>A. PENGERTIAN
 Konfigurasi Telnet
 Telnet (Telecommunication network) adalah sebuah protokol jaringan yang digunakan pada Internet atau Local Area Network untuk menyediakan fasilitas komunikasi berbasis teks interaksi dua arah yang menggunakan koneksi virtual terminal.
 B. LATAR BELAKANG
@@ -58,147 +17,71 @@ C. MAKSUD DAN TUJUAN
 Ingin mengimplementasikanya di dunia kerja dan mengulangi Materi yang diberi tentang ssh dan telnet
 D. TAHAPAN PEKERJAAN
 TELNET Berikut Topology Telnet :
- Pertama, masukkan default gateway yang terdapat pada Router, Disini saya Memberikan IP Address pada interface fastEthernet 0/0 adalah 192.</description>
-      </item>
-    
-      <item>
-        <title>Perintah-Perintah Dasar Cisco</title>
-        <link>https://sibunglon.com/2017/10/03/perintah-perintah-dasar-cisco/</link>
-        <pubDate>Tue, 03 Oct 2017 05:17:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/10/03/perintah-perintah-dasar-cisco/</guid>
-        <description>A. PENGERTIAN
+Pertama, masukkan default gateway yang terdapat pada Router, Disini saya Memberikan IP Address pada interface fastEthernet 0/0 adalah 192.</description></item><item><title>Perintah-Perintah Dasar Cisco</title><link>https://sibunglon.com/2017/10/03/perintah-perintah-dasar-cisco/</link><pubDate>Tue, 03 Oct 2017 05:17:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/03/perintah-perintah-dasar-cisco/</guid><description>A. PENGERTIAN
 Konfigurasi yang akan dibahas dalam artikel ini adalah :
 Mode Router
 Memasuki mode konfigurasi global (Global Configuration Mode)
 Konfigurasi router :
-  Nama router
-  Password
-  Password terenkripsi
-  Nama interfaces
-  Perpindahan antar interfaces
-  Konfigurasi interfaces Serial
-  Konfigurasi interfaces Fast Ethernet
-  Membuat banner pesan MOTD (Message of the Day)
-  Membuat banner login
-  Menempatkan local host domain ke IP address</description>
-      </item>
-    
-      <item>
-        <title>Konfigurasi Static Routing</title>
-        <link>https://sibunglon.com/2017/10/03/konfigurasi-static-routing/</link>
-        <pubDate>Tue, 03 Oct 2017 05:04:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/10/03/konfigurasi-static-routing/</guid>
-        <description>A.PENGERTIAN Routing Static adalah jenis routing yang dilakukan seorang admin dengan memasukan network network tertentu secara manual. Ciri ciri routing static adalah :
- Jalur pada suatu jaringan spesifik ditentukan oleh seorang Administrator Pengisian tabel routing / penambahan network baru diisi secara manual Biasanya digunakan untuk jaringan berskala kecil  Ada beberapa parameter yang ada pada routing static ini, yaitu
- Destination, adalah ip network tujuan, untuk default routing biasanya memakai 0.</description>
-      </item>
-    
-      <item>
-        <title>Training Cisco CCENT Part 6</title>
-        <link>https://sibunglon.com/2017/10/02/training-cisco-ccent-part-6/</link>
-        <pubDate>Mon, 02 Oct 2017 04:57:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/10/02/training-cisco-ccent-part-6/</guid>
-        <description>1. Pendahuluan
+Nama router
+Password
+Password terenkripsi
+Nama interfaces
+Perpindahan antar interfaces
+Konfigurasi interfaces Serial
+Konfigurasi interfaces Fast Ethernet
+Membuat banner pesan MOTD (Message of the Day)
+Membuat banner login
+Menempatkan local host domain ke IP address</description></item><item><title>Konfigurasi Static Routing</title><link>https://sibunglon.com/2017/10/03/konfigurasi-static-routing/</link><pubDate>Tue, 03 Oct 2017 05:04:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/03/konfigurasi-static-routing/</guid><description>A.PENGERTIAN Routing Static adalah jenis routing yang dilakukan seorang admin dengan memasukan network network tertentu secara manual. Ciri ciri routing static adalah :
+Jalur pada suatu jaringan spesifik ditentukan oleh seorang Administrator Pengisian tabel routing / penambahan network baru diisi secara manual Biasanya digunakan untuk jaringan berskala kecil Ada beberapa parameter yang ada pada routing static ini, yaitu
+Destination, adalah ip network tujuan, untuk default routing biasanya memakai 0.</description></item><item><title>Training Cisco CCENT Part 6</title><link>https://sibunglon.com/2017/10/02/training-cisco-ccent-part-6/</link><pubDate>Mon, 02 Oct 2017 04:57:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/02/training-cisco-ccent-part-6/</guid><description>1. Pendahuluan
 A. Pengertian
 Cisco Adalah sebuah perusahaan yang memiliki 2 bidang usaha, yaitu:
- Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA)  B. Latar Belakang
+Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA) B. Latar Belakang
 Mengulangi dan Meringkas Materi yang Diberikan Tadi
 C. Maksud dan Tujuan
 Untuk lebih memahami materi yang diberikan tadi
 2. Alat dan Bahan
- Laptop Proyektor Internet  3. Jangka Waktu Pelaksanaan
-Jam 08:00 s/d 22:00</description>
-      </item>
-    
-      <item>
-        <title>Training Cisco CCENT Part 5</title>
-        <link>https://sibunglon.com/2017/09/30/training-cisco-ccent-part-5/</link>
-        <pubDate>Sat, 30 Sep 2017 04:52:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/09/30/training-cisco-ccent-part-5/</guid>
-        <description>1. Pendahuluan
+Laptop Proyektor Internet 3. Jangka Waktu Pelaksanaan
+Jam 08:00 s/d 22:00</description></item><item><title>Training Cisco CCENT Part 5</title><link>https://sibunglon.com/2017/09/30/training-cisco-ccent-part-5/</link><pubDate>Sat, 30 Sep 2017 04:52:00 +0000</pubDate><guid>https://sibunglon.com/2017/09/30/training-cisco-ccent-part-5/</guid><description>1. Pendahuluan
 A. Pengertian
 Cisco Adalah sebuah perusahaan yang memiliki 2 bidang usaha, yaitu:
- Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA)B. Latar Belakang
-Mengulangi dan Meringkas Materi yang Diberikan Tadi  C. Maksud dan Tujuan
+Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA)B. Latar Belakang
+Mengulangi dan Meringkas Materi yang Diberikan Tadi C. Maksud dan Tujuan
 Untuk lebih memahami materi yang diberikan tadi
 2. Alat dan Bahan
- Laptop Proyektor Internet  3. Jangka Waktu Pelaksanaan
-Jam 08:00 s/d 22:00</description>
-      </item>
-    
-      <item>
-        <title>Training Cisco CCENT Part 4</title>
-        <link>https://sibunglon.com/2017/09/29/training-cisco-ccent-part-4/</link>
-        <pubDate>Fri, 29 Sep 2017 04:50:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/09/29/training-cisco-ccent-part-4/</guid>
-        <description>1. Pendahuluan
+Laptop Proyektor Internet 3. Jangka Waktu Pelaksanaan
+Jam 08:00 s/d 22:00</description></item><item><title>Training Cisco CCENT Part 4</title><link>https://sibunglon.com/2017/09/29/training-cisco-ccent-part-4/</link><pubDate>Fri, 29 Sep 2017 04:50:00 +0000</pubDate><guid>https://sibunglon.com/2017/09/29/training-cisco-ccent-part-4/</guid><description>1. Pendahuluan
 A. Pengertian
 Cisco Adalah sebuah perusahaan yang memiliki 2 bidang usaha, yaitu:
- Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA)  B. Latar Belakang
+Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA) B. Latar Belakang
 Mengulangi dan Meringkas Materi yang Diberikan Tadi
 C. Maksud dan Tujuan
 Untuk lebih memahami materi yang diberikan tadi
 2. Alat dan Bahan
- Laptop Proyektor Internet  3. Jangka Waktu Pelaksanaan
-Jam 08:00 s/d 22:00</description>
-      </item>
-    
-      <item>
-        <title>Training Cisco CCENT Part 3</title>
-        <link>https://sibunglon.com/2017/09/28/training-cisco-ccent-part-3/</link>
-        <pubDate>Thu, 28 Sep 2017 04:20:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/09/28/training-cisco-ccent-part-3/</guid>
-        <description>1. Pendahuluan
+Laptop Proyektor Internet 3. Jangka Waktu Pelaksanaan
+Jam 08:00 s/d 22:00</description></item><item><title>Training Cisco CCENT Part 3</title><link>https://sibunglon.com/2017/09/28/training-cisco-ccent-part-3/</link><pubDate>Thu, 28 Sep 2017 04:20:00 +0000</pubDate><guid>https://sibunglon.com/2017/09/28/training-cisco-ccent-part-3/</guid><description>1. Pendahuluan
 A. Pengertian
 Cisco Adalah sebuah perusahaan yang memiliki 2 bidang usaha, yaitu:
- Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA)  B. Latar Belakang
+Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA) B. Latar Belakang
 Mengulangi dan Meringkas Materi yang Diberikan Tadi
 C. Maksud dan Tujuan
 Untuk lebih memahami materi yang diberikan tadi
 2. Alat dan Bahan
- Laptop Proyektor Internet  3. Jangka Waktu Pelaksanaan
-Jam 08:00 s/d 22:00</description>
-      </item>
-    
-      <item>
-        <title>Training Cisco CCENT Part 2</title>
-        <link>https://sibunglon.com/2017/09/27/training-cisco-ccent-part-2/</link>
-        <pubDate>Wed, 27 Sep 2017 04:13:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/09/27/training-cisco-ccent-part-2/</guid>
-        <description>1. Pendahuluan
+Laptop Proyektor Internet 3. Jangka Waktu Pelaksanaan
+Jam 08:00 s/d 22:00</description></item><item><title>Training Cisco CCENT Part 2</title><link>https://sibunglon.com/2017/09/27/training-cisco-ccent-part-2/</link><pubDate>Wed, 27 Sep 2017 04:13:00 +0000</pubDate><guid>https://sibunglon.com/2017/09/27/training-cisco-ccent-part-2/</guid><description>1. Pendahuluan
 A. Pengertian
 Cisco Adalah sebuah perusahaan yang memiliki 2 bidang usaha, yaitu:
- Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA)  B. Latar Belakang
+Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA) B. Latar Belakang
 Mengulangi dan Meringkas Materi yang Diberikan Tadi
 C. Maksud dan Tujuan
 Untuk lebih memahami materi yang diberikan tadi
 2. Alat dan Bahan
- Laptop Proyektor Internet  3. Jangka Waktu Pelaksanaan
-Jam 08:00 s/d 22:00</description>
-      </item>
-    
-      <item>
-        <title>Training Cisco CCENT Part 1</title>
-        <link>https://sibunglon.com/2017/09/25/training-cisco-ccent-part-1/</link>
-        <pubDate>Mon, 25 Sep 2017 03:51:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/09/25/training-cisco-ccent-part-1/</guid>
-        <description>1.Pendahuluan
+Laptop Proyektor Internet 3. Jangka Waktu Pelaksanaan
+Jam 08:00 s/d 22:00</description></item><item><title>Training Cisco CCENT Part 1</title><link>https://sibunglon.com/2017/09/25/training-cisco-ccent-part-1/</link><pubDate>Mon, 25 Sep 2017 03:51:00 +0000</pubDate><guid>https://sibunglon.com/2017/09/25/training-cisco-ccent-part-1/</guid><description>1.Pendahuluan
 A. Pengertian
-Cisco merupakan perusahaan global dalam bidang telekomunikasi yang bermarkas di San José, California, Amerika Serikat. Perusahaan ini didirikan pada tahun 1984. Perusahaan ini mempekerjakan 51.480 pekerja.Produk dari perusahaan ini dapat ditemukan dari ruang tamu sampai ke perusahaan yang bergerak untuk skala internasional.Visi dari Cisco System.Inc (Cisco) yaitu “mengubah bagaimana cara hidup,bekerja,bermain dan belajar”,dan bagian dari Slogan dari Cisco adalah “ Selamat datang kedalam dunia Jaringan “ (welcome to the human network).</description>
-      </item>
-    
-      <item>
-        <title>Sharing Pengenalan Cisco bersama RIFQI FAJAR RUDIN – BEST PATH Network, Jakarta</title>
-        <link>https://sibunglon.com/2017/08/15/sharing-pengenalan-cisco-bersama-rifqi-fajar-rudin-best-path-network-jakarta/</link>
-        <pubDate>Tue, 15 Aug 2017 17:17:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/08/15/sharing-pengenalan-cisco-bersama-rifqi-fajar-rudin-best-path-network-jakarta/</guid>
-        <description>A. Pendahuluan
+Cisco merupakan perusahaan global dalam bidang telekomunikasi yang bermarkas di San José, California, Amerika Serikat. Perusahaan ini didirikan pada tahun 1984. Perusahaan ini mempekerjakan 51.480 pekerja.Produk dari perusahaan ini dapat ditemukan dari ruang tamu sampai ke perusahaan yang bergerak untuk skala internasional.Visi dari Cisco System.Inc (Cisco) yaitu “mengubah bagaimana cara hidup,bekerja,bermain dan belajar”,dan bagian dari Slogan dari Cisco adalah “ Selamat datang kedalam dunia Jaringan “ (welcome to the human network).</description></item><item><title>Sharing Pengenalan Cisco bersama RIFQI FAJAR RUDIN – BEST PATH Network, Jakarta</title><link>https://sibunglon.com/2017/08/15/sharing-pengenalan-cisco-bersama-rifqi-fajar-rudin-best-path-network-jakarta/</link><pubDate>Tue, 15 Aug 2017 17:17:00 +0000</pubDate><guid>https://sibunglon.com/2017/08/15/sharing-pengenalan-cisco-bersama-rifqi-fajar-rudin-best-path-network-jakarta/</guid><description>A. Pendahuluan
 Pada postingan ini saya akan bercerita mengenai pertemuan saya dengan orang-orang hebat.BestPath Network, Jakarta, datang ke BLC Telkomyaitu Rifqi Fajar Rudin dan Bapak Danu Wiyoto. Mereka datang untuk berbagi pengalaman menarik dengan kami semua.
 1. Pengertian :
 BestPath Network adalah suatu lembaga training dan consulting jaringan, dimana ini adalah solusi untuk Anda belajar lebih mudah tentang dunia jaringan yang luas.
 2. Latar Belakang
-BestPath Network membuka peluang rekrutmen untuk bergabung bersama mereka.</description>
-      </item>
-    
-  </channel>
-</rss>
+BestPath Network membuka peluang rekrutmen untuk bergabung bersama mereka.</description></item></channel></rss>

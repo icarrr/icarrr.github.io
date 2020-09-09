@@ -1,52 +1,15 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Proxmox on The Official Site of siBunglon</title>
-    <link>https://sibunglon.com/tags/proxmox/</link>
-    <description>Recent content in Proxmox on The Official Site of siBunglon</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 19 Oct 2017 18:47:00 +0000</lastBuildDate>
-    
-      <atom:link href="https://sibunglon.com/tags/proxmox/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      <item>
-        <title>Backup VM Proxmox ke Local HardDisk</title>
-        <link>https://sibunglon.com/2017/10/19/backup-vm-proxmox-ke-local-harddisk/</link>
-        <pubDate>Thu, 19 Oct 2017 18:47:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/10/19/backup-vm-proxmox-ke-local-harddisk/</guid>
-        <description>A. Pendahuluan
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Proxmox on The Official Site of siBunglon</title><link>https://sibunglon.com/tags/proxmox/</link><description>Recent content in Proxmox on The Official Site of siBunglon</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 19 Oct 2017 18:47:00 +0000</lastBuildDate><atom:link href="https://sibunglon.com/tags/proxmox/index.xml" rel="self" type="application/rss+xml"/><item><title>Backup VM Proxmox ke Local HardDisk</title><link>https://sibunglon.com/2017/10/19/backup-vm-proxmox-ke-local-harddisk/</link><pubDate>Thu, 19 Oct 2017 18:47:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/19/backup-vm-proxmox-ke-local-harddisk/</guid><description>A. Pendahuluan
 Pada kesempatan ini saya share bagaimana agar config di debian atau apapun yang ada diproxmox tidak hilang bila terjadi sesuatu
 B. Pengertian
 Bakcup data adalah salah satu langkah untuk menyimpan data agar saat data itu hilang kita masih memiliki data simpanannya agar tidak hilang.
 C. Latar belakang
 Membuat secondary data agar saat data primer nya hilang kita masih punya data secondari nya.
 D. Tujuan
-Agar data yang saat penting itu tidak hilang karena ada kesalahan dan dapat menyerlamatkan pekerjaan kita.</description>
-      </item>
-    
-      <item>
-        <title>Install Debian Server di Proxmox Virtual Environment</title>
-        <link>https://sibunglon.com/2017/10/10/install-debian-server-di-proxmox-virtual-environment/</link>
-        <pubDate>Tue, 10 Oct 2017 12:19:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/10/10/install-debian-server-di-proxmox-virtual-environment/</guid>
-        <description>A. Pendahuluan
+Agar data yang saat penting itu tidak hilang karena ada kesalahan dan dapat menyerlamatkan pekerjaan kita.</description></item><item><title>Install Debian Server di Proxmox Virtual Environment</title><link>https://sibunglon.com/2017/10/10/install-debian-server-di-proxmox-virtual-environment/</link><pubDate>Tue, 10 Oct 2017 12:19:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/10/install-debian-server-di-proxmox-virtual-environment/</guid><description>A. Pendahuluan
 Kali ini saya berbagi tentang bagaimana menginstall linux Debian 8.6 melalui pada proxmox. Proxmox digunakan sebagai virtualisasi.
 B. Pengertian
-Debian adalah sistem operasi komputer yang tersusun dari paket-paket perangkat lunak yang dirilis sebagai perangkat lunak bebas dan terbuka dengan lisensi mayoritas GNU General Public License dan lisensi perangkat lunak bebas lainnya. Debian GNU/Linux memuat perkakas sistem operasi GNU dan kernel Linux merupakan distribusi Linux yang popmuler dan berpengaruh. Debian didistribusikan dengan akses ke repositori dengan ribuan paket perangkat lunak yang siap untuk instalasi dan digunakan.</description>
-      </item>
-    
-      <item>
-        <title>Menginstall Proxmox di Server</title>
-        <link>https://sibunglon.com/2017/07/31/menginstall-proxmox-di-server/</link>
-        <pubDate>Mon, 31 Jul 2017 16:07:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/07/31/menginstall-proxmox-di-server/</guid>
-        <description>Pendahuluan
+Debian adalah sistem operasi komputer yang tersusun dari paket-paket perangkat lunak yang dirilis sebagai perangkat lunak bebas dan terbuka dengan lisensi mayoritas GNU General Public License dan lisensi perangkat lunak bebas lainnya. Debian GNU/Linux memuat perkakas sistem operasi GNU dan kernel Linux merupakan distribusi Linux yang popmuler dan berpengaruh. Debian didistribusikan dengan akses ke repositori dengan ribuan paket perangkat lunak yang siap untuk instalasi dan digunakan.</description></item><item><title>Menginstall Proxmox di Server</title><link>https://sibunglon.com/2017/07/31/menginstall-proxmox-di-server/</link><pubDate>Mon, 31 Jul 2017 16:07:00 +0000</pubDate><guid>https://sibunglon.com/2017/07/31/menginstall-proxmox-di-server/</guid><description>Pendahuluan
 Proxmox VE (Virtual Environment) adalah sebuah distro Linux virtualisasi berbasis Debian ( 64 bit) yang mengusung OpenZV dan KVM, dengan KVM kita tidak hanya bisa menginstall linux saja akan tetapi Operating system windows pun bisa kita instal. Namun yang membuat istimewa dari proxmox adalah kemudahan dalam installasi dan administrasi berbasis Web.
 Latar Belakang
 Beberapa keuntungan menggunakan Proxmox sebagai berikut
- Kinerja terbaik. Instalasi yang telah dioptimalkan, sehingga lebih cepat. Mudah dalam manajemen.</description>
-      </item>
-    
-  </channel>
-</rss>
+Kinerja terbaik. Instalasi yang telah dioptimalkan, sehingga lebih cepat. Mudah dalam manajemen.</description></item></channel></rss>

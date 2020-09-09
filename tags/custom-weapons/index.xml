@@ -1,66 +1,12 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Custom Weapons on The Official Site of siBunglon</title>
-    <link>https://sibunglon.com/tags/custom-weapons/</link>
-    <description>Recent content in Custom Weapons on The Official Site of siBunglon</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 07 Dec 2018 07:44:24 +0700</lastBuildDate>
-    
-      <atom:link href="https://sibunglon.com/tags/custom-weapons/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      <item>
-        <title>Share Pc/Laptop Lokal Ke Public</title>
-        <link>https://sibunglon.com/2018/12/07/share-pc/laptop-lokal-ke-public/</link>
-        <pubDate>Fri, 07 Dec 2018 07:44:24 +0700</pubDate>
-        <guid>https://sibunglon.com/2018/12/07/share-pc/laptop-lokal-ke-public/</guid>
-        <description>Ngrok Ngrok merupakan salah satu software yang dapat membuat sebuah tunnel atau terowongan yang aman melalui jalur internet agar dapat mengakses pc/laptop lokal tanpa harus memiliki ip publik sendiri.
-Jika masih ingin berkenalan lebih lanjut, bisa di stalking ke official sitenya :D https://ngrok.com
-Langkah - langkah menggunakan ngrok:
-1) Buka shell linux dan login sebagai super user, kemudian download ngrok menggunakan command
-wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
-2) Ekstrak file ngrok yang telah didownload dengan command</description>
-      </item>
-    
-      <item>
-        <title>Gerakan Multi-Touch MacBook di Linux</title>
-        <link>https://sibunglon.com/2018/11/06/gerakan-multi-touch-macbook-di-linux/</link>
-        <pubDate>Tue, 06 Nov 2018 15:14:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2018/11/06/gerakan-multi-touch-macbook-di-linux/</guid>
-        <description>Jika Anda pernah menggunakan MacBook, pasti tahu betapa menyenangkan dan bermanfaatnya gerakan trackpad untuk mengubah desktop, menampilkan semua jendela yang terbuka, dan pinch-to-zoom.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Custom Weapons on The Official Site of siBunglon</title><link>https://sibunglon.com/tags/custom-weapons/</link><description>Recent content in Custom Weapons on The Official Site of siBunglon</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 06 Nov 2018 15:14:00 +0000</lastBuildDate><atom:link href="https://sibunglon.com/tags/custom-weapons/index.xml" rel="self" type="application/rss+xml"/><item><title>Gerakan Multi-Touch MacBook di Linux</title><link>https://sibunglon.com/2018/11/06/gerakan-multi-touch-macbook-di-linux/</link><pubDate>Tue, 06 Nov 2018 15:14:00 +0000</pubDate><guid>https://sibunglon.com/2018/11/06/gerakan-multi-touch-macbook-di-linux/</guid><description>Jika Anda pernah menggunakan MacBook, pasti tahu betapa menyenangkan dan bermanfaatnya gerakan trackpad untuk mengubah desktop, menampilkan semua jendela yang terbuka, dan pinch-to-zoom.
 Di linux anda juga menggunakan fitur ini dengan bantuan aplikasi fusuma, berikut installasi dan konfigurasinya.
 1. Berikan izin untuk membaca perangkat touchpad
 sudo gpasswd -a $USER input
-Install libinput-tools  sudo apt-get install libinput-tools
+Install libinput-tools sudo apt-get install libinput-tools
 3. Install Fusuma
 sudo gem install fusuma
 4. Instal xdotool (opsional)
-sudo apt-get install xdotool</description>
-      </item>
-    
-      <item>
-        <title>Mempercantik Tampilan Terminal Server</title>
-        <link>https://sibunglon.com/2017/10/21/mempercantik-tampilan-terminal-server/</link>
-        <pubDate>Sat, 21 Oct 2017 02:27:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/10/21/mempercantik-tampilan-terminal-server/</guid>
-        <description>A. Pendahuluan
+sudo apt-get install xdotool</description></item><item><title>Mempercantik Tampilan Terminal Server</title><link>https://sibunglon.com/2017/10/21/mempercantik-tampilan-terminal-server/</link><pubDate>Sat, 21 Oct 2017 02:27:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/21/mempercantik-tampilan-terminal-server/</guid><description>A. Pendahuluan
 Pada kesempatan ini saya ingin sharing tentang bagaimana mempercantik atau apalah agar tampilan shell linux tidak polos-polos begitu saja.
 B. Pengertian
-Apa itu shell ? shell adalah program (penterjemah perintah) yang menjembatani user dengan sistem operasi dalam hal ini kernel (inti sistem operasi), umumnya shell menyediakan prompt sebagai user interface, tempat dimana user mengetikkan perintah-perintah yang diinginkan baik berupa perintah internal shell (internal command), ataupun perintah eksekusi suatu file progam (eksternal command), selain itu shell memungkinkan user menyusun sekumpulan perintah pada sebuah atau beberapa file untuk dieksekusi sebagai program.</description>
-      </item>
-    
-      <item>
-        <title>Mengatasi Kursor Winbox MikroTik Meloncat-Loncat Sewaktu Mengetik</title>
-        <link>https://sibunglon.com/2017/09/07/mengatasi-kursor-winbox-mikrotik-meloncat-loncat-sewaktu-mengetik/</link>
-        <pubDate>Thu, 07 Sep 2017 14:42:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2017/09/07/mengatasi-kursor-winbox-mikrotik-meloncat-loncat-sewaktu-mengetik/</guid>
-        <description>A. Pendahuluan
-Pernahkan anda mengalami ini? atau hanya pernah lihat begini?
-Pada postingan kali, saya akan sharing bagaimana mengatasi kursor winbox mikrotik meloncat-loncat sewaktu mengetik.
-B. Pengertian
-kursor adalah suatu petunjuk atau indikator posisi pada monitor komputer atau peranti tampilan lain yang akan merespons masukan dari suatu masukan teks atau peranti penunjuk. Kursor secara umum dapat dibagi menjadi dua jenis: kursor teks dan kursor tetikus. Kursor teks adalah petunjuk pada antarmuka baris perintah (CLI) atau editor teks yang menunjukkan tempat teks akan diletakkan sewaktu dimasukkan (titik penyisipan) dan biasanya berupa garis bawah, segi empat, atau garis vertikal yang dapat berkedip atau stabil.</description>
-      </item>
-    
-  </channel>
-</rss>
+Apa itu shell ? shell adalah program (penterjemah perintah) yang menjembatani user dengan sistem operasi dalam hal ini kernel (inti sistem operasi), umumnya shell menyediakan prompt sebagai user interface, tempat dimana user mengetikkan perintah-perintah yang diinginkan baik berupa perintah internal shell (internal command), ataupun perintah eksekusi suatu file progam (eksternal command), selain itu shell memungkinkan user menyusun sekumpulan perintah pada sebuah atau beberapa file untuk dieksekusi sebagai program.</description></item></channel></rss>

@@ -1,35 +1,26 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Apache2 on The Official Site of siBunglon</title>
-    <link>https://sibunglon.com/tags/apache2/</link>
-    <description>Recent content in Apache2 on The Official Site of siBunglon</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 05 Sep 2020 06:23:28 +0800</lastBuildDate>
-    
-      <atom:link href="https://sibunglon.com/tags/apache2/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      <item>
-        <title>Configuring Auto Renewing Let&#39;s Encrypt SSL</title>
-        <link>https://sibunglon.com/2020/09/05/configuring-auto-renewing-lets-encrypt-ssl/</link>
-        <pubDate>Sat, 05 Sep 2020 06:23:28 +0800</pubDate>
-        <guid>https://sibunglon.com/2020/09/05/configuring-auto-renewing-lets-encrypt-ssl/</guid>
-        <description>Allow the certificate to auto renew, so that you as a server admin or not don&amp;rsquo;t have to log in to the server to renew all your certs.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Apache2 on The Official Site of siBunglon</title><link>https://sibunglon.com/tags/apache2/</link><description>Recent content in Apache2 on The Official Site of siBunglon</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 05 Sep 2020 06:23:28 +0800</lastBuildDate><atom:link href="https://sibunglon.com/tags/apache2/index.xml" rel="self" type="application/rss+xml"/><item><title>Configuring Auto Renewing Let's Encrypt SSL</title><link>https://sibunglon.com/2020/09/05/configuring-auto-renewing-lets-encrypt-ssl/</link><pubDate>Sat, 05 Sep 2020 06:23:28 +0800</pubDate><guid>https://sibunglon.com/2020/09/05/configuring-auto-renewing-lets-encrypt-ssl/</guid><description>Allow the certificate to auto renew, so that you as a server admin or not don&amp;rsquo;t have to log in to the server to renew all your certs.
 The renewal is run by cron. You can create it.
 The following steps:
 For nginx Create cron file.
 $ vi /etc/cron.d/certbot and then enter the script:
-SHELL=/bin/sh PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin 0 */12 * * * root test -x /usr/bin/certbot -a \! -d /run/systemd/system &amp;amp;&amp;amp; perl -e &amp;#39;sleep int(rand(43200))&amp;#39; &amp;amp;&amp;amp; certbot -q renew For apache2 Download certbot renew package file</description>
-      </item>
-    
-      <item>
-        <title>Lindungi Web Server Apache2 Dengan SSL Debian 8</title>
-        <link>https://sibunglon.com/2018/12/01/lindungi-web-server-apache2-dengan-ssl-debian-8/</link>
-        <pubDate>Sat, 01 Dec 2018 15:14:00 +0000</pubDate>
-        <guid>https://sibunglon.com/2018/12/01/lindungi-web-server-apache2-dengan-ssl-debian-8/</guid>
-        <description>Pengertian  HTTPS juga disebut HTTP melalui TLS, HTTP melalui SSL, dan HTTP Secure adalah protokol untuk komunikasi yang aman melalui jaringan komputer yang banyak digunakan di Internet. HTTPS terdiri dari komunikasi melalui Hypertext Transfer Protocol (HTTP) dalam koneksi yang terenkripsi dengan Transport Layer Security atau pendahulunya Secure Sockets Layer. Fungsi utama untuk HTTPS adalah autentikasi dari website yang dikunjungi dan perlindungan privasi dan integritas data yang dipertukarkan. SSL (Secure Sockets Layer) adalah teknologi keamanan standar untuk membangun link yang dienkripsi antara web server dan browser.</description>
-      </item>
-    
-  </channel>
-</rss>
+SHELL=/bin/sh PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin 0 */12 * * * root test -x /usr/bin/certbot -a \! -d /run/systemd/system &amp;amp;&amp;amp; perl -e &amp;#39;sleep int(rand(43200))&amp;#39; &amp;amp;&amp;amp; certbot -q renew For apache2 Download certbot renew package file</description></item><item><title>Lindungi Web Server Apache2 Dengan SSL Debian 8</title><link>https://sibunglon.com/2018/12/01/lindungi-web-server-apache2-dengan-ssl-debian-8/</link><pubDate>Sat, 01 Dec 2018 15:14:00 +0000</pubDate><guid>https://sibunglon.com/2018/12/01/lindungi-web-server-apache2-dengan-ssl-debian-8/</guid><description>Pengertian HTTPS juga disebut HTTP melalui TLS, HTTP melalui SSL, dan HTTP Secure adalah protokol untuk komunikasi yang aman melalui jaringan komputer yang banyak digunakan di Internet. HTTPS terdiri dari komunikasi melalui Hypertext Transfer Protocol (HTTP) dalam koneksi yang terenkripsi dengan Transport Layer Security atau pendahulunya Secure Sockets Layer. Fungsi utama untuk HTTPS adalah autentikasi dari website yang dikunjungi dan perlindungan privasi dan integritas data yang dipertukarkan. SSL (Secure Sockets Layer) adalah teknologi keamanan standar untuk membangun link yang dienkripsi antara web server dan browser.</description></item><item><title>Hal-Hal Yang Harus Dilakukan Setelah Install Server - Install Aplikasi Berbasis Web</title><link>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-install-aplikasi-berbasis-web/</link><pubDate>Fri, 13 Oct 2017 10:22:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-install-aplikasi-berbasis-web/</guid><description>A. Pendahuluan
+Pada kesempatan ini, saya kembali memposting tentang dasar-dasar setelahi install server.
+B. Pengertian
+Aplikasi Berbasis Web adalah sebuah aplikasi yang dapat diakses melalui internet atau intranet, dan pada sekarang ini ternyata lebih banyak dan lebih luas dalam pemakaiannya.
+C. Latar belakang
+Setelah kita menginstall debian di proxmox tentunya kita harus tau hal hal apa saja yang harus dilakukan setelahnya.
+D. Tujuan
+Agar server dapat bekerja secara optimal saat melayani komputer client.</description></item><item><title>Hal-Hal Yang Harus Dilakukan Setelah Install Server - Installasi LAMP Server</title><link>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-installasi-lamp-server/</link><pubDate>Fri, 13 Oct 2017 10:09:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-installasi-lamp-server/</guid><description>A. Pendahuluan
+Pada kesempatan ini saya memposting lagi dan masih mengenai server
+B. Pengertian
+LAMP adalah istilah yang merupakan singkatan dariLinux,Apache,MySQL danPerl/PHP/Phyton. Merupakan sebuah paket perangkat lunak bebas yang digunakan untuk menjalankan sebuah aplikasi secara lengkap.
+Komponen-komponen dari LAMP :
+Linux – sistem operasi Apache HTTP Server – web server MariaDB atau MySQL – sistem basis data PHP atau Perl atau Python – bahasa pemrograman yang dipakai C. Latar belakang</description></item><item><title>Hal-Hal Yang Harus Dilakukan Setelah Install Server</title><link>https://sibunglon.com/2017/10/12/hal-hal-yang-harus-dilakukan-setelah-install-server/</link><pubDate>Thu, 12 Oct 2017 09:31:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/12/hal-hal-yang-harus-dilakukan-setelah-install-server/</guid><description>A. Pendahuluan
+Pada kesempatan kali ini yang saya bagikan yaitu tentang hal - hal yang perlu dilakukan setelah install server.
+B. Pengertian
+Debian adalah sistem operasi komputer yang tersusun dari paket-paket perangkat lunak yang dirilis sebagai perangkat lunak bebas dan terbuka dengan lisensi mayoritas GNU General Public License dan lisensi perangkat lunak bebas lainnya. Debian GNU/UNIX memuat perkakas sistem operasi GNU dan kernel Linux merupakan distribusi Linux yang populer dan berpengaruh.</description></item><item><title>Bagaimana Menginstall LAMP di Localhost Linux?</title><link>https://sibunglon.com/2017/08/09/bagaimana-menginstall-lamp-di-localhost-linux/</link><pubDate>Wed, 09 Aug 2017 14:58:00 +0000</pubDate><guid>https://sibunglon.com/2017/08/09/bagaimana-menginstall-lamp-di-localhost-linux/</guid><description>A. Pendahuluan
+Hello, pada kesempatan kali ini saya memposting bagaimana sih menginstal LAMP? Nah cara-caranya akan dijelaskan sebagai berikut.
+#Pengertian
+LAMP adalah istilah yang merupakan singkatan dari Linux, Apache, MySQL dan Perl/PHP/Phyton. Merupakan sebuah paket perangkat lunak bebas yang digunakan untuk menjalankan sebuah aplikasi secara lengkap.
+Komponen-komponen dari LAMP :
+Linux – sistem operasi Apache HTTP Server – web server MariaDB atau MySQL – sistem basis data PHP atau Perl atau Python – bahasa pemrograman yang dipakai #Latar Belakang</description></item></channel></rss>

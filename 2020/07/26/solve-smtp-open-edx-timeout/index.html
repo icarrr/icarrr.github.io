@@ -1,121 +1,17 @@
-<!DOCTYPE html>
-<html lang="en-us" itemscope itemtype="http://schema.org/WebPage">
-  <head>
-  <title>SOLVE - SMTP Open edX Timeout</title>
-  
-  <meta http-equiv="cache-control" content="public, max-age=31536000" />
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Faizar Septiawan">
-  <meta name="description" content="Read - Search - Ask | Personal Site | Catch your problem solution or read interesting stories on my blog!">
-  <meta name="keywords" content="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng">
-  
-  
-  
-  <meta name="google-site-verification" content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM" />
-  
-  
-  
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110194945-3"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-110194945-3');
-  </script>
-  
-
-  
-  
-  
-  
-  
-  <link rel="stylesheet" href="/assets/css/external.min.css" media="screen">
-  
-  
-  <link rel="stylesheet" href="/assets/css/styles.css" media="screen">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400&display=swap" rel="stylesheet">
-  
-
-  
-  
-  
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/src/images/apple-touch-icon.png">
-  <link rel="shortcut icon" href="/src/images/favicon.ico">
-  
-
-  
-  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
-
-  <meta property="og:title" content="SOLVE - SMTP Open edX Timeout" />
-<meta property="og:description" content="By default in Open edX, the system will send an email when a new user registers, using the forget password or other conditions.
+<!doctype html><html lang=en-us itemscope itemtype=http://schema.org/WebPage><head><title>SOLVE - SMTP Open edX Timeout</title><meta http-equiv=cache-control content="public, max-age=31536000"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=author content="Faizar Septiawan"><meta name=description content="Read - Search - Ask | Personal Site | Catch your problem solution or read interesting stories on my blog!"><meta name=keywords content="Linux,Unix,BSD,MacOS,Komunitas Pengguna Linux Indonesia,KPLI Klaten,KPLI Bulukumba,MikroTik,MikroTik Indonesia,FreeBSD,FreeBSD Indonesia,Cisco,Cisco Indonesia,BLC Telkom Klaten,Ansible,Nginx,Apache2,Caddy Server,Ayo Belajar Linux,Cloud Computing,e-Learning,Open edX,Proxmox,Sendy,Microsoft SQL Server,MySQL,PostgreSQL,Lets Encrypt,Case Study,Atlassian,Virtualization,Faizar Septiawan,Icar,siBunglonGanteng,siBunglonLabs,Orang Ganteng"><meta name=google-site-verification content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-110194945-3"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','UA-110194945-3');</script><link rel=stylesheet href=/assets/css/external.min.css media=screen><link rel=stylesheet href=/assets/css/styles.css media=screen><link href="https://fonts.googleapis.com/css?family=Roboto:400&display=swap" rel=stylesheet><link rel=apple-touch-icon-precomposed sizes=144x144 href=/src/images/apple-touch-icon.png><link rel="shortcut icon" href=/src/images/favicon.ico><link href=/posts/index.xml rel=alternate type=application/rss+xml title="The Official Site of siBunglon"><meta property="og:title" content="SOLVE - SMTP Open edX Timeout"><meta property="og:description" content="By default in Open edX, the system will send an email when a new user registers, using the forget password or other conditions.
 A few days ago my teams found an issue on the email sending service, but the issue was not because of the Open edX SMTP service but from the connection side of the Open edX server to the SMTP server.
 Then what&rsquo;s the case?
 Case:
--) When a user registers, the user should receive an email to activate the account, but in reality it is not." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://sibunglon.com/2020/07/26/solve-smtp-open-edx-timeout/" />
-<meta property="og:image" content="https://sibunglon.com/assets/img/profil.png"/>
-<meta property="article:published_time" content="2020-07-26T17:21:39+08:00" />
-<meta property="article:modified_time" content="2020-07-26T17:21:39+08:00" /><meta property="og:site_name" content="The Official Site of siBunglon" />
-
-  
-  <meta itemprop="name" content="SOLVE - SMTP Open edX Timeout">
-<meta itemprop="description" content="By default in Open edX, the system will send an email when a new user registers, using the forget password or other conditions.
+-) When a user registers, the user should receive an email to activate the account, but in reality it is not."><meta property="og:type" content="article"><meta property="og:url" content="https://sibunglon.com/2020/07/26/solve-smtp-open-edx-timeout/"><meta property="og:image" content="https://sibunglon.com/assets/img/profil.png"><meta property="article:published_time" content="2020-07-26T17:21:39+08:00"><meta property="article:modified_time" content="2020-07-26T17:21:39+08:00"><meta property="og:site_name" content="The Official Site of siBunglon"><meta itemprop=name content="SOLVE - SMTP Open edX Timeout"><meta itemprop=description content="By default in Open edX, the system will send an email when a new user registers, using the forget password or other conditions.
 A few days ago my teams found an issue on the email sending service, but the issue was not because of the Open edX SMTP service but from the connection side of the Open edX server to the SMTP server.
 Then what&rsquo;s the case?
 Case:
--) When a user registers, the user should receive an email to activate the account, but in reality it is not.">
-<meta itemprop="datePublished" content="2020-07-26T17:21:39+08:00" />
-<meta itemprop="dateModified" content="2020-07-26T17:21:39+08:00" />
-<meta itemprop="wordCount" content="394">
-<meta itemprop="image" content="https://sibunglon.com/assets/img/profil.png"/>
-
-
-
-<meta itemprop="keywords" content="Ayo Belajar Linux,Open edX,Error,Ngoprek," />
-
-  <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://sibunglon.com/assets/img/profil.png"/>
-
-<meta name="twitter:title" content="SOLVE - SMTP Open edX Timeout"/>
-<meta name="twitter:description" content="By default in Open edX, the system will send an email when a new user registers, using the forget password or other conditions.
+-) When a user registers, the user should receive an email to activate the account, but in reality it is not."><meta itemprop=datePublished content="2020-07-26T17:21:39+08:00"><meta itemprop=dateModified content="2020-07-26T17:21:39+08:00"><meta itemprop=wordCount content="394"><meta itemprop=image content="https://sibunglon.com/assets/img/profil.png"><meta itemprop=keywords content="Ayo Belajar Linux,Open edX,Error,"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://sibunglon.com/assets/img/profil.png"><meta name=twitter:title content="SOLVE - SMTP Open edX Timeout"><meta name=twitter:description content="By default in Open edX, the system will send an email when a new user registers, using the forget password or other conditions.
 A few days ago my teams found an issue on the email sending service, but the issue was not because of the Open edX SMTP service but from the connection side of the Open edX server to the SMTP server.
 Then what&rsquo;s the case?
 Case:
--) When a user registers, the user should receive an email to activate the account, but in reality it is not."/>
-
-  
-
-  
-  <script src="https://kit.fontawesome.com/749688b2db.js" crossorigin="anonymous"></script>
-  
-</head>
-
-  <body>
-    
-      <nav>
-  <a href="/">
-    siBunglon
-  </a>
-</nav>
-
-    
-    <main class="container">
-      
-  <article>
-    <header>
-      <small>
-        <time datetime="2020-07-26 17:21:39&#43;0800">2020-07-26</time></small>
-      <h1>SOLVE - SMTP Open edX Timeout</h1>
-    </header>
-    <section><p>By default in Open edX, the system will send an email when a new user registers, using the forget password or other conditions.</p>
-<p>A few days ago my teams found an issue on the email sending service, but the issue was not because of the Open edX SMTP service but from the connection side of the Open edX server to the SMTP server.</p>
-<p>Then what&rsquo;s the case?</p>
-<p>Case:</p>
-<p>-) When a user registers, the user should receive an email to activate the account, but in reality it is not. When checking the log file, log is found as follows:</p>
-<pre><code>Jul 10 16:50:32 elearning [service_variant=lms][edx.celery.task][env:sandbox] ERROR [elearning  7227] [tasks.py:48] - Unable to send activation email to user from &quot;elearning@sibunglon.com&quot; to &quot;research@sibunglon.com&quot;
+-) When a user registers, the user should receive an email to activate the account, but in reality it is not."><script src=https://kit.fontawesome.com/749688b2db.js crossorigin=anonymous></script></head><body><nav><a href=/>siBunglon</a></nav><main class=container><article><header><small><span class=date>July 26, 2020</span></small><h1>SOLVE - SMTP Open edX Timeout</h1></header><section><p>By default in Open edX, the system will send an email when a new user registers, using the forget password or other conditions.</p><p>A few days ago my teams found an issue on the email sending service, but the issue was not because of the Open edX SMTP service but from the connection side of the Open edX server to the SMTP server.</p><p>Then what&rsquo;s the case?</p><p>Case:</p><p>-) When a user registers, the user should receive an email to activate the account, but in reality it is not. When checking the log file, log is found as follows:</p><pre><code>Jul 10 16:50:32 e-Learning [service_variant=lms][edx.celery.task][env:sandbox] ERROR [e-Learning  7227] [tasks.py:48] - Unable to send activation email to user from &quot;e-Learning@sibunglon.com&quot; to &quot;research@sibunglon.com&quot;
 Traceback (most recent call last):
   File &quot;/edx/app/edxapp/edx-platform/common/djangoapps/student/tasks.py&quot;, line 23, in send_activation_email
     mail.send_mail(subject, message, from_address, [dest_addr], fail_silently=False)
@@ -129,95 +25,12 @@ Traceback (most recent call last):
     self.connection.sendmail(from_email, recipients, message.as_bytes(linesep='\r\n'))
   File &quot;/usr/lib/python2.7/smtplib.py&quot;, line 751, in sendmail
     raise SMTPDataError(code, resp)
-SMTPDataError: (554, 'Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: elearning@sibunglon.com')
-</code></pre><p>Is it possible due to a misconfiguration of the SMTP account on the Open edX server?</p>
-<p>-) If the user has not activated the account, at the second login the activation email will be sent again. In this step, the new user gets an activation email.</p>
-<p>-) When the user uses the password forgetting feature, the forgotten password email also enters.</p>
-<p>This means that it should not be due to a misconfiguration of the SMTP account on the Open edX server, the email was successfully entered in a case other than activation email. But at that time you had to wait for the email to arrive. So there is a possibility because of the timeout.</p>
-<p>This friend of mine seems to be a fad to set up an email timeout, in the file <code>/edx/app/edxapp/lms.env.json</code> added <code>&quot;EMAIL_TIMEOUT&quot;: timeout</code>. In this case our email timeout is set to 300 seconds so it&rsquo;s more config like this:</p>
-<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json">    <span class="s2">&#34;EMAIL_HOST&#34;</span><span class="err">:</span> <span class="s2">&#34;mail.sibunglon.com&#34;</span><span class="err">,</span>
-    <span class="s2">&#34;EMAIL_PORT&#34;</span><span class="err">:</span> <span class="mi">587</span><span class="err">,</span>
-    <span class="s2">&#34;EMAIL_USE_TLS&#34;</span><span class="err">:</span> <span class="kc">true</span><span class="err">,</span>
-    <span class="s2">&#34;EMAIL_TIMEOUT&#34;</span><span class="err">:</span> <span class="mi">300</span><span class="err">,</span>
-</code></pre></div><p>Also add the config to <code>/edx/app/edxapp/cms.env.json</code>, then restart lms and cms.</p>
-<p>After the EMAIL_TIMEOUT config is added, our issue can change the status to <code>Solved</code>.😁🥳</p>
-<p>Thanks you <a href="https://ngurajeka.com/">Ady Rahmat MA</a> for solve this issue.</p>
-</section>
-    <footer>
-      <hr>
-      <div class="meta">
-        <p class="tags">
-          
-            
-              <a href="/tags/ayo-belajar-linux">
-                <span>#</span>Ayo Belajar Linux</a>
-            
-              <a href="/tags/open-edx">
-                <span>#</span>Open edX</a>
-            
-              <a href="/tags/error">
-                <span>#</span>Error</a>
-            
-              <a href="/tags/ngoprek">
-                <span>#</span>Ngoprek</a>
-            
-          
-        </p>
-      </div>
-      <hr>
-      <div id="disqus_thread"></div>
-<script type="application/javascript">
-    var disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "sibunglonlabs" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-    </footer>
-  </article>
-
-    </main>
-    
-      <footer>
-  <p>
-    &copy; 2020 Faizar Septiawan. <a href="http://creativecommons.org/licenses/by-sa/4.0/">Some Rights Reserved</a>.
-  </p>
-  <p>
-    Powered by <a href="https://gohugo.io" title="A Fast and Flexible Website Generator">Hugo</a> &amp; <a href="https://github.com/eshlox/simplicity" title="Hugo theme">Simplicity</a>.
-  </p>
-</footer>
-
-    
-    
-    
-    
-    
-    
-    
-    <script src="/assets/js/scripts.min.js"></script>
-    
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-110194945-3', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-  </body>
-</html>
+SMTPDataError: (554, 'Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: e-Learning@sibunglon.com')
+</code></pre><p>Is it possible due to a misconfiguration of the SMTP account on the Open edX server?</p><p>-) If the user has not activated the account, at the second login the activation email will be sent again. In this step, the new user gets an activation email.</p><p>-) When the user uses the password forgetting feature, the forgotten password email also enters.</p><p>This means that it should not be due to a misconfiguration of the SMTP account on the Open edX server, the email was successfully entered in a case other than activation email. But at that time you had to wait for the email to arrive. So there is a possibility because of the timeout.</p><p>This friend of mine seems to be a fad to set up an email timeout, in the file <code>/edx/app/edxapp/lms.env.json</code> added <code>"EMAIL_TIMEOUT": timeout</code>. In this case our email timeout is set to 300 seconds so it&rsquo;s more config like this:</p><div class=highlight><pre class=chroma><code class=language-json data-lang=json>    <span class=s2>&#34;EMAIL_HOST&#34;</span><span class=err>:</span> <span class=s2>&#34;mail.sibunglon.com&#34;</span><span class=err>,</span>
+    <span class=s2>&#34;EMAIL_PORT&#34;</span><span class=err>:</span> <span class=mi>587</span><span class=err>,</span>
+    <span class=s2>&#34;EMAIL_USE_TLS&#34;</span><span class=err>:</span> <span class=kc>true</span><span class=err>,</span>
+    <span class=s2>&#34;EMAIL_TIMEOUT&#34;</span><span class=err>:</span> <span class=mi>300</span><span class=err>,</span>
+</code></pre></div><p>Also add the config to <code>/edx/app/edxapp/cms.env.json</code>, then restart lms and cms.</p><p>After the EMAIL_TIMEOUT config is added, our issue can change the status to <code>Solved</code>.😁🥳</p><p>Thanks you <a href=https://ngurajeka.com/>Ady Rahmat MA</a> for solve this issue.</p></section><footer><hr><div class=meta><p class=tags><a href=/tags/ayo-belajar-linux><span>#</span>Ayo Belajar Linux</a>
+<a href=/tags/open-edx><span>#</span>Open edX</a>
+<a href=/tags/error><span>#</span>Error</a></p></div><hr><div id=disqus_thread></div><script type=application/javascript>var disqus_config=function(){};(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return;}
+var d=document,s=d.createElement('script');s.async=true;s.src='//'+"sibunglonlabs"+'.disqus.com/embed.js';s.setAttribute('data-timestamp',+new Date());(d.head||d.body).appendChild(s);})();</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></footer></article></main><footer><p>&copy; 2020 Faizar Septiawan. <a href=http://creativecommons.org/licenses/by-sa/4.0/>Some Rights Reserved</a>.</p><p>Powered by <a href=https://gohugo.io title="A Fast and Flexible Website Generator">Hugo</a> & <a href=https://github.com/eshlox/simplicity title="Hugo theme">Simplicity</a>.</p></footer><script src=/assets/js/scripts.min.js></script><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-110194945-3','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script></body></html>
