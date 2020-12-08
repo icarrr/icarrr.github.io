@@ -1,23 +1,278 @@
-<!doctype html><html lang=en-us itemscope itemtype=http://schema.org/WebPage><head><title>Bagaimana Menginstall LAMP di Localhost Linux?</title><meta http-equiv=cache-control content="public, max-age=31536000"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=author content="Faizar Septiawan"><meta name=description content="Read - Search - Ask | Personal Site | Catch your problem solution or read interesting stories on my blog!"><meta name=keywords content="Linux,Unix,BSD,MacOS,Komunitas Pengguna Linux Indonesia,KPLI Klaten,KPLI Bulukumba,MikroTik,MikroTik Indonesia,FreeBSD,FreeBSD Indonesia,Cisco,Cisco Indonesia,BLC Telkom Klaten,Ansible,Nginx,Apache2,Caddy Server,Ayo Belajar Linux,Cloud Computing,e-Learning,Open edX,Proxmox,Sendy,Microsoft SQL Server,MySQL,PostgreSQL,Lets Encrypt,Case Study,Atlassian,Virtualization,Faizar Septiawan,Icar,siBunglonGanteng,siBunglonLabs,Orang Ganteng"><meta name=google-site-verification content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-110194945-3"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','UA-110194945-3');</script><link rel=stylesheet href=/assets/css/external.min.css media=screen><link rel=stylesheet href=/assets/css/styles.css media=screen><link href=/assets/custom/googlefonts/roboto.css rel=stylesheet><link rel=apple-touch-icon-precomposed sizes=144x144 href=/src/images/apple-touch-icon.png><link rel="shortcut icon" href=/src/images/favicon.ico><link href=/posts/index.xml rel=alternate type=application/rss+xml title="The Official Site of siBunglon"><meta property="og:title" content="Bagaimana Menginstall LAMP di Localhost Linux?"><meta property="og:description" content="A. Pendahuluan
+<!DOCTYPE html>
+<html lang="en-us" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+  <title>Bagaimana Menginstall LAMP di Localhost Linux?</title>
+  
+  <meta http-equiv="cache-control" content="public, max-age=31536000" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Faizar Septiawan">
+  <meta name="description" content="Read - Search - Ask | Personal Site | Catch your problem solution or read interesting stories on my blog!">
+  <meta name="keywords" content="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng">
+  
+  
+  
+  <meta name="google-site-verification" content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM" />
+  
+  
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110194945-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110194945-3');
+  </script>
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/css/external.min.css" media="screen">
+  
+  
+  <link rel="stylesheet" href="/assets/css/styles.css" media="screen">
+  <link href="/assets/custom/googlefonts/roboto.css" rel="stylesheet">
+  
+
+  
+  
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/src/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="/src/images/favicon.ico">
+  
+
+  
+  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
+
+  <meta property="og:title" content="Bagaimana Menginstall LAMP di Localhost Linux?" />
+<meta property="og:description" content="A. Pendahuluan
 Hello, pada kesempatan kali ini saya memposting bagaimana sih menginstal LAMP? Nah cara-caranya akan dijelaskan sebagai berikut.
 #Pengertian
 LAMP adalah istilah yang merupakan singkatan dari Linux, Apache, MySQL dan Perl/PHP/Phyton. Merupakan sebuah paket perangkat lunak bebas yang digunakan untuk menjalankan sebuah aplikasi secara lengkap.
 Komponen-komponen dari LAMP :
- Linux – sistem operasi Apache HTTP Server – web server MariaDB atau MySQL – sistem basis data PHP atau Perl atau Python – bahasa pemrograman yang dipakai  #Latar Belakang"><meta property="og:type" content="article"><meta property="og:url" content="https://sibunglon.com/2017/08/09/bagaimana-menginstall-lamp-di-localhost-linux/"><meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"><meta property="article:published_time" content="2017-08-09T14:58:00+00:00"><meta property="article:modified_time" content="2017-08-09T14:58:00+00:00"><meta property="og:site_name" content="The Official Site of siBunglon"><meta itemprop=name content="Bagaimana Menginstall LAMP di Localhost Linux?"><meta itemprop=description content="A. Pendahuluan
+ Linux – sistem operasi Apache HTTP Server – web server MariaDB atau MySQL – sistem basis data PHP atau Perl atau Python – bahasa pemrograman yang dipakai  #Latar Belakang" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sibunglon.com/2017/08/09/bagaimana-menginstall-lamp-di-localhost-linux/" />
+<meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"/>
+<meta property="article:published_time" content="2017-08-09T14:58:00+00:00" />
+<meta property="article:modified_time" content="2017-08-09T14:58:00+00:00" /><meta property="og:site_name" content="The Official Site of siBunglon" />
+
+  <meta itemprop="name" content="Bagaimana Menginstall LAMP di Localhost Linux?">
+<meta itemprop="description" content="A. Pendahuluan
 Hello, pada kesempatan kali ini saya memposting bagaimana sih menginstal LAMP? Nah cara-caranya akan dijelaskan sebagai berikut.
 #Pengertian
 LAMP adalah istilah yang merupakan singkatan dari Linux, Apache, MySQL dan Perl/PHP/Phyton. Merupakan sebuah paket perangkat lunak bebas yang digunakan untuk menjalankan sebuah aplikasi secara lengkap.
 Komponen-komponen dari LAMP :
- Linux – sistem operasi Apache HTTP Server – web server MariaDB atau MySQL – sistem basis data PHP atau Perl atau Python – bahasa pemrograman yang dipakai  #Latar Belakang"><meta itemprop=datePublished content="2017-08-09T14:58:00+00:00"><meta itemprop=dateModified content="2017-08-09T14:58:00+00:00"><meta itemprop=wordCount content="291"><meta itemprop=image content="https://sibunglon.com/assets/img/profil.webp"><meta itemprop=keywords content="BLC Telkom Klaten,Ayo Belajar Linux,Apache2,MySQL,PHP,PHPMyAdmin,"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://sibunglon.com/assets/img/profil.webp"><meta name=twitter:title content="Bagaimana Menginstall LAMP di Localhost Linux?"><meta name=twitter:description content="A. Pendahuluan
+ Linux – sistem operasi Apache HTTP Server – web server MariaDB atau MySQL – sistem basis data PHP atau Perl atau Python – bahasa pemrograman yang dipakai  #Latar Belakang">
+<meta itemprop="datePublished" content="2017-08-09T14:58:00+00:00" />
+<meta itemprop="dateModified" content="2017-08-09T14:58:00+00:00" />
+<meta itemprop="wordCount" content="291">
+<meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
+
+
+
+<meta itemprop="keywords" content="BLC Telkom Klaten,Ayo Belajar Linux,Apache2,MySQL,PHP,PHPMyAdmin," />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://sibunglon.com/assets/img/profil.webp"/>
+
+<meta name="twitter:title" content="Bagaimana Menginstall LAMP di Localhost Linux?"/>
+<meta name="twitter:description" content="A. Pendahuluan
 Hello, pada kesempatan kali ini saya memposting bagaimana sih menginstal LAMP? Nah cara-caranya akan dijelaskan sebagai berikut.
 #Pengertian
 LAMP adalah istilah yang merupakan singkatan dari Linux, Apache, MySQL dan Perl/PHP/Phyton. Merupakan sebuah paket perangkat lunak bebas yang digunakan untuk menjalankan sebuah aplikasi secara lengkap.
 Komponen-komponen dari LAMP :
- Linux – sistem operasi Apache HTTP Server – web server MariaDB atau MySQL – sistem basis data PHP atau Perl atau Python – bahasa pemrograman yang dipakai  #Latar Belakang"><script defer src=/assets/custom/fontawesome-5.15.1/js/all.min.js></script></head><body><nav><a href=/>siBunglon</a></nav><main class=container><article><header><small><span class=date>August 9, 2017</span></small><h1>Bagaimana Menginstall LAMP di Localhost Linux?</h1></header><section><p><img src=https://d33np9n32j53g7.cloudfront.net/assets/stacks/lampstack/img/lampstack-stack-110x117-d69f4394f7c64a94e9ba081f10fdc715.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p><strong>A. Pendahuluan</strong></p><p>Hello, pada kesempatan kali ini saya memposting bagaimana sih menginstal LAMP? Nah cara-caranya akan dijelaskan sebagai berikut.</p><p><strong>#Pengertian</strong></p><p>LAMP adalah istilah yang merupakan singkatan dari <a href=https://id.wikipedia.org/wiki/Linux>Linux</a>, <a href=https://id.wikipedia.org/wiki/Apache_HTTP_Server>Apache</a>, MySQL dan <a href=https://id.wikipedia.org/wiki/Perl>Perl</a>/<a href=https://id.wikipedia.org/wiki/PHP>PHP</a>/<a href=https://id.wikipedia.org/wiki/Phyton>Phyton</a>. Merupakan sebuah paket <a href=https://id.wikipedia.org/wiki/Perangkat_lunak_bebas>perangkat lunak bebas</a> yang digunakan untuk menjalankan sebuah aplikasi secara lengkap.</p><p>Komponen-komponen dari LAMP :</p><ul><li><a href=https://id.wikipedia.org/wiki/Linux>Linux</a> – <a href=https://id.wikipedia.org/wiki/Sistem_operasi>sistem operasi</a></li><li><a href=https://id.wikipedia.org/wiki/Apache_HTTP_Server>Apache HTTP Server</a> – <a href=https://id.wikipedia.org/wiki/Web_server>web server</a></li><li><a href=https://id.wikipedia.org/wiki/MariaDB>MariaDB</a> atau <a href=https://id.wikipedia.org/wiki/MySQL>MySQL</a> – sistem basis data</li><li><a href=https://id.wikipedia.org/wiki/PHP>PHP</a> atau <a href=https://id.wikipedia.org/wiki/Perl>Perl</a> atau <a href=https://id.wikipedia.org/wiki/Python>Python</a> – bahasa pemrograman yang dipakai</li></ul><p><strong>#Latar Belakang</strong></p><p>Ingin menggunakan linux, apache, mariaDB/mysql, dan PHP dalam satu paket.</p><p><strong>#Maksud dan Tujuan</strong></p><p>Maksud dan tujuan dari postingan ini agar si pengunjung dapat mempelajari dan mengetahui bagaimana menginstall LAMP.</p><p><strong>B. Alat dan Bahan</strong></p><ol><li>Komputer/laptop</li><li>Koneksi internet</li></ol><p><strong>C. Jangka Waktu Pelaksanaan</strong></p><p>Waktu yang diperlukan kurang lebih 20-30 menit</p><p><strong>D.</strong>** Langkah Kerja**</p><p>1. Buka terminal liinux, dan masuk sebagai super user (su)</p><p><img src=https://2.bp.blogspot.com/-RHyKowlzcoU/W4uam5LIv6I/AAAAAAAAD2k/2ZiiCUCG4pYl3NlyBK28EotIWOh_nSxjQCLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-09%2B00-57-21.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p>2. Install apache</p><p><img src=https://3.bp.blogspot.com/-Sccq86nKJ3U/W4uayQfMZzI/AAAAAAAAD2o/rSFVH9emSGMURy49F3XkglRBKfQvFU4FgCLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-09%2B00-58-46.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p>3. Install php dan beberapa dependensinya</p><p><img src=https://2.bp.blogspot.com/-agq6ZVE1jxY/W4ubAi8_5pI/AAAAAAAAD2w/AZ5d03zKQ_guBFoPjBejdeLWBf9F60IbQCLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-09%2B01-08-39.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p>4. Buat sebuah file “testphp.php” > &ldquo;nano testphp.php&rdquo; dan sisipkan skrip berikut</p><p><img src=https://3.bp.blogspot.com/-3hgEZ2Jejh8/W4ubXx-EaFI/AAAAAAAAD3A/87t74jVwkUoWTpp2fJ5W2jp_CtsRi9e2wCLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-09%2B01-22-24.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p><img src=https://3.bp.blogspot.com/-xH6qxcpVqEc/W4ubWkObVHI/AAAAAAAAD28/2V3Y70gguz4VK3pXTlonUz37QOQUbiHuQCLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-09%2B01-23-29.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p>5. Cek browser anda dan ketik “localhost/testphp.php” pada address bar, jika tampilannya tidak menampilkan versi php anda silahkan install yang ini. Jika iya, abaikan bagian ini</p><p><img src=https://2.bp.blogspot.com/-BT5fyMkbQkU/W4ucG_mD3nI/AAAAAAAAD3Q/TpgqTELJEyofm8agR5exbvqhs2PaWsXbwCLcBGAs/s1600/anu.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p><img src="https://sibunglonganteng.files.wordpress.com/2017/08/3e62a-screenshot2bfrom2b2017-08-092b08-39-50.png?w=300" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p>6. Install mariadb-server</p><p><img src=https://4.bp.blogspot.com/-8b7GfRtJh4E/W4ucVti_YkI/AAAAAAAAD3U/AL9nTwJb56kfADjmwrByiRxcX1txrVFsACLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-09%2B08-43-42.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p>7. Konfigurasi mysql</p><p><img src=https://3.bp.blogspot.com/-PTuUbLKJvMk/W4ucbkYf9lI/AAAAAAAAD3c/BUAoiQ5BltYbP_S9riRkaiH4dmTnG9bpgCLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-09%2B08-52-33.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><ul><li>Tekan enter</li></ul><p><img src=https://2.bp.blogspot.com/-RAAiHH9Neb4/W4ucpDij8QI/AAAAAAAAD3k/cftycmEJupIHBnhwCJT911Z0jdD43pk1QCLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-09%2B08-53-27.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p><img src=https://2.bp.blogspot.com/-jxyAlufo9M4/W4ucpH6lajI/AAAAAAAAD3o/ujtrgC5qfskJOnC5DgEk-hnf0i48mCIdACLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-09%2B08-53-42.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><ul><li>Masukkan password</li></ul><p><img src=https://4.bp.blogspot.com/-iiNubhXWUrU/W4ucx4m8_vI/AAAAAAAAD3w/lvbJQmImBxkHdAl7BYcL7CWVxD6XHSQdQCLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-09%2B08-55-05.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><ul><li>Remove user anonymous</li></ul><p><img src=https://1.bp.blogspot.com/-eWx8nQm1ruY/W4uc-hri5nI/AAAAAAAAD38/6xbqjEcJsSY6yF85MPyX2Td07HfBiFZZgCLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-09%2B08-55-38.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><ul><li>Matikan remote login</li></ul><p><img src=https://1.bp.blogspot.com/-O9Q8JUc6XDg/W4udL68zXuI/AAAAAAAAD4E/Blak9eoFMrwcRxRm4y87oYSUiuXV8-bnACLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-09%2B08-56-44.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><ul><li>Remove database dan reload table</li></ul><p><img src=https://2.bp.blogspot.com/-tIwGJR7ldxU/W4udZMNhVKI/AAAAAAAAD4U/EcULtwpFIDEspms7nnbsWCAehg2yvUtlwCLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-09%2B08-57-04.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p><img src=https://4.bp.blogspot.com/-S27ykToHPB4/W4udZF3Hm8I/AAAAAAAAD4Q/6H-QjeI9ZzgxFXL2JEoX_HWcs7xfDY-ggCLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-09%2B08-57-20.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p>8. Install phpmyadmin</p><p><img src=https://4.bp.blogspot.com/-EAb5ak8jNoA/W4udldb43VI/AAAAAAAAD4Y/N9PoRKOBi102W7WsMWAh8RM9jiVH83RMgCLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-09%2B08-58-31.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p>9. Pada saat menginstall phpmyadmin, akan di tampilkan sebuah jendela seperti berikut. Tanda i apache dengan cara klik spesialis > ok</p><p><img src=https://4.bp.blogspot.com/-ExCbjDV25A4/W4ud0YXswoI/AAAAAAAAD4k/HTuG01TRFgcoNaz5i5mthtLw5IstoMoDACLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-09%2B09-04-20.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p>10. Pilih yes</p><p><img src=https://4.bp.blogspot.com/-5_bYplP2Krs/W4ud5kXXchI/AAAAAAAAD4s/qycdJCHxLhUsW7WFfNhAVt0R7XcEYgjcQCLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-09%2B09-05-12.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p>11. Masukkan password, lalu konfirmasi pass tersebtut</p><p><img src=https://2.bp.blogspot.com/-M5UCQpoCqv4/W4ueAjShu4I/AAAAAAAAD40/9fBFGkg5DIs5gwM-FFD9FgTRo8PZXUBQgCLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-09%2B09-05-45.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p><img src=https://3.bp.blogspot.com/-gickfdj3Qw0/W4ueAtV4jbI/AAAAAAAAD4w/VTV_mhavFWYsv8AsdlNeWC_-P0oBt9GjACLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-09%2B09-06-06.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p>12. Cek browser anda, ketik &ldquo;localhost/phpmyadmin&rdquo; pada address bar</p><p><img src=https://4.bp.blogspot.com/-UqKZ3jTjzhA/W4ueIT-Uy0I/AAAAAAAAD44/pD6JEW4lLkUUB_w6bsna92CIOBQlcUEkgCLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-09%2B09-07-33.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p>13. Silahkan login dengan username &ldquo;phpmyadmin&rdquo; dan password &ldquo;sesuai yang telah di set sebelumnya&rdquo;.</p><p>14. PHPMYADMIN anda sudah selesai.</p><p><strong>E. Hasil Yang Didapatkan</strong></p><p>Mampu mempraktekkannya dengan sendiri dan benar</p><p><strong>F. Kesimpulan</strong></p><p>LAMP itu simliar ataupun samadengan XAMP yang mempuyai apache, mysql.</p></section><footer><hr><div class=meta><p class=tags><a href=/tags/blc-telkom-klaten><span>#</span>BLC Telkom Klaten</a>
-<a href=/tags/ayo-belajar-linux><span>#</span>Ayo Belajar Linux</a>
-<a href=/tags/apache2><span>#</span>Apache2</a>
-<a href=/tags/mysql><span>#</span>MySQL</a>
-<a href=/tags/php><span>#</span>PHP</a>
-<a href=/tags/phpmyadmin><span>#</span>PHPMyAdmin</a></p></div><hr><div id=disqus_thread></div><script type=application/javascript>var disqus_config=function(){};(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return;}
-var d=document,s=d.createElement('script');s.async=true;s.src='//'+"sibunglonlabs"+'.disqus.com/embed.js';s.setAttribute('data-timestamp',+new Date());(d.head||d.body).appendChild(s);})();</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></footer></article></main><footer><p>&copy; 2020 Faizar Septiawan. <a href=http://creativecommons.org/licenses/by-sa/4.0/>Some Rights Reserved</a>.</p><p>Powered by <a href=https://gohugo.io title="A Fast and Flexible Website Generator">Hugo</a> & <a href=https://github.com/eshlox/simplicity title="Hugo theme">Simplicity</a>.</p></footer><script src=/assets/js/scripts.min.js></script><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-110194945-3','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script></body></html>
+ Linux – sistem operasi Apache HTTP Server – web server MariaDB atau MySQL – sistem basis data PHP atau Perl atau Python – bahasa pemrograman yang dipakai  #Latar Belakang"/>
+
+  
+
+  
+  <script defer src="/assets/custom/fontawesome-5.15.1/js/all.min.js"></script>
+  
+</head>
+
+  <body>
+    
+      <nav>
+  <a href="/">
+    siBunglon
+  </a>
+</nav>
+
+    
+    <main class="container">
+      
+  <article>
+    <header>
+      <small>
+        <span class="date">August 9, 2017</span></small>
+      <h1>Bagaimana Menginstall LAMP di Localhost Linux?</h1>
+    </header>
+    <section><p><img src="https://d33np9n32j53g7.cloudfront.net/assets/stacks/lampstack/img/lampstack-stack-110x117-d69f4394f7c64a94e9ba081f10fdc715.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p><strong>A. Pendahuluan</strong></p>
+<p>Hello, pada kesempatan kali ini saya memposting bagaimana sih menginstal LAMP? Nah cara-caranya akan dijelaskan sebagai berikut.</p>
+<p><strong>#Pengertian</strong></p>
+<p>LAMP adalah istilah yang merupakan singkatan dari <a href="https://id.wikipedia.org/wiki/Linux">Linux</a>, <a href="https://id.wikipedia.org/wiki/Apache_HTTP_Server">Apache</a>, MySQL dan <a href="https://id.wikipedia.org/wiki/Perl">Perl</a>/<a href="https://id.wikipedia.org/wiki/PHP">PHP</a>/<a href="https://id.wikipedia.org/wiki/Phyton">Phyton</a>. Merupakan sebuah paket <a href="https://id.wikipedia.org/wiki/Perangkat_lunak_bebas">perangkat lunak bebas</a> yang digunakan untuk menjalankan sebuah aplikasi secara lengkap.</p>
+<p>Komponen-komponen dari LAMP :</p>
+<ul>
+<li><a href="https://id.wikipedia.org/wiki/Linux">Linux</a> – <a href="https://id.wikipedia.org/wiki/Sistem_operasi">sistem operasi</a></li>
+<li><a href="https://id.wikipedia.org/wiki/Apache_HTTP_Server">Apache HTTP Server</a> – <a href="https://id.wikipedia.org/wiki/Web_server">web server</a></li>
+<li><a href="https://id.wikipedia.org/wiki/MariaDB">MariaDB</a> atau <a href="https://id.wikipedia.org/wiki/MySQL">MySQL</a> – sistem basis data</li>
+<li><a href="https://id.wikipedia.org/wiki/PHP">PHP</a> atau <a href="https://id.wikipedia.org/wiki/Perl">Perl</a> atau <a href="https://id.wikipedia.org/wiki/Python">Python</a> – bahasa pemrograman yang dipakai</li>
+</ul>
+<p><strong>#Latar Belakang</strong></p>
+<p>Ingin menggunakan linux, apache, mariaDB/mysql, dan PHP dalam satu paket.</p>
+<p><strong>#Maksud dan Tujuan</strong></p>
+<p>Maksud dan tujuan dari postingan ini agar si pengunjung dapat mempelajari dan mengetahui bagaimana menginstall LAMP.</p>
+<p><strong>B. Alat dan Bahan</strong></p>
+<ol>
+<li>Komputer/laptop</li>
+<li>Koneksi internet</li>
+</ol>
+<p><strong>C. Jangka Waktu Pelaksanaan</strong></p>
+<p>Waktu yang diperlukan kurang lebih 20-30 menit</p>
+<p><strong>D.</strong>** Langkah Kerja**</p>
+<p>1. Buka terminal liinux, dan masuk sebagai super user (su)</p>
+<p><img src="https://2.bp.blogspot.com/-RHyKowlzcoU/W4uam5LIv6I/AAAAAAAAD2k/2ZiiCUCG4pYl3NlyBK28EotIWOh_nSxjQCLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-09%2B00-57-21.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p>2. Install apache</p>
+<p><img src="https://3.bp.blogspot.com/-Sccq86nKJ3U/W4uayQfMZzI/AAAAAAAAD2o/rSFVH9emSGMURy49F3XkglRBKfQvFU4FgCLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-09%2B00-58-46.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p>3. Install php dan beberapa dependensinya</p>
+<p><img src="https://2.bp.blogspot.com/-agq6ZVE1jxY/W4ubAi8_5pI/AAAAAAAAD2w/AZ5d03zKQ_guBFoPjBejdeLWBf9F60IbQCLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-09%2B01-08-39.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p>4. Buat sebuah file “testphp.php” &gt; &ldquo;nano testphp.php&rdquo; dan sisipkan skrip berikut</p>
+<p><img src="https://3.bp.blogspot.com/-3hgEZ2Jejh8/W4ubXx-EaFI/AAAAAAAAD3A/87t74jVwkUoWTpp2fJ5W2jp_CtsRi9e2wCLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-09%2B01-22-24.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p><img src="https://3.bp.blogspot.com/-xH6qxcpVqEc/W4ubWkObVHI/AAAAAAAAD28/2V3Y70gguz4VK3pXTlonUz37QOQUbiHuQCLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-09%2B01-23-29.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p>5. Cek browser anda dan ketik “localhost/testphp.php” pada address bar, jika tampilannya tidak menampilkan versi php anda silahkan install yang ini. Jika iya, abaikan bagian ini</p>
+<p><img src="https://2.bp.blogspot.com/-BT5fyMkbQkU/W4ucG_mD3nI/AAAAAAAAD3Q/TpgqTELJEyofm8agR5exbvqhs2PaWsXbwCLcBGAs/s1600/anu.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p><img src="https://sibunglonganteng.files.wordpress.com/2017/08/3e62a-screenshot2bfrom2b2017-08-092b08-39-50.png?w=300" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p>6. Install mariadb-server</p>
+<p><img src="https://4.bp.blogspot.com/-8b7GfRtJh4E/W4ucVti_YkI/AAAAAAAAD3U/AL9nTwJb56kfADjmwrByiRxcX1txrVFsACLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-09%2B08-43-42.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p>7. Konfigurasi mysql</p>
+<p><img src="https://3.bp.blogspot.com/-PTuUbLKJvMk/W4ucbkYf9lI/AAAAAAAAD3c/BUAoiQ5BltYbP_S9riRkaiH4dmTnG9bpgCLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-09%2B08-52-33.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<ul>
+<li>Tekan enter</li>
+</ul>
+<p><img src="https://2.bp.blogspot.com/-RAAiHH9Neb4/W4ucpDij8QI/AAAAAAAAD3k/cftycmEJupIHBnhwCJT911Z0jdD43pk1QCLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-09%2B08-53-27.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p><img src="https://2.bp.blogspot.com/-jxyAlufo9M4/W4ucpH6lajI/AAAAAAAAD3o/ujtrgC5qfskJOnC5DgEk-hnf0i48mCIdACLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-09%2B08-53-42.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<ul>
+<li>Masukkan password</li>
+</ul>
+<p><img src="https://4.bp.blogspot.com/-iiNubhXWUrU/W4ucx4m8_vI/AAAAAAAAD3w/lvbJQmImBxkHdAl7BYcL7CWVxD6XHSQdQCLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-09%2B08-55-05.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<ul>
+<li>Remove user anonymous</li>
+</ul>
+<p><img src="https://1.bp.blogspot.com/-eWx8nQm1ruY/W4uc-hri5nI/AAAAAAAAD38/6xbqjEcJsSY6yF85MPyX2Td07HfBiFZZgCLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-09%2B08-55-38.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<ul>
+<li>Matikan remote login</li>
+</ul>
+<p><img src="https://1.bp.blogspot.com/-O9Q8JUc6XDg/W4udL68zXuI/AAAAAAAAD4E/Blak9eoFMrwcRxRm4y87oYSUiuXV8-bnACLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-09%2B08-56-44.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<ul>
+<li>Remove database dan reload table</li>
+</ul>
+<p><img src="https://2.bp.blogspot.com/-tIwGJR7ldxU/W4udZMNhVKI/AAAAAAAAD4U/EcULtwpFIDEspms7nnbsWCAehg2yvUtlwCLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-09%2B08-57-04.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p><img src="https://4.bp.blogspot.com/-S27ykToHPB4/W4udZF3Hm8I/AAAAAAAAD4Q/6H-QjeI9ZzgxFXL2JEoX_HWcs7xfDY-ggCLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-09%2B08-57-20.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p>8. Install phpmyadmin</p>
+<p><img src="https://4.bp.blogspot.com/-EAb5ak8jNoA/W4udldb43VI/AAAAAAAAD4Y/N9PoRKOBi102W7WsMWAh8RM9jiVH83RMgCLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-09%2B08-58-31.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p>9. Pada saat menginstall phpmyadmin, akan di tampilkan sebuah jendela seperti berikut. Tanda i apache dengan cara klik spesialis &gt; ok</p>
+<p><img src="https://4.bp.blogspot.com/-ExCbjDV25A4/W4ud0YXswoI/AAAAAAAAD4k/HTuG01TRFgcoNaz5i5mthtLw5IstoMoDACLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-09%2B09-04-20.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p>10. Pilih yes</p>
+<p><img src="https://4.bp.blogspot.com/-5_bYplP2Krs/W4ud5kXXchI/AAAAAAAAD4s/qycdJCHxLhUsW7WFfNhAVt0R7XcEYgjcQCLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-09%2B09-05-12.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p>11. Masukkan password, lalu konfirmasi pass tersebtut</p>
+<p><img src="https://2.bp.blogspot.com/-M5UCQpoCqv4/W4ueAjShu4I/AAAAAAAAD40/9fBFGkg5DIs5gwM-FFD9FgTRo8PZXUBQgCLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-09%2B09-05-45.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p><img src="https://3.bp.blogspot.com/-gickfdj3Qw0/W4ueAtV4jbI/AAAAAAAAD4w/VTV_mhavFWYsv8AsdlNeWC_-P0oBt9GjACLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-09%2B09-06-06.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p>12. Cek browser anda, ketik &ldquo;localhost/phpmyadmin&rdquo; pada address bar</p>
+<p><img src="https://4.bp.blogspot.com/-UqKZ3jTjzhA/W4ueIT-Uy0I/AAAAAAAAD44/pD6JEW4lLkUUB_w6bsna92CIOBQlcUEkgCLcBGAs/s1600/Screenshot%2Bfrom%2B2017-08-09%2B09-07-33.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p>13. Silahkan login dengan username &ldquo;phpmyadmin&rdquo; dan password &ldquo;sesuai yang telah di set sebelumnya&rdquo;.</p>
+<p>14. PHPMYADMIN anda sudah selesai.</p>
+<p><strong>E. Hasil Yang Didapatkan</strong></p>
+<p>Mampu mempraktekkannya dengan sendiri dan benar</p>
+<p><strong>F. Kesimpulan</strong></p>
+<p>LAMP itu simliar ataupun samadengan XAMP yang mempuyai apache, mysql.</p>
+</section>
+    <footer>
+      <hr>
+      <div class="meta">
+        <p class="tags">
+          
+            
+              <a href="/tags/blc-telkom-klaten">
+                <span>#</span>BLC Telkom Klaten</a>
+            
+              <a href="/tags/ayo-belajar-linux">
+                <span>#</span>Ayo Belajar Linux</a>
+            
+              <a href="/tags/apache2">
+                <span>#</span>Apache2</a>
+            
+              <a href="/tags/mysql">
+                <span>#</span>MySQL</a>
+            
+              <a href="/tags/php">
+                <span>#</span>PHP</a>
+            
+              <a href="/tags/phpmyadmin">
+                <span>#</span>PHPMyAdmin</a>
+            
+          
+        </p>
+      </div>
+      <hr>
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sibunglonlabs" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </footer>
+  </article>
+
+    </main>
+    
+      <footer>
+  <p>
+    &copy; 2020 Faizar Septiawan. <a href="http://creativecommons.org/licenses/by-sa/4.0/">Some Rights Reserved</a>.
+  </p>
+  <p>
+    Powered by <a href="https://gohugo.io" title="A Fast and Flexible Website Generator">Hugo</a> &amp; <a href="https://github.com/eshlox/simplicity" title="Hugo theme">Simplicity</a>.
+  </p>
+</footer>
+
+    
+    
+    
+    
+    
+    
+    
+    <script src="/assets/js/scripts.min.js"></script>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-110194945-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>

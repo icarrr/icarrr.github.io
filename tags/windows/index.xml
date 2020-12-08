@@ -1,11 +1,64 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Windows on The Official Site of siBunglon</title><link>https://sibunglon.com/tags/windows/</link><description>Recent content in Windows on The Official Site of siBunglon</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 31 Oct 2019 14:46:11 +0700</lastBuildDate><atom:link href="https://sibunglon.com/tags/windows/index.xml" rel="self" type="application/rss+xml"/><item><title>Restart Network Adapter Windows without Reboot</title><link>https://sibunglon.com/2019/10/31/restart-network-adapter-windows-without-reboot/</link><pubDate>Thu, 31 Oct 2019 14:46:11 +0700</pubDate><guid>https://sibunglon.com/2019/10/31/restart-network-adapter-windows-without-reboot/</guid><description>Restarts a network adapter by disabling and then re-enabling the network adapter.
-Open PowerShell on Windows, after that find the name of the interface to be restarted. Use the following command line:
-netsh interface show interface Restart network adapter using the following command line:
-Restart-NetAdapter -Name &amp;#34;Ethernet x&amp;#34;</description></item><item><title>Backup and Restore Database SQL Server to Lower Version</title><link>https://sibunglon.com/2019/05/16/backup-and-restore-database-sql-server-to-lower-version/</link><pubDate>Thu, 16 May 2019 14:26:00 +0700</pubDate><guid>https://sibunglon.com/2019/05/16/backup-and-restore-database-sql-server-to-lower-version/</guid><description>How to Restore Database SQL server to lower version?
-If you want to migrate a database from environment A with SQL Server version A to environment B with SQL Server version A, you can use the script or backup and restore function. But if you want to migrate the database from environment A with SQL Server version A to environment B with SQL Server version B, when running the backup function in environment A and you will get problems when running the restore function in environment B.</description></item><item><title>Diam Diam Port 443 Lagi Konflik</title><link>https://sibunglon.com/2019/03/26/diam-diam-port-443-lagi-konflik/</link><pubDate>Tue, 26 Mar 2019 14:26:11 +0700</pubDate><guid>https://sibunglon.com/2019/03/26/diam-diam-port-443-lagi-konflik/</guid><description>Beberapa hari yang lalu lagi ada ide iseng nyobain main-main vm linux (virtual machine) menggunakan VMware Workstation Pro, niatnya mau online-nin semua vm yang telah dibuat tapi cuman punya 1 ip publik. Emang bisa? Terus gimana ngaksesnya/ngeremotenya? Bisa dong, waktu itu pake port forwarding untuk NAT di VMware Workstation Pro, karena maunya si vm tersebut dapat akses internet dan dapat diakses dari 1 ip public.
-Saya butuh web service yang dapat diakses melalui 1 publik yaitu 1 ip publik hostnya, okey saya pasang web service di salah satu vm.</description></item><item><title>Berkenalan Dengan Caddy Server</title><link>https://sibunglon.com/2018/10/26/berkenalan-dengan-caddy-server/</link><pubDate>Fri, 26 Oct 2018 11:52:00 +0000</pubDate><guid>https://sibunglon.com/2018/10/26/berkenalan-dengan-caddy-server/</guid><description>Caddy? Caddy itu apaan? Fungsinya apa aja?
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows on The Official Site of siBunglon</title>
+    <link>https://sibunglon.com/tags/windows/</link>
+    <description>Recent content in Windows on The Official Site of siBunglon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 31 Oct 2019 14:46:11 +0700</lastBuildDate>
+    
+      <atom:link href="https://sibunglon.com/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      <item>
+        <title>Restart Network Adapter Windows without Reboot</title>
+        <link>https://sibunglon.com/2019/10/31/restart-network-adapter-windows-without-reboot/</link>
+        <pubDate>Thu, 31 Oct 2019 14:46:11 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/10/31/restart-network-adapter-windows-without-reboot/</guid>
+        <description>Restarts a network adapter by disabling and then re-enabling the network adapter.
+  Open PowerShell on Windows, after that find the name of the interface to be restarted. Use the following command line:
+netsh interface show interface   Restart network adapter using the following command line:
+Restart-NetAdapter -Name &amp;#34;Ethernet x&amp;#34;   </description>
+      </item>
+    
+      <item>
+        <title>Backup and Restore Database SQL Server to Lower Version</title>
+        <link>https://sibunglon.com/2019/05/16/backup-and-restore-database-sql-server-to-lower-version/</link>
+        <pubDate>Thu, 16 May 2019 14:26:00 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/05/16/backup-and-restore-database-sql-server-to-lower-version/</guid>
+        <description>How to Restore Database SQL server to lower version?
+If you want to migrate a database from environment A with SQL Server version A to environment B with SQL Server version A, you can use the script or backup and restore function. But if you want to migrate the database from environment A with SQL Server version A to environment B with SQL Server version B, when running the backup function in environment A and you will get problems when running the restore function in environment B.</description>
+      </item>
+    
+      <item>
+        <title>Diam Diam Port 443 Lagi Konflik</title>
+        <link>https://sibunglon.com/2019/03/26/diam-diam-port-443-lagi-konflik/</link>
+        <pubDate>Tue, 26 Mar 2019 14:26:11 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/03/26/diam-diam-port-443-lagi-konflik/</guid>
+        <description>Beberapa hari yang lalu lagi ada ide iseng nyobain main-main vm linux (virtual machine) menggunakan VMware Workstation Pro, niatnya mau online-nin semua vm yang telah dibuat tapi cuman punya 1 ip publik. Emang bisa? Terus gimana ngaksesnya/ngeremotenya? Bisa dong, waktu itu pake port forwarding untuk NAT di VMware Workstation Pro, karena maunya si vm tersebut dapat akses internet dan dapat diakses dari 1 ip public.
+Saya butuh web service yang dapat diakses melalui 1 publik yaitu 1 ip publik hostnya, okey saya pasang web service di salah satu vm.</description>
+      </item>
+    
+      <item>
+        <title>Berkenalan Dengan Caddy Server</title>
+        <link>https://sibunglon.com/2018/10/26/berkenalan-dengan-caddy-server/</link>
+        <pubDate>Fri, 26 Oct 2018 11:52:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2018/10/26/berkenalan-dengan-caddy-server/</guid>
+        <description>Caddy? Caddy itu apaan? Fungsinya apa aja?
 Caddy kadang-kadang diklarifikasi sebagai web server Caddy bersifat open source, server web HTTP / 2- enabled yang ditulis dalam Go . Ia menggunakan pustaka standar Go untuk fungsi HTTP-nya. Salah satu fitur paling terkenal Caddy adalah mengaktifkan HTTPS secara default.
-Caddy mendukung berbagai teknologi Web dan tersedia sebagai biner yang dikompilasi secara statis untuk sistem operasi Windows, Mac, Linux, Android, dan BSD pada arsitektur i386, amd64, dan ARM.</description></item><item><title>Apa Perbedaan Linux dan Windows?</title><link>https://sibunglon.com/2017/08/04/apa-perbedaan-linux-dan-windows/</link><pubDate>Fri, 04 Aug 2017 17:00:00 +0000</pubDate><guid>https://sibunglon.com/2017/08/04/apa-perbedaan-linux-dan-windows/</guid><description>Perbedaan linux dengan windows
+Caddy mendukung berbagai teknologi Web dan tersedia sebagai biner yang dikompilasi secara statis untuk sistem operasi Windows, Mac, Linux, Android, dan BSD pada arsitektur i386, amd64, dan ARM.</description>
+      </item>
+    
+      <item>
+        <title>Apa Perbedaan Linux dan Windows?</title>
+        <link>https://sibunglon.com/2017/08/04/apa-perbedaan-linux-dan-windows/</link>
+        <pubDate>Fri, 04 Aug 2017 17:00:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/04/apa-perbedaan-linux-dan-windows/</guid>
+        <description>Perbedaan linux dengan windows
 Sebelum memahami perbedaan, berikut ini persamaan Linux dan Windows:
 Linux dan Windows sama-sama nama untuk sistem operasi &amp;ldquo;komputer&amp;rdquo; dan sama-sama punya beberapa jenis atau pilihan, misal Linux Nusantara, BlankOn, Ubuntu, Mandriva, Fedora, openSUSE, Slackware, Debian, Gentoo, Redhat, Mint, dll. Sedangkan di Windows ada Windows 98, Me, XP, Vista, 7, Server 2008, Mobile, dll. &amp;ldquo;komputer&amp;rdquo; itu bisa berupa pc, notebook, smartphone, dll.
-Persamaan adanya pilihan/jenis di atas sebenarynya tidak persis sama, karena jenis Windows itu hanya tersedia buatan MS (Microsoft), sedangkan jenis Linux itu bisa buatan beberapa pihak yg berbeda.</description></item></channel></rss>
+Persamaan adanya pilihan/jenis di atas sebenarynya tidak persis sama, karena jenis Windows itu hanya tersedia buatan MS (Microsoft), sedangkan jenis Linux itu bisa buatan beberapa pihak yg berbeda.</description>
+      </item>
+    
+  </channel>
+</rss>

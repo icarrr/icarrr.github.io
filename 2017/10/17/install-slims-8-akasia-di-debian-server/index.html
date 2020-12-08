@@ -1,15 +1,275 @@
-<!doctype html><html lang=en-us itemscope itemtype=http://schema.org/WebPage><head><title>Install SLiMS 8 Akasia di Debian Server</title><meta http-equiv=cache-control content="public, max-age=31536000"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=author content="Faizar Septiawan"><meta name=description content="Read - Search - Ask | Personal Site | Catch your problem solution or read interesting stories on my blog!"><meta name=keywords content="Linux,Unix,BSD,MacOS,Komunitas Pengguna Linux Indonesia,KPLI Klaten,KPLI Bulukumba,MikroTik,MikroTik Indonesia,FreeBSD,FreeBSD Indonesia,Cisco,Cisco Indonesia,BLC Telkom Klaten,Ansible,Nginx,Apache2,Caddy Server,Ayo Belajar Linux,Cloud Computing,e-Learning,Open edX,Proxmox,Sendy,Microsoft SQL Server,MySQL,PostgreSQL,Lets Encrypt,Case Study,Atlassian,Virtualization,Faizar Septiawan,Icar,siBunglonGanteng,siBunglonLabs,Orang Ganteng"><meta name=google-site-verification content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-110194945-3"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','UA-110194945-3');</script><link rel=stylesheet href=/assets/css/external.min.css media=screen><link rel=stylesheet href=/assets/css/styles.css media=screen><link href=/assets/custom/googlefonts/roboto.css rel=stylesheet><link rel=apple-touch-icon-precomposed sizes=144x144 href=/src/images/apple-touch-icon.png><link rel="shortcut icon" href=/src/images/favicon.ico><link href=/posts/index.xml rel=alternate type=application/rss+xml title="The Official Site of siBunglon"><meta property="og:title" content="Install SLiMS 8 Akasia di Debian Server"><meta property="og:description" content="A. Pendahuluan
+<!DOCTYPE html>
+<html lang="en-us" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+  <title>Install SLiMS 8 Akasia di Debian Server</title>
+  
+  <meta http-equiv="cache-control" content="public, max-age=31536000" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Faizar Septiawan">
+  <meta name="description" content="Read - Search - Ask | Personal Site | Catch your problem solution or read interesting stories on my blog!">
+  <meta name="keywords" content="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng">
+  
+  
+  
+  <meta name="google-site-verification" content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM" />
+  
+  
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110194945-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110194945-3');
+  </script>
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/css/external.min.css" media="screen">
+  
+  
+  <link rel="stylesheet" href="/assets/css/styles.css" media="screen">
+  <link href="/assets/custom/googlefonts/roboto.css" rel="stylesheet">
+  
+
+  
+  
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/src/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="/src/images/favicon.ico">
+  
+
+  
+  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
+
+  <meta property="og:title" content="Install SLiMS 8 Akasia di Debian Server" />
+<meta property="og:description" content="A. Pendahuluan
 Pada kesempatan ini saya sharing tentang bagaimana langkah-langkah penginstallan slims untuk manajamen perpustakaan online.
 B. Pengertian
-Senayan, atau lengkapnya Senayan Library Management System (SLiMS), adalah perangkat lunak sistem manajemen perpustakaan (library management system) sumber terbuka yang dilisensikan di bawah GPL v3. Aplikasi Web yang dikembangkan oleh tim dari Pusat Informasi dan Humas Departemen Pendidikan Nasional Repubik Indonesia ini dibangun dengan menggunakan PHP, basis data MySQL, dan Pengontrol versi Git."><meta property="og:type" content="article"><meta property="og:url" content="https://sibunglon.com/2017/10/17/install-slims-8-akasia-di-debian-server/"><meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"><meta property="article:published_time" content="2017-10-17T15:17:00+00:00"><meta property="article:modified_time" content="2017-10-17T15:17:00+00:00"><meta property="og:site_name" content="The Official Site of siBunglon"><meta itemprop=name content="Install SLiMS 8 Akasia di Debian Server"><meta itemprop=description content="A. Pendahuluan
+Senayan, atau lengkapnya Senayan Library Management System (SLiMS), adalah perangkat lunak sistem manajemen perpustakaan (library management system) sumber terbuka yang dilisensikan di bawah GPL v3. Aplikasi Web yang dikembangkan oleh tim dari Pusat Informasi dan Humas Departemen Pendidikan Nasional Repubik Indonesia ini dibangun dengan menggunakan PHP, basis data MySQL, dan Pengontrol versi Git." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sibunglon.com/2017/10/17/install-slims-8-akasia-di-debian-server/" />
+<meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"/>
+<meta property="article:published_time" content="2017-10-17T15:17:00+00:00" />
+<meta property="article:modified_time" content="2017-10-17T15:17:00+00:00" /><meta property="og:site_name" content="The Official Site of siBunglon" />
+
+  <meta itemprop="name" content="Install SLiMS 8 Akasia di Debian Server">
+<meta itemprop="description" content="A. Pendahuluan
 Pada kesempatan ini saya sharing tentang bagaimana langkah-langkah penginstallan slims untuk manajamen perpustakaan online.
 B. Pengertian
-Senayan, atau lengkapnya Senayan Library Management System (SLiMS), adalah perangkat lunak sistem manajemen perpustakaan (library management system) sumber terbuka yang dilisensikan di bawah GPL v3. Aplikasi Web yang dikembangkan oleh tim dari Pusat Informasi dan Humas Departemen Pendidikan Nasional Repubik Indonesia ini dibangun dengan menggunakan PHP, basis data MySQL, dan Pengontrol versi Git."><meta itemprop=datePublished content="2017-10-17T15:17:00+00:00"><meta itemprop=dateModified content="2017-10-17T15:17:00+00:00"><meta itemprop=wordCount content="419"><meta itemprop=image content="https://sibunglon.com/assets/img/profil.webp"><meta itemprop=keywords content="BLC Telkom Klaten,Ayo Belajar Linux,e-Learning,"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://sibunglon.com/assets/img/profil.webp"><meta name=twitter:title content="Install SLiMS 8 Akasia di Debian Server"><meta name=twitter:description content="A. Pendahuluan
+Senayan, atau lengkapnya Senayan Library Management System (SLiMS), adalah perangkat lunak sistem manajemen perpustakaan (library management system) sumber terbuka yang dilisensikan di bawah GPL v3. Aplikasi Web yang dikembangkan oleh tim dari Pusat Informasi dan Humas Departemen Pendidikan Nasional Repubik Indonesia ini dibangun dengan menggunakan PHP, basis data MySQL, dan Pengontrol versi Git.">
+<meta itemprop="datePublished" content="2017-10-17T15:17:00+00:00" />
+<meta itemprop="dateModified" content="2017-10-17T15:17:00+00:00" />
+<meta itemprop="wordCount" content="419">
+<meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
+
+
+
+<meta itemprop="keywords" content="BLC Telkom Klaten,Ayo Belajar Linux,e-Learning," />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://sibunglon.com/assets/img/profil.webp"/>
+
+<meta name="twitter:title" content="Install SLiMS 8 Akasia di Debian Server"/>
+<meta name="twitter:description" content="A. Pendahuluan
 Pada kesempatan ini saya sharing tentang bagaimana langkah-langkah penginstallan slims untuk manajamen perpustakaan online.
 B. Pengertian
-Senayan, atau lengkapnya Senayan Library Management System (SLiMS), adalah perangkat lunak sistem manajemen perpustakaan (library management system) sumber terbuka yang dilisensikan di bawah GPL v3. Aplikasi Web yang dikembangkan oleh tim dari Pusat Informasi dan Humas Departemen Pendidikan Nasional Repubik Indonesia ini dibangun dengan menggunakan PHP, basis data MySQL, dan Pengontrol versi Git."><script defer src=/assets/custom/fontawesome-5.15.1/js/all.min.js></script></head><body><nav><a href=/>siBunglon</a></nav><main class=container><article><header><small><span class=date>October 17, 2017</span></small><h1>Install SLiMS 8 Akasia di Debian Server</h1></header><section><p><strong>A. Pendahuluan</strong></p><p>Pada kesempatan ini saya sharing tentang bagaimana langkah-langkah penginstallan slims untuk manajamen perpustakaan online.</p><p><strong>B. Pengertian</strong></p><p><strong>Senayan</strong>, atau lengkapnya <em>Senayan Library Management System</em> (<strong>SLiMS</strong>), adalah perangkat lunak sistem manajemen perpustakaan (<em>library management system</em>) sumber terbuka yang dilisensikan di bawah GPL v3. Aplikasi Web yang dikembangkan oleh tim dari Pusat Informasi dan Humas Departemen Pendidikan Nasional Repubik Indonesia ini dibangun dengan menggunakan PHP, basis data MySQL, dan Pengontrol versi Git. Pada tahun 2009, Senayan memenangi INAICTA 2009 untuk kategori <em>open source.</em></p><p><strong>C. Latar belakang</strong></p><p>Latar Belakang saya Menginstall Slims adalah di dalam Projeck pembangunan Web server, saya berencana untuk membuat suatu perpustakaan online yang mana akan memudahkan para siswa membaca artikel artikel dari perpustakaan online tersebut. dan memudahkan transaksi dalam manajemen perpustakaan yang nantinya akan di bentuk di sekolah ataupun di Kampus.</p><p><strong>D. Tujuan</strong></p><p>Maksud dan Tujuan saya untuk membuat Slims ini Karena saya berfikiran di sekolah masih belum ada yang nama nya Perpustakaan. Nah itu alasan saya untuk membuat sebuah Perpustakaan Online yang bisa di akses bagi siswa dan guru dan siapa saja yang berada di sekolah tersebut untuk minat membaca, dan mempermudah kita dalam mencari artikel dan yang lain - lain.</p><p><strong>E. Hasil yang diharapkan</strong></p><p>Dapat mengembangkan penggunaan slims</p><p><strong>F. Alat dan bahan</strong></p><ol><li>Laptop / PC</li><li>File slims8_akasia-master</li><li>Koneksi Internet</li></ol><p><strong>G. Jangka waktu pelaksanaan</strong></p><p>Jangka Waktu yang saya butuhkan adalah kurang lebih 30 Menit.</p><p><strong>H. Langkah kerja</strong></p><ol><li><p>Sebelum teman teman Install Slims, Pastikan Server teman teman sudah terinstall LAMP terlebih dahulu</p></li><li><p>Jika LAMP sudah terinstal, Maka langsung saja Masuk kedirectory slims berada kemudian kita copy file slims 8.3.1 keserver kita dengan perintah</p></li></ol><p><img src=https://3.bp.blogspot.com/-h9E3yru_X9s/W9F9B2plyDI/AAAAAAAAFCc/ZZsXqA7HFsQU5qQoERWumfafvuxnVuv2ACLcBGAs/s1600/Screenshot_2.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><ol start=3><li>Kemudian masuk keserver kita untuk melihat file yang tadi telah di copy</li></ol><p><img src=https://1.bp.blogspot.com/-1Vy6bTUKrHk/W9F9TSo1DmI/AAAAAAAAFCo/QYaVXervgVovaRJZ_JF6jhwFswX-_sbCgCLcBGAs/s1600/Screenshot_3.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p><img src=https://2.bp.blogspot.com/-K1y_vfDwZPI/W9F9TUsf4ZI/AAAAAAAAFCk/v6VKBgg45O4It6xaqX00Nevu3sqwUPJMACLcBGAs/s1600/Screenshot_4.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><ol start=4><li>Pindahkan file slims8.3.1 kedirectory /var/www/html/ dengan perintah</li></ol><p><img src=https://2.bp.blogspot.com/-ptC2RnY7w_E/W9F9Zz7pHeI/AAAAAAAAFCs/CydNwfpJl0YvYmvSeiqhC9NyfajyN5ZwwCLcBGAs/s1600/Screenshot_5.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><ol start=5><li>Kemudian masuk kedirectory /var/www/html/ dengan perintah</li></ol><p><img src=https://3.bp.blogspot.com/-b4tEyqMuwUY/W9F944ikb_I/AAAAAAAAFC8/LS2ktQRa2_4Bg7NByCrq7lqaTj-P-QPyACLcBGAs/s1600/Screenshot_6.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng">
-6) Selanjutnya unzip file slims8 dengan perintah</p><p><img src=https://2.bp.blogspot.com/-uyOL17DpaNQ/W9F-DeBW9tI/AAAAAAAAFDA/7z5olYjzC88POv3o67maAAOLqOA0uIZ2ACLcBGAs/s1600/Screenshot_8.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><ol start=7><li>Lalu ubah nama file slims yang tadi telah di unzip dengan perintah</li></ol><p><img src=https://3.bp.blogspot.com/-dLQNS0NoJx0/W9F-IiZLmpI/AAAAAAAAFDI/B-xhbOhejd4B1VA3_m8mTQzY9B0DFHzAQCLcBGAs/s1600/Screenshot_10.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><ol start=8><li>Kemudian kita changemode dan changeowner slims8 dengan perintah</li></ol><p><img src=https://1.bp.blogspot.com/-kE09FLF-hSI/W9F-NwkiOCI/AAAAAAAAFDM/y9OkVjrzE1IoVBU7rzv0AhDEz4WDbl9kgCLcBGAs/s1600/Screenshot_11.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><ol start=9><li>Masuk kedatabase untuk membuat database baru dengan perintah</li></ol><p><img src=https://2.bp.blogspot.com/-nu6WxMKbRTE/W9F-jB0E8NI/AAAAAAAAFDg/2UANaeTNRvAHaNW9LKIDkAXvtpsIUepNACLcBGAs/s1600/Screenshot_12.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><ol start=10><li><p>Buka Web browser anda</p></li><li><p>Ketikkan ipserver/namafolder</p></li><li><p>Ini adalah tampilan pertama saat ingin menginstall slims akasia 8.3.1 kemudian kita pilih yang diberi garis merah</p></li></ol><p><img src=https://3.bp.blogspot.com/-oSRnhY_G5EA/W9F-r_qKiJI/AAAAAAAAFDo/b4C7I1NKqrY0vUshNHCY_U_ALffk3PcVQCLcBGAs/s1600/Screenshot_13.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><ol start=13><li>Ini adalah proses Environment Checking</li></ol><p><img src=https://3.bp.blogspot.com/-GXWv82uRMBg/W9F-x1_IP-I/AAAAAAAAFDs/GRsqsEurmpwwo74ZjJOeb4BfP0BvWHaywCLcBGAs/s1600/Screenshot_14.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><ol start=14><li>Disini kita mengenerate database masukkan sesuai dengan yang sudah kita konfigurasi tadi saat membuat database</li></ol><p><img src=https://3.bp.blogspot.com/-xkt5xprg9VA/W9F-6bZp_GI/AAAAAAAAFD0/V7FdYOeRv1QPYzXFvsHouznmCW90IPwIwCLcBGAs/s1600/Screenshot_16.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><ol start=15><li>Installasi Completed</li></ol><p><img src=https://2.bp.blogspot.com/-wWpSTIOyYmg/W9F_CwPmqOI/AAAAAAAAFD8/5HVqW_qKT04a8CvAY2om7rHbMf3m68-bACLcBGAs/s1600/Screenshot_21.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><ol start=16><li>Hapus folder install didalam folder slims</li></ol><p><img src=https://3.bp.blogspot.com/-jfcyLKCxuzU/W9F_JXPfh7I/AAAAAAAAFEA/lX-8gbBn8xor3pvzePifIFmUoyvpo7yfwCLcBGAs/s1600/Screenshot_22.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><ol start=17><li>Ini adalah tampilan dari slims akasia 8.3.1 yang kita install tadi , sampai disini installasi perpustakaan online kita menggunakan slims8 sudah berhasil.</li></ol><p><img src=https://4.bp.blogspot.com/-2rtHvg57-7Q/W9F_SsWI3MI/AAAAAAAAFEI/KzIc0iUG6isgDddd79BujXCPTZzSYaZEgCLcBGAs/s1600/Screenshot_23.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p><strong>I. Hasil yang didapatkan</strong></p><p>Dapat menginstall slims</p><p><strong>J. Temuan masalah</strong></p><p>Masalah yang saya hadapi yaitu lupa mengganti owner pada folder config</p></section><footer><hr><div class=meta><p class=tags><a href=/tags/blc-telkom-klaten><span>#</span>BLC Telkom Klaten</a>
-<a href=/tags/ayo-belajar-linux><span>#</span>Ayo Belajar Linux</a>
-<a href=/tags/e-learning><span>#</span>e-Learning</a></p></div><hr><div id=disqus_thread></div><script type=application/javascript>var disqus_config=function(){};(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return;}
-var d=document,s=d.createElement('script');s.async=true;s.src='//'+"sibunglonlabs"+'.disqus.com/embed.js';s.setAttribute('data-timestamp',+new Date());(d.head||d.body).appendChild(s);})();</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></footer></article></main><footer><p>&copy; 2020 Faizar Septiawan. <a href=http://creativecommons.org/licenses/by-sa/4.0/>Some Rights Reserved</a>.</p><p>Powered by <a href=https://gohugo.io title="A Fast and Flexible Website Generator">Hugo</a> & <a href=https://github.com/eshlox/simplicity title="Hugo theme">Simplicity</a>.</p></footer><script src=/assets/js/scripts.min.js></script><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-110194945-3','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script></body></html>
+Senayan, atau lengkapnya Senayan Library Management System (SLiMS), adalah perangkat lunak sistem manajemen perpustakaan (library management system) sumber terbuka yang dilisensikan di bawah GPL v3. Aplikasi Web yang dikembangkan oleh tim dari Pusat Informasi dan Humas Departemen Pendidikan Nasional Repubik Indonesia ini dibangun dengan menggunakan PHP, basis data MySQL, dan Pengontrol versi Git."/>
+
+  
+
+  
+  <script defer src="/assets/custom/fontawesome-5.15.1/js/all.min.js"></script>
+  
+</head>
+
+  <body>
+    
+      <nav>
+  <a href="/">
+    siBunglon
+  </a>
+</nav>
+
+    
+    <main class="container">
+      
+  <article>
+    <header>
+      <small>
+        <span class="date">October 17, 2017</span></small>
+      <h1>Install SLiMS 8 Akasia di Debian Server</h1>
+    </header>
+    <section><p><strong>A. Pendahuluan</strong></p>
+<p>Pada kesempatan ini saya sharing tentang bagaimana langkah-langkah penginstallan slims untuk manajamen perpustakaan online.</p>
+<p><strong>B. Pengertian</strong></p>
+<p><strong>Senayan</strong>, atau lengkapnya <em>Senayan Library Management System</em> (<strong>SLiMS</strong>), adalah perangkat lunak sistem manajemen perpustakaan (<em>library management system</em>) sumber terbuka yang dilisensikan di bawah GPL v3. Aplikasi Web yang dikembangkan oleh tim dari Pusat Informasi dan Humas Departemen Pendidikan Nasional Repubik Indonesia ini dibangun dengan menggunakan PHP, basis data MySQL, dan Pengontrol versi Git. Pada tahun 2009, Senayan memenangi INAICTA 2009 untuk kategori <em>open source.</em></p>
+<p><strong>C. Latar belakang</strong></p>
+<p>Latar Belakang saya Menginstall Slims adalah di dalam Projeck pembangunan Web server, saya berencana untuk membuat suatu perpustakaan online yang mana akan memudahkan para siswa membaca artikel artikel dari perpustakaan online tersebut. dan memudahkan transaksi dalam manajemen perpustakaan yang nantinya akan di bentuk di sekolah ataupun di Kampus.</p>
+<p><strong>D. Tujuan</strong></p>
+<p>Maksud dan Tujuan saya untuk membuat Slims ini Karena saya berfikiran di sekolah masih belum ada yang nama nya Perpustakaan. Nah itu alasan saya untuk membuat sebuah Perpustakaan Online yang bisa di akses bagi siswa dan guru dan siapa saja yang berada di sekolah tersebut untuk minat membaca, dan mempermudah kita dalam mencari artikel dan yang lain - lain.</p>
+<p><strong>E. Hasil yang diharapkan</strong></p>
+<p>Dapat mengembangkan penggunaan slims</p>
+<p><strong>F. Alat dan bahan</strong></p>
+<ol>
+<li>Laptop / PC</li>
+<li>File slims8_akasia-master</li>
+<li>Koneksi Internet</li>
+</ol>
+<p><strong>G. Jangka waktu pelaksanaan</strong></p>
+<p>Jangka Waktu yang saya butuhkan adalah kurang lebih 30 Menit.</p>
+<p><strong>H. Langkah kerja</strong></p>
+<ol>
+<li>
+<p>Sebelum teman teman Install Slims, Pastikan Server teman teman sudah terinstall LAMP terlebih dahulu</p>
+</li>
+<li>
+<p>Jika LAMP sudah terinstal, Maka langsung saja Masuk kedirectory slims berada kemudian kita copy file slims 8.3.1 keserver kita dengan perintah</p>
+</li>
+</ol>
+<p><img src="https://3.bp.blogspot.com/-h9E3yru_X9s/W9F9B2plyDI/AAAAAAAAFCc/ZZsXqA7HFsQU5qQoERWumfafvuxnVuv2ACLcBGAs/s1600/Screenshot_2.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<ol start="3">
+<li>Kemudian masuk keserver kita untuk melihat file yang tadi telah di copy</li>
+</ol>
+<p><img src="https://1.bp.blogspot.com/-1Vy6bTUKrHk/W9F9TSo1DmI/AAAAAAAAFCo/QYaVXervgVovaRJZ_JF6jhwFswX-_sbCgCLcBGAs/s1600/Screenshot_3.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p><img src="https://2.bp.blogspot.com/-K1y_vfDwZPI/W9F9TUsf4ZI/AAAAAAAAFCk/v6VKBgg45O4It6xaqX00Nevu3sqwUPJMACLcBGAs/s1600/Screenshot_4.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<ol start="4">
+<li>Pindahkan file slims8.3.1 kedirectory /var/www/html/ dengan perintah</li>
+</ol>
+<p><img src="https://2.bp.blogspot.com/-ptC2RnY7w_E/W9F9Zz7pHeI/AAAAAAAAFCs/CydNwfpJl0YvYmvSeiqhC9NyfajyN5ZwwCLcBGAs/s1600/Screenshot_5.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<ol start="5">
+<li>Kemudian masuk kedirectory /var/www/html/ dengan perintah</li>
+</ol>
+<p><img src="https://3.bp.blogspot.com/-b4tEyqMuwUY/W9F944ikb_I/AAAAAAAAFC8/LS2ktQRa2_4Bg7NByCrq7lqaTj-P-QPyACLcBGAs/s1600/Screenshot_6.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng">
+6) Selanjutnya unzip file slims8 dengan perintah</p>
+<p><img src="https://2.bp.blogspot.com/-uyOL17DpaNQ/W9F-DeBW9tI/AAAAAAAAFDA/7z5olYjzC88POv3o67maAAOLqOA0uIZ2ACLcBGAs/s1600/Screenshot_8.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<ol start="7">
+<li>Lalu ubah nama file slims yang tadi telah di unzip dengan perintah</li>
+</ol>
+<p><img src="https://3.bp.blogspot.com/-dLQNS0NoJx0/W9F-IiZLmpI/AAAAAAAAFDI/B-xhbOhejd4B1VA3_m8mTQzY9B0DFHzAQCLcBGAs/s1600/Screenshot_10.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<ol start="8">
+<li>Kemudian kita changemode dan changeowner slims8 dengan perintah</li>
+</ol>
+<p><img src="https://1.bp.blogspot.com/-kE09FLF-hSI/W9F-NwkiOCI/AAAAAAAAFDM/y9OkVjrzE1IoVBU7rzv0AhDEz4WDbl9kgCLcBGAs/s1600/Screenshot_11.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<ol start="9">
+<li>Masuk kedatabase untuk membuat database baru dengan perintah</li>
+</ol>
+<p><img src="https://2.bp.blogspot.com/-nu6WxMKbRTE/W9F-jB0E8NI/AAAAAAAAFDg/2UANaeTNRvAHaNW9LKIDkAXvtpsIUepNACLcBGAs/s1600/Screenshot_12.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<ol start="10">
+<li>
+<p>Buka Web browser anda</p>
+</li>
+<li>
+<p>Ketikkan ipserver/namafolder</p>
+</li>
+<li>
+<p>Ini adalah tampilan pertama saat ingin menginstall slims akasia 8.3.1 kemudian kita pilih yang diberi garis merah</p>
+</li>
+</ol>
+<p><img src="https://3.bp.blogspot.com/-oSRnhY_G5EA/W9F-r_qKiJI/AAAAAAAAFDo/b4C7I1NKqrY0vUshNHCY_U_ALffk3PcVQCLcBGAs/s1600/Screenshot_13.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<ol start="13">
+<li>Ini adalah proses Environment Checking</li>
+</ol>
+<p><img src="https://3.bp.blogspot.com/-GXWv82uRMBg/W9F-x1_IP-I/AAAAAAAAFDs/GRsqsEurmpwwo74ZjJOeb4BfP0BvWHaywCLcBGAs/s1600/Screenshot_14.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<ol start="14">
+<li>Disini kita mengenerate database masukkan sesuai dengan yang sudah kita konfigurasi tadi saat membuat database</li>
+</ol>
+<p><img src="https://3.bp.blogspot.com/-xkt5xprg9VA/W9F-6bZp_GI/AAAAAAAAFD0/V7FdYOeRv1QPYzXFvsHouznmCW90IPwIwCLcBGAs/s1600/Screenshot_16.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<ol start="15">
+<li>Installasi Completed</li>
+</ol>
+<p><img src="https://2.bp.blogspot.com/-wWpSTIOyYmg/W9F_CwPmqOI/AAAAAAAAFD8/5HVqW_qKT04a8CvAY2om7rHbMf3m68-bACLcBGAs/s1600/Screenshot_21.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<ol start="16">
+<li>Hapus folder install didalam folder slims</li>
+</ol>
+<p><img src="https://3.bp.blogspot.com/-jfcyLKCxuzU/W9F_JXPfh7I/AAAAAAAAFEA/lX-8gbBn8xor3pvzePifIFmUoyvpo7yfwCLcBGAs/s1600/Screenshot_22.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<ol start="17">
+<li>Ini adalah tampilan dari slims akasia 8.3.1 yang kita install tadi , sampai disini installasi perpustakaan online kita menggunakan slims8 sudah berhasil.</li>
+</ol>
+<p><img src="https://4.bp.blogspot.com/-2rtHvg57-7Q/W9F_SsWI3MI/AAAAAAAAFEI/KzIc0iUG6isgDddd79BujXCPTZzSYaZEgCLcBGAs/s1600/Screenshot_23.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p><strong>I. Hasil yang didapatkan</strong></p>
+<p>Dapat menginstall slims</p>
+<p><strong>J. Temuan masalah</strong></p>
+<p>Masalah yang saya hadapi yaitu lupa mengganti owner pada folder config</p>
+</section>
+    <footer>
+      <hr>
+      <div class="meta">
+        <p class="tags">
+          
+            
+              <a href="/tags/blc-telkom-klaten">
+                <span>#</span>BLC Telkom Klaten</a>
+            
+              <a href="/tags/ayo-belajar-linux">
+                <span>#</span>Ayo Belajar Linux</a>
+            
+              <a href="/tags/e-learning">
+                <span>#</span>e-Learning</a>
+            
+          
+        </p>
+      </div>
+      <hr>
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sibunglonlabs" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </footer>
+  </article>
+
+    </main>
+    
+      <footer>
+  <p>
+    &copy; 2020 Faizar Septiawan. <a href="http://creativecommons.org/licenses/by-sa/4.0/">Some Rights Reserved</a>.
+  </p>
+  <p>
+    Powered by <a href="https://gohugo.io" title="A Fast and Flexible Website Generator">Hugo</a> &amp; <a href="https://github.com/eshlox/simplicity" title="Hugo theme">Simplicity</a>.
+  </p>
+</footer>
+
+    
+    
+    
+    
+    
+    
+    
+    <script src="/assets/js/scripts.min.js"></script>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-110194945-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>

@@ -1,19 +1,261 @@
-<!doctype html><html lang=en-us itemscope itemtype=http://schema.org/WebPage><head><title>Mengenal lebih dalam tentang subneting</title><meta http-equiv=cache-control content="public, max-age=31536000"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=author content="Faizar Septiawan"><meta name=description content="Read - Search - Ask | Personal Site | Catch your problem solution or read interesting stories on my blog!"><meta name=keywords content="Linux,Unix,BSD,MacOS,Komunitas Pengguna Linux Indonesia,KPLI Klaten,KPLI Bulukumba,MikroTik,MikroTik Indonesia,FreeBSD,FreeBSD Indonesia,Cisco,Cisco Indonesia,BLC Telkom Klaten,Ansible,Nginx,Apache2,Caddy Server,Ayo Belajar Linux,Cloud Computing,e-Learning,Open edX,Proxmox,Sendy,Microsoft SQL Server,MySQL,PostgreSQL,Lets Encrypt,Case Study,Atlassian,Virtualization,Faizar Septiawan,Icar,siBunglonGanteng,siBunglonLabs,Orang Ganteng"><meta name=google-site-verification content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-110194945-3"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','UA-110194945-3');</script><link rel=stylesheet href=/assets/css/external.min.css media=screen><link rel=stylesheet href=/assets/css/styles.css media=screen><link href=/assets/custom/googlefonts/roboto.css rel=stylesheet><link rel=apple-touch-icon-precomposed sizes=144x144 href=/src/images/apple-touch-icon.png><link rel="shortcut icon" href=/src/images/favicon.ico><link href=/posts/index.xml rel=alternate type=application/rss+xml title="The Official Site of siBunglon"><meta property="og:title" content="Mengenal lebih dalam tentang subneting"><meta property="og:description" content="A. Pendahuluan
+<!DOCTYPE html>
+<html lang="en-us" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+  <title>Mengenal lebih dalam tentang subneting</title>
+  
+  <meta http-equiv="cache-control" content="public, max-age=31536000" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Faizar Septiawan">
+  <meta name="description" content="Read - Search - Ask | Personal Site | Catch your problem solution or read interesting stories on my blog!">
+  <meta name="keywords" content="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng">
+  
+  
+  
+  <meta name="google-site-verification" content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM" />
+  
+  
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110194945-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110194945-3');
+  </script>
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/css/external.min.css" media="screen">
+  
+  
+  <link rel="stylesheet" href="/assets/css/styles.css" media="screen">
+  <link href="/assets/custom/googlefonts/roboto.css" rel="stylesheet">
+  
+
+  
+  
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/src/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="/src/images/favicon.ico">
+  
+
+  
+  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
+
+  <meta property="og:title" content="Mengenal lebih dalam tentang subneting" />
+<meta property="og:description" content="A. Pendahuluan
 Oke pada kesempatan lalu saya pernah memposting tentang subnetting namun pada kesempatan ini saya akan mempost untuk melengkapi post pada kesempatan lalu.
 B. Pengertian
 Subnetting adalah Praktek membagi jaringan menjadi dua atau lebih jaringan disebut. IP adalah sistem pengalamatan setiap host yang terhubung dengan jaringan.
 C. Latar belakang
-Semakin banyaknya ip yang di gunakan untuk dapat terkoneksi ke internet dimana kita harus benar benar mengetahui bagaimana penempatan dan penggunaan ip address dan subnetting."><meta property="og:type" content="article"><meta property="og:url" content="https://sibunglon.com/2017/08/30/mengenal-lebih-dalam-tentang-subneting/"><meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"><meta property="article:published_time" content="2017-08-30T10:00:00+00:00"><meta property="article:modified_time" content="2017-08-30T10:00:00+00:00"><meta property="og:site_name" content="The Official Site of siBunglon"><meta itemprop=name content="Mengenal lebih dalam tentang subneting"><meta itemprop=description content="A. Pendahuluan
+Semakin banyaknya ip yang di gunakan untuk dapat terkoneksi ke internet dimana kita harus benar benar mengetahui bagaimana penempatan dan penggunaan ip address dan subnetting." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sibunglon.com/2017/08/30/mengenal-lebih-dalam-tentang-subneting/" />
+<meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"/>
+<meta property="article:published_time" content="2017-08-30T10:00:00+00:00" />
+<meta property="article:modified_time" content="2017-08-30T10:00:00+00:00" /><meta property="og:site_name" content="The Official Site of siBunglon" />
+
+  <meta itemprop="name" content="Mengenal lebih dalam tentang subneting">
+<meta itemprop="description" content="A. Pendahuluan
 Oke pada kesempatan lalu saya pernah memposting tentang subnetting namun pada kesempatan ini saya akan mempost untuk melengkapi post pada kesempatan lalu.
 B. Pengertian
 Subnetting adalah Praktek membagi jaringan menjadi dua atau lebih jaringan disebut. IP adalah sistem pengalamatan setiap host yang terhubung dengan jaringan.
 C. Latar belakang
-Semakin banyaknya ip yang di gunakan untuk dapat terkoneksi ke internet dimana kita harus benar benar mengetahui bagaimana penempatan dan penggunaan ip address dan subnetting."><meta itemprop=datePublished content="2017-08-30T10:00:00+00:00"><meta itemprop=dateModified content="2017-08-30T10:00:00+00:00"><meta itemprop=wordCount content="1185"><meta itemprop=image content="https://sibunglon.com/assets/img/profil.webp"><meta itemprop=keywords content="BLC Telkom Klaten,Subnetting,"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://sibunglon.com/assets/img/profil.webp"><meta name=twitter:title content="Mengenal lebih dalam tentang subneting"><meta name=twitter:description content="A. Pendahuluan
+Semakin banyaknya ip yang di gunakan untuk dapat terkoneksi ke internet dimana kita harus benar benar mengetahui bagaimana penempatan dan penggunaan ip address dan subnetting.">
+<meta itemprop="datePublished" content="2017-08-30T10:00:00+00:00" />
+<meta itemprop="dateModified" content="2017-08-30T10:00:00+00:00" />
+<meta itemprop="wordCount" content="1185">
+<meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
+
+
+
+<meta itemprop="keywords" content="BLC Telkom Klaten,Subnetting," />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://sibunglon.com/assets/img/profil.webp"/>
+
+<meta name="twitter:title" content="Mengenal lebih dalam tentang subneting"/>
+<meta name="twitter:description" content="A. Pendahuluan
 Oke pada kesempatan lalu saya pernah memposting tentang subnetting namun pada kesempatan ini saya akan mempost untuk melengkapi post pada kesempatan lalu.
 B. Pengertian
 Subnetting adalah Praktek membagi jaringan menjadi dua atau lebih jaringan disebut. IP adalah sistem pengalamatan setiap host yang terhubung dengan jaringan.
 C. Latar belakang
-Semakin banyaknya ip yang di gunakan untuk dapat terkoneksi ke internet dimana kita harus benar benar mengetahui bagaimana penempatan dan penggunaan ip address dan subnetting."><script defer src=/assets/custom/fontawesome-5.15.1/js/all.min.js></script></head><body><nav><a href=/>siBunglon</a></nav><main class=container><article><header><small><span class=date>August 30, 2017</span></small><h1>Mengenal lebih dalam tentang subneting</h1></header><section><p><strong>A. Pendahuluan</strong></p><p>Oke pada kesempatan lalu saya pernah memposting tentang subnetting namun pada kesempatan ini saya akan mempost untuk melengkapi post pada kesempatan lalu.</p><p><strong>B. Pengertian</strong></p><p>Subnetting adalah Praktek membagi jaringan menjadi dua atau lebih jaringan disebut. IP adalah sistem pengalamatan setiap host yang terhubung dengan jaringan.</p><p><strong>C. Latar belakang</strong></p><p>Semakin banyaknya ip yang di gunakan untuk dapat terkoneksi ke internet dimana kita harus benar benar mengetahui bagaimana penempatan dan penggunaan ip address dan subnetting.</p><p><strong>D. Maksud dan tujuan</strong></p><p>Dapat mengerti tentang ip address dan subnetting juga dapat mengimplementasikan di dalam jaringan yang kita buat.</p><p><strong>E. Hasil yang di harapkan</strong></p><p>Dapat memahami dan mengimplementasi di dalam jaringan dengan ip sesuai dengan penggunaanya.</p><p><strong>F. Alat dan bahan</strong></p><p>Laptop</p><p><strong>G. Waktu pelaksanaan</strong></p><p>Pukul 08:00- 16:00 &lt;8 jam></p><p><strong>H. Tahap pelaksanaan</strong></p><p>Pada tahapan pelaksanaan ini kita di pimpin oleh mbah suro dhemit sselku pembimbing dari institusi juga tidak hanya mbah Suro saja tapi ada beberapa dari teman teman yang juga menjelaskan tentang ip address tersebut.</p><p><strong>I. Hasil yang di dapatkan</strong></p><p>Hasil yang di dapatkan dalam pembahasan ini itu dapat mengetahui dimana IP ADDRESS ternya berada di OSI Layer 3 dimana untuk menuju layer 3 ini harus melalui layer 1 dan 2 yaitu dimana kita mempelajarinya dari osi layer 1,2 dan baru 3.</p><p>Untuk ip addres sendiri mempunyai dua versi yaitu ada IPV4 dan IPV6, perbedaan dari IPV4 dengan IPV6 adalah jika versi 4 itu berarti yang dimaksud dari versi 4 adalah ip yang memiliki &lt;32 bits / 4byts>, dan setiap bits yang ada pada versi 4 itu terdiri dari 8 bits dan juga sama setian satu byts terdiri dari 8 bits.</p><p>Nah di dalam ip ini juga di kelompokan menjadi beberapa kelas dan di dalam kelompok ini di namakan subnetting.</p><p>Nah di bawah ini juga ada beberapa contoh soal dan juga jawabannya :</p><p>128 64 32 16 8 4 2 1</p><p>1 0 1 0 1 1 0 0</p><p>Nah maksudnya apa itu kita lihat diatas bahwa setiap angka yang di bawahnya 1 itu di jumlahkan tetapi jika di bawahnya 0 itu tidak kita tambahan karena nilainya 0</p><p>Jadi, 128+32+8+4 : 172</p><p>Nah juga ada cara lagi yang kita dapat lakukan yaitu kita jumlahkan yang bernilai 0, semisal pada contoh di atas adalah kita hitung 0 yang terdapat pada binner tersebut.</p><p>64+16+2+1 = 83</p><p>Nah jumlah dari masing masing subnet itu kan jika di jumlahkan semua adalah 255 nah dari 255 itu kita kurangkan hasil dari jumlah yang bernilai 0</p><p>255-83 = 172.</p><p>Itu diatas yang bisa saya lakukan ketika mengerjakan sebuah soal dari ip addres jadi ketika anda menemui soal soal yang anda temui usahakan anda harus mengetahui konsep penghitungan dasar dari ip addres ini.</p><p>Nah saya terkejut ketika mengerti tentang ip addres dimana didalamnya sebenarnya adalah bilangan binner. Nah di ilangan binner ini ternyata digunakan pada semuaaktifitas yang kita akses seperti halnya kita menakses foto lagu dan lain lain.</p><p><strong>Sistem komunikasi</strong></p><p>Berdasarkan bagaimana perangkat saling berkomunikasi, terbagi menjadi beberapa jenis, yakni sebagai berikut:</p><ul><li><p>Unicast, merupakan komunikasi antar sebuah host atau point-to-point. Contoh : HTTP</p></li><li><p>Broadcast, merupakan metode komunikasi dari sebuah host ke semua host yang masih dalam satu jaringan. Alamat broadcast digunakan dalam komunikasi one-to-everyone. Contoh : ARP Ethernet.</p></li><li><p>Multicast, merupakan metode komunikasi dari sebuah host ke banyak host yang bergabung dalam group multicast yang sama. Alamat multicast digunakan dalam komunikasi one-to-many. Contoh : Video Streaming.</p></li><li><p>Anycast, merupakan metode komunikasi dari sebuah host ke host atau kelompok host lain yang diset memiliki IP sama. Contoh : 6to4 relay.</p></li></ul><p>Pada awal mula design network, diperkirakan konektivitas end-to-end terjadi pada seluruh host yang terkoneksi ke internet. Dan menjadi tugas IP address untuk menjadi sebuah alamat unik yang menjadi identitas sebuah host. Akan tetapi pada perkembangannya, tidak semua host butuh terkoneksi dengan dunia internet. Misalnya jaringan sebuah perusahaan yang hanya ingin masing - masing host cukup bisa berkomunikasi dengan host yang masih satu perusahaan, dan tidak perlu berkomunikasi dengan internet. Dengan adanya kasus seperti ini, maka IP address dibagi menjadi beberapa kelompok.</p><p><strong>IP Public dan IP Private</strong></p><p><strong>IP Public</strong></p><p>Public IP Address merupakan IP Address yang dapat diakses di jaringan internet. IP Public juga dikenal sebagai globally routable unicast IP address. Ketika sebuah perangkat memiliki IP public dan terkoneksi ke jaringan internet, maka perangkat tadi bisa diakses darimanapun melalui jaringan internet juga. Akan tetapi kita tidak bisa memasang sembarang IP public di sebuah device. Ada aturan mengenai alokasi IP public. Kita bisa mendapatkan Public IP Address dari pinjaman ISP atau alokasi dari APNIC/IDNIC (<a href=http://www.idnic.net>www.idnic.net</a>).</p><p><strong>IP Private</strong></p><p>Pada arsitektur IP address, Private IP Address adalah IP Address yang diperuntukkan untuk jaringan lokal. IP private tidak boleh ada di jaringan internet dan tidak dapat diakses di jaringan internet. Pada implementasi di jaringan real, biasanya jaringan lokal menggunakan IP Private, kemudian ditambahkan sebuah router yang menjembatani jaringan lokal yang menggunakan IP private dengan jaringan publik yang menggunakan IP Public. Untuk cakupan IP Private, Anda bisa lihat tabel IP Private di pembahasan mengenai CIDR.</p><p><strong>IP Khusus</strong></p><p>Selain IP Private dan IP Public, ada beberapa IP khusus lain. IP ini sudah memiliki tujuan penggunaan khusus yang sudah disepakati secara international, sehingga tidak dapat digunakan untuk pengalamatan sebuah host.</p><p><strong>Kelas IP</strong></p><p>Pada awal mula design IP address, IP address dibagi dalam beberapa kelas. Kelas IP dibedakan berdasarkan jumlah bits network ID. Masing masing kelas memiliki jumlah netowrk yang berbeda, dan jumlah host di tiap network yang berbeda pula. Pembagian ip address berdasarkan kelas ini sudah mulai ditinggalkan digantikan dengan sistem CIDR. Akan tetapi, ada baiknya kita coba lihat sejarah kelas IP address ini.</p><p>CIDR biasanya ditulis dengan tanda &ldquo;/&rdquo; setelah IP address, kemudian diikuti dengan informasi jumlah bits yang dialokasikan sebagai network-id, contoh 192.168.0.0/27. Jika Anda pernah melakukan konfigurasi router Mikrotik, tentu Anda sudah familiar dengan format IP seperti ini. Dari contoh subnet 192.168.0.0/27, maka dari 32 bits IP address, 27 bits dialokasikan untuk network-id, tersisa 5 bits untuk host-id. Jumlah IP address yang ada dalam subnet tersebut bisa dihitung dengan rumus :</p><p><strong>2 (32-x)</strong></p><p>Dimana &ldquo;x&rdquo; adalah nilai CIDR.</p><p>Contoh, untuk subnet 192.168.0.0/27 bisa dihitung sebagai berikut :</p><p>2 (32-27) = 2 (5) = 32</p><p>Nilai 32 adalah total IP address yang ada dalam subnet tersebut. Dikurangi dengan network address dan broadcast address, maka IP yang bisa dipasang pada perangkat jaringan ada 30 ip address.Range IP Address : 192.168.0.1 - 192.168.0.30</p><p>Netmask : 255.255.255.224</p><p>Network : 192.168.0.0</p><p>Broadcast : 192.168.0.31</p><p>Perhitungan IP address sebenarnya tidak harus dilakukan secara manual. Ada banyak alat bantu untuk melakukan perhitungan IP address dan subnetting, misalnya IP Subnet Calculator. Akan tetapi, ada baiknya kita tahu bagaimana konsep IP address, sehingga dalam penerapan di jaringan, kita bisa membuat sebuah jaringan yang benar - benar sehat dan ideal.</p><p><strong>J. Temuan permasalahan</strong></p><p>Belum mengetahui tentang ip 127 dimana ip ini itu saya pernah mendengar bahwa ip ini kenapa tidak boleh di gunakan. Dan ternyata setelah saya mencari ternyata ip ini adalah ip loopback.</p><p><strong>K. Kesimpulan</strong></p><p>Ip addres ini adalah pengalamat yang setiap host yang akan terhubung ke jaringan. dan ip ini di bagi menjadi 2 yaitu IPV4 dan IPV6. dan di masing masing versi di namakan byts dan di masing masing byts itu terdiri dari beberapa bits.</p><p><strong>L. Referensi</strong></p><p><a href="http://www.mikrotik.co.id/artikel_lihat.php?id=64">Mikrotik Indonesia</a></p><p><a href=http://myrizqidarmawan.blogspot.co.id/>Blog</a></p></section><footer><hr><div class=meta><p class=tags><a href=/tags/blc-telkom-klaten><span>#</span>BLC Telkom Klaten</a>
-<a href=/tags/subnetting><span>#</span>Subnetting</a></p></div><hr><div id=disqus_thread></div><script type=application/javascript>var disqus_config=function(){};(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return;}
-var d=document,s=d.createElement('script');s.async=true;s.src='//'+"sibunglonlabs"+'.disqus.com/embed.js';s.setAttribute('data-timestamp',+new Date());(d.head||d.body).appendChild(s);})();</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></footer></article></main><footer><p>&copy; 2020 Faizar Septiawan. <a href=http://creativecommons.org/licenses/by-sa/4.0/>Some Rights Reserved</a>.</p><p>Powered by <a href=https://gohugo.io title="A Fast and Flexible Website Generator">Hugo</a> & <a href=https://github.com/eshlox/simplicity title="Hugo theme">Simplicity</a>.</p></footer><script src=/assets/js/scripts.min.js></script><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-110194945-3','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script></body></html>
+Semakin banyaknya ip yang di gunakan untuk dapat terkoneksi ke internet dimana kita harus benar benar mengetahui bagaimana penempatan dan penggunaan ip address dan subnetting."/>
+
+  
+
+  
+  <script defer src="/assets/custom/fontawesome-5.15.1/js/all.min.js"></script>
+  
+</head>
+
+  <body>
+    
+      <nav>
+  <a href="/">
+    siBunglon
+  </a>
+</nav>
+
+    
+    <main class="container">
+      
+  <article>
+    <header>
+      <small>
+        <span class="date">August 30, 2017</span></small>
+      <h1>Mengenal lebih dalam tentang subneting</h1>
+    </header>
+    <section><p><strong>A. Pendahuluan</strong></p>
+<p>Oke pada kesempatan lalu saya pernah memposting tentang subnetting namun pada kesempatan ini saya akan mempost untuk melengkapi post pada kesempatan lalu.</p>
+<p><strong>B. Pengertian</strong></p>
+<p>Subnetting adalah  Praktek membagi jaringan menjadi dua atau lebih jaringan disebut. IP adalah sistem pengalamatan setiap host yang terhubung dengan jaringan.</p>
+<p><strong>C. Latar belakang</strong></p>
+<p>Semakin banyaknya ip yang di gunakan untuk dapat terkoneksi ke internet dimana kita harus benar benar mengetahui bagaimana penempatan dan penggunaan ip address dan subnetting.</p>
+<p><strong>D. Maksud dan tujuan</strong></p>
+<p>Dapat mengerti tentang ip address dan subnetting juga dapat mengimplementasikan di dalam jaringan yang kita buat.</p>
+<p><strong>E. Hasil yang di harapkan</strong></p>
+<p>Dapat memahami dan mengimplementasi di dalam jaringan dengan ip sesuai dengan penggunaanya.</p>
+<p><strong>F. Alat dan bahan</strong></p>
+<p>Laptop</p>
+<p><strong>G. Waktu pelaksanaan</strong></p>
+<p>Pukul 08:00- 16:00 &lt;8 jam&gt;</p>
+<p><strong>H. Tahap pelaksanaan</strong></p>
+<p>Pada tahapan pelaksanaan ini kita di pimpin oleh mbah suro dhemit sselku pembimbing dari institusi juga tidak hanya mbah Suro saja tapi ada beberapa dari teman teman yang juga menjelaskan tentang ip address tersebut.</p>
+<p><strong>I. Hasil yang di dapatkan</strong></p>
+<p>Hasil yang di dapatkan dalam pembahasan ini itu dapat mengetahui dimana IP ADDRESS ternya berada di OSI Layer 3 dimana untuk menuju layer 3 ini harus melalui layer 1 dan 2 yaitu dimana kita mempelajarinya dari osi layer 1,2 dan baru 3.</p>
+<p>Untuk ip addres sendiri mempunyai dua versi yaitu ada IPV4 dan IPV6, perbedaan dari IPV4 dengan IPV6 adalah jika versi  4 itu berarti yang dimaksud dari versi 4 adalah ip yang memiliki &lt;32 bits / 4byts&gt;, dan setiap bits yang ada pada versi 4 itu terdiri dari 8 bits dan juga sama setian satu byts terdiri dari 8 bits.</p>
+<p>Nah di dalam ip ini juga di kelompokan menjadi beberapa kelas dan di dalam kelompok ini di namakan subnetting.</p>
+<p>Nah di bawah ini juga ada beberapa contoh soal dan juga jawabannya :</p>
+<p>128 64 32 16 8 4 2 1</p>
+<p>1   0   1  0 1 1 0 0</p>
+<p>Nah maksudnya apa itu kita lihat diatas bahwa setiap angka yang di bawahnya 1 itu di jumlahkan tetapi jika di bawahnya 0 itu tidak kita tambahan karena nilainya 0</p>
+<p>Jadi, 128+32+8+4 : 172</p>
+<p>Nah juga ada cara lagi yang kita dapat lakukan yaitu kita jumlahkan yang bernilai 0, semisal pada contoh di atas adalah kita hitung 0 yang terdapat pada binner tersebut.</p>
+<p>64+16+2+1 = 83</p>
+<p>Nah jumlah dari masing masing subnet itu kan jika di jumlahkan semua adalah 255 nah dari 255 itu kita kurangkan hasil dari jumlah yang bernilai 0</p>
+<p>255-83 = 172.</p>
+<p>Itu diatas yang bisa saya lakukan ketika mengerjakan sebuah soal dari ip addres  jadi ketika anda menemui soal soal yang anda temui usahakan anda harus mengetahui konsep penghitungan dasar dari ip addres ini.</p>
+<p>Nah saya terkejut ketika mengerti tentang ip addres dimana didalamnya sebenarnya adalah bilangan binner. Nah di ilangan binner ini ternyata digunakan pada semuaaktifitas yang kita akses seperti halnya kita menakses foto lagu dan lain lain.</p>
+<p><strong>Sistem komunikasi</strong></p>
+<p>Berdasarkan bagaimana perangkat saling berkomunikasi, terbagi menjadi beberapa jenis, yakni sebagai berikut:</p>
+<ul>
+<li>
+<p>Unicast, merupakan komunikasi antar sebuah host atau point-to-point. Contoh : HTTP</p>
+</li>
+<li>
+<p>Broadcast, merupakan metode komunikasi dari sebuah host ke semua host yang masih dalam satu jaringan. Alamat broadcast digunakan dalam komunikasi one-to-everyone. Contoh : ARP Ethernet.</p>
+</li>
+<li>
+<p>Multicast, merupakan metode komunikasi dari sebuah host ke banyak host yang bergabung dalam group multicast yang sama. Alamat multicast digunakan dalam komunikasi one-to-many. Contoh : Video Streaming.</p>
+</li>
+<li>
+<p>Anycast, merupakan metode komunikasi dari sebuah host ke host atau kelompok host lain yang diset memiliki IP sama. Contoh : 6to4 relay.</p>
+</li>
+</ul>
+<p>Pada awal mula design network, diperkirakan konektivitas end-to-end terjadi pada seluruh host yang terkoneksi ke internet. Dan menjadi tugas IP address untuk menjadi sebuah alamat unik yang menjadi identitas sebuah host. Akan tetapi pada perkembangannya, tidak semua host butuh terkoneksi dengan dunia internet. Misalnya jaringan sebuah perusahaan yang hanya ingin masing - masing host cukup bisa berkomunikasi dengan host yang masih satu perusahaan, dan tidak perlu berkomunikasi dengan internet. Dengan adanya kasus seperti ini, maka IP address dibagi menjadi beberapa kelompok.</p>
+<p><strong>IP Public dan IP Private</strong></p>
+<p><strong>IP Public</strong></p>
+<p>Public IP Address merupakan IP Address yang dapat diakses di jaringan internet. IP Public juga dikenal sebagai globally routable unicast IP address. Ketika sebuah perangkat memiliki IP public dan terkoneksi ke jaringan internet, maka perangkat tadi bisa diakses darimanapun melalui jaringan internet juga. Akan tetapi kita tidak bisa memasang sembarang IP public di sebuah device. Ada aturan mengenai alokasi IP public. Kita bisa mendapatkan Public IP Address dari pinjaman ISP atau alokasi dari APNIC/IDNIC (<a href="http://www.idnic.net">www.idnic.net</a>).</p>
+<p><strong>IP Private</strong></p>
+<p>Pada arsitektur IP address, Private IP Address adalah IP Address yang diperuntukkan untuk jaringan lokal. IP private tidak boleh ada di jaringan internet dan tidak dapat diakses di jaringan internet.  Pada implementasi di jaringan real, biasanya jaringan lokal menggunakan IP Private, kemudian ditambahkan sebuah router yang menjembatani jaringan lokal yang menggunakan IP private dengan jaringan publik yang menggunakan IP Public. Untuk cakupan IP Private, Anda bisa lihat tabel IP Private di pembahasan mengenai CIDR.</p>
+<p><strong>IP Khusus</strong></p>
+<p>Selain IP Private dan IP Public, ada beberapa IP khusus lain. IP ini sudah memiliki tujuan penggunaan khusus yang sudah disepakati secara international, sehingga tidak dapat digunakan untuk pengalamatan sebuah host.</p>
+<p><strong>Kelas IP</strong></p>
+<p>Pada awal mula design IP address, IP address dibagi dalam beberapa kelas. Kelas IP dibedakan berdasarkan jumlah bits network ID. Masing masing kelas memiliki jumlah netowrk yang berbeda, dan jumlah host di tiap network yang berbeda pula. Pembagian ip address berdasarkan kelas ini sudah mulai ditinggalkan digantikan dengan sistem CIDR. Akan tetapi, ada baiknya kita coba lihat sejarah kelas IP address ini.</p>
+<p>CIDR biasanya ditulis dengan tanda &ldquo;/&rdquo; setelah IP  address, kemudian diikuti dengan informasi jumlah bits yang dialokasikan sebagai network-id, contoh 192.168.0.0/27. Jika Anda pernah melakukan konfigurasi router Mikrotik, tentu Anda sudah familiar dengan format IP seperti ini. Dari contoh subnet 192.168.0.0/27, maka dari 32 bits IP address, 27 bits dialokasikan untuk network-id,  tersisa 5 bits untuk host-id. Jumlah IP address yang ada dalam subnet tersebut bisa dihitung dengan rumus :</p>
+<p><strong>2 (32-x)</strong></p>
+<p>Dimana &ldquo;x&rdquo; adalah nilai CIDR.</p>
+<p>Contoh, untuk subnet 192.168.0.0/27 bisa dihitung sebagai berikut :</p>
+<p>2 (32-27) = 2 (5) = 32</p>
+<p>Nilai 32 adalah total IP address yang ada dalam subnet tersebut. Dikurangi dengan network address dan broadcast address, maka IP yang bisa dipasang pada perangkat jaringan ada 30 ip address.Range IP Address :  192.168.0.1 - 192.168.0.30</p>
+<p>Netmask : 255.255.255.224</p>
+<p>Network : 192.168.0.0</p>
+<p>Broadcast : 192.168.0.31</p>
+<p>Perhitungan IP address sebenarnya tidak harus dilakukan secara manual. Ada banyak alat bantu untuk melakukan perhitungan IP address dan subnetting, misalnya IP Subnet Calculator. Akan tetapi, ada baiknya kita tahu bagaimana konsep IP address, sehingga dalam penerapan di jaringan, kita bisa membuat sebuah jaringan yang benar - benar sehat dan ideal.</p>
+<p><strong>J. Temuan permasalahan</strong></p>
+<p>Belum mengetahui tentang ip 127 dimana ip ini itu saya pernah mendengar bahwa ip ini kenapa tidak boleh di gunakan. Dan ternyata setelah saya mencari ternyata ip ini adalah ip loopback.</p>
+<p><strong>K. Kesimpulan</strong></p>
+<p>Ip addres ini adalah pengalamat yang setiap host yang akan terhubung ke jaringan. dan ip ini di bagi menjadi 2 yaitu IPV4 dan IPV6. dan di masing masing versi di namakan byts dan di masing masing byts itu terdiri dari beberapa bits.</p>
+<p><strong>L. Referensi</strong></p>
+<p><a href="http://www.mikrotik.co.id/artikel_lihat.php?id=64">Mikrotik Indonesia</a></p>
+<p><a href="http://myrizqidarmawan.blogspot.co.id/">Blog</a></p>
+</section>
+    <footer>
+      <hr>
+      <div class="meta">
+        <p class="tags">
+          
+            
+              <a href="/tags/blc-telkom-klaten">
+                <span>#</span>BLC Telkom Klaten</a>
+            
+              <a href="/tags/subnetting">
+                <span>#</span>Subnetting</a>
+            
+          
+        </p>
+      </div>
+      <hr>
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sibunglonlabs" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </footer>
+  </article>
+
+    </main>
+    
+      <footer>
+  <p>
+    &copy; 2020 Faizar Septiawan. <a href="http://creativecommons.org/licenses/by-sa/4.0/">Some Rights Reserved</a>.
+  </p>
+  <p>
+    Powered by <a href="https://gohugo.io" title="A Fast and Flexible Website Generator">Hugo</a> &amp; <a href="https://github.com/eshlox/simplicity" title="Hugo theme">Simplicity</a>.
+  </p>
+</footer>
+
+    
+    
+    
+    
+    
+    
+    
+    <script src="/assets/js/scripts.min.js"></script>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-110194945-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>

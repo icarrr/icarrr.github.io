@@ -1,12 +1,65 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Case Study on The Official Site of siBunglon</title><link>https://sibunglon.com/tags/case-study/</link><description>Recent content in Case Study on The Official Site of siBunglon</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 25 Oct 2020 05:34:44 +0800</lastBuildDate><atom:link href="https://sibunglon.com/tags/case-study/index.xml" rel="self" type="application/rss+xml"/><item><title>Log Open edX Not Update</title><link>https://sibunglon.com/2020/10/25/log-open-edx-not-update/</link><pubDate>Sun, 25 Oct 2020 05:34:44 +0800</pubDate><guid>https://sibunglon.com/2020/10/25/log-open-edx-not-update/</guid><description>Case I&amp;rsquo;ve attach a new disk on my Open edX server, I move Open edX log file into a new disk and create symbolic link to /edx/var because I don&amp;rsquo;t want to make a lot of changes in configuration or hardcode of Open edX.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Case Study on The Official Site of siBunglon</title>
+    <link>https://sibunglon.com/tags/case-study/</link>
+    <description>Recent content in Case Study on The Official Site of siBunglon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 25 Oct 2020 05:34:44 +0800</lastBuildDate>
+    
+      <atom:link href="https://sibunglon.com/tags/case-study/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      <item>
+        <title>Log Open edX Not Update</title>
+        <link>https://sibunglon.com/2020/10/25/log-open-edx-not-update/</link>
+        <pubDate>Sun, 25 Oct 2020 05:34:44 +0800</pubDate>
+        <guid>https://sibunglon.com/2020/10/25/log-open-edx-not-update/</guid>
+        <description>Case I&amp;rsquo;ve attach a new disk on my Open edX server, I move Open edX log file into a new disk and create symbolic link to /edx/var because I don&amp;rsquo;t want to make a lot of changes in configuration or hardcode of Open edX.
 I moved the log files to the new disk, I did the following:
-$ # Stop services $ /edx/bin/supervisorctl stop all $ sudo systemctl stop mongod rabbitmq-server supervisor nginx $ # Rsync log directory to the new disk and make backup on local storage server $ sudo rsync -avP /edx/var/log /edx/backup $ sudo rsync -avP /edx/var/log /media-edx $ # Remove log from edxapp $ sudo rm -rf /edx/var/log $ # Create symbolic link $ sudo ln -sf /media-edx/log /edx/var $ # Start services $ sudo systemctl start mongod rabbitmq-server supervisor nginx When services edX has been start, log file for lms, cms, and tracking is not update.</description></item><item><title>Restart Network Adapter Windows without Reboot</title><link>https://sibunglon.com/2019/10/31/restart-network-adapter-windows-without-reboot/</link><pubDate>Thu, 31 Oct 2019 14:46:11 +0700</pubDate><guid>https://sibunglon.com/2019/10/31/restart-network-adapter-windows-without-reboot/</guid><description>Restarts a network adapter by disabling and then re-enabling the network adapter.
-Open PowerShell on Windows, after that find the name of the interface to be restarted. Use the following command line:
-netsh interface show interface Restart network adapter using the following command line:
-Restart-NetAdapter -Name &amp;#34;Ethernet x&amp;#34;</description></item><item><title>Failed to Install the Following Android SDK Packages as Some Licences Have Not Been Accepted</title><link>https://sibunglon.com/2019/05/19/failed-to-install-the-following-android-sdk-packages-as-some-licences-have-not-been-accepted/</link><pubDate>Sun, 19 May 2019 15:59:55 +0700</pubDate><guid>https://sibunglon.com/2019/05/19/failed-to-install-the-following-android-sdk-packages-as-some-licences-have-not-been-accepted/</guid><description>A few days ago, I had time to try to build an Android project but did not use the Android Studio application but instead used the command line. In order for the source code to be built using only the command line, we can use the included sdkmanager to download other SDK packages, this is a basic Android command line tool, if you want to download visit the Android Developer page then adjust with your environment.</description></item><item><title>Diam Diam Port 443 Lagi Konflik</title><link>https://sibunglon.com/2019/03/26/diam-diam-port-443-lagi-konflik/</link><pubDate>Tue, 26 Mar 2019 14:26:11 +0700</pubDate><guid>https://sibunglon.com/2019/03/26/diam-diam-port-443-lagi-konflik/</guid><description>Beberapa hari yang lalu lagi ada ide iseng nyobain main-main vm linux (virtual machine) menggunakan VMware Workstation Pro, niatnya mau online-nin semua vm yang telah dibuat tapi cuman punya 1 ip publik. Emang bisa? Terus gimana ngaksesnya/ngeremotenya? Bisa dong, waktu itu pake port forwarding untuk NAT di VMware Workstation Pro, karena maunya si vm tersebut dapat akses internet dan dapat diakses dari 1 ip public.
-Saya butuh web service yang dapat diakses melalui 1 publik yaitu 1 ip publik hostnya, okey saya pasang web service di salah satu vm.</description></item><item><title>Konsep Perencanaan Membangun Jaringan Sekolah</title><link>https://sibunglon.com/2017/08/16/konsep-perencanaan-membangun-jaringan-sekolah/</link><pubDate>Wed, 16 Aug 2017 17:25:00 +0000</pubDate><guid>https://sibunglon.com/2017/08/16/konsep-perencanaan-membangun-jaringan-sekolah/</guid><description>A. PENDAHULUAN
+$ # Stop services $ /edx/bin/supervisorctl stop all $ sudo systemctl stop mongod rabbitmq-server supervisor nginx $ # Rsync log directory to the new disk and make backup on local storage server $ sudo rsync -avP /edx/var/log /edx/backup $ sudo rsync -avP /edx/var/log /media-edx $ # Remove log from edxapp $ sudo rm -rf /edx/var/log $ # Create symbolic link $ sudo ln -sf /media-edx/log /edx/var $ # Start services $ sudo systemctl start mongod rabbitmq-server supervisor nginx When services edX has been start, log file for lms, cms, and tracking is not update.</description>
+      </item>
+    
+      <item>
+        <title>Restart Network Adapter Windows without Reboot</title>
+        <link>https://sibunglon.com/2019/10/31/restart-network-adapter-windows-without-reboot/</link>
+        <pubDate>Thu, 31 Oct 2019 14:46:11 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/10/31/restart-network-adapter-windows-without-reboot/</guid>
+        <description>Restarts a network adapter by disabling and then re-enabling the network adapter.
+  Open PowerShell on Windows, after that find the name of the interface to be restarted. Use the following command line:
+netsh interface show interface   Restart network adapter using the following command line:
+Restart-NetAdapter -Name &amp;#34;Ethernet x&amp;#34;   </description>
+      </item>
+    
+      <item>
+        <title>Failed to Install the Following Android SDK Packages as Some Licences Have Not Been Accepted</title>
+        <link>https://sibunglon.com/2019/05/19/failed-to-install-the-following-android-sdk-packages-as-some-licences-have-not-been-accepted/</link>
+        <pubDate>Sun, 19 May 2019 15:59:55 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/05/19/failed-to-install-the-following-android-sdk-packages-as-some-licences-have-not-been-accepted/</guid>
+        <description>A few days ago, I had time to try to build an Android project but did not use the Android Studio application but instead used the command line. In order for the source code to be built using only the command line, we can use the included sdkmanager to download other SDK packages, this is a basic Android command line tool, if you want to download visit the Android Developer page then adjust with your environment.</description>
+      </item>
+    
+      <item>
+        <title>Diam Diam Port 443 Lagi Konflik</title>
+        <link>https://sibunglon.com/2019/03/26/diam-diam-port-443-lagi-konflik/</link>
+        <pubDate>Tue, 26 Mar 2019 14:26:11 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/03/26/diam-diam-port-443-lagi-konflik/</guid>
+        <description>Beberapa hari yang lalu lagi ada ide iseng nyobain main-main vm linux (virtual machine) menggunakan VMware Workstation Pro, niatnya mau online-nin semua vm yang telah dibuat tapi cuman punya 1 ip publik. Emang bisa? Terus gimana ngaksesnya/ngeremotenya? Bisa dong, waktu itu pake port forwarding untuk NAT di VMware Workstation Pro, karena maunya si vm tersebut dapat akses internet dan dapat diakses dari 1 ip public.
+Saya butuh web service yang dapat diakses melalui 1 publik yaitu 1 ip publik hostnya, okey saya pasang web service di salah satu vm.</description>
+      </item>
+    
+      <item>
+        <title>Konsep Perencanaan Membangun Jaringan Sekolah</title>
+        <link>https://sibunglon.com/2017/08/16/konsep-perencanaan-membangun-jaringan-sekolah/</link>
+        <pubDate>Wed, 16 Aug 2017 17:25:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/16/konsep-perencanaan-membangun-jaringan-sekolah/</guid>
+        <description>A. PENDAHULUAN
 Pada kesempatan ini saya akan memberikan sedikit ilmu terkait dengan konsep perencanaan membangun jaringan sekolah. dalam melakukan sebuah pekerjaan kita mesti memikirkan konsep terlebih dahulu.
 B. PENGERTIAN
 Perencanaan merupakan tahapan awal yang harus di lakukan sebelum melakuka sesuatu pekerjaan. perencanaan dikatakan matang/berhasil, apabila perencanaan tersebut 70% sudah pasti dan tidak sering mengalami perubahan
 C. LATAR BELAKANG
-Dalam hal ini, saya bekerja tim utuk membangun jaringan di sekolah. saya berpern untuk mengatur jaringan.</description></item></channel></rss>
+Dalam hal ini, saya bekerja tim utuk membangun jaringan di sekolah. saya berpern untuk mengatur jaringan.</description>
+      </item>
+    
+  </channel>
+</rss>

@@ -1,8 +1,107 @@
-<!doctype html><html lang=en-us itemscope itemtype=http://schema.org/WebPage><head><title>Error Generate Certificate SSL Menggunakan Let's Encrypt</title><meta http-equiv=cache-control content="public, max-age=31536000"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=author content="Faizar Septiawan"><meta name=description content="Read - Search - Ask | Personal Site | Catch your problem solution or read interesting stories on my blog!"><meta name=keywords content="Linux,Unix,BSD,MacOS,Komunitas Pengguna Linux Indonesia,KPLI Klaten,KPLI Bulukumba,MikroTik,MikroTik Indonesia,FreeBSD,FreeBSD Indonesia,Cisco,Cisco Indonesia,BLC Telkom Klaten,Ansible,Nginx,Apache2,Caddy Server,Ayo Belajar Linux,Cloud Computing,e-Learning,Open edX,Proxmox,Sendy,Microsoft SQL Server,MySQL,PostgreSQL,Lets Encrypt,Case Study,Atlassian,Virtualization,Faizar Septiawan,Icar,siBunglonGanteng,siBunglonLabs,Orang Ganteng"><meta name=google-site-verification content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-110194945-3"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','UA-110194945-3');</script><link rel=stylesheet href=/assets/css/external.min.css media=screen><link rel=stylesheet href=/assets/css/styles.css media=screen><link href=/assets/custom/googlefonts/roboto.css rel=stylesheet><link rel=apple-touch-icon-precomposed sizes=144x144 href=/src/images/apple-touch-icon.png><link rel="shortcut icon" href=/src/images/favicon.ico><link href=/posts/index.xml rel=alternate type=application/rss+xml title="The Official Site of siBunglon"><meta property="og:title" content="Error Generate Certificate SSL Menggunakan Let's Encrypt"><meta property="og:description" content="Beberapa bulan yang lalu I&rsquo;m siBunglon masih bisa generate SSL menggunakan Let&rsquo;s Encrypt namun hari ini I&rsquo;m siBunglon menemukan error ketika akan generate SSL lagi dan I&rsquo;m siBunglon mendapatkan error message seperti berikut:
-[root@airgreen siBunglon]# certbot --nginx -d repo.lab.sibunglon.com Traceback (most recent call last): File &#34;/bin/certbot&#34;, line 9, in <module> load_entry_point('certbot==0.29.1', 'console_scripts', 'certbot')() File &#34;/usr/lib/python2.7/site-packages/pkg_resources/__init__.py&#34;, line 487, in load_entry_point return get_distribution(dist).load_entry_point(group, name) File &#34;/usr/lib/python2.7/site-packages/pkg_resources/__init__.py&#34;, line 2728, in load_entry_point return ep.load() File &#34;/usr/lib/python2."><meta property="og:type" content="article"><meta property="og:url" content="https://sibunglon.com/2019/02/16/error-generate-certificate-ssl-menggunakan-lets-encrypt/"><meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"><meta property="article:published_time" content="2019-02-16T17:19:08+07:00"><meta property="article:modified_time" content="2019-02-16T17:19:08+07:00"><meta property="og:site_name" content="The Official Site of siBunglon"><meta itemprop=name content="Error Generate Certificate SSL Menggunakan Let's Encrypt"><meta itemprop=description content="Beberapa bulan yang lalu I&rsquo;m siBunglon masih bisa generate SSL menggunakan Let&rsquo;s Encrypt namun hari ini I&rsquo;m siBunglon menemukan error ketika akan generate SSL lagi dan I&rsquo;m siBunglon mendapatkan error message seperti berikut:
-[root@airgreen siBunglon]# certbot --nginx -d repo.lab.sibunglon.com Traceback (most recent call last): File &#34;/bin/certbot&#34;, line 9, in <module> load_entry_point('certbot==0.29.1', 'console_scripts', 'certbot')() File &#34;/usr/lib/python2.7/site-packages/pkg_resources/__init__.py&#34;, line 487, in load_entry_point return get_distribution(dist).load_entry_point(group, name) File &#34;/usr/lib/python2.7/site-packages/pkg_resources/__init__.py&#34;, line 2728, in load_entry_point return ep.load() File &#34;/usr/lib/python2."><meta itemprop=datePublished content="2019-02-16T17:19:08+07:00"><meta itemprop=dateModified content="2019-02-16T17:19:08+07:00"><meta itemprop=wordCount content="171"><meta itemprop=image content="https://sibunglon.com/assets/img/profil.webp"><meta itemprop=keywords content="Ayo Belajar Linux,Let's Encrypt,Error,"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://sibunglon.com/assets/img/profil.webp"><meta name=twitter:title content="Error Generate Certificate SSL Menggunakan Let's Encrypt"><meta name=twitter:description content="Beberapa bulan yang lalu I&rsquo;m siBunglon masih bisa generate SSL menggunakan Let&rsquo;s Encrypt namun hari ini I&rsquo;m siBunglon menemukan error ketika akan generate SSL lagi dan I&rsquo;m siBunglon mendapatkan error message seperti berikut:
-[root@airgreen siBunglon]# certbot --nginx -d repo.lab.sibunglon.com Traceback (most recent call last): File &#34;/bin/certbot&#34;, line 9, in <module> load_entry_point('certbot==0.29.1', 'console_scripts', 'certbot')() File &#34;/usr/lib/python2.7/site-packages/pkg_resources/__init__.py&#34;, line 487, in load_entry_point return get_distribution(dist).load_entry_point(group, name) File &#34;/usr/lib/python2.7/site-packages/pkg_resources/__init__.py&#34;, line 2728, in load_entry_point return ep.load() File &#34;/usr/lib/python2."><script defer src=/assets/custom/fontawesome-5.15.1/js/all.min.js></script></head><body><nav><a href=/>siBunglon</a></nav><main class=container><article><header><small><span class=date>February 16, 2019</span></small><h1>Error Generate Certificate SSL Menggunakan Let's Encrypt</h1></header><section><p>Beberapa bulan yang lalu <strong>I&rsquo;m siBunglon</strong> masih bisa generate SSL menggunakan Let&rsquo;s Encrypt namun hari ini <strong>I&rsquo;m siBunglon</strong> menemukan error ketika akan generate SSL lagi dan <strong>I&rsquo;m siBunglon</strong> mendapatkan error message seperti berikut:</p><pre><code>[root@airgreen siBunglon]# certbot --nginx -d repo.lab.sibunglon.com
+<!DOCTYPE html>
+<html lang="en-us" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+  <title>Error Generate Certificate SSL Menggunakan Let&#39;s Encrypt</title>
+  
+  <meta http-equiv="cache-control" content="public, max-age=31536000" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Faizar Septiawan">
+  <meta name="description" content="Read - Search - Ask | Personal Site | Catch your problem solution or read interesting stories on my blog!">
+  <meta name="keywords" content="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng">
+  
+  
+  
+  <meta name="google-site-verification" content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM" />
+  
+  
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110194945-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110194945-3');
+  </script>
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/css/external.min.css" media="screen">
+  
+  
+  <link rel="stylesheet" href="/assets/css/styles.css" media="screen">
+  <link href="/assets/custom/googlefonts/roboto.css" rel="stylesheet">
+  
+
+  
+  
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/src/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="/src/images/favicon.ico">
+  
+
+  
+  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
+
+  <meta property="og:title" content="Error Generate Certificate SSL Menggunakan Let&#39;s Encrypt" />
+<meta property="og:description" content="Beberapa bulan yang lalu I&rsquo;m siBunglon masih bisa generate SSL menggunakan Let&rsquo;s Encrypt namun hari ini I&rsquo;m siBunglon menemukan error ketika akan generate SSL lagi dan I&rsquo;m siBunglon mendapatkan error message seperti berikut:
+[root@airgreen siBunglon]# certbot --nginx -d repo.lab.sibunglon.com Traceback (most recent call last): File &quot;/bin/certbot&quot;, line 9, in &lt;module&gt; load_entry_point(&#39;certbot==0.29.1&#39;, &#39;console_scripts&#39;, &#39;certbot&#39;)() File &quot;/usr/lib/python2.7/site-packages/pkg_resources/__init__.py&quot;, line 487, in load_entry_point return get_distribution(dist).load_entry_point(group, name) File &quot;/usr/lib/python2.7/site-packages/pkg_resources/__init__.py&quot;, line 2728, in load_entry_point return ep.load() File &quot;/usr/lib/python2." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sibunglon.com/2019/02/16/error-generate-certificate-ssl-menggunakan-lets-encrypt/" />
+<meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"/>
+<meta property="article:published_time" content="2019-02-16T17:19:08+07:00" />
+<meta property="article:modified_time" content="2019-02-16T17:19:08+07:00" /><meta property="og:site_name" content="The Official Site of siBunglon" />
+
+  <meta itemprop="name" content="Error Generate Certificate SSL Menggunakan Let&#39;s Encrypt">
+<meta itemprop="description" content="Beberapa bulan yang lalu I&rsquo;m siBunglon masih bisa generate SSL menggunakan Let&rsquo;s Encrypt namun hari ini I&rsquo;m siBunglon menemukan error ketika akan generate SSL lagi dan I&rsquo;m siBunglon mendapatkan error message seperti berikut:
+[root@airgreen siBunglon]# certbot --nginx -d repo.lab.sibunglon.com Traceback (most recent call last): File &quot;/bin/certbot&quot;, line 9, in &lt;module&gt; load_entry_point(&#39;certbot==0.29.1&#39;, &#39;console_scripts&#39;, &#39;certbot&#39;)() File &quot;/usr/lib/python2.7/site-packages/pkg_resources/__init__.py&quot;, line 487, in load_entry_point return get_distribution(dist).load_entry_point(group, name) File &quot;/usr/lib/python2.7/site-packages/pkg_resources/__init__.py&quot;, line 2728, in load_entry_point return ep.load() File &quot;/usr/lib/python2.">
+<meta itemprop="datePublished" content="2019-02-16T17:19:08+07:00" />
+<meta itemprop="dateModified" content="2019-02-16T17:19:08+07:00" />
+<meta itemprop="wordCount" content="171">
+<meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
+
+
+
+<meta itemprop="keywords" content="Ayo Belajar Linux,Let&#39;s Encrypt,Error," />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://sibunglon.com/assets/img/profil.webp"/>
+
+<meta name="twitter:title" content="Error Generate Certificate SSL Menggunakan Let&#39;s Encrypt"/>
+<meta name="twitter:description" content="Beberapa bulan yang lalu I&rsquo;m siBunglon masih bisa generate SSL menggunakan Let&rsquo;s Encrypt namun hari ini I&rsquo;m siBunglon menemukan error ketika akan generate SSL lagi dan I&rsquo;m siBunglon mendapatkan error message seperti berikut:
+[root@airgreen siBunglon]# certbot --nginx -d repo.lab.sibunglon.com Traceback (most recent call last): File &quot;/bin/certbot&quot;, line 9, in &lt;module&gt; load_entry_point(&#39;certbot==0.29.1&#39;, &#39;console_scripts&#39;, &#39;certbot&#39;)() File &quot;/usr/lib/python2.7/site-packages/pkg_resources/__init__.py&quot;, line 487, in load_entry_point return get_distribution(dist).load_entry_point(group, name) File &quot;/usr/lib/python2.7/site-packages/pkg_resources/__init__.py&quot;, line 2728, in load_entry_point return ep.load() File &quot;/usr/lib/python2."/>
+
+  
+
+  
+  <script defer src="/assets/custom/fontawesome-5.15.1/js/all.min.js"></script>
+  
+</head>
+
+  <body>
+    
+      <nav>
+  <a href="/">
+    siBunglon
+  </a>
+</nav>
+
+    
+    <main class="container">
+      
+  <article>
+    <header>
+      <small>
+        <span class="date">February 16, 2019</span></small>
+      <h1>Error Generate Certificate SSL Menggunakan Let&#39;s Encrypt</h1>
+    </header>
+    <section><p>Beberapa bulan yang lalu <strong>I&rsquo;m siBunglon</strong> masih bisa generate SSL menggunakan Let&rsquo;s Encrypt namun hari ini <strong>I&rsquo;m siBunglon</strong> menemukan error ketika akan generate SSL lagi dan <strong>I&rsquo;m siBunglon</strong> mendapatkan error message seperti berikut:</p>
+<pre><code>[root@airgreen siBunglon]# certbot --nginx -d repo.lab.sibunglon.com
 Traceback (most recent call last):
 File &quot;/bin/certbot&quot;, line 9, in &lt;module&gt; load_entry_point('certbot==0.29.1', 'console_scripts', 'certbot')()
 File &quot;/usr/lib/python2.7/site-packages/pkg_resources/__init__.py&quot;, line 487, in load_entry_point return get_distribution(dist).load_entry_point(group, name)
@@ -13,7 +112,80 @@ File &quot;/usr/lib/python2.7/site-packages/certbot/main.py&quot;, line 23, in &
 File &quot;/usr/lib/python2.7/site-packages/certbot/client.py&quot;, line 16, in &lt;module&gt; from acme import client as acme_client
 File &quot;/usr/lib/python2.7/site-packages/acme/client.py&quot;, line 40, in &lt;module&gt; urllib3.contrib.pyopenssl.inject_into_urllib3() AttributeError: 'module' object has no attribute 'pyopenssl'
 [root@airgreen siBunglon]#
-</code></pre><p>Kenapa bisa error? padahal sebelumnya udah pernah generate SSL di server sama pun, jangan panik 😂 itu bukan masalah besar. Jika kalian mengalami hal yang sama ataupun mendapatkan error message yang sama seperti <strong>I&rsquo;m siBunglon</strong> paparkan, cukup install dependensinya dengan command <code>pip install requests==2.6.0</code>.</p></section><footer><hr><div class=meta><p class=tags><a href=/tags/ayo-belajar-linux><span>#</span>Ayo Belajar Linux</a>
-<a href=/tags/lets-encrypt><span>#</span>Let's Encrypt</a>
-<a href=/tags/error><span>#</span>Error</a></p></div><hr><div id=disqus_thread></div><script type=application/javascript>var disqus_config=function(){};(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return;}
-var d=document,s=d.createElement('script');s.async=true;s.src='//'+"sibunglonlabs"+'.disqus.com/embed.js';s.setAttribute('data-timestamp',+new Date());(d.head||d.body).appendChild(s);})();</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></footer></article></main><footer><p>&copy; 2020 Faizar Septiawan. <a href=http://creativecommons.org/licenses/by-sa/4.0/>Some Rights Reserved</a>.</p><p>Powered by <a href=https://gohugo.io title="A Fast and Flexible Website Generator">Hugo</a> & <a href=https://github.com/eshlox/simplicity title="Hugo theme">Simplicity</a>.</p></footer><script src=/assets/js/scripts.min.js></script><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-110194945-3','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script></body></html>
+</code></pre><p>Kenapa bisa error? padahal sebelumnya udah pernah generate SSL di server sama pun, jangan panik 😂  itu bukan masalah besar. Jika kalian mengalami hal yang sama ataupun mendapatkan error message yang sama seperti <strong>I&rsquo;m siBunglon</strong> paparkan, cukup install dependensinya dengan command <code>pip install requests==2.6.0</code>.</p>
+</section>
+    <footer>
+      <hr>
+      <div class="meta">
+        <p class="tags">
+          
+            
+              <a href="/tags/ayo-belajar-linux">
+                <span>#</span>Ayo Belajar Linux</a>
+            
+              <a href="/tags/lets-encrypt">
+                <span>#</span>Let&#39;s Encrypt</a>
+            
+              <a href="/tags/error">
+                <span>#</span>Error</a>
+            
+          
+        </p>
+      </div>
+      <hr>
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sibunglonlabs" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </footer>
+  </article>
+
+    </main>
+    
+      <footer>
+  <p>
+    &copy; 2020 Faizar Septiawan. <a href="http://creativecommons.org/licenses/by-sa/4.0/">Some Rights Reserved</a>.
+  </p>
+  <p>
+    Powered by <a href="https://gohugo.io" title="A Fast and Flexible Website Generator">Hugo</a> &amp; <a href="https://github.com/eshlox/simplicity" title="Hugo theme">Simplicity</a>.
+  </p>
+</footer>
+
+    
+    
+    
+    
+    
+    
+    
+    <script src="/assets/js/scripts.min.js"></script>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-110194945-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>

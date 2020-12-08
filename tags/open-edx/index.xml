@@ -1,37 +1,194 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Open edX on The Official Site of siBunglon</title><link>https://sibunglon.com/tags/open-edx/</link><description>Recent content in Open edX on The Official Site of siBunglon</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 27 Nov 2020 23:15:15 +0800</lastBuildDate><atom:link href="https://sibunglon.com/tags/open-edx/index.xml" rel="self" type="application/rss+xml"/><item><title>Open edX Discussion Forum Not Working</title><link>https://sibunglon.com/2020/11/27/open-edx-discussion-forum-not-working/</link><pubDate>Fri, 27 Nov 2020 23:15:15 +0800</pubDate><guid>https://sibunglon.com/2020/11/27/open-edx-discussion-forum-not-working/</guid><description>The problem is that the discussion forum is not working properly, forum service been restart every after 1 minutes.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Open edX on The Official Site of siBunglon</title>
+    <link>https://sibunglon.com/tags/open-edx/</link>
+    <description>Recent content in Open edX on The Official Site of siBunglon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Nov 2020 23:15:15 +0800</lastBuildDate>
+    
+      <atom:link href="https://sibunglon.com/tags/open-edx/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      <item>
+        <title>Open edX Discussion Forum Not Working</title>
+        <link>https://sibunglon.com/2020/11/27/open-edx-discussion-forum-not-working/</link>
+        <pubDate>Fri, 27 Nov 2020 23:15:15 +0800</pubDate>
+        <guid>https://sibunglon.com/2020/11/27/open-edx-discussion-forum-not-working/</guid>
+        <description>The problem is that the discussion forum is not working properly, forum service been restart every after 1 minutes.
 I find this on forum log:
-ERROR: ElasticSearch configuration validation failed. &amp;#34;rake search:validate_index&amp;#34; failed with the following message: Alias &amp;#39;content&amp;#39; does not exist. /edx/app/forum/.gem/ruby/2.5.0/gems/elasticsearch-transport-1.1.2/lib/elasticsearch/transport/transport/base.rb:52: warning: constant ::Fixnum is deprecated /edx/app/forum/.gem/ruby/2.5.0/gems/elasticsearch-transport-1.1.2/lib/elasticsearch/transport/transport/base.rb:54: warning: constant ::Fixnum is deprecated ERROR: ElasticSearch configuration validation failed. &amp;#34;rake search:validate_index&amp;#34; failed with the following message: Alias &amp;#39;content&amp;#39; does not exist.</description></item><item><title>Integrate Zoom With Open edX</title><link>https://sibunglon.com/2020/11/09/integrate-zoom-with-open-edx/</link><pubDate>Mon, 09 Nov 2020 04:04:49 +0800</pubDate><guid>https://sibunglon.com/2020/11/09/integrate-zoom-with-open-edx/</guid><description>This topic contains how to setup Zoom LTI Pro, enable LTI Consumer and add the LTI component to the course.
-Setup Zoom LTI Pro Go to marketplace zoom.
-Select LTI Pro.
-Enable &amp;ldquo;Pre-approve&amp;rdquo; and click &amp;ldquo;Install&amp;rdquo;. LTI Pro will be request access to your zoom account, select &amp;ldquo;authorize&amp;rdquo;. Create a new credential. Choose your credential name, and then click &amp;ldquo;Save&amp;rdquo;. On LTI Credentials page, your need edit/update this: on field &amp;ldquo;Email Attribute Name&amp;rdquo;, add instructor_email on field &amp;ldquo;Approved Domains&amp;rdquo;, add your LMS and CMS url Copy your LTI Key and LTI Secret.</description></item><item><title>Log Open edX Not Update</title><link>https://sibunglon.com/2020/10/25/log-open-edx-not-update/</link><pubDate>Sun, 25 Oct 2020 05:34:44 +0800</pubDate><guid>https://sibunglon.com/2020/10/25/log-open-edx-not-update/</guid><description>Case I&amp;rsquo;ve attach a new disk on my Open edX server, I move Open edX log file into a new disk and create symbolic link to /edx/var because I don&amp;rsquo;t want to make a lot of changes in configuration or hardcode of Open edX.
+ERROR: ElasticSearch configuration validation failed. &amp;#34;rake search:validate_index&amp;#34; failed with the following message: Alias &amp;#39;content&amp;#39; does not exist. /edx/app/forum/.gem/ruby/2.5.0/gems/elasticsearch-transport-1.1.2/lib/elasticsearch/transport/transport/base.rb:52: warning: constant ::Fixnum is deprecated /edx/app/forum/.gem/ruby/2.5.0/gems/elasticsearch-transport-1.1.2/lib/elasticsearch/transport/transport/base.rb:54: warning: constant ::Fixnum is deprecated ERROR: ElasticSearch configuration validation failed. &amp;#34;rake search:validate_index&amp;#34; failed with the following message: Alias &amp;#39;content&amp;#39; does not exist.</description>
+      </item>
+    
+      <item>
+        <title>Integrate Zoom With Open edX</title>
+        <link>https://sibunglon.com/2020/11/09/integrate-zoom-with-open-edx/</link>
+        <pubDate>Mon, 09 Nov 2020 04:04:49 +0800</pubDate>
+        <guid>https://sibunglon.com/2020/11/09/integrate-zoom-with-open-edx/</guid>
+        <description>This topic contains how to setup Zoom LTI Pro, enable LTI Consumer and add the LTI component to the course.
+Setup Zoom LTI Pro   Go to marketplace zoom.
+  Select LTI Pro.
+  Enable &amp;ldquo;Pre-approve&amp;rdquo; and click &amp;ldquo;Install&amp;rdquo;.  LTI Pro will be request access to your zoom account, select &amp;ldquo;authorize&amp;rdquo;.  Create a new credential.  Choose your credential name, and then click &amp;ldquo;Save&amp;rdquo;.  On LTI Credentials page, your need edit/update this:   on field &amp;ldquo;Email Attribute Name&amp;rdquo;, add instructor_email on field &amp;ldquo;Approved Domains&amp;rdquo;, add your LMS and CMS url  Copy your LTI Key and LTI Secret.</description>
+      </item>
+    
+      <item>
+        <title>Log Open edX Not Update</title>
+        <link>https://sibunglon.com/2020/10/25/log-open-edx-not-update/</link>
+        <pubDate>Sun, 25 Oct 2020 05:34:44 +0800</pubDate>
+        <guid>https://sibunglon.com/2020/10/25/log-open-edx-not-update/</guid>
+        <description>Case I&amp;rsquo;ve attach a new disk on my Open edX server, I move Open edX log file into a new disk and create symbolic link to /edx/var because I don&amp;rsquo;t want to make a lot of changes in configuration or hardcode of Open edX.
 I moved the log files to the new disk, I did the following:
-$ # Stop services $ /edx/bin/supervisorctl stop all $ sudo systemctl stop mongod rabbitmq-server supervisor nginx $ # Rsync log directory to the new disk and make backup on local storage server $ sudo rsync -avP /edx/var/log /edx/backup $ sudo rsync -avP /edx/var/log /media-edx $ # Remove log from edxapp $ sudo rm -rf /edx/var/log $ # Create symbolic link $ sudo ln -sf /media-edx/log /edx/var $ # Start services $ sudo systemctl start mongod rabbitmq-server supervisor nginx When services edX has been start, log file for lms, cms, and tracking is not update.</description></item><item><title>Change Language Open edX</title><link>https://sibunglon.com/2020/09/05/change-language-open-edx/</link><pubDate>Sat, 05 Sep 2020 05:52:45 +0800</pubDate><guid>https://sibunglon.com/2020/09/05/change-language-open-edx/</guid><description>Open edX uses Transifex, an open source translation platform, to power the translation of edX software into different languages. All translations are hosted at Transifex.com, which provides a web application allowing translators to write, submit, and manage their translations.
-Login to server and switch to edxapp environment for edX native installation. $ sudo -H -u edxapp bash $ source /edx/app/edxapp/edxapp_env $ cd /edx/app/edxapp/edx-platform Install Python dependencies $ pip install transifex-client or when using bitnami, use this</description></item><item><title>Allowing Learners to Claim Their Own Certificates in Open edX</title><link>https://sibunglon.com/2020/09/05/allowing-learners-to-claim-their-own-certificates-in-open-edx/</link><pubDate>Sat, 05 Sep 2020 05:41:16 +0800</pubDate><guid>https://sibunglon.com/2020/09/05/allowing-learners-to-claim-their-own-certificates-in-open-edx/</guid><description>In most cases, you&amp;rsquo;ll want learners to be able to claim certificates for themselves on the progress page. For self-paced courses, this is already done! You&amp;rsquo;re good to go. For instructor-led courses, however, you&amp;rsquo;ll need to Enable Student-Generated Certificates.
+$ # Stop services $ /edx/bin/supervisorctl stop all $ sudo systemctl stop mongod rabbitmq-server supervisor nginx $ # Rsync log directory to the new disk and make backup on local storage server $ sudo rsync -avP /edx/var/log /edx/backup $ sudo rsync -avP /edx/var/log /media-edx $ # Remove log from edxapp $ sudo rm -rf /edx/var/log $ # Create symbolic link $ sudo ln -sf /media-edx/log /edx/var $ # Start services $ sudo systemctl start mongod rabbitmq-server supervisor nginx When services edX has been start, log file for lms, cms, and tracking is not update.</description>
+      </item>
+    
+      <item>
+        <title>Change Language Open edX</title>
+        <link>https://sibunglon.com/2020/09/05/change-language-open-edx/</link>
+        <pubDate>Sat, 05 Sep 2020 05:52:45 +0800</pubDate>
+        <guid>https://sibunglon.com/2020/09/05/change-language-open-edx/</guid>
+        <description>Open edX uses Transifex, an open source translation platform, to power the translation of edX software into different languages. All translations are hosted at Transifex.com, which provides a web application allowing translators to write, submit, and manage their translations.
+ Login to server and switch to edxapp environment for edX native installation.  $ sudo -H -u edxapp bash $ source /edx/app/edxapp/edxapp_env $ cd /edx/app/edxapp/edx-platform Install Python dependencies  $ pip install transifex-client or when using bitnami, use this</description>
+      </item>
+    
+      <item>
+        <title>Allowing Learners to Claim Their Own Certificates in Open edX</title>
+        <link>https://sibunglon.com/2020/09/05/allowing-learners-to-claim-their-own-certificates-in-open-edx/</link>
+        <pubDate>Sat, 05 Sep 2020 05:41:16 +0800</pubDate>
+        <guid>https://sibunglon.com/2020/09/05/allowing-learners-to-claim-their-own-certificates-in-open-edx/</guid>
+        <description>In most cases, you&amp;rsquo;ll want learners to be able to claim certificates for themselves on the progress page. For self-paced courses, this is already done! You&amp;rsquo;re good to go. For instructor-led courses, however, you&amp;rsquo;ll need to Enable Student-Generated Certificates.
 To allowing learners to claim their own certificates, do the following steps:
-Login to LMS as admin or staff.
-On the learning site dashboard page, open one of the existing courses.</description></item><item><title>Enable Certificate Open edX</title><link>https://sibunglon.com/2020/09/05/enable-certificate-open-edx/</link><pubDate>Sat, 05 Sep 2020 05:08:41 +0800</pubDate><guid>https://sibunglon.com/2020/09/05/enable-certificate-open-edx/</guid><description>Organizations and course teams can choose to generate certificates for learners who pass a course. Learners can view, print, or share their certificates.
+  Login to LMS as admin or staff.
+  On the learning site dashboard page, open one of the existing courses.</description>
+      </item>
+    
+      <item>
+        <title>Enable Certificate Open edX</title>
+        <link>https://sibunglon.com/2020/09/05/enable-certificate-open-edx/</link>
+        <pubDate>Sat, 05 Sep 2020 05:08:41 +0800</pubDate>
+        <guid>https://sibunglon.com/2020/09/05/enable-certificate-open-edx/</guid>
+        <description>Organizations and course teams can choose to generate certificates for learners who pass a course. Learners can view, print, or share their certificates.
 To enable certificates, you modify the lms.env.json and cms.env.json files.
-In the lms.env.json and cms.env.json files, set the value of CERTIFICATES_HTML_VIEW within the FEATURES object to true. &amp;#34;FEATURES&amp;#34;: { ... &amp;#39;CERTIFICATES_HTML_VIEW&amp;#39;: true, ... } Save the lms.env.json and cms.env.json files.
-If it does not exist already, create the folder /tmp/certificates owned by the user and group www-data.</description></item><item><title>Database returned an invalid value in QuerySet.datetimes()</title><link>https://sibunglon.com/2020/07/26/database-returned-an-invalid-value-in-queryset.datetimes/</link><pubDate>Sun, 26 Jul 2020 21:05:49 +0800</pubDate><guid>https://sibunglon.com/2020/07/26/database-returned-an-invalid-value-in-queryset.datetimes/</guid><description>After create new action on the Django admin pages, it redirects to my site with the message a server error. When check the file /edx/var/log/supervisor/lms-stderr.log i find this:
-Traceback (most recent call last): File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/exception.py&amp;quot;, line 41, in inner response = get_response(request) File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;quot;, line 249, in _legacy_get_response response = self._get_response(request) File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;quot;, line 217, in _get_response response = self.process_exception_by_middleware(e, request) File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;quot;, line 215, in _get_response response = response.render() File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.</description></item><item><title>Google Sign in Error 403 on Open edX</title><link>https://sibunglon.com/2020/07/26/google-sign-in-error-403-on-open-edx/</link><pubDate>Sun, 26 Jul 2020 20:43:08 +0800</pubDate><guid>https://sibunglon.com/2020/07/26/google-sign-in-error-403-on-open-edx/</guid><description>When I have configuration OAuth2 Google on Open edX version ironwood.master, I click register, then the “Google” login button and I get to the Google Log In page. After a succesful login on Google site, it redirects to my site and I’m getting error. When check the file /edx/var/log/lms/edx.log i find this:
-Jul 24 01:03:09 bnpb [service_variant=lms][django.request][env:sandbox] ERROR [e-Learning 29535] [exception.py:135] - Internal Server Error: /auth/complete/google-oauth2/ Traceback (most recent call last): File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.</description></item><item><title>Enable Third-Party Authentication (OAuth2) Open edX</title><link>https://sibunglon.com/2020/07/26/enable-third-party-authentication-oauth2-open-edx/</link><pubDate>Sun, 26 Jul 2020 17:39:23 +0800</pubDate><guid>https://sibunglon.com/2020/07/26/enable-third-party-authentication-oauth2-open-edx/</guid><description>Open edX Platform allows you to integrate third-party authentication with two kinds of authentication providers:
-OAuth2 Identity Providers. SAML Identity Providers This section describes how to integrate Open edX with two of the most popular OAuth2 providers: Google and Facebook.
+ In the lms.env.json and cms.env.json files, set the value of CERTIFICATES_HTML_VIEW within the FEATURES object to true.  &amp;#34;FEATURES&amp;#34;: { ... &amp;#39;CERTIFICATES_HTML_VIEW&amp;#39;: true, ... } Save the lms.env.json and cms.env.json files.
+If it does not exist already, create the folder /tmp/certificates owned by the user and group www-data.</description>
+      </item>
+    
+      <item>
+        <title>Database returned an invalid value in QuerySet.datetimes()</title>
+        <link>https://sibunglon.com/2020/07/26/database-returned-an-invalid-value-in-queryset.datetimes/</link>
+        <pubDate>Sun, 26 Jul 2020 21:05:49 +0800</pubDate>
+        <guid>https://sibunglon.com/2020/07/26/database-returned-an-invalid-value-in-queryset.datetimes/</guid>
+        <description>After create new action on the Django admin pages, it redirects to my site with the message a server error. When check the file /edx/var/log/supervisor/lms-stderr.log i find this:
+Traceback (most recent call last): File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/exception.py&amp;quot;, line 41, in inner response = get_response(request) File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;quot;, line 249, in _legacy_get_response response = self._get_response(request) File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;quot;, line 217, in _get_response response = self.process_exception_by_middleware(e, request) File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;quot;, line 215, in _get_response response = response.render() File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.</description>
+      </item>
+    
+      <item>
+        <title>Google Sign in Error 403 on Open edX</title>
+        <link>https://sibunglon.com/2020/07/26/google-sign-in-error-403-on-open-edx/</link>
+        <pubDate>Sun, 26 Jul 2020 20:43:08 +0800</pubDate>
+        <guid>https://sibunglon.com/2020/07/26/google-sign-in-error-403-on-open-edx/</guid>
+        <description>When I have configuration OAuth2 Google on Open edX version ironwood.master, I click register, then the “Google” login button and I get to the Google Log In page. After a succesful login on Google site, it redirects to my site and I’m getting error. When check the file /edx/var/log/lms/edx.log i find this:
+Jul 24 01:03:09 bnpb [service_variant=lms][django.request][env:sandbox] ERROR [e-Learning 29535] [exception.py:135] - Internal Server Error: /auth/complete/google-oauth2/ Traceback (most recent call last): File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.</description>
+      </item>
+    
+      <item>
+        <title>Enable Third-Party Authentication (OAuth2) Open edX</title>
+        <link>https://sibunglon.com/2020/07/26/enable-third-party-authentication-oauth2-open-edx/</link>
+        <pubDate>Sun, 26 Jul 2020 17:39:23 +0800</pubDate>
+        <guid>https://sibunglon.com/2020/07/26/enable-third-party-authentication-oauth2-open-edx/</guid>
+        <description>Open edX Platform allows you to integrate third-party authentication with two kinds of authentication providers:
+ OAuth2 Identity Providers. SAML Identity Providers  This section describes how to integrate Open edX with two of the most popular OAuth2 providers: Google and Facebook.
 Integrate Open edX With Google Step 1: Register The Open EdX Site With Google -) Navigate to the Google Developers Console.
--) Select an existing project or create a new one.</description></item><item><title>Allow User to Access the Homepage After Login in Open edX</title><link>https://sibunglon.com/2020/07/26/allow-user-to-access-the-homepage-after-login-in-open-edx/</link><pubDate>Sun, 26 Jul 2020 17:29:16 +0800</pubDate><guid>https://sibunglon.com/2020/07/26/allow-user-to-access-the-homepage-after-login-in-open-edx/</guid><description>By default, after user login into LMS, user cannot see the homepage. They always redirected to their dashboard.
+-) Select an existing project or create a new one.</description>
+      </item>
+    
+      <item>
+        <title>Allow User to Access the Homepage After Login in Open edX</title>
+        <link>https://sibunglon.com/2020/07/26/allow-user-to-access-the-homepage-after-login-in-open-edx/</link>
+        <pubDate>Sun, 26 Jul 2020 17:29:16 +0800</pubDate>
+        <guid>https://sibunglon.com/2020/07/26/allow-user-to-access-the-homepage-after-login-in-open-edx/</guid>
+        <description>By default, after user login into LMS, user cannot see the homepage. They always redirected to their dashboard.
 What if i want to set user can see the homepage, even after they are logged in?
 This can be set in lms.env.json, by putting this config inside block ”FEATURES” :
 &amp;quot;ALWAYS_REDIRECT_HOMEPAGE_TO_DASHBOARD_FOR_AUTHENTICATED_USER&amp;quot;: false
 After that, restart your edxapp lms service to see the changes.
-Thats it. Now you can see the homepage after user logged in.</description></item><item><title>SOLVE - SMTP Open edX Timeout</title><link>https://sibunglon.com/2020/07/26/solve-smtp-open-edx-timeout/</link><pubDate>Sun, 26 Jul 2020 17:21:39 +0800</pubDate><guid>https://sibunglon.com/2020/07/26/solve-smtp-open-edx-timeout/</guid><description>By default in Open edX, the system will send an email when a new user registers, using the forget password or other conditions.
+Thats it. Now you can see the homepage after user logged in.</description>
+      </item>
+    
+      <item>
+        <title>SOLVE - SMTP Open edX Timeout</title>
+        <link>https://sibunglon.com/2020/07/26/solve-smtp-open-edx-timeout/</link>
+        <pubDate>Sun, 26 Jul 2020 17:21:39 +0800</pubDate>
+        <guid>https://sibunglon.com/2020/07/26/solve-smtp-open-edx-timeout/</guid>
+        <description>By default in Open edX, the system will send an email when a new user registers, using the forget password or other conditions.
 A few days ago my teams found an issue on the email sending service, but the issue was not because of the Open edX SMTP service but from the connection side of the Open edX server to the SMTP server.
 Then what&amp;rsquo;s the case?
 Case:
--) When a user registers, the user should receive an email to activate the account, but in reality it is not.</description></item><item><title>Fixing Issue Celery Open edX Setelah Migrasi Instance</title><link>https://sibunglon.com/2020/04/19/fixing-issue-celery-open-edx-setelah-migrasi-instance/</link><pubDate>Sun, 19 Apr 2020 22:38:14 +0700</pubDate><guid>https://sibunglon.com/2020/04/19/fixing-issue-celery-open-edx-setelah-migrasi-instance/</guid><description>Beberapa hari yang lalu saya memindahkan instance Open edX dan beberapa menit setelah server aktif, Open edX tidak bisa diakses. Cek servicenya, tetapi semua service dalam keadaan aktif namun ketika melihat lognya, ternyata ada error pada celery, kurang lebih errornya seperti berikut:
-$ sudo tail -f /edx/var/log/{lms,cms,nginx}/*log ==&amp;gt; /edx/var/log/lms/edx.log &amp;lt;== Apr 12 02:21:16 beep [service_variant=lms][celery.worker.consumer][env:sandbox] ERROR [beep 1400] [consumer.py:364] - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 104] Connection reset by peer.</description></item><item><title>Setup HTTPS on Open edX Using Certbot</title><link>https://sibunglon.com/2020/01/04/setup-https-on-open-edx-using-certbot/</link><pubDate>Sat, 04 Jan 2020 02:54:23 +0700</pubDate><guid>https://sibunglon.com/2020/01/04/setup-https-on-open-edx-using-certbot/</guid><description>By default Open edX does not provide an SSL configuration, but we can add it manually. As per the topic of this article, here I will enable HTTPS on Open edX using Certbot.
+-) When a user registers, the user should receive an email to activate the account, but in reality it is not.</description>
+      </item>
+    
+      <item>
+        <title>Fixing Issue Celery Open edX Setelah Migrasi Instance</title>
+        <link>https://sibunglon.com/2020/04/19/fixing-issue-celery-open-edx-setelah-migrasi-instance/</link>
+        <pubDate>Sun, 19 Apr 2020 22:38:14 +0700</pubDate>
+        <guid>https://sibunglon.com/2020/04/19/fixing-issue-celery-open-edx-setelah-migrasi-instance/</guid>
+        <description>Beberapa hari yang lalu saya memindahkan instance Open edX dan beberapa menit setelah server aktif, Open edX tidak bisa diakses. Cek servicenya, tetapi semua service dalam keadaan aktif namun ketika melihat lognya, ternyata ada error pada celery, kurang lebih errornya seperti berikut:
+$ sudo tail -f /edx/var/log/{lms,cms,nginx}/*log ==&amp;gt; /edx/var/log/lms/edx.log &amp;lt;== Apr 12 02:21:16 beep [service_variant=lms][celery.worker.consumer][env:sandbox] ERROR [beep 1400] [consumer.py:364] - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 104] Connection reset by peer.</description>
+      </item>
+    
+      <item>
+        <title>Setup HTTPS on Open edX Using Certbot</title>
+        <link>https://sibunglon.com/2020/01/04/setup-https-on-open-edx-using-certbot/</link>
+        <pubDate>Sat, 04 Jan 2020 02:54:23 +0700</pubDate>
+        <guid>https://sibunglon.com/2020/01/04/setup-https-on-open-edx-using-certbot/</guid>
+        <description>By default Open edX does not provide an SSL configuration, but we can add it manually. As per the topic of this article, here I will enable HTTPS on Open edX using Certbot.
 Certbot is a new breakthrough from the Let&amp;rsquo;s Encrypt Web Security Certificate Provider where Lets Encrypt provides SSL for free.
-Note: In the following example, in Open edX I point Course Management System (CMS) using the domain studio.</description></item><item><title>Fixing Problems on Installations Open edX Ficus</title><link>https://sibunglon.com/2019/12/06/fixing-problems-on-installations-open-edx-ficus/</link><pubDate>Fri, 06 Dec 2019 13:13:00 +0700</pubDate><guid>https://sibunglon.com/2019/12/06/fixing-problems-on-installations-open-edx-ficus/</guid><description>What is the problem? Ficus is a name of Open edX release which was released on February 23, 2017. It&amp;rsquo;s been quite a long time, and automatically uses old packages or packages that are still active at that time. Last September, my friends asked me to install Open edX Ficus, because it&amp;rsquo;s an old version so I tried to install it in another VM, I made a VM on the Google Cloud Platform.</description></item><item><title>Create New Super User for Access Django Admin Interface Open edX</title><link>https://sibunglon.com/2019/07/15/create-new-super-user-for-access-django-admin-interface-open-edx/</link><pubDate>Mon, 15 Jul 2019 03:09:25 +0700</pubDate><guid>https://sibunglon.com/2019/07/15/create-new-super-user-for-access-django-admin-interface-open-edx/</guid><description>I need to use the Django admin interface, but I don&amp;rsquo;t know what users can use to log in.
-Solution sudo -u edxapp bash source /edx/app/edxapp/edxapp_env python /edx/app/edxapp/edx-platform/manage.py --settings=aws createsuperuser</description></item><item><title>First Contribution to Open Source Project</title><link>https://sibunglon.com/2019/07/14/first-contribution-to-open-source-project/</link><pubDate>Sun, 14 Jul 2019 00:25:00 +0700</pubDate><guid>https://sibunglon.com/2019/07/14/first-contribution-to-open-source-project/</guid><description>Error Get Incommon Server CA (Certificate Authority) When Installing Open edX In the previous article or that is here, there was a quick acquaintance session with Open edX while playing with Open edX (Open edX installation). And there are also articles about errors during Open edX installation, can be seen in this article.
-Besides the errors in this article, this time I found a different error which was an error in getting an Authority Certificate.</description></item><item><title>Open edX Error Create Service Worker Users</title><link>https://sibunglon.com/2019/07/13/open-edx-error-create-service-worker-users/</link><pubDate>Sat, 13 Jul 2019 23:01:19 +0700</pubDate><guid>https://sibunglon.com/2019/07/13/open-edx-error-create-service-worker-users/</guid><description>Error Create Service Worker Users When Installing Open edX In the previous article or that is here, there was a quick acquaintance session with Open edX while playing with Open edX (Open edX installation).
-I myself had an error when installing Open EdX, the error was the same as in the title of this article which failed to make service worker users. I was made confused by this error, even with this error I repeatedly did the Open edX installation process.</description></item><item><title>Install Open edX Using Method Native Installation | Ubuntu 16.04</title><link>https://sibunglon.com/2019/07/13/install-open-edx-using-method-native-installation-ubuntu-16.04/</link><pubDate>Sat, 13 Jul 2019 21:47:47 +0700</pubDate><guid>https://sibunglon.com/2019/07/13/install-open-edx-using-method-native-installation-ubuntu-16.04/</guid><description>About Open edX Open edX is the massively scalable learning software platform behind edX. edX is the online learning destination founded by Harvard and MIT in 2012.
+ Note: In the following example, in Open edX I point Course Management System (CMS) using the domain studio.</description>
+      </item>
+    
+      <item>
+        <title>Fixing Problems on Installations Open edX Ficus</title>
+        <link>https://sibunglon.com/2019/12/06/fixing-problems-on-installations-open-edx-ficus/</link>
+        <pubDate>Fri, 06 Dec 2019 13:13:00 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/12/06/fixing-problems-on-installations-open-edx-ficus/</guid>
+        <description>What is the problem? Ficus is a name of Open edX release which was released on February 23, 2017. It&amp;rsquo;s been quite a long time, and automatically uses old packages or packages that are still active at that time. Last September, my friends asked me to install Open edX Ficus, because it&amp;rsquo;s an old version so I tried to install it in another VM, I made a VM on the Google Cloud Platform.</description>
+      </item>
+    
+      <item>
+        <title>Create New Super User for Access Django Admin Interface Open edX</title>
+        <link>https://sibunglon.com/2019/07/15/create-new-super-user-for-access-django-admin-interface-open-edx/</link>
+        <pubDate>Mon, 15 Jul 2019 03:09:25 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/07/15/create-new-super-user-for-access-django-admin-interface-open-edx/</guid>
+        <description>I need to use the Django admin interface, but I don&amp;rsquo;t know what users can use to log in.
+Solution sudo -u edxapp bash source /edx/app/edxapp/edxapp_env python /edx/app/edxapp/edx-platform/manage.py --settings=aws createsuperuser </description>
+      </item>
+    
+      <item>
+        <title>First Contribution to Open Source Project</title>
+        <link>https://sibunglon.com/2019/07/14/first-contribution-to-open-source-project/</link>
+        <pubDate>Sun, 14 Jul 2019 00:25:00 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/07/14/first-contribution-to-open-source-project/</guid>
+        <description>Error Get Incommon Server CA (Certificate Authority) When Installing Open edX In the previous article or that is here, there was a quick acquaintance session with Open edX while playing with Open edX (Open edX installation). And there are also articles about errors during Open edX installation, can be seen in this article.
+Besides the errors in this article, this time I found a different error which was an error in getting an Authority Certificate.</description>
+      </item>
+    
+      <item>
+        <title>Open edX Error Create Service Worker Users</title>
+        <link>https://sibunglon.com/2019/07/13/open-edx-error-create-service-worker-users/</link>
+        <pubDate>Sat, 13 Jul 2019 23:01:19 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/07/13/open-edx-error-create-service-worker-users/</guid>
+        <description>Error Create Service Worker Users When Installing Open edX In the previous article or that is here, there was a quick acquaintance session with Open edX while playing with Open edX (Open edX installation).
+I myself had an error when installing Open EdX, the error was the same as in the title of this article which failed to make service worker users. I was made confused by this error, even with this error I repeatedly did the Open edX installation process.</description>
+      </item>
+    
+      <item>
+        <title>Install Open edX Using Method Native Installation | Ubuntu 16.04</title>
+        <link>https://sibunglon.com/2019/07/13/install-open-edx-using-method-native-installation-ubuntu-16.04/</link>
+        <pubDate>Sat, 13 Jul 2019 21:47:47 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/07/13/install-open-edx-using-method-native-installation-ubuntu-16.04/</guid>
+        <description>About Open edX Open edX is the massively scalable learning software platform behind edX. edX is the online learning destination founded by Harvard and MIT in 2012.
 edX offers high-quality courses from the world’s best universities and institutions to learners everywhere. It is the only leading MOOC provider that is both nonprofit and open source. The edX mission is to:
-Increase access to high-quality education for everyone, everywhere Enhance teaching and learning on campus and online Advance teaching and learning through research Play with Open edX How to use Open edX in my own environment?</description></item></channel></rss>
+ Increase access to high-quality education for everyone, everywhere Enhance teaching and learning on campus and online Advance teaching and learning through research  Play with Open edX How to use Open edX in my own environment?</description>
+      </item>
+    
+  </channel>
+</rss>

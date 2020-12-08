@@ -1,22 +1,218 @@
-<!doctype html><html lang=en-us itemscope itemtype=http://schema.org/WebPage><head><title>Backup and Restore Mikrotik</title><meta http-equiv=cache-control content="public, max-age=31536000"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=author content="Faizar Septiawan"><meta name=description content="Read - Search - Ask | Personal Site | Catch your problem solution or read interesting stories on my blog!"><meta name=keywords content="Linux,Unix,BSD,MacOS,Komunitas Pengguna Linux Indonesia,KPLI Klaten,KPLI Bulukumba,MikroTik,MikroTik Indonesia,FreeBSD,FreeBSD Indonesia,Cisco,Cisco Indonesia,BLC Telkom Klaten,Ansible,Nginx,Apache2,Caddy Server,Ayo Belajar Linux,Cloud Computing,e-Learning,Open edX,Proxmox,Sendy,Microsoft SQL Server,MySQL,PostgreSQL,Lets Encrypt,Case Study,Atlassian,Virtualization,Faizar Septiawan,Icar,siBunglonGanteng,siBunglonLabs,Orang Ganteng"><meta name=google-site-verification content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-110194945-3"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','UA-110194945-3');</script><link rel=stylesheet href=/assets/css/external.min.css media=screen><link rel=stylesheet href=/assets/css/styles.css media=screen><link href=/assets/custom/googlefonts/roboto.css rel=stylesheet><link rel=apple-touch-icon-precomposed sizes=144x144 href=/src/images/apple-touch-icon.png><link rel="shortcut icon" href=/src/images/favicon.ico><link href=/posts/index.xml rel=alternate type=application/rss+xml title="The Official Site of siBunglon"><meta property="og:title" content="Backup and Restore Mikrotik"><meta property="og:description" content="1. Pendahuluan
+<!DOCTYPE html>
+<html lang="en-us" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+  <title>Backup and Restore Mikrotik</title>
+  
+  <meta http-equiv="cache-control" content="public, max-age=31536000" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Faizar Septiawan">
+  <meta name="description" content="Read - Search - Ask | Personal Site | Catch your problem solution or read interesting stories on my blog!">
+  <meta name="keywords" content="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng">
+  
+  
+  
+  <meta name="google-site-verification" content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM" />
+  
+  
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110194945-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110194945-3');
+  </script>
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/css/external.min.css" media="screen">
+  
+  
+  <link rel="stylesheet" href="/assets/css/styles.css" media="screen">
+  <link href="/assets/custom/googlefonts/roboto.css" rel="stylesheet">
+  
+
+  
+  
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/src/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="/src/images/favicon.ico">
+  
+
+  
+  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
+
+  <meta property="og:title" content="Backup and Restore Mikrotik" />
+<meta property="og:description" content="1. Pendahuluan
 A. Pengertian
 Di bidang teknologi informasi, backup, atau proses back up, mengacu pada penyalinan dan pengarsipan data sehingga bisa digunakan untuk mengembalikan dokumen asli setelah terjadi peristiwa kehilangan data. Bentuk kata kerja adalah untuk membuat cadangan dua kata, sedangkan kata benda adalah cadangan.
 Restore , mengacu pada proses pengembalian data menggunakan file backup.
 B. Latar Belakang
 Membackup data mikrotik agar saat perangkat rusak kita punya salinan konfigurasinya.
-C. Hasil Yang Diharapkan"><meta property="og:type" content="article"><meta property="og:url" content="https://sibunglon.com/2017/09/22/backup-and-restore-mikrotik/"><meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"><meta property="article:published_time" content="2017-09-22T03:39:00+00:00"><meta property="article:modified_time" content="2017-09-22T03:39:00+00:00"><meta property="og:site_name" content="The Official Site of siBunglon"><meta itemprop=name content="Backup and Restore Mikrotik"><meta itemprop=description content="1. Pendahuluan
+C. Hasil Yang Diharapkan" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sibunglon.com/2017/09/22/backup-and-restore-mikrotik/" />
+<meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"/>
+<meta property="article:published_time" content="2017-09-22T03:39:00+00:00" />
+<meta property="article:modified_time" content="2017-09-22T03:39:00+00:00" /><meta property="og:site_name" content="The Official Site of siBunglon" />
+
+  <meta itemprop="name" content="Backup and Restore Mikrotik">
+<meta itemprop="description" content="1. Pendahuluan
 A. Pengertian
 Di bidang teknologi informasi, backup, atau proses back up, mengacu pada penyalinan dan pengarsipan data sehingga bisa digunakan untuk mengembalikan dokumen asli setelah terjadi peristiwa kehilangan data. Bentuk kata kerja adalah untuk membuat cadangan dua kata, sedangkan kata benda adalah cadangan.
 Restore , mengacu pada proses pengembalian data menggunakan file backup.
 B. Latar Belakang
 Membackup data mikrotik agar saat perangkat rusak kita punya salinan konfigurasinya.
-C. Hasil Yang Diharapkan"><meta itemprop=datePublished content="2017-09-22T03:39:00+00:00"><meta itemprop=dateModified content="2017-09-22T03:39:00+00:00"><meta itemprop=wordCount content="224"><meta itemprop=image content="https://sibunglon.com/assets/img/profil.webp"><meta itemprop=keywords content="BLC Telkom Klaten,MikroTik,"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://sibunglon.com/assets/img/profil.webp"><meta name=twitter:title content="Backup and Restore Mikrotik"><meta name=twitter:description content="1. Pendahuluan
+C. Hasil Yang Diharapkan">
+<meta itemprop="datePublished" content="2017-09-22T03:39:00+00:00" />
+<meta itemprop="dateModified" content="2017-09-22T03:39:00+00:00" />
+<meta itemprop="wordCount" content="224">
+<meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
+
+
+
+<meta itemprop="keywords" content="BLC Telkom Klaten,MikroTik," />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://sibunglon.com/assets/img/profil.webp"/>
+
+<meta name="twitter:title" content="Backup and Restore Mikrotik"/>
+<meta name="twitter:description" content="1. Pendahuluan
 A. Pengertian
 Di bidang teknologi informasi, backup, atau proses back up, mengacu pada penyalinan dan pengarsipan data sehingga bisa digunakan untuk mengembalikan dokumen asli setelah terjadi peristiwa kehilangan data. Bentuk kata kerja adalah untuk membuat cadangan dua kata, sedangkan kata benda adalah cadangan.
 Restore , mengacu pada proses pengembalian data menggunakan file backup.
 B. Latar Belakang
 Membackup data mikrotik agar saat perangkat rusak kita punya salinan konfigurasinya.
-C. Hasil Yang Diharapkan"><script defer src=/assets/custom/fontawesome-5.15.1/js/all.min.js></script></head><body><nav><a href=/>siBunglon</a></nav><main class=container><article><header><small><span class=date>September 22, 2017</span></small><h1>Backup and Restore Mikrotik</h1></header><section><p><strong>1. Pendahuluan</strong></p><p><strong>A. Pengertian</strong></p><p>Di bidang teknologi informasi, backup, atau proses back up, mengacu pada penyalinan dan pengarsipan data sehingga bisa digunakan untuk mengembalikan dokumen asli setelah terjadi peristiwa kehilangan data. Bentuk kata kerja adalah untuk membuat cadangan dua kata, sedangkan kata benda adalah cadangan.</p><p>Restore , mengacu pada proses pengembalian data menggunakan file backup.</p><p><strong>B. Latar Belakang</strong></p><p>Membackup data mikrotik agar saat perangkat rusak kita punya salinan konfigurasinya.</p><p><strong>C. Hasil Yang Diharapkan</strong></p><p>Dapat melakukan Backup dan restore untuk menyalin data konfigurasi, dan mengembalikannya jika perangkat ganti (versi perangkat sama dengan yang lama).</p><p><strong>2. Alat dan Bahan</strong></p><ul><li>Router Mikrotik</li><li>Kabel Lan</li><li>Laptop</li></ul><p><strong>3. jangka Waktu Pelaksanaan : 30 Menit</strong></p><p><strong>4. Langkah - Langkah Pelaksanaan</strong></p><p>A. buka winbox , untuk konfigurasi mikrotik</p><p>B. Masuk ke menu file</p><p>C. Lalu klik backup</p><p>D. Isikan nama untuk file backup dan password (untuk password bisa dikosongkan) , tunggu hingga backup selesai. File Backup Bisa di download melalui FTP.</p><p>E. Untuk Restore sama masuk kemenu file lalu pilih fileyang akan direstores lalu tunggu hingga restore selesai.</p><p><strong>5. Hasil Yang Didapat</strong></p><p>Berhasil Melakukan backup dan restore</p><p><strong>6. Kesimpulan</strong></p><p>Backup dan restore pada mikrotik dapat kita manfaatkan untuk menyalin data konfigurasi agar saat perangkat rusak kita punya masi punya konfigurasinya , dan kita dapat merestore nya ke perangkat baru . dengan catatan perangkatr dengan versi yang sama.</p><p><strong>7. Referensi</strong></p><p><a href=https://mikrotik.co.id.wikipedia.org/wiki/Backup>https://mikrotik.co.id.wikipedia.org/wiki/Backup</a></p><p><a href=http://mikrotik.co.id/>mikrotik.co.id</a></p></section><footer><hr><div class=meta><p class=tags><a href=/tags/blc-telkom-klaten><span>#</span>BLC Telkom Klaten</a>
-<a href=/tags/mikrotik><span>#</span>MikroTik</a></p></div><hr><div id=disqus_thread></div><script type=application/javascript>var disqus_config=function(){};(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return;}
-var d=document,s=d.createElement('script');s.async=true;s.src='//'+"sibunglonlabs"+'.disqus.com/embed.js';s.setAttribute('data-timestamp',+new Date());(d.head||d.body).appendChild(s);})();</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></footer></article></main><footer><p>&copy; 2020 Faizar Septiawan. <a href=http://creativecommons.org/licenses/by-sa/4.0/>Some Rights Reserved</a>.</p><p>Powered by <a href=https://gohugo.io title="A Fast and Flexible Website Generator">Hugo</a> & <a href=https://github.com/eshlox/simplicity title="Hugo theme">Simplicity</a>.</p></footer><script src=/assets/js/scripts.min.js></script><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-110194945-3','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script></body></html>
+C. Hasil Yang Diharapkan"/>
+
+  
+
+  
+  <script defer src="/assets/custom/fontawesome-5.15.1/js/all.min.js"></script>
+  
+</head>
+
+  <body>
+    
+      <nav>
+  <a href="/">
+    siBunglon
+  </a>
+</nav>
+
+    
+    <main class="container">
+      
+  <article>
+    <header>
+      <small>
+        <span class="date">September 22, 2017</span></small>
+      <h1>Backup and Restore Mikrotik</h1>
+    </header>
+    <section><p><strong>1. Pendahuluan</strong></p>
+<p><strong>A. Pengertian</strong></p>
+<p>Di bidang teknologi informasi, backup, atau proses back up, mengacu pada penyalinan dan pengarsipan data sehingga bisa digunakan untuk mengembalikan dokumen asli setelah terjadi peristiwa kehilangan data. Bentuk kata kerja adalah untuk membuat cadangan dua kata, sedangkan kata benda adalah cadangan.</p>
+<p>Restore , mengacu pada proses pengembalian data menggunakan file backup.</p>
+<p><strong>B. Latar Belakang</strong></p>
+<p>Membackup data mikrotik agar saat perangkat rusak kita punya salinan konfigurasinya.</p>
+<p><strong>C. Hasil Yang Diharapkan</strong></p>
+<p>Dapat melakukan Backup dan restore untuk menyalin data konfigurasi, dan mengembalikannya jika perangkat ganti (versi perangkat sama dengan yang lama).</p>
+<p><strong>2. Alat dan Bahan</strong></p>
+<ul>
+<li>Router Mikrotik</li>
+<li>Kabel Lan</li>
+<li>Laptop</li>
+</ul>
+<p><strong>3. jangka Waktu Pelaksanaan : 30 Menit</strong></p>
+<p><strong>4. Langkah - Langkah Pelaksanaan</strong></p>
+<p>A. buka winbox , untuk konfigurasi mikrotik</p>
+<p>B. Masuk ke menu file</p>
+<p>C. Lalu klik backup</p>
+<p>D. Isikan nama untuk file backup dan password (untuk password bisa dikosongkan) , tunggu hingga backup selesai. File Backup Bisa di download melalui FTP.</p>
+<p>E. Untuk Restore sama masuk kemenu file lalu pilih fileyang akan direstores lalu tunggu hingga restore selesai.</p>
+<p><strong>5. Hasil Yang Didapat</strong></p>
+<p>Berhasil Melakukan backup dan restore</p>
+<p><strong>6. Kesimpulan</strong></p>
+<p>Backup dan restore pada mikrotik dapat kita manfaatkan untuk menyalin data konfigurasi agar saat perangkat rusak kita punya masi punya konfigurasinya , dan kita dapat merestore nya ke perangkat baru . dengan catatan perangkatr dengan versi yang sama.</p>
+<p><strong>7. Referensi</strong></p>
+<p><a href="https://mikrotik.co.id.wikipedia.org/wiki/Backup">https://mikrotik.co.id.wikipedia.org/wiki/Backup</a></p>
+<p><a href="http://mikrotik.co.id/">mikrotik.co.id</a></p>
+</section>
+    <footer>
+      <hr>
+      <div class="meta">
+        <p class="tags">
+          
+            
+              <a href="/tags/blc-telkom-klaten">
+                <span>#</span>BLC Telkom Klaten</a>
+            
+              <a href="/tags/mikrotik">
+                <span>#</span>MikroTik</a>
+            
+          
+        </p>
+      </div>
+      <hr>
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sibunglonlabs" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </footer>
+  </article>
+
+    </main>
+    
+      <footer>
+  <p>
+    &copy; 2020 Faizar Septiawan. <a href="http://creativecommons.org/licenses/by-sa/4.0/">Some Rights Reserved</a>.
+  </p>
+  <p>
+    Powered by <a href="https://gohugo.io" title="A Fast and Flexible Website Generator">Hugo</a> &amp; <a href="https://github.com/eshlox/simplicity" title="Hugo theme">Simplicity</a>.
+  </p>
+</footer>
+
+    
+    
+    
+    
+    
+    
+    
+    <script src="/assets/js/scripts.min.js"></script>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-110194945-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>

@@ -1,11 +1,72 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>macOS on The Official Site of siBunglon</title><link>https://sibunglon.com/tags/macos/</link><description>Recent content in macOS on The Official Site of siBunglon</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 10 Feb 2020 08:50:36 +0700</lastBuildDate><atom:link href="https://sibunglon.com/tags/macos/index.xml" rel="self" type="application/rss+xml"/><item><title>Quick Setup Go on macOS</title><link>https://sibunglon.com/2020/02/10/quick-setup-go-on-macos/</link><pubDate>Mon, 10 Feb 2020 08:50:36 +0700</pubDate><guid>https://sibunglon.com/2020/02/10/quick-setup-go-on-macos/</guid><description>Go, also known as Golang, is a statically typed, compiled programming language designed at Google by Robert Griesemer, Rob Pike, and Ken Thompson. Go is syntactically similar to C, but with memory safety, garbage collection, structural typing, and CSP-style concurrency.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>macOS on The Official Site of siBunglon</title>
+    <link>https://sibunglon.com/tags/macos/</link>
+    <description>Recent content in macOS on The Official Site of siBunglon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 Feb 2020 08:50:36 +0700</lastBuildDate>
+    
+      <atom:link href="https://sibunglon.com/tags/macos/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      <item>
+        <title>Quick Setup Go on macOS</title>
+        <link>https://sibunglon.com/2020/02/10/quick-setup-go-on-macos/</link>
+        <pubDate>Mon, 10 Feb 2020 08:50:36 +0700</pubDate>
+        <guid>https://sibunglon.com/2020/02/10/quick-setup-go-on-macos/</guid>
+        <description>Go, also known as Golang, is a statically typed, compiled programming language designed at Google by Robert Griesemer, Rob Pike, and Ken Thompson. Go is syntactically similar to C, but with memory safety, garbage collection, structural typing, and CSP-style concurrency.
 Go is an open source programming language that makes it easy to build simple, reliable, and efficient software.
-Install go with homebrew $ brew install go Setup go environment Edit the bash profile file used, edit the ~/.</description></item><item><title>Install Homebrew on MacOS</title><link>https://sibunglon.com/2020/02/10/install-homebrew-on-macos/</link><pubDate>Mon, 10 Feb 2020 08:49:00 +0700</pubDate><guid>https://sibunglon.com/2020/02/10/install-homebrew-on-macos/</guid><description>Homebrew is a package manager that can be used on macOS or Linux. Homebrew on macOS can be assumed as an apt in the Debian family, yum in the CentOS family, and others.
+ Install go with homebrew  $ brew install go Setup go environment  Edit the bash profile file used, edit the ~/.</description>
+      </item>
+    
+      <item>
+        <title>Install Homebrew on MacOS</title>
+        <link>https://sibunglon.com/2020/02/10/install-homebrew-on-macos/</link>
+        <pubDate>Mon, 10 Feb 2020 08:49:00 +0700</pubDate>
+        <guid>https://sibunglon.com/2020/02/10/install-homebrew-on-macos/</guid>
+        <description>Homebrew is a package manager that can be used on macOS or Linux. Homebrew on macOS can be assumed as an apt in the Debian family, yum in the CentOS family, and others.
 To install Homebrew, it&amp;rsquo;s very easy to just run the following command.
-$ /usr/bin/ruby -e &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;#34; Wait until the installation process is complete and the brew is ready to use.</description></item><item><title>Downgrade and Install Node Spesific Version on macOS</title><link>https://sibunglon.com/2020/01/26/downgrade-and-install-node-spesific-version-on-macos/</link><pubDate>Sun, 26 Jan 2020 22:38:33 +0700</pubDate><guid>https://sibunglon.com/2020/01/26/downgrade-and-install-node-spesific-version-on-macos/</guid><description>A few days ago, i want to build a frontend project that my friend has made, the project is built using vue, when installing dependencies or packages needed, the installation process stops because there are packages that cannot be installed. At that time, I used node version 13.
-Does the node version in the development environment need to be upgraded? I don&amp;rsquo;t think that&amp;rsquo;s the right solution because it might require so much effort.</description></item><item><title>Disable FortiClient Auto Start on macOS</title><link>https://sibunglon.com/2019/12/29/disable-forticlient-auto-start-on-macos/</link><pubDate>Sun, 29 Dec 2019 20:09:28 +0700</pubDate><guid>https://sibunglon.com/2019/12/29/disable-forticlient-auto-start-on-macos/</guid><description>Open terminal or shell.
-Open the file /Library/LaunchAgents/com.fortinet.forticlient.fct_launcher.plist using your favorite text editor, here I use vim.
-$ sudo vi /Library/LaunchAgents/com.fortinet.forticlient.fct_launcher.plist Default contents of the com.fortinet.forticlient.fct_launcher.plist file as follows. &amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt; &amp;lt;!DOCTYPE plist PUBLIC &amp;#34;-//Apple//DTD PLIST 1.0//EN&amp;#34; &amp;#34;http://www.apple.com/DTDs/PropertyList-1.0.dtd&amp;#34;&amp;gt; &amp;lt;plist version=&amp;#34;1.0&amp;#34;&amp;gt; &amp;lt;dict&amp;gt; &amp;lt;key&amp;gt;Label&amp;lt;/key&amp;gt; &amp;lt;string&amp;gt;com.fortinet.fct_launcher&amp;lt;/string&amp;gt; &amp;lt;key&amp;gt;Program&amp;lt;/key&amp;gt; &amp;lt;string&amp;gt;/Library/Application Support/Fortinet/FortiClient/bin/FCTLauncher&amp;lt;/string&amp;gt; &amp;lt;key&amp;gt;RunAtLoad&amp;lt;/key&amp;gt; &amp;lt;true/&amp;gt; &amp;lt;/dict&amp;gt; &amp;lt;/plist&amp;gt; Change the word true to false, so that the contents of the com.</description></item><item><title>Automatic Remove .DS_Store on macOS</title><link>https://sibunglon.com/2019/12/29/automatic-remove-.ds_store-on-macos/</link><pubDate>Sun, 29 Dec 2019 19:37:51 +0700</pubDate><guid>https://sibunglon.com/2019/12/29/automatic-remove-.ds_store-on-macos/</guid><description>In the Apple macOS operating system, .DS_Store is a file that stores custom attributes of its containing folder, such as the position of icons or the choice of a background image. The name is an abbreviation of Desktop Services Store.
+$ /usr/bin/ruby -e &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;#34; Wait until the installation process is complete and the brew is ready to use.</description>
+      </item>
+    
+      <item>
+        <title>Downgrade and Install Node Spesific Version on macOS</title>
+        <link>https://sibunglon.com/2020/01/26/downgrade-and-install-node-spesific-version-on-macos/</link>
+        <pubDate>Sun, 26 Jan 2020 22:38:33 +0700</pubDate>
+        <guid>https://sibunglon.com/2020/01/26/downgrade-and-install-node-spesific-version-on-macos/</guid>
+        <description>A few days ago, i want to build a frontend project that my friend has made, the project is built using vue, when installing dependencies or packages needed, the installation process stops because there are packages that cannot be installed. At that time, I used node version 13.
+Does the node version in the development environment need to be upgraded? I don&amp;rsquo;t think that&amp;rsquo;s the right solution because it might require so much effort.</description>
+      </item>
+    
+      <item>
+        <title>Disable FortiClient Auto Start on macOS</title>
+        <link>https://sibunglon.com/2019/12/29/disable-forticlient-auto-start-on-macos/</link>
+        <pubDate>Sun, 29 Dec 2019 20:09:28 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/12/29/disable-forticlient-auto-start-on-macos/</guid>
+        <description>Open terminal or shell.
+  Open the file /Library/LaunchAgents/com.fortinet.forticlient.fct_launcher.plist using your favorite text editor, here I use vim.
+  $ sudo vi /Library/LaunchAgents/com.fortinet.forticlient.fct_launcher.plist Default contents of the com.fortinet.forticlient.fct_launcher.plist file as follows.  &amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt; &amp;lt;!DOCTYPE plist PUBLIC &amp;#34;-//Apple//DTD PLIST 1.0//EN&amp;#34; &amp;#34;http://www.apple.com/DTDs/PropertyList-1.0.dtd&amp;#34;&amp;gt; &amp;lt;plist version=&amp;#34;1.0&amp;#34;&amp;gt; &amp;lt;dict&amp;gt; &amp;lt;key&amp;gt;Label&amp;lt;/key&amp;gt; &amp;lt;string&amp;gt;com.fortinet.fct_launcher&amp;lt;/string&amp;gt; &amp;lt;key&amp;gt;Program&amp;lt;/key&amp;gt; &amp;lt;string&amp;gt;/Library/Application Support/Fortinet/FortiClient/bin/FCTLauncher&amp;lt;/string&amp;gt; &amp;lt;key&amp;gt;RunAtLoad&amp;lt;/key&amp;gt; &amp;lt;true/&amp;gt; &amp;lt;/dict&amp;gt; &amp;lt;/plist&amp;gt; Change the word true to false, so that the contents of the com.</description>
+      </item>
+    
+      <item>
+        <title>Automatic Remove .DS_Store on macOS</title>
+        <link>https://sibunglon.com/2019/12/29/automatic-remove-.ds_store-on-macos/</link>
+        <pubDate>Sun, 29 Dec 2019 19:37:51 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/12/29/automatic-remove-.ds_store-on-macos/</guid>
+        <description>In the Apple macOS operating system, .DS_Store is a file that stores custom attributes of its containing folder, such as the position of icons or the choice of a background image. The name is an abbreviation of Desktop Services Store.
 But some people want to delete this file, including me. To delete this file simply run the following command in the macOS terminal or shell.
-$ find ~ -name .DS_Store -delete This will find the .</description></item><item><title>Add Trusted Site on macOS</title><link>https://sibunglon.com/2019/12/29/add-trusted-site-on-macos/</link><pubDate>Sun, 29 Dec 2019 14:07:36 +0700</pubDate><guid>https://sibunglon.com/2019/12/29/add-trusted-site-on-macos/</guid><description>There is a site that we may already trust but because the SSL certificate has expired or is invalid, we are prevented from accessing the site. In Google Chrome the advanced button will appear and there will be another proceed to site button that can help to access the site, but the proced to site button will be removed from Google Chrome macOS. Then how to access the site?
-Click Not Secure on the address bar&amp;gt; click Certificate &amp;gt; Then drag and drop the existing certificate into any directory.</description></item></channel></rss>
+$ find ~ -name .DS_Store -delete This will find the .</description>
+      </item>
+    
+      <item>
+        <title>Add Trusted Site on macOS</title>
+        <link>https://sibunglon.com/2019/12/29/add-trusted-site-on-macos/</link>
+        <pubDate>Sun, 29 Dec 2019 14:07:36 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/12/29/add-trusted-site-on-macos/</guid>
+        <description>There is a site that we may already trust but because the SSL certificate has expired or is invalid, we are prevented from accessing the site. In Google Chrome the advanced button will appear and there will be another proceed to site button that can help to access the site, but the proced to site button will be removed from Google Chrome macOS. Then how to access the site?
+ Click Not Secure on the address bar&amp;gt; click Certificate &amp;gt; Then drag and drop the existing certificate into any directory.</description>
+      </item>
+    
+  </channel>
+</rss>

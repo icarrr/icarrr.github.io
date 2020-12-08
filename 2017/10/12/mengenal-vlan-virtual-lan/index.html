@@ -1,13 +1,232 @@
-<!doctype html><html lang=en-us itemscope itemtype=http://schema.org/WebPage><head><title>Mengenal VLAN (Virtual LAN)</title><meta http-equiv=cache-control content="public, max-age=31536000"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=author content="Faizar Septiawan"><meta name=description content="Read - Search - Ask | Personal Site | Catch your problem solution or read interesting stories on my blog!"><meta name=keywords content="Linux,Unix,BSD,MacOS,Komunitas Pengguna Linux Indonesia,KPLI Klaten,KPLI Bulukumba,MikroTik,MikroTik Indonesia,FreeBSD,FreeBSD Indonesia,Cisco,Cisco Indonesia,BLC Telkom Klaten,Ansible,Nginx,Apache2,Caddy Server,Ayo Belajar Linux,Cloud Computing,e-Learning,Open edX,Proxmox,Sendy,Microsoft SQL Server,MySQL,PostgreSQL,Lets Encrypt,Case Study,Atlassian,Virtualization,Faizar Septiawan,Icar,siBunglonGanteng,siBunglonLabs,Orang Ganteng"><meta name=google-site-verification content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-110194945-3"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','UA-110194945-3');</script><link rel=stylesheet href=/assets/css/external.min.css media=screen><link rel=stylesheet href=/assets/css/styles.css media=screen><link href=/assets/custom/googlefonts/roboto.css rel=stylesheet><link rel=apple-touch-icon-precomposed sizes=144x144 href=/src/images/apple-touch-icon.png><link rel="shortcut icon" href=/src/images/favicon.ico><link href=/posts/index.xml rel=alternate type=application/rss+xml title="The Official Site of siBunglon"><meta property="og:title" content="Mengenal VLAN (Virtual LAN)"><meta property="og:description" content="A. Pendahuluan
+<!DOCTYPE html>
+<html lang="en-us" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+  <title>Mengenal VLAN (Virtual LAN)</title>
+  
+  <meta http-equiv="cache-control" content="public, max-age=31536000" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Faizar Septiawan">
+  <meta name="description" content="Read - Search - Ask | Personal Site | Catch your problem solution or read interesting stories on my blog!">
+  <meta name="keywords" content="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng">
+  
+  
+  
+  <meta name="google-site-verification" content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM" />
+  
+  
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110194945-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110194945-3');
+  </script>
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/css/external.min.css" media="screen">
+  
+  
+  <link rel="stylesheet" href="/assets/css/styles.css" media="screen">
+  <link href="/assets/custom/googlefonts/roboto.css" rel="stylesheet">
+  
+
+  
+  
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/src/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="/src/images/favicon.ico">
+  
+
+  
+  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
+
+  <meta property="og:title" content="Mengenal VLAN (Virtual LAN)" />
+<meta property="og:description" content="A. Pendahuluan
 Pada kesempatan kali ini ane akan share sedikit artikel tentang VLAN. Oke langsung saja silahkan disimak.
 1) Pengertian
-Virtual LAN atau disingkat VLAN merupakan sekelompok perangkat pada satu LAN atau lebih yang dikonfigurasikan (menggunakan perangkat lunak pengelolaan) sehingga dapat berkomunikasi seperti halnya bila perangkat tersebut terhubung ke jalur yang sama, padahal sebenarnya perangkat tersebut berada pada sejumlah segmen LAN yang berbeda. Vlan dibuat dengan menggunakan jaringan pihak ke tiga."><meta property="og:type" content="article"><meta property="og:url" content="https://sibunglon.com/2017/10/12/mengenal-vlan-virtual-lan/"><meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"><meta property="article:published_time" content="2017-10-12T09:08:00+00:00"><meta property="article:modified_time" content="2017-10-12T09:08:00+00:00"><meta property="og:site_name" content="The Official Site of siBunglon"><meta itemprop=name content="Mengenal VLAN (Virtual LAN)"><meta itemprop=description content="A. Pendahuluan
+Virtual LAN atau disingkat VLAN merupakan sekelompok perangkat pada satu LAN atau lebih yang dikonfigurasikan (menggunakan perangkat lunak pengelolaan) sehingga dapat berkomunikasi seperti halnya bila perangkat tersebut terhubung ke jalur yang sama, padahal sebenarnya perangkat tersebut berada pada sejumlah segmen LAN yang berbeda. Vlan dibuat dengan menggunakan jaringan pihak ke tiga." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sibunglon.com/2017/10/12/mengenal-vlan-virtual-lan/" />
+<meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"/>
+<meta property="article:published_time" content="2017-10-12T09:08:00+00:00" />
+<meta property="article:modified_time" content="2017-10-12T09:08:00+00:00" /><meta property="og:site_name" content="The Official Site of siBunglon" />
+
+  <meta itemprop="name" content="Mengenal VLAN (Virtual LAN)">
+<meta itemprop="description" content="A. Pendahuluan
 Pada kesempatan kali ini ane akan share sedikit artikel tentang VLAN. Oke langsung saja silahkan disimak.
 1) Pengertian
-Virtual LAN atau disingkat VLAN merupakan sekelompok perangkat pada satu LAN atau lebih yang dikonfigurasikan (menggunakan perangkat lunak pengelolaan) sehingga dapat berkomunikasi seperti halnya bila perangkat tersebut terhubung ke jalur yang sama, padahal sebenarnya perangkat tersebut berada pada sejumlah segmen LAN yang berbeda. Vlan dibuat dengan menggunakan jaringan pihak ke tiga."><meta itemprop=datePublished content="2017-10-12T09:08:00+00:00"><meta itemprop=dateModified content="2017-10-12T09:08:00+00:00"><meta itemprop=wordCount content="844"><meta itemprop=image content="https://sibunglon.com/assets/img/profil.webp"><meta itemprop=keywords content="BLC Telkom Klaten,Others,"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://sibunglon.com/assets/img/profil.webp"><meta name=twitter:title content="Mengenal VLAN (Virtual LAN)"><meta name=twitter:description content="A. Pendahuluan
+Virtual LAN atau disingkat VLAN merupakan sekelompok perangkat pada satu LAN atau lebih yang dikonfigurasikan (menggunakan perangkat lunak pengelolaan) sehingga dapat berkomunikasi seperti halnya bila perangkat tersebut terhubung ke jalur yang sama, padahal sebenarnya perangkat tersebut berada pada sejumlah segmen LAN yang berbeda. Vlan dibuat dengan menggunakan jaringan pihak ke tiga.">
+<meta itemprop="datePublished" content="2017-10-12T09:08:00+00:00" />
+<meta itemprop="dateModified" content="2017-10-12T09:08:00+00:00" />
+<meta itemprop="wordCount" content="844">
+<meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
+
+
+
+<meta itemprop="keywords" content="BLC Telkom Klaten,Others," />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://sibunglon.com/assets/img/profil.webp"/>
+
+<meta name="twitter:title" content="Mengenal VLAN (Virtual LAN)"/>
+<meta name="twitter:description" content="A. Pendahuluan
 Pada kesempatan kali ini ane akan share sedikit artikel tentang VLAN. Oke langsung saja silahkan disimak.
 1) Pengertian
-Virtual LAN atau disingkat VLAN merupakan sekelompok perangkat pada satu LAN atau lebih yang dikonfigurasikan (menggunakan perangkat lunak pengelolaan) sehingga dapat berkomunikasi seperti halnya bila perangkat tersebut terhubung ke jalur yang sama, padahal sebenarnya perangkat tersebut berada pada sejumlah segmen LAN yang berbeda. Vlan dibuat dengan menggunakan jaringan pihak ke tiga."><script defer src=/assets/custom/fontawesome-5.15.1/js/all.min.js></script></head><body><nav><a href=/>siBunglon</a></nav><main class=container><article><header><small><span class=date>October 12, 2017</span></small><h1>Mengenal VLAN (Virtual LAN)</h1></header><section><p><strong>A. Pendahuluan</strong></p><p>Pada kesempatan kali ini ane akan share sedikit artikel tentang VLAN. Oke langsung saja silahkan disimak.</p><p><strong>1) Pengertian</strong></p><p>Virtual LAN atau disingkat VLAN merupakan sekelompok perangkat pada satu LAN atau lebih yang dikonfigurasikan (menggunakan perangkat lunak pengelolaan) sehingga dapat berkomunikasi seperti halnya bila perangkat tersebut terhubung ke jalur yang sama, padahal sebenarnya perangkat tersebut berada pada sejumlah segmen LAN yang berbeda. Vlan dibuat dengan menggunakan jaringan pihak ke tiga. VLAN merupakan sebuah bagian kecil jaringan IP yang terpisah secara logik. VLAN memungkinkan beberapa jaringan IP dan jaringan-jaringan kecil (subnet) berada dalam jaringan switched switched yang sama. Agar computer bisa berkomunikasi pada VLAN yang sama, setiap computer harus memiliki sebuah alamat IP dan Subnet Mask yang sesuai dengan VLAN tersebut. Switch harus dikonfigurasi dengan VLAN dan setiap port dalam VLAN harus didaftarkan ke VLAN. Sebuah port switch yang telah dikonfigurasi dengan sebuah VLAN tunggal disebut sebagai access port.</p><p><strong>2) Latar Belakang</strong></p><p>Kuarangnya pengetahuan kita tentang VLAN padahal VLAN sangat penting.</p><p><strong>3) Maksud dan Tujuan</strong></p><p>Mengenalkan VLAn kepada para pembaca sekalian.</p><p><strong>4) Hasil yang Di Harapkan</strong></p><p>Mempunayi harapan agar pembaca dapat mengenal VLAN lebih dalam dan manfaatnya.</p><p><strong>B. Alat dan Bahan</strong></p><ul><li>PC/Laptop</li><li>Koneksi Internet (Bila perlu)</li></ul><p><strong>C. Jangka Waktu Pelaksanaan Kegiatan</strong></p><ul><li>10 Menit</li></ul><p><strong>D. Proses dan Tahapan Pelaksanaan Kegiatan</strong></p><p><strong>VLAN</strong></p><p>Vlan dibuat dengan menggunakan jaringan pihak ke tiga. VLAN merupakan sebuah bagian kecil jaringan IP yang terpisah secara logik. VLAN memungkinkan beberapa jaringan IP dan jaringan-jaringan kecil (subnet) berada dalam jaringan switched switched yang sama. Agar computer bisa berkomunikasi pada VLAN yang sama, setiap computer harus memiliki sebuah alamat IP dan Subnet Mask yang sesuai dengan VLAN tersebut. Switch harus dikonfigurasi dengan VLAN dan setiap port dalam VLAN harus didaftarkan ke VLAN. Sebuah port switch yang telah dikonfigurasi dengan sebuah VLAN tunggal disebut sebagai access port.</p><p>Sebuah VLAN memungkinkan seorang Administrator untuk menciptakan sekelompok peralatan yang secara logic dihubungkan satu sama lain. Dengan VLAN, kita dapat membagi jaringan switch secara logik berdasarkan fungsi, departemen atau project team.</p><p><strong>&#187; Keuntungan Menggunakan VLAN</strong></p><p>Penerapan sebuah teknologi VLAN memungkinkan sebuah jaringan menjadi lebih fleksibel untuk mendukung tujuan bisnis. Berikut ini beberapa keuntungan menggunakan VLAN:</p><ul><li>Security– Departemen yang memiliki data sensitive terpisah dari jaringan yang ada, akan mengurangi peluang pelanggaran akses ke informasi rahasia dan penting.</li><li>Cost reduction – Penghematan biaya dihasilkan dari tidak diperlukannya biaya yang mahal untuk upgrades jaringan dan efisiensi penggunaan bandwidth dan uplink yang tersedia.</li><li>Higher performance – Dengan membagi jaringan layer 2 menjadi beberapa worksgroup secara logik (broadcast domain) mengurangi trafik yang tidak diperlukan pada jaringan dan meningkatkan performa.</li><li>Broadcast storm mitigation – Dengan membagi sebuah jaringan menjadi VLAN mengurangi jumlah peralatan yang berpartisipasi dalam broadcast storm.</li><li>Improved IT staff efficiency – Dengan VLAN pengelolaan jaringan lebih mudah, karena user-user dengan kebutuhan jaringan yang sama berbagi VLAN yang sama.</li><li>Simpler project or application management – Memiliki fungsi-fungsi terpisah mempermudah pengelolaan sebuah project atau bekerja dengan aplikasi khusus.</li></ul><p><strong>&#187; Perbandingan VLAN dan LAN</strong></p><p>Bagi Anda yang terbiasa menggunakan jaringan internet tentunya tidak asing dengan istilah LAN. Namun apa pengertian LAN ini sebenarnya dan apa bedanya dengan VLAN? Untuk mengetahuinya mari kita simak berikut ini.</p><p>VLAN vs LAN merupakan dua istilah yang sering digunakan dalam bidang jaringan. LAN sendiri merupakan singkatan dari Local Area Network yang memiliki arti sebuah jaringan komputer dimana sejumlah besar komputer dan perangkat periferal lain terhubung ke dalam sebuah area geografis. Sedangkan VLAN atau Virtual Local Area Network merupakan implementasi dari subset pribadi LAN di mana komputer berinteraksi satu sama lain seolah-olah mereka terhubung ke domain broadcast yang sama terlepas dari lokasi fisik mereka.</p><p>Jika melihat perbedaan VLAN vs LAN, atribut dari LAN dan VLAN sebetulnya sama, namun stasiun akhir selalu digabungkan bersama-sama terlepas dari lokasinya. VLAN digunakan untuk membuat beberapa domain broadcast dalam switch. VLAN yang berbeda dapat dibuat untuk setiap segmen hanya dengan menggunakan satu saklar besar. Misal beberapa user yang bekerja dalam sebuah perusahaan namun dengan lantai yang berbeda dari gedung yang sama dapat dihubungkan ke LAN yang sama secara virtual.</p><p>VLAN dapat membantu untuk meminimalkan traffic bila dibandingkan dengan LAN tradisional. Sebagai contoh, jika broadcast traffic akan digunakan untuk sepuluh user, mereka dapat ditempatkan pada sepuluh VLAN yang berbeda yang pada gilirannya akan mengurangi traffic itu sendiri. Penggunaan VLAN dari LAN tradisional dapat menurunkan biaya sebagaimana VLAN menghilangkan kebutuhan router mahal.</p><p>Sementara pada LAN, router-lah yang memproses traffic masuk. Dengan VLAN, kebutuhan untuk router berkurang karena VLAN dapat membuat broadcast domain melalui switch bukan router.</p><p>Jaringan LAN memerlukan administrasi fisik sebagai lokasi perubahan user, kebutuhan untuk recabling, mengatasi stasiun baru, konfigurasi ulang router dan hub. Mobilitas user dalam jaringan menghasilkan biaya jaringan, sedangkan jika user bergerak dalam VLAN, pekerjaan administratif dapat dihilangkan karena tidak adanya kebutuhan untuk mengkonfigurasi ulang router. Selain itu, data yang disiarkan di VLAN lebih aman jika dibandingkan dengan LAN tradisional karena data sensitif hanya dapat diakses oleh user yang berada pada VLAN.</p><p><strong>E. Hasil yang Di Dapatkan</strong></p><p>Dapat mengenal tentang VLAN dan perbandingannya dengan LAN.</p><p><strong>F. Temuan Permasalahan</strong></p><p>Belum menemukan masalah saat mempelajari tentang VLAN.</p><p><strong>G. Kesimpulan</strong></p><p>Dapat disimpulkan VLAN dapat berguna untuk menambah interface secara &ldquo;Virtual&rdquo; di mikrotik.</p><p><strong>H. Referensi</strong></p><ul><li><a href=https://id.wikipedia.org/wiki/VLAN>https://id.wikipedia.org/wiki/VLAN</a></li><li><a href=http://www.plimbi.com/article/3357/ketahui-perbedaan-jaringan-vlan-vs-lan>http://www.plimbi.com/article/3357/ketahui-perbedaan-jaringan-vlan-vs-lan</a></li></ul></section><footer><hr><div class=meta><p class=tags><a href=/tags/blc-telkom-klaten><span>#</span>BLC Telkom Klaten</a>
-<a href=/tags/others><span>#</span>Others</a></p></div><hr><div id=disqus_thread></div><script type=application/javascript>var disqus_config=function(){};(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return;}
-var d=document,s=d.createElement('script');s.async=true;s.src='//'+"sibunglonlabs"+'.disqus.com/embed.js';s.setAttribute('data-timestamp',+new Date());(d.head||d.body).appendChild(s);})();</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></footer></article></main><footer><p>&copy; 2020 Faizar Septiawan. <a href=http://creativecommons.org/licenses/by-sa/4.0/>Some Rights Reserved</a>.</p><p>Powered by <a href=https://gohugo.io title="A Fast and Flexible Website Generator">Hugo</a> & <a href=https://github.com/eshlox/simplicity title="Hugo theme">Simplicity</a>.</p></footer><script src=/assets/js/scripts.min.js></script><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-110194945-3','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script></body></html>
+Virtual LAN atau disingkat VLAN merupakan sekelompok perangkat pada satu LAN atau lebih yang dikonfigurasikan (menggunakan perangkat lunak pengelolaan) sehingga dapat berkomunikasi seperti halnya bila perangkat tersebut terhubung ke jalur yang sama, padahal sebenarnya perangkat tersebut berada pada sejumlah segmen LAN yang berbeda. Vlan dibuat dengan menggunakan jaringan pihak ke tiga."/>
+
+  
+
+  
+  <script defer src="/assets/custom/fontawesome-5.15.1/js/all.min.js"></script>
+  
+</head>
+
+  <body>
+    
+      <nav>
+  <a href="/">
+    siBunglon
+  </a>
+</nav>
+
+    
+    <main class="container">
+      
+  <article>
+    <header>
+      <small>
+        <span class="date">October 12, 2017</span></small>
+      <h1>Mengenal VLAN (Virtual LAN)</h1>
+    </header>
+    <section><p><strong>A. Pendahuluan</strong></p>
+<p>Pada kesempatan kali ini ane akan share sedikit artikel tentang VLAN. Oke langsung saja silahkan disimak.</p>
+<p><strong>1) Pengertian</strong></p>
+<p>Virtual LAN atau disingkat VLAN merupakan sekelompok perangkat pada satu LAN atau lebih yang dikonfigurasikan (menggunakan perangkat lunak pengelolaan) sehingga dapat berkomunikasi seperti halnya bila perangkat tersebut terhubung ke jalur yang sama, padahal sebenarnya perangkat tersebut berada pada sejumlah segmen LAN yang berbeda. Vlan dibuat dengan menggunakan jaringan pihak ke tiga. VLAN merupakan sebuah bagian kecil jaringan IP yang terpisah secara logik. VLAN memungkinkan beberapa jaringan IP dan jaringan-jaringan kecil (subnet) berada dalam jaringan switched switched yang sama. Agar computer bisa berkomunikasi pada VLAN yang sama, setiap computer harus memiliki sebuah alamat IP dan Subnet Mask yang sesuai dengan VLAN tersebut. Switch harus dikonfigurasi dengan VLAN dan setiap port dalam VLAN harus didaftarkan ke VLAN. Sebuah port switch yang telah dikonfigurasi dengan sebuah VLAN tunggal disebut sebagai access port.</p>
+<p><strong>2) Latar Belakang</strong></p>
+<p>Kuarangnya pengetahuan kita tentang VLAN padahal VLAN sangat penting.</p>
+<p><strong>3) Maksud dan Tujuan</strong></p>
+<p>Mengenalkan VLAn kepada para pembaca sekalian.</p>
+<p><strong>4) Hasil yang Di Harapkan</strong></p>
+<p>Mempunayi harapan agar pembaca dapat mengenal VLAN lebih dalam dan manfaatnya.</p>
+<p><strong>B. Alat dan Bahan</strong></p>
+<ul>
+<li>PC/Laptop</li>
+<li>Koneksi Internet (Bila perlu)</li>
+</ul>
+<p><strong>C. Jangka Waktu Pelaksanaan Kegiatan</strong></p>
+<ul>
+<li>10 Menit</li>
+</ul>
+<p><strong>D. Proses dan Tahapan Pelaksanaan Kegiatan</strong></p>
+<p><strong>VLAN</strong></p>
+<p>Vlan dibuat dengan menggunakan jaringan pihak ke tiga. VLAN merupakan sebuah bagian kecil jaringan IP yang terpisah secara logik. VLAN memungkinkan beberapa jaringan IP dan jaringan-jaringan kecil (subnet) berada dalam jaringan switched switched yang sama. Agar computer bisa berkomunikasi pada VLAN yang sama, setiap computer harus memiliki sebuah alamat IP dan Subnet Mask yang sesuai dengan VLAN tersebut. Switch harus dikonfigurasi dengan VLAN dan setiap port dalam VLAN harus didaftarkan ke VLAN. Sebuah port switch yang telah dikonfigurasi dengan sebuah VLAN tunggal disebut sebagai access port.</p>
+<p>Sebuah VLAN memungkinkan seorang Administrator untuk menciptakan sekelompok peralatan yang secara logic dihubungkan satu sama lain. Dengan VLAN, kita dapat membagi jaringan switch secara logik berdasarkan fungsi, departemen atau project team.</p>
+<p><strong>&raquo; Keuntungan Menggunakan VLAN</strong></p>
+<p>Penerapan sebuah teknologi VLAN memungkinkan sebuah jaringan menjadi lebih fleksibel untuk mendukung tujuan bisnis. Berikut ini beberapa keuntungan menggunakan VLAN:</p>
+<ul>
+<li>Security– Departemen yang memiliki data sensitive terpisah dari jaringan yang ada, akan mengurangi peluang pelanggaran akses ke informasi rahasia dan penting.</li>
+<li>Cost reduction – Penghematan biaya dihasilkan dari tidak diperlukannya biaya yang mahal untuk upgrades jaringan dan efisiensi penggunaan bandwidth dan uplink yang tersedia.</li>
+<li>Higher performance – Dengan membagi jaringan layer 2 menjadi beberapa worksgroup secara logik (broadcast domain) mengurangi trafik yang tidak diperlukan pada jaringan dan meningkatkan performa.</li>
+<li>Broadcast storm mitigation – Dengan membagi sebuah jaringan menjadi VLAN mengurangi jumlah peralatan yang berpartisipasi dalam broadcast storm.</li>
+<li>Improved IT staff efficiency – Dengan VLAN pengelolaan jaringan lebih mudah, karena user-user dengan kebutuhan jaringan yang sama berbagi VLAN yang sama.</li>
+<li>Simpler project or application management – Memiliki fungsi-fungsi terpisah mempermudah pengelolaan sebuah project atau bekerja dengan aplikasi khusus.</li>
+</ul>
+<p><strong>&raquo; Perbandingan VLAN dan LAN</strong></p>
+<p>Bagi Anda yang terbiasa menggunakan jaringan internet tentunya tidak asing dengan istilah LAN. Namun apa pengertian LAN ini sebenarnya dan apa bedanya dengan VLAN? Untuk mengetahuinya mari kita simak berikut ini.</p>
+<p>VLAN vs LAN merupakan dua istilah yang sering digunakan dalam bidang jaringan. LAN sendiri merupakan singkatan dari Local Area Network yang memiliki arti sebuah jaringan komputer dimana sejumlah besar komputer dan perangkat periferal lain terhubung ke dalam sebuah area geografis. Sedangkan VLAN atau Virtual Local Area Network merupakan implementasi dari subset pribadi LAN di mana komputer berinteraksi satu sama lain seolah-olah mereka terhubung ke domain broadcast yang sama terlepas dari lokasi fisik mereka.</p>
+<p>Jika melihat perbedaan VLAN vs LAN, atribut dari LAN dan VLAN sebetulnya sama, namun stasiun akhir selalu digabungkan bersama-sama terlepas dari lokasinya. VLAN digunakan untuk membuat beberapa domain broadcast dalam switch. VLAN yang berbeda dapat dibuat untuk setiap segmen hanya dengan menggunakan satu saklar besar. Misal beberapa user yang bekerja dalam sebuah perusahaan namun dengan lantai yang berbeda dari gedung yang sama dapat dihubungkan ke LAN yang sama secara virtual.</p>
+<p>VLAN dapat membantu untuk meminimalkan traffic bila dibandingkan dengan LAN tradisional. Sebagai contoh, jika broadcast traffic akan digunakan untuk sepuluh user, mereka dapat ditempatkan pada sepuluh VLAN yang berbeda yang pada gilirannya akan mengurangi traffic itu sendiri. Penggunaan VLAN dari LAN tradisional dapat menurunkan biaya sebagaimana VLAN menghilangkan kebutuhan router mahal.</p>
+<p>Sementara pada LAN, router-lah yang memproses traffic masuk. Dengan VLAN, kebutuhan untuk router berkurang karena VLAN dapat membuat broadcast domain melalui switch bukan router.</p>
+<p>Jaringan LAN memerlukan administrasi fisik sebagai lokasi perubahan user, kebutuhan untuk recabling, mengatasi stasiun baru, konfigurasi ulang router dan hub. Mobilitas user dalam jaringan menghasilkan biaya jaringan, sedangkan jika user bergerak dalam VLAN, pekerjaan administratif dapat dihilangkan karena tidak adanya kebutuhan untuk mengkonfigurasi ulang router. Selain itu, data yang disiarkan di VLAN lebih aman jika dibandingkan dengan LAN tradisional karena data sensitif hanya dapat diakses oleh user yang berada pada VLAN.</p>
+<p><strong>E. Hasil yang Di Dapatkan</strong></p>
+<p>Dapat mengenal tentang VLAN dan perbandingannya dengan LAN.</p>
+<p><strong>F. Temuan Permasalahan</strong></p>
+<p>Belum menemukan masalah saat mempelajari tentang VLAN.</p>
+<p><strong>G. Kesimpulan</strong></p>
+<p>Dapat disimpulkan VLAN dapat berguna untuk menambah interface secara &ldquo;Virtual&rdquo; di mikrotik.</p>
+<p><strong>H. Referensi</strong></p>
+<ul>
+<li><a href="https://id.wikipedia.org/wiki/VLAN">https://id.wikipedia.org/wiki/VLAN</a></li>
+<li><a href="http://www.plimbi.com/article/3357/ketahui-perbedaan-jaringan-vlan-vs-lan">http://www.plimbi.com/article/3357/ketahui-perbedaan-jaringan-vlan-vs-lan</a></li>
+</ul>
+</section>
+    <footer>
+      <hr>
+      <div class="meta">
+        <p class="tags">
+          
+            
+              <a href="/tags/blc-telkom-klaten">
+                <span>#</span>BLC Telkom Klaten</a>
+            
+              <a href="/tags/others">
+                <span>#</span>Others</a>
+            
+          
+        </p>
+      </div>
+      <hr>
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sibunglonlabs" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </footer>
+  </article>
+
+    </main>
+    
+      <footer>
+  <p>
+    &copy; 2020 Faizar Septiawan. <a href="http://creativecommons.org/licenses/by-sa/4.0/">Some Rights Reserved</a>.
+  </p>
+  <p>
+    Powered by <a href="https://gohugo.io" title="A Fast and Flexible Website Generator">Hugo</a> &amp; <a href="https://github.com/eshlox/simplicity" title="Hugo theme">Simplicity</a>.
+  </p>
+</footer>
+
+    
+    
+    
+    
+    
+    
+    
+    <script src="/assets/js/scripts.min.js"></script>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-110194945-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>

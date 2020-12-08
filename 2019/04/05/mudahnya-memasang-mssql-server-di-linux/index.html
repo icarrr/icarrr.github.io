@@ -1,11 +1,232 @@
-<!doctype html><html lang=en-us itemscope itemtype=http://schema.org/WebPage><head><title>Mudahnya Memasang MSSQL Server di Linux</title><meta http-equiv=cache-control content="public, max-age=31536000"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=author content="Faizar Septiawan"><meta name=description content="Read - Search - Ask | Personal Site | Catch your problem solution or read interesting stories on my blog!"><meta name=keywords content="Linux,Unix,BSD,MacOS,Komunitas Pengguna Linux Indonesia,KPLI Klaten,KPLI Bulukumba,MikroTik,MikroTik Indonesia,FreeBSD,FreeBSD Indonesia,Cisco,Cisco Indonesia,BLC Telkom Klaten,Ansible,Nginx,Apache2,Caddy Server,Ayo Belajar Linux,Cloud Computing,e-Learning,Open edX,Proxmox,Sendy,Microsoft SQL Server,MySQL,PostgreSQL,Lets Encrypt,Case Study,Atlassian,Virtualization,Faizar Septiawan,Icar,siBunglonGanteng,siBunglonLabs,Orang Ganteng"><meta name=google-site-verification content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-110194945-3"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','UA-110194945-3');</script><link rel=stylesheet href=/assets/css/external.min.css media=screen><link rel=stylesheet href=/assets/css/styles.css media=screen><link href=/assets/custom/googlefonts/roboto.css rel=stylesheet><link rel=apple-touch-icon-precomposed sizes=144x144 href=/src/images/apple-touch-icon.png><link rel="shortcut icon" href=/src/images/favicon.ico><link href=/posts/index.xml rel=alternate type=application/rss+xml title="The Official Site of siBunglon"><meta property="og:title" content="Mudahnya Memasang MSSQL Server di Linux"><meta property="og:description" content="Microsoft SQL Server di Linux? Diantara para pembaca mungkin ada yang kaget atau apa kalau produknya Microsoft bisa jalan di linux apalagi tanpa emulator ataupun tools lainnya. Yah itu bisa saja karena mungkin ada yang kemakan omongan bahwa produk Microsoft itu non open source. Dengan adanya MSSQL Server di linux jangan sampai ada terlalu kaget, positif thinking aja mungkin om Bill Gates udah mulai mengopen sourcekan produknya karena kasihan banyak yang berdosa karena menjadi pak tani gelapnya Microsoft😅"><meta property="og:type" content="article"><meta property="og:url" content="https://sibunglon.com/2019/04/05/mudahnya-memasang-mssql-server-di-linux/"><meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"><meta property="article:published_time" content="2019-04-05T18:08:14+07:00"><meta property="article:modified_time" content="2019-04-05T18:08:14+07:00"><meta property="og:site_name" content="The Official Site of siBunglon"><meta itemprop=name content="Mudahnya Memasang MSSQL Server di Linux"><meta itemprop=description content="Microsoft SQL Server di Linux? Diantara para pembaca mungkin ada yang kaget atau apa kalau produknya Microsoft bisa jalan di linux apalagi tanpa emulator ataupun tools lainnya. Yah itu bisa saja karena mungkin ada yang kemakan omongan bahwa produk Microsoft itu non open source. Dengan adanya MSSQL Server di linux jangan sampai ada terlalu kaget, positif thinking aja mungkin om Bill Gates udah mulai mengopen sourcekan produknya karena kasihan banyak yang berdosa karena menjadi pak tani gelapnya Microsoft😅"><meta itemprop=datePublished content="2019-04-05T18:08:14+07:00"><meta itemprop=dateModified content="2019-04-05T18:08:14+07:00"><meta itemprop=wordCount content="332"><meta itemprop=image content="https://sibunglon.com/assets/img/profil.webp"><meta itemprop=keywords content="Ayo Belajar Linux,Microsoft SQL Server,"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://sibunglon.com/assets/img/profil.webp"><meta name=twitter:title content="Mudahnya Memasang MSSQL Server di Linux"><meta name=twitter:description content="Microsoft SQL Server di Linux? Diantara para pembaca mungkin ada yang kaget atau apa kalau produknya Microsoft bisa jalan di linux apalagi tanpa emulator ataupun tools lainnya. Yah itu bisa saja karena mungkin ada yang kemakan omongan bahwa produk Microsoft itu non open source. Dengan adanya MSSQL Server di linux jangan sampai ada terlalu kaget, positif thinking aja mungkin om Bill Gates udah mulai mengopen sourcekan produknya karena kasihan banyak yang berdosa karena menjadi pak tani gelapnya Microsoft😅"><script defer src=/assets/custom/fontawesome-5.15.1/js/all.min.js></script></head><body><nav><a href=/>siBunglon</a></nav><main class=container><article><header><small><span class=date>April 5, 2019</span></small><h1>Mudahnya Memasang MSSQL Server di Linux</h1></header><section><h3 id=microsoft-sql-server-di-linux>Microsoft SQL Server di Linux?</h3><p>Diantara para pembaca mungkin ada yang kaget atau apa kalau produknya Microsoft bisa jalan di linux apalagi tanpa emulator ataupun tools lainnya. Yah itu bisa saja karena mungkin ada yang kemakan omongan bahwa produk Microsoft itu <strong>non open source</strong>. Dengan adanya MSSQL Server di linux jangan sampai ada terlalu kaget, positif thinking aja mungkin om <strong>Bill Gates</strong> udah mulai mengopen sourcekan produknya karena kasihan banyak yang berdosa karena menjadi <strong>pak tani</strong> gelapnya Microsoft😅</p><p><strong>Microsoft SQL Server (MSSQL Server)</strong> adalah sebuah sistem manajemen basis data relasional produk Microsoft. Bahasa kueri utamanya adalah Transact-SQL yang merupakan implementasi dari SQL standar ANSI/ISO yang digunakan oleh Microsoft dan Sybase. Dimulai dengan SQL Server 2017, SQL Server mulai berjalan di Linux.</p><h4 id=supported-platforms>Supported Platforms</h4><p>SQL Server 2017 didukung pada Red Hat Enterprise Linux (RHEL), SUSE Linux Enterprise Server (SLES), dan Ubuntu. MSSQL Server ini juga didukung sebagai Docker image, yang dapat berjalan di Docker untuk Linux atau Docker untuk Windows / Mac.</p><h4 id=system-requirements>System Requirements</h4><p>Untuk menjalankan MSSQL Server di linux, ada persyaratan yang harus dipenuhi yaitu:</p><table><thead><tr><th style=text-align:left><strong>Memory</strong></th><th style=text-align:left>2 GB</th></tr></thead><tbody><tr><td style=text-align:left><strong>File System</strong></td><td style=text-align:left><strong>XFS</strong>or<strong>EXT4</strong>(other file systems, such as <strong>BTRFS</strong>, are unsupported)</td></tr><tr><td style=text-align:left><strong>Disk space</strong></td><td style=text-align:left>6 GB</td></tr><tr><td style=text-align:left><strong>Processor speed</strong></td><td style=text-align:left>2 GHz</td></tr><tr><td style=text-align:left><strong>Processor cores</strong></td><td style=text-align:left>2 cores</td></tr><tr><td style=text-align:left><strong>Processor type</strong></td><td style=text-align:left>x64-compatible only</td></tr></tbody></table><h3 id=bermain-dengan-mssql-server-di-linux>Bermain Dengan MSSQL Server di Linux</h3><ul><li><p>Installasi di CentOS dan saudara sepaket manajernya</p><p>1) Tambahkan repositori MSSQL Server ke sistem</p><pre><code>sudo curl -o /etc/yum.repos.d/mssql-server.repo https://packages.microsoft.com/config/rhel/7/mssql-server-2017.repo
-</code></pre><p>2) Install MSSQL Server</p><pre><code>sudo yum install -y mssql-server
-</code></pre><p>3) Setup MSSQL Server, Setup disini akan membuat password untuk akun SA karena secara default MSSQL Server menggunakan user SA</p><pre><code>sudo /opt/mssql/bin/mssql-conf setup
-</code></pre></li><li><p>Installasi di Ubuntu dan saudara sepaket manajernya</p><p>1) Tambahkan GPG key MSSQL Server ke sistem</p><pre><code>wget -qO- https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
-</code></pre><p>2) Tambahkan repositori MSSQL Server ke sistem</p><pre><code>sudo add-apt-repository &quot;$(wget -qO- https://packages.microsoft.com/config/ubuntu/16.04/mssql-server-2017.list)&quot;
-</code></pre><p>3) Install MSSQL Server</p><pre><code>sudo apt-get update &amp;&amp; sudo apt-get install -y mssql-server
-</code></pre><p>4) Setup MSSQL Server, Setup disini akan membuat password untuk akun SA karena secara default MSSQL Server menggunakan user SA</p><pre><code>sudo /opt/mssql/bin/mssql-conf setup
-</code></pre></li></ul></section><footer><hr><div class=meta><p class=tags><a href=/tags/ayo-belajar-linux><span>#</span>Ayo Belajar Linux</a>
-<a href=/tags/microsoft-sql-server><span>#</span>Microsoft SQL Server</a></p></div><hr><div id=disqus_thread></div><script type=application/javascript>var disqus_config=function(){};(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return;}
-var d=document,s=d.createElement('script');s.async=true;s.src='//'+"sibunglonlabs"+'.disqus.com/embed.js';s.setAttribute('data-timestamp',+new Date());(d.head||d.body).appendChild(s);})();</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></footer></article></main><footer><p>&copy; 2020 Faizar Septiawan. <a href=http://creativecommons.org/licenses/by-sa/4.0/>Some Rights Reserved</a>.</p><p>Powered by <a href=https://gohugo.io title="A Fast and Flexible Website Generator">Hugo</a> & <a href=https://github.com/eshlox/simplicity title="Hugo theme">Simplicity</a>.</p></footer><script src=/assets/js/scripts.min.js></script><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-110194945-3','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script></body></html>
+<!DOCTYPE html>
+<html lang="en-us" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+  <title>Mudahnya Memasang MSSQL Server di Linux</title>
+  
+  <meta http-equiv="cache-control" content="public, max-age=31536000" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Faizar Septiawan">
+  <meta name="description" content="Read - Search - Ask | Personal Site | Catch your problem solution or read interesting stories on my blog!">
+  <meta name="keywords" content="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng">
+  
+  
+  
+  <meta name="google-site-verification" content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM" />
+  
+  
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110194945-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110194945-3');
+  </script>
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/css/external.min.css" media="screen">
+  
+  
+  <link rel="stylesheet" href="/assets/css/styles.css" media="screen">
+  <link href="/assets/custom/googlefonts/roboto.css" rel="stylesheet">
+  
+
+  
+  
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/src/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="/src/images/favicon.ico">
+  
+
+  
+  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
+
+  <meta property="og:title" content="Mudahnya Memasang MSSQL Server di Linux" />
+<meta property="og:description" content="Microsoft SQL Server di Linux? Diantara para pembaca mungkin ada yang kaget atau apa kalau produknya Microsoft bisa jalan di linux apalagi tanpa emulator ataupun tools lainnya. Yah itu bisa saja karena mungkin ada yang kemakan omongan bahwa produk Microsoft itu non open source. Dengan adanya MSSQL Server di linux jangan sampai ada terlalu kaget, positif thinking aja mungkin om Bill Gates udah mulai mengopen sourcekan produknya karena kasihan banyak yang berdosa karena menjadi pak tani gelapnya Microsoft😅" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sibunglon.com/2019/04/05/mudahnya-memasang-mssql-server-di-linux/" />
+<meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"/>
+<meta property="article:published_time" content="2019-04-05T18:08:14+07:00" />
+<meta property="article:modified_time" content="2019-04-05T18:08:14+07:00" /><meta property="og:site_name" content="The Official Site of siBunglon" />
+
+  <meta itemprop="name" content="Mudahnya Memasang MSSQL Server di Linux">
+<meta itemprop="description" content="Microsoft SQL Server di Linux? Diantara para pembaca mungkin ada yang kaget atau apa kalau produknya Microsoft bisa jalan di linux apalagi tanpa emulator ataupun tools lainnya. Yah itu bisa saja karena mungkin ada yang kemakan omongan bahwa produk Microsoft itu non open source. Dengan adanya MSSQL Server di linux jangan sampai ada terlalu kaget, positif thinking aja mungkin om Bill Gates udah mulai mengopen sourcekan produknya karena kasihan banyak yang berdosa karena menjadi pak tani gelapnya Microsoft😅">
+<meta itemprop="datePublished" content="2019-04-05T18:08:14+07:00" />
+<meta itemprop="dateModified" content="2019-04-05T18:08:14+07:00" />
+<meta itemprop="wordCount" content="332">
+<meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
+
+
+
+<meta itemprop="keywords" content="Ayo Belajar Linux,Microsoft SQL Server," />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://sibunglon.com/assets/img/profil.webp"/>
+
+<meta name="twitter:title" content="Mudahnya Memasang MSSQL Server di Linux"/>
+<meta name="twitter:description" content="Microsoft SQL Server di Linux? Diantara para pembaca mungkin ada yang kaget atau apa kalau produknya Microsoft bisa jalan di linux apalagi tanpa emulator ataupun tools lainnya. Yah itu bisa saja karena mungkin ada yang kemakan omongan bahwa produk Microsoft itu non open source. Dengan adanya MSSQL Server di linux jangan sampai ada terlalu kaget, positif thinking aja mungkin om Bill Gates udah mulai mengopen sourcekan produknya karena kasihan banyak yang berdosa karena menjadi pak tani gelapnya Microsoft😅"/>
+
+  
+
+  
+  <script defer src="/assets/custom/fontawesome-5.15.1/js/all.min.js"></script>
+  
+</head>
+
+  <body>
+    
+      <nav>
+  <a href="/">
+    siBunglon
+  </a>
+</nav>
+
+    
+    <main class="container">
+      
+  <article>
+    <header>
+      <small>
+        <span class="date">April 5, 2019</span></small>
+      <h1>Mudahnya Memasang MSSQL Server di Linux</h1>
+    </header>
+    <section><h3 id="microsoft-sql-server-di-linux">Microsoft SQL Server di Linux?</h3>
+<p>Diantara para pembaca mungkin ada yang kaget atau apa kalau produknya Microsoft bisa jalan di linux apalagi tanpa emulator ataupun tools lainnya. Yah itu bisa saja karena mungkin ada yang kemakan omongan bahwa produk Microsoft itu <strong>non open source</strong>. Dengan adanya MSSQL Server di linux jangan sampai ada terlalu kaget, positif thinking aja mungkin om <strong>Bill Gates</strong> udah mulai mengopen sourcekan produknya karena kasihan banyak yang berdosa karena menjadi <strong>pak tani</strong> gelapnya Microsoft😅</p>
+<p><strong>Microsoft SQL Server (MSSQL Server)</strong> adalah sebuah sistem manajemen basis data relasional produk Microsoft. Bahasa kueri utamanya adalah Transact-SQL yang merupakan implementasi dari SQL standar ANSI/ISO yang digunakan oleh Microsoft dan Sybase. Dimulai dengan SQL Server 2017, SQL Server mulai berjalan di Linux.</p>
+<h4 id="supported-platforms">Supported Platforms</h4>
+<p>SQL Server 2017 didukung pada Red Hat Enterprise Linux (RHEL), SUSE Linux Enterprise Server (SLES), dan Ubuntu. MSSQL Server ini juga didukung sebagai Docker image, yang dapat berjalan di Docker untuk Linux atau Docker untuk Windows / Mac.</p>
+<h4 id="system-requirements">System Requirements</h4>
+<p>Untuk menjalankan MSSQL Server di linux, ada persyaratan yang harus dipenuhi yaitu:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Memory</strong></th>
+<th style="text-align:left">2 GB</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>File System</strong></td>
+<td style="text-align:left"><strong>XFS</strong>or<strong>EXT4</strong>(other file systems, such as <strong>BTRFS</strong>, are unsupported)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Disk space</strong></td>
+<td style="text-align:left">6 GB</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Processor speed</strong></td>
+<td style="text-align:left">2 GHz</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Processor cores</strong></td>
+<td style="text-align:left">2 cores</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Processor type</strong></td>
+<td style="text-align:left">x64-compatible only</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bermain-dengan-mssql-server-di-linux">Bermain Dengan MSSQL Server di Linux</h3>
+<ul>
+<li>
+<p>Installasi di CentOS dan saudara sepaket manajernya</p>
+<p>1) Tambahkan repositori MSSQL Server ke sistem</p>
+<pre><code>sudo curl -o /etc/yum.repos.d/mssql-server.repo https://packages.microsoft.com/config/rhel/7/mssql-server-2017.repo
+</code></pre><p>2) Install MSSQL Server</p>
+<pre><code>sudo yum install -y mssql-server
+</code></pre><p>3) Setup MSSQL Server, Setup disini akan membuat password untuk akun SA karena secara default MSSQL Server menggunakan user SA</p>
+<pre><code>sudo /opt/mssql/bin/mssql-conf setup
+</code></pre></li>
+<li>
+<p>Installasi di Ubuntu dan saudara sepaket manajernya</p>
+<p>1) Tambahkan GPG key MSSQL Server ke sistem</p>
+<pre><code>wget -qO- https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+</code></pre><p>2) Tambahkan repositori MSSQL Server ke sistem</p>
+<pre><code>sudo add-apt-repository &quot;$(wget -qO- https://packages.microsoft.com/config/ubuntu/16.04/mssql-server-2017.list)&quot;
+</code></pre><p>3) Install MSSQL Server</p>
+<pre><code>sudo apt-get update &amp;&amp; sudo apt-get install -y mssql-server
+</code></pre><p>4) Setup MSSQL Server, Setup disini akan membuat password untuk akun SA karena secara default MSSQL Server menggunakan user SA</p>
+<pre><code>sudo /opt/mssql/bin/mssql-conf setup
+</code></pre></li>
+</ul>
+</section>
+    <footer>
+      <hr>
+      <div class="meta">
+        <p class="tags">
+          
+            
+              <a href="/tags/ayo-belajar-linux">
+                <span>#</span>Ayo Belajar Linux</a>
+            
+              <a href="/tags/microsoft-sql-server">
+                <span>#</span>Microsoft SQL Server</a>
+            
+          
+        </p>
+      </div>
+      <hr>
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sibunglonlabs" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </footer>
+  </article>
+
+    </main>
+    
+      <footer>
+  <p>
+    &copy; 2020 Faizar Septiawan. <a href="http://creativecommons.org/licenses/by-sa/4.0/">Some Rights Reserved</a>.
+  </p>
+  <p>
+    Powered by <a href="https://gohugo.io" title="A Fast and Flexible Website Generator">Hugo</a> &amp; <a href="https://github.com/eshlox/simplicity" title="Hugo theme">Simplicity</a>.
+  </p>
+</footer>
+
+    
+    
+    
+    
+    
+    
+    
+    <script src="/assets/js/scripts.min.js"></script>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-110194945-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>

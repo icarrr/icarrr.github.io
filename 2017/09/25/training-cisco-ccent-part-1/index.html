@@ -1,13 +1,283 @@
-<!doctype html><html lang=en-us itemscope itemtype=http://schema.org/WebPage><head><title>Training Cisco CCENT Part 1</title><meta http-equiv=cache-control content="public, max-age=31536000"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=author content="Faizar Septiawan"><meta name=description content="Read - Search - Ask | Personal Site | Catch your problem solution or read interesting stories on my blog!"><meta name=keywords content="Linux,Unix,BSD,MacOS,Komunitas Pengguna Linux Indonesia,KPLI Klaten,KPLI Bulukumba,MikroTik,MikroTik Indonesia,FreeBSD,FreeBSD Indonesia,Cisco,Cisco Indonesia,BLC Telkom Klaten,Ansible,Nginx,Apache2,Caddy Server,Ayo Belajar Linux,Cloud Computing,e-Learning,Open edX,Proxmox,Sendy,Microsoft SQL Server,MySQL,PostgreSQL,Lets Encrypt,Case Study,Atlassian,Virtualization,Faizar Septiawan,Icar,siBunglonGanteng,siBunglonLabs,Orang Ganteng"><meta name=google-site-verification content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-110194945-3"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','UA-110194945-3');</script><link rel=stylesheet href=/assets/css/external.min.css media=screen><link rel=stylesheet href=/assets/css/styles.css media=screen><link href=/assets/custom/googlefonts/roboto.css rel=stylesheet><link rel=apple-touch-icon-precomposed sizes=144x144 href=/src/images/apple-touch-icon.png><link rel="shortcut icon" href=/src/images/favicon.ico><link href=/posts/index.xml rel=alternate type=application/rss+xml title="The Official Site of siBunglon"><meta property="og:title" content="Training Cisco CCENT Part 1"><meta property="og:description" content="1.Pendahuluan
+<!DOCTYPE html>
+<html lang="en-us" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+  <title>Training Cisco CCENT Part 1</title>
+  
+  <meta http-equiv="cache-control" content="public, max-age=31536000" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Faizar Septiawan">
+  <meta name="description" content="Read - Search - Ask | Personal Site | Catch your problem solution or read interesting stories on my blog!">
+  <meta name="keywords" content="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng">
+  
+  
+  
+  <meta name="google-site-verification" content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM" />
+  
+  
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110194945-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110194945-3');
+  </script>
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/css/external.min.css" media="screen">
+  
+  
+  <link rel="stylesheet" href="/assets/css/styles.css" media="screen">
+  <link href="/assets/custom/googlefonts/roboto.css" rel="stylesheet">
+  
+
+  
+  
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/src/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="/src/images/favicon.ico">
+  
+
+  
+  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
+
+  <meta property="og:title" content="Training Cisco CCENT Part 1" />
+<meta property="og:description" content="1.Pendahuluan
 A. Pengertian
-Cisco merupakan perusahaan global dalam bidang telekomunikasi yang bermarkas di San José, California, Amerika Serikat. Perusahaan ini didirikan pada tahun 1984. Perusahaan ini mempekerjakan 51.480 pekerja.Produk dari perusahaan ini dapat ditemukan dari ruang tamu sampai ke perusahaan yang bergerak untuk skala internasional.Visi dari Cisco System.Inc (Cisco) yaitu “mengubah bagaimana cara hidup,bekerja,bermain dan belajar”,dan bagian dari Slogan dari Cisco adalah “ Selamat datang kedalam dunia Jaringan “ (welcome to the human network)."><meta property="og:type" content="article"><meta property="og:url" content="https://sibunglon.com/2017/09/25/training-cisco-ccent-part-1/"><meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"><meta property="article:published_time" content="2017-09-25T03:51:00+00:00"><meta property="article:modified_time" content="2017-09-25T03:51:00+00:00"><meta property="og:site_name" content="The Official Site of siBunglon"><meta itemprop=name content="Training Cisco CCENT Part 1"><meta itemprop=description content="1.Pendahuluan
+Cisco merupakan perusahaan global dalam bidang telekomunikasi yang bermarkas di San José, California, Amerika Serikat. Perusahaan ini didirikan pada tahun 1984. Perusahaan ini mempekerjakan 51.480 pekerja.Produk dari perusahaan ini dapat ditemukan dari ruang tamu sampai ke perusahaan yang bergerak untuk skala internasional.Visi dari Cisco System.Inc (Cisco) yaitu “mengubah bagaimana cara hidup,bekerja,bermain dan belajar”,dan bagian dari Slogan dari Cisco adalah “ Selamat datang kedalam dunia Jaringan “ (welcome to the human network)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sibunglon.com/2017/09/25/training-cisco-ccent-part-1/" />
+<meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"/>
+<meta property="article:published_time" content="2017-09-25T03:51:00+00:00" />
+<meta property="article:modified_time" content="2017-09-25T03:51:00+00:00" /><meta property="og:site_name" content="The Official Site of siBunglon" />
+
+  <meta itemprop="name" content="Training Cisco CCENT Part 1">
+<meta itemprop="description" content="1.Pendahuluan
 A. Pengertian
-Cisco merupakan perusahaan global dalam bidang telekomunikasi yang bermarkas di San José, California, Amerika Serikat. Perusahaan ini didirikan pada tahun 1984. Perusahaan ini mempekerjakan 51.480 pekerja.Produk dari perusahaan ini dapat ditemukan dari ruang tamu sampai ke perusahaan yang bergerak untuk skala internasional.Visi dari Cisco System.Inc (Cisco) yaitu “mengubah bagaimana cara hidup,bekerja,bermain dan belajar”,dan bagian dari Slogan dari Cisco adalah “ Selamat datang kedalam dunia Jaringan “ (welcome to the human network)."><meta itemprop=datePublished content="2017-09-25T03:51:00+00:00"><meta itemprop=dateModified content="2017-09-25T03:51:00+00:00"><meta itemprop=wordCount content="1415"><meta itemprop=image content="https://sibunglon.com/assets/img/profil.webp"><meta itemprop=keywords content="BLC Telkom Klaten,Cisco,BestPath Network,Activities,"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://sibunglon.com/assets/img/profil.webp"><meta name=twitter:title content="Training Cisco CCENT Part 1"><meta name=twitter:description content="1.Pendahuluan
+Cisco merupakan perusahaan global dalam bidang telekomunikasi yang bermarkas di San José, California, Amerika Serikat. Perusahaan ini didirikan pada tahun 1984. Perusahaan ini mempekerjakan 51.480 pekerja.Produk dari perusahaan ini dapat ditemukan dari ruang tamu sampai ke perusahaan yang bergerak untuk skala internasional.Visi dari Cisco System.Inc (Cisco) yaitu “mengubah bagaimana cara hidup,bekerja,bermain dan belajar”,dan bagian dari Slogan dari Cisco adalah “ Selamat datang kedalam dunia Jaringan “ (welcome to the human network).">
+<meta itemprop="datePublished" content="2017-09-25T03:51:00+00:00" />
+<meta itemprop="dateModified" content="2017-09-25T03:51:00+00:00" />
+<meta itemprop="wordCount" content="1415">
+<meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
+
+
+
+<meta itemprop="keywords" content="BLC Telkom Klaten,Cisco,BestPath Network,Activities," />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://sibunglon.com/assets/img/profil.webp"/>
+
+<meta name="twitter:title" content="Training Cisco CCENT Part 1"/>
+<meta name="twitter:description" content="1.Pendahuluan
 A. Pengertian
-Cisco merupakan perusahaan global dalam bidang telekomunikasi yang bermarkas di San José, California, Amerika Serikat. Perusahaan ini didirikan pada tahun 1984. Perusahaan ini mempekerjakan 51.480 pekerja.Produk dari perusahaan ini dapat ditemukan dari ruang tamu sampai ke perusahaan yang bergerak untuk skala internasional.Visi dari Cisco System.Inc (Cisco) yaitu “mengubah bagaimana cara hidup,bekerja,bermain dan belajar”,dan bagian dari Slogan dari Cisco adalah “ Selamat datang kedalam dunia Jaringan “ (welcome to the human network)."><script defer src=/assets/custom/fontawesome-5.15.1/js/all.min.js></script></head><body><nav><a href=/>siBunglon</a></nav><main class=container><article><header><small><span class=date>September 25, 2017</span></small><h1>Training Cisco CCENT Part 1</h1></header><section><p>1.Pendahuluan</p><p>A. Pengertian</p><p>Cisco merupakan perusahaan global dalam bidang telekomunikasi yang bermarkas di San José, California, Amerika Serikat. Perusahaan ini didirikan pada tahun 1984. Perusahaan ini mempekerjakan 51.480 pekerja.Produk dari perusahaan ini dapat ditemukan dari ruang tamu sampai ke perusahaan yang bergerak untuk skala internasional.Visi dari Cisco System.Inc (Cisco) yaitu “mengubah bagaimana cara hidup,bekerja,bermain dan belajar”,dan bagian dari Slogan dari Cisco adalah “ Selamat datang kedalam dunia Jaringan “ (welcome to the human network).Cisco adalah salah satu produk untuk Teknologi Informasi nomor satu didunia,terutama untuk sytem,perangkat keras jaringan serta telekomunikasinya.B. Latar Belakang<br>Memahami Materi dan dapat mengkonfigurasi cisco CCEN</p><p>B. Hasil Yang DIharapkan</p><p>Dapat Memahami Materi CCEN dan Mengkonfigurasi</p><p>2. Alat dan Bahan</p><ul><li>Laptop</li><li>Internet</li><li>Cisco Packettracer</li><li>Materi CCEN</li></ul><p>3. Jangka Waktu Pelaksanaan :</p><p>Jam 08:00 s/d 22:00</p><ul><li>Sesi Pagi 08:00 s/d 11:30</li><li>Istirahat Jam 11:30 s/d 12:30</li><li>Sesi Siang 12:30 s/d 16:30</li><li>Istirahat 16:30 s/d 20:00</li><li>Sesi Malam 20:00 s/d 22:00</li><li>Selesai</li></ul><p>4. Tahap - Tahap Pelaksanaan</p><p>Pada hari ini kita membahas dasar-dasar jaringan dan mengenal jauh tentang apa itu cisco dan apa saja dalamnya, pembahasan ini akan berlangsung selama seminggu kedepan, dan selanjutnya minggu depannya akan diadakan praktik langsung, Training ini dipandu oleh Mas Lathif langsung yang berasal dari Best Path Networks dari Tangerang,</p><p>Di awal-awal beliau memperkenalkan dirinya kemudian beliau menjelaskan panjang lebar dari jaringan dasar, berikut rangkuman materi training.</p><p><strong>PENGENALAN CISCO</strong></p><p>Cisco adalah sebuah perusahaan yang memiliki dua bidang usaha. Usaha yang pertama adalah didalam pembuatan hardware dan software yang berhubungan dengan jaringan komputer. Kemudian yang kedua adalah di bidang pendidikan yaitu dengan Cisco Networking Academy (CNA).</p><p>Di kedua bidang usaha ini, Cisco telah memiliki nama yang besar dan menjadi sebuah perusahaan yang menguasai sebagian besar pangsa pasar peralatan jaringan dan pengembangan solusi terintegrasi di dunia.</p><p>Cisco System</p><p>Cisco system adalah perusahaan pertama yang mengeluarkan sebuah router yang mendukung banyak protokol jaringan secara komersial. Protokol jaringan tersebut kemudian dikembangkan menjadi beberapa protokol baru yang kemudian hari dikenal dengan cisco proprietary network protokol. Beberapa di antaranya adalah: Cisco Discovery Protocol (CDP), Enhanced Interior Gateway Routing Protocol (EIGRP), VLAN Trunking Protocol.</p><p>Hardware yang diproduksi dewasa ini oleh Cisco System adalah Router, Switch, Catalyst, Firewall, Pesawat VoIP, Wireless Access Point dan banyak lagi yang lain. Tentu saja, Cisco juga menciptakan software pendukung kerja dari hardware yang ada. Untuk hardware yang tergolong “pintar” Cisco memasukkan software sistem operasi khusus milik Cisco yaitu Internetwork Operating System (IOS).</p><p>Cisco Networking Academy</p><p>Untuk menyediakan sumber daya manusia yang dibutuhkan untuk mengoperasikan, mendesain, mengimplementasi serta menjaga keamanan dari produk Cisco yang tersebar di dunia, maka Cisco membangun sebuah institusi pendidikan yang dinamakan Cisco Networking Academy.</p><p>Institusi pendidikan pusat Cisco yang ada di Amerika membuka kerja sama dengan berbagai institusi pendidikan formal maupun non-formal yang berada di seluruh dunia dengan harapan mampu menyebarkan pengetahuan yang dibutuhkan untuk mengelola perangkat Cisco.</p><p>Sertifikasi dikeluarkan untuk memberikan penghargaan dan sebuah tanda bukti kemampuan kompetensi dari peserta didik yang telah mampu mengikuti dan menyelesaikan kurikulum program dari Cisco Networking Academy.</p><p>Sertifikasi Cisco</p><p>Cisco memiliki sejumlah sertifikasi yang tersedia disesuaikan dengan tingkat kebutuhan dan pemahaman dari siswa. Masing-masing sertifikasi memiliki masa berlaku 3 tahun dan harus mengikuti tes ulang untuk memperpanjang sertifikasi tersebut. Hal ini bertujuan untuk menjaga kualitas dari alumni CNA sehingga tetap meningkatkan pengetahuan di bidang teknologi jaringan yang bersifat dinamis.</p><p>Sertifikasi Level Associate</p><p>Untuk skala pemula, bisa mengambil sertifikasi berjudul Cisco Certified Entry Networking Technician atau Cisco Certified Network Associate (CCNA). Namun untuk yang ada di Indonesia CCNA adalah sertifikasi yang paling populer dibandingkan dengan CCENT, dan merupakan sertikasi dasar sebelum menuju ke sertifikasi selanjutnya.</p><p>Setelah mengetahui dasar jaringan, konsep, operasi dan penyelesaian masalah serta konfigurasi dasar keamanan jaringan, siswa bisa mengambil lagi sertifikasi-sertifikasi lanjutan yang bersifat lebih spesifik.</p><ol><li>CCNA Security</li><li>CCNA Voice dan CCVP</li><li>CCNA Wireless</li></ol><p>Selain mempelajari bagaimana mengelola dan mengoperasi perangkat Cisco, terdapat juga kurikulum untuk bagaimana merancang susunan solusi perangkat Cisco dalam berbagai kondisi dengan mengambil sertifikasi Cisco Certified Design Associate(CCDA).</p><p>Sertifikasi Profesional</p><p>Untuk bisa mengambil sertifikasi profesional ini, dibutuhkan sertifikasi awal yaitu CCNA yang masih valid. Beberapa macam sertifikasi profesional antara lain:</p><ol><li>Cisco Certified Network Professional (CCNP)</li><li>Cisco Certified Design Professional (CCDP)</li><li>Cisco Certified Internetwork Professional (CCIP)</li><li>Cisco Certified Security Professional (CCSP)</li><li>Cisco Certified Voice Professional (CCVP)</li></ol><p>Sertifikasi Expert (Ahli/pakar)</p><p>Sertifikasi ini ada dua macam. Cisco Certified Design Expert (CCDE) adalah sertifikasi yang diberikan kepada siswa yang mampu melakukan segala hal yang ada pada level Sertifikasi di bawah-nya dan mampu melakukan optimalisasi, mengembangkan solusi serta mampu memberikan dukungan teknis maupun strategis secara berlanjut. Yang kedua adalah Cisco Certified Internetwork expert(CCIE). Sertifikasi ini adalah sertifikasi tertinggi di CNA. CCIE adalah tingkat ujian yang paling susah dan diharapkan akan mampu memahami pengetahuan Cisco baik hardware, software, solusi dan juga konsultasi.</p><p><strong>Ukuran Jaringan</strong></p><p>Jaringan datang dalam segala ukuran. Mereka dapat berkisar dari jaringan sederhana yang terdiri dari dua komputer ke jaringan yang menghubungkan jutaan perangkat. Jaringan sederhana yang dipasang di rumah memungkinkan berbagi sumber daya, seperti printer, dokumen, gambar dan musik antara beberapa komputer lokal.</p><p>Jaringan kantor rumah dan jaringan kantor kecil sering kali disiapkan oleh individu yang bekerja dari rumah atau kantor terpencil dan perlu terhubung ke jaringan perusahaan atau sumber terpusat lainnya. Selain itu, banyak wiraswasta menggunakan kantor rumah dan jaringan kantor kecil untuk mengiklankan dan menjual produk, memesan persediaan dan berkomunikasi dengan pelanggan. Dalam bisnis dan organisasi besar, jaringan dapat digunakan dalam skala yang lebih luas lagi untuk menyediakan konsolidasi, penyimpanan, dan akses terhadap informasi pada server jaringan.</p><p>Jaringan juga memungkinkan komunikasi yang cepat seperti email, pesan instan, dan kolaborasi antar karyawan. Selain manfaat internal, banyak organisasi menggunakan jaringan mereka untuk menyediakan produk dan layanan kepada pelanggan melalui koneksi mereka ke Internet. Internet adalah jaringan terbesar yang ada. Sebenarnya, istilah internet berarti &lsquo;jaringan jaringan&rsquo;. Internet secara harfiah merupakan kumpulan jaringan pribadi dan publik yang saling berhubungan, seperti yang dijelaskan di atas.</p><p>1. Small Home Networks<br>Small Home Network Connect A few Computer to each other and the internet.</p><p><img src=https://3.bp.blogspot.com/-duY3MqOHAnU/W6f9oS02y0I/AAAAAAAAEeY/-lj95ZQ1gHMXyW1Rj6G-wzd9DpgNAlH6gCLcBGAs/s1600/1.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p>2. Small Office/Home Office Network<br>The Small Office/Home Office SOHO network enable computer within a home office or a remote office to connect to a corporate network or access centralized, share resources.</p><p><img src=https://4.bp.blogspot.com/-Cb0zYuSFpIs/W6f_p-letOI/AAAAAAAAEek/T4FlTYuuPZ4W2WHE1BB8xRo88fmQRp1mACLcBGAs/s1600/2.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p>3. Medium To Large Network<br>Medium to large networks, such us those used by corporation and schools, can have many location with hundreds or thousands of interconnected computers.</p><p><img src=https://1.bp.blogspot.com/-k-TiFQHWoKA/W6f_vGklsvI/AAAAAAAAEeo/4X6BrsiHofY8gijqEgeXsWANTNsDW1VVQCLcBGAs/s1600/3.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p>4. World Wide Network
-The internet is a network of network that connects hundreds or milions of computer World-Wide</p><p><img src=https://4.bp.blogspot.com/-zAABPRRNXQk/W6f_0gZSjhI/AAAAAAAAEes/PaGiGw_rR6o71qBHwi7-icvqvj4H0-0yACLcBGAs/s1600/4.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p><strong>Klien dan Server</strong></p><p>Semua komputer yang terhubung ke jaringan yang berpartisipasi secara langsung dalam komunikasi jaringan dikelompokkan sebagai host. Host juga disebut perangkat akhir.</p><p>Server adalah komputer dengan perangkat lunak yang memungkinkan mereka memberikan informasi, seperti email atau halaman web, ke perangkat akhir lainnya di jaringan. Setiap layanan memerlukan perangkat lunak server terpisah. Misalnya, server memerlukan perangkat lunak server web untuk memberikan layanan web ke jaringan.</p><p>Komputer dengan perangkat lunak server dapat memberikan layanan secara bersamaan kepada satu atau banyak klien. Selain itu, satu komputer dapat menjalankan beberapa jenis perangkat lunak server. Di rumah atau usaha kecil, mungkin diperlukan satu komputer untuk bertindak sebagai server file, server web, dan server email.</p><p>Klien adalah komputer dengan perangkat lunak yang diinstal yang memungkinkan mereka untuk meminta dan menampilkan informasi yang diperoleh dari server. Contoh perangkat lunak klien adalah browser web, seperti Chrome atau FireFox. Satu komputer juga dapat menjalankan beberapa jenis perangkat lunak klien. Misalnya, pengguna bisa mengecek email dan melihat halaman web sembari instant messaging dan mendengarkan radio internet.</p><p><img src=https://4.bp.blogspot.com/-YZCGYrv4kD8/W6gABSbm-SI/AAAAAAAAEe0/J6ke_ViScuo8WTtA0r67-rirfOllmwqvQCLcBGAs/s1600/5.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p><strong>Peer-to-Peer</strong></p><p>Perangkat lunak client dan server biasanya berjalan di komputer terpisah, namun juga memungkinkan satu komputer untuk menjalankan kedua peran pada saat bersamaan. Di usaha kecil dan rumah, banyak komputer berfungsi sebagai server dan klien di jaringan. Jenis jaringan ini disebut jaringan peer-to-peer.</p><p>Kelebihan dan kekurangan jaringan peer-to-peer ditunjukkan pada gambar.</p><p><img src=https://1.bp.blogspot.com/-ecga6MTMY7M/W6gAIwwWgGI/AAAAAAAAEe8/D1kdNFEqtEcfSeqPHFpQb1Dxi9fxvkxMQCLcBGAs/s1600/6.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p><strong>Ikhtisar Komponen Jaringan</strong></p><p>Jalur yang diambil pesan dari sumber ke tujuan bisa sesederhana satu kabel yang menghubungkan satu komputer dengan komputer lain, atau sekompleks kumpulan jaringan yang secara harfiah menjangkau dunia. Infrastruktur jaringan ini menyediakan saluran yang stabil dan andal dimana komunikasi ini terjadi. Infrastruktur jaringan berisi tiga kategori komponen jaringan:</p><ol><li>Perangkat</li><li>Media</li><li>Jasa</li></ol><p><img src=https://4.bp.blogspot.com/-T8ImAJD2HuE/W6gAPMeEAKI/AAAAAAAAEfA/aGVUlxH9rbI5z_40G4XXHknjanEUKHlMgCLcBGAs/s1600/7.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p>Perangkat dan media adalah elemen fisik, atau perangkat keras, dari jaringan. Perangkat keras seringkali merupakan komponen yang terlihat dari platform jaringan seperti laptop, PC, switch, router, jalur akses nirkabel, atau kabel yang digunakan untuk menghubungkan perangkat.</p><p><img src=https://4.bp.blogspot.com/-CPxVi65J6ZU/W6gAVlAfsDI/AAAAAAAAEfE/0OH6uqwUCrYxyDIPnydO8AOY1n0usvpbgCLcBGAs/s1600/8.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p>Layanan mencakup banyak aplikasi jaringan umum yang digunakan orang setiap hari, seperti layanan email hosting dan layanan web hosting.</p><p><img src=https://3.bp.blogspot.com/-MURscSSHFBY/W6gAanWlLGI/AAAAAAAAEfM/5fhgwYBu4UUapImiZRBqJrriMDIJNdsKgCLcBGAs/s1600/9.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p>Proses menyediakan fungsionalitas yang mengarahkan dan memindahkan pesan melalui jaringan. Prosesnya kurang jelas bagi kita namun sangat penting untuk pengoperasian jaringan,</p><p>5. Kesimpulan</p><p>Cisco nama vendor pembuat perangkat networking no 1 didunia.</p></section><footer><hr><div class=meta><p class=tags><a href=/tags/blc-telkom-klaten><span>#</span>BLC Telkom Klaten</a>
-<a href=/tags/cisco><span>#</span>Cisco</a>
-<a href=/tags/bestpath-network><span>#</span>BestPath Network</a>
-<a href=/tags/activities><span>#</span>Activities</a></p></div><hr><div id=disqus_thread></div><script type=application/javascript>var disqus_config=function(){};(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return;}
-var d=document,s=d.createElement('script');s.async=true;s.src='//'+"sibunglonlabs"+'.disqus.com/embed.js';s.setAttribute('data-timestamp',+new Date());(d.head||d.body).appendChild(s);})();</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></footer></article></main><footer><p>&copy; 2020 Faizar Septiawan. <a href=http://creativecommons.org/licenses/by-sa/4.0/>Some Rights Reserved</a>.</p><p>Powered by <a href=https://gohugo.io title="A Fast and Flexible Website Generator">Hugo</a> & <a href=https://github.com/eshlox/simplicity title="Hugo theme">Simplicity</a>.</p></footer><script src=/assets/js/scripts.min.js></script><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-110194945-3','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script></body></html>
+Cisco merupakan perusahaan global dalam bidang telekomunikasi yang bermarkas di San José, California, Amerika Serikat. Perusahaan ini didirikan pada tahun 1984. Perusahaan ini mempekerjakan 51.480 pekerja.Produk dari perusahaan ini dapat ditemukan dari ruang tamu sampai ke perusahaan yang bergerak untuk skala internasional.Visi dari Cisco System.Inc (Cisco) yaitu “mengubah bagaimana cara hidup,bekerja,bermain dan belajar”,dan bagian dari Slogan dari Cisco adalah “ Selamat datang kedalam dunia Jaringan “ (welcome to the human network)."/>
+
+  
+
+  
+  <script defer src="/assets/custom/fontawesome-5.15.1/js/all.min.js"></script>
+  
+</head>
+
+  <body>
+    
+      <nav>
+  <a href="/">
+    siBunglon
+  </a>
+</nav>
+
+    
+    <main class="container">
+      
+  <article>
+    <header>
+      <small>
+        <span class="date">September 25, 2017</span></small>
+      <h1>Training Cisco CCENT Part 1</h1>
+    </header>
+    <section><p>1.Pendahuluan</p>
+<p>A. Pengertian</p>
+<p>Cisco merupakan perusahaan global dalam bidang telekomunikasi yang bermarkas di San José, California, Amerika Serikat. Perusahaan ini didirikan pada tahun 1984. Perusahaan ini mempekerjakan 51.480 pekerja.Produk dari perusahaan ini dapat ditemukan dari ruang tamu sampai ke perusahaan yang bergerak untuk skala internasional.Visi dari Cisco System.Inc (Cisco) yaitu “mengubah bagaimana cara hidup,bekerja,bermain dan belajar”,dan bagian dari Slogan dari Cisco adalah “ Selamat datang kedalam dunia Jaringan “ (welcome to the human network).Cisco adalah salah satu produk untuk Teknologi Informasi nomor satu didunia,terutama untuk sytem,perangkat keras jaringan serta telekomunikasinya.B. Latar Belakang<br>
+Memahami Materi dan dapat mengkonfigurasi cisco CCEN</p>
+<p>B. Hasil Yang DIharapkan</p>
+<p>Dapat Memahami Materi CCEN dan Mengkonfigurasi</p>
+<p>2. Alat dan Bahan</p>
+<ul>
+<li>Laptop</li>
+<li>Internet</li>
+<li>Cisco Packettracer</li>
+<li>Materi CCEN</li>
+</ul>
+<p>3. Jangka Waktu Pelaksanaan :</p>
+<p>Jam 08:00 s/d 22:00</p>
+<ul>
+<li>Sesi Pagi 08:00 s/d 11:30</li>
+<li>Istirahat Jam 11:30 s/d 12:30</li>
+<li>Sesi Siang 12:30 s/d 16:30</li>
+<li>Istirahat 16:30 s/d 20:00</li>
+<li>Sesi Malam 20:00 s/d 22:00</li>
+<li>Selesai</li>
+</ul>
+<p>4. Tahap - Tahap Pelaksanaan</p>
+<p>Pada hari ini kita membahas dasar-dasar jaringan dan mengenal jauh tentang apa itu cisco dan apa saja dalamnya,  pembahasan ini akan berlangsung selama seminggu kedepan, dan selanjutnya minggu depannya akan diadakan praktik langsung, Training ini dipandu oleh Mas Lathif langsung yang berasal dari Best Path Networks dari Tangerang,</p>
+<p>Di awal-awal beliau memperkenalkan dirinya kemudian beliau menjelaskan panjang lebar dari jaringan dasar, berikut rangkuman materi training.</p>
+<p><strong>PENGENALAN CISCO</strong></p>
+<p>Cisco adalah sebuah perusahaan yang memiliki dua bidang usaha. Usaha yang pertama adalah didalam pembuatan hardware dan software yang berhubungan dengan jaringan komputer. Kemudian yang kedua adalah di bidang pendidikan yaitu dengan Cisco Networking Academy (CNA).</p>
+<p>Di kedua bidang usaha ini, Cisco telah memiliki nama yang besar dan menjadi sebuah perusahaan yang menguasai sebagian besar pangsa pasar peralatan jaringan dan pengembangan solusi terintegrasi di dunia.</p>
+<p>Cisco System</p>
+<p>Cisco system adalah perusahaan pertama yang mengeluarkan sebuah router yang mendukung banyak protokol jaringan secara komersial. Protokol jaringan tersebut kemudian dikembangkan menjadi beberapa protokol baru yang kemudian hari dikenal dengan cisco proprietary network protokol. Beberapa di antaranya adalah: Cisco Discovery Protocol (CDP), Enhanced Interior Gateway Routing Protocol (EIGRP), VLAN Trunking Protocol.</p>
+<p>Hardware yang diproduksi dewasa ini oleh Cisco System adalah Router, Switch, Catalyst, Firewall, Pesawat VoIP, Wireless Access Point dan banyak lagi yang lain. Tentu saja, Cisco juga menciptakan software pendukung kerja dari hardware yang ada. Untuk hardware yang tergolong “pintar” Cisco memasukkan software sistem operasi khusus milik Cisco yaitu Internetwork Operating System (IOS).</p>
+<p>Cisco Networking Academy</p>
+<p>Untuk menyediakan sumber daya manusia yang dibutuhkan untuk mengoperasikan, mendesain, mengimplementasi serta menjaga keamanan dari produk Cisco yang tersebar di dunia, maka Cisco membangun sebuah institusi pendidikan yang dinamakan Cisco Networking Academy.</p>
+<p>Institusi pendidikan pusat Cisco yang ada di Amerika membuka kerja sama dengan berbagai institusi pendidikan formal maupun non-formal yang berada di seluruh dunia dengan harapan mampu menyebarkan pengetahuan yang dibutuhkan untuk mengelola perangkat Cisco.</p>
+<p>Sertifikasi dikeluarkan untuk memberikan penghargaan dan sebuah tanda bukti kemampuan kompetensi dari peserta didik yang telah mampu mengikuti dan menyelesaikan kurikulum program dari Cisco Networking Academy.</p>
+<p>Sertifikasi Cisco</p>
+<p>Cisco memiliki sejumlah sertifikasi yang tersedia disesuaikan dengan tingkat kebutuhan dan pemahaman dari siswa. Masing-masing sertifikasi memiliki masa berlaku 3 tahun dan harus mengikuti tes ulang untuk memperpanjang sertifikasi tersebut. Hal ini bertujuan untuk menjaga kualitas dari alumni CNA sehingga tetap meningkatkan pengetahuan di bidang teknologi jaringan yang bersifat dinamis.</p>
+<p>Sertifikasi Level Associate</p>
+<p>Untuk skala pemula, bisa mengambil sertifikasi berjudul Cisco Certified Entry Networking Technician atau Cisco Certified Network Associate (CCNA). Namun untuk yang ada di Indonesia CCNA adalah sertifikasi yang paling populer dibandingkan dengan CCENT, dan merupakan sertikasi dasar sebelum menuju ke sertifikasi selanjutnya.</p>
+<p>Setelah mengetahui dasar jaringan, konsep, operasi dan penyelesaian masalah serta konfigurasi dasar keamanan jaringan, siswa bisa mengambil lagi sertifikasi-sertifikasi lanjutan yang bersifat lebih spesifik.</p>
+<ol>
+<li>CCNA Security</li>
+<li>CCNA Voice dan CCVP</li>
+<li>CCNA Wireless</li>
+</ol>
+<p>Selain mempelajari bagaimana mengelola dan mengoperasi perangkat Cisco, terdapat juga kurikulum untuk bagaimana merancang susunan solusi perangkat Cisco dalam berbagai kondisi dengan mengambil sertifikasi Cisco Certified Design Associate(CCDA).</p>
+<p>Sertifikasi Profesional</p>
+<p>Untuk bisa mengambil sertifikasi profesional ini, dibutuhkan sertifikasi awal yaitu CCNA yang masih valid. Beberapa macam sertifikasi profesional antara lain:</p>
+<ol>
+<li>Cisco Certified Network Professional (CCNP)</li>
+<li>Cisco Certified Design Professional (CCDP)</li>
+<li>Cisco Certified Internetwork Professional (CCIP)</li>
+<li>Cisco Certified Security Professional (CCSP)</li>
+<li>Cisco Certified Voice Professional (CCVP)</li>
+</ol>
+<p>Sertifikasi Expert (Ahli/pakar)</p>
+<p>Sertifikasi ini ada dua macam. Cisco Certified Design Expert (CCDE) adalah sertifikasi yang diberikan kepada siswa yang mampu melakukan segala hal yang ada pada level Sertifikasi di bawah-nya dan mampu melakukan optimalisasi, mengembangkan solusi serta mampu memberikan dukungan teknis maupun strategis secara berlanjut. Yang kedua adalah Cisco Certified Internetwork expert(CCIE). Sertifikasi ini adalah sertifikasi tertinggi di CNA. CCIE adalah tingkat ujian yang paling susah dan diharapkan akan mampu memahami pengetahuan Cisco baik hardware, software, solusi dan juga konsultasi.</p>
+<p><strong>Ukuran Jaringan</strong></p>
+<p>Jaringan datang dalam segala ukuran. Mereka dapat berkisar dari jaringan sederhana yang terdiri dari dua komputer ke jaringan yang menghubungkan jutaan perangkat. Jaringan sederhana yang dipasang di rumah memungkinkan berbagi sumber daya, seperti printer, dokumen, gambar dan musik antara beberapa komputer lokal.</p>
+<p>Jaringan kantor rumah dan jaringan kantor kecil sering kali disiapkan oleh individu yang bekerja dari rumah atau kantor terpencil dan perlu terhubung ke jaringan perusahaan atau sumber terpusat lainnya. Selain itu, banyak wiraswasta menggunakan kantor rumah dan jaringan kantor kecil untuk mengiklankan dan menjual produk, memesan persediaan dan berkomunikasi dengan pelanggan. Dalam bisnis dan organisasi besar, jaringan dapat digunakan dalam skala yang lebih luas lagi untuk menyediakan konsolidasi, penyimpanan, dan akses terhadap informasi pada server jaringan.</p>
+<p>Jaringan juga memungkinkan komunikasi yang cepat seperti email, pesan instan, dan kolaborasi antar karyawan. Selain manfaat internal, banyak organisasi menggunakan jaringan mereka untuk menyediakan produk dan layanan kepada pelanggan melalui koneksi mereka ke Internet. Internet adalah jaringan terbesar yang ada. Sebenarnya, istilah internet berarti &lsquo;jaringan jaringan&rsquo;. Internet secara harfiah merupakan kumpulan jaringan pribadi dan publik yang saling berhubungan, seperti yang dijelaskan di atas.</p>
+<p>1. Small Home Networks<br>
+Small Home Network Connect A few Computer to each other and the internet.</p>
+<p><img src="https://3.bp.blogspot.com/-duY3MqOHAnU/W6f9oS02y0I/AAAAAAAAEeY/-lj95ZQ1gHMXyW1Rj6G-wzd9DpgNAlH6gCLcBGAs/s1600/1.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p>2. Small Office/Home Office Network<br>
+The Small Office/Home Office SOHO network enable computer within a home office or a remote office to connect to a corporate network or access centralized, share resources.</p>
+<p><img src="https://4.bp.blogspot.com/-Cb0zYuSFpIs/W6f_p-letOI/AAAAAAAAEek/T4FlTYuuPZ4W2WHE1BB8xRo88fmQRp1mACLcBGAs/s1600/2.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p>3. Medium To Large Network<br>
+Medium to large networks, such us those used by corporation and schools, can have many location with hundreds or thousands of interconnected computers.</p>
+<p><img src="https://1.bp.blogspot.com/-k-TiFQHWoKA/W6f_vGklsvI/AAAAAAAAEeo/4X6BrsiHofY8gijqEgeXsWANTNsDW1VVQCLcBGAs/s1600/3.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p>4. World Wide Network
+The internet is a network of network that connects hundreds or milions of computer World-Wide</p>
+<p><img src="https://4.bp.blogspot.com/-zAABPRRNXQk/W6f_0gZSjhI/AAAAAAAAEes/PaGiGw_rR6o71qBHwi7-icvqvj4H0-0yACLcBGAs/s1600/4.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p><strong>Klien dan Server</strong></p>
+<p>Semua komputer yang terhubung ke jaringan yang berpartisipasi secara langsung dalam komunikasi jaringan dikelompokkan sebagai host. Host juga disebut perangkat akhir.</p>
+<p>Server adalah komputer dengan perangkat lunak yang memungkinkan mereka memberikan informasi, seperti email atau halaman web, ke perangkat akhir lainnya di jaringan. Setiap layanan memerlukan perangkat lunak server terpisah. Misalnya, server memerlukan perangkat lunak server web untuk memberikan layanan web ke jaringan.</p>
+<p>Komputer dengan perangkat lunak server dapat memberikan layanan secara bersamaan kepada satu atau banyak klien. Selain itu, satu komputer dapat menjalankan beberapa jenis perangkat lunak server. Di rumah atau usaha kecil, mungkin diperlukan satu komputer untuk bertindak sebagai server file, server web, dan server email.</p>
+<p>Klien adalah komputer dengan perangkat lunak yang diinstal yang memungkinkan mereka untuk meminta dan menampilkan informasi yang diperoleh dari server. Contoh perangkat lunak klien adalah browser web, seperti Chrome atau FireFox. Satu komputer juga dapat menjalankan beberapa jenis perangkat lunak klien. Misalnya, pengguna bisa mengecek email dan melihat halaman web sembari instant messaging dan mendengarkan radio internet.</p>
+<p><img src="https://4.bp.blogspot.com/-YZCGYrv4kD8/W6gABSbm-SI/AAAAAAAAEe0/J6ke_ViScuo8WTtA0r67-rirfOllmwqvQCLcBGAs/s1600/5.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p><strong>Peer-to-Peer</strong></p>
+<p>Perangkat lunak client dan server biasanya berjalan di komputer terpisah, namun juga memungkinkan satu komputer untuk menjalankan kedua peran pada saat bersamaan. Di usaha kecil dan rumah, banyak komputer berfungsi sebagai server dan klien di jaringan. Jenis jaringan ini disebut jaringan peer-to-peer.</p>
+<p>Kelebihan dan kekurangan jaringan peer-to-peer ditunjukkan pada gambar.</p>
+<p><img src="https://1.bp.blogspot.com/-ecga6MTMY7M/W6gAIwwWgGI/AAAAAAAAEe8/D1kdNFEqtEcfSeqPHFpQb1Dxi9fxvkxMQCLcBGAs/s1600/6.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p><strong>Ikhtisar Komponen Jaringan</strong></p>
+<p>Jalur yang diambil pesan dari sumber ke tujuan bisa sesederhana satu kabel yang menghubungkan satu komputer dengan komputer lain, atau sekompleks kumpulan jaringan yang secara harfiah menjangkau dunia. Infrastruktur jaringan ini menyediakan saluran yang stabil dan andal dimana komunikasi ini terjadi. Infrastruktur jaringan berisi tiga kategori komponen jaringan:</p>
+<ol>
+<li>Perangkat</li>
+<li>Media</li>
+<li>Jasa</li>
+</ol>
+<p><img src="https://4.bp.blogspot.com/-T8ImAJD2HuE/W6gAPMeEAKI/AAAAAAAAEfA/aGVUlxH9rbI5z_40G4XXHknjanEUKHlMgCLcBGAs/s1600/7.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p>Perangkat dan media adalah elemen fisik, atau perangkat keras, dari jaringan. Perangkat keras seringkali merupakan komponen yang terlihat dari platform jaringan seperti laptop, PC, switch, router, jalur akses nirkabel, atau kabel yang digunakan untuk menghubungkan perangkat.</p>
+<p><img src="https://4.bp.blogspot.com/-CPxVi65J6ZU/W6gAVlAfsDI/AAAAAAAAEfE/0OH6uqwUCrYxyDIPnydO8AOY1n0usvpbgCLcBGAs/s1600/8.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p>Layanan mencakup banyak aplikasi jaringan umum yang digunakan orang setiap hari, seperti layanan email hosting dan layanan web hosting.</p>
+<p><img src="https://3.bp.blogspot.com/-MURscSSHFBY/W6gAanWlLGI/AAAAAAAAEfM/5fhgwYBu4UUapImiZRBqJrriMDIJNdsKgCLcBGAs/s1600/9.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p>Proses menyediakan fungsionalitas yang mengarahkan dan memindahkan pesan melalui jaringan. Prosesnya kurang jelas bagi kita namun sangat penting untuk pengoperasian jaringan,</p>
+<p>5. Kesimpulan</p>
+<p>Cisco nama vendor pembuat perangkat networking no 1 didunia.</p>
+</section>
+    <footer>
+      <hr>
+      <div class="meta">
+        <p class="tags">
+          
+            
+              <a href="/tags/blc-telkom-klaten">
+                <span>#</span>BLC Telkom Klaten</a>
+            
+              <a href="/tags/cisco">
+                <span>#</span>Cisco</a>
+            
+              <a href="/tags/bestpath-network">
+                <span>#</span>BestPath Network</a>
+            
+              <a href="/tags/activities">
+                <span>#</span>Activities</a>
+            
+          
+        </p>
+      </div>
+      <hr>
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sibunglonlabs" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </footer>
+  </article>
+
+    </main>
+    
+      <footer>
+  <p>
+    &copy; 2020 Faizar Septiawan. <a href="http://creativecommons.org/licenses/by-sa/4.0/">Some Rights Reserved</a>.
+  </p>
+  <p>
+    Powered by <a href="https://gohugo.io" title="A Fast and Flexible Website Generator">Hugo</a> &amp; <a href="https://github.com/eshlox/simplicity" title="Hugo theme">Simplicity</a>.
+  </p>
+</footer>
+
+    
+    
+    
+    
+    
+    
+    
+    <script src="/assets/js/scripts.min.js"></script>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-110194945-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>

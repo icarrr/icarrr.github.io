@@ -1,4 +1,25 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>EnGenius on The Official Site of siBunglon</title><link>https://sibunglon.com/tags/engenius/</link><description>Recent content in EnGenius on The Official Site of siBunglon</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 17 Oct 2017 11:01:00 +0000</lastBuildDate><atom:link href="https://sibunglon.com/tags/engenius/index.xml" rel="self" type="application/rss+xml"/><item><title>Setting Access Point EnGenius EAP 300</title><link>https://sibunglon.com/2017/10/17/setting-access-point-engenius-eap-300/</link><pubDate>Tue, 17 Oct 2017 11:01:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/17/setting-access-point-engenius-eap-300/</guid><description>A. Pendahuluan
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>EnGenius on The Official Site of siBunglon</title>
+    <link>https://sibunglon.com/tags/engenius/</link>
+    <description>Recent content in EnGenius on The Official Site of siBunglon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 17 Oct 2017 11:01:00 +0000</lastBuildDate>
+    
+      <atom:link href="https://sibunglon.com/tags/engenius/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      <item>
+        <title>Setting Access Point EnGenius EAP 300</title>
+        <link>https://sibunglon.com/2017/10/17/setting-access-point-engenius-eap-300/</link>
+        <pubDate>Tue, 17 Oct 2017 11:01:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/17/setting-access-point-engenius-eap-300/</guid>
+        <description>A. Pendahuluan
 Pada kesempatan ini saya akan sedikit membagi ilmu terkait dengan how to configure access point EnGenius EAP 300. ok dari pada lama kita lanjut ke step selanjutnya.
 B. Pengertian
-Di jaringan komputer , jalur akses nirkabel ( WAP ), atau lebih tepatnya hanya access point ( AP ), adalah perangkat keras jaringan yang memungkinkan perangkat WI - FI terhubung ke jaringan kabel. AP biasanya terhubung ke router (melalui jaringan kabel) sebagai perangkat mandiri, namun juga dapat menjadi komponen integral dari router itu sendiri.</description></item></channel></rss>
+Di jaringan komputer , jalur akses nirkabel ( WAP ), atau lebih tepatnya hanya access point ( AP ), adalah perangkat keras jaringan yang memungkinkan perangkat WI - FI terhubung ke jaringan kabel. AP biasanya terhubung ke router (melalui jaringan kabel) sebagai perangkat mandiri, namun juga dapat menjadi komponen integral dari router itu sendiri.</description>
+      </item>
+    
+  </channel>
+</rss>

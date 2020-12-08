@@ -1,10 +1,55 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Let's Encrypt on The Official Site of siBunglon</title><link>https://sibunglon.com/tags/lets-encrypt/</link><description>Recent content in Let's Encrypt on The Official Site of siBunglon</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 05 Sep 2020 06:23:28 +0800</lastBuildDate><atom:link href="https://sibunglon.com/tags/lets-encrypt/index.xml" rel="self" type="application/rss+xml"/><item><title>Configuring Auto Renewing Let's Encrypt SSL</title><link>https://sibunglon.com/2020/09/05/configuring-auto-renewing-lets-encrypt-ssl/</link><pubDate>Sat, 05 Sep 2020 06:23:28 +0800</pubDate><guid>https://sibunglon.com/2020/09/05/configuring-auto-renewing-lets-encrypt-ssl/</guid><description>Allow the certificate to auto renew, so that you as a server admin or not don&amp;rsquo;t have to log in to the server to renew all your certs.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Let&#39;s Encrypt on The Official Site of siBunglon</title>
+    <link>https://sibunglon.com/tags/lets-encrypt/</link>
+    <description>Recent content in Let&#39;s Encrypt on The Official Site of siBunglon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 05 Sep 2020 06:23:28 +0800</lastBuildDate>
+    
+      <atom:link href="https://sibunglon.com/tags/lets-encrypt/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      <item>
+        <title>Configuring Auto Renewing Let&#39;s Encrypt SSL</title>
+        <link>https://sibunglon.com/2020/09/05/configuring-auto-renewing-lets-encrypt-ssl/</link>
+        <pubDate>Sat, 05 Sep 2020 06:23:28 +0800</pubDate>
+        <guid>https://sibunglon.com/2020/09/05/configuring-auto-renewing-lets-encrypt-ssl/</guid>
+        <description>Allow the certificate to auto renew, so that you as a server admin or not don&amp;rsquo;t have to log in to the server to renew all your certs.
 The renewal is run by cron. You can create it.
 The following steps:
 For nginx Create cron file.
 $ vi /etc/cron.d/certbot and then enter the script:
-SHELL=/bin/sh PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin 0 */12 * * * root test -x /usr/bin/certbot -a \! -d /run/systemd/system &amp;amp;&amp;amp; perl -e &amp;#39;sleep int(rand(43200))&amp;#39; &amp;amp;&amp;amp; certbot -q renew For apache2 Download certbot renew package file</description></item><item><title>Setup HTTPS on Open edX Using Certbot</title><link>https://sibunglon.com/2020/01/04/setup-https-on-open-edx-using-certbot/</link><pubDate>Sat, 04 Jan 2020 02:54:23 +0700</pubDate><guid>https://sibunglon.com/2020/01/04/setup-https-on-open-edx-using-certbot/</guid><description>By default Open edX does not provide an SSL configuration, but we can add it manually. As per the topic of this article, here I will enable HTTPS on Open edX using Certbot.
+SHELL=/bin/sh PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin 0 */12 * * * root test -x /usr/bin/certbot -a \! -d /run/systemd/system &amp;amp;&amp;amp; perl -e &amp;#39;sleep int(rand(43200))&amp;#39; &amp;amp;&amp;amp; certbot -q renew For apache2 Download certbot renew package file</description>
+      </item>
+    
+      <item>
+        <title>Setup HTTPS on Open edX Using Certbot</title>
+        <link>https://sibunglon.com/2020/01/04/setup-https-on-open-edx-using-certbot/</link>
+        <pubDate>Sat, 04 Jan 2020 02:54:23 +0700</pubDate>
+        <guid>https://sibunglon.com/2020/01/04/setup-https-on-open-edx-using-certbot/</guid>
+        <description>By default Open edX does not provide an SSL configuration, but we can add it manually. As per the topic of this article, here I will enable HTTPS on Open edX using Certbot.
 Certbot is a new breakthrough from the Let&amp;rsquo;s Encrypt Web Security Certificate Provider where Lets Encrypt provides SSL for free.
-Note: In the following example, in Open edX I point Course Management System (CMS) using the domain studio.</description></item><item><title>Error Generate Certificate SSL Menggunakan Let's Encrypt</title><link>https://sibunglon.com/2019/02/16/error-generate-certificate-ssl-menggunakan-lets-encrypt/</link><pubDate>Sat, 16 Feb 2019 17:19:08 +0700</pubDate><guid>https://sibunglon.com/2019/02/16/error-generate-certificate-ssl-menggunakan-lets-encrypt/</guid><description>Beberapa bulan yang lalu I&amp;rsquo;m siBunglon masih bisa generate SSL menggunakan Let&amp;rsquo;s Encrypt namun hari ini I&amp;rsquo;m siBunglon menemukan error ketika akan generate SSL lagi dan I&amp;rsquo;m siBunglon mendapatkan error message seperti berikut:
-[root@airgreen siBunglon]# certbot --nginx -d repo.lab.sibunglon.com Traceback (most recent call last): File &amp;quot;/bin/certbot&amp;quot;, line 9, in &amp;lt;module&amp;gt; load_entry_point('certbot==0.29.1', 'console_scripts', 'certbot')() File &amp;quot;/usr/lib/python2.7/site-packages/pkg_resources/__init__.py&amp;quot;, line 487, in load_entry_point return get_distribution(dist).load_entry_point(group, name) File &amp;quot;/usr/lib/python2.7/site-packages/pkg_resources/__init__.py&amp;quot;, line 2728, in load_entry_point return ep.load() File &amp;quot;/usr/lib/python2.</description></item><item><title>Berkenalan Dengan Let's Encrypt SSL Gratis Untuk Nginx</title><link>https://sibunglon.com/2018/12/16/berkenalan-dengan-lets-encrypt-ssl-gratis-untuk-nginx/</link><pubDate>Sun, 16 Dec 2018 07:51:58 +0700</pubDate><guid>https://sibunglon.com/2018/12/16/berkenalan-dengan-lets-encrypt-ssl-gratis-untuk-nginx/</guid><description>Let&amp;rsquo;s Encrypt? Apa sih let&amp;rsquo;s encrypt itu?
-Let&amp;rsquo;s encrypt adalah certificate Authority (CA) atau otoritas sertifikat yang menyediakan cara mudah untuk mendapatkan dan menginstall SSL pada web server, sehingga memungkinkan web server anda terenskripsi (HTTPS). Merupakan layanan yang disediakan oleh Internet Security Research Group (ISRG). ISRG memberikan dan mengaktifkan HTTPS secara gratis dengan alasan ingin menciptakan web yang lebih aman dan menjaga privasi. Sebenarnya untuk mendapatkan dan memasang SSL itu memiliki biaya sendiri namun jika untuk kebutuhan pengembangan, ngoprek / ngelab, let&amp;rsquo;s encrypt ini menjadi solusi.</description></item></channel></rss>
+ Note: In the following example, in Open edX I point Course Management System (CMS) using the domain studio.</description>
+      </item>
+    
+      <item>
+        <title>Error Generate Certificate SSL Menggunakan Let&#39;s Encrypt</title>
+        <link>https://sibunglon.com/2019/02/16/error-generate-certificate-ssl-menggunakan-lets-encrypt/</link>
+        <pubDate>Sat, 16 Feb 2019 17:19:08 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/02/16/error-generate-certificate-ssl-menggunakan-lets-encrypt/</guid>
+        <description>Beberapa bulan yang lalu I&amp;rsquo;m siBunglon masih bisa generate SSL menggunakan Let&amp;rsquo;s Encrypt namun hari ini I&amp;rsquo;m siBunglon menemukan error ketika akan generate SSL lagi dan I&amp;rsquo;m siBunglon mendapatkan error message seperti berikut:
+[root@airgreen siBunglon]# certbot --nginx -d repo.lab.sibunglon.com Traceback (most recent call last): File &amp;quot;/bin/certbot&amp;quot;, line 9, in &amp;lt;module&amp;gt; load_entry_point(&#39;certbot==0.29.1&#39;, &#39;console_scripts&#39;, &#39;certbot&#39;)() File &amp;quot;/usr/lib/python2.7/site-packages/pkg_resources/__init__.py&amp;quot;, line 487, in load_entry_point return get_distribution(dist).load_entry_point(group, name) File &amp;quot;/usr/lib/python2.7/site-packages/pkg_resources/__init__.py&amp;quot;, line 2728, in load_entry_point return ep.load() File &amp;quot;/usr/lib/python2.</description>
+      </item>
+    
+      <item>
+        <title>Berkenalan Dengan Let&#39;s Encrypt SSL Gratis Untuk Nginx</title>
+        <link>https://sibunglon.com/2018/12/16/berkenalan-dengan-lets-encrypt-ssl-gratis-untuk-nginx/</link>
+        <pubDate>Sun, 16 Dec 2018 07:51:58 +0700</pubDate>
+        <guid>https://sibunglon.com/2018/12/16/berkenalan-dengan-lets-encrypt-ssl-gratis-untuk-nginx/</guid>
+        <description>Let&amp;rsquo;s Encrypt? Apa sih let&amp;rsquo;s encrypt itu?
+Let&amp;rsquo;s encrypt adalah certificate Authority (CA) atau otoritas sertifikat yang menyediakan cara mudah untuk mendapatkan dan menginstall SSL pada web server, sehingga memungkinkan web server anda terenskripsi (HTTPS). Merupakan layanan yang disediakan oleh Internet Security Research Group (ISRG). ISRG memberikan dan mengaktifkan HTTPS secara gratis dengan alasan ingin menciptakan web yang lebih aman dan menjaga privasi. Sebenarnya untuk mendapatkan dan memasang SSL itu memiliki biaya sendiri namun jika untuk kebutuhan pengembangan, ngoprek / ngelab, let&amp;rsquo;s encrypt ini menjadi solusi.</description>
+      </item>
+    
+  </channel>
+</rss>

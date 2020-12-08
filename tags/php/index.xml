@@ -1,24 +1,77 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>PHP on The Official Site of siBunglon</title><link>https://sibunglon.com/tags/php/</link><description>Recent content in PHP on The Official Site of siBunglon</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 14 Oct 2017 10:25:00 +0000</lastBuildDate><atom:link href="https://sibunglon.com/tags/php/index.xml" rel="self" type="application/rss+xml"/><item><title>Atasi Info PHP Tidak Tampil atau Not Working</title><link>https://sibunglon.com/2017/10/14/atasi-info-php-tidak-tampil-atau-not-working/</link><pubDate>Sat, 14 Oct 2017 10:25:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/14/atasi-info-php-tidak-tampil-atau-not-working/</guid><description>A. Pendahuluan
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PHP on The Official Site of siBunglon</title>
+    <link>https://sibunglon.com/tags/php/</link>
+    <description>Recent content in PHP on The Official Site of siBunglon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 14 Oct 2017 10:25:00 +0000</lastBuildDate>
+    
+      <atom:link href="https://sibunglon.com/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      <item>
+        <title>Atasi Info PHP Tidak Tampil atau Not Working</title>
+        <link>https://sibunglon.com/2017/10/14/atasi-info-php-tidak-tampil-atau-not-working/</link>
+        <pubDate>Sat, 14 Oct 2017 10:25:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/14/atasi-info-php-tidak-tampil-atau-not-working/</guid>
+        <description>A. Pendahuluan
 Pada postingan kali ini, saya akan memberikan solusi yang biasa menjadi permasalahan saat menginstall LAMP Server di linux
 B. Pengertian
-PHP info adalah istilah untuk menyebutkan sebuah halaman yang berisi informasi mengenai versi PHP yang digunakan oleh suatu server, biasanya pada halaman PHP Info akan di informasikan banyak hal selain versi nya itu sendiri. phpinfo() biasanya digunakan untuk memeriksa pengaturan konfigurasi dan variabel standar yang tersedia pada sistem tertentu.</description></item><item><title>Hal-Hal Yang Harus Dilakukan Setelah Install Server - Install Aplikasi Berbasis Web</title><link>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-install-aplikasi-berbasis-web/</link><pubDate>Fri, 13 Oct 2017 10:22:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-install-aplikasi-berbasis-web/</guid><description>A. Pendahuluan
+PHP info adalah istilah untuk menyebutkan sebuah halaman yang berisi informasi mengenai versi PHP yang digunakan oleh suatu server, biasanya pada halaman PHP Info akan di informasikan banyak hal selain versi nya itu sendiri. phpinfo() biasanya digunakan untuk memeriksa pengaturan konfigurasi dan variabel standar yang tersedia pada sistem tertentu.</description>
+      </item>
+    
+      <item>
+        <title>Hal-Hal Yang Harus Dilakukan Setelah Install Server - Install Aplikasi Berbasis Web</title>
+        <link>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-install-aplikasi-berbasis-web/</link>
+        <pubDate>Fri, 13 Oct 2017 10:22:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-install-aplikasi-berbasis-web/</guid>
+        <description>A. Pendahuluan
 Pada kesempatan ini, saya kembali memposting tentang dasar-dasar setelahi install server.
 B. Pengertian
 Aplikasi Berbasis Web adalah sebuah aplikasi yang dapat diakses melalui internet atau intranet, dan pada sekarang ini ternyata lebih banyak dan lebih luas dalam pemakaiannya.
 C. Latar belakang
 Setelah kita menginstall debian di proxmox tentunya kita harus tau hal hal apa saja yang harus dilakukan setelahnya.
 D. Tujuan
-Agar server dapat bekerja secara optimal saat melayani komputer client.</description></item><item><title>Hal-Hal Yang Harus Dilakukan Setelah Install Server - Installasi LAMP Server</title><link>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-installasi-lamp-server/</link><pubDate>Fri, 13 Oct 2017 10:09:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-installasi-lamp-server/</guid><description>A. Pendahuluan
+Agar server dapat bekerja secara optimal saat melayani komputer client.</description>
+      </item>
+    
+      <item>
+        <title>Hal-Hal Yang Harus Dilakukan Setelah Install Server - Installasi LAMP Server</title>
+        <link>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-installasi-lamp-server/</link>
+        <pubDate>Fri, 13 Oct 2017 10:09:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-installasi-lamp-server/</guid>
+        <description>A. Pendahuluan
 Pada kesempatan ini saya memposting lagi dan masih mengenai server
 B. Pengertian
 LAMP adalah istilah yang merupakan singkatan dariLinux,Apache,MySQL danPerl/PHP/Phyton. Merupakan sebuah paket perangkat lunak bebas yang digunakan untuk menjalankan sebuah aplikasi secara lengkap.
 Komponen-komponen dari LAMP :
-Linux – sistem operasi Apache HTTP Server – web server MariaDB atau MySQL – sistem basis data PHP atau Perl atau Python – bahasa pemrograman yang dipakai C. Latar belakang</description></item><item><title>Hal-Hal Yang Harus Dilakukan Setelah Install Server</title><link>https://sibunglon.com/2017/10/12/hal-hal-yang-harus-dilakukan-setelah-install-server/</link><pubDate>Thu, 12 Oct 2017 09:31:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/12/hal-hal-yang-harus-dilakukan-setelah-install-server/</guid><description>A. Pendahuluan
+ Linux – sistem operasi Apache HTTP Server – web server MariaDB atau MySQL – sistem basis data PHP atau Perl atau Python – bahasa pemrograman yang dipakai  C. Latar belakang</description>
+      </item>
+    
+      <item>
+        <title>Hal-Hal Yang Harus Dilakukan Setelah Install Server</title>
+        <link>https://sibunglon.com/2017/10/12/hal-hal-yang-harus-dilakukan-setelah-install-server/</link>
+        <pubDate>Thu, 12 Oct 2017 09:31:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/12/hal-hal-yang-harus-dilakukan-setelah-install-server/</guid>
+        <description>A. Pendahuluan
 Pada kesempatan kali ini yang saya bagikan yaitu tentang hal - hal yang perlu dilakukan setelah install server.
 B. Pengertian
-Debian adalah sistem operasi komputer yang tersusun dari paket-paket perangkat lunak yang dirilis sebagai perangkat lunak bebas dan terbuka dengan lisensi mayoritas GNU General Public License dan lisensi perangkat lunak bebas lainnya. Debian GNU/UNIX memuat perkakas sistem operasi GNU dan kernel Linux merupakan distribusi Linux yang populer dan berpengaruh.</description></item><item><title>Bagaimana Menginstall LAMP di Localhost Linux?</title><link>https://sibunglon.com/2017/08/09/bagaimana-menginstall-lamp-di-localhost-linux/</link><pubDate>Wed, 09 Aug 2017 14:58:00 +0000</pubDate><guid>https://sibunglon.com/2017/08/09/bagaimana-menginstall-lamp-di-localhost-linux/</guid><description>A. Pendahuluan
+Debian adalah sistem operasi komputer yang tersusun dari paket-paket perangkat lunak yang dirilis sebagai perangkat lunak bebas dan terbuka dengan lisensi mayoritas GNU General Public License dan lisensi perangkat lunak bebas lainnya. Debian GNU/UNIX memuat perkakas sistem operasi GNU dan kernel Linux merupakan distribusi Linux yang populer dan berpengaruh.</description>
+      </item>
+    
+      <item>
+        <title>Bagaimana Menginstall LAMP di Localhost Linux?</title>
+        <link>https://sibunglon.com/2017/08/09/bagaimana-menginstall-lamp-di-localhost-linux/</link>
+        <pubDate>Wed, 09 Aug 2017 14:58:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/09/bagaimana-menginstall-lamp-di-localhost-linux/</guid>
+        <description>A. Pendahuluan
 Hello, pada kesempatan kali ini saya memposting bagaimana sih menginstal LAMP? Nah cara-caranya akan dijelaskan sebagai berikut.
 #Pengertian
 LAMP adalah istilah yang merupakan singkatan dari Linux, Apache, MySQL dan Perl/PHP/Phyton. Merupakan sebuah paket perangkat lunak bebas yang digunakan untuk menjalankan sebuah aplikasi secara lengkap.
 Komponen-komponen dari LAMP :
-Linux – sistem operasi Apache HTTP Server – web server MariaDB atau MySQL – sistem basis data PHP atau Perl atau Python – bahasa pemrograman yang dipakai #Latar Belakang</description></item></channel></rss>
+ Linux – sistem operasi Apache HTTP Server – web server MariaDB atau MySQL – sistem basis data PHP atau Perl atau Python – bahasa pemrograman yang dipakai  #Latar Belakang</description>
+      </item>
+    
+  </channel>
+</rss>

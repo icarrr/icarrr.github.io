@@ -1,36 +1,217 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Error on The Official Site of siBunglon</title><link>https://sibunglon.com/tags/error/</link><description>Recent content in Error on The Official Site of siBunglon</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 26 Jul 2020 21:05:49 +0800</lastBuildDate><atom:link href="https://sibunglon.com/tags/error/index.xml" rel="self" type="application/rss+xml"/><item><title>Database returned an invalid value in QuerySet.datetimes()</title><link>https://sibunglon.com/2020/07/26/database-returned-an-invalid-value-in-queryset.datetimes/</link><pubDate>Sun, 26 Jul 2020 21:05:49 +0800</pubDate><guid>https://sibunglon.com/2020/07/26/database-returned-an-invalid-value-in-queryset.datetimes/</guid><description>After create new action on the Django admin pages, it redirects to my site with the message a server error. When check the file /edx/var/log/supervisor/lms-stderr.log i find this:
-Traceback (most recent call last): File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/exception.py&amp;quot;, line 41, in inner response = get_response(request) File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;quot;, line 249, in _legacy_get_response response = self._get_response(request) File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;quot;, line 217, in _get_response response = self.process_exception_by_middleware(e, request) File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;quot;, line 215, in _get_response response = response.render() File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.</description></item><item><title>SOLVE - SMTP Open edX Timeout</title><link>https://sibunglon.com/2020/07/26/solve-smtp-open-edx-timeout/</link><pubDate>Sun, 26 Jul 2020 17:21:39 +0800</pubDate><guid>https://sibunglon.com/2020/07/26/solve-smtp-open-edx-timeout/</guid><description>By default in Open edX, the system will send an email when a new user registers, using the forget password or other conditions.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Error on The Official Site of siBunglon</title>
+    <link>https://sibunglon.com/tags/error/</link>
+    <description>Recent content in Error on The Official Site of siBunglon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 26 Jul 2020 21:05:49 +0800</lastBuildDate>
+    
+      <atom:link href="https://sibunglon.com/tags/error/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      <item>
+        <title>Database returned an invalid value in QuerySet.datetimes()</title>
+        <link>https://sibunglon.com/2020/07/26/database-returned-an-invalid-value-in-queryset.datetimes/</link>
+        <pubDate>Sun, 26 Jul 2020 21:05:49 +0800</pubDate>
+        <guid>https://sibunglon.com/2020/07/26/database-returned-an-invalid-value-in-queryset.datetimes/</guid>
+        <description>After create new action on the Django admin pages, it redirects to my site with the message a server error. When check the file /edx/var/log/supervisor/lms-stderr.log i find this:
+Traceback (most recent call last): File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/exception.py&amp;quot;, line 41, in inner response = get_response(request) File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;quot;, line 249, in _legacy_get_response response = self._get_response(request) File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;quot;, line 217, in _get_response response = self.process_exception_by_middleware(e, request) File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;quot;, line 215, in _get_response response = response.render() File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.</description>
+      </item>
+    
+      <item>
+        <title>SOLVE - SMTP Open edX Timeout</title>
+        <link>https://sibunglon.com/2020/07/26/solve-smtp-open-edx-timeout/</link>
+        <pubDate>Sun, 26 Jul 2020 17:21:39 +0800</pubDate>
+        <guid>https://sibunglon.com/2020/07/26/solve-smtp-open-edx-timeout/</guid>
+        <description>By default in Open edX, the system will send an email when a new user registers, using the forget password or other conditions.
 A few days ago my teams found an issue on the email sending service, but the issue was not because of the Open edX SMTP service but from the connection side of the Open edX server to the SMTP server.
 Then what&amp;rsquo;s the case?
 Case:
--) When a user registers, the user should receive an email to activate the account, but in reality it is not.</description></item><item><title>SOLVE - zsh function definition file not found</title><link>https://sibunglon.com/2020/05/24/solve-zsh-function-definition-file-not-found/</link><pubDate>Sun, 24 May 2020 21:21:22 +0700</pubDate><guid>https://sibunglon.com/2020/05/24/solve-zsh-function-definition-file-not-found/</guid><description>Some commands error when using autocomplete. Ex, error message when using the mv command:
+-) When a user registers, the user should receive an email to activate the account, but in reality it is not.</description>
+      </item>
+    
+      <item>
+        <title>SOLVE - zsh function definition file not found</title>
+        <link>https://sibunglon.com/2020/05/24/solve-zsh-function-definition-file-not-found/</link>
+        <pubDate>Sun, 24 May 2020 21:21:22 +0700</pubDate>
+        <guid>https://sibunglon.com/2020/05/24/solve-zsh-function-definition-file-not-found/</guid>
+        <description>Some commands error when using autocomplete. Ex, error message when using the mv command:
 ~ ❯❯❯ mv Down... (eval):1: _mv: function definition file not found How to solve?
 ~ ❯❯❯ rm ~/.zcompdump ~ ❯❯❯ exec zsh -l This solutions worked for me.
-If you found error message, comment on this article or contact me 😄</description></item><item><title>Fixing Issue Celery Open edX Setelah Migrasi Instance</title><link>https://sibunglon.com/2020/04/19/fixing-issue-celery-open-edx-setelah-migrasi-instance/</link><pubDate>Sun, 19 Apr 2020 22:38:14 +0700</pubDate><guid>https://sibunglon.com/2020/04/19/fixing-issue-celery-open-edx-setelah-migrasi-instance/</guid><description>Beberapa hari yang lalu saya memindahkan instance Open edX dan beberapa menit setelah server aktif, Open edX tidak bisa diakses. Cek servicenya, tetapi semua service dalam keadaan aktif namun ketika melihat lognya, ternyata ada error pada celery, kurang lebih errornya seperti berikut:
-$ sudo tail -f /edx/var/log/{lms,cms,nginx}/*log ==&amp;gt; /edx/var/log/lms/edx.log &amp;lt;== Apr 12 02:21:16 beep [service_variant=lms][celery.worker.consumer][env:sandbox] ERROR [beep 1400] [consumer.py:364] - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 104] Connection reset by peer.</description></item><item><title>Error Install MySQL Server on Ubuntu 18</title><link>https://sibunglon.com/2020/02/07/error-install-mysql-server-on-ubuntu-18/</link><pubDate>Fri, 07 Feb 2020 23:55:13 +0700</pubDate><guid>https://sibunglon.com/2020/02/07/error-install-mysql-server-on-ubuntu-18/</guid><description>A few days ago mysql server was installed again, mysql was successfully installed and the service was successfully running but if you want to install another package, this problem must be solved by installing mysql server because mysql server installation is not 100% complete yet.
-Btw, fortunately the terminal history on the laptop has not been cleared so I can save the error message again on Ubuntu pastebin so that others can see the error clearly 😁.</description></item><item><title>Fixing Problems on Installations Open edX Ficus</title><link>https://sibunglon.com/2019/12/06/fixing-problems-on-installations-open-edx-ficus/</link><pubDate>Fri, 06 Dec 2019 13:13:00 +0700</pubDate><guid>https://sibunglon.com/2019/12/06/fixing-problems-on-installations-open-edx-ficus/</guid><description>What is the problem? Ficus is a name of Open edX release which was released on February 23, 2017. It&amp;rsquo;s been quite a long time, and automatically uses old packages or packages that are still active at that time. Last September, my friends asked me to install Open edX Ficus, because it&amp;rsquo;s an old version so I tried to install it in another VM, I made a VM on the Google Cloud Platform.</description></item><item><title>Error Backup Database PostgreSQL Using pg_dump</title><link>https://sibunglon.com/2019/11/04/error-backup-database-postgresql-using-pg_dump/</link><pubDate>Mon, 04 Nov 2019 13:39:16 +0700</pubDate><guid>https://sibunglon.com/2019/11/04/error-backup-database-postgresql-using-pg_dump/</guid><description>Has anyone ever done a postgres database backup using the pg_dump command line and then found problems with messages more or less like the following?
+If you found error message, comment on this article or contact me 😄</description>
+      </item>
+    
+      <item>
+        <title>Fixing Issue Celery Open edX Setelah Migrasi Instance</title>
+        <link>https://sibunglon.com/2020/04/19/fixing-issue-celery-open-edx-setelah-migrasi-instance/</link>
+        <pubDate>Sun, 19 Apr 2020 22:38:14 +0700</pubDate>
+        <guid>https://sibunglon.com/2020/04/19/fixing-issue-celery-open-edx-setelah-migrasi-instance/</guid>
+        <description>Beberapa hari yang lalu saya memindahkan instance Open edX dan beberapa menit setelah server aktif, Open edX tidak bisa diakses. Cek servicenya, tetapi semua service dalam keadaan aktif namun ketika melihat lognya, ternyata ada error pada celery, kurang lebih errornya seperti berikut:
+$ sudo tail -f /edx/var/log/{lms,cms,nginx}/*log ==&amp;gt; /edx/var/log/lms/edx.log &amp;lt;== Apr 12 02:21:16 beep [service_variant=lms][celery.worker.consumer][env:sandbox] ERROR [beep 1400] [consumer.py:364] - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 104] Connection reset by peer.</description>
+      </item>
+    
+      <item>
+        <title>Error Install MySQL Server on Ubuntu 18</title>
+        <link>https://sibunglon.com/2020/02/07/error-install-mysql-server-on-ubuntu-18/</link>
+        <pubDate>Fri, 07 Feb 2020 23:55:13 +0700</pubDate>
+        <guid>https://sibunglon.com/2020/02/07/error-install-mysql-server-on-ubuntu-18/</guid>
+        <description>A few days ago mysql server was installed again, mysql was successfully installed and the service was successfully running but if you want to install another package, this problem must be solved by installing mysql server because mysql server installation is not 100% complete yet.
+Btw, fortunately the terminal history on the laptop has not been cleared so I can save the error message again on Ubuntu pastebin so that others can see the error clearly 😁.</description>
+      </item>
+    
+      <item>
+        <title>Fixing Problems on Installations Open edX Ficus</title>
+        <link>https://sibunglon.com/2019/12/06/fixing-problems-on-installations-open-edx-ficus/</link>
+        <pubDate>Fri, 06 Dec 2019 13:13:00 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/12/06/fixing-problems-on-installations-open-edx-ficus/</guid>
+        <description>What is the problem? Ficus is a name of Open edX release which was released on February 23, 2017. It&amp;rsquo;s been quite a long time, and automatically uses old packages or packages that are still active at that time. Last September, my friends asked me to install Open edX Ficus, because it&amp;rsquo;s an old version so I tried to install it in another VM, I made a VM on the Google Cloud Platform.</description>
+      </item>
+    
+      <item>
+        <title>Error Backup Database PostgreSQL Using pg_dump</title>
+        <link>https://sibunglon.com/2019/11/04/error-backup-database-postgresql-using-pg_dump/</link>
+        <pubDate>Mon, 04 Nov 2019 13:39:16 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/11/04/error-backup-database-postgresql-using-pg_dump/</guid>
+        <description>Has anyone ever done a postgres database backup using the pg_dump command line and then found problems with messages more or less like the following?
 pg_dump: server version: 9.6.12; pg_dump version: 9.2.24 pg_dump: aborting because of server version mismatch At that time I used Postgres 9.6.
-If before you did not do the postgres installation process, when backing up the data and finding problems with the message more or less like what I show then do not be too quick to ambition to make postgres or other improvements because it requires a great effort especially if the problem is found in production server, DANGER 🤣 Simply find the pg_dump command line location according to the postgres version of the server being used.</description></item><item><title>First Contribution to Open Source Project</title><link>https://sibunglon.com/2019/07/14/first-contribution-to-open-source-project/</link><pubDate>Sun, 14 Jul 2019 00:25:00 +0700</pubDate><guid>https://sibunglon.com/2019/07/14/first-contribution-to-open-source-project/</guid><description>Error Get Incommon Server CA (Certificate Authority) When Installing Open edX In the previous article or that is here, there was a quick acquaintance session with Open edX while playing with Open edX (Open edX installation). And there are also articles about errors during Open edX installation, can be seen in this article.
-Besides the errors in this article, this time I found a different error which was an error in getting an Authority Certificate.</description></item><item><title>Open edX Error Create Service Worker Users</title><link>https://sibunglon.com/2019/07/13/open-edx-error-create-service-worker-users/</link><pubDate>Sat, 13 Jul 2019 23:01:19 +0700</pubDate><guid>https://sibunglon.com/2019/07/13/open-edx-error-create-service-worker-users/</guid><description>Error Create Service Worker Users When Installing Open edX In the previous article or that is here, there was a quick acquaintance session with Open edX while playing with Open edX (Open edX installation).
-I myself had an error when installing Open EdX, the error was the same as in the title of this article which failed to make service worker users. I was made confused by this error, even with this error I repeatedly did the Open edX installation process.</description></item><item><title>Fix the Cockpit Blank Page After Login Over Nginx Reverse Proxy</title><link>https://sibunglon.com/2019/04/15/fix-the-cockpit-blank-page-after-login-over-nginx-reverse-proxy/</link><pubDate>Mon, 15 Apr 2019 05:09:24 +0700</pubDate><guid>https://sibunglon.com/2019/04/15/fix-the-cockpit-blank-page-after-login-over-nginx-reverse-proxy/</guid><description>Cockpit nge-Blank Setelah Login Jika diakses melalui Reverse Proxy Nginx? Apakah anda mengalami hal tersebut? Jangan takut, karena saya juga mengalami hal tersebut 😆 Beberapa yang hari lalu, saya mengakses cockpit server lab saya yang melalui reverse proxy NGINX, awalnya normal aja pas ngakses sampai ke halaman login namun ketika mencoba login, si cockpit hanya stuck di blank page. Wahhhh alhamdulillah dapat masalah baru lagi :D padahal sebelumnya normal aja, gak ada stuck di blank page.</description></item><item><title>ValueError Saat Setup MSSQL Server Di Linux</title><link>https://sibunglon.com/2019/04/09/valueerror-saat-setup-mssql-server-di-linux/</link><pubDate>Tue, 09 Apr 2019 20:45:08 +0700</pubDate><guid>https://sibunglon.com/2019/04/09/valueerror-saat-setup-mssql-server-di-linux/</guid><description>ValueError: unknown locale: UTF-8? Beberapa hari yang lalu saya sempat menulis step by step install Microsoft SQL Server (MSSQL Server) di environment Linux, namun mungkin saja ada yang menemukan error salah satunya error dengan message ValueError: unknown locale: UTF-8, gak usah takut karena dari masalah itu ataupun lainnya kita dapat pelajaran baru😆
-Disuatu waktu saya install MSSQL Server Linux di environment berbeda dari sebelumnya, saya ikuti tuh step by step installasi MSSQL Server yang saya tulis sebelumnya, alhamdulillah dapat rejeki, dapat ValueError: unknown locale: UTF-8 pada saat setup MSSQL Server🤣 Dengan kemampuan sok tau saya😆 langsung disimpulkan maksud dari error message tersebut yaitu Lokal UTF-8 tidak di kenal.</description></item><item><title>Error Generate Certificate SSL Menggunakan Let's Encrypt</title><link>https://sibunglon.com/2019/02/16/error-generate-certificate-ssl-menggunakan-lets-encrypt/</link><pubDate>Sat, 16 Feb 2019 17:19:08 +0700</pubDate><guid>https://sibunglon.com/2019/02/16/error-generate-certificate-ssl-menggunakan-lets-encrypt/</guid><description>Beberapa bulan yang lalu I&amp;rsquo;m siBunglon masih bisa generate SSL menggunakan Let&amp;rsquo;s Encrypt namun hari ini I&amp;rsquo;m siBunglon menemukan error ketika akan generate SSL lagi dan I&amp;rsquo;m siBunglon mendapatkan error message seperti berikut:
-[root@airgreen siBunglon]# certbot --nginx -d repo.lab.sibunglon.com Traceback (most recent call last): File &amp;quot;/bin/certbot&amp;quot;, line 9, in &amp;lt;module&amp;gt; load_entry_point('certbot==0.29.1', 'console_scripts', 'certbot')() File &amp;quot;/usr/lib/python2.7/site-packages/pkg_resources/__init__.py&amp;quot;, line 487, in load_entry_point return get_distribution(dist).load_entry_point(group, name) File &amp;quot;/usr/lib/python2.7/site-packages/pkg_resources/__init__.py&amp;quot;, line 2728, in load_entry_point return ep.load() File &amp;quot;/usr/lib/python2.</description></item><item><title>Sertifikat Repository Red Hat Kadaluarsa Pada VM Microsoft Azure</title><link>https://sibunglon.com/2018/12/12/sertifikat-repository-red-hat-kadaluarsa-pada-vm-microsoft-azure/</link><pubDate>Wed, 12 Dec 2018 10:28:20 +0700</pubDate><guid>https://sibunglon.com/2018/12/12/sertifikat-repository-red-hat-kadaluarsa-pada-vm-microsoft-azure/</guid><description>Jika anda menggunakan VM Red Hat versi lama di Microsoft Azure, kadang anda mendapatkan masalah “SSL peer rejected your certificate as expired” jika ingin menginstall paket baru ataupun mengupate paket-paket. Itu terjadi karena sertifikat repositori sudah kadaluarsa, untuk memecahkan masalah tersebut cukup gunakan command
+If before you did not do the postgres installation process, when backing up the data and finding problems with the message more or less like what I show then do not be too quick to ambition to make postgres or other improvements because it requires a great effort especially if the problem is found in production server, DANGER 🤣 Simply find the pg_dump command line location according to the postgres version of the server being used.</description>
+      </item>
+    
+      <item>
+        <title>First Contribution to Open Source Project</title>
+        <link>https://sibunglon.com/2019/07/14/first-contribution-to-open-source-project/</link>
+        <pubDate>Sun, 14 Jul 2019 00:25:00 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/07/14/first-contribution-to-open-source-project/</guid>
+        <description>Error Get Incommon Server CA (Certificate Authority) When Installing Open edX In the previous article or that is here, there was a quick acquaintance session with Open edX while playing with Open edX (Open edX installation). And there are also articles about errors during Open edX installation, can be seen in this article.
+Besides the errors in this article, this time I found a different error which was an error in getting an Authority Certificate.</description>
+      </item>
+    
+      <item>
+        <title>Open edX Error Create Service Worker Users</title>
+        <link>https://sibunglon.com/2019/07/13/open-edx-error-create-service-worker-users/</link>
+        <pubDate>Sat, 13 Jul 2019 23:01:19 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/07/13/open-edx-error-create-service-worker-users/</guid>
+        <description>Error Create Service Worker Users When Installing Open edX In the previous article or that is here, there was a quick acquaintance session with Open edX while playing with Open edX (Open edX installation).
+I myself had an error when installing Open EdX, the error was the same as in the title of this article which failed to make service worker users. I was made confused by this error, even with this error I repeatedly did the Open edX installation process.</description>
+      </item>
+    
+      <item>
+        <title>Fix the Cockpit Blank Page After Login Over Nginx Reverse Proxy</title>
+        <link>https://sibunglon.com/2019/04/15/fix-the-cockpit-blank-page-after-login-over-nginx-reverse-proxy/</link>
+        <pubDate>Mon, 15 Apr 2019 05:09:24 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/04/15/fix-the-cockpit-blank-page-after-login-over-nginx-reverse-proxy/</guid>
+        <description>Cockpit nge-Blank Setelah Login Jika diakses melalui Reverse Proxy Nginx? Apakah anda mengalami hal tersebut? Jangan takut, karena saya juga mengalami hal tersebut 😆 Beberapa yang hari lalu, saya mengakses cockpit server lab saya yang melalui reverse proxy NGINX, awalnya normal aja pas ngakses sampai ke halaman login namun ketika mencoba login, si cockpit hanya stuck di blank page. Wahhhh alhamdulillah dapat masalah baru lagi :D padahal sebelumnya normal aja, gak ada stuck di blank page.</description>
+      </item>
+    
+      <item>
+        <title>ValueError Saat Setup MSSQL Server Di Linux</title>
+        <link>https://sibunglon.com/2019/04/09/valueerror-saat-setup-mssql-server-di-linux/</link>
+        <pubDate>Tue, 09 Apr 2019 20:45:08 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/04/09/valueerror-saat-setup-mssql-server-di-linux/</guid>
+        <description>ValueError: unknown locale: UTF-8? Beberapa hari yang lalu saya sempat menulis step by step install Microsoft SQL Server (MSSQL Server) di environment Linux, namun mungkin saja ada yang menemukan error salah satunya error dengan message ValueError: unknown locale: UTF-8, gak usah takut karena dari masalah itu ataupun lainnya kita dapat pelajaran baru😆
+Disuatu waktu saya install MSSQL Server Linux di environment berbeda dari sebelumnya, saya ikuti tuh step by step installasi MSSQL Server yang saya tulis sebelumnya, alhamdulillah dapat rejeki, dapat ValueError: unknown locale: UTF-8 pada saat setup MSSQL Server🤣 Dengan kemampuan sok tau saya😆 langsung disimpulkan maksud dari error message tersebut yaitu Lokal UTF-8 tidak di kenal.</description>
+      </item>
+    
+      <item>
+        <title>Error Generate Certificate SSL Menggunakan Let&#39;s Encrypt</title>
+        <link>https://sibunglon.com/2019/02/16/error-generate-certificate-ssl-menggunakan-lets-encrypt/</link>
+        <pubDate>Sat, 16 Feb 2019 17:19:08 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/02/16/error-generate-certificate-ssl-menggunakan-lets-encrypt/</guid>
+        <description>Beberapa bulan yang lalu I&amp;rsquo;m siBunglon masih bisa generate SSL menggunakan Let&amp;rsquo;s Encrypt namun hari ini I&amp;rsquo;m siBunglon menemukan error ketika akan generate SSL lagi dan I&amp;rsquo;m siBunglon mendapatkan error message seperti berikut:
+[root@airgreen siBunglon]# certbot --nginx -d repo.lab.sibunglon.com Traceback (most recent call last): File &amp;quot;/bin/certbot&amp;quot;, line 9, in &amp;lt;module&amp;gt; load_entry_point(&#39;certbot==0.29.1&#39;, &#39;console_scripts&#39;, &#39;certbot&#39;)() File &amp;quot;/usr/lib/python2.7/site-packages/pkg_resources/__init__.py&amp;quot;, line 487, in load_entry_point return get_distribution(dist).load_entry_point(group, name) File &amp;quot;/usr/lib/python2.7/site-packages/pkg_resources/__init__.py&amp;quot;, line 2728, in load_entry_point return ep.load() File &amp;quot;/usr/lib/python2.</description>
+      </item>
+    
+      <item>
+        <title>Sertifikat Repository Red Hat Kadaluarsa Pada VM Microsoft Azure</title>
+        <link>https://sibunglon.com/2018/12/12/sertifikat-repository-red-hat-kadaluarsa-pada-vm-microsoft-azure/</link>
+        <pubDate>Wed, 12 Dec 2018 10:28:20 +0700</pubDate>
+        <guid>https://sibunglon.com/2018/12/12/sertifikat-repository-red-hat-kadaluarsa-pada-vm-microsoft-azure/</guid>
+        <description>Jika anda menggunakan VM Red Hat versi lama di Microsoft Azure, kadang anda mendapatkan masalah “SSL peer rejected your certificate as expired” jika ingin menginstall paket baru ataupun mengupate paket-paket. Itu terjadi karena sertifikat repositori sudah kadaluarsa, untuk memecahkan masalah tersebut cukup gunakan command
 yum update -y --disablerepo=* --enablerepo=rhui-microsoft-* rhui-azure-rhel7
-Setelah itu sekarang anda dapat menginstall atau update paket di Red Hat anda seperti yang biasa kamu lakukan.</description></item><item><title>PIP Python2 Error</title><link>https://sibunglon.com/2018/12/11/pip-python2-error/</link><pubDate>Tue, 11 Dec 2018 21:34:18 +0700</pubDate><guid>https://sibunglon.com/2018/12/11/pip-python2-error/</guid><description>Pip di Python2 Error? Traceback (most recent call last): File &amp;quot;/usr/bin/pip&amp;quot;, line 9, in &amp;lt;module&amp;gt; from pip import main ImportError: cannot import name main Gak usah panik, cukup jalankan command berikut tapi pastikan terlebih dahulu sekarang sudah jadi super user (root)
-python -m pip uninstall pip &amp;amp;&amp;amp; apt install python-pip --reinstall</description></item><item><title>Python Tidak Memiliki Objek SSL_ST_INIT</title><link>https://sibunglon.com/2018/12/10/python-tidak-memiliki-objek-ssl_st_init/</link><pubDate>Mon, 10 Dec 2018 23:47:30 +0700</pubDate><guid>https://sibunglon.com/2018/12/10/python-tidak-memiliki-objek-ssl_st_init/</guid><description>Jika akan menghubungkan perangkat anda dengan perangkat lain menggunakan ansible namun ketemu error ERROR! Unexpected Exception: &amp;lsquo;module&amp;rsquo; object has no attribute &amp;lsquo;SSL_ST_INIT&amp;rsquo;, sebenarnya itu hanya membutuhkan paket pyOpenSSL yang dapat diinstall dengan command pip install pyOpenSSL</description></item><item><title>Peringatan Dependensi Cryptography</title><link>https://sibunglon.com/2018/12/10/peringatan-dependensi-cryptography/</link><pubDate>Mon, 10 Dec 2018 23:41:25 +0700</pubDate><guid>https://sibunglon.com/2018/12/10/peringatan-dependensi-cryptography/</guid><description>Requests Dependency Warning: Old version of cryptography Jika anda mendapatkan sebuah masalah jangan panik, apalagi ketemu error yang similiar dari judul tulisan itu berarti saat ini disistem anda menggunakan cryptography versi lama silahkan update dengan command pip install --upgrade cryptography</description></item><item><title>Nginx Tidak Bisa Diakses</title><link>https://sibunglon.com/2018/12/10/nginx-tidak-bisa-diakses/</link><pubDate>Mon, 10 Dec 2018 13:40:57 +0700</pubDate><guid>https://sibunglon.com/2018/12/10/nginx-tidak-bisa-diakses/</guid><description>Nginx di CentOS atau RHEL tidak bisa diakses? Service nginx aktif? Servernya aktif? Akses dari localhost bisa? Jika semua jawabannya YA, mungkin firewall di system anda sedang aktif namun trafik protokol HTTP dan HTTPS belum diizinkan oleh perangkat yang lain.
+Setelah itu sekarang anda dapat menginstall atau update paket di Red Hat anda seperti yang biasa kamu lakukan.</description>
+      </item>
+    
+      <item>
+        <title>PIP Python2 Error</title>
+        <link>https://sibunglon.com/2018/12/11/pip-python2-error/</link>
+        <pubDate>Tue, 11 Dec 2018 21:34:18 +0700</pubDate>
+        <guid>https://sibunglon.com/2018/12/11/pip-python2-error/</guid>
+        <description>Pip di Python2 Error? Traceback (most recent call last): File &amp;quot;/usr/bin/pip&amp;quot;, line 9, in &amp;lt;module&amp;gt; from pip import main ImportError: cannot import name main Gak usah panik, cukup jalankan command berikut tapi pastikan terlebih dahulu sekarang sudah jadi super user (root)
+python -m pip uninstall pip &amp;amp;&amp;amp; apt install python-pip --reinstall </description>
+      </item>
+    
+      <item>
+        <title>Python Tidak Memiliki Objek SSL_ST_INIT</title>
+        <link>https://sibunglon.com/2018/12/10/python-tidak-memiliki-objek-ssl_st_init/</link>
+        <pubDate>Mon, 10 Dec 2018 23:47:30 +0700</pubDate>
+        <guid>https://sibunglon.com/2018/12/10/python-tidak-memiliki-objek-ssl_st_init/</guid>
+        <description>Jika akan menghubungkan perangkat anda dengan perangkat lain menggunakan ansible namun ketemu error ERROR! Unexpected Exception: &amp;lsquo;module&amp;rsquo; object has no attribute &amp;lsquo;SSL_ST_INIT&amp;rsquo;, sebenarnya itu hanya membutuhkan paket pyOpenSSL yang dapat diinstall dengan command pip install pyOpenSSL</description>
+      </item>
+    
+      <item>
+        <title>Peringatan Dependensi Cryptography</title>
+        <link>https://sibunglon.com/2018/12/10/peringatan-dependensi-cryptography/</link>
+        <pubDate>Mon, 10 Dec 2018 23:41:25 +0700</pubDate>
+        <guid>https://sibunglon.com/2018/12/10/peringatan-dependensi-cryptography/</guid>
+        <description>Requests Dependency Warning: Old version of cryptography Jika anda mendapatkan sebuah masalah jangan panik, apalagi ketemu error yang similiar dari judul tulisan itu berarti saat ini disistem anda menggunakan cryptography versi lama silahkan update dengan command pip install --upgrade cryptography</description>
+      </item>
+    
+      <item>
+        <title>Nginx Tidak Bisa Diakses</title>
+        <link>https://sibunglon.com/2018/12/10/nginx-tidak-bisa-diakses/</link>
+        <pubDate>Mon, 10 Dec 2018 13:40:57 +0700</pubDate>
+        <guid>https://sibunglon.com/2018/12/10/nginx-tidak-bisa-diakses/</guid>
+        <description>Nginx di CentOS atau RHEL tidak bisa diakses? Service nginx aktif? Servernya aktif? Akses dari localhost bisa? Jika semua jawabannya YA, mungkin firewall di system anda sedang aktif namun trafik protokol HTTP dan HTTPS belum diizinkan oleh perangkat yang lain.
 Untuk mengizinkan trafik protokol HTTP, gunakan command
 firewall-cmd --permanent --zone=public --add-service=http Sedangkan untuk mengizinkan trafik protokol HTTPS, gunakan command
-firewall-cmd --permanent --zone=public --add-service=https Setelah diizinkan, firewall wajib direload agar update firewall dapat diterapkan</description></item><item><title>Atasi Info PHP Tidak Tampil atau Not Working</title><link>https://sibunglon.com/2017/10/14/atasi-info-php-tidak-tampil-atau-not-working/</link><pubDate>Sat, 14 Oct 2017 10:25:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/14/atasi-info-php-tidak-tampil-atau-not-working/</guid><description>A. Pendahuluan
+firewall-cmd --permanent --zone=public --add-service=https Setelah diizinkan, firewall wajib direload agar update firewall dapat diterapkan</description>
+      </item>
+    
+      <item>
+        <title>Atasi Info PHP Tidak Tampil atau Not Working</title>
+        <link>https://sibunglon.com/2017/10/14/atasi-info-php-tidak-tampil-atau-not-working/</link>
+        <pubDate>Sat, 14 Oct 2017 10:25:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/14/atasi-info-php-tidak-tampil-atau-not-working/</guid>
+        <description>A. Pendahuluan
 Pada postingan kali ini, saya akan memberikan solusi yang biasa menjadi permasalahan saat menginstall LAMP Server di linux
 B. Pengertian
-PHP info adalah istilah untuk menyebutkan sebuah halaman yang berisi informasi mengenai versi PHP yang digunakan oleh suatu server, biasanya pada halaman PHP Info akan di informasikan banyak hal selain versi nya itu sendiri. phpinfo() biasanya digunakan untuk memeriksa pengaturan konfigurasi dan variabel standar yang tersedia pada sistem tertentu.</description></item><item><title>Atasi PhpMyAdmin Error 1698 - Tidak Bisa Login Sebagai Root</title><link>https://sibunglon.com/2017/09/20/atasi-phpmyadmin-error-1698-tidak-bisa-login-sebagai-root/</link><pubDate>Wed, 20 Sep 2017 03:15:00 +0000</pubDate><guid>https://sibunglon.com/2017/09/20/atasi-phpmyadmin-error-1698-tidak-bisa-login-sebagai-root/</guid><description>A. Pendahuluan
+PHP info adalah istilah untuk menyebutkan sebuah halaman yang berisi informasi mengenai versi PHP yang digunakan oleh suatu server, biasanya pada halaman PHP Info akan di informasikan banyak hal selain versi nya itu sendiri. phpinfo() biasanya digunakan untuk memeriksa pengaturan konfigurasi dan variabel standar yang tersedia pada sistem tertentu.</description>
+      </item>
+    
+      <item>
+        <title>Atasi PhpMyAdmin Error 1698 - Tidak Bisa Login Sebagai Root</title>
+        <link>https://sibunglon.com/2017/09/20/atasi-phpmyadmin-error-1698-tidak-bisa-login-sebagai-root/</link>
+        <pubDate>Wed, 20 Sep 2017 03:15:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/09/20/atasi-phpmyadmin-error-1698-tidak-bisa-login-sebagai-root/</guid>
+        <description>A. Pendahuluan
 Pada kesempatan ini yang saya posting/share yaitu troubleshoot phpmyadmin dengan kode error #1698 atau tidak bisa login sebagai root.
 B. Pengertian
 PhpMyAdmin adalah perangkat lunak bebas yang ditulis dalam bahasa pemrograman PHP yang digunakan untuk menangani administrasi MySQL melalui Jejaring Jagat Jembar (World Wide Web). phpMyAdmin mendukung berbagai operasi MySQL, diantaranya (mengelola basis data, tabel-tabel, bidang (fields), relasi (relations), indeks, pengguna (users), perizinan (permissions), dan lain-lain).
-C. Latar belakang</description></item><item><title>Mengatasi Masalah 'apt-get update failed to fetch hash sum mismatch'</title><link>https://sibunglon.com/2017/08/23/mengatasi-masalah-apt-get-update-failed-to-fetch-hash-sum-mismatch/</link><pubDate>Wed, 23 Aug 2017 10:37:00 +0000</pubDate><guid>https://sibunglon.com/2017/08/23/mengatasi-masalah-apt-get-update-failed-to-fetch-hash-sum-mismatch/</guid><description>A. Pendahuluan
+C. Latar belakang</description>
+      </item>
+    
+      <item>
+        <title>Mengatasi Masalah &#39;apt-get update failed to fetch hash sum mismatch&#39;</title>
+        <link>https://sibunglon.com/2017/08/23/mengatasi-masalah-apt-get-update-failed-to-fetch-hash-sum-mismatch/</link>
+        <pubDate>Wed, 23 Aug 2017 10:37:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/23/mengatasi-masalah-apt-get-update-failed-to-fetch-hash-sum-mismatch/</guid>
+        <description>A. Pendahuluan
 Pada kali ini, saya akan memposting tentang bagaimana mengatasi masalah yang biasa ditemukan saat melakukan update linux.
 B. Pengertian
-Shell adalah program (penterjemah perintah)yang menjembatani user dengan sistem operasi dalam hal ini Kernel (inti dari sistem operasi), umumnya shell menyediakan prompt sebagai user interface, tempat dimana user dapat mengetikkan perintah-perintah yang diinginkan baik berupa perintah internal shell (internal command), ataupun perintah eksekusi file program (eksternal command), selain itu memungkinkan user menyusun sekumpulan perintah pada sebuah atau beberapa file untuk dieksekusi sebagai program.</description></item><item><title>Mengatasi GRUB Linux Yang Error</title><link>https://sibunglon.com/2017/08/02/mengatasi-grub-linux-yang-error/</link><pubDate>Wed, 02 Aug 2017 16:51:00 +0000</pubDate><guid>https://sibunglon.com/2017/08/02/mengatasi-grub-linux-yang-error/</guid><description>Pendahuluan
+Shell adalah program (penterjemah perintah)yang menjembatani user dengan sistem operasi dalam hal ini Kernel (inti dari sistem operasi), umumnya shell menyediakan prompt sebagai user interface, tempat dimana user dapat mengetikkan perintah-perintah yang diinginkan baik berupa perintah internal shell (internal command), ataupun perintah eksekusi file program (eksternal command), selain itu memungkinkan user menyusun sekumpulan perintah pada sebuah atau beberapa file untuk dieksekusi sebagai program.</description>
+      </item>
+    
+      <item>
+        <title>Mengatasi GRUB Linux Yang Error</title>
+        <link>https://sibunglon.com/2017/08/02/mengatasi-grub-linux-yang-error/</link>
+        <pubDate>Wed, 02 Aug 2017 16:51:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/02/mengatasi-grub-linux-yang-error/</guid>
+        <description>Pendahuluan
 GNU GRUB (singkat untuk GNU GRand Bersatu Bootloader) adalah boot loader paket dari proyek GNU . GRUB adalah implementasi referensi dari Free Software Foundation &amp;rsquo;s Multiboot Keterangan , yang menyediakan pengguna pilihan untuk boot salah satu dari beberapa sistem operasi yang terpasang di komputer atau pilih tertentu kernel konfigurasi yang tersedia pada partisi sistem operasi tertentu.
 Maksud dan Tujuan
-Tujuan dari postingan ini yaitu agar pembaca yang memiliki masalah yang serupa, maka ia dapat mengatasinya sendiri tanpa membawa ke service center.</description></item></channel></rss>
+Tujuan dari postingan ini yaitu agar pembaca yang memiliki masalah yang serupa, maka ia dapat mengatasinya sendiri tanpa membawa ke service center.</description>
+      </item>
+    
+  </channel>
+</rss>

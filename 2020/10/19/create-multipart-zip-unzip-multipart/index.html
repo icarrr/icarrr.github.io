@@ -1,44 +1,217 @@
-<!doctype html><html lang=en-us itemscope itemtype=http://schema.org/WebPage><head><title>Create Multipart Zip & Unzip Multipart</title><meta http-equiv=cache-control content="public, max-age=31536000"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=author content="Faizar Septiawan"><meta name=description content="Read - Search - Ask | Personal Site | Catch your problem solution or read interesting stories on my blog!"><meta name=keywords content="Linux,Unix,BSD,MacOS,Komunitas Pengguna Linux Indonesia,KPLI Klaten,KPLI Bulukumba,MikroTik,MikroTik Indonesia,FreeBSD,FreeBSD Indonesia,Cisco,Cisco Indonesia,BLC Telkom Klaten,Ansible,Nginx,Apache2,Caddy Server,Ayo Belajar Linux,Cloud Computing,e-Learning,Open edX,Proxmox,Sendy,Microsoft SQL Server,MySQL,PostgreSQL,Lets Encrypt,Case Study,Atlassian,Virtualization,Faizar Septiawan,Icar,siBunglonGanteng,siBunglonLabs,Orang Ganteng"><meta name=google-site-verification content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-110194945-3"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','UA-110194945-3');</script><link rel=stylesheet href=/assets/css/external.min.css media=screen><link rel=stylesheet href=/assets/css/styles.css media=screen><link href=/assets/custom/googlefonts/roboto.css rel=stylesheet><link rel=apple-touch-icon-precomposed sizes=144x144 href=/src/images/apple-touch-icon.png><link rel="shortcut icon" href=/src/images/favicon.ico><link href=/posts/index.xml rel=alternate type=application/rss+xml title="The Official Site of siBunglon"><meta property="og:title" content="Create Multipart Zip & Unzip Multipart"><meta property="og:description" content="Need to transfer or send a file zip but transfer media limit the size file? Create a multipart file using split command and join the file on receiver host.
+<!DOCTYPE html>
+<html lang="en-us" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+  <title>Create Multipart Zip &amp; Unzip Multipart</title>
+  
+  <meta http-equiv="cache-control" content="public, max-age=31536000" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Faizar Septiawan">
+  <meta name="description" content="Read - Search - Ask | Personal Site | Catch your problem solution or read interesting stories on my blog!">
+  <meta name="keywords" content="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng">
+  
+  
+  
+  <meta name="google-site-verification" content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM" />
+  
+  
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110194945-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110194945-3');
+  </script>
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/css/external.min.css" media="screen">
+  
+  
+  <link rel="stylesheet" href="/assets/css/styles.css" media="screen">
+  <link href="/assets/custom/googlefonts/roboto.css" rel="stylesheet">
+  
+
+  
+  
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/src/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="/src/images/favicon.ico">
+  
+
+  
+  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
+
+  <meta property="og:title" content="Create Multipart Zip &amp; Unzip Multipart" />
+<meta property="og:description" content="Need to transfer or send a file zip but transfer media limit the size file? Create a multipart file using split command and join the file on receiver host.
 Create a file zip.
-$ zip SWhite.zip S.white-TKTlqehU_ro.mp4 $ ls -lha total 675744 drwxr-xr-x@ 5 faizarseptiawan 160B Oct 19 00:28 . drwx------@ 15 faizarseptiawan 480B Oct 19 00:00 .. -rw-r--r-- 1 faizarseptiawan 165M Jun 23 04:11 S.white-TKTlqehU_ro.mp4 -rw-r--r-- 1 faizarseptiawan 165M Oct 19 00:28 SWhite."><meta property="og:type" content="article"><meta property="og:url" content="https://sibunglon.com/2020/10/19/create-multipart-zip-unzip-multipart/"><meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"><meta property="article:published_time" content="2020-10-19T00:24:17+08:00"><meta property="article:modified_time" content="2020-10-19T00:24:17+08:00"><meta property="og:site_name" content="The Official Site of siBunglon"><meta itemprop=name content="Create Multipart Zip & Unzip Multipart"><meta itemprop=description content="Need to transfer or send a file zip but transfer media limit the size file? Create a multipart file using split command and join the file on receiver host.
+$ zip SWhite.zip S.white-TKTlqehU_ro.mp4 $ ls -lha total 675744 drwxr-xr-x@ 5 faizarseptiawan 160B Oct 19 00:28 . drwx------@ 15 faizarseptiawan 480B Oct 19 00:00 .. -rw-r--r-- 1 faizarseptiawan 165M Jun 23 04:11 S.white-TKTlqehU_ro.mp4 -rw-r--r-- 1 faizarseptiawan 165M Oct 19 00:28 SWhite." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sibunglon.com/2020/10/19/create-multipart-zip-unzip-multipart/" />
+<meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"/>
+<meta property="article:published_time" content="2020-10-19T00:24:17+08:00" />
+<meta property="article:modified_time" content="2020-10-19T00:24:17+08:00" /><meta property="og:site_name" content="The Official Site of siBunglon" />
+
+  <meta itemprop="name" content="Create Multipart Zip &amp; Unzip Multipart">
+<meta itemprop="description" content="Need to transfer or send a file zip but transfer media limit the size file? Create a multipart file using split command and join the file on receiver host.
 Create a file zip.
-$ zip SWhite.zip S.white-TKTlqehU_ro.mp4 $ ls -lha total 675744 drwxr-xr-x@ 5 faizarseptiawan 160B Oct 19 00:28 . drwx------@ 15 faizarseptiawan 480B Oct 19 00:00 .. -rw-r--r-- 1 faizarseptiawan 165M Jun 23 04:11 S.white-TKTlqehU_ro.mp4 -rw-r--r-- 1 faizarseptiawan 165M Oct 19 00:28 SWhite."><meta itemprop=datePublished content="2020-10-19T00:24:17+08:00"><meta itemprop=dateModified content="2020-10-19T00:24:17+08:00"><meta itemprop=wordCount content="269"><meta itemprop=image content="https://sibunglon.com/assets/img/profil.webp"><meta itemprop=keywords content="Ayo Belajar Linux,Others,"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://sibunglon.com/assets/img/profil.webp"><meta name=twitter:title content="Create Multipart Zip & Unzip Multipart"><meta name=twitter:description content="Need to transfer or send a file zip but transfer media limit the size file? Create a multipart file using split command and join the file on receiver host.
+$ zip SWhite.zip S.white-TKTlqehU_ro.mp4 $ ls -lha total 675744 drwxr-xr-x@ 5 faizarseptiawan 160B Oct 19 00:28 . drwx------@ 15 faizarseptiawan 480B Oct 19 00:00 .. -rw-r--r-- 1 faizarseptiawan 165M Jun 23 04:11 S.white-TKTlqehU_ro.mp4 -rw-r--r-- 1 faizarseptiawan 165M Oct 19 00:28 SWhite.">
+<meta itemprop="datePublished" content="2020-10-19T00:24:17+08:00" />
+<meta itemprop="dateModified" content="2020-10-19T00:24:17+08:00" />
+<meta itemprop="wordCount" content="269">
+<meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
+
+
+
+<meta itemprop="keywords" content="Ayo Belajar Linux,Others," />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://sibunglon.com/assets/img/profil.webp"/>
+
+<meta name="twitter:title" content="Create Multipart Zip &amp; Unzip Multipart"/>
+<meta name="twitter:description" content="Need to transfer or send a file zip but transfer media limit the size file? Create a multipart file using split command and join the file on receiver host.
 Create a file zip.
-$ zip SWhite.zip S.white-TKTlqehU_ro.mp4 $ ls -lha total 675744 drwxr-xr-x@ 5 faizarseptiawan 160B Oct 19 00:28 . drwx------@ 15 faizarseptiawan 480B Oct 19 00:00 .. -rw-r--r-- 1 faizarseptiawan 165M Jun 23 04:11 S.white-TKTlqehU_ro.mp4 -rw-r--r-- 1 faizarseptiawan 165M Oct 19 00:28 SWhite."><script defer src=/assets/custom/fontawesome-5.15.1/js/all.min.js></script></head><body><nav><a href=/>siBunglon</a></nav><main class=container><article><header><small><span class=date>October 19, 2020</span></small><h1>Create Multipart Zip & Unzip Multipart</h1></header><section><p>Need to transfer or send a file zip but transfer media limit the size file? Create a multipart file using split command and join the file on receiver host.</p><p>Create a file zip.</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>$ zip SWhite.zip S.white-TKTlqehU_ro.mp4
+$ zip SWhite.zip S.white-TKTlqehU_ro.mp4 $ ls -lha total 675744 drwxr-xr-x@ 5 faizarseptiawan 160B Oct 19 00:28 . drwx------@ 15 faizarseptiawan 480B Oct 19 00:00 .. -rw-r--r-- 1 faizarseptiawan 165M Jun 23 04:11 S.white-TKTlqehU_ro.mp4 -rw-r--r-- 1 faizarseptiawan 165M Oct 19 00:28 SWhite."/>
+
+  
+
+  
+  <script defer src="/assets/custom/fontawesome-5.15.1/js/all.min.js"></script>
+  
+</head>
+
+  <body>
+    
+      <nav>
+  <a href="/">
+    siBunglon
+  </a>
+</nav>
+
+    
+    <main class="container">
+      
+  <article>
+    <header>
+      <small>
+        <span class="date">October 19, 2020</span></small>
+      <h1>Create Multipart Zip &amp; Unzip Multipart</h1>
+    </header>
+    <section><p>Need to transfer or send a file zip but transfer media limit the size file? Create a multipart file using split command and join the file on receiver host.</p>
+<p>Create a file zip.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ zip SWhite.zip S.white-TKTlqehU_ro.mp4
 $ ls -lha
-total <span class=m>675744</span>
-drwxr-xr-x@  <span class=m>5</span> faizarseptiawan 160B Oct <span class=m>19</span> 00:28 .
-drwx------@ <span class=m>15</span> faizarseptiawan 480B Oct <span class=m>19</span> 00:00 ..
--rw-r--r--   <span class=m>1</span> faizarseptiawan 165M Jun <span class=m>23</span> 04:11 S.white-TKTlqehU_ro.mp4
--rw-r--r--   <span class=m>1</span> faizarseptiawan 165M Oct <span class=m>19</span> 00:28 SWhite.zip
-</code></pre></div><p>Create a multipart file using split command.</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>$ <span class=c1># split -b maxSize filename outputPrefix</span>
+total <span class="m">675744</span>
+drwxr-xr-x@  <span class="m">5</span> faizarseptiawan 160B Oct <span class="m">19</span> 00:28 .
+drwx------@ <span class="m">15</span> faizarseptiawan 480B Oct <span class="m">19</span> 00:00 ..
+-rw-r--r--   <span class="m">1</span> faizarseptiawan 165M Jun <span class="m">23</span> 04:11 S.white-TKTlqehU_ro.mp4
+-rw-r--r--   <span class="m">1</span> faizarseptiawan 165M Oct <span class="m">19</span> 00:28 SWhite.zip
+</code></pre></div><p>Create a multipart file using split command.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="c1"># split -b maxSize filename outputPrefix</span>
 $ split -b 50m SWhite.zip SWhite-
 $ ls -lha
-total <span class=m>1013464</span>
-drwxr-xr-x@  <span class=m>9</span> faizarseptiawan 288B Oct <span class=m>19</span> 00:29 .
-drwx------@ <span class=m>15</span> faizarseptiawan 480B Oct <span class=m>19</span> 00:00 ..
--rw-r--r--   <span class=m>1</span> faizarseptiawan 165M Jun <span class=m>23</span> 04:11 S.white-TKTlqehU_ro.mp4
--rw-r--r--   <span class=m>1</span> faizarseptiawan  50M Oct <span class=m>19</span> 00:29 SWhite-aa
--rw-r--r--   <span class=m>1</span> faizarseptiawan  50M Oct <span class=m>19</span> 00:29 SWhite-ab
--rw-r--r--   <span class=m>1</span> faizarseptiawan  50M Oct <span class=m>19</span> 00:29 SWhite-ac
--rw-r--r--   <span class=m>1</span> faizarseptiawan  15M Oct <span class=m>19</span> 00:29 SWhite-ad
--rw-r--r--   <span class=m>1</span> faizarseptiawan 165M Oct <span class=m>19</span> 00:28 SWhite.zip
-</code></pre></div><p>Join the file.</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>$ mkdir SWhite <span class=o>&amp;&amp;</span> mv SWhite-a* SWhite <span class=o>&amp;&amp;</span> <span class=nb>cd</span> SWhite
+total <span class="m">1013464</span>
+drwxr-xr-x@  <span class="m">9</span> faizarseptiawan 288B Oct <span class="m">19</span> 00:29 .
+drwx------@ <span class="m">15</span> faizarseptiawan 480B Oct <span class="m">19</span> 00:00 ..
+-rw-r--r--   <span class="m">1</span> faizarseptiawan 165M Jun <span class="m">23</span> 04:11 S.white-TKTlqehU_ro.mp4
+-rw-r--r--   <span class="m">1</span> faizarseptiawan  50M Oct <span class="m">19</span> 00:29 SWhite-aa
+-rw-r--r--   <span class="m">1</span> faizarseptiawan  50M Oct <span class="m">19</span> 00:29 SWhite-ab
+-rw-r--r--   <span class="m">1</span> faizarseptiawan  50M Oct <span class="m">19</span> 00:29 SWhite-ac
+-rw-r--r--   <span class="m">1</span> faizarseptiawan  15M Oct <span class="m">19</span> 00:29 SWhite-ad
+-rw-r--r--   <span class="m">1</span> faizarseptiawan 165M Oct <span class="m">19</span> 00:28 SWhite.zip
+</code></pre></div><p>Join the file.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ mkdir SWhite <span class="o">&amp;&amp;</span> mv SWhite-a* SWhite <span class="o">&amp;&amp;</span> <span class="nb">cd</span> SWhite
 $ cat SWhite-* &gt; SWhite.zip
 $ ls -lha
-total <span class=m>675440</span>
-drwxr-xr-x  <span class=m>7</span> faizarseptiawan 224B Oct <span class=m>19</span> 00:30 .
-drwxr-xr-x@ <span class=m>6</span> faizarseptiawan 192B Oct <span class=m>19</span> 00:29 ..
--rw-r--r--  <span class=m>1</span> faizarseptiawan  50M Oct <span class=m>19</span> 00:29 SWhite-aa
--rw-r--r--  <span class=m>1</span> faizarseptiawan  50M Oct <span class=m>19</span> 00:29 SWhite-ab
--rw-r--r--  <span class=m>1</span> faizarseptiawan  50M Oct <span class=m>19</span> 00:29 SWhite-ac
--rw-r--r--  <span class=m>1</span> faizarseptiawan  15M Oct <span class=m>19</span> 00:29 SWhite-ad
--rw-r--r--  <span class=m>1</span> faizarseptiawan 165M Oct <span class=m>19</span> 00:30 SWhite.zip
-</code></pre></div><p>Make sure the files before split and after merging are still the same.</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>$ md5 SWhite.zip
-MD5 <span class=o>(</span>SWhite.zip<span class=o>)</span> <span class=o>=</span> 4d158057fd3714b62987e3afa2146d51
+total <span class="m">675440</span>
+drwxr-xr-x  <span class="m">7</span> faizarseptiawan 224B Oct <span class="m">19</span> 00:30 .
+drwxr-xr-x@ <span class="m">6</span> faizarseptiawan 192B Oct <span class="m">19</span> 00:29 ..
+-rw-r--r--  <span class="m">1</span> faizarseptiawan  50M Oct <span class="m">19</span> 00:29 SWhite-aa
+-rw-r--r--  <span class="m">1</span> faizarseptiawan  50M Oct <span class="m">19</span> 00:29 SWhite-ab
+-rw-r--r--  <span class="m">1</span> faizarseptiawan  50M Oct <span class="m">19</span> 00:29 SWhite-ac
+-rw-r--r--  <span class="m">1</span> faizarseptiawan  15M Oct <span class="m">19</span> 00:29 SWhite-ad
+-rw-r--r--  <span class="m">1</span> faizarseptiawan 165M Oct <span class="m">19</span> 00:30 SWhite.zip
+</code></pre></div><p>Make sure the files before split and after merging are still the same.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ md5 SWhite.zip
+MD5 <span class="o">(</span>SWhite.zip<span class="o">)</span> <span class="o">=</span> 4d158057fd3714b62987e3afa2146d51
 $ md5 ../SWhite.zip
-MD5 <span class=o>(</span>../SWhite.zip<span class=o>)</span> <span class=o>=</span> 4d158057fd3714b62987e3afa2146d51
-</code></pre></div></section><footer><hr><div class=meta><p class=tags><a href=/tags/ayo-belajar-linux><span>#</span>Ayo Belajar Linux</a>
-<a href=/tags/others><span>#</span>Others</a></p></div><hr><div id=disqus_thread></div><script type=application/javascript>var disqus_config=function(){};(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return;}
-var d=document,s=d.createElement('script');s.async=true;s.src='//'+"sibunglonlabs"+'.disqus.com/embed.js';s.setAttribute('data-timestamp',+new Date());(d.head||d.body).appendChild(s);})();</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></footer></article></main><footer><p>&copy; 2020 Faizar Septiawan. <a href=http://creativecommons.org/licenses/by-sa/4.0/>Some Rights Reserved</a>.</p><p>Powered by <a href=https://gohugo.io title="A Fast and Flexible Website Generator">Hugo</a> & <a href=https://github.com/eshlox/simplicity title="Hugo theme">Simplicity</a>.</p></footer><script src=/assets/js/scripts.min.js></script><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-110194945-3','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script></body></html>
+MD5 <span class="o">(</span>../SWhite.zip<span class="o">)</span> <span class="o">=</span> 4d158057fd3714b62987e3afa2146d51
+</code></pre></div></section>
+    <footer>
+      <hr>
+      <div class="meta">
+        <p class="tags">
+          
+            
+              <a href="/tags/ayo-belajar-linux">
+                <span>#</span>Ayo Belajar Linux</a>
+            
+              <a href="/tags/others">
+                <span>#</span>Others</a>
+            
+          
+        </p>
+      </div>
+      <hr>
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sibunglonlabs" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </footer>
+  </article>
+
+    </main>
+    
+      <footer>
+  <p>
+    &copy; 2020 Faizar Septiawan. <a href="http://creativecommons.org/licenses/by-sa/4.0/">Some Rights Reserved</a>.
+  </p>
+  <p>
+    Powered by <a href="https://gohugo.io" title="A Fast and Flexible Website Generator">Hugo</a> &amp; <a href="https://github.com/eshlox/simplicity" title="Hugo theme">Simplicity</a>.
+  </p>
+</footer>
+
+    
+    
+    
+    
+    
+    
+    
+    <script src="/assets/js/scripts.min.js"></script>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-110194945-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>

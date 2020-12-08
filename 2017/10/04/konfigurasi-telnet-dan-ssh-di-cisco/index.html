@@ -1,5 +1,55 @@
-<!doctype html><html lang=en-us itemscope itemtype=http://schema.org/WebPage><head><title>Konfigurasi Telnet dan SSH di Cisco</title><meta http-equiv=cache-control content="public, max-age=31536000"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=author content="Faizar Septiawan"><meta name=description content="Read - Search - Ask | Personal Site | Catch your problem solution or read interesting stories on my blog!"><meta name=keywords content="Linux,Unix,BSD,MacOS,Komunitas Pengguna Linux Indonesia,KPLI Klaten,KPLI Bulukumba,MikroTik,MikroTik Indonesia,FreeBSD,FreeBSD Indonesia,Cisco,Cisco Indonesia,BLC Telkom Klaten,Ansible,Nginx,Apache2,Caddy Server,Ayo Belajar Linux,Cloud Computing,e-Learning,Open edX,Proxmox,Sendy,Microsoft SQL Server,MySQL,PostgreSQL,Lets Encrypt,Case Study,Atlassian,Virtualization,Faizar Septiawan,Icar,siBunglonGanteng,siBunglonLabs,Orang Ganteng"><meta name=google-site-verification content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-110194945-3"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','UA-110194945-3');</script><link rel=stylesheet href=/assets/css/external.min.css media=screen><link rel=stylesheet href=/assets/css/styles.css media=screen><link href=/assets/custom/googlefonts/roboto.css rel=stylesheet><link rel=apple-touch-icon-precomposed sizes=144x144 href=/src/images/apple-touch-icon.png><link rel="shortcut icon" href=/src/images/favicon.ico><link href=/posts/index.xml rel=alternate type=application/rss+xml title="The Official Site of siBunglon"><meta property="og:title" content="Konfigurasi Telnet dan SSH di Cisco"><meta property="og:description" content="A. PENGERTIAN
+<!DOCTYPE html>
+<html lang="en-us" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+  <title>Konfigurasi Telnet dan SSH di Cisco</title>
+  
+  <meta http-equiv="cache-control" content="public, max-age=31536000" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Faizar Septiawan">
+  <meta name="description" content="Read - Search - Ask | Personal Site | Catch your problem solution or read interesting stories on my blog!">
+  <meta name="keywords" content="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng">
+  
+  
+  
+  <meta name="google-site-verification" content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM" />
+  
+  
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110194945-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110194945-3');
+  </script>
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/css/external.min.css" media="screen">
+  
+  
+  <link rel="stylesheet" href="/assets/css/styles.css" media="screen">
+  <link href="/assets/custom/googlefonts/roboto.css" rel="stylesheet">
+  
+
+  
+  
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/src/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="/src/images/favicon.ico">
+  
+
+  
+  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
+
+  <meta property="og:title" content="Konfigurasi Telnet dan SSH di Cisco" />
+<meta property="og:description" content="A. PENGERTIAN
 Konfigurasi Telnet
 Telnet (Telecommunication network) adalah sebuah protokol jaringan yang digunakan pada Internet atau Local Area Network untuk menyediakan fasilitas komunikasi berbasis teks interaksi dua arah yang menggunakan koneksi virtual terminal.
 B. LATAR BELAKANG
@@ -8,7 +58,15 @@ C. MAKSUD DAN TUJUAN
 Ingin mengimplementasikanya di dunia kerja dan mengulangi Materi yang diberi tentang ssh dan telnet
 D. TAHAPAN PEKERJAAN
 TELNET Berikut Topology Telnet :
- Pertama, masukkan default gateway yang terdapat pada Router, Disini saya Memberikan IP Address pada interface fastEthernet 0/0 adalah 192."><meta property="og:type" content="article"><meta property="og:url" content="https://sibunglon.com/2017/10/04/konfigurasi-telnet-dan-ssh-di-cisco/"><meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"><meta property="article:published_time" content="2017-10-04T05:19:00+00:00"><meta property="article:modified_time" content="2017-10-04T05:19:00+00:00"><meta property="og:site_name" content="The Official Site of siBunglon"><meta itemprop=name content="Konfigurasi Telnet dan SSH di Cisco"><meta itemprop=description content="A. PENGERTIAN
+ Pertama, masukkan default gateway yang terdapat pada Router, Disini saya Memberikan IP Address pada interface fastEthernet 0/0 adalah 192." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sibunglon.com/2017/10/04/konfigurasi-telnet-dan-ssh-di-cisco/" />
+<meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"/>
+<meta property="article:published_time" content="2017-10-04T05:19:00+00:00" />
+<meta property="article:modified_time" content="2017-10-04T05:19:00+00:00" /><meta property="og:site_name" content="The Official Site of siBunglon" />
+
+  <meta itemprop="name" content="Konfigurasi Telnet dan SSH di Cisco">
+<meta itemprop="description" content="A. PENGERTIAN
 Konfigurasi Telnet
 Telnet (Telecommunication network) adalah sebuah protokol jaringan yang digunakan pada Internet atau Local Area Network untuk menyediakan fasilitas komunikasi berbasis teks interaksi dua arah yang menggunakan koneksi virtual terminal.
 B. LATAR BELAKANG
@@ -17,7 +75,21 @@ C. MAKSUD DAN TUJUAN
 Ingin mengimplementasikanya di dunia kerja dan mengulangi Materi yang diberi tentang ssh dan telnet
 D. TAHAPAN PEKERJAAN
 TELNET Berikut Topology Telnet :
- Pertama, masukkan default gateway yang terdapat pada Router, Disini saya Memberikan IP Address pada interface fastEthernet 0/0 adalah 192."><meta itemprop=datePublished content="2017-10-04T05:19:00+00:00"><meta itemprop=dateModified content="2017-10-04T05:19:00+00:00"><meta itemprop=wordCount content="700"><meta itemprop=image content="https://sibunglon.com/assets/img/profil.webp"><meta itemprop=keywords content="BLC Telkom Klaten,Cisco,"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://sibunglon.com/assets/img/profil.webp"><meta name=twitter:title content="Konfigurasi Telnet dan SSH di Cisco"><meta name=twitter:description content="A. PENGERTIAN
+ Pertama, masukkan default gateway yang terdapat pada Router, Disini saya Memberikan IP Address pada interface fastEthernet 0/0 adalah 192.">
+<meta itemprop="datePublished" content="2017-10-04T05:19:00+00:00" />
+<meta itemprop="dateModified" content="2017-10-04T05:19:00+00:00" />
+<meta itemprop="wordCount" content="700">
+<meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
+
+
+
+<meta itemprop="keywords" content="BLC Telkom Klaten,Cisco," />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://sibunglon.com/assets/img/profil.webp"/>
+
+<meta name="twitter:title" content="Konfigurasi Telnet dan SSH di Cisco"/>
+<meta name="twitter:description" content="A. PENGERTIAN
 Konfigurasi Telnet
 Telnet (Telecommunication network) adalah sebuah protokol jaringan yang digunakan pada Internet atau Local Area Network untuk menyediakan fasilitas komunikasi berbasis teks interaksi dua arah yang menggunakan koneksi virtual terminal.
 B. LATAR BELAKANG
@@ -26,8 +98,48 @@ C. MAKSUD DAN TUJUAN
 Ingin mengimplementasikanya di dunia kerja dan mengulangi Materi yang diberi tentang ssh dan telnet
 D. TAHAPAN PEKERJAAN
 TELNET Berikut Topology Telnet :
- Pertama, masukkan default gateway yang terdapat pada Router, Disini saya Memberikan IP Address pada interface fastEthernet 0/0 adalah 192."><script defer src=/assets/custom/fontawesome-5.15.1/js/all.min.js></script></head><body><nav><a href=/>siBunglon</a></nav><main class=container><article><header><small><span class=date>October 4, 2017</span></small><h1>Konfigurasi Telnet dan SSH di Cisco</h1></header><section><p><strong>A. PENGERTIAN</strong></p><p><strong>Konfigurasi Telnet</strong></p><p>Telnet (Telecommunication network) adalah sebuah protokol jaringan yang digunakan pada Internet atau Local Area Network untuk menyediakan fasilitas komunikasi berbasis teks interaksi dua arah yang menggunakan koneksi virtual terminal.</p><p><strong>B. LATAR BELAKANG</strong></p><p>Meremote switch dan router di packet tracer</p><p><strong>C. MAKSUD DAN TUJUAN</strong></p><p>Ingin mengimplementasikanya di dunia kerja dan mengulangi Materi yang diberi tentang ssh dan telnet</p><p><strong>D. TAHAPAN PEKERJAAN</strong></p><p><strong>TELNET</strong>
-Berikut Topology Telnet :</p><p><img src=https://1.bp.blogspot.com/-vZODNOGM91I/W6gU5Pnc_vI/AAAAAAAAEj4/m3Ka9Ns5RWoIWMGoXwEtf9Nn3XbUVBZGQCLcBGAs/s1600/1.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><ol><li>Pertama, masukkan default gateway yang terdapat pada Router, Disini saya Memberikan IP Address pada interface fastEthernet 0/0 adalah 192.168.32.1. lalu saya memberikan contoh password priveleged level (#) : okta</li></ol><p>Perintahnya adalah :</p><pre><code>&gt; Router&gt;enable  
+ Pertama, masukkan default gateway yang terdapat pada Router, Disini saya Memberikan IP Address pada interface fastEthernet 0/0 adalah 192."/>
+
+  
+
+  
+  <script defer src="/assets/custom/fontawesome-5.15.1/js/all.min.js"></script>
+  
+</head>
+
+  <body>
+    
+      <nav>
+  <a href="/">
+    siBunglon
+  </a>
+</nav>
+
+    
+    <main class="container">
+      
+  <article>
+    <header>
+      <small>
+        <span class="date">October 4, 2017</span></small>
+      <h1>Konfigurasi Telnet dan SSH di Cisco</h1>
+    </header>
+    <section><p><strong>A. PENGERTIAN</strong></p>
+<p><strong>Konfigurasi Telnet</strong></p>
+<p>Telnet (Telecommunication network) adalah sebuah protokol jaringan yang digunakan pada Internet atau Local Area Network untuk menyediakan fasilitas komunikasi berbasis teks interaksi dua arah yang menggunakan koneksi virtual terminal.</p>
+<p><strong>B. LATAR BELAKANG</strong></p>
+<p>Meremote switch dan router di packet tracer</p>
+<p><strong>C. MAKSUD DAN TUJUAN</strong></p>
+<p>Ingin mengimplementasikanya di dunia kerja dan mengulangi Materi yang diberi tentang ssh dan telnet</p>
+<p><strong>D. TAHAPAN PEKERJAAN</strong></p>
+<p><strong>TELNET</strong>
+Berikut Topology Telnet :</p>
+<p><img src="https://1.bp.blogspot.com/-vZODNOGM91I/W6gU5Pnc_vI/AAAAAAAAEj4/m3Ka9Ns5RWoIWMGoXwEtf9Nn3XbUVBZGQCLcBGAs/s1600/1.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<ol>
+<li>Pertama, masukkan default gateway yang terdapat pada Router, Disini saya Memberikan IP Address pada interface fastEthernet 0/0 adalah 192.168.32.1. lalu saya memberikan contoh password priveleged level (#) :  okta</li>
+</ol>
+<p>Perintahnya adalah :</p>
+<pre><code>&gt; Router&gt;enable  
 &gt; Router#configure terminal  
 &gt; Router(config)#enable secret 1234  
 &gt; Router(config)#interface fastEthernet 0/0  
@@ -40,7 +152,11 @@ Berikut Topology Telnet :</p><p><img src=https://1.bp.blogspot.com/-vZODNOGM91I/
 &gt; Router(config)#username okta password 1234  
 &gt; Router(config)#service password-encryption  
 &gt; Router(config)#exit
-</code></pre><p><img src=https://1.bp.blogspot.com/-SKn4YpBQ42s/W6gVBelgSkI/AAAAAAAAEj8/OsF0W9rwv1Aw4EZz7vC0EQ9ARofqmvDmACLcBGAs/s1600/2.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><ol start=2><li>Setelah Konfig Router Selesai, Selanjutnya kita Konfig Switch, sebagai contoh saya memberikan IP Address vlan1 yaitu : 192.168.32.2, karna 192.168.32.1 adalah gateway untuk router. Saya memberikan password pada switch privileged lever (#) : okta</li></ol><pre><code>&gt; Switch&gt;enable  
+</code></pre><p><img src="https://1.bp.blogspot.com/-SKn4YpBQ42s/W6gVBelgSkI/AAAAAAAAEj8/OsF0W9rwv1Aw4EZz7vC0EQ9ARofqmvDmACLcBGAs/s1600/2.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<ol start="2">
+<li>Setelah Konfig Router Selesai, Selanjutnya kita Konfig Switch, sebagai contoh saya memberikan IP Address vlan1 yaitu : 192.168.32.2, karna 192.168.32.1 adalah gateway untuk router. Saya memberikan password pada switch privileged lever (#) : okta</li>
+</ol>
+<pre><code>&gt; Switch&gt;enable  
 &gt; Switch#configure terminal  
 &gt; Switch(config)#vlan 1  
 &gt; Switch(config-vlan)#interface vlan 1  
@@ -53,17 +169,44 @@ Berikut Topology Telnet :</p><p><img src=https://1.bp.blogspot.com/-vZODNOGM91I/
 &gt; Switch(config-line)#exit  
 &gt; Switch(config)#username okta password 1234  
 &gt; Switch(config)#service password-encryption
-</code></pre><p><img src=https://3.bp.blogspot.com/-UZdNPg_uMys/W6gVLpuyy0I/AAAAAAAAEkE/inic2lrfYQ0u1nJq2mAlWhSr_HlXYHl3QCLcBGAs/s1600/3.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p>Setelah Melakukan Konfig pada Switch, sekarang kita pergi ke PC dan mengatur IP Address PC dengan IP Address “192.168.32.3”</p><p><img src=https://4.bp.blogspot.com/-1bD1OA60snw/W6gVQxpNl0I/AAAAAAAAEkI/e57R5G9R-OUV1TVzabyySwTkZFgVPUoQwCLcBGAs/s1600/4.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p>Setelah Selesai, Pergi ke Command Prompt > telnet (Nomer Ip yang dituju) misal saya ingin Telnet ke Router, Berarti “telnet 192.168.32.1”</p><p><img src=https://3.bp.blogspot.com/-lpDiF-NQhmg/W6gVWpbYQfI/AAAAAAAAEkQ/gpLvhC19Ltws6gfqqcTELYEwcdtBOLFYQCLcBGAs/s1600/5.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p>keterangan :</p><ul><li>line vty 0 4 : adalah cara untuk mengaktifkan telnet 4 koneksi</li><li>service password-encription : untuk mengekripsi semua password</li></ul><p><strong>SSH</strong></p><p><img src=https://2.bp.blogspot.com/-r2lMm5KDWV8/W6gVeAJ5jhI/AAAAAAAAEkY/TDth6RuhfrYI0eDN9KYFBL4JwEYmiouuACLcBGAs/s1600/6.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p>Melanjutkan topologi sebelumnya, karena jalur telnet menggunakan clear text yang berarti jalur yang lewat masih bisa dilihat (tidak aman), maka untuk mengamankan jalur remot ini bisa menggunakan SSH (Secure Shell).</p><p>Yang diperhatikan untuk membuat SSH adalah :<br>-) Hostname tidak boleh default</p><p>-) Harus ada domain name</p><p>-) Authentication nya menggunakan username dan password</p><p>-) Deskripsikan dijalur telnet bahwa akan menggunakan SSH</p><p>-) Generate Crypto Key.</p><p>Langsung saja kita konfig SSH pada CPT</p><ol start=3><li>Config di Routernya: *Nama okta adalah contoh* kalian bisa menggunakan nama apapun terserah kalian.</li></ol><pre><code>&gt; Router(config)#hostname okta  
+</code></pre><p><img src="https://3.bp.blogspot.com/-UZdNPg_uMys/W6gVLpuyy0I/AAAAAAAAEkE/inic2lrfYQ0u1nJq2mAlWhSr_HlXYHl3QCLcBGAs/s1600/3.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p>Setelah Melakukan Konfig pada Switch, sekarang kita pergi ke PC dan mengatur IP Address PC dengan IP Address “192.168.32.3”</p>
+<p><img src="https://4.bp.blogspot.com/-1bD1OA60snw/W6gVQxpNl0I/AAAAAAAAEkI/e57R5G9R-OUV1TVzabyySwTkZFgVPUoQwCLcBGAs/s1600/4.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p>Setelah Selesai, Pergi ke Command Prompt &gt; telnet (Nomer Ip yang dituju) misal saya ingin Telnet ke Router, Berarti “telnet 192.168.32.1”</p>
+<p><img src="https://3.bp.blogspot.com/-lpDiF-NQhmg/W6gVWpbYQfI/AAAAAAAAEkQ/gpLvhC19Ltws6gfqqcTELYEwcdtBOLFYQCLcBGAs/s1600/5.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p>keterangan :</p>
+<ul>
+<li>line vty 0 4 : adalah cara untuk mengaktifkan telnet 4 koneksi</li>
+<li>service password-encription : untuk mengekripsi semua password</li>
+</ul>
+<p><strong>SSH</strong></p>
+<p><img src="https://2.bp.blogspot.com/-r2lMm5KDWV8/W6gVeAJ5jhI/AAAAAAAAEkY/TDth6RuhfrYI0eDN9KYFBL4JwEYmiouuACLcBGAs/s1600/6.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p>Melanjutkan topologi sebelumnya, karena jalur telnet menggunakan clear text yang berarti jalur yang lewat masih bisa dilihat (tidak aman), maka untuk mengamankan jalur remot ini bisa menggunakan SSH (Secure Shell).</p>
+<p>Yang diperhatikan untuk membuat SSH adalah :<br>
+-) Hostname tidak boleh default</p>
+<p>-) Harus ada domain name</p>
+<p>-) Authentication nya menggunakan username dan password</p>
+<p>-) Deskripsikan dijalur telnet bahwa akan menggunakan SSH</p>
+<p>-) Generate Crypto Key.</p>
+<p>Langsung saja kita konfig SSH pada CPT</p>
+<ol start="3">
+<li>Config di Routernya: *Nama okta adalah contoh* kalian bisa menggunakan nama apapun terserah kalian.</li>
+</ol>
+<pre><code>&gt; Router(config)#hostname okta  
 &gt; okta(config)#ip domain-name okta.com  
 &gt; okta(config)#crypto key generate rsa
 &gt; The name for the keys will be: okta.okta.com  
 &gt; Choose the size of the key modulus in the range of 360 to 2048 for your  
 &gt; General Purpose Keys. Choosing a key modulus greater than 512 may take  
 &gt; a few minutes.
-</code></pre><p>Pada bagian perintah “crypto key generate rsa” akan ditanyakan berapa panjang bit yang ingin dimasukkan, pilihannya 512 dan maksimal 2048, itu menandakan panjang key datanya, semakin panjang key data akan semakin aman, tetapi semakin membebani perangkat, jika hanya unntuk belajar gunakan yang 512 saja.</p><pre><code>&gt; How many bits in the modulus [512]: 1024  
+</code></pre><p>Pada bagian perintah “crypto key generate rsa” akan ditanyakan berapa panjang bit yang ingin dimasukkan, pilihannya 512 dan maksimal 2048, itu menandakan panjang key datanya, semakin panjang key data akan semakin aman, tetapi semakin membebani perangkat, jika hanya unntuk belajar gunakan yang 512 saja.</p>
+<pre><code>&gt; How many bits in the modulus [512]: 1024  
 &gt; % Generating 512 bit RSA keys, keys will be non-exportable...[OK]
-</code></pre><p><img src=https://2.bp.blogspot.com/-A0ihFr4Czto/W6gVk5oLaSI/AAAAAAAAEkc/kbwQUuox7EwqkwJuuHB_Fk1kE6Vtfbm9QCLcBGAs/s1600/7.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p>Berikut ini untuk menampilkan hasil encripsi key :</p><pre><code>okta(config)#do sh crypto key mypubkey rsa
-</code></pre><p>Perintah diatas adalah script untuk menampilkan hasil encripsi key. Setelah memasukkan script itu akan tampil tampilan seperti dibawah ini :</p><pre><code>&gt; % Key pair was generated at: 1:51:58 UTC Mar 1 1993  
+</code></pre><p><img src="https://2.bp.blogspot.com/-A0ihFr4Czto/W6gVk5oLaSI/AAAAAAAAEkc/kbwQUuox7EwqkwJuuHB_Fk1kE6Vtfbm9QCLcBGAs/s1600/7.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p>Berikut ini untuk menampilkan hasil encripsi key :</p>
+<pre><code>okta(config)#do sh crypto key mypubkey rsa
+</code></pre><p>Perintah diatas adalah script untuk menampilkan hasil encripsi key. Setelah memasukkan script itu akan tampil tampilan seperti dibawah ini :</p>
+<pre><code>&gt; % Key pair was generated at: 1:51:58 UTC Mar 1 1993  
 &gt; Key name: okta.okta.com  
 &gt; Storage Device: not specified  
 &gt; Usage: General Purpose Key  
@@ -77,6 +220,85 @@ Berikut Topology Telnet :</p><p><img src=https://1.bp.blogspot.com/-vZODNOGM91I/
 &gt; Temporary key  
 &gt; Usage: Encryption Key  
 &gt; Key is not exportable.
-</code></pre><p><img src=https://3.bp.blogspot.com/-9_6C0-Ry8YQ/W6gVrkP0ktI/AAAAAAAAEkk/hOBqWKC1eMsBcRnpXmw2caCZRm39NL0uwCLcBGAs/s1600/8.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p>Sekarang kita kembali ke PC dan pergi ke “Command Prompt”</p><p><img src=https://3.bp.blogspot.com/-PPyagNqT1MA/W6gVx5OMm8I/AAAAAAAAEks/jg1F3he7kSItQFbNZ_UzeNkRJvrChPrdwCLcBGAs/s1600/9.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p>Setelah terbuka masukkan script <em>“ssh –l okta 192.168.32.1”</em></p><p>karna saya menggunakan username “okta” pada router maka seletah “–l” kalian masukkan username kalian yang kalian konfig di router. Password pun sama, masukkan password yang kalian setting di router.Setelah terbuka masukkan script <em>“ssh –l okta 192.168.32.1”</em></p><p>karna saya menggunakan username “okta” pada router maka seletah “–l” kalian masukkan username kalian yang kalian konfig di router. Password pun sama, masukkan password yang kalian setting di router.</p><p><img src=https://2.bp.blogspot.com/-Y7UWzH6EPto/W6gV3VPfh8I/AAAAAAAAEk0/iztBr0bgxl8mbQKFNCqEoMJQKhpkKC6egCLcBGAs/s1600/10.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p><strong>E. REFERENSI</strong></p><p>ccnav6.com</p></section><footer><hr><div class=meta><p class=tags><a href=/tags/blc-telkom-klaten><span>#</span>BLC Telkom Klaten</a>
-<a href=/tags/cisco><span>#</span>Cisco</a></p></div><hr><div id=disqus_thread></div><script type=application/javascript>var disqus_config=function(){};(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return;}
-var d=document,s=d.createElement('script');s.async=true;s.src='//'+"sibunglonlabs"+'.disqus.com/embed.js';s.setAttribute('data-timestamp',+new Date());(d.head||d.body).appendChild(s);})();</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></footer></article></main><footer><p>&copy; 2020 Faizar Septiawan. <a href=http://creativecommons.org/licenses/by-sa/4.0/>Some Rights Reserved</a>.</p><p>Powered by <a href=https://gohugo.io title="A Fast and Flexible Website Generator">Hugo</a> & <a href=https://github.com/eshlox/simplicity title="Hugo theme">Simplicity</a>.</p></footer><script src=/assets/js/scripts.min.js></script><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-110194945-3','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script></body></html>
+</code></pre><p><img src="https://3.bp.blogspot.com/-9_6C0-Ry8YQ/W6gVrkP0ktI/AAAAAAAAEkk/hOBqWKC1eMsBcRnpXmw2caCZRm39NL0uwCLcBGAs/s1600/8.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p>Sekarang kita kembali ke PC dan pergi ke “Command Prompt”</p>
+<p><img src="https://3.bp.blogspot.com/-PPyagNqT1MA/W6gVx5OMm8I/AAAAAAAAEks/jg1F3he7kSItQFbNZ_UzeNkRJvrChPrdwCLcBGAs/s1600/9.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p>Setelah terbuka masukkan script <em>“ssh –l okta 192.168.32.1”</em></p>
+<p>karna saya menggunakan username “okta” pada router maka seletah “–l” kalian masukkan username kalian yang kalian konfig di router. Password pun sama, masukkan password yang kalian setting di router.Setelah terbuka masukkan script <em>“ssh –l okta 192.168.32.1”</em></p>
+<p>karna saya menggunakan username “okta” pada router maka seletah “–l” kalian masukkan username kalian yang kalian konfig di router. Password pun sama, masukkan password yang kalian setting di router.</p>
+<p><img src="https://2.bp.blogspot.com/-Y7UWzH6EPto/W6gV3VPfh8I/AAAAAAAAEk0/iztBr0bgxl8mbQKFNCqEoMJQKhpkKC6egCLcBGAs/s1600/10.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p><strong>E. REFERENSI</strong></p>
+<p>ccnav6.com</p>
+</section>
+    <footer>
+      <hr>
+      <div class="meta">
+        <p class="tags">
+          
+            
+              <a href="/tags/blc-telkom-klaten">
+                <span>#</span>BLC Telkom Klaten</a>
+            
+              <a href="/tags/cisco">
+                <span>#</span>Cisco</a>
+            
+          
+        </p>
+      </div>
+      <hr>
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sibunglonlabs" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </footer>
+  </article>
+
+    </main>
+    
+      <footer>
+  <p>
+    &copy; 2020 Faizar Septiawan. <a href="http://creativecommons.org/licenses/by-sa/4.0/">Some Rights Reserved</a>.
+  </p>
+  <p>
+    Powered by <a href="https://gohugo.io" title="A Fast and Flexible Website Generator">Hugo</a> &amp; <a href="https://github.com/eshlox/simplicity" title="Hugo theme">Simplicity</a>.
+  </p>
+</footer>
+
+    
+    
+    
+    
+    
+    
+    
+    <script src="/assets/js/scripts.min.js"></script>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-110194945-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>

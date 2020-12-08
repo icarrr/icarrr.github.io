@@ -1,12 +1,200 @@
-<!doctype html><html lang=en-us itemscope itemtype=http://schema.org/WebPage><head><title>Allowing Learners to Claim Their Own Certificates in Open edX</title><meta http-equiv=cache-control content="public, max-age=31536000"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=author content="Faizar Septiawan"><meta name=description content="Read - Search - Ask | Personal Site | Catch your problem solution or read interesting stories on my blog!"><meta name=keywords content="Linux,Unix,BSD,MacOS,Komunitas Pengguna Linux Indonesia,KPLI Klaten,KPLI Bulukumba,MikroTik,MikroTik Indonesia,FreeBSD,FreeBSD Indonesia,Cisco,Cisco Indonesia,BLC Telkom Klaten,Ansible,Nginx,Apache2,Caddy Server,Ayo Belajar Linux,Cloud Computing,e-Learning,Open edX,Proxmox,Sendy,Microsoft SQL Server,MySQL,PostgreSQL,Lets Encrypt,Case Study,Atlassian,Virtualization,Faizar Septiawan,Icar,siBunglonGanteng,siBunglonLabs,Orang Ganteng"><meta name=google-site-verification content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-110194945-3"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','UA-110194945-3');</script><link rel=stylesheet href=/assets/css/external.min.css media=screen><link rel=stylesheet href=/assets/css/styles.css media=screen><link href=/assets/custom/googlefonts/roboto.css rel=stylesheet><link rel=apple-touch-icon-precomposed sizes=144x144 href=/src/images/apple-touch-icon.png><link rel="shortcut icon" href=/src/images/favicon.ico><link href=/posts/index.xml rel=alternate type=application/rss+xml title="The Official Site of siBunglon"><meta property="og:title" content="Allowing Learners to Claim Their Own Certificates in Open edX"><meta property="og:description" content="In most cases, you&rsquo;ll want learners to be able to claim certificates for themselves on the progress page. For self-paced courses, this is already done! You&rsquo;re good to go. For instructor-led courses, however, you&rsquo;ll need to Enable Student-Generated Certificates.
+<!DOCTYPE html>
+<html lang="en-us" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+  <title>Allowing Learners to Claim Their Own Certificates in Open edX</title>
+  
+  <meta http-equiv="cache-control" content="public, max-age=31536000" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Faizar Septiawan">
+  <meta name="description" content="Read - Search - Ask | Personal Site | Catch your problem solution or read interesting stories on my blog!">
+  <meta name="keywords" content="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng">
+  
+  
+  
+  <meta name="google-site-verification" content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM" />
+  
+  
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110194945-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110194945-3');
+  </script>
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/css/external.min.css" media="screen">
+  
+  
+  <link rel="stylesheet" href="/assets/css/styles.css" media="screen">
+  <link href="/assets/custom/googlefonts/roboto.css" rel="stylesheet">
+  
+
+  
+  
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/src/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="/src/images/favicon.ico">
+  
+
+  
+  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
+
+  <meta property="og:title" content="Allowing Learners to Claim Their Own Certificates in Open edX" />
+<meta property="og:description" content="In most cases, you&rsquo;ll want learners to be able to claim certificates for themselves on the progress page. For self-paced courses, this is already done! You&rsquo;re good to go. For instructor-led courses, however, you&rsquo;ll need to Enable Student-Generated Certificates.
 To allowing learners to claim their own certificates, do the following steps:
   Login to LMS as admin or staff.
-  On the learning site dashboard page, open one of the existing courses."><meta property="og:type" content="article"><meta property="og:url" content="https://sibunglon.com/2020/09/05/allowing-learners-to-claim-their-own-certificates-in-open-edx/"><meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"><meta property="article:published_time" content="2020-09-05T05:41:16+08:00"><meta property="article:modified_time" content="2020-09-05T05:41:16+08:00"><meta property="og:site_name" content="The Official Site of siBunglon"><meta itemprop=name content="Allowing Learners to Claim Their Own Certificates in Open edX"><meta itemprop=description content="In most cases, you&rsquo;ll want learners to be able to claim certificates for themselves on the progress page. For self-paced courses, this is already done! You&rsquo;re good to go. For instructor-led courses, however, you&rsquo;ll need to Enable Student-Generated Certificates.
+  On the learning site dashboard page, open one of the existing courses." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sibunglon.com/2020/09/05/allowing-learners-to-claim-their-own-certificates-in-open-edx/" />
+<meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"/>
+<meta property="article:published_time" content="2020-09-05T05:41:16+08:00" />
+<meta property="article:modified_time" content="2020-09-05T05:41:16+08:00" /><meta property="og:site_name" content="The Official Site of siBunglon" />
+
+  <meta itemprop="name" content="Allowing Learners to Claim Their Own Certificates in Open edX">
+<meta itemprop="description" content="In most cases, you&rsquo;ll want learners to be able to claim certificates for themselves on the progress page. For self-paced courses, this is already done! You&rsquo;re good to go. For instructor-led courses, however, you&rsquo;ll need to Enable Student-Generated Certificates.
 To allowing learners to claim their own certificates, do the following steps:
   Login to LMS as admin or staff.
-  On the learning site dashboard page, open one of the existing courses."><meta itemprop=datePublished content="2020-09-05T05:41:16+08:00"><meta itemprop=dateModified content="2020-09-05T05:41:16+08:00"><meta itemprop=wordCount content="124"><meta itemprop=image content="https://sibunglon.com/assets/img/profil.webp"><meta itemprop=keywords content="Open edX,"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://sibunglon.com/assets/img/profil.webp"><meta name=twitter:title content="Allowing Learners to Claim Their Own Certificates in Open edX"><meta name=twitter:description content="In most cases, you&rsquo;ll want learners to be able to claim certificates for themselves on the progress page. For self-paced courses, this is already done! You&rsquo;re good to go. For instructor-led courses, however, you&rsquo;ll need to Enable Student-Generated Certificates.
+  On the learning site dashboard page, open one of the existing courses.">
+<meta itemprop="datePublished" content="2020-09-05T05:41:16+08:00" />
+<meta itemprop="dateModified" content="2020-09-05T05:41:16+08:00" />
+<meta itemprop="wordCount" content="124">
+<meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
+
+
+
+<meta itemprop="keywords" content="Open edX," />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://sibunglon.com/assets/img/profil.webp"/>
+
+<meta name="twitter:title" content="Allowing Learners to Claim Their Own Certificates in Open edX"/>
+<meta name="twitter:description" content="In most cases, you&rsquo;ll want learners to be able to claim certificates for themselves on the progress page. For self-paced courses, this is already done! You&rsquo;re good to go. For instructor-led courses, however, you&rsquo;ll need to Enable Student-Generated Certificates.
 To allowing learners to claim their own certificates, do the following steps:
   Login to LMS as admin or staff.
-  On the learning site dashboard page, open one of the existing courses."><script defer src=/assets/custom/fontawesome-5.15.1/js/all.min.js></script></head><body><nav><a href=/>siBunglon</a></nav><main class=container><article><header><small><span class=date>September 5, 2020</span></small><h1>Allowing Learners to Claim Their Own Certificates in Open edX</h1></header><section><p><img src=/assets/img/Open-edX/open-edx-logo.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p>In most cases, you&rsquo;ll want learners to be able to claim certificates for themselves on the progress page. For self-paced courses, this is already done! You&rsquo;re good to go. For instructor-led courses, however, you&rsquo;ll need to <strong>Enable Student-Generated Certificates</strong>.</p><p>To allowing learners to claim their own certificates, do the following steps:</p><ol><li><p>Login to LMS as admin or staff.</p></li><li><p>On the learning site dashboard page, open one of the existing courses.</p></li><li><p>On the course introduction page, click on <code>View Course</code>.</p></li><li><p>Click <strong>Instructor</strong>, and the <strong>Certificates</strong> tab (which will only appear once certificates are set up). From there, it&rsquo;s just one button to enable them.</p></li></ol><p>Select <code>ok</code> or<code> yes</code> when a pop up asks if you are sure you want to activate the feature.</p><h3 id=references>References</h3><ul><li><a href=https://help.appsembler.com/article/200-certs-open-edx>appsembler</a></li></ul></section><footer><hr><div class=meta><p class=tags><a href=/tags/open-edx><span>#</span>Open edX</a></p></div><hr><div id=disqus_thread></div><script type=application/javascript>var disqus_config=function(){};(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return;}
-var d=document,s=d.createElement('script');s.async=true;s.src='//'+"sibunglonlabs"+'.disqus.com/embed.js';s.setAttribute('data-timestamp',+new Date());(d.head||d.body).appendChild(s);})();</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></footer></article></main><footer><p>&copy; 2020 Faizar Septiawan. <a href=http://creativecommons.org/licenses/by-sa/4.0/>Some Rights Reserved</a>.</p><p>Powered by <a href=https://gohugo.io title="A Fast and Flexible Website Generator">Hugo</a> & <a href=https://github.com/eshlox/simplicity title="Hugo theme">Simplicity</a>.</p></footer><script src=/assets/js/scripts.min.js></script><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-110194945-3','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script></body></html>
+  On the learning site dashboard page, open one of the existing courses."/>
+
+  
+
+  
+  <script defer src="/assets/custom/fontawesome-5.15.1/js/all.min.js"></script>
+  
+</head>
+
+  <body>
+    
+      <nav>
+  <a href="/">
+    siBunglon
+  </a>
+</nav>
+
+    
+    <main class="container">
+      
+  <article>
+    <header>
+      <small>
+        <span class="date">September 5, 2020</span></small>
+      <h1>Allowing Learners to Claim Their Own Certificates in Open edX</h1>
+    </header>
+    <section><p><img src="/assets/img/Open-edX/open-edx-logo.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p>In most cases, you&rsquo;ll want learners to be able to claim certificates for themselves on the progress page. For self-paced courses, this is already done! You&rsquo;re good to go. For instructor-led courses, however, you&rsquo;ll need to <strong>Enable Student-Generated Certificates</strong>.</p>
+<p>To allowing learners to claim their own certificates, do the following steps:</p>
+<ol>
+<li>
+<p>Login to LMS as admin or staff.</p>
+</li>
+<li>
+<p>On the learning site dashboard page, open one of the existing courses.</p>
+</li>
+<li>
+<p>On the course introduction page, click on <code>View Course</code>.</p>
+</li>
+<li>
+<p>Click <strong>Instructor</strong>, and the <strong>Certificates</strong> tab (which will only appear once certificates are set up). From there, it&rsquo;s just one button to enable them.</p>
+</li>
+</ol>
+<p>Select <code>ok</code> or<code> yes</code> when a pop up asks if you are sure you want to activate the feature.</p>
+<h3 id="references">References</h3>
+<ul>
+<li><a href="https://help.appsembler.com/article/200-certs-open-edx">appsembler</a></li>
+</ul>
+</section>
+    <footer>
+      <hr>
+      <div class="meta">
+        <p class="tags">
+          
+            
+              <a href="/tags/open-edx">
+                <span>#</span>Open edX</a>
+            
+          
+        </p>
+      </div>
+      <hr>
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sibunglonlabs" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </footer>
+  </article>
+
+    </main>
+    
+      <footer>
+  <p>
+    &copy; 2020 Faizar Septiawan. <a href="http://creativecommons.org/licenses/by-sa/4.0/">Some Rights Reserved</a>.
+  </p>
+  <p>
+    Powered by <a href="https://gohugo.io" title="A Fast and Flexible Website Generator">Hugo</a> &amp; <a href="https://github.com/eshlox/simplicity" title="Hugo theme">Simplicity</a>.
+  </p>
+</footer>
+
+    
+    
+    
+    
+    
+    
+    
+    <script src="/assets/js/scripts.min.js"></script>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-110194945-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>

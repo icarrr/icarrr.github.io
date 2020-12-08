@@ -1,7 +1,187 @@
-<!doctype html><html lang=en-us itemscope itemtype=http://schema.org/WebPage><head><title>Let's Encrypt</title><meta http-equiv=cache-control content="public, max-age=31536000"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=author content="Faizar Septiawan"><meta name=description content="Read - Search - Ask | Personal Site | Catch your problem solution or read interesting stories on my blog!"><meta name=keywords content="Linux,Unix,BSD,MacOS,Komunitas Pengguna Linux Indonesia,KPLI Klaten,KPLI Bulukumba,MikroTik,MikroTik Indonesia,FreeBSD,FreeBSD Indonesia,Cisco,Cisco Indonesia,BLC Telkom Klaten,Ansible,Nginx,Apache2,Caddy Server,Ayo Belajar Linux,Cloud Computing,e-Learning,Open edX,Proxmox,Sendy,Microsoft SQL Server,MySQL,PostgreSQL,Lets Encrypt,Case Study,Atlassian,Virtualization,Faizar Septiawan,Icar,siBunglonGanteng,siBunglonLabs,Orang Ganteng"><meta name=google-site-verification content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-110194945-3"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','UA-110194945-3');</script><link rel=stylesheet href=/assets/css/external.min.css media=screen><link rel=stylesheet href=/assets/css/styles.css media=screen><link href=/assets/custom/googlefonts/roboto.css rel=stylesheet><link rel=apple-touch-icon-precomposed sizes=144x144 href=/src/images/apple-touch-icon.png><link rel="shortcut icon" href=/src/images/favicon.ico><link href=/posts/index.xml rel=alternate type=application/rss+xml title="The Official Site of siBunglon"><meta property="og:title" content="Let's Encrypt"><meta property="og:description" content="Read - Search - Ask | Personal Site | Catch your problem solution or read interesting stories on my blog!"><meta property="og:type" content="website"><meta property="og:url" content="https://sibunglon.com/tags/lets-encrypt/"><meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"><meta property="og:updated_time" content="2020-09-05T06:23:28+08:00"><meta property="og:site_name" content="The Official Site of siBunglon"><meta itemprop=name content="Let's Encrypt"><meta itemprop=description content="Read - Search - Ask | Personal Site | Catch your problem solution or read interesting stories on my blog!"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://sibunglon.com/assets/img/profil.webp"><meta name=twitter:title content="Let's Encrypt"><meta name=twitter:description content="Read - Search - Ask | Personal Site | Catch your problem solution or read interesting stories on my blog!"><script defer src=/assets/custom/fontawesome-5.15.1/js/all.min.js></script></head><body><nav><a href=/>siBunglon</a></nav><main class=container><h2>Posts about: Let's Encrypt
-<script>(function(){var cx='010859980265561668253:a7fcuhwyjzl';var gcse=document.createElement('script');gcse.type='text/javascript';gcse.async=true;gcse.src='https://cse.google.com/cse.js?cx='+cx;var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(gcse,s);})();</script><gcse:search></gcse:search></h2><h3 id=2020>2020</h3><ul class=posts-list><li><span class=date>September 5, 2020</span>
-<a href=/2020/09/05/configuring-auto-renewing-lets-encrypt-ssl/ title="Configuring Auto Renewing Let's Encrypt SSL">Configuring Auto Renewing Let's Encrypt SSL</a></li><li><span class=date>January 4, 2020</span>
-<a href=/2020/01/04/setup-https-on-open-edx-using-certbot/ title="Setup HTTPS on Open edX Using Certbot">Setup HTTPS on Open edX Using Certbot</a></li></ul><h3 id=2019>2019</h3><ul class=posts-list><li><span class=date>February 16, 2019</span>
-<a href=/2019/02/16/error-generate-certificate-ssl-menggunakan-lets-encrypt/ title="Error Generate Certificate SSL Menggunakan Let's Encrypt">Error Generate Certificate SSL Menggunakan Let's Encrypt</a></li></ul><h3 id=2018>2018</h3><ul class=posts-list><li><span class=date>December 16, 2018</span>
-<a href=/2018/12/16/berkenalan-dengan-lets-encrypt-ssl-gratis-untuk-nginx/ title="Berkenalan Dengan Let's Encrypt SSL Gratis Untuk Nginx">Berkenalan Dengan Let's Encrypt SSL Gratis Untuk Nginx</a></li></ul></main><footer><p>&copy; 2020 Faizar Septiawan. <a href=http://creativecommons.org/licenses/by-sa/4.0/>Some Rights Reserved</a>.</p><p>Powered by <a href=https://gohugo.io title="A Fast and Flexible Website Generator">Hugo</a> & <a href=https://github.com/eshlox/simplicity title="Hugo theme">Simplicity</a>.</p></footer><script src=/assets/js/scripts.min.js></script><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-110194945-3','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script></body></html>
+<!DOCTYPE html>
+<html lang="en-us" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+  <title>Let&#39;s Encrypt</title>
+  
+  <meta http-equiv="cache-control" content="public, max-age=31536000" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Faizar Septiawan">
+  <meta name="description" content="Read - Search - Ask | Personal Site | Catch your problem solution or read interesting stories on my blog!">
+  <meta name="keywords" content="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng">
+  
+  
+  
+  <meta name="google-site-verification" content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM" />
+  
+  
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110194945-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110194945-3');
+  </script>
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/css/external.min.css" media="screen">
+  
+  
+  <link rel="stylesheet" href="/assets/css/styles.css" media="screen">
+  <link href="/assets/custom/googlefonts/roboto.css" rel="stylesheet">
+  
+
+  
+  
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/src/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="/src/images/favicon.ico">
+  
+
+  
+  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
+
+  <meta property="og:title" content="Let&#39;s Encrypt" />
+<meta property="og:description" content="Read - Search - Ask | Personal Site | Catch your problem solution or read interesting stories on my blog!" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://sibunglon.com/tags/lets-encrypt/" />
+<meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"/>
+<meta property="og:updated_time" content="2020-09-05T06:23:28+08:00" /><meta property="og:site_name" content="The Official Site of siBunglon" />
+
+  <meta itemprop="name" content="Let&#39;s Encrypt">
+<meta itemprop="description" content="Read - Search - Ask | Personal Site | Catch your problem solution or read interesting stories on my blog!">
+
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://sibunglon.com/assets/img/profil.webp"/>
+
+<meta name="twitter:title" content="Let&#39;s Encrypt"/>
+<meta name="twitter:description" content="Read - Search - Ask | Personal Site | Catch your problem solution or read interesting stories on my blog!"/>
+
+  
+
+  
+  <script defer src="/assets/custom/fontawesome-5.15.1/js/all.min.js"></script>
+  
+</head>
+
+  <body>
+    
+      <nav>
+  <a href="/">
+    siBunglon
+  </a>
+</nav>
+
+    
+    <main class="container">
+      
+  <h2>
+  
+  Posts about: Let&#39;s Encrypt
+  
+
+  <script>
+    (function() {
+      var cx = '010859980265561668253:a7fcuhwyjzl';
+      var gcse = document.createElement('script');
+      gcse.type = 'text/javascript';
+      gcse.async = true;
+      gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gcse, s);
+    })();
+  </script>
+  <gcse:search></gcse:search>
+</h2>
+
+
+
+
+
+<h3 id="2020">
+  2020
+</h3>
+<ul class="posts-list">
+  
+  <li>
+    <span class="date">September 5, 2020</span>
+    <a href="/2020/09/05/configuring-auto-renewing-lets-encrypt-ssl/" title="Configuring Auto Renewing Let&#39;s Encrypt SSL">Configuring Auto Renewing Let&#39;s Encrypt SSL</a>
+    
+  </li>
+  
+  <li>
+    <span class="date">January 4, 2020</span>
+    <a href="/2020/01/04/setup-https-on-open-edx-using-certbot/" title="Setup HTTPS on Open edX Using Certbot">Setup HTTPS on Open edX Using Certbot</a>
+    
+  </li>
+  
+</ul>
+
+<h3 id="2019">
+  2019
+</h3>
+<ul class="posts-list">
+  
+  <li>
+    <span class="date">February 16, 2019</span>
+    <a href="/2019/02/16/error-generate-certificate-ssl-menggunakan-lets-encrypt/" title="Error Generate Certificate SSL Menggunakan Let&#39;s Encrypt">Error Generate Certificate SSL Menggunakan Let&#39;s Encrypt</a>
+    
+  </li>
+  
+</ul>
+
+<h3 id="2018">
+  2018
+</h3>
+<ul class="posts-list">
+  
+  <li>
+    <span class="date">December 16, 2018</span>
+    <a href="/2018/12/16/berkenalan-dengan-lets-encrypt-ssl-gratis-untuk-nginx/" title="Berkenalan Dengan Let&#39;s Encrypt SSL Gratis Untuk Nginx">Berkenalan Dengan Let&#39;s Encrypt SSL Gratis Untuk Nginx</a>
+    
+  </li>
+  
+</ul>
+
+
+
+    </main>
+    
+      <footer>
+  <p>
+    &copy; 2020 Faizar Septiawan. <a href="http://creativecommons.org/licenses/by-sa/4.0/">Some Rights Reserved</a>.
+  </p>
+  <p>
+    Powered by <a href="https://gohugo.io" title="A Fast and Flexible Website Generator">Hugo</a> &amp; <a href="https://github.com/eshlox/simplicity" title="Hugo theme">Simplicity</a>.
+  </p>
+</footer>
+
+    
+    
+    
+    
+    
+    
+    
+    <script src="/assets/js/scripts.min.js"></script>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-110194945-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>

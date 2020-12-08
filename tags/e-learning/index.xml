@@ -1,14 +1,63 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>e-Learning on The Official Site of siBunglon</title><link>https://sibunglon.com/tags/e-learning/</link><description>Recent content in e-Learning on The Official Site of siBunglon</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 03 Jan 2020 18:33:11 +0700</lastBuildDate><atom:link href="https://sibunglon.com/tags/e-learning/index.xml" rel="self" type="application/rss+xml"/><item><title>How to Download All Contents in Course Coursera</title><link>https://sibunglon.com/2020/01/03/how-to-download-all-contents-in-course-coursera/</link><pubDate>Fri, 03 Jan 2020 18:33:11 +0700</pubDate><guid>https://sibunglon.com/2020/01/03/how-to-download-all-contents-in-course-coursera/</guid><description>Coursera is an online learning platform founded by Stanford professors Andrew Ng and Daphne Koller that offers massive open online courses, specializations, and degrees.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>e-Learning on The Official Site of siBunglon</title>
+    <link>https://sibunglon.com/tags/e-learning/</link>
+    <description>Recent content in e-Learning on The Official Site of siBunglon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 03 Jan 2020 18:33:11 +0700</lastBuildDate>
+    
+      <atom:link href="https://sibunglon.com/tags/e-learning/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      <item>
+        <title>How to Download All Contents in Course Coursera</title>
+        <link>https://sibunglon.com/2020/01/03/how-to-download-all-contents-in-course-coursera/</link>
+        <pubDate>Fri, 03 Jan 2020 18:33:11 +0700</pubDate>
+        <guid>https://sibunglon.com/2020/01/03/how-to-download-all-contents-in-course-coursera/</guid>
+        <description>Coursera is an online learning platform founded by Stanford professors Andrew Ng and Daphne Koller that offers massive open online courses, specializations, and degrees.
 Coursera works with universities and other organizations to offer online courses, specialties, and degrees in various subjects, such as engineering, humanities, medicine, biology, social sciences, mathematics, business, computer science, digital marketing, data science, etc..
-The course at Coursera is a monthly subscription, but Coursera also provides a free trial for 7 days so it is possible to use this you only need a credit card or debit card.</description></item><item><title>Install Open edX Using Method Native Installation | Ubuntu 16.04</title><link>https://sibunglon.com/2019/07/13/install-open-edx-using-method-native-installation-ubuntu-16.04/</link><pubDate>Sat, 13 Jul 2019 21:47:47 +0700</pubDate><guid>https://sibunglon.com/2019/07/13/install-open-edx-using-method-native-installation-ubuntu-16.04/</guid><description>About Open edX Open edX is the massively scalable learning software platform behind edX. edX is the online learning destination founded by Harvard and MIT in 2012.
+The course at Coursera is a monthly subscription, but Coursera also provides a free trial for 7 days so it is possible to use this you only need a credit card or debit card.</description>
+      </item>
+    
+      <item>
+        <title>Install Open edX Using Method Native Installation | Ubuntu 16.04</title>
+        <link>https://sibunglon.com/2019/07/13/install-open-edx-using-method-native-installation-ubuntu-16.04/</link>
+        <pubDate>Sat, 13 Jul 2019 21:47:47 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/07/13/install-open-edx-using-method-native-installation-ubuntu-16.04/</guid>
+        <description>About Open edX Open edX is the massively scalable learning software platform behind edX. edX is the online learning destination founded by Harvard and MIT in 2012.
 edX offers high-quality courses from the world’s best universities and institutions to learners everywhere. It is the only leading MOOC provider that is both nonprofit and open source. The edX mission is to:
-Increase access to high-quality education for everyone, everywhere Enhance teaching and learning on campus and online Advance teaching and learning through research Play with Open edX How to use Open edX in my own environment?</description></item><item><title>Implementasi Pembelajaran Online Dengan Moodle - Installasi</title><link>https://sibunglon.com/2017/10/18/implementasi-pembelajaran-online-dengan-moodle-installasi/</link><pubDate>Wed, 18 Oct 2017 17:13:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/18/implementasi-pembelajaran-online-dengan-moodle-installasi/</guid><description>A. Pendahuluan
+ Increase access to high-quality education for everyone, everywhere Enhance teaching and learning on campus and online Advance teaching and learning through research  Play with Open edX How to use Open edX in my own environment?</description>
+      </item>
+    
+      <item>
+        <title>Implementasi Pembelajaran Online Dengan Moodle - Installasi</title>
+        <link>https://sibunglon.com/2017/10/18/implementasi-pembelajaran-online-dengan-moodle-installasi/</link>
+        <pubDate>Wed, 18 Oct 2017 17:13:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/18/implementasi-pembelajaran-online-dengan-moodle-installasi/</guid>
+        <description>A. Pendahuluan
 Pada kesempatan kali ini saya akan mengimplementasikan tentang apa yang sudah saya pelajari yaitu Moodle
 B. Pengertian
-Moodle (singkatan dari Modular Object-Oriented Dynamic Learning Environment) adalah paket perangkat lunak yang diproduksi untuk kegiatan belajar berbasis internet dan situs web yang menggunakan prinsip social constructionist pedagogy. Moodle merupakan salah satu aplikasi dari konsep dan mekanisme belajar mengajar yang memanfaatkan teknologi informasi, yang dikenal dengan konsep pembelajaran elktronik atau e-learning. Moodle dapat digunakan secara bebas sebagai produk sumber terbuka (open source) di bawah lisensi GNU.</description></item><item><title>Install SLiMS 8 Akasia di Debian Server</title><link>https://sibunglon.com/2017/10/17/install-slims-8-akasia-di-debian-server/</link><pubDate>Tue, 17 Oct 2017 15:17:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/17/install-slims-8-akasia-di-debian-server/</guid><description>A. Pendahuluan
+Moodle (singkatan dari Modular Object-Oriented Dynamic Learning Environment) adalah paket perangkat lunak yang diproduksi untuk kegiatan belajar berbasis internet dan situs web yang menggunakan prinsip social constructionist pedagogy. Moodle merupakan salah satu aplikasi dari konsep dan mekanisme belajar mengajar yang memanfaatkan teknologi informasi, yang dikenal dengan konsep pembelajaran elktronik atau e-learning. Moodle dapat digunakan secara bebas sebagai produk sumber terbuka (open source) di bawah lisensi GNU.</description>
+      </item>
+    
+      <item>
+        <title>Install SLiMS 8 Akasia di Debian Server</title>
+        <link>https://sibunglon.com/2017/10/17/install-slims-8-akasia-di-debian-server/</link>
+        <pubDate>Tue, 17 Oct 2017 15:17:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/17/install-slims-8-akasia-di-debian-server/</guid>
+        <description>A. Pendahuluan
 Pada kesempatan ini saya sharing tentang bagaimana langkah-langkah penginstallan slims untuk manajamen perpustakaan online.
 B. Pengertian
-Senayan, atau lengkapnya Senayan Library Management System (SLiMS), adalah perangkat lunak sistem manajemen perpustakaan (library management system) sumber terbuka yang dilisensikan di bawah GPL v3. Aplikasi Web yang dikembangkan oleh tim dari Pusat Informasi dan Humas Departemen Pendidikan Nasional Repubik Indonesia ini dibangun dengan menggunakan PHP, basis data MySQL, dan Pengontrol versi Git.</description></item><item><title>Install CMS Sekolahku di Server</title><link>https://sibunglon.com/2017/10/16/install-cms-sekolahku-di-server/</link><pubDate>Mon, 16 Oct 2017 11:16:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/16/install-cms-sekolahku-di-server/</guid><description>A. Pendahuluan
+Senayan, atau lengkapnya Senayan Library Management System (SLiMS), adalah perangkat lunak sistem manajemen perpustakaan (library management system) sumber terbuka yang dilisensikan di bawah GPL v3. Aplikasi Web yang dikembangkan oleh tim dari Pusat Informasi dan Humas Departemen Pendidikan Nasional Repubik Indonesia ini dibangun dengan menggunakan PHP, basis data MySQL, dan Pengontrol versi Git.</description>
+      </item>
+    
+      <item>
+        <title>Install CMS Sekolahku di Server</title>
+        <link>https://sibunglon.com/2017/10/16/install-cms-sekolahku-di-server/</link>
+        <pubDate>Mon, 16 Oct 2017 11:16:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/16/install-cms-sekolahku-di-server/</guid>
+        <description>A. Pendahuluan
 Pada kesempatan kali ini saya akan mengimplementasikan membangun website sekolah di server dengan CMS.
 B. Pengertian
 CMS adalah suatu /sebuah aplikasi yang berfungsi merubah suatu menu atau memanipulasi data dari suatu situs atau website.
@@ -17,7 +66,19 @@ Mempelajari sistem informasi sekolah dengan CMS dan mengimplementasikannya.
 D. Tujuan
 Mempunyai maksud untuk memudahkan saya mendapatkan informasi sekolah di website tersebut.
 E. Hasil yang diharapkan
-Mempunyai harapan agar nanti kedepannya bisa membangun website ini di sekolah.</description></item><item><title>Installasi Moodle di Localhost Linux</title><link>https://sibunglon.com/2017/08/11/installasi-moodle-di-localhost-linux/</link><pubDate>Fri, 11 Aug 2017 16:00:00 +0000</pubDate><guid>https://sibunglon.com/2017/08/11/installasi-moodle-di-localhost-linux/</guid><description>A. Pendahuluan
-Server dibuat dengan beragam maksud dan tujuannya, salah satunya adalah membangun sistem pembelajaran online. Pembelajaran online sangat baik diterapkan saat ini, karena pelajar masa kini lebih senang untuk online dari pada membaca buku. Hal ini bisa meningkatkan minat membaca pelajar tanah air. Salah satu media yang dapat digunakan adalah dengan &amp;ldquo;Moodle'. Apa itu Moodle?
+Mempunyai harapan agar nanti kedepannya bisa membangun website ini di sekolah.</description>
+      </item>
+    
+      <item>
+        <title>Installasi Moodle di Localhost Linux</title>
+        <link>https://sibunglon.com/2017/08/11/installasi-moodle-di-localhost-linux/</link>
+        <pubDate>Fri, 11 Aug 2017 16:00:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/11/installasi-moodle-di-localhost-linux/</guid>
+        <description>A. Pendahuluan
+Server dibuat dengan beragam maksud dan tujuannya, salah satunya adalah membangun sistem pembelajaran online. Pembelajaran online sangat baik diterapkan saat ini, karena pelajar masa kini lebih senang untuk online dari pada membaca buku. Hal ini bisa meningkatkan minat membaca pelajar tanah air. Salah satu media yang dapat digunakan adalah dengan &amp;ldquo;Moodle&#39;. Apa itu Moodle?
 #Pengertian
-Moodle (Modular Object-Oriented Dynamic Learning Environment) adalah paket perangkat lunak yang diproduksi untuk kegiatan belajar berbasis internet dan situs web yang menggunakan prinsip social constructionist pedagogy.</description></item></channel></rss>
+Moodle (Modular Object-Oriented Dynamic Learning Environment) adalah paket perangkat lunak yang diproduksi untuk kegiatan belajar berbasis internet dan situs web yang menggunakan prinsip social constructionist pedagogy.</description>
+      </item>
+    
+  </channel>
+</rss>

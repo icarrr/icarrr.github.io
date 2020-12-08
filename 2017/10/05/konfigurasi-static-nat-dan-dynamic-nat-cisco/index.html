@@ -1,11 +1,155 @@
-<!doctype html><html lang=en-us itemscope itemtype=http://schema.org/WebPage><head><title>Konfigurasi Static NAT dan Dynamic NAT Cisco</title><meta http-equiv=cache-control content="public, max-age=31536000"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=author content="Faizar Septiawan"><meta name=description content="Read - Search - Ask | Personal Site | Catch your problem solution or read interesting stories on my blog!"><meta name=keywords content="Linux,Unix,BSD,MacOS,Komunitas Pengguna Linux Indonesia,KPLI Klaten,KPLI Bulukumba,MikroTik,MikroTik Indonesia,FreeBSD,FreeBSD Indonesia,Cisco,Cisco Indonesia,BLC Telkom Klaten,Ansible,Nginx,Apache2,Caddy Server,Ayo Belajar Linux,Cloud Computing,e-Learning,Open edX,Proxmox,Sendy,Microsoft SQL Server,MySQL,PostgreSQL,Lets Encrypt,Case Study,Atlassian,Virtualization,Faizar Septiawan,Icar,siBunglonGanteng,siBunglonLabs,Orang Ganteng"><meta name=google-site-verification content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-110194945-3"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','UA-110194945-3');</script><link rel=stylesheet href=/assets/css/external.min.css media=screen><link rel=stylesheet href=/assets/css/styles.css media=screen><link href=/assets/custom/googlefonts/roboto.css rel=stylesheet><link rel=apple-touch-icon-precomposed sizes=144x144 href=/src/images/apple-touch-icon.png><link rel="shortcut icon" href=/src/images/favicon.ico><link href=/posts/index.xml rel=alternate type=application/rss+xml title="The Official Site of siBunglon"><meta property="og:title" content="Konfigurasi Static NAT dan Dynamic NAT Cisco"><meta property="og:description" content="A. Pengertian
+<!DOCTYPE html>
+<html lang="en-us" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+  <title>Konfigurasi Static NAT dan Dynamic NAT Cisco</title>
+  
+  <meta http-equiv="cache-control" content="public, max-age=31536000" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Faizar Septiawan">
+  <meta name="description" content="Read - Search - Ask | Personal Site | Catch your problem solution or read interesting stories on my blog!">
+  <meta name="keywords" content="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng">
+  
+  
+  
+  <meta name="google-site-verification" content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM" />
+  
+  
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110194945-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110194945-3');
+  </script>
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/css/external.min.css" media="screen">
+  
+  
+  <link rel="stylesheet" href="/assets/css/styles.css" media="screen">
+  <link href="/assets/custom/googlefonts/roboto.css" rel="stylesheet">
+  
+
+  
+  
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/src/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="/src/images/favicon.ico">
+  
+
+  
+  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
+
+  <meta property="og:title" content="Konfigurasi Static NAT dan Dynamic NAT Cisco" />
+<meta property="og:description" content="A. Pengertian
 NAT (Network Address Translation) adalah sebuah proses pemetaan alamat IP dimana perangkat jaringan komputer akan memberikan alamat IP public ke perangkat jaringan local sehingga banyak IP private yang dapat mengakses IP public.
-Dengan kata lain NAT akan mentranslasikan alamat IP sehingga IP address pada jaringan local dapat mengakses IP public pada jaringan WAN. NAT mentranslasikan alamat IP private untuk dapat mengakses alamat host di internet dengan menggunakan alamat IP public pada jaringan tersebut."><meta property="og:type" content="article"><meta property="og:url" content="https://sibunglon.com/2017/10/05/konfigurasi-static-nat-dan-dynamic-nat-cisco/"><meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"><meta property="article:published_time" content="2017-10-05T05:39:00+00:00"><meta property="article:modified_time" content="2017-10-05T05:39:00+00:00"><meta property="og:site_name" content="The Official Site of siBunglon"><meta itemprop=name content="Konfigurasi Static NAT dan Dynamic NAT Cisco"><meta itemprop=description content="A. Pengertian
+Dengan kata lain NAT akan mentranslasikan alamat IP sehingga IP address pada jaringan local dapat mengakses IP public pada jaringan WAN. NAT mentranslasikan alamat IP private untuk dapat mengakses alamat host di internet dengan menggunakan alamat IP public pada jaringan tersebut." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sibunglon.com/2017/10/05/konfigurasi-static-nat-dan-dynamic-nat-cisco/" />
+<meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"/>
+<meta property="article:published_time" content="2017-10-05T05:39:00+00:00" />
+<meta property="article:modified_time" content="2017-10-05T05:39:00+00:00" /><meta property="og:site_name" content="The Official Site of siBunglon" />
+
+  <meta itemprop="name" content="Konfigurasi Static NAT dan Dynamic NAT Cisco">
+<meta itemprop="description" content="A. Pengertian
 NAT (Network Address Translation) adalah sebuah proses pemetaan alamat IP dimana perangkat jaringan komputer akan memberikan alamat IP public ke perangkat jaringan local sehingga banyak IP private yang dapat mengakses IP public.
-Dengan kata lain NAT akan mentranslasikan alamat IP sehingga IP address pada jaringan local dapat mengakses IP public pada jaringan WAN. NAT mentranslasikan alamat IP private untuk dapat mengakses alamat host di internet dengan menggunakan alamat IP public pada jaringan tersebut."><meta itemprop=datePublished content="2017-10-05T05:39:00+00:00"><meta itemprop=dateModified content="2017-10-05T05:39:00+00:00"><meta itemprop=wordCount content="1007"><meta itemprop=image content="https://sibunglon.com/assets/img/profil.webp"><meta itemprop=keywords content="BLC Telkom Klaten,Cisco,"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://sibunglon.com/assets/img/profil.webp"><meta name=twitter:title content="Konfigurasi Static NAT dan Dynamic NAT Cisco"><meta name=twitter:description content="A. Pengertian
+Dengan kata lain NAT akan mentranslasikan alamat IP sehingga IP address pada jaringan local dapat mengakses IP public pada jaringan WAN. NAT mentranslasikan alamat IP private untuk dapat mengakses alamat host di internet dengan menggunakan alamat IP public pada jaringan tersebut.">
+<meta itemprop="datePublished" content="2017-10-05T05:39:00+00:00" />
+<meta itemprop="dateModified" content="2017-10-05T05:39:00+00:00" />
+<meta itemprop="wordCount" content="1007">
+<meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
+
+
+
+<meta itemprop="keywords" content="BLC Telkom Klaten,Cisco," />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://sibunglon.com/assets/img/profil.webp"/>
+
+<meta name="twitter:title" content="Konfigurasi Static NAT dan Dynamic NAT Cisco"/>
+<meta name="twitter:description" content="A. Pengertian
 NAT (Network Address Translation) adalah sebuah proses pemetaan alamat IP dimana perangkat jaringan komputer akan memberikan alamat IP public ke perangkat jaringan local sehingga banyak IP private yang dapat mengakses IP public.
-Dengan kata lain NAT akan mentranslasikan alamat IP sehingga IP address pada jaringan local dapat mengakses IP public pada jaringan WAN. NAT mentranslasikan alamat IP private untuk dapat mengakses alamat host di internet dengan menggunakan alamat IP public pada jaringan tersebut."><script defer src=/assets/custom/fontawesome-5.15.1/js/all.min.js></script></head><body><nav><a href=/>siBunglon</a></nav><main class=container><article><header><small><span class=date>October 5, 2017</span></small><h1>Konfigurasi Static NAT dan Dynamic NAT Cisco</h1></header><section><p><strong>A. Pengertian</strong></p><p><strong>NAT (Network Address Translation)</strong> adalah sebuah proses pemetaan alamat IP dimana perangkat jaringan komputer akan memberikan alamat IP public ke perangkat jaringan local sehingga banyak IP private yang dapat mengakses IP public.</p><p>Dengan kata lain NAT akan mentranslasikan alamat IP sehingga IP address pada jaringan local dapat mengakses IP public pada jaringan WAN. NAT mentranslasikan alamat IP private untuk dapat mengakses alamat host di internet dengan menggunakan alamat IP public pada jaringan tersebut. Tanpa hal tersebut (NAT) tidak mungkin IP private pada jaringan local bisa mengakses internet. IP local digunakan hanya untuk jaringan local saja , sedangkan IP Public digunakan secara umum,IP Public inilah yang digunakan untuk berkomunikasi di dunia internet karena dapat diakses dari mana pun.</p><p>Di Cisco ada 3 jenis NAT, yaitu :</p><p><strong>1) Static NAT :</strong> Penggunaan 1 IP Public untuk 1 IP Private (One to One Mapping). Sebagai contoh ada sebuah server yang ingin diakses melalui internet, sedangkan Server tsb menggunakn IP Private.Dengan menggunakan Static NAT maka server tsb dapat diakses melalui IP Public.</p><p><strong>2) Dynamic NAT :</strong> Penggunaan IP Public untuk IP Private yang memiliki jumlah yang sama. Jadi untuk menggunakannya membutuhkan jumlah IP Punlic dan IP Private yang sama, misal kita ada 5 client maka kita harus memiliki 5 IP Public, maka dari itu Dynamic NAT ini jarang digunakan.</p><p><strong>3) Dynamic NAT Overloading :</strong> Penggunaan 1 IP Public untuk beberapa IP Private. Sebagai contoh ada lebih dari 1 client ingin mengakses internet, namun hanya ada 1 IP Public, maka kita bisa gunakan Dynamic NAT Overloading ini.</p><p><strong>Jenis - jenis dari NAT (Network Address Translation)</strong></p><p>Pada jaringan komputer terdapat 2 jenis NAT, diantaranya:</p><ul><li>Dnat atau Destiantion Network Address Translation adalah sebuah NAT yang berfungsi untuk meneruskan paket dari IP public melalui firewall ke suatu host dalam jaringan. Dnat hanya bekerja pada tabel nat dan didalam tabel NAT berisi 3 bagian yang disebut dengan CHAIN, ketiga CHAIN tersebut meliputi prerouting, postrouting dan output.</li><li>SNAT atau Source Network Address Translation yaitu sebuah NAT yang bertugas untuk merubah source address dari suatu paket data. SNAT hanya berlaku pada postrouting.</li></ul><p><strong>Kelebihan dari NAT (Network Address Translation)</strong></p><ul><li>Dengan adanya NAT dapat mengurangi adanya duplikasi IP address pada jaringan atau biasanya dikenal dengan conflict IP Address</li><li>Dengan adanya NAT akan menghindari pengalamatan ulang pada saat jaringan tersebut berubah.</li><li>Dapat menghemat IP Legal yang diberikan oleh ISP (Internet Service Provider)</li><li>Dapat meningkatkan fleksibelitas untuk koneksi jaringan internet.</li></ul><p><strong>Kelemahan dari NAT (Network Address Translation)</strong></p><ul><li>NAT dapat menyebabkan keterlambatan proses, ini disebabkan karena data yang dikirim harus melalui perangkat NAT terlebih dahulu.</li><li>NAT dapat menyebabkan beberapa aplikasi yang tidak bisa berjalan dengan normal</li><li>Dengan adanya NAT dapat menghilangkan kemampuan untuk melacak data karena data tersebut akan melewati firewall.</li></ul><h3 id=b-latar-belakang>B. Latar Belakang</h3><p><strong>NAT (Network Address Translation)</strong> pada jaringan komputer berfungsi sebagai translasi alamat IP public ke alamat IP private atau sebaliknya sehingga dengan adanya NAT ini setiap komputer pada jaringan LAN dapat mengakses internet dengan mudah.</p><p>Kita tahu bahwa alamat IP Public didunia ini sudah semakin menipis sehingga penggunaan dari NAT ini dirasa sangatlah efisien dan efektif terutama dalam alokasi alamat IP.</p><h3 id=c-alat-dan-bahan>C. Alat dan Bahan</h3><ul><li>Seperangkat PC / Laptop</li><li>Cisco Packet Tracer</li></ul><h3 id=d-tahap-pelaksanaan>D. Tahap Pelaksanaan</h3><p><strong>&#187; Static NAT &#171;</strong></p><ol><li>Pertama - tama buat topologi seperti gambar berikut</li></ol><p><img src=https://2.bp.blogspot.com/-DwXbgaf8_ao/W6gbkEbfFZI/AAAAAAAAElI/n6p9YWgUVzgHFcFOibEeeWHLGgmG8rNbgCLcBGAs/s1600/1.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><ol start=2><li>Selanjutnya konfigurasi IP Address dari semua perangkat sesuai dengan topologi diatas</li></ol><p><strong>Server0</strong></p><p><img src=https://2.bp.blogspot.com/-8f9PHozp1Hk/W6gbsoQ5HfI/AAAAAAAAElM/DtSGPoJGvxwbtfqkLFBfdHC3fsVW-LqcACLcBGAs/s1600/2.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p><strong>R1</strong></p><pre><code>&gt; Router&gt;en  
+Dengan kata lain NAT akan mentranslasikan alamat IP sehingga IP address pada jaringan local dapat mengakses IP public pada jaringan WAN. NAT mentranslasikan alamat IP private untuk dapat mengakses alamat host di internet dengan menggunakan alamat IP public pada jaringan tersebut."/>
+
+  
+
+  
+  <script defer src="/assets/custom/fontawesome-5.15.1/js/all.min.js"></script>
+  
+</head>
+
+  <body>
+    
+      <nav>
+  <a href="/">
+    siBunglon
+  </a>
+</nav>
+
+    
+    <main class="container">
+      
+  <article>
+    <header>
+      <small>
+        <span class="date">October 5, 2017</span></small>
+      <h1>Konfigurasi Static NAT dan Dynamic NAT Cisco</h1>
+    </header>
+    <section><p><strong>A. Pengertian</strong></p>
+<p><strong>NAT (Network Address Translation)</strong> adalah sebuah proses pemetaan alamat IP dimana perangkat jaringan komputer akan memberikan alamat IP public ke perangkat jaringan local sehingga banyak IP private yang dapat mengakses IP public.</p>
+<p>Dengan kata lain NAT akan mentranslasikan alamat IP sehingga IP address pada jaringan local dapat mengakses IP public pada jaringan WAN. NAT mentranslasikan alamat IP private untuk dapat mengakses alamat host di internet dengan menggunakan alamat IP public pada jaringan tersebut. Tanpa hal tersebut (NAT) tidak mungkin IP private pada jaringan local bisa mengakses internet. IP  local  digunakan  hanya  untuk  jaringan  local  saja  ,  sedangkan  IP Public digunakan secara umum,IP Public inilah yang digunakan untuk berkomunikasi di dunia internet karena dapat diakses dari mana pun.</p>
+<p>Di Cisco ada 3 jenis NAT, yaitu :</p>
+<p><strong>1) Static NAT :</strong> Penggunaan 1 IP Public untuk 1 IP Private (One to One Mapping). Sebagai contoh ada sebuah server yang ingin diakses melalui internet, sedangkan Server tsb menggunakn IP Private.Dengan menggunakan Static NAT maka server tsb dapat diakses melalui IP Public.</p>
+<p><strong>2) Dynamic NAT :</strong> Penggunaan IP Public untuk IP Private yang memiliki jumlah yang sama. Jadi untuk menggunakannya membutuhkan jumlah IP Punlic dan IP Private yang sama, misal kita ada 5 client maka kita harus memiliki 5 IP Public, maka dari itu Dynamic NAT ini jarang digunakan.</p>
+<p><strong>3) Dynamic NAT Overloading :</strong> Penggunaan 1 IP Public untuk beberapa IP Private. Sebagai contoh ada lebih dari 1 client ingin mengakses internet, namun hanya ada 1 IP Public, maka kita bisa gunakan Dynamic NAT Overloading ini.</p>
+<p><strong>Jenis - jenis dari NAT (Network Address Translation)</strong></p>
+<p>Pada jaringan komputer terdapat 2 jenis NAT, diantaranya:</p>
+<ul>
+<li>Dnat atau Destiantion Network Address Translation adalah sebuah NAT yang berfungsi untuk meneruskan paket dari IP public melalui firewall ke suatu host dalam jaringan. Dnat hanya bekerja pada tabel nat dan didalam tabel NAT berisi 3 bagian yang disebut dengan CHAIN, ketiga CHAIN tersebut meliputi prerouting, postrouting dan output.</li>
+<li>SNAT atau Source Network Address Translation yaitu sebuah NAT yang bertugas untuk merubah source address dari suatu paket data. SNAT hanya berlaku pada postrouting.</li>
+</ul>
+<p><strong>Kelebihan dari NAT (Network Address Translation)</strong></p>
+<ul>
+<li>Dengan adanya NAT dapat mengurangi adanya duplikasi IP address pada jaringan atau biasanya dikenal dengan conflict IP Address</li>
+<li>Dengan adanya NAT akan menghindari pengalamatan ulang pada saat jaringan tersebut berubah.</li>
+<li>Dapat menghemat IP Legal yang diberikan oleh ISP (Internet Service Provider)</li>
+<li>Dapat meningkatkan fleksibelitas untuk koneksi jaringan internet.</li>
+</ul>
+<p><strong>Kelemahan dari NAT (Network Address Translation)</strong></p>
+<ul>
+<li>NAT dapat menyebabkan keterlambatan proses, ini disebabkan karena data yang dikirim harus melalui perangkat NAT terlebih dahulu.</li>
+<li>NAT dapat menyebabkan beberapa aplikasi yang tidak bisa berjalan dengan normal</li>
+<li>Dengan adanya NAT dapat menghilangkan kemampuan untuk melacak data karena data tersebut akan melewati firewall.</li>
+</ul>
+<h3 id="b-latar-belakang">B. Latar Belakang</h3>
+<p><strong>NAT (Network Address Translation)</strong> pada jaringan komputer berfungsi sebagai translasi alamat IP public ke alamat IP private atau sebaliknya sehingga dengan adanya NAT ini setiap komputer pada jaringan LAN dapat mengakses internet dengan mudah.</p>
+<p>Kita tahu bahwa alamat IP Public didunia ini sudah semakin menipis sehingga penggunaan dari NAT ini dirasa sangatlah efisien dan efektif terutama dalam alokasi alamat IP.</p>
+<h3 id="c-alat-dan-bahan">C. Alat dan Bahan</h3>
+<ul>
+<li>Seperangkat PC / Laptop</li>
+<li>Cisco Packet Tracer</li>
+</ul>
+<h3 id="d-tahap-pelaksanaan">D. Tahap Pelaksanaan</h3>
+<p><strong>&raquo; Static NAT &laquo;</strong></p>
+<ol>
+<li>Pertama - tama buat topologi seperti gambar berikut</li>
+</ol>
+<p><img src="https://2.bp.blogspot.com/-DwXbgaf8_ao/W6gbkEbfFZI/AAAAAAAAElI/n6p9YWgUVzgHFcFOibEeeWHLGgmG8rNbgCLcBGAs/s1600/1.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<ol start="2">
+<li>Selanjutnya konfigurasi IP Address dari semua perangkat sesuai dengan topologi diatas</li>
+</ol>
+<p><strong>Server0</strong></p>
+<p><img src="https://2.bp.blogspot.com/-8f9PHozp1Hk/W6gbsoQ5HfI/AAAAAAAAElM/DtSGPoJGvxwbtfqkLFBfdHC3fsVW-LqcACLcBGAs/s1600/2.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p><strong>R1</strong></p>
+<pre><code>&gt; Router&gt;en  
 &gt; Router#conf t  
 &gt; Enter configuration commands, one per line. End with CNTL/Z.  
 &gt; Router(config)#int fa0/1  
@@ -13,7 +157,8 @@ Dengan kata lain NAT akan mentranslasikan alamat IP sehingga IP address pada jar
 &gt; Router(config-if)#no sh  
 &gt; Router(config-if)#ex  
 &gt; Router(config)#
-</code></pre><p><strong>R2</strong></p><pre><code>&gt; Router&gt;en
+</code></pre><p><strong>R2</strong></p>
+<pre><code>&gt; Router&gt;en
 &gt; Router#conf t
 &gt; Enter configuration commands, one per line. End with CNTL/Z.
 &gt;
@@ -27,15 +172,44 @@ Dengan kata lain NAT akan mentranslasikan alamat IP sehingga IP address pada jar
 &gt; Router(config-if)#no sh
 &gt; Router(config-if)#ex
 &gt; Router(config)#
-</code></pre><ol start=3><li>Kemudian setting NAT di Router 2 (Dekat Server)</li></ol><pre><code>&gt; Router(config)#ip nat inside source static 24.24.24.2 202.134.1.2
+</code></pre><ol start="3">
+<li>Kemudian setting NAT di Router 2 (Dekat Server)</li>
+</ol>
+<pre><code>&gt; Router(config)#ip nat inside source static 24.24.24.2 202.134.1.2
 &gt; Router(config)#int fa0/0
 &gt; Router(config-if)#ip nat outside
 &gt; Router(config-if)#int fa0/1
 &gt; Router(config-if)#ip nat inside
 &gt; Router(config-if)#ex
 &gt; Router(config)#
-</code></pre><p>Keterangan :</p><p><em>24.24.24.2 = IP Private yang akan ditranslate ke IP Public</em></p><p><em>202.134.1.2 = IP Public</em></p><p><em>IP NAT Outside = kita pilih Interface yang menjadi IP Public</em></p><p><em>IP NAT Inside = kita pilih Interface yang menjadi IP Private</em></p><ol start=4><li>Selanjutnya coba lakukan ping dari Server ke Router 1,maka hasilnya akan berhasil,tetapi Router 1 tidak dapat melakukan ping ke Server , karena IP Private tidak akan bisa di ping kecuali telah di Routing</li></ol><p><img src=https://3.bp.blogspot.com/-DQcYsYmQ1mk/W6gcFcLARPI/AAAAAAAAElY/Ixcic1EpMzQSRiv48qjWQtegpqDrPujTACLcBGAs/s1600/3.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><ol start=5><li>Selanjutnya cek IP NAT, gunakan perintah berikut</li></ol><pre><code>&gt;  Router#show ip nat translation
-</code></pre><p><img src=https://2.bp.blogspot.com/-ZKiDVAvPd3o/W6gcMR4tInI/AAAAAAAAElc/XHdCJ6m6TQMbScSK9k_wzXYiZDAbqop3QCLcBGAs/s1600/4.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p><strong>&#187; Dynamic NAT &#171;</strong></p><ol><li>Pertama - tama buat topologi seperti berikut</li></ol><p><img src=https://4.bp.blogspot.com/-3IgvWrbw610/W6gcUm7qhSI/AAAAAAAAElg/10F_N_5a8l4i0-SZEabBRrr5FZIpjUpLgCLcBGAs/s1600/5.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><ol start=2><li>Selanjutnya konfigurasi IP Address dari semua perangkat sesuai dengan topologi diatas.</li></ol><p><strong>Laptop0</strong></p><p><img src=https://2.bp.blogspot.com/-qP4YzUxgPTA/W6gceKkJX4I/AAAAAAAAElo/uDwoBHl-CrcWavoJRPoHQM28_oBIrUjCQCLcBGAs/s1600/6.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p><strong>PC0</strong></p><p><img src=https://1.bp.blogspot.com/-D8Ldstu-LnE/W6gclQDF53I/AAAAAAAAElw/TeADIElZYsIpdq1hbc12s2WjUkld6j7hQCLcBGAs/s1600/7.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p><strong>R1</strong></p><pre><code>&gt; Router&gt;en
+</code></pre><p>Keterangan :</p>
+<p><em>24.24.24.2 = IP Private yang akan ditranslate ke IP Public</em></p>
+<p><em>202.134.1.2 = IP Public</em></p>
+<p><em>IP NAT Outside = kita pilih Interface yang menjadi IP Public</em></p>
+<p><em>IP NAT Inside = kita pilih Interface yang menjadi IP Private</em></p>
+<ol start="4">
+<li>Selanjutnya coba lakukan ping dari Server ke Router 1,maka hasilnya akan berhasil,tetapi Router 1 tidak dapat melakukan ping ke Server , karena IP Private tidak akan bisa di ping kecuali telah di Routing</li>
+</ol>
+<p><img src="https://3.bp.blogspot.com/-DQcYsYmQ1mk/W6gcFcLARPI/AAAAAAAAElY/Ixcic1EpMzQSRiv48qjWQtegpqDrPujTACLcBGAs/s1600/3.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<ol start="5">
+<li>Selanjutnya cek IP NAT, gunakan perintah berikut</li>
+</ol>
+<pre><code>&gt;  Router#show ip nat translation
+</code></pre><p><img src="https://2.bp.blogspot.com/-ZKiDVAvPd3o/W6gcMR4tInI/AAAAAAAAElc/XHdCJ6m6TQMbScSK9k_wzXYiZDAbqop3QCLcBGAs/s1600/4.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p><strong>&raquo; Dynamic NAT &laquo;</strong></p>
+<ol>
+<li>Pertama - tama buat topologi seperti berikut</li>
+</ol>
+<p><img src="https://4.bp.blogspot.com/-3IgvWrbw610/W6gcUm7qhSI/AAAAAAAAElg/10F_N_5a8l4i0-SZEabBRrr5FZIpjUpLgCLcBGAs/s1600/5.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<ol start="2">
+<li>Selanjutnya konfigurasi IP Address dari semua perangkat sesuai dengan topologi diatas.</li>
+</ol>
+<p><strong>Laptop0</strong></p>
+<p><img src="https://2.bp.blogspot.com/-qP4YzUxgPTA/W6gceKkJX4I/AAAAAAAAElo/uDwoBHl-CrcWavoJRPoHQM28_oBIrUjCQCLcBGAs/s1600/6.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p><strong>PC0</strong></p>
+<p><img src="https://1.bp.blogspot.com/-D8Ldstu-LnE/W6gclQDF53I/AAAAAAAAElw/TeADIElZYsIpdq1hbc12s2WjUkld6j7hQCLcBGAs/s1600/7.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p><strong>R1</strong></p>
+<pre><code>&gt; Router&gt;en
 &gt; Router#conf t
 &gt; Enter configuration commands, one per line. End with CNTL/Z.
 &gt;
@@ -49,7 +223,8 @@ Dengan kata lain NAT akan mentranslasikan alamat IP sehingga IP address pada jar
 &gt; Router(config-if)#no sh
 &gt; Router(config-if)#ex
 &gt; Router(config)#
-</code></pre><p><strong>R2</strong></p><pre><code>&gt; Router&gt;en
+</code></pre><p><strong>R2</strong></p>
+<pre><code>&gt; Router&gt;en
 &gt; Router#conf t
 &gt; Enter configuration commands, one per line. End with CNTL/Z.
 &gt;
@@ -59,7 +234,10 @@ Dengan kata lain NAT akan mentranslasikan alamat IP sehingga IP address pada jar
 &gt; Router(config-if)#no sh
 &gt; Router(config-if)#ex
 &gt; Router(config)#
-</code></pre><ol start=3><li>Kemudian kita konfigurasi Dynamic NAT nya pada R1.</li></ol><pre><code>&gt; Router(config)#ip nat pool **tio** 199.199.199.2 199.199.199.2 netmask 255.255.255.0
+</code></pre><ol start="3">
+<li>Kemudian kita konfigurasi Dynamic NAT nya pada R1.</li>
+</ol>
+<pre><code>&gt; Router(config)#ip nat pool **tio** 199.199.199.2 199.199.199.2 netmask 255.255.255.0
 &gt; Router(config)#access-list 1 permit 192.168.24.0 0.0.0.255
 &gt; Router(config)#ip nat inside source list 1 pool **tio**
 &gt; Router(config)#int fa0/0
@@ -67,6 +245,98 @@ Dengan kata lain NAT akan mentranslasikan alamat IP sehingga IP address pada jar
 &gt; Router(config-if)#int fa0/1
 &gt; Router(config-if)#ip nat inside
 &gt; Router(config-if)#ex
-</code></pre><p>Keterangan :</p><ul><li><p>IP 199.199.199.2 yang pertama adalah IP Public awal</p></li><li><p>IP 199.199.199.2 yang kedua adalah IP Public akhir , karena kita menggunakan 1 IP Public maka kita masukan awal dan akhirnya sama.</p></li><li><p>pool tio adalah penamaan dari range IP Publicnya, bisa diisi dengan nama yang lain.</p></li></ul><ol start=4><li>Setelah itu coba lakukan test ping dari PC maupun Laptop ke Router 2.Maka hasilnya hanya ada satu saja yang berhasil,yang satunya gagal.</li></ol><p><strong>PC0 berhasil</strong></p><p><img src=https://4.bp.blogspot.com/-f5Ompa-On3M/W6gc5QDj6UI/AAAAAAAAEl8/p8JBcUHXfWoqMRF0JsNxd-Jne24yWMj7gCLcBGAs/s1600/8.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p><strong>Laptop0 Gagal</strong></p><p><img src=https://4.bp.blogspot.com/-n9oCSQxHFXM/W6gc-4f3JWI/AAAAAAAAEmA/K7aVJ6W1swMv1ohICeZVvmJKrjn928lRQCLcBGAs/s1600/9.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p>Mengapa yang satu kok gagal ?? karena fungsi dari Dynamic itu sendiri adalah jumlah IP Public harus sama dengan IP Private, sedangkan dalam topologi diatas kita hanya memiliki 1 IP Public maka hanya IP Private saja yang bisa di translate.</p><p>F. Referensi</p><p><a href=http://ccnav6.com>http://ccnav6.com</a></p></section><footer><hr><div class=meta><p class=tags><a href=/tags/blc-telkom-klaten><span>#</span>BLC Telkom Klaten</a>
-<a href=/tags/cisco><span>#</span>Cisco</a></p></div><hr><div id=disqus_thread></div><script type=application/javascript>var disqus_config=function(){};(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return;}
-var d=document,s=d.createElement('script');s.async=true;s.src='//'+"sibunglonlabs"+'.disqus.com/embed.js';s.setAttribute('data-timestamp',+new Date());(d.head||d.body).appendChild(s);})();</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></footer></article></main><footer><p>&copy; 2020 Faizar Septiawan. <a href=http://creativecommons.org/licenses/by-sa/4.0/>Some Rights Reserved</a>.</p><p>Powered by <a href=https://gohugo.io title="A Fast and Flexible Website Generator">Hugo</a> & <a href=https://github.com/eshlox/simplicity title="Hugo theme">Simplicity</a>.</p></footer><script src=/assets/js/scripts.min.js></script><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-110194945-3','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script></body></html>
+</code></pre><p>Keterangan :</p>
+<ul>
+<li>
+<p>IP 199.199.199.2 yang pertama adalah IP Public awal</p>
+</li>
+<li>
+<p>IP 199.199.199.2 yang kedua adalah IP Public akhir , karena kita menggunakan 1 IP Public maka kita masukan awal dan akhirnya sama.</p>
+</li>
+<li>
+<p>pool tio adalah penamaan dari range IP Publicnya, bisa diisi dengan nama yang lain.</p>
+</li>
+</ul>
+<ol start="4">
+<li>Setelah itu coba lakukan test ping dari PC maupun Laptop ke Router 2.Maka hasilnya hanya ada satu saja yang berhasil,yang satunya gagal.</li>
+</ol>
+<p><strong>PC0 berhasil</strong></p>
+<p><img src="https://4.bp.blogspot.com/-f5Ompa-On3M/W6gc5QDj6UI/AAAAAAAAEl8/p8JBcUHXfWoqMRF0JsNxd-Jne24yWMj7gCLcBGAs/s1600/8.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p><strong>Laptop0 Gagal</strong></p>
+<p><img src="https://4.bp.blogspot.com/-n9oCSQxHFXM/W6gc-4f3JWI/AAAAAAAAEmA/K7aVJ6W1swMv1ohICeZVvmJKrjn928lRQCLcBGAs/s1600/9.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p>Mengapa yang satu kok gagal ?? karena fungsi dari Dynamic itu sendiri adalah jumlah IP Public harus sama dengan IP Private, sedangkan dalam topologi diatas kita hanya memiliki 1 IP Public maka hanya IP Private saja yang bisa di translate.</p>
+<p>F. Referensi</p>
+<p><a href="http://ccnav6.com">http://ccnav6.com</a></p>
+</section>
+    <footer>
+      <hr>
+      <div class="meta">
+        <p class="tags">
+          
+            
+              <a href="/tags/blc-telkom-klaten">
+                <span>#</span>BLC Telkom Klaten</a>
+            
+              <a href="/tags/cisco">
+                <span>#</span>Cisco</a>
+            
+          
+        </p>
+      </div>
+      <hr>
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sibunglonlabs" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </footer>
+  </article>
+
+    </main>
+    
+      <footer>
+  <p>
+    &copy; 2020 Faizar Septiawan. <a href="http://creativecommons.org/licenses/by-sa/4.0/">Some Rights Reserved</a>.
+  </p>
+  <p>
+    Powered by <a href="https://gohugo.io" title="A Fast and Flexible Website Generator">Hugo</a> &amp; <a href="https://github.com/eshlox/simplicity" title="Hugo theme">Simplicity</a>.
+  </p>
+</footer>
+
+    
+    
+    
+    
+    
+    
+    
+    <script src="/assets/js/scripts.min.js"></script>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-110194945-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>

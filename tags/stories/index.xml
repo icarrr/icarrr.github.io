@@ -1,3 +1,24 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Stories on The Official Site of siBunglon</title><link>https://sibunglon.com/tags/stories/</link><description>Recent content in Stories on The Official Site of siBunglon</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 15 Feb 2020 13:29:12 +0700</lastBuildDate><atom:link href="https://sibunglon.com/tags/stories/index.xml" rel="self" type="application/rss+xml"/><item><title>Server Got Hacked, Crontab Has Been Modified</title><link>https://sibunglon.com/2020/02/15/server-got-hacked-crontab-has-been-modified/</link><pubDate>Sat, 15 Feb 2020 13:29:12 +0700</pubDate><guid>https://sibunglon.com/2020/02/15/server-got-hacked-crontab-has-been-modified/</guid><description>A few days ago, one of the servers used by my worker&amp;rsquo;s developer friends often experienced a down (assumed to be server A). Initially I thought it was caused by the very few available server resources and increasing number of processes carried out by applications.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Stories on The Official Site of siBunglon</title>
+    <link>https://sibunglon.com/tags/stories/</link>
+    <description>Recent content in Stories on The Official Site of siBunglon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 15 Feb 2020 13:29:12 +0700</lastBuildDate>
+    
+      <atom:link href="https://sibunglon.com/tags/stories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      <item>
+        <title>Server Got Hacked, Crontab Has Been Modified</title>
+        <link>https://sibunglon.com/2020/02/15/server-got-hacked-crontab-has-been-modified/</link>
+        <pubDate>Sat, 15 Feb 2020 13:29:12 +0700</pubDate>
+        <guid>https://sibunglon.com/2020/02/15/server-got-hacked-crontab-has-been-modified/</guid>
+        <description>A few days ago, one of the servers used by my worker&amp;rsquo;s developer friends often experienced a down (assumed to be server A). Initially I thought it was caused by the very few available server resources and increasing number of processes carried out by applications.
 When checking server resources, it turns out that CPU usage has reached 100%.
-What process continues to make CPU usage up to 100%? Whereas on other servers (assumed to be server B) with the same application process, CPU usage does not reach 100%.</description></item></channel></rss>
+What process continues to make CPU usage up to 100%? Whereas on other servers (assumed to be server B) with the same application process, CPU usage does not reach 100%.</description>
+      </item>
+    
+  </channel>
+</rss>

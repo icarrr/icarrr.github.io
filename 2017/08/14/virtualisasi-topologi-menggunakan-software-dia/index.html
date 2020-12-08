@@ -1,19 +1,236 @@
-<!doctype html><html lang=en-us itemscope itemtype=http://schema.org/WebPage><head><title>Virtualisasi Topologi Menggunakan Software DIA</title><meta http-equiv=cache-control content="public, max-age=31536000"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=author content="Faizar Septiawan"><meta name=description content="Read - Search - Ask | Personal Site | Catch your problem solution or read interesting stories on my blog!"><meta name=keywords content="Linux,Unix,BSD,MacOS,Komunitas Pengguna Linux Indonesia,KPLI Klaten,KPLI Bulukumba,MikroTik,MikroTik Indonesia,FreeBSD,FreeBSD Indonesia,Cisco,Cisco Indonesia,BLC Telkom Klaten,Ansible,Nginx,Apache2,Caddy Server,Ayo Belajar Linux,Cloud Computing,e-Learning,Open edX,Proxmox,Sendy,Microsoft SQL Server,MySQL,PostgreSQL,Lets Encrypt,Case Study,Atlassian,Virtualization,Faizar Septiawan,Icar,siBunglonGanteng,siBunglonLabs,Orang Ganteng"><meta name=google-site-verification content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-110194945-3"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','UA-110194945-3');</script><link rel=stylesheet href=/assets/css/external.min.css media=screen><link rel=stylesheet href=/assets/css/styles.css media=screen><link href=/assets/custom/googlefonts/roboto.css rel=stylesheet><link rel=apple-touch-icon-precomposed sizes=144x144 href=/src/images/apple-touch-icon.png><link rel="shortcut icon" href=/src/images/favicon.ico><link href=/posts/index.xml rel=alternate type=application/rss+xml title="The Official Site of siBunglon"><meta property="og:title" content="Virtualisasi Topologi Menggunakan Software DIA"><meta property="og:description" content="A. PENDAHULUAN
+<!DOCTYPE html>
+<html lang="en-us" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+  <title>Virtualisasi Topologi Menggunakan Software DIA</title>
+  
+  <meta http-equiv="cache-control" content="public, max-age=31536000" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Faizar Septiawan">
+  <meta name="description" content="Read - Search - Ask | Personal Site | Catch your problem solution or read interesting stories on my blog!">
+  <meta name="keywords" content="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng">
+  
+  
+  
+  <meta name="google-site-verification" content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM" />
+  
+  
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110194945-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110194945-3');
+  </script>
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/css/external.min.css" media="screen">
+  
+  
+  <link rel="stylesheet" href="/assets/css/styles.css" media="screen">
+  <link href="/assets/custom/googlefonts/roboto.css" rel="stylesheet">
+  
+
+  
+  
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/src/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="/src/images/favicon.ico">
+  
+
+  
+  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
+
+  <meta property="og:title" content="Virtualisasi Topologi Menggunakan Software DIA" />
+<meta property="og:description" content="A. PENDAHULUAN
 Pada postingan kali ini saya akan membagi sedikit ilmu terkait dengan virtualisasi topologi jaringan menggunakan software dia.
 B. PENGERTIAN
 TOPOLOGI MENURUT WIKIPEDIA
 Topologi Jaringan Sebuah LAN dapat diimplementasikan dengan berbagai macam topologi. Topologi yang di maksud di sini merupakan struktur jaringan fisik yang digunakan untuk mengimplementasikan LAN tersebut. Topologi dasar yang bisa digunakan dalam jaringan komputer adalah:
- Topologi Bus (Linear) Topologi Ring (Cincin) Topologi Star (Bintang) Topologi Tree (Pohon) Topologi Mesh (web)  Topologi pengembangan dari ketiga di atas biasanya berupa topologi Tree (Pohon), yang merupakan pengembangan dari star dan Bus, topologi Mash atau Hybrid atau Multipoint atau Web yang merupakan pengembangan dari topologi Point to Point (bus), topologi Loop yang merupakan pengembangan dari topologi Ring Ketiganya memiliki kelebihan dan kekurangan masing-masing."><meta property="og:type" content="article"><meta property="og:url" content="https://sibunglon.com/2017/08/14/virtualisasi-topologi-menggunakan-software-dia/"><meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"><meta property="article:published_time" content="2017-08-14T17:00:00+00:00"><meta property="article:modified_time" content="2017-08-14T17:00:00+00:00"><meta property="og:site_name" content="The Official Site of siBunglon"><meta itemprop=name content="Virtualisasi Topologi Menggunakan Software DIA"><meta itemprop=description content="A. PENDAHULUAN
+ Topologi Bus (Linear) Topologi Ring (Cincin) Topologi Star (Bintang) Topologi Tree (Pohon) Topologi Mesh (web)  Topologi pengembangan dari ketiga di atas biasanya berupa topologi Tree (Pohon), yang merupakan pengembangan dari star dan Bus, topologi Mash atau Hybrid atau Multipoint atau Web yang merupakan pengembangan dari topologi Point to Point (bus), topologi Loop yang merupakan pengembangan dari topologi Ring Ketiganya memiliki kelebihan dan kekurangan masing-masing." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sibunglon.com/2017/08/14/virtualisasi-topologi-menggunakan-software-dia/" />
+<meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"/>
+<meta property="article:published_time" content="2017-08-14T17:00:00+00:00" />
+<meta property="article:modified_time" content="2017-08-14T17:00:00+00:00" /><meta property="og:site_name" content="The Official Site of siBunglon" />
+
+  <meta itemprop="name" content="Virtualisasi Topologi Menggunakan Software DIA">
+<meta itemprop="description" content="A. PENDAHULUAN
 Pada postingan kali ini saya akan membagi sedikit ilmu terkait dengan virtualisasi topologi jaringan menggunakan software dia.
 B. PENGERTIAN
 TOPOLOGI MENURUT WIKIPEDIA
 Topologi Jaringan Sebuah LAN dapat diimplementasikan dengan berbagai macam topologi. Topologi yang di maksud di sini merupakan struktur jaringan fisik yang digunakan untuk mengimplementasikan LAN tersebut. Topologi dasar yang bisa digunakan dalam jaringan komputer adalah:
- Topologi Bus (Linear) Topologi Ring (Cincin) Topologi Star (Bintang) Topologi Tree (Pohon) Topologi Mesh (web)  Topologi pengembangan dari ketiga di atas biasanya berupa topologi Tree (Pohon), yang merupakan pengembangan dari star dan Bus, topologi Mash atau Hybrid atau Multipoint atau Web yang merupakan pengembangan dari topologi Point to Point (bus), topologi Loop yang merupakan pengembangan dari topologi Ring Ketiganya memiliki kelebihan dan kekurangan masing-masing."><meta itemprop=datePublished content="2017-08-14T17:00:00+00:00"><meta itemprop=dateModified content="2017-08-14T17:00:00+00:00"><meta itemprop=wordCount content="370"><meta itemprop=image content="https://sibunglon.com/assets/img/profil.webp"><meta itemprop=keywords content="BLC Telkom Klaten,Ayo Belajar Linux,"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://sibunglon.com/assets/img/profil.webp"><meta name=twitter:title content="Virtualisasi Topologi Menggunakan Software DIA"><meta name=twitter:description content="A. PENDAHULUAN
+ Topologi Bus (Linear) Topologi Ring (Cincin) Topologi Star (Bintang) Topologi Tree (Pohon) Topologi Mesh (web)  Topologi pengembangan dari ketiga di atas biasanya berupa topologi Tree (Pohon), yang merupakan pengembangan dari star dan Bus, topologi Mash atau Hybrid atau Multipoint atau Web yang merupakan pengembangan dari topologi Point to Point (bus), topologi Loop yang merupakan pengembangan dari topologi Ring Ketiganya memiliki kelebihan dan kekurangan masing-masing.">
+<meta itemprop="datePublished" content="2017-08-14T17:00:00+00:00" />
+<meta itemprop="dateModified" content="2017-08-14T17:00:00+00:00" />
+<meta itemprop="wordCount" content="370">
+<meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
+
+
+
+<meta itemprop="keywords" content="BLC Telkom Klaten,Ayo Belajar Linux," />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://sibunglon.com/assets/img/profil.webp"/>
+
+<meta name="twitter:title" content="Virtualisasi Topologi Menggunakan Software DIA"/>
+<meta name="twitter:description" content="A. PENDAHULUAN
 Pada postingan kali ini saya akan membagi sedikit ilmu terkait dengan virtualisasi topologi jaringan menggunakan software dia.
 B. PENGERTIAN
 TOPOLOGI MENURUT WIKIPEDIA
 Topologi Jaringan Sebuah LAN dapat diimplementasikan dengan berbagai macam topologi. Topologi yang di maksud di sini merupakan struktur jaringan fisik yang digunakan untuk mengimplementasikan LAN tersebut. Topologi dasar yang bisa digunakan dalam jaringan komputer adalah:
- Topologi Bus (Linear) Topologi Ring (Cincin) Topologi Star (Bintang) Topologi Tree (Pohon) Topologi Mesh (web)  Topologi pengembangan dari ketiga di atas biasanya berupa topologi Tree (Pohon), yang merupakan pengembangan dari star dan Bus, topologi Mash atau Hybrid atau Multipoint atau Web yang merupakan pengembangan dari topologi Point to Point (bus), topologi Loop yang merupakan pengembangan dari topologi Ring Ketiganya memiliki kelebihan dan kekurangan masing-masing."><script defer src=/assets/custom/fontawesome-5.15.1/js/all.min.js></script></head><body><nav><a href=/>siBunglon</a></nav><main class=container><article><header><small><span class=date>August 14, 2017</span></small><h1>Virtualisasi Topologi Menggunakan Software DIA</h1></header><section><p><img src=https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Dia_0.97_-_Flowchart_example.png/300px-Dia_0.97_-_Flowchart_example.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p><strong>A. PENDAHULUAN</strong></p><p>Pada postingan kali ini saya akan membagi sedikit ilmu terkait dengan virtualisasi topologi jaringan menggunakan software dia.</p><p><strong>B. PENGERTIAN</strong></p><p><strong>TOPOLOGI MENURUT <a href=https://id.wikipedia.org/wiki/Topologi_jaringan>WIKIPEDIA</a></strong></p><p>Topologi Jaringan Sebuah LAN dapat diimplementasikan dengan berbagai macam topologi. Topologi yang di maksud di sini merupakan struktur jaringan fisik yang digunakan untuk mengimplementasikan LAN tersebut. Topologi dasar yang bisa digunakan dalam jaringan komputer adalah:</p><ul><li>Topologi <em>Bus</em> (Linear)</li><li>Topologi <em>Ring</em> (Cincin)</li><li>Topologi <em>Star</em> (Bintang)</li><li>Topologi <em>Tree</em> (Pohon)</li><li>Topologi <em>Mesh</em> (web)</li></ul><p>Topologi pengembangan dari ketiga di atas biasanya berupa topologi <em>Tree</em> (Pohon), yang merupakan pengembangan dari <em>star</em> dan <em>Bus</em>, topologi <em>Mash</em> atau <em>Hybrid</em> atau <em>Multipoint</em> atau Web yang merupakan pengembangan dari topologi <em>Point to Point</em> (bus), topologi Loop yang merupakan pengembangan dari topologi <em>Ring</em> Ketiganya memiliki kelebihan dan kekurangan masing-masing. Salah satu dari ketiga topologi ini dapat dipilih untuk mengimplementasikan sebuah LAN. Tentunya topologi yang dipilih adalah yang paling sesuai dengan kebutuhan LAN yang sedang di rancang.</p><p><strong>PENGERTIAN DIA (SOFTWARE) MENURUT <a href=https://en.wikipedia.org/wiki/Dia_%28software%29>WIKIPEDIA</a></strong></p><p><strong>Dia</strong> adalah perangkat lunak diagram umum tujuan umum gratis dan terbuka , yang dikembangkan awalnya oleh Alexander Larsson. Dia menggunakan antarmuka dan dokumen tunggal terkontrol (SDI) yang mirip dengan GIMP dan Inscape .</p><p><strong>C. LATAR BELAKANG</strong></p><p>Sebelum kita melakukan pembangunan jaringan, maka pada dasarnya kita harus memiliki topologinya dulu.</p><p><strong>D. ALAT DAN BAHAN</strong></p><ul><li>laptop</li><li>software dia</li></ul><p><strong>E. TUJUAN</strong></p><ul><li>menambah ilmu</li><li>untuk mengetahui virtualisasi topologi</li></ul><p><strong>F. JANGKA WAKTU PELAKSANA</strong></p><p>Jangka waktu pelaksanaan 10 menit</p><p><strong>G. LANGKAH KERJA</strong></p><p>1. pertama siapkan laptop dan software dia (kalau tidak ada silahkan download)</p><p>2. buka aplikasi dia, dengan cara pilih menu > kemudian ketikkan pada kolom search &ldquo;dia&rdquo; untuk mempermudah pencarian</p><p>3. nah ini adalah tampilan pertama software dia</p><p><img src=https://2.bp.blogspot.com/-hmFW5Y-7Hgg/W4u2ex-0WmI/AAAAAAAAD-c/t-x81kG49_odXjyASX3B1HzxQV1s_remQCLcBGAs/s1600/dis2.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p>4. Vitur software dia,disini ada switch dll</p><p><img src=https://4.bp.blogspot.com/-n2NdVS26C64/W4u2pAo9AOI/AAAAAAAAD-g/TM7NltTLKbgRogQz5hZgB2XLYYc9suX-wCLcBGAs/s1600/dia3.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p>5. Kemudian susun perangkat keras jaringan seperti server,router,switch,tower,dll</p><p><img src=https://4.bp.blogspot.com/-gu2flDcpq7E/W4u25GbLGNI/AAAAAAAAD-s/zMn1NiGjhmEYgfneRt2QqhKKhBuTf16jQCLcBGAs/s1600/dia4.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p>6. Setelah melakukan,penempatan atau penyusunan perangkat keras kemudian kita akan menyambungkan kabelnya. lihat gambar di bawah</p><p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFPjyYs3eGNEelkTqX14t4xVbB0A_60XNXATG1pq0XdseKxSQa" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p>7. nah sampai disini topologi kita telah selesai</p><p><em>cat : kalau ip nya silahkan agan kasih sendiri yah biar lebih komplit dah :D</em></p><p><strong>H. TEMUAN MASALAH</strong></p><p>Disini saya menemukan masalah di saat melakukan pencariaan fitur dia, dan sebagai solusinya saya harus mencarinya satu persatu :D</p><p><strong>I. HASIL YANG DI DAPATKAN</strong></p><p>Dapat melakukan virtualisasi melalui software dia</p><p><strong>J. KESIMPULAN</strong></p><p>Jadi di saat melakukan pekerjaan sekiranya pertama yang dilakukan adalah membuat topologinya</p></section><footer><hr><div class=meta><p class=tags><a href=/tags/blc-telkom-klaten><span>#</span>BLC Telkom Klaten</a>
-<a href=/tags/ayo-belajar-linux><span>#</span>Ayo Belajar Linux</a></p></div><hr><div id=disqus_thread></div><script type=application/javascript>var disqus_config=function(){};(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return;}
-var d=document,s=d.createElement('script');s.async=true;s.src='//'+"sibunglonlabs"+'.disqus.com/embed.js';s.setAttribute('data-timestamp',+new Date());(d.head||d.body).appendChild(s);})();</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></footer></article></main><footer><p>&copy; 2020 Faizar Septiawan. <a href=http://creativecommons.org/licenses/by-sa/4.0/>Some Rights Reserved</a>.</p><p>Powered by <a href=https://gohugo.io title="A Fast and Flexible Website Generator">Hugo</a> & <a href=https://github.com/eshlox/simplicity title="Hugo theme">Simplicity</a>.</p></footer><script src=/assets/js/scripts.min.js></script><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-110194945-3','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script></body></html>
+ Topologi Bus (Linear) Topologi Ring (Cincin) Topologi Star (Bintang) Topologi Tree (Pohon) Topologi Mesh (web)  Topologi pengembangan dari ketiga di atas biasanya berupa topologi Tree (Pohon), yang merupakan pengembangan dari star dan Bus, topologi Mash atau Hybrid atau Multipoint atau Web yang merupakan pengembangan dari topologi Point to Point (bus), topologi Loop yang merupakan pengembangan dari topologi Ring Ketiganya memiliki kelebihan dan kekurangan masing-masing."/>
+
+  
+
+  
+  <script defer src="/assets/custom/fontawesome-5.15.1/js/all.min.js"></script>
+  
+</head>
+
+  <body>
+    
+      <nav>
+  <a href="/">
+    siBunglon
+  </a>
+</nav>
+
+    
+    <main class="container">
+      
+  <article>
+    <header>
+      <small>
+        <span class="date">August 14, 2017</span></small>
+      <h1>Virtualisasi Topologi Menggunakan Software DIA</h1>
+    </header>
+    <section><p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Dia_0.97_-_Flowchart_example.png/300px-Dia_0.97_-_Flowchart_example.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p><strong>A. PENDAHULUAN</strong></p>
+<p>Pada postingan kali ini saya akan membagi sedikit ilmu terkait dengan virtualisasi topologi jaringan menggunakan software dia.</p>
+<p><strong>B. PENGERTIAN</strong></p>
+<p><strong>TOPOLOGI MENURUT <a href="https://id.wikipedia.org/wiki/Topologi_jaringan">WIKIPEDIA</a></strong></p>
+<p>Topologi Jaringan Sebuah LAN dapat diimplementasikan dengan berbagai macam topologi. Topologi yang di maksud di sini merupakan struktur jaringan fisik yang digunakan untuk mengimplementasikan LAN tersebut. Topologi dasar yang bisa digunakan dalam jaringan komputer adalah:</p>
+<ul>
+<li>Topologi <em>Bus</em> (Linear)</li>
+<li>Topologi <em>Ring</em> (Cincin)</li>
+<li>Topologi <em>Star</em> (Bintang)</li>
+<li>Topologi <em>Tree</em> (Pohon)</li>
+<li>Topologi <em>Mesh</em> (web)</li>
+</ul>
+<p>Topologi pengembangan dari ketiga di atas biasanya berupa topologi <em>Tree</em> (Pohon), yang merupakan pengembangan dari <em>star</em> dan <em>Bus</em>, topologi <em>Mash</em> atau <em>Hybrid</em> atau <em>Multipoint</em> atau Web yang merupakan pengembangan dari topologi <em>Point to Point</em> (bus), topologi Loop yang merupakan pengembangan dari topologi <em>Ring</em> Ketiganya memiliki kelebihan dan kekurangan masing-masing. Salah satu dari ketiga topologi ini dapat dipilih untuk mengimplementasikan sebuah LAN. Tentunya topologi yang dipilih adalah yang paling sesuai dengan kebutuhan LAN yang sedang di rancang.</p>
+<p><strong>PENGERTIAN DIA (SOFTWARE) MENURUT <a href="https://en.wikipedia.org/wiki/Dia_%28software%29">WIKIPEDIA</a></strong></p>
+<p><strong>Dia</strong> adalah perangkat lunak diagram umum tujuan umum gratis dan terbuka , yang dikembangkan awalnya oleh Alexander Larsson. Dia menggunakan antarmuka dan dokumen tunggal terkontrol (SDI) yang mirip dengan GIMP dan Inscape .</p>
+<p><strong>C. LATAR BELAKANG</strong></p>
+<p>Sebelum kita melakukan pembangunan jaringan, maka pada dasarnya kita harus memiliki topologinya dulu.</p>
+<p><strong>D. ALAT DAN BAHAN</strong></p>
+<ul>
+<li>laptop</li>
+<li>software dia</li>
+</ul>
+<p><strong>E. TUJUAN</strong></p>
+<ul>
+<li>menambah ilmu</li>
+<li>untuk mengetahui virtualisasi topologi</li>
+</ul>
+<p><strong>F. JANGKA WAKTU PELAKSANA</strong></p>
+<p>Jangka waktu pelaksanaan 10 menit</p>
+<p><strong>G. LANGKAH KERJA</strong></p>
+<p>1. pertama siapkan laptop dan software dia (kalau tidak ada silahkan download)</p>
+<p>2. buka aplikasi dia, dengan cara pilih menu &gt; kemudian ketikkan pada kolom search &ldquo;dia&rdquo; untuk mempermudah pencarian</p>
+<p>3. nah ini adalah tampilan pertama software dia</p>
+<p><img src="https://2.bp.blogspot.com/-hmFW5Y-7Hgg/W4u2ex-0WmI/AAAAAAAAD-c/t-x81kG49_odXjyASX3B1HzxQV1s_remQCLcBGAs/s1600/dis2.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p>4. Vitur software dia,disini ada switch dll</p>
+<p><img src="https://4.bp.blogspot.com/-n2NdVS26C64/W4u2pAo9AOI/AAAAAAAAD-g/TM7NltTLKbgRogQz5hZgB2XLYYc9suX-wCLcBGAs/s1600/dia3.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p>5. Kemudian susun perangkat keras jaringan seperti server,router,switch,tower,dll</p>
+<p><img src="https://4.bp.blogspot.com/-gu2flDcpq7E/W4u25GbLGNI/AAAAAAAAD-s/zMn1NiGjhmEYgfneRt2QqhKKhBuTf16jQCLcBGAs/s1600/dia4.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p>6. Setelah melakukan,penempatan atau penyusunan perangkat keras kemudian kita akan menyambungkan kabelnya. lihat gambar di bawah</p>
+<p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFPjyYs3eGNEelkTqX14t4xVbB0A_60XNXATG1pq0XdseKxSQa" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p>7. nah sampai disini topologi kita telah selesai</p>
+<p><em>cat : kalau ip nya silahkan agan kasih sendiri yah biar lebih komplit dah :D</em></p>
+<p><strong>H. TEMUAN MASALAH</strong></p>
+<p>Disini saya menemukan masalah di saat melakukan pencariaan fitur dia, dan sebagai solusinya saya harus mencarinya satu persatu :D</p>
+<p><strong>I. HASIL YANG DI DAPATKAN</strong></p>
+<p>Dapat melakukan virtualisasi melalui software dia</p>
+<p><strong>J. KESIMPULAN</strong></p>
+<p>Jadi di saat melakukan pekerjaan sekiranya pertama yang dilakukan adalah membuat topologinya</p>
+</section>
+    <footer>
+      <hr>
+      <div class="meta">
+        <p class="tags">
+          
+            
+              <a href="/tags/blc-telkom-klaten">
+                <span>#</span>BLC Telkom Klaten</a>
+            
+              <a href="/tags/ayo-belajar-linux">
+                <span>#</span>Ayo Belajar Linux</a>
+            
+          
+        </p>
+      </div>
+      <hr>
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sibunglonlabs" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </footer>
+  </article>
+
+    </main>
+    
+      <footer>
+  <p>
+    &copy; 2020 Faizar Septiawan. <a href="http://creativecommons.org/licenses/by-sa/4.0/">Some Rights Reserved</a>.
+  </p>
+  <p>
+    Powered by <a href="https://gohugo.io" title="A Fast and Flexible Website Generator">Hugo</a> &amp; <a href="https://github.com/eshlox/simplicity" title="Hugo theme">Simplicity</a>.
+  </p>
+</footer>
+
+    
+    
+    
+    
+    
+    
+    
+    <script src="/assets/js/scripts.min.js"></script>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-110194945-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>

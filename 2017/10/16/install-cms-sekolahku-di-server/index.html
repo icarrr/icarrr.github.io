@@ -1,5 +1,55 @@
-<!doctype html><html lang=en-us itemscope itemtype=http://schema.org/WebPage><head><title>Install CMS Sekolahku di Server</title><meta http-equiv=cache-control content="public, max-age=31536000"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=author content="Faizar Septiawan"><meta name=description content="Read - Search - Ask | Personal Site | Catch your problem solution or read interesting stories on my blog!"><meta name=keywords content="Linux,Unix,BSD,MacOS,Komunitas Pengguna Linux Indonesia,KPLI Klaten,KPLI Bulukumba,MikroTik,MikroTik Indonesia,FreeBSD,FreeBSD Indonesia,Cisco,Cisco Indonesia,BLC Telkom Klaten,Ansible,Nginx,Apache2,Caddy Server,Ayo Belajar Linux,Cloud Computing,e-Learning,Open edX,Proxmox,Sendy,Microsoft SQL Server,MySQL,PostgreSQL,Lets Encrypt,Case Study,Atlassian,Virtualization,Faizar Septiawan,Icar,siBunglonGanteng,siBunglonLabs,Orang Ganteng"><meta name=google-site-verification content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-110194945-3"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','UA-110194945-3');</script><link rel=stylesheet href=/assets/css/external.min.css media=screen><link rel=stylesheet href=/assets/css/styles.css media=screen><link href=/assets/custom/googlefonts/roboto.css rel=stylesheet><link rel=apple-touch-icon-precomposed sizes=144x144 href=/src/images/apple-touch-icon.png><link rel="shortcut icon" href=/src/images/favicon.ico><link href=/posts/index.xml rel=alternate type=application/rss+xml title="The Official Site of siBunglon"><meta property="og:title" content="Install CMS Sekolahku di Server"><meta property="og:description" content="A. Pendahuluan
+<!DOCTYPE html>
+<html lang="en-us" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+  <title>Install CMS Sekolahku di Server</title>
+  
+  <meta http-equiv="cache-control" content="public, max-age=31536000" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Faizar Septiawan">
+  <meta name="description" content="Read - Search - Ask | Personal Site | Catch your problem solution or read interesting stories on my blog!">
+  <meta name="keywords" content="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng">
+  
+  
+  
+  <meta name="google-site-verification" content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM" />
+  
+  
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110194945-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110194945-3');
+  </script>
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/css/external.min.css" media="screen">
+  
+  
+  <link rel="stylesheet" href="/assets/css/styles.css" media="screen">
+  <link href="/assets/custom/googlefonts/roboto.css" rel="stylesheet">
+  
+
+  
+  
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/src/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="/src/images/favicon.ico">
+  
+
+  
+  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
+
+  <meta property="og:title" content="Install CMS Sekolahku di Server" />
+<meta property="og:description" content="A. Pendahuluan
 Pada kesempatan kali ini saya akan mengimplementasikan membangun website sekolah di server dengan CMS.
 B. Pengertian
 CMS adalah suatu /sebuah aplikasi yang berfungsi merubah suatu menu atau memanipulasi data dari suatu situs atau website.
@@ -8,7 +58,15 @@ Mempelajari sistem informasi sekolah dengan CMS dan mengimplementasikannya.
 D. Tujuan
 Mempunyai maksud untuk memudahkan saya mendapatkan informasi sekolah di website tersebut.
 E. Hasil yang diharapkan
-Mempunyai harapan agar nanti kedepannya bisa membangun website ini di sekolah."><meta property="og:type" content="article"><meta property="og:url" content="https://sibunglon.com/2017/10/16/install-cms-sekolahku-di-server/"><meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"><meta property="article:published_time" content="2017-10-16T11:16:00+00:00"><meta property="article:modified_time" content="2017-10-16T11:16:00+00:00"><meta property="og:site_name" content="The Official Site of siBunglon"><meta itemprop=name content="Install CMS Sekolahku di Server"><meta itemprop=description content="A. Pendahuluan
+Mempunyai harapan agar nanti kedepannya bisa membangun website ini di sekolah." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sibunglon.com/2017/10/16/install-cms-sekolahku-di-server/" />
+<meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"/>
+<meta property="article:published_time" content="2017-10-16T11:16:00+00:00" />
+<meta property="article:modified_time" content="2017-10-16T11:16:00+00:00" /><meta property="og:site_name" content="The Official Site of siBunglon" />
+
+  <meta itemprop="name" content="Install CMS Sekolahku di Server">
+<meta itemprop="description" content="A. Pendahuluan
 Pada kesempatan kali ini saya akan mengimplementasikan membangun website sekolah di server dengan CMS.
 B. Pengertian
 CMS adalah suatu /sebuah aplikasi yang berfungsi merubah suatu menu atau memanipulasi data dari suatu situs atau website.
@@ -17,7 +75,21 @@ Mempelajari sistem informasi sekolah dengan CMS dan mengimplementasikannya.
 D. Tujuan
 Mempunyai maksud untuk memudahkan saya mendapatkan informasi sekolah di website tersebut.
 E. Hasil yang diharapkan
-Mempunyai harapan agar nanti kedepannya bisa membangun website ini di sekolah."><meta itemprop=datePublished content="2017-10-16T11:16:00+00:00"><meta itemprop=dateModified content="2017-10-16T11:16:00+00:00"><meta itemprop=wordCount content="378"><meta itemprop=image content="https://sibunglon.com/assets/img/profil.webp"><meta itemprop=keywords content="BLC Telkom Klaten,Ayo Belajar Linux,e-Learning,"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://sibunglon.com/assets/img/profil.webp"><meta name=twitter:title content="Install CMS Sekolahku di Server"><meta name=twitter:description content="A. Pendahuluan
+Mempunyai harapan agar nanti kedepannya bisa membangun website ini di sekolah.">
+<meta itemprop="datePublished" content="2017-10-16T11:16:00+00:00" />
+<meta itemprop="dateModified" content="2017-10-16T11:16:00+00:00" />
+<meta itemprop="wordCount" content="378">
+<meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
+
+
+
+<meta itemprop="keywords" content="BLC Telkom Klaten,Ayo Belajar Linux,e-Learning," />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://sibunglon.com/assets/img/profil.webp"/>
+
+<meta name="twitter:title" content="Install CMS Sekolahku di Server"/>
+<meta name="twitter:description" content="A. Pendahuluan
 Pada kesempatan kali ini saya akan mengimplementasikan membangun website sekolah di server dengan CMS.
 B. Pengertian
 CMS adalah suatu /sebuah aplikasi yang berfungsi merubah suatu menu atau memanipulasi data dari suatu situs atau website.
@@ -26,7 +98,214 @@ Mempelajari sistem informasi sekolah dengan CMS dan mengimplementasikannya.
 D. Tujuan
 Mempunyai maksud untuk memudahkan saya mendapatkan informasi sekolah di website tersebut.
 E. Hasil yang diharapkan
-Mempunyai harapan agar nanti kedepannya bisa membangun website ini di sekolah."><script defer src=/assets/custom/fontawesome-5.15.1/js/all.min.js></script></head><body><nav><a href=/>siBunglon</a></nav><main class=container><article><header><small><span class=date>October 16, 2017</span></small><h1>Install CMS Sekolahku di Server</h1></header><section><p><strong>A. Pendahuluan</strong></p><p>Pada kesempatan kali ini saya akan mengimplementasikan membangun website sekolah di server dengan CMS.</p><p><strong>B. Pengertian</strong></p><p>CMS adalah suatu /sebuah aplikasi yang berfungsi merubah suatu menu atau memanipulasi data dari suatu situs atau website.</p><p><strong>C. Latar belakang</strong></p><p>Mempelajari sistem informasi sekolah dengan CMS dan mengimplementasikannya.</p><p><strong>D. Tujuan</strong></p><p>Mempunyai maksud untuk memudahkan saya mendapatkan informasi sekolah di website tersebut.</p><p><strong>E. Hasil yang diharapkan</strong></p><p>Mempunyai harapan agar nanti kedepannya bisa membangun website ini di sekolah.</p><p><strong>F. Alat dan bahan</strong></p><ul><li>PC/Laptop</li><li>Koneksi Internet</li><li>File CMS Sekolah</li></ul><p><strong>G. Jangka waktu pelaksanaan</strong></p><p>Waktu yang dibutuhkan kisaran 30 menit - 1 jam</p><p><strong>H. Langkah kerja</strong></p><ol><li>Copy file master cms-sekolahku ke directory server</li></ol><p><img src=https://4.bp.blogspot.com/-Z7oYUA39StU/W713QC0QvCI/AAAAAAAAE-Y/mM9SgJGCdvAfRZaWGJ0HcOlrrjfCJqROQCLcBGAs/s1600/Screenshot_1.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><ol start=2><li>Remote server anda, kemudian pindahkan file master cms ke direktory /var/www/html</li></ol><p><img src=https://2.bp.blogspot.com/-zUoauFJZTWI/W715NjA5cXI/AAAAAAAAE-s/tjzw1WjP-3opRfhB4NasRT2R5Jd__OMlgCLcBGAs/s1600/Screenshot_2.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><ol start=3><li>Masuk ke direktory /var/www/html setelah itu unzip file cms yang telah dipindahkan tadi</li></ol><p><img src=https://3.bp.blogspot.com/-UN3ysp6CMS0/W714uDcxe9I/AAAAAAAAE-k/kAVEQu3-kB8wLErcaFzP-uSa_86m8Pi5wCLcBGAs/s1600/Screenshot_3.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><ol start=4><li>Karena folder hasil ekstraknya mempunyai nama yang panjang, maka ubah nama foldernya</li></ol><p><img src=https://3.bp.blogspot.com/-6xuIgQdhrIY/W715uAh6aYI/AAAAAAAAE-4/zUtQk8M_3zUQ2fQDSOi7bY8VYFTKqauiwCLcBGAs/s1600/Screenshot_4.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><ol start=5><li>Berikan hak akses untuk folder tersebut</li></ol><p><img src=https://3.bp.blogspot.com/-HGfS7mo8NHU/W7152WlRomI/AAAAAAAAE-8/uF9ENsFxCF43sYrYCYf1PYBBjZ7UgDNbwCLcBGAs/s1600/Screenshot_5.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><ol start=6><li>Buat database di phpmyadmin</li></ol><p><img src=https://3.bp.blogspot.com/-ct55iZvblMU/W716ER6TL0I/AAAAAAAAE_A/dwchSfkjcaYMCEKco0irOdtP0NFDWu5OACLcBGAs/s1600/Screenshot_6.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><ol start=7><li>Edit konfigurasi database.php dengan perintah <code>nano application/config/database.php</code></li></ol><p><img src=https://2.bp.blogspot.com/-CXnyUAUaxNg/W716bVmoR7I/AAAAAAAAE_M/JeB5eGzK1qE266_fE3qDBS_94G_ZqIOhwCLcBGAs/s1600/Screenshot_7.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><ol start=8><li>Lalu konfigurasi seperti yang digaris merah</li></ol><p><img src=https://4.bp.blogspot.com/-7YhVQpKEsAE/W716oG_Mw-I/AAAAAAAAE_Q/s9Tx29LogtoTwcIK7iQebtGcehl9xQ1EQCLcBGAs/s1600/Screenshot_8.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><ol start=9><li>Input data dengan perintah seperti berikut</li></ol><p><img src=https://2.bp.blogspot.com/-CWY_OeS5yNk/W716xDMgCPI/AAAAAAAAE_Y/Dplzlk1dF8wLKEo_42hB7J1xSE6deQKGQCLcBGAs/s1600/Screenshot_9.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><ol start=10><li>Buka web browser lalu ketikkan <code>IPServerVM/sekolahku</code> lalu isikan form yang ada tersebut sesuai dengan user, password dan database phpmyadmin. seperti pada database.php , kemudian klik selanjutnya.</li></ol><p><img src=https://3.bp.blogspot.com/-j9qscp0xhUs/W717BM4aUGI/AAAAAAAAE_k/7-K3Lb1CneINrEQwWP_hylxGtSXKX-LJgCLcBGAs/s1600/Screenshot_10.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><ol start=11><li>Isikan form yang ada pada tampilan di bawah ini sesuai dengan profil sekolah Anda.</li></ol><p><img src=https://4.bp.blogspot.com/-L251P899p4U/W717S3L9orI/AAAAAAAAE_s/kFkDGQzsk0AW3mXS1XAF0Le4VikQEQcXgCLcBGAs/s1600/Screenshot_12.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><ol start=12><li>Lalu buat sebuah akun untuk login ke CMS nantinya lalu klik Install.</li></ol><p><img src=https://4.bp.blogspot.com/-15SnFMcoR8I/W717eB5lBjI/AAAAAAAAE_w/qoBQxRujrQ4MxEmjV94Kr74BcjojjZxxwCLcBGAs/s1600/Screenshot_13.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><ol start=13><li>Tunggu sampai proses installasi CMS selesai.</li></ol><p><img src=https://2.bp.blogspot.com/-CVk7eIVSOR8/W717omTFs3I/AAAAAAAAE_4/iSjdGf0QL9YAtjm4S7Hyyc-cV8fAm3t-wCLcBGAs/s1600/Screenshot_14.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><ol start=14><li>Lalu di situ tertulis perintah untuk menghapus folder Install di Root direktori CMS. Kita hapus folder Install.</li></ol><p><img src=https://3.bp.blogspot.com/-rfxg3saSwMY/W717wxPEXiI/AAAAAAAAFAA/2T8D1pPajJ4E-gtNHXaNS3T_a00Y2XIqwCLcBGAs/s1600/Screenshot_15.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p><img src=https://3.bp.blogspot.com/-4i44lK-JL3Y/W719ExgQIsI/AAAAAAAAFAw/WKhpLE5qZCErQ_QmUo8KszN70owqpVxKQCLcBGAs/s1600/Screenshot_17.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><ol start=15><li>Lalu buka lagi web browser ketikkan IPServerVM/sekolah, jika terbuka halaman seperti berikut ini berarti CMS sudah berhasil di install.</li></ol><p><img src=https://3.bp.blogspot.com/-mXO3gGX4jPw/W717-y9yL1I/AAAAAAAAFAI/1E9On5OBgFooms6oR6XMhJAJHX71nB-ugCLcBGAs/s1600/Screenshot_18.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><ol start=16><li>Berikan hak untuk .htaccess agar dapat me-link ke alamat yang disediakan CMS, dengan perintah <code>nano /etc/apache2/sites-available/000-default.conf</code></li></ol><p><img src=https://3.bp.blogspot.com/-vgzHo-4ze24/W718LbzOPoI/AAAAAAAAFAQ/nVa-1itCuVQTl0dWle_K8ZUpCoz67T68wCLcBGAs/s1600/Screenshot_19.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><ol start=17><li>Lalu tambahkan script berikut ini tepat di bawah tulisan DocumentRoot /var/www/html.</li></ol><p><code>&lt;Directory `/var/www/html`>AllowOverride All&lt;/Directory></code></p><p><img src=https://2.bp.blogspot.com/-yUdIcC23Aco/W718YVfA4OI/AAAAAAAAFAY/nW_w9aBmgN0qdjimnsjKce3_fn9hs82pQCLcBGAs/s1600/Screenshot_20.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><ol start=18><li>Restart apache2 dengan mengetikkan perintah <code>service apache2 restart</code></li></ol><p><img src=https://4.bp.blogspot.com/-2OoYm4f5iXI/W718f9gpjGI/AAAAAAAAFAc/uwMzWqVvwtI20MFYBZxzMS_C2bJK4VlQACLcBGAs/s1600/Screenshot_21.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><ol start=19><li>Selanjutnya masuk kehalaman login sebagai administrator untuk mengedit website dengan masuk ke browser dan mengetikkan IPAddressVM/sekolah/login.</li></ol><p><img src=https://2.bp.blogspot.com/-JNySsc-_OWA/W718pAyqYzI/AAAAAAAAFAk/i3ISkH5AsDMsqnBqeDPuWpECk-NnjGLMACLcBGAs/s1600/Screenshot_22.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><ol start=20><li>Jika di alihkan ke tampilan berikut ini maka Anda sudah masuk sebagai Administrator, silahkan edit sesuai dengan keinginan Anda.</li></ol><p><img src=https://2.bp.blogspot.com/-ZrI1SpF8xgk/W7181obB_6I/AAAAAAAAFAs/Zvsy4tBWmz4dtA-bFblV_hiYZzWMzYcxQCLcBGAs/s1600/Screenshot_23.png alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p><p><strong>I. Hasil yang didapatkan</strong></p><p>Dapat membangun website sekolah dengan benar.</p><p><strong>J. Temuan masalah</strong></p><p>Belum ditemukan masalah</p><p><strong>K. Kesimpulan</strong></p><p>Dapat disimpulkan bahwa CMS ini mudah untuk penginstallasiannya akan tetapi tetap harus berhati-hati saat edit konfigurasi nya.</p><p><strong>L. Referensi</strong></p><p><a href=http://sekolahku.web.id/>http://sekolahku.web.id/</a></p></section><footer><hr><div class=meta><p class=tags><a href=/tags/blc-telkom-klaten><span>#</span>BLC Telkom Klaten</a>
-<a href=/tags/ayo-belajar-linux><span>#</span>Ayo Belajar Linux</a>
-<a href=/tags/e-learning><span>#</span>e-Learning</a></p></div><hr><div id=disqus_thread></div><script type=application/javascript>var disqus_config=function(){};(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return;}
-var d=document,s=d.createElement('script');s.async=true;s.src='//'+"sibunglonlabs"+'.disqus.com/embed.js';s.setAttribute('data-timestamp',+new Date());(d.head||d.body).appendChild(s);})();</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></footer></article></main><footer><p>&copy; 2020 Faizar Septiawan. <a href=http://creativecommons.org/licenses/by-sa/4.0/>Some Rights Reserved</a>.</p><p>Powered by <a href=https://gohugo.io title="A Fast and Flexible Website Generator">Hugo</a> & <a href=https://github.com/eshlox/simplicity title="Hugo theme">Simplicity</a>.</p></footer><script src=/assets/js/scripts.min.js></script><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-110194945-3','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script></body></html>
+Mempunyai harapan agar nanti kedepannya bisa membangun website ini di sekolah."/>
+
+  
+
+  
+  <script defer src="/assets/custom/fontawesome-5.15.1/js/all.min.js"></script>
+  
+</head>
+
+  <body>
+    
+      <nav>
+  <a href="/">
+    siBunglon
+  </a>
+</nav>
+
+    
+    <main class="container">
+      
+  <article>
+    <header>
+      <small>
+        <span class="date">October 16, 2017</span></small>
+      <h1>Install CMS Sekolahku di Server</h1>
+    </header>
+    <section><p><strong>A. Pendahuluan</strong></p>
+<p>Pada kesempatan kali ini saya akan mengimplementasikan membangun website sekolah di server dengan CMS.</p>
+<p><strong>B. Pengertian</strong></p>
+<p>CMS adalah suatu /sebuah aplikasi yang berfungsi merubah suatu menu atau memanipulasi data dari suatu situs atau website.</p>
+<p><strong>C. Latar belakang</strong></p>
+<p>Mempelajari sistem informasi sekolah dengan CMS dan mengimplementasikannya.</p>
+<p><strong>D. Tujuan</strong></p>
+<p>Mempunyai maksud untuk memudahkan saya mendapatkan informasi sekolah di website tersebut.</p>
+<p><strong>E. Hasil yang diharapkan</strong></p>
+<p>Mempunyai harapan agar nanti kedepannya bisa membangun website ini di sekolah.</p>
+<p><strong>F. Alat dan bahan</strong></p>
+<ul>
+<li>PC/Laptop</li>
+<li>Koneksi Internet</li>
+<li>File CMS Sekolah</li>
+</ul>
+<p><strong>G. Jangka waktu pelaksanaan</strong></p>
+<p>Waktu yang dibutuhkan kisaran 30 menit - 1 jam</p>
+<p><strong>H. Langkah kerja</strong></p>
+<ol>
+<li>Copy file master cms-sekolahku ke directory server</li>
+</ol>
+<p><img src="https://4.bp.blogspot.com/-Z7oYUA39StU/W713QC0QvCI/AAAAAAAAE-Y/mM9SgJGCdvAfRZaWGJ0HcOlrrjfCJqROQCLcBGAs/s1600/Screenshot_1.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<ol start="2">
+<li>Remote server anda, kemudian pindahkan file master cms ke direktory /var/www/html</li>
+</ol>
+<p><img src="https://2.bp.blogspot.com/-zUoauFJZTWI/W715NjA5cXI/AAAAAAAAE-s/tjzw1WjP-3opRfhB4NasRT2R5Jd__OMlgCLcBGAs/s1600/Screenshot_2.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<ol start="3">
+<li>Masuk ke direktory /var/www/html setelah itu unzip file cms yang telah dipindahkan tadi</li>
+</ol>
+<p><img src="https://3.bp.blogspot.com/-UN3ysp6CMS0/W714uDcxe9I/AAAAAAAAE-k/kAVEQu3-kB8wLErcaFzP-uSa_86m8Pi5wCLcBGAs/s1600/Screenshot_3.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<ol start="4">
+<li>Karena folder hasil ekstraknya mempunyai nama yang panjang, maka ubah nama foldernya</li>
+</ol>
+<p><img src="https://3.bp.blogspot.com/-6xuIgQdhrIY/W715uAh6aYI/AAAAAAAAE-4/zUtQk8M_3zUQ2fQDSOi7bY8VYFTKqauiwCLcBGAs/s1600/Screenshot_4.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<ol start="5">
+<li>Berikan hak akses untuk folder tersebut</li>
+</ol>
+<p><img src="https://3.bp.blogspot.com/-HGfS7mo8NHU/W7152WlRomI/AAAAAAAAE-8/uF9ENsFxCF43sYrYCYf1PYBBjZ7UgDNbwCLcBGAs/s1600/Screenshot_5.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<ol start="6">
+<li>Buat database di phpmyadmin</li>
+</ol>
+<p><img src="https://3.bp.blogspot.com/-ct55iZvblMU/W716ER6TL0I/AAAAAAAAE_A/dwchSfkjcaYMCEKco0irOdtP0NFDWu5OACLcBGAs/s1600/Screenshot_6.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<ol start="7">
+<li>Edit konfigurasi database.php dengan perintah <code>nano application/config/database.php</code></li>
+</ol>
+<p><img src="https://2.bp.blogspot.com/-CXnyUAUaxNg/W716bVmoR7I/AAAAAAAAE_M/JeB5eGzK1qE266_fE3qDBS_94G_ZqIOhwCLcBGAs/s1600/Screenshot_7.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<ol start="8">
+<li>Lalu konfigurasi seperti yang digaris merah</li>
+</ol>
+<p><img src="https://4.bp.blogspot.com/-7YhVQpKEsAE/W716oG_Mw-I/AAAAAAAAE_Q/s9Tx29LogtoTwcIK7iQebtGcehl9xQ1EQCLcBGAs/s1600/Screenshot_8.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<ol start="9">
+<li>Input data dengan perintah seperti berikut</li>
+</ol>
+<p><img src="https://2.bp.blogspot.com/-CWY_OeS5yNk/W716xDMgCPI/AAAAAAAAE_Y/Dplzlk1dF8wLKEo_42hB7J1xSE6deQKGQCLcBGAs/s1600/Screenshot_9.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<ol start="10">
+<li>Buka web browser lalu ketikkan <code>IPServerVM/sekolahku</code> lalu isikan form yang ada tersebut sesuai dengan user, password dan database phpmyadmin. seperti pada database.php , kemudian klik selanjutnya.</li>
+</ol>
+<p><img src="https://3.bp.blogspot.com/-j9qscp0xhUs/W717BM4aUGI/AAAAAAAAE_k/7-K3Lb1CneINrEQwWP_hylxGtSXKX-LJgCLcBGAs/s1600/Screenshot_10.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<ol start="11">
+<li>Isikan form yang ada pada tampilan di bawah ini sesuai dengan profil sekolah Anda.</li>
+</ol>
+<p><img src="https://4.bp.blogspot.com/-L251P899p4U/W717S3L9orI/AAAAAAAAE_s/kFkDGQzsk0AW3mXS1XAF0Le4VikQEQcXgCLcBGAs/s1600/Screenshot_12.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<ol start="12">
+<li>Lalu buat sebuah akun untuk login ke CMS nantinya lalu klik Install.</li>
+</ol>
+<p><img src="https://4.bp.blogspot.com/-15SnFMcoR8I/W717eB5lBjI/AAAAAAAAE_w/qoBQxRujrQ4MxEmjV94Kr74BcjojjZxxwCLcBGAs/s1600/Screenshot_13.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<ol start="13">
+<li>Tunggu sampai proses installasi CMS selesai.</li>
+</ol>
+<p><img src="https://2.bp.blogspot.com/-CVk7eIVSOR8/W717omTFs3I/AAAAAAAAE_4/iSjdGf0QL9YAtjm4S7Hyyc-cV8fAm3t-wCLcBGAs/s1600/Screenshot_14.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<ol start="14">
+<li>Lalu di situ tertulis perintah untuk menghapus folder Install di Root direktori CMS. Kita hapus folder Install.</li>
+</ol>
+<p><img src="https://3.bp.blogspot.com/-rfxg3saSwMY/W717wxPEXiI/AAAAAAAAFAA/2T8D1pPajJ4E-gtNHXaNS3T_a00Y2XIqwCLcBGAs/s1600/Screenshot_15.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p><img src="https://3.bp.blogspot.com/-4i44lK-JL3Y/W719ExgQIsI/AAAAAAAAFAw/WKhpLE5qZCErQ_QmUo8KszN70owqpVxKQCLcBGAs/s1600/Screenshot_17.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<ol start="15">
+<li>Lalu buka lagi web browser ketikkan IPServerVM/sekolah, jika terbuka halaman seperti berikut ini berarti CMS sudah berhasil di install.</li>
+</ol>
+<p><img src="https://3.bp.blogspot.com/-mXO3gGX4jPw/W717-y9yL1I/AAAAAAAAFAI/1E9On5OBgFooms6oR6XMhJAJHX71nB-ugCLcBGAs/s1600/Screenshot_18.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<ol start="16">
+<li>Berikan hak untuk .htaccess agar dapat me-link ke alamat yang disediakan CMS, dengan perintah <code>nano /etc/apache2/sites-available/000-default.conf</code></li>
+</ol>
+<p><img src="https://3.bp.blogspot.com/-vgzHo-4ze24/W718LbzOPoI/AAAAAAAAFAQ/nVa-1itCuVQTl0dWle_K8ZUpCoz67T68wCLcBGAs/s1600/Screenshot_19.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<ol start="17">
+<li>Lalu tambahkan script berikut ini tepat di bawah tulisan DocumentRoot /var/www/html.</li>
+</ol>
+<p><code>&lt;Directory `/var/www/html`&gt;AllowOverride All&lt;/Directory&gt;</code></p>
+<p><img src="https://2.bp.blogspot.com/-yUdIcC23Aco/W718YVfA4OI/AAAAAAAAFAY/nW_w9aBmgN0qdjimnsjKce3_fn9hs82pQCLcBGAs/s1600/Screenshot_20.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<ol start="18">
+<li>Restart apache2 dengan mengetikkan perintah <code>service apache2 restart</code></li>
+</ol>
+<p><img src="https://4.bp.blogspot.com/-2OoYm4f5iXI/W718f9gpjGI/AAAAAAAAFAc/uwMzWqVvwtI20MFYBZxzMS_C2bJK4VlQACLcBGAs/s1600/Screenshot_21.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<ol start="19">
+<li>Selanjutnya masuk kehalaman login sebagai administrator untuk mengedit website dengan masuk ke browser dan mengetikkan IPAddressVM/sekolah/login.</li>
+</ol>
+<p><img src="https://2.bp.blogspot.com/-JNySsc-_OWA/W718pAyqYzI/AAAAAAAAFAk/i3ISkH5AsDMsqnBqeDPuWpECk-NnjGLMACLcBGAs/s1600/Screenshot_22.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<ol start="20">
+<li>Jika di alihkan ke tampilan berikut ini maka Anda sudah masuk sebagai Administrator, silahkan edit sesuai dengan keinginan Anda.</li>
+</ol>
+<p><img src="https://2.bp.blogspot.com/-ZrI1SpF8xgk/W7181obB_6I/AAAAAAAAFAs/Zvsy4tBWmz4dtA-bFblV_hiYZzWMzYcxQCLcBGAs/s1600/Screenshot_23.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p><strong>I. Hasil yang didapatkan</strong></p>
+<p>Dapat membangun website sekolah dengan benar.</p>
+<p><strong>J. Temuan masalah</strong></p>
+<p>Belum ditemukan masalah</p>
+<p><strong>K. Kesimpulan</strong></p>
+<p>Dapat disimpulkan bahwa CMS ini mudah untuk penginstallasiannya akan tetapi tetap harus berhati-hati saat edit konfigurasi nya.</p>
+<p><strong>L. Referensi</strong></p>
+<p><a href="http://sekolahku.web.id/">http://sekolahku.web.id/</a></p>
+</section>
+    <footer>
+      <hr>
+      <div class="meta">
+        <p class="tags">
+          
+            
+              <a href="/tags/blc-telkom-klaten">
+                <span>#</span>BLC Telkom Klaten</a>
+            
+              <a href="/tags/ayo-belajar-linux">
+                <span>#</span>Ayo Belajar Linux</a>
+            
+              <a href="/tags/e-learning">
+                <span>#</span>e-Learning</a>
+            
+          
+        </p>
+      </div>
+      <hr>
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sibunglonlabs" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </footer>
+  </article>
+
+    </main>
+    
+      <footer>
+  <p>
+    &copy; 2020 Faizar Septiawan. <a href="http://creativecommons.org/licenses/by-sa/4.0/">Some Rights Reserved</a>.
+  </p>
+  <p>
+    Powered by <a href="https://gohugo.io" title="A Fast and Flexible Website Generator">Hugo</a> &amp; <a href="https://github.com/eshlox/simplicity" title="Hugo theme">Simplicity</a>.
+  </p>
+</footer>
+
+    
+    
+    
+    
+    
+    
+    
+    <script src="/assets/js/scripts.min.js"></script>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-110194945-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>

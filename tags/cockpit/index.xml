@@ -1,5 +1,42 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cockpit on The Official Site of siBunglon</title><link>https://sibunglon.com/tags/cockpit/</link><description>Recent content in Cockpit on The Official Site of siBunglon</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 15 Apr 2019 05:09:24 +0700</lastBuildDate><atom:link href="https://sibunglon.com/tags/cockpit/index.xml" rel="self" type="application/rss+xml"/><item><title>Fix the Cockpit Blank Page After Login Over Nginx Reverse Proxy</title><link>https://sibunglon.com/2019/04/15/fix-the-cockpit-blank-page-after-login-over-nginx-reverse-proxy/</link><pubDate>Mon, 15 Apr 2019 05:09:24 +0700</pubDate><guid>https://sibunglon.com/2019/04/15/fix-the-cockpit-blank-page-after-login-over-nginx-reverse-proxy/</guid><description>Cockpit nge-Blank Setelah Login Jika diakses melalui Reverse Proxy Nginx? Apakah anda mengalami hal tersebut? Jangan takut, karena saya juga mengalami hal tersebut 😆 Beberapa yang hari lalu, saya mengakses cockpit server lab saya yang melalui reverse proxy NGINX, awalnya normal aja pas ngakses sampai ke halaman login namun ketika mencoba login, si cockpit hanya stuck di blank page. Wahhhh alhamdulillah dapat masalah baru lagi :D padahal sebelumnya normal aja, gak ada stuck di blank page.</description></item><item><title>Menonaktifkan Plugin Terminal Dari Cockpit</title><link>https://sibunglon.com/2018/12/23/menonaktifkan-plugin-terminal-dari-cockpit/</link><pubDate>Sun, 23 Dec 2018 00:14:35 +0700</pubDate><guid>https://sibunglon.com/2018/12/23/menonaktifkan-plugin-terminal-dari-cockpit/</guid><description>Cockpit Apa sih cockpit itu?
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cockpit on The Official Site of siBunglon</title>
+    <link>https://sibunglon.com/tags/cockpit/</link>
+    <description>Recent content in Cockpit on The Official Site of siBunglon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Apr 2019 05:09:24 +0700</lastBuildDate>
+    
+      <atom:link href="https://sibunglon.com/tags/cockpit/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      <item>
+        <title>Fix the Cockpit Blank Page After Login Over Nginx Reverse Proxy</title>
+        <link>https://sibunglon.com/2019/04/15/fix-the-cockpit-blank-page-after-login-over-nginx-reverse-proxy/</link>
+        <pubDate>Mon, 15 Apr 2019 05:09:24 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/04/15/fix-the-cockpit-blank-page-after-login-over-nginx-reverse-proxy/</guid>
+        <description>Cockpit nge-Blank Setelah Login Jika diakses melalui Reverse Proxy Nginx? Apakah anda mengalami hal tersebut? Jangan takut, karena saya juga mengalami hal tersebut 😆 Beberapa yang hari lalu, saya mengakses cockpit server lab saya yang melalui reverse proxy NGINX, awalnya normal aja pas ngakses sampai ke halaman login namun ketika mencoba login, si cockpit hanya stuck di blank page. Wahhhh alhamdulillah dapat masalah baru lagi :D padahal sebelumnya normal aja, gak ada stuck di blank page.</description>
+      </item>
+    
+      <item>
+        <title>Menonaktifkan Plugin Terminal Dari Cockpit</title>
+        <link>https://sibunglon.com/2018/12/23/menonaktifkan-plugin-terminal-dari-cockpit/</link>
+        <pubDate>Sun, 23 Dec 2018 00:14:35 +0700</pubDate>
+        <guid>https://sibunglon.com/2018/12/23/menonaktifkan-plugin-terminal-dari-cockpit/</guid>
+        <description>Cockpit Apa sih cockpit itu?
 Pertanyaan sejenis itu sudah di tulis pada lab sebelumnya, karena di lab sebelumnya kita awali perkenalan dulu :D Kali aja jatuh cinta sama teman baru, kan gak enak kalau sebelumnya gak kenalan dulu :D
-Oh ya mungkin ada yang kepikiran tentang keamanan server jika memasang cockpit di server dan memberikan akses role user yang dapat mengontrol systemD, karena secara default cockpit mengaktifkan plugin terminal. Dengan adanya terminal/shell, user yang login ke cockpit dengan role super user atau sudo bisa saja melakukan diluar sepengetahuan anda.</description></item><item><title>Manajemen Linux Server Menggunakan Cockpit</title><link>https://sibunglon.com/2018/12/18/manajemen-linux-server-menggunakan-cockpit/</link><pubDate>Tue, 18 Dec 2018 17:30:24 +0700</pubDate><guid>https://sibunglon.com/2018/12/18/manajemen-linux-server-menggunakan-cockpit/</guid><description>Cockpit? Apa sih cockpit itu? Bukannya cockpit itu ruang khususnya pilot?
+Oh ya mungkin ada yang kepikiran tentang keamanan server jika memasang cockpit di server dan memberikan akses role user yang dapat mengontrol systemD, karena secara default cockpit mengaktifkan plugin terminal. Dengan adanya terminal/shell, user yang login ke cockpit dengan role super user atau sudo bisa saja melakukan diluar sepengetahuan anda.</description>
+      </item>
+    
+      <item>
+        <title>Manajemen Linux Server Menggunakan Cockpit</title>
+        <link>https://sibunglon.com/2018/12/18/manajemen-linux-server-menggunakan-cockpit/</link>
+        <pubDate>Tue, 18 Dec 2018 17:30:24 +0700</pubDate>
+        <guid>https://sibunglon.com/2018/12/18/manajemen-linux-server-menggunakan-cockpit/</guid>
+        <description>Cockpit? Apa sih cockpit itu? Bukannya cockpit itu ruang khususnya pilot?
 Cockpit adalah sebuah aplikasi adminstrasi server berbasi web. Dengan cockpit, grafik penggunaan cpu, memory, network, hdd dapat dilihat langsung pada saat autentikasi user cockpit berhasil serta dapat mengontrol service yang dijalankan melalui SystemD.
-Cockpit berjalan di port 9090, tidak membutuhkan web server jadi jika anda belum menginstall web server apapun, itu tidak menjadi masalah, serta resource yang digunakan cockpit sangat sedikit karena service cockpit akan dijalankan secara otomatis jika anda mencoba mengaksesnya melalui web page dan setelah beberapa menit setelah anda logout secara otomatis service cockpit akan di matikan.</description></item></channel></rss>
+Cockpit berjalan di port 9090, tidak membutuhkan web server jadi jika anda belum menginstall web server apapun, itu tidak menjadi masalah, serta resource yang digunakan cockpit sangat sedikit karena service cockpit akan dijalankan secara otomatis jika anda mencoba mengaksesnya melalui web page dan setelah beberapa menit setelah anda logout secara otomatis service cockpit akan di matikan.</description>
+      </item>
+    
+  </channel>
+</rss>

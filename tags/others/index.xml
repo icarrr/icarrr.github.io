@@ -1,30 +1,111 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Others on The Official Site of siBunglon</title><link>https://sibunglon.com/tags/others/</link><description>Recent content in Others on The Official Site of siBunglon</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 19 Oct 2020 00:24:17 +0800</lastBuildDate><atom:link href="https://sibunglon.com/tags/others/index.xml" rel="self" type="application/rss+xml"/><item><title>Create Multipart Zip &amp; Unzip Multipart</title><link>https://sibunglon.com/2020/10/19/create-multipart-zip-unzip-multipart/</link><pubDate>Mon, 19 Oct 2020 00:24:17 +0800</pubDate><guid>https://sibunglon.com/2020/10/19/create-multipart-zip-unzip-multipart/</guid><description>Need to transfer or send a file zip but transfer media limit the size file? Create a multipart file using split command and join the file on receiver host.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Others on The Official Site of siBunglon</title>
+    <link>https://sibunglon.com/tags/others/</link>
+    <description>Recent content in Others on The Official Site of siBunglon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 19 Oct 2020 00:24:17 +0800</lastBuildDate>
+    
+      <atom:link href="https://sibunglon.com/tags/others/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      <item>
+        <title>Create Multipart Zip &amp; Unzip Multipart</title>
+        <link>https://sibunglon.com/2020/10/19/create-multipart-zip-unzip-multipart/</link>
+        <pubDate>Mon, 19 Oct 2020 00:24:17 +0800</pubDate>
+        <guid>https://sibunglon.com/2020/10/19/create-multipart-zip-unzip-multipart/</guid>
+        <description>Need to transfer or send a file zip but transfer media limit the size file? Create a multipart file using split command and join the file on receiver host.
 Create a file zip.
-$ zip SWhite.zip S.white-TKTlqehU_ro.mp4 $ ls -lha total 675744 drwxr-xr-x@ 5 faizarseptiawan 160B Oct 19 00:28 . drwx------@ 15 faizarseptiawan 480B Oct 19 00:00 .. -rw-r--r-- 1 faizarseptiawan 165M Jun 23 04:11 S.white-TKTlqehU_ro.mp4 -rw-r--r-- 1 faizarseptiawan 165M Oct 19 00:28 SWhite.</description></item><item><title>Tree: ignore directories with patterns</title><link>https://sibunglon.com/2019/12/09/tree-ignore-directories-with-patterns/</link><pubDate>Mon, 09 Dec 2019 11:01:45 +0700</pubDate><guid>https://sibunglon.com/2019/12/09/tree-ignore-directories-with-patterns/</guid><description>Tree is a linux command that provides a list of recursive directories or a tree can display all file and directory listings in a directory.
+$ zip SWhite.zip S.white-TKTlqehU_ro.mp4 $ ls -lha total 675744 drwxr-xr-x@ 5 faizarseptiawan 160B Oct 19 00:28 . drwx------@ 15 faizarseptiawan 480B Oct 19 00:00 .. -rw-r--r-- 1 faizarseptiawan 165M Jun 23 04:11 S.white-TKTlqehU_ro.mp4 -rw-r--r-- 1 faizarseptiawan 165M Oct 19 00:28 SWhite.</description>
+      </item>
+    
+      <item>
+        <title>Tree: ignore directories with patterns</title>
+        <link>https://sibunglon.com/2019/12/09/tree-ignore-directories-with-patterns/</link>
+        <pubDate>Mon, 09 Dec 2019 11:01:45 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/12/09/tree-ignore-directories-with-patterns/</guid>
+        <description>Tree is a linux command that provides a list of recursive directories or a tree can display all file and directory listings in a directory.
 Comparison of ls and tree usage
 Tree:
-$ tree Bash Bash ├── BackupRestore-dbOpenEdx │ ├── backup_mongo.sh │ ├── backup_mysql.sh │ ├── restore_mongo.sh │ └── restore_mysql.sh ├── auto-update-dplk_env │ ├── main.sh │ └── playbook │ ├── backend.yml │ ├── config.yml │ └── frontend.yml ├── backup\ database\ postgres.</description></item><item><title>Istilah Istilah Yang Biasa Digunakan Orang Kantoran</title><link>https://sibunglon.com/2019/11/08/istilah-istilah-yang-biasa-digunakan-orang-kantoran/</link><pubDate>Fri, 08 Nov 2019 14:24:33 +0700</pubDate><guid>https://sibunglon.com/2019/11/08/istilah-istilah-yang-biasa-digunakan-orang-kantoran/</guid><description>Sebagai salah satu orang yang biasa jalan-jalan ke kantor orang, disini saya ingin berbagi istilah-istilah yang biasa saya dengar atau saya temui di lingkungan pekerjaan mereka dan sudah saya tahu arti/maksudnya 😄
-Istilah-Istilah Umum: PIC (Person In Charge)
-Istilah ini menunjukkan orang yang bertanggung jawab dalam menangani hal tertentu.
-FYI (For Your Information)
-Isitilah ini biasanya digunakan dalam email untuk memberitahukan suatu informasi.</description></item><item><title>Analisis SWOT</title><link>https://sibunglon.com/2019/05/04/analisis-swot/</link><pubDate>Sat, 04 May 2019 22:32:54 +0700</pubDate><guid>https://sibunglon.com/2019/05/04/analisis-swot/</guid><description>SWOT SWOT adalah metode perencanaan strategis yang digunakan untuk mengevaluasi kekuatan (strengths), kelemahan (weaknesses), peluang (opportunities), dan ancaman (threats) dalam suatu proyek atau suatu spekulasi bisnis.
-Banyak yang menggunakan analisis SWOT untuk menganalisa situasi, kondisi, dan faktor yang mempengaruhi pengembangan bisnis dalam suatu perusahaan. Analisa ini digunakan baik sebelum memulai membangun bisnis atau sudah membangun bisnis. Bahkan ada yang menyebut analisis SWOT merupakan analisa paling ajaib yang dapat memberikan proses penyelesaian permasalahan pada bisnis.</description></item><item><title>Mengenal VLAN (Virtual LAN)</title><link>https://sibunglon.com/2017/10/12/mengenal-vlan-virtual-lan/</link><pubDate>Thu, 12 Oct 2017 09:08:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/12/mengenal-vlan-virtual-lan/</guid><description>A. Pendahuluan
+$ tree Bash Bash ├── BackupRestore-dbOpenEdx │ ├── backup_mongo.sh │ ├── backup_mysql.sh │ ├── restore_mongo.sh │ └── restore_mysql.sh ├── auto-update-dplk_env │ ├── main.sh │ └── playbook │ ├── backend.yml │ ├── config.yml │ └── frontend.yml ├── backup\ database\ postgres.</description>
+      </item>
+    
+      <item>
+        <title>Istilah Istilah Yang Biasa Digunakan Orang Kantoran</title>
+        <link>https://sibunglon.com/2019/11/08/istilah-istilah-yang-biasa-digunakan-orang-kantoran/</link>
+        <pubDate>Fri, 08 Nov 2019 14:24:33 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/11/08/istilah-istilah-yang-biasa-digunakan-orang-kantoran/</guid>
+        <description>Sebagai salah satu orang yang biasa jalan-jalan ke kantor orang, disini saya ingin berbagi istilah-istilah yang biasa saya dengar atau saya temui di lingkungan pekerjaan mereka dan sudah saya tahu arti/maksudnya 😄
+Istilah-Istilah Umum:   PIC (Person In Charge)
+ Istilah ini menunjukkan orang yang bertanggung jawab dalam menangani hal tertentu.
+   FYI (For Your Information)
+ Isitilah ini biasanya digunakan dalam email untuk memberitahukan suatu informasi.</description>
+      </item>
+    
+      <item>
+        <title>Analisis SWOT</title>
+        <link>https://sibunglon.com/2019/05/04/analisis-swot/</link>
+        <pubDate>Sat, 04 May 2019 22:32:54 +0700</pubDate>
+        <guid>https://sibunglon.com/2019/05/04/analisis-swot/</guid>
+        <description>SWOT SWOT adalah metode perencanaan strategis yang digunakan untuk mengevaluasi kekuatan (strengths), kelemahan (weaknesses), peluang (opportunities), dan ancaman (threats) dalam suatu proyek atau suatu spekulasi bisnis.
+Banyak yang menggunakan analisis SWOT untuk menganalisa situasi, kondisi, dan faktor yang mempengaruhi pengembangan bisnis dalam suatu perusahaan. Analisa ini digunakan baik sebelum memulai membangun bisnis atau sudah membangun bisnis. Bahkan ada yang menyebut analisis SWOT merupakan analisa paling ajaib yang dapat memberikan proses penyelesaian permasalahan pada bisnis.</description>
+      </item>
+    
+      <item>
+        <title>Mengenal VLAN (Virtual LAN)</title>
+        <link>https://sibunglon.com/2017/10/12/mengenal-vlan-virtual-lan/</link>
+        <pubDate>Thu, 12 Oct 2017 09:08:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/12/mengenal-vlan-virtual-lan/</guid>
+        <description>A. Pendahuluan
 Pada kesempatan kali ini ane akan share sedikit artikel tentang VLAN. Oke langsung saja silahkan disimak.
 1) Pengertian
-Virtual LAN atau disingkat VLAN merupakan sekelompok perangkat pada satu LAN atau lebih yang dikonfigurasikan (menggunakan perangkat lunak pengelolaan) sehingga dapat berkomunikasi seperti halnya bila perangkat tersebut terhubung ke jalur yang sama, padahal sebenarnya perangkat tersebut berada pada sejumlah segmen LAN yang berbeda. Vlan dibuat dengan menggunakan jaringan pihak ke tiga.</description></item><item><title>Tips Menemukan Referensi Website Untuk Belajar Linux</title><link>https://sibunglon.com/2017/10/10/tips-menemukan-referensi-website-untuk-belajar-linux/</link><pubDate>Tue, 10 Oct 2017 17:27:00 +0000</pubDate><guid>https://sibunglon.com/2017/10/10/tips-menemukan-referensi-website-untuk-belajar-linux/</guid><description>A. Pendahuluan
+Virtual LAN atau disingkat VLAN merupakan sekelompok perangkat pada satu LAN atau lebih yang dikonfigurasikan (menggunakan perangkat lunak pengelolaan) sehingga dapat berkomunikasi seperti halnya bila perangkat tersebut terhubung ke jalur yang sama, padahal sebenarnya perangkat tersebut berada pada sejumlah segmen LAN yang berbeda. Vlan dibuat dengan menggunakan jaringan pihak ke tiga.</description>
+      </item>
+    
+      <item>
+        <title>Tips Menemukan Referensi Website Untuk Belajar Linux</title>
+        <link>https://sibunglon.com/2017/10/10/tips-menemukan-referensi-website-untuk-belajar-linux/</link>
+        <pubDate>Tue, 10 Oct 2017 17:27:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/10/10/tips-menemukan-referensi-website-untuk-belajar-linux/</guid>
+        <description>A. Pendahuluan
 Halo teman2 blogger, pada kesempatan kali ini saya akan mmebagikan sebuah artikel sederhana namun bermanfaat bagi pembaca sekalian terutama bagi yang ingin belajar linux agar mahir menggunakannya. Monggo mari di simak artikel yang saya bagikan berikut ini.
 1. Pengertian
-Web referensi adalah suatu website atau situs atau laman yang memuat pembahasan ataupun tutorial yang berisi materi yang dapat di jadikan patokan atau dasar untuk membuat suatu artikel ataupun tutorial.</description></item><item><title>K3 (Kesehatan, Keselamatan, dan Keamanan kerja)</title><link>https://sibunglon.com/2017/09/18/k3-kesehatan-keselamatan-dan-keamanan-kerja/</link><pubDate>Mon, 18 Sep 2017 02:31:00 +0000</pubDate><guid>https://sibunglon.com/2017/09/18/k3-kesehatan-keselamatan-dan-keamanan-kerja/</guid><description>PENDAHULUAN
+Web referensi adalah suatu website atau situs atau laman yang memuat pembahasan ataupun tutorial yang berisi materi yang dapat di jadikan patokan atau dasar untuk membuat suatu artikel ataupun tutorial.</description>
+      </item>
+    
+      <item>
+        <title>K3 (Kesehatan, Keselamatan, dan Keamanan kerja)</title>
+        <link>https://sibunglon.com/2017/09/18/k3-kesehatan-keselamatan-dan-keamanan-kerja/</link>
+        <pubDate>Mon, 18 Sep 2017 02:31:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/09/18/k3-kesehatan-keselamatan-dan-keamanan-kerja/</guid>
+        <description>PENDAHULUAN
 Pada kesempatan ini kita akan membahas sedikit mengenai K3 atau Kesehatan, Keselamatan, Keamanan Kerja. kenapa kita membahas hal ini, karna di dalam melakukan pekerjaan kita harus memahmi atau memakai yang namanya K3.
 PENGERTIAN
 Filosofi (Mangkunegara)
 Suatu pemikiran dan upaya untuk menjamin keutuhan dan kesempurnaan jasmani maupun rohani tenaga kerja khususnya dan manusia pada umumnya serta hasil karya dan budaya untuk menuju masyarakat adil dan makmur.
 Keilmuan
-Semua ilmu dan penerapannya untuk mencegah terjadinya kecelakaan kerja, penyakit akibat kerja (PAK), kebakaran, peledakan dan pencemaran lingkungan.</description></item><item><title>Pengenalan SOP (Standar Operasional Prosedur)</title><link>https://sibunglon.com/2017/09/12/pengenalan-sop-standar-operasional-prosedur/</link><pubDate>Tue, 12 Sep 2017 01:27:00 +0000</pubDate><guid>https://sibunglon.com/2017/09/12/pengenalan-sop-standar-operasional-prosedur/</guid><description>A. Pendahuluan
+Semua ilmu dan penerapannya untuk mencegah terjadinya kecelakaan kerja, penyakit akibat kerja (PAK), kebakaran, peledakan dan pencemaran lingkungan.</description>
+      </item>
+    
+      <item>
+        <title>Pengenalan SOP (Standar Operasional Prosedur)</title>
+        <link>https://sibunglon.com/2017/09/12/pengenalan-sop-standar-operasional-prosedur/</link>
+        <pubDate>Tue, 12 Sep 2017 01:27:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/09/12/pengenalan-sop-standar-operasional-prosedur/</guid>
+        <description>A. Pendahuluan
 Pada blog kali ini saya akan memperkenalkan tentang SOP. pasti kalian bertanya apa itu SOP selanjut nya akan di jelaskan di bawah ini.
 1) Pengertian
 SOP
-Prosedur operasi standar istilah dalam bahasa Indonesia, atau dalam bahasa Inggris disebut SOP (Standart Oprational Procedur), digunakan dalam berbagai konteks yang berbeda, termasuk kesehatan, penerbangan, teknik, pendidikan, industri, dan militer. Dengan melakukan SOP perusahaan dapat memastikan suatu aktivitas bisnis bisa berjalan sesuai dengan standard yang diharapkan.</description></item><item><title>Wireless Concept</title><link>https://sibunglon.com/2017/09/07/wireless-concept/</link><pubDate>Thu, 07 Sep 2017 14:53:00 +0000</pubDate><guid>https://sibunglon.com/2017/09/07/wireless-concept/</guid><description>A. Pendahuluan
+Prosedur operasi standar istilah dalam bahasa Indonesia, atau dalam bahasa Inggris disebut SOP (Standart Oprational Procedur), digunakan dalam berbagai konteks yang berbeda, termasuk kesehatan, penerbangan, teknik, pendidikan, industri, dan militer. Dengan melakukan SOP perusahaan dapat memastikan suatu aktivitas bisnis bisa berjalan sesuai dengan standard yang diharapkan.</description>
+      </item>
+    
+      <item>
+        <title>Wireless Concept</title>
+        <link>https://sibunglon.com/2017/09/07/wireless-concept/</link>
+        <pubDate>Thu, 07 Sep 2017 14:53:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/09/07/wireless-concept/</guid>
+        <description>A. Pendahuluan
 hay guys, kali ini saya akan melakukan pemahaman tentang Wireless Concept
 1. Pengertian
 Wireless Concept ini merupakan suatu ketentuan-ketentuan yang harus dipatuhi dalam pembangunan jaringan wifi atau jaringan komputer
@@ -33,7 +114,15 @@ Dalam pembanguan jaringan wifi terkadang banyak permasalahan yang timbul karena 
 3. Maksud &amp;amp; Tujuan
 Meminimalisir kesalahan karena hal yang sebenarnya sepele.
 4. Hasil yang di harapkan
-Dapat memahami dan dapat menerapkan wireless concept pada saat mengerjakan proyek.</description></item><item><title>Packet Header(Tahapan Terjadinya Komunikasi)</title><link>https://sibunglon.com/2017/08/28/packet-headertahapan-terjadinya-komunikasi/</link><pubDate>Mon, 28 Aug 2017 12:46:00 +0000</pubDate><guid>https://sibunglon.com/2017/08/28/packet-headertahapan-terjadinya-komunikasi/</guid><description>A. PENGERTIAN
+Dapat memahami dan dapat menerapkan wireless concept pada saat mengerjakan proyek.</description>
+      </item>
+    
+      <item>
+        <title>Packet Header(Tahapan Terjadinya Komunikasi)</title>
+        <link>https://sibunglon.com/2017/08/28/packet-headertahapan-terjadinya-komunikasi/</link>
+        <pubDate>Mon, 28 Aug 2017 12:46:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/28/packet-headertahapan-terjadinya-komunikasi/</guid>
+        <description>A. PENGERTIAN
 Packet header adalah paket yang kejadian saat seorang akan mengirim atau berkomunikasi lewat jaringan,
 B. LATAR BELAKANG
 Pemahaman tentang tahapan dan proses dikirimnya dan di terimanya data, yang dikirim lewat jaringan.
@@ -46,13 +135,41 @@ E. ALAT DAN BAHAN
 ~ LCD proyektor
 ~ Koneksi internet
 F. PEMBAHASAN
-Syarat terjadinya komunikasi, ada yang akan dikirim atau ada datanya seperti gambar diatas, sudah jelas, dari data lanjut ke Options ( if any ) atau pilihan dari si pengirim akan kah paket data itu dikirim atau tidak, jika hal ini tidak jelas maka data tidak akan sampai ke tujuan.</description></item><item><title>Mengenal Perintah-Perintah Dasar di Linux</title><link>https://sibunglon.com/2017/08/21/mengenal-perintah-perintah-dasar-di-linux/</link><pubDate>Mon, 21 Aug 2017 21:40:00 +0000</pubDate><guid>https://sibunglon.com/2017/08/21/mengenal-perintah-perintah-dasar-di-linux/</guid><description>A. Pendahuluan
+Syarat terjadinya komunikasi, ada yang akan dikirim atau ada datanya seperti gambar diatas, sudah jelas, dari data lanjut ke Options ( if any ) atau pilihan dari si pengirim akan kah paket data itu dikirim atau tidak, jika hal ini tidak jelas maka data tidak akan sampai ke tujuan.</description>
+      </item>
+    
+      <item>
+        <title>Mengenal Perintah-Perintah Dasar di Linux</title>
+        <link>https://sibunglon.com/2017/08/21/mengenal-perintah-perintah-dasar-di-linux/</link>
+        <pubDate>Mon, 21 Aug 2017 21:40:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/21/mengenal-perintah-perintah-dasar-di-linux/</guid>
+        <description>A. Pendahuluan
 Pada kesempatan kali ini, saya akan memposting beberapa perintah-perintah dasar dari sistem operasi linux. Untuk lebih jelasnya akan di jelaskan sebagai berikut.
 B. Pengertian
 Linux identik dengan penggunaan console terminal yang mengharuskan kita menghafal perintah-perintah yang ada. Perintah-perintah tersebut bisa berupa singkatan atau nama asli sesuai fungsinya.
 C. Latar Belakang
-Semakin lama, semakin banyak para pengguna komputer yang menjadikan Linux sebagai Sistem Operasi utamanya. Selain sifatnya yang open source, ternyata sistem operasi Linux ini juga lebih banyak menuntut kita untuk terus mempelajarinya.</description></item><item><title>Step by Step Melakukan Perencanaan Kerja</title><link>https://sibunglon.com/2017/08/12/step-by-step-melakukan-perencanaan-kerja/</link><pubDate>Sat, 12 Aug 2017 16:21:00 +0000</pubDate><guid>https://sibunglon.com/2017/08/12/step-by-step-melakukan-perencanaan-kerja/</guid><description>Apa yang Anda pikirkan ketika mendengar ketika mendengar kata Perencanaan kerja?
+Semakin lama, semakin banyak para pengguna komputer yang menjadikan Linux sebagai Sistem Operasi utamanya. Selain sifatnya yang open source, ternyata sistem operasi Linux ini juga lebih banyak menuntut kita untuk terus mempelajarinya.</description>
+      </item>
+    
+      <item>
+        <title>Step by Step Melakukan Perencanaan Kerja</title>
+        <link>https://sibunglon.com/2017/08/12/step-by-step-melakukan-perencanaan-kerja/</link>
+        <pubDate>Sat, 12 Aug 2017 16:21:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/12/step-by-step-melakukan-perencanaan-kerja/</guid>
+        <description>Apa yang Anda pikirkan ketika mendengar ketika mendengar kata Perencanaan kerja?
 Apakah Anda merasa malas? atau merasa membuang waktu? Ada orang yang merasa bahwa perencanaan itu penting tapi tidak mau membuatnya, ada juga yang memulai membuat perencanaan tapi tidak selesai atau merasa terbeban
-ketika perencanaan telah disusun dengan baik ada yang tidak tercapai dan ada juga yang menganggap hal ini tidak perlu dilakukan karena menyukai spontanitas atau berpendapat bahwa perencanaan hanya menghabiskan waktu.</description></item><item><title>OSI Layer</title><link>https://sibunglon.com/2017/08/07/osi-layer/</link><pubDate>Mon, 07 Aug 2017 14:30:00 +0000</pubDate><guid>https://sibunglon.com/2017/08/07/osi-layer/</guid><description>A. Pengertian OSI Layer
+ketika perencanaan telah disusun dengan baik ada yang tidak tercapai dan ada juga yang menganggap hal ini tidak perlu dilakukan karena menyukai spontanitas atau berpendapat bahwa perencanaan hanya menghabiskan waktu.</description>
+      </item>
+    
+      <item>
+        <title>OSI Layer</title>
+        <link>https://sibunglon.com/2017/08/07/osi-layer/</link>
+        <pubDate>Mon, 07 Aug 2017 14:30:00 +0000</pubDate>
+        <guid>https://sibunglon.com/2017/08/07/osi-layer/</guid>
+        <description>A. Pengertian OSI Layer
 OSI atau Model Open Systems Interconnection diciptakan oleh InternationalOrganization for Standardization (ISO) yang menyediakan kerangka logikaterstruktur bagaimana proses komunikasi data berinteraksi melalui jaringan.Standard ini dikembangkan untuk industri komputer agar komputer dapat berkomunikasi pada jaringan yang berbeda secara efisien.
-Model Layer OSI dibagi dalam dua group: “upper layer ” dan “lower layer ”. “Upper layer” fokus pada applikasi pengguna dan bagaimana file direpresentasikan di komputer. Untuk Network Engineer, bagian utama yang menjadi perhatiannya adalah pada “lower layer”.</description></item></channel></rss>
+Model Layer OSI dibagi dalam dua group: “upper layer ” dan “lower layer ”. “Upper layer” fokus pada applikasi pengguna dan bagaimana file direpresentasikan di komputer. Untuk Network Engineer, bagian utama yang menjadi perhatiannya adalah pada “lower layer”.</description>
+      </item>
+    
+  </channel>
+</rss>
