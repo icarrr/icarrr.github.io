@@ -5,10 +5,21 @@
     <description>Recent content in Posts on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Nov 2020 23:15:15 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 19 Dec 2020 03:32:07 +0800</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Extract SSL Certificate and SSL Certificate Key From .PFX File</title>
+        <link>https://sibunglon.com/2020/12/19/extract-ssl-certificate-and-ssl-certificate-key-from-.pfx-file/</link>
+        <pubDate>Sat, 19 Dec 2020 03:32:07 +0800</pubDate>
+        <guid>https://sibunglon.com/2020/12/19/extract-ssl-certificate-and-ssl-certificate-key-from-.pfx-file/</guid>
+        <description>A pfx file is password protected certificate archive which contains your certificate and the private key.
+ domain.tld.key The private decrypted RSA key file for the certificate. (ssl_certificate_key) domain.tld.crt The certificate file for the domain bundle.crt The certificate file for the issuer domain.tld.chained.crt The concatted file which consists of domain.tld.crt and bundle.crt (ssl_certificate)  Get the .key file
+Extract the encrypted key using:
+openssl pkcs12 -in cert.pfx -nocerts -out domain.tld.encrypted.key Decrypt the encrypted key using:</description>
+      </item>
     
       <item>
         <title>Open edX Discussion Forum Not Working</title>
