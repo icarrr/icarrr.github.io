@@ -5,10 +5,20 @@
     <description>Recent content in Open edX on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Nov 2020 23:15:15 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 22 Dec 2020 03:22:24 +0800</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/open-edx/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Open Response Assessment (ORA) Using Filesystem as Storage</title>
+        <link>https://sibunglon.com/2020/12/22/open-response-assessment-ora-using-filesystem-as-storage/</link>
+        <pubDate>Tue, 22 Dec 2020 03:22:24 +0800</pubDate>
+        <guid>https://sibunglon.com/2020/12/22/open-response-assessment-ora-using-filesystem-as-storage/</guid>
+        <description>By default, ORA uses Amazon S3 as a storage for files uploaded via this component. Apart from using Amazon S3, ORA has alternative storage, one of which is the filesystem.
+Following are the steps you need to take if you want the uploaded files to be stored on the Open edX server.
+ Open dan edit file /edx/app/edxapp/edx-platform/lms/envs/common.py, then add the following syntax.  ### ORA2 filesystem settings ORA2_FILEUPLOAD_BACKEND = &amp;#34;filesystem&amp;#34; ORA2_FILEUPLOAD_CACHE_NAME= &amp;#34;default&amp;#34; ORA2_FILEUPLOAD_ROOT = os.</description>
+      </item>
     
       <item>
         <title>Open edX Discussion Forum Not Working</title>
