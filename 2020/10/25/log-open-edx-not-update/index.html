@@ -53,24 +53,18 @@
 I moved the log files to the new disk, I did the following:
 $ # Stop services $ /edx/bin/supervisorctl stop all $ sudo systemctl stop mongod rabbitmq-server supervisor nginx $ # Rsync log directory to the new disk and make backup on local storage server $ sudo rsync -avP /edx/var/log /edx/backup $ sudo rsync -avP /edx/var/log /media-edx $ # Remove log from edxapp $ sudo rm -rf /edx/var/log $ # Create symbolic link $ sudo ln -sf /media-edx/log /edx/var $ # Start services $ sudo systemctl start mongod rabbitmq-server supervisor nginx When services edX has been start, log file for lms, cms, and tracking is not update." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://sibunglon.com/2020/10/25/log-open-edx-not-update/" />
-<meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"/>
-<meta property="article:published_time" content="2020-10-25T05:34:44+08:00" />
-<meta property="article:modified_time" content="2020-10-25T05:34:44+08:00" /><meta property="og:site_name" content="The Official Site of siBunglon" />
+<meta property="og:url" content="https://sibunglon.com/2020/10/25/log-open-edx-not-update/" /><meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-10-25T05:34:44&#43;08:00" />
+<meta property="article:modified_time" content="2020-10-25T05:34:44&#43;08:00" /><meta property="og:site_name" content="The Official Site of siBunglon" />
+
 
   <meta itemprop="name" content="Log Open edX Not Update">
 <meta itemprop="description" content="Case I&rsquo;ve attach a new disk on my Open edX server, I move Open edX log file into a new disk and create symbolic link to /edx/var because I don&rsquo;t want to make a lot of changes in configuration or hardcode of Open edX.
 I moved the log files to the new disk, I did the following:
-$ # Stop services $ /edx/bin/supervisorctl stop all $ sudo systemctl stop mongod rabbitmq-server supervisor nginx $ # Rsync log directory to the new disk and make backup on local storage server $ sudo rsync -avP /edx/var/log /edx/backup $ sudo rsync -avP /edx/var/log /media-edx $ # Remove log from edxapp $ sudo rm -rf /edx/var/log $ # Create symbolic link $ sudo ln -sf /media-edx/log /edx/var $ # Start services $ sudo systemctl start mongod rabbitmq-server supervisor nginx When services edX has been start, log file for lms, cms, and tracking is not update.">
-<meta itemprop="datePublished" content="2020-10-25T05:34:44+08:00" />
-<meta itemprop="dateModified" content="2020-10-25T05:34:44+08:00" />
-<meta itemprop="wordCount" content="342">
-<meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
-
-
-
+$ # Stop services $ /edx/bin/supervisorctl stop all $ sudo systemctl stop mongod rabbitmq-server supervisor nginx $ # Rsync log directory to the new disk and make backup on local storage server $ sudo rsync -avP /edx/var/log /edx/backup $ sudo rsync -avP /edx/var/log /media-edx $ # Remove log from edxapp $ sudo rm -rf /edx/var/log $ # Create symbolic link $ sudo ln -sf /media-edx/log /edx/var $ # Start services $ sudo systemctl start mongod rabbitmq-server supervisor nginx When services edX has been start, log file for lms, cms, and tracking is not update."><meta itemprop="datePublished" content="2020-10-25T05:34:44&#43;08:00" />
+<meta itemprop="dateModified" content="2020-10-25T05:34:44&#43;08:00" />
+<meta itemprop="wordCount" content="342"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
 <meta itemprop="keywords" content="Open edX,Case Study," />
-
   <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://sibunglon.com/assets/img/profil.webp"/>
 

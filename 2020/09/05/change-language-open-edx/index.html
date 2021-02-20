@@ -52,23 +52,17 @@
 <meta property="og:description" content="Open edX uses Transifex, an open source translation platform, to power the translation of edX software into different languages. All translations are hosted at Transifex.com, which provides a web application allowing translators to write, submit, and manage their translations.
  Login to server and switch to edxapp environment for edX native installation.  $ sudo -H -u edxapp bash $ source /edx/app/edxapp/edxapp_env $ cd /edx/app/edxapp/edx-platform Install Python dependencies  $ pip install transifex-client or when using bitnami, use this" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://sibunglon.com/2020/09/05/change-language-open-edx/" />
-<meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"/>
-<meta property="article:published_time" content="2020-09-05T05:52:45+08:00" />
-<meta property="article:modified_time" content="2020-09-05T05:52:45+08:00" /><meta property="og:site_name" content="The Official Site of siBunglon" />
+<meta property="og:url" content="https://sibunglon.com/2020/09/05/change-language-open-edx/" /><meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-09-05T05:52:45&#43;08:00" />
+<meta property="article:modified_time" content="2020-09-05T05:52:45&#43;08:00" /><meta property="og:site_name" content="The Official Site of siBunglon" />
+
 
   <meta itemprop="name" content="Change Language Open edX">
 <meta itemprop="description" content="Open edX uses Transifex, an open source translation platform, to power the translation of edX software into different languages. All translations are hosted at Transifex.com, which provides a web application allowing translators to write, submit, and manage their translations.
- Login to server and switch to edxapp environment for edX native installation.  $ sudo -H -u edxapp bash $ source /edx/app/edxapp/edxapp_env $ cd /edx/app/edxapp/edx-platform Install Python dependencies  $ pip install transifex-client or when using bitnami, use this">
-<meta itemprop="datePublished" content="2020-09-05T05:52:45+08:00" />
-<meta itemprop="dateModified" content="2020-09-05T05:52:45+08:00" />
-<meta itemprop="wordCount" content="289">
-<meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
-
-
-
+ Login to server and switch to edxapp environment for edX native installation.  $ sudo -H -u edxapp bash $ source /edx/app/edxapp/edxapp_env $ cd /edx/app/edxapp/edx-platform Install Python dependencies  $ pip install transifex-client or when using bitnami, use this"><meta itemprop="datePublished" content="2020-09-05T05:52:45&#43;08:00" />
+<meta itemprop="dateModified" content="2020-09-05T05:52:45&#43;08:00" />
+<meta itemprop="wordCount" content="291"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
 <meta itemprop="keywords" content="Open edX," />
-
   <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://sibunglon.com/assets/img/profil.webp"/>
 
@@ -132,13 +126,13 @@ token =
 </span></code></pre></div><ol start="5">
 <li>Set the value of the <em>LANGUAGE_CODE</em> variable to the language you desire (for example, set it to “es_es” to translate it to Spanish) in the configuration files.</li>
 </ol>
-<p>For edX native installation</p>
+<p>For <a href="http://localhost:1313/2019/07/13/install-open-edx-using-method-native-installation-ubuntu-16.04/">Open edX native installation</a></p>
 <ul>
 <li>/edx/app/edxapp/lms.env.json</li>
 <li>/edx/app/edxapp/cms.env.json</li>
 <li>/edx/app/edxapp/edx-platform/lms/envs/common.py</li>
 </ul>
-<p>For edX on bitnami</p>
+<p>For <a href="https://bitnami.com/stack/edx">Open edX on bitnami</a></p>
 <ul>
 <li>/opt/bitnami/apps/edx/conf/cms.env.json</li>
 <li>/opt/bitnami/apps/edx/conf/lms.env.json</li>

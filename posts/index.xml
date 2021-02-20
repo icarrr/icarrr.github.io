@@ -5,10 +5,18 @@
     <description>Recent content in Posts on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 22 Dec 2020 03:22:24 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 20 Feb 2021 22:24:50 +0800</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Set Advanced Module List by Default on Open edX</title>
+        <link>https://sibunglon.com/2021/02/20/set-advanced-module-list-by-default-on-open-edx/</link>
+        <pubDate>Sat, 20 Feb 2021 22:24:50 +0800</pubDate>
+        <guid>https://sibunglon.com/2021/02/20/set-advanced-module-list-by-default-on-open-edx/</guid>
+        <description>When setup course in Open edX, you can use some of default components that can help or support the learning process. But maybe you also need additional components which are not provided by Open edX by default, the component is called XBlock. You can make this XBlock and then install it on the Open edX server or you can also install XBlock that has been made by other people according to your needs.</description>
+      </item>
     
       <item>
         <title>Open Response Assessment (ORA) Using Filesystem as Storage</title>
