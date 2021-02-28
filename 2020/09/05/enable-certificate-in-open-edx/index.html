@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en-us" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+  <title>Enable Certificate in Open edX</title>
+  
+  <meta http-equiv="cache-control" content="public, max-age=31536000" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Faizar Septiawan">
+  <meta name="description" content="Read - Search - Ask | Personal Site | Catch your problem solution or read interesting stories on my blog!">
+  <meta name="keywords" content="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng">
+  
+  
+  
+  <meta name="google-site-verification" content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM" />
+  
+  
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110194945-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110194945-3');
+  </script>
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/css/external.min.css" media="screen">
+  
+  
+  <link rel="stylesheet" href="/assets/css/styles.css" media="screen">
+  <link href="/assets/custom/googlefonts/roboto.css" rel="stylesheet">
+  
+
+  
+  
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/src/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="/src/images/favicon.ico">
+  
+
+  
+  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
+
+  <meta property="og:title" content="Enable Certificate in Open edX" />
+<meta property="og:description" content="Organizations and course teams can choose to generate certificates for learners who pass a course. Learners can view, print, or share their certificates.
+To enable certificates, you modify the lms.env.json and cms.env.json files.
+ In the lms.env.json and cms.env.json files, set the value of CERTIFICATES_HTML_VIEW within the FEATURES object to true.  &#34;FEATURES&#34;: { ... &#39;CERTIFICATES_HTML_VIEW&#39;: true, ... } Save the lms.env.json and cms.env.json files.
+If it does not exist already, create the folder /tmp/certificates owned by the user and group www-data." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sibunglon.com/2020/09/05/enable-certificate-in-open-edx/" /><meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-09-05T05:08:41&#43;08:00" />
+<meta property="article:modified_time" content="2020-09-05T05:08:41&#43;08:00" /><meta property="og:site_name" content="The Official Site of siBunglon" />
+
+
+  <meta itemprop="name" content="Enable Certificate in Open edX">
+<meta itemprop="description" content="Organizations and course teams can choose to generate certificates for learners who pass a course. Learners can view, print, or share their certificates.
+To enable certificates, you modify the lms.env.json and cms.env.json files.
+ In the lms.env.json and cms.env.json files, set the value of CERTIFICATES_HTML_VIEW within the FEATURES object to true.  &#34;FEATURES&#34;: { ... &#39;CERTIFICATES_HTML_VIEW&#39;: true, ... } Save the lms.env.json and cms.env.json files.
+If it does not exist already, create the folder /tmp/certificates owned by the user and group www-data."><meta itemprop="datePublished" content="2020-09-05T05:08:41&#43;08:00" />
+<meta itemprop="dateModified" content="2020-09-05T05:08:41&#43;08:00" />
+<meta itemprop="wordCount" content="328"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
+<meta itemprop="keywords" content="Open edX," />
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://sibunglon.com/assets/img/profil.webp"/>
+
+<meta name="twitter:title" content="Enable Certificate in Open edX"/>
+<meta name="twitter:description" content="Organizations and course teams can choose to generate certificates for learners who pass a course. Learners can view, print, or share their certificates.
+To enable certificates, you modify the lms.env.json and cms.env.json files.
+ In the lms.env.json and cms.env.json files, set the value of CERTIFICATES_HTML_VIEW within the FEATURES object to true.  &#34;FEATURES&#34;: { ... &#39;CERTIFICATES_HTML_VIEW&#39;: true, ... } Save the lms.env.json and cms.env.json files.
+If it does not exist already, create the folder /tmp/certificates owned by the user and group www-data."/>
+
+  
+
+  
+  <script defer src="/assets/custom/fontawesome-5.15.1/js/all.min.js"></script>
+  
+</head>
+
+  <body>
+    
+      <nav>
+  <a href="/">
+    siBunglon
+  </a>
+</nav>
+
+    
+    <main class="container">
+      
+  <article>
+    <header>
+      <small>
+        <span class="date">September 5, 2020</span></small>
+      <h1>Enable Certificate in Open edX</h1>
+    </header>
+    <section><p><img src="/assets/img/Open-edX/open-edx-new.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p>Organizations and course teams can choose to generate certificates for learners who pass a course. Learners can view, print, or share their certificates.</p>
+<p>To enable certificates, you modify the <code>lms.env.json</code> and <code>cms.env.json</code> files.</p>
+<ol>
+<li>In the <code>lms.env.json</code> and <code>cms.env.json</code> files, set the value of <code>CERTIFICATES_HTML_VIEW</code> within the <code>FEATURES</code> object to <code>true</code>.</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="s2">&#34;FEATURES&#34;</span><span class="err">:</span> <span class="p">{</span>
+    <span class="err">...</span>
+    <span class="err">&#39;CERTIFICATES_HTML_VIEW&#39;:</span> <span class="err">true,</span>
+    <span class="err">...</span>
+<span class="p">}</span>
+</code></pre></div><p>Save the <code>lms.env.json</code> and <code>cms.env.json</code> files.</p>
+<ol start="2">
+<li>If it does not exist already, create the folder <code>/tmp/certificates</code> owned by the user and group <code>www-data</code>.</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ mkdir /tmp/certificates
+</code></pre></div><ol start="3">
+<li>
+<p>Access the LMS Django Administration website for your instance of Open edX. To do this, go to <code>https://&lt;host name of your Open edX instance&gt;/admin</code>.</p>
+</li>
+<li>
+<p>Under <strong>Site Administration</strong> &gt; <strong>Certificates</strong>, add an HTML View Configuration, and select <strong>Enabled</strong>.</p>
+</li>
+</ol>
+<p>For <strong>Configuration</strong>, set the following certificates-related parameters for your Open edX instance.</p>
+<ul>
+<li><code>platform_name</code></li>
+<li><code>company_about_url</code></li>
+<li><code>company_privacy_url</code></li>
+<li><code>company_tos_url</code></li>
+<li><code>company_verified_certificate_url</code></li>
+<li><code>logo_src</code></li>
+<li><code>logo_url</code></li>
+</ul>
+<p>For each course mode for which you want to offer certificates (such as “honor” or “verified”), define these parameters.</p>
+<ul>
+<li><code>certificate_type</code></li>
+<li><code>certificate_title</code></li>
+<li><code>document_body_class_append</code></li>
+</ul>
+<p>Example content for Configuration field.</p>
+<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+    <span class="nt">&#34;default&#34;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&#34;accomplishment_class_append&#34;</span><span class="p">:</span> <span class="s2">&#34;accomplishment-certificate&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;platform_name&#34;</span><span class="p">:</span> <span class="s2">&#34;YourPlatformName&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;company_about_url&#34;</span><span class="p">:</span><span class="s2">&#34;http://www.YourOrganization.com/about-us&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;company_privacy_url&#34;</span><span class="p">:</span> <span class="s2">&#34;http://www.YourOrganization.com/our-privacy-policy&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;company_tos_url&#34;</span><span class="p">:</span> <span class="s2">&#34;http://www.YourOrganization.com/our-terms-service&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;company_verified_certificate_url&#34;</span><span class="p">:</span> <span class="s2">&#34;http://www.YourOrganization.com/about_verified_certificates&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;logo_src&#34;</span><span class="p">:</span> <span class="s2">&#34;/static/certificates/images/our_logo.svg&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;logo_url&#34;</span><span class="p">:</span> <span class="s2">&#34;www.YourOrganization.com&#34;</span>
+    <span class="p">},</span>
+    <span class="nt">&#34;honor&#34;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&#34;certificate_type&#34;</span><span class="p">:</span> <span class="s2">&#34;honor&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;certificate_title&#34;</span><span class="p">:</span> <span class="s2">&#34;Honor Certificate&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;document_body_class_append&#34;</span><span class="p">:</span> <span class="s2">&#34;is-honorcode&#34;</span>
+    <span class="p">},</span>
+    <span class="nt">&#34;verified&#34;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&#34;certificate_type&#34;</span><span class="p">:</span> <span class="s2">&#34;verified&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;certificate_title&#34;</span><span class="p">:</span> <span class="s2">&#34;Verified Certificate&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;document_body_class_append&#34;</span><span class="p">:</span> <span class="s2">&#34;is-idverified&#34;</span>
+    <span class="p">},</span>
+    <span class="nt">&#34;base&#34;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&#34;certificate_type&#34;</span><span class="p">:</span> <span class="s2">&#34;base&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;certificate_title&#34;</span><span class="p">:</span> <span class="s2">&#34;Certificate of Achievement&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;document_body_class_append&#34;</span><span class="p">:</span> <span class="s2">&#34;is-base&#34;</span>
+    <span class="p">},</span>
+    <span class="nt">&#34;distinguished&#34;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&#34;certificate_type&#34;</span><span class="p">:</span> <span class="s2">&#34;distinguished&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;certificate_title&#34;</span><span class="p">:</span> <span class="s2">&#34;Distinguished Certificate of Achievement&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;document_body_class_append&#34;</span><span class="p">:</span> <span class="s2">&#34;is-distinguished&#34;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div><p>and then click Save.</p>
+<ol start="5">
+<li>
+<p>Restart lms and cms.</p>
+</li>
+<li>
+<p>Access the LMS Django Administration website for your instance of Open edX. To do this, go to <code>https://&lt;host name of your Open edX instance&gt;/admin</code>.</p>
+</li>
+<li>
+<p>Under <strong>Site Administration</strong> &gt; <strong>Certificates</strong> &gt; Certificate generation configurations, add an certificate generation if configuration not exist, and select <strong>Enabled</strong>, then click save.</p>
+</li>
+<li>
+<p>Under <strong>Site Administration</strong> &gt; <strong>Course mode</strong> &gt; Course modes, add an course mode, and then click save.</p>
+</li>
+<li>
+<p>Configure certificate in studio page. You&rsquo;ll find this under <strong>Settings</strong>.</p>
+</li>
+</ol>
+<p><img src="/assets/img/certificate-edx/certificate-in-studio.jpg" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+<p>Create a new section, enter all the information, click save, and click activate.</p>
+<h3 id="references">References</h3>
+<ul>
+<li><a href="https://edx.readthedocs.io/projects/edx-installing-configuring-and-running/en/latest/configuration/enable_certificates.html#configure-course-certificates-in-additional-languages">edX Documentation</a></li>
+<li><a href="https://help.appsembler.com/article/200-certs-open-edx">appsembler</a></li>
+</ul>
+</section>
+    <footer>
+      <hr>
+      <div class="meta">
+        <p class="tags">
+          
+            
+              <a href="/tags/open-edx">
+                <span>#</span>Open edX</a>
+            
+          
+        </p>
+      </div>
+      <hr>
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sibunglonlabs" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </footer>
+  </article>
+
+    </main>
+    
+      <footer>
+  <p>
+    &copy; 2021 Faizar Septiawan. <a href="http://creativecommons.org/licenses/by-sa/4.0/">Some Rights Reserved</a>.
+  </p>
+  <p>
+    Powered by <a href="https://gohugo.io" title="A Fast and Flexible Website Generator">Hugo</a> &amp; <a href="https://github.com/eshlox/simplicity" title="Hugo theme">Simplicity</a>.
+  </p>
+</footer>
+
+    
+    
+    
+    
+    
+    
+    
+    <script src="/assets/js/scripts.min.js"></script>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-110194945-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>

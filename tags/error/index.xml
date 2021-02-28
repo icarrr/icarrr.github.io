@@ -61,10 +61,10 @@ Btw, fortunately the terminal history on the laptop has not been cleared so I ca
       </item>
     
       <item>
-        <title>Fixing Problems on Installations Open edX Ficus</title>
-        <link>https://sibunglon.com/2019/12/06/fixing-problems-on-installations-open-edx-ficus/</link>
+        <title>Fixing Problems Installations Open edX Ficus</title>
+        <link>https://sibunglon.com/2019/12/06/fixing-problems-installations-open-edx-ficus/</link>
         <pubDate>Fri, 06 Dec 2019 13:13:00 +0700</pubDate>
-        <guid>https://sibunglon.com/2019/12/06/fixing-problems-on-installations-open-edx-ficus/</guid>
+        <guid>https://sibunglon.com/2019/12/06/fixing-problems-installations-open-edx-ficus/</guid>
         <description>What is the problem? Ficus is a name of Open edX release which was released on February 23, 2017. It&amp;rsquo;s been quite a long time, and automatically uses old packages or packages that are still active at that time. Last September, my friends asked me to install Open edX Ficus, because it&amp;rsquo;s an old version so I tried to install it in another VM, I made a VM on the Google Cloud Platform.</description>
       </item>
     

@@ -5,24 +5,90 @@
     <description>Recent content in Posts on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 Feb 2021 22:24:50 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 01 Mar 2021 01:41:45 +0800</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
       <item>
-        <title>Set Advanced Module List by Default on Open edX</title>
-        <link>https://sibunglon.com/2021/02/20/set-advanced-module-list-by-default-on-open-edx/</link>
+        <title>Disable Manual Activation for a New Account in Open edX</title>
+        <link>https://sibunglon.com/2021/03/01/disable-manual-activation-for-a-new-account-in-open-edx/</link>
+        <pubDate>Mon, 01 Mar 2021 01:41:45 +0800</pubDate>
+        <guid>https://sibunglon.com/2021/03/01/disable-manual-activation-for-a-new-account-in-open-edx/</guid>
+        <description>To disable manual activation for a new registration, follow the steps below:
+  Go to Open edX server console.
+  Open and edit LMS configuration (lms.env.json).
+  Then find the &amp;quot;FEATURES&amp;quot; configuration, add SKIP_EMAIL_VALIDATION into &amp;quot;FEATURES&amp;quot; array and set to true. See the following codes snippet:
+  &amp;#34;FEATURES&amp;#34;: { ... &amp;#34;SKIP_EMAIL_VALIDATION&amp;#34;: true, ... }, Restart LMS services.  </description>
+      </item>
+    
+      <item>
+        <title>Disable Public Registration in Open edX</title>
+        <link>https://sibunglon.com/2021/03/01/disable-public-registration-in-open-edx/</link>
+        <pubDate>Mon, 01 Mar 2021 01:33:33 +0800</pubDate>
+        <guid>https://sibunglon.com/2021/03/01/disable-public-registration-in-open-edx/</guid>
+        <description>To disable public registration in Open edX, follow the steps below:
+  Go to Open edX server console.
+  Open and edit LMS and CMS configuration (lms.env.json and cms.env.json).
+  Then find the &amp;quot;FEATURES&amp;quot; configuration, add ALLOW_PUBLIC_ACCOUNT_CREATION into &amp;quot;FEATURES&amp;quot; array and set to false. See the following codes snippet:
+  &amp;#34;FEATURES&amp;#34;: { ... &amp;#34;ALLOW_PUBLIC_ACCOUNT_CREATION&amp;#34;: false, ... }, Restart LMS services.  </description>
+      </item>
+    
+      <item>
+        <title>Disable Wiki Panel in Open edX</title>
+        <link>https://sibunglon.com/2021/03/01/disable-wiki-panel-in-open-edx/</link>
+        <pubDate>Mon, 01 Mar 2021 01:22:38 +0800</pubDate>
+        <guid>https://sibunglon.com/2021/03/01/disable-wiki-panel-in-open-edx/</guid>
+        <description>To disable wiki feature for all courses, follow the steps below:
+  Go to Open edX server console.
+  Open and edit LMS configuration (lms.env.json).
+  Then find the WIKI_ENABLED, and set to false.
+  { &amp;#34;WIKI_ENABLED&amp;#34;: false, } Restart LMS services.  </description>
+      </item>
+    
+      <item>
+        <title>Disable Discussion Panel in Open edX</title>
+        <link>https://sibunglon.com/2021/03/01/disable-discussion-panel-in-open-edx/</link>
+        <pubDate>Mon, 01 Mar 2021 01:11:46 +0800</pubDate>
+        <guid>https://sibunglon.com/2021/03/01/disable-discussion-panel-in-open-edx/</guid>
+        <description>On previous article, you have hiding discussion panel, but you can also disable the discussion panel if all courses to be made or those that have been created do not require the discussion feature. To disable discussion feature, follow the steps below:
+  Go to Open edX server console.
+  Open and edit LMS configuration (lms.env.json).
+  Then find the &amp;quot;FEATURES&amp;quot; configuration, add ENABLE_DISCUSSION_HOME_PANEL, ENABLE_DISCUSSION_SERVICE into &amp;quot;FEATURES&amp;quot; array and set to false.</description>
+      </item>
+    
+      <item>
+        <title>Hide Discussion Panel in Open edX</title>
+        <link>https://sibunglon.com/2021/03/01/hide-discussion-panel-in-open-edx/</link>
+        <pubDate>Mon, 01 Mar 2021 00:54:05 +0800</pubDate>
+        <guid>https://sibunglon.com/2021/03/01/hide-discussion-panel-in-open-edx/</guid>
+        <description>By default, discussion tab on course page can&amp;rsquo;t be hide. Must be enable feature for hide discussion, so you can hide discussion from course page. To enabled this feature, follow the steps below:
+  Go to Open edX server console.
+  Open and edit LMS and CMS configuration (lms.env.json and cms.env.json).
+  Then find the &amp;quot;FEATURES&amp;quot; configuration, add ALLOW_HIDING_DISCUSSION_TAB into &amp;quot;FEATURES&amp;quot; array and set to true. See the following codes snippet:</description>
+      </item>
+    
+      <item>
+        <title>Disable Account Lockout After Excessive Login Failures in Open edX</title>
+        <link>https://sibunglon.com/2021/03/01/disable-account-lockout-after-excessive-login-failures-in-open-edx/</link>
+        <pubDate>Mon, 01 Mar 2021 00:38:47 +0800</pubDate>
+        <guid>https://sibunglon.com/2021/03/01/disable-account-lockout-after-excessive-login-failures-in-open-edx/</guid>
+        <description>Account lockout feature will keep track of the number of failed login attempts on a given user&amp;rsquo;s email. If the number of consecutive failed login attempts - without a successful login at some point - reaches a configurable threshold (default 5), then the account will be &amp;ldquo;locked&amp;rdquo; for a configurable amount of seconds (15 minutes) which will prevent additional login attempts until this time period has passed. If a user successfully logs in, all the counter which tracks the number of failed attempts will be reset back to 0.</description>
+      </item>
+    
+      <item>
+        <title>Set Advanced Module List by Default in Open edX</title>
+        <link>https://sibunglon.com/2021/02/20/set-advanced-module-list-by-default-in-open-edx/</link>
         <pubDate>Sat, 20 Feb 2021 22:24:50 +0800</pubDate>
-        <guid>https://sibunglon.com/2021/02/20/set-advanced-module-list-by-default-on-open-edx/</guid>
+        <guid>https://sibunglon.com/2021/02/20/set-advanced-module-list-by-default-in-open-edx/</guid>
         <description>When setup course in Open edX, you can use some of default components that can help or support the learning process. But maybe you also need additional components which are not provided by Open edX by default, the component is called XBlock. You can make this XBlock and then install it on the Open edX server or you can also install XBlock that has been made by other people according to your needs.</description>
       </item>
     
       <item>
-        <title>Open Response Assessment (ORA) Using Filesystem as Storage</title>
-        <link>https://sibunglon.com/2020/12/22/open-response-assessment-ora-using-filesystem-as-storage/</link>
+        <title>Open Response Assessment (ORA) Using Filesystem as Storage in Open edX</title>
+        <link>https://sibunglon.com/2020/12/22/open-response-assessment-ora-using-filesystem-as-storage-in-open-edx/</link>
         <pubDate>Tue, 22 Dec 2020 03:22:24 +0800</pubDate>
-        <guid>https://sibunglon.com/2020/12/22/open-response-assessment-ora-using-filesystem-as-storage/</guid>
+        <guid>https://sibunglon.com/2020/12/22/open-response-assessment-ora-using-filesystem-as-storage-in-open-edx/</guid>
         <description>By default, ORA uses Amazon S3 as a storage for files uploaded via this component. Apart from using Amazon S3, ORA has alternative storage, one of which is the filesystem.
 Following are the steps you need to take if you want the uploaded files to be stored on the Open edX server.
  Open dan edit file /edx/app/edxapp/edx-platform/lms/envs/common.py, then add the following syntax.  ### ORA2 filesystem settings ORA2_FILEUPLOAD_BACKEND = &amp;#34;filesystem&amp;#34; ORA2_FILEUPLOAD_CACHE_NAME= &amp;#34;default&amp;#34; ORA2_FILEUPLOAD_ROOT = os.</description>
@@ -114,10 +180,10 @@ To allowing learners to claim their own certificates, do the following steps:
       </item>
     
       <item>
-        <title>Enable Certificate Open edX</title>
-        <link>https://sibunglon.com/2020/09/05/enable-certificate-open-edx/</link>
+        <title>Enable Certificate in Open edX</title>
+        <link>https://sibunglon.com/2020/09/05/enable-certificate-in-open-edx/</link>
         <pubDate>Sat, 05 Sep 2020 05:08:41 +0800</pubDate>
-        <guid>https://sibunglon.com/2020/09/05/enable-certificate-open-edx/</guid>
+        <guid>https://sibunglon.com/2020/09/05/enable-certificate-in-open-edx/</guid>
         <description>Organizations and course teams can choose to generate certificates for learners who pass a course. Learners can view, print, or share their certificates.
 To enable certificates, you modify the lms.env.json and cms.env.json files.
  In the lms.env.json and cms.env.json files, set the value of CERTIFICATES_HTML_VIEW within the FEATURES object to true.  &amp;#34;FEATURES&amp;#34;: { ... &amp;#39;CERTIFICATES_HTML_VIEW&amp;#39;: true, ... } Save the lms.env.json and cms.env.json files.
@@ -157,19 +223,19 @@ Traceback (most recent call last): File &amp;quot;/edx/app/edxapp/venvs/edxapp/l
       </item>
     
       <item>
-        <title>Google Sign in Error 403 on Open edX</title>
-        <link>https://sibunglon.com/2020/07/26/google-sign-in-error-403-on-open-edx/</link>
+        <title>Google Sign in Error 403 in Open edX</title>
+        <link>https://sibunglon.com/2020/07/26/google-sign-in-error-403-in-open-edx/</link>
         <pubDate>Sun, 26 Jul 2020 20:43:08 +0800</pubDate>
-        <guid>https://sibunglon.com/2020/07/26/google-sign-in-error-403-on-open-edx/</guid>
+        <guid>https://sibunglon.com/2020/07/26/google-sign-in-error-403-in-open-edx/</guid>
         <description>When I have configuration OAuth2 Google on Open edX version ironwood.master, I click register, then the “Google” login button and I get to the Google Log In page. After a succesful login on Google site, it redirects to my site and I’m getting error. When check the file /edx/var/log/lms/edx.log i find this:
 Jul 24 01:03:09 bnpb [service_variant=lms][django.request][env:sandbox] ERROR [e-Learning 29535] [exception.py:135] - Internal Server Error: /auth/complete/google-oauth2/ Traceback (most recent call last): File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.</description>
       </item>
     
       <item>
-        <title>Enable Third-Party Authentication (OAuth2) Open edX</title>
-        <link>https://sibunglon.com/2020/07/26/enable-third-party-authentication-oauth2-open-edx/</link>
+        <title>Enable Third-Party Authentication (OAuth2) in Open edX</title>
+        <link>https://sibunglon.com/2020/07/26/enable-third-party-authentication-oauth2-in-open-edx/</link>
         <pubDate>Sun, 26 Jul 2020 17:39:23 +0800</pubDate>
-        <guid>https://sibunglon.com/2020/07/26/enable-third-party-authentication-oauth2-open-edx/</guid>
+        <guid>https://sibunglon.com/2020/07/26/enable-third-party-authentication-oauth2-in-open-edx/</guid>
         <description>Open edX Platform allows you to integrate third-party authentication with two kinds of authentication providers:
  OAuth2 Identity Providers. SAML Identity Providers  This section describes how to integrate Open edX with two of the most popular OAuth2 providers: Google and Facebook.
 Integrate Open edX With Google Step 1: Register The Open EdX Site With Google -) Navigate to the Google Developers Console.
@@ -291,10 +357,10 @@ The following example, anyone who accesses the *.redirect.sibunglon.com domain w
       </item>
     
       <item>
-        <title>Setup HTTPS on Open edX Using Certbot</title>
-        <link>https://sibunglon.com/2020/01/04/setup-https-on-open-edx-using-certbot/</link>
+        <title>Setup HTTPS in Open edX Using Certbot</title>
+        <link>https://sibunglon.com/2020/01/04/setup-https-in-open-edx-using-certbot/</link>
         <pubDate>Sat, 04 Jan 2020 02:54:23 +0700</pubDate>
-        <guid>https://sibunglon.com/2020/01/04/setup-https-on-open-edx-using-certbot/</guid>
+        <guid>https://sibunglon.com/2020/01/04/setup-https-in-open-edx-using-certbot/</guid>
         <description>By default Open edX does not provide an SSL configuration, but we can add it manually. As per the topic of this article, here I will enable HTTPS on Open edX using Certbot.
 Certbot is a new breakthrough from the Let&amp;rsquo;s Encrypt Web Security Certificate Provider where Lets Encrypt provides SSL for free.
  Note: In the following example, in Open edX I point Course Management System (CMS) using the domain studio.</description>
@@ -382,10 +448,10 @@ $ tree Bash Bash ├── BackupRestore-dbOpenEdx │ ├── backup_mongo.s
       </item>
     
       <item>
-        <title>Fixing Problems on Installations Open edX Ficus</title>
-        <link>https://sibunglon.com/2019/12/06/fixing-problems-on-installations-open-edx-ficus/</link>
+        <title>Fixing Problems Installations Open edX Ficus</title>
+        <link>https://sibunglon.com/2019/12/06/fixing-problems-installations-open-edx-ficus/</link>
         <pubDate>Fri, 06 Dec 2019 13:13:00 +0700</pubDate>
-        <guid>https://sibunglon.com/2019/12/06/fixing-problems-on-installations-open-edx-ficus/</guid>
+        <guid>https://sibunglon.com/2019/12/06/fixing-problems-installations-open-edx-ficus/</guid>
         <description>What is the problem? Ficus is a name of Open edX release which was released on February 23, 2017. It&amp;rsquo;s been quite a long time, and automatically uses old packages or packages that are still active at that time. Last September, my friends asked me to install Open edX Ficus, because it&amp;rsquo;s an old version so I tried to install it in another VM, I made a VM on the Google Cloud Platform.</description>
       </item>
     
@@ -423,10 +489,10 @@ Restart-NetAdapter -Name &amp;#34;Ethernet x&amp;#34;   </description>
       </item>
     
       <item>
-        <title>Create New Super User for Access Django Admin Interface Open edX</title>
-        <link>https://sibunglon.com/2019/07/15/create-new-super-user-for-access-django-admin-interface-open-edx/</link>
+        <title>Create New Super User for Access Django Admin Interface in Open edX</title>
+        <link>https://sibunglon.com/2019/07/15/create-new-super-user-for-access-django-admin-interface-in-open-edx/</link>
         <pubDate>Mon, 15 Jul 2019 03:09:25 +0700</pubDate>
-        <guid>https://sibunglon.com/2019/07/15/create-new-super-user-for-access-django-admin-interface-open-edx/</guid>
+        <guid>https://sibunglon.com/2019/07/15/create-new-super-user-for-access-django-admin-interface-in-open-edx/</guid>
         <description>I need to use the Django admin interface, but I don&amp;rsquo;t know what users can use to log in.
 Solution sudo -u edxapp bash source /edx/app/edxapp/edxapp_env python /edx/app/edxapp/edx-platform/manage.py --settings=aws createsuperuser </description>
       </item>
