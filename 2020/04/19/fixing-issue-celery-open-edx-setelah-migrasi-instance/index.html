@@ -61,7 +61,7 @@ $ sudo tail -f /edx/var/log/{lms,cms,nginx}/*log ==&gt; /edx/var/log/lms/edx.log
 <meta itemprop="description" content="Beberapa hari yang lalu saya memindahkan instance Open edX dan beberapa menit setelah server aktif, Open edX tidak bisa diakses. Cek servicenya, tetapi semua service dalam keadaan aktif namun ketika melihat lognya, ternyata ada error pada celery, kurang lebih errornya seperti berikut:
 $ sudo tail -f /edx/var/log/{lms,cms,nginx}/*log ==&gt; /edx/var/log/lms/edx.log &lt;== Apr 12 02:21:16 beep [service_variant=lms][celery.worker.consumer][env:sandbox] ERROR [beep 1400] [consumer.py:364] - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 104] Connection reset by peer."><meta itemprop="datePublished" content="2020-04-19T22:38:14&#43;07:00" />
 <meta itemprop="dateModified" content="2020-04-19T22:38:14&#43;07:00" />
-<meta itemprop="wordCount" content="252"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
+<meta itemprop="wordCount" content="256"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
 <meta itemprop="keywords" content="Ayo Belajar Linux,Open edX,Error," />
   <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://sibunglon.com/assets/img/profil.webp"/>
@@ -129,8 +129,8 @@ Trying again in 32.00 seconds...
 </ul>
 <p>Set permission untuk user celery yang baru saja dibuat.</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo rabbitmqctl set_permissions -p / userCeleryedX <span class="s2">&#34;.*&#34;</span> <span class="s2">&#34;.*&#34;</span> <span class="s2">&#34;.*&#34;</span>
-</code></pre></div><p>Restart instance</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo reboot
+</code></pre></div><p>Restart service Open edX</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo /edx/bin/supervisorctl restart all
 </code></pre></div><h3 id="references">References</h3>
 <ul>
 <li><a href="https://oonlab.com/edx/code/2015/10/21/solve-celery-error-saat-migrasi-open-edx/">oonlab</a></li>
