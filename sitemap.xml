@@ -2,35 +2,56 @@
   
     
       <url>
-        <loc>https://sibunglon.com/2021/03/01/disable-manual-activation-for-a-new-account-in-open-edx/</loc>
-        <lastmod>2021-03-01T01:41:45+08:00</lastmod>
+        <loc>https://sibunglon.com/tags/ayo-belajar-linux/</loc>
+        <lastmod>2021-05-07T22:20:17+08:00</lastmod>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/tags/error/</loc>
+        <lastmod>2021-05-07T22:20:17+08:00</lastmod>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/2021/05/07/fixing-issue-db-open-edx-notifier-celery-workers-is-locked/</loc>
+        <lastmod>2021-05-07T22:20:17+08:00</lastmod>
       </url>
     
   
     
       <url>
         <loc>https://sibunglon.com/tags/open-edx/</loc>
-        <lastmod>2021-03-01T01:41:45+08:00</lastmod>
+        <lastmod>2021-05-07T22:20:17+08:00</lastmod>
       </url>
     
   
     
       <url>
         <loc>https://sibunglon.com/posts/</loc>
-        <lastmod>2021-03-01T01:41:45+08:00</lastmod>
+        <lastmod>2021-05-07T22:20:17+08:00</lastmod>
       </url>
     
   
     
       <url>
         <loc>https://sibunglon.com/tags/</loc>
-        <lastmod>2021-03-01T01:41:45+08:00</lastmod>
+        <lastmod>2021-05-07T22:20:17+08:00</lastmod>
       </url>
     
   
     
       <url>
         <loc>https://sibunglon.com/</loc>
+        <lastmod>2021-05-07T22:20:17+08:00</lastmod>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://sibunglon.com/2021/03/01/disable-manual-activation-for-a-new-account-in-open-edx/</loc>
         <lastmod>2021-03-01T01:41:45+08:00</lastmod>
       </url>
     
@@ -87,13 +108,6 @@
     
       <url>
         <loc>https://sibunglon.com/tags/apache2/</loc>
-        <lastmod>2020-12-19T03:32:07+08:00</lastmod>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/ayo-belajar-linux/</loc>
         <lastmod>2020-12-19T03:32:07+08:00</lastmod>
       </url>
     
@@ -241,13 +255,6 @@
     
       <url>
         <loc>https://sibunglon.com/2020/07/26/database-returned-an-invalid-value-in-queryset.datetimes/</loc>
-        <lastmod>2020-07-26T21:05:49+08:00</lastmod>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://sibunglon.com/tags/error/</loc>
         <lastmod>2020-07-26T21:05:49+08:00</lastmod>
       </url>
     

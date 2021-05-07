@@ -19,7 +19,7 @@
 To create a read only database user MySQL, do the following steps:
   Login as a MySQL administrator.
   Create a new MySQL user account.
-  &amp;gt;&amp;gt;&amp;gt; CREATE USER &amp;#39;dapenda&amp;#39;@&amp;#39;%&amp;#39; IDENTIFIED BY &amp;#39;mypassword&amp;#39;; Grant the SELECT only privilege to user.  &amp;gt;&amp;gt;&amp;gt; GRANT SELECT ON site.* TO &amp;#39;dapenda&amp;#39;@&amp;#39;%&amp;#39;; Reload grant privilege for re-read access table MySQL.</description>
+  &amp;gt;&amp;gt;&amp;gt;CREATEUSER&amp;#39;dapenda&amp;#39;@&amp;#39;%&amp;#39;IDENTIFIEDBY&amp;#39;mypassword&amp;#39;;Grant the SELECT only privilege to user.  &amp;gt;&amp;gt;&amp;gt;GRANTSELECTONsite.*TO&amp;#39;dapenda&amp;#39;@&amp;#39;%&amp;#39;;Reload grant privilege for re-read access table MySQL.  &amp;gt;&amp;gt;&amp;gt;FLUSHPRIVILEGES;Done.  </description>
       </item>
     
       <item>

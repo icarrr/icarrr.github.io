@@ -61,7 +61,7 @@ $ sudo tail -f /edx/var/log/{lms,cms,nginx}/*log ==&gt; /edx/var/log/lms/edx.log
 <meta itemprop="description" content="Beberapa hari yang lalu saya memindahkan instance Open edX dan beberapa menit setelah server aktif, Open edX tidak bisa diakses. Cek servicenya, tetapi semua service dalam keadaan aktif namun ketika melihat lognya, ternyata ada error pada celery, kurang lebih errornya seperti berikut:
 $ sudo tail -f /edx/var/log/{lms,cms,nginx}/*log ==&gt; /edx/var/log/lms/edx.log &lt;== Apr 12 02:21:16 beep [service_variant=lms][celery.worker.consumer][env:sandbox] ERROR [beep 1400] [consumer.py:364] - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 104] Connection reset by peer."><meta itemprop="datePublished" content="2020-04-19T22:38:14&#43;07:00" />
 <meta itemprop="dateModified" content="2020-04-19T22:38:14&#43;07:00" />
-<meta itemprop="wordCount" content="256"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
+<meta itemprop="wordCount" content="229"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
 <meta itemprop="keywords" content="Ayo Belajar Linux,Open edX,Error," />
   <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://sibunglon.com/assets/img/profil.webp"/>
@@ -83,6 +83,9 @@ $ sudo tail -f /edx/var/log/{lms,cms,nginx}/*log ==&gt; /edx/var/log/lms/edx.log
   <a href="/">
     siBunglon
   </a>
+  <a href="/posts">
+    Posts
+  </a>
 </nav>
 
     
@@ -103,30 +106,11 @@ Trying again in 32.00 seconds...
 </code></pre></div><p>Dari log diatas, terdapat error message <code>Connection reset by peer</code>, penyebab issue tersebut sebenarnya sudah jelas yaitu kesalahan autentikasi.</p>
 <p>Maka perlu dilakukan validasi, apakah user tersebut available atau tidak. Untuk melakukan validasi user, dapat menggunakan command:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo rabbitmqctl authenticate_user userCeleryedX passwordCeleryedX
-</code></pre></div><p>Ganti value <em>userCeleryedX</em> dan <em>passwordCeleryedX</em>.</p>
-<ul>
-<li>
-<p>userCeleryedX</p>
-<p>Sesuai user yang digunakan oleh instance tersebut, dapat dicek dari file <em>lms.auth.json</em> dan <em>cms.auth.json</em></p>
-</li>
-<li>
-<p>passwordCeleryedX</p>
-<p>Sesuai password yang digunakan oleh instance tersebut, dapat dicek dari file <em>lms.auth.json</em> dan <em>cms.auth.json</em></p>
-</li>
-</ul>
+</code></pre></div><p>Ganti value <em>userCeleryedX</em> dan <em>passwordCeleryedX</em> sesuai user yang digunakan oleh instance tersebut, dapat dicek dari file <em>lms.auth.json</em> dan <em>cms.auth.json</em>.</p>
 <p>Jika setelah menjalankan command validasi validasi user terdapat error messege <code>Error: failed to authenticate user</code>, berarti perlu dilakukan pembuatan user tersebut.</p>
 <p>Buat user celery dengan menggunakan password yang sama pada file <em>lms.auth.json</em> dan <em>cms.auth.json</em>.</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo rabbitmqctl add_user userCeleryedX passwordCeleryedX
-</code></pre></div><ul>
-<li>
-<p>userCeleryedX</p>
-<p>Sesuai user yang digunakan oleh instance tersebut, dapat dicek dari file <em>lms.auth.json</em> dan <em>cms.auth.json</em></p>
-</li>
-<li>
-<p>passwordCeleryedX</p>
-<p>Sesuai password yang digunakan oleh instance tersebut, dapat dicek dari file <em>lms.auth.json</em> dan <em>cms.auth.json</em></p>
-</li>
-</ul>
+</code></pre></div><p>Ganti value <em>userCeleryedX</em> dan <em>passwordCeleryedX</em> sesuai user yang digunakan oleh instance tersebut, dapat dicek dari file <em>lms.auth.json</em> dan <em>cms.auth.json</em>.</p>
 <p>Set permission untuk user celery yang baru saja dibuat.</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo rabbitmqctl set_permissions -p / userCeleryedX <span class="s2">&#34;.*&#34;</span> <span class="s2">&#34;.*&#34;</span> <span class="s2">&#34;.*&#34;</span>
 </code></pre></div><p>Restart service Open edX</p>

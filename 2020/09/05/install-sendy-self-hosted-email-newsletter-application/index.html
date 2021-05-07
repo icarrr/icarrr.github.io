@@ -65,7 +65,7 @@ Sendy is a self hosted email newsletter application that lets you send trackable
 To install sendy on Ubuntu, do the following steps:
  Login to server, and install package.  $ add-apt-repository ppa:ondrej/php $ apt update $ apt install php unzip $ apt install php-fpm libapache2-mod-php php-mysql php-curl php-xml $ apt install mariadb-server mariadb-client Let’s run the security script to harden the SQL."><meta itemprop="datePublished" content="2020-09-05T03:17:01&#43;08:00" />
 <meta itemprop="dateModified" content="2020-09-05T03:17:01&#43;08:00" />
-<meta itemprop="wordCount" content="876"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
+<meta itemprop="wordCount" content="860"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
 <meta itemprop="keywords" content="Ayo Belajar Linux,Sendy," />
   <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://sibunglon.com/assets/img/profil.webp"/>
@@ -88,6 +88,9 @@ To install sendy on Ubuntu, do the following steps:
       <nav>
   <a href="/">
     siBunglon
+  </a>
+  <a href="/posts">
+    Posts
   </a>
 </nav>
 
@@ -184,13 +187,13 @@ Thanks <span class="k">for</span> using MariaDB!
 </code></pre></div><ol start="4">
 <li>Create a new database and user for sendy.</li>
 </ol>
-<div class="highlight"><pre class="chroma"><code class="language-mysql" data-lang="mysql"><span class="o">&gt;&gt;&gt;</span> <span class="k">CREATE</span> <span class="k">DATABASE</span> <span class="n">sendy</span><span class="p">;</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="k">GRANT</span> <span class="k">ALL</span> <span class="k">ON</span> <span class="n">sendy</span><span class="p">.</span><span class="o">*</span> <span class="k">TO</span> <span class="s1">&#39;sendy&#39;</span><span class="o">@</span><span class="s1">&#39;localhost&#39;</span> <span class="k">IDENTIFIED</span> <span class="k">BY</span> <span class="s1">&#39;mypassword&#39;</span><span class="p">;</span>
-</code></pre></div><ol start="5">
+<div class="highlight"><pre class="chroma"><code class="language-mysql" data-lang="mysql"><span class="o">&gt;&gt;&gt;</span><span class="w"> </span><span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">sendy</span><span class="p">;</span><span class="w">
+</span><span class="w"></span><span class="o">&gt;&gt;&gt;</span><span class="w"> </span><span class="k">GRANT</span><span class="w"> </span><span class="k">ALL</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">sendy</span><span class="p">.</span><span class="o">*</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="s1">&#39;sendy&#39;</span><span class="o">@</span><span class="s1">&#39;localhost&#39;</span><span class="w"> </span><span class="k">IDENTIFIED</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="s1">&#39;mypassword&#39;</span><span class="p">;</span><span class="w">
+</span></code></pre></div><ol start="5">
 <li>Reload grant privilege for re-read access table MySQL.</li>
 </ol>
-<div class="highlight"><pre class="chroma"><code class="language-mysql" data-lang="mysql"><span class="o">&gt;&gt;&gt;</span> <span class="k">FLUSH</span> <span class="k">PRIVILEGES</span><span class="p">;</span>
-</code></pre></div><ol start="6">
+<div class="highlight"><pre class="chroma"><code class="language-mysql" data-lang="mysql"><span class="o">&gt;&gt;&gt;</span><span class="w"> </span><span class="k">FLUSH</span><span class="w"> </span><span class="k">PRIVILEGES</span><span class="p">;</span><span class="w">
+</span></code></pre></div><ol start="6">
 <li>
 <p>Download sendy master file to your server.</p>
 </li>

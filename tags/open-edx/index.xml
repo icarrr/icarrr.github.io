@@ -5,10 +5,19 @@
     <description>Recent content in Open edX on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Mar 2021 01:41:45 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 07 May 2021 22:20:17 +0800</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/open-edx/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Fixing Issue DB Open edX Notifier Celery Workers is Locked</title>
+        <link>https://sibunglon.com/2021/05/07/fixing-issue-db-open-edx-notifier-celery-workers-is-locked/</link>
+        <pubDate>Fri, 07 May 2021 22:20:17 +0800</pubDate>
+        <guid>https://sibunglon.com/2021/05/07/fixing-issue-db-open-edx-notifier-celery-workers-is-locked/</guid>
+        <description>Selain dari issue user celery tidak ada setelah instance Open edX dimigrasi, ada kemungkinan issue lain yang mungkin didapatkan setelah migrasi instance, yaitu service notifier-celery-workers gagal start (FATAL, Exited too quickly (process log may have details)).
+Issue notifier-celery-workers gagal start bisa saja ditemukan setelah migrasi instance dikarenakan sebelum migrasi, service belum di matikan sementara service sedang melayani beberapa query transactional dan akibatnya database yang digunakan service bisa terkunci (terutama jika masih menggunakan SQLite) yang artinya service tidak dapat read maupun write data ke database.</description>
+      </item>
     
       <item>
         <title>Disable Manual Activation for a New Account in Open edX</title>

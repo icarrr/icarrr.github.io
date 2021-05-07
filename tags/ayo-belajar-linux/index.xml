@@ -5,10 +5,19 @@
     <description>Recent content in Ayo Belajar Linux on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 Dec 2020 03:32:07 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 07 May 2021 22:20:17 +0800</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/ayo-belajar-linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Fixing Issue DB Open edX Notifier Celery Workers is Locked</title>
+        <link>https://sibunglon.com/2021/05/07/fixing-issue-db-open-edx-notifier-celery-workers-is-locked/</link>
+        <pubDate>Fri, 07 May 2021 22:20:17 +0800</pubDate>
+        <guid>https://sibunglon.com/2021/05/07/fixing-issue-db-open-edx-notifier-celery-workers-is-locked/</guid>
+        <description>Selain dari issue user celery tidak ada setelah instance Open edX dimigrasi, ada kemungkinan issue lain yang mungkin didapatkan setelah migrasi instance, yaitu service notifier-celery-workers gagal start (FATAL, Exited too quickly (process log may have details)).
+Issue notifier-celery-workers gagal start bisa saja ditemukan setelah migrasi instance dikarenakan sebelum migrasi, service belum di matikan sementara service sedang melayani beberapa query transactional dan akibatnya database yang digunakan service bisa terkunci (terutama jika masih menggunakan SQLite) yang artinya service tidak dapat read maupun write data ke database.</description>
+      </item>
     
       <item>
         <title>Extract SSL Certificate and SSL Certificate Key From .PFX File</title>
@@ -64,7 +73,7 @@ To install sendy on Ubuntu, do the following steps:
 To create a read only database user MySQL, do the following steps:
   Login as a MySQL administrator.
   Create a new MySQL user account.
-  &amp;gt;&amp;gt;&amp;gt; CREATE USER &amp;#39;dapenda&amp;#39;@&amp;#39;%&amp;#39; IDENTIFIED BY &amp;#39;mypassword&amp;#39;; Grant the SELECT only privilege to user.  &amp;gt;&amp;gt;&amp;gt; GRANT SELECT ON site.* TO &amp;#39;dapenda&amp;#39;@&amp;#39;%&amp;#39;; Reload grant privilege for re-read access table MySQL.</description>
+  &amp;gt;&amp;gt;&amp;gt;CREATEUSER&amp;#39;dapenda&amp;#39;@&amp;#39;%&amp;#39;IDENTIFIEDBY&amp;#39;mypassword&amp;#39;;Grant the SELECT only privilege to user.  &amp;gt;&amp;gt;&amp;gt;GRANTSELECTONsite.*TO&amp;#39;dapenda&amp;#39;@&amp;#39;%&amp;#39;;Reload grant privilege for re-read access table MySQL.  &amp;gt;&amp;gt;&amp;gt;FLUSHPRIVILEGES;Done.  </description>
       </item>
     
       <item>
