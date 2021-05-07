@@ -5,10 +5,21 @@
     <description>Recent content in Posts on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 May 2021 22:20:17 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 07 May 2021 23:25:13 +0800</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Course Visibility Have Been Set to none But the Course Show on Index</title>
+        <link>https://sibunglon.com/2021/05/07/course-visibility-have-been-set-to-none-but-the-course-show-on-index/</link>
+        <pubDate>Fri, 07 May 2021 23:25:13 +0800</pubDate>
+        <guid>https://sibunglon.com/2021/05/07/course-visibility-have-been-set-to-none-but-the-course-show-on-index/</guid>
+        <description>I&amp;rsquo;m using Open edX relase ironwood.master (installed by 2020), i can&amp;rsquo;t hide the course from all users after chage course visibility from Advanced settings in the studio.
+If this is also the case with you, you can fix it by following these steps:
+  Login to server, and edit lms.env.json in /edx/app/edxapp or lms.yml in /edx/etc if you are using Open edX release juniper or latest.
+  Find COURSE_CATALOG_VISIBILITY_PERMISSION and change the value with see_in_catalog.</description>
+      </item>
     
       <item>
         <title>Fixing Issue DB Open edX Notifier Celery Workers is Locked</title>
@@ -17,6 +28,25 @@
         <guid>https://sibunglon.com/2021/05/07/fixing-issue-db-open-edx-notifier-celery-workers-is-locked/</guid>
         <description>Selain dari issue user celery tidak ada setelah instance Open edX dimigrasi, ada kemungkinan issue lain yang mungkin didapatkan setelah migrasi instance, yaitu service notifier-celery-workers gagal start (FATAL, Exited too quickly (process log may have details)).
 Issue notifier-celery-workers gagal start bisa saja ditemukan setelah migrasi instance dikarenakan sebelum migrasi, service belum di matikan sementara service sedang melayani beberapa query transactional dan akibatnya database yang digunakan service bisa terkunci (terutama jika masih menggunakan SQLite) yang artinya service tidak dapat read maupun write data ke database.</description>
+      </item>
+    
+      <item>
+        <title>Install Mikhmon Online on Ubuntu 18.04 Using Nginx</title>
+        <link>https://sibunglon.com/2021/04/19/install-mikhmon-online-on-ubuntu-18.04-using-nginx/</link>
+        <pubDate>Mon, 19 Apr 2021 15:40:52 +0800</pubDate>
+        <guid>https://sibunglon.com/2021/04/19/install-mikhmon-online-on-ubuntu-18.04-using-nginx/</guid>
+        <description>MIKHMON MikroTik Hotspot Monitor adalah aplikasi berbasis web (MikroTik API PHP class) untuk membantu manajemen Hotspot MikroTik. Khususnya MikroTik yang tidak mendukung User Manager. Mikhmon bukan radius server, jadi tidak harus selalu aktif. Mikhmon dapat diaktifkan saat dibutuhkan atau sesuai kebutuhan.
+Agar dapat mengoperasikan Mikhmon diperlukan sebuah webserver + PHP yang bisa diinstall diberbagai sistem operasi. Mikhmon dapat dijalakan di Windows, Linux, Android maupun Openwrt. Selain itu Mikhmon juga bisa diupload ke hosting atau VPS.</description>
+      </item>
+    
+      <item>
+        <title>Save Button on Problem Editor Open edX is Not Respond</title>
+        <link>https://sibunglon.com/2021/04/14/save-button-on-problem-editor-open-edx-is-not-respond/</link>
+        <pubDate>Wed, 14 Apr 2021 23:01:21 +0800</pubDate>
+        <guid>https://sibunglon.com/2021/04/14/save-button-on-problem-editor-open-edx-is-not-respond/</guid>
+        <description>The most common cause is trying to use special characters, etc. greater than (&amp;gt;), less than (&amp;lt;), and ampersand (&amp;amp;) in the problem editor.
+To resolve this issue, replace these characters on problem text with the HTML entities.
+ To enter &amp;gt;, type &amp;amp;gt;. To enter &amp;lt;, type &amp;amp;lt;. To enter &amp;amp;, type &amp;amp;amp;.  </description>
       </item>
     
       <item>
@@ -208,6 +238,16 @@ If it does not exist already, create the folder /tmp/certificates owned by the u
 Sendy is a self hosted email newsletter application that lets you send trackable emails via Amazon Simple Email Service (SES).
 To install sendy on Ubuntu, do the following steps:
  Login to server, and install package.  $ add-apt-repository ppa:ondrej/php $ apt update $ apt install php unzip $ apt install php-fpm libapache2-mod-php php-mysql php-curl php-xml $ apt install mariadb-server mariadb-client Let’s run the security script to harden the SQL.</description>
+      </item>
+    
+      <item>
+        <title>Create a Read Only MongoDB User</title>
+        <link>https://sibunglon.com/2020/09/05/create-a-read-only-mongodb-user/</link>
+        <pubDate>Sat, 05 Sep 2020 03:13:20 +0800</pubDate>
+        <guid>https://sibunglon.com/2020/09/05/create-a-read-only-mongodb-user/</guid>
+        <description>There are times when you need account read only access to a database.
+To create a read only database user MongoDB, do the following steps:
+ Login as a MongoDB administrator.  $ mongo -u admin -p --authenticationDatabase admin Show list of database on MongoDB.  &amp;gt;&amp;gt;&amp;gt; show dbs Select database.  &amp;gt;&amp;gt;&amp;gt; use edxapp Create a new user with permission read only on the database.  &amp;gt;&amp;gt;&amp;gt;db.createUser({user:&amp;#34;edxapp_read&amp;#34;,pwd:&amp;#34;password&amp;#34;,roles:[{role:&amp;#34;read&amp;#34;,db:&amp;#34;edxapp&amp;#34;}]})Done.  </description>
       </item>
     
       <item>
@@ -584,6 +624,16 @@ Banyak yang menggunakan analisis SWOT untuk menganalisa situasi, kondisi, dan fa
         <guid>https://sibunglon.com/2019/04/09/valueerror-saat-setup-mssql-server-di-linux/</guid>
         <description>ValueError: unknown locale: UTF-8? Beberapa hari yang lalu saya sempat menulis step by step install Microsoft SQL Server (MSSQL Server) di environment Linux, namun mungkin saja ada yang menemukan error salah satunya error dengan message ValueError: unknown locale: UTF-8, gak usah takut karena dari masalah itu ataupun lainnya kita dapat pelajaran baru😆
 Disuatu waktu saya install MSSQL Server Linux di environment berbeda dari sebelumnya, saya ikuti tuh step by step installasi MSSQL Server yang saya tulis sebelumnya, alhamdulillah dapat rejeki, dapat ValueError: unknown locale: UTF-8 pada saat setup MSSQL Server🤣 Dengan kemampuan sok tau saya😆 langsung disimpulkan maksud dari error message tersebut yaitu Lokal UTF-8 tidak di kenal.</description>
+      </item>
+    
+      <item>
+        <title>Create Open-Ended Text Input Using Simple Problem of Open edX</title>
+        <link>https://sibunglon.com/2019/04/07/create-open-ended-text-input-using-simple-problem-of-open-edx/</link>
+        <pubDate>Sun, 07 Apr 2019 13:11:40 +0800</pubDate>
+        <guid>https://sibunglon.com/2019/04/07/create-open-ended-text-input-using-simple-problem-of-open-edx/</guid>
+        <description>Text input problems can be setup to accept open-ended responses using regular expressions in the advanced editor.
+To format your text input problem to accept any response, assign the answer attribute as follows: answer=&amp;quot;.*.&amp;quot;.
+Here is an example open input text with a regular expression, note the regexp within the type attribute. In this example, the size of the text line has been set to 20 characters as the default. You are free to add more characters if you anticipate longer responses.</description>
       </item>
     
       <item>

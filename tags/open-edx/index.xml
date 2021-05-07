@@ -5,10 +5,21 @@
     <description>Recent content in Open edX on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 May 2021 22:20:17 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 07 May 2021 23:25:13 +0800</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/open-edx/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Course Visibility Have Been Set to none But the Course Show on Index</title>
+        <link>https://sibunglon.com/2021/05/07/course-visibility-have-been-set-to-none-but-the-course-show-on-index/</link>
+        <pubDate>Fri, 07 May 2021 23:25:13 +0800</pubDate>
+        <guid>https://sibunglon.com/2021/05/07/course-visibility-have-been-set-to-none-but-the-course-show-on-index/</guid>
+        <description>I&amp;rsquo;m using Open edX relase ironwood.master (installed by 2020), i can&amp;rsquo;t hide the course from all users after chage course visibility from Advanced settings in the studio.
+If this is also the case with you, you can fix it by following these steps:
+  Login to server, and edit lms.env.json in /edx/app/edxapp or lms.yml in /edx/etc if you are using Open edX release juniper or latest.
+  Find COURSE_CATALOG_VISIBILITY_PERMISSION and change the value with see_in_catalog.</description>
+      </item>
     
       <item>
         <title>Fixing Issue DB Open edX Notifier Celery Workers is Locked</title>
@@ -17,6 +28,16 @@
         <guid>https://sibunglon.com/2021/05/07/fixing-issue-db-open-edx-notifier-celery-workers-is-locked/</guid>
         <description>Selain dari issue user celery tidak ada setelah instance Open edX dimigrasi, ada kemungkinan issue lain yang mungkin didapatkan setelah migrasi instance, yaitu service notifier-celery-workers gagal start (FATAL, Exited too quickly (process log may have details)).
 Issue notifier-celery-workers gagal start bisa saja ditemukan setelah migrasi instance dikarenakan sebelum migrasi, service belum di matikan sementara service sedang melayani beberapa query transactional dan akibatnya database yang digunakan service bisa terkunci (terutama jika masih menggunakan SQLite) yang artinya service tidak dapat read maupun write data ke database.</description>
+      </item>
+    
+      <item>
+        <title>Save Button on Problem Editor Open edX is Not Respond</title>
+        <link>https://sibunglon.com/2021/04/14/save-button-on-problem-editor-open-edx-is-not-respond/</link>
+        <pubDate>Wed, 14 Apr 2021 23:01:21 +0800</pubDate>
+        <guid>https://sibunglon.com/2021/04/14/save-button-on-problem-editor-open-edx-is-not-respond/</guid>
+        <description>The most common cause is trying to use special characters, etc. greater than (&amp;gt;), less than (&amp;lt;), and ampersand (&amp;amp;) in the problem editor.
+To resolve this issue, replace these characters on problem text with the HTML entities.
+ To enter &amp;gt;, type &amp;amp;gt;. To enter &amp;lt;, type &amp;amp;lt;. To enter &amp;amp;, type &amp;amp;amp;.  </description>
       </item>
     
       <item>
@@ -281,6 +302,16 @@ I myself had an error when installing Open EdX, the error was the same as in the
         <description>About Open edX Open edX is the massively scalable learning software platform behind edX. edX is the online learning destination founded by Harvard and MIT in 2012.
 edX offers high-quality courses from the world’s best universities and institutions to learners everywhere. It is the only leading MOOC provider that is both nonprofit and open source. The edX mission is to:
  Increase access to high-quality education for everyone, everywhere Enhance teaching and learning on campus and online Advance teaching and learning through research  Play with Open edX How to use Open edX in my own environment?</description>
+      </item>
+    
+      <item>
+        <title>Create Open-Ended Text Input Using Simple Problem of Open edX</title>
+        <link>https://sibunglon.com/2019/04/07/create-open-ended-text-input-using-simple-problem-of-open-edx/</link>
+        <pubDate>Sun, 07 Apr 2019 13:11:40 +0800</pubDate>
+        <guid>https://sibunglon.com/2019/04/07/create-open-ended-text-input-using-simple-problem-of-open-edx/</guid>
+        <description>Text input problems can be setup to accept open-ended responses using regular expressions in the advanced editor.
+To format your text input problem to accept any response, assign the answer attribute as follows: answer=&amp;quot;.*.&amp;quot;.
+Here is an example open input text with a regular expression, note the regexp within the type attribute. In this example, the size of the text line has been set to 20 characters as the default. You are free to add more characters if you anticipate longer responses.</description>
       </item>
     
   </channel>

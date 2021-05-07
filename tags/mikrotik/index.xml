@@ -5,10 +5,19 @@
     <description>Recent content in MikroTik on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 09 Feb 2019 23:25:02 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 19 Apr 2021 15:40:52 +0800</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/mikrotik/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Install Mikhmon Online on Ubuntu 18.04 Using Nginx</title>
+        <link>https://sibunglon.com/2021/04/19/install-mikhmon-online-on-ubuntu-18.04-using-nginx/</link>
+        <pubDate>Mon, 19 Apr 2021 15:40:52 +0800</pubDate>
+        <guid>https://sibunglon.com/2021/04/19/install-mikhmon-online-on-ubuntu-18.04-using-nginx/</guid>
+        <description>MIKHMON MikroTik Hotspot Monitor adalah aplikasi berbasis web (MikroTik API PHP class) untuk membantu manajemen Hotspot MikroTik. Khususnya MikroTik yang tidak mendukung User Manager. Mikhmon bukan radius server, jadi tidak harus selalu aktif. Mikhmon dapat diaktifkan saat dibutuhkan atau sesuai kebutuhan.
+Agar dapat mengoperasikan Mikhmon diperlukan sebuah webserver + PHP yang bisa diinstall diberbagai sistem operasi. Mikhmon dapat dijalakan di Windows, Linux, Android maupun Openwrt. Selain itu Mikhmon juga bisa diupload ke hosting atau VPS.</description>
+      </item>
     
       <item>
         <title>Membangun Hotspot Sistem Voucher</title>
