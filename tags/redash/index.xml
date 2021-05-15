@@ -1,0 +1,24 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Redash on The Official Site of siBunglon</title>
+    <link>https://sibunglon.com/tags/redash/</link>
+    <description>Recent content in Redash on The Official Site of siBunglon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 15 May 2021 20:57:14 +0800</lastBuildDate>
+    
+      <atom:link href="https://sibunglon.com/tags/redash/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      <item>
+        <title>Redash on Docker Connect to Database Over SSH Tunnel</title>
+        <link>https://sibunglon.com/2021/05/15/redash-on-docker-connect-to-database-over-ssh-tunnel/</link>
+        <pubDate>Sat, 15 May 2021 20:57:14 +0800</pubDate>
+        <guid>https://sibunglon.com/2021/05/15/redash-on-docker-connect-to-database-over-ssh-tunnel/</guid>
+        <description>Redas is an application for data visualization from a database and is Open Source.
+Currently Redash can be run directly on several cloud providers using the Redash image provided, including Docker. Please visit the official website for more information
+You can install Redash in a local environment (laptop or personal pc) and you can also connect it to a database in the local environment as well a database on a public server.</description>
+      </item>
+    
+  </channel>
+</rss>

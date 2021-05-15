@@ -5,10 +5,30 @@
     <description>Recent content in Posts on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 May 2021 23:25:13 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 15 May 2021 21:55:35 +0800</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Error Install MySQLdb Because Can&#39;t Find my_config.h</title>
+        <link>https://sibunglon.com/2021/05/15/error-install-mysqldb-because-cant-find-my_config.h/</link>
+        <pubDate>Sat, 15 May 2021 21:55:35 +0800</pubDate>
+        <guid>https://sibunglon.com/2021/05/15/error-install-mysqldb-because-cant-find-my_config.h/</guid>
+        <description>Usually issues are found because there are some dependencies that are required but not installed yet. Make sure libmysqlclient-dev is installed, also check the /usr/include/mysql directory to make sure the file my_config.h does not exist like the message on the log.
+For the case I&amp;rsquo;ve found, the file my_config.h is not in the /usr/include/mysql directory and for fixing it use the following command:
+$ cd /usr/include/mysql $ sudo wget https://raw.githubusercontent.com/paulfitz/mysql-connector-c/master/include/my_config.h -O my_config.</description>
+      </item>
+    
+      <item>
+        <title>Redash on Docker Connect to Database Over SSH Tunnel</title>
+        <link>https://sibunglon.com/2021/05/15/redash-on-docker-connect-to-database-over-ssh-tunnel/</link>
+        <pubDate>Sat, 15 May 2021 20:57:14 +0800</pubDate>
+        <guid>https://sibunglon.com/2021/05/15/redash-on-docker-connect-to-database-over-ssh-tunnel/</guid>
+        <description>Redas is an application for data visualization from a database and is Open Source.
+Currently Redash can be run directly on several cloud providers using the Redash image provided, including Docker. Please visit the official website for more information
+You can install Redash in a local environment (laptop or personal pc) and you can also connect it to a database in the local environment as well a database on a public server.</description>
+      </item>
     
       <item>
         <title>Course Visibility Have Been Set to none But the Course Show on Index</title>

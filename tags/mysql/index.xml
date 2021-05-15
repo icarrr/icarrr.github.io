@@ -5,10 +5,20 @@
     <description>Recent content in MySQL on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 Sep 2020 03:13:20 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 15 May 2021 21:55:35 +0800</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Error Install MySQLdb Because Can&#39;t Find my_config.h</title>
+        <link>https://sibunglon.com/2021/05/15/error-install-mysqldb-because-cant-find-my_config.h/</link>
+        <pubDate>Sat, 15 May 2021 21:55:35 +0800</pubDate>
+        <guid>https://sibunglon.com/2021/05/15/error-install-mysqldb-because-cant-find-my_config.h/</guid>
+        <description>Usually issues are found because there are some dependencies that are required but not installed yet. Make sure libmysqlclient-dev is installed, also check the /usr/include/mysql directory to make sure the file my_config.h does not exist like the message on the log.
+For the case I&amp;rsquo;ve found, the file my_config.h is not in the /usr/include/mysql directory and for fixing it use the following command:
+$ cd /usr/include/mysql $ sudo wget https://raw.githubusercontent.com/paulfitz/mysql-connector-c/master/include/my_config.h -O my_config.</description>
+      </item>
     
       <item>
         <title>Create a Read Only MongoDB User</title>
