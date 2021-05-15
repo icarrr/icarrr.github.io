@@ -15,7 +15,7 @@
         <link>https://sibunglon.com/2021/05/15/redash-on-docker-connect-to-database-over-ssh-tunnel/</link>
         <pubDate>Sat, 15 May 2021 20:57:14 +0800</pubDate>
         <guid>https://sibunglon.com/2021/05/15/redash-on-docker-connect-to-database-over-ssh-tunnel/</guid>
-        <description>Redas is an application for data visualization from a database and is Open Source.
+        <description>Redash is an application for data visualization from a database and is Open Source.
 Currently Redash can be run directly on several cloud providers using the Redash image provided, including Docker. Please visit the official website for more information
 You can install Redash in a local environment (laptop or personal pc) and you can also connect it to a database in the local environment as well a database on a public server.</description>
       </item>
