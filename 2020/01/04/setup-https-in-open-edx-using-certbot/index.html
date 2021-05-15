@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Faizar Septiawan">
   <meta name="description" content="Read - Search - Ask | Personal Site | Catch your problem solution or read interesting stories on my blog!">
-  <meta name="keywords" content="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng">
+  <meta name="keywords" content="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Let&#39;s Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng">
   
   
   
@@ -50,7 +50,7 @@
 
   <meta property="og:title" content="Setup HTTPS in Open edX Using Certbot" />
 <meta property="og:description" content="By default Open edX does not provide an SSL configuration, but we can add it manually. As per the topic of this article, here I will enable HTTPS on Open edX using Certbot.
-Certbot is a new breakthrough from the Let&rsquo;s Encrypt Web Security Certificate Provider where Lets Encrypt provides SSL for free.
+Certbot is a new breakthrough from the Let&rsquo;s Encrypt Web Security Certificate Provider where Let&rsquo;s Encrypt provides SSL for free.
  Note: In the following example, in Open edX I point Course Management System (CMS) using the domain studio." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://sibunglon.com/2020/01/04/setup-https-in-open-edx-using-certbot/" /><meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"/><meta property="article:section" content="posts" />
@@ -60,7 +60,7 @@ Certbot is a new breakthrough from the Let&rsquo;s Encrypt Web Security Certific
 
   <meta itemprop="name" content="Setup HTTPS in Open edX Using Certbot">
 <meta itemprop="description" content="By default Open edX does not provide an SSL configuration, but we can add it manually. As per the topic of this article, here I will enable HTTPS on Open edX using Certbot.
-Certbot is a new breakthrough from the Let&rsquo;s Encrypt Web Security Certificate Provider where Lets Encrypt provides SSL for free.
+Certbot is a new breakthrough from the Let&rsquo;s Encrypt Web Security Certificate Provider where Let&rsquo;s Encrypt provides SSL for free.
  Note: In the following example, in Open edX I point Course Management System (CMS) using the domain studio."><meta itemprop="datePublished" content="2020-01-04T02:54:23&#43;07:00" />
 <meta itemprop="dateModified" content="2020-01-04T02:54:23&#43;07:00" />
 <meta itemprop="wordCount" content="1117"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
@@ -70,7 +70,7 @@ Certbot is a new breakthrough from the Let&rsquo;s Encrypt Web Security Certific
 
 <meta name="twitter:title" content="Setup HTTPS in Open edX Using Certbot"/>
 <meta name="twitter:description" content="By default Open edX does not provide an SSL configuration, but we can add it manually. As per the topic of this article, here I will enable HTTPS on Open edX using Certbot.
-Certbot is a new breakthrough from the Let&rsquo;s Encrypt Web Security Certificate Provider where Lets Encrypt provides SSL for free.
+Certbot is a new breakthrough from the Let&rsquo;s Encrypt Web Security Certificate Provider where Let&rsquo;s Encrypt provides SSL for free.
  Note: In the following example, in Open edX I point Course Management System (CMS) using the domain studio."/>
 
   
@@ -100,9 +100,9 @@ Certbot is a new breakthrough from the Let&rsquo;s Encrypt Web Security Certific
         <span class="date">January 4, 2020</span></small>
       <h1>Setup HTTPS in Open edX Using Certbot</h1>
     </header>
-    <section><p><img src="/assets/img/Open-edX/open-edx-new.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Lets Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
+    <section><p><img src="/assets/img/Open-edX/open-edx-new.png" alt="Linux, Unix, BSD, MacOS, Komunitas Pengguna Linux Indonesia, KPLI Klaten, KPLI Bulukumba, MikroTik, MikroTik Indonesia, FreeBSD, FreeBSD Indonesia, Cisco, Cisco Indonesia, BLC Telkom Klaten, Ansible, Nginx, Apache2, Caddy Server, Ayo Belajar Linux, Cloud Computing, e-Learning, Open edX, Proxmox, Sendy, Microsoft SQL Server, MySQL, PostgreSQL, Let&#39;s Encrypt, Case Study, Atlassian, Virtualization, Faizar Septiawan, Icar, siBunglonGanteng, siBunglonLabs, Orang Ganteng"></p>
 <p>By default Open edX does not provide an SSL configuration, but we can add it manually. As per the topic of this article, here I will enable HTTPS on Open edX using Certbot.</p>
-<p><em>Certbot</em> is a new breakthrough from the Let&rsquo;s Encrypt Web Security Certificate Provider where Lets Encrypt provides SSL for free.</p>
+<p><em>Certbot</em> is a new breakthrough from the Let&rsquo;s Encrypt Web Security Certificate Provider where Let&rsquo;s Encrypt provides SSL for free.</p>
 <blockquote>
 <p>Note: In the following example, in Open edX I point <em>Course Management System (CMS)</em> using the domain <em>studio.e-Learning.sibunglon.com</em> while <em>Learning Management System (LMS)</em> using the domain <em>e-Learning.sibunglon.com</em>.</p>
 </blockquote>

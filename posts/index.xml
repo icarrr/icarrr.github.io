@@ -411,7 +411,7 @@ The following example, anyone who accesses the *.redirect.sibunglon.com domain w
         <pubDate>Sat, 04 Jan 2020 02:54:23 +0700</pubDate>
         <guid>https://sibunglon.com/2020/01/04/setup-https-in-open-edx-using-certbot/</guid>
         <description>By default Open edX does not provide an SSL configuration, but we can add it manually. As per the topic of this article, here I will enable HTTPS on Open edX using Certbot.
-Certbot is a new breakthrough from the Let&amp;rsquo;s Encrypt Web Security Certificate Provider where Lets Encrypt provides SSL for free.
+Certbot is a new breakthrough from the Let&amp;rsquo;s Encrypt Web Security Certificate Provider where Let&amp;rsquo;s Encrypt provides SSL for free.
  Note: In the following example, in Open edX I point Course Management System (CMS) using the domain studio.</description>
       </item>
     
