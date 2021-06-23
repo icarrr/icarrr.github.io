@@ -5,10 +5,20 @@
     <description>Recent content in Error on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 May 2021 22:20:17 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 23 Jun 2021 21:55:50 +0800</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/error/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Discussion Forum Open edX Not Visible for Single User</title>
+        <link>https://sibunglon.com/2021/06/23/discussion-forum-open-edx-not-visible-for-single-user/</link>
+        <pubDate>Wed, 23 Jun 2021 21:55:50 +0800</pubDate>
+        <guid>https://sibunglon.com/2021/06/23/discussion-forum-open-edx-not-visible-for-single-user/</guid>
+        <description>A few days ago, a students using our system reported that he couldn&amp;rsquo;t see the discussion forum on the course. But another student, discus forums can be seen.
+When i check the LMS log, i found this:
+Jun 21 18:15:01 velvet [service_variant=lms][edx.courseware][env:sandbox] ERROR [velvet 8339] [views.py:592] - Error in /courses/course-v1:STEL+Beginner+2020_Run1/discussion/forum/: user=chyntia, effective_user=chyntia, course=course-v1:STEL+Beginner+2020_Run1 Traceback (most recent call last): File &amp;#34;/edx/app/edxapp/edx-platform/lms/djangoapps/courseware/views/views.py&amp;#34;, line 521, in get return super(CourseTabView, self).get(request, course=course, page_context=page_context, **kwargs) File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.</description>
+      </item>
     
       <item>
         <title>Fixing Issue DB Open edX Notifier Celery Workers is Locked</title>
