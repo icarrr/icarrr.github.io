@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en-us" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+  <title>Certbot - No module named &#39;_cffi_backend&#39;</title>
+  
+  <meta http-equiv="cache-control" content="public, max-age=31536000" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Faizar Septiawan">
+  <meta name="description" content="Read - Search - Ask | Personal Site | Catch your problem solution or read interesting stories on my blog!">
+  <meta name="keywords" content="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Let&#39;s Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs">
+  
+  
+  
+  <meta name="google-site-verification" content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM" />
+  
+  
+  
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110194945-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110194945-3');
+  </script>
+  
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/css/external.min.css" media="screen">
+  
+  
+  <link rel="stylesheet" href="/assets/css/styles.css" media="screen">
+  <link src="/assets/custom/googlefonts/roboto.css" rel="stylesheet">
+  
+
+  
+  
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/src/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="/src/images/favicon.ico">
+  
+
+  
+  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
+
+  <meta property="og:title" content="Certbot - No module named &#39;_cffi_backend&#39;" />
+<meta property="og:description" content="Today, one of the server manage by me has failed to auto renew the https certificate.
+Btw, i&rsquo;m using certificate from R3 by Let&rsquo;s Encrypt. When i tried to manual renew using sudo certbot renew, i got this error message (see below for the error message).
+ubuntu@ip-172-26-4-157:~$ sudo certbot renew Traceback (most recent call last): File &#34;/usr/bin/certbot&#34;, line 11, in &lt;module&gt; load_entry_point(&#39;certbot==0.31.0&#39;, &#39;console_scripts&#39;, &#39;certbot&#39;)() File &#34;/usr/lib/python3/dist-packages/pkg_resources/__init__.py&#34;, line 542, in load_entry_point return get_distribution(dist)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sibunglon.com/2021/07/10/certbot-no-module-named-_cffi_backend/" /><meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-07-10T22:11:10+08:00" />
+<meta property="article:modified_time" content="2021-07-10T22:11:10+08:00" /><meta property="og:site_name" content="The Official Site of siBunglon" />
+
+
+  <meta itemprop="name" content="Certbot - No module named &#39;_cffi_backend&#39;">
+<meta itemprop="description" content="Today, one of the server manage by me has failed to auto renew the https certificate.
+Btw, i&rsquo;m using certificate from R3 by Let&rsquo;s Encrypt. When i tried to manual renew using sudo certbot renew, i got this error message (see below for the error message).
+ubuntu@ip-172-26-4-157:~$ sudo certbot renew Traceback (most recent call last): File &#34;/usr/bin/certbot&#34;, line 11, in &lt;module&gt; load_entry_point(&#39;certbot==0.31.0&#39;, &#39;console_scripts&#39;, &#39;certbot&#39;)() File &#34;/usr/lib/python3/dist-packages/pkg_resources/__init__.py&#34;, line 542, in load_entry_point return get_distribution(dist)."><meta itemprop="datePublished" content="2021-07-10T22:11:10+08:00" />
+<meta itemprop="dateModified" content="2021-07-10T22:11:10+08:00" />
+<meta itemprop="wordCount" content="477"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
+<meta itemprop="keywords" content="Ayo Belajar Linux,Let&#39;s Encrypt,Error," />
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://sibunglon.com/assets/img/profil.webp"/>
+
+<meta name="twitter:title" content="Certbot - No module named &#39;_cffi_backend&#39;"/>
+<meta name="twitter:description" content="Today, one of the server manage by me has failed to auto renew the https certificate.
+Btw, i&rsquo;m using certificate from R3 by Let&rsquo;s Encrypt. When i tried to manual renew using sudo certbot renew, i got this error message (see below for the error message).
+ubuntu@ip-172-26-4-157:~$ sudo certbot renew Traceback (most recent call last): File &#34;/usr/bin/certbot&#34;, line 11, in &lt;module&gt; load_entry_point(&#39;certbot==0.31.0&#39;, &#39;console_scripts&#39;, &#39;certbot&#39;)() File &#34;/usr/lib/python3/dist-packages/pkg_resources/__init__.py&#34;, line 542, in load_entry_point return get_distribution(dist)."/>
+
+  
+
+  
+  
+  <script defer src="/assets/custom/fontawesome-5.15.1/js/all.min.js"></script>
+  
+  
+</head>
+
+  <body>
+    
+      <nav>
+  <a href="/">
+    siBunglon
+  </a>
+  <a href="/posts">
+    Posts
+  </a>
+</nav>
+
+    
+    <main class="container">
+      
+  <article>
+    <header>
+      <small>
+        <span class="date">July 10, 2021</span></small>
+      <h1>Certbot - No module named &#39;_cffi_backend&#39;</h1>
+    </header>
+    <section><p>Today, one of the server manage by me has failed to auto renew the https certificate.</p>
+<p>Btw, i&rsquo;m using certificate from R3 by <a href="https://letsencrypt.org/">Let&rsquo;s Encrypt</a>. When i tried to manual renew using <code>sudo certbot renew</code>, i got this error message (see below for the error message).</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">ubuntu@ip-172-26-4-157:~$ sudo certbot renew
+Traceback <span class="o">(</span>most recent call last<span class="o">)</span>:
+  File <span class="s2">&#34;/usr/bin/certbot&#34;</span>, line 11, in &lt;module&gt;
+    load_entry_point<span class="o">(</span><span class="s1">&#39;certbot==0.31.0&#39;</span>, <span class="s1">&#39;console_scripts&#39;</span>, <span class="s1">&#39;certbot&#39;</span><span class="o">)()</span>
+  File <span class="s2">&#34;/usr/lib/python3/dist-packages/pkg_resources/__init__.py&#34;</span>, line 542, in load_entry_point
+    <span class="k">return</span> get_distribution<span class="o">(</span>dist<span class="o">)</span>.load_entry_point<span class="o">(</span>group, name<span class="o">)</span>
+  File <span class="s2">&#34;/usr/lib/python3/dist-packages/pkg_resources/__init__.py&#34;</span>, line 2569, in load_entry_point
+    <span class="k">return</span> ep.load<span class="o">()</span>
+  File <span class="s2">&#34;/usr/lib/python3/dist-packages/pkg_resources/__init__.py&#34;</span>, line 2229, in load
+    <span class="k">return</span> self.resolve<span class="o">()</span>
+  File <span class="s2">&#34;/usr/lib/python3/dist-packages/pkg_resources/__init__.py&#34;</span>, line 2235, in resolve
+    <span class="nv">module</span> <span class="o">=</span> __import__<span class="o">(</span>self.module_name, <span class="nv">fromlist</span><span class="o">=[</span><span class="s1">&#39;__name__&#39;</span><span class="o">]</span>, <span class="nv">level</span><span class="o">=</span>0<span class="o">)</span>
+  File <span class="s2">&#34;/usr/lib/python3/dist-packages/certbot/main.py&#34;</span>, line 10, in &lt;module&gt;
+    import josepy as jose
+  File <span class="s2">&#34;/usr/lib/python3/dist-packages/josepy/__init__.py&#34;</span>, line 44, in &lt;module&gt;
+    from josepy.interfaces import JSONDeSerializable
+  File <span class="s2">&#34;/usr/lib/python3/dist-packages/josepy/interfaces.py&#34;</span>, line 8, in &lt;module&gt;
+    from josepy import errors, util
+  File <span class="s2">&#34;/usr/lib/python3/dist-packages/josepy/util.py&#34;</span>, line 4, in &lt;module&gt;
+    import OpenSSL
+  File <span class="s2">&#34;/usr/lib/python3/dist-packages/OpenSSL/__init__.py&#34;</span>, line 8, in &lt;module&gt;
+    from OpenSSL import crypto, SSL
+  File <span class="s2">&#34;/usr/lib/python3/dist-packages/OpenSSL/crypto.py&#34;</span>, line 12, in &lt;module&gt;
+    from cryptography import x509
+  File <span class="s2">&#34;/usr/lib/python3/dist-packages/cryptography/x509/__init__.py&#34;</span>, line 9, in &lt;module&gt;
+    from cryptography.x509.base import <span class="o">(</span>
+  File <span class="s2">&#34;/usr/lib/python3/dist-packages/cryptography/x509/base.py&#34;</span>, line 16, in &lt;module&gt;
+    from cryptography.x509.extensions import Extension, ExtensionType
+  File <span class="s2">&#34;/usr/lib/python3/dist-packages/cryptography/x509/extensions.py&#34;</span>, line 18, in &lt;module&gt;
+    from cryptography.hazmat.primitives import constant_time, serialization
+  File <span class="s2">&#34;/usr/lib/python3/dist-packages/cryptography/hazmat/primitives/constant_time.py&#34;</span>, line 9, in &lt;module&gt;
+    from cryptography.hazmat.bindings._constant_time import lib
+ModuleNotFoundError: No module named <span class="s1">&#39;_cffi_backend&#39;</span>
+
+</code></pre></div><p>On the <a href="https://stackoverflow.com/">Stack Overflow</a>, someone suggested installing the <code>cffi</code> package using python pip and i tried to install the package, but i got the error message again. No problem for me, this is challenge when tried to solve the issue but got a new issue. wkwk.</p>
+<p>See below for a new error message.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">ubuntu@ip-172-26-4-157:~$ pip3 install -U cffi
+Exception:
+Traceback <span class="o">(</span>most recent call last<span class="o">)</span>:
+  File <span class="s2">&#34;/usr/lib/python3/dist-packages/pip/basecommand.py&#34;</span>, line 209, in main
+    <span class="nv">status</span> <span class="o">=</span> self.run<span class="o">(</span>options, args<span class="o">)</span>
+  File <span class="s2">&#34;/usr/lib/python3/dist-packages/pip/commands/install.py&#34;</span>, line 267, in run
+    with self._build_session<span class="o">(</span>options<span class="o">)</span> as session:
+  File <span class="s2">&#34;/usr/lib/python3/dist-packages/pip/basecommand.py&#34;</span>, line 66, in _build_session
+    <span class="nv">session</span> <span class="o">=</span> PipSession<span class="o">(</span>
+  File <span class="s2">&#34;/usr/lib/python3/dist-packages/pip/download.py&#34;</span>, line 321, in __init__
+    self.headers<span class="o">[</span><span class="s2">&#34;User-Agent&#34;</span><span class="o">]</span> <span class="o">=</span> user_agent<span class="o">()</span>
+  File <span class="s2">&#34;/usr/lib/python3/dist-packages/pip/download.py&#34;</span>, line 93, in user_agent
+    zip<span class="o">([</span><span class="s2">&#34;name&#34;</span>, <span class="s2">&#34;version&#34;</span>, <span class="s2">&#34;id&#34;</span><span class="o">]</span>, platform.linux_distribution<span class="o">())</span>,
+AttributeError: module <span class="s1">&#39;platform&#39;</span> has no attribute <span class="s1">&#39;linux_distribution&#39;</span>
+Traceback <span class="o">(</span>most recent call last<span class="o">)</span>:
+  File <span class="s2">&#34;/usr/bin/pip3&#34;</span>, line 11, in &lt;module&gt;
+    sys.exit<span class="o">(</span>main<span class="o">())</span>
+  File <span class="s2">&#34;/usr/lib/python3/dist-packages/pip/__init__.py&#34;</span>, line 217, in main
+    <span class="k">return</span> command.main<span class="o">(</span>cmd_args<span class="o">)</span>
+  File <span class="s2">&#34;/usr/lib/python3/dist-packages/pip/basecommand.py&#34;</span>, line 242, in main
+    with self._build_session<span class="o">(</span>
+  File <span class="s2">&#34;/usr/lib/python3/dist-packages/pip/basecommand.py&#34;</span>, line 66, in _build_session
+    <span class="nv">session</span> <span class="o">=</span> PipSession<span class="o">(</span>
+  File <span class="s2">&#34;/usr/lib/python3/dist-packages/pip/download.py&#34;</span>, line 321, in __init__
+    self.headers<span class="o">[</span><span class="s2">&#34;User-Agent&#34;</span><span class="o">]</span> <span class="o">=</span> user_agent<span class="o">()</span>
+  File <span class="s2">&#34;/usr/lib/python3/dist-packages/pip/download.py&#34;</span>, line 93, in user_agent
+    zip<span class="o">([</span><span class="s2">&#34;name&#34;</span>, <span class="s2">&#34;version&#34;</span>, <span class="s2">&#34;id&#34;</span><span class="o">]</span>, platform.linux_distribution<span class="o">())</span>,
+AttributeError: module <span class="s1">&#39;platform&#39;</span> has no attribute <span class="s1">&#39;linux_distribution&#39;</span>
+
+</code></pre></div><p>I think python3 pip on the server is crash. So i delete the python3 pip and re-install it using command <code>curl -L get-pip.io | python3</code>. After that, i tried again to install <code>cffi</code> package and successfull install the package.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">ubuntu@ip-172-26-4-157:~$ pip3 install -U cffi
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: cffi in /usr/lib/python3/dist-packages <span class="o">(</span>1.10.0<span class="o">)</span>
+Collecting cffi
+  Downloading cffi-1.14.5-cp38-cp38-manylinux1_x86_64.whl <span class="o">(</span><span class="m">411</span> kB<span class="o">)</span>
+     <span class="p">|</span>████████████████████████████████<span class="p">|</span> <span class="m">411</span> kB 33.2 MB/s
+Requirement already satisfied: pycparser in /usr/lib/python3/dist-packages <span class="o">(</span>from cffi<span class="o">)</span> <span class="o">(</span>2.14<span class="o">)</span>
+Installing collected packages: cffi
+Successfully installed cffi-1.14.5
+</code></pre></div></section>
+    <footer>
+      <hr>
+      <div class="meta">
+        <p class="tags">
+          
+            
+              <a href="/tags/ayo-belajar-linux">
+                <span>#</span>Ayo Belajar Linux</a>
+            
+              <a href="/tags/lets-encrypt">
+                <span>#</span>Let&#39;s Encrypt</a>
+            
+              <a href="/tags/error">
+                <span>#</span>Error</a>
+            
+          
+        </p>
+      </div>
+      <hr>
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sibunglonlabs" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </footer>
+  </article>
+
+    </main>
+    
+      <footer>
+  <p>
+    &copy; 2021 Faizar Septiawan. <a href="http://creativecommons.org/licenses/by-sa/4.0/">Some Rights Reserved</a>.
+  </p>
+  <p>
+    Powered by <a href="https://gohugo.io" title="A Fast and Flexible Website Generator">Hugo</a> &amp; <a href="https://github.com/eshlox/simplicity" title="Hugo theme">Simplicity</a>.
+  </p>
+</footer>
+
+    
+    
+    
+    
+    
+    
+    
+    <script src="/assets/js/scripts.min.js"></script>
+    
+      
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-110194945-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+  </body>
+</html>

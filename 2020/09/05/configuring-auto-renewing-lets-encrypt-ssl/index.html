@@ -59,8 +59,8 @@ $ vi /etc/cron.d/certbot and then enter the script:
 SHELL=/bin/sh PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin 0 */12 * * * root test -x /usr/bin/certbot -a \! -d /run/systemd/system &amp;&amp; perl -e &#39;sleep int(rand(43200))&#39; &amp;&amp; certbot -q renew For apache2 Download certbot renew package file" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://sibunglon.com/2020/09/05/configuring-auto-renewing-lets-encrypt-ssl/" /><meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2020-09-05T06:23:28&#43;08:00" />
-<meta property="article:modified_time" content="2020-09-05T06:23:28&#43;08:00" /><meta property="og:site_name" content="The Official Site of siBunglon" />
+<meta property="article:published_time" content="2020-09-05T06:23:28+08:00" />
+<meta property="article:modified_time" content="2020-09-05T06:23:28+08:00" /><meta property="og:site_name" content="The Official Site of siBunglon" />
 
 
   <meta itemprop="name" content="Configuring Auto Renewing Let&#39;s Encrypt SSL">
@@ -69,8 +69,8 @@ The renewal is run by cron. You can create it.
 The following steps:
 For nginx Create cron file.
 $ vi /etc/cron.d/certbot and then enter the script:
-SHELL=/bin/sh PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin 0 */12 * * * root test -x /usr/bin/certbot -a \! -d /run/systemd/system &amp;&amp; perl -e &#39;sleep int(rand(43200))&#39; &amp;&amp; certbot -q renew For apache2 Download certbot renew package file"><meta itemprop="datePublished" content="2020-09-05T06:23:28&#43;08:00" />
-<meta itemprop="dateModified" content="2020-09-05T06:23:28&#43;08:00" />
+SHELL=/bin/sh PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin 0 */12 * * * root test -x /usr/bin/certbot -a \! -d /run/systemd/system &amp;&amp; perl -e &#39;sleep int(rand(43200))&#39; &amp;&amp; certbot -q renew For apache2 Download certbot renew package file"><meta itemprop="datePublished" content="2020-09-05T06:23:28+08:00" />
+<meta itemprop="dateModified" content="2020-09-05T06:23:28+08:00" />
 <meta itemprop="wordCount" content="139"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
 <meta itemprop="keywords" content="Ayo Belajar Linux,Let&#39;s Encrypt,Nginx,Apache2," />
   <meta name="twitter:card" content="summary_large_image"/>
