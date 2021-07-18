@@ -5,10 +5,19 @@
     <description>Recent content in Error on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Jul 2021 22:11:10 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 18 Jul 2021 21:36:23 +0800</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/error/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Install Package Using npm is Stuck</title>
+        <link>https://sibunglon.com/2021/07/18/install-package-using-npm-is-stuck/</link>
+        <pubDate>Sun, 18 Jul 2021 21:36:23 +0800</pubDate>
+        <guid>https://sibunglon.com/2021/07/18/install-package-using-npm-is-stuck/</guid>
+        <description>A few days ago, our team being tried install package for web development dependecies using npm (node package manager). The installation process was carried out as usual, but when installing the package git://github.com/adobe-webplatform/eve.git, the installation process did not finish for several minutes.
+I tried to access the package repository, and everything is fine. Then I tried to install the package using the https protocol, the installation process was successful. I think it&amp;rsquo;s a firewall issue, so i tried to update git configuration, using https protocol instead of using git protocol.</description>
+      </item>
     
       <item>
         <title>Certbot - No module named &#39;_cffi_backend&#39;</title>
