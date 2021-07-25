@@ -106,7 +106,7 @@ $ zip SWhite.zip S.white-TKTlqehU_ro.mp4 $ ls -lha total 675744 drwxr-xr-x@ 5 fa
     </header>
     <section><p>Need to transfer or send a file zip but transfer media limit the size file? Create a multipart file using split command and join the file on receiver host.</p>
 <p>Create a file zip.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ zip SWhite.zip S.white-TKTlqehU_ro.mp4
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ zip SWhite.zip S.white-TKTlqehU_ro.mp4
 $ ls -lha
 total <span class="m">675744</span>
 drwxr-xr-x@  <span class="m">5</span> faizarseptiawan 160B Oct <span class="m">19</span> 00:28 .
@@ -114,7 +114,7 @@ drwx------@ <span class="m">15</span> faizarseptiawan 480B Oct <span class="m">1
 -rw-r--r--   <span class="m">1</span> faizarseptiawan 165M Jun <span class="m">23</span> 04:11 S.white-TKTlqehU_ro.mp4
 -rw-r--r--   <span class="m">1</span> faizarseptiawan 165M Oct <span class="m">19</span> 00:28 SWhite.zip
 </code></pre></div><p>Create a multipart file using split command.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="c1"># split -b maxSize filename outputPrefix</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ <span class="c1"># split -b maxSize filename outputPrefix</span>
 $ split -b 50m SWhite.zip SWhite-
 $ ls -lha
 total <span class="m">1013464</span>
@@ -127,7 +127,7 @@ drwx------@ <span class="m">15</span> faizarseptiawan 480B Oct <span class="m">1
 -rw-r--r--   <span class="m">1</span> faizarseptiawan  15M Oct <span class="m">19</span> 00:29 SWhite-ad
 -rw-r--r--   <span class="m">1</span> faizarseptiawan 165M Oct <span class="m">19</span> 00:28 SWhite.zip
 </code></pre></div><p>Join the file.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ mkdir SWhite <span class="o">&amp;&amp;</span> mv SWhite-a* SWhite <span class="o">&amp;&amp;</span> <span class="nb">cd</span> SWhite
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ mkdir SWhite <span class="o">&amp;&amp;</span> mv SWhite-a* SWhite <span class="o">&amp;&amp;</span> <span class="nb">cd</span> SWhite
 $ cat SWhite-* &gt; SWhite.zip
 $ ls -lha
 total <span class="m">675440</span>
@@ -139,7 +139,7 @@ drwxr-xr-x@ <span class="m">6</span> faizarseptiawan 192B Oct <span class="m">19
 -rw-r--r--  <span class="m">1</span> faizarseptiawan  15M Oct <span class="m">19</span> 00:29 SWhite-ad
 -rw-r--r--  <span class="m">1</span> faizarseptiawan 165M Oct <span class="m">19</span> 00:30 SWhite.zip
 </code></pre></div><p>Make sure the files before split and after merging are still the same.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ md5 SWhite.zip
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ md5 SWhite.zip
 MD5 <span class="o">(</span>SWhite.zip<span class="o">)</span> <span class="o">=</span> 4d158057fd3714b62987e3afa2146d51
 $ md5 ../SWhite.zip
 MD5 <span class="o">(</span>../SWhite.zip<span class="o">)</span> <span class="o">=</span> 4d158057fd3714b62987e3afa2146d51

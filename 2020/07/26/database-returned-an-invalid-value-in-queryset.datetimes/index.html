@@ -173,7 +173,7 @@ Traceback (most recent call last): File &quot;/edx/app/edxapp/venvs/edxapp/local
 ValueError: Database returned an invalid datetime value. Are time zone definitions for your database installed?
 </code></pre><h3 id="how-to-fix-this-issues">How to fix this issues?</h3>
 <p>The MySQL database has tables of timezone information that seems to be missing. You can re-populate the database with:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ mysql_tzinfo_to_sql /usr/share/zoneinfo <span class="p">|</span> sed -e <span class="s2">&#34;s/Local time zone must be set--see zic manual page/local/&#34;</span> <span class="p">|</span> mysql -u root mysql
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ mysql_tzinfo_to_sql /usr/share/zoneinfo <span class="p">|</span> sed -e <span class="s2">&#34;s/Local time zone must be set--see zic manual page/local/&#34;</span> <span class="p">|</span> mysql -u root mysql
 </code></pre></div><h3 id="references">References</h3>
 <ul>
 <li><a href="https://openedx.atlassian.net/wiki/spaces/OXA/pages/187662621/Database+returned+an+invalid+value+in+QuerySet.datetimes">Open edX Confluence</a></li>

@@ -108,10 +108,10 @@ If you found error message, comment on this article or contact me 😄"/>
       <h1>SOLVE - zsh function definition file not found</h1>
     </header>
     <section><p>Some commands error when using autocomplete. Ex, error message when using the <code>mv</code> command:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">~ ❯❯❯ mv Down...
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">~ ❯❯❯ mv Down...
 <span class="o">(</span><span class="nb">eval</span><span class="o">)</span>:1: _mv: <span class="k">function</span> definition file not found
 </code></pre></div><p>How to solve?</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">~ ❯❯❯ rm ~/.zcompdump
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">~ ❯❯❯ rm ~/.zcompdump
 ~ ❯❯❯ <span class="nb">exec</span> zsh -l
 </code></pre></div><p>This solutions worked for me.</p>
 <p>If you found error message, comment on this article or contact me 😄</p>

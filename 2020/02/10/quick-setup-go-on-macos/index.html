@@ -109,18 +109,18 @@ Go is an open source programming language that makes it easy to build simple, re
 <ol>
 <li>Install go with homebrew</li>
 </ol>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ brew install go
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ brew install go
 </code></pre></div><ol start="2">
 <li>Setup go environment</li>
 </ol>
 <p>Edit the bash profile file used, edit the <code>~/.bashrc</code> file if you use bash default, and <code>~/.zshrc</code> if you use zsh. Use your favorite text editor. I currently use zsh, and use vim as a text editor.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ vi ~/.zshrc
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ vi ~/.zshrc
 </code></pre></div><p>Then add the following script. I will place the go working directory at <code>~/Git/GitHub/icarrr/Go</code>.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">export</span> <span class="nv">GOPATH</span><span class="o">=</span><span class="nv">$HOME</span>/Git/GitHub/icarrr/Go
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">export</span> <span class="nv">GOPATH</span><span class="o">=</span><span class="nv">$HOME</span>/Git/GitHub/icarrr/Go
 </code></pre></div><p>Save and exit, then reload the bash profile.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">source</span> ~/.zshrc
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">source</span> ~/.zshrc
 </code></pre></div><p>Create go working directory.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ mkdir -p <span class="nv">$GOPATH</span>/<span class="o">{</span>src,bin,pkg<span class="o">}</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ mkdir -p <span class="nv">$GOPATH</span>/<span class="o">{</span>src,bin,pkg<span class="o">}</span>
 </code></pre></div><p>At this point, go and its working directory are setup.</p>
 </section>
     <footer>

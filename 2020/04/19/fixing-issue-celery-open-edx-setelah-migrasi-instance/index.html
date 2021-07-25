@@ -103,22 +103,22 @@ $ sudo tail -f /edx/var/log/{lms,cms,nginx}/*log ==&gt; /edx/var/log/lms/edx.log
     </header>
     <section><p><img src="/assets/img/Open-edX/open-edx-new.png" alt="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Let&#39;s Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs"></p>
 <p>Beberapa hari yang lalu saya memindahkan instance Open edX dan beberapa menit setelah server aktif, Open edX tidak bisa diakses. Cek servicenya, tetapi semua service dalam keadaan aktif namun ketika melihat lognya, ternyata ada error pada celery, kurang lebih errornya seperti berikut:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo tail -f /edx/var/log/<span class="o">{</span>lms,cms,nginx<span class="o">}</span>/*log
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ sudo tail -f /edx/var/log/<span class="o">{</span>lms,cms,nginx<span class="o">}</span>/*log
 <span class="o">==</span>&gt; /edx/var/log/lms/edx.log &lt;<span class="o">==</span>
 Apr <span class="m">12</span> 02:21:16 beep <span class="o">[</span><span class="nv">service_variant</span><span class="o">=</span>lms<span class="o">][</span>celery.worker.consumer<span class="o">][</span>env:sandbox<span class="o">]</span> ERROR <span class="o">[</span>beep  1400<span class="o">]</span> <span class="o">[</span>consumer.py:364<span class="o">]</span> - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: <span class="o">[</span>Errno 104<span class="o">]</span> Connection reset by peer.
 Trying again in 32.00 seconds...
 </code></pre></div><p>Dari log diatas, terdapat error message <code>Connection reset by peer</code>, penyebab issue tersebut sebenarnya sudah jelas yaitu kesalahan autentikasi.</p>
 <p>Maka perlu dilakukan validasi, apakah user tersebut available atau tidak. Untuk melakukan validasi user, dapat menggunakan command:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo rabbitmqctl authenticate_user userCeleryedX passwordCeleryedX
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ sudo rabbitmqctl authenticate_user userCeleryedX passwordCeleryedX
 </code></pre></div><p>Ganti value <em>userCeleryedX</em> dan <em>passwordCeleryedX</em> sesuai user yang digunakan oleh instance tersebut, dapat dicek dari file <em>lms.auth.json</em> dan <em>cms.auth.json</em>.</p>
 <p>Jika setelah menjalankan command validasi validasi user terdapat error messege <code>Error: failed to authenticate user</code>, berarti perlu dilakukan pembuatan user tersebut.</p>
 <p>Buat user celery dengan menggunakan password yang sama pada file <em>lms.auth.json</em> dan <em>cms.auth.json</em>.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo rabbitmqctl add_user userCeleryedX passwordCeleryedX
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ sudo rabbitmqctl add_user userCeleryedX passwordCeleryedX
 </code></pre></div><p>Ganti value <em>userCeleryedX</em> dan <em>passwordCeleryedX</em> sesuai user yang digunakan oleh instance tersebut, dapat dicek dari file <em>lms.auth.json</em> dan <em>cms.auth.json</em>.</p>
 <p>Set permission untuk user celery yang baru saja dibuat.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo rabbitmqctl set_permissions -p / userCeleryedX <span class="s2">&#34;.*&#34;</span> <span class="s2">&#34;.*&#34;</span> <span class="s2">&#34;.*&#34;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ sudo rabbitmqctl set_permissions -p / userCeleryedX <span class="s2">&#34;.*&#34;</span> <span class="s2">&#34;.*&#34;</span> <span class="s2">&#34;.*&#34;</span>
 </code></pre></div><p>Restart service Open edX</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo /edx/bin/supervisorctl restart all
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ sudo /edx/bin/supervisorctl restart all
 </code></pre></div><h3 id="references">References</h3>
 <ul>
 <li><a href="https://oonlab.com/edx/code/2015/10/21/solve-celery-error-saat-migrasi-open-edx/">oonlab</a></li>

@@ -110,7 +110,7 @@ Following are the steps you need to take if you want the uploaded files to be st
 <ol>
 <li>Open dan edit file <code>/edx/app/edxapp/edx-platform/lms/envs/common.py</code>, then add the following syntax.</li>
 </ol>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1">### ORA2 filesystem settings</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1">### ORA2 filesystem settings</span>
 <span class="n">ORA2_FILEUPLOAD_BACKEND</span> <span class="o">=</span> <span class="s2">&#34;filesystem&#34;</span>
 <span class="n">ORA2_FILEUPLOAD_CACHE_NAME</span><span class="o">=</span> <span class="s2">&#34;default&#34;</span>
 <span class="n">ORA2_FILEUPLOAD_ROOT</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">MEDIA_ROOT</span><span class="p">,</span> <span class="s1">&#39;ora-upload/&#39;</span><span class="p">)</span>
@@ -122,7 +122,7 @@ Following are the steps you need to take if you want the uploaded files to be st
 <p>Create a storage media directory and set the directory permissions that are created.</p>
 </li>
 </ol>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo mkdir -p /edx/var/edxapp/media/ora-upload/ora2/submissions_attachments
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ sudo mkdir -p /edx/var/edxapp/media/ora-upload/ora2/submissions_attachments
 $ sudo chmod -R <span class="m">775</span> /edx/var/edxapp/media/ora-upload/ora2
 $ sudo chown www-data:www-data /edx/var/edxapp/media/ora-upload/ -R
 </code></pre></div><ol start="4">

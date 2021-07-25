@@ -136,7 +136,7 @@ SMTPDataError: (554, 'Message rejected: Email address is not verified. The follo
 <p>-) When the user uses the password forgetting feature, the forgotten password email also enters.</p>
 <p>This means that it should not be due to a misconfiguration of the SMTP account on the Open edX server, the email was successfully entered in a case other than activation email. But at that time you had to wait for the email to arrive. So there is a possibility because of the timeout.</p>
 <p>This friend of mine seems to be a fad to set up an email timeout, in the file <code>/edx/app/edxapp/lms.env.json</code> added <code>&quot;EMAIL_TIMEOUT&quot;: timeout</code>. In this case our email timeout is set to 300 seconds so it&rsquo;s more config like this:</p>
-<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json">    <span class="s2">&#34;EMAIL_HOST&#34;</span><span class="err">:</span> <span class="s2">&#34;mail.sibunglon.com&#34;</span><span class="err">,</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json">    <span class="s2">&#34;EMAIL_HOST&#34;</span><span class="err">:</span> <span class="s2">&#34;mail.sibunglon.com&#34;</span><span class="err">,</span>
     <span class="s2">&#34;EMAIL_PORT&#34;</span><span class="err">:</span> <span class="mi">587</span><span class="err">,</span>
     <span class="s2">&#34;EMAIL_USE_TLS&#34;</span><span class="err">:</span> <span class="kc">true</span><span class="err">,</span>
     <span class="s2">&#34;EMAIL_TIMEOUT&#34;</span><span class="err">:</span> <span class="mi">300</span><span class="err">,</span>

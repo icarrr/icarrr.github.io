@@ -107,7 +107,7 @@ ubuntu@ip-172-26-4-157:~$ sudo certbot renew Traceback (most recent call last): 
     <section><p><img src="/assets/img/certbot-logo.svg" alt="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Let&#39;s Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs"></p>
 <p>Today, one of the server manage by me has failed to auto renew the https certificate.</p>
 <p>Btw, i&rsquo;m using certificate from R3 by <a href="https://letsencrypt.org/">Let&rsquo;s Encrypt</a>. When i tried to manual renew using <code>sudo certbot renew</code>, i got this error message (see below for the error message).</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">ubuntu@ip-172-26-4-157:~$ sudo certbot renew
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">ubuntu@ip-172-26-4-157:~$ sudo certbot renew
 Traceback <span class="o">(</span>most recent call last<span class="o">)</span>:
   File <span class="s2">&#34;/usr/bin/certbot&#34;</span>, line 11, in &lt;module&gt;
     load_entry_point<span class="o">(</span><span class="s1">&#39;certbot==0.31.0&#39;</span>, <span class="s1">&#39;console_scripts&#39;</span>, <span class="s1">&#39;certbot&#39;</span><span class="o">)()</span>
@@ -143,7 +143,7 @@ ModuleNotFoundError: No module named <span class="s1">&#39;_cffi_backend&#39;</s
 
 </code></pre></div><p>On the <a href="https://stackoverflow.com/">Stack Overflow</a>, someone suggested installing the <code>cffi</code> package using python pip and i tried to install the package, but i got the error message again. No problem for me, this is challenge when tried to solve the issue but got a new issue. wkwk.</p>
 <p>See below for a new error message.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">ubuntu@ip-172-26-4-157:~$ pip3 install -U cffi
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">ubuntu@ip-172-26-4-157:~$ pip3 install -U cffi
 Exception:
 Traceback <span class="o">(</span>most recent call last<span class="o">)</span>:
   File <span class="s2">&#34;/usr/lib/python3/dist-packages/pip/basecommand.py&#34;</span>, line 209, in main
@@ -173,7 +173,7 @@ Traceback <span class="o">(</span>most recent call last<span class="o">)</span>:
 AttributeError: module <span class="s1">&#39;platform&#39;</span> has no attribute <span class="s1">&#39;linux_distribution&#39;</span>
 
 </code></pre></div><p>I think python3 pip on the server is crash. So i delete the python3 pip and re-install it using command <code>curl -L get-pip.io | python3</code>. After that, i tried again to install <code>cffi</code> package and successfull install the package.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">ubuntu@ip-172-26-4-157:~$ pip3 install -U cffi
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">ubuntu@ip-172-26-4-157:~$ pip3 install -U cffi
 Defaulting to user installation because normal site-packages is not writeable
 Requirement already satisfied: cffi in /usr/lib/python3/dist-packages <span class="o">(</span>1.10.0<span class="o">)</span>
 Collecting cffi

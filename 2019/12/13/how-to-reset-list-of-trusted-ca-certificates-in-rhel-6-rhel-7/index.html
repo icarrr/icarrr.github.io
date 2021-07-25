@@ -98,7 +98,7 @@
         <span class="date">December 13, 2019</span></small>
       <h1>How to Reset List of Trusted CA Certificates in RHEL 6 RHEL 7</h1>
     </header>
-    <section><div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/bash
+    <section><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/bash
 </span><span class="cp"></span><span class="c1"># Get time</span>
 <span class="nv">localTime</span><span class="o">=</span><span class="k">$(</span>date <span class="s1">&#39;+%Y%m%d_%H%M%S&#39;</span> -d <span class="s2">&#34;</span><span class="k">$(</span>curl -s --head http://google.com <span class="p">|</span> grep ^Date: <span class="p">|</span> sed <span class="s1">&#39;s/Date: //g&#39;</span><span class="k">)</span><span class="s2">&#34;</span><span class="k">)</span>
 

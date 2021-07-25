@@ -110,21 +110,21 @@ Agar dapat mengoperasikan Mikhmon diperlukan sebuah webserver &#43; PHP yang bis
 <ol>
 <li>Masuk ke direktori <em>/var/www/</em>, clone repositori mikhmon dan atur izin direktorinya.</li>
 </ol>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">cd</span> /var/www
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">cd</span> /var/www
 $ sudo git clone https://github.com/laksa19/mikhmonv3.git mikhmon
 $ sudo chmod -R <span class="m">755</span> /var/www/mikhmon
 $ sudo chown <span class="sb">`</span>whoami<span class="sb">`</span>:www-data /var/www/mikhmon -R
 </code></pre></div><ol start="2">
 <li>Install dependensi yang diperlukan, yaitu php7.4 dan beberapa paket pendukungnya. Namun sebelum menginstallnya, tambahkan repositori yang diperlukan.</li>
 </ol>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo add-apt-repository ppa:ondrej/php
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ sudo add-apt-repository ppa:ondrej/php
 $ sudo apt install -y php7.4 php7.4-fpm php7.4-mysql php7.4-mbstring php7.4-gd php7.4-cli php7.4-common php7.4-json php7.4-opcache php7.4-readline
 </code></pre></div><ol start="3">
 <li>Buat file konfigurasi virtualhost.</li>
 </ol>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ vi /etc/nginx/sites-enabled/mikhmon.conf
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ vi /etc/nginx/sites-enabled/mikhmon.conf
 </code></pre></div><p>Dan tambahkan sintaks konfigurasi berikut.</p>
-<div class="highlight"><pre class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">server</span> <span class="p">{</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">server</span> <span class="p">{</span>
     <span class="kn">server_name</span> <span class="s">yourdomain.com</span><span class="p">;</span>
 
     <span class="kn">root</span> <span class="s">/var/www/mikhmon</span><span class="p">;</span>

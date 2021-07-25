@@ -122,11 +122,11 @@ Certbot is a new breakthrough from the Let&rsquo;s Encrypt Web Security Certific
 <blockquote>
 <p>Note: Before updating the config, the initial configuration file should be backed up first. For backups, use the command <code>sudo cp /etc/nginx/sites-enabled/lms ~/</code>.</p>
 </blockquote>
-<div class="highlight"><pre class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">...</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">...</span>
   <span class="s">listen</span> <span class="mi">80</span> <span class="s">default_server</span><span class="p">;</span>
 <span class="k">...</span>
 </code></pre></div><p>Delete or comment on the LMS port configuration, then add the domain configuration.</p>
-<div class="highlight"><pre class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">...</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">...</span>
   <span class="c1">#listen 80 default_server;
 </span><span class="c1"></span>  <span class="s">server_name</span> <span class="s">e-Learning.sibunglon.com</span><span class="p">;</span>
 <span class="k">...</span>
@@ -136,18 +136,18 @@ Certbot is a new breakthrough from the Let&rsquo;s Encrypt Web Security Certific
 <blockquote>
 <p>Note: Before updating the config, the initial configuration file should be backed up first. For backups, use the command <code>sudo cp /etc/nginx/sites-enabled/cms ~/</code>.</p>
 </blockquote>
-<div class="highlight"><pre class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">...</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">...</span>
   <span class="s">listen</span> <span class="mi">18010</span><span class="p">;</span>
 <span class="k">...</span>
 </code></pre></div><p>Delete or comment on the CMS port configuration, then add the domain configuration.</p>
-<div class="highlight"><pre class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">...</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">...</span>
   <span class="c1">#listen 18010;
 </span><span class="c1"></span>  <span class="s">server_name</span> <span class="s">studio.e-Learning.sibunglon.com</span><span class="p">;</span>
 <span class="k">...</span>
 </code></pre></div><ol start="3">
 <li>Install certbot</li>
 </ol>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo apt-get update
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ sudo apt-get update
 $ sudo apt-get install software-properties-common
 $ sudo add-apt-repository ppa:certbot/certbot
 $ sudo apt-get update
@@ -156,10 +156,10 @@ $ sudo apt-get install python-certbot-nginx
 <li>Generate a web security certificate (SSL) and enable HTTPS.</li>
 </ol>
 <p>-) If you want to use 1 domain 1 SSL, generate SSL 1 per 1 as well as follows.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo certbot --nginx -d e-Learning.sibunglon.com
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ sudo certbot --nginx -d e-Learning.sibunglon.com
 </code></pre></div><p>Re-generate SSL for CMS.</p>
 <p>-) If you want to use 1 SSL for 2 domains (LMS and CMS), then the command is as follows:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo certbot --nginx -d e-Learning.sibunglon.com -d studio.e-Learning.sibunglon.com
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">sudo certbot --nginx -d e-Learning.sibunglon.com -d studio.e-Learning.sibunglon.com
 </code></pre></div><p>If the Open EdX server does not currently use certbot, when running the SSL generate command:</p>
 <p>-) You will be asked to enter an email. The email is used to send notifications at a later time if SSL will expire.</p>
 <p>-) You are asked to read the Terms of Service and will be given 2 choices, which are <em>(A) gree</em> if you want to continue generating and <em>C</em> to cancel the SSL generate process.</p>

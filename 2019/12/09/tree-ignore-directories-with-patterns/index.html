@@ -110,7 +110,7 @@ $ tree Bash Bash ├── BackupRestore-dbOpenEdx │ ├── backup_mongo.s
     <section><p><strong>Tree</strong> is a linux command that provides a list of recursive directories or a tree can display all file and directory listings in a directory.</p>
 <p>Comparison of <strong>ls</strong> and <strong>tree</strong> usage</p>
 <p><strong>Tree</strong>:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ tree Bash
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ tree Bash
 Bash
 ├── BackupRestore-dbOpenEdx
 │   ├── backup_mongo.sh
@@ -139,16 +139,16 @@ Bash
 <span class="m">3</span> directories, <span class="m">20</span> files
 ~/G/G/icarrr ❯❯❯
 </code></pre></div><p><strong>ls</strong>:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ ls Bash
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ ls Bash
 BackupRestore-dbOpenEdx     backup database postgres.sh compress_backup.sh          get-date-backupdb-dplk.sh   get-log-tmp.sh              loop change time.sh         scp_Dilla.sh
 auto-update-dplk            backup_db.sh                espeak.sh                   get-log-core.sh             import.sh                   newProject.sh               uni.sh
 </code></pre></div><p>To be able to use trees, trees must be installed in your environment:</p>
 <p>-) Ubuntu or family</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo apt install tree
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ sudo apt install tree
 </code></pre></div><p>-) CentOS or RHEL</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo yum install tree
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ sudo yum install tree
 </code></pre></div><p>-I option allows to exclude directories that match specific pattern e.g.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ tree Bash -I playbook
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ tree Bash -I playbook
 Bash
 ├── BackupRestore-dbOpenEdx
 │   ├── backup_mongo.sh
@@ -172,7 +172,7 @@ Bash
 
 <span class="m">2</span> directories, <span class="m">17</span> files
 </code></pre></div><p>In order to exclude multiple directories at once, their names must be separated by | sign, i.e.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ tree Bash -I <span class="s1">&#39;playbook|BackupRestore-dbOpenEdx&#39;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ tree Bash -I <span class="s1">&#39;playbook|BackupRestore-dbOpenEdx&#39;</span>
 Bash
 ├── auto-update-dplk
 │   └── main.sh

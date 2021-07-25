@@ -117,34 +117,34 @@ The course at Coursera is a monthly subscription, but Coursera also provides a f
 </ol>
 <p>-) If using python 2</p>
 <p>Install pip</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo apt install python-pip
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ sudo apt install python-pip
 </code></pre></div><p>Install virtual environment</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ pip install virtualenv
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ pip install virtualenv
 </code></pre></div><p>-) If using python 3</p>
 <p>Install pip</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo apt install python3-pip
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ sudo apt install python3-pip
 </code></pre></div><p>Install virtual environment</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ pip3 install virtualenv
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ pip3 install virtualenv
 </code></pre></div><ol start="2">
 <li>Create virtual environment, in this example I will create a virtual environment with the name <em>env</em>, you can replace it.</li>
 </ol>
 <p>-) If using python 2</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ virtualenv env
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ virtualenv env
 </code></pre></div><p>-) If using python 3</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ python3 -m venv env
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ python3 -m venv env
 </code></pre></div><ol start="3">
 <li>Activate virtual environment</li>
 </ol>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">source</span> env/bin/activate
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">source</span> env/bin/activate
 </code></pre></div><ol start="4">
 <li>Install coursera-dl, coursera-dl is a simple, fast, and reliable Coursera crawling &amp; downloading tool.</li>
 </ol>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ pip install coursera-dl
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ pip install coursera-dl
 </code></pre></div><ol start="5">
 <li>Now, you can use coursera-dl command.</li>
 </ol>
 <p>-) General</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ coursera-dl -u yourEmail -p yourPassword courseName
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ coursera-dl -u yourEmail -p yourPassword courseName
 </code></pre></div><p>-) With CAUTH</p>
 <p>Find your coursera CAUTH:</p>
 <p>For example, in chrome</p>
@@ -152,23 +152,23 @@ The course at Coursera is a monthly subscription, but Coursera also provides a f
 <p>-&gt; Right-click on the touchpad or mouse until you find <em>inspect</em>.</p>
 <p>-&gt; Go to Applications &gt; Cookies (and click dropdown) &gt; click <a href="https://www.coursera.org/">https://www.coursera.org/</a> &gt; find and click CAUTH &gt; Copy value CAUTH</p>
 <p><img src="/assets/img/how-to-download-all-contents-in-course-coursera/screnshoot.png" alt="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Let&#39;s Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs"></p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ coursera-dl -ca <span class="s1">&#39;yourValueCAUTH&#39;</span> courseName
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ coursera-dl -ca <span class="s1">&#39;yourValueCAUTH&#39;</span> courseName
 </code></pre></div><p>The course name can be found in the coursera url. For example, this is coursera url <a href="https://www.coursera.org/learn/gcp-fundamentals/home/welcome">https://www.coursera.org/learn/gcp-fundamentals/home/welcome</a> so the name of the course is <em>gcp-fundamentals</em>.</p>
 <p>Download results are saved in the directory when you run coursera-dl. For example when you are in the x directory, the downloads are saved in the x directory.</p>
 <p>If you need help with any options that can be used, use the command:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ coursera-dl -h
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ coursera-dl -h
 </code></pre></div><p><strong>Notes</strong></p>
 <p>I more often use the following options:</p>
 <p><em>&ndash;specialization</em></p>
 <p>To download all courses in specialization, example:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ coursera-dl -ca <span class="s1">&#39;yourValueCAUTH&#39;</span> --specialization specializationName
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ coursera-dl -ca <span class="s1">&#39;yourValueCAUTH&#39;</span> --specialization specializationName
 </code></pre></div><p>The specialization name can be found in the coursera url. For example, this is coursera url <a href="https://www.coursera.org/specializations/gcp-architecture">https://www.coursera.org/specializations/gcp-architecture</a> so the name of the specialization is <em>gcp-architecture</em>.</p>
 <p><em>&ndash;video-resolution</em></p>
 <p>To determine the video resolution that I want to download, example:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ coursera-dl -ca <span class="s1">&#39;yourValueCAUTH&#39;</span> --video-resolution 720p
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ coursera-dl -ca <span class="s1">&#39;yourValueCAUTH&#39;</span> --video-resolution 720p
 </code></pre></div><p><em>&ndash;download-quizzes</em></p>
 <p>By default if you run coursera-dl, the quiz isn&rsquo;t downloaded, so if you want to download the quiz, add this option. example:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ coursera-dl -ca <span class="s1">&#39;yourValueCAUTH&#39;</span> --download-quizzes
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ coursera-dl -ca <span class="s1">&#39;yourValueCAUTH&#39;</span> --download-quizzes
 </code></pre></div></section>
     <footer>
       <hr>

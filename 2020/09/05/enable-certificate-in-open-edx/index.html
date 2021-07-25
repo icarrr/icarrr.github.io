@@ -113,7 +113,7 @@ If it does not exist already, create the folder /tmp/certificates owned by the u
 <ol>
 <li>In the <code>lms.env.json</code> and <code>cms.env.json</code> files, set the value of <code>CERTIFICATES_HTML_VIEW</code> within the <code>FEATURES</code> object to <code>true</code>.</li>
 </ol>
-<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="s2">&#34;FEATURES&#34;</span><span class="err">:</span> <span class="p">{</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="s2">&#34;FEATURES&#34;</span><span class="err">:</span> <span class="p">{</span>
     <span class="err">...</span>
     <span class="err">&#39;CERTIFICATES_HTML_VIEW&#39;:</span> <span class="err">true,</span>
     <span class="err">...</span>
@@ -122,7 +122,7 @@ If it does not exist already, create the folder /tmp/certificates owned by the u
 <ol start="2">
 <li>If it does not exist already, create the folder <code>/tmp/certificates</code> owned by the user and group <code>www-data</code>.</li>
 </ol>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ mkdir /tmp/certificates
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ mkdir /tmp/certificates
 </code></pre></div><ol start="3">
 <li>
 <p>Access the LMS Django Administration website for your instance of Open edX. To do this, go to <code>https://&lt;host name of your Open edX instance&gt;/admin</code>.</p>
@@ -148,7 +148,7 @@ If it does not exist already, create the folder /tmp/certificates owned by the u
 <li><code>document_body_class_append</code></li>
 </ul>
 <p>Example content for Configuration field.</p>
-<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
     <span class="nt">&#34;default&#34;</span><span class="p">:</span> <span class="p">{</span>
         <span class="nt">&#34;accomplishment_class_append&#34;</span><span class="p">:</span> <span class="s2">&#34;accomplishment-certificate&#34;</span><span class="p">,</span>
         <span class="nt">&#34;platform_name&#34;</span><span class="p">:</span> <span class="s2">&#34;YourPlatformName&#34;</span><span class="p">,</span>

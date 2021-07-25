@@ -115,20 +115,20 @@ $ wget --no-check-certificate https://sibunglon.com/image.png But if you don&rsq
     </header>
     <section><p>If you use the curl or wget command and don&rsquo;t want SSL to be checked so that the process should occur, you can use options or add commands.</p>
 <p>-) cURL</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ curl -k url
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ curl -k url
 $ curl --insecure url
 $ curl --insecure -I url
 </code></pre></div><p>Example:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ curl -k https://sibunglon.com/image.png
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ curl -k https://sibunglon.com/image.png
 </code></pre></div><p>-) Wget</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ wget --no-check-certificate url
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ wget --no-check-certificate url
 </code></pre></div><p>Example:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ wget --no-check-certificate https://sibunglon.com/image.png
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ wget --no-check-certificate https://sibunglon.com/image.png
 </code></pre></div><p>But if you don&rsquo;t want to use this additional option, just create a file whose contents can pass the SSL Certificate check. To create a file you can use the following command:</p>
 <p>-) cURL</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">echo</span> <span class="s2">&#34;insecure&#34;</span> &gt;&gt; <span class="nv">$HOME</span>/.curlrc
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">echo</span> <span class="s2">&#34;insecure&#34;</span> &gt;&gt; <span class="nv">$HOME</span>/.curlrc
 </code></pre></div><p>-) Wget</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">echo</span> <span class="s2">&#34;check_certificate = off&#34;</span> &gt;&gt; <span class="nv">$HOME</span>/.wgetrc
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">echo</span> <span class="s2">&#34;check_certificate = off&#34;</span> &gt;&gt; <span class="nv">$HOME</span>/.wgetrc
 </code></pre></div></section>
     <footer>
       <hr>

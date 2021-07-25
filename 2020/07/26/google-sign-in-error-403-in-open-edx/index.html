@@ -145,7 +145,7 @@ Traceback (most recent call last):
     raise HTTPError(http_error_msg, response=self)
 HTTPError: 403 Client Error: Forbidden for url: https://www.googleapis.com/plus/v1/people/me?access_token=xxxx.xxxxxx&amp;alt=json
 </code></pre><p><em>Google Sign In Error 403</em> because deprecated Google+ API. For fix this issue, need upgrade the package versions to <code>social-auth-app-django==3.1.0</code> and <code>social-auth-core==3.2.0</code> using command:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo /edx/bin/pip.edxapp install social-auth-app-django<span class="o">==</span>3.1.0 social-auth-core<span class="o">==</span>3.2.0
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ sudo /edx/bin/pip.edxapp install social-auth-app-django<span class="o">==</span>3.1.0 social-auth-core<span class="o">==</span>3.2.0
 </code></pre></div><h3 id="references">References</h3>
 <ul>
 <li><a href="https://discuss.openedx.org/t/google-sign-in-error-403-deprecated-google-api/965">Open edX discussions</a></li>
