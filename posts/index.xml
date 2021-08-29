@@ -5,10 +5,40 @@
     <description>Recent content in Posts on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 18 Jul 2021 21:36:23 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 29 Aug 2021 21:33:01 +0800</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Missing dependency py2neo==3.1.2</title>
+        <link>https://sibunglon.com/2021/08/29/missing-dependency-py2neo3.1.2/</link>
+        <pubDate>Sun, 29 Aug 2021 21:33:01 +0800</pubDate>
+        <guid>https://sibunglon.com/2021/08/29/missing-dependency-py2neo3.1.2/</guid>
+        <description>Unable to install py2neo==3.1.2? Here is a better fix that doesn&amp;rsquo;t change the version.
+Just change py2neo==3.1.2 on your app requirements to https://github.com/technige/py2neo/archive/refs/tags/py2neo-3.1.2.zip.</description>
+      </item>
+    
+      <item>
+        <title>Unable to Download Data Generate Open edX (file not found)</title>
+        <link>https://sibunglon.com/2021/08/29/unable-to-download-data-generate-open-edx-file-not-found/</link>
+        <pubDate>Sun, 29 Aug 2021 21:14:25 +0800</pubDate>
+        <guid>https://sibunglon.com/2021/08/29/unable-to-download-data-generate-open-edx-file-not-found/</guid>
+        <description>This problem occurs because don&amp;rsquo;t use Amazon S3 to save data generate. To fix it, follow these steps.
+-) Login to Open edX server, then create symbolic link from /tmp/edx-s3/grades to /edx/var/edxapp/media.
+-) Update nginx configuration of LMS. Find the following snippet codes on the configuration file.
+location ~ ^/media/(?P&amp;lt;file&amp;gt;.*) { root /edx/var/edxapp/media; try_files /$file =404; expires 31536000s; } Change =404 to /grades/$file or looks like the configuration below.
+location ~ ^/media/(?</description>
+      </item>
+    
+      <item>
+        <title>Controlling Course Creation Permission</title>
+        <link>https://sibunglon.com/2021/08/29/controlling-course-creation-permission/</link>
+        <pubDate>Sun, 29 Aug 2021 19:58:32 +0800</pubDate>
+        <guid>https://sibunglon.com/2021/08/29/controlling-course-creation-permission/</guid>
+        <description>By default, Open edX only supports users with staff and/or superuser access to create a courses on the Studio or CMS. Another users can only edit content on available courses after they have been added as a course team.
+But a user who does not have staff access can create a course when he has requested course creation access and has been approved by the administrator team. To request access to course creation, follow these steps.</description>
+      </item>
     
       <item>
         <title>Install Package Using npm is Stuck</title>

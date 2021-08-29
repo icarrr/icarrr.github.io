@@ -5,10 +5,31 @@
     <description>Recent content in Open edX on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 23 Jun 2021 21:55:50 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 29 Aug 2021 21:14:25 +0800</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/open-edx/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Unable to Download Data Generate Open edX (file not found)</title>
+        <link>https://sibunglon.com/2021/08/29/unable-to-download-data-generate-open-edx-file-not-found/</link>
+        <pubDate>Sun, 29 Aug 2021 21:14:25 +0800</pubDate>
+        <guid>https://sibunglon.com/2021/08/29/unable-to-download-data-generate-open-edx-file-not-found/</guid>
+        <description>This problem occurs because don&amp;rsquo;t use Amazon S3 to save data generate. To fix it, follow these steps.
+-) Login to Open edX server, then create symbolic link from /tmp/edx-s3/grades to /edx/var/edxapp/media.
+-) Update nginx configuration of LMS. Find the following snippet codes on the configuration file.
+location ~ ^/media/(?P&amp;lt;file&amp;gt;.*) { root /edx/var/edxapp/media; try_files /$file =404; expires 31536000s; } Change =404 to /grades/$file or looks like the configuration below.
+location ~ ^/media/(?</description>
+      </item>
+    
+      <item>
+        <title>Controlling Course Creation Permission</title>
+        <link>https://sibunglon.com/2021/08/29/controlling-course-creation-permission/</link>
+        <pubDate>Sun, 29 Aug 2021 19:58:32 +0800</pubDate>
+        <guid>https://sibunglon.com/2021/08/29/controlling-course-creation-permission/</guid>
+        <description>By default, Open edX only supports users with staff and/or superuser access to create a courses on the Studio or CMS. Another users can only edit content on available courses after they have been added as a course team.
+But a user who does not have staff access can create a course when he has requested course creation access and has been approved by the administrator team. To request access to course creation, follow these steps.</description>
+      </item>
     
       <item>
         <title>Discussion Forum Open edX Not Visible for Single User</title>
