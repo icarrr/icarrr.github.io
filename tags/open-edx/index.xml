@@ -242,7 +242,7 @@ Jul 24 01:03:09 bnpb [service_variant=lms][django.request][env:sandbox] ERROR [e
         <guid>https://sibunglon.com/2020/07/26/enable-third-party-authentication-oauth2-in-open-edx/</guid>
         <description>Open edX Platform allows you to integrate third-party authentication with two kinds of authentication providers:
  OAuth2 Identity Providers. SAML Identity Providers  This section describes how to integrate Open edX with two of the most popular OAuth2 providers: Google and Facebook.
-Integrate Open edX With Google Step 1: Register The Open EdX Site With Google -) Navigate to the Google Developers Console.
+Integrate Open edX With Google Step 1: Register The Open edX Site With Google -) Navigate to the Google Developers Console.
 -) Select an existing project or create a new one.</description>
       </item>
     

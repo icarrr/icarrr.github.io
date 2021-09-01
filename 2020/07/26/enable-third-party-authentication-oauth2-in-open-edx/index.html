@@ -53,7 +53,7 @@
   <meta property="og:title" content="Enable Third-Party Authentication (OAuth2) in Open edX" />
 <meta property="og:description" content="Open edX Platform allows you to integrate third-party authentication with two kinds of authentication providers:
  OAuth2 Identity Providers. SAML Identity Providers  This section describes how to integrate Open edX with two of the most popular OAuth2 providers: Google and Facebook.
-Integrate Open edX With Google Step 1: Register The Open EdX Site With Google -) Navigate to the Google Developers Console.
+Integrate Open edX With Google Step 1: Register The Open edX Site With Google -) Navigate to the Google Developers Console.
 -) Select an existing project or create a new one." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://sibunglon.com/2020/07/26/enable-third-party-authentication-oauth2-in-open-edx/" /><meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"/><meta property="article:section" content="posts" />
@@ -64,7 +64,7 @@ Integrate Open edX With Google Step 1: Register The Open EdX Site With Google -)
   <meta itemprop="name" content="Enable Third-Party Authentication (OAuth2) in Open edX">
 <meta itemprop="description" content="Open edX Platform allows you to integrate third-party authentication with two kinds of authentication providers:
  OAuth2 Identity Providers. SAML Identity Providers  This section describes how to integrate Open edX with two of the most popular OAuth2 providers: Google and Facebook.
-Integrate Open edX With Google Step 1: Register The Open EdX Site With Google -) Navigate to the Google Developers Console.
+Integrate Open edX With Google Step 1: Register The Open edX Site With Google -) Navigate to the Google Developers Console.
 -) Select an existing project or create a new one."><meta itemprop="datePublished" content="2020-07-26T17:39:23+08:00" />
 <meta itemprop="dateModified" content="2020-07-26T17:39:23+08:00" />
 <meta itemprop="wordCount" content="741"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
@@ -75,7 +75,7 @@ Integrate Open edX With Google Step 1: Register The Open EdX Site With Google -)
 <meta name="twitter:title" content="Enable Third-Party Authentication (OAuth2) in Open edX"/>
 <meta name="twitter:description" content="Open edX Platform allows you to integrate third-party authentication with two kinds of authentication providers:
  OAuth2 Identity Providers. SAML Identity Providers  This section describes how to integrate Open edX with two of the most popular OAuth2 providers: Google and Facebook.
-Integrate Open edX With Google Step 1: Register The Open EdX Site With Google -) Navigate to the Google Developers Console.
+Integrate Open edX With Google Step 1: Register The Open edX Site With Google -) Navigate to the Google Developers Console.
 -) Select an existing project or create a new one."/>
 
   
@@ -115,7 +115,7 @@ Integrate Open edX With Google Step 1: Register The Open EdX Site With Google -)
 </ul>
 <p>This section describes how to integrate Open edX with two of the most popular OAuth2 providers: Google and Facebook.</p>
 <h3 id="integrate-open-edx-with-google">Integrate Open edX With Google</h3>
-<h4 id="step-1-register-the-open-edx-site-with-google">Step 1: Register The Open EdX Site With Google</h4>
+<h4 id="step-1-register-the-open-edx-site-with-google">Step 1: Register The Open edX Site With Google</h4>
 <p>-) Navigate to the <a href="https://console.developers.google.com/project/_/apiui/apis/library">Google Developers Console</a>.</p>
 <p>-) Select an existing project or create a new one.</p>
 <p>-) Search and select the “Google+ API” in the Google APIs list and press the “Enable API” button.</p>
@@ -126,7 +126,7 @@ Integrate Open edX With Google Step 1: Register The Open EdX Site With Google -)
 <p>-) For Application type, select “Web application”, choose a “Name” for your client ID and leave the “Authorized JavaScript origins” field blank.</p>
 <p>-) Fill the “Authorized redirect URI” field with the value <em>http://SERVER-IP/auth/complete/google-oauth2/</em>. SERVER-IP is a placeholder, please, replace it with the actual domain of your Open edX server.</p>
 <p>-) Press the “Create” button and note down “Client ID” and the “Client secret”.</p>
-<h4 id="step-2-configure-open-edx">Step 2: Configure Open EdX</h4>
+<h4 id="step-2-configure-open-edx">Step 2: Configure Open edX</h4>
 <p>-) Log in to the server console.</p>
 <p>-) Navigate to the <code>/edx/app/edxapp/</code> directory If using Bitnami Open edX Navigate to the <code>/opt/bitnami/apps/edx/conf</code> directory. If using Open edX</p>
 <p>-) Modify the <em>lms.env.json</em> file and set FEATURES <code>ENABLE_THIRD_PARTY_AUTH</code> and <code>ENABLE_COMBINED_LOGIN_REGISTRATION</code> to <code>True</code>.</p>
@@ -151,7 +151,7 @@ Integrate Open edX With Google Step 1: Register The Open EdX Site With Google -)
 <p>-) Set “Client ID” to the “Client ID” you noted down previosuly and leave the “Client secret” field blank.</p>
 <p>-) Click the “Save” button.</p>
 <h3 id="integrate-open-edx-with-facebook">Integrate Open edX With Facebook</h3>
-<h4 id="step-1-register-the-open-edx-site-with-google-1">Step 1: Register The Open EdX Site With Google</h4>
+<h4 id="step-1-register-the-open-edx-site-with-facebook">Step 1: Register The Open edX Site With Facebook</h4>
 <p>-) Sign in to Facebook, then go to the <a href="https://developers.facebook.com/apps/?action=create">Facebook for Developers page</a>.</p>
 <p>-) Select “Add a New App -&gt; For Everything Else”.</p>
 <p>-) Enter a name for the app and mail address, and then select “Create New Facebook App ID”.</p>
@@ -163,7 +163,7 @@ Integrate Open edX With Google Step 1: Register The Open EdX Site With Google -)
 <p>-) Fill the “Site URI” field with the value <em>http://SERVER-IP/</em>. SERVER-IP is a placeholder, please, replace it with the actual domain of your Open edX server.</p>
 <p>-&gt; Browse to “Products (+) -&gt; Facebook Login -&gt; Settings”, fill the “Valid OAuth Redirect URIs”field with the value http://SERVER-IP/auth/complete/facebook/. SERVER-IP is a placeholder, please, replace it with the actual domain of your Open edX server.</p>
 <p>-) Click “Save Changes” button.</p>
-<h4 id="step-2-configure-open-edx-1">Step 2: Configure Open EdX</h4>
+<h4 id="step-2-configure-open-edx-1">Step 2: Configure Open edX</h4>
 <p>-) Log in to the server console.</p>
 <p>-) Navigate to the /opt/bitnami/apps/edx/conf directory.</p>
 <p>-) Modify the <em>lms.env.json</em> file set FEATURES <code>ENABLE_THIRD_PARTY_AUTH</code> and <code>ENABLE_COMBINED_LOGIN_REGISTRATION</code> to <code>True</code>.</p>
