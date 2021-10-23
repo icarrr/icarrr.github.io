@@ -134,7 +134,10 @@ To resolve this issue, replace these characters on problem text with the HTML en
         <link>https://sibunglon.com/2021/03/01/disable-account-lockout-after-excessive-login-failures-in-open-edx/</link>
         <pubDate>Mon, 01 Mar 2021 00:38:47 +0800</pubDate>
         <guid>https://sibunglon.com/2021/03/01/disable-account-lockout-after-excessive-login-failures-in-open-edx/</guid>
-        <description>Account lockout feature will keep track of the number of failed login attempts on a given user&amp;rsquo;s email. If the number of consecutive failed login attempts - without a successful login at some point - reaches a configurable threshold (default 5), then the account will be &amp;ldquo;locked&amp;rdquo; for a configurable amount of seconds (15 minutes) which will prevent additional login attempts until this time period has passed. If a user successfully logs in, all the counter which tracks the number of failed attempts will be reset back to 0.</description>
+        <description>Account lockout feature will be track the number of failed login attempts. If the number of consecutive failed login reaches a configurable threshold (default 5), user account will be “locked”
+By default, account lockout is enabled, but the feature is configurable via a FEATURES flag.
+Configure:
+Open and edit lms.env.json file using your favorite editor. Then find the &amp;quot;FEATURES&amp;quot; configuration, add ENABLE_MAX_FAILED_LOGIN_ATTEMPTS into &amp;quot;FEATURES&amp;quot; array and set to false. See the following codes snippet:</description>
       </item>
     
       <item>
@@ -143,6 +146,16 @@ To resolve this issue, replace these characters on problem text with the HTML en
         <pubDate>Sat, 20 Feb 2021 22:24:50 +0800</pubDate>
         <guid>https://sibunglon.com/2021/02/20/set-advanced-module-list-by-default-in-open-edx/</guid>
         <description>When setup course in Open edX, you can use some of default components that can help or support the learning process. But maybe you also need additional components which are not provided by Open edX by default, the component is called XBlock. You can make this XBlock and then install it on the Open edX server or you can also install XBlock that has been made by other people according to your needs.</description>
+      </item>
+    
+      <item>
+        <title>How to Install XBlock Open edX</title>
+        <link>https://sibunglon.com/2021/01/01/how-to-install-xblock-open-edx/</link>
+        <pubDate>Fri, 01 Jan 2021 17:56:47 +0800</pubDate>
+        <guid>https://sibunglon.com/2021/01/01/how-to-install-xblock-open-edx/</guid>
+        <description>Saat melakukan installasi XBlock ke environment Open edX, pastikan ownership directory xblock sudah diatur ke user dan group Open edX (edxapp) dan/atau melakukan installasi XBlock di python environment user Open edX (edxapp). Silahkan cek step berikut sebagai sample install XBlock.
+$ sudo chown edxapp:edxapp -R xblock-folder $ sudo -H -u edxapp bash $ cd xblock-folder $ source ~/edxapp_env $ pip install -e . Atau dapat juga menggunakan step berikut.
+$ sudo chown edxapp:edxapp -R xblock-folder $ cd xblock-folder $ sudo /edx/bin/pip.</description>
       </item>
     
       <item>
@@ -192,7 +205,8 @@ $ # Stop services $ /edx/bin/supervisorctl stop all $ sudo systemctl stop mongod
         <pubDate>Sat, 05 Sep 2020 05:52:45 +0800</pubDate>
         <guid>https://sibunglon.com/2020/09/05/change-language-open-edx/</guid>
         <description>Open edX uses Transifex, an open source translation platform, to power the translation of edX software into different languages. All translations are hosted at Transifex.com, which provides a web application allowing translators to write, submit, and manage their translations.
- Login to server and switch to edxapp environment for edX native installation.  $ sudo -H -u edxapp bash $ source /edx/app/edxapp/edxapp_env $ cd /edx/app/edxapp/edx-platform Install Python dependencies  $ pip install transifex-client or when using bitnami, use this</description>
+  Login to server and switch to edxapp environment for edX native installation.
+$ sudo -H -u edxapp bash $ source /edx/app/edxapp/edxapp_env $ cd /edx/app/edxapp/edx-platform   Install Python dependencies</description>
       </item>
     
       <item>
@@ -242,8 +256,7 @@ Jul 24 01:03:09 bnpb [service_variant=lms][django.request][env:sandbox] ERROR [e
         <guid>https://sibunglon.com/2020/07/26/enable-third-party-authentication-oauth2-in-open-edx/</guid>
         <description>Open edX Platform allows you to integrate third-party authentication with two kinds of authentication providers:
  OAuth2 Identity Providers. SAML Identity Providers  This section describes how to integrate Open edX with two of the most popular OAuth2 providers: Google and Facebook.
-Integrate Open edX With Google Step 1: Register The Open edX Site With Google -) Navigate to the Google Developers Console.
--) Select an existing project or create a new one.</description>
+Integrate Open edX With Google Step 1: Register The Open edX Site With Google  Navigate to the Google Developers Console. Select an existing project or create a new one.</description>
       </item>
     
       <item>

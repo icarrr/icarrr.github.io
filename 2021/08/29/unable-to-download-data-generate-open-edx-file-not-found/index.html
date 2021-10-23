@@ -69,7 +69,7 @@ location ~ ^/media/(?" />
 location ~ ^/media/(?P&lt;file&gt;.*) { root /edx/var/edxapp/media; try_files /$file =404; expires 31536000s; } Change =404 to /grades/$file or looks like the configuration below.
 location ~ ^/media/(?"><meta itemprop="datePublished" content="2021-08-29T21:14:25+08:00" />
 <meta itemprop="dateModified" content="2021-08-29T21:14:25+08:00" />
-<meta itemprop="wordCount" content="108"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
+<meta itemprop="wordCount" content="120"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
 <meta itemprop="keywords" content="Open edX," />
   <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://sibunglon.com/assets/img/profil.webp"/>
@@ -123,6 +123,12 @@ location ~ ^/media/(?"/>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">location</span> <span class="p">~</span> <span class="sr">^/media/(?P&lt;file&gt;.*)</span> <span class="p">{</span>
     <span class="kn">root</span> <span class="s">/edx/var/edxapp/media</span><span class="p">;</span>
     <span class="kn">try_files</span> <span class="s">/</span><span class="nv">$file</span> <span class="s">/grades/</span><span class="nv">$file</span><span class="p">;</span>
+    <span class="kn">expires</span> <span class="s">31536000s</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">location</span> <span class="p">~</span> <span class="sr">^/grades/(?P&lt;file&gt;.*)</span> <span class="p">{</span>
+    <span class="kn">root</span> <span class="s">/edx/var/edxapp/media/grades</span><span class="p">;</span>
+    <span class="kn">try_files</span> <span class="s">/</span><span class="nv">$file</span> <span class="p">=</span><span class="mi">404</span><span class="p">;</span>
     <span class="kn">expires</span> <span class="s">31536000s</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div><p>After that make sure the configuration is not error, use the command <code>sudo nginx -t</code>. And then restart nginx service use the command <code>sudo systemctl restart nginx</code>.</p>

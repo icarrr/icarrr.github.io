@@ -53,8 +53,7 @@
   <meta property="og:title" content="Enable Third-Party Authentication (OAuth2) in Open edX" />
 <meta property="og:description" content="Open edX Platform allows you to integrate third-party authentication with two kinds of authentication providers:
  OAuth2 Identity Providers. SAML Identity Providers  This section describes how to integrate Open edX with two of the most popular OAuth2 providers: Google and Facebook.
-Integrate Open edX With Google Step 1: Register The Open edX Site With Google -) Navigate to the Google Developers Console.
--) Select an existing project or create a new one." />
+Integrate Open edX With Google Step 1: Register The Open edX Site With Google  Navigate to the Google Developers Console. Select an existing project or create a new one." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://sibunglon.com/2020/07/26/enable-third-party-authentication-oauth2-in-open-edx/" /><meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2020-07-26T17:39:23+08:00" />
@@ -64,10 +63,9 @@ Integrate Open edX With Google Step 1: Register The Open edX Site With Google -)
   <meta itemprop="name" content="Enable Third-Party Authentication (OAuth2) in Open edX">
 <meta itemprop="description" content="Open edX Platform allows you to integrate third-party authentication with two kinds of authentication providers:
  OAuth2 Identity Providers. SAML Identity Providers  This section describes how to integrate Open edX with two of the most popular OAuth2 providers: Google and Facebook.
-Integrate Open edX With Google Step 1: Register The Open edX Site With Google -) Navigate to the Google Developers Console.
--) Select an existing project or create a new one."><meta itemprop="datePublished" content="2020-07-26T17:39:23+08:00" />
+Integrate Open edX With Google Step 1: Register The Open edX Site With Google  Navigate to the Google Developers Console. Select an existing project or create a new one."><meta itemprop="datePublished" content="2020-07-26T17:39:23+08:00" />
 <meta itemprop="dateModified" content="2020-07-26T17:39:23+08:00" />
-<meta itemprop="wordCount" content="741"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
+<meta itemprop="wordCount" content="708"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
 <meta itemprop="keywords" content="Open edX," />
   <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://sibunglon.com/assets/img/profil.webp"/>
@@ -75,8 +73,7 @@ Integrate Open edX With Google Step 1: Register The Open edX Site With Google -)
 <meta name="twitter:title" content="Enable Third-Party Authentication (OAuth2) in Open edX"/>
 <meta name="twitter:description" content="Open edX Platform allows you to integrate third-party authentication with two kinds of authentication providers:
  OAuth2 Identity Providers. SAML Identity Providers  This section describes how to integrate Open edX with two of the most popular OAuth2 providers: Google and Facebook.
-Integrate Open edX With Google Step 1: Register The Open edX Site With Google -) Navigate to the Google Developers Console.
--) Select an existing project or create a new one."/>
+Integrate Open edX With Google Step 1: Register The Open edX Site With Google  Navigate to the Google Developers Console. Select an existing project or create a new one."/>
 
   
 
@@ -116,77 +113,115 @@ Integrate Open edX With Google Step 1: Register The Open edX Site With Google -)
 <p>This section describes how to integrate Open edX with two of the most popular OAuth2 providers: Google and Facebook.</p>
 <h3 id="integrate-open-edx-with-google">Integrate Open edX With Google</h3>
 <h4 id="step-1-register-the-open-edx-site-with-google">Step 1: Register The Open edX Site With Google</h4>
-<p>-) Navigate to the <a href="https://console.developers.google.com/project/_/apiui/apis/library">Google Developers Console</a>.</p>
-<p>-) Select an existing project or create a new one.</p>
-<p>-) Search and select the “Google+ API” in the Google APIs list and press the “Enable API” button.</p>
-<p>-) Under “API Manager” sidebar, select “Overview -&gt; Create Credentials”.</p>
-<p>-) Select “OAuth consent screen”, for user type select “External” and click “Create”</p>
-<p>-) Fill the “Application name” field with the value your application name.</p>
-<p>-) Select “Credentials -&gt; Create Credentials”, and then select “OAuth client ID”.</p>
-<p>-) For Application type, select “Web application”, choose a “Name” for your client ID and leave the “Authorized JavaScript origins” field blank.</p>
-<p>-) Fill the “Authorized redirect URI” field with the value <em>http://SERVER-IP/auth/complete/google-oauth2/</em>. SERVER-IP is a placeholder, please, replace it with the actual domain of your Open edX server.</p>
-<p>-) Press the “Create” button and note down “Client ID” and the “Client secret”.</p>
+<ol>
+<li>Navigate to the <a href="https://console.developers.google.com/project/_/apiui/apis/library">Google Developers Console</a>.</li>
+<li>Select an existing project or create a new one.</li>
+<li>Search and select the “Google+ API” in the Google APIs list and press the “Enable API” button.</li>
+<li>Under “API Manager” sidebar, select “Overview -&gt; Create Credentials”.</li>
+<li>Select “OAuth consent screen”, for user type select “External” and click “Create”</li>
+<li>Fill the “Application name” field with the value your application name.</li>
+<li>Select “Credentials -&gt; Create Credentials”, and then select “OAuth client ID”.</li>
+<li>For Application type, select “Web application”, choose a “Name” for your client ID and leave the “Authorized JavaScript origins” field blank.</li>
+<li>Fill the “Authorized redirect URI” field with the value <em>http://SERVER-IP/auth/complete/google-oauth2/</em>. SERVER-IP is a placeholder, please, replace it with the actual domain of your Open edX server.</li>
+<li>Press the “Create” button and note down “Client ID” and the “Client secret”.</li>
+</ol>
 <h4 id="step-2-configure-open-edx">Step 2: Configure Open edX</h4>
-<p>-) Log in to the server console.</p>
-<p>-) Navigate to the <code>/edx/app/edxapp/</code> directory If using Bitnami Open edX Navigate to the <code>/opt/bitnami/apps/edx/conf</code> directory. If using Open edX</p>
-<p>-) Modify the <em>lms.env.json</em> file and set FEATURES <code>ENABLE_THIRD_PARTY_AUTH</code> and <code>ENABLE_COMBINED_LOGIN_REGISTRATION</code> to <code>True</code>.</p>
-<p>-) Modify the <code>lms.auth.json</code> file and set <code>SOCIAL_AUTH_OAUTH_SECRETS</code> as described below:</p>
+<ol>
+<li>Log in to the server console.</li>
+<li>Navigate to the <code>/edx/app/edxapp/</code> directory if using Open edX native, if using Bitnami Open edX Navigate to the <code>/opt/bitnami/apps/edx/conf</code> directory.</li>
+<li>Modify the <em>lms.env.json</em> file and set FEATURES <code>ENABLE_THIRD_PARTY_AUTH</code> and <code>ENABLE_COMBINED_LOGIN_REGISTRATION</code> to <code>True</code>.</li>
+<li>Modify the <code>lms.auth.json</code> file and set <code>SOCIAL_AUTH_OAUTH_SECRETS</code> as described below:</li>
+</ol>
 <blockquote>
 <p>NOTE: Remember to replace the CLIENT_SECRET placeholder in the example below with the <em>Client secret</em> you noted down previously.</p>
 </blockquote>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="s2">&#34;SOCIAL_AUTH_OAUTH_SECRETS&#34;</span><span class="err">:</span> <span class="p">{</span>
     <span class="nt">&#34;google-oauth2&#34;</span><span class="p">:</span> <span class="s2">&#34;CLIENT_SECRET&#34;</span>
 <span class="p">}</span>
-</code></pre></div><p>-) Restart LMS.</p>
-<p>-) Access the Django administration console.</p>
-<p>-) Browse to “Third Party Auth -&gt; Provider Configuration (OAuth2)”.</p>
-<p>-) Select “Add Provider Configuration (OAuth)”.</p>
-<p>-) Mark “Enabled” and “Visible” checkbox.</p>
-<p>-) Set “Icon Class” to “fa-google-plus”.</p>
-<p>-) Set “Name” to “Google”.</p>
-<p>-) Set “Backend Name” and “Provider slug” to “google-oauth2”.</p>
+</code></pre></div><ol start="5">
+<li>Restart LMS.</li>
+<li>Access the Django administration console.</li>
+<li>Browse to “Third Party Auth -&gt; Provider Configuration (OAuth2)”.</li>
+<li>Select “Add Provider Configuration (OAuth)”.</li>
+<li>Mark “Enabled” and “Visible” checkbox.</li>
+<li>Set “Icon Class” to “fa-google-plus”.</li>
+<li>Set “Name” to “Google”.</li>
+<li>Set “Backend Name” and “Provider slug” to “google-oauth2”.</li>
+</ol>
 <blockquote>
 <p>IMPORTANT: Remember that both the “Name” and the “Backend Name” fields must match.</p>
 </blockquote>
-<p>-) Set “Client ID” to the “Client ID” you noted down previosuly and leave the “Client secret” field blank.</p>
-<p>-) Click the “Save” button.</p>
+<ol start="13">
+<li>Set “Client ID” to the “Client ID” you noted down previosuly and leave the “Client secret” field blank.</li>
+<li>Click the “Save” button.</li>
+</ol>
 <h3 id="integrate-open-edx-with-facebook">Integrate Open edX With Facebook</h3>
 <h4 id="step-1-register-the-open-edx-site-with-facebook">Step 1: Register The Open edX Site With Facebook</h4>
-<p>-) Sign in to Facebook, then go to the <a href="https://developers.facebook.com/apps/?action=create">Facebook for Developers page</a>.</p>
-<p>-) Select “Add a New App -&gt; For Everything Else”.</p>
-<p>-) Enter a name for the app and mail address, and then select “Create New Facebook App ID”.</p>
-<p>-) Browse to “Settings -&gt; Basic”.</p>
-<p>-) Note down the “App ID” and “App Secret”.</p>
-<p>-) Set Display Name.</p>
-<p>-) In the “App Domains” field, enter the actual domain of your Open edX server (for example, localhost).</p>
-<p>-) Select “Add Platform”, and then select “Website”.</p>
-<p>-) Fill the “Site URI” field with the value <em>http://SERVER-IP/</em>. SERVER-IP is a placeholder, please, replace it with the actual domain of your Open edX server.</p>
-<p>-&gt; Browse to “Products (+) -&gt; Facebook Login -&gt; Settings”, fill the “Valid OAuth Redirect URIs”field with the value http://SERVER-IP/auth/complete/facebook/. SERVER-IP is a placeholder, please, replace it with the actual domain of your Open edX server.</p>
-<p>-) Click “Save Changes” button.</p>
+<ol>
+<li>
+<p>Sign in to Facebook, then go to the <a href="https://developers.facebook.com/apps/?action=create">Facebook for Developers page</a>.</p>
+</li>
+<li>
+<p>Select “Add a New App -&gt; For Everything Else”.</p>
+</li>
+<li>
+<p>Enter a name for the app and mail address, and then select “Create New Facebook App ID”.</p>
+</li>
+<li>
+<p>Browse to “Settings -&gt; Basic”.</p>
+</li>
+<li>
+<p>Note down the “App ID” and “App Secret”.</p>
+</li>
+<li>
+<p>Set Display Name.</p>
+</li>
+<li>
+<p>In the “App Domains” field, enter the actual domain of your Open edX server (for example, localhost).</p>
+</li>
+<li>
+<p>Select “Add Platform”, and then select “Website”.</p>
+</li>
+<li>
+<p>Fill the “Site URI” field with the value <em>http://SERVER-IP/</em>. SERVER-IP is a placeholder, please, replace it with the actual domain of your Open edX server.</p>
+</li>
+<li>
+<p>Browse to “Products (+) -&gt; Facebook Login -&gt; Settings”, fill the “Valid OAuth Redirect URIs”field with the value http://SERVER-IP/auth/complete/facebook/. SERVER-IP is a placeholder, please, replace it with the actual domain of your Open edX server.</p>
+</li>
+<li>
+<p>Click “Save Changes” button.</p>
+</li>
+</ol>
 <h4 id="step-2-configure-open-edx-1">Step 2: Configure Open edX</h4>
-<p>-) Log in to the server console.</p>
-<p>-) Navigate to the /opt/bitnami/apps/edx/conf directory.</p>
-<p>-) Modify the <em>lms.env.json</em> file set FEATURES <code>ENABLE_THIRD_PARTY_AUTH</code> and <code>ENABLE_COMBINED_LOGIN_REGISTRATION</code> to <code>True</code>.</p>
-<p>-) Modify the <code>lms.auth.json</code> file and set <code>SOCIAL_AUTH_OAUTH_SECRETS</code> as described below:</p>
+<ol>
+<li>Log in to the server console.</li>
+<li>Navigate to the <code>/edx/app/edxapp/</code> directory if using Open edX native, if using Bitnami Open edX Navigate to the <code>/opt/bitnami/apps/edx/conf</code> directory.</li>
+<li>Modify the <em>lms.env.json</em> file set FEATURES <code>ENABLE_THIRD_PARTY_AUTH</code> and <code>ENABLE_COMBINED_LOGIN_REGISTRATION</code> to <code>True</code>.</li>
+<li>Modify the <code>lms.auth.json</code> file and set <code>SOCIAL_AUTH_OAUTH_SECRETS</code> as described below:</li>
+</ol>
 <blockquote>
 <p>NOTE: Remember to replace the CLIENT_SECRET placeholder in the example below with the <em>Client secret</em> you noted down previously.</p>
 </blockquote>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json">    <span class="s2">&#34;SOCIAL_AUTH_OAUTH_SECRETS&#34;</span><span class="err">:</span> <span class="p">{</span>
         <span class="nt">&#34;facebook&#34;</span><span class="p">:</span> <span class="s2">&#34;CLIENT_SECRET&#34;</span>
     <span class="p">}</span>
-</code></pre></div><p>-) Restart LMS.</p>
-<p>-) Access the Django administration console.</p>
-<p>-) Browse to “Third Party Auth -&gt; Provider Configuration (OAuth2)”.</p>
-<p>-) Select “Add Provider Configuration (OAuth)”.</p>
-<p>-) Mark “Enabled” and “Visible” checkbox.</p>
-<p>-) Set “Icon Class” to “fa-facebook”.</p>
-<p>-) Set “Name” to “Facebook”.</p>
-<p>-) Set “Backend Name” and “Provider slug” to “facebook”.</p>
+</code></pre></div><ol start="5">
+<li>Restart LMS.</li>
+<li>Access the Django administration console.</li>
+<li>Browse to “Third Party Auth -&gt; Provider Configuration (OAuth2)”.</li>
+<li>Select “Add Provider Configuration (OAuth)”.</li>
+<li>Mark “Enabled” and “Visible” checkbox.</li>
+<li>Set “Icon Class” to “fa-facebook”.</li>
+<li>Set “Name” to “Facebook”.</li>
+<li>Set “Backend Name” and “Provider slug” to “facebook”.</li>
+</ol>
 <blockquote>
 <p>IMPORTANT: Remember that both the “Name” and the “Backend Name” fields must match.</p>
 </blockquote>
-<p>-) Set “Client ID” to the “Client ID” you noted down previously and leave the “Client secret” field blank.</p>
-<p>-) Click the “Save” button.</p>
+<ol start="11">
+<li>Set “Client ID” to the “Client ID” you noted down previously and leave the “Client secret” field blank.</li>
+<li>Click the “Save” button.</li>
+</ol>
 <h3 id="notes">Notes</h3>
 <p>When I enable this, I use Open edX version ironwood.master and <code>Google Sign In Error 403</code> because deprecated Google+ API. For fix this issue, need upgrade the package versions to <code>social-auth-app-django==3.1.0</code> and <code>social-auth-core==3.2.0</code> using command:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ sudo /edx/bin/pip.edxapp install social-auth-app-django<span class="o">==</span>3.1.0 social-auth-core<span class="o">==</span>3.2.0

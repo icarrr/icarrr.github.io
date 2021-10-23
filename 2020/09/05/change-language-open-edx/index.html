@@ -52,7 +52,8 @@
 
   <meta property="og:title" content="Change Language Open edX" />
 <meta property="og:description" content="Open edX uses Transifex, an open source translation platform, to power the translation of edX software into different languages. All translations are hosted at Transifex.com, which provides a web application allowing translators to write, submit, and manage their translations.
- Login to server and switch to edxapp environment for edX native installation.  $ sudo -H -u edxapp bash $ source /edx/app/edxapp/edxapp_env $ cd /edx/app/edxapp/edx-platform Install Python dependencies  $ pip install transifex-client or when using bitnami, use this" />
+  Login to server and switch to edxapp environment for edX native installation.
+$ sudo -H -u edxapp bash $ source /edx/app/edxapp/edxapp_env $ cd /edx/app/edxapp/edx-platform   Install Python dependencies" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://sibunglon.com/2020/09/05/change-language-open-edx/" /><meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2020-09-05T05:52:45+08:00" />
@@ -61,16 +62,18 @@
 
   <meta itemprop="name" content="Change Language Open edX">
 <meta itemprop="description" content="Open edX uses Transifex, an open source translation platform, to power the translation of edX software into different languages. All translations are hosted at Transifex.com, which provides a web application allowing translators to write, submit, and manage their translations.
- Login to server and switch to edxapp environment for edX native installation.  $ sudo -H -u edxapp bash $ source /edx/app/edxapp/edxapp_env $ cd /edx/app/edxapp/edx-platform Install Python dependencies  $ pip install transifex-client or when using bitnami, use this"><meta itemprop="datePublished" content="2020-09-05T05:52:45+08:00" />
+  Login to server and switch to edxapp environment for edX native installation.
+$ sudo -H -u edxapp bash $ source /edx/app/edxapp/edxapp_env $ cd /edx/app/edxapp/edx-platform   Install Python dependencies"><meta itemprop="datePublished" content="2020-09-05T05:52:45+08:00" />
 <meta itemprop="dateModified" content="2020-09-05T05:52:45+08:00" />
-<meta itemprop="wordCount" content="291"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
+<meta itemprop="wordCount" content="295"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
 <meta itemprop="keywords" content="Open edX," />
   <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://sibunglon.com/assets/img/profil.webp"/>
 
 <meta name="twitter:title" content="Change Language Open edX"/>
 <meta name="twitter:description" content="Open edX uses Transifex, an open source translation platform, to power the translation of edX software into different languages. All translations are hosted at Transifex.com, which provides a web application allowing translators to write, submit, and manage their translations.
- Login to server and switch to edxapp environment for edX native installation.  $ sudo -H -u edxapp bash $ source /edx/app/edxapp/edxapp_env $ cd /edx/app/edxapp/edx-platform Install Python dependencies  $ pip install transifex-client or when using bitnami, use this"/>
+  Login to server and switch to edxapp environment for edX native installation.
+$ sudo -H -u edxapp bash $ source /edx/app/edxapp/edxapp_env $ cd /edx/app/edxapp/edx-platform   Install Python dependencies"/>
 
   
 
@@ -104,35 +107,39 @@
     <section><p><img src="/assets/img/Open-edX/open-edx-new.png" alt="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Let&#39;s Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs"></p>
 <p>Open edX uses Transifex, an open source translation platform, to power the translation of edX software into different languages. All translations are hosted at <a href="https://docs.bitnami.com/aws/apps/edx/configuration/change-language/www.transifex.com">Transifex.com</a>, which provides a web application allowing translators to write, submit, and manage their translations.</p>
 <ol>
-<li>Login to server and switch to edxapp environment for edX native installation.</li>
-</ol>
+<li>
+<p>Login to server and switch to edxapp environment for edX native installation.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ sudo -H -u edxapp bash
 $ <span class="nb">source</span> /edx/app/edxapp/edxapp_env
 $ <span class="nb">cd</span> /edx/app/edxapp/edx-platform
-</code></pre></div><ol start="2">
-<li>Install Python dependencies</li>
-</ol>
+</code></pre></div></li>
+<li>
+<p>Install Python dependencies</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ pip install transifex-client
 </code></pre></div><p>or when using bitnami, use this</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ sudo /opt/bitnami/apps/edx/bin/pip.edxapp install transifex-client
-</code></pre></div><ol start="3">
-<li>Create the <code>~/.transifexrc</code> file and set your credentials as follows:</li>
-</ol>
+</code></pre></div></li>
+<li>
+<p>Create the <code>~/.transifexrc</code> file and set your credentials as follows:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt">[https://www.transifex.com]
 hostname = https://www.transifex.com
 username = USER
 password = PASS
 token =
-</code></pre></div><p>Token is left blank. You have to have permissions for the project (edx-platform) AFAIK - <a href="https://www.transifex.com/projects/p/edx-platform/">https://www.transifex.com/projects/p/edx-platform/</a> (it is free to sign up and join this project as a translator).</p>
-<ol start="4">
-<li>Make sure all languages you wish to download are present and uncommented in <code>conf/locale/config.yaml</code>. For example, if you wish to download Arabic and Indonesian, make sure your config.yaml file looks like this:</li>
+</code></pre></div></li>
 </ol>
+<p>Token is left blank. You have to have permissions for the project (edx-platform) AFAIK - <a href="https://www.transifex.com/projects/p/edx-platform/">https://www.transifex.com/projects/p/edx-platform/</a> (it is free to sign up and join this project as a translator).</p>
+<ol start="4">
+<li>
+<p>Make sure all languages you wish to download are present and uncommented in <code>conf/locale/config.yaml</code>. For example, if you wish to download Arabic and Indonesian, make sure your config.yaml file looks like this:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">locales</span><span class="p">:</span><span class="w">
 </span><span class="w">     </span>- <span class="l">en </span><span class="w"> </span><span class="c"># English - Source Language</span><span class="w">
 </span><span class="w">     </span>- <span class="l">id </span><span class="w"> </span><span class="c"># Indonesian</span><span class="w">
-</span></code></pre></div><ol start="5">
-<li>Set the value of the <em>LANGUAGE_CODE</em> variable to the language you desire (for example, set it to “es_es” to translate it to Spanish) in the configuration files.</li>
+</span></code></pre></div></li>
 </ol>
+<ol start="5">
+<li>
+<p>Set the value of the <em>LANGUAGE_CODE</em> variable to the language you desire in the configuration files.</p>
 <p>For <a href="http://localhost:1313/2019/07/13/install-open-edx-using-method-native-installation-ubuntu-16.04/">Open edX native installation</a></p>
 <ul>
 <li>/edx/app/edxapp/lms.env.json</li>
@@ -145,7 +152,8 @@ token =
 <li>/opt/bitnami/apps/edx/conf/lms.env.json</li>
 <li>/opt/bitnami/apps/edx/edx-platform/lms/envs/common.py</li>
 </ul>
-<p>Languages need to be specified with codes Django likes, so a code that is specific on Transifex such as <code>&quot;de_DE&quot;</code> must be specified as <code>&quot;de-de&quot;</code> in these configuration files. See <a href="https://groups.google.com/forum/#!topic/openedx-translation/vrOpMKzA0kU">https://groups.google.com/forum/#!topic/openedx-translation/vrOpMKzA0kU</a></p>
+</li>
+</ol>
 <ol start="6">
 <li>
 <p>Restart lms and cms for reload configuration.</p>
@@ -161,6 +169,16 @@ token =
 $ sudo /opt/bitnami/apps/edx/bin/paver.edxapp i18n_robot_pull
 </code></pre></div><ol start="8">
 <li>Restart lms and cms for reload configuration.</li>
+</ol>
+<h3 id="update-localization">Update Localization</h3>
+<ol>
+<li>
+<p>Edit the contents of <strong>.po</strong> files located in <code>conf/locale/&lt;lang_code&gt;/LC_MESSAGES</code> as you wish. When you finished your modification process, re-compile the translation messages manually by executing the following command in your edx-platform directory with your edx-platform virtualenv</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ paver i18n_fastgenerate
+</code></pre></div></li>
+<li>
+<p>Restart lms and cms.</p>
+</li>
 </ol>
 <h3 id="references">References</h3>
 <ul>
