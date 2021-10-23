@@ -108,10 +108,10 @@ curl https://getcaddy."/>
 <p>Gak usah takut 😆  beberapa bulan yang lalu kan udah kenalan sama si Caddy dan ini <a href="https://sibunglon.com/2018/10/26/berkenalan-dengan-caddy-server/">postnya</a>, tapi waktu itu kan cuman sekedar berkenalan. Nah dipostingan ini <strong>I&rsquo;m siBunglon</strong> akan memberikan step installasinya di linux beserta memamerkan fitur yang paling sering <strong>I&rsquo;m siBunglon</strong> pakai jika menggunakan si Caddy ini. To the point aja yah, kan kenalannya udah :D</p>
 <h3 id="bermain-dengan-caddy">Bermain Dengan Caddy</h3>
 <p>1) Install caddy ke sistem dengan command</p>
-<pre><code>curl https://getcaddy.com | bash -s personal
+<pre tabindex="0"><code>curl https://getcaddy.com | bash -s personal
 </code></pre><p>2) Saat ini caddy sudah bisa langsung dijalankan dengan command <code>caddy</code>, dan bisa diakses melalui <em>http://localhost:2015</em> dimana 2015 adalah port default dari caddy namun jika anda mengkses url tersebut cuman direspon dengan message 404 karena direktori root belum ditentukan, untuk menghentikan caddy yang baru saja dijalankan cukup gunakan command keyboard <code>CTRL + C</code>.</p>
 <p>3) Membuat Caddyfile yang memuat custom konfigurasi untuk caddy dengan command <code>vi /home/sibunglon/opreker/caddy/Caddyfile</code>. Sesuai perkataan sebelumnya, <strong>I&rsquo;m siBunglon</strong> akan memamerkan fitur browse caddy yaitu fitur yang paling sering <strong>I&rsquo;m siBunglon</strong> pakai jika ingin sharing file via web, maka dari itu Caddyfie diisi seperti berikut:</p>
-<pre><code>caddy.lab.sibunglon.com:9232 {
+<pre tabindex="0"><code>caddy.lab.sibunglon.com:9232 {
     root /deployments/batman/
 
     browse

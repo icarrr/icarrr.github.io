@@ -203,7 +203,7 @@ chmod +x <span class="si">${</span><span class="nv">ocpath</span><span class="si
 <ol start="9">
 <li>Masukkan script di bawah ini. Lalu save.</li>
 </ol>
-<pre><code class="language-apache2" data-lang="apache2">Alias /nextcloud &quot;/var/www/nextcloud/&quot;
+<pre tabindex="0"><code class="language-apache2" data-lang="apache2">Alias /nextcloud &quot;/var/www/nextcloud/&quot;
 
 &lt;Directory /var/www/nextcloud/&gt;
     Options +FollowSymlinks
@@ -229,7 +229,7 @@ chmod +x <span class="si">${</span><span class="nv">ocpath</span><span class="si
 <ol start="12">
 <li>Install beberapa modul php opsional agar nantinya nextcloud berjalan denga lancar, ketikkan perintah berikut :</li>
 </ol>
-<pre><code>apt-get update
+<pre tabindex="0"><code>apt-get update
 apt-get install php-bz2 php-curl php-gd php-imagick php-intl php-mbstring php-xml php-zip
 </code></pre><ol start="13">
 <li>Reload systemctl, ketikkan perintah <code>systemctl reload apache2</code></li>

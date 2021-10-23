@@ -116,7 +116,7 @@ Case:
 <p>Then what&rsquo;s the case?</p>
 <p>Case:</p>
 <p>-) When a user registers, the user should receive an email to activate the account, but in reality it is not. When checking the log file, log is found as follows:</p>
-<pre><code>Jul 10 16:50:32 e-Learning [service_variant=lms][edx.celery.task][env:sandbox] ERROR [e-Learning  7227] [tasks.py:48] - Unable to send activation email to user from &quot;e-Learning@sibunglon.com&quot; to &quot;research@sibunglon.com&quot;
+<pre tabindex="0"><code>Jul 10 16:50:32 e-Learning [service_variant=lms][edx.celery.task][env:sandbox] ERROR [e-Learning  7227] [tasks.py:48] - Unable to send activation email to user from &quot;e-Learning@sibunglon.com&quot; to &quot;research@sibunglon.com&quot;
 Traceback (most recent call last):
   File &quot;/edx/app/edxapp/edx-platform/common/djangoapps/student/tasks.py&quot;, line 23, in send_activation_email
     mail.send_mail(subject, message, from_address, [dest_addr], fail_silently=False)

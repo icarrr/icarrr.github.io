@@ -117,7 +117,7 @@ Pada lab ini saya asumsikan:
 </ul>
 <h3 id="bermain-subdomain-dengan-nginx">Bermain Subdomain Dengan Nginx</h3>
 <p>1) Pastikan pada konfigurasi domain induk tidak memuat listen 80, karena port tersebut akan dipake ramai-ramai oleh domain dan subdomain. Berikut konfigurasi domain di lab local saya:</p>
-<pre><code>server {
+<pre tabindex="0"><code>server {
    server_name sibunglon.com;
 
    access_log  /var/log/nginx/access.log;
@@ -136,10 +136,10 @@ Pada lab ini saya asumsikan:
 
 }
 </code></pre><p>2) Untuk mempercepatnya atau memudahkan pembuatan subdomain, copy saja konfigurasi domain induk dengan command</p>
-<pre><code>$ cd /sibunglonlabs/config/
+<pre tabindex="0"><code>$ cd /sibunglonlabs/config/
 $ cp sibunglonlabs.conf blog.conf
 </code></pre><p>3) Edit file konfigurasi subdomain dengan command <code>nano blog.conf</code> lalu ganti <strong>server_name</strong> dan <strong>direktori root</strong>nya.</p>
-<pre><code>server {
+<pre tabindex="0"><code>server {
    server_name blog.sibunglon.com;
 
    access_log  /var/log/nginx/access.log;

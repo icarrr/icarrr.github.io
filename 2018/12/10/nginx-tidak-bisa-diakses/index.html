@@ -109,11 +109,11 @@ firewall-cmd --permanent --zone=public --add-service=https Setelah diizinkan, fi
     </header>
     <section><p>Nginx di CentOS atau RHEL tidak bisa diakses? Service nginx aktif? Servernya aktif? Akses dari localhost bisa? Jika semua jawabannya <strong>YA</strong>, mungkin firewall di system anda sedang aktif namun trafik protokol HTTP dan HTTPS belum diizinkan oleh perangkat yang lain.</p>
 <p>Untuk mengizinkan trafik protokol HTTP, gunakan command</p>
-<pre><code>firewall-cmd --permanent --zone=public --add-service=http
+<pre tabindex="0"><code>firewall-cmd --permanent --zone=public --add-service=http
 </code></pre><p>Sedangkan untuk mengizinkan  trafik protokol HTTPS, gunakan command</p>
-<pre><code>firewall-cmd --permanent --zone=public --add-service=https
+<pre tabindex="0"><code>firewall-cmd --permanent --zone=public --add-service=https
 </code></pre><p>Setelah diizinkan, firewall wajib direload agar update firewall dapat diterapkan</p>
-<pre><code>firewall-cmd --reload
+<pre tabindex="0"><code>firewall-cmd --reload
 </code></pre></section>
     <footer>
       <hr>

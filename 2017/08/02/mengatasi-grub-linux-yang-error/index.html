@@ -121,11 +121,11 @@ Tujuan dari postingan ini yaitu agar pembaca yang memiliki masalah yang serupa, 
 <ol>
 <li>Ketikkan &ldquo;ls&rdquo; perintah ini digunakan untuk melihat paritisi yang ada</li>
 </ol>
-<pre><code>&gt; grub rescue&gt;ls
+<pre tabindex="0"><code>&gt; grub rescue&gt;ls
 </code></pre><ol start="2">
 <li>Ketikkan perintah dibawah ini satu-persatu</li>
 </ol>
-<pre><code>&gt; grub rescue&gt;set prefix=(hd0,msdos8)/boot/grub  
+<pre tabindex="0"><code>&gt; grub rescue&gt;set prefix=(hd0,msdos8)/boot/grub  
 &gt;
 &gt; grub rescue&gt;set root=(hd0,msdos8)  
 &gt;
@@ -135,7 +135,7 @@ Tujuan dari postingan ini yaitu agar pembaca yang memiliki masalah yang serupa, 
 </code></pre><ol start="3">
 <li>(hd0,msdos8) merupakan partisi linux dimana letak grub terinstall. Apabila setelah perintah insmod normal terjadi error. itu kemungkinan pada saat pemilihan partisi kurang temap. silahkan ganti (hd0,msdos8) dengan yang lain.Jika semuanya benar maka menu grub akan kembali muncul, dan silahkan booting ke linux anada, setelah masuk desktop selanjutnya kita perbaiki grub dengan perintah di bawah ini.</li>
 </ol>
-<pre><code>&gt; update-grubgrub-install /dev/sda
+<pre tabindex="0"><code>&gt; update-grubgrub-install /dev/sda
 </code></pre><ol start="4">
 <li>Selanjutnya restart, dan grub akan kembali normal.</li>
 </ol>

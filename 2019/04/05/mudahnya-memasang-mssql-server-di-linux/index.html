@@ -140,22 +140,22 @@
 <li>
 <p>Installasi di CentOS dan saudara sepaket manajernya</p>
 <p>1) Tambahkan repositori MSSQL Server ke sistem</p>
-<pre><code>sudo curl -o /etc/yum.repos.d/mssql-server.repo https://packages.microsoft.com/config/rhel/7/mssql-server-2017.repo
+<pre tabindex="0"><code>sudo curl -o /etc/yum.repos.d/mssql-server.repo https://packages.microsoft.com/config/rhel/7/mssql-server-2017.repo
 </code></pre><p>2) Install MSSQL Server</p>
-<pre><code>sudo yum install -y mssql-server
+<pre tabindex="0"><code>sudo yum install -y mssql-server
 </code></pre><p>3) Setup MSSQL Server, Setup disini akan membuat password untuk akun SA karena secara default MSSQL Server menggunakan user SA</p>
-<pre><code>sudo /opt/mssql/bin/mssql-conf setup
+<pre tabindex="0"><code>sudo /opt/mssql/bin/mssql-conf setup
 </code></pre></li>
 <li>
 <p>Installasi di Ubuntu dan saudara sepaket manajernya</p>
 <p>1) Tambahkan GPG key MSSQL Server ke sistem</p>
-<pre><code>wget -qO- https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+<pre tabindex="0"><code>wget -qO- https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
 </code></pre><p>2) Tambahkan repositori MSSQL Server ke sistem</p>
-<pre><code>sudo add-apt-repository &quot;$(wget -qO- https://packages.microsoft.com/config/ubuntu/16.04/mssql-server-2017.list)&quot;
+<pre tabindex="0"><code>sudo add-apt-repository &quot;$(wget -qO- https://packages.microsoft.com/config/ubuntu/16.04/mssql-server-2017.list)&quot;
 </code></pre><p>3) Install MSSQL Server</p>
-<pre><code>sudo apt-get update &amp;&amp; sudo apt-get install -y mssql-server
+<pre tabindex="0"><code>sudo apt-get update &amp;&amp; sudo apt-get install -y mssql-server
 </code></pre><p>4) Setup MSSQL Server, Setup disini akan membuat password untuk akun SA karena secara default MSSQL Server menggunakan user SA</p>
-<pre><code>sudo /opt/mssql/bin/mssql-conf setup
+<pre tabindex="0"><code>sudo /opt/mssql/bin/mssql-conf setup
 </code></pre></li>
 </ul>
 </section>

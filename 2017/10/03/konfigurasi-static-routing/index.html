@@ -141,7 +141,7 @@ Router Kiri (172.16.10.1) = Router0</p>
 <p>Lalu masukan IP Address untuk port serial 0/1/0 yang mengarah ke Router1</p>
 </li>
 </ol>
-<pre><code>&gt; Router &gt; enable
+<pre tabindex="0"><code>&gt; Router &gt; enable
 &gt;
 &gt; Router # configure terminal
 &gt;
@@ -155,7 +155,7 @@ Router Kiri (172.16.10.1) = Router0</p>
 </code></pre><ol start="3">
 <li>Lalu pada Router 1, masukan IP Address pada port serial 0/1/0 yang mengarah ke Router0</li>
 </ol>
-<pre><code>&gt; Router &gt; enable
+<pre tabindex="0"><code>&gt; Router &gt; enable
 &gt;
 &gt; Router # configure terminal
 &gt;
@@ -170,12 +170,12 @@ Router Kiri (172.16.10.1) = Router0</p>
 <ol start="4">
 <li>Pada Router0, Konfigurasikan seperti ini,</li>
 </ol>
-<pre><code>&gt; Router(config) # ip route 192.168.10.0 255.255.255.0 2.2.2.2
+<pre tabindex="0"><code>&gt; Router(config) # ip route 192.168.10.0 255.255.255.0 2.2.2.2
 </code></pre><p>Maksud dari commend diatas adalah, kita mencari ip &ldquo;network&rdquo; 192.168.10.0 dengan netmask 255.255.255.0 melalui pintu dengann ip 2.2.2.2. Jadi 192.168.10.0  255.255.255.0 itu adalah ip network tujuan yang akan kita hubungkan. Nah dengan 2.2.2.2 adalah ip milik Router1.  Jadi, konsep nya adalah kita memasukan ip network yang akan kita tuju dengan netmask nya, lalu terakhir masukan ip router selanjutnya , tidak peduli ada berapa router yang dipasang, yang penting kita hanyalah memasukan ip router selanjutnya .</p>
 <ol start="5">
 <li>Pada Router1, Konfigurasikan seperti ini,</li>
 </ol>
-<pre><code>&gt; Router(config) # ip route 172.16.10.0 255.255.255.0 2.2.2.1
+<pre tabindex="0"><code>&gt; Router(config) # ip route 172.16.10.0 255.255.255.0 2.2.2.1
 </code></pre><p>Nah, perhatikan sekarang saya memasukan 172.16.10.0 pada awalnya, kenapa? Karena tujuan dari Router1 adalah untuk menghubungkan jaringan milikna dengan ip network tersebut. dan pada akhir itu 2.2.2.1 bukan 2.2.2.2, kenapa ? Karena ip 2.2.2.2 adalah ip milik dia sendiri, dan ip 2.2.2.1 adalah ip milik Router sebelahnya, yaitu ip si Router0.</p>
 <p>Nah, hanya seperti itu untuk konfigurasi Routing Static, untuk hasilnya pada masing masing jaringan, bisa berhubungan dengan jaringan yang lain, lihat hasil ping dibawah ini,</p>
 <p>Ini adalah contoh network 192.168.10.0/24 ping ke 172.16.10.0/24</p>

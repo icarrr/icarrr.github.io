@@ -135,7 +135,7 @@ CommentClientRequestError: [&#34;Username is already taken&#34;]
 </code></pre></div><p>On google groups, someone also had this problem after deleting user on MySQL and then add a new user using the same username. The previous username has been registered in the forum database, because the student&rsquo;s unique id is not same, when the new user opens the discussion forum, the forum service returns an error message &ldquo;<strong>Username is already taken</strong>&rdquo;</p>
 <p><strong>How to fix it?</strong></p>
 <p>Delete the user&rsquo;s username in the mongoDB.</p>
-<pre><code class="language-mongo" data-lang="mongo">$ mongo
+<pre tabindex="0"><code class="language-mongo" data-lang="mongo">$ mongo
 &gt;&gt; use cs_comments_service
 &gt;&gt; db.users.find()
 &gt;&gt; db.users.remove({username: &quot;chyntia&quot;})

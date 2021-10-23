@@ -105,7 +105,7 @@ Disuatu waktu saya install MSSQL Server Linux di environment berbeda dari sebelu
 <p>Beberapa hari yang lalu saya sempat menulis step by step install Microsoft SQL Server (MSSQL Server) di environment Linux, namun mungkin saja ada yang menemukan error salah satunya error dengan message <strong>ValueError: unknown locale: UTF-8</strong>, gak usah takut karena dari masalah itu ataupun lainnya kita dapat pelajaran baru😆</p>
 <p>Disuatu waktu saya install MSSQL Server Linux di environment berbeda dari sebelumnya, saya ikuti tuh step by step installasi MSSQL Server yang saya tulis sebelumnya, alhamdulillah dapat rejeki, dapat <strong>ValueError: unknown locale: UTF-8</strong> pada saat setup MSSQL Server🤣  Dengan kemampuan sok tau saya😆  langsung disimpulkan maksud dari error message tersebut yaitu Lokal UTF-8 tidak di kenal. Okey berarti tugas saya yaitu bagaimana agar si lokal UTF-8 itu dikenali, dengan kemampuan sok tau auto isi var lokal dengan UTF-8 menggunakan command <code>export LC_ALL=en_US.UTF-8</code> , setelah itu eksekusi kembali command untuk setup MSSQL Server dan <strong>ValueError: unknown locale: UTF-8</strong> telah hilang.</p>
 <p>Berikut ini full message <strong>ValueError: unknown locale: UTF-8</strong> yang saya dapatkan:</p>
-<pre><code>[sibunglon@RizkaWandevi ~]$ sudo /opt/mssql/bin/mssql-conf setup
+<pre tabindex="0"><code>[sibunglon@RizkaWandevi ~]$ sudo /opt/mssql/bin/mssql-conf setup
 Error in localization. Using en_US.
 Choose an edition of SQL Server:
   1) Evaluation (free, no production use rights, 180-day limit)

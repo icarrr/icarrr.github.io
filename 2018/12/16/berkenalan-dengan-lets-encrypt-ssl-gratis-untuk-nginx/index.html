@@ -112,7 +112,7 @@ Let&rsquo;s encrypt adalah certificate Authority (CA) atau otoritas sertifikat y
 <h5 id="untuk-pengguna-rhel-7-atau-centos-7">Untuk pengguna RHEL 7 atau CentOS 7</h5>
 <p>1) Untuk mendapatakan dan memasang SSL gratis dari let&rsquo;s encrypt dibutuhkan aplikasi <strong>certbot</strong> yang akan mengaktifkan HTTPS secara otomatis di web server. Untuk memasang certbot cukup gunakan command <code>sudo yum install certbot-nginx</code>.</p>
 <p>2) Pastikan domain anda yang terdaftar telah di tentukan pada konfigursi nginx, pada lab sebelumnya telah dilakukan kustom konfigurasi nah disitu ada <strong>server_name</strong>, pastikan <strong>server_name</strong> mengararah ke domain. Berikut konfugurasi yang dimaksud:</p>
-<pre><code>server {
+<pre tabindex="0"><code>server {
    server_name sibunglon.com;
 
    access_log  /var/log/nginx/access.log;
@@ -134,7 +134,7 @@ Let&rsquo;s encrypt adalah certificate Authority (CA) atau otoritas sertifikat y
 <p>4) Untuk mendapatkan dan memasang SSL, cukup gunakan command:</p>
 <p><code>sudo certbot --nginx -d sibunglon.com -d www.sibunglon.com</code></p>
 <p>Pada proses pemasangan SSL akan dimintai email aktif untuk keperluan konfirmasi saja, setelah itu anda akan diminta prosedur pengarahan.</p>
-<pre><code>Please choose whether or not to redirect HTTP traffic to HTTPS, removing HTTP access.
+<pre tabindex="0"><code>Please choose whether or not to redirect HTTP traffic to HTTPS, removing HTTP access.
 -------------------------------------------------------------------------------
 1: No redirect - Make no further changes to the webserver configuration.
 2: Redirect - Make all requests redirect to secure HTTPS access. Choose this for
@@ -146,10 +146,10 @@ Select the appropriate number [1-2] then [enter] (press 'c' to cancel):
 <p>5) Sekarang SSL telah terpasang di web server anda.</p>
 <h5 id="untuk-pengguna-ubuntu-16-atau-ubuntu-18">Untuk pengguna Ubuntu 16 atau Ubuntu 18</h5>
 <p>1) Untuk mendapatakan dan memasang SSL gratis dari let&rsquo;s encrypt dibutuhkan aplikasi <strong>certbot</strong> yang akan mengaktifkan HTTPS secara otomatis di web server. Untuk memasang certbot, tambahkan repositorinya terlebih dahulu .</p>
-<pre><code>sudo add-apt-repository ppa:certbot/certbot
+<pre tabindex="0"><code>sudo add-apt-repository ppa:certbot/certbot
 sudo apt-get install python-certbot-nginx
 </code></pre><p>2) Pastikan domain anda yang terdaftar telah di tentukan pada konfigursi nginx, pada lab sebelumnya telah dilakukan kustom konfigurasi nah disitu ada <strong>server_name</strong>, pastikan <strong>server_name</strong> mengararah ke domain. Berikut konfugurasi yang dimaksud:</p>
-<pre><code>server {
+<pre tabindex="0"><code>server {
    server_name sibunglon.com;
 
    access_log  /var/log/nginx/access.log;
@@ -171,7 +171,7 @@ sudo apt-get install python-certbot-nginx
 <p>4) Untuk mendapatkan dan memasang SSL, cukup gunakan command:</p>
 <p><code>sudo certbot --nginx -d sibunglon.com -d www.sibunglon.com</code></p>
 <p>Pada proses pemasangan SSL akan dimintai email aktif untuk keperluan konfirmasi saja, setelah itu anda akan diminta prosedur pengarahan.</p>
-<pre><code>Please choose whether or not to redirect HTTP traffic to HTTPS, removing HTTP access.
+<pre tabindex="0"><code>Please choose whether or not to redirect HTTP traffic to HTTPS, removing HTTP access.
 -------------------------------------------------------------------------------
 1: No redirect - Make no further changes to the webserver configuration.
 2: Redirect - Make all requests redirect to secure HTTPS access. Choose this for

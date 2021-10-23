@@ -101,10 +101,10 @@
     <section><h3 id="cockpit-nge-blank-setelah-login-jika-diakses-melalui-reverse-proxy-nginx">Cockpit nge-Blank Setelah Login Jika diakses melalui Reverse Proxy Nginx?</h3>
 <p>Apakah anda mengalami hal tersebut? Jangan takut, karena saya juga mengalami hal tersebut 😆  Beberapa yang hari lalu, saya mengakses cockpit server lab saya yang melalui reverse proxy NGINX, awalnya normal aja pas ngakses sampai ke halaman login namun ketika mencoba login, si cockpit hanya stuck di blank page. Wahhhh alhamdulillah dapat masalah baru lagi :D padahal sebelumnya normal aja, gak ada stuck di blank page. Selang beberapa menit setelah nyelam di website resmi cockpit, masalah tersebut terselesaikan dengan beberapa config tambahan berikut ini:</p>
 <p>1) Buat sebuah file konfigurasi cockpit di direktori cockpit menggunakan command <code>vi /etc/cockpit/cockpit.conf</code> kemudian tambahkan script berikut:</p>
-<pre><code>[WebService]
+<pre tabindex="0"><code>[WebService]
 AllowUnencrypted=true
 </code></pre><p>2) Update konfigurasi reverse proxy seperti berikut:</p>
-<pre><code>map $http_upgrade $connection_upgrade {
+<pre tabindex="0"><code>map $http_upgrade $connection_upgrade {
 default upgrade;
 '' close;
 }

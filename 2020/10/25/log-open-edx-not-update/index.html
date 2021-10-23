@@ -129,7 +129,7 @@ $ sudo systemctl start mongod rabbitmq-server supervisor nginx
 <p>I&rsquo;m run this command on Open edX server.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ sudo lsof -nn -p <span class="k">$(</span>pidof rsyslogd<span class="k">)</span>
 </code></pre></div><p>And find this.</p>
-<pre><code>---
+<pre tabindex="0"><code>---
 rsyslogd 2502 syslog    8w   REG 202,1   104721    1824885 /edx/var/log/ecomworker/edx.log (deleted)
 rsyslogd 2502 syslog    9w   REG 202,1    34915    1827893 /edx/var/log/xqueue/edx.log (deleted)
 rsyslogd 2502 syslog   10w   REG 202,1    58789    1824922 /edx/var/log/lms/edx.log (deleted)
@@ -142,7 +142,7 @@ rsyslogd 2502 syslog   13w   REG 202,1    27029    1827788 /edx/var/log/tracking
 </code></pre></div><p>When check list of open files using this command.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ sudo lsof -nn -p <span class="k">$(</span>pidof rsyslogd<span class="k">)</span>
 </code></pre></div><p>I find this.</p>
-<pre><code>---
+<pre tabindex="0"><code>---
 rsyslogd 9756 syslog    8w   REG 0,40   111284  4805268258894419596 /media-edx/log/ecomworker/edx.log
 rsyslogd 9756 syslog    9w   REG 0,40    45721 13793588914623709624 /media-edx/log/xqueue/edx.log
 rsyslogd 9756 syslog   10w   REG 0,40   130154 17067885752292221460 /media-edx/log/cms/edx.log

@@ -140,7 +140,7 @@ Berikut Topology Telnet :</p>
 <li>Pertama, masukkan default gateway yang terdapat pada Router, Disini saya Memberikan IP Address pada interface fastEthernet 0/0 adalah 192.168.32.1. lalu saya memberikan contoh password priveleged level (#) :  okta</li>
 </ol>
 <p>Perintahnya adalah :</p>
-<pre><code>&gt; Router&gt;enable  
+<pre tabindex="0"><code>&gt; Router&gt;enable  
 &gt; Router#configure terminal  
 &gt; Router(config)#enable secret 1234  
 &gt; Router(config)#interface fastEthernet 0/0  
@@ -157,7 +157,7 @@ Berikut Topology Telnet :</p>
 <ol start="2">
 <li>Setelah Konfig Router Selesai, Selanjutnya kita Konfig Switch, sebagai contoh saya memberikan IP Address vlan1 yaitu : 192.168.32.2, karna 192.168.32.1 adalah gateway untuk router. Saya memberikan password pada switch privileged lever (#) : okta</li>
 </ol>
-<pre><code>&gt; Switch&gt;enable  
+<pre tabindex="0"><code>&gt; Switch&gt;enable  
 &gt; Switch#configure terminal  
 &gt; Switch(config)#vlan 1  
 &gt; Switch(config-vlan)#interface vlan 1  
@@ -193,7 +193,7 @@ Berikut Topology Telnet :</p>
 <ol start="3">
 <li>Config di Routernya: *Nama okta adalah contoh* kalian bisa menggunakan nama apapun terserah kalian.</li>
 </ol>
-<pre><code>&gt; Router(config)#hostname okta  
+<pre tabindex="0"><code>&gt; Router(config)#hostname okta  
 &gt; okta(config)#ip domain-name okta.com  
 &gt; okta(config)#crypto key generate rsa
 &gt; The name for the keys will be: okta.okta.com  
@@ -201,13 +201,13 @@ Berikut Topology Telnet :</p>
 &gt; General Purpose Keys. Choosing a key modulus greater than 512 may take  
 &gt; a few minutes.
 </code></pre><p>Pada bagian perintah “crypto key generate rsa” akan ditanyakan berapa panjang bit yang ingin dimasukkan, pilihannya 512 dan maksimal 2048, itu menandakan panjang key datanya, semakin panjang key data akan semakin aman, tetapi semakin membebani perangkat, jika hanya unntuk belajar gunakan yang 512 saja.</p>
-<pre><code>&gt; How many bits in the modulus [512]: 1024  
+<pre tabindex="0"><code>&gt; How many bits in the modulus [512]: 1024  
 &gt; % Generating 512 bit RSA keys, keys will be non-exportable...[OK]
 </code></pre><p><img src="https://2.bp.blogspot.com/-A0ihFr4Czto/W6gVk5oLaSI/AAAAAAAAEkc/kbwQUuox7EwqkwJuuHB_Fk1kE6Vtfbm9QCLcBGAs/s1600/7.png" alt="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Let&#39;s Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs"></p>
 <p>Berikut ini untuk menampilkan hasil encripsi key :</p>
-<pre><code>okta(config)#do sh crypto key mypubkey rsa
+<pre tabindex="0"><code>okta(config)#do sh crypto key mypubkey rsa
 </code></pre><p>Perintah diatas adalah script untuk menampilkan hasil encripsi key. Setelah memasukkan script itu akan tampil tampilan seperti dibawah ini :</p>
-<pre><code>&gt; % Key pair was generated at: 1:51:58 UTC Mar 1 1993  
+<pre tabindex="0"><code>&gt; % Key pair was generated at: 1:51:58 UTC Mar 1 1993  
 &gt; Key name: okta.okta.com  
 &gt; Storage Device: not specified  
 &gt; Usage: General Purpose Key  

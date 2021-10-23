@@ -116,7 +116,7 @@ Pada Lab ini saya asumsikan :
 <ul>
 <li>Khusus penggunan Red Hat, cukup edit file masternya dan berikan pagar disetiap item yang bisa diinputkan pada konfig yang baru dan tambahkan sintaks <em>include /etc/nginx/conf.d/*.conf</em> yang akan meload semua file .conf pada <em>/etc/nginx/conf.d</em>, berikut saya lampirkan contoh konfigurasi master di RHEL yang telah diedit.</li>
 </ul>
-<pre><code>user www-data;
+<pre tabindex="0"><code>user www-data;
 worker_processes auto;
 pid /run/nginx.pid;
 include /etc/nginx/modules-enabled/*.conf;
@@ -204,7 +204,7 @@ http {
 <p><code>nano sibunglonlabs.conf</code></p>
 <p>Untuk pengguna Red Hat Enterprise, karena sebelumnya tidak ada file yang dipindahkan maka kita cukup menambahkan sintaks yang sama yaitu <code>nano sibunglonlabs.conf</code></p>
 <p>3) Tambahkan sintaks berikut pada file <em>sibunglonlabs.conf</em>, script berikut juga termasuk memindahkan direktori root htmlnya</p>
-<pre><code>server {
+<pre tabindex="0"><code>server {
    server_name localhost;
    listen 80;
 

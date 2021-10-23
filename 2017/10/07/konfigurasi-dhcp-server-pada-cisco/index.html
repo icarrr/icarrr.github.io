@@ -141,7 +141,7 @@ Sebelumnya kita harus membuat simulasi jaringan seperti pada gambar berikut ini 
 <p>Pastikan saat kita akan melakukan konfigurasi kita masuk ke Global Configuration dengan menggunakan perintah “<strong>config t</strong>“</p>
 <p>Setting hostname, agar lebih mudah dalam pengkonfigurasian dhcp kita setting telrebih dahulu hostname pada router dengan perintah “ <strong>hostname nama</strong>“</p>
 <p>Kita setting IP Addres  router DHCP Server dengan menggunakan perintah “<strong>int gigabitEthernet 0/1</strong>“ pada saat mengkonfig ip ini kita masih berada di global configuration kemudian setelah itu masukkan perintah “ <strong>no shutdown</strong>“ Enter kemudian masukkan IP Address atau gateway milik Router beserta Netmask nya “ <strong>ip address 192.168.30.1 255.255.255.0</strong>“. Untuk lebih jelasnya bsa anda lihat langkah dibawah ini.</p>
-<pre><code>&gt;   Continue with configuration dialog? \[yes/no\]: no
+<pre tabindex="0"><code>&gt;   Continue with configuration dialog? \[yes/no\]: no
 &gt;   Press RETURN to get started!
 &gt;   Router&gt;enable
 &gt;   Router#configure terminal
@@ -159,7 +159,7 @@ Sebelumnya kita harus membuat simulasi jaringan seperti pada gambar berikut ini 
 <p>Berikut adalah tampilan saat kita melihat proses pada Ram / show running-config,disini interfacesnya sudah memiliki IP dan nama yang sudah kita konfig tadi.</p>
 <p><img src="https://4.bp.blogspot.com/-C5X2HYUSbpk/W7NDhi1kq0I/AAAAAAAAEqU/6MM6tJmrVSI8nRC3MvZPQsaqNrXhCL39QCLcBGAs/s1600/dhcp3.png" alt="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Let&#39;s Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs"></p>
 <p>Setelah itu kita setting DHCP Service dan Setting DHCP exclude addressesnya, saat akan melakukan setting pada DHCP service pastikan masuk ke dalam global configuration. Setelah sudah masuk ke global configuration  disini kita kan memnentukan nama pool, gateway dan dns, masih di router DHCP server, di mode global configuration masukan perintah:</p>
-<pre><code>&gt;   DHCP-server(config)#ip dhcp excluded-address 192.168.30.1
+<pre tabindex="0"><code>&gt;   DHCP-server(config)#ip dhcp excluded-address 192.168.30.1
 &gt;   DHCP-server(config)#ip dhcp pool dhcp-labjarkom
 &gt;   DHCP-server(dhcp-config)#default-router 192.168.30.1
 &gt;   DHCP-server(dhcp-config)#dns-server 192.168.100.254

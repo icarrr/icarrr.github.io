@@ -122,7 +122,7 @@ Diantara banyak module yang disediakan berdasarkan apa yang saya ketahui setelah
 <p>1) Silahkan mendaftar terlebih dahulu ke <a href="https://signup.sendgrid.com/">Sendgrid</a>. Ohiya disesi ini saya menggunakan paket Free Trial tapi gak usah takut, free trial disini tidak membatasi masa aktif akun melainkan membatasi pengiriman email jika masa percobaan telah habis.</p>
 <p>2) Setelah berhasil mendaftar silahkan masuk ke bagian <a href="https://app.sendgrid.com/guide/integrate">integrasi</a> dan pilih Web API karena kita akan mengirim email mengguanakan API.<img src="/assets/img/ansible-sendgrid/Screenshot_1.png" alt="siBunglonLabs">3) Berikutnya untuk memudahkan verifikasi API yang didapat, saya menggunakan cURL untuk Lab ini namun kalian dapat memilih selain cURL.<img src="/assets/img/ansible-sendgrid/Screenshot_2.png" alt="siBunglonLabs">4) Kemudian masukkan nama API Key-nya lali klik Create Key, setelah itu silahkan kalian ikuti instruksi verifikasi API Key-nya.<img src="/assets/img/ansible-sendgrid/Screenshot_3.png" alt="siBunglonLabs">Sampai tahap ini saya asumsikan kalian telah memverifikasi API Key-nya.<img src="/assets/img/ansible-sendgrid/Screenshot_4.png" alt="siBunglonLabs">5) Untuk menggunakan module sendgrid, pastikan paket sendgrid telah terinstall. Untuk menginstall-nya dapat menggunakan command <code>pip install sendgrid==2.2.1</code>.</p>
 <p>6) Selanjutnya buat playbook yang akan bertugas mengirim email. Buat file dengan ekstensi <strong>.yml</strong> dan berisikan seperti ini:</p>
-<pre><code>---
+<pre tabindex="0"><code>---
  - hosts: localhost
    tasks:
      - sendgrid:
@@ -142,7 +142,7 @@ Diantara banyak module yang disediakan berdasarkan apa yang saya ketahui setelah
 <p>3) Setiap user telegram memiliki 1 chat id, dapatkan chat_id anda:</p>
 <p>Kirim 1 pesan melalui bot yang baru saja dibuat, isinya terserah. Dikasus ini saya kirim chat dengan konten &ldquo;<em>/start</em>&rdquo;. Kemudian kunjungi <a href="https://api.telegram.org/bot">https://api.telegram.org/bot</a>[tokenApiKey]/getUpdates setelah itu akan browser akan menampilkan data pengirim ke bot dan disitu terdapat chat_id kalian.</p>
 <p><em>Note: ganti [tokenApiKey] menjadi token yang didapat dari BotFather, contoh token yang saya dapat yaitu 642964376:AAGUAlTDqTei_bcvMue0g27hsRadYWadvok jadi urlnya seperti berikut</em>:<img src="/assets/img/ansible-telegram/token_result.png" alt="siBunglonLabs">4) Selanjutnya buat playbook yang akan bertugas mengirim notifikasi ke telegram kalian. Buat file dengan ekstensi <strong>.yml</strong> dan berisikan seperti ini:</p>
-<pre><code>---
+<pre tabindex="0"><code>---
  - hosts: localhost
    tasks:
     - name: send a message to chat in playbook

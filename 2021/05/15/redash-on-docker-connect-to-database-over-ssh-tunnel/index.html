@@ -111,7 +111,7 @@ You can install Redash in a local environment (laptop or personal pc) and you ca
 <p>To create a tunnel directly from the terminal or use bash, use the following syntax:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ ssh -L 3389:0.0.0.0:3306 user@devx.sibunglon.com
 </code></pre></div><p>Or if you want to use SSH Config, you can use the following configuration:</p>
-<pre><code class="language-ssh_config" data-lang="ssh_config">Host devx-sibunglon
+<pre tabindex="0"><code class="language-ssh_config" data-lang="ssh_config">Host devx-sibunglon
     Hostname devx.sibunglon.com
     User user
     LocalForward 0.0.0.0:3389 127.0.0.1:3306

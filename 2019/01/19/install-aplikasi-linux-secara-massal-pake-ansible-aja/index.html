@@ -114,15 +114,15 @@
 <p>1) Pastikan local kalian saat ini bisa berkomunikasi atau local bisa remote server tanpa harus dimintai password karena ansible menggunakan SSH untuk terhubung ke server yang dituju.</p>
 <p>2) Pastikan local kalian saat ini bisa berkomunikasi dengan server melalui ansible, coba kalian ping servernya dengan ansible menggunakan command <code>ansible ipServerOrDNSServer -m ping</code></p>
 <p>Jika outputnya seperti berikut berarti local anda sudah bisa berkomunikasi dengan server melalui ansible</p>
-<pre><code>192.168.0.8 | SUCCESS =&gt; {
+<pre tabindex="0"><code>192.168.0.8 | SUCCESS =&gt; {
     &quot;changed&quot;: false,
     &quot;ping&quot;: &quot;pong&quot;
 }
 </code></pre><p>3) Buat inventaris dengan nama file <em>hosts</em> yang berisikan informasi server yaitu ip dan identity server anda, isinya seperti berikut ini.</p>
-<pre><code>[airgreen]
+<pre tabindex="0"><code>[airgreen]
 192.168.0.8 ansible_ssh_user=airgreen
 </code></pre><p>4) Buat playbook ansible dengan nama file <em>build.yml</em> yang berisi perintah perintah yang akan diterapkan ke server, isinya seperti berikut ini.</p>
-<pre><code>---
+<pre tabindex="0"><code>---
 - hosts: [airgreen]
   remote_user: airgreen
   become: true

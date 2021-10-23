@@ -192,72 +192,72 @@ Konfigurasi router :
 <p>Perintah <strong>show</strong> untuk memperifikasi konfigurasi router</p>
 <p>Menjalankan perintah EXEC di mode konfigurasi dengan perintah <strong>do</strong></p>
 <p><strong>MODE ROUTER</strong></p>
-<pre><code>Router&gt;
+<pre tabindex="0"><code>Router&gt;
 Mode user
-</code></pre><pre><code>Router#
+</code></pre><pre tabindex="0"><code>Router#
 Mode privileged (dikenal juga sebagai EXEC-level mode)
-</code></pre><pre><code>Router(config)#
+</code></pre><pre tabindex="0"><code>Router(config)#
 Mode global konfigurasi
-</code></pre><pre><code>Router(config-if)#
+</code></pre><pre tabindex="0"><code>Router(config-if)#
 Mode interface
-</code></pre><pre><code>Router(config-subif)#
+</code></pre><pre tabindex="0"><code>Router(config-subif)#
 Mode subinterface
-</code></pre><pre><code>Router(config-line)#
+</code></pre><pre tabindex="0"><code>Router(config-line)#
 Mode line
-</code></pre><pre><code>Router(config-router)#
+</code></pre><pre tabindex="0"><code>Router(config-router)#
 Mode konfigurasi router
 </code></pre><p>Catatan : masih ada mode yang lain selain mode diatas. Perintah pada tiap mode berbeda, misal jika kita mengetikan perintah <strong>show running-config</strong> di mode interface akan error.</p>
 <p><strong>MEMASUKI MODE KONFIGURASI GLOBAL</strong></p>
-<pre><code>Router&gt;
+<pre tabindex="0"><code>Router&gt;
 </code></pre><p>Melihat konfigurasi dengan terbatas dan tidak bisa mengkonfigurasi apapun dalam mode ini</p>
-<pre><code>Router&gt;enable
+<pre tabindex="0"><code>Router&gt;enable
 </code></pre><p>Perintah untuk masuk mode <em>privileged</em></p>
-<pre><code>Router#
+<pre tabindex="0"><code>Router#
 </code></pre><p>Mode ini sudah bisa melihat seluruh konfigurasi router dan berpindah ke mode konfigurasi global</p>
-<pre><code>Router#configure terminal
+<pre tabindex="0"><code>Router#configure terminal
 </code></pre><p>Perintah untuk masuk ke global konfigurasi</p>
-<pre><code>Router(config)#
+<pre tabindex="0"><code>Router(config)#
 </code></pre><p>Pada <em>prompt</em> ini kita sudah bisa memulai konfigurasi</p>
 <p><strong>KONFIGURASI NAMA ROUTER</strong></p>
-<pre><code>Router(config)#hostname Cisco
+<pre tabindex="0"><code>Router(config)#hostname Cisco
 </code></pre><p>Mengganti nama router dengan <strong>cisco</strong>(penamaan router bebas)</p>
-<pre><code>Cisco(config)#
+<pre tabindex="0"><code>Cisco(config)#
 </code></pre><p><strong>KONFIGURASI PASSWORD</strong></p>
-<pre><code>Router(config)#enable password cisco
+<pre tabindex="0"><code>Router(config)#enable password cisco
 </code></pre><p>Setting enable password</p>
-<pre><code>Router(config)#enable secret class
+<pre tabindex="0"><code>Router(config)#enable secret class
 </code></pre><p>Setting enable secret password</p>
-<pre><code>Router(config)#line console 0
+<pre tabindex="0"><code>Router(config)#line console 0
 </code></pre><p>Memasuki mode console <em>line</em></p>
-<pre><code>Router(config-line)#password console
+<pre tabindex="0"><code>Router(config-line)#password console
 </code></pre><p>Setting mode <em>console line</em> password dengan <strong>console</strong></p>
-<pre><code>Router(config-line)#login
+<pre tabindex="0"><code>Router(config-line)#login
 </code></pre><p>Mengaktifkan pengecekan password saat login</p>
-<pre><code>Router(config)#line vty 0 4
+<pre tabindex="0"><code>Router(config)#line vty 0 4
 </code></pre><p>Memasuki mode _vty line _untuk 5 <em>vty line</em></p>
-<pre><code>Router(config-line)#password telnet
+<pre tabindex="0"><code>Router(config-line)#password telnet
 </code></pre><p>Seting vty password dengan <strong>telnet</strong></p>
-<pre><code>Router(config-line)#login
+<pre tabindex="0"><code>Router(config-line)#login
 </code></pre><p>Mengaktifkan pengecekan password saat login</p>
 <p>Catatan : <strong>enable secret</strong> password secara default terenkripsi, namun <strong>enable</strong> password tidak. Dalam praktiknya tidak direkomendasikan menggunakan <strong>enable</strong> password, selalu gunakan <strong>enable secret</strong> password untuk keamanan.</p>
 <p><strong>ENKRIPSI PASSWORD</strong></p>
-<pre><code>Router(config)#service password-encryption
+<pre tabindex="0"><code>Router(config)#service password-encryption
 </code></pre><p>Menerapkan enkripsi password (enkripsi lemah)</p>
-<pre><code>Router(config)#enable password cisco
+<pre tabindex="0"><code>Router(config)#enable password cisco
 </code></pre><p>Mengubah <em>enable password</em> menjadi <strong>cisco</strong></p>
-<pre><code>Router(config)#line console 0
+<pre tabindex="0"><code>Router(config)#line console 0
 </code></pre><p>Berpindah ke mode line console</p>
-<pre><code>Router(config-line)#password cisco
+<pre tabindex="0"><code>Router(config-line)#password cisco
 </code></pre><p>Meneruskan setingan password seperti diatas</p>
-<pre><code>Router(config-line)#exit
+<pre tabindex="0"><code>Router(config-line)#exit
 </code></pre><p>Keluar dari mode line console</p>
-<pre><code>Router(config)#no service password-encryption
+<pre tabindex="0"><code>Router(config)#no service password-encryption
 </code></pre><p>Mematikan enkripsi password</p>
 <p>Catatan : jika kita menghidupkan <strong>service password-encryption</strong>, menggunakannya, lalu mematikannya, maka password yang sudah terenkripsi sebelumnya akan tetap terenkripsi. Password yang diketikan selanjutnya tidak terenkripsi.</p>
 <p><strong>KONFIGURASI INTERFACES</strong></p>
-<pre><code>Router(config)#interface serial 0/0/0
+<pre tabindex="0"><code>Router(config)#interface serial 0/0/0
 </code></pre><p>Memasuki mode konfigurasi interface serial</p>
-<pre><code>Router(config-if)#description Link ke ISP
+<pre tabindex="0"><code>Router(config-if)#description Link ke ISP
 </code></pre><p>Menambah deskripsi interface (optional)</p>
 <p>Router(config-if)#ip address 192.168.10.1 255.255.255.0</p>
 <p>Konfigurasi IP address dan subnetmask pada interface</p>
@@ -266,11 +266,11 @@ Mode konfigurasi router
 <p>Router(config-if)#no shutdown</p>
 <p>Menghidupkan interface secara administrative</p>
 <p>Catatan : perintah <strong>clock rate</strong> hanya digunakan untuk serial interface yang dicolokan kabel serial DCE saja. Clock rate harus selalu dikonfigurasi di salah satu serial antara kedua Router yang memakai kabel serial.</p>
-<pre><code>Router(config)#interface fastehternet 0/0
+<pre tabindex="0"><code>Router(config)#interface fastehternet 0/0
 </code></pre><p>Memasuki konfigurasi fastehternet interface</p>
-<pre><code>Router(config-if)#description LAN LOKAL
+<pre tabindex="0"><code>Router(config-if)#description LAN LOKAL
 </code></pre><p>Menentukan deskripsi interface dengan <strong>LAN LOKAL</strong></p>
-<pre><code>Router(config-if)#ip address 192.168.1.10 255.255.255.0
+<pre tabindex="0"><code>Router(config-if)#ip address 192.168.1.10 255.255.255.0
 </code></pre><p>Konfigurasi IP address dan subnetmask</p>
 <p>Router(config-if)#no shutdown</p>
 <p>Menghidupkan interface secara administratif</p>
@@ -279,73 +279,73 @@ Mode konfigurasi router
 <p>Router(config-if)#exit</p>
 <p>Keluar dari mode interface/kembali ke mode sebelumnya</p>
 <p><strong>BANNER</strong></p>
-<pre><code>Router(config)#banner motd  # isi pesan #
+<pre tabindex="0"><code>Router(config)#banner motd  # isi pesan #
 </code></pre><p>Menambah pesan login (<em>message of the day</em>)</p>
-<pre><code>Router(config)#banner login # isi pesan #
+<pre tabindex="0"><code>Router(config)#banner login # isi pesan #
 </code></pre><p>Menambah banner ketika login</p>
-<pre><code>Router(config)#no banner login
+<pre tabindex="0"><code>Router(config)#no banner login
 </code></pre><p>Perintah untuk membatalkan banner login</p>
 <p><strong>MEMETAKAN LOCAL HOST KE IP ADDRESS</strong></p>
-<pre><code>Router(config)#ip host sukabumi 192.168.2.5
+<pre tabindex="0"><code>Router(config)#ip host sukabumi 192.168.2.5
 </code></pre><p>Mendaftarkan ip 192.168.2.5 ke local host name <strong>sukabumi</strong></p>
-<pre><code>Router#ping sukabumi
+<pre tabindex="0"><code>Router#ping sukabumi
 </code></pre><p>=</p>
-<pre><code>Router#ping 192.168.2.5
+<pre tabindex="0"><code>Router#ping 192.168.2.5
 </code></pre><p>Kedua perintah tersebut dieksekusi ke objek yang sama : mengirim pesan echo (ping) ke alamat 192.168.2.5</p>
 <p>Catatan : secara default no port perintah <strong>ip host</strong> adalah 23 (telnet). Host name tersebut bisa dipakai untuk telnet.</p>
-<pre><code>Router#sukabumi
+<pre tabindex="0"><code>Router#sukabumi
 </code></pre><p>=</p>
-<pre><code>Router#telnet sukabumi
+<pre tabindex="0"><code>Router#telnet sukabumi
 </code></pre><p>=</p>
-<pre><code>Router#telnet 192.168.2.5
-</code></pre><pre><code>Router(config)#no ip domain-lookup
+<pre tabindex="0"><code>Router#telnet 192.168.2.5
+</code></pre><pre tabindex="0"><code>Router(config)#no ip domain-lookup
 </code></pre><p>Mematikan fitur otomatis translasi perintah yang tidak diketahui ke domain atau local host name</p>
 <p>Catatan : semua perintah salah (tidak diketahui) yang diketikan, maka router akan menunggu selama beberapa menit untuk mentranslasikan / me-resolve perintah tersebut ke domain server 255.255.255.255? secara default router akan mencoba menerjemahkan setiap perintah salah yang kita ketikan ke DNS server pada alamat 255.255.255.255. Jika kita tidak akan menkonfigurasi server DNS, sebaiknya matikan saja fitur ini untuk menghemat waktu jika kita sering salah dalam mengetik perintah pada CLI.</p>
 <p><strong>LOGIN TIME OUT</strong></p>
-<pre><code>Router(config)#line console 0
+<pre tabindex="0"><code>Router(config)#line console 0
 </code></pre><p>Memasuki mode <em>console line</em></p>
-<pre><code>Router(config-line)#exec-timeout 0 0
+<pre tabindex="0"><code>Router(config-line)#exec-timeout 0 0
 </code></pre><p>Menyeting batas waktu log off otomatis ke 0 0 (menit detik). Value ini dimaksudkan router tidak pernah log off</p>
 <p><strong>MENYIMPAN DAN MENGHAPUS KONFIGURASI</strong></p>
-<pre><code>Router#copy running-config startup-config
+<pre tabindex="0"><code>Router#copy running-config startup-config
 </code></pre><p>Menyimpan konfigurasi yang sedang berjalan di NVRAM</p>
-<pre><code>Router#copy running-config tftp
+<pre tabindex="0"><code>Router#copy running-config tftp
 </code></pre><p>Menyimpan konfigurasi yang sedang berjalan di TFTP server secara <em>remote</em>.</p>
-<pre><code>Router#erase startup-config
+<pre tabindex="0"><code>Router#erase startup-config
 </code></pre><p>Menghapus file konfigurasi dari VNRAM</p>
 <p><strong>PERINTAH “SHOW”</strong></p>
-<pre><code>Router#show ?
+<pre tabindex="0"><code>Router#show ?
 </code></pre><p>Melihat semua perintah yang tersedia</p>
-<pre><code>Router#show interfaces
+<pre tabindex="0"><code>Router#show interfaces
 </code></pre><p>Melihat statistik semua interface</p>
-<pre><code>Router#show interface serial 0/0/0
+<pre tabindex="0"><code>Router#show interface serial 0/0/0
 </code></pre><p>Melihat statistik sebuah interface</p>
-<pre><code>Router#show ip interface brief
+<pre tabindex="0"><code>Router#show ip interface brief
 </code></pre><p>Melihat semua interface dengan informasi yang ringkas, termasuk status dan konfigurasi IP pada tiap interface</p>
-<pre><code>Router#show controllers serial 0/0/0
+<pre tabindex="0"><code>Router#show controllers serial 0/0/0
 </code></pre><p>Melihat statistik hardware sebuah interface. Informasi yang terlihat adalah clock rate dan kabel DCE atau DTE yang terhubung atau tidak ada kabel yang terhubung.</p>
-<pre><code>Router#show host
+<pre tabindex="0"><code>Router#show host
 </code></pre><p>Melihat local host cache</p>
-<pre><code>Router#show users
+<pre tabindex="0"><code>Router#show users
 </code></pre><p>Melihat user yang sedang koneksi</p>
-<pre><code>Router#show history
+<pre tabindex="0"><code>Router#show history
 </code></pre><p>Melihat history dari perintah yang sudah diketikan</p>
-<pre><code>Router#show flash
+<pre tabindex="0"><code>Router#show flash
 </code></pre><p>Melihat info memory flash</p>
-<pre><code>Router#show version
+<pre tabindex="0"><code>Router#show version
 </code></pre><p>Melihat versi IOS</p>
-<pre><code>Router#show arp
+<pre tabindex="0"><code>Router#show arp
 </code></pre><p>Melihat arp tabel</p>
-<pre><code>Router#show protocols
+<pre tabindex="0"><code>Router#show protocols
 </code></pre><p>Melihat status protocol layer 3 yang telah dikonfigurasi</p>
-<pre><code>Router#show startup-config
+<pre tabindex="0"><code>Router#show startup-config
 </code></pre><p>Melihat konfigurasi yang tersimpan di NVRAM</p>
-<pre><code>Router#show running-config
+<pre tabindex="0"><code>Router#show running-config
 </code></pre><p>Melihat konfigurasi yang sedang berjalan di RAM</p>
 <p><strong>Perintah EXEC pada mode konfigurasi global : perintah “DO”</strong></p>
-<pre><code>Router(config)#do show running-config
+<pre tabindex="0"><code>Router(config)#do show running-config
 </code></pre><p>Mengeksekusi perintah level privileged <strong>show running-config</strong> ketika sedang berada pada mode konfigurasi global</p>
-<pre><code>Router(config)#
+<pre tabindex="0"><code>Router(config)#
 </code></pre><p>Router akan tetap pada mode konfigurasi global setelah mengetikan perintah <strong>do</strong></p>
 <p>Catatan : perintah <strong>do</strong> sangat bermanfaat ketika kita ingin mengetikan perintah level EXEC ketika sedang berada pada mode konfigurasi global atau submode apapun.</p>
 <p><strong>B. LATAR BELAKANG</strong><br>

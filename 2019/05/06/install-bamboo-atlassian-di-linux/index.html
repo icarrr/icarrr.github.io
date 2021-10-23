@@ -130,31 +130,31 @@ CI adalah metodologi pengembangan perangkat lunak di mana tes pembangunan, unit,
 <h4 id="bermain-dengan-bamboo-atlassian">Bermain dengan Bamboo Atlassian</h4>
 <p>Bamboo Atlassian dapat dipasang pada environment Linux dengan langkah-langkah berikut:</p>
 <p>1) Direkomendasikan untuk membuat user baru khusus dapat menjalankan bamboo atlassian.</p>
-<pre><code>sudo /usr/sbin/useradd --create-home --home-dir /usr/local/bamboo --shell /bin/bash bamboo
+<pre tabindex="0"><code>sudo /usr/sbin/useradd --create-home --home-dir /usr/local/bamboo --shell /bin/bash bamboo
 </code></pre><p>2) Login ke user yang baru saja dibuat.</p>
-<pre><code>sudo -i -u bamboo
+<pre tabindex="0"><code>sudo -i -u bamboo
 </code></pre><p>3) Download file installasi bamboo atlassian</p>
-<pre><code>wget https://product-downloads.atlassian.com/software/bamboo/downloads/atlassian-bamboo-6.8.0.tar.gz
+<pre tabindex="0"><code>wget https://product-downloads.atlassian.com/software/bamboo/downloads/atlassian-bamboo-6.8.0.tar.gz
 </code></pre><p>Atau dapat didownload langsung <a href="https://www.atlassian.com/software/bamboo/download">disini</a>, download file yang yang formatnya <em>tar.gz</em>.</p>
 <p>4) Pastikan di enviroment kalian, telah terpasang Java Development Kit (JDK) kemudian atur variabel <em>JAVA_HOME</em>. Di lab ini saya menggunakan JDK 8, jika menggunakan JDK yang berbeda silahkan disesuaikan <em>JAVA_HOME.</em></p>
-<pre><code>export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk
+<pre tabindex="0"><code>export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk
 </code></pre><p>5) Ekstrak file installasi bamboo atlassian yang telah di download.</p>
-<pre><code>tar -zxvf atlassian-bamboo-6.8.0.tar.gz
+<pre tabindex="0"><code>tar -zxvf atlassian-bamboo-6.8.0.tar.gz
 </code></pre><p>6) Ganti nama direktori karena nama direktorinya kepanjangan (ini bisa diskip).</p>
-<pre><code>mv atlassian-bamboo-6.8.0 atlassian-bamboo
+<pre tabindex="0"><code>mv atlassian-bamboo-6.8.0 atlassian-bamboo
 </code></pre><p>7) Set direktori home bamboo.</p>
-<pre><code>vi atlassian-bamboo/atlassian-bamboo/WEB-INF/classes/bamboo-init.properties
+<pre tabindex="0"><code>vi atlassian-bamboo/atlassian-bamboo/WEB-INF/classes/bamboo-init.properties
 </code></pre><p>Kemudian tambahkan sintaks berikut:</p>
-<pre><code>bamboo.home=/usr/local/bamboo/bamboo
+<pre tabindex="0"><code>bamboo.home=/usr/local/bamboo/bamboo
 </code></pre><p>8) Jalankan bamboo atlassian</p>
-<pre><code>atlassian-bamboo/bin/start-bamboo.sh
+<pre tabindex="0"><code>atlassian-bamboo/bin/start-bamboo.sh
 </code></pre><p>Untuk menghentikan bamboo atlassian dapat menggunakan command <code>atlassian-bamboo/bin/stop-bamboo.sh</code></p>
 <p>Atau bamboo dapat dijalankan sebagai sebuah layanan (service) dengan tahapan:</p>
 <p>1) Login sebagai user yang dapat akses administrator</p>
 <p>2) Buat sebuah file service</p>
-<pre><code>sudo vi /etc/systemd/system/bamboo.service
+<pre tabindex="0"><code>sudo vi /etc/systemd/system/bamboo.service
 </code></pre><p>Dan tambahkan script berikut kemudian simpan dan keluar dari teks editor.</p>
-<pre><code>[Unit]
+<pre tabindex="0"><code>[Unit]
 Description=Atlassian Bamboo
 After=syslog.target network.target
 
@@ -168,7 +168,7 @@ SuccessExitStatus=143
 [Install]
 WantedBy=multi-user.target
 </code></pre><p>3) Reload systemd</p>
-<pre><code>sudo systemctl daemon-reload
+<pre tabindex="0"><code>sudo systemctl daemon-reload
 </code></pre><p>4) Kini bamboo dapat diaktifkan menggunakan systemd dengan command <code>sudo systemctl start bamboo</code> untuk menjalankan bamboo dan <code>sudo systemctl stop bamboo</code> untuk menghentikan bamboo.</p>
 <p>Situs bamboo atlassian dapat diakses dari URL seperti ini: <a href="http://localhost:8085/">http://localhost:8085/</a></p>
 <h4 id="referensi">Referensi</h4>

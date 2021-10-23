@@ -115,7 +115,7 @@ Nginx, banyak orang membicarakannya meskipun salah dipelafalannya. Dulu saya jug
 <p>Jika ingin nginx mengaktifkan nginx pada saat sistem memulai booting (setelah server mati), gunakan command</p>
 <p><code>systemctl enable nginx</code></p>
 <p>Jika anda mengaktifkan firewall disistem anda, jalankan command berikut untuk mengizinkan trafik HTTP dan HTTPS</p>
-<pre><code>firewall-cmd --permanent --zone=public --add-service=http
+<pre tabindex="0"><code>firewall-cmd --permanent --zone=public --add-service=http
 firewall-cmd --permanent --zone=public --add-service=https
 firewall-cmd --reload
 </code></pre><p>5) Sekarang nginx telah terpasang disistem anda, dapat dicek melalui web browser dengan url <em>http://ipServer</em></p>
