@@ -5,10 +5,20 @@
     <description>Recent content in Open edX on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 29 Aug 2021 21:14:25 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 25 Oct 2021 13:03:24 +0800</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/open-edx/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Fixing Unable to Delete Account Open edX via User Profile</title>
+        <link>https://sibunglon.com/2021/10/25/fixing-unable-to-delete-account-open-edx-via-user-profile/</link>
+        <pubDate>Mon, 25 Oct 2021 13:03:24 +0800</pubDate>
+        <guid>https://sibunglon.com/2021/10/25/fixing-unable-to-delete-account-open-edx-via-user-profile/</guid>
+        <description>When I test to delete my account from the user profile page, I get the following message after entering the password.
+When check the file /edx/var/log/lms/edx.log i find this.
+openedx.core.djangoapps.user_authn.exceptions.AuthFailedError Oct 25 13:08:55 ubuntu [service_variant=lms][openedx.core.djangoapps.user_api.accounts.views][env:sandbox] ERROR [ubuntu 10792] [user 14] [views.py:472] - 500 error deactivating account Default state does not exist! Populate retirement states to retire users. Traceback (most recent call last): File &amp;quot;/edx/app/edxapp/edx-platform/openedx/core/djangoapps/user_api/models.py&amp;quot;, line 320, in create_retirement pending = RetirementState.</description>
+      </item>
     
       <item>
         <title>Unable to Download Data Generate Open edX (file not found)</title>
