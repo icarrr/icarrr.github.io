@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us" itemscope itemtype="http://schema.org/WebPage">
   <head>
-  <title>Unable to Download Data Generate Open edX (file not found)</title>
+  <title>Disable Analytics Tab on Instructor Page</title>
   
   <meta http-equiv="cache-control" content="public, max-age=31536000" />
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -50,36 +50,36 @@
   
   <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
 
-  <meta property="og:title" content="Unable to Download Data Generate Open edX (file not found)" />
-<meta property="og:description" content="This problem occurs because don&rsquo;t use Amazon S3 to save data generate. To fix it, follow these steps.
--) Login to Open edX server, then create symbolic link from /tmp/edx-s3/grades to /edx/var/edxapp/media.
--) Update nginx configuration of LMS. Find the following snippet codes on the configuration file.
-location ~ ^/media/(?P&lt;file&gt;.*) { root /edx/var/edxapp/media; try_files /$file =404; expires 31536000s; } Change =404 to /grades/$file or looks like the configuration below.
-location ~ ^/media/(?" />
+  <meta property="og:title" content="Disable Analytics Tab on Instructor Page" />
+<meta property="og:description" content="To disable analytics tab on instructor page Open edX, follow the steps below:
+  Go to Open edX server console.
+  Open and edit LMS and CMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml).
+  Then find the ANALYTICS_DASHBOARD_URL configuration and set to blank or &#39;&#39;. See the following codes snippet:
+... ANALYTICS_DASHBOARD_URL: &#39;&#39; ...   Restart LMS services.  " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://sibunglon.com/2021/08/29/unable-to-download-data-generate-open-edx-file-not-found/" /><meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-08-29T21:14:25+08:00" />
-<meta property="article:modified_time" content="2021-08-29T21:14:25+08:00" /><meta property="og:site_name" content="The Official Site of siBunglon" />
+<meta property="og:url" content="https://sibunglon.com/2021/11/16/disable-analytics-tab-on-instructor-page/" /><meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-11-16T22:01:36+08:00" />
+<meta property="article:modified_time" content="2021-11-16T22:01:36+08:00" /><meta property="og:site_name" content="The Official Site of siBunglon" />
 
 
-  <meta itemprop="name" content="Unable to Download Data Generate Open edX (file not found)">
-<meta itemprop="description" content="This problem occurs because don&rsquo;t use Amazon S3 to save data generate. To fix it, follow these steps.
--) Login to Open edX server, then create symbolic link from /tmp/edx-s3/grades to /edx/var/edxapp/media.
--) Update nginx configuration of LMS. Find the following snippet codes on the configuration file.
-location ~ ^/media/(?P&lt;file&gt;.*) { root /edx/var/edxapp/media; try_files /$file =404; expires 31536000s; } Change =404 to /grades/$file or looks like the configuration below.
-location ~ ^/media/(?"><meta itemprop="datePublished" content="2021-08-29T21:14:25+08:00" />
-<meta itemprop="dateModified" content="2021-08-29T21:14:25+08:00" />
-<meta itemprop="wordCount" content="120"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
+  <meta itemprop="name" content="Disable Analytics Tab on Instructor Page">
+<meta itemprop="description" content="To disable analytics tab on instructor page Open edX, follow the steps below:
+  Go to Open edX server console.
+  Open and edit LMS and CMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml).
+  Then find the ANALYTICS_DASHBOARD_URL configuration and set to blank or &#39;&#39;. See the following codes snippet:
+... ANALYTICS_DASHBOARD_URL: &#39;&#39; ...   Restart LMS services.  "><meta itemprop="datePublished" content="2021-11-16T22:01:36+08:00" />
+<meta itemprop="dateModified" content="2021-11-16T22:01:36+08:00" />
+<meta itemprop="wordCount" content="52"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
 <meta itemprop="keywords" content="Open edX," />
   <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://sibunglon.com/assets/img/profil.webp"/>
 
-<meta name="twitter:title" content="Unable to Download Data Generate Open edX (file not found)"/>
-<meta name="twitter:description" content="This problem occurs because don&rsquo;t use Amazon S3 to save data generate. To fix it, follow these steps.
--) Login to Open edX server, then create symbolic link from /tmp/edx-s3/grades to /edx/var/edxapp/media.
--) Update nginx configuration of LMS. Find the following snippet codes on the configuration file.
-location ~ ^/media/(?P&lt;file&gt;.*) { root /edx/var/edxapp/media; try_files /$file =404; expires 31536000s; } Change =404 to /grades/$file or looks like the configuration below.
-location ~ ^/media/(?"/>
+<meta name="twitter:title" content="Disable Analytics Tab on Instructor Page"/>
+<meta name="twitter:description" content="To disable analytics tab on instructor page Open edX, follow the steps below:
+  Go to Open edX server console.
+  Open and edit LMS and CMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml).
+  Then find the ANALYTICS_DASHBOARD_URL configuration and set to blank or &#39;&#39;. See the following codes snippet:
+... ANALYTICS_DASHBOARD_URL: &#39;&#39; ...   Restart LMS services.  "/>
 
   
 
@@ -107,31 +107,28 @@ location ~ ^/media/(?"/>
   <article>
     <header>
       <small>
-        <span class="date">August 29, 2021</span></small>
-      <h1>Unable to Download Data Generate Open edX (file not found)</h1>
+        <span class="date">November 16, 2021</span></small>
+      <h1>Disable Analytics Tab on Instructor Page</h1>
     </header>
     <section><p><img src="/assets/img/Open-edX/open-edx-new.png" alt="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Let&#39;s Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs"></p>
-<p>This problem occurs because don&rsquo;t use <a href="https://aws.amazon.com/s3/">Amazon S3</a> to save data generate. To fix it, follow these steps.</p>
-<p>-) Login to Open edX server, then create symbolic link from <code>/tmp/edx-s3/grades</code> to <code>/edx/var/edxapp/media</code>.</p>
-<p>-) Update nginx configuration of LMS. Find the following snippet codes on the configuration file.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">location</span> <span class="p">~</span> <span class="sr">^/media/(?P&lt;file&gt;.*)</span> <span class="p">{</span>
-    <span class="kn">root</span> <span class="s">/edx/var/edxapp/media</span><span class="p">;</span>
-    <span class="kn">try_files</span> <span class="s">/</span><span class="nv">$file</span> <span class="p">=</span><span class="mi">404</span><span class="p">;</span>
-    <span class="kn">expires</span> <span class="s">31536000s</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div><p>Change <code>=404</code> to <code>/grades/$file</code> or looks like the configuration below.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">location</span> <span class="p">~</span> <span class="sr">^/media/(?P&lt;file&gt;.*)</span> <span class="p">{</span>
-    <span class="kn">root</span> <span class="s">/edx/var/edxapp/media</span><span class="p">;</span>
-    <span class="kn">try_files</span> <span class="s">/</span><span class="nv">$file</span> <span class="s">/grades/</span><span class="nv">$file</span><span class="p">;</span>
-    <span class="kn">expires</span> <span class="s">31536000s</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="k">location</span> <span class="p">~</span> <span class="sr">^/grades/(?P&lt;file&gt;.*)</span> <span class="p">{</span>
-    <span class="kn">root</span> <span class="s">/edx/var/edxapp/media/grades</span><span class="p">;</span>
-    <span class="kn">try_files</span> <span class="s">/</span><span class="nv">$file</span> <span class="p">=</span><span class="mi">404</span><span class="p">;</span>
-    <span class="kn">expires</span> <span class="s">31536000s</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div><p>After that make sure the configuration is not error, use the command <code>sudo nginx -t</code>. And then restart nginx service use the command <code>sudo systemctl restart nginx</code>.</p>
+<p>To disable analytics tab on instructor page Open edX, follow the steps below:</p>
+<ol>
+<li>
+<p>Go to Open edX server console.</p>
+</li>
+<li>
+<p>Open and edit LMS and CMS configuration (<code>/edx/app/edxapp/lms.env.json</code> or <code>/edx/etc/lms.yml</code>).</p>
+</li>
+<li>
+<p>Then find the <code>ANALYTICS_DASHBOARD_URL</code> configuration and set to blank or <code>''</code>. See the following codes snippet:</p>
+<pre tabindex="0"><code>...
+ANALYTICS_DASHBOARD_URL: ''
+...
+</code></pre></li>
+</ol>
+<ol start="4">
+<li>Restart LMS services.</li>
+</ol>
 </section>
     <footer>
       <hr>

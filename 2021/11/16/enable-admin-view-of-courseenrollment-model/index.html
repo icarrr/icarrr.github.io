@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us" itemscope itemtype="http://schema.org/WebPage">
   <head>
-  <title>Unable to Download Data Generate Open edX (file not found)</title>
+  <title>Enable Admin View of CourseEnrollment Model</title>
   
   <meta http-equiv="cache-control" content="public, max-age=31536000" />
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -50,36 +50,36 @@
   
   <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
 
-  <meta property="og:title" content="Unable to Download Data Generate Open edX (file not found)" />
-<meta property="og:description" content="This problem occurs because don&rsquo;t use Amazon S3 to save data generate. To fix it, follow these steps.
--) Login to Open edX server, then create symbolic link from /tmp/edx-s3/grades to /edx/var/edxapp/media.
--) Update nginx configuration of LMS. Find the following snippet codes on the configuration file.
-location ~ ^/media/(?P&lt;file&gt;.*) { root /edx/var/edxapp/media; try_files /$file =404; expires 31536000s; } Change =404 to /grades/$file or looks like the configuration below.
-location ~ ^/media/(?" />
+  <meta property="og:title" content="Enable Admin View of CourseEnrollment Model" />
+<meta property="og:description" content="By enabling admin view CourseEnrollment model, admin or staff can view and update the enrollment mode for a specific user without manually updating on database. To enable it, follow the steps below:
+  Go to Open edX LMS admin.
+  Find Waffle and add switch (eg, https://edx.sibunglon.com/admin/waffle/switch/add/).
+  For name add with value student.courseenrollment_admin and checked the Active checkbox.
+  Then you can check access courseenrollment model under student section (eg, https://edx." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://sibunglon.com/2021/08/29/unable-to-download-data-generate-open-edx-file-not-found/" /><meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-08-29T21:14:25+08:00" />
-<meta property="article:modified_time" content="2021-08-29T21:14:25+08:00" /><meta property="og:site_name" content="The Official Site of siBunglon" />
+<meta property="og:url" content="https://sibunglon.com/2021/11/16/enable-admin-view-of-courseenrollment-model/" /><meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-11-16T22:22:47+08:00" />
+<meta property="article:modified_time" content="2021-11-16T22:22:47+08:00" /><meta property="og:site_name" content="The Official Site of siBunglon" />
 
 
-  <meta itemprop="name" content="Unable to Download Data Generate Open edX (file not found)">
-<meta itemprop="description" content="This problem occurs because don&rsquo;t use Amazon S3 to save data generate. To fix it, follow these steps.
--) Login to Open edX server, then create symbolic link from /tmp/edx-s3/grades to /edx/var/edxapp/media.
--) Update nginx configuration of LMS. Find the following snippet codes on the configuration file.
-location ~ ^/media/(?P&lt;file&gt;.*) { root /edx/var/edxapp/media; try_files /$file =404; expires 31536000s; } Change =404 to /grades/$file or looks like the configuration below.
-location ~ ^/media/(?"><meta itemprop="datePublished" content="2021-08-29T21:14:25+08:00" />
-<meta itemprop="dateModified" content="2021-08-29T21:14:25+08:00" />
-<meta itemprop="wordCount" content="120"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
+  <meta itemprop="name" content="Enable Admin View of CourseEnrollment Model">
+<meta itemprop="description" content="By enabling admin view CourseEnrollment model, admin or staff can view and update the enrollment mode for a specific user without manually updating on database. To enable it, follow the steps below:
+  Go to Open edX LMS admin.
+  Find Waffle and add switch (eg, https://edx.sibunglon.com/admin/waffle/switch/add/).
+  For name add with value student.courseenrollment_admin and checked the Active checkbox.
+  Then you can check access courseenrollment model under student section (eg, https://edx."><meta itemprop="datePublished" content="2021-11-16T22:22:47+08:00" />
+<meta itemprop="dateModified" content="2021-11-16T22:22:47+08:00" />
+<meta itemprop="wordCount" content="68"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
 <meta itemprop="keywords" content="Open edX," />
   <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://sibunglon.com/assets/img/profil.webp"/>
 
-<meta name="twitter:title" content="Unable to Download Data Generate Open edX (file not found)"/>
-<meta name="twitter:description" content="This problem occurs because don&rsquo;t use Amazon S3 to save data generate. To fix it, follow these steps.
--) Login to Open edX server, then create symbolic link from /tmp/edx-s3/grades to /edx/var/edxapp/media.
--) Update nginx configuration of LMS. Find the following snippet codes on the configuration file.
-location ~ ^/media/(?P&lt;file&gt;.*) { root /edx/var/edxapp/media; try_files /$file =404; expires 31536000s; } Change =404 to /grades/$file or looks like the configuration below.
-location ~ ^/media/(?"/>
+<meta name="twitter:title" content="Enable Admin View of CourseEnrollment Model"/>
+<meta name="twitter:description" content="By enabling admin view CourseEnrollment model, admin or staff can view and update the enrollment mode for a specific user without manually updating on database. To enable it, follow the steps below:
+  Go to Open edX LMS admin.
+  Find Waffle and add switch (eg, https://edx.sibunglon.com/admin/waffle/switch/add/).
+  For name add with value student.courseenrollment_admin and checked the Active checkbox.
+  Then you can check access courseenrollment model under student section (eg, https://edx."/>
 
   
 
@@ -107,31 +107,25 @@ location ~ ^/media/(?"/>
   <article>
     <header>
       <small>
-        <span class="date">August 29, 2021</span></small>
-      <h1>Unable to Download Data Generate Open edX (file not found)</h1>
+        <span class="date">November 16, 2021</span></small>
+      <h1>Enable Admin View of CourseEnrollment Model</h1>
     </header>
     <section><p><img src="/assets/img/Open-edX/open-edx-new.png" alt="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Let&#39;s Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs"></p>
-<p>This problem occurs because don&rsquo;t use <a href="https://aws.amazon.com/s3/">Amazon S3</a> to save data generate. To fix it, follow these steps.</p>
-<p>-) Login to Open edX server, then create symbolic link from <code>/tmp/edx-s3/grades</code> to <code>/edx/var/edxapp/media</code>.</p>
-<p>-) Update nginx configuration of LMS. Find the following snippet codes on the configuration file.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">location</span> <span class="p">~</span> <span class="sr">^/media/(?P&lt;file&gt;.*)</span> <span class="p">{</span>
-    <span class="kn">root</span> <span class="s">/edx/var/edxapp/media</span><span class="p">;</span>
-    <span class="kn">try_files</span> <span class="s">/</span><span class="nv">$file</span> <span class="p">=</span><span class="mi">404</span><span class="p">;</span>
-    <span class="kn">expires</span> <span class="s">31536000s</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div><p>Change <code>=404</code> to <code>/grades/$file</code> or looks like the configuration below.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">location</span> <span class="p">~</span> <span class="sr">^/media/(?P&lt;file&gt;.*)</span> <span class="p">{</span>
-    <span class="kn">root</span> <span class="s">/edx/var/edxapp/media</span><span class="p">;</span>
-    <span class="kn">try_files</span> <span class="s">/</span><span class="nv">$file</span> <span class="s">/grades/</span><span class="nv">$file</span><span class="p">;</span>
-    <span class="kn">expires</span> <span class="s">31536000s</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="k">location</span> <span class="p">~</span> <span class="sr">^/grades/(?P&lt;file&gt;.*)</span> <span class="p">{</span>
-    <span class="kn">root</span> <span class="s">/edx/var/edxapp/media/grades</span><span class="p">;</span>
-    <span class="kn">try_files</span> <span class="s">/</span><span class="nv">$file</span> <span class="p">=</span><span class="mi">404</span><span class="p">;</span>
-    <span class="kn">expires</span> <span class="s">31536000s</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div><p>After that make sure the configuration is not error, use the command <code>sudo nginx -t</code>. And then restart nginx service use the command <code>sudo systemctl restart nginx</code>.</p>
+<p>By enabling admin view CourseEnrollment model, admin or staff can view and update the enrollment mode for a specific user without manually updating on database. To enable it, follow the steps below:</p>
+<ol>
+<li>
+<p>Go to Open edX LMS admin.</p>
+</li>
+<li>
+<p>Find <code>Waffle</code> and add switch (eg, <a href="https://edx.sibunglon.com/admin/waffle/switch/add/)">https://edx.sibunglon.com/admin/waffle/switch/add/)</a>.</p>
+</li>
+<li>
+<p>For <code>name</code> add with value <code>student.courseenrollment_admin</code> and checked the <code>Active</code> checkbox.</p>
+</li>
+<li>
+<p>Then you can check access courseenrollment model under student section (eg, <a href="https://edx.sibunglon.com/admin/student/courseenrollment/)">https://edx.sibunglon.com/admin/student/courseenrollment/)</a>.</p>
+</li>
+</ol>
 </section>
     <footer>
       <hr>

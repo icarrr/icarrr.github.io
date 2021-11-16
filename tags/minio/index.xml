@@ -1,0 +1,25 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MinIO on The Official Site of siBunglon</title>
+    <link>https://sibunglon.com/tags/minio/</link>
+    <description>Recent content in MinIO on The Official Site of siBunglon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 16 Nov 2021 21:07:02 +0800</lastBuildDate>
+    
+      <atom:link href="https://sibunglon.com/tags/minio/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      <item>
+        <title>Open Response Assessment (ORA) Using MinIO as Storage in Open edX</title>
+        <link>https://sibunglon.com/2021/11/16/open-response-assessment-ora-using-minio-as-storage-in-open-edx/</link>
+        <pubDate>Tue, 16 Nov 2021 21:07:02 +0800</pubDate>
+        <guid>https://sibunglon.com/2021/11/16/open-response-assessment-ora-using-minio-as-storage-in-open-edx/</guid>
+        <description>Usually, someone use Amazon S3 as storage for Open edX course content and services (eg, storage for grades, video transcript, etc.). But this article just share how to set MinIO as storage for ORA instead use Amazon S3. Do the following steps.
+  Setup AWS auth (/edx/app/edxapp/lms.auth.json or /edx/etc/lms.yml).
+Find the following snippet codes on the configuration file.
+...AWS_ACCESS_KEY_ID:nullAWS_S3_CUSTOM_DOMAIN:SET-ME-PLEASE (ex. bucket-name.s3.amazonaws.com)AWS_SECRET_ACCESS_KEY:nullAWS_STORAGE_BUCKET_NAME:SET-ME-PLEASE (ex. bucket-name)FILE_UPLOAD_STORAGE_BUCKET_NAME:SET-ME-PLEASE (ex. bucket-name)...Change the value, set with your MinIO credentials.</description>
+      </item>
+    
+  </channel>
+</rss>

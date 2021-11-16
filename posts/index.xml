@@ -5,10 +5,74 @@
     <description>Recent content in Posts on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 25 Oct 2021 13:03:24 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 16 Nov 2021 22:22:47 +0800</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Enable Admin View of CourseEnrollment Model</title>
+        <link>https://sibunglon.com/2021/11/16/enable-admin-view-of-courseenrollment-model/</link>
+        <pubDate>Tue, 16 Nov 2021 22:22:47 +0800</pubDate>
+        <guid>https://sibunglon.com/2021/11/16/enable-admin-view-of-courseenrollment-model/</guid>
+        <description>By enabling admin view CourseEnrollment model, admin or staff can view and update the enrollment mode for a specific user without manually updating on database. To enable it, follow the steps below:
+  Go to Open edX LMS admin.
+  Find Waffle and add switch (eg, https://edx.sibunglon.com/admin/waffle/switch/add/).
+  For name add with value student.courseenrollment_admin and checked the Active checkbox.
+  Then you can check access courseenrollment model under student section (eg, https://edx.</description>
+      </item>
+    
+      <item>
+        <title>Allow Course Team Non-Staff to Generate Grade</title>
+        <link>https://sibunglon.com/2021/11/16/allow-course-team-non-staff-to-generate-grade/</link>
+        <pubDate>Tue, 16 Nov 2021 22:11:12 +0800</pubDate>
+        <guid>https://sibunglon.com/2021/11/16/allow-course-team-non-staff-to-generate-grade/</guid>
+        <description>By default, only user with staff flag can generate grade on Instructor Data Download tab. When someone was added as Data Researcher, the user can access Data Download tab only and can&amp;rsquo;t generate grade. To allow course team without staff flag can generate grade, follow the steps below:
+  Go to Open edX server console.
+  Open and edit LMS and CMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml).
+  Then find the &amp;quot;FEATURES&amp;quot; configuration, add ALLOW_COURSE_STAFF_GRADE_DOWNLOADS into &amp;quot;FEATURES&amp;quot; array and set to true.</description>
+      </item>
+    
+      <item>
+        <title>Disable Analytics Tab on Instructor Page</title>
+        <link>https://sibunglon.com/2021/11/16/disable-analytics-tab-on-instructor-page/</link>
+        <pubDate>Tue, 16 Nov 2021 22:01:36 +0800</pubDate>
+        <guid>https://sibunglon.com/2021/11/16/disable-analytics-tab-on-instructor-page/</guid>
+        <description>To disable analytics tab on instructor page Open edX, follow the steps below:
+  Go to Open edX server console.
+  Open and edit LMS and CMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml).
+  Then find the ANALYTICS_DASHBOARD_URL configuration and set to blank or &#39;&#39;. See the following codes snippet:
+... ANALYTICS_DASHBOARD_URL: &#39;&#39; ...   Restart LMS services.  </description>
+      </item>
+    
+      <item>
+        <title>I18n_fastgenerate Error Reading Unicode File Name</title>
+        <link>https://sibunglon.com/2021/11/16/i18n_fastgenerate-error-reading-unicode-file-name/</link>
+        <pubDate>Tue, 16 Nov 2021 21:44:32 +0800</pubDate>
+        <guid>https://sibunglon.com/2021/11/16/i18n_fastgenerate-error-reading-unicode-file-name/</guid>
+        <description>I&amp;rsquo;m trying to modify translations and need re-compile translations file to implement the update. But when i trying re-compile it with the following command:
+$ sudo -H -u edxapp bash $ source /edx/app/edxapp/edxapp_env $ cd /edx/app/edxapp/edx-platform $ paver i18n_fastgenerate And i found this:
+Traceback (most recent call last): File &amp;quot;/openedx/venv/bin/django-admin&amp;quot;, line 11, in &amp;lt;module&amp;gt; sys.exit(execute_from_command_line()) File &amp;quot;/openedx/venv/local/lib/python2.7/site-packages/django/core/management/__init__.py&amp;quot;, line 364, in execute_from_command_line utility.execute() File &amp;quot;/openedx/venv/local/lib/python2.7/site-packages/django/core/management/__init__.py&amp;quot;, line 356, in execute self.fetch_command(subcommand).run_from_argv(self.argv) File &amp;quot;/openedx/venv/local/lib/python2.</description>
+      </item>
+    
+      <item>
+        <title>Open Response Assessment (ORA) Using MinIO as Storage in Open edX</title>
+        <link>https://sibunglon.com/2021/11/16/open-response-assessment-ora-using-minio-as-storage-in-open-edx/</link>
+        <pubDate>Tue, 16 Nov 2021 21:07:02 +0800</pubDate>
+        <guid>https://sibunglon.com/2021/11/16/open-response-assessment-ora-using-minio-as-storage-in-open-edx/</guid>
+        <description>Usually, someone use Amazon S3 as storage for Open edX course content and services (eg, storage for grades, video transcript, etc.). But this article just share how to set MinIO as storage for ORA instead use Amazon S3. Do the following steps.
+  Setup AWS auth (/edx/app/edxapp/lms.auth.json or /edx/etc/lms.yml).
+Find the following snippet codes on the configuration file.
+...AWS_ACCESS_KEY_ID:nullAWS_S3_CUSTOM_DOMAIN:SET-ME-PLEASE (ex. bucket-name.s3.amazonaws.com)AWS_SECRET_ACCESS_KEY:nullAWS_STORAGE_BUCKET_NAME:SET-ME-PLEASE (ex. bucket-name)FILE_UPLOAD_STORAGE_BUCKET_NAME:SET-ME-PLEASE (ex. bucket-name)...Change the value, set with your MinIO credentials.</description>
+      </item>
+    
+      <item>
+        <title>About of Hide Courses on Open edX</title>
+        <link>https://sibunglon.com/2021/11/16/about-of-hide-courses-on-open-edx/</link>
+        <pubDate>Tue, 16 Nov 2021 20:25:31 +0800</pubDate>
+        <guid>https://sibunglon.com/2021/11/16/about-of-hide-courses-on-open-edx/</guid>
+        <description>To hide a course, just set course visibility to none. To set it, open your studio &amp;gt; select a course &amp;gt; select advanced settings &amp;gt; then search for Course Visibility In Catalog. After course visibility was set to none, the course does not appear in the catalog (eg, https://edx.sibunglon.com/courses) even though the course is still running or has not ended. Courses that have ended still appear in the catalog (eg https://edx.</description>
+      </item>
     
       <item>
         <title>Fixing Unable to Delete Account Open edX via User Profile</title>
