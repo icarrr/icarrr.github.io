@@ -224,10 +224,11 @@ $ sudo -H -u edxapp bash $ source /edx/app/edxapp/edxapp_env $ cd /edx/app/edxap
         <link>https://sibunglon.com/2020/09/05/allowing-learners-to-claim-their-own-certificates-in-open-edx/</link>
         <pubDate>Sat, 05 Sep 2020 05:41:16 +0800</pubDate>
         <guid>https://sibunglon.com/2020/09/05/allowing-learners-to-claim-their-own-certificates-in-open-edx/</guid>
-        <description>In most cases, you&amp;rsquo;ll want learners to be able to claim certificates for themselves on the progress page. For self-paced courses, this is already done! You&amp;rsquo;re good to go. For instructor-led courses, however, you&amp;rsquo;ll need to Enable Student-Generated Certificates.
-To allowing learners to claim their own certificates, do the following steps:
+        <description>In most cases, educator want learners to be able to claim certificates for themselves on the progress page. This is just need to Enable Student-Generated Certificates.
+Instructor-Paced To allowing learners to claim their own certificates, do the following steps:
   Login to LMS as admin or staff.
-  On the learning site dashboard page, open one of the existing courses.</description>
+  On the learning site dashboard page, open one of the existing courses.
+  On the course introduction page, click on View Course.</description>
       </item>
     
       <item>
