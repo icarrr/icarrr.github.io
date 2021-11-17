@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us" itemscope itemtype="http://schema.org/WebPage">
   <head>
-  <title>Allow Course Team Non-Staff to Generate Grade</title>
+  <title>Auto Allow Student to Generate Their Certificate on Open edX</title>
   
   <meta http-equiv="cache-control" content="public, max-age=31536000" />
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -50,33 +50,27 @@
   
   <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
 
-  <meta property="og:title" content="Allow Course Team Non-Staff to Generate Grade" />
-<meta property="og:description" content="By default, only user with staff flag can generate grade on Instructor Data Download tab. When someone was added as Data Researcher, the user can access Data Download tab only and can&rsquo;t generate grade. To allow course team without staff flag can generate grade, follow the steps below:
-  Go to Open edX server console.
-  Open and edit LMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml).
-  Then find the &quot;FEATURES&quot; configuration, add ALLOW_COURSE_STAFF_GRADE_DOWNLOADS into &quot;FEATURES&quot; array and set to true." />
+  <meta property="og:title" content="Auto Allow Student to Generate Their Certificate on Open edX" />
+<meta property="og:description" content="Usually educators expect student to be able to download their certificates as soon as they achieve a passing grade. This can be achieved by enabling auto_certificate_generation as described below.
+ Go to Open edX LMS admin. Find Waffle and add switch (eg, https://edx.sibunglon.com/admin/waffle/switch/add/). For name add with value certificates.auto_certificate_generation and checked the Active checkbox.  After that, educator no need to Enable Student-Generated Certificates (as per Allowing Learners to Claim Their Own Certificates in Open edX article) on each course." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://sibunglon.com/2021/11/16/allow-course-team-non-staff-to-generate-grade/" /><meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-11-16T22:11:12+08:00" />
-<meta property="article:modified_time" content="2021-11-16T22:11:12+08:00" /><meta property="og:site_name" content="The Official Site of siBunglon" />
+<meta property="og:url" content="https://sibunglon.com/2021/11/17/auto-allow-student-to-generate-their-certificate-on-open-edx/" /><meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-11-17T12:22:20+08:00" />
+<meta property="article:modified_time" content="2021-11-17T12:22:20+08:00" /><meta property="og:site_name" content="The Official Site of siBunglon" />
 
 
-  <meta itemprop="name" content="Allow Course Team Non-Staff to Generate Grade">
-<meta itemprop="description" content="By default, only user with staff flag can generate grade on Instructor Data Download tab. When someone was added as Data Researcher, the user can access Data Download tab only and can&rsquo;t generate grade. To allow course team without staff flag can generate grade, follow the steps below:
-  Go to Open edX server console.
-  Open and edit LMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml).
-  Then find the &quot;FEATURES&quot; configuration, add ALLOW_COURSE_STAFF_GRADE_DOWNLOADS into &quot;FEATURES&quot; array and set to true."><meta itemprop="datePublished" content="2021-11-16T22:11:12+08:00" />
-<meta itemprop="dateModified" content="2021-11-16T22:11:12+08:00" />
-<meta itemprop="wordCount" content="85"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
+  <meta itemprop="name" content="Auto Allow Student to Generate Their Certificate on Open edX">
+<meta itemprop="description" content="Usually educators expect student to be able to download their certificates as soon as they achieve a passing grade. This can be achieved by enabling auto_certificate_generation as described below.
+ Go to Open edX LMS admin. Find Waffle and add switch (eg, https://edx.sibunglon.com/admin/waffle/switch/add/). For name add with value certificates.auto_certificate_generation and checked the Active checkbox.  After that, educator no need to Enable Student-Generated Certificates (as per Allowing Learners to Claim Their Own Certificates in Open edX article) on each course."><meta itemprop="datePublished" content="2021-11-17T12:22:20+08:00" />
+<meta itemprop="dateModified" content="2021-11-17T12:22:20+08:00" />
+<meta itemprop="wordCount" content="78"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
 <meta itemprop="keywords" content="Open edX," />
   <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://sibunglon.com/assets/img/profil.webp"/>
 
-<meta name="twitter:title" content="Allow Course Team Non-Staff to Generate Grade"/>
-<meta name="twitter:description" content="By default, only user with staff flag can generate grade on Instructor Data Download tab. When someone was added as Data Researcher, the user can access Data Download tab only and can&rsquo;t generate grade. To allow course team without staff flag can generate grade, follow the steps below:
-  Go to Open edX server console.
-  Open and edit LMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml).
-  Then find the &quot;FEATURES&quot; configuration, add ALLOW_COURSE_STAFF_GRADE_DOWNLOADS into &quot;FEATURES&quot; array and set to true."/>
+<meta name="twitter:title" content="Auto Allow Student to Generate Their Certificate on Open edX"/>
+<meta name="twitter:description" content="Usually educators expect student to be able to download their certificates as soon as they achieve a passing grade. This can be achieved by enabling auto_certificate_generation as described below.
+ Go to Open edX LMS admin. Find Waffle and add switch (eg, https://edx.sibunglon.com/admin/waffle/switch/add/). For name add with value certificates.auto_certificate_generation and checked the Active checkbox.  After that, educator no need to Enable Student-Generated Certificates (as per Allowing Learners to Claim Their Own Certificates in Open edX article) on each course."/>
 
   
 
@@ -104,29 +98,17 @@
   <article>
     <header>
       <small>
-        <span class="date">November 16, 2021</span></small>
-      <h1>Allow Course Team Non-Staff to Generate Grade</h1>
+        <span class="date">November 17, 2021</span></small>
+      <h1>Auto Allow Student to Generate Their Certificate on Open edX</h1>
     </header>
     <section><p><img src="/assets/img/Open-edX/open-edx-new.png" alt="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Let&#39;s Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs"></p>
-<p>By default, only user with staff flag can generate grade on Instructor Data Download tab. When someone was added as Data Researcher, the user can access Data Download tab only and can&rsquo;t generate grade. To allow course team without staff flag can generate grade, follow the steps below:</p>
+<p>Usually educators expect student to be able to download their certificates as soon as they achieve a passing grade. This can be achieved by enabling <em>auto_certificate_generation</em> as described below.</p>
 <ol>
-<li>
-<p>Go to Open edX server console.</p>
-</li>
-<li>
-<p>Open and edit LMS configuration (<code>/edx/app/edxapp/lms.env.json</code> or <code>/edx/etc/lms.yml</code>).</p>
-</li>
-<li>
-<p>Then find the <code>&quot;FEATURES&quot;</code> configuration, add <strong>ALLOW_COURSE_STAFF_GRADE_DOWNLOADS</strong> into <code>&quot;FEATURES&quot;</code> array and set to <strong>true</strong>. See the following codes snippet:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nn">...</span><span class="w">
-</span><span class="w"></span><span class="nt">FEATURES</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span><span class="nt">ALLOW_COURSE_STAFF_GRADE_DOWNLOADS</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w"></span><span class="nn">...</span><span class="w">
-</span></code></pre></div></li>
+<li>Go to Open edX LMS admin.</li>
+<li>Find <code>Waffle</code> and add switch (eg, <a href="https://edx.sibunglon.com/admin/waffle/switch/add/)">https://edx.sibunglon.com/admin/waffle/switch/add/)</a>.</li>
+<li>For <code>name</code> add with value <code>certificates.auto_certificate_generation</code> and checked the <code>Active</code> checkbox.</li>
 </ol>
-<ol start="4">
-<li>Restart LMS services.</li>
-</ol>
+<p>After that, educator no need to Enable Student-Generated Certificates (as per <a href="https://sibunglon.com/2020/09/05/allowing-learners-to-claim-their-own-certificates-in-open-edx/">Allowing Learners to Claim Their Own Certificates in Open edX</a> article) on each course.</p>
 </section>
     <footer>
       <hr>

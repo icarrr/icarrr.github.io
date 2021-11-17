@@ -5,10 +5,98 @@
     <description>Recent content in Open edX on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 16 Nov 2021 22:22:47 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 17 Nov 2021 14:12:00 +0800</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/open-edx/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Allow Educator Generate Student Certificate on Open edX</title>
+        <link>https://sibunglon.com/2021/11/17/allow-educator-generate-student-certificate-on-open-edx/</link>
+        <pubDate>Wed, 17 Nov 2021 14:12:00 +0800</pubDate>
+        <guid>https://sibunglon.com/2021/11/17/allow-educator-generate-student-certificate-on-open-edx/</guid>
+        <description>To generate certificate, educator have some option:
+ Manual to enable student generated certificates Auto allow student generated certificates Educator generate student certificate (this article)  To allow educator generate student certificate, follow the steps below:
+  Go to Open edX server console.
+  Open and edit LMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml).
+  Then find the &amp;quot;FEATURES&amp;quot; configuration, add CERTIFICATES_INSTRUCTOR_GENERATION into &amp;quot;FEATURES&amp;quot; array and set to true. See the following codes snippet:</description>
+      </item>
+    
+      <item>
+        <title>Disable Delete Account Function on Open edX</title>
+        <link>https://sibunglon.com/2021/11/17/disable-delete-account-function-on-open-edx/</link>
+        <pubDate>Wed, 17 Nov 2021 14:07:34 +0800</pubDate>
+        <guid>https://sibunglon.com/2021/11/17/disable-delete-account-function-on-open-edx/</guid>
+        <description>To disable delete account function, follow the steps below:
+  Go to Open edX server console.
+  Open and edit LMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml).
+  Then find the &amp;quot;FEATURES&amp;quot; configuration, add ENABLE_ACCOUNT_DELETION into &amp;quot;FEATURES&amp;quot; array and set to false. See the following codes snippet:
+...FEATURES:ENABLE_ACCOUNT_DELETION:false...  Restart LMS services.
+  </description>
+      </item>
+    
+      <item>
+        <title>Disable Create Course for Non-Staff User on Open edX</title>
+        <link>https://sibunglon.com/2021/11/17/disable-create-course-for-non-staff-user-on-open-edx/</link>
+        <pubDate>Wed, 17 Nov 2021 13:58:24 +0800</pubDate>
+        <guid>https://sibunglon.com/2021/11/17/disable-create-course-for-non-staff-user-on-open-edx/</guid>
+        <description>To disable create course for non-staff user, follow the steps below:
+  Go to Open edX server console.
+  Open and edit CMS configuration (/edx/app/edxapp/cms.env.json or /edx/etc/studio.yml).
+  Then find the &amp;quot;FEATURES&amp;quot; configuration, add DISABLE_COURSE_CREATION into &amp;quot;FEATURES&amp;quot; array and set to true. See the following codes snippet:
+...FEATURES:DISABLE_COURSE_CREATION:true...  Restart LMS services.
+  </description>
+      </item>
+    
+      <item>
+        <title>Allow Educator Create User Account and Register to Courses on Open edX</title>
+        <link>https://sibunglon.com/2021/11/17/allow-educator-create-user-account-and-register-to-courses-on-open-edx/</link>
+        <pubDate>Wed, 17 Nov 2021 13:16:51 +0800</pubDate>
+        <guid>https://sibunglon.com/2021/11/17/allow-educator-create-user-account-and-register-to-courses-on-open-edx/</guid>
+        <description>Educator can add new user and enroll the student into a courses by upload of a CSV file that contains a list of new accounts to create and register for course. But, by default this feature is not enable. To enable it, follow the steps below:
+  Go to Open edX server console.
+  Open and edit LMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml).
+  Then find the &amp;quot;FEATURES&amp;quot; configuration, add ALLOW_AUTOMATED_SIGNUPS into &amp;quot;FEATURES&amp;quot; array and set to true.</description>
+      </item>
+    
+      <item>
+        <title>Hide &#34;View My Records&#34; on learner profile Open edX</title>
+        <link>https://sibunglon.com/2021/11/17/hide-view-my-records-on-learner-profile-open-edx/</link>
+        <pubDate>Wed, 17 Nov 2021 12:53:16 +0800</pubDate>
+        <guid>https://sibunglon.com/2021/11/17/hide-view-my-records-on-learner-profile-open-edx/</guid>
+        <description>By default when install Open edX, credentials service not include on installation script. But on LMS configuration, credentials service was point to http://localhost:8005 and on learner profile there is a View My Records button point to http://localhost:8005/records/.
+To hide it, follow the steps below:
+ Go to Open edX LMS admin. Find Site configurations and add site configurations but just edit site configurations when you have existing configuration (eg, https://edx.sibunglon.com/admin/site_configuration/siteconfiguration/). For Site values add with value &amp;quot;ENABLE_LEARNER_RECORDS&amp;quot;: false.</description>
+      </item>
+    
+      <item>
+        <title>Enable Course Sidebar on Open edX</title>
+        <link>https://sibunglon.com/2021/11/17/enable-course-sidebar-on-open-edx/</link>
+        <pubDate>Wed, 17 Nov 2021 12:36:12 +0800</pubDate>
+        <guid>https://sibunglon.com/2021/11/17/enable-course-sidebar-on-open-edx/</guid>
+        <description>The course sidebar was pretty much handy as the user do not have to open a separate page to hop on to any particular section/subsection/unit. By default, this feature is not enable but when you need to enable it, follow the steps below:
+ Go to Open edX LMS admin. Find Waffle and add flag (eg, https://edx.sibunglon.com/admin/waffle/flag/). For name add with value course_experience.course_outline_page. For Everyone option, select no. Checked the Authenticated checkbox only.</description>
+      </item>
+    
+      <item>
+        <title>Auto Allow Student to Generate Their Certificate on Open edX</title>
+        <link>https://sibunglon.com/2021/11/17/auto-allow-student-to-generate-their-certificate-on-open-edx/</link>
+        <pubDate>Wed, 17 Nov 2021 12:22:20 +0800</pubDate>
+        <guid>https://sibunglon.com/2021/11/17/auto-allow-student-to-generate-their-certificate-on-open-edx/</guid>
+        <description>Usually educators expect student to be able to download their certificates as soon as they achieve a passing grade. This can be achieved by enabling auto_certificate_generation as described below.
+ Go to Open edX LMS admin. Find Waffle and add switch (eg, https://edx.sibunglon.com/admin/waffle/switch/add/). For name add with value certificates.auto_certificate_generation and checked the Active checkbox.  After that, educator no need to Enable Student-Generated Certificates (as per Allowing Learners to Claim Their Own Certificates in Open edX article) on each course.</description>
+      </item>
+    
+      <item>
+        <title>Set Age Limit to Get Full Profile Feature on Open edX</title>
+        <link>https://sibunglon.com/2021/11/17/set-age-limit-to-get-full-profile-feature-on-open-edx/</link>
+        <pubDate>Wed, 17 Nov 2021 11:15:07 +0800</pubDate>
+        <guid>https://sibunglon.com/2021/11/17/set-age-limit-to-get-full-profile-feature-on-open-edx/</guid>
+        <description>By default Open edX allow to get full profile to user if user is over 13 year. But you can change it with custom age limit. To set it, follow the steps below:
+  Go to Open edX server console.
+  Open and edit LMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml).
+  Then find the PARENTAL_CONSENT_AGE_LIMIT configuration (add configuration PARENTAL_CONSENT_AGE_LIMIT if you can&amp;rsquo;t find it) and set with you custom age limit.</description>
+      </item>
     
       <item>
         <title>Enable Admin View of CourseEnrollment Model</title>
@@ -29,7 +117,7 @@
         <guid>https://sibunglon.com/2021/11/16/allow-course-team-non-staff-to-generate-grade/</guid>
         <description>By default, only user with staff flag can generate grade on Instructor Data Download tab. When someone was added as Data Researcher, the user can access Data Download tab only and can&amp;rsquo;t generate grade. To allow course team without staff flag can generate grade, follow the steps below:
   Go to Open edX server console.
-  Open and edit LMS and CMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml).
+  Open and edit LMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml).
   Then find the &amp;quot;FEATURES&amp;quot; configuration, add ALLOW_COURSE_STAFF_GRADE_DOWNLOADS into &amp;quot;FEATURES&amp;quot; array and set to true.</description>
       </item>
     
@@ -40,7 +128,7 @@
         <guid>https://sibunglon.com/2021/11/16/disable-analytics-tab-on-instructor-page/</guid>
         <description>To disable analytics tab on instructor page Open edX, follow the steps below:
   Go to Open edX server console.
-  Open and edit LMS and CMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml).
+  Open and edit LMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml).
   Then find the ANALYTICS_DASHBOARD_URL configuration and set to blank or &#39;&#39;. See the following codes snippet:
 ... ANALYTICS_DASHBOARD_URL: &#39;&#39; ...   Restart LMS services.  </description>
       </item>
