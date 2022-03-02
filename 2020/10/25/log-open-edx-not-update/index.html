@@ -108,27 +108,27 @@ $ # Stop services $ /edx/bin/supervisorctl stop all $ sudo systemctl stop mongod
 <h2 id="case">Case</h2>
 <p>I&rsquo;ve attach a new disk on my Open edX server, I move Open edX log file into a new disk and create symbolic link to /edx/var because I don&rsquo;t want to make a lot of changes in configuration or hardcode of Open edX.</p>
 <p>I moved the log files to the new disk, I did the following:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ <span class="c1"># Stop services</span>
-$ /edx/bin/supervisorctl stop all
-$ sudo systemctl stop mongod rabbitmq-server supervisor nginx
-
-$ <span class="c1"># Rsync log directory to the new disk and make backup on local storage server</span>
-$ sudo rsync -avP /edx/var/log /edx/backup
-$ sudo rsync -avP /edx/var/log /media-edx
-
-$ <span class="c1"># Remove log from edxapp</span>
-$ sudo rm -rf /edx/var/log
-
-$ <span class="c1"># Create symbolic link</span>
-$ sudo ln -sf /media-edx/log /edx/var
-
-$ <span class="c1"># Start services</span>
-$ sudo systemctl start mongod rabbitmq-server supervisor nginx
-</code></pre></div><p>When services edX has been start, log file for lms, cms, and tracking is not update.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ <span class="c1"># Stop services</span>
+</span></span><span class="line"><span class="cl">$ /edx/bin/supervisorctl stop all
+</span></span><span class="line"><span class="cl">$ sudo systemctl stop mongod rabbitmq-server supervisor nginx
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">$ <span class="c1"># Rsync log directory to the new disk and make backup on local storage server</span>
+</span></span><span class="line"><span class="cl">$ sudo rsync -avP /edx/var/log /edx/backup
+</span></span><span class="line"><span class="cl">$ sudo rsync -avP /edx/var/log /media-edx
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">$ <span class="c1"># Remove log from edxapp</span>
+</span></span><span class="line"><span class="cl">$ sudo rm -rf /edx/var/log
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">$ <span class="c1"># Create symbolic link</span>
+</span></span><span class="line"><span class="cl">$ sudo ln -sf /media-edx/log /edx/var
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">$ <span class="c1"># Start services</span>
+</span></span><span class="line"><span class="cl">$ sudo systemctl start mongod rabbitmq-server supervisor nginx
+</span></span></code></pre></div><p>When services edX has been start, log file for lms, cms, and tracking is not update.</p>
 <h2 id="solution">Solution</h2>
 <p>I&rsquo;m run this command on Open edX server.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ sudo lsof -nn -p <span class="k">$(</span>pidof rsyslogd<span class="k">)</span>
-</code></pre></div><p>And find this.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ sudo lsof -nn -p <span class="k">$(</span>pidof rsyslogd<span class="k">)</span>
+</span></span></code></pre></div><p>And find this.</p>
 <pre tabindex="0"><code>---
 rsyslogd 2502 syslog    8w   REG 202,1   104721    1824885 /edx/var/log/ecomworker/edx.log (deleted)
 rsyslogd 2502 syslog    9w   REG 202,1    34915    1827893 /edx/var/log/xqueue/edx.log (deleted)
@@ -138,10 +138,10 @@ rsyslogd 2502 syslog   12w   REG 202,1   126444    1824869 /edx/var/log/cms/edx.
 rsyslogd 2502 syslog   13w   REG 202,1    27029    1827788 /edx/var/log/tracking/tracking.log (deleted)
 ---
 </code></pre><p>Restart <code>rsyslog</code> for reload file log path.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ sudo systemctl restart rsyslog
-</code></pre></div><p>When check list of open files using this command.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ sudo lsof -nn -p <span class="k">$(</span>pidof rsyslogd<span class="k">)</span>
-</code></pre></div><p>I find this.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ sudo systemctl restart rsyslog
+</span></span></code></pre></div><p>When check list of open files using this command.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ sudo lsof -nn -p <span class="k">$(</span>pidof rsyslogd<span class="k">)</span>
+</span></span></code></pre></div><p>I find this.</p>
 <pre tabindex="0"><code>---
 rsyslogd 9756 syslog    8w   REG 0,40   111284  4805268258894419596 /media-edx/log/ecomworker/edx.log
 rsyslogd 9756 syslog    9w   REG 0,40    45721 13793588914623709624 /media-edx/log/xqueue/edx.log
@@ -170,7 +170,7 @@ rsyslogd 9756 syslog   13w   REG 0,40     4155  5614057283095338575 /media-edx/l
       <hr>
       <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

@@ -106,7 +106,7 @@ AllowUnencrypted=true
 </code></pre><p>2) Update konfigurasi reverse proxy seperti berikut:</p>
 <pre tabindex="0"><code>map $http_upgrade $connection_upgrade {
 default upgrade;
-'' close;
+&#39;&#39; close;
 }
 
 upstream websocket {
@@ -127,7 +127,7 @@ server {
         # needed for websocket
         proxy_set_header Upgrade $http_upgrade;
         proxy_set_header Connection $connection_upgrade;
-        # change scheme of &quot;Origin&quot; to http
+        # change scheme of &#34;Origin&#34; to http
         proxy_set_header Origin http://$host;
 
         # Pass ETag header from cockpit to clients.
@@ -166,7 +166,7 @@ server {
       <hr>
       <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

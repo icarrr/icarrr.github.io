@@ -126,12 +126,12 @@ Diantara banyak module yang disediakan berdasarkan apa yang saya ketahui setelah
  - hosts: localhost
    tasks:
      - sendgrid:
-          api_key: &quot;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&quot;
-          from_address: &quot;siBunglon&quot;
+          api_key: &#34;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&#34;
+          from_address: &#34;siBunglon&#34;
           to_addresses:
-            - &quot;lab@sibunglon.com&quot;
-          subject: &quot;Mail Sendgrid&quot;
-          body: &quot;This email is sent using the sendgrid API key&quot;
+            - &#34;lab@sibunglon.com&#34;
+          subject: &#34;Mail Sendgrid&#34;
+          body: &#34;This email is sent using the sendgrid API key&#34;
 </code></pre><p>7) Setelah playbook dibuat, waktunya mengirim email dengan command <code>ansible-playbook sendgrid.yml</code>.</p>
 <p>8) Sampai tahap ini, email telah berhasil dikirim sesuai tujuannya.<img src="/assets/img/ansible-sendgrid/Screenshot_5.png" alt="siBunglonLabs"></p>
 <p><strong>Sesi 2: Menggunakan API Telegram</strong></p>
@@ -147,9 +147,9 @@ Diantara banyak module yang disediakan berdasarkan apa yang saya ketahui setelah
    tasks:
     - name: send a message to chat in playbook
       telegram:
-        token: '642964376:AAGUAlTDqTei_bcvMue0g27hsRadYWadvok'
+        token: &#39;642964376:AAGUAlTDqTei_bcvMue0g27hsRadYWadvok&#39;
         chat_id: 98527700
-        msg: &quot;This notification is sent using the token API telegram&quot;
+        msg: &#34;This notification is sent using the token API telegram&#34;
 </code></pre><p>5) Setelah playbook dibuat, waktunya mengirim email dengan command <code>ansible-playbook telegram.yml</code>.</p>
 <p>6) Sampai tahap ini, notifikasi telah berhasil dikirim ke kalian melalui bot yang telah dibuat.</p>
 <p><img src="/assets/img/ansible-telegram/telegram_receive.png" alt="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Let&#39;s Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs"></p>
@@ -172,7 +172,7 @@ Diantara banyak module yang disediakan berdasarkan apa yang saya ketahui setelah
       <hr>
       <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

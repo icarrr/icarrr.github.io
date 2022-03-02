@@ -142,8 +142,8 @@ Limit IP Address To limit ip address of incoming connections to server via ssh, 
 </code></pre><ol start="3">
 <li>Save and exit. And restart service sshd.</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ sudo systemctl restart sshd
-</code></pre></div><p>Because the ip that has brute force to the server every minute does not change, so I need to limit the attacker&rsquo;s ip connection.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ sudo systemctl restart sshd
+</span></span></code></pre></div><p>Because the ip that has brute force to the server every minute does not change, so I need to limit the attacker&rsquo;s ip connection.</p>
 </section>
     <footer>
       <hr>
@@ -163,7 +163,7 @@ Limit IP Address To limit ip address of incoming connections to server via ssh, 
       <hr>
       <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

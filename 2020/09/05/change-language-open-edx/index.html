@@ -109,33 +109,33 @@ $ sudo -H -u edxapp bash $ source /edx/app/edxapp/edxapp_env $ cd /edx/app/edxap
 <ol>
 <li>
 <p>Login to server and switch to edxapp environment for edX native installation.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ sudo -H -u edxapp bash
-$ <span class="nb">source</span> /edx/app/edxapp/edxapp_env
-$ <span class="nb">cd</span> /edx/app/edxapp/edx-platform
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ sudo -H -u edxapp bash
+</span></span><span class="line"><span class="cl">$ <span class="nb">source</span> /edx/app/edxapp/edxapp_env
+</span></span><span class="line"><span class="cl">$ <span class="nb">cd</span> /edx/app/edxapp/edx-platform
+</span></span></code></pre></div></li>
 <li>
 <p>Install Python dependencies</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ pip install transifex-client
-</code></pre></div><p>or when using bitnami, use this</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ sudo /opt/bitnami/apps/edx/bin/pip.edxapp install transifex-client
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ pip install transifex-client
+</span></span></code></pre></div><p>or when using bitnami, use this</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ sudo /opt/bitnami/apps/edx/bin/pip.edxapp install transifex-client
+</span></span></code></pre></div></li>
 <li>
 <p>Create the <code>~/.transifexrc</code> file and set your credentials as follows:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt">[https://www.transifex.com]
-hostname = https://www.transifex.com
-username = USER
-password = PASS
-token =
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">[https://www.transifex.com]
+</span></span><span class="line"><span class="cl">hostname = https://www.transifex.com
+</span></span><span class="line"><span class="cl">username = USER
+</span></span><span class="line"><span class="cl">password = PASS
+</span></span><span class="line"><span class="cl">token =
+</span></span></code></pre></div></li>
 </ol>
 <p>Token is left blank. You have to have permissions for the project (edx-platform) AFAIK - <a href="https://www.transifex.com/projects/p/edx-platform/">https://www.transifex.com/projects/p/edx-platform/</a> (it is free to sign up and join this project as a translator).</p>
 <ol start="4">
 <li>
 <p>Make sure all languages you wish to download are present and uncommented in <code>conf/locale/config.yaml</code>. For example, if you wish to download Arabic and Indonesian, make sure your config.yaml file looks like this:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">locales</span><span class="p">:</span><span class="w">
-</span><span class="w">     </span>- <span class="l">en </span><span class="w"> </span><span class="c"># English - Source Language</span><span class="w">
-</span><span class="w">     </span>- <span class="l">id </span><span class="w"> </span><span class="c"># Indonesian</span><span class="w">
-</span></code></pre></div></li>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">locales</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">     </span>- <span class="l">en </span><span class="w"> </span><span class="c"># English - Source Language</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">     </span>- <span class="l">id </span><span class="w"> </span><span class="c"># Indonesian</span><span class="w">
+</span></span></span></code></pre></div></li>
 </ol>
 <ol start="5">
 <li>
@@ -163,19 +163,19 @@ token =
 </li>
 </ol>
 <p>For edX native installation</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ paver i18n_robot_pull --settings<span class="o">=</span>production
-</code></pre></div><p>For edX on bitnami</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">cd</span> /opt/bitnami/apps/edx/edx-platform
-$ sudo /opt/bitnami/apps/edx/bin/paver.edxapp i18n_robot_pull
-</code></pre></div><ol start="8">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ paver i18n_robot_pull --settings<span class="o">=</span>production
+</span></span></code></pre></div><p>For edX on bitnami</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ <span class="nb">cd</span> /opt/bitnami/apps/edx/edx-platform
+</span></span><span class="line"><span class="cl">$ sudo /opt/bitnami/apps/edx/bin/paver.edxapp i18n_robot_pull
+</span></span></code></pre></div><ol start="8">
 <li>Restart lms and cms for reload configuration.</li>
 </ol>
 <h3 id="update-localization">Update Localization</h3>
 <ol>
 <li>
 <p>Edit the contents of <strong>.po</strong> files located in <code>conf/locale/&lt;lang_code&gt;/LC_MESSAGES</code> as you wish. When you finished your modification process, re-compile the translation messages manually by executing the following command in your edx-platform directory with your edx-platform virtualenv</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ paver i18n_fastgenerate
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ paver i18n_fastgenerate
+</span></span></code></pre></div></li>
 <li>
 <p>Restart lms and cms.</p>
 </li>
@@ -201,7 +201,7 @@ $ sudo /opt/bitnami/apps/edx/bin/paver.edxapp i18n_robot_pull
       <hr>
       <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

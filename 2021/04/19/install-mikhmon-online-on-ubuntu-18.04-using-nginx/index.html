@@ -110,46 +110,46 @@ Agar dapat mengoperasikan Mikhmon diperlukan sebuah webserver &#43; PHP yang bis
 <ol>
 <li>Masuk ke direktori <em>/var/www/</em>, clone repositori mikhmon dan atur izin direktorinya.</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">cd</span> /var/www
-$ sudo git clone https://github.com/laksa19/mikhmonv3.git mikhmon
-$ sudo chmod -R <span class="m">755</span> /var/www/mikhmon
-$ sudo chown <span class="sb">`</span>whoami<span class="sb">`</span>:www-data /var/www/mikhmon -R
-</code></pre></div><ol start="2">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ <span class="nb">cd</span> /var/www
+</span></span><span class="line"><span class="cl">$ sudo git clone https://github.com/laksa19/mikhmonv3.git mikhmon
+</span></span><span class="line"><span class="cl">$ sudo chmod -R <span class="m">755</span> /var/www/mikhmon
+</span></span><span class="line"><span class="cl">$ sudo chown <span class="sb">`</span>whoami<span class="sb">`</span>:www-data /var/www/mikhmon -R
+</span></span></code></pre></div><ol start="2">
 <li>Install dependensi yang diperlukan, yaitu php7.4 dan beberapa paket pendukungnya. Namun sebelum menginstallnya, tambahkan repositori yang diperlukan.</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ sudo add-apt-repository ppa:ondrej/php
-$ sudo apt install -y php7.4 php7.4-fpm php7.4-mysql php7.4-mbstring php7.4-gd php7.4-cli php7.4-common php7.4-json php7.4-opcache php7.4-readline
-</code></pre></div><ol start="3">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ sudo add-apt-repository ppa:ondrej/php
+</span></span><span class="line"><span class="cl">$ sudo apt install -y php7.4 php7.4-fpm php7.4-mysql php7.4-mbstring php7.4-gd php7.4-cli php7.4-common php7.4-json php7.4-opcache php7.4-readline
+</span></span></code></pre></div><ol start="3">
 <li>Buat file konfigurasi virtualhost.</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ vi /etc/nginx/sites-enabled/mikhmon.conf
-</code></pre></div><p>Dan tambahkan sintaks konfigurasi berikut.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">server</span> <span class="p">{</span>
-    <span class="kn">server_name</span> <span class="s">yourdomain.com</span><span class="p">;</span>
-
-    <span class="kn">root</span> <span class="s">/var/www/mikhmon</span><span class="p">;</span>
-    <span class="kn">index</span> <span class="s">index.php</span><span class="p">;</span>
-
-    <span class="kn">access_log</span>  <span class="s">/var/log/nginx/mikhmon-access.log</span><span class="p">;</span>
-    <span class="kn">error_log</span>  <span class="s">/var/log/nginx/mikhmon-error.log</span><span class="p">;</span>
-
-    <span class="kn">location</span> <span class="p">~</span> <span class="sr">\.php$</span> <span class="p">{</span>
-        <span class="kn">try_files</span> <span class="nv">$uri</span> <span class="p">=</span><span class="mi">404</span><span class="p">;</span>
-        <span class="kn">fastcgi_split_path_info</span> <span class="s">^(.+\.php)(/.+)</span>$<span class="p">;</span>
-        <span class="kn">fastcgi_pass</span> <span class="s">unix:/var/run/php/php7.4-fpm.sock</span><span class="p">;</span>
-        <span class="kn">fastcgi_index</span> <span class="s">index.php</span><span class="p">;</span>
-        <span class="kn">include</span> <span class="s">fastcgi_params</span><span class="p">;</span>
-        <span class="kn">fastcgi_param</span> <span class="s">SCRIPT_FILENAME</span> <span class="nv">$document_root$fastcgi_script_name</span><span class="p">;</span>
-        <span class="kn">fastcgi_param</span> <span class="s">PATH_INFO</span> <span class="nv">$fastcgi_path_info</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="kn">location</span> <span class="s">/</span> <span class="p">{</span>
-        <span class="kn">try_files</span> <span class="nv">$uri</span> <span class="nv">$uri/</span> <span class="s">/index.php?</span><span class="nv">$query_string</span><span class="p">;</span>
-        <span class="kn">gzip_static</span> <span class="no">on</span><span class="p">;</span>
-    <span class="p">}</span>
-
-<span class="p">}</span>
-</code></pre></div><ol start="4">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ vi /etc/nginx/sites-enabled/mikhmon.conf
+</span></span></code></pre></div><p>Dan tambahkan sintaks konfigurasi berikut.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="line"><span class="cl"><span class="k">server</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">server_name</span> <span class="s">yourdomain.com</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kn">root</span> <span class="s">/var/www/mikhmon</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">index</span> <span class="s">index.php</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kn">access_log</span>  <span class="s">/var/log/nginx/mikhmon-access.log</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">error_log</span>  <span class="s">/var/log/nginx/mikhmon-error.log</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kn">location</span> <span class="p">~</span> <span class="sr">\.php$</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kn">try_files</span> <span class="nv">$uri</span> <span class="p">=</span><span class="mi">404</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="kn">fastcgi_split_path_info</span> <span class="s">^(.+\.php)(/.+)</span>$<span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="kn">fastcgi_pass</span> <span class="s">unix:/var/run/php/php7.4-fpm.sock</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="kn">fastcgi_index</span> <span class="s">index.php</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="kn">include</span> <span class="s">fastcgi_params</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="kn">fastcgi_param</span> <span class="s">SCRIPT_FILENAME</span> <span class="nv">$document_root$fastcgi_script_name</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="kn">fastcgi_param</span> <span class="s">PATH_INFO</span> <span class="nv">$fastcgi_path_info</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kn">location</span> <span class="s">/</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kn">try_files</span> <span class="nv">$uri</span> <span class="nv">$uri/</span> <span class="s">/index.php?</span><span class="nv">$query_string</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="kn">gzip_static</span> <span class="no">on</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><ol start="4">
 <li>Pastikan tidak ada konfigurasi yang bermasalah, Anda dapat mengeceknya menggunakan command <code>sudo nginx -t</code>, jika tidak ada kesalahan yang ditemukan, silahkan mulai ulang layanan Nginx menggunakan command <code>sudo systemctl restart nginx</code>.</li>
 </ol>
 <p>Sampai tahap ini Mikhmon Online yang telah di siapkan dapat diakses melalui yourdomain.com.</p>
@@ -169,7 +169,7 @@ $ sudo apt install -y php7.4 php7.4-fpm php7.4-mysql php7.4-mbstring php7.4-gd p
       <hr>
       <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

@@ -53,7 +53,7 @@
   <meta property="og:title" content="Fixing Unable to Delete Account Open edX via User Profile" />
 <meta property="og:description" content="When I test to delete my account from the user profile page, I get the following message after entering the password.
 When check the file /edx/var/log/lms/edx.log i find this.
-openedx.core.djangoapps.user_authn.exceptions.AuthFailedError Oct 25 13:08:55 ubuntu [service_variant=lms][openedx.core.djangoapps.user_api.accounts.views][env:sandbox] ERROR [ubuntu 10792] [user 14] [views.py:472] - 500 error deactivating account Default state does not exist! Populate retirement states to retire users. Traceback (most recent call last): File &quot;/edx/app/edxapp/edx-platform/openedx/core/djangoapps/user_api/models.py&quot;, line 320, in create_retirement pending = RetirementState." />
+openedx.core.djangoapps.user_authn.exceptions.AuthFailedError Oct 25 13:08:55 ubuntu [service_variant=lms][openedx.core.djangoapps.user_api.accounts.views][env:sandbox] ERROR [ubuntu 10792] [user 14] [views.py:472] - 500 error deactivating account Default state does not exist! Populate retirement states to retire users. Traceback (most recent call last): File &#34;/edx/app/edxapp/edx-platform/openedx/core/djangoapps/user_api/models.py&#34;, line 320, in create_retirement pending = RetirementState." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://sibunglon.com/2021/10/25/fixing-unable-to-delete-account-open-edx-via-user-profile/" /><meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-10-25T13:03:24+08:00" />
@@ -63,7 +63,7 @@ openedx.core.djangoapps.user_authn.exceptions.AuthFailedError Oct 25 13:08:55 ub
   <meta itemprop="name" content="Fixing Unable to Delete Account Open edX via User Profile">
 <meta itemprop="description" content="When I test to delete my account from the user profile page, I get the following message after entering the password.
 When check the file /edx/var/log/lms/edx.log i find this.
-openedx.core.djangoapps.user_authn.exceptions.AuthFailedError Oct 25 13:08:55 ubuntu [service_variant=lms][openedx.core.djangoapps.user_api.accounts.views][env:sandbox] ERROR [ubuntu 10792] [user 14] [views.py:472] - 500 error deactivating account Default state does not exist! Populate retirement states to retire users. Traceback (most recent call last): File &quot;/edx/app/edxapp/edx-platform/openedx/core/djangoapps/user_api/models.py&quot;, line 320, in create_retirement pending = RetirementState."><meta itemprop="datePublished" content="2021-10-25T13:03:24+08:00" />
+openedx.core.djangoapps.user_authn.exceptions.AuthFailedError Oct 25 13:08:55 ubuntu [service_variant=lms][openedx.core.djangoapps.user_api.accounts.views][env:sandbox] ERROR [ubuntu 10792] [user 14] [views.py:472] - 500 error deactivating account Default state does not exist! Populate retirement states to retire users. Traceback (most recent call last): File &#34;/edx/app/edxapp/edx-platform/openedx/core/djangoapps/user_api/models.py&#34;, line 320, in create_retirement pending = RetirementState."><meta itemprop="datePublished" content="2021-10-25T13:03:24+08:00" />
 <meta itemprop="dateModified" content="2021-10-25T13:03:24+08:00" />
 <meta itemprop="wordCount" content="180"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
 <meta itemprop="keywords" content="Open edX,Error," />
@@ -73,7 +73,7 @@ openedx.core.djangoapps.user_authn.exceptions.AuthFailedError Oct 25 13:08:55 ub
 <meta name="twitter:title" content="Fixing Unable to Delete Account Open edX via User Profile"/>
 <meta name="twitter:description" content="When I test to delete my account from the user profile page, I get the following message after entering the password.
 When check the file /edx/var/log/lms/edx.log i find this.
-openedx.core.djangoapps.user_authn.exceptions.AuthFailedError Oct 25 13:08:55 ubuntu [service_variant=lms][openedx.core.djangoapps.user_api.accounts.views][env:sandbox] ERROR [ubuntu 10792] [user 14] [views.py:472] - 500 error deactivating account Default state does not exist! Populate retirement states to retire users. Traceback (most recent call last): File &quot;/edx/app/edxapp/edx-platform/openedx/core/djangoapps/user_api/models.py&quot;, line 320, in create_retirement pending = RetirementState."/>
+openedx.core.djangoapps.user_authn.exceptions.AuthFailedError Oct 25 13:08:55 ubuntu [service_variant=lms][openedx.core.djangoapps.user_api.accounts.views][env:sandbox] ERROR [ubuntu 10792] [user 14] [views.py:472] - 500 error deactivating account Default state does not exist! Populate retirement states to retire users. Traceback (most recent call last): File &#34;/edx/app/edxapp/edx-platform/openedx/core/djangoapps/user_api/models.py&#34;, line 320, in create_retirement pending = RetirementState."/>
 
   
 
@@ -111,28 +111,28 @@ openedx.core.djangoapps.user_authn.exceptions.AuthFailedError Oct 25 13:08:55 ub
 <pre tabindex="0"><code class="language-log" data-lang="log">openedx.core.djangoapps.user_authn.exceptions.AuthFailedError
 Oct 25 13:08:55 ubuntu [service_variant=lms][openedx.core.djangoapps.user_api.accounts.views][env:sandbox] ERROR [ubuntu  10792] [user 14] [views.py:472] - 500 error deactivating account Default state does not exist! Populate retirement states to retire users.
 Traceback (most recent call last):
-  File &quot;/edx/app/edxapp/edx-platform/openedx/core/djangoapps/user_api/models.py&quot;, line 320, in create_retirement
-    pending = RetirementState.objects.all().order_by('state_execution_order')[0]
-  File &quot;/edx/app/edxapp/venvs/edxapp/lib/python3.5/site-packages/django/db/models/query.py&quot;, line 309, in __getitem__
+  File &#34;/edx/app/edxapp/edx-platform/openedx/core/djangoapps/user_api/models.py&#34;, line 320, in create_retirement
+    pending = RetirementState.objects.all().order_by(&#39;state_execution_order&#39;)[0]
+  File &#34;/edx/app/edxapp/venvs/edxapp/lib/python3.5/site-packages/django/db/models/query.py&#34;, line 309, in __getitem__
     return qs._result_cache[0]
 IndexError: list index out of range
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File &quot;/edx/app/edxapp/edx-platform/openedx/core/djangoapps/user_api/accounts/views.py&quot;, line 423, in post
+  File &#34;/edx/app/edxapp/edx-platform/openedx/core/djangoapps/user_api/accounts/views.py&#34;, line 423, in post
     UserRetirementStatus.create_retirement(request.user)
-  File &quot;/edx/app/edxapp/edx-platform/openedx/core/djangoapps/user_api/models.py&quot;, line 322, in create_retirement
-    raise RetirementStateError('Default state does not exist! Populate retirement states to retire users.')
+  File &#34;/edx/app/edxapp/edx-platform/openedx/core/djangoapps/user_api/models.py&#34;, line 322, in create_retirement
+    raise RetirementStateError(&#39;Default state does not exist! Populate retirement states to retire users.&#39;)
 openedx.core.djangoapps.user_api.models.RetirementStateError: Default state does not exist! Populate retirement states to retire users.
 Oct 25 13:08:55 ubuntu [service_variant=lms][django.request][env:sandbox] ERROR [ubuntu  10792] [user None] [log.py:228] - Internal Server Error: /api/user/v1/accounts/deactivate_logout/
 </code></pre><h3 id="how-to-fix-it">How to fix it?</h3>
 <p>populate the states table with the following command.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">sudo -H -u edxapp bash
-<span class="nb">source</span> /edx/app/edxapp/edxapp_env
-<span class="nb">cd</span> /edx/app/edxapp/edx-platform
-./manage.py lms --settings<span class="o">=</span>production populate_retirement_states
-</code></pre></div><h4 id="tested">Tested</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo -H -u edxapp bash
+</span></span><span class="line"><span class="cl"><span class="nb">source</span> /edx/app/edxapp/edxapp_env
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> /edx/app/edxapp/edx-platform
+</span></span><span class="line"><span class="cl">./manage.py lms --settings<span class="o">=</span>production populate_retirement_states
+</span></span></code></pre></div><h4 id="tested">Tested</h4>
 <ul>
 <li>release juniper.master</li>
 </ul>
@@ -155,7 +155,7 @@ Oct 25 13:08:55 ubuntu [service_variant=lms][django.request][env:sandbox] ERROR 
       <hr>
       <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

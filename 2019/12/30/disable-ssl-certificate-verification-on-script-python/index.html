@@ -105,20 +105,20 @@ urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host=&#39;api.telegram.org
       <h1>Disable SSL Certificate Verification on Script Python</h1>
     </header>
     <section><p>I failed to run a telegram bot in another environment, more or less the error as follows.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">urllib3.exceptions.MaxRetryError: HTTPSConnectionPool<span class="o">(</span><span class="nv">host</span><span class="o">=</span><span class="s1">&#39;api.telegram.org&#39;</span>, <span class="nv">port</span><span class="o">=</span>443<span class="o">)</span>: Max retries exceeded with url  <span class="o">(</span>Caused by SSLError<span class="o">(</span>SSLError<span class="o">(</span>1, u<span class="s1">&#39;[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:618)&#39;</span><span class="o">)</span>,<span class="o">))</span>
-</code></pre></div><p>But after adding the following script, my bot finally managed to run in that environment. Maybe someone has a case related to SSL certificate verification, hopefully the following script can help.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="ch">#!/bin/python</span>
-<span class="kn">import</span> <span class="nn">ssl</span>
-
-<span class="k">try</span><span class="p">:</span>
-    <span class="n">_create_unverified_https_context</span> <span class="o">=</span> <span class="n">ssl</span><span class="o">.</span><span class="n">_create_unverified_context</span>
-<span class="k">except</span> <span class="ne">AttributeError</span><span class="p">:</span>
-    <span class="c1"># Legacy Python that doesn&#39;t verify HTTPS certificates by default</span>
-    <span class="k">pass</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="c1"># Handle target environment that doesn&#39;t support HTTPS verification</span>
-    <span class="n">ssl</span><span class="o">.</span><span class="n">_create_default_https_context</span> <span class="o">=</span> <span class="n">_create_unverified_https_context</span>
-</code></pre></div></section>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">urllib3.exceptions.MaxRetryError: HTTPSConnectionPool<span class="o">(</span><span class="nv">host</span><span class="o">=</span><span class="s1">&#39;api.telegram.org&#39;</span>, <span class="nv">port</span><span class="o">=</span>443<span class="o">)</span>: Max retries exceeded with url  <span class="o">(</span>Caused by SSLError<span class="o">(</span>SSLError<span class="o">(</span>1, u<span class="s1">&#39;[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:618)&#39;</span><span class="o">)</span>,<span class="o">))</span>
+</span></span></code></pre></div><p>But after adding the following script, my bot finally managed to run in that environment. Maybe someone has a case related to SSL certificate verification, hopefully the following script can help.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="ch">#!/bin/python</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">ssl</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">_create_unverified_https_context</span> <span class="o">=</span> <span class="n">ssl</span><span class="o">.</span><span class="n">_create_unverified_context</span>
+</span></span><span class="line"><span class="cl"><span class="k">except</span> <span class="ne">AttributeError</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># Legacy Python that doesn&#39;t verify HTTPS certificates by default</span>
+</span></span><span class="line"><span class="cl">    <span class="k">pass</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># Handle target environment that doesn&#39;t support HTTPS verification</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ssl</span><span class="o">.</span><span class="n">_create_default_https_context</span> <span class="o">=</span> <span class="n">_create_unverified_https_context</span>
+</span></span></code></pre></div></section>
     <footer>
       <hr>
       <div class="meta">
@@ -134,7 +134,7 @@ urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host=&#39;api.telegram.org
       <hr>
       <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

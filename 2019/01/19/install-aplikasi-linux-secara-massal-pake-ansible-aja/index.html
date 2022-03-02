@@ -115,8 +115,8 @@
 <p>2) Pastikan local kalian saat ini bisa berkomunikasi dengan server melalui ansible, coba kalian ping servernya dengan ansible menggunakan command <code>ansible ipServerOrDNSServer -m ping</code></p>
 <p>Jika outputnya seperti berikut berarti local anda sudah bisa berkomunikasi dengan server melalui ansible</p>
 <pre tabindex="0"><code>192.168.0.8 | SUCCESS =&gt; {
-    &quot;changed&quot;: false,
-    &quot;ping&quot;: &quot;pong&quot;
+    &#34;changed&#34;: false,
+    &#34;ping&#34;: &#34;pong&#34;
 }
 </code></pre><p>3) Buat inventaris dengan nama file <em>hosts</em> yang berisikan informasi server yaitu ip dan identity server anda, isinya seperti berikut ini.</p>
 <pre tabindex="0"><code>[airgreen]
@@ -138,7 +138,7 @@
          update_cache: yes
      - name: Install Packages
        apt:
-         name: &quot;{{ item }}&quot;
+         name: &#34;{{ item }}&#34;
          state: present
        with_items:
          - nginx
@@ -165,7 +165,7 @@
       <hr>
       <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

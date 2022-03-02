@@ -113,17 +113,17 @@ If it does not exist already, create the folder /tmp/certificates owned by the u
 <ol>
 <li>In the <code>lms.env.json</code> and <code>cms.env.json</code> files, set the value of <code>CERTIFICATES_HTML_VIEW</code> within the <code>FEATURES</code> object to <code>true</code>.</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="s2">&#34;FEATURES&#34;</span><span class="err">:</span> <span class="p">{</span>
-    <span class="err">...</span>
-    <span class="err">&#39;CERTIFICATES_HTML_VIEW&#39;:</span> <span class="err">true,</span>
-    <span class="err">...</span>
-<span class="p">}</span>
-</code></pre></div><p>Save the <code>lms.env.json</code> and <code>cms.env.json</code> files.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="s2">&#34;FEATURES&#34;</span><span class="err">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="err">...</span>
+</span></span><span class="line"><span class="cl">    <span class="err">&#39;CERTIFICATES_HTML_VIEW&#39;:</span> <span class="err">true,</span>
+</span></span><span class="line"><span class="cl">    <span class="err">...</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Save the <code>lms.env.json</code> and <code>cms.env.json</code> files.</p>
 <ol start="2">
 <li>If it does not exist already, create the folder <code>/tmp/certificates</code> owned by the user and group <code>www-data</code>.</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ mkdir /tmp/certificates
-</code></pre></div><ol start="3">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ mkdir /tmp/certificates
+</span></span></code></pre></div><ol start="3">
 <li>
 <p>Access the LMS Django Administration website for your instance of Open edX. To do this, go to <code>https://&lt;host name of your Open edX instance&gt;/admin</code>.</p>
 </li>
@@ -148,39 +148,39 @@ If it does not exist already, create the folder /tmp/certificates owned by the u
 <li><code>document_body_class_append</code></li>
 </ul>
 <p>Example content for Configuration field.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
-    <span class="nt">&#34;default&#34;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&#34;accomplishment_class_append&#34;</span><span class="p">:</span> <span class="s2">&#34;accomplishment-certificate&#34;</span><span class="p">,</span>
-        <span class="nt">&#34;platform_name&#34;</span><span class="p">:</span> <span class="s2">&#34;YourPlatformName&#34;</span><span class="p">,</span>
-        <span class="nt">&#34;company_about_url&#34;</span><span class="p">:</span><span class="s2">&#34;http://www.YourOrganization.com/about-us&#34;</span><span class="p">,</span>
-        <span class="nt">&#34;company_privacy_url&#34;</span><span class="p">:</span> <span class="s2">&#34;http://www.YourOrganization.com/our-privacy-policy&#34;</span><span class="p">,</span>
-        <span class="nt">&#34;company_tos_url&#34;</span><span class="p">:</span> <span class="s2">&#34;http://www.YourOrganization.com/our-terms-service&#34;</span><span class="p">,</span>
-        <span class="nt">&#34;company_verified_certificate_url&#34;</span><span class="p">:</span> <span class="s2">&#34;http://www.YourOrganization.com/about_verified_certificates&#34;</span><span class="p">,</span>
-        <span class="nt">&#34;logo_src&#34;</span><span class="p">:</span> <span class="s2">&#34;/static/certificates/images/our_logo.svg&#34;</span><span class="p">,</span>
-        <span class="nt">&#34;logo_url&#34;</span><span class="p">:</span> <span class="s2">&#34;www.YourOrganization.com&#34;</span>
-    <span class="p">},</span>
-    <span class="nt">&#34;honor&#34;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&#34;certificate_type&#34;</span><span class="p">:</span> <span class="s2">&#34;honor&#34;</span><span class="p">,</span>
-        <span class="nt">&#34;certificate_title&#34;</span><span class="p">:</span> <span class="s2">&#34;Honor Certificate&#34;</span><span class="p">,</span>
-        <span class="nt">&#34;document_body_class_append&#34;</span><span class="p">:</span> <span class="s2">&#34;is-honorcode&#34;</span>
-    <span class="p">},</span>
-    <span class="nt">&#34;verified&#34;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&#34;certificate_type&#34;</span><span class="p">:</span> <span class="s2">&#34;verified&#34;</span><span class="p">,</span>
-        <span class="nt">&#34;certificate_title&#34;</span><span class="p">:</span> <span class="s2">&#34;Verified Certificate&#34;</span><span class="p">,</span>
-        <span class="nt">&#34;document_body_class_append&#34;</span><span class="p">:</span> <span class="s2">&#34;is-idverified&#34;</span>
-    <span class="p">},</span>
-    <span class="nt">&#34;base&#34;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&#34;certificate_type&#34;</span><span class="p">:</span> <span class="s2">&#34;base&#34;</span><span class="p">,</span>
-        <span class="nt">&#34;certificate_title&#34;</span><span class="p">:</span> <span class="s2">&#34;Certificate of Achievement&#34;</span><span class="p">,</span>
-        <span class="nt">&#34;document_body_class_append&#34;</span><span class="p">:</span> <span class="s2">&#34;is-base&#34;</span>
-    <span class="p">},</span>
-    <span class="nt">&#34;distinguished&#34;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&#34;certificate_type&#34;</span><span class="p">:</span> <span class="s2">&#34;distinguished&#34;</span><span class="p">,</span>
-        <span class="nt">&#34;certificate_title&#34;</span><span class="p">:</span> <span class="s2">&#34;Distinguished Certificate of Achievement&#34;</span><span class="p">,</span>
-        <span class="nt">&#34;document_body_class_append&#34;</span><span class="p">:</span> <span class="s2">&#34;is-distinguished&#34;</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div><p>and then click Save.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;default&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;accomplishment_class_append&#34;</span><span class="p">:</span> <span class="s2">&#34;accomplishment-certificate&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;platform_name&#34;</span><span class="p">:</span> <span class="s2">&#34;YourPlatformName&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;company_about_url&#34;</span><span class="p">:</span><span class="s2">&#34;http://www.YourOrganization.com/about-us&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;company_privacy_url&#34;</span><span class="p">:</span> <span class="s2">&#34;http://www.YourOrganization.com/our-privacy-policy&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;company_tos_url&#34;</span><span class="p">:</span> <span class="s2">&#34;http://www.YourOrganization.com/our-terms-service&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;company_verified_certificate_url&#34;</span><span class="p">:</span> <span class="s2">&#34;http://www.YourOrganization.com/about_verified_certificates&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;logo_src&#34;</span><span class="p">:</span> <span class="s2">&#34;/static/certificates/images/our_logo.svg&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;logo_url&#34;</span><span class="p">:</span> <span class="s2">&#34;www.YourOrganization.com&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;honor&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;certificate_type&#34;</span><span class="p">:</span> <span class="s2">&#34;honor&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;certificate_title&#34;</span><span class="p">:</span> <span class="s2">&#34;Honor Certificate&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;document_body_class_append&#34;</span><span class="p">:</span> <span class="s2">&#34;is-honorcode&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;verified&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;certificate_type&#34;</span><span class="p">:</span> <span class="s2">&#34;verified&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;certificate_title&#34;</span><span class="p">:</span> <span class="s2">&#34;Verified Certificate&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;document_body_class_append&#34;</span><span class="p">:</span> <span class="s2">&#34;is-idverified&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;base&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;certificate_type&#34;</span><span class="p">:</span> <span class="s2">&#34;base&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;certificate_title&#34;</span><span class="p">:</span> <span class="s2">&#34;Certificate of Achievement&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;document_body_class_append&#34;</span><span class="p">:</span> <span class="s2">&#34;is-base&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;distinguished&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;certificate_type&#34;</span><span class="p">:</span> <span class="s2">&#34;distinguished&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;certificate_title&#34;</span><span class="p">:</span> <span class="s2">&#34;Distinguished Certificate of Achievement&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;document_body_class_append&#34;</span><span class="p">:</span> <span class="s2">&#34;is-distinguished&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>and then click Save.</p>
 <ol start="5">
 <li>
 <p>Restart lms and cms.</p>
@@ -221,7 +221,7 @@ If it does not exist already, create the folder /tmp/certificates owned by the u
       <hr>
       <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

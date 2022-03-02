@@ -122,45 +122,45 @@ Certbot is a new breakthrough from the Let&rsquo;s Encrypt Web Security Certific
 <blockquote>
 <p>Note: Before updating the config, the initial configuration file should be backed up first. For backups, use the command <code>sudo cp /etc/nginx/sites-enabled/lms ~/</code>.</p>
 </blockquote>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">...</span>
-  <span class="s">listen</span> <span class="mi">80</span> <span class="s">default_server</span><span class="p">;</span>
-<span class="k">...</span>
-</code></pre></div><p>Delete or comment on the LMS port configuration, then add the domain configuration.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">...</span>
-  <span class="c1">#listen 80 default_server;
-</span><span class="c1"></span>  <span class="s">server_name</span> <span class="s">e-Learning.sibunglon.com</span><span class="p">;</span>
-<span class="k">...</span>
-</code></pre></div><ol start="2">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="line"><span class="cl"><span class="k">...</span>
+</span></span><span class="line"><span class="cl">  <span class="s">listen</span> <span class="mi">80</span> <span class="s">default_server</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">...</span>
+</span></span></code></pre></div><p>Delete or comment on the LMS port configuration, then add the domain configuration.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="line"><span class="cl"><span class="k">...</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">#listen 80 default_server;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="s">server_name</span> <span class="s">e-Learning.sibunglon.com</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">...</span>
+</span></span></code></pre></div><ol start="2">
 <li>Open the file <em>/etc/nginx/sites-enabled/cms</em> and find the following script snippet. Please use your favorite text editor.</li>
 </ol>
 <blockquote>
 <p>Note: Before updating the config, the initial configuration file should be backed up first. For backups, use the command <code>sudo cp /etc/nginx/sites-enabled/cms ~/</code>.</p>
 </blockquote>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">...</span>
-  <span class="s">listen</span> <span class="mi">18010</span><span class="p">;</span>
-<span class="k">...</span>
-</code></pre></div><p>Delete or comment on the CMS port configuration, then add the domain configuration.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">...</span>
-  <span class="c1">#listen 18010;
-</span><span class="c1"></span>  <span class="s">server_name</span> <span class="s">studio.e-Learning.sibunglon.com</span><span class="p">;</span>
-<span class="k">...</span>
-</code></pre></div><ol start="3">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="line"><span class="cl"><span class="k">...</span>
+</span></span><span class="line"><span class="cl">  <span class="s">listen</span> <span class="mi">18010</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">...</span>
+</span></span></code></pre></div><p>Delete or comment on the CMS port configuration, then add the domain configuration.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="line"><span class="cl"><span class="k">...</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">#listen 18010;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="s">server_name</span> <span class="s">studio.e-Learning.sibunglon.com</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">...</span>
+</span></span></code></pre></div><ol start="3">
 <li>Install certbot</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ sudo apt-get update
-$ sudo apt-get install software-properties-common
-$ sudo add-apt-repository ppa:certbot/certbot
-$ sudo apt-get update
-$ sudo apt-get install python-certbot-nginx 
-</code></pre></div><ol start="4">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ sudo apt-get update
+</span></span><span class="line"><span class="cl">$ sudo apt-get install software-properties-common
+</span></span><span class="line"><span class="cl">$ sudo add-apt-repository ppa:certbot/certbot
+</span></span><span class="line"><span class="cl">$ sudo apt-get update
+</span></span><span class="line"><span class="cl">$ sudo apt-get install python-certbot-nginx 
+</span></span></code></pre></div><ol start="4">
 <li>Generate a web security certificate (SSL) and enable HTTPS.</li>
 </ol>
 <p>-) If you want to use 1 domain 1 SSL, generate SSL 1 per 1 as well as follows.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ sudo certbot --nginx -d e-Learning.sibunglon.com
-</code></pre></div><p>Re-generate SSL for CMS.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ sudo certbot --nginx -d e-Learning.sibunglon.com
+</span></span></code></pre></div><p>Re-generate SSL for CMS.</p>
 <p>-) If you want to use 1 SSL for 2 domains (LMS and CMS), then the command is as follows:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">sudo certbot --nginx -d e-Learning.sibunglon.com -d studio.e-Learning.sibunglon.com
-</code></pre></div><p>If the Open EdX server does not currently use certbot, when running the SSL generate command:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo certbot --nginx -d e-Learning.sibunglon.com -d studio.e-Learning.sibunglon.com
+</span></span></code></pre></div><p>If the Open EdX server does not currently use certbot, when running the SSL generate command:</p>
 <p>-) You will be asked to enter an email. The email is used to send notifications at a later time if SSL will expire.</p>
 <p>-) You are asked to read the Terms of Service and will be given 2 choices, which are <em>(A) gree</em> if you want to continue generating and <em>C</em> to cancel the SSL generate process.</p>
 <p>-) Do you want to receive e-mails from the certbot team about their work that encrypts the web, EFF news, campaigns, and ways to support digital freedom. If you want to receive the email, input <em>Y</em> but if you don&rsquo;t want to receive the email then input <em>N</em>.</p>
@@ -168,7 +168,7 @@ $ sudo apt-get install python-certbot-nginx
 <p>More or less like the following output I mean from these points.</p>
 <pre tabindex="0"><code>Saving debug log to /var/log/letsencrypt/letsencrypt.log
 Plugins selected: Authenticator nginx, Installer nginx
-Enter email address (used for urgent renewal and security notices) (Enter 'c' to
+Enter email address (used for urgent renewal and security notices) (Enter &#39;c&#39; to
 cancel): ganteng@sibunglon.com
 Starting new HTTPS connection (1): acme-v02.api.letsencrypt.org
 
@@ -182,8 +182,8 @@ https://acme-v02.api.letsencrypt.org/directory
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 Would you be willing to share your email address with the Electronic Frontier
-Foundation, a founding partner of the Let's Encrypt project and the non-profit
-organization that develops Certbot? We'd like to send you email about our work
+Foundation, a founding partner of the Let&#39;s Encrypt project and the non-profit
+organization that develops Certbot? We&#39;d like to send you email about our work
 encrypting the web, EFF news, campaigns, and ways to support digital freedom.
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 (Y)es/(N)o: N
@@ -194,10 +194,10 @@ Please choose whether or not to redirect HTTP traffic to HTTPS, removing HTTP ac
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 1: No redirect - Make no further changes to the webserver configuration.
 2: Redirect - Make all requests redirect to secure HTTPS access. Choose this for
-new sites, or if you're confident your site works on HTTPS. You can undo this
-change by editing your web server's configuration.
+new sites, or if you&#39;re confident your site works on HTTPS. You can undo this
+change by editing your web server&#39;s configuration.
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-Select the appropriate number [1-2] then [enter] (press 'c' to cancel): 2
+Select the appropriate number [1-2] then [enter] (press &#39;c&#39; to cancel): 2
 Redirecting all traffic on port 80 to ssl
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -214,11 +214,11 @@ IMPORTANT NOTES:
    /etc/letsencrypt/live/e-Learning.sibunglon.com/privkey.pem
    Your cert will expire on 2020-04-02. To obtain a new or tweaked
    version of this certificate in the future, simply run certbot again
-   with the &quot;certonly&quot; option. To non-interactively renew *all* of
-   your certificates, run &quot;certbot renew&quot;
+   with the &#34;certonly&#34; option. To non-interactively renew *all* of
+   your certificates, run &#34;certbot renew&#34;
  - If you like Certbot, please consider supporting our work by:
 
-   Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate
+   Donating to ISRG / Let&#39;s Encrypt:   https://letsencrypt.org/donate
    Donating to EFF:                    https://eff.org/donate-le
 </code></pre><p>After this, HTTPS Open edX should be active, please try to access CMS and LMS using the domain.</p>
 </section>
@@ -243,7 +243,7 @@ IMPORTANT NOTES:
       <hr>
       <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

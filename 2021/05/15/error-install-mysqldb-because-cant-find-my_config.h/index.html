@@ -107,9 +107,9 @@ $ cd /usr/include/mysql $ sudo wget https://raw.githubusercontent.com/paulfitz/m
     <section><p><img src="/assets/img/mysql-logo.svg" alt="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Let&#39;s Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs"></p>
 <p>Usually issues are found because there are some dependencies that are required but not installed yet. Make sure <code>libmysqlclient-dev</code> is installed, also check the <code>/usr/include/mysql</code> directory to make sure the file <code>my_config.h</code> does not exist like the message on the log.</p>
 <p>For the case I&rsquo;ve found, the file <code>my_config.h</code> is not in the <code>/usr/include/mysql</code> directory and for fixing it use the following command:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">cd</span> /usr/include/mysql
-$ sudo wget https://raw.githubusercontent.com/paulfitz/mysql-connector-c/master/include/my_config.h -O my_config.h
-</code></pre></div></section>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ <span class="nb">cd</span> /usr/include/mysql
+</span></span><span class="line"><span class="cl">$ sudo wget https://raw.githubusercontent.com/paulfitz/mysql-connector-c/master/include/my_config.h -O my_config.h
+</span></span></code></pre></div></section>
     <footer>
       <hr>
       <div class="meta">
@@ -128,7 +128,7 @@ $ sudo wget https://raw.githubusercontent.com/paulfitz/mysql-connector-c/master/
       <hr>
       <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

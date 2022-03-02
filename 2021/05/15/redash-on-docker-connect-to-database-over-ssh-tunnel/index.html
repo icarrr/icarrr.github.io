@@ -109,8 +109,8 @@ You can install Redash in a local environment (laptop or personal pc) and you ca
 <p>Currently Redash can be run directly on several cloud providers using the Redash image provided, including Docker. Please visit <a href="https://redash.io/help/open-source/setup">the official website</a> for more information</p>
 <p>You can install Redash in a local environment (laptop or personal pc) and you can also connect it to a database in the local environment as well a database on a public server. However, usually databases that are on public servers are not open to the public, therefore to connect to the database it is necessary to create a tunnel to the database via SSH.</p>
 <p>To create a tunnel directly from the terminal or use bash, use the following syntax:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ ssh -L 3389:0.0.0.0:3306 user@devx.sibunglon.com
-</code></pre></div><p>Or if you want to use SSH Config, you can use the following configuration:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ ssh -L 3389:0.0.0.0:3306 user@devx.sibunglon.com
+</span></span></code></pre></div><p>Or if you want to use SSH Config, you can use the following configuration:</p>
 <pre tabindex="0"><code class="language-ssh_config" data-lang="ssh_config">Host devx-sibunglon
     Hostname devx.sibunglon.com
     User user
@@ -146,7 +146,7 @@ You can install Redash in a local environment (laptop or personal pc) and you ca
       <hr>
       <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

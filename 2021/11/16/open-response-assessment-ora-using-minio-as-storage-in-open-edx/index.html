@@ -113,45 +113,45 @@ Find the following snippet codes on the configuration file.
 <li>
 <p>Setup AWS auth (<code>/edx/app/edxapp/lms.auth.json</code> or <code>/edx/etc/lms.yml</code>).</p>
 <p>Find the following snippet codes on the configuration file.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nn">...</span><span class="w">
-</span><span class="w"></span><span class="nt">AWS_ACCESS_KEY_ID</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
-</span><span class="w"></span><span class="nt">AWS_S3_CUSTOM_DOMAIN</span><span class="p">:</span><span class="w"> </span><span class="l">SET-ME-PLEASE (ex. bucket-name.s3.amazonaws.com)</span><span class="w">
-</span><span class="w"></span><span class="nt">AWS_SECRET_ACCESS_KEY</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
-</span><span class="w"></span><span class="nt">AWS_STORAGE_BUCKET_NAME</span><span class="p">:</span><span class="w"> </span><span class="l">SET-ME-PLEASE (ex. bucket-name)</span><span class="w">
-</span><span class="w"></span><span class="nt">FILE_UPLOAD_STORAGE_BUCKET_NAME</span><span class="p">:</span><span class="w"> </span><span class="l">SET-ME-PLEASE (ex. bucket-name)</span><span class="w">
-</span><span class="w"></span><span class="nn">...</span><span class="w">
-</span></code></pre></div><p>Change the value, set with your MinIO credentials. See sample conf on my env.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nn">...</span><span class="w">
-</span><span class="w"></span><span class="nt">AWS_ACCESS_KEY_ID</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;AKIATICAB5RS6HFGB7OR&#39;</span><span class="w">
-</span><span class="w"></span><span class="nt">AWS_S3_CUSTOM_DOMAIN</span><span class="p">:</span><span class="w"> </span><span class="l">minio-dev.sibunglon.com:9090/devx</span><span class="w">
-</span><span class="w"></span><span class="nt">AWS_SECRET_ACCESS_KEY</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;F2ZW5I+sGOZeBVFRMJQkNIPmovF97OfWmU6xj63x&#39;</span><span class="w">
-</span><span class="w"></span><span class="nt">AWS_STORAGE_BUCKET_NAME</span><span class="p">:</span><span class="w"> </span><span class="l">devx</span><span class="w">
-</span><span class="w"></span><span class="nt">FILE_UPLOAD_STORAGE_BUCKET_NAME</span><span class="p">:</span><span class="w"> </span><span class="l">devx</span><span class="w">
-</span><span class="w"></span><span class="nn">...</span><span class="w">
-</span></code></pre></div></li>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">...</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">AWS_ACCESS_KEY_ID</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">AWS_S3_CUSTOM_DOMAIN</span><span class="p">:</span><span class="w"> </span><span class="l">SET-ME-PLEASE (ex. bucket-name.s3.amazonaws.com)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">AWS_SECRET_ACCESS_KEY</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">AWS_STORAGE_BUCKET_NAME</span><span class="p">:</span><span class="w"> </span><span class="l">SET-ME-PLEASE (ex. bucket-name)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">FILE_UPLOAD_STORAGE_BUCKET_NAME</span><span class="p">:</span><span class="w"> </span><span class="l">SET-ME-PLEASE (ex. bucket-name)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nn">...</span><span class="w">
+</span></span></span></code></pre></div><p>Change the value, set with your MinIO credentials. See sample conf on my env.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">...</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">AWS_ACCESS_KEY_ID</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;AKIATICAB5RS6HFGB7OR&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">AWS_S3_CUSTOM_DOMAIN</span><span class="p">:</span><span class="w"> </span><span class="l">minio-dev.sibunglon.com:9090/devx</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">AWS_SECRET_ACCESS_KEY</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;F2ZW5I+sGOZeBVFRMJQkNIPmovF97OfWmU6xj63x&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">AWS_STORAGE_BUCKET_NAME</span><span class="p">:</span><span class="w"> </span><span class="l">devx</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">FILE_UPLOAD_STORAGE_BUCKET_NAME</span><span class="p">:</span><span class="w"> </span><span class="l">devx</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nn">...</span><span class="w">
+</span></span></span></code></pre></div></li>
 <li>
 <p>Update backend of file upload ORA s3.</p>
 <p>For ironwood version or older : <code>/edx/app/edxapp/venvs/edxapp/lib/python2.7/site-packages/openassessment/fileupload/backends/s3.py</code></p>
 <p>For juniper version or newer : <code>/edx/app/edxapp/venvs/edxapp/lib/python3.5/site-packages/openassessment/fileupload/backends/s3.py</code></p>
 <p>Find the following snippet codes on the configuration file.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="o">...</span>
-    <span class="k">return</span> <span class="n">boto</span><span class="o">.</span><span class="n">connect_s3</span><span class="p">(</span>
-        <span class="n">aws_access_key_id</span><span class="o">=</span><span class="n">aws_access_key_id</span><span class="p">,</span>
-        <span class="n">aws_secret_access_key</span><span class="o">=</span><span class="n">aws_secret_access_key</span>
-    <span class="p">)</span>
-<span class="o">...</span>
-</code></pre></div><p>Update it looks like the configuration below.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="o">...</span>
-    <span class="k">return</span> <span class="n">boto</span><span class="o">.</span><span class="n">connect_s3</span><span class="p">(</span>
-        <span class="n">aws_access_key_id</span><span class="o">=</span><span class="n">aws_access_key_id</span><span class="p">,</span>
-        <span class="n">aws_secret_access_key</span><span class="o">=</span><span class="n">aws_secret_access_key</span><span class="p">,</span>
-				<span class="n">host</span><span class="o">=</span><span class="s1">&#39;minio-dev.sibunglon.com&#39;</span><span class="p">,</span>
-				<span class="n">port</span><span class="o">=</span><span class="mi">9090</span><span class="p">,</span>
-				<span class="n">is_secure</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="c1"># set to True if your run MinIO with SSL</span>
-				<span class="n">calling_format</span><span class="o">=</span><span class="n">boto</span><span class="o">.</span><span class="n">s3</span><span class="o">.</span><span class="n">connection</span><span class="o">.</span><span class="n">OrdinaryCallingFormat</span><span class="p">()</span>
-    <span class="p">)</span>
-<span class="o">...</span>
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">...</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">boto</span><span class="o">.</span><span class="n">connect_s3</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="n">aws_access_key_id</span><span class="o">=</span><span class="n">aws_access_key_id</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">aws_secret_access_key</span><span class="o">=</span><span class="n">aws_secret_access_key</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">...</span>
+</span></span></code></pre></div><p>Update it looks like the configuration below.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">...</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">boto</span><span class="o">.</span><span class="n">connect_s3</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="n">aws_access_key_id</span><span class="o">=</span><span class="n">aws_access_key_id</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">aws_secret_access_key</span><span class="o">=</span><span class="n">aws_secret_access_key</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">				<span class="n">host</span><span class="o">=</span><span class="s1">&#39;minio-dev.sibunglon.com&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">				<span class="n">port</span><span class="o">=</span><span class="mi">9090</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">				<span class="n">is_secure</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="c1"># set to True if your run MinIO with SSL</span>
+</span></span><span class="line"><span class="cl">				<span class="n">calling_format</span><span class="o">=</span><span class="n">boto</span><span class="o">.</span><span class="n">s3</span><span class="o">.</span><span class="n">connection</span><span class="o">.</span><span class="n">OrdinaryCallingFormat</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">...</span>
+</span></span></code></pre></div></li>
 <li>
 <p>Restart LMS service and tried to upload file on ORA component.</p>
 </li>
@@ -175,7 +175,7 @@ Find the following snippet codes on the configuration file.
       <hr>
       <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

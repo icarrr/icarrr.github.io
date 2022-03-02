@@ -120,11 +120,11 @@
 <p>Then find the <code>&quot;FEATURES&quot;</code> configuration, add <strong>ALLOW_HIDING_DISCUSSION_TAB</strong> into <code>&quot;FEATURES&quot;</code> array and set to <strong>true</strong>. See the following codes snippet:</p>
 </li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json">    <span class="s2">&#34;FEATURES&#34;</span><span class="err">:</span> <span class="p">{</span>
-        <span class="nt">&#34;ALLOW_HIDING_DISCUSSION_TAB&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="err">.....</span>
-    <span class="p">}</span><span class="err">,</span>
-</code></pre></div><ol start="4">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl">    <span class="s2">&#34;FEATURES&#34;</span><span class="err">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;ALLOW_HIDING_DISCUSSION_TAB&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="err">.....</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span><span class="err">,</span>
+</span></span></code></pre></div><ol start="4">
 <li>Restart LMS and CMS services.</li>
 </ol>
 <p>If the hiding discussion feature has been enable, you can hide the discussion tab in the specific course by doing the following:</p>
@@ -161,7 +161,7 @@
       <hr>
       <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

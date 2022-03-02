@@ -116,31 +116,31 @@ Case:
 <p>Then what&rsquo;s the case?</p>
 <p>Case:</p>
 <p>-) When a user registers, the user should receive an email to activate the account, but in reality it is not. When checking the log file, log is found as follows:</p>
-<pre tabindex="0"><code>Jul 10 16:50:32 e-Learning [service_variant=lms][edx.celery.task][env:sandbox] ERROR [e-Learning  7227] [tasks.py:48] - Unable to send activation email to user from &quot;e-Learning@sibunglon.com&quot; to &quot;research@sibunglon.com&quot;
+<pre tabindex="0"><code>Jul 10 16:50:32 e-Learning [service_variant=lms][edx.celery.task][env:sandbox] ERROR [e-Learning  7227] [tasks.py:48] - Unable to send activation email to user from &#34;e-Learning@sibunglon.com&#34; to &#34;research@sibunglon.com&#34;
 Traceback (most recent call last):
-  File &quot;/edx/app/edxapp/edx-platform/common/djangoapps/student/tasks.py&quot;, line 23, in send_activation_email
+  File &#34;/edx/app/edxapp/edx-platform/common/djangoapps/student/tasks.py&#34;, line 23, in send_activation_email
     mail.send_mail(subject, message, from_address, [dest_addr], fail_silently=False)
-  File &quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/mail/__init__.py&quot;, line 62, in send_mail
+  File &#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/mail/__init__.py&#34;, line 62, in send_mail
     return mail.send()
-  File &quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/mail/message.py&quot;, line 348, in send
+  File &#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/mail/message.py&#34;, line 348, in send
     return self.get_connection(fail_silently).send_messages([self])
-  File &quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/mail/backends/smtp.py&quot;, line 111, in send_messages
+  File &#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/mail/backends/smtp.py&#34;, line 111, in send_messages
     sent = self._send(message)
-  File &quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/mail/backends/smtp.py&quot;, line 127, in _send
-    self.connection.sendmail(from_email, recipients, message.as_bytes(linesep='\r\n'))
-  File &quot;/usr/lib/python2.7/smtplib.py&quot;, line 751, in sendmail
+  File &#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/mail/backends/smtp.py&#34;, line 127, in _send
+    self.connection.sendmail(from_email, recipients, message.as_bytes(linesep=&#39;\r\n&#39;))
+  File &#34;/usr/lib/python2.7/smtplib.py&#34;, line 751, in sendmail
     raise SMTPDataError(code, resp)
-SMTPDataError: (554, 'Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: e-Learning@sibunglon.com')
+SMTPDataError: (554, &#39;Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: e-Learning@sibunglon.com&#39;)
 </code></pre><p>Is it possible due to a misconfiguration of the SMTP account on the Open edX server?</p>
 <p>-) If the user has not activated the account, at the second login the activation email will be sent again. In this step, the new user gets an activation email.</p>
 <p>-) When the user uses the password forgetting feature, the forgotten password email also enters.</p>
 <p>This means that it should not be due to a misconfiguration of the SMTP account on the Open edX server, the email was successfully entered in a case other than activation email. But at that time you had to wait for the email to arrive. So there is a possibility because of the timeout.</p>
 <p>This friend of mine seems to be a fad to set up an email timeout, in the file <code>/edx/app/edxapp/lms.env.json</code> added <code>&quot;EMAIL_TIMEOUT&quot;: timeout</code>. In this case our email timeout is set to 300 seconds so it&rsquo;s more config like this:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json">    <span class="s2">&#34;EMAIL_HOST&#34;</span><span class="err">:</span> <span class="s2">&#34;mail.sibunglon.com&#34;</span><span class="err">,</span>
-    <span class="s2">&#34;EMAIL_PORT&#34;</span><span class="err">:</span> <span class="mi">587</span><span class="err">,</span>
-    <span class="s2">&#34;EMAIL_USE_TLS&#34;</span><span class="err">:</span> <span class="kc">true</span><span class="err">,</span>
-    <span class="s2">&#34;EMAIL_TIMEOUT&#34;</span><span class="err">:</span> <span class="mi">300</span><span class="err">,</span>
-</code></pre></div><p>Also add the config to <code>/edx/app/edxapp/cms.env.json</code>, then restart lms and cms.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl">    <span class="s2">&#34;EMAIL_HOST&#34;</span><span class="err">:</span> <span class="s2">&#34;mail.sibunglon.com&#34;</span><span class="err">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;EMAIL_PORT&#34;</span><span class="err">:</span> <span class="mi">587</span><span class="err">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;EMAIL_USE_TLS&#34;</span><span class="err">:</span> <span class="kc">true</span><span class="err">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;EMAIL_TIMEOUT&#34;</span><span class="err">:</span> <span class="mi">300</span><span class="err">,</span>
+</span></span></code></pre></div><p>Also add the config to <code>/edx/app/edxapp/cms.env.json</code>, then restart lms and cms.</p>
 <p>After the EMAIL_TIMEOUT config is added, our issue can change the status to <code>Solved</code>.😁🥳</p>
 <p>Thanks you <a href="https://ngurajeka.com/">Ady Rahmat MA</a> for solve this issue.</p>
 </section>
@@ -165,7 +165,7 @@ SMTPDataError: (554, 'Message rejected: Email address is not verified. The follo
       <hr>
       <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

@@ -98,22 +98,22 @@
         <span class="date">December 13, 2019</span></small>
       <h1>How to Reset List of Trusted CA Certificates in RHEL 6 RHEL 7</h1>
     </header>
-    <section><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/bash
-</span><span class="cp"></span><span class="c1"># Get time</span>
-<span class="nv">localTime</span><span class="o">=</span><span class="k">$(</span>date <span class="s1">&#39;+%Y%m%d_%H%M%S&#39;</span> -d <span class="s2">&#34;</span><span class="k">$(</span>curl -s --head http://google.com <span class="p">|</span> grep ^Date: <span class="p">|</span> sed <span class="s1">&#39;s/Date: //g&#39;</span><span class="k">)</span><span class="s2">&#34;</span><span class="k">)</span>
-
-<span class="c1"># Create cert bak dir</span>
-mkdir -p <span class="nv">$HOME</span>/cert.bak
-
-<span class="c1"># Reset cert</span>
-sudo rpm -Vv ca-certificates <span class="p">|</span> awk <span class="s1">&#39;$1!=&#34;.........&#34; &amp;&amp; $2!=&#34;d&#34; {system(&#34;mv -v &#34; $NF &#34; $HOME/cert.bak&#34;)}&#39;</span>
-sudo yum check-update ca-certificates<span class="p">;</span> <span class="o">((</span><span class="nv">$?</span><span class="o">==</span>100<span class="o">))</span> <span class="o">&amp;&amp;</span> sudo yum update -y ca-certificates <span class="o">||</span> sudo yum reinstall -y ca-certificates
-sudo find /etc/pki/ca-trust/source<span class="o">{</span>,/anchors<span class="o">}</span> -maxdepth <span class="m">1</span> -not -type d -exec ls -1 <span class="o">{}</span> +
-sudo update-ca-trust extract
-
-<span class="c1"># Update locate cert bak</span>
-sudo mv <span class="nv">$HOME</span>/cert.bak <span class="nv">$HOME</span>/cert/cert.bak-<span class="nv">$localTime</span>
-</code></pre></div></section>
+    <section><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="c1"># Get time</span>
+</span></span><span class="line"><span class="cl"><span class="nv">localTime</span><span class="o">=</span><span class="k">$(</span>date <span class="s1">&#39;+%Y%m%d_%H%M%S&#39;</span> -d <span class="s2">&#34;</span><span class="k">$(</span>curl -s --head http://google.com <span class="p">|</span> grep ^Date: <span class="p">|</span> sed <span class="s1">&#39;s/Date: //g&#39;</span><span class="k">)</span><span class="s2">&#34;</span><span class="k">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Create cert bak dir</span>
+</span></span><span class="line"><span class="cl">mkdir -p <span class="nv">$HOME</span>/cert.bak
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Reset cert</span>
+</span></span><span class="line"><span class="cl">sudo rpm -Vv ca-certificates <span class="p">|</span> awk <span class="s1">&#39;$1!=&#34;.........&#34; &amp;&amp; $2!=&#34;d&#34; {system(&#34;mv -v &#34; $NF &#34; $HOME/cert.bak&#34;)}&#39;</span>
+</span></span><span class="line"><span class="cl">sudo yum check-update ca-certificates<span class="p">;</span> <span class="o">((</span><span class="nv">$?</span><span class="o">==</span>100<span class="o">))</span> <span class="o">&amp;&amp;</span> sudo yum update -y ca-certificates <span class="o">||</span> sudo yum reinstall -y ca-certificates
+</span></span><span class="line"><span class="cl">sudo find /etc/pki/ca-trust/source<span class="o">{</span>,/anchors<span class="o">}</span> -maxdepth <span class="m">1</span> -not -type d -exec ls -1 <span class="o">{}</span> +
+</span></span><span class="line"><span class="cl">sudo update-ca-trust extract
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Update locate cert bak</span>
+</span></span><span class="line"><span class="cl">sudo mv <span class="nv">$HOME</span>/cert.bak <span class="nv">$HOME</span>/cert/cert.bak-<span class="nv">$localTime</span>
+</span></span></code></pre></div></section>
     <footer>
       <hr>
       <div class="meta">
@@ -129,7 +129,7 @@ sudo mv <span class="nv">$HOME</span>/cert.bak <span class="nv">$HOME</span>/cer
       <hr>
       <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

@@ -140,7 +140,7 @@ To create a read only database user MySQL, do the following steps:
         <pubDate>Sun, 26 Jul 2020 21:05:49 +0800</pubDate>
         <guid>https://sibunglon.com/2020/07/26/database-returned-an-invalid-value-in-queryset.datetimes/</guid>
         <description>After create new action on the Django admin pages, it redirects to my site with the message a server error. When check the file /edx/var/log/supervisor/lms-stderr.log i find this:
-Traceback (most recent call last): File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/exception.py&amp;quot;, line 41, in inner response = get_response(request) File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;quot;, line 249, in _legacy_get_response response = self._get_response(request) File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;quot;, line 217, in _get_response response = self.process_exception_by_middleware(e, request) File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;quot;, line 215, in _get_response response = response.render() File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.</description>
+Traceback (most recent call last): File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/exception.py&amp;#34;, line 41, in inner response = get_response(request) File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;#34;, line 249, in _legacy_get_response response = self._get_response(request) File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;#34;, line 217, in _get_response response = self.process_exception_by_middleware(e, request) File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;#34;, line 215, in _get_response response = response.render() File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.</description>
       </item>
     
       <item>
@@ -378,7 +378,7 @@ curl https://getcaddy.</description>
         <pubDate>Sat, 16 Feb 2019 17:19:08 +0700</pubDate>
         <guid>https://sibunglon.com/2019/02/16/error-generate-certificate-ssl-menggunakan-lets-encrypt/</guid>
         <description>Beberapa bulan yang lalu I&amp;rsquo;m siBunglon masih bisa generate SSL menggunakan Let&amp;rsquo;s Encrypt namun hari ini I&amp;rsquo;m siBunglon menemukan error ketika akan generate SSL lagi dan I&amp;rsquo;m siBunglon mendapatkan error message seperti berikut:
-[root@airgreen siBunglon]# certbot --nginx -d repo.lab.sibunglon.com Traceback (most recent call last): File &amp;quot;/bin/certbot&amp;quot;, line 9, in &amp;lt;module&amp;gt; load_entry_point(&#39;certbot==0.29.1&#39;, &#39;console_scripts&#39;, &#39;certbot&#39;)() File &amp;quot;/usr/lib/python2.7/site-packages/pkg_resources/__init__.py&amp;quot;, line 487, in load_entry_point return get_distribution(dist).load_entry_point(group, name) File &amp;quot;/usr/lib/python2.7/site-packages/pkg_resources/__init__.py&amp;quot;, line 2728, in load_entry_point return ep.load() File &amp;quot;/usr/lib/python2.</description>
+[root@airgreen siBunglon]# certbot --nginx -d repo.lab.sibunglon.com Traceback (most recent call last): File &amp;#34;/bin/certbot&amp;#34;, line 9, in &amp;lt;module&amp;gt; load_entry_point(&amp;#39;certbot==0.29.1&amp;#39;, &amp;#39;console_scripts&amp;#39;, &amp;#39;certbot&amp;#39;)() File &amp;#34;/usr/lib/python2.7/site-packages/pkg_resources/__init__.py&amp;#34;, line 487, in load_entry_point return get_distribution(dist).load_entry_point(group, name) File &amp;#34;/usr/lib/python2.7/site-packages/pkg_resources/__init__.py&amp;#34;, line 2728, in load_entry_point return ep.load() File &amp;#34;/usr/lib/python2.</description>
       </item>
     
       <item>
@@ -495,7 +495,7 @@ Setelah itu sekarang anda dapat menginstall atau update paket di Red Hat anda se
         <link>https://sibunglon.com/2018/12/11/pip-python2-error/</link>
         <pubDate>Tue, 11 Dec 2018 21:34:18 +0700</pubDate>
         <guid>https://sibunglon.com/2018/12/11/pip-python2-error/</guid>
-        <description>Pip di Python2 Error? Traceback (most recent call last): File &amp;quot;/usr/bin/pip&amp;quot;, line 9, in &amp;lt;module&amp;gt; from pip import main ImportError: cannot import name main Gak usah panik, cukup jalankan command berikut tapi pastikan terlebih dahulu sekarang sudah jadi super user (root)
+        <description>Pip di Python2 Error? Traceback (most recent call last): File &amp;#34;/usr/bin/pip&amp;#34;, line 9, in &amp;lt;module&amp;gt; from pip import main ImportError: cannot import name main Gak usah panik, cukup jalankan command berikut tapi pastikan terlebih dahulu sekarang sudah jadi super user (root)
 python -m pip uninstall pip &amp;amp;&amp;amp; apt install python-pip --reinstall </description>
       </item>
     
@@ -978,7 +978,7 @@ Topologi Jaringan Sebuah LAN dapat diimplementasikan dengan berbagai macam topol
         <pubDate>Fri, 11 Aug 2017 16:00:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/11/installasi-moodle-di-localhost-linux/</guid>
         <description>A. Pendahuluan
-Server dibuat dengan beragam maksud dan tujuannya, salah satunya adalah membangun sistem pembelajaran online. Pembelajaran online sangat baik diterapkan saat ini, karena pelajar masa kini lebih senang untuk online dari pada membaca buku. Hal ini bisa meningkatkan minat membaca pelajar tanah air. Salah satu media yang dapat digunakan adalah dengan &amp;ldquo;Moodle&#39;. Apa itu Moodle?
+Server dibuat dengan beragam maksud dan tujuannya, salah satunya adalah membangun sistem pembelajaran online. Pembelajaran online sangat baik diterapkan saat ini, karena pelajar masa kini lebih senang untuk online dari pada membaca buku. Hal ini bisa meningkatkan minat membaca pelajar tanah air. Salah satu media yang dapat digunakan adalah dengan &amp;ldquo;Moodle&amp;rsquo;. Apa itu Moodle?
 #Pengertian
 Moodle (Modular Object-Oriented Dynamic Learning Environment) adalah paket perangkat lunak yang diproduksi untuk kegiatan belajar berbasis internet dan situs web yang menggunakan prinsip social constructionist pedagogy.</description>
       </item>

@@ -110,87 +110,87 @@ $ tree Bash Bash ├── BackupRestore-dbOpenEdx │ ├── backup_mongo.s
     <section><p><strong>Tree</strong> is a linux command that provides a list of recursive directories or a tree can display all file and directory listings in a directory.</p>
 <p>Comparison of <strong>ls</strong> and <strong>tree</strong> usage</p>
 <p><strong>Tree</strong>:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ tree Bash
-Bash
-├── BackupRestore-dbOpenEdx
-│   ├── backup_mongo.sh
-│   ├── backup_mysql.sh
-│   ├── restore_mongo.sh
-│   └── restore_mysql.sh
-├── auto-update-dplk_env
-│   ├── main.sh
-│   └── playbook
-│       ├── backend.yml
-│       ├── config.yml
-│       └── frontend.yml
-├── backup<span class="se">\ </span>database<span class="se">\ </span>postgres.sh
-├── backup_db.sh
-├── compress_backup.sh
-├── espeak.sh
-├── get-date-backupdb-dplk.sh
-├── get-log-core.sh
-├── get-log-tmp.sh
-├── import.sh
-├── loop<span class="se">\ </span>change<span class="se">\ </span>time.sh
-├── newProject.sh
-├── scp_Dilla.sh
-└── uni.sh
-
-<span class="m">3</span> directories, <span class="m">20</span> files
-~/G/G/icarrr ❯❯❯
-</code></pre></div><p><strong>ls</strong>:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ ls Bash
-BackupRestore-dbOpenEdx     backup database postgres.sh compress_backup.sh          get-date-backupdb-dplk.sh   get-log-tmp.sh              loop change time.sh         scp_Dilla.sh
-auto-update-dplk            backup_db.sh                espeak.sh                   get-log-core.sh             import.sh                   newProject.sh               uni.sh
-</code></pre></div><p>To be able to use trees, trees must be installed in your environment:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ tree Bash
+</span></span><span class="line"><span class="cl">Bash
+</span></span><span class="line"><span class="cl">├── BackupRestore-dbOpenEdx
+</span></span><span class="line"><span class="cl">│   ├── backup_mongo.sh
+</span></span><span class="line"><span class="cl">│   ├── backup_mysql.sh
+</span></span><span class="line"><span class="cl">│   ├── restore_mongo.sh
+</span></span><span class="line"><span class="cl">│   └── restore_mysql.sh
+</span></span><span class="line"><span class="cl">├── auto-update-dplk_env
+</span></span><span class="line"><span class="cl">│   ├── main.sh
+</span></span><span class="line"><span class="cl">│   └── playbook
+</span></span><span class="line"><span class="cl">│       ├── backend.yml
+</span></span><span class="line"><span class="cl">│       ├── config.yml
+</span></span><span class="line"><span class="cl">│       └── frontend.yml
+</span></span><span class="line"><span class="cl">├── backup<span class="se">\ </span>database<span class="se">\ </span>postgres.sh
+</span></span><span class="line"><span class="cl">├── backup_db.sh
+</span></span><span class="line"><span class="cl">├── compress_backup.sh
+</span></span><span class="line"><span class="cl">├── espeak.sh
+</span></span><span class="line"><span class="cl">├── get-date-backupdb-dplk.sh
+</span></span><span class="line"><span class="cl">├── get-log-core.sh
+</span></span><span class="line"><span class="cl">├── get-log-tmp.sh
+</span></span><span class="line"><span class="cl">├── import.sh
+</span></span><span class="line"><span class="cl">├── loop<span class="se">\ </span>change<span class="se">\ </span>time.sh
+</span></span><span class="line"><span class="cl">├── newProject.sh
+</span></span><span class="line"><span class="cl">├── scp_Dilla.sh
+</span></span><span class="line"><span class="cl">└── uni.sh
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="m">3</span> directories, <span class="m">20</span> files
+</span></span><span class="line"><span class="cl">~/G/G/icarrr ❯❯❯
+</span></span></code></pre></div><p><strong>ls</strong>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ ls Bash
+</span></span><span class="line"><span class="cl">BackupRestore-dbOpenEdx     backup database postgres.sh compress_backup.sh          get-date-backupdb-dplk.sh   get-log-tmp.sh              loop change time.sh         scp_Dilla.sh
+</span></span><span class="line"><span class="cl">auto-update-dplk            backup_db.sh                espeak.sh                   get-log-core.sh             import.sh                   newProject.sh               uni.sh
+</span></span></code></pre></div><p>To be able to use trees, trees must be installed in your environment:</p>
 <p>-) Ubuntu or family</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ sudo apt install tree
-</code></pre></div><p>-) CentOS or RHEL</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ sudo yum install tree
-</code></pre></div><p>-I option allows to exclude directories that match specific pattern e.g.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ tree Bash -I playbook
-Bash
-├── BackupRestore-dbOpenEdx
-│   ├── backup_mongo.sh
-│   ├── backup_mysql.sh
-│   ├── restore_mongo.sh
-│   └── restore_mysql.sh
-├── auto-update-dplk
-│   └── main.sh
-├── backup<span class="se">\ </span>database<span class="se">\ </span>postgres.sh
-├── backup_db.sh
-├── compress_backup.sh
-├── espeak.sh
-├── get-date-backupdb-dplk.sh
-├── get-log-core.sh
-├── get-log-tmp.sh
-├── import.sh
-├── loop<span class="se">\ </span>change<span class="se">\ </span>time.sh
-├── newProject.sh
-├── scp_Dilla.sh
-└── uni.sh
-
-<span class="m">2</span> directories, <span class="m">17</span> files
-</code></pre></div><p>In order to exclude multiple directories at once, their names must be separated by | sign, i.e.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ tree Bash -I <span class="s1">&#39;playbook|BackupRestore-dbOpenEdx&#39;</span>
-Bash
-├── auto-update-dplk
-│   └── main.sh
-├── backup<span class="se">\ </span>database<span class="se">\ </span>postgres.sh
-├── backup_db.sh
-├── compress_backup.sh
-├── espeak.sh
-├── get-date-backupdb-dplk.sh
-├── get-log-core.sh
-├── get-log-tmp.sh
-├── import.sh
-├── loop<span class="se">\ </span>change<span class="se">\ </span>time.sh
-├── newProject.sh
-├── scp_Dilla.sh
-└── uni.sh
-
-<span class="m">1</span> directory, <span class="m">13</span> files
-</code></pre></div><p>This command will skip playbook.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ sudo apt install tree
+</span></span></code></pre></div><p>-) CentOS or RHEL</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ sudo yum install tree
+</span></span></code></pre></div><p>-I option allows to exclude directories that match specific pattern e.g.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ tree Bash -I playbook
+</span></span><span class="line"><span class="cl">Bash
+</span></span><span class="line"><span class="cl">├── BackupRestore-dbOpenEdx
+</span></span><span class="line"><span class="cl">│   ├── backup_mongo.sh
+</span></span><span class="line"><span class="cl">│   ├── backup_mysql.sh
+</span></span><span class="line"><span class="cl">│   ├── restore_mongo.sh
+</span></span><span class="line"><span class="cl">│   └── restore_mysql.sh
+</span></span><span class="line"><span class="cl">├── auto-update-dplk
+</span></span><span class="line"><span class="cl">│   └── main.sh
+</span></span><span class="line"><span class="cl">├── backup<span class="se">\ </span>database<span class="se">\ </span>postgres.sh
+</span></span><span class="line"><span class="cl">├── backup_db.sh
+</span></span><span class="line"><span class="cl">├── compress_backup.sh
+</span></span><span class="line"><span class="cl">├── espeak.sh
+</span></span><span class="line"><span class="cl">├── get-date-backupdb-dplk.sh
+</span></span><span class="line"><span class="cl">├── get-log-core.sh
+</span></span><span class="line"><span class="cl">├── get-log-tmp.sh
+</span></span><span class="line"><span class="cl">├── import.sh
+</span></span><span class="line"><span class="cl">├── loop<span class="se">\ </span>change<span class="se">\ </span>time.sh
+</span></span><span class="line"><span class="cl">├── newProject.sh
+</span></span><span class="line"><span class="cl">├── scp_Dilla.sh
+</span></span><span class="line"><span class="cl">└── uni.sh
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="m">2</span> directories, <span class="m">17</span> files
+</span></span></code></pre></div><p>In order to exclude multiple directories at once, their names must be separated by | sign, i.e.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ tree Bash -I <span class="s1">&#39;playbook|BackupRestore-dbOpenEdx&#39;</span>
+</span></span><span class="line"><span class="cl">Bash
+</span></span><span class="line"><span class="cl">├── auto-update-dplk
+</span></span><span class="line"><span class="cl">│   └── main.sh
+</span></span><span class="line"><span class="cl">├── backup<span class="se">\ </span>database<span class="se">\ </span>postgres.sh
+</span></span><span class="line"><span class="cl">├── backup_db.sh
+</span></span><span class="line"><span class="cl">├── compress_backup.sh
+</span></span><span class="line"><span class="cl">├── espeak.sh
+</span></span><span class="line"><span class="cl">├── get-date-backupdb-dplk.sh
+</span></span><span class="line"><span class="cl">├── get-log-core.sh
+</span></span><span class="line"><span class="cl">├── get-log-tmp.sh
+</span></span><span class="line"><span class="cl">├── import.sh
+</span></span><span class="line"><span class="cl">├── loop<span class="se">\ </span>change<span class="se">\ </span>time.sh
+</span></span><span class="line"><span class="cl">├── newProject.sh
+</span></span><span class="line"><span class="cl">├── scp_Dilla.sh
+</span></span><span class="line"><span class="cl">└── uni.sh
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="m">1</span> directory, <span class="m">13</span> files
+</span></span></code></pre></div><p>This command will skip playbook.</p>
 <p>Thank you for reading and sorry if the language is chaotic because it is currently learning to speak English.</p>
 <p>Reference:</p>
 <ul>
@@ -215,7 +215,7 @@ Bash
       <hr>
       <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

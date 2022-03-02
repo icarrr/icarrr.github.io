@@ -116,18 +116,18 @@ openssl pkcs12 -in cert.pfx -nocerts -out domain.tld.encrypted.key Decrypt the e
 </ul>
 <p><strong>Get the .key file</strong></p>
 <p>Extract the encrypted key using:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">openssl pkcs12 -in cert.pfx -nocerts -out domain.tld.encrypted.key
-</code></pre></div><p>Decrypt the encrypted key using:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">openssl rsa -in domain.tld.encrypted.key -out domain.tld.key
-</code></pre></div><p>Delete the <code>domain.tld.encrypted.key</code> file since we won&rsquo;t need it.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">openssl pkcs12 -in cert.pfx -nocerts -out domain.tld.encrypted.key
+</span></span></code></pre></div><p>Decrypt the encrypted key using:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">openssl rsa -in domain.tld.encrypted.key -out domain.tld.key
+</span></span></code></pre></div><p>Delete the <code>domain.tld.encrypted.key</code> file since we won&rsquo;t need it.</p>
 <p><strong>Get the .crt file</strong></p>
 <p>Get your domain certificate using:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">openssl pkcs12 -in cert.pfx -clcerts -nokeys -out domain.tld.crt
-</code></pre></div><p>Get your CA certificate using:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">openssl pkcs12 -in cert.pfx -cacerts -out bundle.crt
-</code></pre></div><p>Concat the 2 .crt files into a chained.crt:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">cat domain.tld.crt bundle.crt &gt; domain.tld.chained.crt
-</code></pre></div><p>Delete the <code>bundle.crt</code> and <code>domain.tld.crt</code> files.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">openssl pkcs12 -in cert.pfx -clcerts -nokeys -out domain.tld.crt
+</span></span></code></pre></div><p>Get your CA certificate using:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">openssl pkcs12 -in cert.pfx -cacerts -out bundle.crt
+</span></span></code></pre></div><p>Concat the 2 .crt files into a chained.crt:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cat domain.tld.crt bundle.crt &gt; domain.tld.chained.crt
+</span></span></code></pre></div><p>Delete the <code>bundle.crt</code> and <code>domain.tld.crt</code> files.</p>
 <p><strong>Implementation</strong></p>
 <p>You can use <code>domain.tld.chained.crt</code> as SSL certificate file and <code>domain.tld.key</code> as SSL certificate key file.</p>
 <h3 id="references">References</h3>
@@ -156,7 +156,7 @@ openssl pkcs12 -in cert.pfx -nocerts -out domain.tld.encrypted.key Decrypt the e
       <hr>
       <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

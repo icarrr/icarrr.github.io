@@ -5,10 +5,76 @@
     <description>Recent content in Open edX on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 17 Nov 2021 14:12:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 02 Mar 2022 21:10:25 +0800</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/open-edx/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Set Default Certificates Display Behavior on Open edX</title>
+        <link>https://sibunglon.com/2022/03/02/set-default-certificates-display-behavior-on-open-edx/</link>
+        <pubDate>Wed, 02 Mar 2022 21:10:25 +0800</pubDate>
+        <guid>https://sibunglon.com/2022/03/02/set-default-certificates-display-behavior-on-open-edx/</guid>
+        <description>By default, Certificates Display Behavior was set to end. But this configuration can be override, for example want to set it early_no_info as default. Follow the steps below:
+  Go to Open edX server console.
+  Open and edit file /edx/app/edxapp/edx-platform/common/lib/xmodule/xmodule/course_module.py.
+  Find the following codes snippet:
+... certificates_display_behavior = String( display_name=_(&amp;#34;Certificates Display Behavior&amp;#34;), help=_( &amp;#34;Enter end, early_with_info, or early_no_info. After certificate generation, students who passed see a &amp;#34; &amp;#34;link to their certificates on the dashboard and students who did not pass see information about the &amp;#34; &amp;#34;grading configuration.</description>
+      </item>
+    
+      <item>
+        <title>Bypass Set Course Mode for Create and Activate Certificate in Studio Open edX</title>
+        <link>https://sibunglon.com/2022/03/02/bypass-set-course-mode-for-create-and-activate-certificate-in-studio-open-edx/</link>
+        <pubDate>Wed, 02 Mar 2022 20:48:58 +0800</pubDate>
+        <guid>https://sibunglon.com/2022/03/02/bypass-set-course-mode-for-create-and-activate-certificate-in-studio-open-edx/</guid>
+        <description>By default from Open edX, you need to perform several steps to add and activate certificates in courses such as adding course modes, adding course certificates, activating certificates, etc.
+But things can be simplified, you can add and activate certificates without adding course mode.
+Note: It is recommended that you set the enrollment mode default to honor, so that courses participants can generate certificates.
+  Go to Open edX server console.</description>
+      </item>
+    
+      <item>
+        <title>Set Default Enrollment Mode Open edX to Honor</title>
+        <link>https://sibunglon.com/2022/03/02/set-default-enrollment-mode-open-edx-to-honor/</link>
+        <pubDate>Wed, 02 Mar 2022 20:35:29 +0800</pubDate>
+        <guid>https://sibunglon.com/2022/03/02/set-default-enrollment-mode-open-edx-to-honor/</guid>
+        <description>By default, student enrollment mode will set to audit mode when course mode is not yet added. But this configuration can be override, for example want to set honor as default. Follow the steps below:
+  Go to Open edX server console.
+  Open and edit file /edx/app/edxapp/lms.env.json.
+  Then add following codes snippet into lms configuration file:
+... &amp;#34;COURSE_MODE_DEFAULTS&amp;#34;: { &amp;#34;name&amp;#34;: &amp;#34;Honor&amp;#34;, &amp;#34;slug&amp;#34;: &amp;#34;honor&amp;#34;, &amp;#34;bulk_sku&amp;#34;: null, &amp;#34;currency&amp;#34;: &amp;#34;usd&amp;#34;, &amp;#34;description&amp;#34;: null, &amp;#34;expiration_datetime&amp;#34;: null, &amp;#34;min_price&amp;#34;: 0, &amp;#34;sku&amp;#34;: null, &amp;#34;suggested_prices&amp;#34;: &amp;#34;&amp;#34; }, .</description>
+      </item>
+    
+      <item>
+        <title>Limit Student Enrollment to Open edX Courses</title>
+        <link>https://sibunglon.com/2022/03/02/limit-student-enrollment-to-open-edx-courses/</link>
+        <pubDate>Wed, 02 Mar 2022 20:25:28 +0800</pubDate>
+        <guid>https://sibunglon.com/2022/03/02/limit-student-enrollment-to-open-edx-courses/</guid>
+        <description>Option 1: By Invitation This setting is to restrict enrollment to invitation by the course staff. The default value is false, which means the course is open to anyone to enroll. To change this setting, follow these instructions.
+ In Studio, click Settings, then select Advanced Settings from the drop down menu Scroll down to Invitation Only. To restrict access to the course, change the value to &amp;ldquo;true&amp;rdquo; so the course is invitation only  Option 2: Maximum student enrollment If you want to restrict the number of students that can enroll in your course, follow these instructions.</description>
+      </item>
+    
+      <item>
+        <title>How to Keep Multiple Logged in Session Open edX</title>
+        <link>https://sibunglon.com/2022/02/18/how-to-keep-multiple-logged-in-session-open-edx/</link>
+        <pubDate>Fri, 18 Feb 2022 14:44:21 +0800</pubDate>
+        <guid>https://sibunglon.com/2022/02/18/how-to-keep-multiple-logged-in-session-open-edx/</guid>
+        <description>To keep multiple logged in session, you need to deactivate prevent concurrent logins per user feature, follow the steps below:
+  Go to Open edX server console.
+  Open and edit file /edx/app/edxapp/lms.env.json and /edx/app/edxapp/cms.env.json.
+  Then find the &amp;quot;FEATURES&amp;quot; configuration, add PREVENT_CONCURRENT_LOGINS into &amp;quot;FEATURES&amp;quot; array and set to false. See the following codes snippet:
+... FEATURES: PREVENT_CONCURRENT_LOGINS: false ...   Restart LMS services.
+  </description>
+      </item>
+    
+      <item>
+        <title>Enable Send Bulk Email</title>
+        <link>https://sibunglon.com/2022/02/15/enable-send-bulk-email/</link>
+        <pubDate>Tue, 15 Feb 2022 02:47:21 +0800</pubDate>
+        <guid>https://sibunglon.com/2022/02/15/enable-send-bulk-email/</guid>
+        <description>For courses on under Open edX platform, course team can send bulk email messages to course participants directly from the instructor dashboard: in the LMS, select Instructor, and then select Email.
+Messages can use HTML styling, and can include links to videos, social media pages for the course, and other material. All course team members who have the Staff or Admin role can use bulk email messages to communicate with course participants before, during, and after the course run.</description>
+      </item>
     
       <item>
         <title>Allow Educator Generate Student Certificate on Open edX</title>
@@ -130,7 +196,7 @@ To hide it, follow the steps below:
   Go to Open edX server console.
   Open and edit LMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml).
   Then find the ANALYTICS_DASHBOARD_URL configuration and set to blank or &#39;&#39;. See the following codes snippet:
-... ANALYTICS_DASHBOARD_URL: &#39;&#39; ...   Restart LMS services.  </description>
+... ANALYTICS_DASHBOARD_URL: &amp;#39;&amp;#39; ...   Restart LMS services.  </description>
       </item>
     
       <item>
@@ -140,7 +206,7 @@ To hide it, follow the steps below:
         <guid>https://sibunglon.com/2021/11/16/i18n_fastgenerate-error-reading-unicode-file-name/</guid>
         <description>I&amp;rsquo;m trying to modify translations and need re-compile translations file to implement the update. But when i trying re-compile it with the following command:
 $ sudo -H -u edxapp bash $ source /edx/app/edxapp/edxapp_env $ cd /edx/app/edxapp/edx-platform $ paver i18n_fastgenerate And i found this:
-Traceback (most recent call last): File &amp;quot;/openedx/venv/bin/django-admin&amp;quot;, line 11, in &amp;lt;module&amp;gt; sys.exit(execute_from_command_line()) File &amp;quot;/openedx/venv/local/lib/python2.7/site-packages/django/core/management/__init__.py&amp;quot;, line 364, in execute_from_command_line utility.execute() File &amp;quot;/openedx/venv/local/lib/python2.7/site-packages/django/core/management/__init__.py&amp;quot;, line 356, in execute self.fetch_command(subcommand).run_from_argv(self.argv) File &amp;quot;/openedx/venv/local/lib/python2.</description>
+Traceback (most recent call last): File &amp;#34;/openedx/venv/bin/django-admin&amp;#34;, line 11, in &amp;lt;module&amp;gt; sys.exit(execute_from_command_line()) File &amp;#34;/openedx/venv/local/lib/python2.7/site-packages/django/core/management/__init__.py&amp;#34;, line 364, in execute_from_command_line utility.execute() File &amp;#34;/openedx/venv/local/lib/python2.7/site-packages/django/core/management/__init__.py&amp;#34;, line 356, in execute self.fetch_command(subcommand).run_from_argv(self.argv) File &amp;#34;/openedx/venv/local/lib/python2.</description>
       </item>
     
       <item>
@@ -169,7 +235,7 @@ Find the following snippet codes on the configuration file.
         <guid>https://sibunglon.com/2021/10/25/fixing-unable-to-delete-account-open-edx-via-user-profile/</guid>
         <description>When I test to delete my account from the user profile page, I get the following message after entering the password.
 When check the file /edx/var/log/lms/edx.log i find this.
-openedx.core.djangoapps.user_authn.exceptions.AuthFailedError Oct 25 13:08:55 ubuntu [service_variant=lms][openedx.core.djangoapps.user_api.accounts.views][env:sandbox] ERROR [ubuntu 10792] [user 14] [views.py:472] - 500 error deactivating account Default state does not exist! Populate retirement states to retire users. Traceback (most recent call last): File &amp;quot;/edx/app/edxapp/edx-platform/openedx/core/djangoapps/user_api/models.py&amp;quot;, line 320, in create_retirement pending = RetirementState.</description>
+openedx.core.djangoapps.user_authn.exceptions.AuthFailedError Oct 25 13:08:55 ubuntu [service_variant=lms][openedx.core.djangoapps.user_api.accounts.views][env:sandbox] ERROR [ubuntu 10792] [user 14] [views.py:472] - 500 error deactivating account Default state does not exist! Populate retirement states to retire users. Traceback (most recent call last): File &amp;#34;/edx/app/edxapp/edx-platform/openedx/core/djangoapps/user_api/models.py&amp;#34;, line 320, in create_retirement pending = RetirementState.</description>
       </item>
     
       <item>
@@ -400,7 +466,7 @@ If it does not exist already, create the folder /tmp/certificates owned by the u
         <pubDate>Sun, 26 Jul 2020 21:05:49 +0800</pubDate>
         <guid>https://sibunglon.com/2020/07/26/database-returned-an-invalid-value-in-queryset.datetimes/</guid>
         <description>After create new action on the Django admin pages, it redirects to my site with the message a server error. When check the file /edx/var/log/supervisor/lms-stderr.log i find this:
-Traceback (most recent call last): File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/exception.py&amp;quot;, line 41, in inner response = get_response(request) File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;quot;, line 249, in _legacy_get_response response = self._get_response(request) File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;quot;, line 217, in _get_response response = self.process_exception_by_middleware(e, request) File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;quot;, line 215, in _get_response response = response.render() File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.</description>
+Traceback (most recent call last): File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/exception.py&amp;#34;, line 41, in inner response = get_response(request) File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;#34;, line 249, in _legacy_get_response response = self._get_response(request) File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;#34;, line 217, in _get_response response = self.process_exception_by_middleware(e, request) File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;#34;, line 215, in _get_response response = response.render() File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.</description>
       </item>
     
       <item>
@@ -409,7 +475,7 @@ Traceback (most recent call last): File &amp;quot;/edx/app/edxapp/venvs/edxapp/l
         <pubDate>Sun, 26 Jul 2020 20:43:08 +0800</pubDate>
         <guid>https://sibunglon.com/2020/07/26/google-sign-in-error-403-in-open-edx/</guid>
         <description>When I have configuration OAuth2 Google on Open edX version ironwood.master, I click register, then the “Google” login button and I get to the Google Log In page. After a succesful login on Google site, it redirects to my site and I’m getting error. When check the file /edx/var/log/lms/edx.log i find this:
-Jul 24 01:03:09 bnpb [service_variant=lms][django.request][env:sandbox] ERROR [e-Learning 29535] [exception.py:135] - Internal Server Error: /auth/complete/google-oauth2/ Traceback (most recent call last): File &amp;quot;/edx/app/edxapp/venvs/edxapp/local/lib/python2.</description>
+Jul 24 01:03:09 bnpb [service_variant=lms][django.request][env:sandbox] ERROR [e-Learning 29535] [exception.py:135] - Internal Server Error: /auth/complete/google-oauth2/ Traceback (most recent call last): File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.</description>
       </item>
     
       <item>

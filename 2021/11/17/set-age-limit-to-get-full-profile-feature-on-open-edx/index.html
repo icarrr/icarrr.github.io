@@ -118,10 +118,10 @@
 </li>
 <li>
 <p>Then find the <code>PARENTAL_CONSENT_AGE_LIMIT</code> configuration (add configuration <code>PARENTAL_CONSENT_AGE_LIMIT</code> if you can&rsquo;t find it) and set with you custom age limit. See the following codes snippet, im set age limit to 7:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nn">...</span><span class="w">
-</span><span class="w"></span><span class="nt">PARENTAL_CONSENT_AGE_LIMIT</span><span class="p">:</span><span class="w"> </span><span class="m">7</span><span class="w">
-</span><span class="w"></span><span class="nn">...</span><span class="w">
-</span></code></pre></div></li>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">...</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">PARENTAL_CONSENT_AGE_LIMIT</span><span class="p">:</span><span class="w"> </span><span class="m">7</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nn">...</span><span class="w">
+</span></span></span></code></pre></div></li>
 <li>
 <p>Restart LMS services.</p>
 </li>
@@ -131,11 +131,11 @@
 </li>
 <li>
 <p>Re-compile translations file.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ sudo -H -u edxapp bash
-$ <span class="nb">source</span> /edx/app/edxapp/edxapp_env
-$ <span class="nb">cd</span> /edx/app/edxapp/edx-platform
-$ paver i18n_fastgenerate
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ sudo -H -u edxapp bash
+</span></span><span class="line"><span class="cl">$ <span class="nb">source</span> /edx/app/edxapp/edxapp_env
+</span></span><span class="line"><span class="cl">$ <span class="nb">cd</span> /edx/app/edxapp/edx-platform
+</span></span><span class="line"><span class="cl">$ paver i18n_fastgenerate
+</span></span></code></pre></div></li>
 <li>
 <p>Restart LMS and memcached service.</p>
 </li>
@@ -156,7 +156,7 @@ $ paver i18n_fastgenerate
       <hr>
       <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

@@ -112,36 +112,36 @@
 <p>Open the file <em>/Library/LaunchAgents/com.fortinet.forticlient.fct_launcher.plist</em> using your favorite text editor, here I use vim.</p>
 </li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ sudo vi /Library/LaunchAgents/com.fortinet.forticlient.fct_launcher.plist
-</code></pre></div><ol start="3">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ sudo vi /Library/LaunchAgents/com.fortinet.forticlient.fct_launcher.plist
+</span></span></code></pre></div><ol start="3">
 <li>Default contents of the <em>com.fortinet.forticlient.fct_launcher.plist</em> file as follows.</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="cp">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;</span>
-<span class="cp">&lt;!DOCTYPE plist PUBLIC &#34;-//Apple//DTD PLIST 1.0//EN&#34; &#34;http://www.apple.com/DTDs/PropertyList-1.0.dtd&#34;&gt;</span>
-<span class="nt">&lt;plist</span> <span class="na">version=</span><span class="s">&#34;1.0&#34;</span><span class="nt">&gt;</span>
-<span class="nt">&lt;dict&gt;</span>
-	<span class="nt">&lt;key&gt;</span>Label<span class="nt">&lt;/key&gt;</span>
-	<span class="nt">&lt;string&gt;</span>com.fortinet.fct_launcher<span class="nt">&lt;/string&gt;</span>
-	<span class="nt">&lt;key&gt;</span>Program<span class="nt">&lt;/key&gt;</span>
-	<span class="nt">&lt;string&gt;</span>/Library/Application Support/Fortinet/FortiClient/bin/FCTLauncher<span class="nt">&lt;/string&gt;</span>
-	<span class="nt">&lt;key&gt;</span>RunAtLoad<span class="nt">&lt;/key&gt;</span>
-	<span class="nt">&lt;true/&gt;</span>
-<span class="nt">&lt;/dict&gt;</span>
-<span class="nt">&lt;/plist&gt;</span>
-</code></pre></div><p>Change the word true to false, so that the contents of the <em>com.fortinet.forticlient.fct_launcher.plist</em> file as follows.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="cp">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;</span>
-<span class="cp">&lt;!DOCTYPE plist PUBLIC &#34;-//Apple//DTD PLIST 1.0//EN&#34; &#34;http://www.apple.com/DTDs/PropertyList-1.0.dtd&#34;&gt;</span>
-<span class="nt">&lt;plist</span> <span class="na">version=</span><span class="s">&#34;1.0&#34;</span><span class="nt">&gt;</span>
-<span class="nt">&lt;dict&gt;</span>
-	<span class="nt">&lt;key&gt;</span>Label<span class="nt">&lt;/key&gt;</span>
-	<span class="nt">&lt;string&gt;</span>com.fortinet.fct_launcher<span class="nt">&lt;/string&gt;</span>
-	<span class="nt">&lt;key&gt;</span>Program<span class="nt">&lt;/key&gt;</span>
-	<span class="nt">&lt;string&gt;</span>/Library/Application Support/Fortinet/FortiClient/bin/FCTLauncher<span class="nt">&lt;/string&gt;</span>
-	<span class="nt">&lt;key&gt;</span>RunAtLoad<span class="nt">&lt;/key&gt;</span>
-	<span class="nt">&lt;false/&gt;</span>
-<span class="nt">&lt;/dict&gt;</span>
-<span class="nt">&lt;/plist&gt;</span>
-</code></pre></div></section>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="cp">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="cp">&lt;!DOCTYPE plist PUBLIC &#34;-//Apple//DTD PLIST 1.0//EN&#34; &#34;http://www.apple.com/DTDs/PropertyList-1.0.dtd&#34;&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;plist</span> <span class="na">version=</span><span class="s">&#34;1.0&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;dict&gt;</span>
+</span></span><span class="line"><span class="cl">	<span class="nt">&lt;key&gt;</span>Label<span class="nt">&lt;/key&gt;</span>
+</span></span><span class="line"><span class="cl">	<span class="nt">&lt;string&gt;</span>com.fortinet.fct_launcher<span class="nt">&lt;/string&gt;</span>
+</span></span><span class="line"><span class="cl">	<span class="nt">&lt;key&gt;</span>Program<span class="nt">&lt;/key&gt;</span>
+</span></span><span class="line"><span class="cl">	<span class="nt">&lt;string&gt;</span>/Library/Application Support/Fortinet/FortiClient/bin/FCTLauncher<span class="nt">&lt;/string&gt;</span>
+</span></span><span class="line"><span class="cl">	<span class="nt">&lt;key&gt;</span>RunAtLoad<span class="nt">&lt;/key&gt;</span>
+</span></span><span class="line"><span class="cl">	<span class="nt">&lt;true/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/dict&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/plist&gt;</span>
+</span></span></code></pre></div><p>Change the word true to false, so that the contents of the <em>com.fortinet.forticlient.fct_launcher.plist</em> file as follows.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="cp">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="cp">&lt;!DOCTYPE plist PUBLIC &#34;-//Apple//DTD PLIST 1.0//EN&#34; &#34;http://www.apple.com/DTDs/PropertyList-1.0.dtd&#34;&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;plist</span> <span class="na">version=</span><span class="s">&#34;1.0&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;dict&gt;</span>
+</span></span><span class="line"><span class="cl">	<span class="nt">&lt;key&gt;</span>Label<span class="nt">&lt;/key&gt;</span>
+</span></span><span class="line"><span class="cl">	<span class="nt">&lt;string&gt;</span>com.fortinet.fct_launcher<span class="nt">&lt;/string&gt;</span>
+</span></span><span class="line"><span class="cl">	<span class="nt">&lt;key&gt;</span>Program<span class="nt">&lt;/key&gt;</span>
+</span></span><span class="line"><span class="cl">	<span class="nt">&lt;string&gt;</span>/Library/Application Support/Fortinet/FortiClient/bin/FCTLauncher<span class="nt">&lt;/string&gt;</span>
+</span></span><span class="line"><span class="cl">	<span class="nt">&lt;key&gt;</span>RunAtLoad<span class="nt">&lt;/key&gt;</span>
+</span></span><span class="line"><span class="cl">	<span class="nt">&lt;false/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/dict&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/plist&gt;</span>
+</span></span></code></pre></div></section>
     <footer>
       <hr>
       <div class="meta">
@@ -157,7 +157,7 @@
       <hr>
       <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

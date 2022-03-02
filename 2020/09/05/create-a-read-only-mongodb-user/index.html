@@ -110,8 +110,8 @@ To create a read only database user MongoDB, do the following steps:
 <ol>
 <li>Login as a MongoDB administrator.</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ mongo -u admin -p --authenticationDatabase admin
-</code></pre></div><ol start="2">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ mongo -u admin -p --authenticationDatabase admin
+</span></span></code></pre></div><ol start="2">
 <li>Show list of database on MongoDB.</li>
 </ol>
 <pre tabindex="0"><code class="language-mongo" data-lang="mongo">&gt;&gt;&gt; show dbs
@@ -122,8 +122,8 @@ To create a read only database user MongoDB, do the following steps:
 </code></pre><ol start="4">
 <li>Create a new user with permission read only on the database.</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-mysql" data-lang="mysql"><span class="o">&gt;&gt;&gt;</span><span class="w"> </span><span class="n">db</span><span class="p">.</span><span class="nf">createUser</span><span class="p">(</span><span class="err">{</span><span class="k">user</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;edxapp_read&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">pwd</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;password&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">roles</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="err">{</span><span class="n">role</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;read&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">db</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;edxapp&#34;</span><span class="err">}</span><span class="p">]</span><span class="err">}</span><span class="p">)</span><span class="w">
-</span></code></pre></div><ol start="5">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-mysql" data-lang="mysql"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span><span class="w"> </span><span class="n">db</span><span class="p">.</span><span class="nf">createUser</span><span class="p">(</span><span class="err">{</span><span class="k">user</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;edxapp_read&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">pwd</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;password&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">roles</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="err">{</span><span class="n">role</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;read&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">db</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;edxapp&#34;</span><span class="err">}</span><span class="p">]</span><span class="err">}</span><span class="p">)</span><span class="w">
+</span></span></span></code></pre></div><ol start="5">
 <li>Done.</li>
 </ol>
 </section>
@@ -145,7 +145,7 @@ To create a read only database user MongoDB, do the following steps:
       <hr>
       <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

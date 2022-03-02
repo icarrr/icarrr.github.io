@@ -42,7 +42,7 @@ Solution sudo -u edxapp bash source /edx/app/edxapp/edxapp_env python /edx/app/e
         <link>https://sibunglon.com/2018/12/11/pip-python2-error/</link>
         <pubDate>Tue, 11 Dec 2018 21:34:18 +0700</pubDate>
         <guid>https://sibunglon.com/2018/12/11/pip-python2-error/</guid>
-        <description>Pip di Python2 Error? Traceback (most recent call last): File &amp;quot;/usr/bin/pip&amp;quot;, line 9, in &amp;lt;module&amp;gt; from pip import main ImportError: cannot import name main Gak usah panik, cukup jalankan command berikut tapi pastikan terlebih dahulu sekarang sudah jadi super user (root)
+        <description>Pip di Python2 Error? Traceback (most recent call last): File &amp;#34;/usr/bin/pip&amp;#34;, line 9, in &amp;lt;module&amp;gt; from pip import main ImportError: cannot import name main Gak usah panik, cukup jalankan command berikut tapi pastikan terlebih dahulu sekarang sudah jadi super user (root)
 python -m pip uninstall pip &amp;amp;&amp;amp; apt install python-pip --reinstall </description>
       </item>
     

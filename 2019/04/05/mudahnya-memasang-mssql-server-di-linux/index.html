@@ -151,7 +151,7 @@
 <p>1) Tambahkan GPG key MSSQL Server ke sistem</p>
 <pre tabindex="0"><code>wget -qO- https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
 </code></pre><p>2) Tambahkan repositori MSSQL Server ke sistem</p>
-<pre tabindex="0"><code>sudo add-apt-repository &quot;$(wget -qO- https://packages.microsoft.com/config/ubuntu/16.04/mssql-server-2017.list)&quot;
+<pre tabindex="0"><code>sudo add-apt-repository &#34;$(wget -qO- https://packages.microsoft.com/config/ubuntu/16.04/mssql-server-2017.list)&#34;
 </code></pre><p>3) Install MSSQL Server</p>
 <pre tabindex="0"><code>sudo apt-get update &amp;&amp; sudo apt-get install -y mssql-server
 </code></pre><p>4) Setup MSSQL Server, Setup disini akan membuat password untuk akun SA karena secara default MSSQL Server menggunakan user SA</p>
@@ -177,7 +177,7 @@
       <hr>
       <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

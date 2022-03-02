@@ -104,22 +104,22 @@ The following example, anyone who accesses the *.redirect.sibunglon.com domain w
     <section><p>Directing visitors from one domain to another is very easy, just edit the nginx configuration file that has been created then add some configuration syntax or if you don&rsquo;t want to edit an existing configuration file, you can also create 1 more configuration file.</p>
 <p>The following example, anyone who accesses the <code>*.redirect.sibunglon.com</code> domain will be directed to the <code>sibunglon.com</code> domain. <em>*= wilcard</em>, so anyone who accesses the domain <code>x.redirect.sibunglon.com</code>, <code>xyz.redirect.sibunglon.com</code>, <code>blog.redirect.sibunglon.com</code>, and others will be directed to the <code>sibunglon.com</code> domain.</p>
 <p>Okey, because I do not want to disturb the configuration file that I have made, so I just created a file to redirect the domain. Please use your favorite text editor, here I use <em>vim</em>.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ sudo vi /etc/nginx/conf.d/redirect.conf
-</code></pre></div><p>Then add the following script. Save and exit the text editor.
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ sudo vi /etc/nginx/conf.d/redirect.conf
+</span></span></code></pre></div><p>Then add the following script. Save and exit the text editor.
 Please change the user&rsquo;s primary destination domain and destination domain when directed.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">server</span> <span class="p">{</span>
-   <span class="kn">server_name</span> <span class="s">*.redirect.sibunglon.com</span><span class="p">;</span>
-   <span class="kn">return</span> <span class="mi">301</span> <span class="nv">$scheme://sibunglon.com</span><span class="p">;</span>
-   <span class="kn">access_log</span>  <span class="s">/var/log/nginx/redirect_access.log</span><span class="p">;</span>
-   <span class="kn">error_log</span>   <span class="s">/var/log/nginx/redirect_error.log</span>  <span class="s">warn</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div><p>Make sure there are no nginx configurations, no errors or conflicts.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ sudo nginx -t
-nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
-nginx: configuration file /etc/nginx/nginx.conf <span class="nb">test</span> is successful
-</code></pre></div><p>Restart service nginx.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ sudo systemctl restart nginx
-</code></pre></div><p>Please access the main destination domain and you are directed to another domain as you set it in the nginx configuration.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="line"><span class="cl"><span class="k">server</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="kn">server_name</span> <span class="s">*.redirect.sibunglon.com</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">   <span class="kn">return</span> <span class="mi">301</span> <span class="nv">$scheme://sibunglon.com</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">   <span class="kn">access_log</span>  <span class="s">/var/log/nginx/redirect_access.log</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">   <span class="kn">error_log</span>   <span class="s">/var/log/nginx/redirect_error.log</span>  <span class="s">warn</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Make sure there are no nginx configurations, no errors or conflicts.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ sudo nginx -t
+</span></span><span class="line"><span class="cl">nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+</span></span><span class="line"><span class="cl">nginx: configuration file /etc/nginx/nginx.conf <span class="nb">test</span> is successful
+</span></span></code></pre></div><p>Restart service nginx.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ sudo systemctl restart nginx
+</span></span></code></pre></div><p>Please access the main destination domain and you are directed to another domain as you set it in the nginx configuration.</p>
 </section>
     <footer>
       <hr>
@@ -139,7 +139,7 @@ nginx: configuration file /etc/nginx/nginx.conf <span class="nb">test</span> is 
       <hr>
       <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

@@ -156,45 +156,45 @@ Nextcloud adalah perangkat lunak client-server untuk membuat dan menggunakan lay
 <ol start="6">
 <li>Copy script di bawah ini lalu paste di bagian paling bawah dari konfigurasi <strong>nextcloud.sh</strong> nya.</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/bash
-</span><span class="cp"></span><span class="nv">ocpath</span><span class="o">=</span><span class="s1">&#39;/var/www/nextcloud&#39;</span>
-<span class="nv">htuser</span><span class="o">=</span><span class="s1">&#39;www-data&#39;</span>
-<span class="nv">htgroup</span><span class="o">=</span><span class="s1">&#39;www-data&#39;</span>
-<span class="nv">rootuser</span><span class="o">=</span><span class="s1">&#39;root&#39;</span>
-
-<span class="nb">printf</span> <span class="s2">&#34;Creating possible missing Directories\n&#34;</span>
-mkdir -p <span class="nv">$ocpath</span>/data
-mkdir -p <span class="nv">$ocpath</span>/assets
-mkdir -p <span class="nv">$ocpath</span>/updater
-
-<span class="nb">printf</span> <span class="s2">&#34;chmod Files and Directories\n&#34;</span>
-find <span class="si">${</span><span class="nv">ocpath</span><span class="si">}</span>/ -type f -print0 <span class="p">|</span> xargs -0 chmod <span class="m">0640</span>
-find <span class="si">${</span><span class="nv">ocpath</span><span class="si">}</span>/ -type d -print0 <span class="p">|</span> xargs -0 chmod <span class="m">0750</span>
-chmod <span class="m">755</span> <span class="si">${</span><span class="nv">ocpath</span><span class="si">}</span>
-
-<span class="nb">printf</span> <span class="s2">&#34;chown Directories\n&#34;</span>
-chown -R <span class="si">${</span><span class="nv">rootuser</span><span class="si">}</span>:<span class="si">${</span><span class="nv">htgroup</span><span class="si">}</span> <span class="si">${</span><span class="nv">ocpath</span><span class="si">}</span>/
-chown -R <span class="si">${</span><span class="nv">htuser</span><span class="si">}</span>:<span class="si">${</span><span class="nv">htgroup</span><span class="si">}</span> <span class="si">${</span><span class="nv">ocpath</span><span class="si">}</span>/apps/
-chown -R <span class="si">${</span><span class="nv">htuser</span><span class="si">}</span>:<span class="si">${</span><span class="nv">htgroup</span><span class="si">}</span> <span class="si">${</span><span class="nv">ocpath</span><span class="si">}</span>/assets/
-chown -R <span class="si">${</span><span class="nv">htuser</span><span class="si">}</span>:<span class="si">${</span><span class="nv">htgroup</span><span class="si">}</span> <span class="si">${</span><span class="nv">ocpath</span><span class="si">}</span>/config/
-chown -R <span class="si">${</span><span class="nv">htuser</span><span class="si">}</span>:<span class="si">${</span><span class="nv">htgroup</span><span class="si">}</span> <span class="si">${</span><span class="nv">ocpath</span><span class="si">}</span>/data/
-chown -R <span class="si">${</span><span class="nv">htuser</span><span class="si">}</span>:<span class="si">${</span><span class="nv">htgroup</span><span class="si">}</span> <span class="si">${</span><span class="nv">ocpath</span><span class="si">}</span>/themes/
-chown -R <span class="si">${</span><span class="nv">htuser</span><span class="si">}</span>:<span class="si">${</span><span class="nv">htgroup</span><span class="si">}</span> <span class="si">${</span><span class="nv">ocpath</span><span class="si">}</span>/updater/
-
-chmod +x <span class="si">${</span><span class="nv">ocpath</span><span class="si">}</span>/occ
-
-<span class="nb">printf</span> <span class="s2">&#34;chmod/chown .htaccess\n&#34;</span>
-<span class="k">if</span> <span class="o">[</span> -f <span class="si">${</span><span class="nv">ocpath</span><span class="si">}</span>/.htaccess <span class="o">]</span>
- <span class="k">then</span>
-  chmod <span class="m">0644</span> <span class="si">${</span><span class="nv">ocpath</span><span class="si">}</span>/.htaccess
-  chown <span class="si">${</span><span class="nv">rootuser</span><span class="si">}</span>:<span class="si">${</span><span class="nv">htgroup</span><span class="si">}</span> <span class="si">${</span><span class="nv">ocpath</span><span class="si">}</span>/.htaccess
-<span class="k">fi</span>
-<span class="k">if</span> <span class="o">[</span> -f <span class="si">${</span><span class="nv">ocpath</span><span class="si">}</span>/data/.htaccess <span class="o">]</span>
- <span class="k">then</span>
-  chmod <span class="m">0644</span> <span class="si">${</span><span class="nv">ocpath</span><span class="si">}</span>/data/.htaccess
-  chown <span class="si">${</span><span class="nv">rootuser</span><span class="si">}</span>:<span class="si">${</span><span class="nv">htgroup</span><span class="si">}</span> <span class="si">${</span><span class="nv">ocpath</span><span class="si">}</span>/data/.htaccess
-<span class="k">fi</span>
-</code></pre></div><ol start="7">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="nv">ocpath</span><span class="o">=</span><span class="s1">&#39;/var/www/nextcloud&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">htuser</span><span class="o">=</span><span class="s1">&#39;www-data&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">htgroup</span><span class="o">=</span><span class="s1">&#39;www-data&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">rootuser</span><span class="o">=</span><span class="s1">&#39;root&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">printf</span> <span class="s2">&#34;Creating possible missing Directories\n&#34;</span>
+</span></span><span class="line"><span class="cl">mkdir -p <span class="nv">$ocpath</span>/data
+</span></span><span class="line"><span class="cl">mkdir -p <span class="nv">$ocpath</span>/assets
+</span></span><span class="line"><span class="cl">mkdir -p <span class="nv">$ocpath</span>/updater
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">printf</span> <span class="s2">&#34;chmod Files and Directories\n&#34;</span>
+</span></span><span class="line"><span class="cl">find <span class="si">${</span><span class="nv">ocpath</span><span class="si">}</span>/ -type f -print0 <span class="p">|</span> xargs -0 chmod <span class="m">0640</span>
+</span></span><span class="line"><span class="cl">find <span class="si">${</span><span class="nv">ocpath</span><span class="si">}</span>/ -type d -print0 <span class="p">|</span> xargs -0 chmod <span class="m">0750</span>
+</span></span><span class="line"><span class="cl">chmod <span class="m">755</span> <span class="si">${</span><span class="nv">ocpath</span><span class="si">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">printf</span> <span class="s2">&#34;chown Directories\n&#34;</span>
+</span></span><span class="line"><span class="cl">chown -R <span class="si">${</span><span class="nv">rootuser</span><span class="si">}</span>:<span class="si">${</span><span class="nv">htgroup</span><span class="si">}</span> <span class="si">${</span><span class="nv">ocpath</span><span class="si">}</span>/
+</span></span><span class="line"><span class="cl">chown -R <span class="si">${</span><span class="nv">htuser</span><span class="si">}</span>:<span class="si">${</span><span class="nv">htgroup</span><span class="si">}</span> <span class="si">${</span><span class="nv">ocpath</span><span class="si">}</span>/apps/
+</span></span><span class="line"><span class="cl">chown -R <span class="si">${</span><span class="nv">htuser</span><span class="si">}</span>:<span class="si">${</span><span class="nv">htgroup</span><span class="si">}</span> <span class="si">${</span><span class="nv">ocpath</span><span class="si">}</span>/assets/
+</span></span><span class="line"><span class="cl">chown -R <span class="si">${</span><span class="nv">htuser</span><span class="si">}</span>:<span class="si">${</span><span class="nv">htgroup</span><span class="si">}</span> <span class="si">${</span><span class="nv">ocpath</span><span class="si">}</span>/config/
+</span></span><span class="line"><span class="cl">chown -R <span class="si">${</span><span class="nv">htuser</span><span class="si">}</span>:<span class="si">${</span><span class="nv">htgroup</span><span class="si">}</span> <span class="si">${</span><span class="nv">ocpath</span><span class="si">}</span>/data/
+</span></span><span class="line"><span class="cl">chown -R <span class="si">${</span><span class="nv">htuser</span><span class="si">}</span>:<span class="si">${</span><span class="nv">htgroup</span><span class="si">}</span> <span class="si">${</span><span class="nv">ocpath</span><span class="si">}</span>/themes/
+</span></span><span class="line"><span class="cl">chown -R <span class="si">${</span><span class="nv">htuser</span><span class="si">}</span>:<span class="si">${</span><span class="nv">htgroup</span><span class="si">}</span> <span class="si">${</span><span class="nv">ocpath</span><span class="si">}</span>/updater/
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">chmod +x <span class="si">${</span><span class="nv">ocpath</span><span class="si">}</span>/occ
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">printf</span> <span class="s2">&#34;chmod/chown .htaccess\n&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[</span> -f <span class="si">${</span><span class="nv">ocpath</span><span class="si">}</span>/.htaccess <span class="o">]</span>
+</span></span><span class="line"><span class="cl"> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">  chmod <span class="m">0644</span> <span class="si">${</span><span class="nv">ocpath</span><span class="si">}</span>/.htaccess
+</span></span><span class="line"><span class="cl">  chown <span class="si">${</span><span class="nv">rootuser</span><span class="si">}</span>:<span class="si">${</span><span class="nv">htgroup</span><span class="si">}</span> <span class="si">${</span><span class="nv">ocpath</span><span class="si">}</span>/.htaccess
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[</span> -f <span class="si">${</span><span class="nv">ocpath</span><span class="si">}</span>/data/.htaccess <span class="o">]</span>
+</span></span><span class="line"><span class="cl"> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">  chmod <span class="m">0644</span> <span class="si">${</span><span class="nv">ocpath</span><span class="si">}</span>/data/.htaccess
+</span></span><span class="line"><span class="cl">  chown <span class="si">${</span><span class="nv">rootuser</span><span class="si">}</span>:<span class="si">${</span><span class="nv">htgroup</span><span class="si">}</span> <span class="si">${</span><span class="nv">ocpath</span><span class="si">}</span>/data/.htaccess
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span></code></pre></div><ol start="7">
 <li>Ketikkan perintah <code>bash /tmp/nextcloud.sh</code></li>
 </ol>
 <p><img src="https://2.bp.blogspot.com/-_atrnbvD5Po/W9IWjVumQeI/AAAAAAAAFLE/jRBXH7GvtmgeViIM50I-rKptjOriUIfCgCLcBGAs/s1600/Screenshot_10.png" alt="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Let&#39;s Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs">
@@ -203,7 +203,7 @@ chmod +x <span class="si">${</span><span class="nv">ocpath</span><span class="si
 <ol start="9">
 <li>Masukkan script di bawah ini. Lalu save.</li>
 </ol>
-<pre tabindex="0"><code class="language-apache2" data-lang="apache2">Alias /nextcloud &quot;/var/www/nextcloud/&quot;
+<pre tabindex="0"><code class="language-apache2" data-lang="apache2">Alias /nextcloud &#34;/var/www/nextcloud/&#34;
 
 &lt;Directory /var/www/nextcloud/&gt;
     Options +FollowSymlinks
@@ -292,7 +292,7 @@ apt-get install php-bz2 php-curl php-gd php-imagick php-intl php-mbstring php-xm
       <hr>
       <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

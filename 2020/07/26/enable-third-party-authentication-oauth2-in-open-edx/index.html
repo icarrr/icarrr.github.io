@@ -135,10 +135,10 @@ Integrate Open edX With Google Step 1: Register The Open edX Site With Google  N
 <blockquote>
 <p>NOTE: Remember to replace the CLIENT_SECRET placeholder in the example below with the <em>Client secret</em> you noted down previously.</p>
 </blockquote>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="s2">&#34;SOCIAL_AUTH_OAUTH_SECRETS&#34;</span><span class="err">:</span> <span class="p">{</span>
-    <span class="nt">&#34;google-oauth2&#34;</span><span class="p">:</span> <span class="s2">&#34;CLIENT_SECRET&#34;</span>
-<span class="p">}</span>
-</code></pre></div><ol start="5">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="s2">&#34;SOCIAL_AUTH_OAUTH_SECRETS&#34;</span><span class="err">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;google-oauth2&#34;</span><span class="p">:</span> <span class="s2">&#34;CLIENT_SECRET&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><ol start="5">
 <li>Restart LMS.</li>
 <li>Access the Django administration console.</li>
 <li>Browse to “Third Party Auth -&gt; Provider Configuration (OAuth2)”.</li>
@@ -202,10 +202,10 @@ Integrate Open edX With Google Step 1: Register The Open edX Site With Google  N
 <blockquote>
 <p>NOTE: Remember to replace the CLIENT_SECRET placeholder in the example below with the <em>Client secret</em> you noted down previously.</p>
 </blockquote>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json">    <span class="s2">&#34;SOCIAL_AUTH_OAUTH_SECRETS&#34;</span><span class="err">:</span> <span class="p">{</span>
-        <span class="nt">&#34;facebook&#34;</span><span class="p">:</span> <span class="s2">&#34;CLIENT_SECRET&#34;</span>
-    <span class="p">}</span>
-</code></pre></div><ol start="5">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl">    <span class="s2">&#34;SOCIAL_AUTH_OAUTH_SECRETS&#34;</span><span class="err">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;facebook&#34;</span><span class="p">:</span> <span class="s2">&#34;CLIENT_SECRET&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span></code></pre></div><ol start="5">
 <li>Restart LMS.</li>
 <li>Access the Django administration console.</li>
 <li>Browse to “Third Party Auth -&gt; Provider Configuration (OAuth2)”.</li>
@@ -224,8 +224,8 @@ Integrate Open edX With Google Step 1: Register The Open edX Site With Google  N
 </ol>
 <h3 id="notes">Notes</h3>
 <p>When I enable this, I use Open edX version ironwood.master and <code>Google Sign In Error 403</code> because deprecated Google+ API. For fix this issue, need upgrade the package versions to <code>social-auth-app-django==3.1.0</code> and <code>social-auth-core==3.2.0</code> using command:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ sudo /edx/bin/pip.edxapp install social-auth-app-django<span class="o">==</span>3.1.0 social-auth-core<span class="o">==</span>3.2.0
-</code></pre></div><h3 id="references">References</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ sudo /edx/bin/pip.edxapp install social-auth-app-django<span class="o">==</span>3.1.0 social-auth-core<span class="o">==</span>3.2.0
+</span></span></code></pre></div><h3 id="references">References</h3>
 <ul>
 <li><a href="https://docs.bitnami.com/google/apps/edx/administration/enable-third-party-auth/">Enable Third-Party Authentication</a></li>
 <li><a href="https://medium.com/@adityaagrawal9960/social-authentication-open-edx-c9e431909202">Social Authentication — Open Edx</a></li>
@@ -247,7 +247,7 @@ Integrate Open edX With Google Step 1: Register The Open edX Site With Google  N
       <hr>
       <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

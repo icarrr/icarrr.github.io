@@ -136,24 +136,23 @@ https://go.microsoft.com/fwlink/?LinkId=853010
 Do you accept the license terms? [Yes/No]:yes
 
 Traceback (most recent call last):
-  File &quot;/opt/mssql/bin/../lib/mssql-conf/mssql-conf.py&quot;, line 279, in &lt;module&gt;
+  File &#34;/opt/mssql/bin/../lib/mssql-conf/mssql-conf.py&#34;, line 279, in &lt;module&gt;
     main()
-  File &quot;/opt/mssql/bin/../lib/mssql-conf/mssql-conf.py&quot;, line 275, in main
+  File &#34;/opt/mssql/bin/../lib/mssql-conf/mssql-conf.py&#34;, line 275, in main
     processCommands()
-  File &quot;/opt/mssql/bin/../lib/mssql-conf/mssql-conf.py&quot;, line 199, in processCommands
+  File &#34;/opt/mssql/bin/../lib/mssql-conf/mssql-conf.py&#34;, line 199, in processCommands
     COMMAND_TABLE[args.which]()
-  File &quot;/opt/mssql/bin/../lib/mssql-conf/mssql-conf.py&quot;, line 54, in handleSetup
+  File &#34;/opt/mssql/bin/../lib/mssql-conf/mssql-conf.py&#34;, line 54, in handleSetup
     exit(mssqlconfhelper.setupSqlServer(eulaAccepted, noprompt=args.noprompt))
-  File &quot;/opt/mssql/lib/mssql-conf/mssqlconfhelper.py&quot;, line 817, in setupSqlServer
+  File &#34;/opt/mssql/lib/mssql-conf/mssqlconfhelper.py&#34;, line 817, in setupSqlServer
     languageSelect(noprompt)
-  File &quot;/opt/mssql/lib/mssql-conf/mssqlconfhelper.py&quot;, line 160, in languageSelect
+  File &#34;/opt/mssql/lib/mssql-conf/mssqlconfhelper.py&#34;, line 160, in languageSelect
     language = locale.getdefaultlocale()[0]
-  File &quot;/usr/lib64/python2.7/locale.py&quot;, line 511, in getdefaultlocale
+  File &#34;/usr/lib64/python2.7/locale.py&#34;, line 511, in getdefaultlocale
     return _parse_localename(localename)
-  File &quot;/usr/lib64/python2.7/locale.py&quot;, line 443, in _parse_localename
-    raise ValueError, 'unknown locale: %s' % localename
+  File &#34;/usr/lib64/python2.7/locale.py&#34;, line 443, in _parse_localename
+    raise ValueError, &#39;unknown locale: %s&#39; % localename
 ValueError: unknown locale: UTF-8
-
 </code></pre></section>
     <footer>
       <hr>
@@ -176,7 +175,7 @@ ValueError: unknown locale: UTF-8
       <hr>
       <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

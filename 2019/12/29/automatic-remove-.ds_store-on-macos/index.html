@@ -106,18 +106,18 @@ $ find ~ -name .DS_Store -delete This will find the ."/>
     </header>
     <section><p>In the Apple macOS operating system, .DS_Store is a file that stores custom attributes of its containing folder, such as the position of icons or the choice of a background image. The name is an abbreviation of Desktop Services Store.</p>
 <p>But some people want to delete this file, including me. To delete this file simply run the following command in the macOS terminal or shell.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ find ~ -name .DS_Store -delete
-</code></pre></div><p>This will find the .DS_Store file in the home directory (~) and home subdirectory (~).</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ find ~ -name .DS_Store -delete
+</span></span></code></pre></div><p>This will find the .DS_Store file in the home directory (~) and home subdirectory (~).</p>
 <p>If you want to do it manually, you can run the command periodically. But if you want to delete .DS_Store automatically, then add the script to the crontab.</p>
 <ol>
 <li>To edit a cron file, simply run the following in a macOS terminal or shell.</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ crontab -e
-</code></pre></div><ol start="2">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ crontab -e
+</span></span></code></pre></div><ol start="2">
 <li>Add the following script to crontab.</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">* * * * * find ~ -name .DS_Store -delete &gt; /dev/null 2&gt;<span class="p">&amp;</span><span class="m">1</span> <span class="o">||</span> <span class="nb">true</span>
-</code></pre></div><p>The command will be executed every minute. * * * * * is the determination of the time for command execution.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">* * * * * find ~ -name .DS_Store -delete &gt; /dev/null 2&gt;<span class="p">&amp;</span><span class="m">1</span> <span class="o">||</span> <span class="nb">true</span>
+</span></span></code></pre></div><p>The command will be executed every minute. * * * * * is the determination of the time for command execution.</p>
 <p>If you want to change the command execution time, <a href="https://crontab.guru/">crontab.guru</a> can help you determine the command execution time as you wish.</p>
 </section>
     <footer>
@@ -135,7 +135,7 @@ $ find ~ -name .DS_Store -delete This will find the ."/>
       <hr>
       <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

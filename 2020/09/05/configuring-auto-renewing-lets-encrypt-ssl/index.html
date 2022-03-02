@@ -121,23 +121,23 @@ SHELL=/bin/sh PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin 
 <p>Create cron file.</p>
 <pre tabindex="0"><code>$ vi /etc/cron.d/certbot
 </code></pre><p>and then enter the script:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nv">SHELL</span><span class="o">=</span>/bin/sh
-<span class="nv">PATH</span><span class="o">=</span>/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
-
-<span class="m">0</span> */12 * * * root <span class="nb">test</span> -x /usr/bin/certbot -a <span class="se">\!</span> -d /run/systemd/system <span class="o">&amp;&amp;</span> perl -e <span class="s1">&#39;sleep int(rand(43200))&#39;</span> <span class="o">&amp;&amp;</span> certbot -q renew
-</code></pre></div><h3 id="for-apache2">For apache2</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">SHELL</span><span class="o">=</span>/bin/sh
+</span></span><span class="line"><span class="cl"><span class="nv">PATH</span><span class="o">=</span>/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="m">0</span> */12 * * * root <span class="nb">test</span> -x /usr/bin/certbot -a <span class="se">\!</span> -d /run/systemd/system <span class="o">&amp;&amp;</span> perl -e <span class="s1">&#39;sleep int(rand(43200))&#39;</span> <span class="o">&amp;&amp;</span> certbot -q renew
+</span></span></code></pre></div><h3 id="for-apache2">For apache2</h3>
 <p>Download certbot renew package file</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ wget https://dl.eff.org/certbot-auto <span class="o">&amp;&amp;</span> chmod a+x certbot-auto
-</code></pre></div><p>Move certbot renew package file</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ sudo mv certbot-auto /etc/letsencrypt/
-</code></pre></div><p>Create cron file.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ wget https://dl.eff.org/certbot-auto <span class="o">&amp;&amp;</span> chmod a+x certbot-auto
+</span></span></code></pre></div><p>Move certbot renew package file</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ sudo mv certbot-auto /etc/letsencrypt/
+</span></span></code></pre></div><p>Create cron file.</p>
 <pre tabindex="0"><code>$ vi /etc/cron.d/certbot
 </code></pre><p>and then enter the script:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nv">SHELL</span><span class="o">=</span>/bin/sh
-<span class="nv">PATH</span><span class="o">=</span>/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
-
-<span class="m">0</span> */12 * * * <span class="nb">cd</span> /etc/letsencrypt/ <span class="o">&amp;&amp;</span> ./certbot-auto renew <span class="o">&amp;&amp;</span> /etc/init.d/apache2 restart
-</code></pre></div><p>This will run the renew process twice daily.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">SHELL</span><span class="o">=</span>/bin/sh
+</span></span><span class="line"><span class="cl"><span class="nv">PATH</span><span class="o">=</span>/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="m">0</span> */12 * * * <span class="nb">cd</span> /etc/letsencrypt/ <span class="o">&amp;&amp;</span> ./certbot-auto renew <span class="o">&amp;&amp;</span> /etc/init.d/apache2 restart
+</span></span></code></pre></div><p>This will run the renew process twice daily.</p>
 <h3 id="references">References</h3>
 <ul>
 <li><a href="https://absolutecommerce.co.uk/blog/auto-renew-letsencrypt-nginx-certbot">absolutecommerce</a></li>
@@ -168,7 +168,7 @@ SHELL=/bin/sh PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin 
       <hr>
       <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

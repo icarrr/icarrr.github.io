@@ -106,16 +106,16 @@ $ sudo chown edxapp:edxapp -R xblock-folder $ cd xblock-folder $ sudo /edx/bin/p
     </header>
     <section><p><img src="/assets/img/Open-edX/open-edx-new.png" alt="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Let&#39;s Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs"></p>
 <p>Saat melakukan installasi XBlock ke environment Open edX, pastikan ownership directory xblock sudah diatur ke user dan group Open edX (<em>edxapp</em>) dan/atau melakukan installasi XBlock di python environment user Open edX (<em>edxapp</em>). Silahkan cek step berikut sebagai sample install XBlock.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ sudo chown edxapp:edxapp -R xblock-folder
-$ sudo -H -u edxapp bash
-$ <span class="nb">cd</span> xblock-folder
-$ <span class="nb">source</span> ~/edxapp_env
-$ pip install -e .
-</code></pre></div><p>Atau dapat juga menggunakan step berikut.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ sudo chown edxapp:edxapp -R xblock-folder
-$ <span class="nb">cd</span> xblock-folder
-$ sudo /edx/bin/pip.edxapp install -e .
-</code></pre></div></section>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ sudo chown edxapp:edxapp -R xblock-folder
+</span></span><span class="line"><span class="cl">$ sudo -H -u edxapp bash
+</span></span><span class="line"><span class="cl">$ <span class="nb">cd</span> xblock-folder
+</span></span><span class="line"><span class="cl">$ <span class="nb">source</span> ~/edxapp_env
+</span></span><span class="line"><span class="cl">$ pip install -e .
+</span></span></code></pre></div><p>Atau dapat juga menggunakan step berikut.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ sudo chown edxapp:edxapp -R xblock-folder
+</span></span><span class="line"><span class="cl">$ <span class="nb">cd</span> xblock-folder
+</span></span><span class="line"><span class="cl">$ sudo /edx/bin/pip.edxapp install -e .
+</span></span></code></pre></div></section>
     <footer>
       <hr>
       <div class="meta">
@@ -131,7 +131,7 @@ $ sudo /edx/bin/pip.edxapp install -e .
       <hr>
       <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

@@ -103,19 +103,19 @@
 <p>After you install <a href="https://openedx.atlassian.net/wiki/spaces/COMM/pages/43385346/XBlocks+Directory">XBlock</a> on the Open edX server, the XBlock cannot be used immediately, but you must register the <a href="https://openedx.atlassian.net/wiki/spaces/COMM/pages/43385346/XBlocks+Directory">XBlock</a> name in each course, by entering a course then clicking <strong>Settings</strong> &gt; <strong>Advanced Settings</strong> and find <strong>Advanced Module List</strong> field.</p>
 <p>If all the courses you are going to prepare in Open edX require the same <a href="https://openedx.atlassian.net/wiki/spaces/COMM/pages/43385346/XBlocks+Directory">XBlock</a>, you can set the XBlock name to the default list so you don&rsquo;t have to manually add the <a href="https://openedx.atlassian.net/wiki/spaces/COMM/pages/43385346/XBlocks+Directory">XBlock</a> name to each course. Note the following steps to add the name <a href="https://openedx.atlassian.net/wiki/spaces/COMM/pages/43385346/XBlocks+Directory">XBlock</a> to the default list Advanced Module List.</p>
 <p>Open file <code>/edx/app/edxapp/edx-platform/common/lib/xmodule/xmodule/course_module.py</code> when using <a href="http://localhost:1313/2019/07/13/install-open-edx-using-method-native-installation-ubuntu-16.04/">Open edX native installation</a> or open file <code>/opt/bitnami/apps/edx/edx-platform/common/lib/xmodule/xmodule/course_module.py</code> when using <a href="https://bitnami.com/stack/edx">Open edX Bitnami</a>, then find the following line:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python">    <span class="n">advanced_modules</span> <span class="o">=</span> <span class="n">List</span><span class="p">(</span>
-        <span class="n">display_name</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s2">&#34;Advanced Module List&#34;</span><span class="p">),</span>
-        <span class="n">help</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s2">&#34;Enter the names of the advanced modules to use in your course.&#34;</span><span class="p">),</span>
-        <span class="n">scope</span><span class="o">=</span><span class="n">Scope</span><span class="o">.</span><span class="n">settings</span>
-    <span class="p">)</span>
-</code></pre></div><p>and change it to be like this:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python">    <span class="n">advanced_modules</span> <span class="o">=</span> <span class="n">List</span><span class="p">(</span>
-        <span class="n">display_name</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s2">&#34;Advanced Module List&#34;</span><span class="p">),</span>
-        <span class="n">default</span><span class="o">=</span><span class="p">[],</span> <span class="c1"># add your module list here</span>
-        <span class="n">help</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s2">&#34;Enter the names of the advanced modules to use in your course.&#34;</span><span class="p">),</span>
-        <span class="n">scope</span><span class="o">=</span><span class="n">Scope</span><span class="o">.</span><span class="n">settings</span>
-    <span class="p">)</span>
-</code></pre></div><p>Then restart the Studio Open edX service (CMS).</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl">    <span class="n">advanced_modules</span> <span class="o">=</span> <span class="n">List</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="n">display_name</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s2">&#34;Advanced Module List&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">        <span class="n">help</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s2">&#34;Enter the names of the advanced modules to use in your course.&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">        <span class="n">scope</span><span class="o">=</span><span class="n">Scope</span><span class="o">.</span><span class="n">settings</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span></code></pre></div><p>and change it to be like this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl">    <span class="n">advanced_modules</span> <span class="o">=</span> <span class="n">List</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="n">display_name</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s2">&#34;Advanced Module List&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">        <span class="n">default</span><span class="o">=</span><span class="p">[],</span> <span class="c1"># add your module list here</span>
+</span></span><span class="line"><span class="cl">        <span class="n">help</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s2">&#34;Enter the names of the advanced modules to use in your course.&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">        <span class="n">scope</span><span class="o">=</span><span class="n">Scope</span><span class="o">.</span><span class="n">settings</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span></code></pre></div><p>Then restart the Studio Open edX service (CMS).</p>
 <h3 id="references">References</h3>
 <ul>
 <li><a href="https://groups.google.com/g/openedx-ops/c/WYt2G2bJIPg/m/xmGSzKv3AwAJ">Google Groups</a></li>
@@ -136,7 +136,7 @@
       <hr>
       <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

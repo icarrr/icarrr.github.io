@@ -114,24 +114,24 @@ location ~ ^/media/(?"/>
 <p>This problem occurs because don&rsquo;t use <a href="https://aws.amazon.com/s3/">Amazon S3</a> to save data generate. To fix it, follow these steps.</p>
 <p>-) Login to Open edX server, then create symbolic link from <code>/tmp/edx-s3/grades</code> to <code>/edx/var/edxapp/media</code>.</p>
 <p>-) Update nginx configuration of LMS. Find the following snippet codes on the configuration file.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">location</span> <span class="p">~</span> <span class="sr">^/media/(?P&lt;file&gt;.*)</span> <span class="p">{</span>
-    <span class="kn">root</span> <span class="s">/edx/var/edxapp/media</span><span class="p">;</span>
-    <span class="kn">try_files</span> <span class="s">/</span><span class="nv">$file</span> <span class="p">=</span><span class="mi">404</span><span class="p">;</span>
-    <span class="kn">expires</span> <span class="s">31536000s</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div><p>Change <code>=404</code> to <code>/grades/$file</code> or looks like the configuration below.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">location</span> <span class="p">~</span> <span class="sr">^/media/(?P&lt;file&gt;.*)</span> <span class="p">{</span>
-    <span class="kn">root</span> <span class="s">/edx/var/edxapp/media</span><span class="p">;</span>
-    <span class="kn">try_files</span> <span class="s">/</span><span class="nv">$file</span> <span class="s">/grades/</span><span class="nv">$file</span><span class="p">;</span>
-    <span class="kn">expires</span> <span class="s">31536000s</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="k">location</span> <span class="p">~</span> <span class="sr">^/grades/(?P&lt;file&gt;.*)</span> <span class="p">{</span>
-    <span class="kn">root</span> <span class="s">/edx/var/edxapp/media/grades</span><span class="p">;</span>
-    <span class="kn">try_files</span> <span class="s">/</span><span class="nv">$file</span> <span class="p">=</span><span class="mi">404</span><span class="p">;</span>
-    <span class="kn">expires</span> <span class="s">31536000s</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div><p>After that make sure the configuration is not error, use the command <code>sudo nginx -t</code>. And then restart nginx service use the command <code>sudo systemctl restart nginx</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="line"><span class="cl"><span class="k">location</span> <span class="p">~</span> <span class="sr">^/media/(?P&lt;file&gt;.*)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">root</span> <span class="s">/edx/var/edxapp/media</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">try_files</span> <span class="s">/</span><span class="nv">$file</span> <span class="p">=</span><span class="mi">404</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">expires</span> <span class="s">31536000s</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Change <code>=404</code> to <code>/grades/$file</code> or looks like the configuration below.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="line"><span class="cl"><span class="k">location</span> <span class="p">~</span> <span class="sr">^/media/(?P&lt;file&gt;.*)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">root</span> <span class="s">/edx/var/edxapp/media</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">try_files</span> <span class="s">/</span><span class="nv">$file</span> <span class="s">/grades/</span><span class="nv">$file</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">expires</span> <span class="s">31536000s</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">location</span> <span class="p">~</span> <span class="sr">^/grades/(?P&lt;file&gt;.*)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">root</span> <span class="s">/edx/var/edxapp/media/grades</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">try_files</span> <span class="s">/</span><span class="nv">$file</span> <span class="p">=</span><span class="mi">404</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">expires</span> <span class="s">31536000s</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>After that make sure the configuration is not error, use the command <code>sudo nginx -t</code>. And then restart nginx service use the command <code>sudo systemctl restart nginx</code>.</p>
 </section>
     <footer>
       <hr>
@@ -148,7 +148,7 @@ location ~ ^/media/(?"/>
       <hr>
       <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
