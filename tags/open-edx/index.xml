@@ -5,10 +5,70 @@
     <description>Recent content in Open edX on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 02 Mar 2022 21:10:25 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 06 Mar 2022 14:34:16 +0800</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/open-edx/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Set Default Weight of Common Problem on Open edX</title>
+        <link>https://sibunglon.com/2022/03/06/set-default-weight-of-common-problem-on-open-edx/</link>
+        <pubDate>Sun, 06 Mar 2022 14:34:16 +0800</pubDate>
+        <guid>https://sibunglon.com/2022/03/06/set-default-weight-of-common-problem-on-open-edx/</guid>
+        <description>By default, problem weight of Blank Common Problem component (including multiple choice components, checkboxes, etc.) has not been set so that the problem weight is based on the number of problems. But this configuration can be override, for example want to set it 100 as default. Follow the steps below:
+  Go to Open edX server console.
+  Open and edit file /edx/app/edxapp/edx-platform/common/lib/xmodule/xmodule/capa_base.py.
+  Find the following codes snippet:</description>
+      </item>
+    
+      <item>
+        <title>Set Default Show Answer of Common Problem to Never on Open edX</title>
+        <link>https://sibunglon.com/2022/03/06/set-default-show-answer-of-common-problem-to-never-on-open-edx/</link>
+        <pubDate>Sun, 06 Mar 2022 14:15:39 +0800</pubDate>
+        <guid>https://sibunglon.com/2022/03/06/set-default-show-answer-of-common-problem-to-never-on-open-edx/</guid>
+        <description>By default, option show answer of Blank Common Problem component (including multiple choice components, checkboxes, etc.) was set to finished. But this configuration can be override, for example want to set it never as default. Follow the steps below:
+  Go to Open edX server console.
+  Open and edit file /edx/app/edxapp/edx-platform/common/lib/xmodule/xmodule/modulestore/inheritance.py.
+  Find the following codes snippet:
+... showanswer = String( display_name=_(&amp;#34;Show Answer&amp;#34;), help=_( # Translators: DO NOT translate the words in quotes here, they are # specific words for the acceptable values.</description>
+      </item>
+    
+      <item>
+        <title>Set Default Component Name from &#34;Multiple Choice&#34; to &#34;Pilihan Ganda&#34; on Open edX</title>
+        <link>https://sibunglon.com/2022/03/06/set-default-component-name-from-multiple-choice-to-pilihan-ganda-on-open-edx/</link>
+        <pubDate>Sun, 06 Mar 2022 14:03:49 +0800</pubDate>
+        <guid>https://sibunglon.com/2022/03/06/set-default-component-name-from-multiple-choice-to-pilihan-ganda-on-open-edx/</guid>
+        <description>Even though you have used multiple languages or changed the language to Indonesian in Open edX, the Multiple Choice component is still labeled as Multiple Choice.
+  Go to Open edX server console.
+  Open and edit file /edx/app/edxapp/edx-platform/common/lib/xmodule/xmodule/templates/problem/multiplechoice.yaml.
+  Find the following codes snippet:
+...display_name:Multiple Choice...  Then update the code, change part display_name from &amp;ldquo;Multiple Choice&amp;rdquo; to &amp;ldquo;Pilihan Ganda&amp;rdquo;. See the following codes snippet:
+...display_name:Pilihan Ganda.</description>
+      </item>
+    
+      <item>
+        <title>Set Default Enable Timed Exams on Open edX</title>
+        <link>https://sibunglon.com/2022/03/06/set-default-enable-timed-exams-on-open-edx/</link>
+        <pubDate>Sun, 06 Mar 2022 13:49:48 +0800</pubDate>
+        <guid>https://sibunglon.com/2022/03/06/set-default-enable-timed-exams-on-open-edx/</guid>
+        <description>By default, Timed Exams feature not yet active when create a new courses. But this configuration can be override, for example want to set active or enable Timed Exams feature when create a new courses. Follow the steps below:
+  Go to Open edX server console.
+  Open and edit file /edx/app/edxapp/edx-platform/common/lib/xmodule/xmodule/course_module.py.
+  Find the following codes snippet:
+... enable_timed_exams = Boolean( display_name=_(&amp;#34;Enable Timed Exams&amp;#34;), help=_( &amp;#34;Enter true or false.</description>
+      </item>
+    
+      <item>
+        <title>Override Course Pace All Course Into Self Paced on Open edX</title>
+        <link>https://sibunglon.com/2022/03/06/override-course-pace-all-course-into-self-paced-on-open-edx/</link>
+        <pubDate>Sun, 06 Mar 2022 13:00:19 +0800</pubDate>
+        <guid>https://sibunglon.com/2022/03/06/override-course-pace-all-course-into-self-paced-on-open-edx/</guid>
+        <description>By default, course pacing was set to Instructor-Paced. But this configuration can be override, for example want to set it Self-Paced as default. Follow the steps below:
+  Go to Open edX server console.
+  Open and edit file /edx/app/edxapp/edx-platform/common/lib/xmodule/xmodule/course_module.py.
+  Find the following codes snippet:
+... self_paced = Boolean( display_name=_(&amp;#34;Self Paced&amp;#34;), help=_( &amp;#34;Set this to \&amp;#34;true\&amp;#34;to mark this course as self-paced. Self-paced courses do not have &amp;#34; &amp;#34;due dates for assignments, and students can progress through the course at any rate before &amp;#34; &amp;#34;the course ends.</description>
+      </item>
     
       <item>
         <title>Set Default Certificates Display Behavior on Open edX</title>
