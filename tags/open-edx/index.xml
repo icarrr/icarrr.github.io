@@ -281,10 +281,10 @@ Find the following snippet codes on the configuration file.
       </item>
     
       <item>
-        <title>About of Hide Courses on Open edX</title>
-        <link>https://sibunglon.com/2021/11/16/about-of-hide-courses-on-open-edx/</link>
+        <title>Hide Courses on Open edX</title>
+        <link>https://sibunglon.com/2021/11/16/hide-courses-on-open-edx/</link>
         <pubDate>Tue, 16 Nov 2021 20:25:31 +0800</pubDate>
-        <guid>https://sibunglon.com/2021/11/16/about-of-hide-courses-on-open-edx/</guid>
+        <guid>https://sibunglon.com/2021/11/16/hide-courses-on-open-edx/</guid>
         <description>To hide a course, just set course visibility to none. To set it, open your studio &amp;gt; select a course &amp;gt; select advanced settings &amp;gt; then search for Course Visibility In Catalog. After course visibility was set to none, the course does not appear in the catalog (eg, https://edx.sibunglon.com/courses) even though the course is still running or has not ended. Courses that have ended still appear in the catalog (eg https://edx.</description>
       </item>
     
