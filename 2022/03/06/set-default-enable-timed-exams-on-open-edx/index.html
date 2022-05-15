@@ -122,29 +122,29 @@
 <li>
 <p>Find the following codes snippet:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">...</span>
-</span></span><span class="line"><span class="cl"> <span class="n">enable_timed_exams</span> <span class="o">=</span> <span class="n">Boolean</span><span class="p">(</span>
-</span></span><span class="line"><span class="cl">     <span class="n">display_name</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s2">&#34;Enable Timed Exams&#34;</span><span class="p">),</span>
-</span></span><span class="line"><span class="cl">     <span class="n">help</span><span class="o">=</span><span class="n">_</span><span class="p">(</span>
-</span></span><span class="line"><span class="cl">         <span class="s2">&#34;Enter true or false. If this value is true, timed exams are enabled in your course. &#34;</span>
-</span></span><span class="line"><span class="cl">         <span class="s2">&#34;Regardless of this setting, timed exams are enabled if Enable Proctored Exams is set to true.&#34;</span>
-</span></span><span class="line"><span class="cl">     <span class="p">),</span>
-</span></span><span class="line"><span class="cl">     <span class="n">default</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">     <span class="n">scope</span><span class="o">=</span><span class="n">Scope</span><span class="o">.</span><span class="n">settings</span>
-</span></span><span class="line"><span class="cl"> <span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">enable_timed_exams</span> <span class="o">=</span> <span class="n">Boolean</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="n">display_name</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s2">&#34;Enable Timed Exams&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">        <span class="n">help</span><span class="o">=</span><span class="n">_</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;Enter true or false. If this value is true, timed exams are enabled in your course. &#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;Regardless of this setting, timed exams are enabled if Enable Proctored Exams is set to true.&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">),</span>
+</span></span><span class="line"><span class="cl">        <span class="n">default</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">scope</span><span class="o">=</span><span class="n">Scope</span><span class="o">.</span><span class="n">settings</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="o">...</span>
 </span></span></code></pre></div></li>
 <li>
 <p>Then update the code, change part <code>default=False</code> from False to True. See the following codes snippet:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">...</span>
-</span></span><span class="line"><span class="cl"> <span class="n">enable_timed_exams</span> <span class="o">=</span> <span class="n">Boolean</span><span class="p">(</span>
-</span></span><span class="line"><span class="cl">     <span class="n">display_name</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s2">&#34;Enable Timed Exams&#34;</span><span class="p">),</span>
-</span></span><span class="line"><span class="cl">     <span class="n">help</span><span class="o">=</span><span class="n">_</span><span class="p">(</span>
-</span></span><span class="line"><span class="cl">         <span class="s2">&#34;Enter true or false. If this value is true, timed exams are enabled in your course. &#34;</span>
-</span></span><span class="line"><span class="cl">         <span class="s2">&#34;Regardless of this setting, timed exams are enabled if Enable Proctored Exams is set to true.&#34;</span>
-</span></span><span class="line"><span class="cl">     <span class="p">),</span>
-</span></span><span class="line"><span class="cl">     <span class="n">default</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">     <span class="n">scope</span><span class="o">=</span><span class="n">Scope</span><span class="o">.</span><span class="n">settings</span>
-</span></span><span class="line"><span class="cl"> <span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">enable_timed_exams</span> <span class="o">=</span> <span class="n">Boolean</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="n">display_name</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s2">&#34;Enable Timed Exams&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">        <span class="n">help</span><span class="o">=</span><span class="n">_</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;Enter true or false. If this value is true, timed exams are enabled in your course. &#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;Regardless of this setting, timed exams are enabled if Enable Proctored Exams is set to true.&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">),</span>
+</span></span><span class="line"><span class="cl">        <span class="n">default</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">scope</span><span class="o">=</span><span class="n">Scope</span><span class="o">.</span><span class="n">settings</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="o">...</span>
 </span></span></code></pre></div></li>
 <li>

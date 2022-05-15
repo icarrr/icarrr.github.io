@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us" itemscope itemtype="http://schema.org/WebPage">
   <head>
-  <title>Set Default Certificates Display Behavior on Open edX</title>
+  <title>Set Default Enable Subsection Prerequisite on Open edX</title>
   
   <meta http-equiv="cache-control" content="public, max-age=31536000" />
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -50,36 +50,36 @@
   
   <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
 
-  <meta property="og:title" content="Set Default Certificates Display Behavior on Open edX" />
-<meta property="og:description" content="By default, Certificates Display Behavior was set to end. But this configuration can be override, for example want to set it early_no_info as default. Follow the steps below:
+  <meta property="og:title" content="Set Default Enable Subsection Prerequisite on Open edX" />
+<meta property="og:description" content="By default, Timed Exams feature not yet active when create a new courses. But this configuration can be override, for example want to set active or enable Timed Exams feature when create a new courses. Follow the steps below:
   Go to Open edX server console.
   Open and edit file /edx/app/edxapp/edx-platform/common/lib/xmodule/xmodule/course_module.py.
   Find the following codes snippet:
-... certificates_display_behavior = String( display_name=_(&#34;Certificates Display Behavior&#34;), help=_( &#34;Enter end, early_with_info, or early_no_info. After certificate generation, students who passed see a &#34; &#34;link to their certificates on the dashboard and students who did not pass see information about the &#34; &#34;grading configuration." />
+... enable_subsection_gating = Boolean( display_name=_(&#34;Enable Subsection Prerequisites&#34;), help=_( &#34;Enter true or false." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://sibunglon.com/2022/03/02/set-default-certificates-display-behavior-on-open-edx/" /><meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-03-02T21:10:25+08:00" />
-<meta property="article:modified_time" content="2022-03-02T21:10:25+08:00" /><meta property="og:site_name" content="The Official Site of siBunglon" />
+<meta property="og:url" content="https://sibunglon.com/2022/05/15/set-default-enable-subsection-prerequisite-on-open-edx/" /><meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-05-15T13:11:54+08:00" />
+<meta property="article:modified_time" content="2022-05-15T13:11:54+08:00" /><meta property="og:site_name" content="The Official Site of siBunglon" />
 
 
-  <meta itemprop="name" content="Set Default Certificates Display Behavior on Open edX">
-<meta itemprop="description" content="By default, Certificates Display Behavior was set to end. But this configuration can be override, for example want to set it early_no_info as default. Follow the steps below:
+  <meta itemprop="name" content="Set Default Enable Subsection Prerequisite on Open edX">
+<meta itemprop="description" content="By default, Timed Exams feature not yet active when create a new courses. But this configuration can be override, for example want to set active or enable Timed Exams feature when create a new courses. Follow the steps below:
   Go to Open edX server console.
   Open and edit file /edx/app/edxapp/edx-platform/common/lib/xmodule/xmodule/course_module.py.
   Find the following codes snippet:
-... certificates_display_behavior = String( display_name=_(&#34;Certificates Display Behavior&#34;), help=_( &#34;Enter end, early_with_info, or early_no_info. After certificate generation, students who passed see a &#34; &#34;link to their certificates on the dashboard and students who did not pass see information about the &#34; &#34;grading configuration."><meta itemprop="datePublished" content="2022-03-02T21:10:25+08:00" />
-<meta itemprop="dateModified" content="2022-03-02T21:10:25+08:00" />
-<meta itemprop="wordCount" content="263"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
+... enable_subsection_gating = Boolean( display_name=_(&#34;Enable Subsection Prerequisites&#34;), help=_( &#34;Enter true or false."><meta itemprop="datePublished" content="2022-05-15T13:11:54+08:00" />
+<meta itemprop="dateModified" content="2022-05-15T13:11:54+08:00" />
+<meta itemprop="wordCount" content="154"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
 <meta itemprop="keywords" content="Open edX," />
   <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://sibunglon.com/assets/img/profil.webp"/>
 
-<meta name="twitter:title" content="Set Default Certificates Display Behavior on Open edX"/>
-<meta name="twitter:description" content="By default, Certificates Display Behavior was set to end. But this configuration can be override, for example want to set it early_no_info as default. Follow the steps below:
+<meta name="twitter:title" content="Set Default Enable Subsection Prerequisite on Open edX"/>
+<meta name="twitter:description" content="By default, Timed Exams feature not yet active when create a new courses. But this configuration can be override, for example want to set active or enable Timed Exams feature when create a new courses. Follow the steps below:
   Go to Open edX server console.
   Open and edit file /edx/app/edxapp/edx-platform/common/lib/xmodule/xmodule/course_module.py.
   Find the following codes snippet:
-... certificates_display_behavior = String( display_name=_(&#34;Certificates Display Behavior&#34;), help=_( &#34;Enter end, early_with_info, or early_no_info. After certificate generation, students who passed see a &#34; &#34;link to their certificates on the dashboard and students who did not pass see information about the &#34; &#34;grading configuration."/>
+... enable_subsection_gating = Boolean( display_name=_(&#34;Enable Subsection Prerequisites&#34;), help=_( &#34;Enter true or false."/>
 
   
 
@@ -107,11 +107,11 @@
   <article>
     <header>
       <small>
-        <span class="date">March 2, 2022</span></small>
-      <h1>Set Default Certificates Display Behavior on Open edX</h1>
+        <span class="date">May 15, 2022</span></small>
+      <h1>Set Default Enable Subsection Prerequisite on Open edX</h1>
     </header>
     <section><p><img src="/assets/img/Open-edX/open-edx-new.png" alt="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Let&#39;s Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs"></p>
-<p>By default, Certificates Display Behavior was set to <em>end</em>. But this configuration can be override, for example want to set it <em>early_no_info</em> as default. Follow the steps below:</p>
+<p>By default, Timed Exams feature not yet active when create a new courses. But this configuration can be override, for example want to set active or enable Timed Exams feature when create a new courses. Follow the steps below:</p>
 <ol>
 <li>
 <p>Go to Open edX server console.</p>
@@ -122,36 +122,30 @@
 <li>
 <p>Find the following codes snippet:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">...</span>
-</span></span><span class="line"><span class="cl">    <span class="n">certificates_display_behavior</span> <span class="o">=</span> <span class="n">String</span><span class="p">(</span>
-</span></span><span class="line"><span class="cl">        <span class="n">display_name</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s2">&#34;Certificates Display Behavior&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="n">enable_subsection_gating</span> <span class="o">=</span> <span class="n">Boolean</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="n">display_name</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s2">&#34;Enable Subsection Prerequisites&#34;</span><span class="p">),</span>
 </span></span><span class="line"><span class="cl">        <span class="n">help</span><span class="o">=</span><span class="n">_</span><span class="p">(</span>
-</span></span><span class="line"><span class="cl">            <span class="s2">&#34;Enter end, early_with_info, or early_no_info. After certificate generation, students who passed see a &#34;</span>
-</span></span><span class="line"><span class="cl">            <span class="s2">&#34;link to their certificates on the dashboard and students who did not pass see information about the &#34;</span>
-</span></span><span class="line"><span class="cl">            <span class="s2">&#34;grading configuration. The default is end, which displays this certificate information to all students &#34;</span>
-</span></span><span class="line"><span class="cl">            <span class="s2">&#34;after the course end date. To display this certificate information to all students as soon as &#34;</span>
-</span></span><span class="line"><span class="cl">            <span class="s2">&#34;certificates are generated, enter early_with_info. To display only the links to passing students as &#34;</span>
-</span></span><span class="line"><span class="cl">            <span class="s2">&#34;soon as certificates are generated, enter early_no_info.&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;Enter true or false. If this value is true, you can hide a &#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;subsection until learners earn a minimum score in another, &#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;prerequisite subsection.&#34;</span>
 </span></span><span class="line"><span class="cl">        <span class="p">),</span>
-</span></span><span class="line"><span class="cl">        <span class="n">scope</span><span class="o">=</span><span class="n">Scope</span><span class="o">.</span><span class="n">settings</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">        <span class="n">default</span><span class="o">=</span><span class="s2">&#34;end&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">default</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">scope</span><span class="o">=</span><span class="n">Scope</span><span class="o">.</span><span class="n">settings</span>
 </span></span><span class="line"><span class="cl">    <span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="o">...</span>
 </span></span></code></pre></div></li>
 <li>
-<p>Then update the code, change part <code>default=&quot;end&quot;</code> from end to early_no_info. See the following codes snippet:</p>
+<p>Then update the code, change part <code>default=False</code> from False to True. See the following codes snippet:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">...</span>
-</span></span><span class="line"><span class="cl">    <span class="n">certificates_display_behavior</span> <span class="o">=</span> <span class="n">String</span><span class="p">(</span>
-</span></span><span class="line"><span class="cl">        <span class="n">display_name</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s2">&#34;Certificates Display Behavior&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="n">enable_subsection_gating</span> <span class="o">=</span> <span class="n">Boolean</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="n">display_name</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s2">&#34;Enable Subsection Prerequisites&#34;</span><span class="p">),</span>
 </span></span><span class="line"><span class="cl">        <span class="n">help</span><span class="o">=</span><span class="n">_</span><span class="p">(</span>
-</span></span><span class="line"><span class="cl">            <span class="s2">&#34;Enter end, early_with_info, or early_no_info. After certificate generation, students who passed see a &#34;</span>
-</span></span><span class="line"><span class="cl">            <span class="s2">&#34;link to their certificates on the dashboard and students who did not pass see information about the &#34;</span>
-</span></span><span class="line"><span class="cl">            <span class="s2">&#34;grading configuration. The default is end, which displays this certificate information to all students &#34;</span>
-</span></span><span class="line"><span class="cl">            <span class="s2">&#34;after the course end date. To display this certificate information to all students as soon as &#34;</span>
-</span></span><span class="line"><span class="cl">            <span class="s2">&#34;certificates are generated, enter early_with_info. To display only the links to passing students as &#34;</span>
-</span></span><span class="line"><span class="cl">            <span class="s2">&#34;soon as certificates are generated, enter early_no_info.&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;Enter true or false. If this value is true, you can hide a &#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;subsection until learners earn a minimum score in another, &#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;prerequisite subsection.&#34;</span>
 </span></span><span class="line"><span class="cl">        <span class="p">),</span>
-</span></span><span class="line"><span class="cl">        <span class="n">scope</span><span class="o">=</span><span class="n">Scope</span><span class="o">.</span><span class="n">settings</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">        <span class="n">default</span><span class="o">=</span><span class="s2">&#34;early_no_info&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">default</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">scope</span><span class="o">=</span><span class="n">Scope</span><span class="o">.</span><span class="n">settings</span>
 </span></span><span class="line"><span class="cl">    <span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="o">...</span>
 </span></span></code></pre></div></li>
