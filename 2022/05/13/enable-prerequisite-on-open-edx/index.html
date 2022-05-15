@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us" itemscope itemtype="http://schema.org/WebPage">
   <head>
-  <title>Enable Courses Prerequisite</title>
+  <title>Enable Prerequisite on Open edX</title>
   
   <meta http-equiv="cache-control" content="public, max-age=31536000" />
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -50,33 +50,36 @@
   
   <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
 
-  <meta property="og:title" content="Enable Courses Prerequisite" />
-<meta property="og:description" content="Course teams can set prerequisites for a courses. Learners must complete the prerequisite courses before open the a specific courses.
-To enable this features, follow the steps below because this is not enable by default:
-  Ask to IT team to Enable Prerequisite before prerequisite course can be used.
-  Also ask to IT team to enable courses prerequisite. Open and edit LMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml and /edx/app/edxapp/cms." />
+  <meta property="og:title" content="Enable Prerequisite on Open edX" />
+<meta property="og:description" content="Course teams can set prerequisites for a course or content. Learners must complete the prerequisite courses or content before participating in the next course or content.
+By default, this feature is not enable but when you need to enable it, follow the steps below:
+  Go to Open edX server console.
+  Open and edit LMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml and /edx/app/edxapp/cms.env.json or /edx/etc/studio.yml).
+  Then find the &quot;FEATURES&quot; configuration, add MILESTONES_APP into &quot;FEATURES&quot; array and set to true." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://sibunglon.com/2022/05/15/enable-courses-prerequisite/" /><meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-05-15T11:49:55+08:00" />
-<meta property="article:modified_time" content="2022-05-15T11:49:55+08:00" /><meta property="og:site_name" content="The Official Site of siBunglon" />
+<meta property="og:url" content="https://sibunglon.com/2022/05/13/enable-prerequisite-on-open-edx/" /><meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-05-13T10:28:11+08:00" />
+<meta property="article:modified_time" content="2022-05-13T10:28:11+08:00" /><meta property="og:site_name" content="The Official Site of siBunglon" />
 
 
-  <meta itemprop="name" content="Enable Courses Prerequisite">
-<meta itemprop="description" content="Course teams can set prerequisites for a courses. Learners must complete the prerequisite courses before open the a specific courses.
-To enable this features, follow the steps below because this is not enable by default:
-  Ask to IT team to Enable Prerequisite before prerequisite course can be used.
-  Also ask to IT team to enable courses prerequisite. Open and edit LMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml and /edx/app/edxapp/cms."><meta itemprop="datePublished" content="2022-05-15T11:49:55+08:00" />
-<meta itemprop="dateModified" content="2022-05-15T11:49:55+08:00" />
-<meta itemprop="wordCount" content="141"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
+  <meta itemprop="name" content="Enable Prerequisite on Open edX">
+<meta itemprop="description" content="Course teams can set prerequisites for a course or content. Learners must complete the prerequisite courses or content before participating in the next course or content.
+By default, this feature is not enable but when you need to enable it, follow the steps below:
+  Go to Open edX server console.
+  Open and edit LMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml and /edx/app/edxapp/cms.env.json or /edx/etc/studio.yml).
+  Then find the &quot;FEATURES&quot; configuration, add MILESTONES_APP into &quot;FEATURES&quot; array and set to true."><meta itemprop="datePublished" content="2022-05-13T10:28:11+08:00" />
+<meta itemprop="dateModified" content="2022-05-13T10:28:11+08:00" />
+<meta itemprop="wordCount" content="87"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
 <meta itemprop="keywords" content="Open edX," />
   <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://sibunglon.com/assets/img/profil.webp"/>
 
-<meta name="twitter:title" content="Enable Courses Prerequisite"/>
-<meta name="twitter:description" content="Course teams can set prerequisites for a courses. Learners must complete the prerequisite courses before open the a specific courses.
-To enable this features, follow the steps below because this is not enable by default:
-  Ask to IT team to Enable Prerequisite before prerequisite course can be used.
-  Also ask to IT team to enable courses prerequisite. Open and edit LMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml and /edx/app/edxapp/cms."/>
+<meta name="twitter:title" content="Enable Prerequisite on Open edX"/>
+<meta name="twitter:description" content="Course teams can set prerequisites for a course or content. Learners must complete the prerequisite courses or content before participating in the next course or content.
+By default, this feature is not enable but when you need to enable it, follow the steps below:
+  Go to Open edX server console.
+  Open and edit LMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml and /edx/app/edxapp/cms.env.json or /edx/etc/studio.yml).
+  Then find the &quot;FEATURES&quot; configuration, add MILESTONES_APP into &quot;FEATURES&quot; array and set to true."/>
 
   
 
@@ -104,35 +107,29 @@ To enable this features, follow the steps below because this is not enable by de
   <article>
     <header>
       <small>
-        <span class="date">May 15, 2022</span></small>
-      <h1>Enable Courses Prerequisite</h1>
+        <span class="date">May 13, 2022</span></small>
+      <h1>Enable Prerequisite on Open edX</h1>
     </header>
     <section><p><img src="/assets/img/Open-edX/open-edx-new.png" alt="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Let&#39;s Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs"></p>
-<p>Course teams can set prerequisites for a courses. Learners must complete the prerequisite courses before open the a specific courses.</p>
-<p>To enable this features, follow the steps below because this is not enable by default:</p>
+<p>Course teams can set prerequisites for a course or content. Learners must complete the prerequisite courses or content before participating in the next course or content.</p>
+<p>By default, this feature is not enable but when you need to enable it, follow the steps below:</p>
 <ol>
 <li>
-<p>Ask to IT team to <a href="/2022/05/15/enable-prerequisite-on-open-edx/">Enable Prerequisite</a> before prerequisite course can be used.</p>
+<p>Go to Open edX server console.</p>
 </li>
 <li>
-<p>Also ask to IT team to enable courses prerequisite. Open and edit LMS configuration (<code>/edx/app/edxapp/lms.env.json</code> or <code>/edx/etc/lms.yml</code> and <code>/edx/app/edxapp/cms.env.json</code> or <code>/edx/etc/studio.yml</code>).</p>
-<p>Then find the <code>&quot;FEATURES&quot;</code> configuration, add <strong>ENABLE_PREREQUISITE_COURSES</strong> into <code>&quot;FEATURES&quot;</code> array and set to <strong>true</strong>. See the following codes snippet:</p>
+<p>Open and edit LMS configuration (<code>/edx/app/edxapp/lms.env.json</code> or <code>/edx/etc/lms.yml</code> and <code>/edx/app/edxapp/cms.env.json</code> or <code>/edx/etc/studio.yml</code>).</p>
+</li>
+<li>
+<p>Then find the <code>&quot;FEATURES&quot;</code> configuration, add <strong>MILESTONES_APP</strong> into <code>&quot;FEATURES&quot;</code> array and set to <strong>true</strong>. See the following codes snippet:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">...</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">FEATURES</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">ENABLE_PREREQUISITE_COURSES</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">MILESTONES_APP</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nn">...</span><span class="w">
-</span></span></span></code></pre></div><p>Restart LMS and CMS services.</p>
-</li>
-<li>
-<p>Open your studio &gt; select a course &gt; select <strong>Settings</strong> &gt; select <strong>Schedule &amp; Details</strong>, then scroll down to the <strong>Requirements</strong> section.</p>
-</li>
-<li>
-<p>Select the course from the drop down menu that you would like to make the prerequisite course.</p>
-<p><img src="/assets/img/enable-courses-prerequisite/image-1.png" alt="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Let&#39;s Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs"></p>
-</li>
-<li>
-<p>Until this step, courses prerequisite has been set up.</p>
-</li>
+</span></span></span></code></pre></div></li>
+</ol>
+<ol start="4">
+<li>Restart LMS and CMS services.</li>
 </ol>
 </section>
     <footer>

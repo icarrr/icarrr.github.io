@@ -5,16 +5,16 @@
     <description>Recent content in Open edX on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 May 2022 11:49:55 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 13 May 2022 11:49:55 +0800</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/open-edx/index.xml" rel="self" type="application/rss+xml" />
     
     
       <item>
-        <title>Enable Courses Prerequisite</title>
-        <link>https://sibunglon.com/2022/05/15/enable-courses-prerequisite/</link>
-        <pubDate>Sun, 15 May 2022 11:49:55 +0800</pubDate>
-        <guid>https://sibunglon.com/2022/05/15/enable-courses-prerequisite/</guid>
+        <title>Enable Courses Prerequisite on Open edX</title>
+        <link>https://sibunglon.com/2022/05/13/enable-courses-prerequisite-on-open-edx/</link>
+        <pubDate>Fri, 13 May 2022 11:49:55 +0800</pubDate>
+        <guid>https://sibunglon.com/2022/05/13/enable-courses-prerequisite-on-open-edx/</guid>
         <description>Course teams can set prerequisites for a courses. Learners must complete the prerequisite courses before open the a specific courses.
 To enable this features, follow the steps below because this is not enable by default:
   Ask to IT team to Enable Prerequisite before prerequisite course can be used.
@@ -23,9 +23,9 @@ To enable this features, follow the steps below because this is not enable by de
     
       <item>
         <title>Enable Course Subsections Prerequisite on Open edX</title>
-        <link>https://sibunglon.com/2022/05/15/enable-course-subsections-prerequisite-on-open-edx/</link>
-        <pubDate>Sun, 15 May 2022 11:01:18 +0800</pubDate>
-        <guid>https://sibunglon.com/2022/05/15/enable-course-subsections-prerequisite-on-open-edx/</guid>
+        <link>https://sibunglon.com/2022/05/13/enable-course-subsections-prerequisite-on-open-edx/</link>
+        <pubDate>Fri, 13 May 2022 11:01:18 +0800</pubDate>
+        <guid>https://sibunglon.com/2022/05/13/enable-course-subsections-prerequisite-on-open-edx/</guid>
         <description>Course teams can set prerequisites for a content. Learners must complete the prerequisite content subsection before open the next content.
 The course team can lock a course subsection until the user completes other prerequisite subsections. If a subsection has prerequisites, it will be displayed in the course outline with a lock icon.
 To enable this features, follow the steps below because this is not enable by default:
@@ -34,9 +34,9 @@ To enable this features, follow the steps below because this is not enable by de
     
       <item>
         <title>Enable Prerequisite on Open edX</title>
-        <link>https://sibunglon.com/2022/05/15/enable-prerequisite-on-open-edx/</link>
-        <pubDate>Sun, 15 May 2022 10:28:11 +0800</pubDate>
-        <guid>https://sibunglon.com/2022/05/15/enable-prerequisite-on-open-edx/</guid>
+        <link>https://sibunglon.com/2022/05/13/enable-prerequisite-on-open-edx/</link>
+        <pubDate>Fri, 13 May 2022 10:28:11 +0800</pubDate>
+        <guid>https://sibunglon.com/2022/05/13/enable-prerequisite-on-open-edx/</guid>
         <description>Course teams can set prerequisites for a course or content. Learners must complete the prerequisite courses or content before participating in the next course or content.
 By default, this feature is not enable but when you need to enable it, follow the steps below:
   Go to Open edX server console.
