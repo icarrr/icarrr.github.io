@@ -5,10 +5,31 @@
     <description>Recent content in Posts on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 May 2022 13:11:54 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 15 May 2022 14:04:22 +0800</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Enable Timed Exams on Open edX</title>
+        <link>https://sibunglon.com/2022/05/15/enable-timed-exams-on-open-edx/</link>
+        <pubDate>Sun, 15 May 2022 14:04:22 +0800</pubDate>
+        <guid>https://sibunglon.com/2022/05/15/enable-timed-exams-on-open-edx/</guid>
+        <description>Timed exams are one the features of Open edX that can make a series of questions that have been prepared only accessible and completed within a specific time.
+Activate Timed Exams   Ask to IT team to Enable Special Exams before timed exams can be used.
+  Open your studio &amp;gt; select a course &amp;gt; select Settings &amp;gt; select Advanced Settings &amp;gt; then search for Enable Timed Exams.</description>
+      </item>
+    
+      <item>
+        <title>Enable Special Exams on Open edX</title>
+        <link>https://sibunglon.com/2022/05/15/enable-special-exams-on-open-edx/</link>
+        <pubDate>Sun, 15 May 2022 13:34:50 +0800</pubDate>
+        <guid>https://sibunglon.com/2022/05/15/enable-special-exams-on-open-edx/</guid>
+        <description>Open edX have a feature named Special Exams, aka timed and proctored exams. Course teams can use it and by default this feature is not enable but when you need to enable it, follow the steps below:
+  Go to Open edX server console.
+  Open and edit LMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml and /edx/app/edxapp/cms.env.json or /edx/etc/studio.yml).
+  Then find the &amp;quot;FEATURES&amp;quot; configuration, add ENABLE_SPECIAL_EXAMS into &amp;quot;FEATURES&amp;quot; array and set to true.</description>
+      </item>
     
       <item>
         <title>Set Default Enable Subsection Prerequisite on Open edX</title>
