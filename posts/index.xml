@@ -5,19 +5,31 @@
     <description>Recent content in Posts on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 May 2022 11:01:18 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 15 May 2022 11:49:55 +0800</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Enable Courses Prerequisite</title>
+        <link>https://sibunglon.com/2022/05/15/enable-courses-prerequisite/</link>
+        <pubDate>Sun, 15 May 2022 11:49:55 +0800</pubDate>
+        <guid>https://sibunglon.com/2022/05/15/enable-courses-prerequisite/</guid>
+        <description>Course teams can set prerequisites for a courses. Learners must complete the prerequisite courses before open the a specific courses.
+To enable this features, follow the steps below because this is not enable by default:
+  Ask to IT team to Enable Prerequisite before prerequisite course can be used.
+  Also ask to IT team to enable courses prerequisite. Open and edit LMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml and /edx/app/edxapp/cms.</description>
+      </item>
     
       <item>
         <title>Enable Course Subsections Prerequisite on Open edX</title>
         <link>https://sibunglon.com/2022/05/15/enable-course-subsections-prerequisite-on-open-edx/</link>
         <pubDate>Sun, 15 May 2022 11:01:18 +0800</pubDate>
         <guid>https://sibunglon.com/2022/05/15/enable-course-subsections-prerequisite-on-open-edx/</guid>
-        <description>Course teams can set prerequisites for a course or content. Learners must complete the prerequisite courses or content before participating in the next course or content.
+        <description>Course teams can set prerequisites for a content. Learners must complete the prerequisite content subsection before open the next content.
 The course team can lock a course subsection until the user completes other prerequisite subsections. If a subsection has prerequisites, it will be displayed in the course outline with a lock icon.
-To enable this features, follow the steps below because this is not enable by default:</description>
+To enable this features, follow the steps below because this is not enable by default:
+  Ask to IT team to Enable Prerequisite before prerequisite course subsections can be used.</description>
       </item>
     
       <item>
