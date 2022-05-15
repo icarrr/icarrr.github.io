@@ -119,26 +119,26 @@
 <li>
 <p>Find the following codes snippet:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">...</span>
-</span></span><span class="line"><span class="cl"> <span class="n">weight</span> <span class="o">=</span> <span class="n">Float</span><span class="p">(</span>
-</span></span><span class="line"><span class="cl">     <span class="n">display_name</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s2">&#34;Problem Weight&#34;</span><span class="p">),</span>
-</span></span><span class="line"><span class="cl">     <span class="n">help</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s2">&#34;Defines the number of points each problem is worth. &#34;</span>
-</span></span><span class="line"><span class="cl">            <span class="s2">&#34;If the value is not set, each response field in the problem is worth one point.&#34;</span><span class="p">),</span>
-</span></span><span class="line"><span class="cl">     <span class="n">values</span><span class="o">=</span><span class="p">{</span><span class="s2">&#34;min&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&#34;step&#34;</span><span class="p">:</span> <span class="mf">.1</span><span class="p">},</span>
-</span></span><span class="line"><span class="cl">     <span class="n">scope</span><span class="o">=</span><span class="n">Scope</span><span class="o">.</span><span class="n">settings</span>
-</span></span><span class="line"><span class="cl"> <span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">weight</span> <span class="o">=</span> <span class="n">Float</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="n">display_name</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s2">&#34;Problem Weight&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">        <span class="n">help</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s2">&#34;Defines the number of points each problem is worth. &#34;</span>
+</span></span><span class="line"><span class="cl">               <span class="s2">&#34;If the value is not set, each response field in the problem is worth one point.&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">        <span class="n">values</span><span class="o">=</span><span class="p">{</span><span class="s2">&#34;min&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&#34;step&#34;</span><span class="p">:</span> <span class="mf">.1</span><span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="n">scope</span><span class="o">=</span><span class="n">Scope</span><span class="o">.</span><span class="n">settings</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="o">...</span>
 </span></span></code></pre></div></li>
 <li>
 <p>Then update the code, add <code>default=100,</code>. See the following codes snippet:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">...</span>
-</span></span><span class="line"><span class="cl"> <span class="n">weight</span> <span class="o">=</span> <span class="n">Float</span><span class="p">(</span>
-</span></span><span class="line"><span class="cl">     <span class="n">display_name</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s2">&#34;Problem Weight&#34;</span><span class="p">),</span>
-</span></span><span class="line"><span class="cl">     <span class="n">help</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s2">&#34;Defines the number of points each problem is worth. &#34;</span>
-</span></span><span class="line"><span class="cl">            <span class="s2">&#34;If the value is not set, each response field in the problem is worth one point.&#34;</span><span class="p">),</span>
-</span></span><span class="line"><span class="cl">     <span class="n">values</span><span class="o">=</span><span class="p">{</span><span class="s2">&#34;min&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&#34;step&#34;</span><span class="p">:</span> <span class="mf">.1</span><span class="p">},</span>
-</span></span><span class="line"><span class="cl">     <span class="n">default</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">     <span class="n">scope</span><span class="o">=</span><span class="n">Scope</span><span class="o">.</span><span class="n">settings</span>
-</span></span><span class="line"><span class="cl"> <span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">weight</span> <span class="o">=</span> <span class="n">Float</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="n">display_name</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s2">&#34;Problem Weight&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">        <span class="n">help</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s2">&#34;Defines the number of points each problem is worth. &#34;</span>
+</span></span><span class="line"><span class="cl">               <span class="s2">&#34;If the value is not set, each response field in the problem is worth one point.&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">        <span class="n">values</span><span class="o">=</span><span class="p">{</span><span class="s2">&#34;min&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&#34;step&#34;</span><span class="p">:</span> <span class="mf">.1</span><span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="n">default</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">scope</span><span class="o">=</span><span class="n">Scope</span><span class="o">.</span><span class="n">settings</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="o">...</span>
 </span></span></code></pre></div></li>
 <li>
