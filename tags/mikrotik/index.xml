@@ -95,7 +95,7 @@ B. Pengertian
 Apa itu proxy?
 Proxy merupakan perangkat yang bersifat &amp;ldquo;middleman&amp;rdquo;, yang bekerja diantara client &amp;amp; Server, bertugas menghadle transmisi request ataupun respon. Data yang melewati proxy, bisa diubah oleh proxy atau tidak diubah sama sekali, tergantung implementasi fitur dan kemampuan proxy.
 Manfaat Proxy
-  Security : Proxy mampu melakukan pengecekan terhadap incoming response &amp;amp; outgoing request, sehingga memungkinkan untuk melakukan block paket yang tidak diharapkan</description>
+Security : Proxy mampu melakukan pengecekan terhadap incoming response &amp;amp; outgoing request, sehingga memungkinkan untuk melakukan block paket yang tidak diharapkan</description>
       </item>
     
       <item>
@@ -108,8 +108,7 @@ Pada kali ini, yang saya posting yaitu tentang memfungsikan mikrotik sebagai swi
 B. Pengertian
 Switch merupakan penghubung beberapa alat untuk membentuk suatu Local Area Network (LAN). Routerboard Mikrotik RB750 telah disediakan fungsi switch, yang mana jika sobat menginginkan men-share internet lebih dari satu komputer atau pada umumnya topologi yang digunakan kebanyak internet di share melalui media wifi dan lan menggunakan kabel.
 C. Latar belakang
-Ingin menambah pengetahuan
-D. Tujuan</description>
+Ingin menambah pengetahuan</description>
       </item>
     
       <item>
@@ -159,8 +158,9 @@ Agar pengunjung blog dapat mengetahui bagaimana cara mengupgrade versi mikrotik
 D. Hasil yang diharapkan
 Dapat mengikuti tahapan kerjanya
 E. Alat dan bahan
- mikrotik akses internet kabel UTP  F. Jangka waktu pelaksanaan
-Waktu yang dibutuhkan tergantung dari koneksi yang digunakan</description>
+mikrotik akses internet kabel UTP F. Jangka waktu pelaksanaan
+Waktu yang dibutuhkan tergantung dari koneksi yang digunakan
+G. Langkah kerja</description>
       </item>
     
       <item>

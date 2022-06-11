@@ -16,8 +16,9 @@
         <pubDate>Sun, 15 May 2022 14:04:22 +0800</pubDate>
         <guid>https://sibunglon.com/2022/05/15/enable-timed-exams-on-open-edx/</guid>
         <description>Timed exams are one the features of Open edX that can make a series of questions that have been prepared only accessible and completed within a specific time.
-Activate Timed Exams   Ask to IT team to Enable Special Exams before timed exams can be used.
-  Open your studio &amp;gt; select a course &amp;gt; select Settings &amp;gt; select Advanced Settings &amp;gt; then search for Enable Timed Exams.</description>
+Activate Timed Exams Ask to IT team to Enable Special Exams before timed exams can be used.
+Open your studio &amp;gt; select a course &amp;gt; select Settings &amp;gt; select Advanced Settings &amp;gt; then search for Enable Timed Exams.
+Change the value from false to true, because the default setting is false.</description>
       </item>
     
       <item>
@@ -26,9 +27,9 @@ Activate Timed Exams   Ask to IT team to Enable Special Exams before timed exams
         <pubDate>Sun, 15 May 2022 13:34:50 +0800</pubDate>
         <guid>https://sibunglon.com/2022/05/15/enable-special-exams-on-open-edx/</guid>
         <description>Open edX have a feature named Special Exams, aka timed and proctored exams. Course teams can use it and by default this feature is not enable but when you need to enable it, follow the steps below:
-  Go to Open edX server console.
-  Open and edit LMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml and /edx/app/edxapp/cms.env.json or /edx/etc/studio.yml).
-  Then find the &amp;quot;FEATURES&amp;quot; configuration, add ENABLE_SPECIAL_EXAMS into &amp;quot;FEATURES&amp;quot; array and set to true.</description>
+Go to Open edX server console.
+Open and edit LMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml and /edx/app/edxapp/cms.env.json or /edx/etc/studio.yml).
+Then find the &amp;quot;FEATURES&amp;quot; configuration, add ENABLE_SPECIAL_EXAMS into &amp;quot;FEATURES&amp;quot; array and set to true. See the following codes snippet:</description>
       </item>
     
       <item>
@@ -37,10 +38,10 @@ Activate Timed Exams   Ask to IT team to Enable Special Exams before timed exams
         <pubDate>Sun, 15 May 2022 13:11:54 +0800</pubDate>
         <guid>https://sibunglon.com/2022/05/15/set-default-enable-subsection-prerequisite-on-open-edx/</guid>
         <description>By default, Timed Exams feature not yet active when create a new courses. But this configuration can be override, for example want to set active or enable Timed Exams feature when create a new courses. Follow the steps below:
-  Go to Open edX server console.
-  Open and edit file /edx/app/edxapp/edx-platform/common/lib/xmodule/xmodule/course_module.py.
-  Find the following codes snippet:
-... enable_subsection_gating = Boolean( display_name=_(&amp;#34;Enable Subsection Prerequisites&amp;#34;), help=_( &amp;#34;Enter true or false.</description>
+Go to Open edX server console.
+Open and edit file /edx/app/edxapp/edx-platform/common/lib/xmodule/xmodule/course_module.py.
+Find the following codes snippet:
+... enable_subsection_gating = Boolean( display_name=_(&amp;#34;Enable Subsection Prerequisites&amp;#34;), help=_( &amp;#34;Enter true or false. If this value is true, you can hide a &amp;#34; &amp;#34;subsection until learners earn a minimum score in another, &amp;#34; &amp;#34;prerequisite subsection.</description>
       </item>
     
       <item>
@@ -50,8 +51,8 @@ Activate Timed Exams   Ask to IT team to Enable Special Exams before timed exams
         <guid>https://sibunglon.com/2022/05/13/enable-courses-prerequisite-on-open-edx/</guid>
         <description>Course teams can set prerequisites for a courses. Learners must complete the prerequisite courses before open the a specific courses.
 To enable this features, follow the steps below because this is not enable by default:
-  Ask to IT team to Enable Prerequisite before prerequisite course can be used.
-  Also ask to IT team to enable courses prerequisite. Open and edit LMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml and /edx/app/edxapp/cms.</description>
+Ask to IT team to Enable Prerequisite before prerequisite course can be used.
+Also ask to IT team to enable courses prerequisite. Open and edit LMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml and /edx/app/edxapp/cms.env.json or /edx/etc/studio.yml).</description>
       </item>
     
       <item>
@@ -62,7 +63,7 @@ To enable this features, follow the steps below because this is not enable by de
         <description>Course teams can set prerequisites for a content. Learners must complete the prerequisite content subsection before open the next content.
 The course team can lock a course subsection until the user completes other prerequisite subsections. If a subsection has prerequisites, it will be displayed in the course outline with a lock icon.
 To enable this features, follow the steps below because this is not enable by default:
-  Ask to IT team to Enable Prerequisite before prerequisite course subsections can be used.</description>
+Ask to IT team to Enable Prerequisite before prerequisite course subsections can be used.</description>
       </item>
     
       <item>
@@ -72,9 +73,9 @@ To enable this features, follow the steps below because this is not enable by de
         <guid>https://sibunglon.com/2022/05/13/enable-prerequisite-on-open-edx/</guid>
         <description>Course teams can set prerequisites for a course or content. Learners must complete the prerequisite courses or content before participating in the next course or content.
 By default, this feature is not enable but when you need to enable it, follow the steps below:
-  Go to Open edX server console.
-  Open and edit LMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml and /edx/app/edxapp/cms.env.json or /edx/etc/studio.yml).
-  Then find the &amp;quot;FEATURES&amp;quot; configuration, add MILESTONES_APP into &amp;quot;FEATURES&amp;quot; array and set to true.</description>
+Go to Open edX server console.
+Open and edit LMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml and /edx/app/edxapp/cms.env.json or /edx/etc/studio.yml).
+Then find the &amp;quot;FEATURES&amp;quot; configuration, add MILESTONES_APP into &amp;quot;FEATURES&amp;quot; array and set to true.</description>
       </item>
     
       <item>
@@ -83,9 +84,10 @@ By default, this feature is not enable but when you need to enable it, follow th
         <pubDate>Sun, 06 Mar 2022 14:34:16 +0800</pubDate>
         <guid>https://sibunglon.com/2022/03/06/set-default-weight-of-common-problem-on-open-edx/</guid>
         <description>By default, problem weight of Blank Common Problem component (including multiple choice components, checkboxes, etc.) has not been set so that the problem weight is based on the number of problems. But this configuration can be override, for example want to set it 100 as default. Follow the steps below:
-  Go to Open edX server console.
-  Open and edit file /edx/app/edxapp/edx-platform/common/lib/xmodule/xmodule/capa_base.py.
-  Find the following codes snippet:</description>
+Go to Open edX server console.
+Open and edit file /edx/app/edxapp/edx-platform/common/lib/xmodule/xmodule/capa_base.py.
+Find the following codes snippet:
+... weight = Float( display_name=_(&amp;#34;Problem Weight&amp;#34;), help=_(&amp;#34;Defines the number of points each problem is worth.</description>
       </item>
     
       <item>
@@ -94,9 +96,9 @@ By default, this feature is not enable but when you need to enable it, follow th
         <pubDate>Sun, 06 Mar 2022 14:15:39 +0800</pubDate>
         <guid>https://sibunglon.com/2022/03/06/set-default-show-answer-of-common-problem-to-never-on-open-edx/</guid>
         <description>By default, option show answer of Blank Common Problem component (including multiple choice components, checkboxes, etc.) was set to finished. But this configuration can be override, for example want to set it never as default. Follow the steps below:
-  Go to Open edX server console.
-  Open and edit file /edx/app/edxapp/edx-platform/common/lib/xmodule/xmodule/modulestore/inheritance.py.
-  Find the following codes snippet:
+Go to Open edX server console.
+Open and edit file /edx/app/edxapp/edx-platform/common/lib/xmodule/xmodule/modulestore/inheritance.py.
+Find the following codes snippet:
 ... showanswer = String( display_name=_(&amp;#34;Show Answer&amp;#34;), help=_( # Translators: DO NOT translate the words in quotes here, they are # specific words for the acceptable values.</description>
       </item>
     
@@ -106,11 +108,11 @@ By default, this feature is not enable but when you need to enable it, follow th
         <pubDate>Sun, 06 Mar 2022 14:03:49 +0800</pubDate>
         <guid>https://sibunglon.com/2022/03/06/set-default-component-name-from-multiple-choice-to-pilihan-ganda-on-open-edx/</guid>
         <description>Even though you have used multiple languages or changed the language to Indonesian in Open edX, the Multiple Choice component is still labeled as Multiple Choice.
-  Go to Open edX server console.
-  Open and edit file /edx/app/edxapp/edx-platform/common/lib/xmodule/xmodule/templates/problem/multiplechoice.yaml.
-  Find the following codes snippet:
-...display_name:Multiple Choice...  Then update the code, change part display_name from &amp;ldquo;Multiple Choice&amp;rdquo; to &amp;ldquo;Pilihan Ganda&amp;rdquo;. See the following codes snippet:
-...display_name:Pilihan Ganda.</description>
+Go to Open edX server console.
+Open and edit file /edx/app/edxapp/edx-platform/common/lib/xmodule/xmodule/templates/problem/multiplechoice.yaml.
+Find the following codes snippet:
+... display_name: Multiple Choice ... Then update the code, change part display_name from &amp;ldquo;Multiple Choice&amp;rdquo; to &amp;ldquo;Pilihan Ganda&amp;rdquo;. See the following codes snippet:
+... display_name: Pilihan Ganda .</description>
       </item>
     
       <item>
@@ -119,10 +121,10 @@ By default, this feature is not enable but when you need to enable it, follow th
         <pubDate>Sun, 06 Mar 2022 13:49:48 +0800</pubDate>
         <guid>https://sibunglon.com/2022/03/06/set-default-enable-timed-exams-on-open-edx/</guid>
         <description>By default, Timed Exams feature not yet active when create a new courses. But this configuration can be override, for example want to set active or enable Timed Exams feature when create a new courses. Follow the steps below:
-  Go to Open edX server console.
-  Open and edit file /edx/app/edxapp/edx-platform/common/lib/xmodule/xmodule/course_module.py.
-  Find the following codes snippet:
-... enable_timed_exams = Boolean( display_name=_(&amp;#34;Enable Timed Exams&amp;#34;), help=_( &amp;#34;Enter true or false.</description>
+Go to Open edX server console.
+Open and edit file /edx/app/edxapp/edx-platform/common/lib/xmodule/xmodule/course_module.py.
+Find the following codes snippet:
+... enable_timed_exams = Boolean( display_name=_(&amp;#34;Enable Timed Exams&amp;#34;), help=_( &amp;#34;Enter true or false. If this value is true, timed exams are enabled in your course.</description>
       </item>
     
       <item>
@@ -131,10 +133,10 @@ By default, this feature is not enable but when you need to enable it, follow th
         <pubDate>Sun, 06 Mar 2022 13:00:19 +0800</pubDate>
         <guid>https://sibunglon.com/2022/03/06/override-course-pace-all-course-into-self-paced-on-open-edx/</guid>
         <description>By default, course pacing was set to Instructor-Paced. But this configuration can be override, for example want to set it Self-Paced as default. Follow the steps below:
-  Go to Open edX server console.
-  Open and edit file /edx/app/edxapp/edx-platform/common/lib/xmodule/xmodule/course_module.py.
-  Find the following codes snippet:
-... self_paced = Boolean( display_name=_(&amp;#34;Self Paced&amp;#34;), help=_( &amp;#34;Set this to \&amp;#34;true\&amp;#34;to mark this course as self-paced. Self-paced courses do not have &amp;#34; &amp;#34;due dates for assignments, and students can progress through the course at any rate before &amp;#34; &amp;#34;the course ends.</description>
+Go to Open edX server console.
+Open and edit file /edx/app/edxapp/edx-platform/common/lib/xmodule/xmodule/course_module.py.
+Find the following codes snippet:
+... self_paced = Boolean( display_name=_(&amp;#34;Self Paced&amp;#34;), help=_( &amp;#34;Set this to \&amp;#34;true\&amp;#34; to mark this course as self-paced. Self-paced courses do not have &amp;#34; &amp;#34;due dates for assignments, and students can progress through the course at any rate before &amp;#34; &amp;#34;the course ends.</description>
       </item>
     
       <item>
@@ -143,9 +145,9 @@ By default, this feature is not enable but when you need to enable it, follow th
         <pubDate>Wed, 02 Mar 2022 21:10:25 +0800</pubDate>
         <guid>https://sibunglon.com/2022/03/02/set-default-certificates-display-behavior-on-open-edx/</guid>
         <description>By default, Certificates Display Behavior was set to end. But this configuration can be override, for example want to set it early_no_info as default. Follow the steps below:
-  Go to Open edX server console.
-  Open and edit file /edx/app/edxapp/edx-platform/common/lib/xmodule/xmodule/course_module.py.
-  Find the following codes snippet:
+Go to Open edX server console.
+Open and edit file /edx/app/edxapp/edx-platform/common/lib/xmodule/xmodule/course_module.py.
+Find the following codes snippet:
 ... certificates_display_behavior = String( display_name=_(&amp;#34;Certificates Display Behavior&amp;#34;), help=_( &amp;#34;Enter end, early_with_info, or early_no_info. After certificate generation, students who passed see a &amp;#34; &amp;#34;link to their certificates on the dashboard and students who did not pass see information about the &amp;#34; &amp;#34;grading configuration.</description>
       </item>
     
@@ -157,7 +159,7 @@ By default, this feature is not enable but when you need to enable it, follow th
         <description>By default from Open edX, you need to perform several steps to add and activate certificates in courses such as adding course modes, adding course certificates, activating certificates, etc.
 But things can be simplified, you can add and activate certificates without adding course mode.
 Note: It is recommended that you set the enrollment mode default to honor, so that courses participants can generate certificates.
-  Go to Open edX server console.</description>
+Go to Open edX server console.</description>
       </item>
     
       <item>
@@ -166,9 +168,9 @@ Note: It is recommended that you set the enrollment mode default to honor, so th
         <pubDate>Wed, 02 Mar 2022 20:35:29 +0800</pubDate>
         <guid>https://sibunglon.com/2022/03/02/set-default-enrollment-mode-open-edx-to-honor/</guid>
         <description>By default, student enrollment mode will set to audit mode when course mode is not yet added. But this configuration can be override, for example want to set honor as default. Follow the steps below:
-  Go to Open edX server console.
-  Open and edit file /edx/app/edxapp/lms.env.json.
-  Then add following codes snippet into lms configuration file:
+Go to Open edX server console.
+Open and edit file /edx/app/edxapp/lms.env.json.
+Then add following codes snippet into lms configuration file:
 ... &amp;#34;COURSE_MODE_DEFAULTS&amp;#34;: { &amp;#34;name&amp;#34;: &amp;#34;Honor&amp;#34;, &amp;#34;slug&amp;#34;: &amp;#34;honor&amp;#34;, &amp;#34;bulk_sku&amp;#34;: null, &amp;#34;currency&amp;#34;: &amp;#34;usd&amp;#34;, &amp;#34;description&amp;#34;: null, &amp;#34;expiration_datetime&amp;#34;: null, &amp;#34;min_price&amp;#34;: 0, &amp;#34;sku&amp;#34;: null, &amp;#34;suggested_prices&amp;#34;: &amp;#34;&amp;#34; }, .</description>
       </item>
     
@@ -178,7 +180,7 @@ Note: It is recommended that you set the enrollment mode default to honor, so th
         <pubDate>Wed, 02 Mar 2022 20:25:28 +0800</pubDate>
         <guid>https://sibunglon.com/2022/03/02/limit-student-enrollment-to-open-edx-courses/</guid>
         <description>Option 1: By Invitation This setting is to restrict enrollment to invitation by the course staff. The default value is false, which means the course is open to anyone to enroll. To change this setting, follow these instructions.
- In Studio, click Settings, then select Advanced Settings from the drop down menu Scroll down to Invitation Only. To restrict access to the course, change the value to &amp;ldquo;true&amp;rdquo; so the course is invitation only  Option 2: Maximum student enrollment If you want to restrict the number of students that can enroll in your course, follow these instructions.</description>
+In Studio, click Settings, then select Advanced Settings from the drop down menu Scroll down to Invitation Only. To restrict access to the course, change the value to &amp;ldquo;true&amp;rdquo; so the course is invitation only Option 2: Maximum student enrollment If you want to restrict the number of students that can enroll in your course, follow these instructions.</description>
       </item>
     
       <item>
@@ -187,11 +189,10 @@ Note: It is recommended that you set the enrollment mode default to honor, so th
         <pubDate>Fri, 18 Feb 2022 14:44:21 +0800</pubDate>
         <guid>https://sibunglon.com/2022/02/18/how-to-keep-multiple-logged-in-session-open-edx/</guid>
         <description>To keep multiple logged in session, you need to deactivate prevent concurrent logins per user feature, follow the steps below:
-  Go to Open edX server console.
-  Open and edit file /edx/app/edxapp/lms.env.json and /edx/app/edxapp/cms.env.json.
-  Then find the &amp;quot;FEATURES&amp;quot; configuration, add PREVENT_CONCURRENT_LOGINS into &amp;quot;FEATURES&amp;quot; array and set to false. See the following codes snippet:
-... FEATURES: PREVENT_CONCURRENT_LOGINS: false ...   Restart LMS services.
-  </description>
+Go to Open edX server console.
+Open and edit file /edx/app/edxapp/lms.env.json and /edx/app/edxapp/cms.env.json.
+Then find the &amp;quot;FEATURES&amp;quot; configuration, add PREVENT_CONCURRENT_LOGINS into &amp;quot;FEATURES&amp;quot; array and set to false. See the following codes snippet:
+... FEATURES: PREVENT_CONCURRENT_LOGINS: false ... Restart LMS services.</description>
       </item>
     
       <item>
@@ -209,10 +210,11 @@ Messages can use HTML styling, and can include links to videos, social media pag
         <pubDate>Wed, 17 Nov 2021 14:12:00 +0800</pubDate>
         <guid>https://sibunglon.com/2021/11/17/allow-educator-generate-student-certificate-on-open-edx/</guid>
         <description>To generate certificate, educator have some option:
- Manual to enable student generated certificates Auto allow student generated certificates Educator generate student certificate (this article)  To allow educator generate student certificate, follow the steps below:
-  Go to Open edX server console.
-  Open and edit LMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml).
-  Then find the &amp;quot;FEATURES&amp;quot; configuration, add CERTIFICATES_INSTRUCTOR_GENERATION into &amp;quot;FEATURES&amp;quot; array and set to true. See the following codes snippet:</description>
+Manual to enable student generated certificates Auto allow student generated certificates Educator generate student certificate (this article) To allow educator generate student certificate, follow the steps below:
+Go to Open edX server console.
+Open and edit LMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml).
+Then find the &amp;quot;FEATURES&amp;quot; configuration, add CERTIFICATES_INSTRUCTOR_GENERATION into &amp;quot;FEATURES&amp;quot; array and set to true. See the following codes snippet:
+... FEATURES: CERTIFICATES_INSTRUCTOR_GENERATION: true .</description>
       </item>
     
       <item>
@@ -221,11 +223,10 @@ Messages can use HTML styling, and can include links to videos, social media pag
         <pubDate>Wed, 17 Nov 2021 14:07:34 +0800</pubDate>
         <guid>https://sibunglon.com/2021/11/17/disable-delete-account-function-on-open-edx/</guid>
         <description>To disable delete account function, follow the steps below:
-  Go to Open edX server console.
-  Open and edit LMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml).
-  Then find the &amp;quot;FEATURES&amp;quot; configuration, add ENABLE_ACCOUNT_DELETION into &amp;quot;FEATURES&amp;quot; array and set to false. See the following codes snippet:
-...FEATURES:ENABLE_ACCOUNT_DELETION:false...  Restart LMS services.
-  </description>
+Go to Open edX server console.
+Open and edit LMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml).
+Then find the &amp;quot;FEATURES&amp;quot; configuration, add ENABLE_ACCOUNT_DELETION into &amp;quot;FEATURES&amp;quot; array and set to false. See the following codes snippet:
+... FEATURES: ENABLE_ACCOUNT_DELETION: false ... Restart LMS services.</description>
       </item>
     
       <item>
@@ -234,11 +235,10 @@ Messages can use HTML styling, and can include links to videos, social media pag
         <pubDate>Wed, 17 Nov 2021 13:58:24 +0800</pubDate>
         <guid>https://sibunglon.com/2021/11/17/disable-create-course-for-non-staff-user-on-open-edx/</guid>
         <description>To disable create course for non-staff user, follow the steps below:
-  Go to Open edX server console.
-  Open and edit CMS configuration (/edx/app/edxapp/cms.env.json or /edx/etc/studio.yml).
-  Then find the &amp;quot;FEATURES&amp;quot; configuration, add DISABLE_COURSE_CREATION into &amp;quot;FEATURES&amp;quot; array and set to true. See the following codes snippet:
-...FEATURES:DISABLE_COURSE_CREATION:true...  Restart LMS services.
-  </description>
+Go to Open edX server console.
+Open and edit CMS configuration (/edx/app/edxapp/cms.env.json or /edx/etc/studio.yml).
+Then find the &amp;quot;FEATURES&amp;quot; configuration, add DISABLE_COURSE_CREATION into &amp;quot;FEATURES&amp;quot; array and set to true. See the following codes snippet:
+... FEATURES: DISABLE_COURSE_CREATION: true ... Restart LMS services.</description>
       </item>
     
       <item>
@@ -247,9 +247,9 @@ Messages can use HTML styling, and can include links to videos, social media pag
         <pubDate>Wed, 17 Nov 2021 13:16:51 +0800</pubDate>
         <guid>https://sibunglon.com/2021/11/17/allow-educator-create-user-account-and-register-to-courses-on-open-edx/</guid>
         <description>Educator can add new user and enroll the student into a courses by upload of a CSV file that contains a list of new accounts to create and register for course. But, by default this feature is not enable. To enable it, follow the steps below:
-  Go to Open edX server console.
-  Open and edit LMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml).
-  Then find the &amp;quot;FEATURES&amp;quot; configuration, add ALLOW_AUTOMATED_SIGNUPS into &amp;quot;FEATURES&amp;quot; array and set to true.</description>
+Go to Open edX server console.
+Open and edit LMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml).
+Then find the &amp;quot;FEATURES&amp;quot; configuration, add ALLOW_AUTOMATED_SIGNUPS into &amp;quot;FEATURES&amp;quot; array and set to true.</description>
       </item>
     
       <item>
@@ -259,7 +259,7 @@ Messages can use HTML styling, and can include links to videos, social media pag
         <guid>https://sibunglon.com/2021/11/17/hide-view-my-records-on-learner-profile-open-edx/</guid>
         <description>By default when install Open edX, credentials service not include on installation script. But on LMS configuration, credentials service was point to http://localhost:8005 and on learner profile there is a View My Records button point to http://localhost:8005/records/.
 To hide it, follow the steps below:
- Go to Open edX LMS admin. Find Site configurations and add site configurations but just edit site configurations when you have existing configuration (eg, https://edx.sibunglon.com/admin/site_configuration/siteconfiguration/). For Site values add with value &amp;quot;ENABLE_LEARNER_RECORDS&amp;quot;: false.</description>
+Go to Open edX LMS admin. Find Site configurations and add site configurations but just edit site configurations when you have existing configuration (eg, https://edx.sibunglon.com/admin/site_configuration/siteconfiguration/). For Site values add with value &amp;quot;ENABLE_LEARNER_RECORDS&amp;quot;: false.</description>
       </item>
     
       <item>
@@ -268,7 +268,7 @@ To hide it, follow the steps below:
         <pubDate>Wed, 17 Nov 2021 12:36:12 +0800</pubDate>
         <guid>https://sibunglon.com/2021/11/17/enable-course-sidebar-on-open-edx/</guid>
         <description>The course sidebar was pretty much handy as the user do not have to open a separate page to hop on to any particular section/subsection/unit. By default, this feature is not enable but when you need to enable it, follow the steps below:
- Go to Open edX LMS admin. Find Waffle and add flag (eg, https://edx.sibunglon.com/admin/waffle/flag/). For name add with value course_experience.course_outline_page. For Everyone option, select no. Checked the Authenticated checkbox only.</description>
+Go to Open edX LMS admin. Find Waffle and add flag (eg, https://edx.sibunglon.com/admin/waffle/flag/). For name add with value course_experience.course_outline_page. For Everyone option, select no. Checked the Authenticated checkbox only.</description>
       </item>
     
       <item>
@@ -277,7 +277,7 @@ To hide it, follow the steps below:
         <pubDate>Wed, 17 Nov 2021 12:22:20 +0800</pubDate>
         <guid>https://sibunglon.com/2021/11/17/auto-allow-student-to-generate-their-certificate-on-open-edx/</guid>
         <description>Usually educators expect student to be able to download their certificates as soon as they achieve a passing grade. This can be achieved by enabling auto_certificate_generation as described below.
- Go to Open edX LMS admin. Find Waffle and add switch (eg, https://edx.sibunglon.com/admin/waffle/switch/add/). For name add with value certificates.auto_certificate_generation and checked the Active checkbox.  After that, educator no need to Enable Student-Generated Certificates (as per Allowing Learners to Claim Their Own Certificates in Open edX article) on each course.</description>
+Go to Open edX LMS admin. Find Waffle and add switch (eg, https://edx.sibunglon.com/admin/waffle/switch/add/). For name add with value certificates.auto_certificate_generation and checked the Active checkbox. After that, educator no need to Enable Student-Generated Certificates (as per Allowing Learners to Claim Their Own Certificates in Open edX article) on each course.</description>
       </item>
     
       <item>
@@ -286,9 +286,9 @@ To hide it, follow the steps below:
         <pubDate>Wed, 17 Nov 2021 11:15:07 +0800</pubDate>
         <guid>https://sibunglon.com/2021/11/17/set-age-limit-to-get-full-profile-feature-on-open-edx/</guid>
         <description>By default Open edX allow to get full profile to user if user is over 13 year. But you can change it with custom age limit. To set it, follow the steps below:
-  Go to Open edX server console.
-  Open and edit LMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml).
-  Then find the PARENTAL_CONSENT_AGE_LIMIT configuration (add configuration PARENTAL_CONSENT_AGE_LIMIT if you can&amp;rsquo;t find it) and set with you custom age limit.</description>
+Go to Open edX server console.
+Open and edit LMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml).
+Then find the PARENTAL_CONSENT_AGE_LIMIT configuration (add configuration PARENTAL_CONSENT_AGE_LIMIT if you can&amp;rsquo;t find it) and set with you custom age limit. See the following codes snippet, im set age limit to 7:</description>
       </item>
     
       <item>
@@ -297,10 +297,10 @@ To hide it, follow the steps below:
         <pubDate>Tue, 16 Nov 2021 22:22:47 +0800</pubDate>
         <guid>https://sibunglon.com/2021/11/16/enable-admin-view-of-courseenrollment-model/</guid>
         <description>By enabling admin view CourseEnrollment model, admin or staff can view and update the enrollment mode for a specific user without manually updating on database. To enable it, follow the steps below:
-  Go to Open edX LMS admin.
-  Find Waffle and add switch (eg, https://edx.sibunglon.com/admin/waffle/switch/add/).
-  For name add with value student.courseenrollment_admin and checked the Active checkbox.
-  Then you can check access courseenrollment model under student section (eg, https://edx.</description>
+Go to Open edX LMS admin.
+Find Waffle and add switch (eg, https://edx.sibunglon.com/admin/waffle/switch/add/).
+For name add with value student.courseenrollment_admin and checked the Active checkbox.
+Then you can check access courseenrollment model under student section (eg, https://edx.sibunglon.com/admin/student/courseenrollment/).</description>
       </item>
     
       <item>
@@ -309,9 +309,9 @@ To hide it, follow the steps below:
         <pubDate>Tue, 16 Nov 2021 22:11:12 +0800</pubDate>
         <guid>https://sibunglon.com/2021/11/16/allow-course-team-non-staff-to-generate-grade/</guid>
         <description>By default, only user with staff flag can generate grade on Instructor Data Download tab. When someone was added as Data Researcher, the user can access Data Download tab only and can&amp;rsquo;t generate grade. To allow course team without staff flag can generate grade, follow the steps below:
-  Go to Open edX server console.
-  Open and edit LMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml).
-  Then find the &amp;quot;FEATURES&amp;quot; configuration, add ALLOW_COURSE_STAFF_GRADE_DOWNLOADS into &amp;quot;FEATURES&amp;quot; array and set to true.</description>
+Go to Open edX server console.
+Open and edit LMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml).
+Then find the &amp;quot;FEATURES&amp;quot; configuration, add ALLOW_COURSE_STAFF_GRADE_DOWNLOADS into &amp;quot;FEATURES&amp;quot; array and set to true.</description>
       </item>
     
       <item>
@@ -319,11 +319,12 @@ To hide it, follow the steps below:
         <link>https://sibunglon.com/2021/11/16/disable-analytics-tab-on-instructor-page/</link>
         <pubDate>Tue, 16 Nov 2021 22:01:36 +0800</pubDate>
         <guid>https://sibunglon.com/2021/11/16/disable-analytics-tab-on-instructor-page/</guid>
-        <description>To disable analytics tab on instructor page Open edX, follow the steps below:
-  Go to Open edX server console.
-  Open and edit LMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml).
-  Then find the ANALYTICS_DASHBOARD_URL configuration and set to blank or &#39;&#39;. See the following codes snippet:
-... ANALYTICS_DASHBOARD_URL: &amp;#39;&amp;#39; ...   Restart LMS services.  </description>
+        <description>
+To disable analytics tab on instructor page Open edX, follow the steps below:
+Go to Open edX server console.
+Open and edit LMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml).
+Then find the ANALYTICS_DASHBOARD_URL configuration and set to blank or &#39;&#39;. See the following codes snippet:
+... ANALYTICS_DASHBOARD_URL: &amp;#39;&amp;#39; ... Restart LMS services. </description>
       </item>
     
       <item>
@@ -342,9 +343,9 @@ Traceback (most recent call last): File &amp;#34;/openedx/venv/bin/django-admin&
         <pubDate>Tue, 16 Nov 2021 21:07:02 +0800</pubDate>
         <guid>https://sibunglon.com/2021/11/16/open-response-assessment-ora-using-minio-as-storage-in-open-edx/</guid>
         <description>Usually, someone use Amazon S3 as storage for Open edX course content and services (eg, storage for grades, video transcript, etc.). But this article just share how to set MinIO as storage for ORA instead use Amazon S3. Do the following steps.
-  Setup AWS auth (/edx/app/edxapp/lms.auth.json or /edx/etc/lms.yml).
+Setup AWS auth (/edx/app/edxapp/lms.auth.json or /edx/etc/lms.yml).
 Find the following snippet codes on the configuration file.
-...AWS_ACCESS_KEY_ID:nullAWS_S3_CUSTOM_DOMAIN:SET-ME-PLEASE (ex. bucket-name.s3.amazonaws.com)AWS_SECRET_ACCESS_KEY:nullAWS_STORAGE_BUCKET_NAME:SET-ME-PLEASE (ex. bucket-name)FILE_UPLOAD_STORAGE_BUCKET_NAME:SET-ME-PLEASE (ex. bucket-name)...Change the value, set with your MinIO credentials.</description>
+... AWS_ACCESS_KEY_ID: null AWS_S3_CUSTOM_DOMAIN: SET-ME-PLEASE (ex. bucket-name.s3.amazonaws.com) AWS_SECRET_ACCESS_KEY: null AWS_STORAGE_BUCKET_NAME: SET-ME-PLEASE (ex. bucket-name) FILE_UPLOAD_STORAGE_BUCKET_NAME: SET-ME-PLEASE (ex.</description>
       </item>
     
       <item>
@@ -382,8 +383,7 @@ Just change py2neo==3.1.2 on your app requirements to https://github.com/technig
         <description>This problem occurs because don&amp;rsquo;t use Amazon S3 to save data generate. To fix it, follow these steps.
 -) Login to Open edX server, then create symbolic link from /tmp/edx-s3/grades to /edx/var/edxapp/media.
 -) Update nginx configuration of LMS. Find the following snippet codes on the configuration file.
-location ~ ^/media/(?P&amp;lt;file&amp;gt;.*) { root /edx/var/edxapp/media; try_files /$file =404; expires 31536000s; } Change =404 to /grades/$file or looks like the configuration below.
-location ~ ^/media/(?</description>
+location ~ ^/media/(?P&amp;lt;file&amp;gt;.*) { root /edx/var/edxapp/media; try_files /$file =404; expires 31536000s; } Change =404 to /grades/$file or looks like the configuration below.</description>
       </item>
     
       <item>
@@ -431,7 +431,7 @@ Jun 21 18:15:01 velvet [service_variant=lms][edx.courseware][env:sandbox] ERROR 
         <guid>https://sibunglon.com/2021/05/15/error-install-mysqldb-because-cant-find-my_config.h/</guid>
         <description>Usually issues are found because there are some dependencies that are required but not installed yet. Make sure libmysqlclient-dev is installed, also check the /usr/include/mysql directory to make sure the file my_config.h does not exist like the message on the log.
 For the case I&amp;rsquo;ve found, the file my_config.h is not in the /usr/include/mysql directory and for fixing it use the following command:
-$ cd /usr/include/mysql $ sudo wget https://raw.githubusercontent.com/paulfitz/mysql-connector-c/master/include/my_config.h -O my_config.</description>
+$ cd /usr/include/mysql $ sudo wget https://raw.</description>
       </item>
     
       <item>
@@ -451,8 +451,8 @@ You can install Redash in a local environment (laptop or personal pc) and you ca
         <guid>https://sibunglon.com/2021/05/07/course-visibility-have-been-set-to-none-but-the-course-show-on-index/</guid>
         <description>I&amp;rsquo;m using Open edX relase ironwood.master (installed by 2020), i can&amp;rsquo;t hide the course from all users after chage course visibility from Advanced settings in the studio.
 If this is also the case with you, you can fix it by following these steps:
-  Login to server, and edit lms.env.json in /edx/app/edxapp or lms.yml in /edx/etc if you are using Open edX release juniper or latest.
-  Find COURSE_CATALOG_VISIBILITY_PERMISSION and change the value with see_in_catalog.</description>
+Login to server, and edit lms.env.json in /edx/app/edxapp or lms.yml in /edx/etc if you are using Open edX release juniper or latest.
+Find COURSE_CATALOG_VISIBILITY_PERMISSION and change the value with see_in_catalog.</description>
       </item>
     
       <item>
@@ -478,9 +478,10 @@ Agar dapat mengoperasikan Mikhmon diperlukan sebuah webserver + PHP yang bisa di
         <link>https://sibunglon.com/2021/04/14/save-button-on-problem-editor-open-edx-is-not-respond/</link>
         <pubDate>Wed, 14 Apr 2021 23:01:21 +0800</pubDate>
         <guid>https://sibunglon.com/2021/04/14/save-button-on-problem-editor-open-edx-is-not-respond/</guid>
-        <description>The most common cause is trying to use special characters, etc. greater than (&amp;gt;), less than (&amp;lt;), and ampersand (&amp;amp;) in the problem editor.
+        <description>
+The most common cause is trying to use special characters, etc. greater than (&amp;gt;), less than (&amp;lt;), and ampersand (&amp;amp;) in the problem editor.
 To resolve this issue, replace these characters on problem text with the HTML entities.
- To enter &amp;gt;, type &amp;amp;gt;. To enter &amp;lt;, type &amp;amp;lt;. To enter &amp;amp;, type &amp;amp;amp;.  </description>
+To enter &amp;gt;, type &amp;amp;gt;. To enter &amp;lt;, type &amp;amp;lt;. To enter &amp;amp;, type &amp;amp;amp;. </description>
       </item>
     
       <item>
@@ -488,11 +489,12 @@ To resolve this issue, replace these characters on problem text with the HTML en
         <link>https://sibunglon.com/2021/03/01/disable-manual-activation-for-a-new-account-in-open-edx/</link>
         <pubDate>Mon, 01 Mar 2021 01:41:45 +0800</pubDate>
         <guid>https://sibunglon.com/2021/03/01/disable-manual-activation-for-a-new-account-in-open-edx/</guid>
-        <description>To disable manual activation for a new registration, follow the steps below:
-  Go to Open edX server console.
-  Open and edit LMS configuration (lms.env.json).
-  Then find the &amp;quot;FEATURES&amp;quot; configuration, add SKIP_EMAIL_VALIDATION into &amp;quot;FEATURES&amp;quot; array and set to true. See the following codes snippet:
-  &amp;#34;FEATURES&amp;#34;: { ... &amp;#34;SKIP_EMAIL_VALIDATION&amp;#34;: true, ... }, Restart LMS services.  </description>
+        <description>
+To disable manual activation for a new registration, follow the steps below:
+Go to Open edX server console.
+Open and edit LMS configuration (lms.env.json).
+Then find the &amp;quot;FEATURES&amp;quot; configuration, add SKIP_EMAIL_VALIDATION into &amp;quot;FEATURES&amp;quot; array and set to true. See the following codes snippet:
+&amp;#34;FEATURES&amp;#34;: { ... &amp;#34;SKIP_EMAIL_VALIDATION&amp;#34;: true, ... }, Restart LMS services. </description>
       </item>
     
       <item>
@@ -500,11 +502,12 @@ To resolve this issue, replace these characters on problem text with the HTML en
         <link>https://sibunglon.com/2021/03/01/disable-public-registration-in-open-edx/</link>
         <pubDate>Mon, 01 Mar 2021 01:33:33 +0800</pubDate>
         <guid>https://sibunglon.com/2021/03/01/disable-public-registration-in-open-edx/</guid>
-        <description>To disable public registration in Open edX, follow the steps below:
-  Go to Open edX server console.
-  Open and edit LMS and CMS configuration (lms.env.json and cms.env.json).
-  Then find the &amp;quot;FEATURES&amp;quot; configuration, add ALLOW_PUBLIC_ACCOUNT_CREATION into &amp;quot;FEATURES&amp;quot; array and set to false. See the following codes snippet:
-  &amp;#34;FEATURES&amp;#34;: { ... &amp;#34;ALLOW_PUBLIC_ACCOUNT_CREATION&amp;#34;: false, ... }, Restart LMS services.  </description>
+        <description>
+To disable public registration in Open edX, follow the steps below:
+Go to Open edX server console.
+Open and edit LMS and CMS configuration (lms.env.json and cms.env.json).
+Then find the &amp;quot;FEATURES&amp;quot; configuration, add ALLOW_PUBLIC_ACCOUNT_CREATION into &amp;quot;FEATURES&amp;quot; array and set to false. See the following codes snippet:
+&amp;#34;FEATURES&amp;#34;: { ... &amp;#34;ALLOW_PUBLIC_ACCOUNT_CREATION&amp;#34;: false, ... }, Restart LMS services. </description>
       </item>
     
       <item>
@@ -512,11 +515,12 @@ To resolve this issue, replace these characters on problem text with the HTML en
         <link>https://sibunglon.com/2021/03/01/disable-wiki-panel-in-open-edx/</link>
         <pubDate>Mon, 01 Mar 2021 01:22:38 +0800</pubDate>
         <guid>https://sibunglon.com/2021/03/01/disable-wiki-panel-in-open-edx/</guid>
-        <description>To disable wiki feature for all courses, follow the steps below:
-  Go to Open edX server console.
-  Open and edit LMS configuration (lms.env.json).
-  Then find the WIKI_ENABLED, and set to false.
-  { &amp;#34;WIKI_ENABLED&amp;#34;: false, } Restart LMS services.  </description>
+        <description>
+To disable wiki feature for all courses, follow the steps below:
+Go to Open edX server console.
+Open and edit LMS configuration (lms.env.json).
+Then find the WIKI_ENABLED, and set to false.
+{ &amp;#34;WIKI_ENABLED&amp;#34;: false, } Restart LMS services. </description>
       </item>
     
       <item>
@@ -525,9 +529,9 @@ To resolve this issue, replace these characters on problem text with the HTML en
         <pubDate>Mon, 01 Mar 2021 01:11:46 +0800</pubDate>
         <guid>https://sibunglon.com/2021/03/01/disable-discussion-panel-in-open-edx/</guid>
         <description>On previous article, you have hiding discussion panel, but you can also disable the discussion panel if all courses to be made or those that have been created do not require the discussion feature. To disable discussion feature, follow the steps below:
-  Go to Open edX server console.
-  Open and edit LMS configuration (lms.env.json).
-  Then find the &amp;quot;FEATURES&amp;quot; configuration, add ENABLE_DISCUSSION_HOME_PANEL, ENABLE_DISCUSSION_SERVICE into &amp;quot;FEATURES&amp;quot; array and set to false.</description>
+Go to Open edX server console.
+Open and edit LMS configuration (lms.env.json).
+Then find the &amp;quot;FEATURES&amp;quot; configuration, add ENABLE_DISCUSSION_HOME_PANEL, ENABLE_DISCUSSION_SERVICE into &amp;quot;FEATURES&amp;quot; array and set to false. See the following codes snippet:</description>
       </item>
     
       <item>
@@ -536,9 +540,10 @@ To resolve this issue, replace these characters on problem text with the HTML en
         <pubDate>Mon, 01 Mar 2021 00:54:05 +0800</pubDate>
         <guid>https://sibunglon.com/2021/03/01/hide-discussion-panel-in-open-edx/</guid>
         <description>By default, discussion tab on course page can&amp;rsquo;t be hide. Must be enable feature for hide discussion, so you can hide discussion from course page. To enabled this feature, follow the steps below:
-  Go to Open edX server console.
-  Open and edit LMS and CMS configuration (lms.env.json and cms.env.json).
-  Then find the &amp;quot;FEATURES&amp;quot; configuration, add ALLOW_HIDING_DISCUSSION_TAB into &amp;quot;FEATURES&amp;quot; array and set to true. See the following codes snippet:</description>
+Go to Open edX server console.
+Open and edit LMS and CMS configuration (lms.env.json and cms.env.json).
+Then find the &amp;quot;FEATURES&amp;quot; configuration, add ALLOW_HIDING_DISCUSSION_TAB into &amp;quot;FEATURES&amp;quot; array and set to true. See the following codes snippet:
+&amp;#34;FEATURES&amp;#34;: { &amp;#34;ALLOW_HIDING_DISCUSSION_TAB&amp;#34;: true, .</description>
       </item>
     
       <item>
@@ -566,8 +571,7 @@ Open and edit lms.env.json file using your favorite editor. Then find the &amp;q
         <pubDate>Fri, 01 Jan 2021 17:56:47 +0800</pubDate>
         <guid>https://sibunglon.com/2021/01/01/how-to-install-xblock-open-edx/</guid>
         <description>Saat melakukan installasi XBlock ke environment Open edX, pastikan ownership directory xblock sudah diatur ke user dan group Open edX (edxapp) dan/atau melakukan installasi XBlock di python environment user Open edX (edxapp). Silahkan cek step berikut sebagai sample install XBlock.
-$ sudo chown edxapp:edxapp -R xblock-folder $ sudo -H -u edxapp bash $ cd xblock-folder $ source ~/edxapp_env $ pip install -e . Atau dapat juga menggunakan step berikut.
-$ sudo chown edxapp:edxapp -R xblock-folder $ cd xblock-folder $ sudo /edx/bin/pip.</description>
+$ sudo chown edxapp:edxapp -R xblock-folder $ sudo -H -u edxapp bash $ cd xblock-folder $ source ~/edxapp_env $ pip install -e . Atau dapat juga menggunakan step berikut.</description>
       </item>
     
       <item>
@@ -577,7 +581,7 @@ $ sudo chown edxapp:edxapp -R xblock-folder $ cd xblock-folder $ sudo /edx/bin/p
         <guid>https://sibunglon.com/2020/12/22/open-response-assessment-ora-using-filesystem-as-storage-in-open-edx/</guid>
         <description>By default, ORA uses Amazon S3 as a storage for files uploaded via this component. Apart from using Amazon S3, ORA has alternative storage, one of which is the filesystem.
 Following are the steps you need to take if you want the uploaded files to be stored on the Open edX server.
- Open dan edit file /edx/app/edxapp/edx-platform/lms/envs/common.py, then add the following syntax.  ### ORA2 filesystem settings ORA2_FILEUPLOAD_BACKEND = &amp;#34;filesystem&amp;#34; ORA2_FILEUPLOAD_CACHE_NAME= &amp;#34;default&amp;#34; ORA2_FILEUPLOAD_ROOT = os.</description>
+Open dan edit file /edx/app/edxapp/edx-platform/lms/envs/common.py, then add the following syntax. ### ORA2 filesystem settings ORA2_FILEUPLOAD_BACKEND = &amp;#34;filesystem&amp;#34; ORA2_FILEUPLOAD_CACHE_NAME= &amp;#34;default&amp;#34; ORA2_FILEUPLOAD_ROOT = os.</description>
       </item>
     
       <item>
@@ -586,7 +590,7 @@ Following are the steps you need to take if you want the uploaded files to be st
         <pubDate>Sat, 19 Dec 2020 03:32:07 +0800</pubDate>
         <guid>https://sibunglon.com/2020/12/19/extract-ssl-certificate-and-ssl-certificate-key-from-.pfx-file/</guid>
         <description>A pfx file is password protected certificate archive which contains your certificate and the private key.
- domain.tld.key The private decrypted RSA key file for the certificate. (ssl_certificate_key) domain.tld.crt The certificate file for the domain bundle.crt The certificate file for the issuer domain.tld.chained.crt The concatted file which consists of domain.tld.crt and bundle.crt (ssl_certificate)  Get the .key file
+domain.tld.key The private decrypted RSA key file for the certificate. (ssl_certificate_key) domain.tld.crt The certificate file for the domain bundle.crt The certificate file for the issuer domain.tld.chained.crt The concatted file which consists of domain.tld.crt and bundle.crt (ssl_certificate) Get the .key file
 Extract the encrypted key using:
 openssl pkcs12 -in cert.pfx -nocerts -out domain.tld.encrypted.key Decrypt the encrypted key using:</description>
       </item>
@@ -607,9 +611,9 @@ ERROR: ElasticSearch configuration validation failed. &amp;#34;rake search:valid
         <pubDate>Mon, 09 Nov 2020 04:04:49 +0800</pubDate>
         <guid>https://sibunglon.com/2020/11/09/integrate-zoom-with-open-edx/</guid>
         <description>This topic contains how to setup Zoom LTI Pro, enable LTI Consumer and add the LTI component to the course.
-Setup Zoom LTI Pro   Go to marketplace zoom.
-  Select LTI Pro.
-  Enable &amp;ldquo;Pre-approve&amp;rdquo; and click &amp;ldquo;Install&amp;rdquo;.  LTI Pro will be request access to your zoom account, select &amp;ldquo;authorize&amp;rdquo;.  Create a new credential.  Choose your credential name, and then click &amp;ldquo;Save&amp;rdquo;.  On LTI Credentials page, your need edit/update this:   on field &amp;ldquo;Email Attribute Name&amp;rdquo;, add instructor_email on field &amp;ldquo;Approved Domains&amp;rdquo;, add your LMS and CMS url  Copy your LTI Key and LTI Secret.</description>
+Setup Zoom LTI Pro Go to marketplace zoom.
+Select LTI Pro.
+Enable &amp;ldquo;Pre-approve&amp;rdquo; and click &amp;ldquo;Install&amp;rdquo;. LTI Pro will be request access to your zoom account, select &amp;ldquo;authorize&amp;rdquo;. Create a new credential. Choose your credential name, and then click &amp;ldquo;Save&amp;rdquo;. On LTI Credentials page, your need edit/update this: on field &amp;ldquo;Email Attribute Name&amp;rdquo;, add instructor_email on field &amp;ldquo;Approved Domains&amp;rdquo;, add your LMS and CMS url Copy your LTI Key and LTI Secret.</description>
       </item>
     
       <item>
@@ -651,8 +655,9 @@ SHELL=/bin/sh PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin 
         <pubDate>Sat, 05 Sep 2020 05:52:45 +0800</pubDate>
         <guid>https://sibunglon.com/2020/09/05/change-language-open-edx/</guid>
         <description>Open edX uses Transifex, an open source translation platform, to power the translation of edX software into different languages. All translations are hosted at Transifex.com, which provides a web application allowing translators to write, submit, and manage their translations.
-  Login to server and switch to edxapp environment for edX native installation.
-$ sudo -H -u edxapp bash $ source /edx/app/edxapp/edxapp_env $ cd /edx/app/edxapp/edx-platform   Install Python dependencies</description>
+Login to server and switch to edxapp environment for edX native installation.
+$ sudo -H -u edxapp bash $ source /edx/app/edxapp/edxapp_env $ cd /edx/app/edxapp/edx-platform Install Python dependencies
+$ pip install transifex-client or when using bitnami, use this</description>
       </item>
     
       <item>
@@ -662,9 +667,10 @@ $ sudo -H -u edxapp bash $ source /edx/app/edxapp/edxapp_env $ cd /edx/app/edxap
         <guid>https://sibunglon.com/2020/09/05/allowing-learners-to-claim-their-own-certificates-in-open-edx/</guid>
         <description>In most cases, educator want learners to be able to claim certificates for themselves on the progress page. This is just need to Enable Student-Generated Certificates.
 Instructor-Paced To allowing learners to claim their own certificates, do the following steps:
-  Login to LMS as admin or staff.
-  On the learning site dashboard page, open one of the existing courses.
-  On the course introduction page, click on View Course.</description>
+Login to LMS as admin or staff.
+On the learning site dashboard page, open one of the existing courses.
+On the course introduction page, click on View Course.
+Click Instructor, and the Certificates tab (which will only appear once certificates are set up).</description>
       </item>
     
       <item>
@@ -674,7 +680,7 @@ Instructor-Paced To allowing learners to claim their own certificates, do the fo
         <guid>https://sibunglon.com/2020/09/05/enable-certificate-in-open-edx/</guid>
         <description>Organizations and course teams can choose to generate certificates for learners who pass a course. Learners can view, print, or share their certificates.
 To enable certificates, you modify the lms.env.json and cms.env.json files.
- In the lms.env.json and cms.env.json files, set the value of CERTIFICATES_HTML_VIEW within the FEATURES object to true.  &amp;#34;FEATURES&amp;#34;: { ... &amp;#39;CERTIFICATES_HTML_VIEW&amp;#39;: true, ... } Save the lms.env.json and cms.env.json files.
+In the lms.env.json and cms.env.json files, set the value of CERTIFICATES_HTML_VIEW within the FEATURES object to true. &amp;#34;FEATURES&amp;#34;: { ... &amp;#39;CERTIFICATES_HTML_VIEW&amp;#39;: true, ... } Save the lms.env.json and cms.env.json files.
 If it does not exist already, create the folder /tmp/certificates owned by the user and group www-data.</description>
       </item>
     
@@ -686,7 +692,7 @@ If it does not exist already, create the folder /tmp/certificates owned by the u
         <description>What is Sendy?
 Sendy is a self hosted email newsletter application that lets you send trackable emails via Amazon Simple Email Service (SES).
 To install sendy on Ubuntu, do the following steps:
- Login to server, and install package.  $ add-apt-repository ppa:ondrej/php $ apt update $ apt install php unzip $ apt install php-fpm libapache2-mod-php php-mysql php-curl php-xml $ apt install mariadb-server mariadb-client Let’s run the security script to harden the SQL.</description>
+Login to server, and install package. $ add-apt-repository ppa:ondrej/php $ apt update $ apt install php unzip $ apt install php-fpm libapache2-mod-php php-mysql php-curl php-xml $ apt install mariadb-server mariadb-client Let’s run the security script to harden the SQL.</description>
       </item>
     
       <item>
@@ -696,7 +702,7 @@ To install sendy on Ubuntu, do the following steps:
         <guid>https://sibunglon.com/2020/09/05/create-a-read-only-mongodb-user/</guid>
         <description>There are times when you need account read only access to a database.
 To create a read only database user MongoDB, do the following steps:
- Login as a MongoDB administrator.  $ mongo -u admin -p --authenticationDatabase admin Show list of database on MongoDB.  &amp;gt;&amp;gt;&amp;gt; show dbs Select database.  &amp;gt;&amp;gt;&amp;gt; use edxapp Create a new user with permission read only on the database.  &amp;gt;&amp;gt;&amp;gt;db.createUser({user:&amp;#34;edxapp_read&amp;#34;,pwd:&amp;#34;password&amp;#34;,roles:[{role:&amp;#34;read&amp;#34;,db:&amp;#34;edxapp&amp;#34;}]})Done.  </description>
+Login as a MongoDB administrator. $ mongo -u admin -p --authenticationDatabase admin Show list of database on MongoDB. &amp;gt;&amp;gt;&amp;gt; show dbs Select database. &amp;gt;&amp;gt;&amp;gt; use edxapp Create a new user with permission read only on the database. &amp;gt;&amp;gt;&amp;gt; db.createUser({user: &amp;#34;edxapp_read&amp;#34;, pwd: &amp;#34;password&amp;#34;, roles: [{role: &amp;#34;read&amp;#34;, db: &amp;#34;edxapp&amp;#34;}]}) Done.</description>
       </item>
     
       <item>
@@ -704,11 +710,12 @@ To create a read only database user MongoDB, do the following steps:
         <link>https://sibunglon.com/2020/09/05/create-a-read-only-mysql-user/</link>
         <pubDate>Sat, 05 Sep 2020 02:54:59 +0800</pubDate>
         <guid>https://sibunglon.com/2020/09/05/create-a-read-only-mysql-user/</guid>
-        <description>There are times when you need account read only access to a database.
+        <description>
+There are times when you need account read only access to a database.
 To create a read only database user MySQL, do the following steps:
-  Login as a MySQL administrator.
-  Create a new MySQL user account.
-  &amp;gt;&amp;gt;&amp;gt;CREATEUSER&amp;#39;dapenda&amp;#39;@&amp;#39;%&amp;#39;IDENTIFIEDBY&amp;#39;mypassword&amp;#39;;Grant the SELECT only privilege to user.  &amp;gt;&amp;gt;&amp;gt;GRANTSELECTONsite.*TO&amp;#39;dapenda&amp;#39;@&amp;#39;%&amp;#39;;Reload grant privilege for re-read access table MySQL.  &amp;gt;&amp;gt;&amp;gt;FLUSHPRIVILEGES;Done.  </description>
+Login as a MySQL administrator.
+Create a new MySQL user account.
+&amp;gt;&amp;gt;&amp;gt; CREATE USER &amp;#39;dapenda&amp;#39;@&amp;#39;%&amp;#39; IDENTIFIED BY &amp;#39;mypassword&amp;#39;; Grant the SELECT only privilege to user. &amp;gt;&amp;gt;&amp;gt; GRANT SELECT ON site.* TO &amp;#39;dapenda&amp;#39;@&amp;#39;%&amp;#39;; Reload grant privilege for re-read access table MySQL. &amp;gt;&amp;gt;&amp;gt; FLUSH PRIVILEGES; Done. </description>
       </item>
     
       <item>
@@ -717,7 +724,7 @@ To create a read only database user MySQL, do the following steps:
         <pubDate>Sun, 26 Jul 2020 21:05:49 +0800</pubDate>
         <guid>https://sibunglon.com/2020/07/26/database-returned-an-invalid-value-in-queryset.datetimes/</guid>
         <description>After create new action on the Django admin pages, it redirects to my site with the message a server error. When check the file /edx/var/log/supervisor/lms-stderr.log i find this:
-Traceback (most recent call last): File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/exception.py&amp;#34;, line 41, in inner response = get_response(request) File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;#34;, line 249, in _legacy_get_response response = self._get_response(request) File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;#34;, line 217, in _get_response response = self.process_exception_by_middleware(e, request) File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;#34;, line 215, in _get_response response = response.render() File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.</description>
+Traceback (most recent call last): File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/exception.py&amp;#34;, line 41, in inner response = get_response(request) File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;#34;, line 249, in _legacy_get_response response = self._get_response(request) File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;#34;, line 217, in _get_response response = self.process_exception_by_middleware(e, request) File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;#34;, line 215, in _get_response response = response.</description>
       </item>
     
       <item>
@@ -735,8 +742,8 @@ Jul 24 01:03:09 bnpb [service_variant=lms][django.request][env:sandbox] ERROR [e
         <pubDate>Sun, 26 Jul 2020 17:39:23 +0800</pubDate>
         <guid>https://sibunglon.com/2020/07/26/enable-third-party-authentication-oauth2-in-open-edx/</guid>
         <description>Open edX Platform allows you to integrate third-party authentication with two kinds of authentication providers:
- OAuth2 Identity Providers. SAML Identity Providers  This section describes how to integrate Open edX with two of the most popular OAuth2 providers: Google and Facebook.
-Integrate Open edX With Google Step 1: Register The Open edX Site With Google  Navigate to the Google Developers Console. Select an existing project or create a new one.</description>
+OAuth2 Identity Providers. SAML Identity Providers This section describes how to integrate Open edX with two of the most popular OAuth2 providers: Google and Facebook.
+Integrate Open edX With Google Step 1: Register The Open edX Site With Google Navigate to the Google Developers Console. Select an existing project or create a new one. Search and select the “Google+ API” in the Google APIs list and press the “Enable API” button.</description>
       </item>
     
       <item>
@@ -770,7 +777,7 @@ Case:
         <pubDate>Mon, 25 May 2020 13:51:19 +0700</pubDate>
         <guid>https://sibunglon.com/2020/05/25/account-settings-open-edx-is-not-working/</guid>
         <description>Account Profile settings is not working, i cannot select limited or full profile, either add user profile photo, etc.
-  You must specify your birth year before you can share your full profile. To specify your birth year, go to the Account Settings page. You must be over 13 to share a full profile.  You can set specified a birth year on the Account Settings page.</description>
+You must specify your birth year before you can share your full profile. To specify your birth year, go to the Account Settings page. You must be over 13 to share a full profile. You can set specified a birth year on the Account Settings page.</description>
       </item>
     
       <item>
@@ -800,9 +807,10 @@ $ sudo tail -f /edx/var/log/{lms,cms,nginx}/*log ==&amp;gt; /edx/var/log/lms/edx
         <guid>https://sibunglon.com/2020/02/15/restrict-server-access-via-ssh-client/</guid>
         <description>This article is related to Server Got Hacked, Crontab Has Been Modified.
 Limit IP Address To limit ip address of incoming connections to server via ssh, it can be done by:
-  Edit file /etc/hosts.allow.
-  Then add the following script.
-  sshd : ip_attacker : deny Save and exit.  Limit Users or Groups To limit users or groups of incoming connections to server via ssh, it can be done by:</description>
+Edit file /etc/hosts.allow.
+Then add the following script.
+sshd : ip_attacker : deny Save and exit. Limit Users or Groups To limit users or groups of incoming connections to server via ssh, it can be done by:
+Edit file /etc/ssh/sshd_config.</description>
       </item>
     
       <item>
@@ -822,7 +830,7 @@ What process continues to make CPU usage up to 100%? Whereas on other servers (a
         <guid>https://sibunglon.com/2020/02/10/quick-setup-go-on-macos/</guid>
         <description>Go, also known as Golang, is a statically typed, compiled programming language designed at Google by Robert Griesemer, Rob Pike, and Ken Thompson. Go is syntactically similar to C, but with memory safety, garbage collection, structural typing, and CSP-style concurrency.
 Go is an open source programming language that makes it easy to build simple, reliable, and efficient software.
- Install go with homebrew  $ brew install go Setup go environment  Edit the bash profile file used, edit the ~/.</description>
+Install go with homebrew $ brew install go Setup go environment Edit the bash profile file used, edit the ~/.</description>
       </item>
     
       <item>
@@ -869,7 +877,7 @@ The following example, anyone who accesses the *.redirect.sibunglon.com domain w
         <guid>https://sibunglon.com/2020/01/04/setup-https-in-open-edx-using-certbot/</guid>
         <description>By default Open edX does not provide an SSL configuration, but we can add it manually. As per the topic of this article, here I will enable HTTPS on Open edX using Certbot.
 Certbot is a new breakthrough from the Let&amp;rsquo;s Encrypt Web Security Certificate Provider where Let&amp;rsquo;s Encrypt provides SSL for free.
- Note: In the following example, in Open edX I point Course Management System (CMS) using the domain studio.</description>
+Note: In the following example, in Open edX I point Course Management System (CMS) using the domain studio.</description>
       </item>
     
       <item>
@@ -898,8 +906,9 @@ urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host=&amp;#39;api.telegram
         <pubDate>Sun, 29 Dec 2019 20:09:28 +0700</pubDate>
         <guid>https://sibunglon.com/2019/12/29/disable-forticlient-auto-start-on-macos/</guid>
         <description>Open terminal or shell.
-  Open the file /Library/LaunchAgents/com.fortinet.forticlient.fct_launcher.plist using your favorite text editor, here I use vim.
-  $ sudo vi /Library/LaunchAgents/com.fortinet.forticlient.fct_launcher.plist Default contents of the com.fortinet.forticlient.fct_launcher.plist file as follows.  &amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt; &amp;lt;!DOCTYPE plist PUBLIC &amp;#34;-//Apple//DTD PLIST 1.0//EN&amp;#34; &amp;#34;http://www.apple.com/DTDs/PropertyList-1.0.dtd&amp;#34;&amp;gt; &amp;lt;plist version=&amp;#34;1.0&amp;#34;&amp;gt; &amp;lt;dict&amp;gt; &amp;lt;key&amp;gt;Label&amp;lt;/key&amp;gt; &amp;lt;string&amp;gt;com.fortinet.fct_launcher&amp;lt;/string&amp;gt; &amp;lt;key&amp;gt;Program&amp;lt;/key&amp;gt; &amp;lt;string&amp;gt;/Library/Application Support/Fortinet/FortiClient/bin/FCTLauncher&amp;lt;/string&amp;gt; &amp;lt;key&amp;gt;RunAtLoad&amp;lt;/key&amp;gt; &amp;lt;true/&amp;gt; &amp;lt;/dict&amp;gt; &amp;lt;/plist&amp;gt; Change the word true to false, so that the contents of the com.</description>
+Open the file /Library/LaunchAgents/com.fortinet.forticlient.fct_launcher.plist using your favorite text editor, here I use vim.
+$ sudo vi /Library/LaunchAgents/com.fortinet.forticlient.fct_launcher.plist Default contents of the com.fortinet.forticlient.fct_launcher.plist file as follows. &amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt; &amp;lt;!DOCTYPE plist PUBLIC &amp;#34;-//Apple//DTD PLIST 1.0//EN&amp;#34; &amp;#34;http://www.apple.com/DTDs/PropertyList-1.0.dtd&amp;#34;&amp;gt; &amp;lt;plist version=&amp;#34;1.0&amp;#34;&amp;gt; &amp;lt;dict&amp;gt; &amp;lt;key&amp;gt;Label&amp;lt;/key&amp;gt; &amp;lt;string&amp;gt;com.fortinet.fct_launcher&amp;lt;/string&amp;gt; &amp;lt;key&amp;gt;Program&amp;lt;/key&amp;gt; &amp;lt;string&amp;gt;/Library/Application Support/Fortinet/FortiClient/bin/FCTLauncher&amp;lt;/string&amp;gt; &amp;lt;key&amp;gt;RunAtLoad&amp;lt;/key&amp;gt; &amp;lt;true/&amp;gt; &amp;lt;/dict&amp;gt; &amp;lt;/plist&amp;gt; Change the word true to false, so that the contents of the com.fortinet.forticlient.fct_launcher.plist file as follows.
+&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?</description>
       </item>
     
       <item>
@@ -918,7 +927,7 @@ $ find ~ -name .DS_Store -delete This will find the .</description>
         <pubDate>Sun, 29 Dec 2019 14:07:36 +0700</pubDate>
         <guid>https://sibunglon.com/2019/12/29/add-trusted-site-on-macos/</guid>
         <description>There is a site that we may already trust but because the SSL certificate has expired or is invalid, we are prevented from accessing the site. In Google Chrome the advanced button will appear and there will be another proceed to site button that can help to access the site, but the proced to site button will be removed from Google Chrome macOS. Then how to access the site?
- Click Not Secure on the address bar&amp;gt; click Certificate &amp;gt; Then drag and drop the existing certificate into any directory.</description>
+Click Not Secure on the address bar&amp;gt; click Certificate &amp;gt; Then drag and drop the existing certificate into any directory.</description>
       </item>
     
       <item>
@@ -967,10 +976,12 @@ $ tree Bash Bash ├── BackupRestore-dbOpenEdx │ ├── backup_mongo.s
         <pubDate>Fri, 08 Nov 2019 14:24:33 +0700</pubDate>
         <guid>https://sibunglon.com/2019/11/08/istilah-istilah-yang-biasa-digunakan-orang-kantoran/</guid>
         <description>Sebagai salah satu orang yang biasa jalan-jalan ke kantor orang, disini saya ingin berbagi istilah-istilah yang biasa saya dengar atau saya temui di lingkungan pekerjaan mereka dan sudah saya tahu arti/maksudnya 😄
-Istilah-Istilah Umum:   PIC (Person In Charge)
- Istilah ini menunjukkan orang yang bertanggung jawab dalam menangani hal tertentu.
-   FYI (For Your Information)
- Isitilah ini biasanya digunakan dalam email untuk memberitahukan suatu informasi.</description>
+Istilah-Istilah Umum: PIC (Person In Charge)
+Istilah ini menunjukkan orang yang bertanggung jawab dalam menangani hal tertentu.
+FYI (For Your Information)
+Isitilah ini biasanya digunakan dalam email untuk memberitahukan suatu informasi.
+TBO (To Be Obtained)
+Merujuk ke suatu hal yang harus dilengkapi biasa berkaitan dengan dokumen.</description>
       </item>
     
       <item>
@@ -989,9 +1000,9 @@ If before you did not do the postgres installation process, when backing up the 
         <pubDate>Thu, 31 Oct 2019 14:46:11 +0700</pubDate>
         <guid>https://sibunglon.com/2019/10/31/restart-network-adapter-windows-without-reboot/</guid>
         <description>Restarts a network adapter by disabling and then re-enabling the network adapter.
-  Open PowerShell on Windows, after that find the name of the interface to be restarted. Use the following command line:
-netsh interface show interface   Restart network adapter using the following command line:
-Restart-NetAdapter -Name &amp;#34;Ethernet x&amp;#34;   </description>
+Open PowerShell on Windows, after that find the name of the interface to be restarted. Use the following command line:
+netsh interface show interface Restart network adapter using the following command line:
+Restart-NetAdapter -Name &amp;#34;Ethernet x&amp;#34; </description>
       </item>
     
       <item>
@@ -999,7 +1010,8 @@ Restart-NetAdapter -Name &amp;#34;Ethernet x&amp;#34;   </description>
         <link>https://sibunglon.com/2019/07/15/create-new-super-user-for-access-django-admin-interface-in-open-edx/</link>
         <pubDate>Mon, 15 Jul 2019 03:09:25 +0700</pubDate>
         <guid>https://sibunglon.com/2019/07/15/create-new-super-user-for-access-django-admin-interface-in-open-edx/</guid>
-        <description>I need to use the Django admin interface, but I don&amp;rsquo;t know what users can use to log in.
+        <description>
+I need to use the Django admin interface, but I don&amp;rsquo;t know what users can use to log in.
 Solution sudo -u edxapp bash source /edx/app/edxapp/edxapp_env python /edx/app/edxapp/edx-platform/manage.py --settings=aws createsuperuser </description>
       </item>
     
@@ -1028,7 +1040,7 @@ I myself had an error when installing Open EdX, the error was the same as in the
         <guid>https://sibunglon.com/2019/07/13/install-open-edx-using-method-native-installation-ubuntu-16.04/</guid>
         <description>About Open edX Open edX is the massively scalable learning software platform behind edX. edX is the online learning destination founded by Harvard and MIT in 2012.
 edX offers high-quality courses from the world’s best universities and institutions to learners everywhere. It is the only leading MOOC provider that is both nonprofit and open source. The edX mission is to:
- Increase access to high-quality education for everyone, everywhere Enhance teaching and learning on campus and online Advance teaching and learning through research  Play with Open edX How to use Open edX in my own environment?</description>
+Increase access to high-quality education for everyone, everywhere Enhance teaching and learning on campus and online Advance teaching and learning through research Play with Open edX How to use Open edX in my own environment?</description>
       </item>
     
       <item>
@@ -1090,7 +1102,7 @@ Disuatu waktu saya install MSSQL Server Linux di environment berbeda dari sebelu
         <guid>https://sibunglon.com/2019/04/07/create-open-ended-text-input-using-simple-problem-of-open-edx/</guid>
         <description>Text input problems can be setup to accept open-ended responses using regular expressions in the advanced editor.
 To format your text input problem to accept any response, assign the answer attribute as follows: answer=&amp;quot;.*.&amp;quot;.
-Here is an example open input text with a regular expression, note the regexp within the type attribute. In this example, the size of the text line has been set to 20 characters as the default. You are free to add more characters if you anticipate longer responses.</description>
+Here is an example open input text with a regular expression, note the regexp within the type attribute. In this example, the size of the text line has been set to 20 characters as the default.</description>
       </item>
     
       <item>
@@ -1220,8 +1232,8 @@ Umumnya server diakses menggunakan ssh dengan autentikasi password plain text, j
 Ya emang menarik, agar user tidak perlu memasukkan password jika ingin mendapatkan hak akses root cukup tambahkan si user ke sudoers.
 Bermain dengan Sudoers 1) Edit file sudoers dengan command nano /etc/sudoers.
 2) Setelah berhasil mengakses file sudoers, sekarang tambahkan sintaks berikut:
-sibunglon ALL=(ALL) NOPASSWD:ALL  Note: Kata sibunglon diganti sesuai user yang akan diberikan izin menggunakan sudo tanpa password.
- Sekarang user sibunglon (user sesuai yang anda daftarkan) dapat menggunakan command sudo tanpa password.</description>
+sibunglon ALL=(ALL) NOPASSWD:ALL Note: Kata sibunglon diganti sesuai user yang akan diberikan izin menggunakan sudo tanpa password.
+Sekarang user sibunglon (user sesuai yang anda daftarkan) dapat menggunakan command sudo tanpa password.</description>
       </item>
     
       <item>
@@ -1260,7 +1272,7 @@ Let&amp;rsquo;s encrypt adalah certificate Authority (CA) atau otoritas sertifik
         <guid>https://sibunglon.com/2018/12/14/membuat-subdomain-dengan-nginx/</guid>
         <description>Subdomain? Subdomain adalah bagian dari nama domain induk yang memiliki ruangan sendiri (direktori), mengacu ke suatu alamat fisik. Contohnya subdomain blog.sibunglon.com acuannya yaitu sibunglon.com. Jika menggunakan nginx, untuk membuat subdomain sama seperti pada lab sebelumnya yang Bermain Dengan Nginx. Mudahkan kalau caranya cuman gitu? :D Tapi jika masih ada yang bingung, tenang labnya masih saya bagikan.
 Pada lab ini saya asumsikan:
- Domain induk = sibunglon.com Subdomain = blog.sibunglon.com master konfigurasi berada di direktori /sibunglonlabs/config/nginx File konfigurasi domain induk sibunglonlabs.</description>
+Domain induk = sibunglon.com Subdomain = blog.sibunglon.com master konfigurasi berada di direktori /sibunglonlabs/config/nginx File konfigurasi domain induk sibunglonlabs.</description>
       </item>
     
       <item>
@@ -1305,7 +1317,7 @@ python -m pip uninstall pip &amp;amp;&amp;amp; apt install python-pip --reinstal
         <guid>https://sibunglon.com/2018/12/10/kustom-konfigurasi-dan-ganti-direktori-nginx/</guid>
         <description>Bermain Dengan Nginx Pada saat ini sudah menjadi hal biasa jika seseorang ingin memindahkan file konfigurasinya agar lebih mudah dimaintenance. Salah satunya yaitu memidahkan direktori root html nginx. Di nginx, untuk memindahkan direktori root html dan memidahkan konfigurasinya cukup dengan command-command berikut.
 Pada Lab ini saya asumsikan :
- master konfigurasi berada di direktori /sibunglonlabs/config/nginx direktori root berada di /sibunglonlabs/web  1) Gunakan command berikut untuk memindahkan master konfig nginx ke direktori yang anda ingin, yang mudah diakses oleh anda namun susah ditemui oleh orang lain.</description>
+master konfigurasi berada di direktori /sibunglonlabs/config/nginx direktori root berada di /sibunglonlabs/web 1) Gunakan command berikut untuk memindahkan master konfig nginx ke direktori yang anda ingin, yang mudah diakses oleh anda namun susah ditemui oleh orang lain.</description>
       </item>
     
       <item>
@@ -1346,7 +1358,7 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
         <link>https://sibunglon.com/2018/12/01/lindungi-web-server-apache2-dengan-ssl-debian-8/</link>
         <pubDate>Sat, 01 Dec 2018 15:14:00 +0000</pubDate>
         <guid>https://sibunglon.com/2018/12/01/lindungi-web-server-apache2-dengan-ssl-debian-8/</guid>
-        <description>Pengertian  HTTPS juga disebut HTTP melalui TLS, HTTP melalui SSL, dan HTTP Secure adalah protokol untuk komunikasi yang aman melalui jaringan komputer yang banyak digunakan di Internet. HTTPS terdiri dari komunikasi melalui Hypertext Transfer Protocol (HTTP) dalam koneksi yang terenkripsi dengan Transport Layer Security atau pendahulunya Secure Sockets Layer. Fungsi utama untuk HTTPS adalah autentikasi dari website yang dikunjungi dan perlindungan privasi dan integritas data yang dipertukarkan. SSL (Secure Sockets Layer) adalah teknologi keamanan standar untuk membangun link yang dienkripsi antara web server dan browser.</description>
+        <description>Pengertian HTTPS juga disebut HTTP melalui TLS, HTTP melalui SSL, dan HTTP Secure adalah protokol untuk komunikasi yang aman melalui jaringan komputer yang banyak digunakan di Internet. HTTPS terdiri dari komunikasi melalui Hypertext Transfer Protocol (HTTP) dalam koneksi yang terenkripsi dengan Transport Layer Security atau pendahulunya Secure Sockets Layer. Fungsi utama untuk HTTPS adalah autentikasi dari website yang dikunjungi dan perlindungan privasi dan integritas data yang dipertukarkan. SSL (Secure Sockets Layer) adalah teknologi keamanan standar untuk membangun link yang dienkripsi antara web server dan browser.</description>
       </item>
     
       <item>
@@ -1358,7 +1370,7 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
 Di linux anda juga menggunakan fitur ini dengan bantuan aplikasi fusuma, berikut installasi dan konfigurasinya.
 1. Berikan izin untuk membaca perangkat touchpad
 sudo gpasswd -a $USER input
-Install libinput-tools  sudo apt-get install libinput-tools
+Install libinput-tools sudo apt-get install libinput-tools
 3. Install Fusuma
 sudo gem install fusuma
 4. Instal xdotool (opsional)
@@ -1373,7 +1385,7 @@ sudo apt-get install xdotool</description>
         <description>Setelah berkenalan dengan si Caddy Server pada beberapa hari yang lalu, sekarang waktunya bermain dengan si Caddy Server.
 Apa Saja yang dibutuhkan? Pastikan anda telah memiliki file master Caddy Server, jika belum silahkan dari situs resminya.
 Menjalankan Caddy Server pada sistem operasi windows
- Buka file hasil download Caddy Server  Copy semua isi dari file master tersebut  Tentukan path Caddy, buat folder baru yang akan menampung semua file yang telah dicopy kemudian paste di folder tersebut  Untuk menjalankan Caddy Server pada sistem operasi windows cukup klik 2 kali pada file caddy.</description>
+Buka file hasil download Caddy Server Copy semua isi dari file master tersebut Tentukan path Caddy, buat folder baru yang akan menampung semua file yang telah dicopy kemudian paste di folder tersebut Untuk menjalankan Caddy Server pada sistem operasi windows cukup klik 2 kali pada file caddy.</description>
       </item>
     
       <item>
@@ -1425,7 +1437,7 @@ Pada kesempatan ini saya akan mengimplementasikan membangun sebuah sistem inform
 B. Pengertian
 (OpenSID) adalah Sistem Informasi Desa (SID) yang sengaja dibuat supaya terbuka dan dapat dikembangkan bersama-sama oleh komunitas peduli SID.
 SID adalah aplikasi komputer yang membantu desa, agar:
- Kantor desa lebih efisien dan efektif Pemerintah desa lebih transparan dan akuntabel Layanan publik lebih baik Warga mendapat akses lebih baik pada informasi desa  OpenSID turut membantu agar ke semua 74ribu+ desa di Indonesia menerapkan sistem informasi untuk memajukan desanya.</description>
+Kantor desa lebih efisien dan efektif Pemerintah desa lebih transparan dan akuntabel Layanan publik lebih baik Warga mendapat akses lebih baik pada informasi desa OpenSID turut membantu agar ke semua 74ribu+ desa di Indonesia menerapkan sistem informasi untuk memajukan desanya.</description>
       </item>
     
       <item>
@@ -1445,7 +1457,7 @@ Apa itu shell ? shell adalah program (penterjemah perintah) yang menjembatani us
         <pubDate>Fri, 20 Oct 2017 18:59:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/20/perbandingan-open-source-dan-closed-source/</guid>
         <description>1) Pengertian
- Sumber terbuka (bahasa Inggris: open source) adalah sistem pengembangan yang tidak dikoordinasi oleh suatu individu / lembaga pusat, tetapi oleh para pelaku yang bekerja sama dengan memanfaatkan kode sumber (source-code) yang tersebar dan tersedia bebas (biasanya menggunakan fasilitas komunikasi internet). Pola pengembangan ini mengambil model ala bazaar, sehingga pola Open Source ini memiliki ciri bagi komunitasnya yaitu adanya dorongan yang bersumber dari budaya memberi, yang artinya ketika suatu komunitas menggunakan sebuah program Open Source dan telah menerima sebuah manfaat kemudian akan termotivasi untuk menimbulkan sebuah pertanyaan apa yang bisa pengguna berikan balik kepada orang banyak.</description>
+Sumber terbuka (bahasa Inggris: open source) adalah sistem pengembangan yang tidak dikoordinasi oleh suatu individu / lembaga pusat, tetapi oleh para pelaku yang bekerja sama dengan memanfaatkan kode sumber (source-code) yang tersebar dan tersedia bebas (biasanya menggunakan fasilitas komunikasi internet). Pola pengembangan ini mengambil model ala bazaar, sehingga pola Open Source ini memiliki ciri bagi komunitasnya yaitu adanya dorongan yang bersumber dari budaya memberi, yang artinya ketika suatu komunitas menggunakan sebuah program Open Source dan telah menerima sebuah manfaat kemudian akan termotivasi untuk menimbulkan sebuah pertanyaan apa yang bisa pengguna berikan balik kepada orang banyak.</description>
       </item>
     
       <item>
@@ -1481,7 +1493,7 @@ Agar data yang saat penting itu tidak hilang karena ada kesalahan dan dapat meny
         <guid>https://sibunglon.com/2017/10/19/implementasi-manual-subnetting-kelas-c/</guid>
         <description>A.Pendahuluan
 Pada kesempatan kali ini saya akan berbagi tentang ip/subnetting gays. kenapa saya membahas ini karena kita sebagai nak jaringan mesti perlu paham begaimana cara subneting.
- Pengertian  Subnetting adalah upaya/proses untuk memecah sebuah network dengan jumlah host yang cukup banyak, menjadi beberapa network dengan jumlah host yang lebih sedikit. Gunanya Subnetting untuk menentukan batas network ID dalam suatu subnet, Memperbanyak jumlah network (LAN), Mengurangi jumlah host dalam satu network, untuk mengurangi tingkat kongesti (gangguan/ tabrakan) lalulintas data dalam suatu network.</description>
+Pengertian Subnetting adalah upaya/proses untuk memecah sebuah network dengan jumlah host yang cukup banyak, menjadi beberapa network dengan jumlah host yang lebih sedikit. Gunanya Subnetting untuk menentukan batas network ID dalam suatu subnet, Memperbanyak jumlah network (LAN), Mengurangi jumlah host dalam satu network, untuk mengurangi tingkat kongesti (gangguan/ tabrakan) lalulintas data dalam suatu network.</description>
       </item>
     
       <item>
@@ -1614,7 +1626,7 @@ Pada kesempatan ini saya memposting lagi dan masih mengenai server
 B. Pengertian
 LAMP adalah istilah yang merupakan singkatan dariLinux,Apache,MySQL danPerl/PHP/Phyton. Merupakan sebuah paket perangkat lunak bebas yang digunakan untuk menjalankan sebuah aplikasi secara lengkap.
 Komponen-komponen dari LAMP :
- Linux – sistem operasi Apache HTTP Server – web server MariaDB atau MySQL – sistem basis data PHP atau Perl atau Python – bahasa pemrograman yang dipakai  C. Latar belakang</description>
+Linux – sistem operasi Apache HTTP Server – web server MariaDB atau MySQL – sistem basis data PHP atau Perl atau Python – bahasa pemrograman yang dipakai C. Latar belakang</description>
       </item>
     
       <item>
@@ -1656,8 +1668,7 @@ Virtual LAN atau disingkat VLAN merupakan sekelompok perangkat pada satu LAN ata
         <pubDate>Wed, 11 Oct 2017 12:38:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/11/sharing-bersama-materi-bandwith-management-queue/</guid>
         <description>A. Pendahuluan
-Sebesar besarnya bandwith kecepatan internet tidak akan bisa membuat kita para pengguna internet puas-puas kata tersebut yang sering saya dengarkan ketika saya prakerin, maksudnya adalah kita sebagai user dari internet tidak akan puas dengan bandwith yang lumayan besar karena sebesar apapun bandwith yang kita miliki, kita tidak akan bisa mengakses internet secepat yang ada dalam bayangan kita, kalian tau apa penyebabnya? jika belum mari kita bahas bersama
-B. Pengertian</description>
+Sebesar besarnya bandwith kecepatan internet tidak akan bisa membuat kita para pengguna internet puas-puas kata tersebut yang sering saya dengarkan ketika saya prakerin, maksudnya adalah kita sebagai user dari internet tidak akan puas dengan bandwith yang lumayan besar karena sebesar apapun bandwith yang kita miliki, kita tidak akan bisa mengakses internet secepat yang ada dalam bayangan kita, kalian tau apa penyebabnya? jika belum mari kita bahas bersama</description>
       </item>
     
       <item>
@@ -1691,7 +1702,7 @@ Web referensi adalah suatu website atau situs atau laman yang memuat pembahasan 
         <description>A. Pendahuluan
 Kali ini saya berbagi tentang bagaimana menginstall linux Debian 8.6 melalui pada proxmox. Proxmox digunakan sebagai virtualisasi.
 B. Pengertian
-Debian adalah sistem operasi komputer yang tersusun dari paket-paket perangkat lunak yang dirilis sebagai perangkat lunak bebas dan terbuka dengan lisensi mayoritas GNU General Public License dan lisensi perangkat lunak bebas lainnya. Debian GNU/Linux memuat perkakas sistem operasi GNU dan kernel Linux merupakan distribusi Linux yang popmuler dan berpengaruh. Debian didistribusikan dengan akses ke repositori dengan ribuan paket perangkat lunak yang siap untuk instalasi dan digunakan.</description>
+Debian adalah sistem operasi komputer yang tersusun dari paket-paket perangkat lunak yang dirilis sebagai perangkat lunak bebas dan terbuka dengan lisensi mayoritas GNU General Public License dan lisensi perangkat lunak bebas lainnya. Debian GNU/Linux memuat perkakas sistem operasi GNU dan kernel Linux merupakan distribusi Linux yang popmuler dan berpengaruh.</description>
       </item>
     
       <item>
@@ -1712,12 +1723,13 @@ adalah istilah umum yang mengacu kepada abstraksi dari sumber daya komputer. Def
         <guid>https://sibunglon.com/2017/10/07/konfigurasi-dhcp-server-pada-cisco/</guid>
         <description>A.PENGERTIAN
 DHCP (Dynamic Host Configuration Protocol) sebuah server yang memiliki layanan untuk memberikan IP otomatis pada host atau komputer (client) pada jaringan TCP atau IP yang memintanya
-  LATAR BELAKANGMemahami serta mempraktikan dhcp server
-  MAKSUD DAN TUJUAN
+LATAR BELAKANGMemahami serta mempraktikan dhcp server
+MAKSUD DAN TUJUAN
 Memahami konfigurasi dhcp server
-  TAHAPAN PEKERJAAN
-  Berikut adalah langkah-langkah mengkonfigurasi DHCP Server pada router.
-Sebelumnya kita harus membuat simulasi jaringan seperti pada gambar berikut ini terlebih dahulu.</description>
+TAHAPAN PEKERJAAN
+Berikut adalah langkah-langkah mengkonfigurasi DHCP Server pada router.
+Sebelumnya kita harus membuat simulasi jaringan seperti pada gambar berikut ini terlebih dahulu.
+Langkah awal untuk konfigurasi yaitu klik pada Router</description>
       </item>
     
       <item>
@@ -1753,7 +1765,7 @@ C. MAKSUD DAN TUJUAN
 Ingin mengimplementasikanya di dunia kerja dan mengulangi Materi yang diberi tentang ssh dan telnet
 D. TAHAPAN PEKERJAAN
 TELNET Berikut Topology Telnet :
- Pertama, masukkan default gateway yang terdapat pada Router, Disini saya Memberikan IP Address pada interface fastEthernet 0/0 adalah 192.</description>
+Pertama, masukkan default gateway yang terdapat pada Router, Disini saya Memberikan IP Address pada interface fastEthernet 0/0 adalah 192.</description>
       </item>
     
       <item>
@@ -1766,16 +1778,21 @@ Konfigurasi yang akan dibahas dalam artikel ini adalah :
 Mode Router
 Memasuki mode konfigurasi global (Global Configuration Mode)
 Konfigurasi router :
-  Nama router
-  Password
-  Password terenkripsi
-  Nama interfaces
-  Perpindahan antar interfaces
-  Konfigurasi interfaces Serial
-  Konfigurasi interfaces Fast Ethernet
-  Membuat banner pesan MOTD (Message of the Day)
-  Membuat banner login
-  Menempatkan local host domain ke IP address</description>
+Nama router
+Password
+Password terenkripsi
+Nama interfaces
+Perpindahan antar interfaces
+Konfigurasi interfaces Serial
+Konfigurasi interfaces Fast Ethernet
+Membuat banner pesan MOTD (Message of the Day)
+Membuat banner login
+Menempatkan local host domain ke IP address
+Perintah no ip domain-lookup
+Perintah exec-timeout
+Menyimpan konfigurasi
+Menghapus konfigurasi
+Perintah show untuk memperifikasi konfigurasi router</description>
       </item>
     
       <item>
@@ -1784,8 +1801,8 @@ Konfigurasi router :
         <pubDate>Tue, 03 Oct 2017 05:04:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/03/konfigurasi-static-routing/</guid>
         <description>A.PENGERTIAN Routing Static adalah jenis routing yang dilakukan seorang admin dengan memasukan network network tertentu secara manual. Ciri ciri routing static adalah :
- Jalur pada suatu jaringan spesifik ditentukan oleh seorang Administrator Pengisian tabel routing / penambahan network baru diisi secara manual Biasanya digunakan untuk jaringan berskala kecil  Ada beberapa parameter yang ada pada routing static ini, yaitu
- Destination, adalah ip network tujuan, untuk default routing biasanya memakai 0.</description>
+Jalur pada suatu jaringan spesifik ditentukan oleh seorang Administrator Pengisian tabel routing / penambahan network baru diisi secara manual Biasanya digunakan untuk jaringan berskala kecil Ada beberapa parameter yang ada pada routing static ini, yaitu
+Destination, adalah ip network tujuan, untuk default routing biasanya memakai 0.0.0.0 untuk semua jaringan Gateway, adalah datagram yang dapat dicapai pada satu jaringan Pref.</description>
       </item>
     
       <item>
@@ -1796,13 +1813,14 @@ Konfigurasi router :
         <description>1. Pendahuluan
 A. Pengertian
 Cisco Adalah sebuah perusahaan yang memiliki 2 bidang usaha, yaitu:
- Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA)  B. Latar Belakang
+Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA) B. Latar Belakang
 Mengulangi dan Meringkas Materi yang Diberikan Tadi
 C. Maksud dan Tujuan
 Untuk lebih memahami materi yang diberikan tadi
 2. Alat dan Bahan
- Laptop Proyektor Internet  3. Jangka Waktu Pelaksanaan
-Jam 08:00 s/d 22:00</description>
+Laptop Proyektor Internet 3. Jangka Waktu Pelaksanaan
+Jam 08:00 s/d 22:00
+Sesi Pagi 08:00 s/d 11:30 Istirahat Jam 11:30 s/d 12:30 Sesi Siang 12:30 s/d 16:30 Istirahat 16:30 s/d 20:00 Sesi Malam 20:00 s/d 22:00 Selesai 4.</description>
       </item>
     
       <item>
@@ -1813,12 +1831,13 @@ Jam 08:00 s/d 22:00</description>
         <description>1. Pendahuluan
 A. Pengertian
 Cisco Adalah sebuah perusahaan yang memiliki 2 bidang usaha, yaitu:
- Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA)B. Latar Belakang
-Mengulangi dan Meringkas Materi yang Diberikan Tadi  C. Maksud dan Tujuan
+Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA)B. Latar Belakang
+Mengulangi dan Meringkas Materi yang Diberikan Tadi C. Maksud dan Tujuan
 Untuk lebih memahami materi yang diberikan tadi
 2. Alat dan Bahan
- Laptop Proyektor Internet  3. Jangka Waktu Pelaksanaan
-Jam 08:00 s/d 22:00</description>
+Laptop Proyektor Internet 3. Jangka Waktu Pelaksanaan
+Jam 08:00 s/d 22:00
+Sesi Pagi 08:00 s/d 11:30 Istirahat Jam 11:30 s/d 12:30 Sesi Siang 12:30 s/d 16:30 Istirahat 16:30 s/d 20:00 Sesi Malam 20:00 s/d 22:00 Selesai 4.</description>
       </item>
     
       <item>
@@ -1829,13 +1848,14 @@ Jam 08:00 s/d 22:00</description>
         <description>1. Pendahuluan
 A. Pengertian
 Cisco Adalah sebuah perusahaan yang memiliki 2 bidang usaha, yaitu:
- Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA)  B. Latar Belakang
+Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA) B. Latar Belakang
 Mengulangi dan Meringkas Materi yang Diberikan Tadi
 C. Maksud dan Tujuan
 Untuk lebih memahami materi yang diberikan tadi
 2. Alat dan Bahan
- Laptop Proyektor Internet  3. Jangka Waktu Pelaksanaan
-Jam 08:00 s/d 22:00</description>
+Laptop Proyektor Internet 3. Jangka Waktu Pelaksanaan
+Jam 08:00 s/d 22:00
+Sesi Pagi 08:00 s/d 11:30 Istirahat Jam 11:30 s/d 12:30 Sesi Siang 12:30 s/d 16:30 Istirahat 16:30 s/d 20:00 Sesi Malam 20:00 s/d 22:00 Selesai 4.</description>
       </item>
     
       <item>
@@ -1846,13 +1866,14 @@ Jam 08:00 s/d 22:00</description>
         <description>1. Pendahuluan
 A. Pengertian
 Cisco Adalah sebuah perusahaan yang memiliki 2 bidang usaha, yaitu:
- Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA)  B. Latar Belakang
+Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA) B. Latar Belakang
 Mengulangi dan Meringkas Materi yang Diberikan Tadi
 C. Maksud dan Tujuan
 Untuk lebih memahami materi yang diberikan tadi
 2. Alat dan Bahan
- Laptop Proyektor Internet  3. Jangka Waktu Pelaksanaan
-Jam 08:00 s/d 22:00</description>
+Laptop Proyektor Internet 3. Jangka Waktu Pelaksanaan
+Jam 08:00 s/d 22:00
+Sesi Pagi 08:00 s/d 11:30 Istirahat Jam 11:30 s/d 12:30 Sesi Siang 12:30 s/d 16:30 Istirahat 16:30 s/d 20:00 Sesi Malam 20:00 s/d 22:00 Selesai 4.</description>
       </item>
     
       <item>
@@ -1863,13 +1884,14 @@ Jam 08:00 s/d 22:00</description>
         <description>1. Pendahuluan
 A. Pengertian
 Cisco Adalah sebuah perusahaan yang memiliki 2 bidang usaha, yaitu:
- Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA)  B. Latar Belakang
+Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA) B. Latar Belakang
 Mengulangi dan Meringkas Materi yang Diberikan Tadi
 C. Maksud dan Tujuan
 Untuk lebih memahami materi yang diberikan tadi
 2. Alat dan Bahan
- Laptop Proyektor Internet  3. Jangka Waktu Pelaksanaan
-Jam 08:00 s/d 22:00</description>
+Laptop Proyektor Internet 3. Jangka Waktu Pelaksanaan
+Jam 08:00 s/d 22:00
+Sesi Pagi 08:00 s/d 11:30 Istirahat Jam 11:30 s/d 12:30 Sesi Siang 12:30 s/d 16:30 Istirahat 16:30 s/d 20:00 Sesi Malam 20:00 s/d 22:00 Selesai 4.</description>
       </item>
     
       <item>
@@ -1989,7 +2011,7 @@ B. Pengertian
 Apa itu proxy?
 Proxy merupakan perangkat yang bersifat &amp;ldquo;middleman&amp;rdquo;, yang bekerja diantara client &amp;amp; Server, bertugas menghadle transmisi request ataupun respon. Data yang melewati proxy, bisa diubah oleh proxy atau tidak diubah sama sekali, tergantung implementasi fitur dan kemampuan proxy.
 Manfaat Proxy
-  Security : Proxy mampu melakukan pengecekan terhadap incoming response &amp;amp; outgoing request, sehingga memungkinkan untuk melakukan block paket yang tidak diharapkan</description>
+Security : Proxy mampu melakukan pengecekan terhadap incoming response &amp;amp; outgoing request, sehingga memungkinkan untuk melakukan block paket yang tidak diharapkan</description>
       </item>
     
       <item>
@@ -2042,8 +2064,7 @@ Pada kali ini, yang saya posting yaitu tentang memfungsikan mikrotik sebagai swi
 B. Pengertian
 Switch merupakan penghubung beberapa alat untuk membentuk suatu Local Area Network (LAN). Routerboard Mikrotik RB750 telah disediakan fungsi switch, yang mana jika sobat menginginkan men-share internet lebih dari satu komputer atau pada umumnya topologi yang digunakan kebanyak internet di share melalui media wifi dan lan menggunakan kabel.
 C. Latar belakang
-Ingin menambah pengetahuan
-D. Tujuan</description>
+Ingin menambah pengetahuan</description>
       </item>
     
       <item>
@@ -2076,7 +2097,7 @@ Routing Information Protocol (RIP) adalah sebuah protokol routing dinamis yang d
         <description>PENDAHULUAN
 Ebizu adalah sebuah perusahaan DATA yang mengumpulkan data untuk tujuan tertentu. Ebizu ini memiliki banyak produk dintaranya adalah Maniz, Maniz sendiri adalah aplikasi yang menawarkan keuntungan berupa Voucher belanja, makan dll.
 ALAT DAN BAHAN
- Laptop Proyektor LCD Koneksi Internet  JANGKA WAKTU TRAINING
+Laptop Proyektor LCD Koneksi Internet JANGKA WAKTU TRAINING
 Jam 10 pagi s/d 4 sore
 TAHAPAN DAN PEMBAHASAN Training
 Di hari kedua ini dari pihak trainer, akan mereview apa yang telah mereka sampaikan kemarin, contoh saat akan melakukan Validasi harus melihat 4 aspek penting.</description>
@@ -2090,7 +2111,7 @@ Di hari kedua ini dari pihak trainer, akan mereview apa yang telah mereka sampai
         <description>PENDAHULUAN
 Ebizu adalah sebuah perusahaan DATA yang mengumpulkan data untuk tujuan tertentu. Ebizu ini memiliki banyak produk dintaranya adalah Maniz, Maniz sendiri adalah aplikasi yang menawarkan keuntungan berupa Voucher belanja, makan dll.
 ALAT DAN BAHAN
- Laptop Proyektor LCD Koneksi Internet  JANGKA WAKTU TRAINING
+Laptop Proyektor LCD Koneksi Internet JANGKA WAKTU TRAINING
 jam 9 pagi s/d 4 sore
 TAHAPAN DAN PEMBAHASAN Training
 Training ini memberikan pengarahan tentang aplikasi manis dan fitur Snap &amp;amp; Earn, untuk teman teman BLC yang berminat menjadi Operator dari Manis harus mengikuti dengan baik training ini.</description>
@@ -2145,8 +2166,9 @@ Agar pengunjung blog dapat mengetahui bagaimana cara mengupgrade versi mikrotik
 D. Hasil yang diharapkan
 Dapat mengikuti tahapan kerjanya
 E. Alat dan bahan
- mikrotik akses internet kabel UTP  F. Jangka waktu pelaksanaan
-Waktu yang dibutuhkan tergantung dari koneksi yang digunakan</description>
+mikrotik akses internet kabel UTP F. Jangka waktu pelaksanaan
+Waktu yang dibutuhkan tergantung dari koneksi yang digunakan
+G. Langkah kerja</description>
       </item>
     
       <item>
@@ -2282,11 +2304,11 @@ Agar bisa mengubah desimal ke biner
 C.TUJUAN
 Untuk menghitung atau mengetahui cara konfersi
 D. ALAT DAN BAHAN
- pensil/pulpen kertas alat hitung (calculator)  E. DURASI PELAKSANAAN
+pensil/pulpen kertas alat hitung (calculator) E. DURASI PELAKSANAAN
 10 - 20 menit
 F. LANGKAH KERJA
-  tentukan bilangan yang ingin di konfersi baik desimal maupun biner
-  semisalnya kita akan mengkonfersi bilangan desimal ke biner</description>
+tentukan bilangan yang ingin di konfersi baik desimal maupun biner
+semisalnya kita akan mengkonfersi bilangan desimal ke biner</description>
       </item>
     
       <item>
@@ -2504,7 +2526,7 @@ Pada postingan kali ini saya akan membagi sedikit ilmu terkait dengan virtualisa
 B. PENGERTIAN
 TOPOLOGI MENURUT WIKIPEDIA
 Topologi Jaringan Sebuah LAN dapat diimplementasikan dengan berbagai macam topologi. Topologi yang di maksud di sini merupakan struktur jaringan fisik yang digunakan untuk mengimplementasikan LAN tersebut. Topologi dasar yang bisa digunakan dalam jaringan komputer adalah:
- Topologi Bus (Linear) Topologi Ring (Cincin) Topologi Star (Bintang) Topologi Tree (Pohon) Topologi Mesh (web)  Topologi pengembangan dari ketiga di atas biasanya berupa topologi Tree (Pohon), yang merupakan pengembangan dari star dan Bus, topologi Mash atau Hybrid atau Multipoint atau Web yang merupakan pengembangan dari topologi Point to Point (bus), topologi Loop yang merupakan pengembangan dari topologi Ring Ketiganya memiliki kelebihan dan kekurangan masing-masing.</description>
+Topologi Bus (Linear) Topologi Ring (Cincin) Topologi Star (Bintang) Topologi Tree (Pohon) Topologi Mesh (web) Topologi pengembangan dari ketiga di atas biasanya berupa topologi Tree (Pohon), yang merupakan pengembangan dari star dan Bus, topologi Mash atau Hybrid atau Multipoint atau Web yang merupakan pengembangan dari topologi Point to Point (bus), topologi Loop yang merupakan pengembangan dari topologi Ring Ketiganya memiliki kelebihan dan kekurangan masing-masing.</description>
       </item>
     
       <item>
@@ -2563,7 +2585,7 @@ Hello, pada kesempatan kali ini saya memposting bagaimana sih menginstal LAMP? N
 #Pengertian
 LAMP adalah istilah yang merupakan singkatan dari Linux, Apache, MySQL dan Perl/PHP/Phyton. Merupakan sebuah paket perangkat lunak bebas yang digunakan untuk menjalankan sebuah aplikasi secara lengkap.
 Komponen-komponen dari LAMP :
- Linux – sistem operasi Apache HTTP Server – web server MariaDB atau MySQL – sistem basis data PHP atau Perl atau Python – bahasa pemrograman yang dipakai  #Latar Belakang</description>
+Linux – sistem operasi Apache HTTP Server – web server MariaDB atau MySQL – sistem basis data PHP atau Perl atau Python – bahasa pemrograman yang dipakai #Latar Belakang</description>
       </item>
     
       <item>
@@ -2597,7 +2619,7 @@ Assalamu&amp;rsquo;alaikum wr.wb
 Pada kesempatan ini saya akan berbagi,tentang Sistem Telekomunikasi
 B. PENGERTIAN
 Telekomunikasi adalah teknik pengiriman atau penyampaian infomasi, dari suatu tempat ke tempat lain. Dalam kaitannya dengan &amp;rsquo;telekomunikasi&amp;rsquo; bentuk komunikasi jarak jauh dapat dibedakan atas tiga macam:
- Komunikasi Satu Arah (Simplex). Dalam komunikasi satu arah (Simplex) pengirim dan penerima informasi tidak dapat menjalin komunikasi yang berkesinambungan melalui media yang sama. Contoh :Pager, televisi, dan radio. Komunikasi Dua Arah (Duplex).</description>
+Komunikasi Satu Arah (Simplex). Dalam komunikasi satu arah (Simplex) pengirim dan penerima informasi tidak dapat menjalin komunikasi yang berkesinambungan melalui media yang sama. Contoh :Pager, televisi, dan radio. Komunikasi Dua Arah (Duplex).</description>
       </item>
     
       <item>
@@ -2652,7 +2674,7 @@ Tujuan dari postingan ini agar si pembaca dapat mempraktekkan dan mengetahui bag
 Proxmox VE (Virtual Environment) adalah sebuah distro Linux virtualisasi berbasis Debian ( 64 bit) yang mengusung OpenZV dan KVM, dengan KVM kita tidak hanya bisa menginstall linux saja akan tetapi Operating system windows pun bisa kita instal. Namun yang membuat istimewa dari proxmox adalah kemudahan dalam installasi dan administrasi berbasis Web.
 Latar Belakang
 Beberapa keuntungan menggunakan Proxmox sebagai berikut
- Kinerja terbaik. Instalasi yang telah dioptimalkan, sehingga lebih cepat. Mudah dalam manajemen.</description>
+Kinerja terbaik. Instalasi yang telah dioptimalkan, sehingga lebih cepat. Mudah dalam manajemen.</description>
       </item>
     
       <item>
@@ -2736,9 +2758,9 @@ MikroTikls [dengan trade name MikroTik®] didirikan tahun 1995 bertujuan mengemb
         <pubDate>Mon, 24 Jul 2017 13:52:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/24/instalasi-linux-mint-18.1-sarena/</guid>
         <description>Alat dan bahan:
- 1 set pc atau laptop flashdisk booting linux mint 18.1 cinnamon 64-bit  Langkah kerja:
-  Siapkan sebuah pc atau laptop yang akan diinstallkan linux mint 18.1 cinnamon 64-bit, serta flashdisk yang berisi booting sistem operasi yang akan diinstal.
-  Nyalakan pc atau laptop yang ingin di install, setalah itu masuk pada bios dan konfigurasi agar flashdisk booting yang telah ada dapat dipakai yaitu dengan cara masuk di menu “Boot” dan meletakkan jenis USB ke deretan atas.</description>
+1 set pc atau laptop flashdisk booting linux mint 18.1 cinnamon 64-bit Langkah kerja:
+Siapkan sebuah pc atau laptop yang akan diinstallkan linux mint 18.1 cinnamon 64-bit, serta flashdisk yang berisi booting sistem operasi yang akan diinstal.
+Nyalakan pc atau laptop yang ingin di install, setalah itu masuk pada bios dan konfigurasi agar flashdisk booting yang telah ada dapat dipakai yaitu dengan cara masuk di menu “Boot” dan meletakkan jenis USB ke deretan atas.</description>
       </item>
     
       <item>
@@ -2747,9 +2769,9 @@ MikroTikls [dengan trade name MikroTik®] didirikan tahun 1995 bertujuan mengemb
         <pubDate>Sat, 22 Jul 2017 13:43:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/22/sejarah-singkat-blc-telkom-klaten-serta-perkenalan-dan-pertemuan-pertama/</guid>
         <description>Assalamualaikum Wr.Wb
- Perkenalkan saya Faizar Septiawan atau bisa di panggil Icar berasal dari Bulukumba, Sulawesi Selatan dan sekolah di SMKN 1 Bulukumba. Dipostingan pertama ini saya akan tuliskan sejarah dan review sebuah tempat magang/prakerin yang saya tempati. Tempat tersebut bernama BLC Telkom Klaten, beralamat di Jl.Srigading No.7 Tonggalan, Klaten Tengah
+Perkenalkan saya Faizar Septiawan atau bisa di panggil Icar berasal dari Bulukumba, Sulawesi Selatan dan sekolah di SMKN 1 Bulukumba. Dipostingan pertama ini saya akan tuliskan sejarah dan review sebuah tempat magang/prakerin yang saya tempati. Tempat tersebut bernama BLC Telkom Klaten, beralamat di Jl.Srigading No.7 Tonggalan, Klaten Tengah
 Sejarah BLC Telkom Klaten
- &amp;ldquo;Saya melihat Teknologi Informasi (TI) khususnya penggunaan dan pemanfaatan Internet di Indonesia seperti sebilah pisau yang sangat tajam dijual bebas dan dibeli oleh orang-orang tapi tidak ada keterangan penggunaannya, manfaat segi positif dan negatifnya.</description>
+&amp;ldquo;Saya melihat Teknologi Informasi (TI) khususnya penggunaan dan pemanfaatan Internet di Indonesia seperti sebilah pisau yang sangat tajam dijual bebas dan dibeli oleh orang-orang tapi tidak ada keterangan penggunaannya, manfaat segi positif dan negatifnya.</description>
       </item>
     
   </channel>

@@ -25,7 +25,8 @@ urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host=&amp;#39;api.telegram
         <link>https://sibunglon.com/2019/07/15/create-new-super-user-for-access-django-admin-interface-in-open-edx/</link>
         <pubDate>Mon, 15 Jul 2019 03:09:25 +0700</pubDate>
         <guid>https://sibunglon.com/2019/07/15/create-new-super-user-for-access-django-admin-interface-in-open-edx/</guid>
-        <description>I need to use the Django admin interface, but I don&amp;rsquo;t know what users can use to log in.
+        <description>
+I need to use the Django admin interface, but I don&amp;rsquo;t know what users can use to log in.
 Solution sudo -u edxapp bash source /edx/app/edxapp/edxapp_env python /edx/app/edxapp/edx-platform/manage.py --settings=aws createsuperuser </description>
       </item>
     

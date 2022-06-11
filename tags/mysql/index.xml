@@ -17,7 +17,7 @@
         <guid>https://sibunglon.com/2021/05/15/error-install-mysqldb-because-cant-find-my_config.h/</guid>
         <description>Usually issues are found because there are some dependencies that are required but not installed yet. Make sure libmysqlclient-dev is installed, also check the /usr/include/mysql directory to make sure the file my_config.h does not exist like the message on the log.
 For the case I&amp;rsquo;ve found, the file my_config.h is not in the /usr/include/mysql directory and for fixing it use the following command:
-$ cd /usr/include/mysql $ sudo wget https://raw.githubusercontent.com/paulfitz/mysql-connector-c/master/include/my_config.h -O my_config.</description>
+$ cd /usr/include/mysql $ sudo wget https://raw.</description>
       </item>
     
       <item>
@@ -25,11 +25,12 @@ $ cd /usr/include/mysql $ sudo wget https://raw.githubusercontent.com/paulfitz/m
         <link>https://sibunglon.com/2020/09/05/create-a-read-only-mysql-user/</link>
         <pubDate>Sat, 05 Sep 2020 02:54:59 +0800</pubDate>
         <guid>https://sibunglon.com/2020/09/05/create-a-read-only-mysql-user/</guid>
-        <description>There are times when you need account read only access to a database.
+        <description>
+There are times when you need account read only access to a database.
 To create a read only database user MySQL, do the following steps:
-  Login as a MySQL administrator.
-  Create a new MySQL user account.
-  &amp;gt;&amp;gt;&amp;gt;CREATEUSER&amp;#39;dapenda&amp;#39;@&amp;#39;%&amp;#39;IDENTIFIEDBY&amp;#39;mypassword&amp;#39;;Grant the SELECT only privilege to user.  &amp;gt;&amp;gt;&amp;gt;GRANTSELECTONsite.*TO&amp;#39;dapenda&amp;#39;@&amp;#39;%&amp;#39;;Reload grant privilege for re-read access table MySQL.  &amp;gt;&amp;gt;&amp;gt;FLUSHPRIVILEGES;Done.  </description>
+Login as a MySQL administrator.
+Create a new MySQL user account.
+&amp;gt;&amp;gt;&amp;gt; CREATE USER &amp;#39;dapenda&amp;#39;@&amp;#39;%&amp;#39; IDENTIFIED BY &amp;#39;mypassword&amp;#39;; Grant the SELECT only privilege to user. &amp;gt;&amp;gt;&amp;gt; GRANT SELECT ON site.* TO &amp;#39;dapenda&amp;#39;@&amp;#39;%&amp;#39;; Reload grant privilege for re-read access table MySQL. &amp;gt;&amp;gt;&amp;gt; FLUSH PRIVILEGES; Done. </description>
       </item>
     
       <item>
@@ -38,7 +39,7 @@ To create a read only database user MySQL, do the following steps:
         <pubDate>Sun, 26 Jul 2020 21:05:49 +0800</pubDate>
         <guid>https://sibunglon.com/2020/07/26/database-returned-an-invalid-value-in-queryset.datetimes/</guid>
         <description>After create new action on the Django admin pages, it redirects to my site with the message a server error. When check the file /edx/var/log/supervisor/lms-stderr.log i find this:
-Traceback (most recent call last): File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/exception.py&amp;#34;, line 41, in inner response = get_response(request) File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;#34;, line 249, in _legacy_get_response response = self._get_response(request) File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;#34;, line 217, in _get_response response = self.process_exception_by_middleware(e, request) File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;#34;, line 215, in _get_response response = response.render() File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.</description>
+Traceback (most recent call last): File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/exception.py&amp;#34;, line 41, in inner response = get_response(request) File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;#34;, line 249, in _legacy_get_response response = self._get_response(request) File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;#34;, line 217, in _get_response response = self.process_exception_by_middleware(e, request) File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;#34;, line 215, in _get_response response = response.</description>
       </item>
     
       <item>
@@ -75,7 +76,7 @@ Pada kesempatan ini saya memposting lagi dan masih mengenai server
 B. Pengertian
 LAMP adalah istilah yang merupakan singkatan dariLinux,Apache,MySQL danPerl/PHP/Phyton. Merupakan sebuah paket perangkat lunak bebas yang digunakan untuk menjalankan sebuah aplikasi secara lengkap.
 Komponen-komponen dari LAMP :
- Linux – sistem operasi Apache HTTP Server – web server MariaDB atau MySQL – sistem basis data PHP atau Perl atau Python – bahasa pemrograman yang dipakai  C. Latar belakang</description>
+Linux – sistem operasi Apache HTTP Server – web server MariaDB atau MySQL – sistem basis data PHP atau Perl atau Python – bahasa pemrograman yang dipakai C. Latar belakang</description>
       </item>
     
       <item>
@@ -111,7 +112,7 @@ Hello, pada kesempatan kali ini saya memposting bagaimana sih menginstal LAMP? N
 #Pengertian
 LAMP adalah istilah yang merupakan singkatan dari Linux, Apache, MySQL dan Perl/PHP/Phyton. Merupakan sebuah paket perangkat lunak bebas yang digunakan untuk menjalankan sebuah aplikasi secara lengkap.
 Komponen-komponen dari LAMP :
- Linux – sistem operasi Apache HTTP Server – web server MariaDB atau MySQL – sistem basis data PHP atau Perl atau Python – bahasa pemrograman yang dipakai  #Latar Belakang</description>
+Linux – sistem operasi Apache HTTP Server – web server MariaDB atau MySQL – sistem basis data PHP atau Perl atau Python – bahasa pemrograman yang dipakai #Latar Belakang</description>
       </item>
     
   </channel>

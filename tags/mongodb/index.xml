@@ -17,7 +17,7 @@
         <guid>https://sibunglon.com/2020/09/05/create-a-read-only-mongodb-user/</guid>
         <description>There are times when you need account read only access to a database.
 To create a read only database user MongoDB, do the following steps:
- Login as a MongoDB administrator.  $ mongo -u admin -p --authenticationDatabase admin Show list of database on MongoDB.  &amp;gt;&amp;gt;&amp;gt; show dbs Select database.  &amp;gt;&amp;gt;&amp;gt; use edxapp Create a new user with permission read only on the database.  &amp;gt;&amp;gt;&amp;gt;db.createUser({user:&amp;#34;edxapp_read&amp;#34;,pwd:&amp;#34;password&amp;#34;,roles:[{role:&amp;#34;read&amp;#34;,db:&amp;#34;edxapp&amp;#34;}]})Done.  </description>
+Login as a MongoDB administrator. $ mongo -u admin -p --authenticationDatabase admin Show list of database on MongoDB. &amp;gt;&amp;gt;&amp;gt; show dbs Select database. &amp;gt;&amp;gt;&amp;gt; use edxapp Create a new user with permission read only on the database. &amp;gt;&amp;gt;&amp;gt; db.createUser({user: &amp;#34;edxapp_read&amp;#34;, pwd: &amp;#34;password&amp;#34;, roles: [{role: &amp;#34;read&amp;#34;, db: &amp;#34;edxapp&amp;#34;}]}) Done.</description>
       </item>
     
   </channel>

@@ -17,7 +17,7 @@
         <guid>https://sibunglon.com/2020/02/10/quick-setup-go-on-macos/</guid>
         <description>Go, also known as Golang, is a statically typed, compiled programming language designed at Google by Robert Griesemer, Rob Pike, and Ken Thompson. Go is syntactically similar to C, but with memory safety, garbage collection, structural typing, and CSP-style concurrency.
 Go is an open source programming language that makes it easy to build simple, reliable, and efficient software.
- Install go with homebrew  $ brew install go Setup go environment  Edit the bash profile file used, edit the ~/.</description>
+Install go with homebrew $ brew install go Setup go environment Edit the bash profile file used, edit the ~/.</description>
       </item>
     
       <item>
@@ -45,8 +45,9 @@ Does the node version in the development environment need to be upgraded? I don&
         <pubDate>Sun, 29 Dec 2019 20:09:28 +0700</pubDate>
         <guid>https://sibunglon.com/2019/12/29/disable-forticlient-auto-start-on-macos/</guid>
         <description>Open terminal or shell.
-  Open the file /Library/LaunchAgents/com.fortinet.forticlient.fct_launcher.plist using your favorite text editor, here I use vim.
-  $ sudo vi /Library/LaunchAgents/com.fortinet.forticlient.fct_launcher.plist Default contents of the com.fortinet.forticlient.fct_launcher.plist file as follows.  &amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt; &amp;lt;!DOCTYPE plist PUBLIC &amp;#34;-//Apple//DTD PLIST 1.0//EN&amp;#34; &amp;#34;http://www.apple.com/DTDs/PropertyList-1.0.dtd&amp;#34;&amp;gt; &amp;lt;plist version=&amp;#34;1.0&amp;#34;&amp;gt; &amp;lt;dict&amp;gt; &amp;lt;key&amp;gt;Label&amp;lt;/key&amp;gt; &amp;lt;string&amp;gt;com.fortinet.fct_launcher&amp;lt;/string&amp;gt; &amp;lt;key&amp;gt;Program&amp;lt;/key&amp;gt; &amp;lt;string&amp;gt;/Library/Application Support/Fortinet/FortiClient/bin/FCTLauncher&amp;lt;/string&amp;gt; &amp;lt;key&amp;gt;RunAtLoad&amp;lt;/key&amp;gt; &amp;lt;true/&amp;gt; &amp;lt;/dict&amp;gt; &amp;lt;/plist&amp;gt; Change the word true to false, so that the contents of the com.</description>
+Open the file /Library/LaunchAgents/com.fortinet.forticlient.fct_launcher.plist using your favorite text editor, here I use vim.
+$ sudo vi /Library/LaunchAgents/com.fortinet.forticlient.fct_launcher.plist Default contents of the com.fortinet.forticlient.fct_launcher.plist file as follows. &amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt; &amp;lt;!DOCTYPE plist PUBLIC &amp;#34;-//Apple//DTD PLIST 1.0//EN&amp;#34; &amp;#34;http://www.apple.com/DTDs/PropertyList-1.0.dtd&amp;#34;&amp;gt; &amp;lt;plist version=&amp;#34;1.0&amp;#34;&amp;gt; &amp;lt;dict&amp;gt; &amp;lt;key&amp;gt;Label&amp;lt;/key&amp;gt; &amp;lt;string&amp;gt;com.fortinet.fct_launcher&amp;lt;/string&amp;gt; &amp;lt;key&amp;gt;Program&amp;lt;/key&amp;gt; &amp;lt;string&amp;gt;/Library/Application Support/Fortinet/FortiClient/bin/FCTLauncher&amp;lt;/string&amp;gt; &amp;lt;key&amp;gt;RunAtLoad&amp;lt;/key&amp;gt; &amp;lt;true/&amp;gt; &amp;lt;/dict&amp;gt; &amp;lt;/plist&amp;gt; Change the word true to false, so that the contents of the com.fortinet.forticlient.fct_launcher.plist file as follows.
+&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?</description>
       </item>
     
       <item>
@@ -65,7 +66,7 @@ $ find ~ -name .DS_Store -delete This will find the .</description>
         <pubDate>Sun, 29 Dec 2019 14:07:36 +0700</pubDate>
         <guid>https://sibunglon.com/2019/12/29/add-trusted-site-on-macos/</guid>
         <description>There is a site that we may already trust but because the SSL certificate has expired or is invalid, we are prevented from accessing the site. In Google Chrome the advanced button will appear and there will be another proceed to site button that can help to access the site, but the proced to site button will be removed from Google Chrome macOS. Then how to access the site?
- Click Not Secure on the address bar&amp;gt; click Certificate &amp;gt; Then drag and drop the existing certificate into any directory.</description>
+Click Not Secure on the address bar&amp;gt; click Certificate &amp;gt; Then drag and drop the existing certificate into any directory.</description>
       </item>
     
   </channel>

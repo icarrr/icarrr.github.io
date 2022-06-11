@@ -15,7 +15,7 @@
         <link>https://sibunglon.com/2018/12/01/lindungi-web-server-apache2-dengan-ssl-debian-8/</link>
         <pubDate>Sat, 01 Dec 2018 15:14:00 +0000</pubDate>
         <guid>https://sibunglon.com/2018/12/01/lindungi-web-server-apache2-dengan-ssl-debian-8/</guid>
-        <description>Pengertian  HTTPS juga disebut HTTP melalui TLS, HTTP melalui SSL, dan HTTP Secure adalah protokol untuk komunikasi yang aman melalui jaringan komputer yang banyak digunakan di Internet. HTTPS terdiri dari komunikasi melalui Hypertext Transfer Protocol (HTTP) dalam koneksi yang terenkripsi dengan Transport Layer Security atau pendahulunya Secure Sockets Layer. Fungsi utama untuk HTTPS adalah autentikasi dari website yang dikunjungi dan perlindungan privasi dan integritas data yang dipertukarkan. SSL (Secure Sockets Layer) adalah teknologi keamanan standar untuk membangun link yang dienkripsi antara web server dan browser.</description>
+        <description>Pengertian HTTPS juga disebut HTTP melalui TLS, HTTP melalui SSL, dan HTTP Secure adalah protokol untuk komunikasi yang aman melalui jaringan komputer yang banyak digunakan di Internet. HTTPS terdiri dari komunikasi melalui Hypertext Transfer Protocol (HTTP) dalam koneksi yang terenkripsi dengan Transport Layer Security atau pendahulunya Secure Sockets Layer. Fungsi utama untuk HTTPS adalah autentikasi dari website yang dikunjungi dan perlindungan privasi dan integritas data yang dipertukarkan. SSL (Secure Sockets Layer) adalah teknologi keamanan standar untuk membangun link yang dienkripsi antara web server dan browser.</description>
       </item>
     
       <item>
@@ -57,7 +57,7 @@ Pada kesempatan ini saya akan mengimplementasikan membangun sebuah sistem inform
 B. Pengertian
 (OpenSID) adalah Sistem Informasi Desa (SID) yang sengaja dibuat supaya terbuka dan dapat dikembangkan bersama-sama oleh komunitas peduli SID.
 SID adalah aplikasi komputer yang membantu desa, agar:
- Kantor desa lebih efisien dan efektif Pemerintah desa lebih transparan dan akuntabel Layanan publik lebih baik Warga mendapat akses lebih baik pada informasi desa  OpenSID turut membantu agar ke semua 74ribu+ desa di Indonesia menerapkan sistem informasi untuk memajukan desanya.</description>
+Kantor desa lebih efisien dan efektif Pemerintah desa lebih transparan dan akuntabel Layanan publik lebih baik Warga mendapat akses lebih baik pada informasi desa OpenSID turut membantu agar ke semua 74ribu+ desa di Indonesia menerapkan sistem informasi untuk memajukan desanya.</description>
       </item>
     
       <item>
@@ -77,7 +77,7 @@ Apa itu shell ? shell adalah program (penterjemah perintah) yang menjembatani us
         <pubDate>Fri, 20 Oct 2017 18:59:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/20/perbandingan-open-source-dan-closed-source/</guid>
         <description>1) Pengertian
- Sumber terbuka (bahasa Inggris: open source) adalah sistem pengembangan yang tidak dikoordinasi oleh suatu individu / lembaga pusat, tetapi oleh para pelaku yang bekerja sama dengan memanfaatkan kode sumber (source-code) yang tersebar dan tersedia bebas (biasanya menggunakan fasilitas komunikasi internet). Pola pengembangan ini mengambil model ala bazaar, sehingga pola Open Source ini memiliki ciri bagi komunitasnya yaitu adanya dorongan yang bersumber dari budaya memberi, yang artinya ketika suatu komunitas menggunakan sebuah program Open Source dan telah menerima sebuah manfaat kemudian akan termotivasi untuk menimbulkan sebuah pertanyaan apa yang bisa pengguna berikan balik kepada orang banyak.</description>
+Sumber terbuka (bahasa Inggris: open source) adalah sistem pengembangan yang tidak dikoordinasi oleh suatu individu / lembaga pusat, tetapi oleh para pelaku yang bekerja sama dengan memanfaatkan kode sumber (source-code) yang tersebar dan tersedia bebas (biasanya menggunakan fasilitas komunikasi internet). Pola pengembangan ini mengambil model ala bazaar, sehingga pola Open Source ini memiliki ciri bagi komunitasnya yaitu adanya dorongan yang bersumber dari budaya memberi, yang artinya ketika suatu komunitas menggunakan sebuah program Open Source dan telah menerima sebuah manfaat kemudian akan termotivasi untuk menimbulkan sebuah pertanyaan apa yang bisa pengguna berikan balik kepada orang banyak.</description>
       </item>
     
       <item>
@@ -113,7 +113,7 @@ Agar data yang saat penting itu tidak hilang karena ada kesalahan dan dapat meny
         <guid>https://sibunglon.com/2017/10/19/implementasi-manual-subnetting-kelas-c/</guid>
         <description>A.Pendahuluan
 Pada kesempatan kali ini saya akan berbagi tentang ip/subnetting gays. kenapa saya membahas ini karena kita sebagai nak jaringan mesti perlu paham begaimana cara subneting.
- Pengertian  Subnetting adalah upaya/proses untuk memecah sebuah network dengan jumlah host yang cukup banyak, menjadi beberapa network dengan jumlah host yang lebih sedikit. Gunanya Subnetting untuk menentukan batas network ID dalam suatu subnet, Memperbanyak jumlah network (LAN), Mengurangi jumlah host dalam satu network, untuk mengurangi tingkat kongesti (gangguan/ tabrakan) lalulintas data dalam suatu network.</description>
+Pengertian Subnetting adalah upaya/proses untuk memecah sebuah network dengan jumlah host yang cukup banyak, menjadi beberapa network dengan jumlah host yang lebih sedikit. Gunanya Subnetting untuk menentukan batas network ID dalam suatu subnet, Memperbanyak jumlah network (LAN), Mengurangi jumlah host dalam satu network, untuk mengurangi tingkat kongesti (gangguan/ tabrakan) lalulintas data dalam suatu network.</description>
       </item>
     
       <item>
@@ -246,7 +246,7 @@ Pada kesempatan ini saya memposting lagi dan masih mengenai server
 B. Pengertian
 LAMP adalah istilah yang merupakan singkatan dariLinux,Apache,MySQL danPerl/PHP/Phyton. Merupakan sebuah paket perangkat lunak bebas yang digunakan untuk menjalankan sebuah aplikasi secara lengkap.
 Komponen-komponen dari LAMP :
- Linux – sistem operasi Apache HTTP Server – web server MariaDB atau MySQL – sistem basis data PHP atau Perl atau Python – bahasa pemrograman yang dipakai  C. Latar belakang</description>
+Linux – sistem operasi Apache HTTP Server – web server MariaDB atau MySQL – sistem basis data PHP atau Perl atau Python – bahasa pemrograman yang dipakai C. Latar belakang</description>
       </item>
     
       <item>
@@ -288,8 +288,7 @@ Virtual LAN atau disingkat VLAN merupakan sekelompok perangkat pada satu LAN ata
         <pubDate>Wed, 11 Oct 2017 12:38:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/11/sharing-bersama-materi-bandwith-management-queue/</guid>
         <description>A. Pendahuluan
-Sebesar besarnya bandwith kecepatan internet tidak akan bisa membuat kita para pengguna internet puas-puas kata tersebut yang sering saya dengarkan ketika saya prakerin, maksudnya adalah kita sebagai user dari internet tidak akan puas dengan bandwith yang lumayan besar karena sebesar apapun bandwith yang kita miliki, kita tidak akan bisa mengakses internet secepat yang ada dalam bayangan kita, kalian tau apa penyebabnya? jika belum mari kita bahas bersama
-B. Pengertian</description>
+Sebesar besarnya bandwith kecepatan internet tidak akan bisa membuat kita para pengguna internet puas-puas kata tersebut yang sering saya dengarkan ketika saya prakerin, maksudnya adalah kita sebagai user dari internet tidak akan puas dengan bandwith yang lumayan besar karena sebesar apapun bandwith yang kita miliki, kita tidak akan bisa mengakses internet secepat yang ada dalam bayangan kita, kalian tau apa penyebabnya? jika belum mari kita bahas bersama</description>
       </item>
     
       <item>
@@ -323,7 +322,7 @@ Web referensi adalah suatu website atau situs atau laman yang memuat pembahasan 
         <description>A. Pendahuluan
 Kali ini saya berbagi tentang bagaimana menginstall linux Debian 8.6 melalui pada proxmox. Proxmox digunakan sebagai virtualisasi.
 B. Pengertian
-Debian adalah sistem operasi komputer yang tersusun dari paket-paket perangkat lunak yang dirilis sebagai perangkat lunak bebas dan terbuka dengan lisensi mayoritas GNU General Public License dan lisensi perangkat lunak bebas lainnya. Debian GNU/Linux memuat perkakas sistem operasi GNU dan kernel Linux merupakan distribusi Linux yang popmuler dan berpengaruh. Debian didistribusikan dengan akses ke repositori dengan ribuan paket perangkat lunak yang siap untuk instalasi dan digunakan.</description>
+Debian adalah sistem operasi komputer yang tersusun dari paket-paket perangkat lunak yang dirilis sebagai perangkat lunak bebas dan terbuka dengan lisensi mayoritas GNU General Public License dan lisensi perangkat lunak bebas lainnya. Debian GNU/Linux memuat perkakas sistem operasi GNU dan kernel Linux merupakan distribusi Linux yang popmuler dan berpengaruh.</description>
       </item>
     
       <item>
@@ -344,12 +343,13 @@ adalah istilah umum yang mengacu kepada abstraksi dari sumber daya komputer. Def
         <guid>https://sibunglon.com/2017/10/07/konfigurasi-dhcp-server-pada-cisco/</guid>
         <description>A.PENGERTIAN
 DHCP (Dynamic Host Configuration Protocol) sebuah server yang memiliki layanan untuk memberikan IP otomatis pada host atau komputer (client) pada jaringan TCP atau IP yang memintanya
-  LATAR BELAKANGMemahami serta mempraktikan dhcp server
-  MAKSUD DAN TUJUAN
+LATAR BELAKANGMemahami serta mempraktikan dhcp server
+MAKSUD DAN TUJUAN
 Memahami konfigurasi dhcp server
-  TAHAPAN PEKERJAAN
-  Berikut adalah langkah-langkah mengkonfigurasi DHCP Server pada router.
-Sebelumnya kita harus membuat simulasi jaringan seperti pada gambar berikut ini terlebih dahulu.</description>
+TAHAPAN PEKERJAAN
+Berikut adalah langkah-langkah mengkonfigurasi DHCP Server pada router.
+Sebelumnya kita harus membuat simulasi jaringan seperti pada gambar berikut ini terlebih dahulu.
+Langkah awal untuk konfigurasi yaitu klik pada Router</description>
       </item>
     
       <item>
@@ -385,7 +385,7 @@ C. MAKSUD DAN TUJUAN
 Ingin mengimplementasikanya di dunia kerja dan mengulangi Materi yang diberi tentang ssh dan telnet
 D. TAHAPAN PEKERJAAN
 TELNET Berikut Topology Telnet :
- Pertama, masukkan default gateway yang terdapat pada Router, Disini saya Memberikan IP Address pada interface fastEthernet 0/0 adalah 192.</description>
+Pertama, masukkan default gateway yang terdapat pada Router, Disini saya Memberikan IP Address pada interface fastEthernet 0/0 adalah 192.</description>
       </item>
     
       <item>
@@ -398,16 +398,21 @@ Konfigurasi yang akan dibahas dalam artikel ini adalah :
 Mode Router
 Memasuki mode konfigurasi global (Global Configuration Mode)
 Konfigurasi router :
-  Nama router
-  Password
-  Password terenkripsi
-  Nama interfaces
-  Perpindahan antar interfaces
-  Konfigurasi interfaces Serial
-  Konfigurasi interfaces Fast Ethernet
-  Membuat banner pesan MOTD (Message of the Day)
-  Membuat banner login
-  Menempatkan local host domain ke IP address</description>
+Nama router
+Password
+Password terenkripsi
+Nama interfaces
+Perpindahan antar interfaces
+Konfigurasi interfaces Serial
+Konfigurasi interfaces Fast Ethernet
+Membuat banner pesan MOTD (Message of the Day)
+Membuat banner login
+Menempatkan local host domain ke IP address
+Perintah no ip domain-lookup
+Perintah exec-timeout
+Menyimpan konfigurasi
+Menghapus konfigurasi
+Perintah show untuk memperifikasi konfigurasi router</description>
       </item>
     
       <item>
@@ -416,8 +421,8 @@ Konfigurasi router :
         <pubDate>Tue, 03 Oct 2017 05:04:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/03/konfigurasi-static-routing/</guid>
         <description>A.PENGERTIAN Routing Static adalah jenis routing yang dilakukan seorang admin dengan memasukan network network tertentu secara manual. Ciri ciri routing static adalah :
- Jalur pada suatu jaringan spesifik ditentukan oleh seorang Administrator Pengisian tabel routing / penambahan network baru diisi secara manual Biasanya digunakan untuk jaringan berskala kecil  Ada beberapa parameter yang ada pada routing static ini, yaitu
- Destination, adalah ip network tujuan, untuk default routing biasanya memakai 0.</description>
+Jalur pada suatu jaringan spesifik ditentukan oleh seorang Administrator Pengisian tabel routing / penambahan network baru diisi secara manual Biasanya digunakan untuk jaringan berskala kecil Ada beberapa parameter yang ada pada routing static ini, yaitu
+Destination, adalah ip network tujuan, untuk default routing biasanya memakai 0.0.0.0 untuk semua jaringan Gateway, adalah datagram yang dapat dicapai pada satu jaringan Pref.</description>
       </item>
     
       <item>
@@ -428,13 +433,14 @@ Konfigurasi router :
         <description>1. Pendahuluan
 A. Pengertian
 Cisco Adalah sebuah perusahaan yang memiliki 2 bidang usaha, yaitu:
- Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA)  B. Latar Belakang
+Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA) B. Latar Belakang
 Mengulangi dan Meringkas Materi yang Diberikan Tadi
 C. Maksud dan Tujuan
 Untuk lebih memahami materi yang diberikan tadi
 2. Alat dan Bahan
- Laptop Proyektor Internet  3. Jangka Waktu Pelaksanaan
-Jam 08:00 s/d 22:00</description>
+Laptop Proyektor Internet 3. Jangka Waktu Pelaksanaan
+Jam 08:00 s/d 22:00
+Sesi Pagi 08:00 s/d 11:30 Istirahat Jam 11:30 s/d 12:30 Sesi Siang 12:30 s/d 16:30 Istirahat 16:30 s/d 20:00 Sesi Malam 20:00 s/d 22:00 Selesai 4.</description>
       </item>
     
       <item>
@@ -445,12 +451,13 @@ Jam 08:00 s/d 22:00</description>
         <description>1. Pendahuluan
 A. Pengertian
 Cisco Adalah sebuah perusahaan yang memiliki 2 bidang usaha, yaitu:
- Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA)B. Latar Belakang
-Mengulangi dan Meringkas Materi yang Diberikan Tadi  C. Maksud dan Tujuan
+Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA)B. Latar Belakang
+Mengulangi dan Meringkas Materi yang Diberikan Tadi C. Maksud dan Tujuan
 Untuk lebih memahami materi yang diberikan tadi
 2. Alat dan Bahan
- Laptop Proyektor Internet  3. Jangka Waktu Pelaksanaan
-Jam 08:00 s/d 22:00</description>
+Laptop Proyektor Internet 3. Jangka Waktu Pelaksanaan
+Jam 08:00 s/d 22:00
+Sesi Pagi 08:00 s/d 11:30 Istirahat Jam 11:30 s/d 12:30 Sesi Siang 12:30 s/d 16:30 Istirahat 16:30 s/d 20:00 Sesi Malam 20:00 s/d 22:00 Selesai 4.</description>
       </item>
     
       <item>
@@ -461,13 +468,14 @@ Jam 08:00 s/d 22:00</description>
         <description>1. Pendahuluan
 A. Pengertian
 Cisco Adalah sebuah perusahaan yang memiliki 2 bidang usaha, yaitu:
- Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA)  B. Latar Belakang
+Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA) B. Latar Belakang
 Mengulangi dan Meringkas Materi yang Diberikan Tadi
 C. Maksud dan Tujuan
 Untuk lebih memahami materi yang diberikan tadi
 2. Alat dan Bahan
- Laptop Proyektor Internet  3. Jangka Waktu Pelaksanaan
-Jam 08:00 s/d 22:00</description>
+Laptop Proyektor Internet 3. Jangka Waktu Pelaksanaan
+Jam 08:00 s/d 22:00
+Sesi Pagi 08:00 s/d 11:30 Istirahat Jam 11:30 s/d 12:30 Sesi Siang 12:30 s/d 16:30 Istirahat 16:30 s/d 20:00 Sesi Malam 20:00 s/d 22:00 Selesai 4.</description>
       </item>
     
       <item>
@@ -478,13 +486,14 @@ Jam 08:00 s/d 22:00</description>
         <description>1. Pendahuluan
 A. Pengertian
 Cisco Adalah sebuah perusahaan yang memiliki 2 bidang usaha, yaitu:
- Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA)  B. Latar Belakang
+Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA) B. Latar Belakang
 Mengulangi dan Meringkas Materi yang Diberikan Tadi
 C. Maksud dan Tujuan
 Untuk lebih memahami materi yang diberikan tadi
 2. Alat dan Bahan
- Laptop Proyektor Internet  3. Jangka Waktu Pelaksanaan
-Jam 08:00 s/d 22:00</description>
+Laptop Proyektor Internet 3. Jangka Waktu Pelaksanaan
+Jam 08:00 s/d 22:00
+Sesi Pagi 08:00 s/d 11:30 Istirahat Jam 11:30 s/d 12:30 Sesi Siang 12:30 s/d 16:30 Istirahat 16:30 s/d 20:00 Sesi Malam 20:00 s/d 22:00 Selesai 4.</description>
       </item>
     
       <item>
@@ -495,13 +504,14 @@ Jam 08:00 s/d 22:00</description>
         <description>1. Pendahuluan
 A. Pengertian
 Cisco Adalah sebuah perusahaan yang memiliki 2 bidang usaha, yaitu:
- Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA)  B. Latar Belakang
+Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA) B. Latar Belakang
 Mengulangi dan Meringkas Materi yang Diberikan Tadi
 C. Maksud dan Tujuan
 Untuk lebih memahami materi yang diberikan tadi
 2. Alat dan Bahan
- Laptop Proyektor Internet  3. Jangka Waktu Pelaksanaan
-Jam 08:00 s/d 22:00</description>
+Laptop Proyektor Internet 3. Jangka Waktu Pelaksanaan
+Jam 08:00 s/d 22:00
+Sesi Pagi 08:00 s/d 11:30 Istirahat Jam 11:30 s/d 12:30 Sesi Siang 12:30 s/d 16:30 Istirahat 16:30 s/d 20:00 Sesi Malam 20:00 s/d 22:00 Selesai 4.</description>
       </item>
     
       <item>
@@ -621,7 +631,7 @@ B. Pengertian
 Apa itu proxy?
 Proxy merupakan perangkat yang bersifat &amp;ldquo;middleman&amp;rdquo;, yang bekerja diantara client &amp;amp; Server, bertugas menghadle transmisi request ataupun respon. Data yang melewati proxy, bisa diubah oleh proxy atau tidak diubah sama sekali, tergantung implementasi fitur dan kemampuan proxy.
 Manfaat Proxy
-  Security : Proxy mampu melakukan pengecekan terhadap incoming response &amp;amp; outgoing request, sehingga memungkinkan untuk melakukan block paket yang tidak diharapkan</description>
+Security : Proxy mampu melakukan pengecekan terhadap incoming response &amp;amp; outgoing request, sehingga memungkinkan untuk melakukan block paket yang tidak diharapkan</description>
       </item>
     
       <item>
@@ -674,8 +684,7 @@ Pada kali ini, yang saya posting yaitu tentang memfungsikan mikrotik sebagai swi
 B. Pengertian
 Switch merupakan penghubung beberapa alat untuk membentuk suatu Local Area Network (LAN). Routerboard Mikrotik RB750 telah disediakan fungsi switch, yang mana jika sobat menginginkan men-share internet lebih dari satu komputer atau pada umumnya topologi yang digunakan kebanyak internet di share melalui media wifi dan lan menggunakan kabel.
 C. Latar belakang
-Ingin menambah pengetahuan
-D. Tujuan</description>
+Ingin menambah pengetahuan</description>
       </item>
     
       <item>
@@ -708,7 +717,7 @@ Routing Information Protocol (RIP) adalah sebuah protokol routing dinamis yang d
         <description>PENDAHULUAN
 Ebizu adalah sebuah perusahaan DATA yang mengumpulkan data untuk tujuan tertentu. Ebizu ini memiliki banyak produk dintaranya adalah Maniz, Maniz sendiri adalah aplikasi yang menawarkan keuntungan berupa Voucher belanja, makan dll.
 ALAT DAN BAHAN
- Laptop Proyektor LCD Koneksi Internet  JANGKA WAKTU TRAINING
+Laptop Proyektor LCD Koneksi Internet JANGKA WAKTU TRAINING
 Jam 10 pagi s/d 4 sore
 TAHAPAN DAN PEMBAHASAN Training
 Di hari kedua ini dari pihak trainer, akan mereview apa yang telah mereka sampaikan kemarin, contoh saat akan melakukan Validasi harus melihat 4 aspek penting.</description>
@@ -722,7 +731,7 @@ Di hari kedua ini dari pihak trainer, akan mereview apa yang telah mereka sampai
         <description>PENDAHULUAN
 Ebizu adalah sebuah perusahaan DATA yang mengumpulkan data untuk tujuan tertentu. Ebizu ini memiliki banyak produk dintaranya adalah Maniz, Maniz sendiri adalah aplikasi yang menawarkan keuntungan berupa Voucher belanja, makan dll.
 ALAT DAN BAHAN
- Laptop Proyektor LCD Koneksi Internet  JANGKA WAKTU TRAINING
+Laptop Proyektor LCD Koneksi Internet JANGKA WAKTU TRAINING
 jam 9 pagi s/d 4 sore
 TAHAPAN DAN PEMBAHASAN Training
 Training ini memberikan pengarahan tentang aplikasi manis dan fitur Snap &amp;amp; Earn, untuk teman teman BLC yang berminat menjadi Operator dari Manis harus mengikuti dengan baik training ini.</description>
@@ -777,8 +786,9 @@ Agar pengunjung blog dapat mengetahui bagaimana cara mengupgrade versi mikrotik
 D. Hasil yang diharapkan
 Dapat mengikuti tahapan kerjanya
 E. Alat dan bahan
- mikrotik akses internet kabel UTP  F. Jangka waktu pelaksanaan
-Waktu yang dibutuhkan tergantung dari koneksi yang digunakan</description>
+mikrotik akses internet kabel UTP F. Jangka waktu pelaksanaan
+Waktu yang dibutuhkan tergantung dari koneksi yang digunakan
+G. Langkah kerja</description>
       </item>
     
       <item>
@@ -914,11 +924,11 @@ Agar bisa mengubah desimal ke biner
 C.TUJUAN
 Untuk menghitung atau mengetahui cara konfersi
 D. ALAT DAN BAHAN
- pensil/pulpen kertas alat hitung (calculator)  E. DURASI PELAKSANAAN
+pensil/pulpen kertas alat hitung (calculator) E. DURASI PELAKSANAAN
 10 - 20 menit
 F. LANGKAH KERJA
-  tentukan bilangan yang ingin di konfersi baik desimal maupun biner
-  semisalnya kita akan mengkonfersi bilangan desimal ke biner</description>
+tentukan bilangan yang ingin di konfersi baik desimal maupun biner
+semisalnya kita akan mengkonfersi bilangan desimal ke biner</description>
       </item>
     
       <item>
@@ -1136,7 +1146,7 @@ Pada postingan kali ini saya akan membagi sedikit ilmu terkait dengan virtualisa
 B. PENGERTIAN
 TOPOLOGI MENURUT WIKIPEDIA
 Topologi Jaringan Sebuah LAN dapat diimplementasikan dengan berbagai macam topologi. Topologi yang di maksud di sini merupakan struktur jaringan fisik yang digunakan untuk mengimplementasikan LAN tersebut. Topologi dasar yang bisa digunakan dalam jaringan komputer adalah:
- Topologi Bus (Linear) Topologi Ring (Cincin) Topologi Star (Bintang) Topologi Tree (Pohon) Topologi Mesh (web)  Topologi pengembangan dari ketiga di atas biasanya berupa topologi Tree (Pohon), yang merupakan pengembangan dari star dan Bus, topologi Mash atau Hybrid atau Multipoint atau Web yang merupakan pengembangan dari topologi Point to Point (bus), topologi Loop yang merupakan pengembangan dari topologi Ring Ketiganya memiliki kelebihan dan kekurangan masing-masing.</description>
+Topologi Bus (Linear) Topologi Ring (Cincin) Topologi Star (Bintang) Topologi Tree (Pohon) Topologi Mesh (web) Topologi pengembangan dari ketiga di atas biasanya berupa topologi Tree (Pohon), yang merupakan pengembangan dari star dan Bus, topologi Mash atau Hybrid atau Multipoint atau Web yang merupakan pengembangan dari topologi Point to Point (bus), topologi Loop yang merupakan pengembangan dari topologi Ring Ketiganya memiliki kelebihan dan kekurangan masing-masing.</description>
       </item>
     
       <item>
@@ -1195,7 +1205,7 @@ Hello, pada kesempatan kali ini saya memposting bagaimana sih menginstal LAMP? N
 #Pengertian
 LAMP adalah istilah yang merupakan singkatan dari Linux, Apache, MySQL dan Perl/PHP/Phyton. Merupakan sebuah paket perangkat lunak bebas yang digunakan untuk menjalankan sebuah aplikasi secara lengkap.
 Komponen-komponen dari LAMP :
- Linux – sistem operasi Apache HTTP Server – web server MariaDB atau MySQL – sistem basis data PHP atau Perl atau Python – bahasa pemrograman yang dipakai  #Latar Belakang</description>
+Linux – sistem operasi Apache HTTP Server – web server MariaDB atau MySQL – sistem basis data PHP atau Perl atau Python – bahasa pemrograman yang dipakai #Latar Belakang</description>
       </item>
     
       <item>
@@ -1229,7 +1239,7 @@ Assalamu&amp;rsquo;alaikum wr.wb
 Pada kesempatan ini saya akan berbagi,tentang Sistem Telekomunikasi
 B. PENGERTIAN
 Telekomunikasi adalah teknik pengiriman atau penyampaian infomasi, dari suatu tempat ke tempat lain. Dalam kaitannya dengan &amp;rsquo;telekomunikasi&amp;rsquo; bentuk komunikasi jarak jauh dapat dibedakan atas tiga macam:
- Komunikasi Satu Arah (Simplex). Dalam komunikasi satu arah (Simplex) pengirim dan penerima informasi tidak dapat menjalin komunikasi yang berkesinambungan melalui media yang sama. Contoh :Pager, televisi, dan radio. Komunikasi Dua Arah (Duplex).</description>
+Komunikasi Satu Arah (Simplex). Dalam komunikasi satu arah (Simplex) pengirim dan penerima informasi tidak dapat menjalin komunikasi yang berkesinambungan melalui media yang sama. Contoh :Pager, televisi, dan radio. Komunikasi Dua Arah (Duplex).</description>
       </item>
     
       <item>
@@ -1284,7 +1294,7 @@ Tujuan dari postingan ini agar si pembaca dapat mempraktekkan dan mengetahui bag
 Proxmox VE (Virtual Environment) adalah sebuah distro Linux virtualisasi berbasis Debian ( 64 bit) yang mengusung OpenZV dan KVM, dengan KVM kita tidak hanya bisa menginstall linux saja akan tetapi Operating system windows pun bisa kita instal. Namun yang membuat istimewa dari proxmox adalah kemudahan dalam installasi dan administrasi berbasis Web.
 Latar Belakang
 Beberapa keuntungan menggunakan Proxmox sebagai berikut
- Kinerja terbaik. Instalasi yang telah dioptimalkan, sehingga lebih cepat. Mudah dalam manajemen.</description>
+Kinerja terbaik. Instalasi yang telah dioptimalkan, sehingga lebih cepat. Mudah dalam manajemen.</description>
       </item>
     
       <item>
@@ -1368,9 +1378,9 @@ MikroTikls [dengan trade name MikroTik®] didirikan tahun 1995 bertujuan mengemb
         <pubDate>Mon, 24 Jul 2017 13:52:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/24/instalasi-linux-mint-18.1-sarena/</guid>
         <description>Alat dan bahan:
- 1 set pc atau laptop flashdisk booting linux mint 18.1 cinnamon 64-bit  Langkah kerja:
-  Siapkan sebuah pc atau laptop yang akan diinstallkan linux mint 18.1 cinnamon 64-bit, serta flashdisk yang berisi booting sistem operasi yang akan diinstal.
-  Nyalakan pc atau laptop yang ingin di install, setalah itu masuk pada bios dan konfigurasi agar flashdisk booting yang telah ada dapat dipakai yaitu dengan cara masuk di menu “Boot” dan meletakkan jenis USB ke deretan atas.</description>
+1 set pc atau laptop flashdisk booting linux mint 18.1 cinnamon 64-bit Langkah kerja:
+Siapkan sebuah pc atau laptop yang akan diinstallkan linux mint 18.1 cinnamon 64-bit, serta flashdisk yang berisi booting sistem operasi yang akan diinstal.
+Nyalakan pc atau laptop yang ingin di install, setalah itu masuk pada bios dan konfigurasi agar flashdisk booting yang telah ada dapat dipakai yaitu dengan cara masuk di menu “Boot” dan meletakkan jenis USB ke deretan atas.</description>
       </item>
     
       <item>
@@ -1379,9 +1389,9 @@ MikroTikls [dengan trade name MikroTik®] didirikan tahun 1995 bertujuan mengemb
         <pubDate>Sat, 22 Jul 2017 13:43:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/22/sejarah-singkat-blc-telkom-klaten-serta-perkenalan-dan-pertemuan-pertama/</guid>
         <description>Assalamualaikum Wr.Wb
- Perkenalkan saya Faizar Septiawan atau bisa di panggil Icar berasal dari Bulukumba, Sulawesi Selatan dan sekolah di SMKN 1 Bulukumba. Dipostingan pertama ini saya akan tuliskan sejarah dan review sebuah tempat magang/prakerin yang saya tempati. Tempat tersebut bernama BLC Telkom Klaten, beralamat di Jl.Srigading No.7 Tonggalan, Klaten Tengah
+Perkenalkan saya Faizar Septiawan atau bisa di panggil Icar berasal dari Bulukumba, Sulawesi Selatan dan sekolah di SMKN 1 Bulukumba. Dipostingan pertama ini saya akan tuliskan sejarah dan review sebuah tempat magang/prakerin yang saya tempati. Tempat tersebut bernama BLC Telkom Klaten, beralamat di Jl.Srigading No.7 Tonggalan, Klaten Tengah
 Sejarah BLC Telkom Klaten
- &amp;ldquo;Saya melihat Teknologi Informasi (TI) khususnya penggunaan dan pemanfaatan Internet di Indonesia seperti sebilah pisau yang sangat tajam dijual bebas dan dibeli oleh orang-orang tapi tidak ada keterangan penggunaannya, manfaat segi positif dan negatifnya.</description>
+&amp;ldquo;Saya melihat Teknologi Informasi (TI) khususnya penggunaan dan pemanfaatan Internet di Indonesia seperti sebilah pisau yang sangat tajam dijual bebas dan dibeli oleh orang-orang tapi tidak ada keterangan penggunaannya, manfaat segi positif dan negatifnya.</description>
       </item>
     
   </channel>

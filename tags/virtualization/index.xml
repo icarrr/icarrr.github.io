@@ -16,9 +16,9 @@
         <pubDate>Thu, 31 Oct 2019 14:46:11 +0700</pubDate>
         <guid>https://sibunglon.com/2019/10/31/restart-network-adapter-windows-without-reboot/</guid>
         <description>Restarts a network adapter by disabling and then re-enabling the network adapter.
-  Open PowerShell on Windows, after that find the name of the interface to be restarted. Use the following command line:
-netsh interface show interface   Restart network adapter using the following command line:
-Restart-NetAdapter -Name &amp;#34;Ethernet x&amp;#34;   </description>
+Open PowerShell on Windows, after that find the name of the interface to be restarted. Use the following command line:
+netsh interface show interface Restart network adapter using the following command line:
+Restart-NetAdapter -Name &amp;#34;Ethernet x&amp;#34; </description>
       </item>
     
       <item>

@@ -17,12 +17,13 @@
         <guid>https://sibunglon.com/2017/10/07/konfigurasi-dhcp-server-pada-cisco/</guid>
         <description>A.PENGERTIAN
 DHCP (Dynamic Host Configuration Protocol) sebuah server yang memiliki layanan untuk memberikan IP otomatis pada host atau komputer (client) pada jaringan TCP atau IP yang memintanya
-  LATAR BELAKANGMemahami serta mempraktikan dhcp server
-  MAKSUD DAN TUJUAN
+LATAR BELAKANGMemahami serta mempraktikan dhcp server
+MAKSUD DAN TUJUAN
 Memahami konfigurasi dhcp server
-  TAHAPAN PEKERJAAN
-  Berikut adalah langkah-langkah mengkonfigurasi DHCP Server pada router.
-Sebelumnya kita harus membuat simulasi jaringan seperti pada gambar berikut ini terlebih dahulu.</description>
+TAHAPAN PEKERJAAN
+Berikut adalah langkah-langkah mengkonfigurasi DHCP Server pada router.
+Sebelumnya kita harus membuat simulasi jaringan seperti pada gambar berikut ini terlebih dahulu.
+Langkah awal untuk konfigurasi yaitu klik pada Router</description>
       </item>
     
       <item>
@@ -58,7 +59,7 @@ C. MAKSUD DAN TUJUAN
 Ingin mengimplementasikanya di dunia kerja dan mengulangi Materi yang diberi tentang ssh dan telnet
 D. TAHAPAN PEKERJAAN
 TELNET Berikut Topology Telnet :
- Pertama, masukkan default gateway yang terdapat pada Router, Disini saya Memberikan IP Address pada interface fastEthernet 0/0 adalah 192.</description>
+Pertama, masukkan default gateway yang terdapat pada Router, Disini saya Memberikan IP Address pada interface fastEthernet 0/0 adalah 192.</description>
       </item>
     
       <item>
@@ -71,16 +72,21 @@ Konfigurasi yang akan dibahas dalam artikel ini adalah :
 Mode Router
 Memasuki mode konfigurasi global (Global Configuration Mode)
 Konfigurasi router :
-  Nama router
-  Password
-  Password terenkripsi
-  Nama interfaces
-  Perpindahan antar interfaces
-  Konfigurasi interfaces Serial
-  Konfigurasi interfaces Fast Ethernet
-  Membuat banner pesan MOTD (Message of the Day)
-  Membuat banner login
-  Menempatkan local host domain ke IP address</description>
+Nama router
+Password
+Password terenkripsi
+Nama interfaces
+Perpindahan antar interfaces
+Konfigurasi interfaces Serial
+Konfigurasi interfaces Fast Ethernet
+Membuat banner pesan MOTD (Message of the Day)
+Membuat banner login
+Menempatkan local host domain ke IP address
+Perintah no ip domain-lookup
+Perintah exec-timeout
+Menyimpan konfigurasi
+Menghapus konfigurasi
+Perintah show untuk memperifikasi konfigurasi router</description>
       </item>
     
       <item>
@@ -89,8 +95,8 @@ Konfigurasi router :
         <pubDate>Tue, 03 Oct 2017 05:04:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/03/konfigurasi-static-routing/</guid>
         <description>A.PENGERTIAN Routing Static adalah jenis routing yang dilakukan seorang admin dengan memasukan network network tertentu secara manual. Ciri ciri routing static adalah :
- Jalur pada suatu jaringan spesifik ditentukan oleh seorang Administrator Pengisian tabel routing / penambahan network baru diisi secara manual Biasanya digunakan untuk jaringan berskala kecil  Ada beberapa parameter yang ada pada routing static ini, yaitu
- Destination, adalah ip network tujuan, untuk default routing biasanya memakai 0.</description>
+Jalur pada suatu jaringan spesifik ditentukan oleh seorang Administrator Pengisian tabel routing / penambahan network baru diisi secara manual Biasanya digunakan untuk jaringan berskala kecil Ada beberapa parameter yang ada pada routing static ini, yaitu
+Destination, adalah ip network tujuan, untuk default routing biasanya memakai 0.0.0.0 untuk semua jaringan Gateway, adalah datagram yang dapat dicapai pada satu jaringan Pref.</description>
       </item>
     
       <item>
@@ -101,13 +107,14 @@ Konfigurasi router :
         <description>1. Pendahuluan
 A. Pengertian
 Cisco Adalah sebuah perusahaan yang memiliki 2 bidang usaha, yaitu:
- Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA)  B. Latar Belakang
+Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA) B. Latar Belakang
 Mengulangi dan Meringkas Materi yang Diberikan Tadi
 C. Maksud dan Tujuan
 Untuk lebih memahami materi yang diberikan tadi
 2. Alat dan Bahan
- Laptop Proyektor Internet  3. Jangka Waktu Pelaksanaan
-Jam 08:00 s/d 22:00</description>
+Laptop Proyektor Internet 3. Jangka Waktu Pelaksanaan
+Jam 08:00 s/d 22:00
+Sesi Pagi 08:00 s/d 11:30 Istirahat Jam 11:30 s/d 12:30 Sesi Siang 12:30 s/d 16:30 Istirahat 16:30 s/d 20:00 Sesi Malam 20:00 s/d 22:00 Selesai 4.</description>
       </item>
     
       <item>
@@ -118,12 +125,13 @@ Jam 08:00 s/d 22:00</description>
         <description>1. Pendahuluan
 A. Pengertian
 Cisco Adalah sebuah perusahaan yang memiliki 2 bidang usaha, yaitu:
- Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA)B. Latar Belakang
-Mengulangi dan Meringkas Materi yang Diberikan Tadi  C. Maksud dan Tujuan
+Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA)B. Latar Belakang
+Mengulangi dan Meringkas Materi yang Diberikan Tadi C. Maksud dan Tujuan
 Untuk lebih memahami materi yang diberikan tadi
 2. Alat dan Bahan
- Laptop Proyektor Internet  3. Jangka Waktu Pelaksanaan
-Jam 08:00 s/d 22:00</description>
+Laptop Proyektor Internet 3. Jangka Waktu Pelaksanaan
+Jam 08:00 s/d 22:00
+Sesi Pagi 08:00 s/d 11:30 Istirahat Jam 11:30 s/d 12:30 Sesi Siang 12:30 s/d 16:30 Istirahat 16:30 s/d 20:00 Sesi Malam 20:00 s/d 22:00 Selesai 4.</description>
       </item>
     
       <item>
@@ -134,13 +142,14 @@ Jam 08:00 s/d 22:00</description>
         <description>1. Pendahuluan
 A. Pengertian
 Cisco Adalah sebuah perusahaan yang memiliki 2 bidang usaha, yaitu:
- Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA)  B. Latar Belakang
+Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA) B. Latar Belakang
 Mengulangi dan Meringkas Materi yang Diberikan Tadi
 C. Maksud dan Tujuan
 Untuk lebih memahami materi yang diberikan tadi
 2. Alat dan Bahan
- Laptop Proyektor Internet  3. Jangka Waktu Pelaksanaan
-Jam 08:00 s/d 22:00</description>
+Laptop Proyektor Internet 3. Jangka Waktu Pelaksanaan
+Jam 08:00 s/d 22:00
+Sesi Pagi 08:00 s/d 11:30 Istirahat Jam 11:30 s/d 12:30 Sesi Siang 12:30 s/d 16:30 Istirahat 16:30 s/d 20:00 Sesi Malam 20:00 s/d 22:00 Selesai 4.</description>
       </item>
     
       <item>
@@ -151,13 +160,14 @@ Jam 08:00 s/d 22:00</description>
         <description>1. Pendahuluan
 A. Pengertian
 Cisco Adalah sebuah perusahaan yang memiliki 2 bidang usaha, yaitu:
- Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA)  B. Latar Belakang
+Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA) B. Latar Belakang
 Mengulangi dan Meringkas Materi yang Diberikan Tadi
 C. Maksud dan Tujuan
 Untuk lebih memahami materi yang diberikan tadi
 2. Alat dan Bahan
- Laptop Proyektor Internet  3. Jangka Waktu Pelaksanaan
-Jam 08:00 s/d 22:00</description>
+Laptop Proyektor Internet 3. Jangka Waktu Pelaksanaan
+Jam 08:00 s/d 22:00
+Sesi Pagi 08:00 s/d 11:30 Istirahat Jam 11:30 s/d 12:30 Sesi Siang 12:30 s/d 16:30 Istirahat 16:30 s/d 20:00 Sesi Malam 20:00 s/d 22:00 Selesai 4.</description>
       </item>
     
       <item>
@@ -168,13 +178,14 @@ Jam 08:00 s/d 22:00</description>
         <description>1. Pendahuluan
 A. Pengertian
 Cisco Adalah sebuah perusahaan yang memiliki 2 bidang usaha, yaitu:
- Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA)  B. Latar Belakang
+Pembuatan hardware dan software yang berhubungan dengan jaringan komputer Dalam Pendidikan yaitu dengan Cisco Networking Academy (CNA) B. Latar Belakang
 Mengulangi dan Meringkas Materi yang Diberikan Tadi
 C. Maksud dan Tujuan
 Untuk lebih memahami materi yang diberikan tadi
 2. Alat dan Bahan
- Laptop Proyektor Internet  3. Jangka Waktu Pelaksanaan
-Jam 08:00 s/d 22:00</description>
+Laptop Proyektor Internet 3. Jangka Waktu Pelaksanaan
+Jam 08:00 s/d 22:00
+Sesi Pagi 08:00 s/d 11:30 Istirahat Jam 11:30 s/d 12:30 Sesi Siang 12:30 s/d 16:30 Istirahat 16:30 s/d 20:00 Sesi Malam 20:00 s/d 22:00 Selesai 4.</description>
       </item>
     
       <item>

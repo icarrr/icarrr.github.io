@@ -45,7 +45,7 @@ ubuntu@ip-172-26-4-157:~$ sudo certbot renew Traceback (most recent call last): 
         <guid>https://sibunglon.com/2021/05/15/error-install-mysqldb-because-cant-find-my_config.h/</guid>
         <description>Usually issues are found because there are some dependencies that are required but not installed yet. Make sure libmysqlclient-dev is installed, also check the /usr/include/mysql directory to make sure the file my_config.h does not exist like the message on the log.
 For the case I&amp;rsquo;ve found, the file my_config.h is not in the /usr/include/mysql directory and for fixing it use the following command:
-$ cd /usr/include/mysql $ sudo wget https://raw.githubusercontent.com/paulfitz/mysql-connector-c/master/include/my_config.h -O my_config.</description>
+$ cd /usr/include/mysql $ sudo wget https://raw.</description>
       </item>
     
       <item>
@@ -73,7 +73,7 @@ Issue notifier-celery-workers failing to start may be encountered after migrate 
         <pubDate>Sat, 19 Dec 2020 03:32:07 +0800</pubDate>
         <guid>https://sibunglon.com/2020/12/19/extract-ssl-certificate-and-ssl-certificate-key-from-.pfx-file/</guid>
         <description>A pfx file is password protected certificate archive which contains your certificate and the private key.
- domain.tld.key The private decrypted RSA key file for the certificate. (ssl_certificate_key) domain.tld.crt The certificate file for the domain bundle.crt The certificate file for the issuer domain.tld.chained.crt The concatted file which consists of domain.tld.crt and bundle.crt (ssl_certificate)  Get the .key file
+domain.tld.key The private decrypted RSA key file for the certificate. (ssl_certificate_key) domain.tld.crt The certificate file for the domain bundle.crt The certificate file for the issuer domain.tld.chained.crt The concatted file which consists of domain.tld.crt and bundle.crt (ssl_certificate) Get the .key file
 Extract the encrypted key using:
 openssl pkcs12 -in cert.pfx -nocerts -out domain.tld.encrypted.key Decrypt the encrypted key using:</description>
       </item>
@@ -109,7 +109,7 @@ SHELL=/bin/sh PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin 
         <description>What is Sendy?
 Sendy is a self hosted email newsletter application that lets you send trackable emails via Amazon Simple Email Service (SES).
 To install sendy on Ubuntu, do the following steps:
- Login to server, and install package.  $ add-apt-repository ppa:ondrej/php $ apt update $ apt install php unzip $ apt install php-fpm libapache2-mod-php php-mysql php-curl php-xml $ apt install mariadb-server mariadb-client Let’s run the security script to harden the SQL.</description>
+Login to server, and install package. $ add-apt-repository ppa:ondrej/php $ apt update $ apt install php unzip $ apt install php-fpm libapache2-mod-php php-mysql php-curl php-xml $ apt install mariadb-server mariadb-client Let’s run the security script to harden the SQL.</description>
       </item>
     
       <item>
@@ -119,7 +119,7 @@ To install sendy on Ubuntu, do the following steps:
         <guid>https://sibunglon.com/2020/09/05/create-a-read-only-mongodb-user/</guid>
         <description>There are times when you need account read only access to a database.
 To create a read only database user MongoDB, do the following steps:
- Login as a MongoDB administrator.  $ mongo -u admin -p --authenticationDatabase admin Show list of database on MongoDB.  &amp;gt;&amp;gt;&amp;gt; show dbs Select database.  &amp;gt;&amp;gt;&amp;gt; use edxapp Create a new user with permission read only on the database.  &amp;gt;&amp;gt;&amp;gt;db.createUser({user:&amp;#34;edxapp_read&amp;#34;,pwd:&amp;#34;password&amp;#34;,roles:[{role:&amp;#34;read&amp;#34;,db:&amp;#34;edxapp&amp;#34;}]})Done.  </description>
+Login as a MongoDB administrator. $ mongo -u admin -p --authenticationDatabase admin Show list of database on MongoDB. &amp;gt;&amp;gt;&amp;gt; show dbs Select database. &amp;gt;&amp;gt;&amp;gt; use edxapp Create a new user with permission read only on the database. &amp;gt;&amp;gt;&amp;gt; db.createUser({user: &amp;#34;edxapp_read&amp;#34;, pwd: &amp;#34;password&amp;#34;, roles: [{role: &amp;#34;read&amp;#34;, db: &amp;#34;edxapp&amp;#34;}]}) Done.</description>
       </item>
     
       <item>
@@ -127,11 +127,12 @@ To create a read only database user MongoDB, do the following steps:
         <link>https://sibunglon.com/2020/09/05/create-a-read-only-mysql-user/</link>
         <pubDate>Sat, 05 Sep 2020 02:54:59 +0800</pubDate>
         <guid>https://sibunglon.com/2020/09/05/create-a-read-only-mysql-user/</guid>
-        <description>There are times when you need account read only access to a database.
+        <description>
+There are times when you need account read only access to a database.
 To create a read only database user MySQL, do the following steps:
-  Login as a MySQL administrator.
-  Create a new MySQL user account.
-  &amp;gt;&amp;gt;&amp;gt;CREATEUSER&amp;#39;dapenda&amp;#39;@&amp;#39;%&amp;#39;IDENTIFIEDBY&amp;#39;mypassword&amp;#39;;Grant the SELECT only privilege to user.  &amp;gt;&amp;gt;&amp;gt;GRANTSELECTONsite.*TO&amp;#39;dapenda&amp;#39;@&amp;#39;%&amp;#39;;Reload grant privilege for re-read access table MySQL.  &amp;gt;&amp;gt;&amp;gt;FLUSHPRIVILEGES;Done.  </description>
+Login as a MySQL administrator.
+Create a new MySQL user account.
+&amp;gt;&amp;gt;&amp;gt; CREATE USER &amp;#39;dapenda&amp;#39;@&amp;#39;%&amp;#39; IDENTIFIED BY &amp;#39;mypassword&amp;#39;; Grant the SELECT only privilege to user. &amp;gt;&amp;gt;&amp;gt; GRANT SELECT ON site.* TO &amp;#39;dapenda&amp;#39;@&amp;#39;%&amp;#39;; Reload grant privilege for re-read access table MySQL. &amp;gt;&amp;gt;&amp;gt; FLUSH PRIVILEGES; Done. </description>
       </item>
     
       <item>
@@ -140,7 +141,7 @@ To create a read only database user MySQL, do the following steps:
         <pubDate>Sun, 26 Jul 2020 21:05:49 +0800</pubDate>
         <guid>https://sibunglon.com/2020/07/26/database-returned-an-invalid-value-in-queryset.datetimes/</guid>
         <description>After create new action on the Django admin pages, it redirects to my site with the message a server error. When check the file /edx/var/log/supervisor/lms-stderr.log i find this:
-Traceback (most recent call last): File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/exception.py&amp;#34;, line 41, in inner response = get_response(request) File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;#34;, line 249, in _legacy_get_response response = self._get_response(request) File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;#34;, line 217, in _get_response response = self.process_exception_by_middleware(e, request) File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;#34;, line 215, in _get_response response = response.render() File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.</description>
+Traceback (most recent call last): File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/exception.py&amp;#34;, line 41, in inner response = get_response(request) File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;#34;, line 249, in _legacy_get_response response = self._get_response(request) File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;#34;, line 217, in _get_response response = self.process_exception_by_middleware(e, request) File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;#34;, line 215, in _get_response response = response.</description>
       </item>
     
       <item>
@@ -182,9 +183,10 @@ $ sudo tail -f /edx/var/log/{lms,cms,nginx}/*log ==&amp;gt; /edx/var/log/lms/edx
         <guid>https://sibunglon.com/2020/02/15/restrict-server-access-via-ssh-client/</guid>
         <description>This article is related to Server Got Hacked, Crontab Has Been Modified.
 Limit IP Address To limit ip address of incoming connections to server via ssh, it can be done by:
-  Edit file /etc/hosts.allow.
-  Then add the following script.
-  sshd : ip_attacker : deny Save and exit.  Limit Users or Groups To limit users or groups of incoming connections to server via ssh, it can be done by:</description>
+Edit file /etc/hosts.allow.
+Then add the following script.
+sshd : ip_attacker : deny Save and exit. Limit Users or Groups To limit users or groups of incoming connections to server via ssh, it can be done by:
+Edit file /etc/ssh/sshd_config.</description>
       </item>
     
       <item>
@@ -212,7 +214,7 @@ The following example, anyone who accesses the *.redirect.sibunglon.com domain w
         <guid>https://sibunglon.com/2020/01/04/setup-https-in-open-edx-using-certbot/</guid>
         <description>By default Open edX does not provide an SSL configuration, but we can add it manually. As per the topic of this article, here I will enable HTTPS on Open edX using Certbot.
 Certbot is a new breakthrough from the Let&amp;rsquo;s Encrypt Web Security Certificate Provider where Let&amp;rsquo;s Encrypt provides SSL for free.
- Note: In the following example, in Open edX I point Course Management System (CMS) using the domain studio.</description>
+Note: In the following example, in Open edX I point Course Management System (CMS) using the domain studio.</description>
       </item>
     
       <item>
@@ -280,7 +282,8 @@ If before you did not do the postgres installation process, when backing up the 
         <link>https://sibunglon.com/2019/07/15/create-new-super-user-for-access-django-admin-interface-in-open-edx/</link>
         <pubDate>Mon, 15 Jul 2019 03:09:25 +0700</pubDate>
         <guid>https://sibunglon.com/2019/07/15/create-new-super-user-for-access-django-admin-interface-in-open-edx/</guid>
-        <description>I need to use the Django admin interface, but I don&amp;rsquo;t know what users can use to log in.
+        <description>
+I need to use the Django admin interface, but I don&amp;rsquo;t know what users can use to log in.
 Solution sudo -u edxapp bash source /edx/app/edxapp/edxapp_env python /edx/app/edxapp/edx-platform/manage.py --settings=aws createsuperuser </description>
       </item>
     
@@ -309,7 +312,7 @@ I myself had an error when installing Open EdX, the error was the same as in the
         <guid>https://sibunglon.com/2019/07/13/install-open-edx-using-method-native-installation-ubuntu-16.04/</guid>
         <description>About Open edX Open edX is the massively scalable learning software platform behind edX. edX is the online learning destination founded by Harvard and MIT in 2012.
 edX offers high-quality courses from the world’s best universities and institutions to learners everywhere. It is the only leading MOOC provider that is both nonprofit and open source. The edX mission is to:
- Increase access to high-quality education for everyone, everywhere Enhance teaching and learning on campus and online Advance teaching and learning through research  Play with Open edX How to use Open edX in my own environment?</description>
+Increase access to high-quality education for everyone, everywhere Enhance teaching and learning on campus and online Advance teaching and learning through research Play with Open edX How to use Open edX in my own environment?</description>
       </item>
     
       <item>
@@ -437,8 +440,8 @@ Umumnya server diakses menggunakan ssh dengan autentikasi password plain text, j
 Ya emang menarik, agar user tidak perlu memasukkan password jika ingin mendapatkan hak akses root cukup tambahkan si user ke sudoers.
 Bermain dengan Sudoers 1) Edit file sudoers dengan command nano /etc/sudoers.
 2) Setelah berhasil mengakses file sudoers, sekarang tambahkan sintaks berikut:
-sibunglon ALL=(ALL) NOPASSWD:ALL  Note: Kata sibunglon diganti sesuai user yang akan diberikan izin menggunakan sudo tanpa password.
- Sekarang user sibunglon (user sesuai yang anda daftarkan) dapat menggunakan command sudo tanpa password.</description>
+sibunglon ALL=(ALL) NOPASSWD:ALL Note: Kata sibunglon diganti sesuai user yang akan diberikan izin menggunakan sudo tanpa password.
+Sekarang user sibunglon (user sesuai yang anda daftarkan) dapat menggunakan command sudo tanpa password.</description>
       </item>
     
       <item>
@@ -477,7 +480,7 @@ Let&amp;rsquo;s encrypt adalah certificate Authority (CA) atau otoritas sertifik
         <guid>https://sibunglon.com/2018/12/14/membuat-subdomain-dengan-nginx/</guid>
         <description>Subdomain? Subdomain adalah bagian dari nama domain induk yang memiliki ruangan sendiri (direktori), mengacu ke suatu alamat fisik. Contohnya subdomain blog.sibunglon.com acuannya yaitu sibunglon.com. Jika menggunakan nginx, untuk membuat subdomain sama seperti pada lab sebelumnya yang Bermain Dengan Nginx. Mudahkan kalau caranya cuman gitu? :D Tapi jika masih ada yang bingung, tenang labnya masih saya bagikan.
 Pada lab ini saya asumsikan:
- Domain induk = sibunglon.com Subdomain = blog.sibunglon.com master konfigurasi berada di direktori /sibunglonlabs/config/nginx File konfigurasi domain induk sibunglonlabs.</description>
+Domain induk = sibunglon.com Subdomain = blog.sibunglon.com master konfigurasi berada di direktori /sibunglonlabs/config/nginx File konfigurasi domain induk sibunglonlabs.</description>
       </item>
     
       <item>
@@ -522,7 +525,7 @@ python -m pip uninstall pip &amp;amp;&amp;amp; apt install python-pip --reinstal
         <guid>https://sibunglon.com/2018/12/10/kustom-konfigurasi-dan-ganti-direktori-nginx/</guid>
         <description>Bermain Dengan Nginx Pada saat ini sudah menjadi hal biasa jika seseorang ingin memindahkan file konfigurasinya agar lebih mudah dimaintenance. Salah satunya yaitu memidahkan direktori root html nginx. Di nginx, untuk memindahkan direktori root html dan memidahkan konfigurasinya cukup dengan command-command berikut.
 Pada Lab ini saya asumsikan :
- master konfigurasi berada di direktori /sibunglonlabs/config/nginx direktori root berada di /sibunglonlabs/web  1) Gunakan command berikut untuk memindahkan master konfig nginx ke direktori yang anda ingin, yang mudah diakses oleh anda namun susah ditemui oleh orang lain.</description>
+master konfigurasi berada di direktori /sibunglonlabs/config/nginx direktori root berada di /sibunglonlabs/web 1) Gunakan command berikut untuk memindahkan master konfig nginx ke direktori yang anda ingin, yang mudah diakses oleh anda namun susah ditemui oleh orang lain.</description>
       </item>
     
       <item>
@@ -563,7 +566,7 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
         <link>https://sibunglon.com/2018/12/01/lindungi-web-server-apache2-dengan-ssl-debian-8/</link>
         <pubDate>Sat, 01 Dec 2018 15:14:00 +0000</pubDate>
         <guid>https://sibunglon.com/2018/12/01/lindungi-web-server-apache2-dengan-ssl-debian-8/</guid>
-        <description>Pengertian  HTTPS juga disebut HTTP melalui TLS, HTTP melalui SSL, dan HTTP Secure adalah protokol untuk komunikasi yang aman melalui jaringan komputer yang banyak digunakan di Internet. HTTPS terdiri dari komunikasi melalui Hypertext Transfer Protocol (HTTP) dalam koneksi yang terenkripsi dengan Transport Layer Security atau pendahulunya Secure Sockets Layer. Fungsi utama untuk HTTPS adalah autentikasi dari website yang dikunjungi dan perlindungan privasi dan integritas data yang dipertukarkan. SSL (Secure Sockets Layer) adalah teknologi keamanan standar untuk membangun link yang dienkripsi antara web server dan browser.</description>
+        <description>Pengertian HTTPS juga disebut HTTP melalui TLS, HTTP melalui SSL, dan HTTP Secure adalah protokol untuk komunikasi yang aman melalui jaringan komputer yang banyak digunakan di Internet. HTTPS terdiri dari komunikasi melalui Hypertext Transfer Protocol (HTTP) dalam koneksi yang terenkripsi dengan Transport Layer Security atau pendahulunya Secure Sockets Layer. Fungsi utama untuk HTTPS adalah autentikasi dari website yang dikunjungi dan perlindungan privasi dan integritas data yang dipertukarkan. SSL (Secure Sockets Layer) adalah teknologi keamanan standar untuk membangun link yang dienkripsi antara web server dan browser.</description>
       </item>
     
       <item>
@@ -575,7 +578,7 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
 Di linux anda juga menggunakan fitur ini dengan bantuan aplikasi fusuma, berikut installasi dan konfigurasinya.
 1. Berikan izin untuk membaca perangkat touchpad
 sudo gpasswd -a $USER input
-Install libinput-tools  sudo apt-get install libinput-tools
+Install libinput-tools sudo apt-get install libinput-tools
 3. Install Fusuma
 sudo gem install fusuma
 4. Instal xdotool (opsional)
@@ -590,7 +593,7 @@ sudo apt-get install xdotool</description>
         <description>Setelah berkenalan dengan si Caddy Server pada beberapa hari yang lalu, sekarang waktunya bermain dengan si Caddy Server.
 Apa Saja yang dibutuhkan? Pastikan anda telah memiliki file master Caddy Server, jika belum silahkan dari situs resminya.
 Menjalankan Caddy Server pada sistem operasi windows
- Buka file hasil download Caddy Server  Copy semua isi dari file master tersebut  Tentukan path Caddy, buat folder baru yang akan menampung semua file yang telah dicopy kemudian paste di folder tersebut  Untuk menjalankan Caddy Server pada sistem operasi windows cukup klik 2 kali pada file caddy.</description>
+Buka file hasil download Caddy Server Copy semua isi dari file master tersebut Tentukan path Caddy, buat folder baru yang akan menampung semua file yang telah dicopy kemudian paste di folder tersebut Untuk menjalankan Caddy Server pada sistem operasi windows cukup klik 2 kali pada file caddy.</description>
       </item>
     
       <item>
@@ -642,7 +645,7 @@ Pada kesempatan ini saya akan mengimplementasikan membangun sebuah sistem inform
 B. Pengertian
 (OpenSID) adalah Sistem Informasi Desa (SID) yang sengaja dibuat supaya terbuka dan dapat dikembangkan bersama-sama oleh komunitas peduli SID.
 SID adalah aplikasi komputer yang membantu desa, agar:
- Kantor desa lebih efisien dan efektif Pemerintah desa lebih transparan dan akuntabel Layanan publik lebih baik Warga mendapat akses lebih baik pada informasi desa  OpenSID turut membantu agar ke semua 74ribu+ desa di Indonesia menerapkan sistem informasi untuk memajukan desanya.</description>
+Kantor desa lebih efisien dan efektif Pemerintah desa lebih transparan dan akuntabel Layanan publik lebih baik Warga mendapat akses lebih baik pada informasi desa OpenSID turut membantu agar ke semua 74ribu+ desa di Indonesia menerapkan sistem informasi untuk memajukan desanya.</description>
       </item>
     
       <item>
@@ -662,7 +665,7 @@ Apa itu shell ? shell adalah program (penterjemah perintah) yang menjembatani us
         <pubDate>Fri, 20 Oct 2017 18:59:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/20/perbandingan-open-source-dan-closed-source/</guid>
         <description>1) Pengertian
- Sumber terbuka (bahasa Inggris: open source) adalah sistem pengembangan yang tidak dikoordinasi oleh suatu individu / lembaga pusat, tetapi oleh para pelaku yang bekerja sama dengan memanfaatkan kode sumber (source-code) yang tersebar dan tersedia bebas (biasanya menggunakan fasilitas komunikasi internet). Pola pengembangan ini mengambil model ala bazaar, sehingga pola Open Source ini memiliki ciri bagi komunitasnya yaitu adanya dorongan yang bersumber dari budaya memberi, yang artinya ketika suatu komunitas menggunakan sebuah program Open Source dan telah menerima sebuah manfaat kemudian akan termotivasi untuk menimbulkan sebuah pertanyaan apa yang bisa pengguna berikan balik kepada orang banyak.</description>
+Sumber terbuka (bahasa Inggris: open source) adalah sistem pengembangan yang tidak dikoordinasi oleh suatu individu / lembaga pusat, tetapi oleh para pelaku yang bekerja sama dengan memanfaatkan kode sumber (source-code) yang tersebar dan tersedia bebas (biasanya menggunakan fasilitas komunikasi internet). Pola pengembangan ini mengambil model ala bazaar, sehingga pola Open Source ini memiliki ciri bagi komunitasnya yaitu adanya dorongan yang bersumber dari budaya memberi, yang artinya ketika suatu komunitas menggunakan sebuah program Open Source dan telah menerima sebuah manfaat kemudian akan termotivasi untuk menimbulkan sebuah pertanyaan apa yang bisa pengguna berikan balik kepada orang banyak.</description>
       </item>
     
       <item>
@@ -788,7 +791,7 @@ Pada kesempatan ini saya memposting lagi dan masih mengenai server
 B. Pengertian
 LAMP adalah istilah yang merupakan singkatan dariLinux,Apache,MySQL danPerl/PHP/Phyton. Merupakan sebuah paket perangkat lunak bebas yang digunakan untuk menjalankan sebuah aplikasi secara lengkap.
 Komponen-komponen dari LAMP :
- Linux – sistem operasi Apache HTTP Server – web server MariaDB atau MySQL – sistem basis data PHP atau Perl atau Python – bahasa pemrograman yang dipakai  C. Latar belakang</description>
+Linux – sistem operasi Apache HTTP Server – web server MariaDB atau MySQL – sistem basis data PHP atau Perl atau Python – bahasa pemrograman yang dipakai C. Latar belakang</description>
       </item>
     
       <item>
@@ -833,7 +836,7 @@ Web referensi adalah suatu website atau situs atau laman yang memuat pembahasan 
         <description>A. Pendahuluan
 Kali ini saya berbagi tentang bagaimana menginstall linux Debian 8.6 melalui pada proxmox. Proxmox digunakan sebagai virtualisasi.
 B. Pengertian
-Debian adalah sistem operasi komputer yang tersusun dari paket-paket perangkat lunak yang dirilis sebagai perangkat lunak bebas dan terbuka dengan lisensi mayoritas GNU General Public License dan lisensi perangkat lunak bebas lainnya. Debian GNU/Linux memuat perkakas sistem operasi GNU dan kernel Linux merupakan distribusi Linux yang popmuler dan berpengaruh. Debian didistribusikan dengan akses ke repositori dengan ribuan paket perangkat lunak yang siap untuk instalasi dan digunakan.</description>
+Debian adalah sistem operasi komputer yang tersusun dari paket-paket perangkat lunak yang dirilis sebagai perangkat lunak bebas dan terbuka dengan lisensi mayoritas GNU General Public License dan lisensi perangkat lunak bebas lainnya. Debian GNU/Linux memuat perkakas sistem operasi GNU dan kernel Linux merupakan distribusi Linux yang popmuler dan berpengaruh.</description>
       </item>
     
       <item>
@@ -969,7 +972,7 @@ Pada postingan kali ini saya akan membagi sedikit ilmu terkait dengan virtualisa
 B. PENGERTIAN
 TOPOLOGI MENURUT WIKIPEDIA
 Topologi Jaringan Sebuah LAN dapat diimplementasikan dengan berbagai macam topologi. Topologi yang di maksud di sini merupakan struktur jaringan fisik yang digunakan untuk mengimplementasikan LAN tersebut. Topologi dasar yang bisa digunakan dalam jaringan komputer adalah:
- Topologi Bus (Linear) Topologi Ring (Cincin) Topologi Star (Bintang) Topologi Tree (Pohon) Topologi Mesh (web)  Topologi pengembangan dari ketiga di atas biasanya berupa topologi Tree (Pohon), yang merupakan pengembangan dari star dan Bus, topologi Mash atau Hybrid atau Multipoint atau Web yang merupakan pengembangan dari topologi Point to Point (bus), topologi Loop yang merupakan pengembangan dari topologi Ring Ketiganya memiliki kelebihan dan kekurangan masing-masing.</description>
+Topologi Bus (Linear) Topologi Ring (Cincin) Topologi Star (Bintang) Topologi Tree (Pohon) Topologi Mesh (web) Topologi pengembangan dari ketiga di atas biasanya berupa topologi Tree (Pohon), yang merupakan pengembangan dari star dan Bus, topologi Mash atau Hybrid atau Multipoint atau Web yang merupakan pengembangan dari topologi Point to Point (bus), topologi Loop yang merupakan pengembangan dari topologi Ring Ketiganya memiliki kelebihan dan kekurangan masing-masing.</description>
       </item>
     
       <item>
@@ -1005,7 +1008,7 @@ Hello, pada kesempatan kali ini saya memposting bagaimana sih menginstal LAMP? N
 #Pengertian
 LAMP adalah istilah yang merupakan singkatan dari Linux, Apache, MySQL dan Perl/PHP/Phyton. Merupakan sebuah paket perangkat lunak bebas yang digunakan untuk menjalankan sebuah aplikasi secara lengkap.
 Komponen-komponen dari LAMP :
- Linux – sistem operasi Apache HTTP Server – web server MariaDB atau MySQL – sistem basis data PHP atau Perl atau Python – bahasa pemrograman yang dipakai  #Latar Belakang</description>
+Linux – sistem operasi Apache HTTP Server – web server MariaDB atau MySQL – sistem basis data PHP atau Perl atau Python – bahasa pemrograman yang dipakai #Latar Belakang</description>
       </item>
     
       <item>
@@ -1060,7 +1063,7 @@ Tujuan dari postingan ini agar si pembaca dapat mempraktekkan dan mengetahui bag
 Proxmox VE (Virtual Environment) adalah sebuah distro Linux virtualisasi berbasis Debian ( 64 bit) yang mengusung OpenZV dan KVM, dengan KVM kita tidak hanya bisa menginstall linux saja akan tetapi Operating system windows pun bisa kita instal. Namun yang membuat istimewa dari proxmox adalah kemudahan dalam installasi dan administrasi berbasis Web.
 Latar Belakang
 Beberapa keuntungan menggunakan Proxmox sebagai berikut
- Kinerja terbaik. Instalasi yang telah dioptimalkan, sehingga lebih cepat. Mudah dalam manajemen.</description>
+Kinerja terbaik. Instalasi yang telah dioptimalkan, sehingga lebih cepat. Mudah dalam manajemen.</description>
       </item>
     
       <item>
@@ -1079,9 +1082,9 @@ LATAR BELAKANG</description>
         <pubDate>Mon, 24 Jul 2017 13:52:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/24/instalasi-linux-mint-18.1-sarena/</guid>
         <description>Alat dan bahan:
- 1 set pc atau laptop flashdisk booting linux mint 18.1 cinnamon 64-bit  Langkah kerja:
-  Siapkan sebuah pc atau laptop yang akan diinstallkan linux mint 18.1 cinnamon 64-bit, serta flashdisk yang berisi booting sistem operasi yang akan diinstal.
-  Nyalakan pc atau laptop yang ingin di install, setalah itu masuk pada bios dan konfigurasi agar flashdisk booting yang telah ada dapat dipakai yaitu dengan cara masuk di menu “Boot” dan meletakkan jenis USB ke deretan atas.</description>
+1 set pc atau laptop flashdisk booting linux mint 18.1 cinnamon 64-bit Langkah kerja:
+Siapkan sebuah pc atau laptop yang akan diinstallkan linux mint 18.1 cinnamon 64-bit, serta flashdisk yang berisi booting sistem operasi yang akan diinstal.
+Nyalakan pc atau laptop yang ingin di install, setalah itu masuk pada bios dan konfigurasi agar flashdisk booting yang telah ada dapat dipakai yaitu dengan cara masuk di menu “Boot” dan meletakkan jenis USB ke deretan atas.</description>
       </item>
     
       <item>
@@ -1090,9 +1093,9 @@ LATAR BELAKANG</description>
         <pubDate>Sat, 22 Jul 2017 13:43:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/22/sejarah-singkat-blc-telkom-klaten-serta-perkenalan-dan-pertemuan-pertama/</guid>
         <description>Assalamualaikum Wr.Wb
- Perkenalkan saya Faizar Septiawan atau bisa di panggil Icar berasal dari Bulukumba, Sulawesi Selatan dan sekolah di SMKN 1 Bulukumba. Dipostingan pertama ini saya akan tuliskan sejarah dan review sebuah tempat magang/prakerin yang saya tempati. Tempat tersebut bernama BLC Telkom Klaten, beralamat di Jl.Srigading No.7 Tonggalan, Klaten Tengah
+Perkenalkan saya Faizar Septiawan atau bisa di panggil Icar berasal dari Bulukumba, Sulawesi Selatan dan sekolah di SMKN 1 Bulukumba. Dipostingan pertama ini saya akan tuliskan sejarah dan review sebuah tempat magang/prakerin yang saya tempati. Tempat tersebut bernama BLC Telkom Klaten, beralamat di Jl.Srigading No.7 Tonggalan, Klaten Tengah
 Sejarah BLC Telkom Klaten
- &amp;ldquo;Saya melihat Teknologi Informasi (TI) khususnya penggunaan dan pemanfaatan Internet di Indonesia seperti sebilah pisau yang sangat tajam dijual bebas dan dibeli oleh orang-orang tapi tidak ada keterangan penggunaannya, manfaat segi positif dan negatifnya.</description>
+&amp;ldquo;Saya melihat Teknologi Informasi (TI) khususnya penggunaan dan pemanfaatan Internet di Indonesia seperti sebilah pisau yang sangat tajam dijual bebas dan dibeli oleh orang-orang tapi tidak ada keterangan penggunaannya, manfaat segi positif dan negatifnya.</description>
       </item>
     
   </channel>

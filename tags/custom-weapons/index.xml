@@ -19,7 +19,7 @@
 Di linux anda juga menggunakan fitur ini dengan bantuan aplikasi fusuma, berikut installasi dan konfigurasinya.
 1. Berikan izin untuk membaca perangkat touchpad
 sudo gpasswd -a $USER input
-Install libinput-tools  sudo apt-get install libinput-tools
+Install libinput-tools sudo apt-get install libinput-tools
 3. Install Fusuma
 sudo gem install fusuma
 4. Instal xdotool (opsional)
