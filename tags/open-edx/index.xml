@@ -5,10 +5,19 @@
     <description>Recent content in Open edX on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 May 2022 14:04:22 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 30 Jun 2022 08:45:30 +0800</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/open-edx/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Check Open edX Version Installed</title>
+        <link>https://sibunglon.com/2022/06/30/check-open-edx-version-installed/</link>
+        <pubDate>Thu, 30 Jun 2022 08:45:30 +0800</pubDate>
+        <guid>https://sibunglon.com/2022/06/30/check-open-edx-version-installed/</guid>
+        <description>You can check it from source code of frontend or site of your LMS, it should include the following line:
+&amp;lt;meta name=&amp;#34;openedx-release-line&amp;#34; content=&amp;#34;lilac&amp;#34; /&amp;gt; See for instance the demo platform: https://demo.openedx.overhang.io/ (Ctrl+U to view the source code)</description>
+      </item>
     
       <item>
         <title>Enable Timed Exams on Open edX</title>
