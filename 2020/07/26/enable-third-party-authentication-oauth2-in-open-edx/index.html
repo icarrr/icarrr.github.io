@@ -65,7 +65,7 @@ Integrate Open edX With Google Step 1: Register The Open edX Site With Google Na
 OAuth2 Identity Providers. SAML Identity Providers This section describes how to integrate Open edX with two of the most popular OAuth2 providers: Google and Facebook.
 Integrate Open edX With Google Step 1: Register The Open edX Site With Google Navigate to the Google Developers Console. Select an existing project or create a new one. Search and select the “Google&#43; API” in the Google APIs list and press the “Enable API” button."><meta itemprop="datePublished" content="2020-07-26T17:39:23+08:00" />
 <meta itemprop="dateModified" content="2020-07-26T17:39:23+08:00" />
-<meta itemprop="wordCount" content="708"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
+<meta itemprop="wordCount" content="726"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
 <meta itemprop="keywords" content="Open edX," />
   <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://sibunglon.com/assets/img/profil.webp"/>
@@ -219,7 +219,20 @@ Integrate Open edX With Google Step 1: Register The Open edX Site With Google Na
 <p>IMPORTANT: Remember that both the “Name” and the “Backend Name” fields must match.</p>
 </blockquote>
 <ol start="11">
-<li>Set “Client ID” to the “Client ID” you noted down previously and leave the “Client secret” field blank.</li>
+<li>
+<p>Set “Client ID” to the “Client ID” you noted down previously and leave the “Client secret” field blank.</p>
+</li>
+<li>
+<p>Enter the following code into “Other settings”.</p>
+</li>
+</ol>
+<pre tabindex="0"><code>{
+    &#34;SCOPE&#34;: [&#34;email&#34;],
+    &#34;PROFILE_EXTRA_PARAMS&#34;: {
+        &#34;fields&#34;: &#34;id, name, email&#34;
+    }
+}    
+</code></pre><ol start="13">
 <li>Click the “Save” button.</li>
 </ol>
 <h3 id="notes">Notes</h3>
