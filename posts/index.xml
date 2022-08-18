@@ -5,10 +5,20 @@
     <description>Recent content in Posts on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Jun 2022 08:45:30 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 18 Aug 2022 18:50:15 +0800</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Storage Backing for BlockStructureStore</title>
+        <link>https://sibunglon.com/2022/08/18/storage-backing-for-blockstructurestore/</link>
+        <pubDate>Thu, 18 Aug 2022 18:50:15 +0800</pubDate>
+        <guid>https://sibunglon.com/2022/08/18/storage-backing-for-blockstructurestore/</guid>
+        <description>When the user access the course, there is a request trying to access BlockStructure (BS) data in Memcache and when it is not found in the cache, the system enters Collect Mode, and the process is quite heavy and causes slower response times.
+The maximum size of Memcache is 1 MB so if the BS is bigger than that Memcache will not save it.
+The solution to the BS issue against Memcache is to enable storage backing, be it local storage or Amazon S3 storage.</description>
+      </item>
     
       <item>
         <title>Check Open edX Version Installed</title>
