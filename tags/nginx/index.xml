@@ -5,10 +5,20 @@
     <description>Recent content in Nginx on The Official Site of siBunglon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 Dec 2020 03:32:07 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 23 Aug 2022 20:34:54 +0800</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Upgrade Insecure Requests on Nginx</title>
+        <link>https://sibunglon.com/2022/08/23/upgrade-insecure-requests-on-nginx/</link>
+        <pubDate>Tue, 23 Aug 2022 20:34:54 +0800</pubDate>
+        <guid>https://sibunglon.com/2022/08/23/upgrade-insecure-requests-on-nginx/</guid>
+        <description>&amp;ldquo;Upgrade Insecure Requests&amp;rdquo; is a CSP (Content Security Policy) directive that allows you to indicate to HTTP clients/browsers that all resources must be accessed via HTTPS.
+To enable it on the Nginx web server, you just need to add the script to your Nginx configuration file.
+add_header &amp;#39;Content-Security-Policy&amp;#39; &amp;#39;upgrade-insecure-requests&amp;#39;; Be aware that upgrade-insecure-requests is not supported in all browsers, e.g. Safari and IE.</description>
+      </item>
     
       <item>
         <title>Extract SSL Certificate and SSL Certificate Key From .PFX File</title>
