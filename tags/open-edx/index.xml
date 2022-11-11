@@ -23,6 +23,15 @@ Set up two new services (LMS and Studio) in Sentry and get their DSN strings.</d
       </item>
     
       <item>
+        <title>Enable Course Progress Tracking on Open edX</title>
+        <link>https://sibunglon.com/2022/10/11/enable-course-progress-tracking-on-open-edx/</link>
+        <pubDate>Tue, 11 Oct 2022 22:56:35 +0800</pubDate>
+        <guid>https://sibunglon.com/2022/10/11/enable-course-progress-tracking-on-open-edx/</guid>
+        <description>The completion progress tracking tool provides students a way to show themselves that they have completed any block or unit. To turn it, follow the steps below:
+Go to Open edX LMS admin. Find Waffle and add switch (eg, https://edx.sibunglon.com/admin/waffle/switch/add/). For name add with value completion.enable_completion_tracking and checked the Active checkbox. Done. You may be able to check it on your LMS, join to the course and complete one or more units on your course.</description>
+      </item>
+    
+      <item>
         <title>Storage Backing for BlockStructureStore</title>
         <link>https://sibunglon.com/2022/08/18/storage-backing-for-blockstructurestore/</link>
         <pubDate>Thu, 18 Aug 2022 18:50:15 +0800</pubDate>
