@@ -1,0 +1,26 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sentry on The Official Site of siBunglon</title>
+    <link>https://sibunglon.com/tags/sentry/</link>
+    <description>Recent content in Sentry on The Official Site of siBunglon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 11 Nov 2022 22:36:53 +0800</lastBuildDate>
+    
+      <atom:link href="https://sibunglon.com/tags/sentry/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      <item>
+        <title>Integrate Open edX with Sentry</title>
+        <link>https://sibunglon.com/2022/11/11/integrate-open-edx-with-sentry/</link>
+        <pubDate>Fri, 11 Nov 2022 22:36:53 +0800</pubDate>
+        <guid>https://sibunglon.com/2022/11/11/integrate-open-edx-with-sentry/</guid>
+        <description>Setting up Sentry crash reporting if you want to provide a reliable service, it’s extremely important to be aware of when things are going wrong on the website.
+Sentry is a wonderful free system to catch Python exceptions.
+For Django on Open edX, we use sentry-sdk to catch and report the errors back to Sentry.
+Set up a Sentry server or use existing Sentry .
+Set up two new services (LMS and Studio) in Sentry and get their DSN strings.</description>
+      </item>
+    
+  </channel>
+</rss>
