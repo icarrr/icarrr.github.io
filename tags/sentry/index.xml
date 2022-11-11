@@ -22,5 +22,19 @@ Set up a Sentry server or use existing Sentry .
 Set up two new services (LMS and Studio) in Sentry and get their DSN strings.</description>
       </item>
     
+      <item>
+        <title>Kafka Consumer on Sentry Receives OFFSET_OUT_OF_RANGE Error</title>
+        <link>https://sibunglon.com/2022/07/11/kafka-consumer-on-sentry-receives-offset_out_of_range-error/</link>
+        <pubDate>Mon, 11 Jul 2022 23:11:34 +0800</pubDate>
+        <guid>https://sibunglon.com/2022/07/11/kafka-consumer-on-sentry-receives-offset_out_of_range-error/</guid>
+        <description>
+Stop your sentry instance
+docker-compose stop Then remove volumes
+docker-compose down --volumes Remove the Kafka &amp;amp; Zookeeper related volumes
+docker volume rm sentry-kafka docker volume rm sentry-zookeeper Run installation script again which will create the missing topics
+./install.sh --skip-commit-check Then start your sentry instance
+docker-compose up -d </description>
+      </item>
+    
   </channel>
 </rss>
