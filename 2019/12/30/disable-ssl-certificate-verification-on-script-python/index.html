@@ -68,7 +68,6 @@ urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host=&#39;api.telegram.org
 <meta property="article:published_time" content="2019-12-30T21:45:42+07:00" />
 <meta property="article:modified_time" content="2019-12-30T21:45:42+07:00" /><meta property="og:site_name" content="The Official Site of siBunglon" />
 
-
   <meta itemprop="name" content="Disable SSL Certificate Verification on Script Python">
 <meta itemprop="description" content="I failed to run a telegram bot in another environment, more or less the error as follows.
 urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host=&#39;api.telegram.org&#39;, port=443): Max retries exceeded with url (Caused by SSLError(SSLError(1, u&#39;[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:618)&#39;),)) But after adding the following script, my bot finally managed to run in that environment. Maybe someone has a case related to SSL certificate verification, hopefully the following script can help.
