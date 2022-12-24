@@ -459,11 +459,11 @@ Just change py2neo==3.1.2 on your app requirements to https://github.com/technig
       </item>
     
       <item>
-        <title>Unable to Download Data Generate Open edX (file not found)</title>
-        <link>https://sibunglon.com/2021/08/29/unable-to-download-data-generate-open-edx-file-not-found/</link>
+        <title>Unable to Download Data Generated Open edX</title>
+        <link>https://sibunglon.com/2021/08/29/unable-to-download-data-generated-open-edx/</link>
         <pubDate>Sun, 29 Aug 2021 21:14:25 +0800</pubDate>
-        <guid>https://sibunglon.com/2021/08/29/unable-to-download-data-generate-open-edx-file-not-found/</guid>
-        <description>This problem occurs because don&amp;rsquo;t use Amazon S3 to save data generate. To fix it, follow these steps.
+        <guid>https://sibunglon.com/2021/08/29/unable-to-download-data-generated-open-edx/</guid>
+        <description>This problem occurs because don&amp;rsquo;t use Amazon S3 to save data generated. To fix it, follow these steps.
 -) Login to Open edX server, then create symbolic link from /tmp/edx-s3/grades to /edx/var/edxapp/media.
 -) Update nginx configuration of LMS. Find the following snippet codes on the configuration file.
 location ~ ^/media/(?P&amp;lt;file&amp;gt;.*) { root /edx/var/edxapp/media; try_files /$file =404; expires 31536000s; } Change =404 to /grades/$file or looks like the configuration below.</description>
