@@ -379,10 +379,10 @@ Then find the ANALYTICS_DASHBOARD_URL configuration and set to blank or &#39;&#3
       </item>
     
       <item>
-        <title>I18n_fastgenerate Error Reading Unicode File Name</title>
-        <link>https://sibunglon.com/2021/11/16/i18n_fastgenerate-error-reading-unicode-file-name/</link>
+        <title>I18n_fastgenerate Failed Reading Unicode File Name</title>
+        <link>https://sibunglon.com/2021/11/16/i18n_fastgenerate-failed-reading-unicode-file-name/</link>
         <pubDate>Tue, 16 Nov 2021 21:44:32 +0800</pubDate>
-        <guid>https://sibunglon.com/2021/11/16/i18n_fastgenerate-error-reading-unicode-file-name/</guid>
+        <guid>https://sibunglon.com/2021/11/16/i18n_fastgenerate-failed-reading-unicode-file-name/</guid>
         <description>I&amp;rsquo;m trying to modify translations and need re-compile translations file to implement the update. But when i trying re-compile it with the following command:
 $ sudo -H -u edxapp bash $ source /edx/app/edxapp/edxapp_env $ cd /edx/app/edxapp/edx-platform $ paver i18n_fastgenerate And i found this:
 Traceback (most recent call last): File &amp;#34;/openedx/venv/bin/django-admin&amp;#34;, line 11, in &amp;lt;module&amp;gt; sys.exit(execute_from_command_line()) File &amp;#34;/openedx/venv/local/lib/python2.7/site-packages/django/core/management/__init__.py&amp;#34;, line 364, in execute_from_command_line utility.execute() File &amp;#34;/openedx/venv/local/lib/python2.7/site-packages/django/core/management/__init__.py&amp;#34;, line 356, in execute self.fetch_command(subcommand).run_from_argv(self.argv) File &amp;#34;/openedx/venv/local/lib/python2.</description>
