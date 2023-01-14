@@ -7,10 +7,43 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Faizar Septiawan">
-  <meta name="description" content="Catch your problem solution or read interesting stories on my blog! | Programer paling ganteng di Makassar | #Cyclist Enthusiast | Programer paling gila di Makassar | Read - Search - Ask | Sekali Gila Tetap Gila">
-  <meta name="keywords" content="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Makassar, Ganteng, Gila, Cyclist, Palugada">
+  <meta name="description" content="Catch your problem solution or read interesting stories on my blog! | Palugada paling ganteng di Makassar | #Cyclist Enthusiast | Palugada paling gila di Makassar | Read - Search - Ask | Sekali Gila Tetap Gila">
+  <meta name="keywords" content="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Routing Dynamic OSPF di MikroTik" />
+<meta property="og:description" content="A. Pendahuluan
+Pada kesempatan kali ini, yang saya posting yaitu membuat routing dynamic OSPF di mikrotik
+B. Pengertian
+Open Shortest Path First (OSPF) adalah sebuah protokol routing otomatis (Dynamic Routing) yang mampu menjaga, mengatur dan mendistribusikan informasi routing antar network mengikuti setiap perubahan jaringan secara dinamis. Pada OSPF dikenal sebuah istilah Autonomus System (AS) yaitu sebuah gabungan dari beberapa jaringan yang sifatnya routing dan memiliki kesamaan metode serta policy pengaturan network, yang semuanya dapat dikendalikan oleh network administrator." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sibunglon.com/2017/09/12/routing-dynamic-ospf-di-mikrotik/" /><meta property="og:image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2017-09-12T12:36:00+00:00" />
+<meta property="article:modified_time" content="2017-09-12T12:36:00+00:00" /><meta property="og:site_name" content="The Official Site of siBunglon" />
+
+
+  <!-- schema data -->
+  <meta itemprop="name" content="Routing Dynamic OSPF di MikroTik">
+<meta itemprop="description" content="A. Pendahuluan
+Pada kesempatan kali ini, yang saya posting yaitu membuat routing dynamic OSPF di mikrotik
+B. Pengertian
+Open Shortest Path First (OSPF) adalah sebuah protokol routing otomatis (Dynamic Routing) yang mampu menjaga, mengatur dan mendistribusikan informasi routing antar network mengikuti setiap perubahan jaringan secara dinamis. Pada OSPF dikenal sebuah istilah Autonomus System (AS) yaitu sebuah gabungan dari beberapa jaringan yang sifatnya routing dan memiliki kesamaan metode serta policy pengaturan network, yang semuanya dapat dikendalikan oleh network administrator."><meta itemprop="datePublished" content="2017-09-12T12:36:00+00:00" />
+<meta itemprop="dateModified" content="2017-09-12T12:36:00+00:00" />
+<meta itemprop="wordCount" content="432"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg"/>
+<meta itemprop="keywords" content="BLC Telkom Klaten,MikroTik," />
+
+  <!-- Twitter cards data -->
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg"/>
+
+<meta name="twitter:title" content="Routing Dynamic OSPF di MikroTik"/>
+<meta name="twitter:description" content="A. Pendahuluan
+Pada kesempatan kali ini, yang saya posting yaitu membuat routing dynamic OSPF di mikrotik
+B. Pengertian
+Open Shortest Path First (OSPF) adalah sebuah protokol routing otomatis (Dynamic Routing) yang mampu menjaga, mengatur dan mendistribusikan informasi routing antar network mengikuti setiap perubahan jaringan secara dinamis. Pada OSPF dikenal sebuah istilah Autonomus System (AS) yaitu sebuah gabungan dari beberapa jaringan yang sifatnya routing dan memiliki kesamaan metode serta policy pengaturan network, yang semuanya dapat dikendalikan oleh network administrator."/>
+
   
-  
+
   
   <meta name="google-site-verification" content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM" />
   
@@ -57,35 +90,8 @@
   
 
   
-  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="The Official Site of siBunglon" />
-
-  <meta property="og:title" content="Routing Dynamic OSPF di MikroTik" />
-<meta property="og:description" content="A. Pendahuluan
-Pada kesempatan kali ini, yang saya posting yaitu membuat routing dynamic OSPF di mikrotik
-B. Pengertian
-Open Shortest Path First (OSPF) adalah sebuah protokol routing otomatis (Dynamic Routing) yang mampu menjaga, mengatur dan mendistribusikan informasi routing antar network mengikuti setiap perubahan jaringan secara dinamis. Pada OSPF dikenal sebuah istilah Autonomus System (AS) yaitu sebuah gabungan dari beberapa jaringan yang sifatnya routing dan memiliki kesamaan metode serta policy pengaturan network, yang semuanya dapat dikendalikan oleh network administrator." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://sibunglon.com/2017/09/12/routing-dynamic-ospf-di-mikrotik/" /><meta property="og:image" content="https://sibunglon.com/assets/img/profil.webp"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2017-09-12T12:36:00+00:00" />
-<meta property="article:modified_time" content="2017-09-12T12:36:00+00:00" /><meta property="og:site_name" content="The Official Site of siBunglon" />
-
-  <meta itemprop="name" content="Routing Dynamic OSPF di MikroTik">
-<meta itemprop="description" content="A. Pendahuluan
-Pada kesempatan kali ini, yang saya posting yaitu membuat routing dynamic OSPF di mikrotik
-B. Pengertian
-Open Shortest Path First (OSPF) adalah sebuah protokol routing otomatis (Dynamic Routing) yang mampu menjaga, mengatur dan mendistribusikan informasi routing antar network mengikuti setiap perubahan jaringan secara dinamis. Pada OSPF dikenal sebuah istilah Autonomus System (AS) yaitu sebuah gabungan dari beberapa jaringan yang sifatnya routing dan memiliki kesamaan metode serta policy pengaturan network, yang semuanya dapat dikendalikan oleh network administrator."><meta itemprop="datePublished" content="2017-09-12T12:36:00+00:00" />
-<meta itemprop="dateModified" content="2017-09-12T12:36:00+00:00" />
-<meta itemprop="wordCount" content="432"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil.webp"/>
-<meta itemprop="keywords" content="BLC Telkom Klaten,MikroTik," />
-  <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://sibunglon.com/assets/img/profil.webp"/>
-
-<meta name="twitter:title" content="Routing Dynamic OSPF di MikroTik"/>
-<meta name="twitter:description" content="A. Pendahuluan
-Pada kesempatan kali ini, yang saya posting yaitu membuat routing dynamic OSPF di mikrotik
-B. Pengertian
-Open Shortest Path First (OSPF) adalah sebuah protokol routing otomatis (Dynamic Routing) yang mampu menjaga, mengatur dan mendistribusikan informasi routing antar network mengikuti setiap perubahan jaringan secara dinamis. Pada OSPF dikenal sebuah istilah Autonomus System (AS) yaitu sebuah gabungan dari beberapa jaringan yang sifatnya routing dan memiliki kesamaan metode serta policy pengaturan network, yang semuanya dapat dikendalikan oleh network administrator."/>
-
+  <!-- RSS -->
+  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="Faizar Septiawan - Palugada paling ganteng di Makassar" />
   
 
   
@@ -115,7 +121,7 @@ Open Shortest Path First (OSPF) adalah sebuah protokol routing otomatis (Dynamic
         <span class="date">September 12, 2017</span></small>
       <h1>Routing Dynamic OSPF di MikroTik</h1>
     </header>
-    <section><p><img src="https://1.bp.blogspot.com/-3U5L0nQcPFY/W6fdcLNSHiI/AAAAAAAAETI/ac2txVWqS7UENfc8PGohvz7binFcXQgZACLcBGAs/s1600/topologi%2Brouting%2Bdynamic%2BOSPF.png" alt="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Makassar, Ganteng, Gila, Cyclist, Palugada"></p>
+    <section><p><img src="https://1.bp.blogspot.com/-3U5L0nQcPFY/W6fdcLNSHiI/AAAAAAAAETI/ac2txVWqS7UENfc8PGohvz7binFcXQgZACLcBGAs/s1600/topologi%2Brouting%2Bdynamic%2BOSPF.png" alt="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist"></p>
 <p><strong>A. Pendahuluan</strong></p>
 <p>Pada kesempatan kali ini, yang saya posting yaitu membuat routing dynamic OSPF di mikrotik</p>
 <p><strong>B. Pengertian</strong></p>
@@ -159,23 +165,23 @@ Open Shortest Path First (OSPF) adalah sebuah protokol routing otomatis (Dynamic
 <p>Berikan identitas mikrotik. System &gt; Identity</p>
 </li>
 </ol>
-<p><img src="https://1.bp.blogspot.com/-00GFz6Wkdww/W6fdlr1jwdI/AAAAAAAAETM/_ZMcSdWI-zMhjfKM4_GMDrjXockfGKhEQCLcBGAs/s1600/Screenshot_1.png" alt="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Makassar, Ganteng, Gila, Cyclist, Palugada"></p>
+<p><img src="https://1.bp.blogspot.com/-00GFz6Wkdww/W6fdlr1jwdI/AAAAAAAAETM/_ZMcSdWI-zMhjfKM4_GMDrjXockfGKhEQCLcBGAs/s1600/Screenshot_1.png" alt="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist"></p>
 <ol start="3">
 <li>Berikan nama/berikan komen pada tiap interface untuk memudahkan mengetahui fungsi interface tersebut. Interface &gt; klik interface yang ingin diberi komen &gt; klik komen (icon berwarna kuning) &gt; Ok</li>
 </ol>
-<p><img src="https://1.bp.blogspot.com/-2yX_LdRmsIc/W6fdqRJThfI/AAAAAAAAETQ/K01Q9DorHmsYtf8EUM22uH21krrg5rl2ACLcBGAs/s1600/Screenshot_2.png" alt="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Makassar, Ganteng, Gila, Cyclist, Palugada"></p>
+<p><img src="https://1.bp.blogspot.com/-2yX_LdRmsIc/W6fdqRJThfI/AAAAAAAAETQ/K01Q9DorHmsYtf8EUM22uH21krrg5rl2ACLcBGAs/s1600/Screenshot_2.png" alt="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist"></p>
 <ol start="4">
 <li>Alokasikan ip address. IP &gt; addresses &gt; add (icon +) &gt; berikan ip &gt; pilih interface &gt; apply &gt; Ok</li>
 </ol>
-<p><img src="https://1.bp.blogspot.com/-0YLVTLYnvB0/W6fdwIxKO1I/AAAAAAAAETY/RFW1_aM4Ua80Ji_j0yMu-g_Fe-2ITb61wCLcBGAs/s1600/Screenshot_3.png" alt="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Makassar, Ganteng, Gila, Cyclist, Palugada"></p>
+<p><img src="https://1.bp.blogspot.com/-0YLVTLYnvB0/W6fdwIxKO1I/AAAAAAAAETY/RFW1_aM4Ua80Ji_j0yMu-g_Fe-2ITb61wCLcBGAs/s1600/Screenshot_3.png" alt="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist"></p>
 <ol start="5">
 <li>Masuk ke konfigurasi OSPF. Routing &gt; OSPF &gt; instances</li>
 </ol>
-<p><img src="https://4.bp.blogspot.com/-yJ0OZSoiYTY/W6fd0_p_BuI/AAAAAAAAETc/rv-Xt0MBoew4yxIqAQCuh34Dn7CAygGYQCLcBGAs/s1600/Screenshot_4.png" alt="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Makassar, Ganteng, Gila, Cyclist, Palugada"></p>
+<p><img src="https://4.bp.blogspot.com/-yJ0OZSoiYTY/W6fd0_p_BuI/AAAAAAAAETc/rv-Xt0MBoew4yxIqAQCuh34Dn7CAygGYQCLcBGAs/s1600/Screenshot_4.png" alt="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist"></p>
 <ol start="6">
 <li>Klik 2 kali pada settingan default, kemudian ubah redistributed connected route menjadi as type 1 &gt; apply &gt; ok</li>
 </ol>
-<p><img src="https://2.bp.blogspot.com/-OqJkSGrbhoQ/W6fd-GS9kBI/AAAAAAAAETk/MTzufdro9igmDZ9cQKwUeSLSFE0iJ5qyQCLcBGAs/s1600/Screenshot_5.png" alt="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Makassar, Ganteng, Gila, Cyclist, Palugada"></p>
+<p><img src="https://2.bp.blogspot.com/-OqJkSGrbhoQ/W6fd-GS9kBI/AAAAAAAAETk/MTzufdro9igmDZ9cQKwUeSLSFE0iJ5qyQCLcBGAs/s1600/Screenshot_5.png" alt="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist"></p>
 <ol start="7">
 <li>
 <p>Pindah ke tab network kemudian tambahkan semua network yang ada pada ip &gt; address kemudian tambahkan prefiksnya dibelakang network</p>
@@ -184,7 +190,7 @@ Open Shortest Path First (OSPF) adalah sebuah protokol routing otomatis (Dynamic
 <p>Silahkan coba ping router yang tehubung, dan ping juga client yang terhubung.</p>
 </li>
 </ol>
-<p><img src="https://1.bp.blogspot.com/-bTzgmMNByY8/W6feGTn1cHI/AAAAAAAAETw/YWM6k5SWqhU7DY2zd6GnfKrBcj45eToNwCLcBGAs/s1600/Screenshot_7.png" alt="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Makassar, Ganteng, Gila, Cyclist, Palugada"></p>
+<p><img src="https://1.bp.blogspot.com/-bTzgmMNByY8/W6feGTn1cHI/AAAAAAAAETw/YWM6k5SWqhU7DY2zd6GnfKrBcj45eToNwCLcBGAs/s1600/Screenshot_7.png" alt="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist"></p>
 <p><strong>I. Hasil yang didapatkan</strong></p>
 <p>Semua langkah-langkahnya dapat diikuti dengan baik dan benar</p>
 <p><strong>J. Temuan masalah</strong></p>
