@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-us" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+  <title>Implementasi Kondom Internet</title>
+  
+  <meta http-equiv="cache-control" content="public, max-age=31536000" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Faizar Septiawan">
+  <meta name="description" content="Catch your problem solution or read interesting stories on my blog! | Palugada paling ganteng di Makassar | #Cyclist Enthusiast | Palugada paling gila di Makassar | Read - Search - Ask | Sekali Gila Tetap Gila">
+  <meta name="keywords" content="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Implementasi Kondom Internet" />
+<meta property="og:description" content="DNS (Domain Name System) itu seperti buku telepon digital. Kita kan sudah terbiasa mengunjungi situs dengan alamat seperti https://www.google.com/, namun alamat sebenarnya Google (salah satunya) adalah 216.239.38.120. Namun angka-angka seperti itu kan susah diingat, jadi harus ada yang menghubungkan alamat google.com dengan alamat full angka tersebut, itulah fungsi DNS.
+Kenyataannya adalah, koneksi DNS sekarang ini banyak sekali yang tidak terlindungi dengan baik. Penyedia layanan internet kita juga sebenarnya memiliki DNS mereka masing-masing dan mereka memiliki akses ke sejarah browsing kita." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sibunglon.com/2023/03/10/implementasi-kondom-internet/" /><meta property="og:image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-03-10T15:19:39+08:00" />
+<meta property="article:modified_time" content="2023-03-10T15:19:39+08:00" /><meta property="og:site_name" content="The Official Site of siBunglon" />
+
+
+  <!-- schema data -->
+  <meta itemprop="name" content="Implementasi Kondom Internet">
+<meta itemprop="description" content="DNS (Domain Name System) itu seperti buku telepon digital. Kita kan sudah terbiasa mengunjungi situs dengan alamat seperti https://www.google.com/, namun alamat sebenarnya Google (salah satunya) adalah 216.239.38.120. Namun angka-angka seperti itu kan susah diingat, jadi harus ada yang menghubungkan alamat google.com dengan alamat full angka tersebut, itulah fungsi DNS.
+Kenyataannya adalah, koneksi DNS sekarang ini banyak sekali yang tidak terlindungi dengan baik. Penyedia layanan internet kita juga sebenarnya memiliki DNS mereka masing-masing dan mereka memiliki akses ke sejarah browsing kita."><meta itemprop="datePublished" content="2023-03-10T15:19:39+08:00" />
+<meta itemprop="dateModified" content="2023-03-10T15:19:39+08:00" />
+<meta itemprop="wordCount" content="368"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg"/>
+<meta itemprop="keywords" content="Pi-Hole," />
+
+  <!-- Twitter cards data -->
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg"/>
+
+<meta name="twitter:title" content="Implementasi Kondom Internet"/>
+<meta name="twitter:description" content="DNS (Domain Name System) itu seperti buku telepon digital. Kita kan sudah terbiasa mengunjungi situs dengan alamat seperti https://www.google.com/, namun alamat sebenarnya Google (salah satunya) adalah 216.239.38.120. Namun angka-angka seperti itu kan susah diingat, jadi harus ada yang menghubungkan alamat google.com dengan alamat full angka tersebut, itulah fungsi DNS.
+Kenyataannya adalah, koneksi DNS sekarang ini banyak sekali yang tidak terlindungi dengan baik. Penyedia layanan internet kita juga sebenarnya memiliki DNS mereka masing-masing dan mereka memiliki akses ke sejarah browsing kita."/>
+
+  
+
+  
+  <meta name="google-site-verification" content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM" />
+  
+  
+  
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110194945-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110194945-3');
+  </script>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L0K35LHNTF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-L0K35LHNTF');
+  </script>
+  
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/css/external.min.css" media="screen">
+  
+  
+  <link rel="stylesheet" href="/assets/css/styles.css" media="screen">
+  <link src="/assets/custom/googlefonts/roboto.css" rel="stylesheet">
+  
+
+  
+  
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/src/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="/src/images/favicon.ico">
+  
+
+  
+  <!-- RSS -->
+  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="Faizar Septiawan - Palugada paling ganteng di Makassar" />
+  
+
+  
+  
+  <script defer src="/assets/custom/fontawesome-5.15.1/js/all.min.js"></script>
+  
+  
+</head>
+
+  <body>
+    
+      <nav>
+  <a href="/">
+    siBunglon
+  </a>
+  <a href="/posts">
+    Posts
+  </a>
+</nav>
+
+    
+    <main class="container">
+      
+  <article>
+    <header>
+      <small>
+        <span class="date">March 10, 2023</span></small>
+      <h1>Implementasi Kondom Internet</h1>
+    </header>
+    <section><p><img src="/assets/img/pihole/pihole-logo.png" alt="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist"></p>
+<p>DNS (Domain Name System) itu seperti buku telepon digital. Kita kan sudah terbiasa mengunjungi situs dengan alamat seperti <a href="https://www.google.com/">https://www.google.com/</a>, namun alamat sebenarnya Google (salah satunya) adalah 216.239.38.120. Namun angka-angka seperti itu kan susah diingat, jadi harus ada yang menghubungkan alamat google.com dengan alamat full angka tersebut, itulah fungsi DNS.</p>
+<p>Kenyataannya adalah, koneksi DNS sekarang ini banyak sekali yang tidak terlindungi dengan baik. Penyedia layanan internet kita juga sebenarnya memiliki DNS mereka masing-masing dan mereka memiliki akses ke sejarah browsing kita.</p>
+<p>Selain dari tracking penyedia layanan internet (ISP), layanan seperti Google, AWS, dan beberapa layanan lain sebenarnya mendengarkan apa yang ada disekitarnya. Misal Anda berbincang untuk membeli sesuatu dan selang beberapa wakut, iklan barang tersebut akan muncul di beberapa platform atau aplikasi yang Anda gunakan.</p>
+<p>Yapp, tracking tersebut sebenarnya ada manfaatnya juga.</p>
+<p>Namun karena beberapa alasan, saat berada di rumah saya tidak ingin tracking-tracking tersebut berfungsi. Dan kebetulan di rumah ada di rumah ada 1 device yang bisa online 7 x 24 jam jadi kepikiran untuk sekalian pasang AdBlock pada device tersebut. AdBlock yang saya pasang yaitu Pi-hole.</p>
+<p><strong>Apa itu Pi-hole?</strong></p>
+<p>Pi-hole adalah sebuah program yang memungkinkan semua orang untuk membuat DNS server sendiri yang bersifat sebagai <a href="https://en.wikipedia.org/wiki/DNS_sinkhole">sinkhole</a> untuk mayoritas iklan dan tracker yang ada di internet.</p>
+<p>DNS sinkhole itu DNS yang bisa blacklist DNS request (biasanya yang mau diblokir itu berupa iklan dan tracker online). Efek sampingnya, browsing internet bisa lebih cepet dan lebih hemat bandwidth.</p>
+<p>Jika kita memasang adblocker di browser, maka yang terlindungi hanyalah aktifitas di browser tersebut. Namun dengan menggunakan Pi-hole di router, perlindungan itu akan mencakup semua traffic internet yang melalui router tersebut.</p>
+<p>Beberapa orang menjuluki Pi-hole sebagai kondomnya internet.</p>
+<p>Namun ada satu masalah dari penggunaan Pi-hole ini, ternyata traffic DNS-nya tidak terenkripsi jika hanya melakukan instalasi seperti panduannya. Jadi saya tetap tidak bisa membuka website seperti Reddit. Dari masalah itu, saya pasang lagi proxy by Cloudflare karena kebetulan Cloudflare juga bisa enkripsi request DNS dengan metodę <a href="https://en.wikipedia.org/wiki/DNS_over_HTTPS">DNS over HTTPS</a>.</p>
+<p><strong>Hasil</strong></p>
+<p>Dari statistik Pi-Hole dalam 24 jam, lumayan banyak tracker dan iklan yang di blokir.</p>
+<p><img src="/assets/img/pihole/pihole-1.png" alt="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist"></p>
+<p>Btw, untuk installasi Pi-Hole bisa cek disini &gt; <a href="https://github.com/pi-hole/pi-hole">https://github.com/pi-hole/pi-hole</a> dan untuk installasi Cloudflare bisa cek disini &gt; <a href="https://docs.pi-hole.net/guides/dns/cloudflared/">https://docs.pi-hole.net/guides/dns/cloudflared/</a></p>
+<p>Atau bisa nunggu artikel baru untuk installasi 2 item tersebut 😁</p>
+</section>
+    <footer>
+      <hr>
+      <div class="meta">
+        <p class="tags">
+          
+            
+              <a href="/tags/pi-hole">
+                <span>#</span>Pi-Hole</a>
+            
+          
+        </p>
+      </div>
+      <hr>
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sibunglonlabs" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </footer>
+  </article>
+
+    </main>
+    
+      <footer>
+  <p>
+    &copy; 2023 Faizar Septiawan. <a href="http://creativecommons.org/licenses/by-sa/4.0/">Some Rights Reserved</a>.
+  </p>
+  <p>
+    Powered by <a href="https://gohugo.io" title="A Fast and Flexible Website Generator">Hugo</a> &amp; <a href="https://github.com/eshlox/simplicity" title="Hugo theme">Simplicity</a>.
+  </p>
+</footer>
+
+    
+    
+    
+    
+    
+    
+    
+    <script src="/assets/js/scripts.min.js"></script>
+    
+      
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-110194945-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+  </body>
+</html>
