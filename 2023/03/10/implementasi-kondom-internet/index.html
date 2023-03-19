@@ -25,7 +25,7 @@ Kenyataannya adalah, koneksi DNS sekarang ini banyak sekali yang tidak terlindun
 <meta itemprop="description" content="DNS (Domain Name System) itu seperti buku telepon digital. Kita kan sudah terbiasa mengunjungi situs dengan alamat seperti https://www.google.com/, namun alamat sebenarnya Google (salah satunya) adalah 216.239.38.120. Namun angka-angka seperti itu kan susah diingat, jadi harus ada yang menghubungkan alamat google.com dengan alamat full angka tersebut, itulah fungsi DNS.
 Kenyataannya adalah, koneksi DNS sekarang ini banyak sekali yang tidak terlindungi dengan baik. Penyedia layanan internet kita juga sebenarnya memiliki DNS mereka masing-masing dan mereka memiliki akses ke sejarah browsing kita."><meta itemprop="datePublished" content="2023-03-10T15:19:39+08:00" />
 <meta itemprop="dateModified" content="2023-03-10T15:19:39+08:00" />
-<meta itemprop="wordCount" content="413"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg"/>
+<meta itemprop="wordCount" content="441"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg"/>
 <meta itemprop="keywords" content="Pi-Hole,AdBlock," />
 
   <!-- Twitter cards data -->
@@ -127,15 +127,26 @@ Kenyataannya adalah, koneksi DNS sekarang ini banyak sekali yang tidak terlindun
 <p>Jika kita memasang adblocker di browser, maka yang terlindungi hanyalah aktifitas di browser tersebut. Namun dengan menggunakan Pi-hole di router, perlindungan itu akan mencakup semua traffic internet yang melalui router tersebut.</p>
 <p>Beberapa orang menjuluki Pi-hole sebagai kondomnya internet.</p>
 <p>Namun ada satu masalah dari penggunaan Pi-hole ini, ternyata traffic DNS-nya tidak terenkripsi jika hanya melakukan instalasi seperti panduannya. Jadi saya tetap tidak bisa membuka website seperti Reddit. Dari masalah itu, saya pasang lagi proxy by Cloudflare karena kebetulan Cloudflare juga bisa enkripsi request DNS dengan metodę <a href="https://en.wikipedia.org/wiki/DNS_over_HTTPS">DNS over HTTPS</a>.</p>
-<p><strong>Hasil</strong></p>
+<p><strong>Goal</strong></p>
 <p>Dari statistik Pi-Hole dalam 24 jam, lumayan banyak tracker dan iklan yang di blokir.</p>
 <p><img src="/assets/img/pihole/pihole-1.png" alt="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist"></p>
 <p>Dari bloking tracker dan iklan tersebut, performa browsing jadi lebih cepat karena hanya sedikit transaksi atau request yang di izinkan. Berikut cuplikan network performance tanpa menggukan Pi-Hole saat akses salah satu site berita yang cukup terkenal dengan banyak iklannya.</p>
 <p><img src="/assets/img/pihole/before.png" alt="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist"></p>
 <p>Dan berikut cuplikan setelah menggunakan Pi-Hole.</p>
 <p><img src="/assets/img/pihole/after.png" alt="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist"></p>
-<p>Btw, untuk installasi Pi-Hole bisa cek disini &gt; <a href="https://github.com/pi-hole/pi-hole">https://github.com/pi-hole/pi-hole</a> dan untuk installasi Cloudflare bisa cek disini &gt; <a href="https://docs.pi-hole.net/guides/dns/cloudflared/">https://docs.pi-hole.net/guides/dns/cloudflared/</a></p>
-<p>Atau bisa nunggu artikel baru untuk installasi 2 item tersebut 😁</p>
+<p>Btw, untuk installasi Pi-Hole bisa cek disini</p>
+<ul>
+<li><a href="https://github.com/pi-hole/pi-hole">https://github.com/pi-hole/pi-hole</a></li>
+<li><a href="https://raspberrytips.com/install-pi-hole-ad-blocker/">https://raspberrytips.com/install-pi-hole-ad-blocker/</a></li>
+</ul>
+<p>Untuk installasi Cloudflare bisa cek disini</p>
+<ul>
+<li><a href="https://docs.pi-hole.net/guides/dns/cloudflared/">https://docs.pi-hole.net/guides/dns/cloudflared/</a></li>
+</ul>
+<p>Ohiya Pi-Hole ini biasanya digunakan pada network internal misalnya pada internet rumahan. Namun jika ingin menggunakan Pi-Hole saat berada di luar rumah dan Anda belum punya IP Publik, bisa menggunakan <a href="https://tailscale.com/">Tailscale</a>. Untuk access a Pi-hole from anywhere bisa cek disini</p>
+<ul>
+<li><a href="https://tailscale.com/kb/1114/pi-hole/">https://tailscale.com/kb/1114/pi-hole/</a></li>
+</ul>
 </section>
     <footer>
       <hr>
