@@ -25,8 +25,8 @@ Kenyataannya adalah, koneksi DNS sekarang ini banyak sekali yang tidak terlindun
 <meta itemprop="description" content="DNS (Domain Name System) itu seperti buku telepon digital. Kita kan sudah terbiasa mengunjungi situs dengan alamat seperti https://www.google.com/, namun alamat sebenarnya Google (salah satunya) adalah 216.239.38.120. Namun angka-angka seperti itu kan susah diingat, jadi harus ada yang menghubungkan alamat google.com dengan alamat full angka tersebut, itulah fungsi DNS.
 Kenyataannya adalah, koneksi DNS sekarang ini banyak sekali yang tidak terlindungi dengan baik. Penyedia layanan internet kita juga sebenarnya memiliki DNS mereka masing-masing dan mereka memiliki akses ke sejarah browsing kita."><meta itemprop="datePublished" content="2023-03-10T15:19:39+08:00" />
 <meta itemprop="dateModified" content="2023-03-10T15:19:39+08:00" />
-<meta itemprop="wordCount" content="368"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg"/>
-<meta itemprop="keywords" content="Pi-Hole," />
+<meta itemprop="wordCount" content="413"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg"/>
+<meta itemprop="keywords" content="Pi-Hole,AdBlock," />
 
   <!-- Twitter cards data -->
   <meta name="twitter:card" content="summary_large_image"/>
@@ -120,7 +120,7 @@ Kenyataannya adalah, koneksi DNS sekarang ini banyak sekali yang tidak terlindun
 <p>Kenyataannya adalah, koneksi DNS sekarang ini banyak sekali yang tidak terlindungi dengan baik. Penyedia layanan internet kita juga sebenarnya memiliki DNS mereka masing-masing dan mereka memiliki akses ke sejarah browsing kita.</p>
 <p>Selain dari tracking penyedia layanan internet (ISP), layanan seperti Google, AWS, dan beberapa layanan lain sebenarnya mendengarkan apa yang ada disekitarnya. Misal Anda berbincang untuk membeli sesuatu dan selang beberapa wakut, iklan barang tersebut akan muncul di beberapa platform atau aplikasi yang Anda gunakan.</p>
 <p>Yapp, tracking tersebut sebenarnya ada manfaatnya juga.</p>
-<p>Namun karena beberapa alasan, saat berada di rumah saya tidak ingin tracking-tracking tersebut berfungsi. Dan kebetulan di rumah ada di rumah ada 1 device yang bisa online 7 x 24 jam jadi kepikiran untuk sekalian pasang AdBlock pada device tersebut. AdBlock yang saya pasang yaitu Pi-hole.</p>
+<p>Namun karena beberapa alasan, saat berada di rumah saya tidak ingin tracking-tracking tersebut berfungsi. Dan kebetulan di rumah ada di rumah ada 1 device yang bisa online 7 x 24 jam jadi kepikiran untuk sekalian pasang AdBlock pada device tersebut. AdBlock yang saya pasang yaitu <strong>Pi-hole</strong>.</p>
 <p><strong>Apa itu Pi-hole?</strong></p>
 <p>Pi-hole adalah sebuah program yang memungkinkan semua orang untuk membuat DNS server sendiri yang bersifat sebagai <a href="https://en.wikipedia.org/wiki/DNS_sinkhole">sinkhole</a> untuk mayoritas iklan dan tracker yang ada di internet.</p>
 <p>DNS sinkhole itu DNS yang bisa blacklist DNS request (biasanya yang mau diblokir itu berupa iklan dan tracker online). Efek sampingnya, browsing internet bisa lebih cepet dan lebih hemat bandwidth.</p>
@@ -130,6 +130,10 @@ Kenyataannya adalah, koneksi DNS sekarang ini banyak sekali yang tidak terlindun
 <p><strong>Hasil</strong></p>
 <p>Dari statistik Pi-Hole dalam 24 jam, lumayan banyak tracker dan iklan yang di blokir.</p>
 <p><img src="/assets/img/pihole/pihole-1.png" alt="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist"></p>
+<p>Dari bloking tracker dan iklan tersebut, performa browsing jadi lebih cepat karena hanya sedikit transaksi atau request yang di izinkan. Berikut cuplikan network performance tanpa menggukan Pi-Hole saat akses salah satu site berita yang cukup terkenal dengan banyak iklannya.</p>
+<p><img src="/assets/img/pihole/before.png" alt="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist"></p>
+<p>Dan berikut cuplikan setelah menggunakan Pi-Hole.</p>
+<p><img src="/assets/img/pihole/after.png" alt="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist"></p>
 <p>Btw, untuk installasi Pi-Hole bisa cek disini &gt; <a href="https://github.com/pi-hole/pi-hole">https://github.com/pi-hole/pi-hole</a> dan untuk installasi Cloudflare bisa cek disini &gt; <a href="https://docs.pi-hole.net/guides/dns/cloudflared/">https://docs.pi-hole.net/guides/dns/cloudflared/</a></p>
 <p>Atau bisa nunggu artikel baru untuk installasi 2 item tersebut 😁</p>
 </section>
@@ -141,6 +145,9 @@ Kenyataannya adalah, koneksi DNS sekarang ini banyak sekali yang tidak terlindun
             
               <a href="/tags/pi-hole">
                 <span>#</span>Pi-Hole</a>
+            
+              <a href="/tags/adblock">
+                <span>#</span>AdBlock</a>
             
           
         </p>
