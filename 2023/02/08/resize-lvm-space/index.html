@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en-us" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+  <title>Resize LVM Space</title>
+  
+  <meta http-equiv="cache-control" content="public, max-age=31536000" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Faizar Septiawan">
+  <meta name="description" content="Catch your problem solution or read interesting stories on my blog! | Palugada paling ganteng di Makassar | #Cyclist Enthusiast | Palugada paling gila di Makassar | Read - Search - Ask | Sekali Gila Tetap Gila">
+  <meta name="keywords" content="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Resize LVM Space" />
+<meta property="og:description" content="Use Space from Extended Physical (or Virtual) Disk
+ubuntu@ubuntu:~$ lsblk NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT loop0 7:0 0 55.6M 1 loop /snap/core18/2654 loop1 7:1 0 63.2M 1 loop /snap/core20/1695 loop2 7:2 0 63.2M 1 loop /snap/core20/1738 loop3 7:3 0 91.8M 1 loop /snap/lxd/23991 loop4 7:4 0 55.6M 1 loop /snap/core18/2632 loop5 7:5 0 49.6M 1 loop /snap/snapd/17883 loop6 7:6 0 91.9M 1 loop /snap/lxd/24061 sda 8:0 0 70G 0 disk ├─sda1 8:1 0 1M 0 part ├─sda2 8:2 0 1G 0 part /boot └─sda3 8:3 0 69G 0 part └─ubuntu--vg-ubuntu--lv 253:0 0 69G 0 lvm / sr0 11:0 1 1024M 0 rom ubuntu@ubuntu:~$ On this case, LVM partition it is under sda3 and let&rsquo;s start with extended or resize disk." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sibunglon.com/2023/02/08/resize-lvm-space/" /><meta property="og:image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-02-08T15:56:46+08:00" />
+<meta property="article:modified_time" content="2023-02-08T15:56:46+08:00" /><meta property="og:site_name" content="The Official Site of siBunglon" />
+
+
+  <!-- schema data -->
+  <meta itemprop="name" content="Resize LVM Space">
+<meta itemprop="description" content="Use Space from Extended Physical (or Virtual) Disk
+ubuntu@ubuntu:~$ lsblk NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT loop0 7:0 0 55.6M 1 loop /snap/core18/2654 loop1 7:1 0 63.2M 1 loop /snap/core20/1695 loop2 7:2 0 63.2M 1 loop /snap/core20/1738 loop3 7:3 0 91.8M 1 loop /snap/lxd/23991 loop4 7:4 0 55.6M 1 loop /snap/core18/2632 loop5 7:5 0 49.6M 1 loop /snap/snapd/17883 loop6 7:6 0 91.9M 1 loop /snap/lxd/24061 sda 8:0 0 70G 0 disk ├─sda1 8:1 0 1M 0 part ├─sda2 8:2 0 1G 0 part /boot └─sda3 8:3 0 69G 0 part └─ubuntu--vg-ubuntu--lv 253:0 0 69G 0 lvm / sr0 11:0 1 1024M 0 rom ubuntu@ubuntu:~$ On this case, LVM partition it is under sda3 and let&rsquo;s start with extended or resize disk."><meta itemprop="datePublished" content="2023-02-08T15:56:46+08:00" />
+<meta itemprop="dateModified" content="2023-02-08T15:56:46+08:00" />
+<meta itemprop="wordCount" content="353"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg"/>
+<meta itemprop="keywords" content="Ayo Belajar Linux,Virtualization,VirtualBox," />
+
+  <!-- Twitter cards data -->
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg"/>
+
+<meta name="twitter:title" content="Resize LVM Space"/>
+<meta name="twitter:description" content="Use Space from Extended Physical (or Virtual) Disk
+ubuntu@ubuntu:~$ lsblk NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT loop0 7:0 0 55.6M 1 loop /snap/core18/2654 loop1 7:1 0 63.2M 1 loop /snap/core20/1695 loop2 7:2 0 63.2M 1 loop /snap/core20/1738 loop3 7:3 0 91.8M 1 loop /snap/lxd/23991 loop4 7:4 0 55.6M 1 loop /snap/core18/2632 loop5 7:5 0 49.6M 1 loop /snap/snapd/17883 loop6 7:6 0 91.9M 1 loop /snap/lxd/24061 sda 8:0 0 70G 0 disk ├─sda1 8:1 0 1M 0 part ├─sda2 8:2 0 1G 0 part /boot └─sda3 8:3 0 69G 0 part └─ubuntu--vg-ubuntu--lv 253:0 0 69G 0 lvm / sr0 11:0 1 1024M 0 rom ubuntu@ubuntu:~$ On this case, LVM partition it is under sda3 and let&rsquo;s start with extended or resize disk."/>
+
+  
+
+  
+  <meta name="google-site-verification" content="SYE8MCa03gDSATy55M-WppXlauxSYqxjOE9Tg7vEJpM" />
+  
+  
+  
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110194945-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110194945-3');
+  </script>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L0K35LHNTF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-L0K35LHNTF');
+  </script>
+  
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/css/external.min.css" media="screen">
+  
+  
+  <link rel="stylesheet" href="/assets/css/styles.css" media="screen">
+  <link src="/assets/custom/googlefonts/roboto.css" rel="stylesheet">
+  
+
+  
+  
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/src/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="/src/images/favicon.ico">
+  
+
+  
+  <!-- RSS -->
+  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="Faizar Septiawan - Palugada paling ganteng di Makassar" />
+  
+
+  
+  
+  <script defer src="/assets/custom/fontawesome-5.15.1/js/all.min.js"></script>
+  
+  
+</head>
+
+  <body>
+    
+      <nav>
+  <a href="/">
+    siBunglon
+  </a>
+  <a href="/posts">
+    Posts
+  </a>
+</nav>
+
+    
+    <main class="container">
+      
+  <article>
+    <header>
+      <small>
+        <span class="date">February 8, 2023</span></small>
+      <h1>Resize LVM Space</h1>
+    </header>
+    <section><p><strong>Use Space from Extended Physical (or Virtual) Disk</strong></p>
+<pre tabindex="0"><code>ubuntu@ubuntu:~$ lsblk
+NAME                      MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+loop0                       7:0    0 55.6M  1 loop /snap/core18/2654
+loop1                       7:1    0 63.2M  1 loop /snap/core20/1695
+loop2                       7:2    0 63.2M  1 loop /snap/core20/1738
+loop3                       7:3    0 91.8M  1 loop /snap/lxd/23991
+loop4                       7:4    0 55.6M  1 loop /snap/core18/2632
+loop5                       7:5    0 49.6M  1 loop /snap/snapd/17883
+loop6                       7:6    0 91.9M  1 loop /snap/lxd/24061
+sda                         8:0    0   70G  0 disk
+├─sda1                      8:1    0    1M  0 part
+├─sda2                      8:2    0    1G  0 part /boot
+└─sda3                      8:3    0   69G  0 part
+  └─ubuntu--vg-ubuntu--lv 253:0    0   69G  0 lvm  /
+sr0                        11:0    1 1024M  0 rom
+ubuntu@ubuntu:~$
+</code></pre><p>On this case, LVM partition it is under <strong>sda3</strong> and let&rsquo;s start with extended or resize disk.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo cfdisk
+</span></span></code></pre></div><p>Select your /dev/sda3 partition from the list and then select “Resize” from the bottom menu. Hit ENTER and it will prompt you to confirm the new size. Hit ENTER again and you will now see the /dev/sda3 partition with a new larger size.</p>
+<p>Select “Write” from the bottom menu, type yes to confirm, and hit ENTER. Then use “q” to exit the program.</p>
+<p>Now that the LVM partition backing the  /dev/sda3 Physical Volume (PV) has been extended, we need to extend the PV itself. Run <code>pvresize /dev/sda3</code> to do this and then use <code>pvdisplay</code> to check the new size.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo pvresize /dev/sda3
+</span></span></code></pre></div><p>Now let’s check the Volume Group (VG) free space with <code>vgdisplay</code>.</p>
+<p>Then let’s check the size of our upstream Logical Volume (LV) using <code>lvdisplay</code>, extend the LV to use up all the VG’s free space with <code>lvextend -l +100%FREE /dev/ubuntu-vg/ubuntu-lv</code>, and then check the LV one more time with lvdisplay to make sure it has been extended.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo lvextend -l +100%FREE /dev/ubuntu-vg/ubuntu-lv
+</span></span></code></pre></div><p>At this point, the block volume underpinning our root filesystem has been extended, but the filesystem itself has not been resized to fit that new volume. To do this, run <code>df -h</code> to check the current size of the file system, then run <code>resize2fs /dev/mapper/ubuntu--vg-ubuntu--lv</code> to resize it, and <code>df -h</code> one more time to check the new file system available space.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo resize2fs /dev/mapper/ubuntu--vg-ubuntu--lv
+</span></span></code></pre></div></section>
+    <footer>
+      <hr>
+      <div class="meta">
+        <p class="tags">
+          
+            
+              <a href="/tags/ayo-belajar-linux">
+                <span>#</span>Ayo Belajar Linux</a>
+            
+              <a href="/tags/virtualization">
+                <span>#</span>Virtualization</a>
+            
+              <a href="/tags/virtualbox">
+                <span>#</span>VirtualBox</a>
+            
+          
+        </p>
+      </div>
+      <hr>
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sibunglonlabs" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </footer>
+  </article>
+
+    </main>
+    
+      <footer>
+  <p>
+    &copy; 2023 Faizar Septiawan. <a href="http://creativecommons.org/licenses/by-sa/4.0/">Some Rights Reserved</a>.
+  </p>
+  <p>
+    Powered by <a href="https://gohugo.io" title="A Fast and Flexible Website Generator">Hugo</a> &amp; <a href="https://github.com/eshlox/simplicity" title="Hugo theme">Simplicity</a>.
+  </p>
+</footer>
+
+    
+    
+    
+    
+    
+    
+    
+    <script src="/assets/js/scripts.min.js"></script>
+    
+      
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-110194945-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+  </body>
+</html>

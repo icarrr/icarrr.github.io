@@ -1,0 +1,22 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OpenSSL on Faizar Septiawan - Palugada paling ganteng di Makassar</title>
+    <link>https://sibunglon.com/tags/openssl/</link>
+    <description>Recent content in OpenSSL on Faizar Septiawan - Palugada paling ganteng di Makassar</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 12 Jan 2023 08:14:35 +0800</lastBuildDate>
+    
+      <atom:link href="https://sibunglon.com/tags/openssl/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      <item>
+        <title>Upgrade OpenSSL version on Ubuntu 16.04</title>
+        <link>https://sibunglon.com/2023/01/12/upgrade-openssl-version-on-ubuntu-16.04/</link>
+        <pubDate>Thu, 12 Jan 2023 08:14:35 +0800</pubDate>
+        <guid>https://sibunglon.com/2023/01/12/upgrade-openssl-version-on-ubuntu-16.04/</guid>
+        <description>sudo apt install make gcc+ wget https://www.openssl.org/source/old/1.1.1/openssl-1.1.1n.tar.gz --no-check-certificate tar xzvf openssl-1.1.1n.tar.gz cd openssl-1.1.1n/ ./config &amp;amp;&amp;amp; make &amp;amp;&amp;amp; sudo make install openssl version export LD_LIBRARY_PATH=/usr/local/lib/ Note: Please do not try to build openssl and/or haproxy on your own, unless you know what you are doing. I fear you probably already tried that, otherwise I can’t explain why you would have openssl 1.1.1d under Ubuntu Xenial.</description>
+      </item>
+    
+  </channel>
+</rss>

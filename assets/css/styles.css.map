@@ -1,17 +1,17 @@
 {
 	"version": 3,
 	"file": "styles.css",
-	"sourceRoot": "/home/sibunglon/Git/GitHub/icarrr/Official-site",
+	"sourceRoot": "/Users/sibunglon/Git/GitHub/icarrr/Official-site",
 	"sources": [
 		"themes/simplicity/assets/src/styles/styles.scss",
-		"../../../../../../../home/sibunglon/Git/GitHub/icarrr/Official-site/themes/simplicity/assets/src/styles/_chroma_friendly.scss",
-		"../../../../../../../home/sibunglon/Git/GitHub/icarrr/Official-site/themes/simplicity/assets/src/styles/_settings.scss",
-		"../../../../../../../home/sibunglon/Git/GitHub/icarrr/Official-site/themes/simplicity/assets/src/styles/_components/base.scss",
-		"../../../../../../../home/sibunglon/Git/GitHub/icarrr/Official-site/themes/simplicity/assets/src/styles/_components/content.scss",
-		"../../../../../../../home/sibunglon/Git/GitHub/icarrr/Official-site/themes/simplicity/assets/src/styles/_components/elements.scss",
-		"../../../../../../../home/sibunglon/Git/GitHub/icarrr/Official-site/themes/simplicity/assets/src/styles/_components/footer.scss",
-		"../../../../../../../home/sibunglon/Git/GitHub/icarrr/Official-site/themes/simplicity/assets/src/styles/_components/homepage.scss",
-		"../../../../../../../home/sibunglon/Git/GitHub/icarrr/Official-site/themes/simplicity/assets/src/styles/_components/navbar.scss"
+		"themes/simplicity/assets/src/styles/_chroma_friendly.scss",
+		"themes/simplicity/assets/src/styles/_settings.scss",
+		"themes/simplicity/assets/src/styles/_components/base.scss",
+		"themes/simplicity/assets/src/styles/_components/content.scss",
+		"themes/simplicity/assets/src/styles/_components/elements.scss",
+		"themes/simplicity/assets/src/styles/_components/footer.scss",
+		"themes/simplicity/assets/src/styles/_components/homepage.scss",
+		"themes/simplicity/assets/src/styles/_components/navbar.scss"
 	],
 	"sourcesContent": [
 		"@import \"chroma_friendly\";\n@import \"settings\";\n@import \"_components/base\";\n@import \"_components/content\";\n@import \"_components/elements\";\n@import \"_components/footer\";\n@import \"_components/homepage\";\n@import \"_components/navbar\";\n",

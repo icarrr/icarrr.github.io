@@ -5,10 +5,27 @@
     <description>Recent content in Ayo Belajar Linux on Faizar Septiawan - Palugada paling ganteng di Makassar</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 11 Nov 2022 22:13:57 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 08 Feb 2023 15:56:46 +0800</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/ayo-belajar-linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Resize LVM Space</title>
+        <link>https://sibunglon.com/2023/02/08/resize-lvm-space/</link>
+        <pubDate>Wed, 08 Feb 2023 15:56:46 +0800</pubDate>
+        <guid>https://sibunglon.com/2023/02/08/resize-lvm-space/</guid>
+        <description>Use Space from Extended Physical (or Virtual) Disk
+ubuntu@ubuntu:~$ lsblk NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT loop0 7:0 0 55.6M 1 loop /snap/core18/2654 loop1 7:1 0 63.2M 1 loop /snap/core20/1695 loop2 7:2 0 63.2M 1 loop /snap/core20/1738 loop3 7:3 0 91.8M 1 loop /snap/lxd/23991 loop4 7:4 0 55.6M 1 loop /snap/core18/2632 loop5 7:5 0 49.6M 1 loop /snap/snapd/17883 loop6 7:6 0 91.9M 1 loop /snap/lxd/24061 sda 8:0 0 70G 0 disk ├─sda1 8:1 0 1M 0 part ├─sda2 8:2 0 1G 0 part /boot └─sda3 8:3 0 69G 0 part └─ubuntu--vg-ubuntu--lv 253:0 0 69G 0 lvm / sr0 11:0 1 1024M 0 rom ubuntu@ubuntu:~$ On this case, LVM partition it is under sda3 and let&amp;rsquo;s start with extended or resize disk.</description>
+      </item>
+    
+      <item>
+        <title>Upgrade OpenSSL version on Ubuntu 16.04</title>
+        <link>https://sibunglon.com/2023/01/12/upgrade-openssl-version-on-ubuntu-16.04/</link>
+        <pubDate>Thu, 12 Jan 2023 08:14:35 +0800</pubDate>
+        <guid>https://sibunglon.com/2023/01/12/upgrade-openssl-version-on-ubuntu-16.04/</guid>
+        <description>sudo apt install make gcc+ wget https://www.openssl.org/source/old/1.1.1/openssl-1.1.1n.tar.gz --no-check-certificate tar xzvf openssl-1.1.1n.tar.gz cd openssl-1.1.1n/ ./config &amp;amp;&amp;amp; make &amp;amp;&amp;amp; sudo make install openssl version export LD_LIBRARY_PATH=/usr/local/lib/ Note: Please do not try to build openssl and/or haproxy on your own, unless you know what you are doing. I fear you probably already tried that, otherwise I can’t explain why you would have openssl 1.1.1d under Ubuntu Xenial.</description>
+      </item>
     
       <item>
         <title>MariaDB Can&#39;t Create Test File</title>
