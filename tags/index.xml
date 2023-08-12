@@ -5,10 +5,34 @@
     <description>Recent content in Tags on Faizar Septiawan - Palugada paling ganteng di Makassar</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Mar 2023 15:19:39 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 12 Aug 2023 22:03:36 +0800</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Apache2</title>
+        <link>https://sibunglon.com/tags/apache2/</link>
+        <pubDate>Sat, 12 Aug 2023 22:03:36 +0800</pubDate>
+        <guid>https://sibunglon.com/tags/apache2/</guid>
+        <description></description>
+      </item>
+    
+      <item>
+        <title>Ayo Belajar Linux</title>
+        <link>https://sibunglon.com/tags/ayo-belajar-linux/</link>
+        <pubDate>Sat, 12 Aug 2023 22:03:36 +0800</pubDate>
+        <guid>https://sibunglon.com/tags/ayo-belajar-linux/</guid>
+        <description></description>
+      </item>
+    
+      <item>
+        <title>Nginx</title>
+        <link>https://sibunglon.com/tags/nginx/</link>
+        <pubDate>Sat, 12 Aug 2023 22:03:36 +0800</pubDate>
+        <guid>https://sibunglon.com/tags/nginx/</guid>
+        <description></description>
+      </item>
     
       <item>
         <title>AdBlock</title>
@@ -23,14 +47,6 @@
         <link>https://sibunglon.com/tags/pi-hole/</link>
         <pubDate>Fri, 10 Mar 2023 15:19:39 +0800</pubDate>
         <guid>https://sibunglon.com/tags/pi-hole/</guid>
-        <description></description>
-      </item>
-    
-      <item>
-        <title>Ayo Belajar Linux</title>
-        <link>https://sibunglon.com/tags/ayo-belajar-linux/</link>
-        <pubDate>Wed, 08 Feb 2023 15:56:46 +0800</pubDate>
-        <guid>https://sibunglon.com/tags/ayo-belajar-linux/</guid>
         <description></description>
       </item>
     
@@ -91,14 +107,6 @@
       </item>
     
       <item>
-        <title>Nginx</title>
-        <link>https://sibunglon.com/tags/nginx/</link>
-        <pubDate>Tue, 23 Aug 2022 20:34:54 +0800</pubDate>
-        <guid>https://sibunglon.com/tags/nginx/</guid>
-        <description></description>
-      </item>
-    
-      <item>
         <title>MinIO</title>
         <link>https://sibunglon.com/tags/minio/</link>
         <pubDate>Tue, 16 Nov 2021 21:07:02 +0800</pubDate>
@@ -151,14 +159,6 @@
         <link>https://sibunglon.com/tags/mikrotik/</link>
         <pubDate>Mon, 19 Apr 2021 15:40:52 +0800</pubDate>
         <guid>https://sibunglon.com/tags/mikrotik/</guid>
-        <description></description>
-      </item>
-    
-      <item>
-        <title>Apache2</title>
-        <link>https://sibunglon.com/tags/apache2/</link>
-        <pubDate>Sat, 19 Dec 2020 03:32:07 +0800</pubDate>
-        <guid>https://sibunglon.com/tags/apache2/</guid>
         <description></description>
       </item>
     
