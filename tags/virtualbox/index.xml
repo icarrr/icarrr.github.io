@@ -5,10 +5,20 @@
     <description>Recent content in VirtualBox on Faizar Septiawan - Palugada paling ganteng di Makassar</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 08 Feb 2023 15:56:46 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 12 May 2023 23:01:02 +0800</lastBuildDate>
     
       <atom:link href="https://sibunglon.com/tags/virtualbox/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>How to compact VirtualBox&#39;s VDI file size?</title>
+        <link>https://sibunglon.com/2023/05/12/how-to-compact-virtualboxs-vdi-file-size/</link>
+        <pubDate>Fri, 12 May 2023 23:01:02 +0800</pubDate>
+        <guid>https://sibunglon.com/2023/05/12/how-to-compact-virtualboxs-vdi-file-size/</guid>
+        <description>On guest OS or VM
+dd if=/dev/zero of=/var/tmp/bigemptyfile bs=4096k ; rm /var/tmp/bigemptyfile sudo poweroff On Host OS
+VBoxManage modifymedium \ &amp;#34;/media/sibunglon/Data/VirtualBox VMs/Local Develoment/dependency/dependency.vdi&amp;#34; \ --compact </description>
+      </item>
     
       <item>
         <title>Resize LVM Space</title>
