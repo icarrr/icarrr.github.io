@@ -232,19 +232,19 @@ Login to server, and install package. $ add-apt-repository ppa:ondrej/php $ apt 
 </ol>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ vi /etc/apache2/sites-available/sendy.conf
 </span></span></code></pre></div><p>and then enter the script:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-apache2.conf" data-lang="apache2.conf"><span class="line"><span class="cl"><span class="err">&lt;</span><span class="nv">VirtualHost</span> <span class="err">*:</span><span class="nv">80</span><span class="err">&gt;</span>
-</span></span><span class="line"><span class="cl">	<span class="nv">ServerName</span> <span class="nv">sendy.sibunglon.com</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-apache2.conf" data-lang="apache2.conf"><span class="line"><span class="cl"><span class="nt">&lt;VirtualHost</span> <span class="s">*:80</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">ServerName</span> sendy.sibunglon.com
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">	<span class="nv">ServerAdmin</span> <span class="nv">webmaster</span><span class="err">@</span><span class="nv">sibunglon.com</span>
-</span></span><span class="line"><span class="cl">	<span class="nv">DocumentRoot</span> <span class="err">/</span><span class="nv">var</span><span class="err">/</span><span class="nv">www</span><span class="err">/</span><span class="nv">sendy</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">ServerAdmin</span> webmaster@sibunglon.com
+</span></span><span class="line"><span class="cl">	<span class="nb">DocumentRoot</span> <span class="sx">/var/www/sendy</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    	<span class="err">&lt;</span><span class="nv">Directory</span> <span class="err">/</span><span class="nv">var</span><span class="err">/</span><span class="nv">www</span><span class="err">/</span><span class="nv">sendy</span><span class="err">&gt;</span>
-</span></span><span class="line"><span class="cl">        	<span class="nv">AllowOverride</span> <span class="nv">All</span>
-</span></span><span class="line"><span class="cl">    	<span class="err">&lt;/</span><span class="nv">Directory</span><span class="err">&gt;</span>
+</span></span><span class="line"><span class="cl">    	<span class="nt">&lt;Directory</span> <span class="s">/var/www/sendy</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">        	<span class="nb">AllowOverride</span> <span class="k">All</span>
+</span></span><span class="line"><span class="cl">    	<span class="nt">&lt;/Directory&gt;</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">	<span class="nv">ErrorLog</span> <span class="err">$</span><span class="p">{</span><span class="nv">APACHE_LOG_DIR</span><span class="p">}</span><span class="err">/</span><span class="nv">sendy-error.log</span>
-</span></span><span class="line"><span class="cl">	<span class="nv">CustomLog</span> <span class="err">$</span><span class="p">{</span><span class="nv">APACHE_LOG_DIR</span><span class="p">}</span><span class="err">/</span><span class="nv">sendy-access.log</span> <span class="nv">combined</span>
-</span></span><span class="line"><span class="cl"><span class="err">&lt;/</span><span class="nv">VirtualHost</span><span class="err">&gt;</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">ErrorLog</span> ${APACHE_LOG_DIR}/sendy-error.log
+</span></span><span class="line"><span class="cl">	<span class="nb">CustomLog</span> ${APACHE_LOG_DIR}/sendy-access.log combined
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/VirtualHost&gt;</span>
 </span></span></code></pre></div><ol start="9">
 <li>Activate the module rewrite, virtual host file, deactivate default virtual host and restart apache2.</li>
 </ol>
