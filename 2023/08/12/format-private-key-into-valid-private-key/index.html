@@ -16,9 +16,10 @@
 {\rtf1\ansi\ansicpg1252\cocoartf2709 \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;} {\colortbl;\red255\green255\blue255;} {\*\expandedcolortbl;;} \paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0 \f0\fs24 \cf0 -----BEGIN PRIVATE KEY-----\ MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDAV01KaHzqe2Mf\ o&#43;3SAUz54hUQQcKKyV7a4PH61ymaBMlWV3D2roDRZm0RdRw9WUTD0/KDrBLJR9hz\ sySLLzSxyiE7b9BvloRbKtbZFMjhChRgm4YBi&#43;M4C1Q0dqPeeQgSMdb3yilCj55y\ 8d1oCO3R4I521OSmAae&#43;Qq5ClV9lh9TocYVV02/02g2vLD1w5xOIho6bimLoCQN5\ 241c340tgvvStVPjnkLMCsKibg==\ -----END PRIVATE KEY-----\ \ } To format it into valid private key, use the following script to convert it or format the file.
 cleaned_key=$(sed &#39;s/\\f0\\fs24 \\cf0//g&#39; private.key | tr -d &#39;\\&#39;) start_marker=&#34;-----BEGIN PRIVATE KEY-----&#34; end_marker=&#34;-----END PRIVATE KEY-----&#34; private_key=$(echo &#34;$cleaned_key&#34; | sed -n &#34;/$start_marker/,/$end_marker/p&#34;) echo &#34;$private_key&#34; " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://sibunglon.com/2023/08/12/format-private-key-into-valid-private-key/" /><meta property="og:image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg"/><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://sibunglon.com/2023/08/12/format-private-key-into-valid-private-key/" /><meta property="og:image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-08-12T22:50:13+08:00" />
 <meta property="article:modified_time" content="2023-08-12T22:50:13+08:00" /><meta property="og:site_name" content="The Official Site of siBunglon" />
+
 
 
   <!-- schema data -->
@@ -27,14 +28,12 @@ cleaned_key=$(sed &#39;s/\\f0\\fs24 \\cf0//g&#39; private.key | tr -d &#39;\\&#3
 {\rtf1\ansi\ansicpg1252\cocoartf2709 \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;} {\colortbl;\red255\green255\blue255;} {\*\expandedcolortbl;;} \paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0 \f0\fs24 \cf0 -----BEGIN PRIVATE KEY-----\ MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDAV01KaHzqe2Mf\ o&#43;3SAUz54hUQQcKKyV7a4PH61ymaBMlWV3D2roDRZm0RdRw9WUTD0/KDrBLJR9hz\ sySLLzSxyiE7b9BvloRbKtbZFMjhChRgm4YBi&#43;M4C1Q0dqPeeQgSMdb3yilCj55y\ 8d1oCO3R4I521OSmAae&#43;Qq5ClV9lh9TocYVV02/02g2vLD1w5xOIho6bimLoCQN5\ 241c340tgvvStVPjnkLMCsKibg==\ -----END PRIVATE KEY-----\ \ } To format it into valid private key, use the following script to convert it or format the file.
 cleaned_key=$(sed &#39;s/\\f0\\fs24 \\cf0//g&#39; private.key | tr -d &#39;\\&#39;) start_marker=&#34;-----BEGIN PRIVATE KEY-----&#34; end_marker=&#34;-----END PRIVATE KEY-----&#34; private_key=$(echo &#34;$cleaned_key&#34; | sed -n &#34;/$start_marker/,/$end_marker/p&#34;) echo &#34;$private_key&#34; "><meta itemprop="datePublished" content="2023-08-12T22:50:13+08:00" />
 <meta itemprop="dateModified" content="2023-08-12T22:50:13+08:00" />
-<meta itemprop="wordCount" content="78"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg"/>
+<meta itemprop="wordCount" content="78"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg" />
 <meta itemprop="keywords" content="Ayo Belajar Linux,Apache2,Nginx," />
 
   <!-- Twitter cards data -->
-  <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg"/>
-
-<meta name="twitter:title" content="Format Private Key Into Valid Private Key"/>
+  <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg" /><meta name="twitter:title" content="Format Private Key Into Valid Private Key"/>
 <meta name="twitter:description" content="I&rsquo;ve a private.key from another platform but its using invalid format private key file as below.
 {\rtf1\ansi\ansicpg1252\cocoartf2709 \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;} {\colortbl;\red255\green255\blue255;} {\*\expandedcolortbl;;} \paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0 \f0\fs24 \cf0 -----BEGIN PRIVATE KEY-----\ MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDAV01KaHzqe2Mf\ o&#43;3SAUz54hUQQcKKyV7a4PH61ymaBMlWV3D2roDRZm0RdRw9WUTD0/KDrBLJR9hz\ sySLLzSxyiE7b9BvloRbKtbZFMjhChRgm4YBi&#43;M4C1Q0dqPeeQgSMdb3yilCj55y\ 8d1oCO3R4I521OSmAae&#43;Qq5ClV9lh9TocYVV02/02g2vLD1w5xOIho6bimLoCQN5\ 241c340tgvvStVPjnkLMCsKibg==\ -----END PRIVATE KEY-----\ \ } To format it into valid private key, use the following script to convert it or format the file.
 cleaned_key=$(sed &#39;s/\\f0\\fs24 \\cf0//g&#39; private.key | tr -d &#39;\\&#39;) start_marker=&#34;-----BEGIN PRIVATE KEY-----&#34; end_marker=&#34;-----END PRIVATE KEY-----&#34; private_key=$(echo &#34;$cleaned_key&#34; | sed -n &#34;/$start_marker/,/$end_marker/p&#34;) echo &#34;$private_key&#34; "/>
@@ -155,7 +154,7 @@ sySLLzSxyiE7b9BvloRbKtbZFMjhChRgm4YBi+M4C1Q0dqPeeQgSMdb3yilCj55y\
       </div>
       <hr>
       <div id="disqus_thread"></div>
-<script type="application/javascript">
+<script>
     window.disqus_config = function () {
     
     
@@ -198,7 +197,7 @@ sySLLzSxyiE7b9BvloRbKtbZFMjhChRgm4YBi+M4C1Q0dqPeeQgSMdb3yilCj55y\
     <script src="/assets/js/scripts.min.js"></script>
     
       
-<script type="application/javascript">
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
 	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
