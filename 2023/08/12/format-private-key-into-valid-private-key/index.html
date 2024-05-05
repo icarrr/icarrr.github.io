@@ -11,32 +11,41 @@
   <meta name="keywords" content="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng">
 
   <!-- Open Graph data -->
-  <meta property="og:title" content="Format Private Key Into Valid Private Key" />
-<meta property="og:description" content="I&rsquo;ve a private.key from another platform but its using invalid format private key file as below.
+  <meta property="og:url" content="https://sibunglon.com/2023/08/12/format-private-key-into-valid-private-key/">
+  <meta property="og:site_name" content="Faizar Septiawan - Palugada paling ganteng di Makassar">
+  <meta property="og:title" content="Format Private Key Into Valid Private Key">
+  <meta property="og:description" content="I’ve a private.key from another platform but its using invalid format private key file as below.
 {\rtf1\ansi\ansicpg1252\cocoartf2709 \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;} {\colortbl;\red255\green255\blue255;} {\*\expandedcolortbl;;} \paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0 \f0\fs24 \cf0 -----BEGIN PRIVATE KEY-----\ MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDAV01KaHzqe2Mf\ o&#43;3SAUz54hUQQcKKyV7a4PH61ymaBMlWV3D2roDRZm0RdRw9WUTD0/KDrBLJR9hz\ sySLLzSxyiE7b9BvloRbKtbZFMjhChRgm4YBi&#43;M4C1Q0dqPeeQgSMdb3yilCj55y\ 8d1oCO3R4I521OSmAae&#43;Qq5ClV9lh9TocYVV02/02g2vLD1w5xOIho6bimLoCQN5\ 241c340tgvvStVPjnkLMCsKibg==\ -----END PRIVATE KEY-----\ \ } To format it into valid private key, use the following script to convert it or format the file.
-cleaned_key=$(sed &#39;s/\\f0\\fs24 \\cf0//g&#39; private.key | tr -d &#39;\\&#39;) start_marker=&#34;-----BEGIN PRIVATE KEY-----&#34; end_marker=&#34;-----END PRIVATE KEY-----&#34; private_key=$(echo &#34;$cleaned_key&#34; | sed -n &#34;/$start_marker/,/$end_marker/p&#34;) echo &#34;$private_key&#34; " />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://sibunglon.com/2023/08/12/format-private-key-into-valid-private-key/" /><meta property="og:image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-08-12T22:50:13+08:00" />
-<meta property="article:modified_time" content="2023-08-12T22:50:13+08:00" /><meta property="og:site_name" content="The Official Site of siBunglon" />
-
+cleaned_key=$(sed &#39;s/\\f0\\fs24 \\cf0//g&#39; private.key | tr -d &#39;\\&#39;) start_marker=&#34;-----BEGIN PRIVATE KEY-----&#34; end_marker=&#34;-----END PRIVATE KEY-----&#34; private_key=$(echo &#34;$cleaned_key&#34; | sed -n &#34;/$start_marker/,/$end_marker/p&#34;) echo &#34;$private_key&#34; ">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-08-12T22:50:13+08:00">
+    <meta property="article:modified_time" content="2023-08-12T22:50:13+08:00">
+    <meta property="article:tag" content="Ayo Belajar Linux">
+    <meta property="article:tag" content="Apache2">
+    <meta property="article:tag" content="Nginx">
+    <meta property="og:image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg">
 
 
   <!-- schema data -->
+  
   <meta itemprop="name" content="Format Private Key Into Valid Private Key">
-<meta itemprop="description" content="I&rsquo;ve a private.key from another platform but its using invalid format private key file as below.
+  <meta itemprop="description" content="I&rsquo;ve a private.key from another platform but its using invalid format private key file as below.
 {\rtf1\ansi\ansicpg1252\cocoartf2709 \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;} {\colortbl;\red255\green255\blue255;} {\*\expandedcolortbl;;} \paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0 \f0\fs24 \cf0 -----BEGIN PRIVATE KEY-----\ MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDAV01KaHzqe2Mf\ o&#43;3SAUz54hUQQcKKyV7a4PH61ymaBMlWV3D2roDRZm0RdRw9WUTD0/KDrBLJR9hz\ sySLLzSxyiE7b9BvloRbKtbZFMjhChRgm4YBi&#43;M4C1Q0dqPeeQgSMdb3yilCj55y\ 8d1oCO3R4I521OSmAae&#43;Qq5ClV9lh9TocYVV02/02g2vLD1w5xOIho6bimLoCQN5\ 241c340tgvvStVPjnkLMCsKibg==\ -----END PRIVATE KEY-----\ \ } To format it into valid private key, use the following script to convert it or format the file.
-cleaned_key=$(sed &#39;s/\\f0\\fs24 \\cf0//g&#39; private.key | tr -d &#39;\\&#39;) start_marker=&#34;-----BEGIN PRIVATE KEY-----&#34; end_marker=&#34;-----END PRIVATE KEY-----&#34; private_key=$(echo &#34;$cleaned_key&#34; | sed -n &#34;/$start_marker/,/$end_marker/p&#34;) echo &#34;$private_key&#34; "><meta itemprop="datePublished" content="2023-08-12T22:50:13+08:00" />
-<meta itemprop="dateModified" content="2023-08-12T22:50:13+08:00" />
-<meta itemprop="wordCount" content="78"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg" />
-<meta itemprop="keywords" content="Ayo Belajar Linux,Apache2,Nginx," />
+cleaned_key=$(sed &#39;s/\\f0\\fs24 \\cf0//g&#39; private.key | tr -d &#39;\\&#39;) start_marker=&#34;-----BEGIN PRIVATE KEY-----&#34; end_marker=&#34;-----END PRIVATE KEY-----&#34; private_key=$(echo &#34;$cleaned_key&#34; | sed -n &#34;/$start_marker/,/$end_marker/p&#34;) echo &#34;$private_key&#34; ">
+  <meta itemprop="datePublished" content="2023-08-12T22:50:13+08:00">
+  <meta itemprop="dateModified" content="2023-08-12T22:50:13+08:00">
+  <meta itemprop="wordCount" content="78">
+  <meta itemprop="image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg">
+  <meta itemprop="keywords" content="Ayo Belajar Linux,Apache2,Nginx">
 
   <!-- Twitter cards data -->
-  <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg" /><meta name="twitter:title" content="Format Private Key Into Valid Private Key"/>
+  <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg"><meta name="twitter:title" content="Format Private Key Into Valid Private Key">
 <meta name="twitter:description" content="I&rsquo;ve a private.key from another platform but its using invalid format private key file as below.
 {\rtf1\ansi\ansicpg1252\cocoartf2709 \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;} {\colortbl;\red255\green255\blue255;} {\*\expandedcolortbl;;} \paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0 \f0\fs24 \cf0 -----BEGIN PRIVATE KEY-----\ MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDAV01KaHzqe2Mf\ o&#43;3SAUz54hUQQcKKyV7a4PH61ymaBMlWV3D2roDRZm0RdRw9WUTD0/KDrBLJR9hz\ sySLLzSxyiE7b9BvloRbKtbZFMjhChRgm4YBi&#43;M4C1Q0dqPeeQgSMdb3yilCj55y\ 8d1oCO3R4I521OSmAae&#43;Qq5ClV9lh9TocYVV02/02g2vLD1w5xOIho6bimLoCQN5\ 241c340tgvvStVPjnkLMCsKibg==\ -----END PRIVATE KEY-----\ \ } To format it into valid private key, use the following script to convert it or format the file.
-cleaned_key=$(sed &#39;s/\\f0\\fs24 \\cf0//g&#39; private.key | tr -d &#39;\\&#39;) start_marker=&#34;-----BEGIN PRIVATE KEY-----&#34; end_marker=&#34;-----END PRIVATE KEY-----&#34; private_key=$(echo &#34;$cleaned_key&#34; | sed -n &#34;/$start_marker/,/$end_marker/p&#34;) echo &#34;$private_key&#34; "/>
+cleaned_key=$(sed &#39;s/\\f0\\fs24 \\cf0//g&#39; private.key | tr -d &#39;\\&#39;) start_marker=&#34;-----BEGIN PRIVATE KEY-----&#34; end_marker=&#34;-----END PRIVATE KEY-----&#34; private_key=$(echo &#34;$cleaned_key&#34; | sed -n &#34;/$start_marker/,/$end_marker/p&#34;) echo &#34;$private_key&#34; ">
 
   
 
@@ -196,18 +205,15 @@ sySLLzSxyiE7b9BvloRbKtbZFMjhChRgm4YBi+M4C1Q0dqPeeQgSMdb3yilCj55y\
     
     <script src="/assets/js/scripts.min.js"></script>
     
-      
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'G-L0K35LHNTF', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L0K35LHNTF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
+      gtag('config', 'G-L0K35LHNTF');
+    </script>
     
   </body>
 </html>

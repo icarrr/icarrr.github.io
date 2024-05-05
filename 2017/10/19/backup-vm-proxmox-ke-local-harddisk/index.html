@@ -11,39 +11,48 @@
   <meta name="keywords" content="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng">
 
   <!-- Open Graph data -->
-  <meta property="og:title" content="Backup VM Proxmox ke Local HardDisk" />
-<meta property="og:description" content="A. Pendahuluan
+  <meta property="og:url" content="https://sibunglon.com/2017/10/19/backup-vm-proxmox-ke-local-harddisk/">
+  <meta property="og:site_name" content="Faizar Septiawan - Palugada paling ganteng di Makassar">
+  <meta property="og:title" content="Backup VM Proxmox ke Local HardDisk">
+  <meta property="og:description" content="A. Pendahuluan
 Pada kesempatan ini saya share bagaimana agar config di debian atau apapun yang ada diproxmox tidak hilang bila terjadi sesuatu
 B. Pengertian
 Bakcup data adalah salah satu langkah untuk menyimpan data agar saat data itu hilang kita masih memiliki data simpanannya agar tidak hilang.
 C. Latar belakang
 Membuat secondary data agar saat data primer nya hilang kita masih punya data secondari nya.
 D. Tujuan
-Agar data yang saat penting itu tidak hilang karena ada kesalahan dan dapat menyerlamatkan pekerjaan kita." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://sibunglon.com/2017/10/19/backup-vm-proxmox-ke-local-harddisk/" /><meta property="og:image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2017-10-19T18:47:00+00:00" />
-<meta property="article:modified_time" content="2017-10-19T18:47:00+00:00" /><meta property="og:site_name" content="The Official Site of siBunglon" />
-
+Agar data yang saat penting itu tidak hilang karena ada kesalahan dan dapat menyerlamatkan pekerjaan kita.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2017-10-19T18:47:00+00:00">
+    <meta property="article:modified_time" content="2017-10-19T18:47:00+00:00">
+    <meta property="article:tag" content="BLC Telkom Klaten">
+    <meta property="article:tag" content="Ayo Belajar Linux">
+    <meta property="article:tag" content="Proxmox">
+    <meta property="og:image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg">
 
 
   <!-- schema data -->
+  
   <meta itemprop="name" content="Backup VM Proxmox ke Local HardDisk">
-<meta itemprop="description" content="A. Pendahuluan
+  <meta itemprop="description" content="A. Pendahuluan
 Pada kesempatan ini saya share bagaimana agar config di debian atau apapun yang ada diproxmox tidak hilang bila terjadi sesuatu
 B. Pengertian
 Bakcup data adalah salah satu langkah untuk menyimpan data agar saat data itu hilang kita masih memiliki data simpanannya agar tidak hilang.
 C. Latar belakang
 Membuat secondary data agar saat data primer nya hilang kita masih punya data secondari nya.
 D. Tujuan
-Agar data yang saat penting itu tidak hilang karena ada kesalahan dan dapat menyerlamatkan pekerjaan kita."><meta itemprop="datePublished" content="2017-10-19T18:47:00+00:00" />
-<meta itemprop="dateModified" content="2017-10-19T18:47:00+00:00" />
-<meta itemprop="wordCount" content="294"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg" />
-<meta itemprop="keywords" content="BLC Telkom Klaten,Ayo Belajar Linux,Proxmox," />
+Agar data yang saat penting itu tidak hilang karena ada kesalahan dan dapat menyerlamatkan pekerjaan kita.">
+  <meta itemprop="datePublished" content="2017-10-19T18:47:00+00:00">
+  <meta itemprop="dateModified" content="2017-10-19T18:47:00+00:00">
+  <meta itemprop="wordCount" content="294">
+  <meta itemprop="image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg">
+  <meta itemprop="keywords" content="BLC Telkom Klaten,Ayo Belajar Linux,Proxmox">
 
   <!-- Twitter cards data -->
-  <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg" /><meta name="twitter:title" content="Backup VM Proxmox ke Local HardDisk"/>
+  <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg"><meta name="twitter:title" content="Backup VM Proxmox ke Local HardDisk">
 <meta name="twitter:description" content="A. Pendahuluan
 Pada kesempatan ini saya share bagaimana agar config di debian atau apapun yang ada diproxmox tidak hilang bila terjadi sesuatu
 B. Pengertian
@@ -51,7 +60,7 @@ Bakcup data adalah salah satu langkah untuk menyimpan data agar saat data itu hi
 C. Latar belakang
 Membuat secondary data agar saat data primer nya hilang kita masih punya data secondari nya.
 D. Tujuan
-Agar data yang saat penting itu tidak hilang karena ada kesalahan dan dapat menyerlamatkan pekerjaan kita."/>
+Agar data yang saat penting itu tidak hilang karena ada kesalahan dan dapat menyerlamatkan pekerjaan kita.">
 
   
 
@@ -232,18 +241,15 @@ Agar data yang saat penting itu tidak hilang karena ada kesalahan dan dapat meny
     
     <script src="/assets/js/scripts.min.js"></script>
     
-      
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'G-L0K35LHNTF', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L0K35LHNTF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
+      gtag('config', 'G-L0K35LHNTF');
+    </script>
     
   </body>
 </html>

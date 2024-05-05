@@ -11,35 +11,43 @@
   <meta name="keywords" content="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng">
 
   <!-- Open Graph data -->
-  <meta property="og:title" content="Bagaimana Mengganti Login Page Jaringan MikroTik?" />
-<meta property="og:description" content="Pendahuluan
+  <meta property="og:url" content="https://sibunglon.com/2017/07/26/bagaimana-mengganti-login-page-jaringan-mikrotik/">
+  <meta property="og:site_name" content="Faizar Septiawan - Palugada paling ganteng di Makassar">
+  <meta property="og:title" content="Bagaimana Mengganti Login Page Jaringan MikroTik?">
+  <meta property="og:description" content="Pendahuluan
 MikroTik routerboard adalah salah satu router yang mempunyai login page(tampilan awal) untuk koneksi hotspot. Login page berfungsi jika hotspot tersebut tidak mempunyai autentikasi, lalu siapapun yang telah konek di hotspot tersebut dan ingin melakukan browsing maka secara otomatis dia akan teralihkan ke login page untuk keperluan identitas agar ia dapat melanjutkan browsingnya.
 Maksud dan Tujuan
-Dengan login page yang telah disiapkan dapat membatasi siapa saja dapat mendapat akses internet dari mikroTik meskipun sebelumnya ia sudah konek ke wifi tersebut." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://sibunglon.com/2017/07/26/bagaimana-mengganti-login-page-jaringan-mikrotik/" /><meta property="og:image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2017-07-26T14:34:00+00:00" />
-<meta property="article:modified_time" content="2017-07-26T14:34:00+00:00" /><meta property="og:site_name" content="The Official Site of siBunglon" />
-
+Dengan login page yang telah disiapkan dapat membatasi siapa saja dapat mendapat akses internet dari mikroTik meskipun sebelumnya ia sudah konek ke wifi tersebut.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2017-07-26T14:34:00+00:00">
+    <meta property="article:modified_time" content="2017-07-26T14:34:00+00:00">
+    <meta property="article:tag" content="BLC Telkom Klaten">
+    <meta property="article:tag" content="MikroTik">
+    <meta property="og:image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg">
 
 
   <!-- schema data -->
+  
   <meta itemprop="name" content="Bagaimana Mengganti Login Page Jaringan MikroTik?">
-<meta itemprop="description" content="Pendahuluan
+  <meta itemprop="description" content="Pendahuluan
 MikroTik routerboard adalah salah satu router yang mempunyai login page(tampilan awal) untuk koneksi hotspot. Login page berfungsi jika hotspot tersebut tidak mempunyai autentikasi, lalu siapapun yang telah konek di hotspot tersebut dan ingin melakukan browsing maka secara otomatis dia akan teralihkan ke login page untuk keperluan identitas agar ia dapat melanjutkan browsingnya.
 Maksud dan Tujuan
-Dengan login page yang telah disiapkan dapat membatasi siapa saja dapat mendapat akses internet dari mikroTik meskipun sebelumnya ia sudah konek ke wifi tersebut."><meta itemprop="datePublished" content="2017-07-26T14:34:00+00:00" />
-<meta itemprop="dateModified" content="2017-07-26T14:34:00+00:00" />
-<meta itemprop="wordCount" content="394"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg" />
-<meta itemprop="keywords" content="BLC Telkom Klaten,MikroTik," />
+Dengan login page yang telah disiapkan dapat membatasi siapa saja dapat mendapat akses internet dari mikroTik meskipun sebelumnya ia sudah konek ke wifi tersebut.">
+  <meta itemprop="datePublished" content="2017-07-26T14:34:00+00:00">
+  <meta itemprop="dateModified" content="2017-07-26T14:34:00+00:00">
+  <meta itemprop="wordCount" content="394">
+  <meta itemprop="image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg">
+  <meta itemprop="keywords" content="BLC Telkom Klaten,MikroTik">
 
   <!-- Twitter cards data -->
-  <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg" /><meta name="twitter:title" content="Bagaimana Mengganti Login Page Jaringan MikroTik?"/>
+  <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg"><meta name="twitter:title" content="Bagaimana Mengganti Login Page Jaringan MikroTik?">
 <meta name="twitter:description" content="Pendahuluan
 MikroTik routerboard adalah salah satu router yang mempunyai login page(tampilan awal) untuk koneksi hotspot. Login page berfungsi jika hotspot tersebut tidak mempunyai autentikasi, lalu siapapun yang telah konek di hotspot tersebut dan ingin melakukan browsing maka secara otomatis dia akan teralihkan ke login page untuk keperluan identitas agar ia dapat melanjutkan browsingnya.
 Maksud dan Tujuan
-Dengan login page yang telah disiapkan dapat membatasi siapa saja dapat mendapat akses internet dari mikroTik meskipun sebelumnya ia sudah konek ke wifi tersebut."/>
+Dengan login page yang telah disiapkan dapat membatasi siapa saja dapat mendapat akses internet dari mikroTik meskipun sebelumnya ia sudah konek ke wifi tersebut.">
 
   
 
@@ -207,18 +215,15 @@ Dengan login page yang telah disiapkan dapat membatasi siapa saja dapat mendapat
     
     <script src="/assets/js/scripts.min.js"></script>
     
-      
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'G-L0K35LHNTF', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L0K35LHNTF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
+      gtag('config', 'G-L0K35LHNTF');
+    </script>
     
   </body>
 </html>

@@ -11,38 +11,47 @@
   <meta name="keywords" content="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng">
 
   <!-- Open Graph data -->
-  <meta property="og:title" content="SOLVE - SMTP Open edX Timeout" />
-<meta property="og:description" content="By default in Open edX, the system will send an email when a new user registers, using the forget password or other conditions.
+  <meta property="og:url" content="https://sibunglon.com/2020/07/26/solve-smtp-open-edx-timeout/">
+  <meta property="og:site_name" content="Faizar Septiawan - Palugada paling ganteng di Makassar">
+  <meta property="og:title" content="SOLVE - SMTP Open edX Timeout">
+  <meta property="og:description" content="By default in Open edX, the system will send an email when a new user registers, using the forget password or other conditions.
 A few days ago my teams found an issue on the email sending service, but the issue was not because of the Open edX SMTP service but from the connection side of the Open edX server to the SMTP server.
-Then what&rsquo;s the case?
+Then what’s the case?
 Case:
--) When a user registers, the user should receive an email to activate the account, but in reality it is not." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://sibunglon.com/2020/07/26/solve-smtp-open-edx-timeout/" /><meta property="og:image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2020-07-26T17:21:39+08:00" />
-<meta property="article:modified_time" content="2020-07-26T17:21:39+08:00" /><meta property="og:site_name" content="The Official Site of siBunglon" />
-
+-) When a user registers, the user should receive an email to activate the account, but in reality it is not.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2020-07-26T17:21:39+08:00">
+    <meta property="article:modified_time" content="2020-07-26T17:21:39+08:00">
+    <meta property="article:tag" content="Ayo Belajar Linux">
+    <meta property="article:tag" content="Open EdX">
+    <meta property="article:tag" content="Error">
+    <meta property="og:image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg">
 
 
   <!-- schema data -->
+  
   <meta itemprop="name" content="SOLVE - SMTP Open edX Timeout">
-<meta itemprop="description" content="By default in Open edX, the system will send an email when a new user registers, using the forget password or other conditions.
+  <meta itemprop="description" content="By default in Open edX, the system will send an email when a new user registers, using the forget password or other conditions.
 A few days ago my teams found an issue on the email sending service, but the issue was not because of the Open edX SMTP service but from the connection side of the Open edX server to the SMTP server.
 Then what&rsquo;s the case?
 Case:
--) When a user registers, the user should receive an email to activate the account, but in reality it is not."><meta itemprop="datePublished" content="2020-07-26T17:21:39+08:00" />
-<meta itemprop="dateModified" content="2020-07-26T17:21:39+08:00" />
-<meta itemprop="wordCount" content="394"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg" />
-<meta itemprop="keywords" content="Ayo Belajar Linux,Open edX,Error," />
+-) When a user registers, the user should receive an email to activate the account, but in reality it is not.">
+  <meta itemprop="datePublished" content="2020-07-26T17:21:39+08:00">
+  <meta itemprop="dateModified" content="2020-07-26T17:21:39+08:00">
+  <meta itemprop="wordCount" content="394">
+  <meta itemprop="image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg">
+  <meta itemprop="keywords" content="Ayo Belajar Linux,Open EdX,Error">
 
   <!-- Twitter cards data -->
-  <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg" /><meta name="twitter:title" content="SOLVE - SMTP Open edX Timeout"/>
+  <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg"><meta name="twitter:title" content="SOLVE - SMTP Open edX Timeout">
 <meta name="twitter:description" content="By default in Open edX, the system will send an email when a new user registers, using the forget password or other conditions.
 A few days ago my teams found an issue on the email sending service, but the issue was not because of the Open edX SMTP service but from the connection side of the Open edX server to the SMTP server.
 Then what&rsquo;s the case?
 Case:
--) When a user registers, the user should receive an email to activate the account, but in reality it is not."/>
+-) When a user registers, the user should receive an email to activate the account, but in reality it is not.">
 
   
 
@@ -211,18 +220,15 @@ SMTPDataError: (554, &#39;Message rejected: Email address is not verified. The f
     
     <script src="/assets/js/scripts.min.js"></script>
     
-      
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'G-L0K35LHNTF', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L0K35LHNTF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
+      gtag('config', 'G-L0K35LHNTF');
+    </script>
     
   </body>
 </html>

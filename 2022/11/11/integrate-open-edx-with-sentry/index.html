@@ -11,38 +11,46 @@
   <meta name="keywords" content="Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng">
 
   <!-- Open Graph data -->
-  <meta property="og:title" content="Integrate Open edX with Sentry" />
-<meta property="og:description" content="Setting up Sentry crash reporting if you want to provide a reliable service, it’s extremely important to be aware of when things are going wrong on the website.
+  <meta property="og:url" content="https://sibunglon.com/2022/11/11/integrate-open-edx-with-sentry/">
+  <meta property="og:site_name" content="Faizar Septiawan - Palugada paling ganteng di Makassar">
+  <meta property="og:title" content="Integrate Open edX with Sentry">
+  <meta property="og:description" content="Setting up Sentry crash reporting if you want to provide a reliable service, it’s extremely important to be aware of when things are going wrong on the website.
 Sentry is a wonderful free system to catch Python exceptions.
 For Django on Open edX, we use sentry-sdk to catch and report the errors back to Sentry.
 Set up a Sentry server or use existing Sentry .
-Set up two new services (LMS and Studio) in Sentry and get their DSN strings." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://sibunglon.com/2022/11/11/integrate-open-edx-with-sentry/" /><meta property="og:image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-11-11T22:36:53+08:00" />
-<meta property="article:modified_time" content="2022-11-11T22:36:53+08:00" /><meta property="og:site_name" content="The Official Site of siBunglon" />
-
+Set up two new services (LMS and Studio) in Sentry and get their DSN strings.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2022-11-11T22:36:53+08:00">
+    <meta property="article:modified_time" content="2022-11-11T22:36:53+08:00">
+    <meta property="article:tag" content="Open EdX">
+    <meta property="article:tag" content="Sentry">
+    <meta property="og:image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg">
 
 
   <!-- schema data -->
+  
   <meta itemprop="name" content="Integrate Open edX with Sentry">
-<meta itemprop="description" content="Setting up Sentry crash reporting if you want to provide a reliable service, it’s extremely important to be aware of when things are going wrong on the website.
+  <meta itemprop="description" content="Setting up Sentry crash reporting if you want to provide a reliable service, it’s extremely important to be aware of when things are going wrong on the website.
 Sentry is a wonderful free system to catch Python exceptions.
 For Django on Open edX, we use sentry-sdk to catch and report the errors back to Sentry.
 Set up a Sentry server or use existing Sentry .
-Set up two new services (LMS and Studio) in Sentry and get their DSN strings."><meta itemprop="datePublished" content="2022-11-11T22:36:53+08:00" />
-<meta itemprop="dateModified" content="2022-11-11T22:36:53+08:00" />
-<meta itemprop="wordCount" content="128"><meta itemprop="image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg" />
-<meta itemprop="keywords" content="Open edX,Sentry," />
+Set up two new services (LMS and Studio) in Sentry and get their DSN strings.">
+  <meta itemprop="datePublished" content="2022-11-11T22:36:53+08:00">
+  <meta itemprop="dateModified" content="2022-11-11T22:36:53+08:00">
+  <meta itemprop="wordCount" content="128">
+  <meta itemprop="image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg">
+  <meta itemprop="keywords" content="Open EdX,Sentry">
 
   <!-- Twitter cards data -->
-  <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg" /><meta name="twitter:title" content="Integrate Open edX with Sentry"/>
+  <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg"><meta name="twitter:title" content="Integrate Open edX with Sentry">
 <meta name="twitter:description" content="Setting up Sentry crash reporting if you want to provide a reliable service, it’s extremely important to be aware of when things are going wrong on the website.
 Sentry is a wonderful free system to catch Python exceptions.
 For Django on Open edX, we use sentry-sdk to catch and report the errors back to Sentry.
 Set up a Sentry server or use existing Sentry .
-Set up two new services (LMS and Studio) in Sentry and get their DSN strings."/>
+Set up two new services (LMS and Studio) in Sentry and get their DSN strings.">
 
   
 
@@ -202,18 +210,15 @@ Set up two new services (LMS and Studio) in Sentry and get their DSN strings."/>
     
     <script src="/assets/js/scripts.min.js"></script>
     
-      
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'G-L0K35LHNTF', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L0K35LHNTF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
+      gtag('config', 'G-L0K35LHNTF');
+    </script>
     
   </body>
 </html>
