@@ -17,7 +17,7 @@
   <meta property="og:description" content="I’ve received the root and intermediate certificates separately, then run the following command to merge or concat it into single file.
 sibunglon@sanita$ tree ├── ChainCA1.crt ├── ChainCA2.crt ├── sibunglon.com.key ├── RootCA.crt └── star_sibunglon_com.crt for ssl_combine in {star_sibunglon_com.crt,ChainCA1.crt,ChainCA2.crt,RootCA.crt}; do cat ${ssl_combine} &gt;&gt; /etc/ssl/sibunglon.com.crt echo -e &#34;\n&#34; &gt;&gt; /etc/ssl/sibunglon.com.crt; done Then, i can use sibunglon.com.crt as SSL certificate file and sibunglon.com.key as SSL certificate key file.
 sibunglon@sanita:~$ cat /etc/self-signed.conf ssl_certificate /etc/ssl/sibunglon.com.crt; ssl_certificate_key /etc/ssl/sibunglon.">
-  <meta property="og:locale" content="en-us">
+  <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2023-08-12T22:03:36+08:00">
@@ -31,7 +31,7 @@ sibunglon@sanita:~$ cat /etc/self-signed.conf ssl_certificate /etc/ssl/sibunglon
   <!-- schema data -->
   
   <meta itemprop="name" content="Merge or Concatenate SSL Certificates to Single File">
-  <meta itemprop="description" content="I&rsquo;ve received the root and intermediate certificates separately, then run the following command to merge or concat it into single file.
+  <meta itemprop="description" content="I’ve received the root and intermediate certificates separately, then run the following command to merge or concat it into single file.
 sibunglon@sanita$ tree ├── ChainCA1.crt ├── ChainCA2.crt ├── sibunglon.com.key ├── RootCA.crt └── star_sibunglon_com.crt for ssl_combine in {star_sibunglon_com.crt,ChainCA1.crt,ChainCA2.crt,RootCA.crt}; do cat ${ssl_combine} &gt;&gt; /etc/ssl/sibunglon.com.crt echo -e &#34;\n&#34; &gt;&gt; /etc/ssl/sibunglon.com.crt; done Then, i can use sibunglon.com.crt as SSL certificate file and sibunglon.com.key as SSL certificate key file.
 sibunglon@sanita:~$ cat /etc/self-signed.conf ssl_certificate /etc/ssl/sibunglon.com.crt; ssl_certificate_key /etc/ssl/sibunglon.">
   <meta itemprop="datePublished" content="2023-08-12T22:03:36+08:00">
@@ -41,9 +41,11 @@ sibunglon@sanita:~$ cat /etc/self-signed.conf ssl_certificate /etc/ssl/sibunglon
   <meta itemprop="keywords" content="Ayo Belajar Linux,Apache2,Nginx">
 
   <!-- Twitter cards data -->
+  
   <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg"><meta name="twitter:title" content="Merge or Concatenate SSL Certificates to Single File">
-<meta name="twitter:description" content="I&rsquo;ve received the root and intermediate certificates separately, then run the following command to merge or concat it into single file.
+  <meta name="twitter:image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg">
+  <meta name="twitter:title" content="Merge or Concatenate SSL Certificates to Single File">
+  <meta name="twitter:description" content="I’ve received the root and intermediate certificates separately, then run the following command to merge or concat it into single file.
 sibunglon@sanita$ tree ├── ChainCA1.crt ├── ChainCA2.crt ├── sibunglon.com.key ├── RootCA.crt └── star_sibunglon_com.crt for ssl_combine in {star_sibunglon_com.crt,ChainCA1.crt,ChainCA2.crt,RootCA.crt}; do cat ${ssl_combine} &gt;&gt; /etc/ssl/sibunglon.com.crt echo -e &#34;\n&#34; &gt;&gt; /etc/ssl/sibunglon.com.crt; done Then, i can use sibunglon.com.crt as SSL certificate file and sibunglon.com.key as SSL certificate key file.
 sibunglon@sanita:~$ cat /etc/self-signed.conf ssl_certificate /etc/ssl/sibunglon.com.crt; ssl_certificate_key /etc/ssl/sibunglon.">
 
