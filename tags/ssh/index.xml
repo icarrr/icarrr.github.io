@@ -15,12 +15,23 @@
         <link>https://sibunglon.com/2020/02/15/restrict-server-access-via-ssh-client/</link>
         <pubDate>Sat, 15 Feb 2020 14:57:22 +0700</pubDate>
         <guid>https://sibunglon.com/2020/02/15/restrict-server-access-via-ssh-client/</guid>
-        <description>This article is related to Server Got Hacked, Crontab Has Been Modified.
-Limit IP Address To limit ip address of incoming connections to server via ssh, it can be done by:
-Edit file /etc/hosts.allow.
-Then add the following script.
-sshd : ip_attacker : deny Save and exit. Limit Users or Groups To limit users or groups of incoming connections to server via ssh, it can be done by:
-Edit file /etc/ssh/sshd_config.</description>
+        <description>&lt;p&gt;This article is related to &lt;a href=&#34;https://sibunglon.com/2020/02/15/server-got-hacked-crontab-has-been-modified/&#34;&gt;Server Got Hacked, Crontab Has Been Modified&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;limit-ip-address&#34;&gt;Limit IP Address&lt;/h3&gt;
+&lt;p&gt;To limit ip address of incoming connections to server via ssh, it can be done by:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Edit file &lt;code&gt;/etc/hosts.allow&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Then add the following script.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sshd : ip_attacker : deny
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Save and exit.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;limit-users-or-groups&#34;&gt;Limit Users or Groups&lt;/h3&gt;
+&lt;p&gt;To limit users or groups of incoming connections to server via ssh, it can be done by:&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -28,8 +39,9 @@ Edit file /etc/ssh/sshd_config.</description>
         <link>https://sibunglon.com/2018/12/27/menonaktifkan-autentikasi-password-pada-login-ssh/</link>
         <pubDate>Thu, 27 Dec 2018 01:29:42 +0700</pubDate>
         <guid>https://sibunglon.com/2018/12/27/menonaktifkan-autentikasi-password-pada-login-ssh/</guid>
-        <description>Login SSH Tanpa Password Plain Text? Login ssh tanpa password plain text? emang bisa? terus loginnya pake apa? cuman modal username aja?
-Ya, kali ini labnya tentang gimana caranya agar nantinya kalian dapat login ke server masing-masing tapi gak pakai password plain text lagi. Ya itu bisa saja terjadi, setelah menonaktifkan autentikasi password nanti kita login ke server masing-masing menggunakan private keynya sesuai pada lab sebelumnya. Jika autentikasi password plain text pada login ssh di nonaktifkan, agar bisa login ke server yang dibutuhkan cuman private key, username, ip atau domain server yang dituju.</description>
+        <description>&lt;h3 id=&#34;login-ssh-tanpa-password-plain-text&#34;&gt;Login SSH Tanpa Password Plain Text?&lt;/h3&gt;
+&lt;p&gt;Login ssh tanpa password plain text? emang bisa? terus loginnya pake apa? cuman modal username aja?&lt;/p&gt;
+&lt;p&gt;Ya, kali ini labnya tentang gimana caranya agar nantinya kalian dapat login ke server masing-masing tapi gak pakai password plain text lagi. Ya itu bisa saja terjadi, setelah menonaktifkan autentikasi password nanti kita login ke server masing-masing menggunakan private keynya sesuai pada lab sebelumnya. Jika autentikasi password plain text pada login ssh di nonaktifkan, agar bisa login ke server yang dibutuhkan cuman &lt;strong&gt;private key&lt;/strong&gt;, &lt;strong&gt;username&lt;/strong&gt;, &lt;strong&gt;ip&lt;/strong&gt; atau &lt;strong&gt;domain server&lt;/strong&gt; yang dituju.&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -37,8 +49,9 @@ Ya, kali ini labnya tentang gimana caranya agar nantinya kalian dapat login ke s
         <link>https://sibunglon.com/2018/12/25/akses-server-dengan-autentikasi-private-key-ssh/</link>
         <pubDate>Tue, 25 Dec 2018 04:33:58 +0700</pubDate>
         <guid>https://sibunglon.com/2018/12/25/akses-server-dengan-autentikasi-private-key-ssh/</guid>
-        <description>Akses Server Dengan Autentikasi Private Key Ssh Login Ke Server Dengan Private Key? Emang bisa? Ya itu bisa.
-Umumnya server diakses menggunakan ssh dengan autentikasi password plain text, jika cuman akses 1 server dengan autentikasi password plain text itu masih biasa namun jika mengontrol banyak server dan passwordnya berbeda-beda, apakah anda masih siap mengingatnya? Apakah anda yakin ingin mencatatnya? Jika anda mencatatnya anda bisa saja masih repot karena harus mendefinisikan satu per satu hostname server beserta passwordnya.</description>
+        <description>&lt;h3 id=&#34;akses-server-dengan-autentikasi-private-key-ssh&#34;&gt;Akses Server Dengan Autentikasi Private Key Ssh&lt;/h3&gt;
+&lt;p&gt;Login Ke Server Dengan Private Key?  Emang bisa? Ya itu bisa.&lt;/p&gt;
+&lt;p&gt;Umumnya server diakses menggunakan ssh dengan autentikasi password plain text, jika cuman akses 1 server dengan autentikasi password plain text itu masih biasa namun jika mengontrol banyak server dan passwordnya berbeda-beda, apakah anda masih siap mengingatnya? Apakah anda yakin ingin mencatatnya? Jika anda mencatatnya anda bisa saja masih repot karena harus mendefinisikan satu per satu hostname server beserta passwordnya. Nah maka dari itu di &lt;strong&gt;Lab&lt;/strong&gt; ini akan membahas gimana caranya akses server menggunakan private key ssh agar anda sebagai seorang administrator cuman memberikan private key serta ip address dan username untuk akses server dengan &lt;strong&gt;SSH&lt;/strong&gt;.&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -46,12 +59,16 @@ Umumnya server diakses menggunakan ssh dengan autentikasi password plain text, j
         <link>https://sibunglon.com/2018/12/25/hak-akses-root-dengan-sudo-tanpa-password/</link>
         <pubDate>Tue, 25 Dec 2018 01:31:24 +0700</pubDate>
         <guid>https://sibunglon.com/2018/12/25/hak-akses-root-dengan-sudo-tanpa-password/</guid>
-        <description>Sudo Tanpa Password? Hmmm kelihatannya menarik.
-Ya emang menarik, agar user tidak perlu memasukkan password jika ingin mendapatkan hak akses root cukup tambahkan si user ke sudoers.
-Bermain dengan Sudoers 1) Edit file sudoers dengan command nano /etc/sudoers.
-2) Setelah berhasil mengakses file sudoers, sekarang tambahkan sintaks berikut:
-sibunglon ALL=(ALL) NOPASSWD:ALL Note: Kata sibunglon diganti sesuai user yang akan diberikan izin menggunakan sudo tanpa password.
-Sekarang user sibunglon (user sesuai yang anda daftarkan) dapat menggunakan command sudo tanpa password.</description>
+        <description>&lt;h3 id=&#34;sudo-tanpa-password&#34;&gt;Sudo Tanpa Password?&lt;/h3&gt;
+&lt;p&gt;Hmmm kelihatannya menarik.&lt;/p&gt;
+&lt;p&gt;Ya emang menarik, agar user tidak perlu memasukkan password jika ingin mendapatkan hak akses root cukup tambahkan si user ke &lt;strong&gt;sudoers&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;bermain-dengan-sudoers&#34;&gt;Bermain dengan Sudoers&lt;/h3&gt;
+&lt;p&gt;1) Edit file sudoers dengan command &lt;code&gt;nano /etc/sudoers&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;2) Setelah berhasil mengakses file &lt;strong&gt;sudoers&lt;/strong&gt;, sekarang tambahkan sintaks berikut:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sibunglon ALL=(ALL) NOPASSWD:ALL
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;p&gt;Note:
+Kata &lt;em&gt;&lt;strong&gt;sibunglon&lt;/strong&gt;&lt;/em&gt; diganti sesuai user yang akan diberikan izin menggunakan &lt;strong&gt;sudo&lt;/strong&gt; tanpa password.&lt;/p&gt;</description>
       </item>
     
   </channel>

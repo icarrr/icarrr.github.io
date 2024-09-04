@@ -15,10 +15,7 @@
         <link>https://sibunglon.com/2022/12/13/enable-search-feature-on-open-edx/</link>
         <pubDate>Tue, 13 Dec 2022 13:18:49 +0800</pubDate>
         <guid>https://sibunglon.com/2022/12/13/enable-search-feature-on-open-edx/</guid>
-        <description>Within Open edX, prospective learners can find courses more easily. When a learner searches for a key word or words, the search feature returns a list of the courses that are currently open for enrollment and that match the entered key words.
-By default, Open edX search uses ElasticSearch Engine for production. To enable Open edX Search, follow the steps below:
-Go to Open edX server console.
-Open and edit CMS default configuration (/edx/app/edxapp/edx-platform/cms/envs/common.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -26,11 +23,7 @@ Open and edit CMS default configuration (/edx/app/edxapp/edx-platform/cms/envs/c
         <link>https://sibunglon.com/2022/11/11/integrate-open-edx-with-sentry/</link>
         <pubDate>Fri, 11 Nov 2022 22:36:53 +0800</pubDate>
         <guid>https://sibunglon.com/2022/11/11/integrate-open-edx-with-sentry/</guid>
-        <description>Setting up Sentry crash reporting if you want to provide a reliable service, it’s extremely important to be aware of when things are going wrong on the website.
-Sentry is a wonderful free system to catch Python exceptions.
-For Django on Open edX, we use sentry-sdk to catch and report the errors back to Sentry.
-Set up a Sentry server or use existing Sentry .
-Set up two new services (LMS and Studio) in Sentry and get their DSN strings.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -38,8 +31,7 @@ Set up two new services (LMS and Studio) in Sentry and get their DSN strings.</d
         <link>https://sibunglon.com/2022/10/11/enable-course-progress-tracking-on-open-edx/</link>
         <pubDate>Tue, 11 Oct 2022 22:56:35 +0800</pubDate>
         <guid>https://sibunglon.com/2022/10/11/enable-course-progress-tracking-on-open-edx/</guid>
-        <description>The completion progress tracking tool provides students a way to show themselves that they have completed any block or unit. To turn it, follow the steps below:
-Go to Open edX LMS admin. Find Waffle and add switch (eg, https://edx.sibunglon.com/admin/waffle/switch/add/). For name add with value completion.enable_completion_tracking and checked the Active checkbox. Done. You may be able to check it on your LMS, join to the course and complete one or more units on your course.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -47,9 +39,7 @@ Go to Open edX LMS admin. Find Waffle and add switch (eg, https://edx.sibunglon.
         <link>https://sibunglon.com/2022/08/18/storage-backing-for-blockstructurestore/</link>
         <pubDate>Thu, 18 Aug 2022 18:50:15 +0800</pubDate>
         <guid>https://sibunglon.com/2022/08/18/storage-backing-for-blockstructurestore/</guid>
-        <description>When the user access the course, there is a request trying to access BlockStructure (BS) data in Memcache and when it is not found in the cache, the system enters Collect Mode, and the process is quite heavy and causes slower response times.
-The maximum size of Memcache is 1 MB so if the BS is bigger than that Memcache will not save it.
-The solution to the BS issue against Memcache is to enable storage backing, be it local storage or Amazon S3 storage.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -57,8 +47,7 @@ The solution to the BS issue against Memcache is to enable storage backing, be i
         <link>https://sibunglon.com/2022/06/30/check-open-edx-version-installed/</link>
         <pubDate>Thu, 30 Jun 2022 08:45:30 +0800</pubDate>
         <guid>https://sibunglon.com/2022/06/30/check-open-edx-version-installed/</guid>
-        <description>You can check it from source code of frontend or site of your LMS, it should include the following line:
-&amp;lt;meta name=&amp;#34;openedx-release-line&amp;#34; content=&amp;#34;lilac&amp;#34; /&amp;gt; See for instance the demo platform: https://demo.openedx.overhang.io/ (Ctrl+U to view the source code)</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -66,10 +55,7 @@ The solution to the BS issue against Memcache is to enable storage backing, be i
         <link>https://sibunglon.com/2022/05/15/enable-timed-exams-on-open-edx/</link>
         <pubDate>Sun, 15 May 2022 14:04:22 +0800</pubDate>
         <guid>https://sibunglon.com/2022/05/15/enable-timed-exams-on-open-edx/</guid>
-        <description>Timed exams are one the features of Open edX that can make a series of questions that have been prepared only accessible and completed within a specific time.
-Activate Timed Exams Ask to IT team to Enable Special Exams before timed exams can be used.
-Open your studio &amp;gt; select a course &amp;gt; select Settings &amp;gt; select Advanced Settings &amp;gt; then search for Enable Timed Exams.
-Change the value from false to true, because the default setting is false.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -77,10 +63,7 @@ Change the value from false to true, because the default setting is false.</desc
         <link>https://sibunglon.com/2022/05/15/enable-special-exams-on-open-edx/</link>
         <pubDate>Sun, 15 May 2022 13:34:50 +0800</pubDate>
         <guid>https://sibunglon.com/2022/05/15/enable-special-exams-on-open-edx/</guid>
-        <description>Open edX have a feature named Special Exams, aka timed and proctored exams. Course teams can use it and by default this feature is not enable but when you need to enable it, follow the steps below:
-Go to Open edX server console.
-Open and edit LMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml and /edx/app/edxapp/cms.env.json or /edx/etc/studio.yml).
-Then find the &amp;quot;FEATURES&amp;quot; configuration, add ENABLE_SPECIAL_EXAMS into &amp;quot;FEATURES&amp;quot; array and set to true. See the following codes snippet:</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -88,11 +71,7 @@ Then find the &amp;quot;FEATURES&amp;quot; configuration, add ENABLE_SPECIAL_EXA
         <link>https://sibunglon.com/2022/05/15/set-default-enable-subsection-prerequisite-on-open-edx/</link>
         <pubDate>Sun, 15 May 2022 13:11:54 +0800</pubDate>
         <guid>https://sibunglon.com/2022/05/15/set-default-enable-subsection-prerequisite-on-open-edx/</guid>
-        <description>By default, Timed Exams feature not yet active when create a new courses. But this configuration can be override, for example want to set active or enable Timed Exams feature when create a new courses. Follow the steps below:
-Go to Open edX server console.
-Open and edit file /edx/app/edxapp/edx-platform/common/lib/xmodule/xmodule/course_module.py.
-Find the following codes snippet:
-... enable_subsection_gating = Boolean( display_name=_(&amp;#34;Enable Subsection Prerequisites&amp;#34;), help=_( &amp;#34;Enter true or false. If this value is true, you can hide a &amp;#34; &amp;#34;subsection until learners earn a minimum score in another, &amp;#34; &amp;#34;prerequisite subsection.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -100,10 +79,7 @@ Find the following codes snippet:
         <link>https://sibunglon.com/2022/05/13/enable-courses-prerequisite-on-open-edx/</link>
         <pubDate>Fri, 13 May 2022 11:49:55 +0800</pubDate>
         <guid>https://sibunglon.com/2022/05/13/enable-courses-prerequisite-on-open-edx/</guid>
-        <description>Course teams can set prerequisites for a courses. Learners must complete the prerequisite courses before open the a specific courses.
-To enable this features, follow the steps below because this is not enable by default:
-Ask to IT team to Enable Prerequisite before prerequisite course can be used.
-Also ask to IT team to enable courses prerequisite. Open and edit LMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml and /edx/app/edxapp/cms.env.json or /edx/etc/studio.yml).</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -111,10 +87,7 @@ Also ask to IT team to enable courses prerequisite. Open and edit LMS configurat
         <link>https://sibunglon.com/2022/05/13/enable-course-subsections-prerequisite-on-open-edx/</link>
         <pubDate>Fri, 13 May 2022 11:01:18 +0800</pubDate>
         <guid>https://sibunglon.com/2022/05/13/enable-course-subsections-prerequisite-on-open-edx/</guid>
-        <description>Course teams can set prerequisites for a content. Learners must complete the prerequisite content subsection before open the next content.
-The course team can lock a course subsection until the user completes other prerequisite subsections. If a subsection has prerequisites, it will be displayed in the course outline with a lock icon.
-To enable this features, follow the steps below because this is not enable by default:
-Ask to IT team to Enable Prerequisite before prerequisite course subsections can be used.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -122,11 +95,7 @@ Ask to IT team to Enable Prerequisite before prerequisite course subsections can
         <link>https://sibunglon.com/2022/05/13/enable-prerequisite-on-open-edx/</link>
         <pubDate>Fri, 13 May 2022 10:28:11 +0800</pubDate>
         <guid>https://sibunglon.com/2022/05/13/enable-prerequisite-on-open-edx/</guid>
-        <description>Course teams can set prerequisites for a course or content. Learners must complete the prerequisite courses or content before participating in the next course or content.
-By default, this feature is not enable but when you need to enable it, follow the steps below:
-Go to Open edX server console.
-Open and edit LMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml and /edx/app/edxapp/cms.env.json or /edx/etc/studio.yml).
-Then find the &amp;quot;FEATURES&amp;quot; configuration, add MILESTONES_APP into &amp;quot;FEATURES&amp;quot; array and set to true.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -134,11 +103,7 @@ Then find the &amp;quot;FEATURES&amp;quot; configuration, add MILESTONES_APP int
         <link>https://sibunglon.com/2022/03/06/set-default-weight-of-common-problem-on-open-edx/</link>
         <pubDate>Sun, 06 Mar 2022 14:34:16 +0800</pubDate>
         <guid>https://sibunglon.com/2022/03/06/set-default-weight-of-common-problem-on-open-edx/</guid>
-        <description>By default, problem weight of Blank Common Problem component (including multiple choice components, checkboxes, etc.) has not been set so that the problem weight is based on the number of problems. But this configuration can be override, for example want to set it 100 as default. Follow the steps below:
-Go to Open edX server console.
-Open and edit file /edx/app/edxapp/edx-platform/common/lib/xmodule/xmodule/capa_base.py.
-Find the following codes snippet:
-... weight = Float( display_name=_(&amp;#34;Problem Weight&amp;#34;), help=_(&amp;#34;Defines the number of points each problem is worth.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -146,11 +111,7 @@ Find the following codes snippet:
         <link>https://sibunglon.com/2022/03/06/set-default-show-answer-of-common-problem-to-never-on-open-edx/</link>
         <pubDate>Sun, 06 Mar 2022 14:15:39 +0800</pubDate>
         <guid>https://sibunglon.com/2022/03/06/set-default-show-answer-of-common-problem-to-never-on-open-edx/</guid>
-        <description>By default, option show answer of Blank Common Problem component (including multiple choice components, checkboxes, etc.) was set to finished. But this configuration can be override, for example want to set it never as default. Follow the steps below:
-Go to Open edX server console.
-Open and edit file /edx/app/edxapp/edx-platform/common/lib/xmodule/xmodule/modulestore/inheritance.py.
-Find the following codes snippet:
-... showanswer = String( display_name=_(&amp;#34;Show Answer&amp;#34;), help=_( # Translators: DO NOT translate the words in quotes here, they are # specific words for the acceptable values.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -158,12 +119,7 @@ Find the following codes snippet:
         <link>https://sibunglon.com/2022/03/06/set-default-component-name-from-multiple-choice-to-pilihan-ganda-on-open-edx/</link>
         <pubDate>Sun, 06 Mar 2022 14:03:49 +0800</pubDate>
         <guid>https://sibunglon.com/2022/03/06/set-default-component-name-from-multiple-choice-to-pilihan-ganda-on-open-edx/</guid>
-        <description>Even though you have used multiple languages or changed the language to Indonesian in Open edX, the Multiple Choice component is still labeled as Multiple Choice.
-Go to Open edX server console.
-Open and edit file /edx/app/edxapp/edx-platform/common/lib/xmodule/xmodule/templates/problem/multiplechoice.yaml.
-Find the following codes snippet:
-... display_name: Multiple Choice ... Then update the code, change part display_name from &amp;ldquo;Multiple Choice&amp;rdquo; to &amp;ldquo;Pilihan Ganda&amp;rdquo;. See the following codes snippet:
-... display_name: Pilihan Ganda .</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -171,11 +127,7 @@ Find the following codes snippet:
         <link>https://sibunglon.com/2022/03/06/set-default-enable-timed-exams-on-open-edx/</link>
         <pubDate>Sun, 06 Mar 2022 13:49:48 +0800</pubDate>
         <guid>https://sibunglon.com/2022/03/06/set-default-enable-timed-exams-on-open-edx/</guid>
-        <description>By default, Timed Exams feature not yet active when create a new courses. But this configuration can be override, for example want to set active or enable Timed Exams feature when create a new courses. Follow the steps below:
-Go to Open edX server console.
-Open and edit file /edx/app/edxapp/edx-platform/common/lib/xmodule/xmodule/course_module.py.
-Find the following codes snippet:
-... enable_timed_exams = Boolean( display_name=_(&amp;#34;Enable Timed Exams&amp;#34;), help=_( &amp;#34;Enter true or false. If this value is true, timed exams are enabled in your course.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -183,11 +135,7 @@ Find the following codes snippet:
         <link>https://sibunglon.com/2022/03/06/override-course-pace-all-course-into-self-paced-on-open-edx/</link>
         <pubDate>Sun, 06 Mar 2022 13:00:19 +0800</pubDate>
         <guid>https://sibunglon.com/2022/03/06/override-course-pace-all-course-into-self-paced-on-open-edx/</guid>
-        <description>By default, course pacing was set to Instructor-Paced. But this configuration can be override, for example want to set it Self-Paced as default. Follow the steps below:
-Go to Open edX server console.
-Open and edit file /edx/app/edxapp/edx-platform/common/lib/xmodule/xmodule/course_module.py.
-Find the following codes snippet:
-... self_paced = Boolean( display_name=_(&amp;#34;Self Paced&amp;#34;), help=_( &amp;#34;Set this to \&amp;#34;true\&amp;#34; to mark this course as self-paced. Self-paced courses do not have &amp;#34; &amp;#34;due dates for assignments, and students can progress through the course at any rate before &amp;#34; &amp;#34;the course ends.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -195,11 +143,7 @@ Find the following codes snippet:
         <link>https://sibunglon.com/2022/03/02/set-default-certificates-display-behavior-on-open-edx/</link>
         <pubDate>Wed, 02 Mar 2022 21:10:25 +0800</pubDate>
         <guid>https://sibunglon.com/2022/03/02/set-default-certificates-display-behavior-on-open-edx/</guid>
-        <description>By default, Certificates Display Behavior was set to end. But this configuration can be override, for example want to set it early_no_info as default. Follow the steps below:
-Go to Open edX server console.
-Open and edit file /edx/app/edxapp/edx-platform/common/lib/xmodule/xmodule/course_module.py.
-Find the following codes snippet:
-... certificates_display_behavior = String( display_name=_(&amp;#34;Certificates Display Behavior&amp;#34;), help=_( &amp;#34;Enter end, early_with_info, or early_no_info. After certificate generation, students who passed see a &amp;#34; &amp;#34;link to their certificates on the dashboard and students who did not pass see information about the &amp;#34; &amp;#34;grading configuration.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -207,10 +151,7 @@ Find the following codes snippet:
         <link>https://sibunglon.com/2022/03/02/bypass-set-course-mode-for-create-and-activate-certificate-in-studio-open-edx/</link>
         <pubDate>Wed, 02 Mar 2022 20:48:58 +0800</pubDate>
         <guid>https://sibunglon.com/2022/03/02/bypass-set-course-mode-for-create-and-activate-certificate-in-studio-open-edx/</guid>
-        <description>By default from Open edX, you need to perform several steps to add and activate certificates in courses such as adding course modes, adding course certificates, activating certificates, etc.
-But things can be simplified, you can add and activate certificates without adding course mode.
-Note: It is recommended that you set the enrollment mode default to honor, so that courses participants can generate certificates.
-Go to Open edX server console.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -218,11 +159,7 @@ Go to Open edX server console.</description>
         <link>https://sibunglon.com/2022/03/02/set-default-enrollment-mode-open-edx-to-honor/</link>
         <pubDate>Wed, 02 Mar 2022 20:35:29 +0800</pubDate>
         <guid>https://sibunglon.com/2022/03/02/set-default-enrollment-mode-open-edx-to-honor/</guid>
-        <description>By default, student enrollment mode will set to audit mode when course mode is not yet added. But this configuration can be override, for example want to set honor as default. Follow the steps below:
-Go to Open edX server console.
-Open and edit file /edx/app/edxapp/lms.env.json.
-Then add following codes snippet into lms configuration file:
-... &amp;#34;COURSE_MODE_DEFAULTS&amp;#34;: { &amp;#34;name&amp;#34;: &amp;#34;Honor&amp;#34;, &amp;#34;slug&amp;#34;: &amp;#34;honor&amp;#34;, &amp;#34;bulk_sku&amp;#34;: null, &amp;#34;currency&amp;#34;: &amp;#34;usd&amp;#34;, &amp;#34;description&amp;#34;: null, &amp;#34;expiration_datetime&amp;#34;: null, &amp;#34;min_price&amp;#34;: 0, &amp;#34;sku&amp;#34;: null, &amp;#34;suggested_prices&amp;#34;: &amp;#34;&amp;#34; }, .</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -230,8 +167,7 @@ Then add following codes snippet into lms configuration file:
         <link>https://sibunglon.com/2022/03/02/limit-student-enrollment-to-open-edx-courses/</link>
         <pubDate>Wed, 02 Mar 2022 20:25:28 +0800</pubDate>
         <guid>https://sibunglon.com/2022/03/02/limit-student-enrollment-to-open-edx-courses/</guid>
-        <description>Option 1: By Invitation This setting is to restrict enrollment to invitation by the course staff. The default value is false, which means the course is open to anyone to enroll. To change this setting, follow these instructions.
-In Studio, click Settings, then select Advanced Settings from the drop down menu Scroll down to Invitation Only. To restrict access to the course, change the value to &amp;ldquo;true&amp;rdquo; so the course is invitation only Option 2: Maximum student enrollment If you want to restrict the number of students that can enroll in your course, follow these instructions.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -239,11 +175,7 @@ In Studio, click Settings, then select Advanced Settings from the drop down menu
         <link>https://sibunglon.com/2022/02/18/how-to-keep-multiple-logged-in-session-open-edx/</link>
         <pubDate>Fri, 18 Feb 2022 14:44:21 +0800</pubDate>
         <guid>https://sibunglon.com/2022/02/18/how-to-keep-multiple-logged-in-session-open-edx/</guid>
-        <description>To keep multiple logged in session, you need to deactivate prevent concurrent logins per user feature, follow the steps below:
-Go to Open edX server console.
-Open and edit file /edx/app/edxapp/lms.env.json and /edx/app/edxapp/cms.env.json.
-Then find the &amp;quot;FEATURES&amp;quot; configuration, add PREVENT_CONCURRENT_LOGINS into &amp;quot;FEATURES&amp;quot; array and set to false. See the following codes snippet:
-... FEATURES: PREVENT_CONCURRENT_LOGINS: false ... Restart LMS services.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -251,8 +183,7 @@ Then find the &amp;quot;FEATURES&amp;quot; configuration, add PREVENT_CONCURRENT
         <link>https://sibunglon.com/2022/02/15/enable-send-bulk-email/</link>
         <pubDate>Tue, 15 Feb 2022 02:47:21 +0800</pubDate>
         <guid>https://sibunglon.com/2022/02/15/enable-send-bulk-email/</guid>
-        <description>For courses on under Open edX platform, course team can send bulk email messages to course participants directly from the instructor dashboard: in the LMS, select Instructor, and then select Email.
-Messages can use HTML styling, and can include links to videos, social media pages for the course, and other material. All course team members who have the Staff or Admin role can use bulk email messages to communicate with course participants before, during, and after the course run.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -260,12 +191,7 @@ Messages can use HTML styling, and can include links to videos, social media pag
         <link>https://sibunglon.com/2021/11/17/allow-educator-generate-student-certificate-on-open-edx/</link>
         <pubDate>Wed, 17 Nov 2021 14:12:00 +0800</pubDate>
         <guid>https://sibunglon.com/2021/11/17/allow-educator-generate-student-certificate-on-open-edx/</guid>
-        <description>To generate certificate, educator have some option:
-Manual to enable student generated certificates Auto allow student generated certificates Educator generate student certificate (this article) To allow educator generate student certificate, follow the steps below:
-Go to Open edX server console.
-Open and edit LMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml).
-Then find the &amp;quot;FEATURES&amp;quot; configuration, add CERTIFICATES_INSTRUCTOR_GENERATION into &amp;quot;FEATURES&amp;quot; array and set to true. See the following codes snippet:
-... FEATURES: CERTIFICATES_INSTRUCTOR_GENERATION: true .</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -273,11 +199,7 @@ Then find the &amp;quot;FEATURES&amp;quot; configuration, add CERTIFICATES_INSTR
         <link>https://sibunglon.com/2021/11/17/disable-delete-account-function-on-open-edx/</link>
         <pubDate>Wed, 17 Nov 2021 14:07:34 +0800</pubDate>
         <guid>https://sibunglon.com/2021/11/17/disable-delete-account-function-on-open-edx/</guid>
-        <description>To disable delete account function, follow the steps below:
-Go to Open edX server console.
-Open and edit LMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml).
-Then find the &amp;quot;FEATURES&amp;quot; configuration, add ENABLE_ACCOUNT_DELETION into &amp;quot;FEATURES&amp;quot; array and set to false. See the following codes snippet:
-... FEATURES: ENABLE_ACCOUNT_DELETION: false ... Restart LMS services.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -285,11 +207,7 @@ Then find the &amp;quot;FEATURES&amp;quot; configuration, add ENABLE_ACCOUNT_DEL
         <link>https://sibunglon.com/2021/11/17/disable-create-course-for-non-staff-user-on-open-edx/</link>
         <pubDate>Wed, 17 Nov 2021 13:58:24 +0800</pubDate>
         <guid>https://sibunglon.com/2021/11/17/disable-create-course-for-non-staff-user-on-open-edx/</guid>
-        <description>To disable create course for non-staff user, follow the steps below:
-Go to Open edX server console.
-Open and edit CMS configuration (/edx/app/edxapp/cms.env.json or /edx/etc/studio.yml).
-Then find the &amp;quot;FEATURES&amp;quot; configuration, add DISABLE_COURSE_CREATION into &amp;quot;FEATURES&amp;quot; array and set to true. See the following codes snippet:
-... FEATURES: DISABLE_COURSE_CREATION: true ... Restart LMS services.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -297,10 +215,7 @@ Then find the &amp;quot;FEATURES&amp;quot; configuration, add DISABLE_COURSE_CRE
         <link>https://sibunglon.com/2021/11/17/allow-educator-create-user-account-and-register-to-courses-on-open-edx/</link>
         <pubDate>Wed, 17 Nov 2021 13:16:51 +0800</pubDate>
         <guid>https://sibunglon.com/2021/11/17/allow-educator-create-user-account-and-register-to-courses-on-open-edx/</guid>
-        <description>Educator can add new user and enroll the student into a courses by upload of a CSV file that contains a list of new accounts to create and register for course. But, by default this feature is not enable. To enable it, follow the steps below:
-Go to Open edX server console.
-Open and edit LMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml).
-Then find the &amp;quot;FEATURES&amp;quot; configuration, add ALLOW_AUTOMATED_SIGNUPS into &amp;quot;FEATURES&amp;quot; array and set to true.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -308,9 +223,7 @@ Then find the &amp;quot;FEATURES&amp;quot; configuration, add ALLOW_AUTOMATED_SI
         <link>https://sibunglon.com/2021/11/17/hide-view-my-records-on-learner-profile-open-edx/</link>
         <pubDate>Wed, 17 Nov 2021 12:53:16 +0800</pubDate>
         <guid>https://sibunglon.com/2021/11/17/hide-view-my-records-on-learner-profile-open-edx/</guid>
-        <description>By default when install Open edX, credentials service not include on installation script. But on LMS configuration, credentials service was point to http://localhost:8005 and on learner profile there is a View My Records button point to http://localhost:8005/records/.
-To hide it, follow the steps below:
-Go to Open edX LMS admin. Find Site configurations and add site configurations but just edit site configurations when you have existing configuration (eg, https://edx.sibunglon.com/admin/site_configuration/siteconfiguration/). For Site values add with value &amp;quot;ENABLE_LEARNER_RECORDS&amp;quot;: false.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -318,8 +231,7 @@ Go to Open edX LMS admin. Find Site configurations and add site configurations b
         <link>https://sibunglon.com/2021/11/17/enable-course-sidebar-on-open-edx/</link>
         <pubDate>Wed, 17 Nov 2021 12:36:12 +0800</pubDate>
         <guid>https://sibunglon.com/2021/11/17/enable-course-sidebar-on-open-edx/</guid>
-        <description>The course sidebar was pretty much handy as the user do not have to open a separate page to hop on to any particular section/subsection/unit. By default, this feature is not enable but when you need to enable it, follow the steps below:
-Go to Open edX LMS admin. Find Waffle and add flag (eg, https://edx.sibunglon.com/admin/waffle/flag/). For name add with value course_experience.course_outline_page. For Everyone option, select no. Checked the Authenticated checkbox only.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -327,8 +239,7 @@ Go to Open edX LMS admin. Find Waffle and add flag (eg, https://edx.sibunglon.co
         <link>https://sibunglon.com/2021/11/17/auto-allow-student-to-generate-their-certificate-on-open-edx/</link>
         <pubDate>Wed, 17 Nov 2021 12:22:20 +0800</pubDate>
         <guid>https://sibunglon.com/2021/11/17/auto-allow-student-to-generate-their-certificate-on-open-edx/</guid>
-        <description>Usually educators expect student to be able to download their certificates as soon as they achieve a passing grade. This can be achieved by enabling auto_certificate_generation as described below.
-Go to Open edX LMS admin. Find Waffle and add switch (eg, https://edx.sibunglon.com/admin/waffle/switch/add/). For name add with value certificates.auto_certificate_generation and checked the Active checkbox. After that, educator no need to Enable Student-Generated Certificates (as per Allowing Learners to Claim Their Own Certificates in Open edX article) on each course.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -336,10 +247,7 @@ Go to Open edX LMS admin. Find Waffle and add switch (eg, https://edx.sibunglon.
         <link>https://sibunglon.com/2021/11/17/set-age-limit-to-get-full-profile-feature-on-open-edx/</link>
         <pubDate>Wed, 17 Nov 2021 11:15:07 +0800</pubDate>
         <guid>https://sibunglon.com/2021/11/17/set-age-limit-to-get-full-profile-feature-on-open-edx/</guid>
-        <description>By default Open edX allow to get full profile to user if user is over 13 year. But you can change it with custom age limit. To set it, follow the steps below:
-Go to Open edX server console.
-Open and edit LMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml).
-Then find the PARENTAL_CONSENT_AGE_LIMIT configuration (add configuration PARENTAL_CONSENT_AGE_LIMIT if you can&amp;rsquo;t find it) and set with you custom age limit. See the following codes snippet, im set age limit to 7:</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -347,11 +255,7 @@ Then find the PARENTAL_CONSENT_AGE_LIMIT configuration (add configuration PARENT
         <link>https://sibunglon.com/2021/11/16/enable-admin-view-of-courseenrollment-model/</link>
         <pubDate>Tue, 16 Nov 2021 22:22:47 +0800</pubDate>
         <guid>https://sibunglon.com/2021/11/16/enable-admin-view-of-courseenrollment-model/</guid>
-        <description>By enabling admin view CourseEnrollment model, admin or staff can view and update the enrollment mode for a specific user without manually updating on database. To enable it, follow the steps below:
-Go to Open edX LMS admin.
-Find Waffle and add switch (eg, https://edx.sibunglon.com/admin/waffle/switch/add/).
-For name add with value student.courseenrollment_admin and checked the Active checkbox.
-Then you can check access courseenrollment model under student section (eg, https://edx.sibunglon.com/admin/student/courseenrollment/).</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -359,10 +263,7 @@ Then you can check access courseenrollment model under student section (eg, http
         <link>https://sibunglon.com/2021/11/16/allow-course-team-non-staff-to-generate-grade/</link>
         <pubDate>Tue, 16 Nov 2021 22:11:12 +0800</pubDate>
         <guid>https://sibunglon.com/2021/11/16/allow-course-team-non-staff-to-generate-grade/</guid>
-        <description>By default, only user with staff flag can generate grade on Instructor Data Download tab. When someone was added as Data Researcher, the user can access Data Download tab only and can&amp;rsquo;t generate grade. To allow course team without staff flag can generate grade, follow the steps below:
-Go to Open edX server console.
-Open and edit LMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml).
-Then find the &amp;quot;FEATURES&amp;quot; configuration, add ALLOW_COURSE_STAFF_GRADE_DOWNLOADS into &amp;quot;FEATURES&amp;quot; array and set to true.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -370,12 +271,7 @@ Then find the &amp;quot;FEATURES&amp;quot; configuration, add ALLOW_COURSE_STAFF
         <link>https://sibunglon.com/2021/11/16/disable-analytics-tab-on-instructor-page/</link>
         <pubDate>Tue, 16 Nov 2021 22:01:36 +0800</pubDate>
         <guid>https://sibunglon.com/2021/11/16/disable-analytics-tab-on-instructor-page/</guid>
-        <description>
-To disable analytics tab on instructor page Open edX, follow the steps below:
-Go to Open edX server console.
-Open and edit LMS configuration (/edx/app/edxapp/lms.env.json or /edx/etc/lms.yml).
-Then find the ANALYTICS_DASHBOARD_URL configuration and set to blank or &#39;&#39;. See the following codes snippet:
-... ANALYTICS_DASHBOARD_URL: &amp;#39;&amp;#39; ... Restart LMS services. </description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -383,9 +279,7 @@ Then find the ANALYTICS_DASHBOARD_URL configuration and set to blank or &#39;&#3
         <link>https://sibunglon.com/2021/11/16/i18n_fastgenerate-failed-reading-unicode-file-name/</link>
         <pubDate>Tue, 16 Nov 2021 21:44:32 +0800</pubDate>
         <guid>https://sibunglon.com/2021/11/16/i18n_fastgenerate-failed-reading-unicode-file-name/</guid>
-        <description>I&amp;rsquo;m trying to modify translations and need re-compile translations file to implement the update. But when i trying re-compile it with the following command:
-$ sudo -H -u edxapp bash $ source /edx/app/edxapp/edxapp_env $ cd /edx/app/edxapp/edx-platform $ paver i18n_fastgenerate And i found this:
-Traceback (most recent call last): File &amp;#34;/openedx/venv/bin/django-admin&amp;#34;, line 11, in &amp;lt;module&amp;gt; sys.exit(execute_from_command_line()) File &amp;#34;/openedx/venv/local/lib/python2.7/site-packages/django/core/management/__init__.py&amp;#34;, line 364, in execute_from_command_line utility.execute() File &amp;#34;/openedx/venv/local/lib/python2.7/site-packages/django/core/management/__init__.py&amp;#34;, line 356, in execute self.fetch_command(subcommand).run_from_argv(self.argv) File &amp;#34;/openedx/venv/local/lib/python2.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -393,10 +287,7 @@ Traceback (most recent call last): File &amp;#34;/openedx/venv/bin/django-admin&
         <link>https://sibunglon.com/2021/11/16/open-response-assessment-ora-using-minio-as-storage-in-open-edx/</link>
         <pubDate>Tue, 16 Nov 2021 21:07:02 +0800</pubDate>
         <guid>https://sibunglon.com/2021/11/16/open-response-assessment-ora-using-minio-as-storage-in-open-edx/</guid>
-        <description>Usually, someone use Amazon S3 as storage for Open edX course content and services (eg, storage for grades, video transcript, etc.). But this article just share how to set MinIO as storage for ORA instead use Amazon S3. Do the following steps.
-Setup AWS auth (/edx/app/edxapp/lms.auth.json or /edx/etc/lms.yml).
-Find the following snippet codes on the configuration file.
-... AWS_ACCESS_KEY_ID: null AWS_S3_CUSTOM_DOMAIN: SET-ME-PLEASE (ex. bucket-name.s3.amazonaws.com) AWS_SECRET_ACCESS_KEY: null AWS_STORAGE_BUCKET_NAME: SET-ME-PLEASE (ex. bucket-name) FILE_UPLOAD_STORAGE_BUCKET_NAME: SET-ME-PLEASE (ex.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -404,7 +295,7 @@ Find the following snippet codes on the configuration file.
         <link>https://sibunglon.com/2021/11/16/hide-courses-on-open-edx/</link>
         <pubDate>Tue, 16 Nov 2021 20:25:31 +0800</pubDate>
         <guid>https://sibunglon.com/2021/11/16/hide-courses-on-open-edx/</guid>
-        <description>To hide a course, just set course visibility to none. To set it, open your studio &amp;gt; select a course &amp;gt; select advanced settings &amp;gt; then search for Course Visibility In Catalog. After course visibility was set to none, the course does not appear in the catalog (eg, https://edx.sibunglon.com/courses) even though the course is still running or has not ended. Courses that have ended still appear in the catalog (eg https://edx.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -412,9 +303,7 @@ Find the following snippet codes on the configuration file.
         <link>https://sibunglon.com/2021/10/25/fixing-unable-to-delete-account-open-edx-via-user-profile/</link>
         <pubDate>Mon, 25 Oct 2021 13:03:24 +0800</pubDate>
         <guid>https://sibunglon.com/2021/10/25/fixing-unable-to-delete-account-open-edx-via-user-profile/</guid>
-        <description>When I test to delete my account from the user profile page, I get the following message after entering the password.
-When check the file /edx/var/log/lms/edx.log i find this.
-openedx.core.djangoapps.user_authn.exceptions.AuthFailedError Oct 25 13:08:55 ubuntu [service_variant=lms][openedx.core.djangoapps.user_api.accounts.views][env:sandbox] ERROR [ubuntu 10792] [user 14] [views.py:472] - 500 error deactivating account Default state does not exist! Populate retirement states to retire users. Traceback (most recent call last): File &amp;#34;/edx/app/edxapp/edx-platform/openedx/core/djangoapps/user_api/models.py&amp;#34;, line 320, in create_retirement pending = RetirementState.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -422,10 +311,7 @@ openedx.core.djangoapps.user_authn.exceptions.AuthFailedError Oct 25 13:08:55 ub
         <link>https://sibunglon.com/2021/08/29/unable-to-download-data-generated-open-edx/</link>
         <pubDate>Sun, 29 Aug 2021 21:14:25 +0800</pubDate>
         <guid>https://sibunglon.com/2021/08/29/unable-to-download-data-generated-open-edx/</guid>
-        <description>This problem occurs because don&amp;rsquo;t use Amazon S3 to save data generated. To fix it, follow these steps.
--) Login to Open edX server, then create symbolic link from /tmp/edx-s3/grades to /edx/var/edxapp/media.
--) Update nginx configuration of LMS. Find the following snippet codes on the configuration file.
-location ~ ^/media/(?P&amp;lt;file&amp;gt;.*) { root /edx/var/edxapp/media; try_files /$file =404; expires 31536000s; } Change =404 to /grades/$file or looks like the configuration below.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -433,8 +319,7 @@ location ~ ^/media/(?P&amp;lt;file&amp;gt;.*) { root /edx/var/edxapp/media; try_
         <link>https://sibunglon.com/2021/08/29/controlling-course-creation-permission/</link>
         <pubDate>Sun, 29 Aug 2021 19:58:32 +0800</pubDate>
         <guid>https://sibunglon.com/2021/08/29/controlling-course-creation-permission/</guid>
-        <description>By default, Open edX only supports users with staff and/or superuser access to create a courses on the Studio or CMS. Another users can only edit content on available courses after they have been added as a course team.
-But a user who does not have staff access can create a course when he has requested course creation access and has been approved by the administrator team. To request access to course creation, follow these steps.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -442,9 +327,7 @@ But a user who does not have staff access can create a course when he has reques
         <link>https://sibunglon.com/2021/06/23/discussion-forum-open-edx-not-visible-for-single-user/</link>
         <pubDate>Wed, 23 Jun 2021 21:55:50 +0800</pubDate>
         <guid>https://sibunglon.com/2021/06/23/discussion-forum-open-edx-not-visible-for-single-user/</guid>
-        <description>A few days ago, a students using our system reported that he couldn&amp;rsquo;t see the discussion forum on the course. But another student, discus forums can be seen.
-When i check the LMS log, i found this:
-Jun 21 18:15:01 velvet [service_variant=lms][edx.courseware][env:sandbox] ERROR [velvet 8339] [views.py:592] - Error in /courses/course-v1:STEL+Beginner+2020_Run1/discussion/forum/: user=chyntia, effective_user=chyntia, course=course-v1:STEL+Beginner+2020_Run1 Traceback (most recent call last): File &amp;#34;/edx/app/edxapp/edx-platform/lms/djangoapps/courseware/views/views.py&amp;#34;, line 521, in get return super(CourseTabView, self).get(request, course=course, page_context=page_context, **kwargs) File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -452,10 +335,7 @@ Jun 21 18:15:01 velvet [service_variant=lms][edx.courseware][env:sandbox] ERROR 
         <link>https://sibunglon.com/2021/05/07/course-visibility-have-been-set-to-none-but-the-course-show-on-index/</link>
         <pubDate>Fri, 07 May 2021 23:25:13 +0800</pubDate>
         <guid>https://sibunglon.com/2021/05/07/course-visibility-have-been-set-to-none-but-the-course-show-on-index/</guid>
-        <description>I&amp;rsquo;m using Open edX relase ironwood.master (installed by 2020), i can&amp;rsquo;t hide the course from all users after chage course visibility from Advanced settings in the studio.
-If this is also the case with you, you can fix it by following these steps:
-Login to server, and edit lms.env.json in /edx/app/edxapp or lms.yml in /edx/etc if you are using Open edX release juniper or latest.
-Find COURSE_CATALOG_VISIBILITY_PERMISSION and change the value with see_in_catalog.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -463,8 +343,7 @@ Find COURSE_CATALOG_VISIBILITY_PERMISSION and change the value with see_in_catal
         <link>https://sibunglon.com/2021/05/07/fixing-issue-db-open-edx-notifier-celery-workers-is-locked/</link>
         <pubDate>Fri, 07 May 2021 22:20:17 +0800</pubDate>
         <guid>https://sibunglon.com/2021/05/07/fixing-issue-db-open-edx-notifier-celery-workers-is-locked/</guid>
-        <description>Apart from the issue user celery does not exist after migrated or upgrade the instance, there are other possible issues that may be encountered after migrating instances, i.e. service notifier-celery-workers failed to start (FATAL, Exited too quickly).
-Issue notifier-celery-workers failing to start may be encountered after migrate the instances because before migration, the service has not been turned off while the service is serving several transactional queries so the database used by the service is locked (especially if you are still using SQLite), which means that the service cannot read or write data to the database.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -472,10 +351,7 @@ Issue notifier-celery-workers failing to start may be encountered after migrate 
         <link>https://sibunglon.com/2021/04/14/save-button-on-problem-editor-open-edx-is-not-respond/</link>
         <pubDate>Wed, 14 Apr 2021 23:01:21 +0800</pubDate>
         <guid>https://sibunglon.com/2021/04/14/save-button-on-problem-editor-open-edx-is-not-respond/</guid>
-        <description>
-The most common cause is trying to use special characters, etc. greater than (&amp;gt;), less than (&amp;lt;), and ampersand (&amp;amp;) in the problem editor.
-To resolve this issue, replace these characters on problem text with the HTML entities.
-To enter &amp;gt;, type &amp;amp;gt;. To enter &amp;lt;, type &amp;amp;lt;. To enter &amp;amp;, type &amp;amp;amp;. </description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -483,12 +359,7 @@ To enter &amp;gt;, type &amp;amp;gt;. To enter &amp;lt;, type &amp;amp;lt;. To e
         <link>https://sibunglon.com/2021/03/01/disable-manual-activation-for-a-new-account-in-open-edx/</link>
         <pubDate>Mon, 01 Mar 2021 01:41:45 +0800</pubDate>
         <guid>https://sibunglon.com/2021/03/01/disable-manual-activation-for-a-new-account-in-open-edx/</guid>
-        <description>
-To disable manual activation for a new registration, follow the steps below:
-Go to Open edX server console.
-Open and edit LMS configuration (lms.env.json).
-Then find the &amp;quot;FEATURES&amp;quot; configuration, add SKIP_EMAIL_VALIDATION into &amp;quot;FEATURES&amp;quot; array and set to true. See the following codes snippet:
-&amp;#34;FEATURES&amp;#34;: { ... &amp;#34;SKIP_EMAIL_VALIDATION&amp;#34;: true, ... }, Restart LMS services. </description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -496,12 +367,7 @@ Then find the &amp;quot;FEATURES&amp;quot; configuration, add SKIP_EMAIL_VALIDAT
         <link>https://sibunglon.com/2021/03/01/disable-public-registration-in-open-edx/</link>
         <pubDate>Mon, 01 Mar 2021 01:33:33 +0800</pubDate>
         <guid>https://sibunglon.com/2021/03/01/disable-public-registration-in-open-edx/</guid>
-        <description>
-To disable public registration in Open edX, follow the steps below:
-Go to Open edX server console.
-Open and edit LMS and CMS configuration (lms.env.json and cms.env.json).
-Then find the &amp;quot;FEATURES&amp;quot; configuration, add ALLOW_PUBLIC_ACCOUNT_CREATION into &amp;quot;FEATURES&amp;quot; array and set to false. See the following codes snippet:
-&amp;#34;FEATURES&amp;#34;: { ... &amp;#34;ALLOW_PUBLIC_ACCOUNT_CREATION&amp;#34;: false, ... }, Restart LMS services. </description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -509,12 +375,7 @@ Then find the &amp;quot;FEATURES&amp;quot; configuration, add ALLOW_PUBLIC_ACCOU
         <link>https://sibunglon.com/2021/03/01/disable-wiki-panel-in-open-edx/</link>
         <pubDate>Mon, 01 Mar 2021 01:22:38 +0800</pubDate>
         <guid>https://sibunglon.com/2021/03/01/disable-wiki-panel-in-open-edx/</guid>
-        <description>
-To disable wiki feature for all courses, follow the steps below:
-Go to Open edX server console.
-Open and edit LMS configuration (lms.env.json).
-Then find the WIKI_ENABLED, and set to false.
-{ &amp;#34;WIKI_ENABLED&amp;#34;: false, } Restart LMS services. </description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -522,10 +383,7 @@ Then find the WIKI_ENABLED, and set to false.
         <link>https://sibunglon.com/2021/03/01/disable-discussion-panel-in-open-edx/</link>
         <pubDate>Mon, 01 Mar 2021 01:11:46 +0800</pubDate>
         <guid>https://sibunglon.com/2021/03/01/disable-discussion-panel-in-open-edx/</guid>
-        <description>On previous article, you have hiding discussion panel, but you can also disable the discussion panel if all courses to be made or those that have been created do not require the discussion feature. To disable discussion feature, follow the steps below:
-Go to Open edX server console.
-Open and edit LMS configuration (lms.env.json).
-Then find the &amp;quot;FEATURES&amp;quot; configuration, add ENABLE_DISCUSSION_HOME_PANEL, ENABLE_DISCUSSION_SERVICE into &amp;quot;FEATURES&amp;quot; array and set to false. See the following codes snippet:</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -533,11 +391,7 @@ Then find the &amp;quot;FEATURES&amp;quot; configuration, add ENABLE_DISCUSSION_
         <link>https://sibunglon.com/2021/03/01/hide-discussion-panel-in-open-edx/</link>
         <pubDate>Mon, 01 Mar 2021 00:54:05 +0800</pubDate>
         <guid>https://sibunglon.com/2021/03/01/hide-discussion-panel-in-open-edx/</guid>
-        <description>By default, discussion tab on course page can&amp;rsquo;t be hide. Must be enable feature for hide discussion, so you can hide discussion from course page. To enabled this feature, follow the steps below:
-Go to Open edX server console.
-Open and edit LMS and CMS configuration (lms.env.json and cms.env.json).
-Then find the &amp;quot;FEATURES&amp;quot; configuration, add ALLOW_HIDING_DISCUSSION_TAB into &amp;quot;FEATURES&amp;quot; array and set to true. See the following codes snippet:
-&amp;#34;FEATURES&amp;#34;: { &amp;#34;ALLOW_HIDING_DISCUSSION_TAB&amp;#34;: true, .</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -545,10 +399,7 @@ Then find the &amp;quot;FEATURES&amp;quot; configuration, add ALLOW_HIDING_DISCU
         <link>https://sibunglon.com/2021/03/01/disable-account-lockout-after-excessive-login-failures-in-open-edx/</link>
         <pubDate>Mon, 01 Mar 2021 00:38:47 +0800</pubDate>
         <guid>https://sibunglon.com/2021/03/01/disable-account-lockout-after-excessive-login-failures-in-open-edx/</guid>
-        <description>Account lockout feature will be track the number of failed login attempts. If the number of consecutive failed login reaches a configurable threshold (default 5), user account will be “locked”
-By default, account lockout is enabled, but the feature is configurable via a FEATURES flag.
-Configure:
-Open and edit lms.env.json file using your favorite editor. Then find the &amp;quot;FEATURES&amp;quot; configuration, add ENABLE_MAX_FAILED_LOGIN_ATTEMPTS into &amp;quot;FEATURES&amp;quot; array and set to false. See the following codes snippet:</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -556,7 +407,7 @@ Open and edit lms.env.json file using your favorite editor. Then find the &amp;q
         <link>https://sibunglon.com/2021/02/20/set-advanced-module-list-by-default-in-open-edx/</link>
         <pubDate>Sat, 20 Feb 2021 22:24:50 +0800</pubDate>
         <guid>https://sibunglon.com/2021/02/20/set-advanced-module-list-by-default-in-open-edx/</guid>
-        <description>When setup course in Open edX, you can use some of default components that can help or support the learning process. But maybe you also need additional components which are not provided by Open edX by default, the component is called XBlock. You can make this XBlock and then install it on the Open edX server or you can also install XBlock that has been made by other people according to your needs.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -564,8 +415,7 @@ Open and edit lms.env.json file using your favorite editor. Then find the &amp;q
         <link>https://sibunglon.com/2021/01/01/how-to-install-xblock-open-edx/</link>
         <pubDate>Fri, 01 Jan 2021 17:56:47 +0800</pubDate>
         <guid>https://sibunglon.com/2021/01/01/how-to-install-xblock-open-edx/</guid>
-        <description>Saat melakukan installasi XBlock ke environment Open edX, pastikan ownership directory xblock sudah diatur ke user dan group Open edX (edxapp) dan/atau melakukan installasi XBlock di python environment user Open edX (edxapp). Silahkan cek step berikut sebagai sample install XBlock.
-$ sudo chown edxapp:edxapp -R xblock-folder $ sudo -H -u edxapp bash $ cd xblock-folder $ source ~/edxapp_env $ pip install -e . Atau dapat juga menggunakan step berikut.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -573,9 +423,7 @@ $ sudo chown edxapp:edxapp -R xblock-folder $ sudo -H -u edxapp bash $ cd xblock
         <link>https://sibunglon.com/2020/12/22/open-response-assessment-ora-using-filesystem-as-storage-in-open-edx/</link>
         <pubDate>Tue, 22 Dec 2020 03:22:24 +0800</pubDate>
         <guid>https://sibunglon.com/2020/12/22/open-response-assessment-ora-using-filesystem-as-storage-in-open-edx/</guid>
-        <description>By default, ORA uses Amazon S3 as a storage for files uploaded via this component. Apart from using Amazon S3, ORA has alternative storage, one of which is the filesystem.
-Following are the steps you need to take if you want the uploaded files to be stored on the Open edX server.
-Open dan edit file /edx/app/edxapp/edx-platform/lms/envs/common.py, then add the following syntax. ### ORA2 filesystem settings ORA2_FILEUPLOAD_BACKEND = &amp;#34;filesystem&amp;#34; ORA2_FILEUPLOAD_CACHE_NAME= &amp;#34;default&amp;#34; ORA2_FILEUPLOAD_ROOT = os.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -583,9 +431,7 @@ Open dan edit file /edx/app/edxapp/edx-platform/lms/envs/common.py, then add the
         <link>https://sibunglon.com/2020/11/27/open-edx-discussion-forum-not-working/</link>
         <pubDate>Fri, 27 Nov 2020 23:15:15 +0800</pubDate>
         <guid>https://sibunglon.com/2020/11/27/open-edx-discussion-forum-not-working/</guid>
-        <description>The problem is that the discussion forum is not working properly, forum service been restart every after 1 minutes.
-I find this on forum log:
-ERROR: ElasticSearch configuration validation failed. &amp;#34;rake search:validate_index&amp;#34; failed with the following message: Alias &amp;#39;content&amp;#39; does not exist. /edx/app/forum/.gem/ruby/2.5.0/gems/elasticsearch-transport-1.1.2/lib/elasticsearch/transport/transport/base.rb:52: warning: constant ::Fixnum is deprecated /edx/app/forum/.gem/ruby/2.5.0/gems/elasticsearch-transport-1.1.2/lib/elasticsearch/transport/transport/base.rb:54: warning: constant ::Fixnum is deprecated ERROR: ElasticSearch configuration validation failed. &amp;#34;rake search:validate_index&amp;#34; failed with the following message: Alias &amp;#39;content&amp;#39; does not exist.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -593,10 +439,7 @@ ERROR: ElasticSearch configuration validation failed. &amp;#34;rake search:valid
         <link>https://sibunglon.com/2020/11/09/integrate-zoom-with-open-edx/</link>
         <pubDate>Mon, 09 Nov 2020 04:04:49 +0800</pubDate>
         <guid>https://sibunglon.com/2020/11/09/integrate-zoom-with-open-edx/</guid>
-        <description>This topic contains how to setup Zoom LTI Pro, enable LTI Consumer and add the LTI component to the course.
-Setup Zoom LTI Pro Go to marketplace zoom.
-Select LTI Pro.
-Enable &amp;ldquo;Pre-approve&amp;rdquo; and click &amp;ldquo;Install&amp;rdquo;. LTI Pro will be request access to your zoom account, select &amp;ldquo;authorize&amp;rdquo;. Create a new credential. Choose your credential name, and then click &amp;ldquo;Save&amp;rdquo;. On LTI Credentials page, your need edit/update this: on field &amp;ldquo;Email Attribute Name&amp;rdquo;, add instructor_email on field &amp;ldquo;Approved Domains&amp;rdquo;, add your LMS and CMS url Copy your LTI Key and LTI Secret.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -604,9 +447,7 @@ Enable &amp;ldquo;Pre-approve&amp;rdquo; and click &amp;ldquo;Install&amp;rdquo;
         <link>https://sibunglon.com/2020/10/25/log-open-edx-not-update/</link>
         <pubDate>Sun, 25 Oct 2020 05:34:44 +0800</pubDate>
         <guid>https://sibunglon.com/2020/10/25/log-open-edx-not-update/</guid>
-        <description>Case I&amp;rsquo;ve attach a new disk on my Open edX server, I move Open edX log file into a new disk and create symbolic link to /edx/var because I don&amp;rsquo;t want to make a lot of changes in configuration or hardcode of Open edX.
-I moved the log files to the new disk, I did the following:
-$ # Stop services $ /edx/bin/supervisorctl stop all $ sudo systemctl stop mongod rabbitmq-server supervisor nginx $ # Rsync log directory to the new disk and make backup on local storage server $ sudo rsync -avP /edx/var/log /edx/backup $ sudo rsync -avP /edx/var/log /media-edx $ # Remove log from edxapp $ sudo rm -rf /edx/var/log $ # Create symbolic link $ sudo ln -sf /media-edx/log /edx/var $ # Start services $ sudo systemctl start mongod rabbitmq-server supervisor nginx When services edX has been start, log file for lms, cms, and tracking is not update.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -614,10 +455,7 @@ $ # Stop services $ /edx/bin/supervisorctl stop all $ sudo systemctl stop mongod
         <link>https://sibunglon.com/2020/09/05/change-language-open-edx/</link>
         <pubDate>Sat, 05 Sep 2020 05:52:45 +0800</pubDate>
         <guid>https://sibunglon.com/2020/09/05/change-language-open-edx/</guid>
-        <description>Open edX uses Transifex, an open source translation platform, to power the translation of edX software into different languages. All translations are hosted at Transifex.com, which provides a web application allowing translators to write, submit, and manage their translations.
-Login to server and switch to edxapp environment for edX native installation.
-$ sudo -H -u edxapp bash $ source /edx/app/edxapp/edxapp_env $ cd /edx/app/edxapp/edx-platform Install Python dependencies
-$ pip install transifex-client or when using bitnami, use this</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -625,12 +463,7 @@ $ pip install transifex-client or when using bitnami, use this</description>
         <link>https://sibunglon.com/2020/09/05/allowing-learners-to-claim-their-own-certificates-in-open-edx/</link>
         <pubDate>Sat, 05 Sep 2020 05:41:16 +0800</pubDate>
         <guid>https://sibunglon.com/2020/09/05/allowing-learners-to-claim-their-own-certificates-in-open-edx/</guid>
-        <description>In most cases, educator want learners to be able to claim certificates for themselves on the progress page. This is just need to Enable Student-Generated Certificates.
-Instructor-Paced To allowing learners to claim their own certificates, do the following steps:
-Login to LMS as admin or staff.
-On the learning site dashboard page, open one of the existing courses.
-On the course introduction page, click on View Course.
-Click Instructor, and the Certificates tab (which will only appear once certificates are set up).</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -638,10 +471,7 @@ Click Instructor, and the Certificates tab (which will only appear once certific
         <link>https://sibunglon.com/2020/09/05/enable-certificate-in-open-edx/</link>
         <pubDate>Sat, 05 Sep 2020 05:08:41 +0800</pubDate>
         <guid>https://sibunglon.com/2020/09/05/enable-certificate-in-open-edx/</guid>
-        <description>Organizations and course teams can choose to generate certificates for learners who pass a course. Learners can view, print, or share their certificates.
-To enable certificates, you modify the lms.env.json and cms.env.json files.
-In the lms.env.json and cms.env.json files, set the value of CERTIFICATES_HTML_VIEW within the FEATURES object to true. &amp;#34;FEATURES&amp;#34;: { ... &amp;#39;CERTIFICATES_HTML_VIEW&amp;#39;: true, ... } Save the lms.env.json and cms.env.json files.
-If it does not exist already, create the folder /tmp/certificates owned by the user and group www-data.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -649,8 +479,7 @@ If it does not exist already, create the folder /tmp/certificates owned by the u
         <link>https://sibunglon.com/2020/07/26/database-returned-an-invalid-value-in-queryset.datetimes/</link>
         <pubDate>Sun, 26 Jul 2020 21:05:49 +0800</pubDate>
         <guid>https://sibunglon.com/2020/07/26/database-returned-an-invalid-value-in-queryset.datetimes/</guid>
-        <description>After create new action on the Django admin pages, it redirects to my site with the message a server error. When check the file /edx/var/log/supervisor/lms-stderr.log i find this:
-Traceback (most recent call last): File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/exception.py&amp;#34;, line 41, in inner response = get_response(request) File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;#34;, line 249, in _legacy_get_response response = self._get_response(request) File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;#34;, line 217, in _get_response response = self.process_exception_by_middleware(e, request) File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;#34;, line 215, in _get_response response = response.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -658,8 +487,7 @@ Traceback (most recent call last): File &amp;#34;/edx/app/edxapp/venvs/edxapp/lo
         <link>https://sibunglon.com/2020/07/26/google-sign-in-error-403-in-open-edx/</link>
         <pubDate>Sun, 26 Jul 2020 20:43:08 +0800</pubDate>
         <guid>https://sibunglon.com/2020/07/26/google-sign-in-error-403-in-open-edx/</guid>
-        <description>When I have configuration OAuth2 Google on Open edX version ironwood.master, I click register, then the “Google” login button and I get to the Google Log In page. After a succesful login on Google site, it redirects to my site and I’m getting error. When check the file /edx/var/log/lms/edx.log i find this:
-Jul 24 01:03:09 bnpb [service_variant=lms][django.request][env:sandbox] ERROR [e-Learning 29535] [exception.py:135] - Internal Server Error: /auth/complete/google-oauth2/ Traceback (most recent call last): File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -667,9 +495,7 @@ Jul 24 01:03:09 bnpb [service_variant=lms][django.request][env:sandbox] ERROR [e
         <link>https://sibunglon.com/2020/07/26/enable-third-party-authentication-oauth2-in-open-edx/</link>
         <pubDate>Sun, 26 Jul 2020 17:39:23 +0800</pubDate>
         <guid>https://sibunglon.com/2020/07/26/enable-third-party-authentication-oauth2-in-open-edx/</guid>
-        <description>Open edX Platform allows you to integrate third-party authentication with two kinds of authentication providers:
-OAuth2 Identity Providers. SAML Identity Providers This section describes how to integrate Open edX with two of the most popular OAuth2 providers: Google and Facebook.
-Integrate Open edX With Google Step 1: Register The Open edX Site With Google Navigate to the Google Developers Console. Select an existing project or create a new one. Search and select the “Google+ API” in the Google APIs list and press the “Enable API” button.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -677,12 +503,7 @@ Integrate Open edX With Google Step 1: Register The Open edX Site With Google Na
         <link>https://sibunglon.com/2020/07/26/allow-user-to-access-the-homepage-after-login-in-open-edx/</link>
         <pubDate>Sun, 26 Jul 2020 17:29:16 +0800</pubDate>
         <guid>https://sibunglon.com/2020/07/26/allow-user-to-access-the-homepage-after-login-in-open-edx/</guid>
-        <description>By default, after user login into LMS, user cannot see the homepage. They always redirected to their dashboard.
-What if i want to set user can see the homepage, even after they are logged in?
-This can be set in lms.env.json, by putting this config inside block ”FEATURES” :
-&amp;quot;ALWAYS_REDIRECT_HOMEPAGE_TO_DASHBOARD_FOR_AUTHENTICATED_USER&amp;quot;: false
-After that, restart your edxapp lms service to see the changes.
-Thats it. Now you can see the homepage after user logged in.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -690,11 +511,7 @@ Thats it. Now you can see the homepage after user logged in.</description>
         <link>https://sibunglon.com/2020/07/26/solve-smtp-open-edx-timeout/</link>
         <pubDate>Sun, 26 Jul 2020 17:21:39 +0800</pubDate>
         <guid>https://sibunglon.com/2020/07/26/solve-smtp-open-edx-timeout/</guid>
-        <description>By default in Open edX, the system will send an email when a new user registers, using the forget password or other conditions.
-A few days ago my teams found an issue on the email sending service, but the issue was not because of the Open edX SMTP service but from the connection side of the Open edX server to the SMTP server.
-Then what&amp;rsquo;s the case?
-Case:
--) When a user registers, the user should receive an email to activate the account, but in reality it is not.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -702,8 +519,7 @@ Case:
         <link>https://sibunglon.com/2020/05/25/account-settings-open-edx-is-not-working/</link>
         <pubDate>Mon, 25 May 2020 13:51:19 +0700</pubDate>
         <guid>https://sibunglon.com/2020/05/25/account-settings-open-edx-is-not-working/</guid>
-        <description>Account Profile settings is not working, i cannot select limited or full profile, either add user profile photo, etc.
-You must specify your birth year before you can share your full profile. To specify your birth year, go to the Account Settings page. You must be over 13 to share a full profile. You can set specified a birth year on the Account Settings page.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -711,8 +527,7 @@ You must specify your birth year before you can share your full profile. To spec
         <link>https://sibunglon.com/2020/04/19/fixing-issue-celery-open-edx-setelah-migrasi-instance/</link>
         <pubDate>Sun, 19 Apr 2020 22:38:14 +0700</pubDate>
         <guid>https://sibunglon.com/2020/04/19/fixing-issue-celery-open-edx-setelah-migrasi-instance/</guid>
-        <description>Beberapa hari yang lalu saya memindahkan instance Open edX dan beberapa menit setelah server aktif, Open edX tidak bisa diakses. Cek servicenya, tetapi semua service dalam keadaan aktif namun ketika melihat lognya, ternyata ada error pada celery, kurang lebih errornya seperti berikut:
-$ sudo tail -f /edx/var/log/{lms,cms,nginx}/*log ==&amp;gt; /edx/var/log/lms/edx.log &amp;lt;== Apr 12 02:21:16 beep [service_variant=lms][celery.worker.consumer][env:sandbox] ERROR [beep 1400] [consumer.py:364] - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 104] Connection reset by peer.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -720,9 +535,7 @@ $ sudo tail -f /edx/var/log/{lms,cms,nginx}/*log ==&amp;gt; /edx/var/log/lms/edx
         <link>https://sibunglon.com/2020/01/04/setup-https-in-open-edx-using-certbot/</link>
         <pubDate>Sat, 04 Jan 2020 02:54:23 +0700</pubDate>
         <guid>https://sibunglon.com/2020/01/04/setup-https-in-open-edx-using-certbot/</guid>
-        <description>By default Open edX does not provide an SSL configuration, but we can add it manually. As per the topic of this article, here I will enable HTTPS on Open edX using Certbot.
-Certbot is a new breakthrough from the Let&amp;rsquo;s Encrypt Web Security Certificate Provider where Let&amp;rsquo;s Encrypt provides SSL for free.
-Note: In the following example, in Open edX I point Course Management System (CMS) using the domain studio.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -730,7 +543,7 @@ Note: In the following example, in Open edX I point Course Management System (CM
         <link>https://sibunglon.com/2019/12/06/fixing-problems-installations-open-edx-ficus/</link>
         <pubDate>Fri, 06 Dec 2019 13:13:00 +0700</pubDate>
         <guid>https://sibunglon.com/2019/12/06/fixing-problems-installations-open-edx-ficus/</guid>
-        <description>What is the problem? Ficus is a name of Open edX release which was released on February 23, 2017. It&amp;rsquo;s been quite a long time, and automatically uses old packages or packages that are still active at that time. Last September, my friends asked me to install Open edX Ficus, because it&amp;rsquo;s an old version so I tried to install it in another VM, I made a VM on the Google Cloud Platform.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/openedx-ficus.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -738,9 +551,7 @@ Note: In the following example, in Open edX I point Course Management System (CM
         <link>https://sibunglon.com/2019/07/15/create-new-super-user-for-access-django-admin-interface-in-open-edx/</link>
         <pubDate>Mon, 15 Jul 2019 03:09:25 +0700</pubDate>
         <guid>https://sibunglon.com/2019/07/15/create-new-super-user-for-access-django-admin-interface-in-open-edx/</guid>
-        <description>
-I need to use the Django admin interface, but I don&amp;rsquo;t know what users can use to log in.
-Solution sudo -u edxapp bash source /edx/app/edxapp/edxapp_env python /edx/app/edxapp/edx-platform/manage.py --settings=aws createsuperuser </description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -748,8 +559,7 @@ Solution sudo -u edxapp bash source /edx/app/edxapp/edxapp_env python /edx/app/e
         <link>https://sibunglon.com/2019/07/14/first-contribution-to-open-source-project/</link>
         <pubDate>Sun, 14 Jul 2019 00:25:00 +0700</pubDate>
         <guid>https://sibunglon.com/2019/07/14/first-contribution-to-open-source-project/</guid>
-        <description>Error Get Incommon Server CA (Certificate Authority) When Installing Open edX In the previous article or that is here, there was a quick acquaintance session with Open edX while playing with Open edX (Open edX installation). And there are also articles about errors during Open edX installation, can be seen in this article.
-Besides the errors in this article, this time I found a different error which was an error in getting an Authority Certificate.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -757,8 +567,7 @@ Besides the errors in this article, this time I found a different error which wa
         <link>https://sibunglon.com/2019/07/13/open-edx-error-create-service-worker-users/</link>
         <pubDate>Sat, 13 Jul 2019 23:01:19 +0700</pubDate>
         <guid>https://sibunglon.com/2019/07/13/open-edx-error-create-service-worker-users/</guid>
-        <description>Error Create Service Worker Users When Installing Open edX In the previous article or that is here, there was a quick acquaintance session with Open edX while playing with Open edX (Open edX installation).
-I myself had an error when installing Open EdX, the error was the same as in the title of this article which failed to make service worker users. I was made confused by this error, even with this error I repeatedly did the Open edX installation process.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -766,9 +575,7 @@ I myself had an error when installing Open EdX, the error was the same as in the
         <link>https://sibunglon.com/2019/07/13/install-open-edx-using-method-native-installation-ubuntu-16.04/</link>
         <pubDate>Sat, 13 Jul 2019 21:47:47 +0700</pubDate>
         <guid>https://sibunglon.com/2019/07/13/install-open-edx-using-method-native-installation-ubuntu-16.04/</guid>
-        <description>About Open edX Open edX is the massively scalable learning software platform behind edX. edX is the online learning destination founded by Harvard and MIT in 2012.
-edX offers high-quality courses from the world’s best universities and institutions to learners everywhere. It is the only leading MOOC provider that is both nonprofit and open source. The edX mission is to:
-Increase access to high-quality education for everyone, everywhere Enhance teaching and learning on campus and online Advance teaching and learning through research Play with Open edX How to use Open edX in my own environment?</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -776,9 +583,7 @@ Increase access to high-quality education for everyone, everywhere Enhance teach
         <link>https://sibunglon.com/2019/04/07/create-open-ended-text-input-using-simple-problem-of-open-edx/</link>
         <pubDate>Sun, 07 Apr 2019 13:11:40 +0800</pubDate>
         <guid>https://sibunglon.com/2019/04/07/create-open-ended-text-input-using-simple-problem-of-open-edx/</guid>
-        <description>Text input problems can be setup to accept open-ended responses using regular expressions in the advanced editor.
-To format your text input problem to accept any response, assign the answer attribute as follows: answer=&amp;quot;.*.&amp;quot;.
-Here is an example open input text with a regular expression, note the regexp within the type attribute. In this example, the size of the text line has been set to 20 characters as the default.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
   </channel>

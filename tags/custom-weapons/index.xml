@@ -15,15 +15,7 @@
         <link>https://sibunglon.com/2018/11/06/gerakan-multi-touch-macbook-di-linux/</link>
         <pubDate>Tue, 06 Nov 2018 15:14:00 +0000</pubDate>
         <guid>https://sibunglon.com/2018/11/06/gerakan-multi-touch-macbook-di-linux/</guid>
-        <description>Jika Anda pernah menggunakan MacBook, pasti tahu betapa menyenangkan dan bermanfaatnya gerakan trackpad untuk mengubah desktop, menampilkan semua jendela yang terbuka, dan pinch-to-zoom.
-Di linux anda juga menggunakan fitur ini dengan bantuan aplikasi fusuma, berikut installasi dan konfigurasinya.
-1. Berikan izin untuk membaca perangkat touchpad
-sudo gpasswd -a $USER input
-Install libinput-tools sudo apt-get install libinput-tools
-3. Install Fusuma
-sudo gem install fusuma
-4. Instal xdotool (opsional)
-sudo apt-get install xdotool</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://3.bp.blogspot.com/-_sRgnNonIJ0/W-E_LSPmiEI/AAAAAAAAFW8/CdLxHAO39CMgePPBr9eWdhc-iSEN1B86QCLcBGAs/s1600/Obvious-Gestures-640x527.jpg&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -31,10 +23,10 @@ sudo apt-get install xdotool</description>
         <link>https://sibunglon.com/2017/10/21/mempercantik-tampilan-terminal-server/</link>
         <pubDate>Sat, 21 Oct 2017 02:27:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/21/mempercantik-tampilan-terminal-server/</guid>
-        <description>A. Pendahuluan
-Pada kesempatan ini saya ingin sharing tentang bagaimana mempercantik atau apalah agar tampilan shell linux tidak polos-polos begitu saja.
-B. Pengertian
-Apa itu shell ? shell adalah program (penterjemah perintah) yang menjembatani user dengan sistem operasi dalam hal ini kernel (inti sistem operasi), umumnya shell menyediakan prompt sebagai user interface, tempat dimana user mengetikkan perintah-perintah yang diinginkan baik berupa perintah internal shell (internal command), ataupun perintah eksekusi suatu file progam (eksternal command), selain itu shell memungkinkan user menyusun sekumpulan perintah pada sebuah atau beberapa file untuk dieksekusi sebagai program.</description>
+        <description>&lt;p&gt;&lt;strong&gt;A. Pendahuluan&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Pada kesempatan ini saya ingin sharing tentang bagaimana mempercantik atau apalah agar tampilan shell linux tidak polos-polos begitu saja.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;B. Pengertian&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Apa itu shell ? shell adalah program (penterjemah perintah) yang menjembatani user dengan sistem operasi dalam hal ini kernel (inti sistem operasi), umumnya shell menyediakan prompt sebagai user interface, tempat dimana user mengetikkan perintah-perintah yang diinginkan baik berupa perintah internal shell (internal command), ataupun perintah eksekusi suatu file progam (eksternal command), selain itu shell memungkinkan user menyusun sekumpulan perintah pada sebuah atau beberapa file untuk dieksekusi sebagai program.&lt;/p&gt;</description>
       </item>
     
   </channel>

@@ -15,9 +15,14 @@
         <link>https://sibunglon.com/2023/05/12/how-to-compact-virtualboxs-vdi-file-size/</link>
         <pubDate>Fri, 12 May 2023 23:01:02 +0800</pubDate>
         <guid>https://sibunglon.com/2023/05/12/how-to-compact-virtualboxs-vdi-file-size/</guid>
-        <description>On guest OS or VM
-dd if=/dev/zero of=/var/tmp/bigemptyfile bs=4096k ; rm /var/tmp/bigemptyfile sudo poweroff On Host OS
-VBoxManage modifymedium \ &amp;#34;/media/sibunglon/Data/VirtualBox VMs/Local Develoment/dependency/dependency.vdi&amp;#34; \ --compact </description>
+        <description>&lt;p&gt;On guest OS or VM&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;dd &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;/dev/zero &lt;span class=&#34;nv&#34;&gt;of&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;/var/tmp/bigemptyfile &lt;span class=&#34;nv&#34;&gt;bs&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;4096k &lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; rm /var/tmp/bigemptyfile
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo poweroff
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;On Host OS&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;VBoxManage modifymedium &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;	&lt;span class=&#34;s2&#34;&gt;&amp;#34;/media/sibunglon/Data/VirtualBox VMs/Local Develoment/dependency/dependency.vdi&amp;#34;&lt;/span&gt; &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;	--compact
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
       </item>
     
       <item>
@@ -25,8 +30,24 @@ VBoxManage modifymedium \ &amp;#34;/media/sibunglon/Data/VirtualBox VMs/Local De
         <link>https://sibunglon.com/2023/02/08/resize-lvm-space/</link>
         <pubDate>Wed, 08 Feb 2023 15:56:46 +0800</pubDate>
         <guid>https://sibunglon.com/2023/02/08/resize-lvm-space/</guid>
-        <description>Use Space from Extended Physical (or Virtual) Disk
-ubuntu@ubuntu:~$ lsblk NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT loop0 7:0 0 55.6M 1 loop /snap/core18/2654 loop1 7:1 0 63.2M 1 loop /snap/core20/1695 loop2 7:2 0 63.2M 1 loop /snap/core20/1738 loop3 7:3 0 91.8M 1 loop /snap/lxd/23991 loop4 7:4 0 55.6M 1 loop /snap/core18/2632 loop5 7:5 0 49.6M 1 loop /snap/snapd/17883 loop6 7:6 0 91.9M 1 loop /snap/lxd/24061 sda 8:0 0 70G 0 disk ├─sda1 8:1 0 1M 0 part ├─sda2 8:2 0 1G 0 part /boot └─sda3 8:3 0 69G 0 part └─ubuntu--vg-ubuntu--lv 253:0 0 69G 0 lvm / sr0 11:0 1 1024M 0 rom ubuntu@ubuntu:~$ On this case, LVM partition it is under sda3 and let&amp;rsquo;s start with extended or resize disk.</description>
+        <description>&lt;p&gt;&lt;strong&gt;Use Space from Extended Physical (or Virtual) Disk&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ubuntu@ubuntu:~$ lsblk
+NAME                      MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+loop0                       7:0    0 55.6M  1 loop /snap/core18/2654
+loop1                       7:1    0 63.2M  1 loop /snap/core20/1695
+loop2                       7:2    0 63.2M  1 loop /snap/core20/1738
+loop3                       7:3    0 91.8M  1 loop /snap/lxd/23991
+loop4                       7:4    0 55.6M  1 loop /snap/core18/2632
+loop5                       7:5    0 49.6M  1 loop /snap/snapd/17883
+loop6                       7:6    0 91.9M  1 loop /snap/lxd/24061
+sda                         8:0    0   70G  0 disk
+├─sda1                      8:1    0    1M  0 part
+├─sda2                      8:2    0    1G  0 part /boot
+└─sda3                      8:3    0   69G  0 part
+  └─ubuntu--vg-ubuntu--lv 253:0    0   69G  0 lvm  /
+sr0                        11:0    1 1024M  0 rom
+ubuntu@ubuntu:~$
+&lt;/code&gt;&lt;/pr</description>
       </item>
     
       <item>
@@ -34,10 +55,16 @@ ubuntu@ubuntu:~$ lsblk NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT loop0 7:0 0 55.6M
         <link>https://sibunglon.com/2019/10/31/restart-network-adapter-windows-without-reboot/</link>
         <pubDate>Thu, 31 Oct 2019 14:46:11 +0700</pubDate>
         <guid>https://sibunglon.com/2019/10/31/restart-network-adapter-windows-without-reboot/</guid>
-        <description>Restarts a network adapter by disabling and then re-enabling the network adapter.
-Open PowerShell on Windows, after that find the name of the interface to be restarted. Use the following command line:
-netsh interface show interface Restart network adapter using the following command line:
-Restart-NetAdapter -Name &amp;#34;Ethernet x&amp;#34; </description>
+        <description>&lt;p&gt;Restarts a network adapter by disabling and then re-enabling the network adapter.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Open PowerShell on Windows, after that find the name of the interface to be restarted. Use the following command line:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;netsh&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;interface&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;show&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;interface&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Restart network adapter using the following command line:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Restart-NetAdapter&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Name&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Ethernet x&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
       </item>
     
       <item>
@@ -45,8 +72,8 @@ Restart-NetAdapter -Name &amp;#34;Ethernet x&amp;#34; </description>
         <link>https://sibunglon.com/2019/03/26/diam-diam-port-443-lagi-konflik/</link>
         <pubDate>Tue, 26 Mar 2019 14:26:11 +0700</pubDate>
         <guid>https://sibunglon.com/2019/03/26/diam-diam-port-443-lagi-konflik/</guid>
-        <description>Beberapa hari yang lalu lagi ada ide iseng nyobain main-main vm linux (virtual machine) menggunakan VMware Workstation Pro, niatnya mau online-nin semua vm yang telah dibuat tapi cuman punya 1 ip publik. Emang bisa? Terus gimana ngaksesnya/ngeremotenya? Bisa dong, waktu itu pake port forwarding untuk NAT di VMware Workstation Pro, karena maunya si vm tersebut dapat akses internet dan dapat diakses dari 1 ip public.
-Saya butuh web service yang dapat diakses melalui 1 publik yaitu 1 ip publik hostnya, okey saya pasang web service di salah satu vm.</description>
+        <description>&lt;p&gt;Beberapa hari yang lalu lagi ada ide iseng nyobain main-main vm linux (virtual machine) menggunakan VMware Workstation Pro, niatnya mau online-nin semua vm yang telah dibuat tapi cuman punya 1 ip publik. &lt;strong&gt;Emang bisa? Terus gimana ngaksesnya/ngeremotenya?&lt;/strong&gt; Bisa dong, waktu itu pake port forwarding untuk NAT di VMware Workstation Pro, karena maunya si vm tersebut dapat akses internet dan dapat diakses dari 1 ip public.&lt;/p&gt;
+&lt;p&gt;Saya butuh web service yang dapat diakses melalui 1 publik yaitu 1 ip publik hostnya, okey saya pasang web service di salah satu vm. Awalnya semua aman aman, saya forward port protokol http (80) untuk web service pada vm ke port standard protokol http (80) di host dan saya bisa mengakses web servernya melalui ip publik host, selanjutnya saya butuh aktifkan protokol https di web service, okey saya aktifkan protokol httpsnya dan forward port protokol https (443) untuk web service pada vm ke port standard https (443) di host, disitulah si port 443 main diem-dieman. Setelah forward port 443, akses ke web service melalui protokol https di tolak. Pertama, saya pikir karena permission direktorinya tapi eh melalui protokol http udah bisa kok, berarti bukan itu karena jika melalui protokol http udah bisa diakses. Kedua, saya mau iseng aktifkan port 443 di firewall vm, saya remote vmnya via SSH dan ternyata remote SSH ditolak juga. Hmmm, unik juga kasusnya, saya coba hapus port forwarding protokol https (443) dan remote vm via SSH seketika tidak ditolak lagi. Okey disaat itu seketika saya beranggapan kalau port 443 lagi bentrok atau konflik, saya cek port yang listen pada vm, tidak ada yang menggunakan port 443 selain web service yang telah ditentukan. Kemudian saya cek firewall di hostnya, tidak ada juga port 443 yang listen dan aktif. Jadi bingungkan bentroknya dimana?🤣  Soalnya di vm cuman 1 yang ketahuan yang menggunakan port 443 jadi harusnya gak ada bentrok atau konflik, jadi makin semangat sama kasus ini😂&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -54,10 +81,10 @@ Saya butuh web service yang dapat diakses melalui 1 publik yaitu 1 ip publik hos
         <link>https://sibunglon.com/2017/10/09/comparison-of-platform-virtualization-software/</link>
         <pubDate>Mon, 09 Oct 2017 17:12:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/09/comparison-of-platform-virtualization-software/</guid>
-        <description>A. PENDAHULUAN
-Seperti judulnya, yaitu adalah perbandingan dari beberapa vendor Virtualisasi Software.
-B. PENGERTIAN
-adalah istilah umum yang mengacu kepada abstraksi dari sumber daya komputer. Definisi lainnya adalah &amp;ldquo;sebuah teknik untuk menyembunyikan karakteristik fisik dari sumber daya komputer dari bagaimana cara sistem lain, aplikasi atau pengguna berinteraksi dengan sumber daya tersebut. Hal ini termasuk membuat sebuah sumber daya tunggal (seperti server, sebuah sistem operasi, sebuah aplikasi, atau peralatan penyimpanan terlihat berfungsi sebagai beberapa sumber daya logikal; atau dapat juga termasuk definisi untuk membuat beberapa sumber daya fisik (seperti beberapa peralatan penyimpanan atau server) terlihat sebagai satu sumber daya logikal.</description>
+        <description>&lt;p&gt;&lt;strong&gt;A. PENDAHULUAN&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Seperti judulnya, yaitu adalah perbandingan dari beberapa vendor Virtualisasi Software.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;B. PENGERTIAN&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;adalah istilah umum yang mengacu kepada abstraksi dari sumber daya komputer. Definisi lainnya adalah &amp;ldquo;sebuah teknik untuk menyembunyikan karakteristik fisik dari sumber daya komputer dari bagaimana cara sistem lain, aplikasi atau pengguna berinteraksi dengan sumber daya tersebut. Hal ini termasuk membuat sebuah sumber daya tunggal (seperti server, sebuah sistem operasi, sebuah aplikasi, atau peralatan penyimpanan terlihat berfungsi sebagai beberapa sumber daya logikal; atau dapat juga termasuk definisi untuk membuat beberapa sumber daya fisik (seperti beberapa peralatan penyimpanan atau server) terlihat sebagai satu sumber daya logikal.&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -65,10 +92,10 @@ adalah istilah umum yang mengacu kepada abstraksi dari sumber daya komputer. Def
         <link>https://sibunglon.com/2017/08/31/menginstall-vmware-player-di-linux/</link>
         <pubDate>Thu, 31 Aug 2017 13:27:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/31/menginstall-vmware-player-di-linux/</guid>
-        <description>A. Pendahuluan
-Pada kesempatan ini, saya memposting bagaimana sih menginstal VMware Player di linux.
-B. Pengertian
-VMware Player adalah sebuah produk perangkat lunak virtualisasi berlisensi bebas dari VMware, sebuah divisi dari EMC Corporation. Produk ini bisa menjalankan mesin virtualpengguna yang dibuat dari produk VMware yang lain tetapi tidak dapat membuat sebuah mesin virtual yang baru.namun limitasi ini dicabut di versi 3.0.0. sehingga dapat membuat sendiri tanpa harus memakai VMware Workstation. Perangkat berlisensi bebas dan situs web seperti EasyVMX juga hadir untuk membuat mesin virtual, menghapus, memanipulasi dan mengkonversikan disk VMware dan floppy, membuat perizinan pengguna, menjalankan dan merawat mesin virtual.</description>
+        <description>&lt;p&gt;&lt;strong&gt;A. Pendahuluan&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Pada kesempatan ini, saya memposting bagaimana sih menginstal VMware Player di linux.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;B. Pengertian&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;VMware Player adalah sebuah produk perangkat lunak virtualisasi berlisensi bebas dari VMware, sebuah divisi dari EMC Corporation. Produk ini bisa menjalankan mesin virtualpengguna yang dibuat dari produk VMware yang lain tetapi tidak dapat membuat sebuah mesin virtual yang baru.namun limitasi ini dicabut di versi 3.0.0. sehingga dapat membuat sendiri tanpa harus memakai VMware Workstation. Perangkat berlisensi bebas dan situs web seperti EasyVMX juga hadir untuk membuat mesin virtual, menghapus, memanipulasi dan mengkonversikan disk VMware dan floppy, membuat perizinan pengguna, menjalankan dan merawat mesin virtual. VMware Player merupakan bagian dari distribusi VMware Workstation yang ditujukan untuk pengguna yang tidak memiliki lisensi atas produk VMware Workstation tersebut.&lt;/p&gt;</description>
       </item>
     
   </channel>

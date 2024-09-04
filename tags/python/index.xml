@@ -15,9 +15,9 @@
         <link>https://sibunglon.com/2019/12/30/disable-ssl-certificate-verification-on-script-python/</link>
         <pubDate>Mon, 30 Dec 2019 21:45:42 +0700</pubDate>
         <guid>https://sibunglon.com/2019/12/30/disable-ssl-certificate-verification-on-script-python/</guid>
-        <description>I failed to run a telegram bot in another environment, more or less the error as follows.
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host=&amp;#39;api.telegram.org&amp;#39;, port=443): Max retries exceeded with url (Caused by SSLError(SSLError(1, u&amp;#39;[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:618)&amp;#39;),)) But after adding the following script, my bot finally managed to run in that environment. Maybe someone has a case related to SSL certificate verification, hopefully the following script can help.
-#!/bin/python import ssl try: _create_unverified_https_context = ssl.</description>
+        <description>&lt;p&gt;I failed to run a telegram bot in another environment, more or less the error as follows.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;urllib3.exceptions.MaxRetryError: HTTPSConnectionPool&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;host&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;api.telegram.org&amp;#39;&lt;/span&gt;, &lt;span class=&#34;nv&#34;&gt;port&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;443&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;: Max retries exceeded with url  &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;Caused by SSLError&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;SSLError&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;1, u&lt;span class=&#34;s1&#34;&gt;&amp;#39;[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:618)&amp;#39;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;,&lt;span class=&#34;o&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;But after adding the following script, my bot finally managed to run in that environment. Maybe someone has a case related to SSL certificate verification, hopefully the following script can help.&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -25,9 +25,7 @@ urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host=&amp;#39;api.telegram
         <link>https://sibunglon.com/2019/07/15/create-new-super-user-for-access-django-admin-interface-in-open-edx/</link>
         <pubDate>Mon, 15 Jul 2019 03:09:25 +0700</pubDate>
         <guid>https://sibunglon.com/2019/07/15/create-new-super-user-for-access-django-admin-interface-in-open-edx/</guid>
-        <description>
-I need to use the Django admin interface, but I don&amp;rsquo;t know what users can use to log in.
-Solution sudo -u edxapp bash source /edx/app/edxapp/edxapp_env python /edx/app/edxapp/edx-platform/manage.py --settings=aws createsuperuser </description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -35,7 +33,8 @@ Solution sudo -u edxapp bash source /edx/app/edxapp/edxapp_env python /edx/app/e
         <link>https://sibunglon.com/2019/02/26/install-package-from-pip-ignore-trusted-host/</link>
         <pubDate>Tue, 26 Feb 2019 10:53:16 +0700</pubDate>
         <guid>https://sibunglon.com/2019/02/26/install-package-from-pip-ignore-trusted-host/</guid>
-        <description>Connection is Power Yah connection is power dan jangan berpikir problems can occur due to connection ketika kalian menemukan masalah yang berkaitan dengan internet. Disuatu waktu I&amp;rsquo;m siBunglon menemukan masalah pada saat akan melakukan installasi package dari python-pip, paketnya tidak bisa diinstall tapi diwaktu itu I&amp;rsquo;m siBunglon menggunakan koneksi yang dikelola oleh orang lain dan mencoba browsing eh ternyata lancar jaya, mencoba menggunakan Wi-Fi dari device yang lain dan masalah tersebut tidak muncul.</description>
+        <description>&lt;h3 id=&#34;connection-is-power&#34;&gt;Connection is Power&lt;/h3&gt;
+&lt;p&gt;Yah &lt;strong&gt;connection is power&lt;/strong&gt; dan jangan berpikir &lt;strong&gt;problems can occur due to connection&lt;/strong&gt; ketika kalian menemukan masalah yang berkaitan dengan internet. Disuatu waktu &lt;strong&gt;I&amp;rsquo;m siBunglon&lt;/strong&gt; menemukan masalah pada saat akan melakukan installasi package dari python-pip, paketnya tidak bisa diinstall tapi diwaktu itu &lt;strong&gt;I&amp;rsquo;m siBunglon&lt;/strong&gt; menggunakan koneksi yang dikelola oleh orang lain dan mencoba browsing eh ternyata lancar jaya, mencoba menggunakan Wi-Fi dari device yang lain dan masalah tersebut tidak muncul. Hmmm ada yang unik, &lt;strong&gt;I&amp;rsquo;m siBunglon&lt;/strong&gt; menemukan errors message seperti berikut:&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -43,8 +42,14 @@ Solution sudo -u edxapp bash source /edx/app/edxapp/edxapp_env python /edx/app/e
         <link>https://sibunglon.com/2018/12/11/pip-python2-error/</link>
         <pubDate>Tue, 11 Dec 2018 21:34:18 +0700</pubDate>
         <guid>https://sibunglon.com/2018/12/11/pip-python2-error/</guid>
-        <description>Pip di Python2 Error? Traceback (most recent call last): File &amp;#34;/usr/bin/pip&amp;#34;, line 9, in &amp;lt;module&amp;gt; from pip import main ImportError: cannot import name main Gak usah panik, cukup jalankan command berikut tapi pastikan terlebih dahulu sekarang sudah jadi super user (root)
-python -m pip uninstall pip &amp;amp;&amp;amp; apt install python-pip --reinstall </description>
+        <description>&lt;h3 id=&#34;pip-di-python2-error&#34;&gt;Pip di Python2 Error?&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Traceback (most recent call last):
+  File &amp;#34;/usr/bin/pip&amp;#34;, line 9, in &amp;lt;module&amp;gt;
+    from pip import main
+ImportError: cannot import name main
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Gak usah panik, cukup jalankan command berikut tapi pastikan terlebih dahulu sekarang sudah jadi super user (&lt;strong&gt;root&lt;/strong&gt;)&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;python -m pip uninstall pip &amp;amp;&amp;amp; apt install python-pip --reinstall
+&lt;/code&gt;&lt;/pre&gt;</description>
       </item>
     
       <item>
@@ -52,7 +57,7 @@ python -m pip uninstall pip &amp;amp;&amp;amp; apt install python-pip --reinstal
         <link>https://sibunglon.com/2018/12/10/python-tidak-memiliki-objek-ssl_st_init/</link>
         <pubDate>Mon, 10 Dec 2018 23:47:30 +0700</pubDate>
         <guid>https://sibunglon.com/2018/12/10/python-tidak-memiliki-objek-ssl_st_init/</guid>
-        <description>Jika akan menghubungkan perangkat anda dengan perangkat lain menggunakan ansible namun ketemu error ERROR! Unexpected Exception: &amp;lsquo;module&amp;rsquo; object has no attribute &amp;lsquo;SSL_ST_INIT&amp;rsquo;, sebenarnya itu hanya membutuhkan paket pyOpenSSL yang dapat diinstall dengan command pip install pyOpenSSL</description>
+        <description>&lt;p&gt;Jika akan menghubungkan perangkat anda dengan perangkat lain menggunakan ansible namun ketemu error &lt;strong&gt;ERROR! Unexpected Exception: &amp;lsquo;module&amp;rsquo; object has no attribute &amp;lsquo;SSL_ST_INIT&amp;rsquo;&lt;/strong&gt;, sebenarnya itu hanya membutuhkan paket &lt;strong&gt;pyOpenSSL&lt;/strong&gt; yang dapat diinstall dengan command &lt;code&gt;pip install pyOpenSSL&lt;/code&gt;&lt;/p&gt;</description>
       </item>
     
   </channel>

@@ -15,9 +15,10 @@
         <link>https://sibunglon.com/2019/02/27/feature-browse-caddy-server/</link>
         <pubDate>Wed, 27 Feb 2019 01:15:00 +0700</pubDate>
         <guid>https://sibunglon.com/2019/02/27/feature-browse-caddy-server/</guid>
-        <description>Caddy? Gak usah takut 😆 beberapa bulan yang lalu kan udah kenalan sama si Caddy dan ini postnya, tapi waktu itu kan cuman sekedar berkenalan. Nah dipostingan ini I&amp;rsquo;m siBunglon akan memberikan step installasinya di linux beserta memamerkan fitur yang paling sering I&amp;rsquo;m siBunglon pakai jika menggunakan si Caddy ini. To the point aja yah, kan kenalannya udah :D
-Bermain Dengan Caddy 1) Install caddy ke sistem dengan command
-curl https://getcaddy.</description>
+        <description>&lt;h3 id=&#34;caddy&#34;&gt;Caddy?&lt;/h3&gt;
+&lt;p&gt;Gak usah takut 😆  beberapa bulan yang lalu kan udah kenalan sama si Caddy dan ini &lt;a href=&#34;https://sibunglon.com/2018/10/26/berkenalan-dengan-caddy-server/&#34;&gt;postnya&lt;/a&gt;, tapi waktu itu kan cuman sekedar berkenalan. Nah dipostingan ini &lt;strong&gt;I&amp;rsquo;m siBunglon&lt;/strong&gt; akan memberikan step installasinya di linux beserta memamerkan fitur yang paling sering &lt;strong&gt;I&amp;rsquo;m siBunglon&lt;/strong&gt; pakai jika menggunakan si Caddy ini. To the point aja yah, kan kenalannya udah :D&lt;/p&gt;
+&lt;h3 id=&#34;bermain-dengan-caddy&#34;&gt;Bermain Dengan Caddy&lt;/h3&gt;
+&lt;p&gt;1) Install caddy ke sistem dengan command&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -25,10 +26,7 @@ curl https://getcaddy.</description>
         <link>https://sibunglon.com/2018/10/28/installasi-caddy-server-di-sistem-operasi-windows/</link>
         <pubDate>Sun, 28 Oct 2018 21:20:00 +0000</pubDate>
         <guid>https://sibunglon.com/2018/10/28/installasi-caddy-server-di-sistem-operasi-windows/</guid>
-        <description>Setelah berkenalan dengan si Caddy Server pada beberapa hari yang lalu, sekarang waktunya bermain dengan si Caddy Server.
-Apa Saja yang dibutuhkan? Pastikan anda telah memiliki file master Caddy Server, jika belum silahkan dari situs resminya.
-Menjalankan Caddy Server pada sistem operasi windows
-Buka file hasil download Caddy Server Copy semua isi dari file master tersebut Tentukan path Caddy, buat folder baru yang akan menampung semua file yang telah dicopy kemudian paste di folder tersebut Untuk menjalankan Caddy Server pada sistem operasi windows cukup klik 2 kali pada file caddy.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://2.bp.blogspot.com/-Sd0psByMSXg/W9KcSR9BhFI/AAAAAAAAFVM/srLqwErEZY0iNhoBjw9c6vSSGej9gxKqACPcBGAYYCw/s1600/caddy.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -36,9 +34,7 @@ Buka file hasil download Caddy Server Copy semua isi dari file master tersebut T
         <link>https://sibunglon.com/2018/10/26/berkenalan-dengan-caddy-server/</link>
         <pubDate>Fri, 26 Oct 2018 11:52:00 +0000</pubDate>
         <guid>https://sibunglon.com/2018/10/26/berkenalan-dengan-caddy-server/</guid>
-        <description>Caddy? Caddy itu apaan? Fungsinya apa aja?
-Caddy kadang-kadang diklarifikasi sebagai web server Caddy bersifat open source, server web HTTP / 2- enabled yang ditulis dalam Go . Ia menggunakan pustaka standar Go untuk fungsi HTTP-nya. Salah satu fitur paling terkenal Caddy adalah mengaktifkan HTTPS secara default.
-Caddy mendukung berbagai teknologi Web dan tersedia sebagai biner yang dikompilasi secara statis untuk sistem operasi Windows, Mac, Linux, Android, dan BSD pada arsitektur i386, amd64, dan ARM.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://4.bp.blogspot.com/-Sd0psByMSXg/W9KcSR9BhFI/AAAAAAAAFVI/z52Gl87Mp2kjdn6qADifShNNhPn9OF5LACLcBGAs/s320/caddy.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
   </channel>

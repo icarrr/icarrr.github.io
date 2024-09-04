@@ -15,11 +15,7 @@
         <link>https://sibunglon.com/2022/11/11/integrate-open-edx-with-sentry/</link>
         <pubDate>Fri, 11 Nov 2022 22:36:53 +0800</pubDate>
         <guid>https://sibunglon.com/2022/11/11/integrate-open-edx-with-sentry/</guid>
-        <description>Setting up Sentry crash reporting if you want to provide a reliable service, it’s extremely important to be aware of when things are going wrong on the website.
-Sentry is a wonderful free system to catch Python exceptions.
-For Django on Open edX, we use sentry-sdk to catch and report the errors back to Sentry.
-Set up a Sentry server or use existing Sentry .
-Set up two new services (LMS and Studio) in Sentry and get their DSN strings.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -27,13 +23,7 @@ Set up two new services (LMS and Studio) in Sentry and get their DSN strings.</d
         <link>https://sibunglon.com/2022/07/11/kafka-consumer-on-sentry-receives-offset_out_of_range-error/</link>
         <pubDate>Mon, 11 Jul 2022 23:11:34 +0800</pubDate>
         <guid>https://sibunglon.com/2022/07/11/kafka-consumer-on-sentry-receives-offset_out_of_range-error/</guid>
-        <description>
-Stop your sentry instance
-docker-compose stop Then remove volumes
-docker-compose down --volumes Remove the Kafka &amp;amp; Zookeeper related volumes
-docker volume rm sentry-kafka docker volume rm sentry-zookeeper Run installation script again which will create the missing topics
-./install.sh --skip-commit-check Then start your sentry instance
-docker-compose up -d </description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sentry-brand.storage.googleapis.com/sentry-logo-black.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
   </channel>

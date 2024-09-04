@@ -15,9 +15,31 @@
         <link>https://sibunglon.com/2023/08/12/format-private-key-into-valid-private-key/</link>
         <pubDate>Sat, 12 Aug 2023 22:50:13 +0800</pubDate>
         <guid>https://sibunglon.com/2023/08/12/format-private-key-into-valid-private-key/</guid>
-        <description>I&amp;rsquo;ve a private.key from another platform but its using invalid format private key file as below.
-{\rtf1\ansi\ansicpg1252\cocoartf2709 \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;} {\colortbl;\red255\green255\blue255;} {\*\expandedcolortbl;;} \paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0 \f0\fs24 \cf0 -----BEGIN PRIVATE KEY-----\ MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDAV01KaHzqe2Mf\ o+3SAUz54hUQQcKKyV7a4PH61ymaBMlWV3D2roDRZm0RdRw9WUTD0/KDrBLJR9hz\ sySLLzSxyiE7b9BvloRbKtbZFMjhChRgm4YBi+M4C1Q0dqPeeQgSMdb3yilCj55y\ 8d1oCO3R4I521OSmAae+Qq5ClV9lh9TocYVV02/02g2vLD1w5xOIho6bimLoCQN5\ 241c340tgvvStVPjnkLMCsKibg==\ -----END PRIVATE KEY-----\ \ } To format it into valid private key, use the following script to convert it or format the file.
-cleaned_key=$(sed &amp;#39;s/\\f0\\fs24 \\cf0//g&amp;#39; private.key | tr -d &amp;#39;\\&amp;#39;) start_marker=&amp;#34;-----BEGIN PRIVATE KEY-----&amp;#34; end_marker=&amp;#34;-----END PRIVATE KEY-----&amp;#34; private_key=$(echo &amp;#34;$cleaned_key&amp;#34; | sed -n &amp;#34;/$start_marker/,/$end_marker/p&amp;#34;) echo &amp;#34;$private_key&amp;#34; </description>
+        <description>&lt;p&gt;I&amp;rsquo;ve a private.key from another platform but its using invalid format private key file as below.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 -----BEGIN PRIVATE KEY-----\
+MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDAV01KaHzqe2Mf\
+o+3SAUz54hUQQcKKyV7a4PH61ymaBMlWV3D2roDRZm0RdRw9WUTD0/KDrBLJR9hz\
+sySLLzSxyiE7b9BvloRbKtbZFMjhChRgm4YBi+M4C1Q0dqPeeQgSMdb3yilCj55y\
+8d1oCO3R4I521OSmAae+Qq5ClV9lh9TocYVV02/02g2vLD1w5xOIho6bimLoCQN5\
+241c340tgvvStVPjnkLMCsKibg==\
+-----END PRIVATE KEY-----\
+\
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;To format it into valid private key, use the following script to convert it or format the file.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;cleaned_key&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;sed &lt;span class=&#34;s1&#34;&gt;&amp;#39;s/\\f0\\fs24 \\cf0//g&amp;#39;&lt;/span&gt; private.key &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; tr -d &lt;span class=&#34;s1&#34;&gt;&amp;#39;\\&amp;#39;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;start_marker&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;-----BEGIN PRIVATE KEY-----&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;end_marker&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;-----END PRIVATE KEY-----&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;private_key&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$cleaned_key&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; sed -n &lt;span class=&#34;s2&#34;&gt;&amp;#34;/&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$start_marker&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;/,/&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$end_marker&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;/p&amp;#34;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$private_key&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
       </item>
     
       <item>
@@ -25,9 +47,18 @@ cleaned_key=$(sed &amp;#39;s/\\f0\\fs24 \\cf0//g&amp;#39; private.key | tr -d &a
         <link>https://sibunglon.com/2023/08/12/merge-or-concatenate-ssl-certificates-to-single-file/</link>
         <pubDate>Sat, 12 Aug 2023 22:03:36 +0800</pubDate>
         <guid>https://sibunglon.com/2023/08/12/merge-or-concatenate-ssl-certificates-to-single-file/</guid>
-        <description>I&amp;rsquo;ve received the root and intermediate certificates separately, then run the following command to merge or concat it into single file.
-sibunglon@sanita$ tree ├── ChainCA1.crt ├── ChainCA2.crt ├── sibunglon.com.key ├── RootCA.crt └── star_sibunglon_com.crt for ssl_combine in {star_sibunglon_com.crt,ChainCA1.crt,ChainCA2.crt,RootCA.crt}; do cat ${ssl_combine} &amp;gt;&amp;gt; /etc/ssl/sibunglon.com.crt echo -e &amp;#34;\n&amp;#34; &amp;gt;&amp;gt; /etc/ssl/sibunglon.com.crt; done Then, i can use sibunglon.com.crt as SSL certificate file and sibunglon.com.key as SSL certificate key file.
-sibunglon@sanita:~$ cat /etc/self-signed.conf ssl_certificate /etc/ssl/sibunglon.com.crt; ssl_certificate_key /etc/ssl/sibunglon.</description>
+        <description>&lt;p&gt;I&amp;rsquo;ve received the root and intermediate certificates separately, then run the following command to merge or concat it into single file.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sibunglon@sanita$ tree
+├── ChainCA1.crt
+├── ChainCA2.crt
+├── sibunglon.com.key
+├── RootCA.crt
+└── star_sibunglon_com.crt
+&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; ssl_combine in &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;star_sibunglon_com.crt,ChainCA1.crt,ChainCA2.crt,RootCA.crt&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	cat &lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;ssl_combine&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt; &amp;gt;&amp;gt; /etc/ssl/sibunglon.com.crt
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; -e &lt;span class=&#34;s2&#34;&gt;&amp;#34;\n&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; /etc/ssl/sibunglon.com.crt&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;done&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
       </item>
     
       <item>
@@ -35,10 +66,17 @@ sibunglon@sanita:~$ cat /etc/self-signed.conf ssl_certificate /etc/ssl/sibunglon
         <link>https://sibunglon.com/2020/12/19/extract-ssl-certificate-and-ssl-certificate-key-from-.pfx-file/</link>
         <pubDate>Sat, 19 Dec 2020 03:32:07 +0800</pubDate>
         <guid>https://sibunglon.com/2020/12/19/extract-ssl-certificate-and-ssl-certificate-key-from-.pfx-file/</guid>
-        <description>A pfx file is password protected certificate archive which contains your certificate and the private key.
-domain.tld.key The private decrypted RSA key file for the certificate. (ssl_certificate_key) domain.tld.crt The certificate file for the domain bundle.crt The certificate file for the issuer domain.tld.chained.crt The concatted file which consists of domain.tld.crt and bundle.crt (ssl_certificate) Get the .key file
-Extract the encrypted key using:
-openssl pkcs12 -in cert.pfx -nocerts -out domain.tld.encrypted.key Decrypt the encrypted key using:</description>
+        <description>&lt;p&gt;A pfx file is password protected certificate archive which contains your certificate and the private key.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;domain.tld.key&lt;/code&gt; The private decrypted RSA key file for the certificate. (ssl_certificate_key)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;domain.tld.crt&lt;/code&gt; The certificate file for the domain&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;bundle.crt&lt;/code&gt; The certificate file for the issuer&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;domain.tld.chained.crt&lt;/code&gt; The concatted file which consists of &lt;code&gt;domain.tld.crt&lt;/code&gt; and &lt;code&gt;bundle.crt&lt;/code&gt; (ssl_certificate)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Get the .key file&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Extract the encrypted key using:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;openssl pkcs12 -in cert.pfx -nocerts -out domain.tld.encrypted.key
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
       </item>
     
       <item>
@@ -46,12 +84,7 @@ openssl pkcs12 -in cert.pfx -nocerts -out domain.tld.encrypted.key Decrypt the e
         <link>https://sibunglon.com/2020/09/05/configuring-auto-renewing-lets-encrypt-ssl/</link>
         <pubDate>Sat, 05 Sep 2020 06:23:28 +0800</pubDate>
         <guid>https://sibunglon.com/2020/09/05/configuring-auto-renewing-lets-encrypt-ssl/</guid>
-        <description>Allow the certificate to auto renew, so that you as a server admin or not don&amp;rsquo;t have to log in to the server to renew all your certs.
-The renewal is run by cron. You can create it.
-The following steps:
-For nginx Create cron file.
-$ vi /etc/cron.d/certbot and then enter the script:
-SHELL=/bin/sh PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin 0 */12 * * * root test -x /usr/bin/certbot -a \! -d /run/systemd/system &amp;amp;&amp;amp; perl -e &amp;#39;sleep int(rand(43200))&amp;#39; &amp;amp;&amp;amp; certbot -q renew For apache2 Download certbot renew package file</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/certbot-logo.svg&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -59,7 +92,20 @@ SHELL=/bin/sh PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin 
         <link>https://sibunglon.com/2018/12/01/lindungi-web-server-apache2-dengan-ssl-debian-8/</link>
         <pubDate>Sat, 01 Dec 2018 15:14:00 +0000</pubDate>
         <guid>https://sibunglon.com/2018/12/01/lindungi-web-server-apache2-dengan-ssl-debian-8/</guid>
-        <description>Pengertian HTTPS juga disebut HTTP melalui TLS, HTTP melalui SSL, dan HTTP Secure adalah protokol untuk komunikasi yang aman melalui jaringan komputer yang banyak digunakan di Internet. HTTPS terdiri dari komunikasi melalui Hypertext Transfer Protocol (HTTP) dalam koneksi yang terenkripsi dengan Transport Layer Security atau pendahulunya Secure Sockets Layer. Fungsi utama untuk HTTPS adalah autentikasi dari website yang dikunjungi dan perlindungan privasi dan integritas data yang dipertukarkan. SSL (Secure Sockets Layer) adalah teknologi keamanan standar untuk membangun link yang dienkripsi antara web server dan browser.</description>
+        <description>&lt;h1 id=&#34;pengertian&#34;&gt;Pengertian&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;HTTPS juga disebut HTTP melalui TLS, HTTP melalui SSL, dan HTTP Secure adalah protokol untuk komunikasi yang aman melalui jaringan komputer yang banyak digunakan di Internet. HTTPS terdiri dari komunikasi melalui Hypertext Transfer Protocol (HTTP) dalam koneksi yang terenkripsi dengan Transport Layer Security atau pendahulunya Secure Sockets Layer. Fungsi utama untuk HTTPS adalah autentikasi dari website yang dikunjungi dan perlindungan privasi dan integritas data yang dipertukarkan.&lt;/li&gt;
+&lt;li&gt;SSL (Secure Sockets Layer) adalah teknologi keamanan standar untuk membangun link yang dienkripsi antara web server dan browser.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;alat-dan-bahan&#34;&gt;Alat dan Bahan&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Web server apache2 telah terinstal&lt;/li&gt;
+&lt;li&gt;OS Debian 8&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;installasi&#34;&gt;Installasi&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Remote server anda, kemudian generate sertifikatnya dengan command &lt;code&gt;openssl req -new -x509 -days 365 -nodes -out /etc/apache2.pem -keyout /etc/apache2/apache2.pem&lt;/code&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -67,14 +113,14 @@ SHELL=/bin/sh PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin 
         <link>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-install-aplikasi-berbasis-web/</link>
         <pubDate>Fri, 13 Oct 2017 10:22:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-install-aplikasi-berbasis-web/</guid>
-        <description>A. Pendahuluan
-Pada kesempatan ini, saya kembali memposting tentang dasar-dasar setelahi install server.
-B. Pengertian
-Aplikasi Berbasis Web adalah sebuah aplikasi yang dapat diakses melalui internet atau intranet, dan pada sekarang ini ternyata lebih banyak dan lebih luas dalam pemakaiannya.
-C. Latar belakang
-Setelah kita menginstall debian di proxmox tentunya kita harus tau hal hal apa saja yang harus dilakukan setelahnya.
-D. Tujuan
-Agar server dapat bekerja secara optimal saat melayani komputer client.</description>
+        <description>&lt;p&gt;&lt;strong&gt;A. Pendahuluan&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Pada kesempatan ini, saya kembali memposting tentang dasar-dasar setelahi install server.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;B. Pengertian&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Aplikasi Berbasis Web adalah sebuah aplikasi yang dapat diakses melalui internet atau intranet, dan pada sekarang ini ternyata lebih banyak dan lebih luas dalam pemakaiannya.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;C. Latar belakang&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Setelah kita menginstall debian di proxmox tentunya kita harus tau hal hal apa saja yang harus dilakukan setelahnya.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;D. Tujuan&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Agar server dapat bekerja secara optimal saat melayani komputer client.&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -82,12 +128,7 @@ Agar server dapat bekerja secara optimal saat melayani komputer client.</descrip
         <link>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-installasi-lamp-server/</link>
         <pubDate>Fri, 13 Oct 2017 10:09:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/13/hal-hal-yang-harus-dilakukan-setelah-install-server-installasi-lamp-server/</guid>
-        <description>A. Pendahuluan
-Pada kesempatan ini saya memposting lagi dan masih mengenai server
-B. Pengertian
-LAMP adalah istilah yang merupakan singkatan dariLinux,Apache,MySQL danPerl/PHP/Phyton. Merupakan sebuah paket perangkat lunak bebas yang digunakan untuk menjalankan sebuah aplikasi secara lengkap.
-Komponen-komponen dari LAMP :
-Linux – sistem operasi Apache HTTP Server – web server MariaDB atau MySQL – sistem basis data PHP atau Perl atau Python – bahasa pemrograman yang dipakai C. Latar belakang</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://3.bp.blogspot.com/-ywyKkRlhtrk/W71t-u86V-I/AAAAAAAAE5U/2yysEGlwYi0cpx63j04poUnAf2cZAvesQCLcBGAs/s1600/lamp_stack.jpg&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -95,10 +136,10 @@ Linux – sistem operasi Apache HTTP Server – web server MariaDB atau MySQL �
         <link>https://sibunglon.com/2017/10/12/hal-hal-yang-harus-dilakukan-setelah-install-server/</link>
         <pubDate>Thu, 12 Oct 2017 09:31:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/12/hal-hal-yang-harus-dilakukan-setelah-install-server/</guid>
-        <description>A. Pendahuluan
-Pada kesempatan kali ini yang saya bagikan yaitu tentang hal - hal yang perlu dilakukan setelah install server.
-B. Pengertian
-Debian adalah sistem operasi komputer yang tersusun dari paket-paket perangkat lunak yang dirilis sebagai perangkat lunak bebas dan terbuka dengan lisensi mayoritas GNU General Public License dan lisensi perangkat lunak bebas lainnya. Debian GNU/UNIX memuat perkakas sistem operasi GNU dan kernel Linux merupakan distribusi Linux yang populer dan berpengaruh.</description>
+        <description>&lt;p&gt;&lt;strong&gt;A. Pendahuluan&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Pada kesempatan kali ini yang saya bagikan yaitu tentang hal - hal yang perlu dilakukan setelah install server.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;B. Pengertian&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Debian adalah sistem operasi komputer yang tersusun dari paket-paket perangkat lunak yang dirilis sebagai perangkat lunak bebas dan terbuka dengan lisensi mayoritas GNU General Public License dan lisensi perangkat lunak bebas lainnya. Debian GNU/UNIX memuat perkakas sistem operasi GNU dan kernel Linux merupakan distribusi Linux yang populer dan berpengaruh. Debian didistribusikan dengan akses ke repositori dengan ribuan paket perangkat lunak yang siap untuk instalasi dan digunakan.&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -106,12 +147,7 @@ Debian adalah sistem operasi komputer yang tersusun dari paket-paket perangkat l
         <link>https://sibunglon.com/2017/08/09/bagaimana-menginstall-lamp-di-localhost-linux/</link>
         <pubDate>Wed, 09 Aug 2017 14:58:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/09/bagaimana-menginstall-lamp-di-localhost-linux/</guid>
-        <description>A. Pendahuluan
-Hello, pada kesempatan kali ini saya memposting bagaimana sih menginstal LAMP? Nah cara-caranya akan dijelaskan sebagai berikut.
-#Pengertian
-LAMP adalah istilah yang merupakan singkatan dari Linux, Apache, MySQL dan Perl/PHP/Phyton. Merupakan sebuah paket perangkat lunak bebas yang digunakan untuk menjalankan sebuah aplikasi secara lengkap.
-Komponen-komponen dari LAMP :
-Linux – sistem operasi Apache HTTP Server – web server MariaDB atau MySQL – sistem basis data PHP atau Perl atau Python – bahasa pemrograman yang dipakai #Latar Belakang</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://d33np9n32j53g7.cloudfront.net/assets/stacks/lampstack/img/lampstack-stack-110x117-d69f4394f7c64a94e9ba081f10fdc715.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
   </channel>

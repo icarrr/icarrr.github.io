@@ -15,9 +15,9 @@
         <link>https://sibunglon.com/2019/01/20/menggunakan-ansible-untuk-kirim-pemberitahuan/</link>
         <pubDate>Sun, 20 Jan 2019 18:11:43 +0700</pubDate>
         <guid>https://sibunglon.com/2019/01/20/menggunakan-ansible-untuk-kirim-pemberitahuan/</guid>
-        <description>Ansible Kirim Pemberitahuan? Emang bisa? Kirimnya pakai apa? Sepertinya menarik.
-Melalui postingan beberapa hari yang lalu kita telah berkenalan secara kilat dengan ansible, saya kira postingan sebelumnya sudah cukup membantu dan mengantar kita untuk kepo kepo i si Ansible tersebut. Sesuai apa yang ada di web resminya, disana kita bisa lihat bahwa si Ansible mempunyai banyak module yang bisa digunakan bahkan dikembangkan.
-Diantara banyak module yang disediakan berdasarkan apa yang saya ketahui setelah berkenalan dengan si Ansible, ada 2 module yang bisa digunakan untuk mengirim pemberitahuan yaitu module sendgrid dan telegram.</description>
+        <description>&lt;p&gt;Ansible Kirim Pemberitahuan? Emang bisa? Kirimnya pakai apa? Sepertinya menarik.&lt;/p&gt;
+&lt;p&gt;Melalui postingan beberapa hari yang lalu kita telah berkenalan secara kilat dengan ansible, saya kira postingan sebelumnya sudah cukup membantu dan mengantar kita untuk kepo kepo i si Ansible tersebut. Sesuai apa yang ada di web resminya, disana kita bisa lihat bahwa si Ansible mempunyai banyak module yang bisa digunakan bahkan dikembangkan.&lt;/p&gt;
+&lt;p&gt;Diantara banyak module yang disediakan berdasarkan apa yang saya ketahui setelah berkenalan dengan si Ansible, ada 2 module yang bisa digunakan untuk mengirim pemberitahuan yaitu module sendgrid dan telegram. &lt;strong&gt;Sendgrid&lt;/strong&gt; adalah layanan yang menyediakan API untuk mengirim email yang biasa digunakan sebagai email marketing. Dengan sendgrid, kita bisa mengirim email menggunakan metode &lt;strong&gt;API&lt;/strong&gt; atau &lt;strong&gt;SMTP&lt;/strong&gt;, namun pada lab ini saya akan menggunakan metode &lt;strong&gt;API&lt;/strong&gt; berdasarkan rekomendasi oleh sendgrid. Sedangkan &lt;strong&gt;Telegram&lt;/strong&gt; adalah sebuah aplikasi pengirim pesan instan multiplatform berbasis cloud (awan) yang bersifat gratis.&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -25,7 +25,7 @@ Diantara banyak module yang disediakan berdasarkan apa yang saya ketahui setelah
         <link>https://sibunglon.com/2019/01/19/install-aplikasi-linux-secara-massal-pake-ansible-aja/</link>
         <pubDate>Sat, 19 Jan 2019 21:24:37 +0700</pubDate>
         <guid>https://sibunglon.com/2019/01/19/install-aplikasi-linux-secara-massal-pake-ansible-aja/</guid>
-        <description>Pada saat kita dihadapkan dengan pilihan harus melakukan installasi aplikasi secara berulang ataupun harus melakukan installasi aplikasi yang sama di beberapa server dan diwaktu itu juga kalian mau ngelakuin sesuatu, tentu hal tersebut bikin mumet atau apalah. Bayangkan jika sekarang kalian disuruh melakukan hal tersebut untuk 15 sampai 50 server, mabok dan bete auto mode ON hihihi :v Apalagi kalau sistem operasinya berbeda beda, mungkin baru dengar aja seketika mabok dan bete udah auto ganti ke mode ON.</description>
+        <description>&lt;p&gt;Pada saat kita dihadapkan dengan pilihan harus melakukan installasi aplikasi secara berulang ataupun harus melakukan installasi aplikasi yang sama di beberapa server dan diwaktu itu juga kalian mau ngelakuin sesuatu, tentu hal tersebut bikin mumet atau apalah. Bayangkan jika sekarang kalian disuruh melakukan hal tersebut untuk 15 sampai 50 server, mabok dan bete auto mode ON hihihi :v Apalagi kalau sistem operasinya berbeda beda, mungkin baru dengar aja seketika mabok dan bete udah auto ganti ke mode ON.&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -33,10 +33,7 @@ Diantara banyak module yang disediakan berdasarkan apa yang saya ketahui setelah
         <link>https://sibunglon.com/2019/01/19/berkenalan-dengan-ansible/</link>
         <pubDate>Sat, 19 Jan 2019 11:53:28 +0700</pubDate>
         <guid>https://sibunglon.com/2019/01/19/berkenalan-dengan-ansible/</guid>
-        <description>Ansible? Apa itu ansible? Untuk apa dia datang?
-Daripada banyak nanya hayuuuk berkenalan aja dengan ansible.
-Ansible adalah tool automation yang dimiliki oleh perusahaan yang bergerak dibidang teknologi yaitu RedHat. Ansible adalah perangkat lunak open source yang mengotomatiskan pemasangan software, manajemen konfigurasi, dan beberapa tugas lainnya. Ansible terhubung dengan client remotenya menggunakan ssh.
-Apa Kelebihan Ansible? Karena beberapa hari belakangan ini saya sebagai siBunglon telah mencobanya, maka dari itu siBunglon paparkan kelebihan penggunaaan ansible versinya sendiri :v hihihi</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/ansible-logo.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
   </channel>

@@ -15,12 +15,18 @@
         <link>https://sibunglon.com/2017/10/23/membangun-sistem-informasi-desa/</link>
         <pubDate>Mon, 23 Oct 2017 02:29:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/23/membangun-sistem-informasi-desa/</guid>
-        <description>A. Pendahuluan
-Pada kesempatan ini saya akan mengimplementasikan membangun sebuah sistem informasi untuk desa
-B. Pengertian
-(OpenSID) adalah Sistem Informasi Desa (SID) yang sengaja dibuat supaya terbuka dan dapat dikembangkan bersama-sama oleh komunitas peduli SID.
-SID adalah aplikasi komputer yang membantu desa, agar:
-Kantor desa lebih efisien dan efektif Pemerintah desa lebih transparan dan akuntabel Layanan publik lebih baik Warga mendapat akses lebih baik pada informasi desa OpenSID turut membantu agar ke semua 74ribu+ desa di Indonesia menerapkan sistem informasi untuk memajukan desanya.</description>
+        <description>&lt;p&gt;&lt;strong&gt;A. Pendahuluan&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Pada kesempatan ini saya akan mengimplementasikan membangun sebuah sistem informasi untuk desa&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;B. Pengertian&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;(&lt;a href=&#34;https://github.com/OpenSID/OpenSID&#34;&gt;&lt;strong&gt;OpenSID&lt;/strong&gt;&lt;/a&gt;) adalah Sistem Informasi Desa (SID) yang sengaja dibuat supaya terbuka dan dapat dikembangkan bersama-sama oleh komunitas peduli SID.&lt;/p&gt;
+&lt;p&gt;SID adalah aplikasi komputer yang membantu desa, agar:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Kantor desa lebih efisien dan efektif&lt;/li&gt;
+&lt;li&gt;Pemerintah desa lebih transparan dan akuntabel&lt;/li&gt;
+&lt;li&gt;Layanan publik lebih baik&lt;/li&gt;
+&lt;li&gt;Warga mendapat akses lebih baik pada informasi desa&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;OpenSID turut membantu agar ke semua 74ribu+ desa di Indonesia menerapkan sistem informasi untuk memajukan desanya.&lt;/p&gt;</description>
       </item>
     
   </channel>

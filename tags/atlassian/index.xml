@@ -15,8 +15,10 @@
         <link>https://sibunglon.com/2019/05/06/install-bamboo-atlassian-di-linux/</link>
         <pubDate>Mon, 06 May 2019 03:40:59 +0700</pubDate>
         <guid>https://sibunglon.com/2019/05/06/install-bamboo-atlassian-di-linux/</guid>
-        <description>Bamboo Atlassian Bamboo adalah integrasi berkelanjutan (continuous integration (CI)) dan server penyebaran berkelanjutan (continuous deployment) yang dikembangkan oleh Atlassian. Bamboo dapat digunakan untuk mengotomatisasi manajemen rilis untuk aplikasi perangkat lunak, menciptakan jalur pengiriman kontinu.
-CI adalah metodologi pengembangan perangkat lunak di mana tes pembangunan, unit, dan tes integrasi dilakukan, atau dipicu, setiap kali kode dipublish ke repositori, untuk memastikan bahwa perubahan baru terintegrasi dengan baik ke dalam basis kode yang ada.</description>
+        <description>&lt;h3 id=&#34;bamboo-atlassian&#34;&gt;Bamboo Atlassian&lt;/h3&gt;
+&lt;p&gt;Bamboo adalah integrasi berkelanjutan (continuous integration (CI)) dan server penyebaran berkelanjutan (continuous deployment) yang dikembangkan oleh Atlassian. Bamboo dapat digunakan untuk mengotomatisasi manajemen rilis untuk aplikasi perangkat lunak, menciptakan jalur pengiriman kontinu.&lt;/p&gt;
+&lt;p&gt;CI adalah metodologi pengembangan perangkat lunak di mana tes pembangunan, unit, dan tes integrasi dilakukan, atau dipicu, setiap kali kode dipublish ke repositori, untuk memastikan bahwa perubahan baru terintegrasi dengan baik ke dalam basis kode yang ada.
+&lt;img src=&#34;https://sibunglon.com/assets/img/install-bamboo-on-linux/CI+overview.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
   </channel>

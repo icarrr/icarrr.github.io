@@ -15,7 +15,15 @@
         <link>https://sibunglon.com/2023/01/12/upgrade-openssl-version-on-ubuntu-16.04/</link>
         <pubDate>Thu, 12 Jan 2023 08:14:35 +0800</pubDate>
         <guid>https://sibunglon.com/2023/01/12/upgrade-openssl-version-on-ubuntu-16.04/</guid>
-        <description>sudo apt install make gcc+ wget https://www.openssl.org/source/old/1.1.1/openssl-1.1.1n.tar.gz --no-check-certificate tar xzvf openssl-1.1.1n.tar.gz cd openssl-1.1.1n/ ./config &amp;amp;&amp;amp; make &amp;amp;&amp;amp; sudo make install openssl version export LD_LIBRARY_PATH=/usr/local/lib/ Note: Please do not try to build openssl and/or haproxy on your own, unless you know what you are doing. I fear you probably already tried that, otherwise I can’t explain why you would have openssl 1.1.1d under Ubuntu Xenial.</description>
+        <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt install make gcc+
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;wget https://www.openssl.org/source/old/1.1.1/openssl-1.1.1n.tar.gz --no-check-certificate
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tar xzvf openssl-1.1.1n.tar.gz 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; openssl-1.1.1n/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;./config &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; make &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo make install
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;openssl version
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;LD_LIBRARY_PATH&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;/usr/local/lib/
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;em&gt;Note: Please do not try to build openssl and/or haproxy on your own, unless you know what you are doing. I fear you probably already tried that, otherwise I can’t explain why you would have openssl 1.1.1d under Ubuntu Xenial.&lt;/em&gt;&lt;/p&gt;</description>
       </item>
     
   </channel>

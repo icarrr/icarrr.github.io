@@ -15,7 +15,7 @@
         <link>https://sibunglon.com/2022/11/11/mariadb-cant-create-test-file/</link>
         <pubDate>Fri, 11 Nov 2022 22:13:57 +0800</pubDate>
         <guid>https://sibunglon.com/2022/11/11/mariadb-cant-create-test-file/</guid>
-        <description>Sep 19 11:54:47 bung systemd[1]: Starting MariaDB 10.3.36 database server... Sep 19 11:54:48 bung mysqld[14684]: 2022-09-19 11:54:48 0 [Note] /usr/sbin/mysqld (mysqld 10.3.36-MariaDB-0+deb10u1) starting as process 14684 ... Sep 19 11:54:48 bung mysqld[14684]: 2022-09-19 11:54:48 0 [Warning] Can&amp;#39;t create test file /var/lib/mysql/bung.lower-test Sep 19 11:54:48 bung mysqld[14684]: [90B blob data] Sep 19 11:54:48 bung mysqld[14684]: 2022-09-19 11:54:48 0 [ERROR] Aborting Sep 19 11:54:48 bung systemd[1]: mariadb.service: Main process exited, code=exited, status=1/FAILURE Sep 19 11:54:48 bung systemd[1]: mariadb.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;data:image/png;base64,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&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -23,13 +23,7 @@
         <link>https://sibunglon.com/2022/07/11/kafka-consumer-on-sentry-receives-offset_out_of_range-error/</link>
         <pubDate>Mon, 11 Jul 2022 23:11:34 +0800</pubDate>
         <guid>https://sibunglon.com/2022/07/11/kafka-consumer-on-sentry-receives-offset_out_of_range-error/</guid>
-        <description>
-Stop your sentry instance
-docker-compose stop Then remove volumes
-docker-compose down --volumes Remove the Kafka &amp;amp; Zookeeper related volumes
-docker volume rm sentry-kafka docker volume rm sentry-zookeeper Run installation script again which will create the missing topics
-./install.sh --skip-commit-check Then start your sentry instance
-docker-compose up -d </description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sentry-brand.storage.googleapis.com/sentry-logo-black.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -37,9 +31,7 @@ docker-compose up -d </description>
         <link>https://sibunglon.com/2021/11/16/i18n_fastgenerate-failed-reading-unicode-file-name/</link>
         <pubDate>Tue, 16 Nov 2021 21:44:32 +0800</pubDate>
         <guid>https://sibunglon.com/2021/11/16/i18n_fastgenerate-failed-reading-unicode-file-name/</guid>
-        <description>I&amp;rsquo;m trying to modify translations and need re-compile translations file to implement the update. But when i trying re-compile it with the following command:
-$ sudo -H -u edxapp bash $ source /edx/app/edxapp/edxapp_env $ cd /edx/app/edxapp/edx-platform $ paver i18n_fastgenerate And i found this:
-Traceback (most recent call last): File &amp;#34;/openedx/venv/bin/django-admin&amp;#34;, line 11, in &amp;lt;module&amp;gt; sys.exit(execute_from_command_line()) File &amp;#34;/openedx/venv/local/lib/python2.7/site-packages/django/core/management/__init__.py&amp;#34;, line 364, in execute_from_command_line utility.execute() File &amp;#34;/openedx/venv/local/lib/python2.7/site-packages/django/core/management/__init__.py&amp;#34;, line 356, in execute self.fetch_command(subcommand).run_from_argv(self.argv) File &amp;#34;/openedx/venv/local/lib/python2.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -47,9 +39,7 @@ Traceback (most recent call last): File &amp;#34;/openedx/venv/bin/django-admin&
         <link>https://sibunglon.com/2021/10/25/fixing-unable-to-delete-account-open-edx-via-user-profile/</link>
         <pubDate>Mon, 25 Oct 2021 13:03:24 +0800</pubDate>
         <guid>https://sibunglon.com/2021/10/25/fixing-unable-to-delete-account-open-edx-via-user-profile/</guid>
-        <description>When I test to delete my account from the user profile page, I get the following message after entering the password.
-When check the file /edx/var/log/lms/edx.log i find this.
-openedx.core.djangoapps.user_authn.exceptions.AuthFailedError Oct 25 13:08:55 ubuntu [service_variant=lms][openedx.core.djangoapps.user_api.accounts.views][env:sandbox] ERROR [ubuntu 10792] [user 14] [views.py:472] - 500 error deactivating account Default state does not exist! Populate retirement states to retire users. Traceback (most recent call last): File &amp;#34;/edx/app/edxapp/edx-platform/openedx/core/djangoapps/user_api/models.py&amp;#34;, line 320, in create_retirement pending = RetirementState.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -57,8 +47,7 @@ openedx.core.djangoapps.user_authn.exceptions.AuthFailedError Oct 25 13:08:55 ub
         <link>https://sibunglon.com/2021/08/29/missing-dependency-py2neo3.1.2/</link>
         <pubDate>Sun, 29 Aug 2021 21:33:01 +0800</pubDate>
         <guid>https://sibunglon.com/2021/08/29/missing-dependency-py2neo3.1.2/</guid>
-        <description>Unable to install py2neo==3.1.2? Here is a better fix that doesn&amp;rsquo;t change the version.
-Just change py2neo==3.1.2 on your app requirements to https://github.com/technige/py2neo/archive/refs/tags/py2neo-3.1.2.zip.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;data:image/png;base64,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&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -66,8 +55,7 @@ Just change py2neo==3.1.2 on your app requirements to https://github.com/technig
         <link>https://sibunglon.com/2021/07/18/install-package-using-npm-is-stuck/</link>
         <pubDate>Sun, 18 Jul 2021 21:36:23 +0800</pubDate>
         <guid>https://sibunglon.com/2021/07/18/install-package-using-npm-is-stuck/</guid>
-        <description>A few days ago, our team being tried install package for web development dependecies using npm (node package manager). The installation process was carried out as usual, but when installing the package git://github.com/adobe-webplatform/eve.git, the installation process did not finish for several minutes.
-I tried to access the package repository, and everything is fine. Then I tried to install the package using the https protocol, the installation process was successful. I think it&amp;rsquo;s a firewall issue, so i tried to update git configuration, using https protocol instead of using git protocol.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/npm-logo.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -75,9 +63,7 @@ I tried to access the package repository, and everything is fine. Then I tried t
         <link>https://sibunglon.com/2021/07/10/certbot-no-module-named-_cffi_backend/</link>
         <pubDate>Sat, 10 Jul 2021 22:11:10 +0800</pubDate>
         <guid>https://sibunglon.com/2021/07/10/certbot-no-module-named-_cffi_backend/</guid>
-        <description>Today, one of the server manage by me has failed to auto renew the https certificate.
-Btw, i&amp;rsquo;m using certificate from R3 by Let&amp;rsquo;s Encrypt. When i tried to manual renew using sudo certbot renew, i got this error message (see below for the error message).
-ubuntu@ip-172-26-4-157:~$ sudo certbot renew Traceback (most recent call last): File &amp;#34;/usr/bin/certbot&amp;#34;, line 11, in &amp;lt;module&amp;gt; load_entry_point(&amp;#39;certbot==0.31.0&amp;#39;, &amp;#39;console_scripts&amp;#39;, &amp;#39;certbot&amp;#39;)() File &amp;#34;/usr/lib/python3/dist-packages/pkg_resources/__init__.py&amp;#34;, line 542, in load_entry_point return get_distribution(dist).</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/certbot-logo.svg&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -85,9 +71,7 @@ ubuntu@ip-172-26-4-157:~$ sudo certbot renew Traceback (most recent call last): 
         <link>https://sibunglon.com/2021/06/23/discussion-forum-open-edx-not-visible-for-single-user/</link>
         <pubDate>Wed, 23 Jun 2021 21:55:50 +0800</pubDate>
         <guid>https://sibunglon.com/2021/06/23/discussion-forum-open-edx-not-visible-for-single-user/</guid>
-        <description>A few days ago, a students using our system reported that he couldn&amp;rsquo;t see the discussion forum on the course. But another student, discus forums can be seen.
-When i check the LMS log, i found this:
-Jun 21 18:15:01 velvet [service_variant=lms][edx.courseware][env:sandbox] ERROR [velvet 8339] [views.py:592] - Error in /courses/course-v1:STEL+Beginner+2020_Run1/discussion/forum/: user=chyntia, effective_user=chyntia, course=course-v1:STEL+Beginner+2020_Run1 Traceback (most recent call last): File &amp;#34;/edx/app/edxapp/edx-platform/lms/djangoapps/courseware/views/views.py&amp;#34;, line 521, in get return super(CourseTabView, self).get(request, course=course, page_context=page_context, **kwargs) File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -95,9 +79,7 @@ Jun 21 18:15:01 velvet [service_variant=lms][edx.courseware][env:sandbox] ERROR 
         <link>https://sibunglon.com/2021/05/15/error-install-mysqldb-because-cant-find-my_config.h/</link>
         <pubDate>Sat, 15 May 2021 21:55:35 +0800</pubDate>
         <guid>https://sibunglon.com/2021/05/15/error-install-mysqldb-because-cant-find-my_config.h/</guid>
-        <description>Usually issues are found because there are some dependencies that are required but not installed yet. Make sure libmysqlclient-dev is installed, also check the /usr/include/mysql directory to make sure the file my_config.h does not exist like the message on the log.
-For the case I&amp;rsquo;ve found, the file my_config.h is not in the /usr/include/mysql directory and for fixing it use the following command:
-$ cd /usr/include/mysql $ sudo wget https://raw.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/mysql-logo.svg&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -105,8 +87,7 @@ $ cd /usr/include/mysql $ sudo wget https://raw.</description>
         <link>https://sibunglon.com/2021/05/07/fixing-issue-db-open-edx-notifier-celery-workers-is-locked/</link>
         <pubDate>Fri, 07 May 2021 22:20:17 +0800</pubDate>
         <guid>https://sibunglon.com/2021/05/07/fixing-issue-db-open-edx-notifier-celery-workers-is-locked/</guid>
-        <description>Apart from the issue user celery does not exist after migrated or upgrade the instance, there are other possible issues that may be encountered after migrating instances, i.e. service notifier-celery-workers failed to start (FATAL, Exited too quickly).
-Issue notifier-celery-workers failing to start may be encountered after migrate the instances because before migration, the service has not been turned off while the service is serving several transactional queries so the database used by the service is locked (especially if you are still using SQLite), which means that the service cannot read or write data to the database.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -114,8 +95,7 @@ Issue notifier-celery-workers failing to start may be encountered after migrate 
         <link>https://sibunglon.com/2020/07/26/database-returned-an-invalid-value-in-queryset.datetimes/</link>
         <pubDate>Sun, 26 Jul 2020 21:05:49 +0800</pubDate>
         <guid>https://sibunglon.com/2020/07/26/database-returned-an-invalid-value-in-queryset.datetimes/</guid>
-        <description>After create new action on the Django admin pages, it redirects to my site with the message a server error. When check the file /edx/var/log/supervisor/lms-stderr.log i find this:
-Traceback (most recent call last): File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/exception.py&amp;#34;, line 41, in inner response = get_response(request) File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;#34;, line 249, in _legacy_get_response response = self._get_response(request) File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;#34;, line 217, in _get_response response = self.process_exception_by_middleware(e, request) File &amp;#34;/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/django/core/handlers/base.py&amp;#34;, line 215, in _get_response response = response.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -123,11 +103,7 @@ Traceback (most recent call last): File &amp;#34;/edx/app/edxapp/venvs/edxapp/lo
         <link>https://sibunglon.com/2020/07/26/solve-smtp-open-edx-timeout/</link>
         <pubDate>Sun, 26 Jul 2020 17:21:39 +0800</pubDate>
         <guid>https://sibunglon.com/2020/07/26/solve-smtp-open-edx-timeout/</guid>
-        <description>By default in Open edX, the system will send an email when a new user registers, using the forget password or other conditions.
-A few days ago my teams found an issue on the email sending service, but the issue was not because of the Open edX SMTP service but from the connection side of the Open edX server to the SMTP server.
-Then what&amp;rsquo;s the case?
-Case:
--) When a user registers, the user should receive an email to activate the account, but in reality it is not.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -135,10 +111,14 @@ Case:
         <link>https://sibunglon.com/2020/05/24/solve-zsh-function-definition-file-not-found/</link>
         <pubDate>Sun, 24 May 2020 21:21:22 +0700</pubDate>
         <guid>https://sibunglon.com/2020/05/24/solve-zsh-function-definition-file-not-found/</guid>
-        <description>Some commands error when using autocomplete. Ex, error message when using the mv command:
-~ ❯❯❯ mv Down... (eval):1: _mv: function definition file not found How to solve?
-~ ❯❯❯ rm ~/.zcompdump ~ ❯❯❯ exec zsh -l This solutions worked for me.
-If you found error message, comment on this article or contact me 😄</description>
+        <description>&lt;p&gt;Some commands error when using autocomplete. Ex, error message when using the &lt;code&gt;mv&lt;/code&gt; command:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;~ ❯❯❯ mv Down...
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;eval&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;:1: _mv: &lt;span class=&#34;k&#34;&gt;function&lt;/span&gt; definition file not found
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;How to solve?&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;~ ❯❯❯ rm ~/.zcompdump
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;~ ❯❯❯ &lt;span class=&#34;nb&#34;&gt;exec&lt;/span&gt; zsh -l
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This solutions worked for me.&lt;/p&gt;
+&lt;p&gt;If you found error message, comment on this article or contact me 😄&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -146,8 +126,7 @@ If you found error message, comment on this article or contact me 😄</descript
         <link>https://sibunglon.com/2020/04/19/fixing-issue-celery-open-edx-setelah-migrasi-instance/</link>
         <pubDate>Sun, 19 Apr 2020 22:38:14 +0700</pubDate>
         <guid>https://sibunglon.com/2020/04/19/fixing-issue-celery-open-edx-setelah-migrasi-instance/</guid>
-        <description>Beberapa hari yang lalu saya memindahkan instance Open edX dan beberapa menit setelah server aktif, Open edX tidak bisa diakses. Cek servicenya, tetapi semua service dalam keadaan aktif namun ketika melihat lognya, ternyata ada error pada celery, kurang lebih errornya seperti berikut:
-$ sudo tail -f /edx/var/log/{lms,cms,nginx}/*log ==&amp;gt; /edx/var/log/lms/edx.log &amp;lt;== Apr 12 02:21:16 beep [service_variant=lms][celery.worker.consumer][env:sandbox] ERROR [beep 1400] [consumer.py:364] - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 104] Connection reset by peer.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -155,8 +134,7 @@ $ sudo tail -f /edx/var/log/{lms,cms,nginx}/*log ==&amp;gt; /edx/var/log/lms/edx
         <link>https://sibunglon.com/2020/02/07/error-install-mysql-server-on-ubuntu-18/</link>
         <pubDate>Fri, 07 Feb 2020 23:55:13 +0700</pubDate>
         <guid>https://sibunglon.com/2020/02/07/error-install-mysql-server-on-ubuntu-18/</guid>
-        <description>A few days ago mysql server was installed again, mysql was successfully installed and the service was successfully running but if you want to install another package, this problem must be solved by installing mysql server because mysql server installation is not 100% complete yet.
-Btw, fortunately the terminal history on the laptop has not been cleared so I can save the error message again on Ubuntu pastebin so that others can see the error clearly 😁.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/mysql-logo.svg&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -164,7 +142,7 @@ Btw, fortunately the terminal history on the laptop has not been cleared so I ca
         <link>https://sibunglon.com/2019/12/06/fixing-problems-installations-open-edx-ficus/</link>
         <pubDate>Fri, 06 Dec 2019 13:13:00 +0700</pubDate>
         <guid>https://sibunglon.com/2019/12/06/fixing-problems-installations-open-edx-ficus/</guid>
-        <description>What is the problem? Ficus is a name of Open edX release which was released on February 23, 2017. It&amp;rsquo;s been quite a long time, and automatically uses old packages or packages that are still active at that time. Last September, my friends asked me to install Open edX Ficus, because it&amp;rsquo;s an old version so I tried to install it in another VM, I made a VM on the Google Cloud Platform.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/openedx-ficus.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -172,9 +150,11 @@ Btw, fortunately the terminal history on the laptop has not been cleared so I ca
         <link>https://sibunglon.com/2019/11/04/error-backup-database-postgresql-using-pg_dump/</link>
         <pubDate>Mon, 04 Nov 2019 13:39:16 +0700</pubDate>
         <guid>https://sibunglon.com/2019/11/04/error-backup-database-postgresql-using-pg_dump/</guid>
-        <description>Has anyone ever done a postgres database backup using the pg_dump command line and then found problems with messages more or less like the following?
-pg_dump: server version: 9.6.12; pg_dump version: 9.2.24 pg_dump: aborting because of server version mismatch At that time I used Postgres 9.6.
-If before you did not do the postgres installation process, when backing up the data and finding problems with the message more or less like what I show then do not be too quick to ambition to make postgres or other improvements because it requires a great effort especially if the problem is found in production server, DANGER 🤣 Simply find the pg_dump command line location according to the postgres version of the server being used.</description>
+        <description>&lt;p&gt;Has anyone ever done a postgres database backup using the &lt;code&gt;pg_dump&lt;/code&gt; command line and then found problems with messages more or less like the following?&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pg_dump: server version: 9.6.12&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; pg_dump version: 9.2.24
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pg_dump: aborting because of server version mismatch
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;At that time I used Postgres 9.6.&lt;/p&gt;
+&lt;p&gt;If before you did not do the postgres installation process, when backing up the data and finding problems with the message more or less like what I show then do not be too quick to ambition to make postgres or other improvements because it requires a great effort especially if the problem is found in production server, &lt;strong&gt;DANGER&lt;/strong&gt; 🤣 Simply find the &lt;code&gt;pg_dump&lt;/code&gt; command line location according to the postgres version of the server being used. Usually located here &lt;code&gt;/usr/pgsql-x.y/bin/pg_dump&lt;/code&gt;, x.y is the version of the postgres server used.&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -182,8 +162,7 @@ If before you did not do the postgres installation process, when backing up the 
         <link>https://sibunglon.com/2019/07/14/first-contribution-to-open-source-project/</link>
         <pubDate>Sun, 14 Jul 2019 00:25:00 +0700</pubDate>
         <guid>https://sibunglon.com/2019/07/14/first-contribution-to-open-source-project/</guid>
-        <description>Error Get Incommon Server CA (Certificate Authority) When Installing Open edX In the previous article or that is here, there was a quick acquaintance session with Open edX while playing with Open edX (Open edX installation). And there are also articles about errors during Open edX installation, can be seen in this article.
-Besides the errors in this article, this time I found a different error which was an error in getting an Authority Certificate.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -191,8 +170,7 @@ Besides the errors in this article, this time I found a different error which wa
         <link>https://sibunglon.com/2019/07/13/open-edx-error-create-service-worker-users/</link>
         <pubDate>Sat, 13 Jul 2019 23:01:19 +0700</pubDate>
         <guid>https://sibunglon.com/2019/07/13/open-edx-error-create-service-worker-users/</guid>
-        <description>Error Create Service Worker Users When Installing Open edX In the previous article or that is here, there was a quick acquaintance session with Open edX while playing with Open edX (Open edX installation).
-I myself had an error when installing Open EdX, the error was the same as in the title of this article which failed to make service worker users. I was made confused by this error, even with this error I repeatedly did the Open edX installation process.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -200,7 +178,8 @@ I myself had an error when installing Open EdX, the error was the same as in the
         <link>https://sibunglon.com/2019/04/15/fix-the-cockpit-blank-page-after-login-over-nginx-reverse-proxy/</link>
         <pubDate>Mon, 15 Apr 2019 05:09:24 +0700</pubDate>
         <guid>https://sibunglon.com/2019/04/15/fix-the-cockpit-blank-page-after-login-over-nginx-reverse-proxy/</guid>
-        <description>Cockpit nge-Blank Setelah Login Jika diakses melalui Reverse Proxy Nginx? Apakah anda mengalami hal tersebut? Jangan takut, karena saya juga mengalami hal tersebut 😆 Beberapa yang hari lalu, saya mengakses cockpit server lab saya yang melalui reverse proxy NGINX, awalnya normal aja pas ngakses sampai ke halaman login namun ketika mencoba login, si cockpit hanya stuck di blank page. Wahhhh alhamdulillah dapat masalah baru lagi :D padahal sebelumnya normal aja, gak ada stuck di blank page.</description>
+        <description>&lt;h3 id=&#34;cockpit-nge-blank-setelah-login-jika-diakses-melalui-reverse-proxy-nginx&#34;&gt;Cockpit nge-Blank Setelah Login Jika diakses melalui Reverse Proxy Nginx?&lt;/h3&gt;
+&lt;p&gt;Apakah anda mengalami hal tersebut? Jangan takut, karena saya juga mengalami hal tersebut 😆  Beberapa yang hari lalu, saya mengakses cockpit server lab saya yang melalui reverse proxy NGINX, awalnya normal aja pas ngakses sampai ke halaman login namun ketika mencoba login, si cockpit hanya stuck di blank page. Wahhhh alhamdulillah dapat masalah baru lagi :D padahal sebelumnya normal aja, gak ada stuck di blank page. Selang beberapa menit setelah nyelam di website resmi cockpit, masalah tersebut terselesaikan dengan beberapa config tambahan berikut ini:&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -208,8 +187,9 @@ I myself had an error when installing Open EdX, the error was the same as in the
         <link>https://sibunglon.com/2019/04/09/valueerror-saat-setup-mssql-server-di-linux/</link>
         <pubDate>Tue, 09 Apr 2019 20:45:08 +0700</pubDate>
         <guid>https://sibunglon.com/2019/04/09/valueerror-saat-setup-mssql-server-di-linux/</guid>
-        <description>ValueError: unknown locale: UTF-8? Beberapa hari yang lalu saya sempat menulis step by step install Microsoft SQL Server (MSSQL Server) di environment Linux, namun mungkin saja ada yang menemukan error salah satunya error dengan message ValueError: unknown locale: UTF-8, gak usah takut karena dari masalah itu ataupun lainnya kita dapat pelajaran baru😆
-Disuatu waktu saya install MSSQL Server Linux di environment berbeda dari sebelumnya, saya ikuti tuh step by step installasi MSSQL Server yang saya tulis sebelumnya, alhamdulillah dapat rejeki, dapat ValueError: unknown locale: UTF-8 pada saat setup MSSQL Server🤣 Dengan kemampuan sok tau saya😆 langsung disimpulkan maksud dari error message tersebut yaitu Lokal UTF-8 tidak di kenal.</description>
+        <description>&lt;h3 id=&#34;valueerror-unknown-locale-utf-8&#34;&gt;ValueError: unknown locale: UTF-8?&lt;/h3&gt;
+&lt;p&gt;Beberapa hari yang lalu saya sempat menulis step by step install Microsoft SQL Server (MSSQL Server) di environment Linux, namun mungkin saja ada yang menemukan error salah satunya error dengan message &lt;strong&gt;ValueError: unknown locale: UTF-8&lt;/strong&gt;, gak usah takut karena dari masalah itu ataupun lainnya kita dapat pelajaran baru😆&lt;/p&gt;
+&lt;p&gt;Disuatu waktu saya install MSSQL Server Linux di environment berbeda dari sebelumnya, saya ikuti tuh step by step installasi MSSQL Server yang saya tulis sebelumnya, alhamdulillah dapat rejeki, dapat &lt;strong&gt;ValueError: unknown locale: UTF-8&lt;/strong&gt; pada saat setup MSSQL Server🤣  Dengan kemampuan sok tau saya😆  langsung disimpulkan maksud dari error message tersebut yaitu Lokal UTF-8 tidak di kenal. Okey berarti tugas saya yaitu bagaimana agar si lokal UTF-8 itu dikenali, dengan kemampuan sok tau auto isi var lokal dengan UTF-8 menggunakan command &lt;code&gt;export LC_ALL=en_US.UTF-8&lt;/code&gt; , setelah itu eksekusi kembali command untuk setup MSSQL Server dan &lt;strong&gt;ValueError: unknown locale: UTF-8&lt;/strong&gt; telah hilang.&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -217,8 +197,19 @@ Disuatu waktu saya install MSSQL Server Linux di environment berbeda dari sebelu
         <link>https://sibunglon.com/2019/02/16/error-generate-certificate-ssl-menggunakan-lets-encrypt/</link>
         <pubDate>Sat, 16 Feb 2019 17:19:08 +0700</pubDate>
         <guid>https://sibunglon.com/2019/02/16/error-generate-certificate-ssl-menggunakan-lets-encrypt/</guid>
-        <description>Beberapa bulan yang lalu I&amp;rsquo;m siBunglon masih bisa generate SSL menggunakan Let&amp;rsquo;s Encrypt namun hari ini I&amp;rsquo;m siBunglon menemukan error ketika akan generate SSL lagi dan I&amp;rsquo;m siBunglon mendapatkan error message seperti berikut:
-[root@airgreen siBunglon]# certbot --nginx -d repo.lab.sibunglon.com Traceback (most recent call last): File &amp;#34;/bin/certbot&amp;#34;, line 9, in &amp;lt;module&amp;gt; load_entry_point(&amp;#39;certbot==0.29.1&amp;#39;, &amp;#39;console_scripts&amp;#39;, &amp;#39;certbot&amp;#39;)() File &amp;#34;/usr/lib/python2.7/site-packages/pkg_resources/__init__.py&amp;#34;, line 487, in load_entry_point return get_distribution(dist).load_entry_point(group, name) File &amp;#34;/usr/lib/python2.7/site-packages/pkg_resources/__init__.py&amp;#34;, line 2728, in load_entry_point return ep.load() File &amp;#34;/usr/lib/python2.</description>
+        <description>&lt;p&gt;Beberapa bulan yang lalu &lt;strong&gt;I&amp;rsquo;m siBunglon&lt;/strong&gt; masih bisa generate SSL menggunakan Let&amp;rsquo;s Encrypt namun hari ini &lt;strong&gt;I&amp;rsquo;m siBunglon&lt;/strong&gt; menemukan error ketika akan generate SSL lagi dan &lt;strong&gt;I&amp;rsquo;m siBunglon&lt;/strong&gt; mendapatkan error message seperti berikut:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[root@airgreen siBunglon]# certbot --nginx -d repo.lab.sibunglon.com
+Traceback (most recent call last):
+File &amp;#34;/bin/certbot&amp;#34;, line 9, in &amp;lt;module&amp;gt; load_entry_point(&amp;#39;certbot==0.29.1&amp;#39;, &amp;#39;console_scripts&amp;#39;, &amp;#39;certbot&amp;#39;)()
+File &amp;#34;/usr/lib/python2.7/site-packages/pkg_resources/__init__.py&amp;#34;, line 487, in load_entry_point return get_distribution(dist).load_entry_point(group, name)
+File &amp;#34;/usr/lib/python2.7/site-packages/pkg_resources/__init__.py&amp;#34;, line 2728, in load_entry_point return ep.load()
+File &amp;#34;/usr/lib/python2.7/site-packages/pkg_resources/__init__.py&amp;#34;, line 2346, in load return self.resolve()
+File &amp;#34;/usr/lib/python2.7/site-packages/pkg_resources/__init__.py&amp;#34;, line 2352, in resolve module = __import__(self.module_name, fromlist=[&amp;#39;__name__&amp;#39;], level=0)
+File &amp;#34;/usr/lib/python2.7/site-packages/certbot/main.py&amp;#34;, line 23, in &amp;lt;module&amp;gt; from certbot import client
+File &amp;#34;/usr/lib/python2.7/site-packages/certbot/client.py&amp;#34;, line 16, in &amp;lt;module&amp;gt; from acme import client as acme_client
+File &amp;#34;/usr/lib/python2.7/site-packages/acme/client.py&amp;#34;, line 40, in &amp;lt;module&amp;gt; urllib3.contrib.pyopenssl.inject_into_urllib3() AttributeError: &amp;#39;module&amp;#39; object has no attribute &amp;#39;pyopenssl&amp;#39;
+[root@airgreen siBunglon]#
+&lt;/code&gt;&lt;/pr</description>
       </item>
     
       <item>
@@ -226,9 +217,9 @@ Disuatu waktu saya install MSSQL Server Linux di environment berbeda dari sebelu
         <link>https://sibunglon.com/2018/12/12/sertifikat-repository-red-hat-kadaluarsa-pada-vm-microsoft-azure/</link>
         <pubDate>Wed, 12 Dec 2018 10:28:20 +0700</pubDate>
         <guid>https://sibunglon.com/2018/12/12/sertifikat-repository-red-hat-kadaluarsa-pada-vm-microsoft-azure/</guid>
-        <description>Jika anda menggunakan VM Red Hat versi lama di Microsoft Azure, kadang anda mendapatkan masalah “SSL peer rejected your certificate as expired” jika ingin menginstall paket baru ataupun mengupate paket-paket. Itu terjadi karena sertifikat repositori sudah kadaluarsa, untuk memecahkan masalah tersebut cukup gunakan command
-yum update -y --disablerepo=* --enablerepo=rhui-microsoft-* rhui-azure-rhel7
-Setelah itu sekarang anda dapat menginstall atau update paket di Red Hat anda seperti yang biasa kamu lakukan.</description>
+        <description>&lt;p&gt;Jika anda menggunakan VM Red Hat versi lama di Microsoft Azure, kadang anda mendapatkan masalah &lt;strong&gt;“SSL peer rejected your certificate as expired”&lt;/strong&gt; jika ingin menginstall paket baru ataupun mengupate paket-paket. Itu terjadi karena sertifikat repositori sudah kadaluarsa, untuk memecahkan masalah tersebut cukup gunakan command&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;yum update -y --disablerepo=* --enablerepo=rhui-microsoft-* rhui-azure-rhel7&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Setelah itu sekarang anda dapat menginstall atau update paket di Red Hat anda seperti yang biasa kamu lakukan.&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -236,8 +227,14 @@ Setelah itu sekarang anda dapat menginstall atau update paket di Red Hat anda se
         <link>https://sibunglon.com/2018/12/11/pip-python2-error/</link>
         <pubDate>Tue, 11 Dec 2018 21:34:18 +0700</pubDate>
         <guid>https://sibunglon.com/2018/12/11/pip-python2-error/</guid>
-        <description>Pip di Python2 Error? Traceback (most recent call last): File &amp;#34;/usr/bin/pip&amp;#34;, line 9, in &amp;lt;module&amp;gt; from pip import main ImportError: cannot import name main Gak usah panik, cukup jalankan command berikut tapi pastikan terlebih dahulu sekarang sudah jadi super user (root)
-python -m pip uninstall pip &amp;amp;&amp;amp; apt install python-pip --reinstall </description>
+        <description>&lt;h3 id=&#34;pip-di-python2-error&#34;&gt;Pip di Python2 Error?&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Traceback (most recent call last):
+  File &amp;#34;/usr/bin/pip&amp;#34;, line 9, in &amp;lt;module&amp;gt;
+    from pip import main
+ImportError: cannot import name main
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Gak usah panik, cukup jalankan command berikut tapi pastikan terlebih dahulu sekarang sudah jadi super user (&lt;strong&gt;root&lt;/strong&gt;)&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;python -m pip uninstall pip &amp;amp;&amp;amp; apt install python-pip --reinstall
+&lt;/code&gt;&lt;/pre&gt;</description>
       </item>
     
       <item>
@@ -245,7 +242,7 @@ python -m pip uninstall pip &amp;amp;&amp;amp; apt install python-pip --reinstal
         <link>https://sibunglon.com/2018/12/10/python-tidak-memiliki-objek-ssl_st_init/</link>
         <pubDate>Mon, 10 Dec 2018 23:47:30 +0700</pubDate>
         <guid>https://sibunglon.com/2018/12/10/python-tidak-memiliki-objek-ssl_st_init/</guid>
-        <description>Jika akan menghubungkan perangkat anda dengan perangkat lain menggunakan ansible namun ketemu error ERROR! Unexpected Exception: &amp;lsquo;module&amp;rsquo; object has no attribute &amp;lsquo;SSL_ST_INIT&amp;rsquo;, sebenarnya itu hanya membutuhkan paket pyOpenSSL yang dapat diinstall dengan command pip install pyOpenSSL</description>
+        <description>&lt;p&gt;Jika akan menghubungkan perangkat anda dengan perangkat lain menggunakan ansible namun ketemu error &lt;strong&gt;ERROR! Unexpected Exception: &amp;lsquo;module&amp;rsquo; object has no attribute &amp;lsquo;SSL_ST_INIT&amp;rsquo;&lt;/strong&gt;, sebenarnya itu hanya membutuhkan paket &lt;strong&gt;pyOpenSSL&lt;/strong&gt; yang dapat diinstall dengan command &lt;code&gt;pip install pyOpenSSL&lt;/code&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -253,7 +250,9 @@ python -m pip uninstall pip &amp;amp;&amp;amp; apt install python-pip --reinstal
         <link>https://sibunglon.com/2018/12/10/peringatan-dependensi-cryptography/</link>
         <pubDate>Mon, 10 Dec 2018 23:41:25 +0700</pubDate>
         <guid>https://sibunglon.com/2018/12/10/peringatan-dependensi-cryptography/</guid>
-        <description>Requests Dependency Warning: Old version of cryptography Jika anda mendapatkan sebuah masalah jangan panik, apalagi ketemu error yang similiar dari judul tulisan itu berarti saat ini disistem anda menggunakan cryptography versi lama silahkan update dengan command pip install --upgrade cryptography</description>
+        <description>&lt;p&gt;&lt;strong&gt;Requests Dependency Warning: Old version of cryptography&lt;/strong&gt;
+Jika anda mendapatkan sebuah masalah jangan panik, apalagi ketemu error yang similiar dari judul tulisan itu berarti saat ini disistem anda menggunakan cryptography versi lama silahkan update dengan command
+&lt;code&gt;pip install --upgrade cryptography&lt;/code&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -261,10 +260,12 @@ python -m pip uninstall pip &amp;amp;&amp;amp; apt install python-pip --reinstal
         <link>https://sibunglon.com/2018/12/10/nginx-tidak-bisa-diakses/</link>
         <pubDate>Mon, 10 Dec 2018 13:40:57 +0700</pubDate>
         <guid>https://sibunglon.com/2018/12/10/nginx-tidak-bisa-diakses/</guid>
-        <description>Nginx di CentOS atau RHEL tidak bisa diakses? Service nginx aktif? Servernya aktif? Akses dari localhost bisa? Jika semua jawabannya YA, mungkin firewall di system anda sedang aktif namun trafik protokol HTTP dan HTTPS belum diizinkan oleh perangkat yang lain.
-Untuk mengizinkan trafik protokol HTTP, gunakan command
-firewall-cmd --permanent --zone=public --add-service=http Sedangkan untuk mengizinkan trafik protokol HTTPS, gunakan command
-firewall-cmd --permanent --zone=public --add-service=https Setelah diizinkan, firewall wajib direload agar update firewall dapat diterapkan</description>
+        <description>&lt;p&gt;Nginx di CentOS atau RHEL tidak bisa diakses? Service nginx aktif? Servernya aktif? Akses dari localhost bisa? Jika semua jawabannya &lt;strong&gt;YA&lt;/strong&gt;, mungkin firewall di system anda sedang aktif namun trafik protokol HTTP dan HTTPS belum diizinkan oleh perangkat yang lain.&lt;/p&gt;
+&lt;p&gt;Untuk mengizinkan trafik protokol HTTP, gunakan command&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;firewall-cmd --permanent --zone=public --add-service=http
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Sedangkan untuk mengizinkan  trafik protokol HTTPS, gunakan command&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;firewall-cmd --permanent --zone=public --add-service=https
+&lt;/code&gt;&lt;/pr</description>
       </item>
     
       <item>
@@ -272,10 +273,7 @@ firewall-cmd --permanent --zone=public --add-service=https Setelah diizinkan, fi
         <link>https://sibunglon.com/2017/10/14/atasi-info-php-tidak-tampil-atau-not-working/</link>
         <pubDate>Sat, 14 Oct 2017 10:25:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/14/atasi-info-php-tidak-tampil-atau-not-working/</guid>
-        <description>A. Pendahuluan
-Pada postingan kali ini, saya akan memberikan solusi yang biasa menjadi permasalahan saat menginstall LAMP Server di linux
-B. Pengertian
-PHP info adalah istilah untuk menyebutkan sebuah halaman yang berisi informasi mengenai versi PHP yang digunakan oleh suatu server, biasanya pada halaman PHP Info akan di informasikan banyak hal selain versi nya itu sendiri. phpinfo() biasanya digunakan untuk memeriksa pengaturan konfigurasi dan variabel standar yang tersedia pada sistem tertentu.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://4.bp.blogspot.com/-_Cky_Z1aDK4/W71xNeSVpwI/AAAAAAAAE6k/m5MMbtalAp8ZjGkdJK1rNhur5jCIQZwhgCLcBGAs/s1600/Screenshot_1.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -283,11 +281,7 @@ PHP info adalah istilah untuk menyebutkan sebuah halaman yang berisi informasi m
         <link>https://sibunglon.com/2017/09/20/atasi-phpmyadmin-error-1698-tidak-bisa-login-sebagai-root/</link>
         <pubDate>Wed, 20 Sep 2017 03:15:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/20/atasi-phpmyadmin-error-1698-tidak-bisa-login-sebagai-root/</guid>
-        <description>A. Pendahuluan
-Pada kesempatan ini yang saya posting/share yaitu troubleshoot phpmyadmin dengan kode error #1698 atau tidak bisa login sebagai root.
-B. Pengertian
-PhpMyAdmin adalah perangkat lunak bebas yang ditulis dalam bahasa pemrograman PHP yang digunakan untuk menangani administrasi MySQL melalui Jejaring Jagat Jembar (World Wide Web). phpMyAdmin mendukung berbagai operasi MySQL, diantaranya (mengelola basis data, tabel-tabel, bidang (fields), relasi (relations), indeks, pengguna (users), perizinan (permissions), dan lain-lain).
-C. Latar belakang</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://1.bp.blogspot.com/-6xgdKXHNsJA/W6f2M-odoDI/AAAAAAAAEcA/sosT_wYNmwkW-joUZozlarmUHxn5VfXjQCLcBGAs/s1600/Screenshot_2.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -295,10 +289,10 @@ C. Latar belakang</description>
         <link>https://sibunglon.com/2017/08/23/mengatasi-masalah-apt-get-update-failed-to-fetch-hash-sum-mismatch/</link>
         <pubDate>Wed, 23 Aug 2017 10:37:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/23/mengatasi-masalah-apt-get-update-failed-to-fetch-hash-sum-mismatch/</guid>
-        <description>A. Pendahuluan
-Pada kali ini, saya akan memposting tentang bagaimana mengatasi masalah yang biasa ditemukan saat melakukan update linux.
-B. Pengertian
-Shell adalah program (penterjemah perintah)yang menjembatani user dengan sistem operasi dalam hal ini Kernel (inti dari sistem operasi), umumnya shell menyediakan prompt sebagai user interface, tempat dimana user dapat mengetikkan perintah-perintah yang diinginkan baik berupa perintah internal shell (internal command), ataupun perintah eksekusi file program (eksternal command), selain itu memungkinkan user menyusun sekumpulan perintah pada sebuah atau beberapa file untuk dieksekusi sebagai program.</description>
+        <description>&lt;p&gt;&lt;strong&gt;A. Pendahuluan&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Pada kali ini, saya akan memposting tentang bagaimana mengatasi masalah yang biasa ditemukan saat melakukan update linux.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;B. Pengertian&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Shell adalah program (penterjemah perintah)yang menjembatani user dengan sistem operasi dalam hal ini Kernel (inti dari sistem operasi), umumnya shell menyediakan prompt sebagai user interface, tempat dimana user dapat mengetikkan perintah-perintah yang diinginkan baik berupa perintah internal shell (internal command), ataupun perintah eksekusi file program (eksternal command), selain itu memungkinkan user menyusun sekumpulan perintah pada sebuah atau beberapa file untuk dieksekusi sebagai program. Salah satu perintah dari shell yaitu apt-get update, namun terkadang mengalami error saat menjalankan perintah tersebut.&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -306,10 +300,10 @@ Shell adalah program (penterjemah perintah)yang menjembatani user dengan sistem 
         <link>https://sibunglon.com/2017/08/02/mengatasi-grub-linux-yang-error/</link>
         <pubDate>Wed, 02 Aug 2017 16:51:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/02/mengatasi-grub-linux-yang-error/</guid>
-        <description>Pendahuluan
-GNU GRUB (singkat untuk GNU GRand Bersatu Bootloader) adalah boot loader paket dari proyek GNU . GRUB adalah implementasi referensi dari Free Software Foundation &amp;rsquo;s Multiboot Keterangan , yang menyediakan pengguna pilihan untuk boot salah satu dari beberapa sistem operasi yang terpasang di komputer atau pilih tertentu kernel konfigurasi yang tersedia pada partisi sistem operasi tertentu.
-Maksud dan Tujuan
-Tujuan dari postingan ini yaitu agar pembaca yang memiliki masalah yang serupa, maka ia dapat mengatasinya sendiri tanpa membawa ke service center.</description>
+        <description>&lt;p&gt;&lt;strong&gt;Pendahuluan&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;GNU GRUB (singkat untuk GNU GRand Bersatu Bootloader) adalah boot loader paket dari proyek GNU . GRUB adalah implementasi referensi dari Free Software Foundation &amp;rsquo;s Multiboot Keterangan , yang menyediakan pengguna pilihan untuk boot salah satu dari beberapa sistem operasi yang terpasang di komputer atau pilih tertentu kernel konfigurasi yang tersedia pada partisi sistem operasi tertentu.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Maksud dan Tujuan&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Tujuan dari postingan ini yaitu agar pembaca yang memiliki masalah yang serupa, maka ia dapat mengatasinya sendiri tanpa membawa ke service center. Karena waktu saya mengalami ini, laptop saya direinstall sampai 3-4 kali tetapi masalahnya tetap sama, dengan maksud dari postingan ini untuk mempermudah pengunjung mengatasi masalah tersebut.&lt;/p&gt;</description>
       </item>
     
   </channel>

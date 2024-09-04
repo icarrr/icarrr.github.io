@@ -15,9 +15,16 @@
         <link>https://sibunglon.com/2020/10/19/create-multipart-zip-unzip-multipart/</link>
         <pubDate>Mon, 19 Oct 2020 00:24:17 +0800</pubDate>
         <guid>https://sibunglon.com/2020/10/19/create-multipart-zip-unzip-multipart/</guid>
-        <description>Need to transfer or send a file zip but transfer media limit the size file? Create a multipart file using split command and join the file on receiver host.
-Create a file zip.
-$ zip SWhite.zip S.white-TKTlqehU_ro.mp4 $ ls -lha total 675744 drwxr-xr-x@ 5 faizarseptiawan 160B Oct 19 00:28 . drwx------@ 15 faizarseptiawan 480B Oct 19 00:00 .. -rw-r--r-- 1 faizarseptiawan 165M Jun 23 04:11 S.white-TKTlqehU_ro.mp4 -rw-r--r-- 1 faizarseptiawan 165M Oct 19 00:28 SWhite.</description>
+        <description>&lt;p&gt;Need to transfer or send a file zip but transfer media limit the size file? Create a multipart file using split command and join the file on receiver host.&lt;/p&gt;
+&lt;p&gt;Create a file zip.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ zip SWhite.zip S.white-TKTlqehU_ro.mp4
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ ls -lha
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;total &lt;span class=&#34;m&#34;&gt;675744&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;drwxr-xr-x@  &lt;span class=&#34;m&#34;&gt;5&lt;/span&gt; faizarseptiawan 160B Oct &lt;span class=&#34;m&#34;&gt;19&lt;/span&gt; 00:28 .
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;drwx------@ &lt;span class=&#34;m&#34;&gt;15&lt;/span&gt; faizarseptiawan 480B Oct &lt;span class=&#34;m&#34;&gt;19&lt;/span&gt; 00:00 ..
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-rw-r--r--   &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; faizarseptiawan 165M Jun &lt;span class=&#34;m&#34;&gt;23&lt;/span&gt; 04:11 S.white-TKTlqehU_ro.mp4
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-rw-r--r--   &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; faizarseptiawan 165M Oct &lt;span class=&#34;m&#34;&gt;19&lt;/span&gt; 00:28 SWhite.zip
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
       </item>
     
       <item>
@@ -25,10 +32,38 @@ $ zip SWhite.zip S.white-TKTlqehU_ro.mp4 $ ls -lha total 675744 drwxr-xr-x@ 5 fa
         <link>https://sibunglon.com/2019/12/09/tree-ignore-directories-with-patterns/</link>
         <pubDate>Mon, 09 Dec 2019 11:01:45 +0700</pubDate>
         <guid>https://sibunglon.com/2019/12/09/tree-ignore-directories-with-patterns/</guid>
-        <description>Tree is a linux command that provides a list of recursive directories or a tree can display all file and directory listings in a directory.
-Comparison of ls and tree usage
-Tree:
-$ tree Bash Bash ├── BackupRestore-dbOpenEdx │ ├── backup_mongo.sh │ ├── backup_mysql.sh │ ├── restore_mongo.sh │ └── restore_mysql.sh ├── auto-update-dplk_env │ ├── main.sh │ └── playbook │ ├── backend.yml │ ├── config.yml │ └── frontend.yml ├── backup\ database\ postgres.</description>
+        <description>&lt;p&gt;&lt;strong&gt;Tree&lt;/strong&gt; is a linux command that provides a list of recursive directories or a tree can display all file and directory listings in a directory.&lt;/p&gt;
+&lt;p&gt;Comparison of &lt;strong&gt;ls&lt;/strong&gt; and &lt;strong&gt;tree&lt;/strong&gt; usage&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tree&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ tree Bash
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Bash
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├── BackupRestore-dbOpenEdx
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│   ├── backup_mongo.sh
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│   ├── backup_mysql.sh
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│   ├── restore_mongo.sh
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│   └── restore_mysql.sh
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├── auto-update-dplk_env
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│   ├── main.sh
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│   └── playbook
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│       ├── backend.yml
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│       ├── config.yml
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│       └── frontend.yml
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├── backup&lt;span class=&#34;se&#34;&gt;\ &lt;/span&gt;database&lt;span class=&#34;se&#34;&gt;\ &lt;/span&gt;postgres.sh
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├── backup_db.sh
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├── compress_backup.sh
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├── espeak.sh
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├── get-date-backupdb-dplk.sh
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├── get-log-core.sh
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├── get-log-tmp.sh
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├── import.sh
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├── loop&lt;span class=&#34;se&#34;&gt;\ &lt;/span&gt;change&lt;span class=&#34;se&#34;&gt;\ &lt;/span&gt;time.sh
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├── newProject.sh
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├── scp_Dilla.sh
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;└── uni.sh
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;m&#34;&gt;3&lt;/span&gt; directories, &lt;span class=&#34;m&#34;&gt;20&lt;/span&gt; files
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;~/G/G/icarrr ❯❯❯
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
       </item>
     
       <item>
@@ -36,13 +71,13 @@ $ tree Bash Bash ├── BackupRestore-dbOpenEdx │ ├── backup_mongo.s
         <link>https://sibunglon.com/2019/11/08/istilah-istilah-yang-biasa-digunakan-orang-kantoran/</link>
         <pubDate>Fri, 08 Nov 2019 14:24:33 +0700</pubDate>
         <guid>https://sibunglon.com/2019/11/08/istilah-istilah-yang-biasa-digunakan-orang-kantoran/</guid>
-        <description>Sebagai salah satu orang yang biasa jalan-jalan ke kantor orang, disini saya ingin berbagi istilah-istilah yang biasa saya dengar atau saya temui di lingkungan pekerjaan mereka dan sudah saya tahu arti/maksudnya 😄
-Istilah-Istilah Umum: PIC (Person In Charge)
-Istilah ini menunjukkan orang yang bertanggung jawab dalam menangani hal tertentu.
-FYI (For Your Information)
-Isitilah ini biasanya digunakan dalam email untuk memberitahukan suatu informasi.
-TBO (To Be Obtained)
-Merujuk ke suatu hal yang harus dilengkapi biasa berkaitan dengan dokumen.</description>
+        <description>&lt;p&gt;Sebagai salah satu orang yang biasa jalan-jalan ke kantor orang, disini saya ingin berbagi istilah-istilah yang biasa saya dengar atau saya temui di lingkungan pekerjaan mereka dan sudah saya tahu arti/maksudnya 😄&lt;/p&gt;
+&lt;h3 id=&#34;istilah-istilah-umum&#34;&gt;Istilah-Istilah Umum:&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;PIC (Person In Charge)&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Istilah ini menunjukkan orang yang bertanggung jawab dalam menangani hal tertentu.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;FYI (For Your Information)&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Isitilah ini biasanya digunakan dalam email untuk memberitahukan suatu informasi.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;TBO (To Be Obtained)&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -50,8 +85,9 @@ Merujuk ke suatu hal yang harus dilengkapi biasa berkaitan dengan dokumen.</desc
         <link>https://sibunglon.com/2019/05/04/analisis-swot/</link>
         <pubDate>Sat, 04 May 2019 22:32:54 +0700</pubDate>
         <guid>https://sibunglon.com/2019/05/04/analisis-swot/</guid>
-        <description>SWOT SWOT adalah metode perencanaan strategis yang digunakan untuk mengevaluasi kekuatan (strengths), kelemahan (weaknesses), peluang (opportunities), dan ancaman (threats) dalam suatu proyek atau suatu spekulasi bisnis.
-Banyak yang menggunakan analisis SWOT untuk menganalisa situasi, kondisi, dan faktor yang mempengaruhi pengembangan bisnis dalam suatu perusahaan. Analisa ini digunakan baik sebelum memulai membangun bisnis atau sudah membangun bisnis. Bahkan ada yang menyebut analisis SWOT merupakan analisa paling ajaib yang dapat memberikan proses penyelesaian permasalahan pada bisnis.</description>
+        <description>&lt;h3 id=&#34;swot&#34;&gt;SWOT&lt;/h3&gt;
+&lt;p&gt;SWOT adalah metode perencanaan strategis yang digunakan untuk mengevaluasi kekuatan (strengths), kelemahan (weaknesses), peluang (opportunities), dan ancaman (threats) dalam suatu proyek atau suatu spekulasi bisnis.&lt;/p&gt;
+&lt;p&gt;Banyak yang menggunakan analisis SWOT untuk menganalisa situasi, kondisi, dan faktor yang mempengaruhi pengembangan bisnis dalam suatu perusahaan. Analisa ini digunakan baik sebelum memulai membangun bisnis atau sudah membangun bisnis. Bahkan ada yang menyebut analisis SWOT merupakan analisa paling ajaib yang dapat memberikan proses penyelesaian permasalahan pada bisnis. Tujuan utama menggunakan analisis tersebut yaitu supaya pebisnis dapat melakukan pengambilan keputusan dengan bijak dalam proses pengembangan bisnis dan sebagai alat instrument utama dalam melaksanakan strategi bisnis yang akan dijalankan.&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -59,10 +95,10 @@ Banyak yang menggunakan analisis SWOT untuk menganalisa situasi, kondisi, dan fa
         <link>https://sibunglon.com/2017/10/12/mengenal-vlan-virtual-lan/</link>
         <pubDate>Thu, 12 Oct 2017 09:08:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/12/mengenal-vlan-virtual-lan/</guid>
-        <description>A. Pendahuluan
-Pada kesempatan kali ini ane akan share sedikit artikel tentang VLAN. Oke langsung saja silahkan disimak.
-1) Pengertian
-Virtual LAN atau disingkat VLAN merupakan sekelompok perangkat pada satu LAN atau lebih yang dikonfigurasikan (menggunakan perangkat lunak pengelolaan) sehingga dapat berkomunikasi seperti halnya bila perangkat tersebut terhubung ke jalur yang sama, padahal sebenarnya perangkat tersebut berada pada sejumlah segmen LAN yang berbeda. Vlan dibuat dengan menggunakan jaringan pihak ke tiga.</description>
+        <description>&lt;p&gt;&lt;strong&gt;A. Pendahuluan&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Pada kesempatan kali ini ane akan share sedikit artikel tentang VLAN. Oke langsung saja silahkan disimak.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1) Pengertian&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Virtual LAN atau disingkat VLAN merupakan sekelompok perangkat pada satu LAN atau lebih yang dikonfigurasikan (menggunakan perangkat lunak pengelolaan) sehingga dapat berkomunikasi seperti halnya bila perangkat tersebut terhubung ke jalur yang sama, padahal sebenarnya perangkat tersebut berada pada sejumlah segmen LAN yang berbeda. Vlan dibuat dengan menggunakan jaringan pihak ke tiga. VLAN merupakan sebuah bagian kecil jaringan IP yang terpisah secara logik. VLAN memungkinkan beberapa jaringan IP dan jaringan-jaringan kecil (subnet) berada dalam jaringan switched switched yang sama. Agar computer bisa berkomunikasi pada VLAN yang sama, setiap computer harus memiliki sebuah alamat IP dan Subnet Mask yang sesuai dengan VLAN tersebut. Switch harus dikonfigurasi dengan VLAN dan setiap port dalam VLAN harus didaftarkan ke VLAN. Sebuah port switch yang telah dikonfigurasi dengan sebuah VLAN tunggal disebut sebagai access port.&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -70,10 +106,10 @@ Virtual LAN atau disingkat VLAN merupakan sekelompok perangkat pada satu LAN ata
         <link>https://sibunglon.com/2017/10/10/tips-menemukan-referensi-website-untuk-belajar-linux/</link>
         <pubDate>Tue, 10 Oct 2017 17:27:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/10/tips-menemukan-referensi-website-untuk-belajar-linux/</guid>
-        <description>A. Pendahuluan
-Halo teman2 blogger, pada kesempatan kali ini saya akan mmebagikan sebuah artikel sederhana namun bermanfaat bagi pembaca sekalian terutama bagi yang ingin belajar linux agar mahir menggunakannya. Monggo mari di simak artikel yang saya bagikan berikut ini.
-1. Pengertian
-Web referensi adalah suatu website atau situs atau laman yang memuat pembahasan ataupun tutorial yang berisi materi yang dapat di jadikan patokan atau dasar untuk membuat suatu artikel ataupun tutorial.</description>
+        <description>&lt;p&gt;&lt;strong&gt;A. Pendahuluan&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Halo teman2 blogger, pada kesempatan kali ini saya akan mmebagikan sebuah artikel sederhana namun bermanfaat bagi pembaca sekalian terutama bagi yang ingin belajar linux agar mahir menggunakannya. Monggo mari di simak artikel yang saya bagikan berikut ini.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1. Pengertian&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Web referensi adalah suatu website atau situs atau laman yang memuat pembahasan ataupun tutorial yang berisi materi yang dapat di jadikan patokan atau dasar untuk membuat suatu artikel ataupun tutorial.&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -81,13 +117,11 @@ Web referensi adalah suatu website atau situs atau laman yang memuat pembahasan 
         <link>https://sibunglon.com/2017/09/18/k3-kesehatan-keselamatan-dan-keamanan-kerja/</link>
         <pubDate>Mon, 18 Sep 2017 02:31:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/18/k3-kesehatan-keselamatan-dan-keamanan-kerja/</guid>
-        <description>PENDAHULUAN
-Pada kesempatan ini kita akan membahas sedikit mengenai K3 atau Kesehatan, Keselamatan, Keamanan Kerja. kenapa kita membahas hal ini, karna di dalam melakukan pekerjaan kita harus memahmi atau memakai yang namanya K3.
-PENGERTIAN
-Filosofi (Mangkunegara)
-Suatu pemikiran dan upaya untuk menjamin keutuhan dan kesempurnaan jasmani maupun rohani tenaga kerja khususnya dan manusia pada umumnya serta hasil karya dan budaya untuk menuju masyarakat adil dan makmur.
-Keilmuan
-Semua ilmu dan penerapannya untuk mencegah terjadinya kecelakaan kerja, penyakit akibat kerja (PAK), kebakaran, peledakan dan pencemaran lingkungan.</description>
+        <description>&lt;p&gt;&lt;strong&gt;PENDAHULUAN&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Pada kesempatan ini kita akan membahas sedikit mengenai K3 atau Kesehatan, Keselamatan, Keamanan Kerja. kenapa kita membahas hal ini, karna di dalam melakukan pekerjaan kita harus memahmi atau memakai yang namanya K3.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;PENGERTIAN&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Filosofi (Mangkunegara)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Suatu pemikiran dan upaya untuk menjamin keutuhan dan kesempurnaan jasmani maupun rohani tenaga kerja khususnya dan manusia pada umumnya serta hasil karya dan budaya untuk menuju masyarakat adil dan makmur.&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -95,11 +129,11 @@ Semua ilmu dan penerapannya untuk mencegah terjadinya kecelakaan kerja, penyakit
         <link>https://sibunglon.com/2017/09/12/pengenalan-sop-standar-operasional-prosedur/</link>
         <pubDate>Tue, 12 Sep 2017 01:27:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/12/pengenalan-sop-standar-operasional-prosedur/</guid>
-        <description>A. Pendahuluan
-Pada blog kali ini saya akan memperkenalkan tentang SOP. pasti kalian bertanya apa itu SOP selanjut nya akan di jelaskan di bawah ini.
-1) Pengertian
-SOP
-Prosedur operasi standar istilah dalam bahasa Indonesia, atau dalam bahasa Inggris disebut SOP (Standart Oprational Procedur), digunakan dalam berbagai konteks yang berbeda, termasuk kesehatan, penerbangan, teknik, pendidikan, industri, dan militer. Dengan melakukan SOP perusahaan dapat memastikan suatu aktivitas bisnis bisa berjalan sesuai dengan standard yang diharapkan.</description>
+        <description>&lt;p&gt;&lt;strong&gt;A. Pendahuluan&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Pada blog kali ini saya akan memperkenalkan tentang SOP. pasti kalian bertanya apa itu SOP selanjut nya akan di jelaskan di bawah ini.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1) Pengertian&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;SOP&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Prosedur operasi standar istilah dalam bahasa Indonesia, atau dalam bahasa Inggris disebut SOP (Standart Oprational Procedur), digunakan dalam berbagai konteks yang berbeda, termasuk kesehatan, penerbangan, teknik, pendidikan, industri, dan militer. Dengan melakukan SOP perusahaan dapat memastikan suatu aktivitas bisnis bisa berjalan sesuai dengan standard yang diharapkan. Pendokumentasian SOP diperlukan untuk menghasilkan system kualitas dan teknis yang konsisten dan mempertahankan kualitas control.&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -107,16 +141,9 @@ Prosedur operasi standar istilah dalam bahasa Indonesia, atau dalam bahasa Inggr
         <link>https://sibunglon.com/2017/09/07/wireless-concept/</link>
         <pubDate>Thu, 07 Sep 2017 14:53:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/07/wireless-concept/</guid>
-        <description>A. Pendahuluan
-hay guys, kali ini saya akan melakukan pemahaman tentang Wireless Concept
-1. Pengertian
-Wireless Concept ini merupakan suatu ketentuan-ketentuan yang harus dipatuhi dalam pembangunan jaringan wifi atau jaringan komputer
-2. Latar belakang
-Dalam pembanguan jaringan wifi terkadang banyak permasalahan yang timbul karena menyepelekan wireless concept ini.
-3. Maksud &amp;amp; Tujuan
-Meminimalisir kesalahan karena hal yang sebenarnya sepele.
-4. Hasil yang di harapkan
-Dapat memahami dan dapat menerapkan wireless concept pada saat mengerjakan proyek.</description>
+        <description>&lt;p&gt;&lt;strong&gt;A. Pendahuluan&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;hay guys, kali  ini saya akan melakukan pemahaman tentang Wireless Concept&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fthumbs.dreamstime.com%2Ft%2Fwireless-technology-logo-3234676.jpg&amp;amp;f=1&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -124,20 +151,17 @@ Dapat memahami dan dapat menerapkan wireless concept pada saat mengerjakan proye
         <link>https://sibunglon.com/2017/08/28/packet-headertahapan-terjadinya-komunikasi/</link>
         <pubDate>Mon, 28 Aug 2017 12:46:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/28/packet-headertahapan-terjadinya-komunikasi/</guid>
-        <description>A. PENGERTIAN
-Packet header adalah paket yang kejadian saat seorang akan mengirim atau berkomunikasi lewat jaringan,
-B. LATAR BELAKANG
-Pemahaman tentang tahapan dan proses dikirimnya dan di terimanya data, yang dikirim lewat jaringan.
-C. MAKSUD DAN TUJUAN
-Paham dan bisa mengidentifikasi kesalahan atau pengiriman paket data.
-D. WAKTU
-2 Jam
-E. ALAT DAN BAHAN
-~ Laptop
-~ LCD proyektor
-~ Koneksi internet
-F. PEMBAHASAN
-Syarat terjadinya komunikasi, ada yang akan dikirim atau ada datanya seperti gambar diatas, sudah jelas, dari data lanjut ke Options ( if any ) atau pilihan dari si pengirim akan kah paket data itu dikirim atau tidak, jika hal ini tidak jelas maka data tidak akan sampai ke tujuan.</description>
+        <description>&lt;p&gt;&lt;strong&gt;A. PENGERTIAN&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Packet header adalah paket yang  kejadian saat seorang akan mengirim atau berkomunikasi lewat jaringan,&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;B. LATAR BELAKANG&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Pemahaman tentang tahapan dan proses dikirimnya dan  di terimanya data, yang dikirim lewat jaringan.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;C. MAKSUD DAN TUJUAN&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Paham dan bisa mengidentifikasi kesalahan atau pengiriman paket data.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;D. WAKTU&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;2 Jam&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;E. ALAT DAN BAHAN&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;~ Laptop&lt;/p&gt;
+&lt;p&gt;~ LCD proyektor&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -145,12 +169,12 @@ Syarat terjadinya komunikasi, ada yang akan dikirim atau ada datanya seperti gam
         <link>https://sibunglon.com/2017/08/21/mengenal-perintah-perintah-dasar-di-linux/</link>
         <pubDate>Mon, 21 Aug 2017 21:40:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/21/mengenal-perintah-perintah-dasar-di-linux/</guid>
-        <description>A. Pendahuluan
-Pada kesempatan kali ini, saya akan memposting beberapa perintah-perintah dasar dari sistem operasi linux. Untuk lebih jelasnya akan di jelaskan sebagai berikut.
-B. Pengertian
-Linux identik dengan penggunaan console terminal yang mengharuskan kita menghafal perintah-perintah yang ada. Perintah-perintah tersebut bisa berupa singkatan atau nama asli sesuai fungsinya.
-C. Latar Belakang
-Semakin lama, semakin banyak para pengguna komputer yang menjadikan Linux sebagai Sistem Operasi utamanya. Selain sifatnya yang open source, ternyata sistem operasi Linux ini juga lebih banyak menuntut kita untuk terus mempelajarinya.</description>
+        <description>&lt;p&gt;&lt;strong&gt;A. Pendahuluan&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Pada kesempatan kali ini, saya akan memposting beberapa perintah-perintah dasar dari sistem operasi linux. Untuk lebih jelasnya akan di jelaskan sebagai berikut.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;B. Pengertian&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Linux identik dengan penggunaan console terminal yang mengharuskan kita menghafal perintah-perintah yang ada. Perintah-perintah tersebut bisa berupa singkatan atau nama asli sesuai fungsinya.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;C. Latar Belakang&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Semakin lama, semakin banyak para pengguna komputer yang menjadikan Linux sebagai Sistem Operasi utamanya. Selain sifatnya yang open source, ternyata sistem operasi Linux ini juga lebih banyak menuntut kita untuk terus mempelajarinya. Bahkan saat ini, Linux sudah mulai memasuki dunia pendidikan, namun banyak pengguna yang belum mengetahui perintah-perintah dasar linux.&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -158,9 +182,7 @@ Semakin lama, semakin banyak para pengguna komputer yang menjadikan Linux sebaga
         <link>https://sibunglon.com/2017/08/12/step-by-step-melakukan-perencanaan-kerja/</link>
         <pubDate>Sat, 12 Aug 2017 16:21:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/12/step-by-step-melakukan-perencanaan-kerja/</guid>
-        <description>Apa yang Anda pikirkan ketika mendengar ketika mendengar kata Perencanaan kerja?
-Apakah Anda merasa malas? atau merasa membuang waktu? Ada orang yang merasa bahwa perencanaan itu penting tapi tidak mau membuatnya, ada juga yang memulai membuat perencanaan tapi tidak selesai atau merasa terbeban
-ketika perencanaan telah disusun dengan baik ada yang tidak tercapai dan ada juga yang menganggap hal ini tidak perlu dilakukan karena menyukai spontanitas atau berpendapat bahwa perencanaan hanya menghabiskan waktu.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://aquariuslearning.co.id/wp-content/uploads/2013/07/bigstock_A_team_collaborating_to_build__10772312-300x225.jpg&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -168,9 +190,9 @@ ketika perencanaan telah disusun dengan baik ada yang tidak tercapai dan ada jug
         <link>https://sibunglon.com/2017/08/07/osi-layer/</link>
         <pubDate>Mon, 07 Aug 2017 14:30:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/07/osi-layer/</guid>
-        <description>A. Pengertian OSI Layer
-OSI atau Model Open Systems Interconnection diciptakan oleh InternationalOrganization for Standardization (ISO) yang menyediakan kerangka logikaterstruktur bagaimana proses komunikasi data berinteraksi melalui jaringan.Standard ini dikembangkan untuk industri komputer agar komputer dapat berkomunikasi pada jaringan yang berbeda secara efisien.
-Model Layer OSI dibagi dalam dua group: “upper layer ” dan “lower layer ”. “Upper layer” fokus pada applikasi pengguna dan bagaimana file direpresentasikan di komputer. Untuk Network Engineer, bagian utama yang menjadi perhatiannya adalah pada “lower layer”.</description>
+        <description>&lt;p&gt;&lt;strong&gt;A. Pengertian OSI Layer&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;OSI atau Model Open Systems Interconnection diciptakan oleh InternationalOrganization for Standardization (ISO) yang menyediakan kerangka logikaterstruktur bagaimana proses komunikasi data berinteraksi melalui jaringan.Standard ini dikembangkan untuk industri komputer agar komputer dapat berkomunikasi pada jaringan yang berbeda secara efisien.&lt;/p&gt;
+&lt;p&gt;Model Layer OSI dibagi dalam dua group: “upper layer ” dan “lower layer ”. “Upper layer” fokus pada applikasi pengguna dan bagaimana file direpresentasikan di komputer. Untuk Network Engineer, bagian utama yang menjadi perhatiannya adalah pada “lower layer”. Lower layer adalah intisarikomunikasi data melalui jaringan aktual.Tujuan utama penggunaan model OSI adalah untuk membantu desainer jaringan memahami fungsi dari tiap-tiap layer yang berhubungan dengan aliran komunikasi data. Termasuk jenis-jenis protoklol jaringan dan metodetransmisi. Model dibagi menjadi 7 layer, dengan karakteristik dan fungsinyamasing-masing. Tiap layer harus dapat berkomunikasi dengan layer di atasnyamaupun dibawahnya secara langsung melalui serentetan protokol dan standard.&lt;/p&gt;</description>
       </item>
     
   </channel>

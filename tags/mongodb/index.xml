@@ -15,9 +15,7 @@
         <link>https://sibunglon.com/2020/09/05/create-a-read-only-mongodb-user/</link>
         <pubDate>Sat, 05 Sep 2020 03:13:20 +0800</pubDate>
         <guid>https://sibunglon.com/2020/09/05/create-a-read-only-mongodb-user/</guid>
-        <description>There are times when you need account read only access to a database.
-To create a read only database user MongoDB, do the following steps:
-Login as a MongoDB administrator. $ mongo -u admin -p --authenticationDatabase admin Show list of database on MongoDB. &amp;gt;&amp;gt;&amp;gt; show dbs Select database. &amp;gt;&amp;gt;&amp;gt; use edxapp Create a new user with permission read only on the database. &amp;gt;&amp;gt;&amp;gt; db.createUser({user: &amp;#34;edxapp_read&amp;#34;, pwd: &amp;#34;password&amp;#34;, roles: [{role: &amp;#34;read&amp;#34;, db: &amp;#34;edxapp&amp;#34;}]}) Done.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/MongoDB-logo.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
   </channel>

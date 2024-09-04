@@ -148,55 +148,55 @@ Pengertian Subnetting adalah upaya/proses untuk memecah sebuah network dengan ju
 <p>Subnetting dilakukan pada saat konfigurasi interface. Penerapan subnet mask pada IP Address akan mendefinisikan 2 buah address baru, yakni <strong>Network Address</strong> dan <strong>Broadcast Address</strong>. Network address didefinisikan dengan menset seluruh bit host berharga 0, sedangkan broadcast address dengan menset bit host berharga 1. Seperti yang telah dijelasakan pada bagian sebelumnya, network address adalah alamat network yang berguna pada informasi routing. Suatu host yang tidak perlu mengetahui  address seluruh host yang ada pada network yang lain. Informasi yang dibutuhkannya hanyalah address dari network yang akan dihubungi serta gateway untuk mencapai network tersebut.</p>
 <p>Penulisan IP address umumnya adalah dengan 192.168.1.2. Namun adakalanya ditulis dengan 192.168.1.2/24, apa ini artinya? Artinya bahwa IP address 192.168.1.2 dengan subnet mask 255.255.255.0. Lho kok bisa seperti itu?   Ya, /24 diambil dari penghitungan bahwa 24 bit subnet mask diselubung dengan binari 1. Atau dengan kata lain, subnet masknya adalah : 11111111.11111111.11111111.00000000  (255.255.255.0). Konsep ini yang disebut dengan CIDR (Classless Inter-Domain Routing) yang diperkenalkan pertama kali tahun 1992 oleh IEFT. Pertanyaan berikutnya adalah Subnet Mask berapa saja yang bisa digunakan untuk melakukan subnetting? Ini terjawab dengan tabel di bawah:</p>
 <table>
-<thead>
-<tr>
-<th>KELAS A</th>
-<th>KELAS B</th>
-<th>KELAS C</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>255.0.0.0</td>
-<td>255.255.0.0/16</td>
-<td>255.255.255.0/24</td>
-</tr>
-<tr>
-<td>255.128.0.0/9</td>
-<td>255.255.128.0/17</td>
-<td>255.255.255.128/25</td>
-</tr>
-<tr>
-<td>255.192.0.0/10</td>
-<td>255.255.192.0/18</td>
-<td>255.255.255.192/26</td>
-</tr>
-<tr>
-<td>255.224.0.0/11</td>
-<td>255.255.224.0/19</td>
-<td>255.255.255.224/27</td>
-</tr>
-<tr>
-<td>255.240.0.0/12</td>
-<td>255.255.240.0/20</td>
-<td>255.255.255.240/28</td>
-</tr>
-<tr>
-<td>255.248.0.0/13</td>
-<td>255.255.248.0/21</td>
-<td>255.255.255.248/29</td>
-</tr>
-<tr>
-<td>255.252.0.0/14</td>
-<td>255.255.252.0/22</td>
-<td>255.255.255.252/30</td>
-</tr>
-<tr>
-<td>255.254.0.0/15</td>
-<td>255.255.254.0/23</td>
-<td>255.255.255.254/31</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">KELAS A</th>
+          <th style="text-align: left">KELAS B</th>
+          <th style="text-align: left">KELAS C</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">255.0.0.0</td>
+          <td style="text-align: left">255.255.0.0/16</td>
+          <td style="text-align: left">255.255.255.0/24</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">255.128.0.0/9</td>
+          <td style="text-align: left">255.255.128.0/17</td>
+          <td style="text-align: left">255.255.255.128/25</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">255.192.0.0/10</td>
+          <td style="text-align: left">255.255.192.0/18</td>
+          <td style="text-align: left">255.255.255.192/26</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">255.224.0.0/11</td>
+          <td style="text-align: left">255.255.224.0/19</td>
+          <td style="text-align: left">255.255.255.224/27</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">255.240.0.0/12</td>
+          <td style="text-align: left">255.255.240.0/20</td>
+          <td style="text-align: left">255.255.255.240/28</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">255.248.0.0/13</td>
+          <td style="text-align: left">255.255.248.0/21</td>
+          <td style="text-align: left">255.255.255.248/29</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">255.252.0.0/14</td>
+          <td style="text-align: left">255.255.252.0/22</td>
+          <td style="text-align: left">255.255.255.252/30</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">255.254.0.0/15</td>
+          <td style="text-align: left">255.255.254.0/23</td>
+          <td style="text-align: left">255.255.255.254/31</td>
+      </tr>
+  </tbody>
 </table>
 <p>NB : Subnetmask/CIDR</p>
 <p>Sebuah network mask membantu kita untuk mengetahui yang mana bagian untuk network dan yang mana bagian untuk node. Class A, B, danC mempunyai default masks, yang sering disebut juga natural masks, yaitu:</p>
@@ -251,45 +251,45 @@ Pengertian Subnetting adalah upaya/proses untuk memecah sebuah network dengan ju
 <li>Bagaimana dengan alamat host dan broadcast yang valid? Kita langsung buat tabelnya. Sebagai catatan, host pertama adalah 1 angka setelah subnet, dan broadcast adalah 1 angka sebelum subnet berikutnya.</li>
 </ul>
 <table>
-<thead>
-<tr>
-<th>Key</th>
-<th>Value</th>
-<th>Value</th>
-<th>Value</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Subnet</strong></td>
-<td>192.168.1.0</td>
-<td>192.168.1.64</td>
-<td>192.168.1.128</td>
-<td>192.168.1.192</td>
-</tr>
-<tr>
-<td><strong>Host Pertama</strong></td>
-<td>192.168.1.1</td>
-<td>192.168.1.65</td>
-<td>192.168.1.129</td>
-<td>192.168.1.193</td>
-</tr>
-<tr>
-<td><strong>Host Terakhir</strong></td>
-<td>192.168.1.62</td>
-<td>192.168.1.126</td>
-<td>192.168.1.190</td>
-<td>192.168.1.254</td>
-</tr>
-<tr>
-<td><strong>Broadcast</strong></td>
-<td>192.168.1.63</td>
-<td>192.168.1.127</td>
-<td>192.168.1.191</td>
-<td>192.168.1.255</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">Key</th>
+          <th style="text-align: left">Value</th>
+          <th style="text-align: left">Value</th>
+          <th style="text-align: left">Value</th>
+          <th style="text-align: left">Value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>Subnet</strong></td>
+          <td style="text-align: left">192.168.1.0</td>
+          <td style="text-align: left">192.168.1.64</td>
+          <td style="text-align: left">192.168.1.128</td>
+          <td style="text-align: left">192.168.1.192</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Host Pertama</strong></td>
+          <td style="text-align: left">192.168.1.1</td>
+          <td style="text-align: left">192.168.1.65</td>
+          <td style="text-align: left">192.168.1.129</td>
+          <td style="text-align: left">192.168.1.193</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Host Terakhir</strong></td>
+          <td style="text-align: left">192.168.1.62</td>
+          <td style="text-align: left">192.168.1.126</td>
+          <td style="text-align: left">192.168.1.190</td>
+          <td style="text-align: left">192.168.1.254</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Broadcast</strong></td>
+          <td style="text-align: left">192.168.1.63</td>
+          <td style="text-align: left">192.168.1.127</td>
+          <td style="text-align: left">192.168.1.191</td>
+          <td style="text-align: left">192.168.1.255</td>
+      </tr>
+  </tbody>
 </table>
 <ol start="3">
 <li>kita coba satu soal untuk Kelas B dengan network address  172.16.0.0/18.</li>
@@ -313,45 +313,45 @@ Pengertian Subnetting adalah upaya/proses untuk memecah sebuah network dengan ju
 </li>
 </ul>
 <table>
-<thead>
-<tr>
-<th>Key</th>
-<th>Value</th>
-<th>Value</th>
-<th>Value</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Subnet</strong></td>
-<td>172.16.0.0</td>
-<td>172.16.64.0</td>
-<td>172.16.128.0</td>
-<td>172.16.192.0</td>
-</tr>
-<tr>
-<td><strong>Host Pertama</strong></td>
-<td>172.16.0.1</td>
-<td>172.16.64.1</td>
-<td>172.16.128.1</td>
-<td>172.16.192.1</td>
-</tr>
-<tr>
-<td><strong>Host Terakhir</strong></td>
-<td>172.16.63.254</td>
-<td>172.16.127.254</td>
-<td>172.16.191.254</td>
-<td>172.16.255.254</td>
-</tr>
-<tr>
-<td><strong>Broadcast</strong></td>
-<td>172.16.63.255</td>
-<td>172.16.127.255</td>
-<td>172.16.191.255</td>
-<td>172.16.255.255</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">Key</th>
+          <th style="text-align: left">Value</th>
+          <th style="text-align: left">Value</th>
+          <th style="text-align: left">Value</th>
+          <th style="text-align: left">Value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>Subnet</strong></td>
+          <td style="text-align: left">172.16.0.0</td>
+          <td style="text-align: left">172.16.64.0</td>
+          <td style="text-align: left">172.16.128.0</td>
+          <td style="text-align: left">172.16.192.0</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Host Pertama</strong></td>
+          <td style="text-align: left">172.16.0.1</td>
+          <td style="text-align: left">172.16.64.1</td>
+          <td style="text-align: left">172.16.128.1</td>
+          <td style="text-align: left">172.16.192.1</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Host Terakhir</strong></td>
+          <td style="text-align: left">172.16.63.254</td>
+          <td style="text-align: left">172.16.127.254</td>
+          <td style="text-align: left">172.16.191.254</td>
+          <td style="text-align: left">172.16.255.254</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Broadcast</strong></td>
+          <td style="text-align: left">172.16.63.255</td>
+          <td style="text-align: left">172.16.127.255</td>
+          <td style="text-align: left">172.16.191.255</td>
+          <td style="text-align: left">172.16.255.255</td>
+      </tr>
+  </tbody>
 </table>
 <ol start="4">
 <li>Bagaimana dengan network  address 172.16.0.0/25.</li>
@@ -365,45 +365,45 @@ Pengertian Subnetting adalah upaya/proses untuk memecah sebuah network dengan ju
 <p>– Blok Subnet = 256 – 128 = 128.</p>
 <p>– Alamat host dan broadcast yang valid?</p>
 <table>
-<thead>
-<tr>
-<th>Key</th>
-<th>Value</th>
-<th>Value</th>
-<th>Value</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Subnet</strong></td>
-<td>172.16.0.0</td>
-<td>172.16.0.128</td>
-<td>172.16.1.0</td>
-<td>172.16.255.128</td>
-</tr>
-<tr>
-<td><strong>Host Pertama</strong></td>
-<td>172.16.0.1</td>
-<td>172.16.0.129</td>
-<td>172.16.1.1</td>
-<td>172.16.255.129</td>
-</tr>
-<tr>
-<td><strong>Host Terakhir</strong></td>
-<td>172.16.0.126</td>
-<td>172.16.0.254</td>
-<td>172.16.1.126</td>
-<td>172.16.255.254</td>
-</tr>
-<tr>
-<td><strong>Broadcast</strong></td>
-<td>172.16.0.127</td>
-<td>172.16.0.255</td>
-<td>172.16.1.127</td>
-<td>172.16.255.255</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">Key</th>
+          <th style="text-align: left">Value</th>
+          <th style="text-align: left">Value</th>
+          <th style="text-align: left">Value</th>
+          <th style="text-align: left">Value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>Subnet</strong></td>
+          <td style="text-align: left">172.16.0.0</td>
+          <td style="text-align: left">172.16.0.128</td>
+          <td style="text-align: left">172.16.1.0</td>
+          <td style="text-align: left">172.16.255.128</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Host Pertama</strong></td>
+          <td style="text-align: left">172.16.0.1</td>
+          <td style="text-align: left">172.16.0.129</td>
+          <td style="text-align: left">172.16.1.1</td>
+          <td style="text-align: left">172.16.255.129</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Host Terakhir</strong></td>
+          <td style="text-align: left">172.16.0.126</td>
+          <td style="text-align: left">172.16.0.254</td>
+          <td style="text-align: left">172.16.1.126</td>
+          <td style="text-align: left">172.16.255.254</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Broadcast</strong></td>
+          <td style="text-align: left">172.16.0.127</td>
+          <td style="text-align: left">172.16.0.255</td>
+          <td style="text-align: left">172.16.1.127</td>
+          <td style="text-align: left">172.16.255.255</td>
+      </tr>
+  </tbody>
 </table>
 <ol start="5">
 <li>Kalau sudah mantab dan paham, kita lanjut ke Class A. Konsepnya semua sama  saja. Perbedaannya adalah di OKTET mana kita mainkan blok subnet. Kalau Class C di oktet ke 4 (terakhir), kelas B di Oktet 3 dan 4 (2 oktet terakhir), kalau Class A di oktet 2, 3 dan 4 (3 oktet terakhir). Kemudian subnet mask yang bisa digunakan untuk subnetting class A adalah semua subnet mask dari CIDR /8 sampai /30.</li>
@@ -428,45 +428,45 @@ Pengertian Subnetting adalah upaya/proses untuk memecah sebuah network dengan ju
 </li>
 </ul>
 <table>
-<thead>
-<tr>
-<th>Key</th>
-<th>Value</th>
-<th>Value</th>
-<th>Value</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Subnet</strong></td>
-<td>10.0.0.0</td>
-<td>10.1.0.0</td>
-<td>10.254.0.0</td>
-<td>10.255.0.0</td>
-</tr>
-<tr>
-<td><strong>Host Pertama</strong></td>
-<td>10.0.0.1</td>
-<td>10.1.0.1</td>
-<td>10.254.0.1</td>
-<td>10.255.0.1</td>
-</tr>
-<tr>
-<td><strong>Host Terakhir</strong></td>
-<td>10.0.255.254</td>
-<td>10.1.255.254</td>
-<td>10.254.255.254</td>
-<td>10.255.255.254</td>
-</tr>
-<tr>
-<td><strong>Broadcast</strong></td>
-<td>10.0.255.255</td>
-<td>10.1.255.255</td>
-<td>10.254.255.255</td>
-<td>10.255.255.255</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">Key</th>
+          <th style="text-align: left">Value</th>
+          <th style="text-align: left">Value</th>
+          <th style="text-align: left">Value</th>
+          <th style="text-align: left">Value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>Subnet</strong></td>
+          <td style="text-align: left">10.0.0.0</td>
+          <td style="text-align: left">10.1.0.0</td>
+          <td style="text-align: left">10.254.0.0</td>
+          <td style="text-align: left">10.255.0.0</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Host Pertama</strong></td>
+          <td style="text-align: left">10.0.0.1</td>
+          <td style="text-align: left">10.1.0.1</td>
+          <td style="text-align: left">10.254.0.1</td>
+          <td style="text-align: left">10.255.0.1</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Host Terakhir</strong></td>
+          <td style="text-align: left">10.0.255.254</td>
+          <td style="text-align: left">10.1.255.254</td>
+          <td style="text-align: left">10.254.255.254</td>
+          <td style="text-align: left">10.255.255.254</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Broadcast</strong></td>
+          <td style="text-align: left">10.0.255.255</td>
+          <td style="text-align: left">10.1.255.255</td>
+          <td style="text-align: left">10.254.255.255</td>
+          <td style="text-align: left">10.255.255.255</td>
+      </tr>
+  </tbody>
 </table>
 <p>contoh untuk subneting manual kelas :</p>
 <p>IP : 192.168.12.12/26</p>

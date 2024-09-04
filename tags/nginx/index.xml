@@ -15,9 +15,31 @@
         <link>https://sibunglon.com/2023/08/12/format-private-key-into-valid-private-key/</link>
         <pubDate>Sat, 12 Aug 2023 22:50:13 +0800</pubDate>
         <guid>https://sibunglon.com/2023/08/12/format-private-key-into-valid-private-key/</guid>
-        <description>I&amp;rsquo;ve a private.key from another platform but its using invalid format private key file as below.
-{\rtf1\ansi\ansicpg1252\cocoartf2709 \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;} {\colortbl;\red255\green255\blue255;} {\*\expandedcolortbl;;} \paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0 \f0\fs24 \cf0 -----BEGIN PRIVATE KEY-----\ MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDAV01KaHzqe2Mf\ o+3SAUz54hUQQcKKyV7a4PH61ymaBMlWV3D2roDRZm0RdRw9WUTD0/KDrBLJR9hz\ sySLLzSxyiE7b9BvloRbKtbZFMjhChRgm4YBi+M4C1Q0dqPeeQgSMdb3yilCj55y\ 8d1oCO3R4I521OSmAae+Qq5ClV9lh9TocYVV02/02g2vLD1w5xOIho6bimLoCQN5\ 241c340tgvvStVPjnkLMCsKibg==\ -----END PRIVATE KEY-----\ \ } To format it into valid private key, use the following script to convert it or format the file.
-cleaned_key=$(sed &amp;#39;s/\\f0\\fs24 \\cf0//g&amp;#39; private.key | tr -d &amp;#39;\\&amp;#39;) start_marker=&amp;#34;-----BEGIN PRIVATE KEY-----&amp;#34; end_marker=&amp;#34;-----END PRIVATE KEY-----&amp;#34; private_key=$(echo &amp;#34;$cleaned_key&amp;#34; | sed -n &amp;#34;/$start_marker/,/$end_marker/p&amp;#34;) echo &amp;#34;$private_key&amp;#34; </description>
+        <description>&lt;p&gt;I&amp;rsquo;ve a private.key from another platform but its using invalid format private key file as below.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 -----BEGIN PRIVATE KEY-----\
+MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDAV01KaHzqe2Mf\
+o+3SAUz54hUQQcKKyV7a4PH61ymaBMlWV3D2roDRZm0RdRw9WUTD0/KDrBLJR9hz\
+sySLLzSxyiE7b9BvloRbKtbZFMjhChRgm4YBi+M4C1Q0dqPeeQgSMdb3yilCj55y\
+8d1oCO3R4I521OSmAae+Qq5ClV9lh9TocYVV02/02g2vLD1w5xOIho6bimLoCQN5\
+241c340tgvvStVPjnkLMCsKibg==\
+-----END PRIVATE KEY-----\
+\
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;To format it into valid private key, use the following script to convert it or format the file.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;cleaned_key&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;sed &lt;span class=&#34;s1&#34;&gt;&amp;#39;s/\\f0\\fs24 \\cf0//g&amp;#39;&lt;/span&gt; private.key &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; tr -d &lt;span class=&#34;s1&#34;&gt;&amp;#39;\\&amp;#39;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;start_marker&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;-----BEGIN PRIVATE KEY-----&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;end_marker&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;-----END PRIVATE KEY-----&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;private_key&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$cleaned_key&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; sed -n &lt;span class=&#34;s2&#34;&gt;&amp;#34;/&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$start_marker&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;/,/&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$end_marker&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;/p&amp;#34;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$private_key&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
       </item>
     
       <item>
@@ -25,9 +47,18 @@ cleaned_key=$(sed &amp;#39;s/\\f0\\fs24 \\cf0//g&amp;#39; private.key | tr -d &a
         <link>https://sibunglon.com/2023/08/12/merge-or-concatenate-ssl-certificates-to-single-file/</link>
         <pubDate>Sat, 12 Aug 2023 22:03:36 +0800</pubDate>
         <guid>https://sibunglon.com/2023/08/12/merge-or-concatenate-ssl-certificates-to-single-file/</guid>
-        <description>I&amp;rsquo;ve received the root and intermediate certificates separately, then run the following command to merge or concat it into single file.
-sibunglon@sanita$ tree ├── ChainCA1.crt ├── ChainCA2.crt ├── sibunglon.com.key ├── RootCA.crt └── star_sibunglon_com.crt for ssl_combine in {star_sibunglon_com.crt,ChainCA1.crt,ChainCA2.crt,RootCA.crt}; do cat ${ssl_combine} &amp;gt;&amp;gt; /etc/ssl/sibunglon.com.crt echo -e &amp;#34;\n&amp;#34; &amp;gt;&amp;gt; /etc/ssl/sibunglon.com.crt; done Then, i can use sibunglon.com.crt as SSL certificate file and sibunglon.com.key as SSL certificate key file.
-sibunglon@sanita:~$ cat /etc/self-signed.conf ssl_certificate /etc/ssl/sibunglon.com.crt; ssl_certificate_key /etc/ssl/sibunglon.</description>
+        <description>&lt;p&gt;I&amp;rsquo;ve received the root and intermediate certificates separately, then run the following command to merge or concat it into single file.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sibunglon@sanita$ tree
+├── ChainCA1.crt
+├── ChainCA2.crt
+├── sibunglon.com.key
+├── RootCA.crt
+└── star_sibunglon_com.crt
+&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; ssl_combine in &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;star_sibunglon_com.crt,ChainCA1.crt,ChainCA2.crt,RootCA.crt&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	cat &lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;ssl_combine&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt; &amp;gt;&amp;gt; /etc/ssl/sibunglon.com.crt
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; -e &lt;span class=&#34;s2&#34;&gt;&amp;#34;\n&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; /etc/ssl/sibunglon.com.crt&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;done&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
       </item>
     
       <item>
@@ -35,9 +66,10 @@ sibunglon@sanita:~$ cat /etc/self-signed.conf ssl_certificate /etc/ssl/sibunglon
         <link>https://sibunglon.com/2022/08/23/upgrade-insecure-requests-on-nginx/</link>
         <pubDate>Tue, 23 Aug 2022 20:34:54 +0800</pubDate>
         <guid>https://sibunglon.com/2022/08/23/upgrade-insecure-requests-on-nginx/</guid>
-        <description>&amp;ldquo;Upgrade Insecure Requests&amp;rdquo; is a CSP (Content Security Policy) directive that allows you to indicate to HTTP clients/browsers that all resources must be accessed via HTTPS.
-To enable it on the Nginx web server, you just need to add the script to your Nginx configuration file.
-add_header &amp;#39;Content-Security-Policy&amp;#39; &amp;#39;upgrade-insecure-requests&amp;#39;; Be aware that upgrade-insecure-requests is not supported in all browsers, e.g. Safari and IE.</description>
+        <description>&lt;p&gt;&amp;ldquo;Upgrade Insecure Requests&amp;rdquo; is a &lt;a href=&#34;https://www.w3.org/TR/CSP/#content_security_policy&#34;&gt;CSP (Content Security Policy)&lt;/a&gt; directive that allows you to indicate to HTTP clients/browsers that all resources must be accessed via HTTPS.&lt;/p&gt;
+&lt;p&gt;To enable it on the Nginx web server, you just need to add the script to your Nginx configuration file.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-nginx&#34; data-lang=&#34;nginx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;add_header&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#39;Content-Security-Policy&amp;#39;&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#39;upgrade-insecure-requests&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Be aware that &lt;code&gt;upgrade-insecure-requests&lt;/code&gt; is &lt;a href=&#34;http://caniuse.com/#feat=upgradeinsecurerequests&#34;&gt;not supported in all browsers&lt;/a&gt;, e.g. Safari and IE.&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -45,10 +77,17 @@ add_header &amp;#39;Content-Security-Policy&amp;#39; &amp;#39;upgrade-insecure-r
         <link>https://sibunglon.com/2020/12/19/extract-ssl-certificate-and-ssl-certificate-key-from-.pfx-file/</link>
         <pubDate>Sat, 19 Dec 2020 03:32:07 +0800</pubDate>
         <guid>https://sibunglon.com/2020/12/19/extract-ssl-certificate-and-ssl-certificate-key-from-.pfx-file/</guid>
-        <description>A pfx file is password protected certificate archive which contains your certificate and the private key.
-domain.tld.key The private decrypted RSA key file for the certificate. (ssl_certificate_key) domain.tld.crt The certificate file for the domain bundle.crt The certificate file for the issuer domain.tld.chained.crt The concatted file which consists of domain.tld.crt and bundle.crt (ssl_certificate) Get the .key file
-Extract the encrypted key using:
-openssl pkcs12 -in cert.pfx -nocerts -out domain.tld.encrypted.key Decrypt the encrypted key using:</description>
+        <description>&lt;p&gt;A pfx file is password protected certificate archive which contains your certificate and the private key.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;domain.tld.key&lt;/code&gt; The private decrypted RSA key file for the certificate. (ssl_certificate_key)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;domain.tld.crt&lt;/code&gt; The certificate file for the domain&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;bundle.crt&lt;/code&gt; The certificate file for the issuer&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;domain.tld.chained.crt&lt;/code&gt; The concatted file which consists of &lt;code&gt;domain.tld.crt&lt;/code&gt; and &lt;code&gt;bundle.crt&lt;/code&gt; (ssl_certificate)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Get the .key file&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Extract the encrypted key using:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;openssl pkcs12 -in cert.pfx -nocerts -out domain.tld.encrypted.key
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
       </item>
     
       <item>
@@ -56,12 +95,7 @@ openssl pkcs12 -in cert.pfx -nocerts -out domain.tld.encrypted.key Decrypt the e
         <link>https://sibunglon.com/2020/09/05/configuring-auto-renewing-lets-encrypt-ssl/</link>
         <pubDate>Sat, 05 Sep 2020 06:23:28 +0800</pubDate>
         <guid>https://sibunglon.com/2020/09/05/configuring-auto-renewing-lets-encrypt-ssl/</guid>
-        <description>Allow the certificate to auto renew, so that you as a server admin or not don&amp;rsquo;t have to log in to the server to renew all your certs.
-The renewal is run by cron. You can create it.
-The following steps:
-For nginx Create cron file.
-$ vi /etc/cron.d/certbot and then enter the script:
-SHELL=/bin/sh PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin 0 */12 * * * root test -x /usr/bin/certbot -a \! -d /run/systemd/system &amp;amp;&amp;amp; perl -e &amp;#39;sleep int(rand(43200))&amp;#39; &amp;amp;&amp;amp; certbot -q renew For apache2 Download certbot renew package file</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/certbot-logo.svg&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -69,8 +103,8 @@ SHELL=/bin/sh PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin 
         <link>https://sibunglon.com/2020/01/14/nginx-redirect-domain/</link>
         <pubDate>Tue, 14 Jan 2020 11:34:28 +0700</pubDate>
         <guid>https://sibunglon.com/2020/01/14/nginx-redirect-domain/</guid>
-        <description>Directing visitors from one domain to another is very easy, just edit the nginx configuration file that has been created then add some configuration syntax or if you don&amp;rsquo;t want to edit an existing configuration file, you can also create 1 more configuration file.
-The following example, anyone who accesses the *.redirect.sibunglon.com domain will be directed to the sibunglon.com domain. *= wilcard, so anyone who accesses the domain x.redirect.sibunglon.com, xyz.redirect.sibunglon.com, blog.</description>
+        <description>&lt;p&gt;Directing visitors from one domain to another is very easy, just edit the nginx configuration file that has been created then add some configuration syntax or if you don&amp;rsquo;t want to edit an existing configuration file, you can also create 1 more configuration file.&lt;/p&gt;
+&lt;p&gt;The following example, anyone who accesses the &lt;code&gt;*.redirect.sibunglon.com&lt;/code&gt; domain will be directed to the &lt;code&gt;sibunglon.com&lt;/code&gt; domain. &lt;em&gt;*= wilcard&lt;/em&gt;, so anyone who accesses the domain &lt;code&gt;x.redirect.sibunglon.com&lt;/code&gt;, &lt;code&gt;xyz.redirect.sibunglon.com&lt;/code&gt;, &lt;code&gt;blog.redirect.sibunglon.com&lt;/code&gt;, and others will be directed to the &lt;code&gt;sibunglon.com&lt;/code&gt; domain.&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -78,9 +112,19 @@ The following example, anyone who accesses the *.redirect.sibunglon.com domain w
         <link>https://sibunglon.com/2018/12/14/membuat-subdomain-dengan-nginx/</link>
         <pubDate>Fri, 14 Dec 2018 11:03:50 +0700</pubDate>
         <guid>https://sibunglon.com/2018/12/14/membuat-subdomain-dengan-nginx/</guid>
-        <description>Subdomain? Subdomain adalah bagian dari nama domain induk yang memiliki ruangan sendiri (direktori), mengacu ke suatu alamat fisik. Contohnya subdomain blog.sibunglon.com acuannya yaitu sibunglon.com. Jika menggunakan nginx, untuk membuat subdomain sama seperti pada lab sebelumnya yang Bermain Dengan Nginx. Mudahkan kalau caranya cuman gitu? :D Tapi jika masih ada yang bingung, tenang labnya masih saya bagikan.
-Pada lab ini saya asumsikan:
-Domain induk = sibunglon.com Subdomain = blog.sibunglon.com master konfigurasi berada di direktori /sibunglonlabs/config/nginx File konfigurasi domain induk sibunglonlabs.</description>
+        <description>&lt;h3 id=&#34;subdomain&#34;&gt;&lt;strong&gt;Subdomain?&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Subdomain adalah bagian dari &lt;em&gt;nama domain&lt;/em&gt; induk yang memiliki ruangan sendiri (direktori), mengacu ke suatu alamat fisik. Contohnya subdomain &lt;strong&gt;blog.sibunglon.com&lt;/strong&gt; acuannya yaitu &lt;strong&gt;sibunglon.com&lt;/strong&gt;. Jika menggunakan nginx, untuk membuat subdomain sama seperti pada lab sebelumnya yang &lt;a href=&#34;https://sibunglon.com/2018/12/10/kustom-konfigurasi-dan-ganti-direktori-nginx/&#34;&gt;Bermain Dengan Nginx&lt;/a&gt;. Mudahkan kalau caranya cuman gitu? :D Tapi jika masih ada yang bingung, tenang labnya masih saya bagikan.&lt;/p&gt;
+&lt;p&gt;Pada lab ini saya asumsikan:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Domain induk = &lt;strong&gt;sibunglon.com&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Subdomain =  &lt;strong&gt;blog.sibunglon.com&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;master konfigurasi berada di direktori &lt;em&gt;/sibunglonlabs/config/nginx&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;File konfigurasi domain induk &lt;strong&gt;sibunglonlabs.conf&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Direktori root domain induk berada di &lt;em&gt;/sibunglonlabs/web&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Direktori root subdomain berada di &lt;em&gt;/sibunglonlabs/blog&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;bermain-subdomain-dengan-nginx&#34;&gt;Bermain Subdomain Dengan Nginx&lt;/h3&gt;
+&lt;p&gt;1) Pastikan pada konfigurasi domain induk tidak memuat listen 80, karena port tersebut akan dipake ramai-ramai oleh domain dan subdomain. Berikut konfigurasi domain di lab local saya:&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -88,9 +132,14 @@ Domain induk = sibunglon.com Subdomain = blog.sibunglon.com master konfigurasi b
         <link>https://sibunglon.com/2018/12/10/kustom-konfigurasi-dan-ganti-direktori-nginx/</link>
         <pubDate>Mon, 10 Dec 2018 17:45:30 +0700</pubDate>
         <guid>https://sibunglon.com/2018/12/10/kustom-konfigurasi-dan-ganti-direktori-nginx/</guid>
-        <description>Bermain Dengan Nginx Pada saat ini sudah menjadi hal biasa jika seseorang ingin memindahkan file konfigurasinya agar lebih mudah dimaintenance. Salah satunya yaitu memidahkan direktori root html nginx. Di nginx, untuk memindahkan direktori root html dan memidahkan konfigurasinya cukup dengan command-command berikut.
-Pada Lab ini saya asumsikan :
-master konfigurasi berada di direktori /sibunglonlabs/config/nginx direktori root berada di /sibunglonlabs/web 1) Gunakan command berikut untuk memindahkan master konfig nginx ke direktori yang anda ingin, yang mudah diakses oleh anda namun susah ditemui oleh orang lain.</description>
+        <description>&lt;h3 id=&#34;bermain-dengan-nginx&#34;&gt;Bermain Dengan Nginx&lt;/h3&gt;
+&lt;p&gt;Pada saat ini sudah menjadi hal biasa jika seseorang ingin memindahkan file konfigurasinya agar lebih mudah dimaintenance. Salah satunya yaitu memidahkan direktori root html nginx. Di nginx, untuk memindahkan direktori root html dan memidahkan konfigurasinya cukup dengan command-command berikut.&lt;/p&gt;
+&lt;p&gt;Pada &lt;strong&gt;Lab&lt;/strong&gt; ini saya asumsikan :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;master konfigurasi berada di direktori &lt;em&gt;/sibunglonlabs/config/nginx&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;direktori root berada di &lt;em&gt;/sibunglonlabs/web&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1) Gunakan command berikut untuk memindahkan master konfig nginx ke direktori yang anda ingin, yang mudah diakses oleh anda namun susah ditemui oleh orang lain. Saat ini master konfigurasi berada di &lt;em&gt;/etc/nginx/conf.d/default.conf&lt;/em&gt;. Namun pada Red Hat Enterprise Linux, master konfigurasi berada di &lt;em&gt;/etc/nginx/nginx.conf&lt;/em&gt;.&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -98,10 +147,12 @@ master konfigurasi berada di direktori /sibunglonlabs/config/nginx direktori roo
         <link>https://sibunglon.com/2018/12/10/nginx-tidak-bisa-diakses/</link>
         <pubDate>Mon, 10 Dec 2018 13:40:57 +0700</pubDate>
         <guid>https://sibunglon.com/2018/12/10/nginx-tidak-bisa-diakses/</guid>
-        <description>Nginx di CentOS atau RHEL tidak bisa diakses? Service nginx aktif? Servernya aktif? Akses dari localhost bisa? Jika semua jawabannya YA, mungkin firewall di system anda sedang aktif namun trafik protokol HTTP dan HTTPS belum diizinkan oleh perangkat yang lain.
-Untuk mengizinkan trafik protokol HTTP, gunakan command
-firewall-cmd --permanent --zone=public --add-service=http Sedangkan untuk mengizinkan trafik protokol HTTPS, gunakan command
-firewall-cmd --permanent --zone=public --add-service=https Setelah diizinkan, firewall wajib direload agar update firewall dapat diterapkan</description>
+        <description>&lt;p&gt;Nginx di CentOS atau RHEL tidak bisa diakses? Service nginx aktif? Servernya aktif? Akses dari localhost bisa? Jika semua jawabannya &lt;strong&gt;YA&lt;/strong&gt;, mungkin firewall di system anda sedang aktif namun trafik protokol HTTP dan HTTPS belum diizinkan oleh perangkat yang lain.&lt;/p&gt;
+&lt;p&gt;Untuk mengizinkan trafik protokol HTTP, gunakan command&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;firewall-cmd --permanent --zone=public --add-service=http
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Sedangkan untuk mengizinkan  trafik protokol HTTPS, gunakan command&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;firewall-cmd --permanent --zone=public --add-service=https
+&lt;/code&gt;&lt;/pr</description>
       </item>
     
       <item>
@@ -109,8 +160,9 @@ firewall-cmd --permanent --zone=public --add-service=https Setelah diizinkan, fi
         <link>https://sibunglon.com/2018/12/10/berkenalan-dengan-nginx-di-rhel/centos/</link>
         <pubDate>Mon, 10 Dec 2018 07:44:24 +0700</pubDate>
         <guid>https://sibunglon.com/2018/12/10/berkenalan-dengan-nginx-di-rhel/centos/</guid>
-        <description>Nginx? Apa sih nginx itu? Fungsinya buat apa? Mungkin itu yang terlintas dipikirian beberapa orang jika berkenalan dengan hal baru. Maka dari itu pada kali ini yang akan dibahas pada Lab ini yaitu berkenalan dan bagaimana memasang nginx.
-Nginx, banyak orang membicarakannya meskipun salah dipelafalannya. Dulu saya juga salah melafakannya namun setelah diruqyah sama m1m1n atau yang dikenal dengan Andy Hidayat, sekarang gak salah pelafalan lagi :D . Nginx dibaca &amp;ldquo;engine X&amp;rdquo; bukan &amp;ldquo;nging X&amp;rdquo;.</description>
+        <description>&lt;h3 id=&#34;nginx&#34;&gt;Nginx?&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Apa sih nginx itu? Fungsinya buat apa?&lt;/em&gt; Mungkin itu yang terlintas dipikirian beberapa orang jika berkenalan dengan hal baru. Maka dari itu pada kali ini yang akan dibahas pada &lt;strong&gt;Lab&lt;/strong&gt; ini yaitu berkenalan dan bagaimana memasang nginx.&lt;/p&gt;
+&lt;p&gt;Nginx, banyak orang membicarakannya meskipun salah dipelafalannya. Dulu saya juga salah melafakannya namun setelah diruqyah sama &lt;strong&gt;m1m1n&lt;/strong&gt; atau yang dikenal dengan &lt;strong&gt;Andy Hidayat&lt;/strong&gt;, sekarang gak salah pelafalan lagi :D . Nginx dibaca &amp;ldquo;&lt;strong&gt;engine X&lt;/strong&gt;&amp;rdquo; bukan &amp;ldquo;&lt;strong&gt;nging X&lt;/strong&gt;&amp;rdquo;. Nginx itu sebenarnya salah satu web server open source, layaknya apache. Salah satu alasan beberapa orang berpindah dari apache ke nginx yaitu kemudahan dalam penggunaannya. Easy of use, kemudahan dalam penggunaan. Bagi anda yang terbiasa mengkonfigurasi apache, konfigurasi nginx tidak terlalu beda jauh dengan konfigurasi apache. Namun konfigurasi nginx jauh lebih simpel ketimbang apache.&lt;/p&gt;</description>
       </item>
     
   </channel>

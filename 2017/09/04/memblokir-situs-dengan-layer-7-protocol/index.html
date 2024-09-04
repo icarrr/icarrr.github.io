@@ -17,7 +17,7 @@
   <meta property="og:description" content="A. Pendahuluan
 Pada kesempatan ini saya akan memposting salah satu fitur yang ada di firewall yaitu layer 7 protocol.
 B. Pengertian
-Protokol Layer7 adalah metode untuk mencari pola dalam ICMP / TCP / UDP stream, atau istilah lainnya regex pattern. Cara kerja L7 adalah mencocokan (mathcer) 10 paket koneksi pertama atau 2KB koneksi pertama dan mencari pola/pattern data yang sesuai dengan yang tersedia. Jika pola ini tidak ditemukan dalam data yang tersedia, matcher tidak memeriksa lebih lanjut.">
+Protokol Layer7 adalah metode untuk mencari pola dalam ICMP / TCP / UDP stream, atau istilah lainnya regex pattern. Cara kerja L7 adalah mencocokan (mathcer) 10 paket koneksi pertama atau 2KB koneksi pertama dan mencari pola/pattern data yang sesuai dengan yang tersedia. Jika pola ini tidak ditemukan dalam data yang tersedia, matcher tidak memeriksa lebih lanjut. Dan akan dianggap unknown connections. Anda harus mempertimbangkan bahwa banyak koneksi secara signifikan akan meningkatkan penggunaan memori pada RB maupun PC Router anda. Untuk menghindari itu tambahkan regular firewall matchers (pattern) untuk mengurangi jumlah data yang dikirimkan ke layer-7 filter. Layer7 matcher harus melihat kedua arah lalu lintas (masuk dan keluar). Untuk memenuhi persyaratan ini rule l7 harus diatur dalam chain Forward. Jika rule pada chain input/prerouting maka aturan yang sama harus diatur juga dalam chain output/postrouting , jika tidak maka data mungkin dianggap tidak lengkap sehingga pola/pattern dianggap tidak benar /cocok.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -34,7 +34,7 @@ Protokol Layer7 adalah metode untuk mencari pola dalam ICMP / TCP / UDP stream, 
   <meta itemprop="description" content="A. Pendahuluan
 Pada kesempatan ini saya akan memposting salah satu fitur yang ada di firewall yaitu layer 7 protocol.
 B. Pengertian
-Protokol Layer7 adalah metode untuk mencari pola dalam ICMP / TCP / UDP stream, atau istilah lainnya regex pattern. Cara kerja L7 adalah mencocokan (mathcer) 10 paket koneksi pertama atau 2KB koneksi pertama dan mencari pola/pattern data yang sesuai dengan yang tersedia. Jika pola ini tidak ditemukan dalam data yang tersedia, matcher tidak memeriksa lebih lanjut.">
+Protokol Layer7 adalah metode untuk mencari pola dalam ICMP / TCP / UDP stream, atau istilah lainnya regex pattern. Cara kerja L7 adalah mencocokan (mathcer) 10 paket koneksi pertama atau 2KB koneksi pertama dan mencari pola/pattern data yang sesuai dengan yang tersedia. Jika pola ini tidak ditemukan dalam data yang tersedia, matcher tidak memeriksa lebih lanjut. Dan akan dianggap unknown connections. Anda harus mempertimbangkan bahwa banyak koneksi secara signifikan akan meningkatkan penggunaan memori pada RB maupun PC Router anda. Untuk menghindari itu tambahkan regular firewall matchers (pattern) untuk mengurangi jumlah data yang dikirimkan ke layer-7 filter. Layer7 matcher harus melihat kedua arah lalu lintas (masuk dan keluar). Untuk memenuhi persyaratan ini rule l7 harus diatur dalam chain Forward. Jika rule pada chain input/prerouting maka aturan yang sama harus diatur juga dalam chain output/postrouting , jika tidak maka data mungkin dianggap tidak lengkap sehingga pola/pattern dianggap tidak benar /cocok.">
   <meta itemprop="datePublished" content="2017-09-04T14:00:00+00:00">
   <meta itemprop="dateModified" content="2017-09-04T14:00:00+00:00">
   <meta itemprop="wordCount" content="413">
@@ -49,7 +49,7 @@ Protokol Layer7 adalah metode untuk mencari pola dalam ICMP / TCP / UDP stream, 
   <meta name="twitter:description" content="A. Pendahuluan
 Pada kesempatan ini saya akan memposting salah satu fitur yang ada di firewall yaitu layer 7 protocol.
 B. Pengertian
-Protokol Layer7 adalah metode untuk mencari pola dalam ICMP / TCP / UDP stream, atau istilah lainnya regex pattern. Cara kerja L7 adalah mencocokan (mathcer) 10 paket koneksi pertama atau 2KB koneksi pertama dan mencari pola/pattern data yang sesuai dengan yang tersedia. Jika pola ini tidak ditemukan dalam data yang tersedia, matcher tidak memeriksa lebih lanjut.">
+Protokol Layer7 adalah metode untuk mencari pola dalam ICMP / TCP / UDP stream, atau istilah lainnya regex pattern. Cara kerja L7 adalah mencocokan (mathcer) 10 paket koneksi pertama atau 2KB koneksi pertama dan mencari pola/pattern data yang sesuai dengan yang tersedia. Jika pola ini tidak ditemukan dalam data yang tersedia, matcher tidak memeriksa lebih lanjut. Dan akan dianggap unknown connections. Anda harus mempertimbangkan bahwa banyak koneksi secara signifikan akan meningkatkan penggunaan memori pada RB maupun PC Router anda. Untuk menghindari itu tambahkan regular firewall matchers (pattern) untuk mengurangi jumlah data yang dikirimkan ke layer-7 filter. Layer7 matcher harus melihat kedua arah lalu lintas (masuk dan keluar). Untuk memenuhi persyaratan ini rule l7 harus diatur dalam chain Forward. Jika rule pada chain input/prerouting maka aturan yang sama harus diatur juga dalam chain output/postrouting , jika tidak maka data mungkin dianggap tidak lengkap sehingga pola/pattern dianggap tidak benar /cocok.">
 
   
 

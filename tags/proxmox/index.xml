@@ -15,14 +15,13 @@
         <link>https://sibunglon.com/2017/10/19/backup-vm-proxmox-ke-local-harddisk/</link>
         <pubDate>Thu, 19 Oct 2017 18:47:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/19/backup-vm-proxmox-ke-local-harddisk/</guid>
-        <description>A. Pendahuluan
-Pada kesempatan ini saya share bagaimana agar config di debian atau apapun yang ada diproxmox tidak hilang bila terjadi sesuatu
-B. Pengertian
-Bakcup data adalah salah satu langkah untuk menyimpan data agar saat data itu hilang kita masih memiliki data simpanannya agar tidak hilang.
-C. Latar belakang
-Membuat secondary data agar saat data primer nya hilang kita masih punya data secondari nya.
-D. Tujuan
-Agar data yang saat penting itu tidak hilang karena ada kesalahan dan dapat menyerlamatkan pekerjaan kita.</description>
+        <description>&lt;p&gt;&lt;strong&gt;A. Pendahuluan&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Pada kesempatan ini saya share bagaimana agar config di debian atau apapun yang ada diproxmox tidak hilang bila terjadi sesuatu&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;B. Pengertian&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bakcup data adalah salah satu langkah untuk menyimpan data agar saat data itu hilang kita masih memiliki data simpanannya agar tidak hilang.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;C. Latar belakang&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Membuat secondary data agar saat data primer nya hilang kita masih punya data secondari nya.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;D. Tujuan&lt;/strong&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -30,10 +29,7 @@ Agar data yang saat penting itu tidak hilang karena ada kesalahan dan dapat meny
         <link>https://sibunglon.com/2017/10/10/install-debian-server-di-proxmox-virtual-environment/</link>
         <pubDate>Tue, 10 Oct 2017 12:19:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/10/install-debian-server-di-proxmox-virtual-environment/</guid>
-        <description>A. Pendahuluan
-Kali ini saya berbagi tentang bagaimana menginstall linux Debian 8.6 melalui pada proxmox. Proxmox digunakan sebagai virtualisasi.
-B. Pengertian
-Debian adalah sistem operasi komputer yang tersusun dari paket-paket perangkat lunak yang dirilis sebagai perangkat lunak bebas dan terbuka dengan lisensi mayoritas GNU General Public License dan lisensi perangkat lunak bebas lainnya. Debian GNU/Linux memuat perkakas sistem operasi GNU dan kernel Linux merupakan distribusi Linux yang popmuler dan berpengaruh.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4cxfsGUBw5PIvxCelQLPIf0Jdbqc99W66uA9uoaqa37J55Ks7dg&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -41,11 +37,7 @@ Debian adalah sistem operasi komputer yang tersusun dari paket-paket perangkat l
         <link>https://sibunglon.com/2017/07/31/menginstall-proxmox-di-server/</link>
         <pubDate>Mon, 31 Jul 2017 16:07:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/31/menginstall-proxmox-di-server/</guid>
-        <description>Pendahuluan
-Proxmox VE (Virtual Environment) adalah sebuah distro Linux virtualisasi berbasis Debian ( 64 bit) yang mengusung OpenZV dan KVM, dengan KVM kita tidak hanya bisa menginstall linux saja akan tetapi Operating system windows pun bisa kita instal. Namun yang membuat istimewa dari proxmox adalah kemudahan dalam installasi dan administrasi berbasis Web.
-Latar Belakang
-Beberapa keuntungan menggunakan Proxmox sebagai berikut
-Kinerja terbaik. Instalasi yang telah dioptimalkan, sehingga lebih cepat. Mudah dalam manajemen.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://2.bp.blogspot.com/-KOyLcEHAmtU/W4kB1KruECI/AAAAAAAADzM/pDWym8-0SrwHe_l3EluBDm_RZy-whW0SACLcBGAs/s1600/download.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
   </channel>

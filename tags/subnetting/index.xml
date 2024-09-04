@@ -15,9 +15,12 @@
         <link>https://sibunglon.com/2017/10/19/implementasi-manual-subnetting-kelas-c/</link>
         <pubDate>Thu, 19 Oct 2017 17:58:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/10/19/implementasi-manual-subnetting-kelas-c/</guid>
-        <description>A.Pendahuluan
-Pada kesempatan kali ini saya akan berbagi tentang ip/subnetting gays. kenapa saya membahas ini karena kita sebagai nak jaringan mesti perlu paham begaimana cara subneting.
-Pengertian Subnetting adalah upaya/proses untuk memecah sebuah network dengan jumlah host yang cukup banyak, menjadi beberapa network dengan jumlah host yang lebih sedikit. Gunanya Subnetting untuk menentukan batas network ID dalam suatu subnet, Memperbanyak jumlah network (LAN), Mengurangi jumlah host dalam satu network, untuk mengurangi tingkat kongesti (gangguan/ tabrakan) lalulintas data dalam suatu network.</description>
+        <description>&lt;p&gt;&lt;strong&gt;A.Pendahuluan&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Pada kesempatan kali ini saya akan berbagi tentang ip/subnetting gays. kenapa saya membahas ini karena kita sebagai nak jaringan mesti perlu paham begaimana cara subneting.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Pengertian&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Subnetting adalah upaya/proses untuk memecah sebuah network dengan jumlah host yang cukup banyak, menjadi beberapa network dengan jumlah host yang lebih sedikit. Gunanya Subnetting untuk menentukan batas network ID dalam suatu subnet, Memperbanyak jumlah network (LAN), Mengurangi jumlah host dalam satu network, untuk mengurangi tingkat kongesti (gangguan/ tabrakan) lalulintas data dalam suatu network.&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -25,18 +28,24 @@ Pengertian Subnetting adalah upaya/proses untuk memecah sebuah network dengan ju
         <link>https://sibunglon.com/2017/09/04/mengkonfersi-bilangan-desimal-atau-biner/</link>
         <pubDate>Mon, 04 Sep 2017 13:39:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/09/04/mengkonfersi-bilangan-desimal-atau-biner/</guid>
-        <description>A. PENGERTIAN
-Konfersi adalah suatu perubahan dari satu bentuk (rupa,dan sebagainya) contoh dari angka desimal ke angka biner ataupun sebaliknya
-B. LATAR BELAKANG
-Agar bisa mengubah desimal ke biner
-C.TUJUAN
-Untuk menghitung atau mengetahui cara konfersi
-D. ALAT DAN BAHAN
-pensil/pulpen kertas alat hitung (calculator) E. DURASI PELAKSANAAN
-10 - 20 menit
-F. LANGKAH KERJA
-tentukan bilangan yang ingin di konfersi baik desimal maupun biner
-semisalnya kita akan mengkonfersi bilangan desimal ke biner</description>
+        <description>&lt;p&gt;&lt;strong&gt;A. PENGERTIAN&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Konfersi adalah suatu perubahan dari satu bentuk (rupa,dan sebagainya) contoh dari angka desimal ke angka biner ataupun sebaliknya&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;B. LATAR BELAKANG&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Agar bisa mengubah desimal ke biner&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;C.TUJUAN&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Untuk menghitung atau mengetahui cara konfersi&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;D. ALAT DAN BAHAN&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;pensil/pulpen&lt;/li&gt;
+&lt;li&gt;kertas&lt;/li&gt;
+&lt;li&gt;alat hitung (calculator)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;E. DURASI PELAKSANAAN&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;10 - 20 menit&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;F. LANGKAH KERJA&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;tentukan bilangan yang ingin di konfersi baik desimal maupun biner&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -44,12 +53,12 @@ semisalnya kita akan mengkonfersi bilangan desimal ke biner</description>
         <link>https://sibunglon.com/2017/08/30/mengenal-lebih-dalam-tentang-subneting/</link>
         <pubDate>Wed, 30 Aug 2017 10:00:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/30/mengenal-lebih-dalam-tentang-subneting/</guid>
-        <description>A. Pendahuluan
-Oke pada kesempatan lalu saya pernah memposting tentang subnetting namun pada kesempatan ini saya akan mempost untuk melengkapi post pada kesempatan lalu.
-B. Pengertian
-Subnetting adalah Praktek membagi jaringan menjadi dua atau lebih jaringan disebut. IP adalah sistem pengalamatan setiap host yang terhubung dengan jaringan.
-C. Latar belakang
-Semakin banyaknya ip yang di gunakan untuk dapat terkoneksi ke internet dimana kita harus benar benar mengetahui bagaimana penempatan dan penggunaan ip address dan subnetting.</description>
+        <description>&lt;p&gt;&lt;strong&gt;A. Pendahuluan&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Oke pada kesempatan lalu saya pernah memposting tentang subnetting namun pada kesempatan ini saya akan mempost untuk melengkapi post pada kesempatan lalu.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;B. Pengertian&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Subnetting adalah  Praktek membagi jaringan menjadi dua atau lebih jaringan disebut. IP adalah sistem pengalamatan setiap host yang terhubung dengan jaringan.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;C. Latar belakang&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Semakin banyaknya ip yang di gunakan untuk dapat terkoneksi ke internet dimana kita harus benar benar mengetahui bagaimana penempatan dan penggunaan ip address dan subnetting.&lt;/p&gt;</description>
       </item>
     
   </channel>

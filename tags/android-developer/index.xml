@@ -15,7 +15,7 @@
         <link>https://sibunglon.com/2019/05/19/failed-to-install-the-following-android-sdk-packages-as-some-licences-have-not-been-accepted/</link>
         <pubDate>Sun, 19 May 2019 15:59:55 +0700</pubDate>
         <guid>https://sibunglon.com/2019/05/19/failed-to-install-the-following-android-sdk-packages-as-some-licences-have-not-been-accepted/</guid>
-        <description>A few days ago, I had time to try to build an Android project but did not use the Android Studio application but instead used the command line. In order for the source code to be built using only the command line, we can use the included sdkmanager to download other SDK packages, this is a basic Android command line tool, if you want to download visit the Android Developer page then adjust with your environment.</description>
+        <description>&lt;p&gt;A few days ago, I had time to try to build an Android project but did not use the Android Studio application but instead used the command line. In order for the source code to be built using only the command line, we can use the included sdkmanager to download other SDK packages, this is a basic Android command line tool, if you want to download visit the &lt;a href=&#34;https://developer.android.com/studio&#34;&gt;Android Developer&lt;/a&gt; page then adjust with your environment. Besides that I also use Gradle Wrapper and follow the existing setup guidelines.&lt;/p&gt;</description>
       </item>
     
   </channel>

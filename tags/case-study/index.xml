@@ -15,9 +15,7 @@
         <link>https://sibunglon.com/2020/10/25/log-open-edx-not-update/</link>
         <pubDate>Sun, 25 Oct 2020 05:34:44 +0800</pubDate>
         <guid>https://sibunglon.com/2020/10/25/log-open-edx-not-update/</guid>
-        <description>Case I&amp;rsquo;ve attach a new disk on my Open edX server, I move Open edX log file into a new disk and create symbolic link to /edx/var because I don&amp;rsquo;t want to make a lot of changes in configuration or hardcode of Open edX.
-I moved the log files to the new disk, I did the following:
-$ # Stop services $ /edx/bin/supervisorctl stop all $ sudo systemctl stop mongod rabbitmq-server supervisor nginx $ # Rsync log directory to the new disk and make backup on local storage server $ sudo rsync -avP /edx/var/log /edx/backup $ sudo rsync -avP /edx/var/log /media-edx $ # Remove log from edxapp $ sudo rm -rf /edx/var/log $ # Create symbolic link $ sudo ln -sf /media-edx/log /edx/var $ # Start services $ sudo systemctl start mongod rabbitmq-server supervisor nginx When services edX has been start, log file for lms, cms, and tracking is not update.</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://sibunglon.com/assets/img/Open-edX/open-edx-new.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -25,10 +23,16 @@ $ # Stop services $ /edx/bin/supervisorctl stop all $ sudo systemctl stop mongod
         <link>https://sibunglon.com/2019/10/31/restart-network-adapter-windows-without-reboot/</link>
         <pubDate>Thu, 31 Oct 2019 14:46:11 +0700</pubDate>
         <guid>https://sibunglon.com/2019/10/31/restart-network-adapter-windows-without-reboot/</guid>
-        <description>Restarts a network adapter by disabling and then re-enabling the network adapter.
-Open PowerShell on Windows, after that find the name of the interface to be restarted. Use the following command line:
-netsh interface show interface Restart network adapter using the following command line:
-Restart-NetAdapter -Name &amp;#34;Ethernet x&amp;#34; </description>
+        <description>&lt;p&gt;Restarts a network adapter by disabling and then re-enabling the network adapter.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Open PowerShell on Windows, after that find the name of the interface to be restarted. Use the following command line:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;netsh&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;interface&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;show&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;interface&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Restart network adapter using the following command line:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Restart-NetAdapter&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Name&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Ethernet x&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
       </item>
     
       <item>
@@ -36,7 +40,7 @@ Restart-NetAdapter -Name &amp;#34;Ethernet x&amp;#34; </description>
         <link>https://sibunglon.com/2019/05/19/failed-to-install-the-following-android-sdk-packages-as-some-licences-have-not-been-accepted/</link>
         <pubDate>Sun, 19 May 2019 15:59:55 +0700</pubDate>
         <guid>https://sibunglon.com/2019/05/19/failed-to-install-the-following-android-sdk-packages-as-some-licences-have-not-been-accepted/</guid>
-        <description>A few days ago, I had time to try to build an Android project but did not use the Android Studio application but instead used the command line. In order for the source code to be built using only the command line, we can use the included sdkmanager to download other SDK packages, this is a basic Android command line tool, if you want to download visit the Android Developer page then adjust with your environment.</description>
+        <description>&lt;p&gt;A few days ago, I had time to try to build an Android project but did not use the Android Studio application but instead used the command line. In order for the source code to be built using only the command line, we can use the included sdkmanager to download other SDK packages, this is a basic Android command line tool, if you want to download visit the &lt;a href=&#34;https://developer.android.com/studio&#34;&gt;Android Developer&lt;/a&gt; page then adjust with your environment. Besides that I also use Gradle Wrapper and follow the existing setup guidelines.&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -44,8 +48,8 @@ Restart-NetAdapter -Name &amp;#34;Ethernet x&amp;#34; </description>
         <link>https://sibunglon.com/2019/03/26/diam-diam-port-443-lagi-konflik/</link>
         <pubDate>Tue, 26 Mar 2019 14:26:11 +0700</pubDate>
         <guid>https://sibunglon.com/2019/03/26/diam-diam-port-443-lagi-konflik/</guid>
-        <description>Beberapa hari yang lalu lagi ada ide iseng nyobain main-main vm linux (virtual machine) menggunakan VMware Workstation Pro, niatnya mau online-nin semua vm yang telah dibuat tapi cuman punya 1 ip publik. Emang bisa? Terus gimana ngaksesnya/ngeremotenya? Bisa dong, waktu itu pake port forwarding untuk NAT di VMware Workstation Pro, karena maunya si vm tersebut dapat akses internet dan dapat diakses dari 1 ip public.
-Saya butuh web service yang dapat diakses melalui 1 publik yaitu 1 ip publik hostnya, okey saya pasang web service di salah satu vm.</description>
+        <description>&lt;p&gt;Beberapa hari yang lalu lagi ada ide iseng nyobain main-main vm linux (virtual machine) menggunakan VMware Workstation Pro, niatnya mau online-nin semua vm yang telah dibuat tapi cuman punya 1 ip publik. &lt;strong&gt;Emang bisa? Terus gimana ngaksesnya/ngeremotenya?&lt;/strong&gt; Bisa dong, waktu itu pake port forwarding untuk NAT di VMware Workstation Pro, karena maunya si vm tersebut dapat akses internet dan dapat diakses dari 1 ip public.&lt;/p&gt;
+&lt;p&gt;Saya butuh web service yang dapat diakses melalui 1 publik yaitu 1 ip publik hostnya, okey saya pasang web service di salah satu vm. Awalnya semua aman aman, saya forward port protokol http (80) untuk web service pada vm ke port standard protokol http (80) di host dan saya bisa mengakses web servernya melalui ip publik host, selanjutnya saya butuh aktifkan protokol https di web service, okey saya aktifkan protokol httpsnya dan forward port protokol https (443) untuk web service pada vm ke port standard https (443) di host, disitulah si port 443 main diem-dieman. Setelah forward port 443, akses ke web service melalui protokol https di tolak. Pertama, saya pikir karena permission direktorinya tapi eh melalui protokol http udah bisa kok, berarti bukan itu karena jika melalui protokol http udah bisa diakses. Kedua, saya mau iseng aktifkan port 443 di firewall vm, saya remote vmnya via SSH dan ternyata remote SSH ditolak juga. Hmmm, unik juga kasusnya, saya coba hapus port forwarding protokol https (443) dan remote vm via SSH seketika tidak ditolak lagi. Okey disaat itu seketika saya beranggapan kalau port 443 lagi bentrok atau konflik, saya cek port yang listen pada vm, tidak ada yang menggunakan port 443 selain web service yang telah ditentukan. Kemudian saya cek firewall di hostnya, tidak ada juga port 443 yang listen dan aktif. Jadi bingungkan bentroknya dimana?🤣  Soalnya di vm cuman 1 yang ketahuan yang menggunakan port 443 jadi harusnya gak ada bentrok atau konflik, jadi makin semangat sama kasus ini😂&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -53,12 +57,12 @@ Saya butuh web service yang dapat diakses melalui 1 publik yaitu 1 ip publik hos
         <link>https://sibunglon.com/2017/08/16/konsep-perencanaan-membangun-jaringan-sekolah/</link>
         <pubDate>Wed, 16 Aug 2017 17:25:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/08/16/konsep-perencanaan-membangun-jaringan-sekolah/</guid>
-        <description>A. PENDAHULUAN
-Pada kesempatan ini saya akan memberikan sedikit ilmu terkait dengan konsep perencanaan membangun jaringan sekolah. dalam melakukan sebuah pekerjaan kita mesti memikirkan konsep terlebih dahulu.
-B. PENGERTIAN
-Perencanaan merupakan tahapan awal yang harus di lakukan sebelum melakuka sesuatu pekerjaan. perencanaan dikatakan matang/berhasil, apabila perencanaan tersebut 70% sudah pasti dan tidak sering mengalami perubahan
-C. LATAR BELAKANG
-Dalam hal ini, saya bekerja tim utuk membangun jaringan di sekolah. saya berpern untuk mengatur jaringan.</description>
+        <description>&lt;p&gt;&lt;strong&gt;A. PENDAHULUAN&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Pada kesempatan ini saya akan memberikan sedikit ilmu terkait dengan konsep perencanaan membangun jaringan sekolah. dalam melakukan sebuah pekerjaan kita mesti memikirkan konsep terlebih dahulu.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;B. PENGERTIAN&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Perencanaan merupakan tahapan awal yang harus di lakukan sebelum melakuka sesuatu pekerjaan. perencanaan dikatakan matang/berhasil, apabila perencanaan tersebut 70% sudah pasti dan tidak sering mengalami perubahan&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;C. LATAR BELAKANG&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Dalam hal ini, saya bekerja tim utuk membangun jaringan di sekolah. saya berpern untuk mengatur jaringan. tim kami mensimulasikan untuk mengatasi permasalahan (study kasus) dari smk kami SMKN 1 Bulukumba. salah satu permasalahanya adalah koneksi internet hanya di peruntukkan guru dan area lab, sedangkan siswanya belum mendapat fasilitas tersebut. untuk itu,kami sebagai tim diminta untuk membuat fasilitas internet melalui hotspot untuk wilayah sekolah secara menyeluruh.&lt;/p&gt;</description>
       </item>
     
   </channel>

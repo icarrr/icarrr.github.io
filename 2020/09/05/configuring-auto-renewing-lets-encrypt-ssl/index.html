@@ -14,12 +14,6 @@
   <meta property="og:url" content="https://sibunglon.com/2020/09/05/configuring-auto-renewing-lets-encrypt-ssl/">
   <meta property="og:site_name" content="Faizar Septiawan - Palugada paling ganteng di Makassar">
   <meta property="og:title" content="Configuring Auto Renewing Let&#39;s Encrypt SSL">
-  <meta property="og:description" content="Allow the certificate to auto renew, so that you as a server admin or not don’t have to log in to the server to renew all your certs.
-The renewal is run by cron. You can create it.
-The following steps:
-For nginx Create cron file.
-$ vi /etc/cron.d/certbot and then enter the script:
-SHELL=/bin/sh PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin 0 */12 * * * root test -x /usr/bin/certbot -a \! -d /run/systemd/system &amp;&amp; perl -e &#39;sleep int(rand(43200))&#39; &amp;&amp; certbot -q renew For apache2 Download certbot renew package file">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -35,12 +29,6 @@ SHELL=/bin/sh PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin 
   <!-- schema data -->
   
   <meta itemprop="name" content="Configuring Auto Renewing Let&#39;s Encrypt SSL">
-  <meta itemprop="description" content="Allow the certificate to auto renew, so that you as a server admin or not don’t have to log in to the server to renew all your certs.
-The renewal is run by cron. You can create it.
-The following steps:
-For nginx Create cron file.
-$ vi /etc/cron.d/certbot and then enter the script:
-SHELL=/bin/sh PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin 0 */12 * * * root test -x /usr/bin/certbot -a \! -d /run/systemd/system &amp;&amp; perl -e &#39;sleep int(rand(43200))&#39; &amp;&amp; certbot -q renew For apache2 Download certbot renew package file">
   <meta itemprop="datePublished" content="2020-09-05T06:23:28+08:00">
   <meta itemprop="dateModified" content="2020-09-05T06:23:28+08:00">
   <meta itemprop="wordCount" content="139">
@@ -52,12 +40,6 @@ SHELL=/bin/sh PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg">
   <meta name="twitter:title" content="Configuring Auto Renewing Let&#39;s Encrypt SSL">
-  <meta name="twitter:description" content="Allow the certificate to auto renew, so that you as a server admin or not don’t have to log in to the server to renew all your certs.
-The renewal is run by cron. You can create it.
-The following steps:
-For nginx Create cron file.
-$ vi /etc/cron.d/certbot and then enter the script:
-SHELL=/bin/sh PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin 0 */12 * * * root test -x /usr/bin/certbot -a \! -d /run/systemd/system &amp;&amp; perl -e &#39;sleep int(rand(43200))&#39; &amp;&amp; certbot -q renew For apache2 Download certbot renew package file">
 
   
 

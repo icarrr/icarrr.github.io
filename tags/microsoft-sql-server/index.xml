@@ -15,8 +15,8 @@
         <link>https://sibunglon.com/2019/05/16/backup-and-restore-database-sql-server-to-lower-version/</link>
         <pubDate>Thu, 16 May 2019 14:26:00 +0700</pubDate>
         <guid>https://sibunglon.com/2019/05/16/backup-and-restore-database-sql-server-to-lower-version/</guid>
-        <description>How to Restore Database SQL server to lower version?
-If you want to migrate a database from environment A with SQL Server version A to environment B with SQL Server version A, you can use the script or backup and restore function. But if you want to migrate the database from environment A with SQL Server version A to environment B with SQL Server version B, when running the backup function in environment A and you will get problems when running the restore function in environment B.</description>
+        <description>&lt;p&gt;How to Restore Database SQL server to lower version?&lt;/p&gt;
+&lt;p&gt;If you want to migrate a database from environment A with SQL Server version A to environment B with SQL Server version A, you can use the script or backup and restore function. But if you want to migrate the database from environment A with SQL Server version A to environment B with SQL Server version B, when running the backup function in environment A and you will get problems when running the restore function in environment B.&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -24,8 +24,9 @@ If you want to migrate a database from environment A with SQL Server version A t
         <link>https://sibunglon.com/2019/04/09/valueerror-saat-setup-mssql-server-di-linux/</link>
         <pubDate>Tue, 09 Apr 2019 20:45:08 +0700</pubDate>
         <guid>https://sibunglon.com/2019/04/09/valueerror-saat-setup-mssql-server-di-linux/</guid>
-        <description>ValueError: unknown locale: UTF-8? Beberapa hari yang lalu saya sempat menulis step by step install Microsoft SQL Server (MSSQL Server) di environment Linux, namun mungkin saja ada yang menemukan error salah satunya error dengan message ValueError: unknown locale: UTF-8, gak usah takut karena dari masalah itu ataupun lainnya kita dapat pelajaran baru😆
-Disuatu waktu saya install MSSQL Server Linux di environment berbeda dari sebelumnya, saya ikuti tuh step by step installasi MSSQL Server yang saya tulis sebelumnya, alhamdulillah dapat rejeki, dapat ValueError: unknown locale: UTF-8 pada saat setup MSSQL Server🤣 Dengan kemampuan sok tau saya😆 langsung disimpulkan maksud dari error message tersebut yaitu Lokal UTF-8 tidak di kenal.</description>
+        <description>&lt;h3 id=&#34;valueerror-unknown-locale-utf-8&#34;&gt;ValueError: unknown locale: UTF-8?&lt;/h3&gt;
+&lt;p&gt;Beberapa hari yang lalu saya sempat menulis step by step install Microsoft SQL Server (MSSQL Server) di environment Linux, namun mungkin saja ada yang menemukan error salah satunya error dengan message &lt;strong&gt;ValueError: unknown locale: UTF-8&lt;/strong&gt;, gak usah takut karena dari masalah itu ataupun lainnya kita dapat pelajaran baru😆&lt;/p&gt;
+&lt;p&gt;Disuatu waktu saya install MSSQL Server Linux di environment berbeda dari sebelumnya, saya ikuti tuh step by step installasi MSSQL Server yang saya tulis sebelumnya, alhamdulillah dapat rejeki, dapat &lt;strong&gt;ValueError: unknown locale: UTF-8&lt;/strong&gt; pada saat setup MSSQL Server🤣  Dengan kemampuan sok tau saya😆  langsung disimpulkan maksud dari error message tersebut yaitu Lokal UTF-8 tidak di kenal. Okey berarti tugas saya yaitu bagaimana agar si lokal UTF-8 itu dikenali, dengan kemampuan sok tau auto isi var lokal dengan UTF-8 menggunakan command &lt;code&gt;export LC_ALL=en_US.UTF-8&lt;/code&gt; , setelah itu eksekusi kembali command untuk setup MSSQL Server dan &lt;strong&gt;ValueError: unknown locale: UTF-8&lt;/strong&gt; telah hilang.&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -33,7 +34,8 @@ Disuatu waktu saya install MSSQL Server Linux di environment berbeda dari sebelu
         <link>https://sibunglon.com/2019/04/05/mudahnya-memasang-mssql-server-di-linux/</link>
         <pubDate>Fri, 05 Apr 2019 18:08:14 +0700</pubDate>
         <guid>https://sibunglon.com/2019/04/05/mudahnya-memasang-mssql-server-di-linux/</guid>
-        <description>Microsoft SQL Server di Linux? Diantara para pembaca mungkin ada yang kaget atau apa kalau produknya Microsoft bisa jalan di linux apalagi tanpa emulator ataupun tools lainnya. Yah itu bisa saja karena mungkin ada yang kemakan omongan bahwa produk Microsoft itu non open source. Dengan adanya MSSQL Server di linux jangan sampai ada terlalu kaget, positif thinking aja mungkin om Bill Gates udah mulai mengopen sourcekan produknya karena kasihan banyak yang berdosa karena menjadi pak tani gelapnya Microsoft😅</description>
+        <description>&lt;h3 id=&#34;microsoft-sql-server-di-linux&#34;&gt;Microsoft SQL Server di Linux?&lt;/h3&gt;
+&lt;p&gt;Diantara para pembaca mungkin ada yang kaget atau apa kalau produknya Microsoft bisa jalan di linux apalagi tanpa emulator ataupun tools lainnya. Yah itu bisa saja karena mungkin ada yang kemakan omongan bahwa produk Microsoft itu &lt;strong&gt;non open source&lt;/strong&gt;. Dengan adanya MSSQL Server di linux jangan sampai ada terlalu kaget, positif thinking aja mungkin om &lt;strong&gt;Bill Gates&lt;/strong&gt; udah mulai mengopen sourcekan produknya karena kasihan banyak yang berdosa karena menjadi &lt;strong&gt;pak tani&lt;/strong&gt; gelapnya Microsoft😅&lt;/p&gt;</description>
       </item>
     
   </channel>

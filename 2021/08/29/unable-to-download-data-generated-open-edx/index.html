@@ -14,10 +14,6 @@
   <meta property="og:url" content="https://sibunglon.com/2021/08/29/unable-to-download-data-generated-open-edx/">
   <meta property="og:site_name" content="Faizar Septiawan - Palugada paling ganteng di Makassar">
   <meta property="og:title" content="Unable to Download Data Generated Open edX">
-  <meta property="og:description" content="This problem occurs because don’t use Amazon S3 to save data generated. To fix it, follow these steps.
--) Login to Open edX server, then create symbolic link from /tmp/edx-s3/grades to /edx/var/edxapp/media.
--) Update nginx configuration of LMS. Find the following snippet codes on the configuration file.
-location ~ ^/media/(?P&lt;file&gt;.*) { root /edx/var/edxapp/media; try_files /$file =404; expires 31536000s; } Change =404 to /grades/$file or looks like the configuration below.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -30,10 +26,6 @@ location ~ ^/media/(?P&lt;file&gt;.*) { root /edx/var/edxapp/media; try_files /$
   <!-- schema data -->
   
   <meta itemprop="name" content="Unable to Download Data Generated Open edX">
-  <meta itemprop="description" content="This problem occurs because don’t use Amazon S3 to save data generated. To fix it, follow these steps.
--) Login to Open edX server, then create symbolic link from /tmp/edx-s3/grades to /edx/var/edxapp/media.
--) Update nginx configuration of LMS. Find the following snippet codes on the configuration file.
-location ~ ^/media/(?P&lt;file&gt;.*) { root /edx/var/edxapp/media; try_files /$file =404; expires 31536000s; } Change =404 to /grades/$file or looks like the configuration below.">
   <meta itemprop="datePublished" content="2021-08-29T21:14:25+08:00">
   <meta itemprop="dateModified" content="2021-08-29T21:14:25+08:00">
   <meta itemprop="wordCount" content="120">
@@ -45,10 +37,6 @@ location ~ ^/media/(?P&lt;file&gt;.*) { root /edx/var/edxapp/media; try_files /$
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://sibunglon.com/assets/img/profil-cycling-4.jpg">
   <meta name="twitter:title" content="Unable to Download Data Generated Open edX">
-  <meta name="twitter:description" content="This problem occurs because don’t use Amazon S3 to save data generated. To fix it, follow these steps.
--) Login to Open edX server, then create symbolic link from /tmp/edx-s3/grades to /edx/var/edxapp/media.
--) Update nginx configuration of LMS. Find the following snippet codes on the configuration file.
-location ~ ^/media/(?P&lt;file&gt;.*) { root /edx/var/edxapp/media; try_files /$file =404; expires 31536000s; } Change =404 to /grades/$file or looks like the configuration below.">
 
   
 
