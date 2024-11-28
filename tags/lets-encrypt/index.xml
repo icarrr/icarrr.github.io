@@ -51,7 +51,7 @@ File &amp;#34;/usr/lib/python2.7/site-packages/certbot/main.py&amp;#34;, line 23
 File &amp;#34;/usr/lib/python2.7/site-packages/certbot/client.py&amp;#34;, line 16, in &amp;lt;module&amp;gt; from acme import client as acme_client
 File &amp;#34;/usr/lib/python2.7/site-packages/acme/client.py&amp;#34;, line 40, in &amp;lt;module&amp;gt; urllib3.contrib.pyopenssl.inject_into_urllib3() AttributeError: &amp;#39;module&amp;#39; object has no attribute &amp;#39;pyopenssl&amp;#39;
 [root@airgreen siBunglon]#
-&lt;/code&gt;&lt;/pr</description>
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Kenapa bisa error? padahal sebelumnya udah pernah generate SSL di server sama pun, jangan panik 😂  itu bukan masalah besar. Jika kalian mengalami hal yang sama ataupun mendapatkan error message yang sama seperti &lt;strong&gt;I&amp;rsquo;m siBunglon&lt;/strong&gt; paparkan, cukup install dependensinya dengan command &lt;code&gt;pip install requests==2.6.0&lt;/code&gt;.&lt;/p&gt;</description>
       </item>
     
       <item>

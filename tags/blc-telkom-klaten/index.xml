@@ -125,7 +125,8 @@
 &lt;p&gt;Bakcup data adalah salah satu langkah untuk menyimpan data agar saat data itu hilang kita masih memiliki data simpanannya agar tidak hilang.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;C. Latar belakang&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Membuat secondary data agar saat data primer nya hilang kita masih punya data secondari nya.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;D. Tujuan&lt;/strong&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;strong&gt;D. Tujuan&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Agar data yang saat penting itu tidak hilang karena ada kesalahan dan dapat menyerlamatkan pekerjaan kita.&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -162,7 +163,8 @@
 &lt;p&gt;&lt;strong&gt;B. Latar Belakang&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Kebutuhan media tranmisi jarak jauh&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;C. Maksud dan Tujuan&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bisa Menerapkan wireless konsep dan bisa menangkap signal dari sisi AP&lt;/p&gt;</description>
+&lt;p&gt;Bisa Menerapkan wireless konsep dan bisa menangkap signal dari sisi AP&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;D. Alat dan Bahan&lt;/strong&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -205,7 +207,8 @@
 &lt;p&gt;Mempelajari sistem informasi sekolah dengan CMS dan mengimplementasikannya.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;D. Tujuan&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Mempunyai maksud untuk memudahkan saya mendapatkan informasi sekolah di website tersebut.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;E. Hasil yang diharapkan&lt;/strong&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;strong&gt;E. Hasil yang diharapkan&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Mempunyai harapan agar nanti kedepannya bisa membangun website ini di sekolah.&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -361,7 +364,8 @@
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Berikut adalah langkah-langkah mengkonfigurasi DHCP Server pada router.&lt;/p&gt;
-&lt;p&gt;Sebelumnya kita harus membuat simulasi jaringan seperti pada gambar berikut ini terlebih dahulu.&lt;/p&gt;</description>
+&lt;p&gt;Sebelumnya kita harus membuat simulasi jaringan seperti pada gambar berikut ini terlebih dahulu.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://4.bp.blogspot.com/-eokIb0OJCEQ/W7NDFzZdhkI/AAAAAAAAEqI/kB9bIWvRvQ4ZpFDodNwETeCzR86NPe4SACLcBGAs/s1600/dhcp1.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -395,7 +399,10 @@
 &lt;p&gt;Meremote switch dan router di packet tracer&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;C. MAKSUD DAN TUJUAN&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Ingin mengimplementasikanya di dunia kerja dan mengulangi Materi yang diberi tentang ssh dan telnet&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;D. TAHAPAN PEKERJAAN&lt;/strong&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;strong&gt;D. TAHAPAN PEKERJAAN&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TELNET&lt;/strong&gt;
+Berikut Topology Telnet :&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1.bp.blogspot.com/-vZODNOGM91I/W6gU5Pnc_vI/AAAAAAAAEj4/m3Ka9Ns5RWoIWMGoXwEtf9Nn3XbUVBZGQCLcBGAs/s1600/1.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -431,7 +438,28 @@
 &lt;p&gt;Konfigurasi interfaces Fast Ethernet&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Membuat banner pesan MOTD (Message of the Day)&lt;/p&gt;</description>
+&lt;p&gt;Membuat banner pesan MOTD (Message of the Day)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Membuat banner login&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Menempatkan local host domain ke IP address&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Perintah &lt;strong&gt;no ip domain-lookup&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Perintah &lt;strong&gt;exec-timeout&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Menyimpan konfigurasi&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Menghapus konfigurasi&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Perintah &lt;strong&gt;show&lt;/strong&gt; untuk memperifikasi konfigurasi router&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -467,7 +495,17 @@ Ciri ciri routing static adalah :&lt;/p&gt;
 &lt;li&gt;Proyektor&lt;/li&gt;
 &lt;li&gt;Internet&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;3. Jangka Waktu Pelaksanaan&lt;/p&gt;</description>
+&lt;p&gt;3. Jangka Waktu Pelaksanaan&lt;/p&gt;
+&lt;p&gt;Jam 08:00 s/d 22:00&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sesi Pagi 08:00 s/d 11:30&lt;/li&gt;
+&lt;li&gt;Istirahat Jam 11:30 s/d 12:30&lt;/li&gt;
+&lt;li&gt;Sesi Siang 12:30 s/d 16:30&lt;/li&gt;
+&lt;li&gt;Istirahat 16:30 s/d 20:00&lt;/li&gt;
+&lt;li&gt;Sesi Malam 20:00 s/d 22:00&lt;/li&gt;
+&lt;li&gt;Selesai&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;4. Pembahasan&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -491,7 +529,17 @@ Mengulangi dan Meringkas Materi yang Diberikan Tadi&lt;/li&gt;
 &lt;li&gt;Proyektor&lt;/li&gt;
 &lt;li&gt;Internet&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;3. Jangka Waktu Pelaksanaan&lt;/strong&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;strong&gt;3. Jangka Waktu Pelaksanaan&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Jam 08:00 s/d 22:00&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sesi Pagi 08:00 s/d 11:30&lt;/li&gt;
+&lt;li&gt;Istirahat Jam 11:30 s/d 12:30&lt;/li&gt;
+&lt;li&gt;Sesi Siang 12:30 s/d 16:30&lt;/li&gt;
+&lt;li&gt;Istirahat 16:30 s/d 20:00&lt;/li&gt;
+&lt;li&gt;Sesi Malam 20:00 s/d 22:00&lt;/li&gt;
+&lt;li&gt;Selesai&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;4. Pembahasan&lt;/strong&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -516,7 +564,17 @@ Mengulangi dan Meringkas Materi yang Diberikan Tadi&lt;/li&gt;
 &lt;li&gt;Proyektor&lt;/li&gt;
 &lt;li&gt;Internet&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;3. Jangka Waktu Pelaksanaan&lt;/p&gt;</description>
+&lt;p&gt;3. Jangka Waktu Pelaksanaan&lt;/p&gt;
+&lt;p&gt;Jam 08:00 s/d 22:00&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sesi Pagi 08:00 s/d 11:30&lt;/li&gt;
+&lt;li&gt;Istirahat Jam 11:30 s/d 12:30&lt;/li&gt;
+&lt;li&gt;Sesi Siang 12:30 s/d 16:30&lt;/li&gt;
+&lt;li&gt;Istirahat 16:30 s/d 20:00&lt;/li&gt;
+&lt;li&gt;Sesi Malam 20:00 s/d 22:00&lt;/li&gt;
+&lt;li&gt;Selesai&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;4. Pembahasan&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -541,7 +599,17 @@ Mengulangi dan Meringkas Materi yang Diberikan Tadi&lt;/li&gt;
 &lt;li&gt;Proyektor&lt;/li&gt;
 &lt;li&gt;Internet&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;3. Jangka Waktu Pelaksanaan&lt;/p&gt;</description>
+&lt;p&gt;3. Jangka Waktu Pelaksanaan&lt;/p&gt;
+&lt;p&gt;Jam 08:00 s/d 22:00&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sesi Pagi 08:00 s/d 11:30&lt;/li&gt;
+&lt;li&gt;Istirahat Jam 11:30 s/d 12:30&lt;/li&gt;
+&lt;li&gt;Sesi Siang 12:30 s/d 16:30&lt;/li&gt;
+&lt;li&gt;Istirahat 16:30 s/d 20:00&lt;/li&gt;
+&lt;li&gt;Sesi Malam 20:00 s/d 22:00&lt;/li&gt;
+&lt;li&gt;Selesai&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;4. Pembahasan&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -566,7 +634,17 @@ Mengulangi dan Meringkas Materi yang Diberikan Tadi&lt;/li&gt;
 &lt;li&gt;Proyektor&lt;/li&gt;
 &lt;li&gt;Internet&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;3. Jangka Waktu Pelaksanaan&lt;/strong&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;strong&gt;3. Jangka Waktu Pelaksanaan&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Jam 08:00 s/d 22:00&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sesi Pagi 08:00 s/d 11:30&lt;/li&gt;
+&lt;li&gt;Istirahat Jam 11:30 s/d 12:30&lt;/li&gt;
+&lt;li&gt;Sesi Siang 12:30 s/d 16:30&lt;/li&gt;
+&lt;li&gt;Istirahat 16:30 s/d 20:00&lt;/li&gt;
+&lt;li&gt;Sesi Malam 20:00 s/d 22:00&lt;/li&gt;
+&lt;li&gt;Selesai&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;4. Tahap Pelaksanaan&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -628,7 +706,8 @@ Memahami Materi dan dapat mengkonfigurasi cisco CCEN&lt;/p&gt;</description>
 &lt;p&gt;Di bidang teknologi informasi, backup, atau proses back up, mengacu pada penyalinan dan pengarsipan data sehingga bisa digunakan untuk mengembalikan dokumen asli setelah terjadi peristiwa kehilangan data. Bentuk kata kerja adalah untuk membuat cadangan dua kata, sedangkan kata benda adalah cadangan.&lt;/p&gt;
 &lt;p&gt;Restore , mengacu pada proses pengembalian data menggunakan file backup.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;B. Latar Belakang&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Membackup data mikrotik agar saat perangkat rusak kita punya salinan konfigurasinya.&lt;/p&gt;</description>
+&lt;p&gt;Membackup data mikrotik agar saat perangkat rusak kita punya salinan konfigurasinya.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;C. Hasil Yang Diharapkan&lt;/strong&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -641,7 +720,8 @@ Memahami Materi dan dapat mengkonfigurasi cisco CCEN&lt;/p&gt;</description>
 &lt;p&gt;Network Time Protocol (NTP) adalah protokol jaringan untuk sinkronisasi jam antara sistem komputer melalui jaringan data packet-switched, variable-latency. Beroperasi sejak sebelum 1985, NTP adalah salah satu protokol Internet tertua yang digunakan saat ini. NTP dirancang oleh David L. Mills dari University of Delaware.B. Latar Belakang Untuk Mensinkronisasikan waktu pada mikrotik&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;B. Hasil Yang Diharapkan&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Dapat Mensinkronisasikan waktu pada mikrotik&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;2. Alat dan Bahan&lt;/strong&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;strong&gt;2. Alat dan Bahan&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;- Router mikrotik&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -666,7 +746,9 @@ Memahami Materi dan dapat mengkonfigurasi cisco CCEN&lt;/p&gt;</description>
 &lt;p&gt;&lt;strong&gt;Jangka Waktu Pelaksanaan&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Kurang lebih 3 jam&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;ALAT DAN BAHAN&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;~ Laptop&lt;/p&gt;</description>
+&lt;p&gt;~ Laptop&lt;/p&gt;
+&lt;p&gt;~ Ubnt Powerbeam M2&lt;/p&gt;
+&lt;p&gt;~ RB 941&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -679,7 +761,10 @@ Memahami Materi dan dapat mengkonfigurasi cisco CCEN&lt;/p&gt;</description>
 &lt;p&gt;&lt;strong&gt;B. Pengertian&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Apa itu proxy?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Proxy merupakan perangkat yang bersifat &amp;ldquo;middleman&amp;rdquo;, yang bekerja diantara client &amp;amp; Server, bertugas menghadle transmisi request ataupun respon. Data yang melewati proxy, bisa diubah oleh proxy atau tidak diubah sama sekali, tergantung implementasi fitur dan kemampuan proxy.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Manfaat Proxy&lt;/strong&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;strong&gt;Manfaat Proxy&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Security&lt;/em&gt; : Proxy mampu melakukan pengecekan terhadap incoming response &amp;amp; outgoing request, sehingga memungkinkan untuk melakukan block paket yang tidak diharapkan&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -713,7 +798,9 @@ Memahami Materi dan dapat mengkonfigurasi cisco CCEN&lt;/p&gt;</description>
 &lt;p&gt;Pada kesempatan ini kita akan membahas sedikit mengenai K3 atau Kesehatan, Keselamatan, Keamanan Kerja. kenapa kita membahas hal ini, karna di dalam melakukan pekerjaan kita harus memahmi atau memakai yang namanya K3.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;PENGERTIAN&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Filosofi (Mangkunegara)&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Suatu pemikiran dan upaya untuk menjamin keutuhan dan kesempurnaan jasmani maupun rohani tenaga kerja khususnya dan manusia pada umumnya serta hasil karya dan budaya untuk menuju masyarakat adil dan makmur.&lt;/p&gt;</description>
+&lt;p&gt;Suatu pemikiran dan upaya untuk menjamin keutuhan dan kesempurnaan jasmani maupun rohani tenaga kerja khususnya dan manusia pada umumnya serta hasil karya dan budaya untuk menuju masyarakat adil dan makmur.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Keilmuan&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Semua ilmu dan penerapannya untuk mencegah terjadinya kecelakaan kerja, penyakit akibat kerja (PAK), kebakaran, peledakan dan pencemaran lingkungan.&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -829,7 +916,9 @@ Memahami Materi dan dapat mengkonfigurasi cisco CCEN&lt;/p&gt;</description>
 &lt;li&gt;akses internet&lt;/li&gt;
 &lt;li&gt;kabel UTP&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;F. Jangka waktu pelaksanaan&lt;/strong&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;strong&gt;F. Jangka waktu pelaksanaan&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Waktu yang dibutuhkan tergantung dari koneksi yang digunakan&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;G. Langkah kerja&lt;/strong&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -896,7 +985,8 @@ Memahami Materi dan dapat mengkonfigurasi cisco CCEN&lt;/p&gt;</description>
 &lt;p&gt;&lt;strong&gt;C. Latar belakang&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Ingin menambah ilmu kemudian untuk disharing&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;D. Tujuan&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Agar client tidak bisa terhubung ke internet apabila ia mendapatkan ip yang telah diblokir&lt;/p&gt;</description>
+&lt;p&gt;Agar client tidak bisa terhubung ke internet apabila ia mendapatkan ip yang telah diblokir&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;E. Hasil yang diharapkan&lt;/strong&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -924,7 +1014,8 @@ Memahami Materi dan dapat mengkonfigurasi cisco CCEN&lt;/p&gt;</description>
 &lt;p&gt;&lt;strong&gt;D. Tujuan&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Agar client tidak dapat membuka situs yang telah diblokir&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;E. Hasil yang diharapkan&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Dapat melakukan konfigurasi dengan cepat, baik, dan benar&lt;/p&gt;</description>
+&lt;p&gt;Dapat melakukan konfigurasi dengan cepat, baik, dan benar&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;F. Alat dan bahan&lt;/strong&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -960,7 +1051,10 @@ Memahami Materi dan dapat mengkonfigurasi cisco CCEN&lt;/p&gt;</description>
 &lt;p&gt;&lt;strong&gt;F. LANGKAH KERJA&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;tentukan bilangan yang ingin di konfersi baik desimal maupun biner&lt;/p&gt;</description>
+&lt;p&gt;tentukan bilangan yang ingin di konfersi baik desimal maupun biner&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;semisalnya kita akan mengkonfersi bilangan desimal ke biner&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -1027,7 +1121,10 @@ Memahami Materi dan dapat mengkonfigurasi cisco CCEN&lt;/p&gt;</description>
 &lt;p&gt;2 Jam&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;E. ALAT DAN BAHAN&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;~ Laptop&lt;/p&gt;
-&lt;p&gt;~ LCD proyektor&lt;/p&gt;</description>
+&lt;p&gt;~ LCD proyektor&lt;/p&gt;
+&lt;p&gt;~ Koneksi internet&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;F. PEMBAHASAN&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://2.bp.blogspot.com/-OR3md3gTN6k/W49tZa-4vWI/AAAAAAAAEFo/FckHczPsbm0mf4CXN0Ylh732k597bbLPwCLcBGAs/s1600/Selection_114.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -1177,7 +1274,8 @@ Memahami Materi dan dapat mengkonfigurasi cisco CCEN&lt;/p&gt;</description>
         <description>&lt;p&gt;&lt;strong&gt;A. Pendahuluan&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Berselancar di website dengan lancar tanpa butuh menunggu merupakan keinginan banyak orang, apalagi berselancar tanpa koneksi internet, wahhh nyaman banget. Kalian juga dapat merasakannya dengan menginstal LOCALHOST, tapi apa itu LOCALHOST?&lt;br&gt;
 &lt;strong&gt;#Pengertian&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Dalam jaringan komputer, localhost adalah nama host yang berarti komputer ini. Ini digunakan untuk mengakses layanan jaringan yang berjalan di host melalui antarmuka jaringan loopback-nya. Menggunakan antarmuka loopback bypasses perangkat keras antarmuka jaringan lokal.&lt;/p&gt;</description>
+&lt;p&gt;Dalam jaringan komputer, localhost adalah nama host yang berarti komputer ini. Ini digunakan untuk mengakses layanan jaringan yang berjalan di host melalui antarmuka jaringan loopback-nya. Menggunakan antarmuka loopback bypasses perangkat keras antarmuka jaringan lokal.&lt;/p&gt;
+&lt;p&gt;Mekanisme loopback lokal berguna untuk menguji perangkat lunak selama pengembangan, terlepas dari konfigurasi jaringan manapun. Misalnya, jika komputer telah dikonfigurasi untuk menyediakan situs web, mengarahkan browser web yang berjalan secara lokal ke http://localhost dapat menampilkan beranda.&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -1195,7 +1293,8 @@ Memahami Materi dan dapat mengkonfigurasi cisco CCEN&lt;/p&gt;</description>
         <guid>https://sibunglon.com/2017/08/08/implementasi-pppoe-client-mikrotik/</guid>
         <description>&lt;p&gt;&lt;strong&gt;A. PENGERTIAN&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;PPPOE merupakan singkatan dari point-to-point protocol over Ethernet yang merupakan protokol dalam jaringan untuk menghubungkan komunikasi antara dua buah titik jaringan atau dua buah port ethernet dengan model tunneling (terowongan) dan juga sebagai virtual dial-up dalam jaringan. MikroTikk adalah salah satu router yang mendukung konfigurasi pppoe server dan client, untuk itulah akan di tuliskan pada artikel ini tentang bagaimana membuat pppoe server dengan MikroTikk.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;B. LATAR BELAKANG&lt;/strong&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;strong&gt;B. LATAR BELAKANG&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;MikroTikk adalah salah satu router yang mendukung konfigurasi pppoe server dan client, untuk itulah akan dituliskan pada artikel ini tentang bagaimana membuat pppoe server dengan MikroTikk.&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -1274,7 +1373,8 @@ Memahami Materi dan dapat mengkonfigurasi cisco CCEN&lt;/p&gt;</description>
         <pubDate>Mon, 31 Jul 2017 15:39:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/31/menyiapkan-server/</guid>
         <description>&lt;p&gt;&lt;strong&gt;Pendahuluan&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Server merupakan sebuah sistem komputer yang menyediakan jenis layanan tertentu dalam sebuah jaringan komputer. Peladen didukung dengan prosesor yang bersifat scalable dan RAM yang besar,dan juga dilengkapi dengan sistem operasi khusus, yang disebut sebagai sistem operasi jaringan. Peladen juga menjalankan perangkat lunak administratif yang mengontrol akses terhadap jaringan dan sumber daya yang terdapat di dalamnya contoh sepertihalnya berkas atau pencetak, dan memberikan akses kepada stasiun kerja anggota jaringan.&lt;/p&gt;</description>
+&lt;p&gt;Server merupakan sebuah sistem komputer yang menyediakan jenis layanan tertentu dalam sebuah jaringan komputer. Peladen didukung dengan prosesor yang bersifat scalable dan RAM yang besar,dan juga dilengkapi dengan sistem operasi khusus, yang disebut sebagai sistem operasi jaringan. Peladen juga menjalankan perangkat lunak administratif yang mengontrol akses terhadap jaringan dan sumber daya yang terdapat di dalamnya contoh sepertihalnya berkas atau pencetak, dan memberikan akses kepada stasiun kerja anggota jaringan.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;LATAR BELAKANG&lt;/strong&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -1294,7 +1394,8 @@ Memahami Materi dan dapat mengkonfigurasi cisco CCEN&lt;/p&gt;</description>
         <description>&lt;p&gt;&lt;strong&gt;Pendahuluan&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Pada postingan sebelumnya telah disebutkan bahwa mikroTik mempunyai banyak fitur, nah pada postingan ini akan di implementasikan bagaimana agar 1 akun dapat digunakan banyak pengguna. Lalu bagaimana mengaktifkan fitur ini?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Maksud dan Tujuan&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Penggunaan fitur ini dimaksudkan agar 1 profile user bisa digunakan secara bersama-sama oleh beberapa user sekaligus. Dengan demikian, setiap user yang ingin terhubung hanya perlu memiliki satu username dan password untuk dipakai bersama-sama.&lt;/p&gt;</description>
+&lt;p&gt;Penggunaan fitur ini dimaksudkan agar 1 profile user bisa digunakan secara bersama-sama oleh beberapa user sekaligus. Dengan demikian, setiap user yang ingin terhubung hanya perlu memiliki satu username dan password untuk dipakai bersama-sama.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alat dan Bahan&lt;/strong&gt;&lt;/p&gt;</description>
       </item>
     
       <item>

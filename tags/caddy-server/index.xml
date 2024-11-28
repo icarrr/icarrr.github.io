@@ -18,7 +18,9 @@
         <description>&lt;h3 id=&#34;caddy&#34;&gt;Caddy?&lt;/h3&gt;
 &lt;p&gt;Gak usah takut 😆  beberapa bulan yang lalu kan udah kenalan sama si Caddy dan ini &lt;a href=&#34;https://sibunglon.com/2018/10/26/berkenalan-dengan-caddy-server/&#34;&gt;postnya&lt;/a&gt;, tapi waktu itu kan cuman sekedar berkenalan. Nah dipostingan ini &lt;strong&gt;I&amp;rsquo;m siBunglon&lt;/strong&gt; akan memberikan step installasinya di linux beserta memamerkan fitur yang paling sering &lt;strong&gt;I&amp;rsquo;m siBunglon&lt;/strong&gt; pakai jika menggunakan si Caddy ini. To the point aja yah, kan kenalannya udah :D&lt;/p&gt;
 &lt;h3 id=&#34;bermain-dengan-caddy&#34;&gt;Bermain Dengan Caddy&lt;/h3&gt;
-&lt;p&gt;1) Install caddy ke sistem dengan command&lt;/p&gt;</description>
+&lt;p&gt;1) Install caddy ke sistem dengan command&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;curl https://getcaddy.com | bash -s personal
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;2) Saat ini caddy sudah bisa langsung dijalankan dengan command &lt;code&gt;caddy&lt;/code&gt;, dan bisa diakses melalui &lt;em&gt;http://localhost:2015&lt;/em&gt; dimana 2015 adalah port default dari caddy namun jika anda mengkses url tersebut cuman direspon dengan message 404 karena direktori root belum ditentukan, untuk menghentikan caddy yang baru saja dijalankan cukup gunakan command keyboard &lt;code&gt;CTRL + C&lt;/code&gt;.&lt;/p&gt;</description>
       </item>
     
       <item>

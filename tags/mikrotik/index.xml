@@ -48,7 +48,8 @@
 &lt;p&gt;Di bidang teknologi informasi, backup, atau proses back up, mengacu pada penyalinan dan pengarsipan data sehingga bisa digunakan untuk mengembalikan dokumen asli setelah terjadi peristiwa kehilangan data. Bentuk kata kerja adalah untuk membuat cadangan dua kata, sedangkan kata benda adalah cadangan.&lt;/p&gt;
 &lt;p&gt;Restore , mengacu pada proses pengembalian data menggunakan file backup.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;B. Latar Belakang&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Membackup data mikrotik agar saat perangkat rusak kita punya salinan konfigurasinya.&lt;/p&gt;</description>
+&lt;p&gt;Membackup data mikrotik agar saat perangkat rusak kita punya salinan konfigurasinya.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;C. Hasil Yang Diharapkan&lt;/strong&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -61,7 +62,8 @@
 &lt;p&gt;Network Time Protocol (NTP) adalah protokol jaringan untuk sinkronisasi jam antara sistem komputer melalui jaringan data packet-switched, variable-latency. Beroperasi sejak sebelum 1985, NTP adalah salah satu protokol Internet tertua yang digunakan saat ini. NTP dirancang oleh David L. Mills dari University of Delaware.B. Latar Belakang Untuk Mensinkronisasikan waktu pada mikrotik&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;B. Hasil Yang Diharapkan&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Dapat Mensinkronisasikan waktu pada mikrotik&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;2. Alat dan Bahan&lt;/strong&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;strong&gt;2. Alat dan Bahan&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;- Router mikrotik&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -78,7 +80,9 @@
 &lt;p&gt;&lt;strong&gt;Jangka Waktu Pelaksanaan&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Kurang lebih 3 jam&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;ALAT DAN BAHAN&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;~ Laptop&lt;/p&gt;</description>
+&lt;p&gt;~ Laptop&lt;/p&gt;
+&lt;p&gt;~ Ubnt Powerbeam M2&lt;/p&gt;
+&lt;p&gt;~ RB 941&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -91,7 +95,10 @@
 &lt;p&gt;&lt;strong&gt;B. Pengertian&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Apa itu proxy?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Proxy merupakan perangkat yang bersifat &amp;ldquo;middleman&amp;rdquo;, yang bekerja diantara client &amp;amp; Server, bertugas menghadle transmisi request ataupun respon. Data yang melewati proxy, bisa diubah oleh proxy atau tidak diubah sama sekali, tergantung implementasi fitur dan kemampuan proxy.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Manfaat Proxy&lt;/strong&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;strong&gt;Manfaat Proxy&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Security&lt;/em&gt; : Proxy mampu melakukan pengecekan terhadap incoming response &amp;amp; outgoing request, sehingga memungkinkan untuk melakukan block paket yang tidak diharapkan&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -145,7 +152,9 @@
 &lt;li&gt;akses internet&lt;/li&gt;
 &lt;li&gt;kabel UTP&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;F. Jangka waktu pelaksanaan&lt;/strong&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;strong&gt;F. Jangka waktu pelaksanaan&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Waktu yang dibutuhkan tergantung dari koneksi yang digunakan&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;G. Langkah kerja&lt;/strong&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -202,7 +211,8 @@
 &lt;p&gt;&lt;strong&gt;C. Latar belakang&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Ingin menambah ilmu kemudian untuk disharing&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;D. Tujuan&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Agar client tidak bisa terhubung ke internet apabila ia mendapatkan ip yang telah diblokir&lt;/p&gt;</description>
+&lt;p&gt;Agar client tidak bisa terhubung ke internet apabila ia mendapatkan ip yang telah diblokir&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;E. Hasil yang diharapkan&lt;/strong&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -230,7 +240,8 @@
 &lt;p&gt;&lt;strong&gt;D. Tujuan&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Agar client tidak dapat membuka situs yang telah diblokir&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;E. Hasil yang diharapkan&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Dapat melakukan konfigurasi dengan cepat, baik, dan benar&lt;/p&gt;</description>
+&lt;p&gt;Dapat melakukan konfigurasi dengan cepat, baik, dan benar&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;F. Alat dan bahan&lt;/strong&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -278,7 +289,8 @@
         <guid>https://sibunglon.com/2017/08/08/implementasi-pppoe-client-mikrotik/</guid>
         <description>&lt;p&gt;&lt;strong&gt;A. PENGERTIAN&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;PPPOE merupakan singkatan dari point-to-point protocol over Ethernet yang merupakan protokol dalam jaringan untuk menghubungkan komunikasi antara dua buah titik jaringan atau dua buah port ethernet dengan model tunneling (terowongan) dan juga sebagai virtual dial-up dalam jaringan. MikroTikk adalah salah satu router yang mendukung konfigurasi pppoe server dan client, untuk itulah akan di tuliskan pada artikel ini tentang bagaimana membuat pppoe server dengan MikroTikk.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;B. LATAR BELAKANG&lt;/strong&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;strong&gt;B. LATAR BELAKANG&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;MikroTikk adalah salah satu router yang mendukung konfigurasi pppoe server dan client, untuk itulah akan dituliskan pada artikel ini tentang bagaimana membuat pppoe server dengan MikroTikk.&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -300,7 +312,8 @@
         <description>&lt;p&gt;&lt;strong&gt;Pendahuluan&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Pada postingan sebelumnya telah disebutkan bahwa mikroTik mempunyai banyak fitur, nah pada postingan ini akan di implementasikan bagaimana agar 1 akun dapat digunakan banyak pengguna. Lalu bagaimana mengaktifkan fitur ini?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Maksud dan Tujuan&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Penggunaan fitur ini dimaksudkan agar 1 profile user bisa digunakan secara bersama-sama oleh beberapa user sekaligus. Dengan demikian, setiap user yang ingin terhubung hanya perlu memiliki satu username dan password untuk dipakai bersama-sama.&lt;/p&gt;</description>
+&lt;p&gt;Penggunaan fitur ini dimaksudkan agar 1 profile user bisa digunakan secara bersama-sama oleh beberapa user sekaligus. Dengan demikian, setiap user yang ingin terhubung hanya perlu memiliki satu username dan password untuk dipakai bersama-sama.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alat dan Bahan&lt;/strong&gt;&lt;/p&gt;</description>
       </item>
     
       <item>

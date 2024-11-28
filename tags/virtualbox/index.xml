@@ -47,7 +47,7 @@ sda                         8:0    0   70G  0 disk
   └─ubuntu--vg-ubuntu--lv 253:0    0   69G  0 lvm  /
 sr0                        11:0    1 1024M  0 rom
 ubuntu@ubuntu:~$
-&lt;/code&gt;&lt;/pr</description>
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;On this case, LVM partition it is under &lt;strong&gt;sda3&lt;/strong&gt; and let&amp;rsquo;s start with extended or resize disk.&lt;/p&gt;</description>
       </item>
     
   </channel>

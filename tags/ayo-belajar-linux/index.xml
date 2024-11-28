@@ -39,7 +39,7 @@ sySLLzSxyiE7b9BvloRbKtbZFMjhChRgm4YBi+M4C1Q0dqPeeQgSMdb3yilCj55y\
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;private_key&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$cleaned_key&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; sed -n &lt;span class=&#34;s2&#34;&gt;&amp;#34;/&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$start_marker&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;/,/&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$end_marker&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;/p&amp;#34;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$private_key&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
       </item>
     
       <item>
@@ -58,7 +58,11 @@ sySLLzSxyiE7b9BvloRbKtbZFMjhChRgm4YBi+M4C1Q0dqPeeQgSMdb3yilCj55y\
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	cat &lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;ssl_combine&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt; &amp;gt;&amp;gt; /etc/ssl/sibunglon.com.crt
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; -e &lt;span class=&#34;s2&#34;&gt;&amp;#34;\n&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; /etc/ssl/sibunglon.com.crt&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;done&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then, i can use &lt;code&gt;sibunglon.com.crt&lt;/code&gt; as SSL certificate file and &lt;code&gt;sibunglon.com.key&lt;/code&gt; as SSL certificate key file.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sibunglon@sanita:~$ cat /etc/self-signed.conf
+ssl_certificate /etc/ssl/sibunglon.com.crt;
+ssl_certificate_key /etc/ssl/sibunglon.com.key;
+&lt;/code&gt;&lt;/pre&gt;</description>
       </item>
     
       <item>
@@ -98,7 +102,7 @@ sda                         8:0    0   70G  0 disk
   └─ubuntu--vg-ubuntu--lv 253:0    0   69G  0 lvm  /
 sr0                        11:0    1 1024M  0 rom
 ubuntu@ubuntu:~$
-&lt;/code&gt;&lt;/pr</description>
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;On this case, LVM partition it is under &lt;strong&gt;sda3&lt;/strong&gt; and let&amp;rsquo;s start with extended or resize disk.&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -196,7 +200,7 @@ ubuntu@ubuntu:~$
 &lt;p&gt;&lt;strong&gt;Get the .key file&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Extract the encrypted key using:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;openssl pkcs12 -in cert.pfx -nocerts -out domain.tld.encrypted.key
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Decrypt the encrypted key using:&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -213,7 +217,7 @@ ubuntu@ubuntu:~$
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;drwx------@ &lt;span class=&#34;m&#34;&gt;15&lt;/span&gt; faizarseptiawan 480B Oct &lt;span class=&#34;m&#34;&gt;19&lt;/span&gt; 00:00 ..
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-rw-r--r--   &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; faizarseptiawan 165M Jun &lt;span class=&#34;m&#34;&gt;23&lt;/span&gt; 04:11 S.white-TKTlqehU_ro.mp4
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-rw-r--r--   &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; faizarseptiawan 165M Oct &lt;span class=&#34;m&#34;&gt;19&lt;/span&gt; 00:28 SWhite.zip
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Create a multipart file using split command.&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -310,7 +314,10 @@ ubuntu@ubuntu:~$
 &lt;li&gt;Save and exit.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;limit-users-or-groups&#34;&gt;Limit Users or Groups&lt;/h3&gt;
-&lt;p&gt;To limit users or groups of incoming connections to server via ssh, it can be done by:&lt;/p&gt;</description>
+&lt;p&gt;To limit users or groups of incoming connections to server via ssh, it can be done by:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Edit file &lt;code&gt;/etc/ssh/sshd_config&lt;/code&gt;.&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -368,7 +375,7 @@ ubuntu@ubuntu:~$
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Update locate cert bak&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo mv &lt;span class=&#34;nv&#34;&gt;$HOME&lt;/span&gt;/cert.bak &lt;span class=&#34;nv&#34;&gt;$HOME&lt;/span&gt;/cert/cert.bak-&lt;span class=&#34;nv&#34;&gt;$localTime&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
       </item>
     
       <item>
@@ -383,7 +390,11 @@ ubuntu@ubuntu:~$
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ curl --insecure -I url
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Example:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ curl -k https://sibunglon.com/image.png
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;-) Wget&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ wget --no-check-certificate url
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Example:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ wget --no-check-certificate https://sibunglon.com/image.png
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;But if you don&amp;rsquo;t want to use this additional option, just create a file whose contents can pass the SSL Certificate check. To create a file you can use the following command:&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -422,7 +433,7 @@ ubuntu@ubuntu:~$
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;m&#34;&gt;3&lt;/span&gt; directories, &lt;span class=&#34;m&#34;&gt;20&lt;/span&gt; files
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;~/G/G/icarrr ❯❯❯
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;ls&lt;/strong&gt;:&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -532,7 +543,9 @@ ubuntu@ubuntu:~$
         <description>&lt;h3 id=&#34;caddy&#34;&gt;Caddy?&lt;/h3&gt;
 &lt;p&gt;Gak usah takut 😆  beberapa bulan yang lalu kan udah kenalan sama si Caddy dan ini &lt;a href=&#34;https://sibunglon.com/2018/10/26/berkenalan-dengan-caddy-server/&#34;&gt;postnya&lt;/a&gt;, tapi waktu itu kan cuman sekedar berkenalan. Nah dipostingan ini &lt;strong&gt;I&amp;rsquo;m siBunglon&lt;/strong&gt; akan memberikan step installasinya di linux beserta memamerkan fitur yang paling sering &lt;strong&gt;I&amp;rsquo;m siBunglon&lt;/strong&gt; pakai jika menggunakan si Caddy ini. To the point aja yah, kan kenalannya udah :D&lt;/p&gt;
 &lt;h3 id=&#34;bermain-dengan-caddy&#34;&gt;Bermain Dengan Caddy&lt;/h3&gt;
-&lt;p&gt;1) Install caddy ke sistem dengan command&lt;/p&gt;</description>
+&lt;p&gt;1) Install caddy ke sistem dengan command&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;curl https://getcaddy.com | bash -s personal
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;2) Saat ini caddy sudah bisa langsung dijalankan dengan command &lt;code&gt;caddy&lt;/code&gt;, dan bisa diakses melalui &lt;em&gt;http://localhost:2015&lt;/em&gt; dimana 2015 adalah port default dari caddy namun jika anda mengkses url tersebut cuman direspon dengan message 404 karena direktori root belum ditentukan, untuk menghentikan caddy yang baru saja dijalankan cukup gunakan command keyboard &lt;code&gt;CTRL + C&lt;/code&gt;.&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -561,7 +574,7 @@ File &amp;#34;/usr/lib/python2.7/site-packages/certbot/main.py&amp;#34;, line 23
 File &amp;#34;/usr/lib/python2.7/site-packages/certbot/client.py&amp;#34;, line 16, in &amp;lt;module&amp;gt; from acme import client as acme_client
 File &amp;#34;/usr/lib/python2.7/site-packages/acme/client.py&amp;#34;, line 40, in &amp;lt;module&amp;gt; urllib3.contrib.pyopenssl.inject_into_urllib3() AttributeError: &amp;#39;module&amp;#39; object has no attribute &amp;#39;pyopenssl&amp;#39;
 [root@airgreen siBunglon]#
-&lt;/code&gt;&lt;/pr</description>
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Kenapa bisa error? padahal sebelumnya udah pernah generate SSL di server sama pun, jangan panik 😂  itu bukan masalah besar. Jika kalian mengalami hal yang sama ataupun mendapatkan error message yang sama seperti &lt;strong&gt;I&amp;rsquo;m siBunglon&lt;/strong&gt; paparkan, cukup install dependensinya dengan command &lt;code&gt;pip install requests==2.6.0&lt;/code&gt;.&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -624,7 +637,9 @@ File &amp;#34;/usr/lib/python2.7/site-packages/acme/client.py&amp;#34;, line 40,
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sibunglon ALL=(ALL) NOPASSWD:ALL
 &lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
 &lt;p&gt;Note:
-Kata &lt;em&gt;&lt;strong&gt;sibunglon&lt;/strong&gt;&lt;/em&gt; diganti sesuai user yang akan diberikan izin menggunakan &lt;strong&gt;sudo&lt;/strong&gt; tanpa password.&lt;/p&gt;</description>
+Kata &lt;em&gt;&lt;strong&gt;sibunglon&lt;/strong&gt;&lt;/em&gt; diganti sesuai user yang akan diberikan izin menggunakan &lt;strong&gt;sudo&lt;/strong&gt; tanpa password.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Sekarang user sibunglon (user sesuai yang anda daftarkan) dapat menggunakan command sudo tanpa password.&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -745,7 +760,7 @@ Jika anda mendapatkan sebuah masalah jangan panik, apalagi ketemu error yang sim
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;firewall-cmd --permanent --zone=public --add-service=http
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Sedangkan untuk mengizinkan  trafik protokol HTTPS, gunakan command&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;firewall-cmd --permanent --zone=public --add-service=https
-&lt;/code&gt;&lt;/pr</description>
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Setelah diizinkan, firewall wajib direload agar update firewall dapat diterapkan&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -768,7 +783,8 @@ Jika anda mendapatkan sebuah masalah jangan panik, apalagi ketemu error yang sim
 &lt;p&gt;Jika masih ingin berkenalan lebih lanjut, bisa di stalking ke official sitenya :D &lt;a href=&#34;https://ngrok.com&#34;&gt;https://ngrok.com&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Langkah - langkah menggunakan ngrok:&lt;/p&gt;
 &lt;p&gt;1) Buka shell linux dan login sebagai super user, kemudian download ngrok menggunakan command&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip&lt;/code&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;code&gt;wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;2) Ekstrak file ngrok yang telah didownload dengan command&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -910,7 +926,8 @@ Jika anda mendapatkan sebuah masalah jangan panik, apalagi ketemu error yang sim
 &lt;p&gt;Bakcup data adalah salah satu langkah untuk menyimpan data agar saat data itu hilang kita masih memiliki data simpanannya agar tidak hilang.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;C. Latar belakang&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Membuat secondary data agar saat data primer nya hilang kita masih punya data secondari nya.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;D. Tujuan&lt;/strong&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;strong&gt;D. Tujuan&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Agar data yang saat penting itu tidak hilang karena ada kesalahan dan dapat menyerlamatkan pekerjaan kita.&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -948,7 +965,8 @@ Jika anda mendapatkan sebuah masalah jangan panik, apalagi ketemu error yang sim
 &lt;p&gt;Mempelajari sistem informasi sekolah dengan CMS dan mengimplementasikannya.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;D. Tujuan&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Mempunyai maksud untuk memudahkan saya mendapatkan informasi sekolah di website tersebut.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;E. Hasil yang diharapkan&lt;/strong&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;strong&gt;E. Hasil yang diharapkan&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Mempunyai harapan agar nanti kedepannya bisa membangun website ini di sekolah.&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -1176,7 +1194,8 @@ Jika anda mendapatkan sebuah masalah jangan panik, apalagi ketemu error yang sim
         <description>&lt;p&gt;&lt;strong&gt;A. Pendahuluan&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Berselancar di website dengan lancar tanpa butuh menunggu merupakan keinginan banyak orang, apalagi berselancar tanpa koneksi internet, wahhh nyaman banget. Kalian juga dapat merasakannya dengan menginstal LOCALHOST, tapi apa itu LOCALHOST?&lt;br&gt;
 &lt;strong&gt;#Pengertian&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Dalam jaringan komputer, localhost adalah nama host yang berarti komputer ini. Ini digunakan untuk mengakses layanan jaringan yang berjalan di host melalui antarmuka jaringan loopback-nya. Menggunakan antarmuka loopback bypasses perangkat keras antarmuka jaringan lokal.&lt;/p&gt;</description>
+&lt;p&gt;Dalam jaringan komputer, localhost adalah nama host yang berarti komputer ini. Ini digunakan untuk mengakses layanan jaringan yang berjalan di host melalui antarmuka jaringan loopback-nya. Menggunakan antarmuka loopback bypasses perangkat keras antarmuka jaringan lokal.&lt;/p&gt;
+&lt;p&gt;Mekanisme loopback lokal berguna untuk menguji perangkat lunak selama pengembangan, terlepas dari konfigurasi jaringan manapun. Misalnya, jika komputer telah dikonfigurasi untuk menyediakan situs web, mengarahkan browser web yang berjalan secara lokal ke http://localhost dapat menampilkan beranda.&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -1242,7 +1261,8 @@ Jika anda mendapatkan sebuah masalah jangan panik, apalagi ketemu error yang sim
         <pubDate>Mon, 31 Jul 2017 15:39:00 +0000</pubDate>
         <guid>https://sibunglon.com/2017/07/31/menyiapkan-server/</guid>
         <description>&lt;p&gt;&lt;strong&gt;Pendahuluan&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Server merupakan sebuah sistem komputer yang menyediakan jenis layanan tertentu dalam sebuah jaringan komputer. Peladen didukung dengan prosesor yang bersifat scalable dan RAM yang besar,dan juga dilengkapi dengan sistem operasi khusus, yang disebut sebagai sistem operasi jaringan. Peladen juga menjalankan perangkat lunak administratif yang mengontrol akses terhadap jaringan dan sumber daya yang terdapat di dalamnya contoh sepertihalnya berkas atau pencetak, dan memberikan akses kepada stasiun kerja anggota jaringan.&lt;/p&gt;</description>
+&lt;p&gt;Server merupakan sebuah sistem komputer yang menyediakan jenis layanan tertentu dalam sebuah jaringan komputer. Peladen didukung dengan prosesor yang bersifat scalable dan RAM yang besar,dan juga dilengkapi dengan sistem operasi khusus, yang disebut sebagai sistem operasi jaringan. Peladen juga menjalankan perangkat lunak administratif yang mengontrol akses terhadap jaringan dan sumber daya yang terdapat di dalamnya contoh sepertihalnya berkas atau pencetak, dan memberikan akses kepada stasiun kerja anggota jaringan.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;LATAR BELAKANG&lt;/strong&gt;&lt;/p&gt;</description>
       </item>
     
       <item>

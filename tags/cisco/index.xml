@@ -30,7 +30,8 @@
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Berikut adalah langkah-langkah mengkonfigurasi DHCP Server pada router.&lt;/p&gt;
-&lt;p&gt;Sebelumnya kita harus membuat simulasi jaringan seperti pada gambar berikut ini terlebih dahulu.&lt;/p&gt;</description>
+&lt;p&gt;Sebelumnya kita harus membuat simulasi jaringan seperti pada gambar berikut ini terlebih dahulu.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://4.bp.blogspot.com/-eokIb0OJCEQ/W7NDFzZdhkI/AAAAAAAAEqI/kB9bIWvRvQ4ZpFDodNwETeCzR86NPe4SACLcBGAs/s1600/dhcp1.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -64,7 +65,10 @@
 &lt;p&gt;Meremote switch dan router di packet tracer&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;C. MAKSUD DAN TUJUAN&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Ingin mengimplementasikanya di dunia kerja dan mengulangi Materi yang diberi tentang ssh dan telnet&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;D. TAHAPAN PEKERJAAN&lt;/strong&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;strong&gt;D. TAHAPAN PEKERJAAN&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TELNET&lt;/strong&gt;
+Berikut Topology Telnet :&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1.bp.blogspot.com/-vZODNOGM91I/W6gU5Pnc_vI/AAAAAAAAEj4/m3Ka9Ns5RWoIWMGoXwEtf9Nn3XbUVBZGQCLcBGAs/s1600/1.png&#34; alt=&#34;Activities, Android Developer, Ansible, Apache2, Atlassian, Ayo Belajar Linux, Bestpath Network, BLC Telkom Klaten, BSD, Caddy Server, Case Study, Cisco, Cisco Indonesia, Cloud Computing, Cockpit, Custom Weapons, Docker, E-Learning, Engenius, Error, FreeBSD, FreeBSD Indonesia, Komunitas Pengguna Linux Indonesia, KPLI Bulukumba, KPLI Klaten, Lets Encrypt, Linux, MacOS, Microsoft Azure, Microsoft SQL Server, MikroTik, MikroTik Indonesia, MySQL, Nginx, Open edX, OpenSID, Others, PHP, phpMyAdmin, PostgreSQL, Proxmox, Python, Redash, Sendy, SSH, Stories, Subnetting, TP-Link, Ubiquiti, Unix, Virtualization, Windows, X-Mosque, Faizar Septiawan, Icar, siBunglonGanteng, Orang Ganteng, siBunglonLabs, Programmer, SysAdmin, Site Reliability Engineer, Developer, Palugada, Makassar, Ganteng, Gila, Cyclist, Panglima, Setan, Panglima Setan, sibunglon, Ganteng&#34;&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -100,7 +104,28 @@
 &lt;p&gt;Konfigurasi interfaces Fast Ethernet&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Membuat banner pesan MOTD (Message of the Day)&lt;/p&gt;</description>
+&lt;p&gt;Membuat banner pesan MOTD (Message of the Day)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Membuat banner login&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Menempatkan local host domain ke IP address&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Perintah &lt;strong&gt;no ip domain-lookup&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Perintah &lt;strong&gt;exec-timeout&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Menyimpan konfigurasi&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Menghapus konfigurasi&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Perintah &lt;strong&gt;show&lt;/strong&gt; untuk memperifikasi konfigurasi router&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -136,7 +161,17 @@ Ciri ciri routing static adalah :&lt;/p&gt;
 &lt;li&gt;Proyektor&lt;/li&gt;
 &lt;li&gt;Internet&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;3. Jangka Waktu Pelaksanaan&lt;/p&gt;</description>
+&lt;p&gt;3. Jangka Waktu Pelaksanaan&lt;/p&gt;
+&lt;p&gt;Jam 08:00 s/d 22:00&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sesi Pagi 08:00 s/d 11:30&lt;/li&gt;
+&lt;li&gt;Istirahat Jam 11:30 s/d 12:30&lt;/li&gt;
+&lt;li&gt;Sesi Siang 12:30 s/d 16:30&lt;/li&gt;
+&lt;li&gt;Istirahat 16:30 s/d 20:00&lt;/li&gt;
+&lt;li&gt;Sesi Malam 20:00 s/d 22:00&lt;/li&gt;
+&lt;li&gt;Selesai&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;4. Pembahasan&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -160,7 +195,17 @@ Mengulangi dan Meringkas Materi yang Diberikan Tadi&lt;/li&gt;
 &lt;li&gt;Proyektor&lt;/li&gt;
 &lt;li&gt;Internet&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;3. Jangka Waktu Pelaksanaan&lt;/strong&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;strong&gt;3. Jangka Waktu Pelaksanaan&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Jam 08:00 s/d 22:00&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sesi Pagi 08:00 s/d 11:30&lt;/li&gt;
+&lt;li&gt;Istirahat Jam 11:30 s/d 12:30&lt;/li&gt;
+&lt;li&gt;Sesi Siang 12:30 s/d 16:30&lt;/li&gt;
+&lt;li&gt;Istirahat 16:30 s/d 20:00&lt;/li&gt;
+&lt;li&gt;Sesi Malam 20:00 s/d 22:00&lt;/li&gt;
+&lt;li&gt;Selesai&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;4. Pembahasan&lt;/strong&gt;&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -185,7 +230,17 @@ Mengulangi dan Meringkas Materi yang Diberikan Tadi&lt;/li&gt;
 &lt;li&gt;Proyektor&lt;/li&gt;
 &lt;li&gt;Internet&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;3. Jangka Waktu Pelaksanaan&lt;/p&gt;</description>
+&lt;p&gt;3. Jangka Waktu Pelaksanaan&lt;/p&gt;
+&lt;p&gt;Jam 08:00 s/d 22:00&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sesi Pagi 08:00 s/d 11:30&lt;/li&gt;
+&lt;li&gt;Istirahat Jam 11:30 s/d 12:30&lt;/li&gt;
+&lt;li&gt;Sesi Siang 12:30 s/d 16:30&lt;/li&gt;
+&lt;li&gt;Istirahat 16:30 s/d 20:00&lt;/li&gt;
+&lt;li&gt;Sesi Malam 20:00 s/d 22:00&lt;/li&gt;
+&lt;li&gt;Selesai&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;4. Pembahasan&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -210,7 +265,17 @@ Mengulangi dan Meringkas Materi yang Diberikan Tadi&lt;/li&gt;
 &lt;li&gt;Proyektor&lt;/li&gt;
 &lt;li&gt;Internet&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;3. Jangka Waktu Pelaksanaan&lt;/p&gt;</description>
+&lt;p&gt;3. Jangka Waktu Pelaksanaan&lt;/p&gt;
+&lt;p&gt;Jam 08:00 s/d 22:00&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sesi Pagi 08:00 s/d 11:30&lt;/li&gt;
+&lt;li&gt;Istirahat Jam 11:30 s/d 12:30&lt;/li&gt;
+&lt;li&gt;Sesi Siang 12:30 s/d 16:30&lt;/li&gt;
+&lt;li&gt;Istirahat 16:30 s/d 20:00&lt;/li&gt;
+&lt;li&gt;Sesi Malam 20:00 s/d 22:00&lt;/li&gt;
+&lt;li&gt;Selesai&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;4. Pembahasan&lt;/p&gt;</description>
       </item>
     
       <item>
@@ -235,7 +300,17 @@ Mengulangi dan Meringkas Materi yang Diberikan Tadi&lt;/li&gt;
 &lt;li&gt;Proyektor&lt;/li&gt;
 &lt;li&gt;Internet&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;3. Jangka Waktu Pelaksanaan&lt;/strong&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;strong&gt;3. Jangka Waktu Pelaksanaan&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Jam 08:00 s/d 22:00&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sesi Pagi 08:00 s/d 11:30&lt;/li&gt;
+&lt;li&gt;Istirahat Jam 11:30 s/d 12:30&lt;/li&gt;
+&lt;li&gt;Sesi Siang 12:30 s/d 16:30&lt;/li&gt;
+&lt;li&gt;Istirahat 16:30 s/d 20:00&lt;/li&gt;
+&lt;li&gt;Sesi Malam 20:00 s/d 22:00&lt;/li&gt;
+&lt;li&gt;Selesai&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;4. Tahap Pelaksanaan&lt;/p&gt;</description>
       </item>
     
       <item>
